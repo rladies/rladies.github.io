@@ -1,9 +1,6 @@
 
 # Created by https://www.gitignore.io/api/r,hugo,macos,windows
 
-### Hugo ###
-hugo.exe
-/public/
 ### macOS ###
 *.DS_Store
 .AppleDouble
