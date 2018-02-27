@@ -62,6 +62,17 @@ a:hover {
     color: var(--accent) !important;
 }
 
+/* list site */
+
+.list {
+    width: 80%;
+}
+
+.list__title {
+    float: left;
+    left: 0;
+}
+
 /*paginator at bottom of list view*/
 
 .pages {
@@ -75,7 +86,20 @@ a:hover {
 /*list item for posts and projects*/
 
 .item {
-    padding: 10px 0;
+    padding: 50px 0;
+}
+
+.item h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.item h3 a {
+    color: #562457;
+}
+
+.item h5 {
+    color: #D3D3D3;
 }
 
 .item-tag {
