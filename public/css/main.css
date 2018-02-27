@@ -111,6 +111,10 @@ a:hover {
     line-height: 1.5em;
 }
 
+.post__main-text p {
+  margin: 0 0 1.4em;
+}
+
 /*blog post*/
 @media only screen and (min-width: 1024px) {
     .post__main-text {
@@ -153,5 +157,5 @@ img {
 .figure {
     text-align: center;
     font-size: 0.9em;
-    margin: 20px;
+    margin: 4em 1em;
 }
