@@ -4,9 +4,11 @@
 
     <div class="intro">
 
-        {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
+        <!-- {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }} -->
 
-        <h1>{{ .Site.Title }}</h1>
+        <!-- <h1>{{ .Site.Title }}</h1> -->
+
+        {{ with .Site.Params.horizontalPic }} <img class="profile__picture--horizontal" src="{{ . }}"> {{ end }}
 
         <h2>{{ markdownify .Site.Params.Description }}</h2>
 

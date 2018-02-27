@@ -7,6 +7,8 @@ theme = "minimal"
 
 [params]
     author = "R-Ladies Global"
+    profilePic = "https://raw.githubusercontent.com/rladies/starter-kit/master/logo/R-LadiesGlobal_RBG_online_LogoWithText.png"
+    horizontalPic = "https://raw.githubusercontent.com/rladies/starter-kit/master/logo/R-LadiesGlobal_RBG_online_LogoWithText_Horizontal.png"
     description = "R-Ladies Global Blog"
     githubUsername = "rladies"
     accent = "#88398A"
