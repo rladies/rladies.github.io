@@ -11,9 +11,9 @@ body {
 
 main {
     margin: auto;
-    padding: 25px;
+    padding: 55px;
     flex: 1 0 auto;
-    max-width: 750px;
+    max-width: 1024px;
 }
 
 /*footer*/
@@ -106,6 +106,20 @@ a:hover {
     background-color: var(--accent);
 }
 
+.post__main-text {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+/*blog post*/
+@media only screen and (min-width: 1024px) {
+    .post__main-text {
+        font-size: 18px;
+        line-height: 1.8em;
+    }
+}
+
+
 /*navigation bar icons*/
 
 .navbar-icon {
@@ -139,4 +153,5 @@ img {
 .figure {
     text-align: center;
     font-size: 0.9em;
+    margin: 20px;
 }
