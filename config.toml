@@ -2,6 +2,7 @@ baseURL = "http://blog.rladies.org/"
 languageCode = "en-us"
 title = "R-Ladies"
 theme = "minimal"
+relativeURLs = true
 #disqusShortname = "username" # delete this to disable disqus comments
 #googleAnalytics = ""
 
