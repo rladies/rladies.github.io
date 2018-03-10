@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "R-Ladies"
 theme = "minimal"
 relativeURLs = true
+publishDir = "docs"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 #disqusShortname = "username" # delete this to disable disqus comments
 #googleAnalytics = ""
 
