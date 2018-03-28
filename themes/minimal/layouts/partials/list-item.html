@@ -17,8 +17,8 @@
     {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
 
     <h3><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
-    <h5>{{ $.Scratch.Get "subtitle" }}</h5>
-    {{ range .Params.tags }}
+    <h4>{{ $.Scratch.Get "subtitle" }}</h4>
+    {{ range .Params.categories }}
     <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}"><kbd class="item-tag">{{ . }}</kbd></a>
     {{ end }}
 
