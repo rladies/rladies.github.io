@@ -114,4 +114,4 @@ Twitter and running twitter bots is still mostly a mystery to me. Is it an art, 
 
 ## Next Up: Part 3
 
-Continue Reading Part 3: The Grand Conclusion!
+Continue Reading Part 3: [The Grand Conclusion](https://blog.rladies.org/post/conclusion/)!

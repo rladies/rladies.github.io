@@ -175,4 +175,4 @@ All images were prepared before tweeting, so that they were ready a bit before I
 
 ## Next Up: Part 2
 
-Continue Reading Part 2: Deployment and Bot Wrangling!
+Continue Reading Part 2: [Deployment and Bot Wrangling](https://blog.rladies.org/post/deployment/)!
