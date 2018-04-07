@@ -1,17 +1,17 @@
 ---
-title: '2. Behind the scenes of R-Ladies IWD2018 Twitter action!'
-description: "Part 2: Deployment and Bot Wrangling!"
-author: R-Ladies
+title: "2. Behind the scenes of R-Ladies IWD2018 Twitter action!"
+author: "R-Ladies"
 date: '2018-03-27'
+description: 'Part 2: Deployment and Bot Wrangling!'
 slug: deployment
-categories:
-  - IWD
-  - R-Ladies
 tags:
-  - iwd
-  - part2
-  - twitter
-  - 2018
+- iwd
+- part2
+- twitter
+- 2018
+categories:
+- IWD
+- R-Ladies
 ---
 
 
