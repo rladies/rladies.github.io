@@ -19,7 +19,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     backgroundColor = "white"
     font = "Open Sans" # should match the name on Google Fonts!
     highlight = true
-    highlightStyle = "solarized-dark"
+    pygmentsUseClassic=true
+    highlightStyle = "vs"
     highlightLanguages = ["r", "python", "bash"]
 
 [[menu.main]]
