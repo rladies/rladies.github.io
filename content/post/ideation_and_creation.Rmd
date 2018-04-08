@@ -1,12 +1,16 @@
 ---
 title: "1. Behind the scenes of R-Ladies IWD2018 Twitter action!"
-description: "Part 1: Ideation and Creation!"
 author: "R-Ladies"
 date: '2018-03-26'
-categories: 
-  - IWD
-  - R-Ladies
-tags: ["iwd", "twitter", "part1", 2018]
+description: 'Part 1: Ideation and Creation!'
+tags:
+- iwd
+- twitter
+- part1
+- 2018
+categories:
+- IWD
+- R-Ladies
 ---
 
 ### As told by Maëlle Salmon with notes from Bea Hernández
@@ -175,4 +179,4 @@ All images were prepared before tweeting, so that they were ready a bit before I
 
 ## Next Up: Part 2
 
-Continue Reading Part 2: Deployment and Bot Wrangling!
+Continue Reading Part 2: [Deployment and Bot Wrangling](https://blog.rladies.org/post/deployment/)!
