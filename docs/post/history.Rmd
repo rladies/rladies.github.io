@@ -14,5 +14,4 @@ After some initial brainstorming during the useR! 2016 conference, [Gabriela de 
 
 R-Ladies Global was born and the grant was awarded in September 2016. Since then R-Ladies has grown to 63 chapters and 13000 members, thanks to our amazing organisers and R-Ladies who helped build and maintain our official website ([rladies.org](https://rladies.org/)), engage with the larger community via social media - ([\@RLadiesGlobal](https://twitter.com/rladiesglobal?lang=en)) and help each-other every day in millions of different ways.
 
-
 ![R-Ladies in 2017 useR](../../image/R-Ladies.png)
