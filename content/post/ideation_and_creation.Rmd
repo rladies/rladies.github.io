@@ -94,7 +94,7 @@ What does posting R-Ladies profile mean? I decided a good recipe for a tweet was
 
 * A screenshot of the R-Ladies directory entry, since it'd mean an image, and since it contains important information about the talents and interests of each lady
 
-* The #rladies and #iwd2018 hashtags (Thanks to Heather Turner for showing me where to find the official hashtag in advance!) to increase visibility of the feed and to promote our hashtag.
+* The #rladies and #iwd2018 hashtags (Thanks to [Heather Turner](http://www.heatherturner.net) for showing me where to find the official hashtag in advance!) to increase visibility of the feed and to promote our hashtag.
 
 * Random compliments to make it friendlier and more fun
 
