@@ -6,10 +6,19 @@
     <description>Recent content in Tags on R-Ladies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018</title>
+      <link>/tags/2018/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/2018/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>History</title>
@@ -21,11 +30,56 @@
     </item>
     
     <item>
+      <title>Iwd</title>
+      <link>/tags/iwd/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/iwd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Part1</title>
+      <link>/tags/part1/</link>
+      <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/part1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Part2</title>
+      <link>/tags/part2/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/part2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Part3</title>
+      <link>/tags/part3/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/part3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R Ladies</title>
       <link>/tags/r-ladies/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/r-ladies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>/tags/twitter/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/twitter/</guid>
       <description></description>
     </item>
     
