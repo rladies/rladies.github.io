@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R Ladies on R-Ladies</title>
-    <link>/categories/r-ladies/</link>
-    <description>Recent content in R Ladies on R-Ladies</description>
+    <title>Iwd on R-Ladies</title>
+    <link>/tags/iwd/</link>
+    <description>Recent content in Iwd on R-Ladies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/r-ladies/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/iwd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -38,16 +38,6 @@
       <guid>/post/ideation_and_creation/</guid>
       <description>As told by Maëlle Salmon with notes from Bea Hernández On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from our directory via @rladies_iwd2018. It was a blast! And a lot of team work too! In this blog post, we’ll explain how we designed and completed our Twitter action.
  An idea sown on IWD2017! Last year on International Women’s day, R-Ladies ally David Robinson promoted Twitter accounts of female data scientists.</description>
-    </item>
-    
-    <item>
-      <title>History</title>
-      <link>/post/history/</link>
-      <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/history/</guid>
-      <description>Gabriela de Queiroz founded R-Ladies on October 1, 2012. She wanted to give back to the community after going to several meetups and learning a lot for free. The first meetup was placed in San Francisco, California (United States).
-In the following years two more R-Ladies chapters started around the globe: Twin Cities and Taipei. R-Ladies London was the fourth chapter, which launched in March 2016. Although each chapter started working independently, the need for high-level coordination and support became evident at useR!</description>
     </item>
     
   </channel>
