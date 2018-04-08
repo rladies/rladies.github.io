@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>2. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+        <style>
+
+    html body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #88398A;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="../../css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.29" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">2. Behind the scenes of R-Ladies IWD2018 Twitter action!</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="https://rladies.org/">Home</a></li>
+                            
+                                <li><a href="../../post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:info@rladies.org"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/rladies/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/RLadiesGlobal/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.meetup.com/es-ES/topics/r-ladies/all/"><i class="fa fa-meetup"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/company/17981653/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+      
+
+    <h3><a href="../../post/deployment/">2. Behind the scenes of R-Ladies IWD2018 Twitter action!</a></h4>
+    <h5>Part 2: Deployment and Bot Wrangling!</h5>
+    
+    <a href="../../tags/iwd"><kbd class="item-tag">iwd</kbd></a>
+    
+    <a href="../../tags/part2"><kbd class="item-tag">part2</kbd></a>
+    
+    <a href="../../tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+    
+    <a href="../../tags/2018"><kbd class="item-tag">2018</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify post__main-text"><div id="as-told-by-kelly-obriant" class="section level3">
+<h3>As told by Kelly O’Briant</h3>
+<p>On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from <a href="http://rladies.org/directory/">our directory</a> via <a href="https://twitter.com/rladies_iwd2018">@rladies_iwd2018</a>. It was a blast! And a lot of team work too! In this blog post, we’ll cover the deployment and monitoring stages of our project. You can also read the <a href="https://blog.rladies.org/post/ideation_and_creation/">Part 1</a>.</p>
+</div>
+<div id="recap" class="section level2">
+<h2>Recap</h2>
+<p>The great part about being put in charge of deploying a project, is that all the hard work is mostly done already! In this section, I’ll describe how we deployed and monitored our twitter application for IWD 2018. Things didn’t end up going exactly as planned, but lessons were learned and we were able to adjust our game plan on the fly while making some minor compromises.</p>
+<p>To review, here is where the project stood when it came time for me to jump in:</p>
+<p><em>All the hard work was taken care of already!</em></p>
+<ul>
+<li>Creating a twitter account and developer application</li>
+<li>Preparing the screenshots</li>
+<li>Preparing the tweets</li>
+</ul>
+<p><em>What my job was:</em></p>
+<ul>
+<li>Launch a docker/rocker image</li>
+<li>Do a little testing</li>
+<li>Start sending tweets on IWD2018</li>
+<li>Cross fingers for success :)</li>
+</ul>
+<p><em>What I probably should have also done:</em></p>
+<ul>
+<li>Deployed the Docker twitter app on a cloud instance (in case of a power outage here at my house)</li>
+<li>Determined whether we would get in trouble for adding twitter handles to the bot tweets</li>
+</ul>
+</div>
+<div id="the-job" class="section level2">
+<h2>The job</h2>
+<div id="launching-docker" class="section level3">
+<h3>Launching Docker</h3>
+<p><em>Why use Docker?</em></p>
+<p>I knew that we would need to be tweeting for roughly 48 hours (following March 8th around the globe) and I would never want to tie up my local R session for two whole days. A simple solution to this problem is to launch a local docker instance with R and RStudio installed.</p>
+<p><em>Docker Resources</em></p>
+<p>I started learning how to use docker a few months ago by following <a href="http://ropenscilabs.github.io/r-docker-tutorial/">this awesome docker/rocker tutorial from rOpenSciLabs</a>. I highly recommend it. Linking a local volume (file system) to a docker instance is super simple, and was basically all I needed to do to get this project up and running.</p>
+<p>I cloned the GitHub repo we used for all our code and data, linked that volume to the docker instance and fired up some twitter tests!</p>
+</div>
+<div id="sending-the-tweets" class="section level3">
+<h3>Sending the Tweets</h3>
+<p>My initial instinct was to try and run the tweeting code as a cron scheduled script. <a href="http://www.unixgeeks.org/security/newbie/unix/cron-1.html">What is cron?</a> I planned to set up crontab by <a href="https://www.ekito.fr/people/run-a-cron-job-with-docker/">modifying the Docker file</a> for Rocker.</p>
+<p>But in keeping with the theme of “simple wins out”, I ended up just using a for loop and <code>Sys.sleep()</code>. I was paranoid about our account getting flagged as a malicious bot by the folks at twitter, so I thought it would help to add a couple of “extra_seconds” to each sleep cycle. This way we wouldn’t be tweeting every six minutes on the dot. I have no idea whether this helped us or not… we still got blocked a few times.</p>
+<p><em>Minimal Code:</em></p>
+<pre class="r"><code>tweet_lady &lt;- function(entry_id, tweet, token){
+  message(entry_id)
+  pic_media &lt;- paste0(&quot;screenshots/&quot;,entry_id,&quot;.png&quot;)
+
+  try_tweet &lt;- try(rtweet::post_tweet(status = tweet,
+                                      token = token,
+                                      media = pic_media), silent = TRUE)    
+
+  if(class(try_tweet)[1] == &quot;try-error&quot;){
+    print(paste0(&quot;Tweeting failed on entry &quot;, entry_id))
+  }
+  return(try_tweet)  
+}
+
+
+extra_seconds &lt;- function(){
+  sample(2:12,1)
+}
+
+for (i in 1:433){     # 433 rladies
+  lady &lt;- tweets[i,]
+  print(lady$tweet)
+  tweet_lady(lady$entry_id, lady$tweet, token)
+  Sys.sleep(360 + extra_seconds())
+}</code></pre>
+</div>
+<div id="monitoring-and-fixing-our-application" class="section level3">
+<h3>Monitoring and Fixing our Application</h3>
+<p>The <code>tweet_lady</code> function is set up to return <code>try_tweet</code>. In the case of a tweeting failure, it was mighty helpful to be able to quickly run this function outside the for loop to see the error type. Our application went down a number of times (4?) during our 48 hour #IWD twitter storm, and so I ran this little piece of code many times as I tested and restored our app:</p>
+<pre class="r"><code>err &lt;- tweet_lady(tweets[id,]$entry_id, tweets[id,]$tweet, token)</code></pre>
+<p>The error messages weren’t always all that helpful, but it made me feel better to see them. Logs are comforting, you know? Our first application was blocked after three hours of tweeting, and we guessed that the shutdown was due in part to using ladies’ twitter handles in the body of the tweet messages. It would have been nice to continue to tag people in the tweets, but we decided to remove handles in order to get our application running again (and keep it running).</p>
+<p>My wonderful R-Ladies friend, <a href="https://twitter.com/hfcfrick">Hannah Frick</a>, hit me up on slack and encouraged us to lean into the gamification of tagging twitter handles by hand. This ended up being really fun. I spent <em>a lot</em> of time watching the feed, and people were routinely swooping in to tag people before I ever got the chance! I’m really happy with how this part turned out - thank you Hannah! And thank you to everyone who spent time tagging people and writing personal messages!</p>
+<p>All of the other errors we had were fixed by switching application bots (we had three), regenerating a token, or some combination of those things.</p>
+</div>
+<div id="deployment-conclusion" class="section level3">
+<h3>Deployment Conclusion</h3>
+<p>Twitter and running twitter bots is still mostly a mystery to me. Is it an art, a science? I have no idea. I’m glad that this was an International Women’s Day project, and didn’t last a week or a month! That being said, I think I’ll be carrying the feeling of engaging with this wonderful, fantastic #rladies #rstats community around with me for a long time. It was amazing! I’m so glad and grateful for this opportunity. Here’s to meeting more awesome R-Ladies in 2018!</p>
+</div>
+</div>
+<div id="next-up-part-3" class="section level2">
+<h2>Next Up: Part 3</h2>
+<p>Continue Reading Part 3: <a href="https://blog.rladies.org/post/conclusion/">The Grand Conclusion</a>!</p>
+</div>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+      
+
+    <h3><a href="../../post/conclusion/">3. Behind the scenes of R-Ladies IWD2018 Twitter action!</a></h4>
+    <h5>Part 3: The Grand Conclusion!</h5>
+    
+    <a href="../../tags/iwd"><kbd class="item-tag">iwd</kbd></a>
+    
+    <a href="../../tags/part3"><kbd class="item-tag">part3</kbd></a>
+    
+    <a href="../../tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+    
+    <a href="../../tags/2018"><kbd class="item-tag">2018</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+      
+
+    <h3><a href="../../post/ideation_and_creation/">1. Behind the scenes of R-Ladies IWD2018 Twitter action!</a></h4>
+    <h5>Part 1: Ideation and Creation!</h5>
+    
+    <a href="../../tags/iwd"><kbd class="item-tag">iwd</kbd></a>
+    
+    <a href="../../tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+    
+    <a href="../../tags/part1"><kbd class="item-tag">part1</kbd></a>
+    
+    <a href="../../tags/2018"><kbd class="item-tag">2018</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
