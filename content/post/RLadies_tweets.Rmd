@@ -1,7 +1,7 @@
 ---
 title: "R-Ladies IWD2018 tweets analysis, using the rtweet package"
 author: "Daloha Rodriguez-Molina, the R-Ladies Global team"
-date: '`r format(Sys.Date(), "%B %d, %Y")`'
+date: '2018-04-16'
 output: html_document
 ---
 
