@@ -1,7 +1,7 @@
 ---
 title: "R-Ladies IWD2018 tweets analysis, using the rtweet package"
 author: "Daloha Rodriguez-Molina, the R-Ladies Global team"
-date: '2018-04-16'
+date: '2018-04-17'
 output: html_document
 ---
 
@@ -27,7 +27,7 @@ Encouraged by the R-Ladies Global Team, but also out of simple curiosity, I deci
 ## The game
 Apart from the initiative itself, the R-Ladies Global Team also created a game, where anybody could reply to each tweet with the Twitter handle of the featured R-Lady. The person with the largest amount of replies wins the game!
 
-[![R-Ladies Game](../image/rladies_twitter.png)](https://twitter.com/rladies_iwd2018/status/971453057178402817)
+[![R-Ladies Game](../../image/rladies_twitter.png)](https://twitter.com/rladies_iwd2018/status/971453057178402817)
 
 ## Resources
 I used several resources for my analysis, including:
@@ -200,7 +200,7 @@ With this analysis I've learned that:
 #### P.S. How does the largest chain of tweets and replies look like?
 I will try to recreate [Lucy D'Agostino McGowan's](https://twitter.com/LucyStats) analysis for twitter trees, using the tweet that got the highest number of replies. This tweet is by [Laura Acion](https://twitter.com/_lacion_):
 
-[![Tweet referencing @_lacion_, which got 7 responses, and on which the following tree is based](../image/tweet_0.png)](https://twitter.com/rladies_iwd2018/status/971560433835565057)
+[![Tweet referencing @_lacion_, which got 7 responses, and on which the following tree is based](../../image/tweet_0.png)](https://twitter.com/rladies_iwd2018/status/971560433835565057)
 
 ```{r}
 # Grab the tweets
