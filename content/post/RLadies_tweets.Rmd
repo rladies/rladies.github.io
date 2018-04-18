@@ -1,9 +1,20 @@
 ---
-title: "R-Ladies IWD2018 tweets analysis, using the rtweet package"
-author: "Daloha Rodriguez-Molina, the R-Ladies Global team"
+title: '4. Behind the scenes of R-Ladies IWD2018 Twitter action!'
+description: "Part 4: R-Ladies IWD2018 tweets analysis, using the rtweet package"
+author: R-Ladies
 date: '2018-04-17'
-output: html_document
+slug: rladies_tweets
+categories:
+  - IWD
+  - R-Ladies
+tags:
+  - iwd
+  - part4
+  - twitter
+  - 2018
 ---
+
+### As told by Daloha Rodríguez-Molina, with help from Maëlle Salmon
 
 [R-Ladies](http://rladies.org/) is a global organization that promotes diversity in the R community. One way to do this is by raising the visibility of women and other underrepresented genders^1^ in tech, especially those who are R users, or developers.
 

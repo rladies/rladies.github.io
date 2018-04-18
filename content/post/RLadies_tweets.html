@@ -1,8 +1,17 @@
 ---
-title: "R-Ladies IWD2018 tweets analysis, using the rtweet package"
-author: "Daloha Rodriguez-Molina, the R-Ladies Global team"
+title: '4. Behind the scenes of R-Ladies IWD2018 Twitter action!'
+description: "Part 4: R-Ladies IWD2018 tweets analysis, using the rtweet package"
+author: R-Ladies
 date: '2018-04-17'
-output: html_document
+slug: rladies_tweets
+categories:
+  - IWD
+  - R-Ladies
+tags:
+  - iwd
+  - part4
+  - twitter
+  - 2018
 ---
 
 <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
@@ -18,12 +27,15 @@ output: html_document
 <script src="/rmarkdown-libs/svg_1/scripts_svg_1.js"></script>
 
 
+<div id="as-told-by-daloha-rodriguez-molina-with-help-from-maelle-salmon" class="section level3">
+<h3>As told by Daloha Rodríguez-Molina, with help from Maëlle Salmon</h3>
 <p><a href="http://rladies.org/">R-Ladies</a> is a global organization that promotes diversity in the R community. One way to do this is by raising the visibility of women and other underrepresented genders<sup>1</sup> in tech, especially those who are R users, or developers.</p>
 <hr />
 <p><sup>1</sup> (cis/trans women, trans men, non-binary, genderqueer, agender, or other).</p>
 <hr />
 <p>The R-Ladies Global Team instigated a unique initiative to increase female visibility in tech, as part of the 2018 International Women’s Day celebration. They created a twitter account (@<a href="http://www.twitter/rladies_iwd2018">rladies_iwd2018</a>) to post - tweet by tweet- each profile of R-Ladies listed in the <a href="https://rladies.org/directory/">R-Ladies Global Directory</a>. For details on how they set up this initiative, check out <a href="http://blog.rladies.org/post/ideation_and_creation/">this</a> blog post.</p>
 <p>Encouraged by the R-Ladies Global Team, but also out of simple curiosity, I decided to analyze these tweets and their interactions, using <a href="https://twitter.com/kearneymw">Mike Kearney’s</a> super useful <a href="https://github.com/mkearney/rtweet">rtweet</a> package.</p>
+</div>
 <div id="warnings" class="section level2">
 <h2>Warnings</h2>
 <p><strong>WARNING 1</strong>: The <code>rtweet</code> package interacts with Twitter’s API, which has a time limit of 7 days of doing it for free. If you would like to perform Twitter analyses after one week of tweets being created, you may have to <a href="https://developer.twitter.com/en/pricing">pay for this service</a>. The exception is when using <code>get_timeline</code>, but there is still a limit on the number of tweets you can fetch. It works for @<a href="http://www.twitter/rladies_iwd2018">rladies_iwd2018</a> because the account has relatively few tweets (n = 442 at the time of this analysis).</p>
