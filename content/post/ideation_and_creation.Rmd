@@ -92,15 +92,15 @@ ladies <- dplyr::mutate(ladies, twitter = stringr::str_replace(social_network_tw
 
 What does posting R-Ladies profile mean? I decided a good recipe for a tweet was:
 
-* A screenshot of the R-Ladies directory entry, since it'd mean an image, and since it contains important information about the talents and interests of each lady
+* A screenshot of the R-Ladies directory entry, since it'd mean an image, and since it contains important information about the talents and interests of each R-Lady
 
 * The #rladies and #iwd2018 hashtags (Thanks to [Heather Turner](http://www.heatherturner.net) for showing me where to find the official hashtag in advance!) to increase visibility of the feed and to promote our hashtag.
 
 * Random compliments to make it friendlier and more fun
 
-* A direct link to the directory entry to drive traffic to the directory and allow the tweet reader to really go learn more about the lady, since most entries list other profiles such as a personal website or GitHub account
+* A direct link to the directory entry to drive traffic to the directory and allow the tweet reader to really go learn more about the R-Lady, since most entries list other profiles such as a personal website or GitHub account
 
-* The Twitter handle of the lady if available to help their visibility
+* The Twitter handle of the R-Lady if available to help their visibility
 
 ### Preparing the tweets
 
@@ -157,7 +157,7 @@ readr::write_csv(ladies, path = "data/ready_tweets.csv")
 
 ### Webshooting the directory
 
-The directory was webshot using the `webshot` and `magick` package, with the following function that takes the URL to an entry and the ID of a lady as arguments.
+The directory was webshot using the `webshot` and `magick` package, with the following function that takes the URL to an entry and the ID of a R-Lady as arguments.
 
 ```r
 get_shot <- function(url, person){
