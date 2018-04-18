@@ -6,10 +6,21 @@
     <description>Recent content in 2018 on R-Ladies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/2018/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>4. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+      <link>/post/rladies_tweets/</link>
+      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rladies_tweets/</guid>
+      <description>As told by Daloha Rodríguez-Molina, with help from Maëlle Salmon R-Ladies is a global organization that promotes diversity in the R community. One way to do this is by raising the visibility of women and other underrepresented genders1 in tech, especially those who are R users, or developers.
+1 (cis/trans women, trans men, non-binary, genderqueer, agender, or other).
+The R-Ladies Global Team instigated a unique initiative to increase female visibility in tech, as part of the 2018 International Women’s Day celebration.</description>
+    </item>
     
     <item>
       <title>3. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
