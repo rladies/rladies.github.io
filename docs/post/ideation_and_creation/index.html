@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>1. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+        <style>
+
+    html body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #88398A;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="../../css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.37" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">1. Behind the scenes of R-Ladies IWD2018 Twitter action!</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="https://rladies.org/">Home</a></li>
+                            
+                                <li><a href="../../post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:info@rladies.org"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/rladies/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/RLadiesGlobal/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.meetup.com/es-ES/topics/r-ladies/all/"><i class="fa fa-meetup"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/company/17981653/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+      
+
+    <h3><a href="../../post/ideation_and_creation/">1. Behind the scenes of R-Ladies IWD2018 Twitter action!</a></h4>
+    <h5>Part 1: Ideation and Creation!</h5>
+    
+    <a href="../../tags/iwd"><kbd class="item-tag">iwd</kbd></a>
+    
+    <a href="../../tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+    
+    <a href="../../tags/part1"><kbd class="item-tag">part1</kbd></a>
+    
+    <a href="../../tags/2018"><kbd class="item-tag">2018</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify post__main-text"><div id="as-told-by-maelle-salmon-with-notes-from-bea-hernandez" class="section level3">
+<h3>As told by Maëlle Salmon with notes from Bea Hernández</h3>
+<p>On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from <a href="http://rladies.org/directory/">our directory</a> via <a href="https://twitter.com/rladies_iwd2018">@rladies_iwd2018</a>. It was a blast! And a lot of team work too! In this blog post, we’ll explain how we designed and completed our Twitter action.</p>
+</div>
+<div id="an-idea-sown-on-iwd2017" class="section level2">
+<h2>An idea sown on IWD2017!</h2>
+<p>Last year on International Women’s day, <a href="https://twitter.com/drob/">R-Ladies ally David Robinson</a> <a href="https://twitter.com/drob/status/839564664321282048">promoted</a> Twitter accounts of female data scientists. I (Maëlle) had the honor to be featured in this tweet, and still remember a) being very flattered b) seeing my followers count skyrocket! I’m pretty sure quite a few of the opportunities I received since then are at least partly related to this <a href="https://robinsones.github.io/The-Importance-of-Sponsorship/">sponsorship</a> by Dave. Therefore, I wanted to pay it forward this year!</p>
+<p>On January the 1st I realized that new year meant new IWD so it was time to plan! I wanted us to have an action celebrating many R-Ladies, not only those who already receive much attention. Indeed, R-Ladies local chapters and global organization have a mission to amplify the voices of R-Ladies, all of them! I am a Twitter addict so I immediately thought of having a Twitter feed ot R-Ladies profile, but I envisioned our identifying the R-Ladies via a survey. <a href="https://twitter.com/stefflocke?lang=es">Steph Locke</a> got a much better idea when I mentioned mine in our Slack: using entries from our directory and using this as an opportunity to promote the directory! So this became our plan!</p>
+</div>
+<div id="working-on-the-directory" class="section level2">
+<h2>Working on the directory</h2>
+<p>Since the directory became central in our plan, it got a lot of love from Bea and directory masters Sheila and Page!</p>
+<div id="the-more-entries-the-merrier" class="section level3">
+<h3>The more entries the merrier!</h3>
+<p>We advertised the directory again via different channels, in particular our global Twitter account and the organizers of local chapters. This created a flow of new entries to be tackled which Sheila and Page did efficiently.</p>
+</div>
+<div id="prettifying-the-directory" class="section level3">
+<h3>Prettifying the directory</h3>
+<p><em>A Note from <a href="https://twitter.com/chucheria">Bea</a> on Prettifying the Directory:</em> After doing the first “ugly” screenshots, we (Page, Sheila, and I) discovered we didn’t have a method for adding names, so titles and other info were placed in the name. In addition to the big font for the name, it made the name too long and some of the screenshots ended up looking ugly.</p>
+<p>We modified the information, but even after that we discovered that depending on who made the screenshot the font was different. We haven’t found the problem to that, but everything points to an issue with <code>revealJS</code>.</p>
+<p>Thanks to this, we have new procedures to add new files and we hope to improve the directory soon with new features too.</p>
+</div>
+<div id="exporting-the-directory" class="section level3">
+<h3>Exporting the directory</h3>
+<p>For further processing, we needed the direct link to each entry, and other entry-specific information such as a potential Twitter handle. For that, we had to rely on both a Wordpress export and webscraping the directory because the export didn’t include individual links, and these links couldn’t be guessed (for instance mine is <a href="https://rladies.org/spain-rladies/name/maille-salmon/" class="uri">https://rladies.org/spain-rladies/name/maille-salmon/</a> because I was first entered as Maille). Bea and I wrote the code below</p>
+<pre class="r"><code>url &lt;- read_html(&quot;https://rladies.org/ladies-complete-list/&quot;)
+
+ladies_name &lt;- url %&gt;%
+  html_nodes(&quot;strong &gt; a&quot;) %&gt;%
+  html_attr(&quot;title&quot;)
+
+ladies_url &lt;- url %&gt;%
+  html_nodes(&quot;strong &gt; a&quot;) %&gt;%
+  html_attr(&quot;href&quot;)
+
+df &lt;- tibble::tibble(name = ladies_name,
+                     ladies_url = ladies_url)
+
+# export from the Wordpress plugin
+ladies &lt;- readr::read_csv(&quot;data/cn-export-all-02-02-2018.csv&quot;)
+ladies &lt;- janitor::clean_names(ladies)
+
+# helper function
+past_if_nonvoid &lt;- function(vector){
+  glue::collapse(vector[!is.na(vector)], sep = &quot; &quot;)
+}
+
+# write the name to make it correspond to scraped names
+ladies &lt;- dplyr::group_by(ladies, entry_id) %&gt;%
+  dplyr::mutate(name = past_if_nonvoid(c(honorific_prefix, first_name, middle_name, last_name,
+                                         honorific_suffix))) %&gt;%
+  dplyr::ungroup() %&gt;%
+  dplyr::select(name, dplyr::everything())
+
+# join two tables to get URLS
+ladies &lt;- dplyr::mutate(ladies, name = stringr::str_replace_all(name, &quot;\\\\&#39;&quot;, &quot;’&quot;))
+ladies &lt;- dplyr::left_join(ladies, df, by = &quot;name&quot;)
+
+# a few issues
+ladies$ladies_url[ladies$entry_id == 274] &lt;- &quot;https://rladies.org/ladies-complete-list/name/bianca-furtuna/&quot;
+
+# reformat Twitter handle
+ladies &lt;- dplyr::mutate(ladies, twitter = stringr::str_replace(social_network_twitter_url,
+                                                                &quot;.*\\/&quot;, &quot;&quot;))
+
+</code></pre>
+</div>
+</div>
+<div id="webshooting-and-random-complimenting" class="section level2">
+<h2>Webshooting and random complimenting</h2>
+<p>What does posting R-Ladies profile mean? I decided a good recipe for a tweet was:</p>
+<ul>
+<li><p>A screenshot of the R-Ladies directory entry, since it’d mean an image, and since it contains important information about the talents and interests of each lady</p></li>
+<li><p>The #rladies and #iwd2018 hashtags (Thanks to <a href="http://www.heatherturner.net">Heather Turner</a> for showing me where to find the official hashtag in advance!) to increase visibility of the feed and to promote our hashtag.</p></li>
+<li><p>Random compliments to make it friendlier and more fun</p></li>
+<li><p>A direct link to the directory entry to drive traffic to the directory and allow the tweet reader to really go learn more about the lady, since most entries list other profiles such as a personal website or GitHub account</p></li>
+<li><p>The Twitter handle of the lady if available to help their visibility</p></li>
+</ul>
+<div id="preparing-the-tweets" class="section level3">
+<h3>Preparing the tweets</h3>
+<p>Once we had created the table of R-Ladies with their direct directory URLs, preparing the tweets only meant creating random compliments that could apply to any R-Lady (yes, all R-Ladies are awesome and talented!) and gluing all text together.</p>
+<pre class="r"><code># templates
+templates &lt;- c(&quot;Do you know this adjective R-Lady?&quot;,
+               &quot;What a adjective R-Lady!&quot;,
+               &quot;Aren&#39;t you impressed by this adjective R-Lady?!&quot;,
+               &quot;Let&#39;s get inspired by this adjective R-Lady!&quot;,
+               &quot;Have you heard of this adjective R-Lady?!&quot;,
+               &quot;Find out more about this adjective R-Lady!&quot;,
+               &quot;This R-Lady is adjective!&quot;,
+               &quot;Read more about how adjective this R-Lady is!&quot;,
+               &quot;It&#39;s an honour to feature this adjective R-Lady!&quot;,
+               &quot;Another adjective R-Lady!&quot;,
+               &quot;One more adjective R-Lady!&quot;)
+
+adjectives &lt;- c(&quot;awesome&quot;, &quot;fantastic&quot;, &quot;spunky&quot;, &quot;wondrous&quot;,
+                &quot;majestic&quot;, &quot;amazing&quot;, &quot;wise&quot;,
+                &quot;awe-inspiring&quot;,
+                &quot;badass&quot;, &quot;bright&quot;, &quot;smart&quot;, &quot;brilliant&quot;, &quot;clever&quot;,
+                &quot;luminous&quot;, &quot;phenomenal&quot;, &quot;remarkable&quot;,
+                &quot;talented&quot;, &quot;incredible&quot;, &quot;cool&quot;, &quot;top-notch&quot;)
+
+# get as many sentences as there are ladies
+combinations &lt;- expand.grid(templates, adjectives)
+combinations &lt;- dplyr::mutate_all(combinations, as.character)
+create_sentence &lt;- function(template, adjective){
+  stringr::str_replace(template, &quot;adjective&quot;, adjective)
+}
+
+sentences &lt;- purrr::map2_chr(combinations$Var1, combinations$Var2,
+                             create_sentence)
+set.seed(42)
+# the first one is chosen, this way it&#39;s not &quot;another&quot; or &quot;one more&quot;
+sentences &lt;- c(sentences[1],
+               sample(sentences, nrow(ladies) - 1, replace = TRUE))
+
+# add actual tweet text
+ladies &lt;- dplyr::mutate(ladies,
+                        url = ladies_url,
+                        tweet = sentences,
+                        tweet = ifelse(!is.na(twitter),
+                                          paste0(tweet, &quot; @&quot;, twitter), tweet),
+                        tweet = paste(tweet, url, &quot;#rladies #iwd2018&quot;))
+
+# save tweets
+ladies &lt;- dplyr::select(ladies, ladies_url, name, entry_id, tweet)
+readr::write_csv(ladies, path = &quot;data/ready_tweets.csv&quot;)
+</code></pre>
+</div>
+<div id="webshooting-the-directory" class="section level3">
+<h3>Webshooting the directory</h3>
+<p>The directory was webshot using the <code>webshot</code> and <code>magick</code> package, with the following function that takes the URL to an entry and the ID of a lady as arguments.</p>
+<pre class="r"><code>get_shot &lt;- function(url, person){
+  # webshoot the directory
+  webshot::webshot(url, selector = &quot;#cn-list-body&quot;, expand = 10)
+  # read the webshot image to modify it
+  img &lt;- magick::image_read(&quot;webshot.png&quot;)
+  height &lt;- magick::image_info(img)$height
+  # crop, add purple border and save the image
+  img %&gt;%
+    magick::image_crop(paste0(&quot;700x&quot;, height, &quot;+0+70&quot;)) %&gt;%
+    magick::image_border(&quot;#88398A&quot;, &quot;10x10&quot;) %&gt;%
+    magick::image_write(paste0(&quot;screenshots/&quot;, person, &quot;.png&quot;))
+  # cleans
+  file.remove(&quot;webshot.png&quot;)
+}</code></pre>
+<p>All images were prepared before tweeting, so that they were ready a bit before IWD.</p>
+</div>
+</div>
+<div id="next-up-part-2" class="section level2">
+<h2>Next Up: Part 2</h2>
+<p>Continue Reading Part 2: <a href="https://blog.rladies.org/post/deployment/">Deployment and Bot Wrangling</a>!</p>
+</div>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+      
+
+    <h3><a href="../../post/rladies_tweets/">4. Behind the scenes of R-Ladies IWD2018 Twitter action!</a></h4>
+    <h5>Part 4: R-Ladies IWD2018 tweets analysis, using the rtweet package</h5>
+    
+    <a href="../../tags/iwd"><kbd class="item-tag">iwd</kbd></a>
+    
+    <a href="../../tags/part4"><kbd class="item-tag">part4</kbd></a>
+    
+    <a href="../../tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+    
+    <a href="../../tags/2018"><kbd class="item-tag">2018</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+      
+
+    <h3><a href="../../post/conclusion/">3. Behind the scenes of R-Ladies IWD2018 Twitter action!</a></h4>
+    <h5>Part 3: The Grand Conclusion!</h5>
+    
+    <a href="../../tags/iwd"><kbd class="item-tag">iwd</kbd></a>
+    
+    <a href="../../tags/part3"><kbd class="item-tag">part3</kbd></a>
+    
+    <a href="../../tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+    
+    <a href="../../tags/2018"><kbd class="item-tag">2018</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+      
+
+    <h3><a href="../../post/deployment/">2. Behind the scenes of R-Ladies IWD2018 Twitter action!</a></h4>
+    <h5>Part 2: Deployment and Bot Wrangling!</h5>
+    
+    <a href="../../tags/iwd"><kbd class="item-tag">iwd</kbd></a>
+    
+    <a href="../../tags/part2"><kbd class="item-tag">part2</kbd></a>
+    
+    <a href="../../tags/twitter"><kbd class="item-tag">twitter</kbd></a>
+    
+    <a href="../../tags/2018"><kbd class="item-tag">2018</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
