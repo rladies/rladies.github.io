@@ -75,5 +75,7 @@ If you have any question about blogdown or rendering your content, don't hesitat
 Don't merge your changes immediately, fork the project and work on your branch. After making the PR, assign any of the editors as reviewer.
 
 ## Editors
+[Chrissy](github.com/ChrisZasa)
 
 ## Maintainers
+[Bea](github.com/chucheria)
