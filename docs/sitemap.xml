@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/vacation_grow_rladiesnetwork/</loc>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/rladies_tweets/</loc>
     <lastmod>2018-04-17T00:00:00+00:00</lastmod>
   </url>
@@ -29,7 +34,7 @@
   
   <url>
     <loc>/tags/2018/</loc>
-    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -45,13 +50,13 @@
   </url>
   
   <url>
-    <loc>/categories/iwd/</loc>
+    <loc>/tags/iwd/</loc>
     <lastmod>2018-04-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/iwd/</loc>
+    <loc>/categories/iwd/</loc>
     <lastmod>2018-04-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -82,13 +87,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/r-ladies/</loc>
-    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -99,14 +98,26 @@
   </url>
   
   <url>
+    <loc>/categories/r-ladies/</loc>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/south-america/</loc>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-04-17T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -119,6 +130,12 @@
   <url>
     <loc>/tags/us/</loc>
     <lastmod>2018-02-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vacation/</loc>
+    <lastmod>2018-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
