@@ -6,10 +6,20 @@
     <description>Recent content on R-Ladies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>vacation &lt;- grow(RLadiesNetwork)</title>
+      <link>/post/vacation_grow_rladiesnetwork/</link>
+      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vacation_grow_rladiesnetwork/</guid>
+      <description>We would like to tell you how one vacation lead to growth of R Ladies community in South America. The story involves multiple countries and crossing paths at the right time in life.
+Mine Dogucu I am from Turkey but I lived in the United States most of my adulthood. In December 2014, I decided to take a trip to South America - to Chile, Uruguay, and Argentina. Being a graduate student at the time put me in a need to lower my travel costs.</description>
+    </item>
     
     <item>
       <title>4. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>

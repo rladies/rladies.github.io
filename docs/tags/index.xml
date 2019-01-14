@@ -6,7 +6,7 @@
     <description>Recent content in Tags on R-Ladies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>2018</title>
       <link>/tags/2018/</link>
-      <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/2018/</guid>
       <description></description>
@@ -84,6 +84,15 @@
     </item>
     
     <item>
+      <title>South America</title>
+      <link>/tags/south-america/</link>
+      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/south-america/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Twitter</title>
       <link>/tags/twitter/</link>
       <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
@@ -98,6 +107,15 @@
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/us/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vacation</title>
+      <link>/tags/vacation/</link>
+      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vacation/</guid>
       <description></description>
     </item>
     
