@@ -23,6 +23,8 @@ We nominated Gabriela because she founded the first chapter of R-Ladies in San F
 
 Gabriela’s initial idea and sustained effort for the last seven years helped made R-Ladies the great community it is now. The following plot (by [Erin Ledell]((https://twitter.com/ledell)) clearly shows Gabriela’s impact in terms of the number of R-Ladies chapters founded since 2012.
 
+![R-Ladies groups over time](../../image/rladiesgrowth.png)
+
 As of today, R-Ladies is a worldwide organization that promotes gender diversity in the R community with 40k+ participants in 135+ cities of 45+ countries. Each chapter hosts regular meetups promoting professional and social exchanges. (If you are reading this some time after its publication, go to this [shiny app](https://gqueiroz.shinyapps.io/rshinylady/) to get current R-Ladies figures).
 
 Gabriela empowered thousands of people, especially women and minorities, working with R to connect and thrive. Her contribution to the community is difficult to quantify objectively, but it is huge and keeps growing fast worldwide.
