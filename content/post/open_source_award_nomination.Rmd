@@ -1,6 +1,6 @@
 ---
 title: "Gabriela's Women in Open Source Award Nomination"
-author: (See end of the post for the authors)
+author: See the end of the post for the authors
 date: '2019-02-20'
 description: 'Women in Open Source Award Nomination'
 tags:
@@ -15,10 +15,9 @@ categories:
 
 ![](../image/open-source-award.png)
 
+*Please help Gabriela (and all the R-Ladies) win the award by voting until **February 25th, 2019** [here](https://www.redhat.com/en/about/women-in-open-source).*
 
-*Please help Gabriela (and all the R-Ladies) win the award by voting until **February 25th, 2019** [here](https://www.redhat.com/en/about/women-in-open-source).* 
-
-*In this post, we tell you why we (all the authors listed above, except Gabriela, of course) nominated her for this [competitive award](https://twitter.com/spotrh/status/1072877761319092224?s=19) and why it would be great for all R-Ladies that Gabriela wins this award.*
+*In this post, we tell you why we (all the authors listed below, except Gabriela, of course) nominated her for this [competitive award](https://twitter.com/spotrh/status/1072877761319092224?s=19) and why it would be great for all R-Ladies that Gabriela wins this award.*
 
 ## Why did we nominate Gabriela?
 
@@ -31,7 +30,7 @@ Gabriela’s initial idea and sustained effort for the last seven years helped m
 
 As of today, R-Ladies is a worldwide organization that promotes gender diversity in the R community with **40k+ participants in 140+ cities of 45+ countries**. Each chapter hosts regular meetups promoting professional and social exchanges. (If you are reading this some time after its publication, go to this [shiny app](https://gqueiroz.shinyapps.io/rshinylady/) to get current R-Ladies figures).
 
-![](../image/rladies-map.png)
+![R-Ladies groups worldwide](../image/rladies-map.png)
 
 Gabriela empowered thousands of people, especially women and minorities, working with R to connect and thrive. Her contribution to the community is difficult to quantify objectively, but it is huge and keeps growing fast worldwide.
 
