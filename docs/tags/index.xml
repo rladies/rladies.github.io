@@ -21,6 +21,24 @@
     </item>
     
     <item>
+      <title>2019</title>
+      <link>/tags/2019/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>/tags/community/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>History</title>
       <link>/tags/history/</link>
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
@@ -35,6 +53,15 @@
       <pubDate>Tue, 17 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/iwd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>/tags/open-source/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/open-source/</guid>
       <description></description>
     </item>
     
