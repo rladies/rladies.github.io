@@ -6,10 +6,21 @@
     <description>Recent content in Posts on R-Ladies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gabriela&#39;s Women in Open Source Award Nomination</title>
+      <link>/post/open_source_award_nomination/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/open_source_award_nomination/</guid>
+      <description>We have amazing news! Gabriela de Queiroz is among the five finalists of the Red Hat’s Women in Open Source Award (community track).
+Please help Gabriela (and all the R-Ladies) win the award by voting until February 25th, 2019 here.
+In this post, we tell you why we (all the authors listed below, except Gabriela, of course) nominated her for this competitive award and why it would be great for all R-Ladies that Gabriela wins this award.</description>
+    </item>
     
     <item>
       <title>vacation &lt;- grow(RLadiesNetwork)</title>
