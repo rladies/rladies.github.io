@@ -29,7 +29,9 @@ Gabriela’s initial idea and sustained effort for the last seven years helped m
 
 ![R-Ladies groups over time](../image/rladies-global.png)
 
-As of today, R-Ladies is a worldwide organization that promotes gender diversity in the R community with *40k+ participants in 140+ cities of 45+ countries*. Each chapter hosts regular meetups promoting professional and social exchanges. (If you are reading this some time after its publication, go to this [shiny app](https://gqueiroz.shinyapps.io/rshinylady/) to get current R-Ladies figures).
+As of today, R-Ladies is a worldwide organization that promotes gender diversity in the R community with **40k+ participants in 140+ cities of 45+ countries**. Each chapter hosts regular meetups promoting professional and social exchanges. (If you are reading this some time after its publication, go to this [shiny app](https://gqueiroz.shinyapps.io/rshinylady/) to get current R-Ladies figures).
+
+![](../image/rladies-map.png)
 
 Gabriela empowered thousands of people, especially women and minorities, working with R to connect and thrive. Her contribution to the community is difficult to quantify objectively, but it is huge and keeps growing fast worldwide.
 
