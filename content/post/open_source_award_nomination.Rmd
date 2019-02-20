@@ -11,7 +11,7 @@ categories:
 - R-Ladies
 ---
 
-*We have amazing news! Gabriela de Queiroz is among the five finalists of the Red Hat’s Women in Open Source Award (community track).* 
+*We have amazing news! [Gabriela de Queiroz](https://www.linkedin.com/in/gabrieladequeiroz/) is among the five finalists of the Red Hat’s Women in Open Source Award (community track).* 
 
 ![](../image/open-source-award.png)
 
@@ -22,7 +22,7 @@ categories:
 
 ## Why did we nominate Gabriela?
 
-We nominated Gabriela because she founded the first chapter of R-Ladies in San Francisco in 2012. For four years, she organized R-Ladies San Francisco by herself and went to events and conferences to talk about R-Ladies. 
+We nominated Gabriela because she founded the first chapter of [R-Ladies](http://rladies.org/) in San Francisco in 2012. For four years, she organized R-Ladies San Francisco by herself and went to events and conferences to talk about R-Ladies. 
 During those years she steadily seeded the way and actively worked towards the foundation of [R-Ladies Global](https://rladies.org/) in June 2016 - together with [Erin Ledell](https://twitter.com/ledell), [Hannah Frick](https://twitter.com/hfcfrick), [Claudia Vitolo](https://twitter.com/clavitolo), [Alice Daish](https://twitter.com/alice_data), [Chiin-Rui Tan](https://rlaies.org/r-speakers/name/chiin-rui-tan), and [Rachel Kirkham](https://www.linkedin.com/in/rachel-kirkham-8a41402b/?originalSubdomain=uk) and the support of [Heather Turner](https://twitter.com/HeathrTurnr), [Hadley Wickham](https://twitter.com/hadleywickham), and the [R Consortium](https://twitter.com/RConsortium).
 
 Gabriela’s initial idea and sustained effort for the last seven years helped made R-Ladies the great community it is now. The following plot (by [Erin Ledell](https://twitter.com/ledell)) clearly shows Gabriela’s impact in terms of the number of R-Ladies chapters founded since 2012.
