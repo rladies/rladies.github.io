@@ -1,6 +1,6 @@
 ---
 title: "Gabriela's Women in Open Source Award Nomination"
-author: "Laura Acion (Argentina), Gabriela de Queiroz (USA), Liili Abuladze (Georgia), Yanina Bellini (Argentina), Jenny Bryan (Canada), Mine Cetinkaya-Rundel (USA), Fanny Chow (USA), Alyssa Columbus (USA), Patricia Cucio Guisordi (Brazil), Maria Florencia D’Andrea (Argentina), Natalia da Silva (Uruguay), Mine Dogucu (USA), Beatriz Hernández (Spain), Caitlin Hudon (USA), Soumya Kalra (USA), Jesse Mostipak (USA), Athanasia M. Mowinckel (Norway), Brett Ory (USA), Riva Quiroga (Chile), Emily Robinson (USA), Paloma Rojas (Bolivia), Sina Rüeger (Switzerland), Maëlle Salmon (France), Jennifer Thompson (USA), Heather Turner (UK), Brooke Watson (USA), Amy Yang (USA)"
+author: (See end of the post for the authors)
 date: '2019-02-20'
 description: 'Women in Open Source Award Nomination'
 tags:
@@ -13,7 +13,10 @@ categories:
 
 *We have amazing news! Gabriela de Queiroz is among the five finalists of the Red Hat’s Women in Open Source Award (community track).* 
 
-*Please help Gabriela (and all the R-Ladies) win the award by voting until February 25th, 2019 [here](https://www.redhat.com/en/about/women-in-open-source).* 
+![](../image/open-source-award.png)
+
+
+*Please help Gabriela (and all the R-Ladies) win the award by voting until **February 25th, 2019** [here](https://www.redhat.com/en/about/women-in-open-source).* 
 
 *In this post, we tell you why we (all the authors listed above, except Gabriela, of course) nominated her for this [competitive award](https://twitter.com/spotrh/status/1072877761319092224?s=19) and why it would be great for all R-Ladies that Gabriela wins this award.*
 
@@ -52,4 +55,8 @@ Last year, R-Ladies became an [R Consortium](https://www.r-consortium.org/) top-
 
 We are very excited with Gabriela’s achievement of being one of the finalists for the Red Hat Women in Open Source Award because this extends the visibility of R-Ladies well beyond the R ecosystem into the larger Open Source world, [where R-Ladies mission could have yet a wider impact](https://www.theverge.com/2018/10/22/18011854/linus-torvalds-linux-kernel-development-return-code-of-conduct). Having Gabriela as the winner of this Open Source community award will take the visibility of R-Ladies to the next level. It will give the possibility of expanding [the R-Ladies way](https://d4tagirl.com/2017/01/the-r-ladies-way) all over making the Open Source community a better place for gender minorities in tech, new programmers, and everyone in general.
 
+![](../image/rladies-rstudio2019.png)
+
+-----
+Contributed authors: Laura Acion (Argentina), Gabriela de Queiroz (USA), Liili Abuladze (Georgia), Yanina Bellini (Argentina), Jenny Bryan (Canada), Mine Cetinkaya-Rundel (USA), Fanny Chow (USA), Alyssa Columbus (USA), Patricia Cucio Guisordi (Brazil), Maria Florencia D’Andrea (Argentina), Natalia da Silva (Uruguay), Mine Dogucu (USA), Beatriz Hernández (Spain), Caitlin Hudon (USA), Soumya Kalra (USA), Jesse Mostipak (USA), Athanasia M. Mowinckel (Norway), Brett Ory (USA), Riva Quiroga (Chile), Emily Robinson (USA), Paloma Rojas (Bolivia), Sina Rüeger (Switzerland), Maëlle Salmon (France), Jennifer Thompson (USA), Heather Turner (UK), Brooke Watson (USA), Amy Yang (USA).
 
