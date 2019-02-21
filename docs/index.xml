@@ -6,21 +6,10 @@
     <description>Recent content on R-Ladies</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Gabriela&#39;s Women in Open Source Award Nomination</title>
-      <link>/post/open_source_award_nomination/</link>
-      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/open_source_award_nomination/</guid>
-      <description>We have amazing news! Gabriela de Queiroz is among the five finalists of the Red Hat’s Women in Open Source Award (community track).
-Please help Gabriela (and all the R-Ladies) win the award by voting until February 25th, 2019 here.
-In this post, we tell you why we (all the authors listed below, except Gabriela, of course) nominated her for this competitive award and why it would be great for all R-Ladies that Gabriela wins this award.</description>
-    </item>
     
     <item>
       <title>vacation &lt;- grow(RLadiesNetwork)</title>
@@ -78,8 +67,7 @@ The R-Ladies Global Team instigated a unique initiative to increase female visib
       <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/history/</guid>
-      <description>Gabriela de Queiroz founded R-Ladies on October 1, 2012. She wanted to give back to the community after going to several meetups and learning a lot for free. The first meetup was placed in San Francisco, California (United States).
-In the following years two more R-Ladies chapters started around the globe: Twin Cities and Taipei. R-Ladies London was the fourth chapter, which launched in March 2016. Although each chapter started working independently, the need for high-level coordination and support became evident at useR!</description>
+      <description>R-Ladies was founded by Gabriela de Queiroz. She wanted to do something to give back to the R learning community after going to several meetups and learning a lot for free. The first meetup took place in San Francisco, California (United States) on October 1, 2012. In the following years two more R-Ladies chapters launched independently around the world : Twin Cities, USA and Taipei. R-Ladies London launched in March 2016.</description>
     </item>
     
   </channel>
