@@ -87,11 +87,11 @@ ladies &lt;- dplyr::mutate(ladies, twitter = stringr::str_replace(social_network
 <h2>Webshooting and random complimenting</h2>
 <p>What does posting R-Ladies profile mean? I decided a good recipe for a tweet was:</p>
 <ul>
-<li><p>A screenshot of the R-Ladies directory entry, since it’d mean an image, and since it contains important information about the talents and interests of each lady</p></li>
+<li><p>A screenshot of the R-Ladies directory entry, since it’d mean an image, and since it contains important information about the talents and interests of each R-Lady</p></li>
 <li><p>The #rladies and #iwd2018 hashtags (Thanks to <a href="http://www.heatherturner.net">Heather Turner</a> for showing me where to find the official hashtag in advance!) to increase visibility of the feed and to promote our hashtag.</p></li>
 <li><p>Random compliments to make it friendlier and more fun</p></li>
-<li><p>A direct link to the directory entry to drive traffic to the directory and allow the tweet reader to really go learn more about the lady, since most entries list other profiles such as a personal website or GitHub account</p></li>
-<li><p>The Twitter handle of the lady if available to help their visibility</p></li>
+<li><p>A direct link to the directory entry to drive traffic to the directory and allow the tweet reader to really go learn more about the R-Lady, since most entries list other profiles such as a personal website or GitHub account</p></li>
+<li><p>The Twitter handle of the R-Lady if available to help their visibility</p></li>
 </ul>
 <div id="preparing-the-tweets" class="section level3">
 <h3>Preparing the tweets</h3>
@@ -145,7 +145,7 @@ readr::write_csv(ladies, path = &quot;data/ready_tweets.csv&quot;)
 </div>
 <div id="webshooting-the-directory" class="section level3">
 <h3>Webshooting the directory</h3>
-<p>The directory was webshot using the <code>webshot</code> and <code>magick</code> package, with the following function that takes the URL to an entry and the ID of a lady as arguments.</p>
+<p>The directory was webshot using the <code>webshot</code> and <code>magick</code> package, with the following function that takes the URL to an entry and the ID of a R-Lady as arguments.</p>
 <pre class="r"><code>get_shot &lt;- function(url, person){
   # webshoot the directory
   webshot::webshot(url, selector = &quot;#cn-list-body&quot;, expand = 10)
