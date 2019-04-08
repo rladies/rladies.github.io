@@ -1,0 +1,47 @@
+---
+title: "R-Ladies Global's disapproval of DataCamp"
+author: "R-Ladies Global Team"
+date: "2019-04-09"
+description: "R-Ladies Global disapproval of DataCamp's handling of sexual harrassment"
+tags: 
+- vcommunity
+categories:
+- r-ladies
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+_This blog post is a condensed format of the [official statement R-Ladies Global made via Twitter](https://twitter.com/RLadiesGlobal/status/1114507499728769024), in a form that is easier to share for non Twitter-users._
+
+# Why we condem DataCamp's handling of sexual assault
+
+We are very disappointed by the way @DataCamp handled the sexual assault of an employee by a C-level executive. We strongly support the target who is a member of our community and condemn DataCamp for their lack of accountability and transparency around this issue. As remarked by [`just_reply`](https://twitter.com/no_reply/status/1113923302915837958), DataCamp "quietly published [a "community" post](https://www.datacamp.com/community/blog/note-to-our-community) , in which they admit an executive sexually assaulted ("uninvited physical contact") an employee."
+
+We applaud the collective action from the DataCamp instructor community for pushing for this accountability and transparency. As [explained by Erin LeDell](v), "After *many months* of collective negotiating by the instructor community to demand more transparency & accountability, [DataCamp] still did nothing. Their public announcement is a response to a letter we sent to DataCamp one day prior, signed by over 100 DataCamp instructors.".
+
+We are not satisfied with the response from DataCamp. As underlined by [Julia Silge](https://twitter.com/juliasilge/status/1113996214561923072) and [Mara Averick](https://twitter.com/dataandme/status/1113939480300355584), the post used "details in victim-blaming ways".
+
+# How can you stand up for more accountability?
+
+If you are unsatisfied with their actions & response, you can use your voice and your wallet to vote for more accountability. Below we are summarizing ideas from a [thread started by Jesse Mostipak](https://twitter.com/kierisi/status/1113945904698892289), with contributions from [Chris Engelhardt](https://twitter.com/EngelhardtCR), [Laura Ación](https://twitter.com/_lacion_/status/1113960425174052864), [Bruna Wunderwald](https://twitter.com/bwundervald/status/1114907322441244672).
+
+1. Cancel your subscription.
+
+2. Cancel your organization's subscription.
+
+3. Remove links/recommendations to use DataCamp from your material.
+
+4. Stop developing content/lectures for them. Folks who are not customers can alter behavior as well.
+
+5. take your DataCamp stickers off your laptop/car/water bottle/ etc. 6. just say "No." when they ask you to do a podcast.
+
+7. Don't accept #DataCamp as the sponsor of events you organize.
+
+8. Delete your account (even if you don't have a paid subscription anymore).
+
+9. Remove your tweets containing “DataCamp" by searching `DataCamp from:@youruser` (replace `@youruser` by your own handle) in Twitter search and deleting the old tweets that endorsed they in any way.
+
+
