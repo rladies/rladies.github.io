@@ -18,7 +18,7 @@ _This blog post is a condensed format of the [official statement R-Ladies Global
 
 # Why we condem DataCamp's handling of sexual assault
 
-We are very disappointed by the way @DataCamp handled the sexual assault of an employee by a C-level executive. We strongly support the target who is a member of our community and condemn DataCamp for their lack of accountability and transparency around this issue. As remarked by [`just_reply`](https://twitter.com/no_reply/status/1113923302915837958), DataCamp "quietly published [a "community" post](https://www.datacamp.com/community/blog/note-to-our-community) , in which they admit an executive sexually assaulted ("uninvited physical contact") an employee."
+We are very disappointed by the way DataCamp handled the sexual assault of an employee by a C-level executive. We strongly support the target who is a member of our community and condemn DataCamp for their lack of accountability and transparency around this issue. As remarked by [`just_reply`](https://twitter.com/no_reply/status/1113923302915837958), DataCamp "quietly published [a "community" post](https://www.datacamp.com/community/blog/note-to-our-community) , in which they admit an executive sexually assaulted ("uninvited physical contact") an employee."
 
 We applaud the collective action from the DataCamp instructor community for pushing for this accountability and transparency. As [explained by Erin LeDell](v), "After *many months* of collective negotiating by the instructor community to demand more transparency & accountability, [DataCamp] still did nothing. Their public announcement is a response to a letter we sent to DataCamp one day prior, signed by over 100 DataCamp instructors.".
 
