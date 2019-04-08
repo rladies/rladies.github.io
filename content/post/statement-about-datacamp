@@ -1,0 +1,19 @@
+---
+title: "R-Ladies Global's disapproval of DataCamp"
+author: "R-Ladies Global Team"
+date: "2019-04-09"
+description: "R-Ladies Global disapproval of DataCamp's handling of sexual harrassment"
+tags: 
+- vcommunity
+categories:
+- r-ladies
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+_This blog post is a condensed format of the [official statement R-Ladies Global made via Twitter](https://twitter.com/RLadiesGlobal/status/1114507499728769024), in a form that is easier to share for non Twitter-users._
+
+We are very disappointed by the way @DataCamp handled the sexual assault of an employee by a C-level executive. We strongly support the target who is a member of our community and condemn DataCamp for their lack of accountability and transparency around this issue. As remarked by [`just_reply` on Twitter](https://twitter.com/no_reply/status/1113923302915837958), DataCamp "[a "community" post](https://www.datacamp.com/community/blog/note-to-our-community) , in which they admit an executive sexually assaulted ("uninvited physical contact") an employee."
