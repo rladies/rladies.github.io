@@ -10,7 +10,7 @@ tags:
 categories:
 - IWD
 - 2019
-- R-Ladies
+- r-ladies
 output: html_document
 ---
 
@@ -58,7 +58,7 @@ The Current Chapter list contains the information of the country, city, name, or
 
 
 
-```{r eval=FALSE}
+```r
 library(readxl)
 library(magick)
 library(purrr)
@@ -291,7 +291,7 @@ For the chapters in the process of creation, we do not have contact information,
 
 ![](../../image/NewChapterPrototype.png)
 
-```{r eval=FALSE}
+```r
 #Chapters without data
 
 # We dont have contact information for this chapter, so we replace the info with a picture
