@@ -58,7 +58,7 @@ Text Processing (including non-English charectors) is explained [here](https://w
 ## How the Pictures were created
 The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies. It became our primary data source.  We also used a list of cities geolocated for made the maps.  Our goal was to achieve an image with the following components:
 
-![](../image/ExistingChapters.jpg)
+![](../../image/ExistingChapters.jpg)
 
 
 
@@ -293,7 +293,7 @@ for (i in 1:nrow(CCRL)) { #Line for all the chapters
 
 For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:
 
-![](../image/NewChapterPrototype.png)
+![](../../image/NewChapterPrototype.png)
 
 ```{r eval=FALSE}
 #Chapters without data
