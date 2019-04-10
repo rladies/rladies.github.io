@@ -59,4 +59,4 @@ Any women or gender minorities who want to discuss this matter (or any other) wi
 
 Let's keep working on a safe community for everyone!
 
--- The R-Ladies Global Leadership Team (Gabriela de Queiroz, Hannah Frick, Erin LeDell, and Claudia Vitolo) with Laura Ación and Maëlle Salmon (members of the [R-Ladies Global Team](https://rladies.org/about-us/team/))
+-- _The R-Ladies Global Leadership Team (Gabriela de Queiroz, Hannah Frick, Erin LeDell, and Claudia Vitolo) with Laura Ación and Maëlle Salmon (members of the [R-Ladies Global Team](https://rladies.org/about-us/team/))_
