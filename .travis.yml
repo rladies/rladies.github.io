@@ -9,10 +9,6 @@ branches:
   only:
     - master
 
-## Use patched devtools
-r_github_packages:
-  - hadley/devtools@efa894ffa
-
 before_script:
 # This workaround is required to avoid libstdc++ errors while running "extended" hugo with SASS support.
   - wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
