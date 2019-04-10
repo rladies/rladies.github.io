@@ -1,7 +1,7 @@
 ---
 title: "IWD 2019 Twitter Action"
 author: "As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz"
-date: "2019-04-25"
+date: "2019-03-25"
 description: "Explaining IWD 2019 Twitter project"
 tags:
 - iwd
