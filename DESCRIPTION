@@ -5,4 +5,4 @@ Description: The source code for the R-ladies website
 Encoding: UTF-8
 Imports:
     blogdown
-Remotes:
+Remotes: hadley/devtools@efa894ffa
