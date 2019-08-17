@@ -1,0 +1,43 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+
+library(purrr)
+library(dplyr)
+library(kableExtra)
+```
+
+
+```{r parse, include=FALSE}
+csv <- 'https://raw.githubusercontent.com/rladies/starter-kit/master/Current-Chapters.csv'
+chapters <- readr::read_csv(csv) %>%
+  filter(Status == 'Active') %>%
+  select(Country, `State.Region`, City, Meetup) %>%
+  rename(MeetupLink = Meetup)
+
+```
+
+```{r content, echo=F}
+
+render_link <- function(word, link) {
+   link <- paste0("[", word, "](", link, ")")
+   return(tibble(Meetup = link))
+}
+
+links <- bind_cols(chapters, map2_dfr(chapters$City, chapters$MeetupLink, render_link))
+links %>%
+  select(Country, Meetup) %>%
+  rename(City = Meetup) %>%
+  group_by(Country) %>% 
+  arrange(City, .by_group = T) %>% 
+  kable(align = "rl") %>%
+  kable_styling(full_width = F) %>%
+  column_spec(1, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+If you are interested in starting an R-Ladies meetup group in your city, or would like more information about starting a meetup group, reach out at **info**[at]**rladies**[dot]**org**
+

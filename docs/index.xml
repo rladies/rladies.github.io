@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R-Ladies Global</title>
+    <link>/</link>
+    <description>Recent content on R-Ladies Global</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test</title>
+      <link>/post/test/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>Vivamus Lacus Mauris</title>
+      <link>/post/vivamus-lacus-mauris/</link>
+      <pubDate>Mon, 17 Jun 2013 12:00:00 +0000</pubDate>
+      
+      <guid>/post/vivamus-lacus-mauris/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, rerum voluptates veniam. Esse, nihil, ea, eaque, quos cum id tempore voluptate nisi nemo debitis impedit officiis culpa repellat voluptatum in aperiam error quo minima ratione ex pariatur maxime eligendi dolore nesciunt molestiae enim alias atque commodi delectus perferendis. Blanditiis, iste placeat nostrum in! Eligendi, omnis, unde, quos ullam nesciunt molestias quis a saepe nisi distinctio molestiae voluptate obcaecati officiis consequuntur similique aspernatur rerum sequi placeat iure quaerat itaque libero officia recusandae ad corrupti aperiam cum beatae.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/service/chapters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/service/chapters/</guid>
+      <description>Country  City      Argentina  Bariloche    Buenos Aires    Córdoba    La Plata    Mendoza    Resistencia-Corrientes    Santa Fe    Santa Rosa    Ushuaia    Australia  Adelaide    Brisbane    Canberra    Melbourne    Perth    Sydney    Austria  Linz    Vienna    Belgium  Brussels    Leuven    Benin  Cotonou    Bolivia  La Paz    Brazil  Americana    Belo Horizonte    Curitiba    Florianópolis    Lavras    Natal    Niteroi    Porto Alegre    Rio de Janeiro    Salvador    São Paulo    Canada  London    Montréal    Ottawa    Toronto    Vancouver    Victoria    Waterloo    Chile  Concepción    Santiago de Chile    Valparaíso    China  Beijing    Colombia  Bogotá    Costa Rica  San José    Denmark  Copenhagen    Ecuador  Guayaquil    Quito    Ethiopia  Addis Ababa    Finland  Helsinki    France  Lyon    Montpellier    Paris    Strasbourg    Georgia  Tbilisi    Germany  Berlin    Frankfurt    Freiburg    Munich    Hong Kong  Hong Kong    Hungary  Budapest    India  Chennai    Tiruchirappalli    Indonesia  Bogor    Ireland  Dublin    Italy  Bari    Milan    Mexico  Cuernavaca    Mexico City    Queretaro    Xalapa    Montenegro  Herceg Novi    Morocco  Rabat    Nepal  Kathmandu    Netherlands  Amsterdam    Den Bosch    Nijmegen    Rotterdam    Wageningen    New Zealand  Auckland    Nelson    Nigeria  Lagos    Norway  Oslo    Peru  Lima    Poland  Warsaw    Portugal  Lisbon    Remote  NA    Serbia  Belgrade    South Africa  Cape Town    Johannesburg    Spain  Barcelona    Bilbao    Madrid    Valencia    Sweden  Stockholm    Switzerland  Lausanne    Taiwan  Taipei    Turkey  Istanbul    Izmir    Ukraine  Kyiv    United Kingdom  Cambridge    Edinburgh    Exeter    Lancaster    Liverpool    London    Loughborough    Manchester    Newcastle    Uruguay  Montevideo    USA  Ames    Atlanta    Austin    Baltimore    Boston    Boulder    Buffalo    Charlottesville    Chicago    Cincinnati    Columbus    D.</description>
+    </item>
+    
+    <item>
+      <title>Get Involved</title>
+      <link>/involved/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/involved/</guid>
+      <description>Support your local chapters with venue space and funding for food and beverages. Support your local R-Ladies speakers by inviting them to talk – no excuses for unequal conference speaker ratios. Use the R-Ladies directory here Join the R-Ladies directory here Encourage coding women to be part of R-Ladies Share code (R-Ladies Global Github) Inspire and support others Join the community slack here Teach Blog Tweet, Retweet and follow @RLadiesGlobal and R-Ladies chapter accounts And if you are an R-Lady and want to start a chapter near you, please get in touch via info@rladies.</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>/history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/history/</guid>
+      <description>Gabriela de Queiroz founded R-Ladies on October 1, 2012. She wanted to give back to the community after going to several meetups and learning a lot for free. The first meetup was placed in San Francisco, California (United States). In the following years two more R-Ladies chapters started around the globe: Twin Cities and Taipei. R-Ladies London was the fourth chapter, which launched in March 2016. Although each chapter started working independently, the need for high-level coordination and support became evident at useR!</description>
+    </item>
+    
+    <item>
+      <title>Meet the global team</title>
+      <link>/global-team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/global-team/</guid>
+      <description> Leadership Team   Alice Daish Hannah Frick Erin LeDell Gabriela de Queiroz Claudia Vitolo            Masters team     Bea Hernández Laura Acion Maëlle Salmon    Web development On boarding Social media  R-Ladies Madrid Organizer R-Ladies Buenos Aires Organizer Former R-Ladies Barcelona Organizer            Jennifer Thompson Abigail Lebrecht Sheila Saia Page Piccinni    Conference abstract Blog Directory Directory  R-Ladies Nashville Organizer R-Ladies Remote Organizer R-Ladies RTP Organizer R-Ladies San Diego Organizer           </description>
+    </item>
+    
+    <item>
+      <title>Mission</title>
+      <link>/mission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mission/</guid>
+      <description>R-LADIES IS A WORLDWIDE ORGANIZATION WHOSE MISSION IS TO PROMOTE GENDER DIVERSITY IN THE R COMMUNITY.
+The R community suffers from an underrepresentation of minority genders (including but not limited to cis/trans women, trans men, non-binary, genderqueer, agender) in every role and area of participation, whether as leaders, package developers, conference speakers, conference participants, educators, or users (see recent stats).
+As a diversity initiative, the mission of R-Ladies is to achieve proportionate representation by encouraging, inspiring, and empowering people of genders currently underrepresented in the R community.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<div class="row section topspace">
+    <div class="col-md-12">
+        <p class="lead text-center text-muted">
+            List of locations of currently active R-Ladies meetup groups.
+        </p>
+    </div>
+</div>
+<div class="row section featured topspace">
+
+    <h2 class="section-title"><span>Chapters</span></h2>
+
+    <div class="">
+        {{ range where .Data.Pages "Section" "service" }}
+        <div class="col-sm-12 col-md-12">
+            <h3 class="text-center">{{ .Title }}</h3>
+            <p>{{ .Content }}</p>
+        </div>
+        {{ end }}
+    </div>
+
+</div>
+<!-- / section -->

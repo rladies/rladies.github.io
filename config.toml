@@ -1,0 +1,115 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "R-Ladies Global"
+theme = "hugo-initio"
+publishDir = "docs"
+ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
+
+[params]
+    name = "R-Ladies Global"
+    description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+    email = "info@rladies.org"
+    #phone = "+234 23 9873237"
+    #address = "234 Hidden Pond Road, Ashland City, TN 37015"
+    year = 2013
+    avatar = "images/logo.png"
+    background = "images/header.jpg"
+    favicon = "images/favicon.png"
+    DateForm = "January 2, 2006"
+
+    showSubheader = false
+    showServices = true
+    showRecentWorks = false
+    showDownload = false
+    showClients = true
+
+    footerEnableContact = true
+    footerEnableFollowme = true
+    footerEnableTextWidget = true
+    footerEnableFormWidget = true
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1   
+[[menu.main]]
+    name = "About us"
+    url = "#"
+    identifier = "about-us"
+    weight = 2
+[[menu.main]]
+    name = "Mission"
+    url = "/mission/"
+    weight = 1
+    parent = "about-us"
+[[menu.main]]
+    name = "Get involved"
+    url = "/involved/"
+    weight = 2
+    parent = "about-us"
+[[menu.main]]
+    name = "Meet the global team"
+    url = "/global-team/"
+    weight = 3
+    parent = "about-us"
+[[menu.main]]
+    name = "History"
+    url = "/history/"
+    weight = 4
+    parent = "about-us"
+[[menu.main]]
+    name = "R-Ladies Directory"
+    url = "/directory/"
+    weight = 3
+[[menu.main]]
+    name = "Events"
+    url = "/events/"
+    weight = 4
+[[menu.main]]
+    name = "Blog"
+    url = "https://blog.rladies.org/"
+    weight = 5
+[[menu.main]]
+    name = "Contact us"
+    url = "/contact/"
+    weight = 6
+[[menu.main]]
+    name = "Sponsors"
+    url = "/sponsors/"
+    weight = 7
+
+[params.sharethis]
+    property = "123456789012345678901234"
+    custom = true
+
+[params.google.analytics]
+    trackerID = "GA-000000000-0"
+
+[[params.social]]
+	title = "twitter"
+	url = "https://twitter.com/RLadiesGlobal"
+    icon = "fab fa-twitter-square"
+    footer = true
+    sharethis = true
+    network = "twitter"
+[[params.social]]
+	title = "instagram"
+	url = "https://www.instagram.com/rladiesglobal"
+    icon = "fab fa-instagram"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+	title = "github"
+	url = "https://github.com/rladies"
+    icon = "fab fa-github-square"
+    footer = true
+    sharethis = false
+    network = ""
+[[params.social]]
+	title = "email"
+	url = "mailto:info@rladies.org"
+    icon = "fas fa-envelope-square"
+    footer = true
+    sharethis = true
+    network = "email"
