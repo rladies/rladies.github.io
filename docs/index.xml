@@ -50,6 +50,15 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
+      <title>Code of Conduct</title>
+      <link>/coc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/coc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Get Involved</title>
       <link>/involved/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

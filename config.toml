@@ -9,8 +9,7 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     name = "R-Ladies Global"
     description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
     email = "info@rladies.org"
-    #phone = "+234 23 9873237"
-    #address = "234 Hidden Pond Road, Ashland City, TN 37015"
+    coc = "/coc/"
     year = 2013
     avatar = "images/logo.png"
     background = "images/header.jpg"
@@ -70,13 +69,9 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     url = "https://blog.rladies.org/"
     weight = 5
 [[menu.main]]
-    name = "Contact us"
-    url = "/contact/"
-    weight = 6
-[[menu.main]]
     name = "Sponsors"
     url = "/sponsors/"
-    weight = 7
+    weight = 6
 
 [params.sharethis]
     property = "123456789012345678901234"

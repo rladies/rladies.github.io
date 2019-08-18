@@ -4,7 +4,11 @@ output: html_document
 slug: involved
 ---
 
+<center>
+
 ![](../images/rladies-help.png)
+
+</center>
 
 - Support your local chapters with venue space and funding for food and beverages.
 - Support your local R-Ladies speakers by inviting them to talk – no excuses for unequal conference speaker ratios.
