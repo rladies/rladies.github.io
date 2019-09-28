@@ -4,25 +4,29 @@ output: html_document
 slug: global-team
 ---
 
-### Leadership Team
 
-| Alice Daish | Hannah Frick | Erin LeDell | Gabriela de Queiroz | Claudia Vitolo |
-|:-:|:-:|:-:|:-:|:-:|
-| ![Alice Daish](https://github.com/rladies/rladies-website/blob/master/docs/images/alicedaish.jpg?raw=true) | ![Hannah Frick](https://github.com/rladies/rladies-website/blob/master/docs/images/hannahfrick.jpg?raw=true) | ![Erin LeDell](https://github.com/rladies/rladies-website/blob/master/docs/images/erinledell.jpg?raw=true) | ![Gabriela de Queiroz](https://github.com/rladies/rladies-website/blob/master/docs/images/gabrieladequeiroz.jpg?raw=true) | ![Claudia Vitolo](https://github.com/rladies/rladies-website/blob/master/docs/images/claudiavitolo.jpg?raw=true) |
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+
+library(purrr)
+library(dplyr)
+library(kableExtra)
+library(tidyr)
+```
 
 
+```{r parse, include=FALSE}
+csv <- 'https://raw.githubusercontent.com/rladies/starter-kit/master/global-team.csv'
+team <- readr::read_csv(csv) %>%
+  separate_rows(title, sep = ",")
 
+```
 
-##### Masters team
+```{r content, echo=F}
+team %>% 
+  kable(align = "rl") %>%
+  kable_styling(full_width = F) %>%
+  column_spec(2, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
 
-| Bea Hernández | Laura Acion | Maëlle Salmon |
-|:-:|:-:|:-:|
-| Web development | On boarding | Social media |
-| R-Ladies Madrid Organizer | R-Ladies Buenos Aires Organizer | Former R-Ladies Barcelona Organizer |
-| ![Bea Hernández](https://github.com/rladies/rladies-website/blob/master/docs/images/beahernandez.jpg?raw=true) | ![Laura Acion](https://github.com/rladies/rladies-website/blob/master/docs/images/lauraacion.jpg?raw=true) | ![Maëlle Salmon](https://github.com/rladies/rladies-website/blob/master/docs/images/maellesalmon.jpg?raw=true) |
-
-| Jennifer Thompson | Abigail Lebrecht | Sheila Saia | Page Piccinni |
-|:-:|:-:|:-:|:-:|
-| Conference abstract | Blog | Directory | Directory |
-| R-Ladies Nashville Organizer | R-Ladies Remote Organizer | R-Ladies RTP Organizer | R-Ladies San Diego Organizer |
-| ![Jennifer Thompson](https://github.com/rladies/rladies-website/blob/master/docs/images/jenniferthompson.jpg?raw=true) | ![Abigail Lebrecht](https://github.com/rladies/rladies-website/blob/master/docs/images/abigaillebrecht.jpg?raw=true) | ![Sheila Saia](https://github.com/rladies/rladies-website/blob/master/docs/images/sheilasaia.jpg?raw=true) | ![Page Piccinni](https://github.com/rladies/rladies-website/blob/master/docs/images/pagepiccinni.png?raw=true) |

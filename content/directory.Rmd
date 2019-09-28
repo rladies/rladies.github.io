@@ -1,0 +1,24 @@
+---
+title: "R-Ladies Directory"
+output: html_notebook
+slug: directory
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, include = FALSE, echo = F)
+
+library(leaflet)
+library(widgetframe)
+
+data <- jsonlite::fromJSON("text/test-directory.json")
+
+
+m <- leaflet() %>%
+  addProviderTiles(providers$CartoDB.Positron) %>% 
+  addMarkers(lng=-1.39595, lat=50.93463, popup="Southampton University")
+```
+
+```{r map, include=T}
+frameWidget(m)
+```
