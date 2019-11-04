@@ -47,7 +47,10 @@ rgrey <- "#a7a9ac"
 # new, but then need a good way to "dump" past events into
 # csv when they become "past". 
 events <- get_pro_events("rladies") %>% 
-#  bind_rows(get_pro_events("rladies", "past")) %>% 
+  mutate(type = "planned") %>% 
+  bind_rows(
+    mutate(get_pro_events("rladies", "past"), type="past")
+    ) %>%
   transmute(
     calendarId = chapter,
     title = name, 
@@ -62,7 +65,10 @@ events <- get_pro_events("rladies") %>%
     location = ifelse(
       is.na(venue_name), "Not announced",
       paste(venue_name, venue_address_1, venue_city, str_to_upper(venue_country), sep=", ")),
-    category = "time"
+    category = "time",
+    lat = venue_lat,
+    lon = venue_lon,
+    type = type
   ) %>%  
   as_tibble()
 
@@ -124,7 +130,7 @@ theme_calendar_month <- list(
 )
 ```
 
-```{r calendar, echo=FALSE}
+```{r "calendar", echo=FALSE}
 # remotes::install_github("dreamRs/tuicalendr")
 library(tuicalendr)
 
@@ -137,6 +143,27 @@ calendar(
   set_calendars_props_df(cals) %>% 
   add_schedule_df(events)
 ```
+
+```{r "leaflet", echo=FALSE, warning=FALSE, out.width='100%'}
+library(leaflet)
+
+sz <- c(31, 23)
+events %>% 
+  filter(type == "planned") %>% 
+  leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lat= ~lat, lng= ~lon,
+             popup = ~body, 
+             label = ~calendarId, 
+             icon = list(
+               iconUrl = "static/images/marker.svg",
+               iconSize = sz,
+               iconAnchorX = sz[2]/2, 
+               iconAnchorY = sz[1]
+             ),
+             clusterOptions = markerClusterOptions())
+```
+
 
 ```{r, include=FALSE}
 # calendar week theme ----
