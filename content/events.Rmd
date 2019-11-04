@@ -156,7 +156,7 @@ events %>%
              popup = ~body, 
              label = ~calendarId, 
              icon = list(
-               iconUrl = "static/images/marker.svg",
+               iconUrl = paste0(here::here(),"/static/images/marker.svg"),
                iconSize = sz,
                iconAnchorX = sz[2]/2, 
                iconAnchorY = sz[1]
