@@ -14,7 +14,7 @@ library(ggmap)
 library(purrr)
 library(dplyr)
 
-#register_google(key = "AIzaSyCZ2J7fgbcyROdMYwr9fTzKQ2dCgZKqsMU")
+#register_google(key = "")
 
 files <- list.files("text", pattern = '.json$', full.names = T) %>% 
   map(~ jsonlite::read_json(.x))
