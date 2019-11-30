@@ -10,13 +10,26 @@ knitr::opts_chunk$set(collapse = TRUE, include = FALSE, echo = F)
 
 library(leaflet)
 library(widgetframe)
+library(ggmap)
+library(purrr)
+library(dplyr)
 
-data <- jsonlite::fromJSON("text/test-directory.json")
+#register_google(key = "AIzaSyCZ2J7fgbcyROdMYwr9fTzKQ2dCgZKqsMU")
 
+files <- list.files("text", pattern = '.json$', full.names = T) %>% 
+  map(~ jsonlite::read_json(.x))
 
-m <- leaflet() %>%
+geocodes <- map_dfr(files, magrittr::extract, c("city", "country")) %>% 
+  distinct() %>% 
+  mutate(string = paste0(city, ", ", country),
+         url = paste0("http://127.0.0.1:4321/directory/", country),
+         popup = paste0("<a href='", url, "'>", string, "</a>")) %>% 
+  cbind(map_dfr(.$string, geocode))
+
+m <- leaflet(geocodes) %>%
+  setView(lng = 0, lat = 0, zoom = 01) %>% 
   addProviderTiles(providers$CartoDB.Positron) %>% 
-  addMarkers(lng=-1.39595, lat=50.93463, popup="Southampton University")
+  addMarkers(lng = ~lon, lat = ~lat, popup = ~popup)
 ```
 
 ```{r map, include=T}

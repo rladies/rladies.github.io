@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -1484,7 +1483,7 @@ window.initializeCodeFolding = function(show) {
 
     // create a collapsable div to wrap the code in
     var div = $('<div class="collapse r-code-collapse"></div>');
-    if (show)
+    if (show || $(this)[0].classList.contains('fold-show'))
       div.addClass('in');
     var id = 'rcode-643E0F36' + currentIndex++;
     div.attr('id', id);
@@ -1614,7 +1613,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -1700,6 +1698,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -1754,12 +1753,9 @@ summary {
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZnJhbWVXaWRnZXQobSlcbmBgYCJ9 -->
-<pre class="r"><code>frameWidget(m)</code></pre>
-<!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiUi1MYWRpZXMgRGlyZWN0b3J5IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKc2x1ZzogZGlyZWN0b3J5Ci0tLQoKCmBgYHtyIHNldHVwLCBpbmNsdWRlPUZBTFNFfQprbml0cjo6b3B0c19jaHVuayRzZXQoY29sbGFwc2UgPSBUUlVFLCBpbmNsdWRlID0gRkFMU0UsIGVjaG8gPSBGKQoKbGlicmFyeShsZWFmbGV0KQpsaWJyYXJ5KHdpZGdldGZyYW1lKQoKZGF0YSA8LSBqc29ubGl0ZTo6ZnJvbUpTT04oInRleHQvdGVzdC1kaXJlY3RvcnkuanNvbiIpCgoKbSA8LSBsZWFmbGV0KCkgJT4lCiAgYWRkUHJvdmlkZXJUaWxlcyhwcm92aWRlcnMkQ2FydG9EQi5Qb3NpdHJvbikgJT4lIAogIGFkZE1hcmtlcnMobG5nPS0xLjM5NTk1LCBsYXQ9NTAuOTM0NjMsIHBvcHVwPSJTb3V0aGFtcHRvbiBVbml2ZXJzaXR5IikKYGBgCgpgYGB7ciBtYXAsIGluY2x1ZGU9VH0KZnJhbWVXaWRnZXQobSkKYGBgCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiUi1MYWRpZXMgRGlyZWN0b3J5IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKc2x1ZzogZGlyZWN0b3J5Ci0tLQoKCmBgYHtyIHNldHVwLCBpbmNsdWRlPUZBTFNFfQprbml0cjo6b3B0c19jaHVuayRzZXQoY29sbGFwc2UgPSBUUlVFLCBpbmNsdWRlID0gRkFMU0UsIGVjaG8gPSBGKQoKbGlicmFyeShsZWFmbGV0KQpsaWJyYXJ5KHdpZGdldGZyYW1lKQpsaWJyYXJ5KGdnbWFwKQpsaWJyYXJ5KHB1cnJyKQpsaWJyYXJ5KGRwbHlyKQoKI3JlZ2lzdGVyX2dvb2dsZShrZXkgPSAiQUl6YVN5Q1oySjdmZ2JjeVJPZE1Zd3I5ZlR6S1EyZENnWktxc01VIikKCmZpbGVzIDwtIGxpc3QuZmlsZXMoInRleHQiLCBwYXR0ZXJuID0gJy5qc29uJCcsIGZ1bGwubmFtZXMgPSBUKSAlPiUgCiAgbWFwKH4ganNvbmxpdGU6OnJlYWRfanNvbigueCkpCgpnZW9jb2RlcyA8LSBtYXBfZGZyKGZpbGVzLCBtYWdyaXR0cjo6ZXh0cmFjdCwgYygiY2l0eSIsICJjb3VudHJ5IikpICU+JSAKICBkaXN0aW5jdCgpICU+JSAKICBtdXRhdGUoc3RyaW5nID0gcGFzdGUwKGNpdHksICIsICIsIGNvdW50cnkpLAogICAgICAgICB1cmwgPSBwYXN0ZTAoImh0dHA6Ly8xMjcuMC4wLjE6NDMyMS9kaXJlY3RvcnkvIiwgY291bnRyeSksCiAgICAgICAgIHBvcHVwID0gcGFzdGUwKCI8YSBocmVmPSciLCB1cmwsICInPiIsIHN0cmluZywgIjwvYT4iKSkgJT4lIAogIGNiaW5kKG1hcF9kZnIoLiRzdHJpbmcsIGdlb2NvZGUpKQoKbSA8LSBsZWFmbGV0KGdlb2NvZGVzKSAlPiUKICBzZXRWaWV3KGxuZyA9IDAsIGxhdCA9IDAsIHpvb20gPSAwMSkgJT4lIAogIGFkZFByb3ZpZGVyVGlsZXMocHJvdmlkZXJzJENhcnRvREIuUG9zaXRyb24pICU+JSAKICBhZGRNYXJrZXJzKGxuZyA9IH5sb24sIGxhdCA9IH5sYXQsIHBvcHVwID0gfnBvcHVwKQpgYGAKCmBgYHtyIG1hcCwgaW5jbHVkZT1UfQpmcmFtZVdpZGdldChtKQpgYGAK</div>
 
 
 
