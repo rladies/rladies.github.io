@@ -14,7 +14,7 @@ library(ggmap)
 library(purrr)
 library(dplyr)
 
-#register_google(key = "")
+#register_google(key = "AIzaSyCZ2J7fgbcyROdMYwr9fTzKQ2dCgZKqsMU")
 
 files <- list.files("text", pattern = '.json$', full.names = T) %>% 
   map(~ jsonlite::read_json(.x))
@@ -22,7 +22,7 @@ files <- list.files("text", pattern = '.json$', full.names = T) %>%
 geocodes <- map_dfr(files, magrittr::extract, c("city", "country")) %>% 
   distinct() %>% 
   mutate(string = paste0(city, ", ", country),
-         url = paste0("http://127.0.0.1:4321/directory/", country),
+         url = paste0("http://127.0.0.1:4321/", country),
          popup = paste0("<a href='", url, "'>", string, "</a>")) %>% 
   cbind(map_dfr(.$string, geocode))
 
