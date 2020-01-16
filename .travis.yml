@@ -2,7 +2,7 @@ language: r
 cache: packages
 branches:
     only:
-        - master
+        - source
 r_github_packages:
     - rstudio/blogdown
 
@@ -17,6 +17,6 @@ deploy:
     skip_cleanup: true
     github_token: $GITHUB_PAT
     on:
-        branch: master
+        branch: source
     local_dir: public
-    target_branch: gh-pages
+    target_branch: master
