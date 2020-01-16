@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@master
       - name: Install Package Dependencies
         run: |-
-          Rscript -e "install.packages('remotes')"
+          Rscript -e "install.packages(c('remotes', 'widgetframe'))"
           Rscript -e "remotes::install_deps(dependencies = TRUE')"
       - name: Render Site
         run: |-
