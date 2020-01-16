@@ -43,7 +43,7 @@ rpurple <- "#88398a"
 rgrey <- "#a7a9ac" 
 
 # TODO find a better long-term solution than downloading everything 
-# every time? Fin a way to store csv of past events?, and just add 
+# every time? Find a way to store csv of past events?, and just add 
 # new, but then need a good way to "dump" past events into
 # csv when they become "past". 
 events <- get_pro_events("rladies") %>% 
