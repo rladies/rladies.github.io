@@ -1,5 +1,4 @@
 ---
----
 title: "Recipe for a year-end video"
 author: "Yanina Bellini Saibene, Alejandra Bellini and Laura Acion"
 date: "2020-01-27"
@@ -10,15 +9,14 @@ categories:
 - R-Ladies
 output: html_document
 ---
----
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-To close 2019 from R-Ladies we made a video, if you haven't seen it yet, here it is:
+To close the awesome R-Ladies 2019 year we made a video, if you haven't seen it yet, here it is:
 
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Feliz año nuevo <a href="https://twitter.com/hashtag/rladies?src=hash&amp;ref_src=twsrc%5Etfw">#rladies</a> y aliados! 🎉🎉🎉<br><br>Video preparado por <a href="https://twitter.com/yabellini?ref_src=twsrc%5Etfw">@yabellini</a> y <a href="https://twitter.com/_lacion_?ref_src=twsrc%5Etfw">@_lacion_</a>. Locución <a href="https://twitter.com/AlejaBellini?ref_src=twsrc%5Etfw">@alejabellini</a> 💜💜💜 <a href="https://t.co/Bw9aRkaErj">pic.twitter.com/Bw9aRkaErj</a></p>&mdash; R-Ladies Global (@RLadiesGlobal) <a href="https://twitter.com/RLadiesGlobal/status/1212453642416078853?ref_src=twsrc%5Etfw">January 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Happy New Year to all <a href="https://twitter.com/hashtag/rladies?src=hash&amp;ref_src=twsrc%5Etfw">#rladies</a> and allies! 🎉🎉🎉<br><br>Video put together by <a href="https://twitter.com/yabellini?ref_src=twsrc%5Etfw">@yabellini</a> &amp; <a href="https://twitter.com/_lacion_?ref_src=twsrc%5Etfw">@_lacion_</a> , voice <a href="https://twitter.com/AlejaBellini?ref_src=twsrc%5Etfw">@AlejaBellini</a> 💜💜💜 <a href="https://t.co/QRxuJxLugj">pic.twitter.com/QRxuJxLugj</a></p>&mdash; R-Ladies Global (@RLadiesGlobal) <a href="https://twitter.com/RLadiesGlobal/status/1212451523655065605?ref_src=twsrc%5Etfw">January 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  
 
 
 Did you like it? Do you want to know how we did it? Here I tell you the details:
