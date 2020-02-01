@@ -1,0 +1,239 @@
+---
+---
+title: "Recipe for a year-end video"
+author: "Yanina Bellini Saibene, Alejandra Bellini and Laura Acion"
+date: "2020-01-27"
+description: ""
+tags:
+- 2019
+categories:
+- R-Ladies
+output: html_document
+---
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+To close 2019 from R-Ladies we made a video, if you haven't seen it yet, here it is:
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Feliz año nuevo <a href="https://twitter.com/hashtag/rladies?src=hash&amp;ref_src=twsrc%5Etfw">#rladies</a> y aliados! 🎉🎉🎉<br><br>Video preparado por <a href="https://twitter.com/yabellini?ref_src=twsrc%5Etfw">@yabellini</a> y <a href="https://twitter.com/_lacion_?ref_src=twsrc%5Etfw">@_lacion_</a>. Locución <a href="https://twitter.com/AlejaBellini?ref_src=twsrc%5Etfw">@alejabellini</a> 💜💜💜 <a href="https://t.co/Bw9aRkaErj">pic.twitter.com/Bw9aRkaErj</a></p>&mdash; R-Ladies Global (@RLadiesGlobal) <a href="https://twitter.com/RLadiesGlobal/status/1212453642416078853?ref_src=twsrc%5Etfw">January 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+
+Did you like it? Do you want to know how we did it? Here I tell you the details:
+
+## What story are we going to tell?
+
+The first step is to decide the story to tell in the video; The "end of the year" messages generally have three parts: what is done is reviewed, thanks for the achievements and good wishes are given to those who accompanied us during the turn to the sun that ends.
+
+So the story of R-Ladies would be _to highlight global achievements with numbers_ (after all we are people who are dedicated to #rstats and R-Ladies numbers are wonderful) and _to thank those who accompanied us_.
+
+## Generating the script and the raw material for the video
+
+The second step is to assemble the script of the video: it will have three scenes.
+
+### First scene: the global reach
+
+Global R-Ladies numbers are shown where our way of organizing ourselves is represented, we also sho what was done and how much we grew in 2019. To be able to express that idea we choose the numbers of _number of chapters, number of countries, number of members and total events held in the year 2019_ because this are concrete indicators. The first three numbers were consulted from the [R-Ladies Community Board](https://benubah.github.io/r-community-explorer/rladies.html). The amount of events is calculated using the [meetupr](https://github.com/rladies/meetupr) package  developed by R-Ladies.
+
+The first thing is to load the necessary packages and generate the necessary variables and functions:
+
+```
+#API KEY of Meetup
+Sys.setenv(MEETUP_KEY = "your API Key")
+
+#Packages needed to work
+library(meetupr)
+library(purrr)
+library(dplyr)
+library(tidyr)
+library(lubridate)
+
+#Function for avoid time out error for calls to meetupr method
+#Code by Jenny Brian
+slowly <- function(f, delay = 0.5) {
+  
+  function(...) {
+    
+    Sys.sleep(delay)
+    
+    f(...)
+    
+  }
+  
+}
+
+```
+
+Now we have to get all the meetup groups that correspond to R-Ladies:
+
+```
+# Getting all the R-Ladies groups
+all_rladies_groups <- find_groups(text = "r-ladies")
+
+# Cleaning the list
+rladies_groups <- all_rladies_groups[grep(pattern = "rladies|r-ladies", 
+                                          x = all_rladies_groups$name,
+                                          ignore.case = TRUE), ]
+```
+
+With the list of groups, we search for all the events carried out by each of these groups and calculate the amount of events:
+
+```
+#I get all the events already done.
+
+eventos <- rladies_groups$urlname %>%
+  map(slowly(safely(get_events)), event_status='past') %>% transpose()
+
+# In events I have a list with all the event data: name, date,
+# place, description and several more data.
+# At the moment the list has two elements: a list with the correct results
+# and another with errors. It gives error when there are no past events in the group.
+
+# I am only interested in the information we have in results. So I keep that information
+# The results list has one tibble per group with the events held for that group
+# I'm going to put together a single tibble with all the events together
+
+# I create a logical vector with events where there is error
+
+eventos_con_datos <- eventos$result %>% 
+  map_lgl(is_null)
+
+# Filter the correct events with the previous logical vector and then bind all the tibbles
+# for their rows in one tibble/list using the map_dfr function of the purrr package
+
+eventos_todos_juntos <- eventos$result[!eventos_con_datos] %>% 
+  map_dfr(~ .) 
+
+# I count the number of events held per year
+
+eventos_todos_juntos %>%
+  group_by(year(time)) %>%
+  summarise(cantidad=n())
+
+``` 
+
+With all the calculated data, the text of that scene is as follows:
+
+_"R-Ladies 2019 in numbers: More than 60,000 members from 50 countries around the world, organized in 182 chapters that held 858 events."_
+
+To illustrate this part of the message, the world map with the location of all the chapters is a powerful image and that we have already used in other campaigns. I really liked the [map](https://github.com/rladiescolombo/R-Ladies_world_map) that made the [R-Ladies Colombo](https://rladiescolombo.netlify.com/) to present their chapter so I took their base map to assemble the map on the video, updating the information to 12/27/2019 and making sure that all the chapters have Latitude and Longitude to be mapped.
+
+
+![](../image/MapaVideo.png)
+
+This is the complete code to do it:
+
+```
+library(ggplot2)
+library(maptools)
+library(tibble)
+library(readxl)
+library(readr)
+data(wrld_simpl)
+
+# This code generates the world map and is taken from the R-Ladies Colombo code
+p <- ggplot() +
+  geom_polygon(
+    data = wrld_simpl,
+    aes(x = long, y = lat, group = group), fill = "thistle", colour = "white"
+  ) +
+  coord_cartesian(xlim = c(-180, 180), ylim = c(-90, 90)) +
+  scale_x_continuous(breaks = seq(-180, 180, 120)) +
+  scale_y_continuous(breaks = seq(-90, 90, 100))
+
+# R-Ladies Current Chapters: https://github.com/rladies/starter-kit/blob/master/Current-Chapters.csv
+# I read the current R-Ladies chapters after downloading it from the web
+Current_Chapters <- read_csv(here::here("Current-Chapters.csv"))
+
+#I read a file with the cities of the chapters with the latitude and longitude data
+LatLong <- read_excel(here::here("LatLong2019.xlsx")) 
+
+#Join the chapter data with latitude and longitude data
+Current_Chapters <- Current_Chapters %>% 
+  left_join(LatLong, by = c("City", "State.Region", "Country")) %>%
+  filter(!str_detect(Status, 'Retired.*'))
+
+# I add the points of each chapter to the world map
+p <- p +
+  geom_point(
+    data = Current_Chapters, aes(x = Longitude, y = Latitude), color = "mediumpurple1", size
+    = 3
+  ) 
+```
+
+### Second scene: 100% volunteer work
+
+The objective is also to present _numbers of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication mediums, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of a volunteer work to achieve all these results. The [R-Ladies Global Team](https://rladies.org/about-us/team/) provided me with the numbers referred to the [R-Ladies directory](https://rladies.org/directory/) and from the [review network](tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use  the `rtweet` package with the following code:
+
+```
+#I load the necessary packages
+library(dplyr)
+library(lubridate)
+library(stringr)
+library(tidyr)
+library(rtweet)
+
+#Get all twiter users that have the word R Ladies
+users <- search_users(q = 'RLadies',
+                      n = 1000,
+                      parse = TRUE)
+
+#Then I must keep the unique users
+rladies <- unique(users) %>%
+  # The regular expression searches for a string containing the word RLadies or rladies, anywhere
+  # in the string  
+  filter(str_detect(screen_name, '[R-r][L-l](adies).*') & 
+           # Filter users who meet the condition of the regular expression but are not accounts
+           # related to R-Ladies
+           !screen_name %in% c('RLadies', 'RLadies_LF', 'Junior_RLadies', 'QueensRLadies', 
+                               'WomenRLadies', 'Rstn_RLadies13', 'RnRladies')) %>%
+  # I keep these three variables that allow me to identify each account
+  # with the number of followers each one has
+  select(screen_name, location, followers_count)
+
+#I calculate the total followers of all accounts
+rladies %>% 
+  summarise(sum(followers_count))
+
+```
+
+The image selected for this part of the video was taken in LatinR 2019: we were preparing for the R-Ladies group photo and without realizing it we formed a heart !! (which was captured by the eye and camera of [TuQmano](https://twitter.com/TuQmano)). The image represents the growth of R-Ladies in other regions of the world beyond the north of the globe and the code that moves us to work as a team for the well-being of R-Ladies and the community in general.
+
+![](../image/corazon.png)
+
+
+The final text of the scene was:
+
+_We have more than 65,000 followers in our Twitter accounts, 940 experts in the R-Ladies directory, 80 international reviewers in our review network and we produce more than 600 documents with teaching materials. All done with 100% volunteer work_
+
+
+### Third scene: good wishes!
+
+Here the phrase was to wish a happy year for R-Ladies and also for all the allies who accompanied us during the year. The selected image was our logo and the address of our website.
+
+The text that accompanies the scene was this:
+
+_Happy New Year to all R-Ladies and allies! More information at rladies punto org_
+
+![](../image/placafinal.png) 
+
+
+### Language
+
+R-Ladies is a global community, the video had to be in English: the language the world speaks. But why not also in Spanish? The R  American Community has grown a lot in this time and in large part it has been thanks to the effort and work of the R-Ladies in this region of the world, so we decided to generate the video in both languages to celebrate this hard work. [Laura Acion](https://twitter.com/_lacion_/) was responsible for correcting and translating the text of each scene.
+
+### Text, images ... audio?
+
+Now, a video with only letters, numbers and images would leave many people out of our message, so we decided to record the audio of the message and for that the genius of [Alejandra Bellini](https://twitter.com/AlejaBellini), recorded the audios in Spanish and English. she recorded it using WhatsApp with a cell phone, then I used [Zamzar](https://www.zamzar.com) to transform the audio to MP3 and [Mp3cut](https://mp3cut.net/en/) to cut that audio in the parts necessary to be able to synchronize the audio with the text and the video images.
+
+
+## Third step: editing ...
+
+_Third step_: with the plan in mind, it was time to edit the video. I did it using Doodly for the effects of the drawing hand . Both music and fonts are provided by the software. The most laborious part was the synchronization of the audio with the drawing of the numbers and letters.
+
+The result was two videos in Spanish and English, where we tell in a minute what R-Ladies do during 2019; it was a very fun task, there were many laughs and attempts, especially the recording of the text in English.
+
+The final video was sent to the Global team for dissemination through social networks on January 31, 2019.
+
