@@ -42,7 +42,8 @@ To follow our steps, the first thing is to load the necessary packages and gener
 
 ```
 # API KEY of Meetup
-Sys.setenv(MEETUP_KEY = "your API Key") # just a small comment from me: the API keys is soon deprecated, maybe add a small notice on that?
+# The API keys is soon deprecated more info here: https://www.meetup.com/meetup_api/auth/
+Sys.setenv(MEETUP_KEY = "your API Key") 
 
 # Packages needed to work
 library(meetupr)
@@ -50,21 +51,6 @@ library(purrr)
 library(dplyr)
 library(tidyr)
 library(lubridate)
-
-# Function for avoid time out error for calls to meetupr method
-# Code by Jenny Bryan
-# Another small comment by me: you are already loading purrr, you could use purrr::slowly here instead?
-slowly <- function(f, delay = 0.5) {
-  
-  function(...) {
-    
-    Sys.sleep(delay)
-    
-    f(...)
-    
-  }
-  
-}
 
 ```
 
@@ -86,8 +72,8 @@ With the list of groups, we search for all the events carried out by each of the
 # We get all the events already done.
 
 eventos <- rladies_groups$urlname %>%
-  map(slowly(safely(get_events)), event_status='past') %>% transpose()
-
+  map(purrr::slowly(safely(get_events)), event_status='past') %>% transpose()
+  
 # In events we have a list with all the event data: name, date,
 # place, description and several more columns of data.
 # At the moment the list has two elements: a list with the correct results
