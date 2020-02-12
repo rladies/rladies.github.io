@@ -36,7 +36,7 @@ The second step is to assemble the script for the video, which will have three s
 
 ### Scene one: the global reach
 
-Numbers for global R-Ladies chapters are shown in a way to highlight how we organize ourselves. We also show what was done and how much we grew in 2019. To be able to express that idea we chose _the number of chapters, the number of countries, the number of members, and the total number of events held in the year 2019_, because these are concrete indicators. The first three numbers were extracted from the [R-Ladies Community Board](https://benubah.github.io/r-community-explorer/rladies.html). The number of events was calculated using the [meetupr](https://github.com/rladies/meetupr) package, developed by R-Ladies.
+Numbers for global R-Ladies chapters are shown in a way to highlight how we organize ourselves. We also visualise what was done and how much we grew in 2019. To be able to express that idea we chose _the number of chapters, the number of countries, the number of members, and the total number of events held in the year 2019_, because these are concrete indicators. The first three numbers were extracted from the [R-Ladies Community Board](https://benubah.github.io/r-community-explorer/rladies.html). The number of events was calculated using the [meetupr](https://github.com/rladies/meetupr) package, developed by R-Ladies.
 
 To follow our steps, the first thing is to load the necessary packages and generate the necessary variables and functions:
 
@@ -66,7 +66,7 @@ rladies_groups <- all_rladies_groups[grep(pattern = "rladies|r-ladies",
                                           ignore.case = TRUE), ]
 ```
 
-With the groups´ list, we search for all the events carried out by each of these groups and calculate the number of events:
+With the groups list, we search for all the events carried out by each of these groups and calculate the number of events:
 
 ```
 # We get all the events that already took place.
@@ -98,7 +98,7 @@ eventos_todos_juntos <- eventos$result[!eventos_con_datos] %>%
 
 eventos_todos_juntos %>%
   group_by(year(time)) %>%
-  summarise(cantidad=n())
+  summarise(cantidad = n())
 
 ``` 
 
@@ -219,7 +219,7 @@ Now, a video with only letters, numbers, and images would leave many people out 
 
 ## Third step: editing ...
 
-_Third step_: with this plan in mind, it was time to edit the video. We did it using Doodly for the drawing-hand effects. Both music and fonts are provided by the software. The most laborious part was the synchronization of the audio with the drawing of the numbers and letters.
+_Third step_: with this plan in mind, it was time to edit the video. We used the software Doodly, providing music and fonts, for the drawing-hand effects. The most laborious part was the synchronization of the audio with the drawing of the numbers and letters.
 
 The result was two videos, one in Spanish and one in English, where we tell in one minute what R-Ladies did during 2019. It was a very fun task, with many laughs and attempts, especially recording the audio in English.
 
