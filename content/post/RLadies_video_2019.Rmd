@@ -24,6 +24,7 @@ Did you like it? Do you want to know how we did it? Here we will give you all th
 ## What story are we going to tell?
 
 The first step is to decide what story the video is going to tell. An "end-of-the-year" message generally has three parts: 
+
 1) what the year has brought,   
 2) giving thanks for the year's achievements, and  
 3) well-wishes to those who accompanied us during our promenade around the sun.  
@@ -36,7 +37,14 @@ The second step is to assemble the script for the video, which will have three s
 
 ### Scene one: the global reach
 
-Numbers for global R-Ladies chapters are shown in a way to highlight how we organize ourselves. We also visualise what was done and how much we grew in 2019. To be able to express that idea we chose _the number of chapters, the number of countries, the number of members, and the total number of events held in the year 2019_, because these are concrete indicators. The first three numbers were extracted from the [R-Ladies Community Board](https://benubah.github.io/r-community-explorer/rladies.html). The number of events was calculated using the [meetupr](https://github.com/rladies/meetupr) package, developed by R-Ladies.
+Numbers for global R-Ladies chapters are shown in a way to highlight how we organize ourselves. We also visualise what was done and how much we grew in 2019. To be able to express that idea we chose concrete indicators of our activities:
+
+  * the number of chapters, 
+  * the number of countries, 
+  * the number of members, and 
+  * the total number of events held in the year 2019 
+  
+The first three numbers were extracted from the [R-Ladies Community Board](https://benubah.github.io/r-community-explorer/rladies.html). The number of events was calculated using the [meetupr](https://github.com/rladies/meetupr) package, developed by R-Ladies.
 
 To follow our steps, the first thing is to load the necessary packages and generate the necessary variables and functions:
 
@@ -109,7 +117,7 @@ _"R-Ladies 2019 in numbers: More than 60,000 members from 50 countries around th
 To illustrate this part of the message, the world map with the location of all the chapters is a powerful image, one we have already used in other campaigns. We really liked the [map](https://github.com/rladiescolombo/R-Ladies_world_map) that [R-Ladies Colombo](https://rladiescolombo.netlify.com/) made to present their chapter, so we took their base map to assemble the map on the video. We updated the information to 12/27/2019 and made sure that all the chapters had Latitude and Longitude to be mapped.
 
 
-![](../image/MapaVideo.png)
+![](../../image/MapaVideo.png)
 
 This is the complete code to do it:
 
@@ -189,7 +197,7 @@ rladies %>%
 
 The image selected for this part of the video was taken in LatinR 2019. We were preparing for the R-Ladies group photo and, without realizing it, we formed a heart!! (which was captured by [TuQmano´s](https://twitter.com/TuQmano) eye and camera). The image represents the growth of R-Ladies, also beyond North-America and Europe, and the code that moves us to work as a team for the well-being of R-Ladies and the community in general.
 
-![](../image/corazon.png)
+![](../../image/corazon.png)
 
 
 The final text of the scene was:
@@ -205,7 +213,7 @@ The text for this scene is:
 
 _Happy New Year to all R-Ladies and allies! More information at rladies dot org_
 
-![](../image/placafinal.png) 
+![](../../image/placafinal.png) 
 
 
 ### Language
@@ -216,10 +224,9 @@ R-Ladies is a global community, the video had to be in English, the language the
 
 Now, a video with only letters, numbers, and images would leave many people out of our message, so we decided to record the audio of the message. For that, we got the help from the genius of [Alejandra Bellini](https://twitter.com/AlejaBellini), who recorded the audio in Spanish and English. She recorded it using WhatsApp with a cell phone, then we used [Zamzar](https://www.zamzar.com) to transform the audio to MP3 and [Mp3cut](https://mp3cut.net/en/) to cut the audio in the parts necessary to be able to synchronize the audio with the text and the video images.
 
-
 ## Third step: editing ...
 
-_Third step_: with this plan in mind, it was time to edit the video. We used the software Doodly, providing music and fonts, for the drawing-hand effects. The most laborious part was the synchronization of the audio with the drawing of the numbers and letters.
+With this plan in mind, it was time to edit the video. We used the software Doodly, providing music and fonts, for the drawing-hand effects. The most laborious part was the synchronization of the audio with the drawing of the numbers and letters.
 
 The result was two videos, one in Spanish and one in English, where we tell in one minute what R-Ladies did during 2019. It was a very fun task, with many laughs and attempts, especially recording the audio in English.
 
