@@ -5,12 +5,14 @@ branches:
         - source
 r_github_packages:
     - rstudio/blogdown
+    - rladies/meetupr
 
 before_script:
+    - rm docs/events/index.html
     - Rscript -e 'blogdown::install_hugo(version = "0.20.7")'
 
 script:
-    - Rscript -e 'blogdown::build_site()'
+    - Rscript -e 'blogdown::build_site(TRUE)'
 
 deploy:
     provider: pages

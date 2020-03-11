@@ -1,23 +1,46 @@
-name: Render and Deploy RMarkdown Website
-'on': push
+on:
+  push:
+    branches: master
+
+name: update-events
+
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: macOS-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout repo
         uses: actions/checkout@master
-      - name: Install Package Dependencies
-        run: |-
-          Rscript -e "install.packages(c('remotes', 'widgetframe'))"
-          Rscript -e "remotes::install_deps(dependencies = TRUE')"
-      - name: Render Site
-        run: |-
-          Rscript -e "rmarkdown::render_site(encoding = 'UTF-8')"
-          echo "::set-env name=DEPLOY_PATH::$(Rscript -e "cat(rmarkdown::site_config()[['output_dir']])")"
-      - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/master'
-        uses: maxheld83/ghpages@v0.2.0
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+
+      - name: Install pandoc and pandoc citeproc
+        run: |
+          brew install pandoc
+          brew install pandoc-citeproc
+    
+      - name: Install packages
+        run: | 
+          R -e 'install.packages(c("blogdown", "dplyr", "remotes"))' \
+            -e 'remotes::install_github("dreamRs/tuicalendr")' \
+            -e 'remotes::install_github("Athanasiamo/meetupr")' 
+
+      - name: Install hugo
+        run: |
+          R -e 'blogdown::install_hugo()'
+
+      - name: Re-build events
+        run: |
+          Rscript -e 'blogdown:::build_rmds("content/events.Rmd")'
+          
+      - name: Install npm
+        uses: actions/setup-node@v1
+
+      - name: Deploy to Netlify
+        # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
         env:
-          BUILD_DIR: $DEPLOY_PATH
-          GH_PAT: ${{ secrets.GH_PAT }}
-    container: rocker/verse:latest
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npm install netlify-cli -g
+          netlify deploy --prod

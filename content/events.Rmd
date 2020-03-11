@@ -35,7 +35,7 @@ slug: events
 ```{r setup, include=FALSE}
 # remotes::install_github("Athanasiamo/meetupr")
 library(meetupr)
-library(tidyverse)
+library(dplyr)
 
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
@@ -46,8 +46,13 @@ rgrey <- "#a7a9ac"
 # every time? Find a way to store csv of past events?, and just add 
 # new, but then need a good way to "dump" past events into
 # csv when they become "past". 
-events <- get_pro_events("rladies") %>% 
-  mutate(type = "planned") %>% 
+
+past_events <- read.table(paste0(here::here(),"/data/events.tsv"), 
+                          sep = ";", header = TRUE, stringsAsFactors = FALSE)
+
+new_events <- get_pro_events("rladies") %>% 
+  mutate(type = "planned") 
+
   bind_rows(
     mutate(get_pro_events("rladies", "past"), type="past")
     ) %>%
