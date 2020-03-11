@@ -2,7 +2,8 @@ baseURL = "/"
 languageCode = "en-us"
 title = "R-Ladies Global"
 theme = "hugo-initio"
-publishDir = "docs"
+#publishDir = "docs"
+publishDir = "public"
 ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
 
 [params]

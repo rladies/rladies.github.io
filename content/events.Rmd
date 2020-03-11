@@ -47,11 +47,11 @@ rgrey <- "#a7a9ac"
 # new, but then need a good way to "dump" past events into
 # csv when they become "past". 
 
-past_events <- read.table(paste0(here::here(),"/data/events.tsv"), 
-                          sep = ";", header = TRUE, stringsAsFactors = FALSE)
+# past_events <- read.table(paste0(here::here(),"/data/events.tsv"), 
+#                           sep = ";", header = TRUE, stringsAsFactors = FALSE)
 
 new_events <- get_pro_events("rladies") %>% 
-  mutate(type = "planned") 
+  mutate(type = "planned") %>% 
 
   bind_rows(
     mutate(get_pro_events("rladies", "past"), type="past")

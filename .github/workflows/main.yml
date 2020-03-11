@@ -36,7 +36,7 @@ jobs:
       - name: Install hugo
         run: |
           R -e 'blogdown::install_hugo()'
-
+    
     #  - name: Re-build events
     #    run: |
     #      Rscript -e 'blogdown:::build_rmds("content/events.Rmd")'
