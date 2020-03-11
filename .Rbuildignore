@@ -1,2 +1,3 @@
 ^\.github/workflows$
 ^\.travis\.yml$
+^\.github$
