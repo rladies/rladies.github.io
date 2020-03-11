@@ -38,8 +38,6 @@ jobs:
           R -e 'blogdown::install_hugo()'
 
       - name: Re-build events
-        env:
-          
         run: |
           Rscript -e 'blogdown:::build_rmds("content/events.Rmd")'
           
@@ -47,7 +45,6 @@ jobs:
         uses: actions/setup-node@v1
 
       - name: Deploy to Netlify
-        # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
