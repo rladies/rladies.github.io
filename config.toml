@@ -32,7 +32,7 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     url = "/"
     weight = 1   
 [[menu.main]]
-    name = "About us"
+    name = "About"
     url = "#"
     identifier = "about-us"
     weight = 2
@@ -68,10 +68,6 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     name = "Blog"
     url = "https://blog.rladies.org/"
     weight = 5
-[[menu.main]]
-    name = "Sponsors"
-    url = "/sponsors/"
-    weight = 6
 
 [params.sharethis]
     property = "123456789012345678901234"
