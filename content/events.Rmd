@@ -42,6 +42,9 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 rpurple <- "#88398a"
 rgrey <- "#a7a9ac" 
 
+meetupr::meetup_auth(key = Sys.getenv("MEETUP_KEY"),
+                     secret = Sys.getenv("MEETUP_SECRET"))
+
 # TODO find a better long-term solution than downloading everything 
 # every time? Find a way to store csv of past events?, and just add 
 # new, but then need a good way to "dump" past events into
