@@ -86,6 +86,7 @@ cals <- events %>%
   ) %>% 
   unique()
 ```
+
 ```{r month-theme, echo = FALSE}
 
 # calendar month theme ----
