@@ -38,7 +38,7 @@ jobs:
           R -e 'blogdown::install_hugo()'
     
       - name: Re-build events
-        run: Rscript -e 'blogdown:::build_rmds("content/events.Rmd")'
+        run: Rscript --verbose -e 'blogdown:::build_rmds("content/events.Rmd")'
           
 #      - name: Install npm
 #        uses: actions/setup-node@v1
