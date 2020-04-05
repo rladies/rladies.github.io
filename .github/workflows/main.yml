@@ -39,7 +39,19 @@ jobs:
     
       - name: Re-build events
         run: Rscript --verbose -e 'blogdown:::build_rmds("content/events.Rmd")'
+            
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update data/events.csv" -a
           
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        
+            
 #      - name: Install npm
 #        uses: actions/setup-node@v1
 
