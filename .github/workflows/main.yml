@@ -30,8 +30,8 @@ jobs:
       - name: Install packages
         run: | 
           R -e 'install.packages(c("blogdown", "dplyr", "remotes", "here"))' \
-            -e 'remotes::install_github("dreamRs/tuicalendr")' \
-            -e 'remotes::install_github("Athanasiamo/meetupr")' 
+            -e 'install.packages(c("leaflet", "htmltools", "rmarkdown"))' \
+            -e 'remotes::install_github("dreamRs/tuicalendr")'  
 
       - name: Install hugo
         run: |

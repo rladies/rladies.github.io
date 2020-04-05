@@ -37,11 +37,12 @@ slug: events
 library(tuicalendr)
 library(here)
 library(dplyr)
-
-# to get leaflet working with blogdown
+library(htmltools)
 library(leaflet)
+library(rmarkdown)
 
-htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+
+tagList(html_dependency_font_awesome())
 
 rpurple <- "#88398a"
 rgrey <- "#a7a9ac" 
@@ -140,7 +141,7 @@ events %>%
              popup = ~body, 
              label = ~calendarId, 
              icon = list(
-               iconUrl = here::here("static/images/marker.svg"),
+               iconUrl = here("static/images/marker.svg"),
                iconSize = sz,
                iconAnchorX = sz[2]/2,
                iconAnchorY = sz[1]
