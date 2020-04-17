@@ -1,0 +1,64 @@
+on:
+  push:
+    branches: master
+
+name: update-events
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+
+      - name: Install pandoc and pandoc citeproc
+        run: |
+          brew install pandoc
+          brew install pandoc-citeproc
+      
+      - name: set Renviron
+        run: |
+          cat > .Renviron << EOF
+          meetupr.use_oauth=FALSE
+          meetupr.key=${{ secrets.MEETUP_KEY }}
+          meetupr.secret=${{ secrets.MEETUP_SECRET }}
+          EOF
+    
+      - name: Install packages
+        run: | 
+          R -e 'install.packages(c("blogdown", "dplyr", "remotes", "here"))' \
+            -e 'install.packages(c("leaflet", "htmltools", "rmarkdown"))' \
+            -e 'remotes::install_github("dreamRs/tuicalendr")'  
+
+      - name: Install hugo
+        run: |
+          R -e 'blogdown::install_hugo()'
+    
+      - name: Re-build events
+        run: Rscript --verbose -e 'blogdown:::build_rmds("content/events.Rmd")'
+            
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update data/events.csv" -a
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        
+            
+#      - name: Install npm
+#        uses: actions/setup-node@v1
+
+#      - name: Deploy to Netlify
+#       env:
+#          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#        run: |
+#          npm install netlify-cli -g
+#          netlify deploy --prod
