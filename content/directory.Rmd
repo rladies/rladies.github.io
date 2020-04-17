@@ -16,14 +16,14 @@ library(dplyr)
 
 #register_google(key = "AIzaSyCZ2J7fgbcyROdMYwr9fTzKQ2dCgZKqsMU")
 
-files <- list.files("text", pattern = '.json$', full.names = T) %>% 
-  map(~ jsonlite::read_json(.x))
+files <- jsonlite::read_json("../data/directory.json")
 
 geocodes <- map_dfr(files, magrittr::extract, c("city", "country")) %>% 
   distinct() %>% 
   mutate(string = paste0(city, ", ", country),
-         url = paste0("http://127.0.0.1:4321/", country),
-         popup = paste0("<a href='", url, "'>", string, "</a>")) %>% 
+         url = paste0("http://127.0.0.1:4321/", 
+                      stringr::str_replace_all(country, " ", "")),
+         popup = paste0("<a target='_blank' href='", url, "'>", string, "</a>")) %>% 
   cbind(map_dfr(.$string, geocode))
 
 m <- leaflet(geocodes) %>%
@@ -34,4 +34,32 @@ m <- leaflet(geocodes) %>%
 
 ```{r map, include=T}
 frameWidget(m)
+```
+
+**We would love more R-Ladies to appear in our Directory! Please fill out** [our form]()! It only takes a few minutes, and soon your profile will be online.
+
+If you want to **update** your profile just fill the same form and drop us a line in the comment box saying you want to update your profile!
+
+Or you can just email us at speakers[at]rladies[dot]org with any relevant info about yourself – easy!
+
+```{r}
+for (country in geocodes$country) {
+  slug <- stringr::str_replace_all(country, " ", "")
+  filename <- paste0(slug, '.Rmd')
+  file.create(filename)
+  
+  sink(filename)
+  cat(paste0('---
+title: "', country,' speakers"
+output: html_notebook
+data: "', country, '"
+type: "directory"
+---
+
+\`\`\`{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, include = FALSE, echo = F)
+\`\`\`'))
+  sink()
+}
+
 ```

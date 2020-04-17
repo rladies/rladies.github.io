@@ -1,7 +1,8 @@
 ---
 title: "Mission"
-output: html_notebook
+output: markdown
 slug: mission
+type: "about"
 ---
 
 
@@ -29,8 +30,9 @@ pasteReadme <- function(fileName){
 
 }
 
-url <- "text/mission.md"
+url <- "../text/mission.md"
 ```
+
 
 ```{r scrape_coc, include=T, results='asis', echo=F}
 pasteReadme(url)
