@@ -13,7 +13,6 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-library(here)
 ```
 
 Our chapters have cancelled in-person meetups due to the corona virus pandemic. However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys. To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.
