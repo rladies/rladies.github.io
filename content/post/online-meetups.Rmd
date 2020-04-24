@@ -1,8 +1,8 @@
 ---
-title: "R-Ladies Online Meetups"
+title: "R-Ladies Infrastructure for Online Meetups"
 author: "R-Ladies Global Leadership Team"
 date: "2020-04-24"
-description: "R-Ladies Online Meetups"
+description: "R-Ladies Infrastructure for Online Meetups"
 tags: 
 - community
 - online-meetups
@@ -23,7 +23,7 @@ Our network has grown to over 160 chapters worldwide so we were wondering how ma
 
 ### Get the data
 
-```{r public_setup}
+```{r public_setup, message=FALSE}
 #devtools::install_github("rladies/meetupr")
 library(meetupr)
 library(tidyverse)
@@ -35,13 +35,15 @@ First, we get all the R-Ladies meetup groups so that we can get all their events
 
 ```{r chapters, eval=FALSE}
 # get the R-Ladies chapters
+
 groups <- meetupr::find_groups(text = "r-ladies") 
 
 chapters <- groups %>% 
   filter(str_detect(tolower(name), "r-ladies"))
 ```
-```{r chapters_local, echo=FALSE}
-chapters <- readRDS("../../data/chapters.rds")
+```{r chapters_local, echo=FALSE, message=FALSE}
+#chapters <- readRDS("../data/chapters.rds")
+chapters <- read_csv("../../static/data/chapters.csv")
 ```
 
 We want to avoid to exceed the API request limit so we'll use the [solution](https://github.com/rladies/meetupr/issues/30) posted by Jesse Mostipak.
@@ -62,16 +64,17 @@ events <- map(chapters$urlname,
   set_names(chapters$name)
 ```
 
-```{r events_local, echo=FALSE}
-events <- readRDS("../../data/events.rds")
-```
-
 The use of `safely()` means that our mapping doesn't fail altogether if getting the events for any of the chapters fails. Now we just need to extract the events for those chapters where we succeeded.
 
-```{r all_events}
+```{r all_events, eval=FALSE}
 all_events <- map_dfr(events, 
                       ~ if (is.null(.$error)) .$result else NULL, 
                       .id = "chapter")
+```
+
+```{r all_events_local, echo=FALSE, message=FALSE}
+#events <- readRDS("../data/events.rds")
+all_events <- read_csv("../../static/data/all_events.csv")
 ```
 
 
@@ -102,8 +105,8 @@ So parallel R-Ladies events are not uncommon but now the question is: how many e
 ```{r max_parallel}
 all_events %>% 
   count(time, name = "simultaneous_events") %>% 
-  count(simulateneous_events) %>% 
-  arrange(desc(simulateneous_events))
+  count(simultaneous_events) %>% 
+  arrange(desc(simultaneous_events))
 ```
 
 One time we had 9 R-Ladies events happening at the same time! Looking at the date reveals that those were the rstudio::conf watch parties (Jan 29, 2020):
