@@ -46,7 +46,7 @@ output: html_document
 
 1. Upload the `.Rmd` in `content > post`
 2. Upload post images in `content > image`
-3. If there's any *executable* code within the post upload all data in `content > data` and specify all used packages in the pull request. 
+3. If there's any *executable* code within the post upload all data in `content > data` and make sure all the R packages used in your post are also listed in the Imports field of the DESCRIPTION file so that Travis installs them.
 
 **Note**: Don't upload the `html` or the public folder. This is regenerated everytime there's a push to *master*.
 
