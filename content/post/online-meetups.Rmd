@@ -119,6 +119,8 @@ all_events %>%
 
 More than 2 parallel events have been relatively rare so we are starting with one virtual meeting room that our chapters can book and hope that scheduling conflicts can be avoided. 
 
+If you are an R-Ladies organiser and want to use this new infrastructure, please join the #online_meetups channel on the organisers' Slack. There you'll find instructions on how to book a meeting and tips for running safe online events.
+
 
 ### Next online events
 
