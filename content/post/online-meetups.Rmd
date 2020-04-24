@@ -13,6 +13,9 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lubridate)
+library(scales)
 ```
 
 Our chapters have cancelled in-person meetups due to the corona virus pandemic. However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys. To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.
@@ -22,7 +25,7 @@ Our network has grown to over 160 chapters worldwide so we were wondering how ma
 
 ### Get the data
 
-```{r public_setup, message=FALSE}
+```{r public_setup, eval=FALSE}
 #devtools::install_github("rladies/meetupr")
 library(meetupr)
 library(tidyverse)
@@ -41,7 +44,6 @@ chapters <- groups %>%
   filter(str_detect(tolower(name), "r-ladies"))
 ```
 ```{r chapters_local, echo=FALSE, message=FALSE}
-#chapters <- readRDS("../data/chapters.rds")
 chapters <- read_csv("../../static/data/chapters.csv")
 ```
 
@@ -72,7 +74,6 @@ all_events <- map_dfr(events,
 ```
 
 ```{r all_events_local, echo=FALSE, message=FALSE}
-#events <- readRDS("../data/events.rds")
 all_events <- read_csv("../../static/data/all_events.csv")
 ```
 
