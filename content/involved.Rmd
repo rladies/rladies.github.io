@@ -1,7 +1,8 @@
 ---
 title: "Get Involved"
-output: html_document
+output: markdown
 slug: involved
+type: "about"
 ---
 
 <center>
@@ -35,7 +36,7 @@ pasteReadme <- function(fileName){
 
 }
 
-url <- "text/involved.md"
+url <- "../text/involved.md"
 ```
 
 ```{r scrape_coc, include=T, results='asis', echo=F}

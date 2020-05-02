@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "name": "Bea",
+        "image": "images/s1.jpg",
+        "url": "#",
+        "city": "Madrid",
+        "country": "Spain",
+        "items": [
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Lola",
+        "image": "images/s1.jpg",
+        "url": "#",
+        "city": "London",
+        "country": "Great Britain",
+        "items": [
+        ]
+    }
+]
