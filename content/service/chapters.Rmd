@@ -3,7 +3,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(collapse = TRUE)
+knitr::opts_chunk$set(collapse = TRUE, echo=F, warning = F)
 
 library(purrr)
 library(dplyr)
@@ -15,7 +15,7 @@ library(kableExtra)
 csv <- 'https://raw.githubusercontent.com/rladies/starter-kit/master/Current-Chapters.csv'
 chapters <- readr::read_csv(csv) %>%
   filter(Status == 'Active') %>%
-  select(Country, `State.Region`, City, Meetup) %>%
+  select(Country, `State.Region`, City, Meetup, Twitter, GitHub, Website) %>%
   rename(MeetupLink = Meetup)
 
 ```
@@ -23,18 +23,47 @@ chapters <- readr::read_csv(csv) %>%
 ```{r content, echo=F}
 
 render_link <- function(word, link) {
-   link <- paste0("[", word, "](", link, ")")
-   return(tibble(Meetup = link))
+  link <- paste0("[", word, "](", link, ")")
+  return(tibble(Meetup = link))
 }
 
-links <- bind_cols(chapters, map2_dfr(chapters$City, chapters$MeetupLink, render_link))
+render_sm <- function(address, choice) {
+  if (is.na(address)) {
+    link <- ''
+  }
+  else {
+    if(choice == 'tw') {
+      link <- paste0('<a href=', address, 
+                     '><i class="fab fa-twitter"></i></a>')
+    } else if(choice == 'gh') {
+      link <- paste0('<a href=', address, 
+                     '><i class="fab fa-github"></i></a>')
+    } else if(choice == 'wb') {
+      link <- paste0('<a href=', address, 
+                     '><i class="fas fa-rss"></i></a>')
+    }
+  }
+  return(link)
+}
+
+links <- bind_cols(chapters, map2_dfr(chapters$City, 
+                                      chapters$MeetupLink, render_link))
+
+links <- links %>% 
+  mutate(Twitter = map2(.$Twitter, 'tw', render_sm),
+         GitHub = map2(.$GitHub, 'gh', render_sm),
+         Website = map2(.$Website, 'wb', render_sm)) %>%
+  group_by(Country, City) %>% 
+  summarise(Meetup = first(Meetup), 
+            `Social Media` = paste(Twitter, GitHub, Website, collapse = '')) %>% 
+  select(Country, Meetup, `Social Media`) %>%
+  rename(City = Meetup)
+
 links %>%
-  select(Country, Meetup) %>%
-  rename(City = Meetup) %>%
   group_by(Country) %>% 
   arrange(City, .by_group = T) %>% 
-  kable(align = "rl") %>%
-  kable_styling(full_width = F) %>%
+  kable(align = "rl", escape = F) %>%
+  kable_styling(full_width = F, bootstrap_options = c("hover", "responsive"))  %>%
   column_spec(1, bold = T) %>%
   collapse_rows(columns = 1:2, valign = "top")
 ```

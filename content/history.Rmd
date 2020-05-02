@@ -1,7 +1,8 @@
 ---
 title: "History"
-output: html_document
+output: markdown
 slug: history
+type: "about"
 ---
 
 ```{r setup, include=FALSE}
@@ -28,7 +29,7 @@ pasteReadme <- function(fileName){
 
 }
 
-url <- "text/history.md"
+url <- "../text/history.md"
 ```
 
 ```{r scrape_coc, include=T, results='asis', echo=F}

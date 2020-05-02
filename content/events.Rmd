@@ -51,7 +51,7 @@ rgrey <- "#a7a9ac"
 if(interactive()){
   source(here("R/get_events.R"))
 }else{
-  events <- read.csv(here("data/events.csv"), 
+  events <- read.csv(here("d/events.csv"), 
                      header = TRUE, stringsAsFactors = FALSE)
 }
 

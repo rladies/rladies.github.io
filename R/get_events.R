@@ -42,7 +42,7 @@ events <- new_events %>%
       "<br><br>",
       str_sub(description,1,300),
       "...  <br><br> <a href='", link, 
-      "'><button class='button'>Event page</button></a>"),
+      "' target='_blank'><button class='button'>Event page</button></a>"),
     start = as.POSIXct(paste(local_date, local_time), format="%Y-%m-%d %H:%M"),
     # end = start,
     location = ifelse(
@@ -55,4 +55,4 @@ events <- new_events %>%
   ) %>%  
   as_tibble()
 
-write.csv(events, here("data/events.csv"), row.names = FALSE)
+write.csv(events, here("d/events.csv"), row.names = FALSE)

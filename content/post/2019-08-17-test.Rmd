@@ -1,8 +1,0 @@
----
-title: test
-author: ''
-date: '2019-08-17'
-slug: test
-categories: []
-tags: []
----

@@ -33,7 +33,7 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     url = "/"
     weight = 1   
 [[menu.main]]
-    name = "About us"
+    name = "About"
     url = "#"
     identifier = "about-us"
     weight = 2
@@ -69,10 +69,6 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     name = "Blog"
     url = "https://blog.rladies.org/"
     weight = 5
-[[menu.main]]
-    name = "Sponsors"
-    url = "/sponsors/"
-    weight = 6
 
 [params.sharethis]
     property = "123456789012345678901234"
@@ -102,10 +98,15 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     footer = true
     sharethis = false
     network = ""
-[[params.social]]
-	title = "email"
-	url = "mailto:info@rladies.org"
-    icon = "fas fa-envelope-square"
+[[params.twitter]]
+  title = "We are R-Ladies"
+	url = "https://twitter.com/WeAreRLadies"
     footer = true
-    sharethis = true
-    network = "email"
+    sharethis = false
+    network = ""
+[[params.twitter]]
+  title = "IWD R-Ladies"
+	url = "https://twitter.com/rladies_iwd"
+    footer = true
+    sharethis = false
+    network = ""
