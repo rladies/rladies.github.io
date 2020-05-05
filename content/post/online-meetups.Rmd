@@ -138,4 +138,4 @@ If you'd like to join events of R-Ladies chapters from around the world, the nex
 * May 06 R-Ladies Chicago: [Learning & Community Building in Data Science: Conference Talks!](https://www.meetup.com/rladies-chicago/events/269909895/)
 
 
-All R-Ladies meetup events are also listed at <https://www.meetup.com/pro/rladies/>.
+**All R-Ladies meetup events are also listed at <https://www.meetup.com/pro/rladies/>.**
