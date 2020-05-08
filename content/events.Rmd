@@ -60,10 +60,10 @@ cals <- events %>%
   transmute(
     name = calendarId,
     id = calendarId,
-    color = "#FFF",
+    color = rgrey,
     bgColor = rpurple
   ) %>% 
-  unique()
+  unique() 
 ```
 
 ```{r 'month-theme', echo = FALSE}
