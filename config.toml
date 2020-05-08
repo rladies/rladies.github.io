@@ -41,22 +41,22 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     weight = 2
 [[menu.main]]
     name = "Mission"
-    url = "/mission/"
+    url = "/about-us/mission/"
     weight = 1
     parent = "about-us"
 [[menu.main]]
     name = "Get involved"
-    url = "/involved/"
+    url = "/about-us/involved/"
     weight = 2
     parent = "about-us"
 [[menu.main]]
     name = "Meet the global team"
-    url = "/global-team/"
+    url = "/about-us/global-team/"
     weight = 3
     parent = "about-us"
 [[menu.main]]
     name = "History"
-    url = "/history/"
+    url = "/about-us/history/"
     weight = 4
     parent = "about-us"
     
@@ -67,37 +67,37 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     weight = 3
 [[menu.main]]
     name = "Events"
-    url = "/events/"
+    url = "/activities/events/"
     weight = 1
     parent = "activities"
 [[menu.main]]
     name = "R-Ladies Directory"
-    url = "/directory/"
+    url = "/activities/directory/"
     weight = 2
     parent = "activities"
 [[menu.main]]
-    name = "Mentoring program"
-    url = "/mentoring/"
+    name = "Mentoring Program"
+    url = "/activities/mentoring/"
     weight = 3
     parent = "activities"
 [[menu.main]]
     name = "Rotating Twitter Curator"
-    url = "/rocur/"
+    url = "/activities/rocur/"
     weight = 4
     parent = "activities"
 [[menu.main]]
     name = "Abstract review"
-    url = "/review/"
+    url = "/activities/review/"
     weight = 5
     parent = "activities"
 [[menu.main]]
-    name = "Twitter campaigns"
-    url = "/titter-campaign/"
+    name = "Twitter Campaigns"
+    url = "/activities/titter-campaigns/"
     weight = 6
     parent = "activities"
 [[menu.main]]
     name = "Community Slack"
-    url = "/community-slack/"
+    url = "/activities/community-slack/"
     weight = 7
     parent = "activities"
     
