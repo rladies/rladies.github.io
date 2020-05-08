@@ -28,10 +28,12 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     footerEnableTextWidget = true
     footerEnableFormWidget = true
 
+# Nav menu ----
 [[menu.main]]
     name = "Home"
     url = "/"
-    weight = 1   
+    weight = 1
+    
 [[menu.main]]
     name = "About"
     url = "#"
@@ -57,19 +59,54 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
     url = "/history/"
     weight = 4
     parent = "about-us"
+    
 [[menu.main]]
-    name = "R-Ladies Directory"
-    url = "/directory/"
+    name = "Activities"
+    url = "#"
+    identifier = "activities"
     weight = 3
 [[menu.main]]
     name = "Events"
     url = "/events/"
+    weight = 1
+    parent = "activities"
+[[menu.main]]
+    name = "R-Ladies Directory"
+    url = "/directory/"
+    weight = 2
+    parent = "activities"
+[[menu.main]]
+    name = "Mentoring program"
+    url = "/mentoring/"
+    weight = 3
+    parent = "activities"
+[[menu.main]]
+    name = "Rotating Twitter Curator"
+    url = "/rocur/"
     weight = 4
+    parent = "activities"
+[[menu.main]]
+    name = "Abstract review"
+    url = "/review/"
+    weight = 5
+    parent = "activities"
+[[menu.main]]
+    name = "Twitter campaigns"
+    url = "/titter-campaign/"
+    weight = 6
+    parent = "activities"
+[[menu.main]]
+    name = "Community Slack"
+    url = "/community-slack/"
+    weight = 7
+    parent = "activities"
+    
 [[menu.main]]
     name = "Blog"
     url = "https://blog.rladies.org/"
-    weight = 5
+    weight = 4
 
+# Analytics ----
 [params.sharethis]
     property = "123456789012345678901234"
     custom = true
@@ -77,6 +114,8 @@ ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
 [params.google.analytics]
     trackerID = "GA-000000000-0"
 
+
+# Socials ----
 [[params.social]]
 	title = "twitter"
 	url = "https://twitter.com/RLadiesGlobal"

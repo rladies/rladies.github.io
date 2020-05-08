@@ -20,7 +20,22 @@ slowly_get_events <- purrr::slowly(
 )
 
 get_chapter <- function(x){
-  str_split(x, "/")[[1]][4]
+  cpt <- unname(sapply(x, function(x) str_split(x, "/")[[1]][4]))
+  
+  url <- unname(lapply(x, function(x) str_split(x, "/")[[1]][1:4]))
+  url <- sapply(url, paste, collapse = '/')
+  
+  k <- dplyr::tibble(
+    cpt = cpt, 
+    url = url
+  ) %>% 
+    mutate(
+      html = paste0("<a href='", url, "'>", cpt, "</a>")
+    )
+  
+  # not working :(
+  # k$html
+  k$cpt
 }
 
 # Getting all the R-Ladies groups
@@ -30,6 +45,7 @@ all_rladies_groups <- find_groups(text = "r-ladies")
 rladies_groups <- all_rladies_groups[grep(pattern = "rladies|r-ladies", 
                                           x = all_rladies_groups$name,
                                           ignore.case = TRUE), ]
+
 new_events <- map_df(rladies_groups$urlname,
                   ~ slowly_get_events(.x, c("upcoming", "past")))
  
