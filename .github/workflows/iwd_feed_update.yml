@@ -1,0 +1,55 @@
+on:
+  push:
+    branches: master
+
+name: update-iwd-feed
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+
+      - name: Install pandoc and pandoc citeproc
+        run: |
+          brew install pandoc
+          brew install pandoc-citeproc
+
+      - name: Install packages
+        run: | 
+          R -e 'install.packages("remotes")' \
+            -e 'remotes::install_github("DataWookie/feedeR")'  
+
+      - name: Install hugo
+        run: |
+          R -e 'blogdown::install_hugo()'
+    
+      - name: Re-build events
+        run: Rscript --verbose -e 'blogdown:::build_rmds("content/actions/iwd.Rmd")'
+            
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update iwd page" -a
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        
+            
+#      - name: Install npm
+#        uses: actions/setup-node@v1
+
+#      - name: Deploy to Netlify
+#       env:
+#          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#        run: |
+#          npm install netlify-cli -g
+#          netlify deploy --prod
