@@ -28,8 +28,8 @@ jobs:
         run: |
           R -e 'blogdown::install_hugo()'
     
-      - name: Re-build events
-        run: Rscript --verbose -e 'blogdown:::build_rmds("content/actions/iwd.Rmd")'
+      - name: Re-build iwd
+        run: Rscript --verbose -e 'blogdown:::build_rmds("content/activities/iwd.Rmd")'
             
       - name: Commit files
         run: |
