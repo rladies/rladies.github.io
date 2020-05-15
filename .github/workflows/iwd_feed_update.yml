@@ -21,7 +21,7 @@ jobs:
 
       - name: Install packages
         run: | 
-          R -e 'install.packages("remotes")' \
+          R -e 'install.packages("remotes", "blogdown")' \
             -e 'remotes::install_github("DataWookie/feedeR")'  
 
       - name: Install hugo
