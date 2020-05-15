@@ -19,6 +19,12 @@ output: html_document
   flex-grow: 1 0 0; 
 }
 
+.left-banner{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 .card {
   display: flex;
   height: 190px;
@@ -43,10 +49,22 @@ output: html_document
   color: white;
   text-orientation: sideways-right;
   writing-mode: vertical-rl;
-  height: 100%;
+  height: 60%;
   font-weight: bold;
   font-size: 1.15vh;
   padding-top: .6em;
+  margin:0;
+}
+
+.card p {
+  background-color: #88398a;
+  color: white;
+  text-orientation: sideways-right;
+  writing-mode: vertical-rl;
+  height: 40%;
+  font-weight: bold;
+  font-size: 1.15vh;
+  margin:0;
 }
 
 .crop {
@@ -110,7 +128,10 @@ mentoring <- mentoring %>%
   mutate(
     div = paste0(
       "<div class='card'>",
-      "<a href='https://twitter.com/", twitter, "'>@", twitter,"</a>",
+      "<div class='left-banner'>",
+      "<a href='https://twitter.com/", twitter, "' style='float: top;'>@", twitter,"</a>",
+      "<p style='float: bottom;'>Mentoring program</a>",
+      "</div>",
       # "<a href='", url, "'>",
       "<span style='display: flex; align-items:center; '>",
         "<div class='crop'><img src='", img, "'></div>",
