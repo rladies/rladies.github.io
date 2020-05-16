@@ -71,4 +71,4 @@ events <- new_events %>%
   ) %>%  
   as_tibble()
 
-write.csv(events, here("d/events.csv"), row.names = FALSE)
+write.csv(events, here("content/events.csv"), row.names = FALSE)

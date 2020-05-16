@@ -2,45 +2,23 @@
 title: "Mission"
 output: markdown
 slug: mission
-type: "about"
+type: "about-us"
 ---
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE, include = FALSE)
-
-library(stringr)
-
-pasteReadme <- function(fileName){
-
-  breakFun <- function(x){
-    #function to replace empty lines with newline. 
-    if(nchar(x) == 0){
-      return("\n\n") #double newline to give same space as in the .md-file
-    } else if(substr(x, 1, 1) == "*") {
-      return(paste("\n", x)) #lists
-    } else {
-      return(x)
-    }
-  }
-
-  storeLines <- readLines(fileName)
-
-  cat(paste0(lapply(storeLines, FUN=function(x) breakFun(x)), collapse=""))
-
-}
-
-url <- "../text/mission.md"
+source(here::here("R/paste_md.R"))
 ```
 
 
 ```{r scrape_coc, include=T, results='asis', echo=F}
-pasteReadme(url)
+pasteReadme("../text/mission.md")
 ```
 
 <center>
 
-![useR2018](../images/user2018.jpg)
+![useR2018](../../images/user2018.jpg) 
 
 </center>
 
