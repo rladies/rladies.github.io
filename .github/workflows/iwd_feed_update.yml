@@ -39,7 +39,7 @@ jobs:
           R -e 'blogdown::install_hugo()'
     
       - name: Re-build iwd
-        run: - Rscript --verbose -e 'blogdown::build_site(TRUE)'
+        run: Rscript --verbose -e 'blogdown::build_site(TRUE)'
             
       - name: Commit files
         run: |
