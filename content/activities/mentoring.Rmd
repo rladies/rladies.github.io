@@ -19,88 +19,18 @@ output: html_document
   flex-grow: 1 0 0; 
 }
 
-.left-banner{
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.card {
-  display: flex;
-  height: 190px;
-  width: 325px;
-  align-item: center;
-}
-
 @media only screen and (max-width: 600px) {
   .card {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 1400px) {
-  .card {
-    width: 100%;
-  }
-}
-
-.card a {
-  background-color: #88398a;
-  color: white;
-  text-orientation: sideways-right;
-  writing-mode: vertical-rl;
-  height: 60%;
-  font-weight: bold;
-  font-size: 1.15vh;
-  padding-top: .6em;
-  margin:0;
-}
-
-.card p {
-  background-color: #88398a;
-  color: white;
-  text-orientation: sideways-right;
-  writing-mode: vertical-rl;
-  height: 40%;
-  font-weight: bold;
-  font-size: 1.15vh;
-  margin:0;
-}
-
-.crop {
-  height: 100%;
-  width: 175px;
-  overflow: hidden;
-}
-
-.crop img {
-  height: 100%;
-  width: 175px;
+.grid-item img {
+  height: 230px;
+  width: 500px;
   overflow: hidden;
   object-fit: cover;
 }
-
-.statement {
-  flex-grow: 1 1 0;
-  height: 100%;
-  border: thick solid #88398a;
-  padding: .2em;
-}
-
-.statement-inner {
-  border: double #a7a9ac;
-  padding: 1.5vh;
-  height: 100%;
-  width: 100%; 
-}
-
-.statement q {
-  color: #727272; 
-  font-weight: bold;
-  font-size: 1.5vh;
-  line-height: 0.1;
-}
-
 ```
  
 Never worry, there is always an R-Lady mentor to walk with you!
@@ -120,31 +50,19 @@ Join us by filling out [this short form](https://tinyurl.com/rladies-mentoring)
 ```{r, include = FALSE}
 library(dplyr)
 mentoring <- tibble::tribble(
-  ~ mentor_name, ~mentor_chapter, ~mentee_name, ~mentee_chapter, ~img,  ~ statement,  ~twitter, ~ url,
-  "Erin Ledell", "R-Ladies SF", "Athanasia M. Mowinckel", "R-Ladies Oslo", "https://drmowinckels.io/img/profile.png", "some really awesome statement", "RLadiesOslo", "www.google.com",
-  "Erin Ledell", "R-Ladies SF", "Athanasia M. Mowinckel", "R-Ladies Oslo", "https://www.h2o.ai/wp-content/uploads/2018/08/erin_ledell.jpg", "some really awesome statement", "RLadiesOslo", "www.google.com",  "Erin Ledell", "R-Ladies SF", "Athanasia M. Mowinckel", "R-Ladies Oslo", "https://drmowinckels.io/img/profile.png", "some really awesome statement", "RLadiesOslo", "www.google.com")
+  ~ mentor_name, ~mentor_chapter, ~mentee_name, ~mentee_chapter, ~img,  ~url,
+  "Erin Ledell", "R-Ladies SF", "Nadeja Sero", "R-Ladies Cotonou", "/images/mentoring/cotonou.png", "www.google.com")
 
 mentoring <- mentoring %>%
   mutate(
     div = paste0(
-      "<div class='card'>",
-      "<div class='left-banner'>",
-      "<a href='https://twitter.com/", twitter, "' style='float: top;'>@", twitter,"</a>",
-      "<p style='float: bottom;'>Mentoring program</a>",
-      "</div>",
-      # "<a href='", url, "'>",
-      "<span style='display: flex; align-items:center; '>",
-        "<div class='crop'><img src='", img, "'></div>",
-        "<div class='statement'><div class='statement-inner'>",
-        '<q>" ', statement, ' "</q>',
-      "</div></div>",
-      "</div>",
+      "<a href='", url, "'>",
+        "<img src='", img, "'>",
+      "</a>",
       "<div><p>",
          "<b>Mentor: </b>", mentor_name, " (", mentor_chapter, ")<br>",
          "<b>Mentee: </b>", mentee_name, " (", mentee_chapter, ")",
-      "</p><div>",
-      # "</a>",
-      "</div>"
+      "</p><div>"
     ) 
   )
 ```

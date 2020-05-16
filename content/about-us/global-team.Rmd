@@ -2,14 +2,13 @@
 title: "Meet the global team"
 output: markdown
 slug: global-team
-type: "about"
+type: "about-us"
 ---
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
 
-library(purrr)
 library(dplyr)
 library(kableExtra)
 library(tidyr)
@@ -17,14 +16,37 @@ library(tidyr)
 
 
 ```{r parse, include=FALSE}
+fix_order <- function(x){
+  j <- unique(c("Leadership Team",
+         unique(x)[order(unique(x))]))
+  
+  factor(x, levels = j)
+}
+
 csv <- 'https://raw.githubusercontent.com/rladies/starter-kit/master/global-team.csv'
-team <- readr::read_csv(csv) %>%
-  separate_rows(title, sep = ",")
+team <- readr::read_csv(csv, trim_ws = TRUE) %>%
+  separate_rows(title, sep = ",") %>% 
+  mutate(title = gsub("^ | $", "", title))
+
+former <- filter(team, title == "Former Leadership Team")
+team <- filter(team, title != "Former Leadership Team") %>% 
+  mutate(title = fix_order(title))
 
 ```
 
-```{r content, echo=F}
+```{r 'team', echo=F}
 team %>% 
+  arrange(title, name) %>% 
+  kable(align = "rl") %>%
+  kable_styling(full_width = F) %>%
+  column_spec(2, bold = T) %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+
+## Former leadership members
+```{r 'former', echo=F}
+former %>% 
   kable(align = "rl") %>%
   kable_styling(full_width = F) %>%
   column_spec(2, bold = T) %>%

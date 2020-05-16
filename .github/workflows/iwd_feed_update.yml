@@ -18,7 +18,10 @@ jobs:
         run: |
           brew install pandoc
           brew install pandoc-citeproc
-
+          
+      - name: Install remove iwd pages to rebuild
+        run: rm -r public/activities/iwd*
+        
       - name: Install packages
         run: | 
           R -e 'install.packages(c("remotes", "blogdown"))' \
@@ -29,13 +32,13 @@ jobs:
           R -e 'blogdown::install_hugo()'
     
       - name: Re-build iwd
-        run: Rscript --verbose -e 'blogdown:::build_rmds("content/activities/iwd.Rmd")'
+        run: - Rscript --verbose -e 'blogdown::build_site(TRUE)'
             
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
+          git add public/activities/iwd*
           git commit -m "Update iwd page" -a
           
       - name: Push changes
