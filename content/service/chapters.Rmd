@@ -40,7 +40,7 @@ render_sm <- function(address, choice) {
                      '><i class="fab fa-github"></i></a>')
     } else if(choice == 'wb') {
       link <- paste0('<a href=', address, 
-                     '><i class="fas fa-rss"></i></a>')
+                     '><i class="fas fa-globe"></i></a>')
     }
   }
   return(link)

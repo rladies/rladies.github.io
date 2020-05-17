@@ -1,0 +1,22 @@
+---
+title: "Get Involved"
+output: markdown
+slug: involved
+type: "about-us"
+---
+
+<center>
+
+![](../../images/rladies-help.png)
+
+</center>
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, include = FALSE)
+source(here::here("R/paste_md.R"))
+```
+
+```{r scrape_coc, include=T, results='asis', echo=F}
+pasteReadme("../text/involved.md")
+```
