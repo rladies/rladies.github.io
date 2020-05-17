@@ -31,6 +31,24 @@ output: html_document
   overflow: hidden;
   object-fit: cover;
 }
+
+button{
+  background-color: #88398a;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #88398aee;
+}
 ```
  
 Never worry, there is always an R-Lady mentor to walk with you!
@@ -42,8 +60,9 @@ However, a number of experienced R-Ladies organisers are willing to mentor new o
 
 For mentors, this is an opportunity to help build the community, learn about the realities of other chapters, gain experience as a mentor, and contributing to R-Ladies' goals.
 
-Do you want to be a part of the mentoring program? 
-Join us by filling out [this short form](https://tinyurl.com/rladies-mentoring)
+<center>
+<a href='https://tinyurl.com/rladies-mentoring' target="_blank"><button>Join the program</button></a>
+</center>
 
 ## Experiences from the program
 
