@@ -2,7 +2,7 @@ on:
   push:
     branches: master
 
-name: update-events
+name: update-iwd-feed
 
 jobs:
   build:
@@ -18,33 +18,33 @@ jobs:
         run: |
           brew install pandoc
           brew install pandoc-citeproc
-      
-      - name: set Renviron
+          
+      - name: Install remove iwd pages to rebuild
+        run: rm -r public/activities/iwd*
+        
+      - name: Commit files
         run: |
-          cat > .Renviron << EOF
-          meetupr.use_oauth=FALSE
-          meetupr.key=${{ secrets.MEETUP_KEY }}
-          meetupr.secret=${{ secrets.MEETUP_SECRET }}
-          EOF
-    
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Delete iwd page to rebuild" -a
+        
       - name: Install packages
         run: | 
-          R -e 'install.packages(c("blogdown", "dplyr", "remotes", "here"))' \
-            -e 'install.packages(c("leaflet", "htmltools", "rmarkdown"))' \
-            -e 'remotes::install_github("dreamRs/tuicalendr")'  
+          R -e 'install.packages(c("remotes", "blogdown"))' \
+            -e 'remotes::install_github("DataWookie/feedeR")'  
 
       - name: Install hugo
         run: |
           R -e 'blogdown::install_hugo()'
     
-      - name: Re-build events
-        run: Rscript --verbose -e 'blogdown:::build_rmds("content/events.Rmd")'
+      - name: Re-build iwd
+        run: Rscript --verbose -e 'blogdown::build_site(TRUE)'
             
       - name: Commit files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -m "Update events page" -a
+          git add public/activities/iwd*
+          git commit -m "Update iwd page" -a
           
       - name: Push changes
         uses: ad-m/github-push-action@master

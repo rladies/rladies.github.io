@@ -1,0 +1,21 @@
+---
+title: "History"
+output: markdown
+slug: history
+type: "about-us"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, include = FALSE)
+source(here::here("R/paste_md.R"))
+```
+
+```{r scrape_coc, include=T, results='asis', echo=F}
+pasteReadme("../text/history.md")
+```
+
+<center>
+
+![](../../images/user2019.jpeg)
+
+</center>
