@@ -478,3 +478,6 @@ tweets <- dplyr::select(CCRLTw, City, tweet, picture) %>%
 readr::write_excel_csv2(tweets, path = "ready_tweets_nodata.csv")
 
 ```
+
+
+[English version](https://blog.rladies.org/post/blog_iwdtwitter_2019/)

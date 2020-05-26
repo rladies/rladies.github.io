@@ -221,4 +221,6 @@ _Tercer paso_: con el plan en mente, llegó el momento de editar el video.  Lo h
 
 El resultado fueron dos videos en Español e Inglés, donde contamos en un minuto que hizo R-Ladies durante el 2019, fue una tarea muy divertida, hubo muchas risas e intentos, especialmente la grabación del texto en Inglés.
 
-La exportación posterior del video se pasó al equipo Global para su difusión por las redes sociales el 31 de Enero de 2019.
+La exportación posterior del video se pasó al equipo Global para su difusión por las redes sociales el 31 de Diciembre de 2019.
+
+[English version](https://blog.rladies.org/post/rladies_video_2019/)
