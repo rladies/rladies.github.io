@@ -5,6 +5,7 @@ date: "2020-06-02"
 description: ""
 tags:
 - 2020
+- spanish
 categories:
 - R-Ladies
 output: html_document
