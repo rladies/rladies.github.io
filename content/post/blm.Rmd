@@ -24,7 +24,7 @@ Forwards recognizes that Black people are often missing or overlooked in core ac
 
 We work through small, but hopefully impactful actions, such as:
 
-* Highlighting the work of people from underrepresented groups and sharing information about relevant events and opportunities on <a href="https://twitter.com/r_forwards">@R_Forwards Twitter</a>.
+* Highlighting the work of people from underrepresented groups and sharing information about relevant events and opportunities on [\@R_Forwards Twitter](https://twitter.com/r_forwards).
 
 * Supporting useR! conference organizers with the diversity scholarship program.
 
