@@ -14,13 +14,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Como organizações comprometidas em ampliar a diversidade e a inclusão em nossa comunidade, apoiamos o movimento #BlackLivesMatter ou #VidasNegrasImportam e nos unimos a quem exige justiça para a opressão sistêmica. O racismo generalizado afeta negativamente a participação das pessoas negras na sociedade. Os eventos atuais nos EUA ecoam o que aconteceu e continua acontecendo com pessoas que fazem parte de minorias em todo o mundo. Estamos agregando recursos e adotando ações deliberadas para amplificar as vozes de pessoas negras, indígenas e de outros grupos não-brancos da comunidade R, agora e no futuro.
+Como organizações comprometidas em ampliar a diversidade e a inclusão em nossa comunidade, apoiamos o movimento #BlackLivesMatter ou #VidasNegrasImportam e nos unimos a quem exige justiça frente a opressão sistêmica. O racismo generalizado afeta negativamente a participação das pessoas negras na sociedade. Os eventos atuais nos EUA ecoam o que aconteceu e continua acontecendo com pessoas que fazem parte de minorias em todo o mundo. Estamos agregando recursos e adotando ações deliberadas para amplificar as vozes de pessoas negras, indígenas e de outros grupos não-brancos da comunidade R, agora e no futuro.
 
 Para as pessoas que compõem nossa comunidade e que estão sofrendo agora, gostaríamos de dizer que apoiamos vocês, ouvimos suas vozes, mas sabemos que isso não é suficiente para promover a mudança que precisamos. O trabalho de quebrar sistemas injustos é lento e difícil, e sabemos que algumas de vocês carregam mais carga do que outras. E não há palavras que tornem isso mais fácil.
 
 ## Uma mensagem da Forwards
 
-A Forwards reconhece que as pessoas negras geralmente estão ausentes ou são negligenciadas nas principais atividades da comunidade R. Reconhecemos que muitas pessoas estão frustradas com o lento progresso ou a aparente falta de ação. No momento em nos lembram de que a injustiça racial oprime e impede o desenvolvimento das pessoas, é nosso objetivo criar espaço para que pessoas negras, indígenas e de outros grupos não-brancos ascendam como pessoas programadoras e líderes de comunidades.
+A Forwards reconhece que as pessoas negras geralmente estão ausentes ou são negligenciadas nas principais atividades da comunidade R. Reconhecemos que muitas pessoas estão frustradas com o lento progresso ou a aparente falta de ação. Neste momento que nos lembra de que a injustiça racial oprime e impede o desenvolvimento das pessoas, é nosso objetivo criar espaço para que pessoas negras, indígenas e de outros grupos não-brancos ascendam como pessoas programadoras e líderes de comunidades.
 
 Nós trabalhamos através de ações pequenas, mas esperamos que tenham impacto, tais como:
 
@@ -47,12 +47,12 @@ Como a missão da R-Ladies é focada em melhorar a diversidade de gênero na com
 
 * Melhoraremos a diversidade da representação étnico-racial na Equipe Global da R-Ladies, para que as vozes de todas as minorias interseccionais sejam mais bem representadas. 
 
-* Lançaremos uma série de programas para apoiar integrantes de nossa comunidade (por exemplo, bolsas de viagem, vouchers de livros, assinaturas educacionais) por meio de fundos doados à R-Ladies. Dedicaremos 50% dos fundos à pessoas membras da comunidade com identidades interseccionais, e metade disto direcionados exclusivamente para pessoas negras que fazem parte da comunidade.
+* Lançaremos uma série de programas para apoiar integrantes de nossa comunidade (por exemplo, bolsas de viagem, vouchers de livros, assinaturas educacionais) por meio de fundos doados a R-Ladies. Dedicaremos 50% dos fundos a pessoas membras da comunidade com identidades interseccionais, e metade disto direcionados exclusivamente para pessoas negras que fazem parte da comunidade.
 
 ## Declaração de encerramento
 
 
-Nós trabalharemos mais para ouvir e amplificar as vozes de pessoas percententes à grupos minoritários de nossas respectivas comunidades em todo o mundo. Estamos engajadas no trabalho contínuo de romper sistmas injustos e em abrir espaço para que aquelas pessoas que atualmente sofrem nesses sistemas participem, plenamente, e ocupem posições de liderança. Pedimos a todas as pessoas da comunidade R que façam o mesmo.
+Nós trabalharemos mais para ouvir e amplificar as vozes de pessoas percententes a grupos minoritários de nossas respectivas comunidades em todo o mundo. Estamos engajadas no trabalho contínuo de romper sistemas injustos e em abrir espaço para que aquelas pessoas que atualmente sofrem nesses sistemas participem plenamente, e ocupem posições de liderança. Pedimos a todas as pessoas da comunidade R que façam o mesmo.
 
 
 Time principal da R Forwards: Heather Turner, Noa Tamir, Tatjana Kecojevic, Emily Dodwell, Kevin O’Brien, Julie Josse.
