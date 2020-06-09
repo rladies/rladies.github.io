@@ -5,6 +5,7 @@ date: "2020-06-06"
 description: "#VidasNegrasImportam: Uma declaração conjunta de Forwards e R-Ladies"
 tags: 
 - social-justice
+- portuguese
 categories:
 - r-ladies
 output: html_document
