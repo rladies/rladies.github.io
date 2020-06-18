@@ -58,3 +58,6 @@ vignettes/*.pdf
 
 # Meetupr auth
 **/*.httr-oauth$
+
+# stupid mac hidden files
+**/.DS_Store
