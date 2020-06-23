@@ -5,6 +5,7 @@ date: "2020-06-06"
 description: "#BlackLivesMatters : une déclaration commune de Forwards et R-Ladies"
 tags: 
 - social-justice
+- french
 categories:
 - r-ladies
 output: html_document
