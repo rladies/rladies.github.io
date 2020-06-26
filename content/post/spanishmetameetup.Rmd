@@ -51,11 +51,15 @@ En los próximos días estos capítulos anunciarán el evento y te darán instru
 
 * [R-Ladies Córdoba, Argentina](https://www.meetup.com/rladies-cordoba) 🇦🇷
 
+* [R-Ladies Cusco, Perú](https://www.meetup.com/es-ES/rladies-cusco/) 🇦🇹
+
 * [R-Ladies Galápagos, Ecuador](https://www.meetup.com/rladies-galapagos-islands/) 🇪🇨
  
 * [R-Ladies Guayaquil, Ecuador](https://www.meetup.com/rladies-guayaquil/) 🇪🇨 
 
 * [R-Ladies La Paz, Bolivia](https://www.meetup.com/rladies-la-paz/) 🇧🇴
+
+* [R-Ladies Lima, Perú](https://www.meetup.com/es/rladies-lima/) 🇦🇹
 
 * [R-Ladies Mendoza, Argentina](https://www.meetup.com/rladies-mendoza/) 🇦🇷
 
@@ -77,7 +81,3 @@ En momentos como estos, la comunidad de R-Ladies muestra su valor más que nunca
 
 
 #### Autoras: Laura Ación, Yanina Bellini Saibene, Paola Corrales, Patricia Loto y Paloma Rojas
-  
-
-
-
