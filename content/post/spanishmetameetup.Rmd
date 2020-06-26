@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 Webinario en español gratuito para que cualquier evento virtual interactivo sea un éxito sin estrés adicional
 
 🗓️ ⏰ **¿Cuándo?** 
-Miércoles primero de Julio de 17:00 a 18:30 UTC (o en diferido vía grabación en YouTube)
+Miércoles 1ro de Julio de 17:00 a 18:30 UTC (o en diferido vía grabación en YouTube)
 
 ✍️ **¿Cómo?**
 Inscríbete vía meetup.com en el capítulo de R-Ladies hispanohablante más cercano que ofrezca el evento en los próximos días (links disponibles más abajo en este post)
@@ -31,7 +31,7 @@ Inscríbete vía meetup.com en el capítulo de R-Ladies hispanohablante más cer
  
 R-Ladies lleva adelante muchas actividades e iniciativas, pero su corazón son los capítulos alrededor del mundo donde la comunidad se reúne para aprender, enseñar y acompañarse. Desde la aparición del COVID19, los eventos presenciales fueron suspendidos, pero la magia de R-Ladies no se detiene y hace posible los encuentros virtuales. 
 
-Iniciada la pandemia, el equipo de R-Ladies Global generó la infraestructura necesaria para que todos nuestros capítulos puedan realizar eventos virtuales (más información [en este post](https://blog.rladies.org/post/online-meetups) y poder difundirlos [desde YouTube](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng).  Este es un paso necesario, pero no suficiente ya que muchas personas no tienen suficiente experiencia en la organización de eventos virtuales, en el dictado de clases y talleres online, o en la realización de videoconferencias. Por eso el segundo paso desde el equipo de R-Ladies Global es facilitar la formación en estos temas.  
+Iniciada la pandemia, el equipo de R-Ladies Global generó la infraestructura necesaria para que todos nuestros capítulos puedan realizar eventos virtuales (más información [en este post](https://blog.rladies.org/post/online-meetups)) y poder difundirlos [desde YouTube](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng).  Este es un paso necesario, pero no suficiente ya que muchas personas no tienen suficiente experiencia en la organización de eventos virtuales, en el dictado de clases y talleres online, o en la realización de videoconferencias. Por eso el segundo paso desde el equipo de R-Ladies Global es facilitar la formación en estos temas.  
 
 Por todo lo anterior, organizamos **“Cómo hacer una reunión virtual inolvidable (sin morir en el intento)”**. En este webinario mostraremos algunos trucos y herramientas para que cualquier evento virtual interactivo (por ejemplo, clase, taller o panel online) sea un éxito sin estrés adicional al hacerlo. Si organizas meetups de R-Ladies, encontrarás dónde y cómo acceder a la infraestructura que te permitirá organizar meetups online para tu capítulo. Si no organizas meetups de R-Ladies, también encontrarás material útil para todo tipo de evento online que organices o del que participes.
 
@@ -47,6 +47,8 @@ En los próximos días estos capítulos anunciarán el evento y te darán instru
  
 * [R-Ladies Buenos Aires, Argentina](https://www.meetup.com/rladies-buenos-aires) 🇦🇷
 
+* [R-Ladies Concepción, Chile](https://www.meetup.com/rladies-concepcion/) 🇨🇱
+
 * [R-Ladies Córdoba, Argentina](https://www.meetup.com/rladies-cordoba) 🇦🇷
 
 * [R-Ladies Galápagos, Ecuador](https://www.meetup.com/rladies-galapagos-islands/) 🇪🇨
@@ -61,6 +63,8 @@ En los próximos días estos capítulos anunciarán el evento y te darán instru
 
 * [R-Ladies Santa Rosa, Argentina](https://www.meetup.com/rladies-santa-rosa) 🇦🇷
 
+* [R-Ladies Santiago de Chile, Chile](https://www.meetup.com/rladies-scl/) 🇨🇱
+
 * [R-Ladies Ushuaia, Argentina](https://www.meetup.com/rladies-ushuaia) 🇦🇷
 
 * [R-Ladies Resistencia-Corrientes, Argentina](https://www.meetup.com/rladies-resistencia-corrientes) 🇦🇷
@@ -69,7 +73,7 @@ En los próximos días estos capítulos anunciarán el evento y te darán instru
  
 Si no puedes verlo en vivo, la grabación quedará disponible en nuestro canal de [YouTube](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng) unos días más tarde, cuando lo hayamos subtitulado en español e inglés. 
  
-En momentos como estos, la comunidad de R-Ladies muestra su valor más que nunca, dándonos la posibilidad de apoyarnos y ayudarnos para que podamos estar cerca, a pesar de la distancia social necesaria, y sigamos aprendiendo, creciendo y compartiendo. :purple_heart: 
+En momentos como estos, la comunidad de R-Ladies muestra su valor más que nunca, dándonos la posibilidad de apoyarnos y ayudarnos para que podamos estar cerca, a pesar de la distancia social necesaria, y sigamos aprendiendo, creciendo y compartiendo.  
 
 
 #### Autoras: Laura Ación, Yanina Bellini Saibene, Paola Corrales, Patricia Loto y Paloma Rojas
