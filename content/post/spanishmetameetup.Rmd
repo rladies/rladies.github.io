@@ -65,7 +65,11 @@ En los próximos días estos capítulos anunciarán el evento y te darán instru
 
 * [R-Ladies Mendoza, Argentina](https://www.meetup.com/rladies-mendoza/) 🇦🇷
 
+* [R-Ladies Monterrey, México](https://www.meetup.com/es-ES/rladies-monterrey/)
+
 * [R-Ladies Rio, Brasil](https://www.meetup.com/rladies-rio/) 🇧🇷
+
+* [R-Ladies Santa Fe, Argentina](https://www.meetup.com/es-ES/rladies-santa-fe/) 🇦🇷
 
 * [R-Ladies Santa Rosa, Argentina](https://www.meetup.com/rladies-santa-rosa) 🇦🇷
 
