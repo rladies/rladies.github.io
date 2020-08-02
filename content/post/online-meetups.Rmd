@@ -136,3 +136,6 @@ If you'd like to join events of R-Ladies chapters from around the world, the nex
 * April 30 R-Ladies Miami: [From Underdogs to Winners](https://www.meetup.com/rladies-miami/events/270087598/)
 * May 05 R-Ladies Freiburg: [Tidy Tuesday - Tips and Tricks](https://www.meetup.com/rladies-freiburg/events/270214676/)
 * May 06 R-Ladies Chicago: [Learning & Community Building in Data Science: Conference Talks!](https://www.meetup.com/rladies-chicago/events/269909895/)
+
+
+**All R-Ladies meetup events are also listed at <https://www.meetup.com/pro/rladies/>.**
