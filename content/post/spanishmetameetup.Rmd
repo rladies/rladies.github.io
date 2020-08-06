@@ -43,7 +43,7 @@ Para participar de este evento, tendrás que ingresar a la página de meetup.com
 
 En los próximos días estos capítulos anunciarán el evento y te darán instrucciones para unirte a la transmisión en vivo: 
 
-* [R-Ladies Barcelona, España](http://www.meetup.com/rladies-barcelona) 🇪🇸
+* [R-Ladies Barcelona, España](https://www.meetup.com/rladies-barcelona) 🇪🇸
  
 * [R-Ladies Buenos Aires, Argentina](https://www.meetup.com/rladies-buenos-aires) 🇦🇷
 
