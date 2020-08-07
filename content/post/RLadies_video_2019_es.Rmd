@@ -5,7 +5,7 @@ date: "2020-01-27"
 description: ""
 tags:
 - 2019
-- Spanish
+- spanish
 categories:
 - R-Ladies
 output: html_document
