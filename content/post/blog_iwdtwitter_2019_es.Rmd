@@ -1,6 +1,5 @@
 ---
----
-title: "IWD 2019 Twitter Action"
+title: "Acción de Twitter para el IWD 2019"
 author: "Yanina Bellini, Patricia Loto y Divya Seernani; con notas de Roxana Noelia Villafañe y Gabriela De Queiroz"
 date: "2019-03-25"
 description: "Explicando el proyecto de twitter para el IWD 2019"
