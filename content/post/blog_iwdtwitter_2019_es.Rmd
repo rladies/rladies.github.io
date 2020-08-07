@@ -1,13 +1,14 @@
 ---
 ---
 title: "IWD 2019 Twitter Action"
-author: "Como fue contado por Yanina Bellini, Patricia Loto y Divya Seernani; con notas de Roxana Noelia Villafañe y Gabriela De Queiroz"
+author: "Yanina Bellini, Patricia Loto y Divya Seernani; con notas de Roxana Noelia Villafañe y Gabriela De Queiroz"
 date: "2019-03-25"
 description: "Explicando el proyecto de twitter para el IWD 2019"
 tags:
 - iwd
 - twitter
 - 2019
+- spanish
 categories:
 - IWD
 - 2019
@@ -392,6 +393,7 @@ for (i in 1:nrow(SinData)) { #Line for all the chapters
 ## Cómo fueron creados los tweets
 
 Este código para generar el texto de los tweets se basa en el código de Maëlle Salmon utilizado durante la primeta campaña realizada durante el 2018 presente en el  blog de R-Ladies que mencionamos al inicio de este post.
+
 ```
 
 # Plantillas
@@ -479,5 +481,6 @@ readr::write_excel_csv2(tweets, path = "ready_tweets_nodata.csv")
 
 ```
 
+Autoras: "Como fue contado por Yanina Bellini, Patricia Loto y Divya Seernani; con notas de Roxana Noelia Villafañe y Gabriela De Queiroz"
 
 [English version](https://blog.rladies.org/post/blog_iwdtwitter_2019/)
