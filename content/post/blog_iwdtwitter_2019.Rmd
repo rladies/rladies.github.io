@@ -467,3 +467,4 @@ readr::write_excel_csv2(tweets, path = "ready_tweets_nodata.csv")
 
 ```
 
+Authors: "As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz"
