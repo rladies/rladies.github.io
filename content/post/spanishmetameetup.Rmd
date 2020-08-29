@@ -43,7 +43,7 @@ Para participar de este evento, tendrás que ingresar a la página de meetup.com
 
 En los próximos días estos capítulos anunciarán el evento y te darán instrucciones para unirte a la transmisión en vivo: 
 
-* [R-Ladies Barcelona, España](http://www.meetup.com/rladies-barcelona) 🇪🇸
+* [R-Ladies Barcelona, España](https://www.meetup.com/rladies-barcelona) 🇪🇸
  
 * [R-Ladies Buenos Aires, Argentina](https://www.meetup.com/rladies-buenos-aires) 🇦🇷
 
@@ -81,7 +81,7 @@ En los próximos días estos capítulos anunciarán el evento y te darán instru
 
 * [R-Ladies Valparaíso, Chile](https://www.meetup.com/es/rladies-valparaiso) 🇨🇱
  
-Si no puedes verlo en vivo, la grabación quedará disponible en nuestro canal de [YouTube](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng) unos días más tarde, cuando lo hayamos subtitulado en español e inglés. 
+Si no puedes verlo en vivo, la grabación quedará disponible en nuestro canal de [YouTube](https://youtu.be/lZICjcX7O0U) unos días más tarde, cuando lo hayamos subtitulado en español e inglés. 
  
 En momentos como estos, la comunidad de R-Ladies muestra su valor más que nunca, dándonos la posibilidad de apoyarnos y ayudarnos para que podamos estar cerca, a pesar de la distancia social necesaria, y sigamos aprendiendo, creciendo y compartiendo.  
 
