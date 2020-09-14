@@ -11,5 +11,5 @@ source("../R/paste_md.R")
 ```
 
 ```{r scrape_coc, include=T, results='asis', echo=F}
-pasteReadme("https://raw.githubusercontent.com/wiki/rladies/starter-kit/Code-of-Conduct.md")
+pasteReadme("https://raw.githubusercontent.com/rladies/.github/master/CODE_OF_CONDUCT.md")
 ```
