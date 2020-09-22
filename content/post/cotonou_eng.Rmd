@@ -6,6 +6,7 @@ description: "R-Ladies Mentoring Program"
 tags: 
 - community
 - mentoring
+- africa
 - english
 categories:
 - r-ladies
@@ -96,7 +97,7 @@ One of the most important issues that we tackled with my R-sister was How to mot
 
 Before the second meetup, R-Ladies Cotonou received a Vector level Grant from the R Consortium! I had applied to that funding with the encouragement and reminders from Florencia. She also explained to me how to look for funding and how this could be useful to a chapter. 
 
-Our second meetup went smoothly (some visuals (some visuals [here](https://twitter.com/RLadiesCtn/status/1227670069305651201))). To encourage and motivate speakers, at the end of the tutorial, I asked the speaker, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), to share her experience from choosing her topic to presenting! She ecstatically shared that and we immediately got volunteers for the next meetup. To spice it up a bit, we added a surprise extra event which was a lightning talk by [Shériftah Mama Chabi](https://twitter.com/masherycha1) on the topic Ladies in Science. She presented the state of women in science, discussed gender equality and the challenges encountered by women scientists, and ended by giving a bunch of useful links to opportunities and funding.
+Our second meetup went smoothly (some visuals [here](https://twitter.com/RLadiesCtn/status/1227670069305651201)). To encourage and motivate speakers, at the end of the tutorial, I asked the speaker, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), to share her experience from choosing her topic to presenting! She ecstatically shared that and we immediately got volunteers for the next meetup. To spice it up a bit, we added a surprise extra event which was a lightning talk by [Shériftah Mama Chabi](https://twitter.com/masherycha1) on the topic Ladies in Science. She presented the state of women in science, discussed gender equality and the challenges encountered by women scientists, and ended by giving a bunch of useful links to opportunities and funding.
 
 ![The second meetup speaker, Ruth Ouangbey, is taking us through a review of the
 most practical methods of importing and exporting datasets. The members are following
@@ -112,7 +113,5 @@ Today, R-Ladies Cotonou is in good health, mostly because of the mentorship prog
 > ***Never worry, there is always an R-Ladies mentor to walk with you!***
 
 
-_Nadejda Sero_
-
-Additional thank you for their valuable support to:
-Florencia D'Andrea (Spanish translation), Mine Dogucu and Divya Sernaami (Proofreading)
+_Author: [Nadejda Sero](https://twitter.com/sbnadejda), organizor of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)
+Spanish translation: Florencia D'Andrea, Proofreading: Mine Dogucu and Divya Sernaami_
