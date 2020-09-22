@@ -1,7 +1,7 @@
 ---
 title: "The R-Ladies Mentoring Program: R-Ladies Cotonou journey"
-author: "Nadejda Sero"
-date: "2020-09-25"
+author: "[Nadejda Sero](https://twitter.com/sbnadejda), organizer of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
+date: "2020-08-04"
 description: "R-Ladies Mentoring Program"
 tags: 
 - community
@@ -60,7 +60,7 @@ co-founder of R-Ladies Global, who wanted to know if our chapter still existed. 
 Claudia suggested me to get a mentor to help me with the chapter development! By the time, 
 I was done accepting the offer, my mentor joined the fight for R-Ladies Cotonou.
 
-## R-Ladies Mentorship program at the rescue! 
+## R-Ladies Mentorship program at the rescue! 👯♂️
 
 My mentor [Florencia D'Andrea](https://twitter.com/cantoflor_87), organizer from [R-Ladies Buenos Aires](https://twitter.com/RLadiesBA) and also my 
 “R-sister”, as we finally baptized ourselves, appeared at the right time and 
@@ -96,7 +96,7 @@ One of the most important issues that we tackled with my R-sister was How to mot
 
 Before the second meetup, R-Ladies Cotonou received a Vector level Grant from the R Consortium! I had applied to that funding with the encouragement and reminders from Florencia. She also explained to me how to look for funding and how this could be useful to a chapter. 
 
-Our second meetup went smoothly (some visuals (some visuals [here](https://twitter.com/RLadiesCtn/status/1227670069305651201))). To encourage and motivate speakers, at the end of the tutorial, I asked the speaker, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), to share her experience from choosing her topic to presenting! She ecstatically shared that and we immediately got volunteers for the next meetup. To spice it up a bit, we added a surprise extra event which was a lightning talk by [Shériftah Mama Chabi](https://twitter.com/masherycha1) on the topic Ladies in Science. She presented the state of women in science, discussed gender equality and the challenges encountered by women scientists, and ended by giving a bunch of useful links to opportunities and funding.
+Our second meetup went smoothly (some visuals here). To encourage and motivate speakers, at the end of the tutorial, I asked the speaker, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), to share her experience from choosing her topic to presenting! She ecstatically shared that and we immediately got volunteers for the next meetup. To spice it up a bit, we added a surprise extra event which was a lightning talk by [Shériftah Mama Chabi](https://twitter.com/masherycha1) on the topic Ladies in Science. She presented the state of women in science, discussed gender equality and the challenges encountered by women scientists, and ended by giving a bunch of useful links to opportunities and funding.
 
 ![The second meetup speaker, Ruth Ouangbey, is taking us through a review of the
 most practical methods of importing and exporting datasets. The members are following
@@ -110,9 +110,4 @@ I am deeply and sincerely grateful to Florencia, my mentor who really invested h
 Today, R-Ladies Cotonou is in good health, mostly because of the mentorship program! I recommend it to any chapter that needs help to set up, organize meetups, recruit members or anything else required for the chapter’s life. 
 
 > ***Never worry, there is always an R-Ladies mentor to walk with you!***
-
-
-_Nadejda Sero_
-
-Additional thank you for their valuable support to:
-Florencia D'Andrea (Spanish translation), Mine Dogucu and Divya Sernaami (Proofreading)
+	
