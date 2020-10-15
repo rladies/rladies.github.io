@@ -1,0 +1,9 @@
+[submodule "themes/hugo-initio"]
+	path = themes/hugo-initio
+	url = https://github.com/miguelsimoni/hugo-initio.git
+[submodule "airspace-hugo"]
+	path = airspace-hugo
+	url = https://github.com/themefisher/airspace-hugo
+[submodule "themes/hugo-initio-athanasiamo"]
+	path = themes/hugo-initio-athanasiamo
+	url = https://github.com/Athanasiamo/hugo-initio

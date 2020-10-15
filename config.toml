@@ -1,21 +1,37 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "R-Ladies Global"
-theme = "hugo-initio"
-#publishDir = "docs"
+theme = "hugo-initio-athanasiamo"
 publishDir = "public"
-ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$"]
+ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$", "index\\.html", "_cache$", "README"]
+
+
+[languages.en]
+languageName = "English"
+description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+weight = 1
+
+[languages.fr]
+languageName = "Français"
+weight = 2
+#description = ""
+
+[languages.es]
+languageName = "Español"
+weight = 3
+#description = ""
 
 [params]
     name = "R-Ladies Global"
-    description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
     email = "info@rladies.org"
     coc = "/coc/"
     year = 2013
     avatar = "images/logo.png"
-    background = "images/header.jpg"
+    #banner = "images/header.jpg"
     favicon = "images/favicon.png"
+    imgclass = "rounded"
     DateForm = "January 2, 2006"
+    customCSS = ["css/rladies.css"] #apply custom css, must be in assets/  
 
     showSubheader = false
     showServices = true
