@@ -1,0 +1,55 @@
+
+body {
+  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #88398a;
+}
+
+.navbar{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.entry-header .entry-meta .tagline{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+#head .tagline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+#head .tagline a {
+  color: #cfafd0;
+}
+
+#head .banner {
+  background-color: #88398a;
+}
+
+#footer {
+  background: #88398a;
+  color: #f3ebf3;
+}
+
+#footer a {
+  color: #f3ebf3;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+#footer h3.widget-title {
+  color: #f3ebf3;
+}
+
+#underfooter {
+  background: #5f2760;
+  color: #aaa;
+}
