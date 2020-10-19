@@ -6,30 +6,73 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   color: #88398a;
 }
 
+a {
+  color: #88398a;
+}
+ 
+a:hover, a:focus {
+  color: #441c45;
+}
+
 .navbar{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   color: #88398a;
+}
+
+.navbar-collapse {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+   color: #88398a;
+}
+
+.navbar-default {
+  border-color: #441c45;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #441c45;
 }
 
 .entry-header .entry-meta .tagline{
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  color: #fff;
+}
+
+.home #head {
+  padding: 0;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+}
+
+#head .title {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
   color: #fff;
 }
 
 #head .tagline {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   color: #fff;
 }
 
 #head .tagline a {
-  color: #cfafd0;
+  color: #ddd;
 }
 
 #head .banner {
   background-color: #88398a;
+  z-index: 2; 
+  padding: 35px 0 35px 0;
+  background-position: center center;
 }
 
 #footer {
