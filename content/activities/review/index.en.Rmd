@@ -1,6 +1,8 @@
 ---
 title: "Abstract Review"
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 slug: review
 ---
 

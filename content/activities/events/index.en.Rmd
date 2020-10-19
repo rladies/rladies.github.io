@@ -1,6 +1,8 @@
 ---
 title: "Events"
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 slug: events
 ---
 
@@ -51,7 +53,7 @@ rgrey <- "#a7a9ac"
 if(interactive()){
   source(here("R/get_events.R"))
 }else{
-  events <- read.csv(here("d/events.csv"), 
+  events <- read.csv(here("content/activities/events/data.csv"), 
                      header = TRUE, stringsAsFactors = FALSE)
 }
 
