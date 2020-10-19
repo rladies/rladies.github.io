@@ -3,7 +3,6 @@ title: "Code of Conduct"
 output:
   html_document:
     keep_md: yes
-slug: coc
 ---
 
 
@@ -55,6 +54,3 @@ Participants asked to stop any harassing behavior are expected to comply immedia
 If a participant engages in harassing behavior, the Global Leadership Team may take any action they deem appropriate, up to and including expulsion from all R-Ladies spaces and identification of the participant as a harasser to other R-Ladies members or the general public.
 
 This policy is licensed under the Creative Commons Zero license.
-
-Spanish
-Portuguese

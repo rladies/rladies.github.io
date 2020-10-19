@@ -1,7 +1,9 @@
 ---
 title: "Mentoring program"
 slug: mentoring
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 ---
 
 ```{css 'css', echo=FALSE}
@@ -70,7 +72,7 @@ For mentors, this is an opportunity to help build the community, learn about the
 library(dplyr)
 mentoring <- tibble::tribble(
   ~ mentor_name, ~mentor_chapter, ~mentee_name, ~mentee_chapter, ~img,  ~url,
-  "Erin Ledell", "R-Ladies SF", "Nadeja Sero", "R-Ladies Cotonou", "/images/mentoring/cotonou.png", "www.google.com")
+  "Erin Ledell", "R-Ladies SF", "Nadeja Sero", "R-Ladies Cotonou", "img/cotonou.png", "www.google.com")
 
 mentoring <- mentoring %>%
   mutate(

@@ -114,7 +114,7 @@ fix_order <- function(x){
 }
 
 add_image <- function(img_path){
-
+  img_path <- stringi::stri_trans_general(img_path,"latin-ascii")
   image = file.path("img", img_path)
   
   # check if image is in static images

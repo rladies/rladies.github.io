@@ -1,48 +1,51 @@
 baseURL = "/"
-languageCode = "en-us"
+languageCode = "en"
 title = "R-Ladies Global"
 theme = "hugo-initio-athanasiamo"
 publishDir = "public"
 ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$", "index\\.html", "_cache$", "README"]
 
+# Getting raw html to render 
+[markup] 
+  defaultMarkdownHandler = "blackfriday"
 
-[languages.en]
-languageName = "English"
-description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
-weight = 1
+# Languages
+defaultContentLanguage = "en"
 
-[languages.fr]
-languageName = "Français"
-weight = 2
-#description = ""
+[languages]
+  [languages.en]
+  languageName = "English"
+  weight = 1
+  description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
 
-[languages.es]
-languageName = "Español"
-weight = 3
-#description = ""
+  [languages.es]
+  languageName = "Español"
+  weight = 2
+  #description = ""
+
+  [languages.por]
+  languageName = "Português"
+  weight = 3
+  #description = ""
 
 [params]
     name = "R-Ladies Global"
-    email = "info@rladies.org"
-    coc = "/coc/"
-    year = 2013
+    email = "info[at]rladies[dot]org"
     avatar = "images/logo.png"
-    #banner = "images/header.jpg"
+    avatarclass = "rounded"
+
+    year = 2013
+    banner = "images/user2017_banner.png"
     favicon = "images/favicon.png"
-    imgclass = "rounded"
     DateForm = "January 2, 2006"
-    customCSS = ["css/rladies.css"] #apply custom css, must be in assets/  
+    customCSS = ["css/rladies.css"]
 
-    showSubheader = false
-    showServices = true
-    showRecentWorks = false
-    showDownload = false
-    showClients = true
+    showSubheader   = false
 
-    footerEnableContact = true
-    footerEnableFollowme = true
-    footerEnableTextWidget = false
-    footerEnableFormWidget = true
+    footerEnableContact    = true
+    footerEnableFollowme   = true
+    footerEnableTextWidget = true
+    footerEnableLangWidget = false
 
 # Nav menu ----
 [[menu.main]]
@@ -126,6 +129,7 @@ weight = 3
     name = "Blog"
     url = "https://blog.rladies.org/"
     weight = 4
+
 
 # Analytics ----
 [params.sharethis]
