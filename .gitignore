@@ -29,6 +29,10 @@ Temporary Items
 .apdisk
 
 ### R ###
+
+# blogdown
+content/post/*.html
+
 # History files
 .Rhistory
 .Rapp.history
