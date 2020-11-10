@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>community on R-Ladies</title>
+    <link>/tags/community/</link>
+    <description>Recent content in community on R-Ladies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The R-Ladies Mentoring Program: R-Ladies Cotonou journey</title>
+      <link>/post/cotonou_eng/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cotonou_eng/</guid>
+      <description>We are very happy to provide you this blog article in different languages. Keep continue reading this post in French or Spanish. If you would like to know more about how to contribute to the R-Ladies Blog in general or would like to recommend anything, please reach out to us with an e-mail at christin@rladies.org.
+How it all started …? 🤔 R-Ladies Cotonou is a local chapter of R-Ladies Global located in Cotonou, Benin (West Africa).</description>
+    </item>
+    
+    <item>
+      <title>R-Ladies Infrastructure for Online Meetups</title>
+      <link>/post/online-meetups/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/online-meetups/</guid>
+      <description>Our chapters have cancelled in-person meetups due to the corona virus pandemic. However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys. To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.
+Our network has grown to over 160 chapters worldwide so we were wondering how many meeting rooms we would need.</description>
+    </item>
+    
+    <item>
+      <title>Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team</title>
+      <link>/post/gdq-departure/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/gdq-departure/</guid>
+      <description>R-Ladies started out as a meetup group in San Francisco, when Gabriela de Queiroz founded the first chapter and organised the first event in 2012. Following this example, three further groups started out over the next three years. Shortly after the useR! conference in 2016, where Gabriela and other organisers met in person, the R-Ladies Global organisation was co-founded by several active community members.
+Since then, the number of R-Ladies chapters has grown massively and rapidly.</description>
+    </item>
+    
+    <item>
+      <title>R-Ladies Global&#39;s response to the DataCamp Assessment Report</title>
+      <link>/post/datacamp-third-party-review/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/datacamp-third-party-review/</guid>
+      <description>DataCamp’s CEO Jonathan Cornelissen sexually assaulted an employee by making “uninvited physical contact” in October 2017. This became public in April 2019, after which we released a statement on our blog. For a comprehensive account of events, please see this article by Davey Alba for BuzzFeed News published in May 2019. DataCamp commissioned a third-party review which has now been released. This blogpost is to add some clarification around references to R-Ladies made in that report.</description>
+    </item>
+    
+    <item>
+      <title>R-Ladies Global&#39;s disapproval of DataCamp</title>
+      <link>/post/statement-about-datacamp/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/statement-about-datacamp/</guid>
+      <description>This blog post is a slightly extended version of the official statement the R-Ladies Global organization made via Twitter, in a form that is easier to share. The views expressed here are the views of the R-Ladies Global Team signing at the end of this post and do not represent the R-Ladies community at large.
+Why we condemn DataCamp’s handling of sexual assault We are very disappointed by the way DataCamp handled the sexual assault of an employee by a C-level executive.</description>
+    </item>
+    
+  </channel>
+</rss>

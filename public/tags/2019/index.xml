@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2019 on R-Ladies</title>
+    <link>/tags/2019/</link>
+    <description>Recent content in 2019 on R-Ladies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/2019/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> Receta para un video de fin de año</title>
+      <link>/post/rladies_video_2019_es/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rladies_video_2019_es/</guid>
+      <description>Para cerrar el 2019 desde R-Ladies hicimos un video, si aún no lo viste, aquí está:
+Feliz año nuevo #rladies y aliados! 🎉🎉🎉
+Video preparado por @yabellini y @_lacion_. Locución @alejabellini 💜💜💜 pic.twitter.com/Bw9aRkaErj — R-Ladies Global (@RLadiesGlobal) January 1, 2020   ¿Te gustó?, ¿Querés saber cómo lo hicimos?, aquí te cuento los detalles:
+¿Qué historia vamos a contar? El primer paso es decidir la historia a contar en el video; los mensajes de fin de año, generalmente tienen tres partes: se repasa lo hecho, se agradece por los logros obtenidos y se dan buenos deseos para aquellos que nos acompañaron en la vuelta al sol que termina.</description>
+    </item>
+    
+    <item>
+      <title>Recipe for a year-end video</title>
+      <link>/post/rladies_video_2019/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rladies_video_2019/</guid>
+      <description>To close the awesome R-Ladies 2019 year we made a video, if you haven’t seen it yet, here it is:
+Happy New Year to all #rladies and allies! 🎉🎉🎉
+Video put together by @yabellini &amp;amp; @_lacion_ , voice @AlejaBellini 💜💜💜 pic.twitter.com/QRxuJxLugj — R-Ladies Global (@RLadiesGlobal) January 1, 2020   Did you like it? Do you want to know how we did it? Here we will give you all the details:</description>
+    </item>
+    
+    <item>
+      <title>Acción de Twitter para el IWD 2019</title>
+      <link>/post/blog_iwdtwitter_2019_es/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog_iwdtwitter_2019_es/</guid>
+      <description>Como cada 8 de marzo, una vez más se celebra el Día Internacional de la Mujer (IWD/8M). Aunque dicha fecha tiene distintas formas de celebración, mantiene un punto en común: la lucha por la igualdad de género. El año pasado, en 2018, un grupo de entusiastas R-Ladies tuvo la idea de visibilizar a las grandes mujeres que forman parte del directorio de R-Ladies, mediante tweets posteados durante todo el 8 de marzo.</description>
+    </item>
+    
+    <item>
+      <title>IWD 2019 Twitter Action</title>
+      <link>/post/blog_iwdtwitter_2019/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog_iwdtwitter_2019/</guid>
+      <description>Every year on March 8th, the world celebrates International Women’s Day (IWD). Although this date has different ways of celebration, it has one point in common - the fight for gender equality. The previous year, in 2018, an enthusiast R-Ladies’ group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018. In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.</description>
+    </item>
+    
+  </channel>
+</rss>
