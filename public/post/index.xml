@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on R-Ladies</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on R-Ladies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The R-Ladies Mentoring Program: R-Ladies Cotonou journey</title>
+      <link>/post/cotonou_eng/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/cotonou_eng/</guid>
+      <description>We are very happy to provide you this blog article in different languages. Keep continue reading this post in French or Spanish. If you would like to know more about how to contribute to the R-Ladies Blog in general or would like to recommend anything, please reach out to us with an e-mail at christin@rladies.org.
+How it all started …? 🤔 R-Ladies Cotonou is a local chapter of R-Ladies Global located in Cotonou, Benin (West Africa).</description>
+    </item>
+    
+    <item>
+      <title>Cómo hacer una reunión virtual inolvidable (sin morir en el intento)</title>
+      <link>/post/spanishmetameetup/</link>
+      <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/spanishmetameetup/</guid>
+      <description>Versión corta 💻 ¿Qué? Webinario en español gratuito para que cualquier evento virtual interactivo sea un éxito sin estrés adicional
+🗓️ ⏰ ¿Cuándo? Miércoles 1ro de Julio de 17:00 a 18:30 UTC (o en diferido vía grabación en YouTube)
+✍️ ¿Cómo? Inscríbete vía meetup.com en el capítulo de R-Ladies hispanohablante más cercano que ofrezca el evento en los próximos días (links disponibles más abajo en este post)</description>
+    </item>
+    
+    <item>
+      <title>#BlackLivesMatter: A joint statement by Forwards and R-Ladies</title>
+      <link>/post/blm/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blm/</guid>
+      <description>As organizations committed to broadening diversity and inclusion in our community, we stand with #BlackLivesMatter and join those who demand justice for systemic oppression. Pervasive racism negatively impacts the participation of Black people in society. The current events in the USA echo what has happened and continues to happen to minoritised people across the world. We are aggregating resources and are taking deliberate actions to amplify the voices of Black, Indigenous and People of Color in the R community now and moving forward.</description>
+    </item>
+    
+    <item>
+      <title>#BlackLivesMatters : une déclaration commune de Forwards et R-Ladies</title>
+      <link>/post/blm_fr/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blm_fr/</guid>
+      <description>En tant qu’organisations dédiées à augmenter la diversité et l’intégration de tous dans nos communautés, nous soutenons #BlackLivesMatter et rejoignons ceux qui demandent justice face à l’oppression systémique. Le racisme omniprésent affecte négativement la participation de personnes noires dans notre société. Les événements en cours aux États-Unis font écho à ce qui s’est produit et continue de se produire pour les personnes marginalisées (ou réduites à être des minorités) à travers le monde.</description>
+    </item>
+    
+    <item>
+      <title>#VidasNegrasImportam: Uma declaração conjunta de Forwards e R-Ladies</title>
+      <link>/post/blm_pt/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blm_pt/</guid>
+      <description>Como organizações comprometidas em ampliar a diversidade e a inclusão em nossa comunidade, apoiamos o movimento #BlackLivesMatter ou #VidasNegrasImportam e nos unimos a quem exige justiça frente a opressão sistêmica. O racismo generalizado afeta negativamente a participação das pessoas negras na sociedade. Os eventos atuais nos EUA ecoam o que aconteceu e continua acontecendo com pessoas que fazem parte de minorias em todo o mundo. Estamos agregando recursos e adotando ações deliberadas para amplificar as vozes de pessoas negras, indígenas e de outros grupos não-brancos da comunidade R, agora e no futuro.</description>
+    </item>
+    
+    <item>
+      <title>#VidasNegrasImportan: Una declaración conjunta de Forwards y R-Ladies</title>
+      <link>/post/blm_es/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blm_es/</guid>
+      <description>Como organizaciones comprometidas con la ampliación de la diversidad y la inclusión en nuestra comunidad, apoyamos a #VidasNegrasImportan, #BlackLivesMatter y nos unimos a quienes demandan justicia por la opresión sistémica. El racismo generalizado afecta negativamente la participación de las personas negras en la sociedad. Los eventos actuales en los Estados Unidos hacen eco de lo que sucedió y continúa sucediendo a las personas minoritarias en todo el mundo.</description>
+    </item>
+    
+    <item>
+      <title>R-Ladies Infrastructure for Online Meetups</title>
+      <link>/post/online-meetups/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/online-meetups/</guid>
+      <description>Our chapters have cancelled in-person meetups due to the corona virus pandemic. However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys. To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.
+Our network has grown to over 160 chapters worldwide so we were wondering how many meeting rooms we would need.</description>
+    </item>
+    
+    <item>
+      <title> Receta para un video de fin de año</title>
+      <link>/post/rladies_video_2019_es/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rladies_video_2019_es/</guid>
+      <description>Para cerrar el 2019 desde R-Ladies hicimos un video, si aún no lo viste, aquí está:
+Feliz año nuevo #rladies y aliados! 🎉🎉🎉
+Video preparado por @yabellini y @_lacion_. Locución @alejabellini 💜💜💜 pic.twitter.com/Bw9aRkaErj — R-Ladies Global (@RLadiesGlobal) January 1, 2020   ¿Te gustó?, ¿Querés saber cómo lo hicimos?, aquí te cuento los detalles:
+¿Qué historia vamos a contar? El primer paso es decidir la historia a contar en el video; los mensajes de fin de año, generalmente tienen tres partes: se repasa lo hecho, se agradece por los logros obtenidos y se dan buenos deseos para aquellos que nos acompañaron en la vuelta al sol que termina.</description>
+    </item>
+    
+    <item>
+      <title>Recipe for a year-end video</title>
+      <link>/post/rladies_video_2019/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/rladies_video_2019/</guid>
+      <description>To close the awesome R-Ladies 2019 year we made a video, if you haven’t seen it yet, here it is:
+Happy New Year to all #rladies and allies! 🎉🎉🎉
+Video put together by @yabellini &amp;amp; @_lacion_ , voice @AlejaBellini 💜💜💜 pic.twitter.com/QRxuJxLugj — R-Ladies Global (@RLadiesGlobal) January 1, 2020   Did you like it? Do you want to know how we did it? Here we will give you all the details:</description>
+    </item>
+    
+    <item>
+      <title>Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team</title>
+      <link>/post/gdq-departure/</link>
+      <pubDate>Wed, 18 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/gdq-departure/</guid>
+      <description>R-Ladies started out as a meetup group in San Francisco, when Gabriela de Queiroz founded the first chapter and organised the first event in 2012. Following this example, three further groups started out over the next three years. Shortly after the useR! conference in 2016, where Gabriela and other organisers met in person, the R-Ladies Global organisation was co-founded by several active community members.
+Since then, the number of R-Ladies chapters has grown massively and rapidly.</description>
+    </item>
+    
+    <item>
+      <title>R-Ladies Global&#39;s response to the DataCamp Assessment Report</title>
+      <link>/post/datacamp-third-party-review/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/datacamp-third-party-review/</guid>
+      <description>DataCamp’s CEO Jonathan Cornelissen sexually assaulted an employee by making “uninvited physical contact” in October 2017. This became public in April 2019, after which we released a statement on our blog. For a comprehensive account of events, please see this article by Davey Alba for BuzzFeed News published in May 2019. DataCamp commissioned a third-party review which has now been released. This blogpost is to add some clarification around references to R-Ladies made in that report.</description>
+    </item>
+    
+    <item>
+      <title>R-Ladies Global&#39;s disapproval of DataCamp</title>
+      <link>/post/statement-about-datacamp/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/statement-about-datacamp/</guid>
+      <description>This blog post is a slightly extended version of the official statement the R-Ladies Global organization made via Twitter, in a form that is easier to share. The views expressed here are the views of the R-Ladies Global Team signing at the end of this post and do not represent the R-Ladies community at large.
+Why we condemn DataCamp’s handling of sexual assault We are very disappointed by the way DataCamp handled the sexual assault of an employee by a C-level executive.</description>
+    </item>
+    
+    <item>
+      <title>Acción de Twitter para el IWD 2019</title>
+      <link>/post/blog_iwdtwitter_2019_es/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog_iwdtwitter_2019_es/</guid>
+      <description>Como cada 8 de marzo, una vez más se celebra el Día Internacional de la Mujer (IWD/8M). Aunque dicha fecha tiene distintas formas de celebración, mantiene un punto en común: la lucha por la igualdad de género. El año pasado, en 2018, un grupo de entusiastas R-Ladies tuvo la idea de visibilizar a las grandes mujeres que forman parte del directorio de R-Ladies, mediante tweets posteados durante todo el 8 de marzo.</description>
+    </item>
+    
+    <item>
+      <title>IWD 2019 Twitter Action</title>
+      <link>/post/blog_iwdtwitter_2019/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog_iwdtwitter_2019/</guid>
+      <description>Every year on March 8th, the world celebrates International Women’s Day (IWD). Although this date has different ways of celebration, it has one point in common - the fight for gender equality. The previous year, in 2018, an enthusiast R-Ladies’ group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018. In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.</description>
+    </item>
+    
+    <item>
+      <title>vacaciones &lt;- crecer(RedRLadies)</title>
+      <link>/post/vacaciones_crecer_redrladies/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vacaciones_crecer_redrladies/</guid>
+      <description>Nos gustaría contarles cómo unas vacaciones llevaron al crecimiento de la comunidad R-Ladies en América del Sur. La historia involucra múltiples países y encuentros en el momento adecuado de la vida.
+Mine Dogucu Soy de Turquía pero viví en Estados Unidos la mayor parte de mi edad adulta. En diciembre de 2014, decidí viajar a Sudamérica, a conocer Chile, Uruguay y Argentina. Como era estudiante de postgrado en ese momento tuve que buscar formas de reducir los costos del viaje.</description>
+    </item>
+    
+    <item>
+      <title>What happened in 2018?</title>
+      <link>/post/what-happened-in-2018/</link>
+      <pubDate>Wed, 12 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/what-happened-in-2018/</guid>
+      <description> Retrospective 2018  Include IWD 2018 R-Ladies growth LatinR Conferences Blog posts   </description>
+    </item>
+    
+    <item>
+      <title>vacation &lt;- grow(RLadiesNetwork)</title>
+      <link>/post/vacation_grow_rladiesnetwork/</link>
+      <pubDate>Sat, 27 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vacation_grow_rladiesnetwork/</guid>
+      <description>We would like to tell you how one vacation lead to growth of R Ladies community in South America. The story involves multiple countries and crossing paths at the right time in life.
+Mine Dogucu I am from Turkey but I lived in the United States most of my adulthood. In December 2014, I decided to take a trip to South America - to Chile, Uruguay, and Argentina.</description>
+    </item>
+    
+    <item>
+      <title>3. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+      <link>/post/conclusion/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/conclusion/</guid>
+      <description>As told by Page and Sheila On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from our directory via [@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! To round out our three-part blog series of the IWD Directory campaign, we’ll discuss topics related to privacy law, contact information collection and the future of our R-Ladies directory project.</description>
+    </item>
+    
+    <item>
+      <title>2. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+      <link>/post/deployment/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/deployment/</guid>
+      <description>As told by Kelly O’Briant On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from our directory via @rladies_iwd2018. It was a blast! And a lot of team work too! In this blog post, we’ll cover the deployment and monitoring stages of our project. You can also read the Part 1.
+ Recap The great part about being put in charge of deploying a project, is that all the hard work is mostly done already!</description>
+    </item>
+    
+    <item>
+      <title>1. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+      <link>/post/ideation_and_creation/</link>
+      <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ideation_and_creation/</guid>
+      <description>As told by Maëlle Salmon with notes from Bea Hernández On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from our directory via @rladies_iwd2018. It was a blast! And a lot of team work too! In this blog post, we’ll explain how we designed and completed our Twitter action.
+ An idea sown on IWD2017! Last year on International Women’s day, R-Ladies ally David Robinson promoted Twitter accounts of female data scientists.</description>
+    </item>
+    
+    <item>
+      <title>History</title>
+      <link>/post/history/</link>
+      <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/history/</guid>
+      <description>R-Ladies was founded by Gabriela de Queiroz. She wanted to do something to give back to the R learning community after going to several meetups and learning a lot for free. The first meetup took place in San Francisco, California (United States) on October 1, 2012. In the following years two more R-Ladies chapters launched independently around the world : Twin Cities, USA and Taipei. R-Ladies London launched in March 2016.</description>
+    </item>
+    
+  </channel>
+</rss>

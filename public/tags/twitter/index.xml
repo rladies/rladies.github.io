@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>twitter on R-Ladies</title>
+    <link>/tags/twitter/</link>
+    <description>Recent content in twitter on R-Ladies</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/twitter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Acción de Twitter para el IWD 2019</title>
+      <link>/post/blog_iwdtwitter_2019_es/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog_iwdtwitter_2019_es/</guid>
+      <description>Como cada 8 de marzo, una vez más se celebra el Día Internacional de la Mujer (IWD/8M). Aunque dicha fecha tiene distintas formas de celebración, mantiene un punto en común: la lucha por la igualdad de género. El año pasado, en 2018, un grupo de entusiastas R-Ladies tuvo la idea de visibilizar a las grandes mujeres que forman parte del directorio de R-Ladies, mediante tweets posteados durante todo el 8 de marzo.</description>
+    </item>
+    
+    <item>
+      <title>IWD 2019 Twitter Action</title>
+      <link>/post/blog_iwdtwitter_2019/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/blog_iwdtwitter_2019/</guid>
+      <description>Every year on March 8th, the world celebrates International Women’s Day (IWD). Although this date has different ways of celebration, it has one point in common - the fight for gender equality. The previous year, in 2018, an enthusiast R-Ladies’ group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018. In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.</description>
+    </item>
+    
+    <item>
+      <title>3. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+      <link>/post/conclusion/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/conclusion/</guid>
+      <description>As told by Page and Sheila On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from our directory via [@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! To round out our three-part blog series of the IWD Directory campaign, we’ll discuss topics related to privacy law, contact information collection and the future of our R-Ladies directory project.</description>
+    </item>
+    
+    <item>
+      <title>2. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+      <link>/post/deployment/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/deployment/</guid>
+      <description>As told by Kelly O’Briant On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from our directory via @rladies_iwd2018. It was a blast! And a lot of team work too! In this blog post, we’ll cover the deployment and monitoring stages of our project. You can also read the Part 1.
+ Recap The great part about being put in charge of deploying a project, is that all the hard work is mostly done already!</description>
+    </item>
+    
+    <item>
+      <title>1. Behind the scenes of R-Ladies IWD2018 Twitter action!</title>
+      <link>/post/ideation_and_creation/</link>
+      <pubDate>Mon, 26 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/ideation_and_creation/</guid>
+      <description>As told by Maëlle Salmon with notes from Bea Hernández On March the 8th, International Women’s Day, we ran a continuous feed of awesome R-Ladies profiles from our directory via @rladies_iwd2018. It was a blast! And a lot of team work too! In this blog post, we’ll explain how we designed and completed our Twitter action.
+ An idea sown on IWD2017! Last year on International Women’s day, R-Ladies ally David Robinson promoted Twitter accounts of female data scientists.</description>
+    </item>
+    
+  </channel>
+</rss>

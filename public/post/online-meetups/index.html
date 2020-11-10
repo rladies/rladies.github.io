@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>R-Ladies Infrastructure for Online Meetups</title>
+        <style>
+
+    html body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #88398A;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="../../css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.76.5" />
+        
+
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">R-Ladies Infrastructure for Online Meetups</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="https://rladies.org/">Home</a></li>
+                            
+                                <li><a href="../../post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:info@rladies.org"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/rladies/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://twitter.com/RLadiesGlobal/"><i class="fa fa-twitter"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.meetup.com/topics/r-ladies/all/"><i class="fa fa-meetup"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/company/17981653/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+       
+      
+    
+    <h5>April 24, 2020</h5>
+    <h3><a href="../../post/online-meetups/">R-Ladies Infrastructure for Online Meetups</a></h3>
+    <h5>R-Ladies Infrastructure for Online Meetups</h5>
+    
+    <a href="../../tags/community"><kbd class="item-tag">community</kbd></a>
+    
+    <a href="../../tags/online-meetups"><kbd class="item-tag">online-meetups</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify post__main-text">
+<script src="../../rmarkdown-libs/header-attrs/header-attrs.js"></script>
+<link href="../../rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="../../rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>Our chapters have cancelled in-person meetups due to the corona virus pandemic. However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys. To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.</p>
+<p>Our network has grown to over 160 chapters worldwide so we were wondering how many meeting rooms we would need. Was one enough or would that mean we’d have a lot of scheduling conflicts? What a nice opportunity to make use of our <a href="https://github.com/rladies/meetupr">{meetupr}</a> package and get a sense of how often we’ve had overlapping events in the past!</p>
+<div id="get-the-data" class="section level3">
+<h3>Get the data</h3>
+<pre class="r"><code>#devtools::install_github(&quot;rladies/meetupr&quot;)
+library(meetupr)
+library(tidyverse)
+library(lubridate)
+library(scales)</code></pre>
+<p>First, we get all the R-Ladies meetup groups so that we can get all their events in a second step.</p>
+<pre class="r"><code># get the R-Ladies chapters
+
+groups &lt;- meetupr::find_groups(text = &quot;r-ladies&quot;) 
+
+chapters &lt;- groups %&gt;% 
+  filter(str_detect(tolower(name), &quot;r-ladies&quot;))</code></pre>
+<p>We want to avoid to exceed the API request limit so we’ll use the <a href="https://github.com/rladies/meetupr/issues/30">solution</a> posted by Jesse Mostipak.</p>
+<pre class="r"><code># get the events for the chapters
+
+slowly &lt;- function(f, delay = 0.5) {
+  function(...) {
+    Sys.sleep(delay)
+    f(...)
+  }
+}
+
+events &lt;- map(chapters$urlname,
+              slowly(safely(meetupr::get_events)),
+              event_status = c(&quot;past&quot;, &quot;upcoming&quot;)) %&gt;% 
+  set_names(chapters$name)</code></pre>
+<p>The use of <code>safely()</code> means that our mapping doesn’t fail altogether if getting the events for any of the chapters fails. Now we just need to extract the events for those chapters where we succeeded.</p>
+<pre class="r"><code>all_events &lt;- map_dfr(events, 
+                      ~ if (is.null(.$error)) .$result else NULL, 
+                      .id = &quot;chapter&quot;)</code></pre>
+</div>
+<div id="how-often-per-month-do-2-or-more-r-ladies-meetup-events-happen-at-the-same-time" class="section level3">
+<h3>How often (per month) do 2 or more R-Ladies meetup events happen at the same time?</h3>
+<p>First thing we want to know is whether two or more events happening at the same time was common or not?</p>
+<p>To keep things simple, we are looking at events that start at the same time and are not looking at overlapping events for the time being. This includes past and upcoming events.</p>
+<pre class="r"><code>all_events %&gt;% 
+  count(time) %&gt;% 
+  filter(n &gt; 1) %&gt;% 
+  mutate(time = floor_date(time, unit = &quot;months&quot;)) %&gt;% 
+  count(time) %&gt;% 
+  ggplot() + 
+  geom_col(aes(time, n)) +
+  scale_x_datetime(breaks = scales::date_breaks(&quot;1 month&quot;),
+                   labels = scales::date_format(&quot;%Y-%b&quot;)) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) </code></pre>
+<p><img src="../../post/online-meetups_files/figure-html/parallel_per_month_vis-1.png" width="960" /></p>
+<p>So parallel R-Ladies events are not uncommon but now the question is: how many events are happening at the same time?</p>
+</div>
+<div id="how-many-events-typically-happen-at-the-same-time" class="section level3">
+<h3>How many events typically happen at the same time?</h3>
+<pre class="r"><code>all_events %&gt;% 
+  count(time, name = &quot;simultaneous_events&quot;) %&gt;% 
+  count(simultaneous_events) %&gt;% 
+  arrange(desc(simultaneous_events))</code></pre>
+<pre><code>## # A tibble: 5 x 2
+##   simultaneous_events     n
+##                 &lt;int&gt; &lt;int&gt;
+## 1                   9     1
+## 2                   4     1
+## 3                   3    16
+## 4                   2   144
+## 5                   1  1953</code></pre>
+<p>One time we had 9 R-Ladies events happening at the same time! Looking at the date reveals that those were the rstudio::conf watch parties (Jan 29, 2020):</p>
+<pre class="r"><code>all_events %&gt;% 
+  count(time, sort = TRUE) %&gt;% 
+  top_n(1) </code></pre>
+<pre><code>## Selecting by n</code></pre>
+<pre><code>## # A tibble: 1 x 2
+##   time                    n
+##   &lt;dttm&gt;              &lt;int&gt;
+## 1 2020-01-29 16:00:00     9</code></pre>
+<p>More than 2 parallel events have been relatively rare so we are starting with one virtual meeting room that our chapters can book and hope that scheduling conflicts can be avoided.</p>
+<p>If you are an R-Ladies organiser and want to use this new infrastructure, please join the #online_meetups channel on the organisers’ Slack. There you’ll find instructions on how to book a meeting and tips for running safe online events.</p>
+</div>
+<div id="next-online-events" class="section level3">
+<h3>Next online events</h3>
+<p>If you’d like to join events of R-Ladies chapters from around the world, the next events are</p>
+<ul>
+<li>April 25 R-Ladies Mumbai: <a href="https://www.meetup.com/rladies-mumbai/events/270006904/">[ONLINE] - Exploring the ‘Highcharts’ visual in R</a></li>
+<li>April 25 R-Ladies Tampa: <a href="https://www.meetup.com/rladies-tampa/events/270192107/">RESCHEDULED: Data Workflow and Transformation</a></li>
+<li>April 25 R-Ladies La Paz: <a href="https://www.meetup.com/rladies-la-paz/events/270212766/">Study Group - R para Ciencia de Datos [Sesión 4]</a></li>
+<li>April 28 R-Ladies Bucharest: <a href="https://www.meetup.com/rladies-bucharest/events/270178279/">R-Ladies Bucharest Community #8</a></li>
+<li>April 28 R-Ladies Gainesville: <a href="https://www.meetup.com/rladies-gainesville/events/268773535/">Tidy Tuesday: Practicing Data Science in R</a></li>
+<li>April 28 R-Ladies Mid-Mo: <a href="https://www.meetup.com/rladies-mid-mo/events/268698590/">Code-RLadies April Lightning Talk &amp; Workshop - Virtual!</a></li>
+<li>April 29 R-Ladies New York: <a href="https://www.meetup.com/rladies-newyork/events/270210924/">[Online event] R-Ladies Panel: All About Blogs</a></li>
+<li>April 30 R-Ladies Miami: <a href="https://www.meetup.com/rladies-miami/events/270087598/">From Underdogs to Winners</a></li>
+<li>May 05 R-Ladies Freiburg: <a href="https://www.meetup.com/rladies-freiburg/events/270214676/">Tidy Tuesday - Tips and Tricks</a></li>
+<li>May 06 R-Ladies Chicago: <a href="https://www.meetup.com/rladies-chicago/events/269909895/">Learning &amp; Community Building in Data Science: Conference Talks!</a></li>
+</ul>
+<p><strong>All R-Ladies meetup events are also listed at <a href="https://www.meetup.com/pro/rladies/" class="uri">https://www.meetup.com/pro/rladies/</a>.</strong></p>
+</div>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+       
+      
+    
+    <h5>August 4, 2020</h5>
+    <h3><a href="../../post/cotonou_eng/">The R-Ladies Mentoring Program: R-Ladies Cotonou journey</a></h3>
+    <h5>R-Ladies Mentoring Program</h5>
+    
+    <a href="../../tags/community"><kbd class="item-tag">community</kbd></a>
+    
+    <a href="../../tags/mentoring"><kbd class="item-tag">mentoring</kbd></a>
+    
+    <a href="../../tags/africa"><kbd class="item-tag">africa</kbd></a>
+    
+    <a href="../../tags/english"><kbd class="item-tag">english</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+       
+      
+    
+    <h5>December 18, 2019</h5>
+    <h3><a href="../../post/gdq-departure/">Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team</a></h3>
+    <h5>Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team</h5>
+    
+    <a href="../../tags/community"><kbd class="item-tag">community</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+       
+      
+    
+    <h5>October 22, 2019</h5>
+    <h3><a href="../../post/datacamp-third-party-review/">R-Ladies Global&#39;s response to the DataCamp Assessment Report</a></h3>
+    <h5>R-Ladies Global&#39;s response to the 3rd-party review of DataCamp</h5>
+    
+    <a href="../../tags/community"><kbd class="item-tag">community</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">© All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+
