@@ -88,5 +88,8 @@ $RECYCLE.BIN/
 docs
 public
 
+# ignore content htmls, we render with CI
+content/post/*html
+
 # End of https://www.gitignore.io/api/r,hugo,macos,windows
 .Rproj.user
