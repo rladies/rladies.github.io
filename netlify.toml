@@ -1,7 +1,7 @@
 
 [build] 
   publish = "public"
-  command = "hugo "
+  command = "hugo"
 
 [context.production.environment]
   command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
