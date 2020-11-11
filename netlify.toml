@@ -15,8 +15,3 @@
 #[context.branch-deploy]
 #  command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
 #  HUGO_VERSION = "0.67.1" 
-
-#[[headers]]
-#  for = "/*"
-#  [headers.values]
-#    Access-Control-Allow-Origin = "*"

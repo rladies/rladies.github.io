@@ -409,7 +409,7 @@ output:
    <td style="text-align:right;">  </td>
   </tr>
   <tr>
-   <td style="text-align:right;font-weight: bold;vertical-align: top !important;" rowspan="8"> Mexico </td>
+   <td style="text-align:right;font-weight: bold;vertical-align: top !important;" rowspan="9"> Mexico </td>
    <td style="text-align:left;"> <a href="https://www.meetup.com/rladies-aguascalientes/">Aguascalientes</a> </td>
    <td style="text-align:right;">  </td>
   </tr>
@@ -422,6 +422,11 @@ output:
    
    <td style="text-align:left;"> <a href="https://www.meetup.com/rladies-cuernavaca/">Cuernavaca</a> </td>
    <td style="text-align:right;"> <a href="https://twitter.com/RLadiesCuerna"><i class="fab fa-twitter"></i></a> </td>
+  </tr>
+  <tr>
+   
+   <td style="text-align:left;"> <a href="https://www.meetup.com/rladies-guadalajara/">Guadalajara</a> </td>
+   <td style="text-align:right;">  </td>
   </tr>
   <tr>
    

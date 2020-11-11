@@ -62,7 +62,7 @@ links <- chapters %>%
          ) %>%
   group_by(Country, City) %>% 
   summarise(Meetup = first(Meetup), 
-            `Social Media` = paste0(Twitter, GitHub, Website, collapse = '')) %>% 
+            `Social Media` = paste0(Twitter, GitHub, Website, collapse = '&ensp;')) %>% 
   select(Country, Meetup, `Social Media`) %>%
   rename(City = Meetup)
 

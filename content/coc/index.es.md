@@ -1,8 +1,5 @@
 ---
 title: "Código de Conducta"
-output:
-  html_document:
-    keep_md: yes
 ---
 
 R-Ladies se dedica a proporcionar una experiencia libre de acoso para todos. Desde R-Ladies no toleramos el acoso de los participantes en ninguna de las formas posibles.
