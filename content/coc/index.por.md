@@ -1,8 +1,5 @@
 ---
 title: "Código de Conduta"
-output:
-  html_document:
-    keep_md: yes
 ---
 
 R-Ladies tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes.

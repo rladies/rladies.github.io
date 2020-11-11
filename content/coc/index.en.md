@@ -1,8 +1,5 @@
 ---
 title: "Code of Conduct"
-output:
-  html_document:
-    keep_md: yes
 ---
 
 
