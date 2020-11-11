@@ -12,36 +12,36 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v1
-
-      - name: Install pandoc and pandoc citeproc
-        run: |
-          brew install pandoc
-          brew install pandoc-citeproc
-
-      - name: Cache Renv packages
-        uses: actions/cache@v2
-        with:
-          path: $HOME/.local/share/renv
-          key: r-${{ hashFiles('renv.lock') }}
-          restore-keys: r-
-
-      - name: Install packages
-        run: |
-          R -e 'install.packages("renv")'
-          R -e 'renv::restore()'
-
-      - name: Install hugo
-        run: |
-          R -e 'blogdown::install_hugo()'
-
-      - name: Build site
-        run: |
-          R -e 'blogdown::build_site(TRUE)'
+      # - name: Checkout repo
+      #   uses: actions/checkout@v2
+      # 
+      # - name: Setup R
+      #   uses: r-lib/actions/setup-r@v1
+      # 
+      # - name: Install pandoc and pandoc citeproc
+      #   run: |
+      #     brew install pandoc
+      #     brew install pandoc-citeproc
+      # 
+      # - name: Cache Renv packages
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: $HOME/.local/share/renv
+      #     key: r-${{ hashFiles('renv.lock') }}
+      #     restore-keys: r-
+      # 
+      # - name: Install packages
+      #   run: |
+      #     R -e 'install.packages("renv")'
+      #     R -e 'renv::restore()'
+      # 
+      # - name: Install hugo
+      #   run: |
+      #     R -e 'blogdown::install_hugo()'
+      # 
+      # - name: Build site
+      #   run: |
+      #     R -e 'blogdown::build_site(TRUE)'
 
       - name: Install npm
         uses: actions/setup-node@v1
