@@ -1,0 +1,16 @@
+
+[en]
+  languageName = "English"
+  weight = 1
+  description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+
+[es]
+  languageName = "Español"
+  weight = 1
+#  description = ""
+
+[por]
+  languageName = "Português"
+  weight = 1
+#  description = ""
+

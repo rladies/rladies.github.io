@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "en"
+title = "R-Ladies Global"
+theme = "hugo-initio-athanasiamo"
+publishDir = "public"
+ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$", "index\\.html", "_cache$", "README"]
+  
+defaultContentLanguage = "en"
