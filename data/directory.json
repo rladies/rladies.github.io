@@ -1,0 +1,188 @@
+[
+    {
+    "name": "Athanasia Mo Mowinckel",
+    "honorific": "PhD",
+    "title": "Staff researcher",
+    "organization": "Center for Lifespan Changes in Brain and Cognition, University of Oslo",
+    "photo_url": "athanasia_monika_mowinckel.png",
+    "social_media": [
+      {
+        "twitter": "DrMowinckels",
+        "github": "Athanasiamo",
+        "website": "https://drmowinckels.io"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["Statistics", "Bayesian Statistics", "Neuroimaging", "Data visualisation", "Cognitive Psychology"],
+    "r_groups": ["R-Ladies Oslo"],
+    "r_packages": ["ggseg", "ggsegExtra", "nettskjemar", "uiothemes"],
+    "shiny_apps": [],
+    "categories": ["Speaker", "Norway"]
+  },
+  {
+    "name": "Maëlle Salmon",
+    "honorific": "Dr.",
+    "title": "Data scientist",
+    "photo_url": "maelle_salmon.png",
+    "social_media": [
+      {
+        "twitter": "ma_salmon",
+        "website": "http://www.masalmon.eu/"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["R in research", "reproducible analyses", "open science and open data", "statistics, epidemiology", "public health", "R blogging"],
+    "r_groups": [],
+    "r_packages": [],
+    "shiny_apps": [],
+    "categories": ["France", "Speaker"]
+  },    {
+    "name": "Athanasia Mo Mowinckel",
+    "honorific": "PhD",
+    "title": "Staff researcher",
+    "organization": "Center for Lifespan Changes in Brain and Cognition, University of Oslo",
+    "photo_url": "athanasia_monika_mowinckel.png",
+    "social_media": [
+      {
+        "twitter": "DrMowinckels",
+        "github": "Athanasiamo",
+        "website": "https://drmowinckels.io"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["Statistics", "Bayesian Statistics", "Neuroimaging", "Data visualisation", "Cognitive Psychology"],
+    "r_groups": ["R-Ladies Oslo"],
+    "r_packages": ["ggseg", "ggsegExtra", "nettskjemar", "uiothemes"],
+    "shiny_apps": [],
+    "categories": ["Speaker", "Norway"]
+  },
+  {
+    "name": "Maëlle Salmon",
+    "honorific": "Dr.",
+    "title": "Data scientist",
+    "photo_url": "maelle_salmon.png",
+    "social_media": [
+      {
+        "twitter": "ma_salmon",
+        "website": "http://www.masalmon.eu/"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["R in research", "reproducible analyses", "open science and open data", "statistics, epidemiology", "public health", "R blogging"],
+    "r_groups": [],
+    "r_packages": [],
+    "shiny_apps": [],
+    "categories": ["France", "Speaker"]
+  },    {
+    "name": "Athanasia Mo Mowinckel",
+    "honorific": "PhD",
+    "title": "Staff researcher",
+    "organization": "Center for Lifespan Changes in Brain and Cognition, University of Oslo",
+    "photo_url": "athanasia_monika_mowinckel.png",
+    "social_media": [
+      {
+        "twitter": "DrMowinckels",
+        "github": "Athanasiamo",
+        "website": "https://drmowinckels.io"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["Statistics", "Bayesian Statistics", "Neuroimaging", "Data visualisation", "Cognitive Psychology"],
+    "r_groups": ["R-Ladies Oslo"],
+    "r_packages": ["ggseg", "ggsegExtra", "nettskjemar", "uiothemes"],
+    "shiny_apps": [],
+    "categories": ["Speaker", "Norway"]
+  },
+  {
+    "name": "Maëlle Salmon",
+    "honorific": "Dr.",
+    "title": "Data scientist",
+    "photo_url": "maelle_salmon.png",
+    "social_media": [
+      {
+        "twitter": "ma_salmon",
+        "website": "http://www.masalmon.eu/"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["R in research", "reproducible analyses", "open science and open data", "statistics, epidemiology", "public health", "R blogging"],
+    "r_groups": [],
+    "r_packages": [],
+    "shiny_apps": [],
+    "categories": ["France", "Speaker"]
+  },    {
+    "name": "Athanasia Mo Mowinckel",
+    "honorific": "PhD",
+    "title": "Staff researcher",
+    "organization": "Center for Lifespan Changes in Brain and Cognition, University of Oslo",
+    "photo_url": "athanasia_monika_mowinckel.png",
+    "social_media": [
+      {
+        "twitter": "DrMowinckels",
+        "github": "Athanasiamo",
+        "website": "https://drmowinckels.io"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["Statistics", "Bayesian Statistics", "Neuroimaging", "Data visualisation", "Cognitive Psychology"],
+    "r_groups": ["R-Ladies Oslo"],
+    "r_packages": ["ggseg", "ggsegExtra", "nettskjemar", "uiothemes"],
+    "shiny_apps": [],
+    "categories": ["Speaker", "Norway"]
+  },
+  {
+    "name": "Maëlle Salmon",
+    "honorific": "Dr.",
+    "title": "Data scientist",
+    "photo_url": "maelle_salmon.png",
+    "social_media": [
+      {
+        "twitter": "ma_salmon",
+        "website": "http://www.masalmon.eu/"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["R in research", "reproducible analyses", "open science and open data", "statistics, epidemiology", "public health", "R blogging"],
+    "r_groups": [],
+    "r_packages": [],
+    "shiny_apps": [],
+    "categories": ["France", "Speaker"]
+  },    {
+    "name": "Athanasia Mo Mowinckel",
+    "honorific": "PhD",
+    "title": "Staff researcher",
+    "organization": "Center for Lifespan Changes in Brain and Cognition, University of Oslo",
+    "photo_url": "athanasia_monika_mowinckel.png",
+    "social_media": [
+      {
+        "twitter": "DrMowinckels",
+        "github": "Athanasiamo",
+        "website": "https://drmowinckels.io"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["Statistics", "Bayesian Statistics", "Neuroimaging", "Data visualisation", "Cognitive Psychology"],
+    "r_groups": ["R-Ladies Oslo"],
+    "r_packages": ["ggseg", "ggsegExtra", "nettskjemar", "uiothemes"],
+    "shiny_apps": [],
+    "categories": ["Speaker", "Norway"]
+  },
+  {
+    "name": "Maëlle Salmon",
+    "honorific": "Dr.",
+    "title": "Data scientist",
+    "photo_url": "maelle_salmon.png",
+    "social_media": [
+      {
+        "twitter": "ma_salmon",
+        "website": "http://www.masalmon.eu/"
+      }
+    ],
+    "contact_method": ["Twitter"],
+    "interests": ["R in research", "reproducible analyses", "open science and open data", "statistics, epidemiology", "public health", "R blogging"],
+    "r_groups": [],
+    "r_packages": [],
+    "shiny_apps": [],
+    "categories": ["France", "Speaker"]
+  }
+]

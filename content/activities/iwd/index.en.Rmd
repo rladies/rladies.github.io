@@ -1,0 +1,70 @@
+---
+title: "International Womens Day Campaigns"
+output:
+  html_document:
+    keep_md: yes
+slug: iwd
+---
+
+
+```{css 'css', echo = FALSE}
+.grid {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.5vh;
+  padding: 0px;
+  overflow: wrap;
+}
+
+.grid-item {
+  flex-grow: 1 0 0; 
+}
+
+a:hover {
+  text-decoration-color: #88398a;
+}
+
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, echo = FALSE)
+
+# devtools::install_github("DataWookie/feedeR")
+library(feedeR)
+
+feed <- feed.extract("https://blog.rladies.org/tags/iwd//index.xml")$items
+
+make_div <- function(title, date, link, desc){
+  paste0(
+    "<a href='", link, "'>",
+    "<h3>", title, "</h3></a>",
+    "<p>", substr(desc, 1, 200), "... ",
+    "</p>"
+  )
+}
+
+fdt <- mapply(make_div,
+              title = feed$title,
+              date = feed$date,
+              link = feed$link,
+              desc = feed$description
+)
+
+```
+
+R-Ladies Global has coordinated International Women Day actions to encourage more people from gender minorities to participate in the community on Twitter and to promote people in the community. 
+The coordinators of these campaigns have written blog posts about them, which you can find links to below.
+
+---
+
+<ul class="grid">
+```{r, results='asis', echo = FALSE, message=FALSE}
+for(i in 1:length(fdt)){
+  cat("<li class='grid-item'>")
+  cat(fdt[i])
+  cat("</li>")
+}
+```
+</ul>

@@ -1,0 +1,80 @@
+---
+title: "Chapters"
+type: "single"
+weight: 1
+output:
+  html_document:
+    keep_md: yes
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, 
+                      echo=FALSE, 
+                      warning = FALSE,
+                      message = FALSE)
+
+library(dplyr)
+library(kableExtra)
+
+render_link <- function(word, link) {
+  paste0("<a href='", link, "'>", word, "</a>")
+}
+
+render_sm <- function(address, choice) {
+  
+  fa_class = c(
+    "tw" = "fab fa-twitter",
+    "gh" = "fab fa-github",
+    "wb" = "fas fa-globe"
+  )
+
+  if (is.na(address)) {
+    return('')
+  }else{
+    paste0('<a href=', address, 
+           '><i class="', fa_class[choice],
+           '"></i></a>')
+  }
+}
+```
+
+**List of locations of currently active R-Ladies meetup groups**
+
+```{r parse, include=FALSE}
+csv <- 'https://raw.githubusercontent.com/rladies/starter-kit/master/Current-Chapters.csv'
+chapters <- readr::read_csv(csv, col_types = readr::cols()) %>%
+  filter(Status == 'Active') %>%
+  select(Country, `State.Region`, City, Meetup, Twitter, GitHub, Website) %>%
+  rename(MeetupLink = Meetup)
+```
+
+```{r content, echo=FALSE, results='asis'}
+links <- chapters %>% 
+  mutate(Meetup = mapply(render_link, 
+                         word = .$City, 
+                         link = .$MeetupLink, 
+                         SIMPLIFY = TRUE, 
+                         USE.NAMES = FALSE),
+         Twitter = sapply(.$Twitter, render_sm, choice = 'tw'),
+         GitHub = sapply(.$GitHub, render_sm,   choice = 'gh'),
+         Website = sapply(.$Website, render_sm, choice = 'wb')
+         ) %>%
+  group_by(Country, City) %>% 
+  summarise(Meetup = first(Meetup), 
+            `Social Media` = paste0(Twitter, GitHub, Website, collapse = '&ensp;')) %>% 
+  select(Country, Meetup, `Social Media`) %>%
+  rename(City = Meetup)
+
+links %>%
+  group_by(Country) %>% 
+  arrange(City, .by_group = TRUE) %>% 
+  kable(format = "html", align = "rl", escape = FALSE) %>%
+  kable_styling(full_width = FALSE, 
+                bootstrap_options = c("hover", "responsive"))  %>%
+  column_spec(1, bold = TRUE) %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+If you are interested in starting an R-Ladies meetup group in your city, or would like more information about starting a meetup group, reach out at **info**[at]**rladies**[dot]**org**
+

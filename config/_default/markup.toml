@@ -1,0 +1,3 @@
+#defaultMarkdownHandler = "blackfriday"
+[goldmark.renderer]
+  unsafe= true

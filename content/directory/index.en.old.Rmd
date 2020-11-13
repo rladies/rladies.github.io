@@ -1,0 +1,67 @@
+---
+title: "R-Ladies Directory"
+output:
+  html_document:
+    keep_md: yes
+slug: directory
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, include = FALSE, echo = F)
+
+library(leaflet)
+library(widgetframe)
+library(ggmap)
+library(purrr)
+library(dplyr)
+
+#register_google(key = "AIzaSyCZ2J7fgbcyROdMYwr9fTzKQ2dCgZKqsMU")
+
+files <- jsonlite::read_json("../d/directory.json")
+
+geocodes <- map_dfr(files, magrittr::extract, c("city", "country")) %>% 
+  distinct() %>% 
+  mutate(string = paste0(city, ", ", country),
+         url = paste0("http://127.0.0.1:4321/", 
+                      stringr::str_replace_all(country, " ", "")),
+         popup = paste0("<a target='_blank' href='", url, "'>", string, "</a>")) %>% 
+  cbind(map_dfr(.$string, geocode))
+
+m <- leaflet(geocodes) %>%
+  setView(lng = 0, lat = 0, zoom = 01) %>% 
+  addProviderTiles(providers$CartoDB.Positron) %>% 
+  addMarkers(lng = ~lon, lat = ~lat, popup = ~popup)
+```
+
+```{r map, include=T}
+frameWidget(m)
+```
+
+**We would love more R-Ladies to appear in our Directory! Please fill out** [our form]()! It only takes a few minutes, and soon your profile will be online.
+
+If you want to **update** your profile just fill the same form and drop us a line in the comment box saying you want to update your profile!
+
+Or you can just email us at speakers[at]rladies[dot]org with any relevant info about yourself – easy!
+
+```{r}
+for (country in geocodes$country) {
+  slug <- stringr::str_replace_all(country, " ", "")
+  filename <- paste0(slug, '.Rmd')
+  file.create(filename)
+  
+  sink(filename)
+  cat(paste0('---
+title: "', country,' speakers"
+output: html_notebook
+data: "', country, '"
+type: "directory"
+---
+
+\`\`\`{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, include = FALSE, echo = F)
+\`\`\`'))
+  sink()
+}
+
+```
