@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en"
 title = "R-Ladies Global"
-theme = "hugo-initio-athanasiamo"
+theme = "hugo-initio-rladies"
 publishDir = "public"
 ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$", "index\\.html", "_cache$", "README"]
   
