@@ -4,3 +4,6 @@
 [submodule "themes/hugo-initio-athanasiamo"]
 	path = themes/hugo-initio-athanasiamo
 	url = https://github.com/Athanasiamo/hugo-initio
+[submodule "themes/hugo-initio-rladies"]
+	path = themes/hugo-initio-rladies
+	url = https://github.com/rladies/hugo-initio
