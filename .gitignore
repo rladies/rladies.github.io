@@ -62,5 +62,5 @@ vignettes/*.pdf
 # stupid mac hidden files
 **/.DS_Store
 
-content/*/*html
+content/**html
 node_modules
