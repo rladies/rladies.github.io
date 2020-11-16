@@ -18,8 +18,8 @@ R-Ladies Global was born and the grant was awarded in September 2016.
 Since then R-Ladies has grown to [138 chapters in 44 countries and 39000 members](https://gqueiroz.shinyapps.io/rshinylady/), thanks to our amazing organisers and R-Ladies who helped build and maintain our official website ([rladies.org](https://rladies.org/)), engage with the larger community via social media ([\@RLadiesGlobal](https://twitter.com/rladiesglobal)) and help each-other every day in millions of different ways.
 
 
-<center>
+<div class="flex-container">
 
 ![R-Ladies at UseR 2019](img/user2019.jpeg)
 
-</center>
+</div>

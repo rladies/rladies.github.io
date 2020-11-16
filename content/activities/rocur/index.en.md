@@ -1,37 +1,12 @@
 ---
 title: "@WeAreRLadies"
-output:
-  html_document:
-    keep_md: yes
-slug: rocur
 ---
 
+<center>
 
-
-
-<style type="text/css">
-button{
-  background-color: #88398a;
-  border-radius: 1em;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #88398aee;
-}
-</style>
-
-<div style='text-align: center;'>
 ### The R-Ladies RoCur
-</div>
+
+</center> 
 
 ## About  
 
@@ -53,7 +28,7 @@ Check out [@WeAreRLadies](https://twitter.com/WeAreRLadies) every Monday for a n
   
 And [see the current curator schedule](https://docs.google.com/spreadsheets/d/1pmphnR9EinGuAKbVqGzMIt6cWYmHNbeFVzaKJB59JdY/edit?usp=sharing)  
 
-***  
+--- 
   
   
 ## Be a Curator! 
@@ -72,7 +47,7 @@ We are always looking for R-users to be a featured curator for our account! Ever
 * Administrators will make all efforts to honor all scheduling requests but may ask that you be flexible as the administrators need to coordinate multiple schedules.  
 * Administrators will contact you to schedule the week you will curate.  
   
-<a href='https://goo.gl/forms/bQ7mHQDXrNHXEZCl2'><button type="button">Sign up to be a curator!</button></a>
+<a href='https://goo.gl/forms/bQ7mHQDXrNHXEZCl2'><buttonr>Sign up to be a curator!</buttonr></a>
    
 ## Contact Us  
   
