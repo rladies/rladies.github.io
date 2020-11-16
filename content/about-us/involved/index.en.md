@@ -1,10 +1,5 @@
 ---
 title: "Get Involved"
-output:
-  html_document:
-    keep_md: yes
-slug: involved
-type: "about-us"
 ---
 
 <center>

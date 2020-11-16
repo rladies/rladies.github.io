@@ -6,7 +6,7 @@ output:
     keep_md: yes
 ---
 
-```{css 'css', echo=FALSE}
+<style type="text/css">
 .grid {
   display: flex;
   flex-wrap: wrap; 
@@ -51,7 +51,7 @@ button{
 button:hover {
   background-color: #88398aee;
 }
-```
+</style>
  
 Never worry, there is always an R-Lady mentor to walk with you!
 
@@ -68,44 +68,10 @@ For mentors, this is an opportunity to help build the community, learn about the
 
 ## Experiences from the program
 
-```{r, include = FALSE}
-library(dplyr)
-mentoring <- tibble::tribble(
-  ~ mentor_name, ~ mentor_chapter, ~ mentee_name, ~ mentee_chapter, ~ img,  ~ url, ~ statement, ~ year,
-  "Erin Ledell", "R-Ladies SF", "Nadeja Sero", "R-Ladies Cotonou", "img/cotonou.png", "www.google.com", "This is a statement from the mentee", 2019)
 
-mentoring2 <- mentoring %>% 
-  nest_by(mentee_name, mentee_chapter, img, url, statement, year, .key = "mentor") %>% 
-  nest_by(img, url, statement, year, mentor, .key = "mentee")
-
-mentoring2$mentor <- lapply(mentoring2$mentor, function(x) rename_all(x, function(x) gsub("mentor_", "", x)))
-
-mentoring2$mentee <- lapply(mentoring2$mentee, function(x) rename_all(x, function(x) gsub("mentee_", "", x)))
-
-jsonlite::write_json(mentoring2, here::here("data/mentoring.json"), pretty = TRUE)
-
-mentoring <- mentoring %>%
-  mutate(
-    div = paste0(
-      "<a href='", url, "'>",
-        "<img src='", img, "'>",
-      "</a>",
-      "<div><p>",
-         "<b>Mentor: </b>", mentor_name, " (", mentor_chapter, ")<br>",
-         "<b>Mentee: </b>", mentee_name, " (", mentee_chapter, ")",
-      "</p><div>"
-    ) 
-  )
-```
 
 <ul class="grid">
-```{r, results='asis', echo = FALSE}
-for(i in 1:nrow(mentoring)){
-  cat("<li class='grid-item'>")
-  cat(mentoring$div[i])
-  cat("</li>")
-}
-```
+<li class='grid-item'><a href='www.google.com'><img src='img/cotonou.png'></a><div><p><b>Mentor: </b>Erin Ledell (R-Ladies SF)<br><b>Mentee: </b>Nadeja Sero (R-Ladies Cotonou)</p><div></li>
 </ul>
 
 

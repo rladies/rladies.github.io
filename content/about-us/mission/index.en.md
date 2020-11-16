@@ -1,10 +1,5 @@
 ---
 title: "Mission"
-output:
-  html_document:
-    keep_md: yes
-slug: mission
-type: "about-us"
 ---
 
 
@@ -16,9 +11,14 @@ As a diversity initiative, the mission of R-Ladies is to achieve proportionate r
 R-Ladies’ primary focus, therefore, is on supporting minority gender R enthusiasts to achieve their programming potential, by building a collaborative global network of R leaders, mentors, learners, and developers to facilitate individual and collective progress worldwide.
 
 <center>
-![R-Ladies at useR2018](user2018.jpg) 
+
+<a href="https://sec.ch9.ms/ch9/9581/663c5ae7-fe9f-42d3-89ba-401da2459581/RLadiesGlobal_mid.mp4">
+<buttonr>See our presentation in useR2017</buttonr>
+</a>
 
 </center>
+<div class="flex-container">
 
-[See our presentation in useR2017](https://sec.ch9.ms/ch9/9581/663c5ae7-fe9f-42d3-89ba-401da2459581/RLadiesGlobal_mid.mp4)
+![R-Ladies at useR2018](user2018.jpg) 
 
+</div>
