@@ -21,6 +21,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     highlight = true
     highlightStyle = "solarized-dark"
     highlightLanguages = ["r", "python", "bash"]
+    copyright = "&copy; R-Ladies 2012 CC-BY. Content created by [Hugo](https://gohugo.io/) and [Netlify](https://www.netlify.com/)"
 
 [[menu.main]]
     url = "https://rladies.org/"
