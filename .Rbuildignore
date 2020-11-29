@@ -1,0 +1,7 @@
+^directory$
+^\.Rproj*$
+^**/.DS_Store$
+^data-raw$
+^\.github$
+^.*\.Rproj$
+^\.Rproj\.user$
