@@ -7,3 +7,6 @@
 [submodule "themes/hugo-initio-rladies"]
 	path = themes/hugo-initio-rladies
 	url = https://github.com/rladies/hugo-initio
+[submodule "data/directory2"]
+	path = data/directory2
+	url = https://github.com/rladies/directory
