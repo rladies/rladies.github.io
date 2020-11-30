@@ -15,14 +15,13 @@ jobs:
       uses: actions/checkout@v1
       with:
         repository: rladies/directory
-        token: ${{ secrets.ACCESS_TOKEN }}
+        token: ${{ secrets.DIRECTORY_TOKEN }}
         path: data/directory2
           
     - name: Checkout theme
       uses: actions/checkout@v1
       with:
         repository: rladies/hugo-initio)y
-        token: ${{ secrets.ACCESS_TOKEN }}
         path: themes/hugo-initio-rladies
 
     - name: Install Ruby Dev                     
