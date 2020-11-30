@@ -14,7 +14,7 @@ jobs:
     - name: Checkout theme
       uses: actions/checkout@v1
       with:
-        repository: rladies/hugo-initio)y
+        repository: rladies/hugo-initio
         path: themes/hugo-initio-rladies
         
     - name: Checkout directory
