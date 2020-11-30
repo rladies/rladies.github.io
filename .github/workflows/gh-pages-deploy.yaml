@@ -12,14 +12,14 @@ jobs:
     - uses: actions/checkout@v1      
 
     - name: Checkout directory
-        uses: actions/checkout@v1
+      uses: actions/checkout@v1
         with:
           repository: rladies/directory
           token: ${{ secrets.ACCESS_TOKEN }}
           path: data/directory2
           
     - name: Checkout theme
-        uses: actions/checkout@v1
+      uses: actions/checkout@v1
         with:
           repository: rladies/hugo-initio)y
           token: ${{ secrets.ACCESS_TOKEN }}
