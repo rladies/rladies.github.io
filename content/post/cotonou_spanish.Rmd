@@ -82,3 +82,7 @@ Estoy profunda y sinceramente agradecida con Florencia, mi mentora, que realment
 ¡Hoy R-Ladies Cotonou goza de buena salud gracias al programa de mentoría! Se lo recomiendo a cualquier capítulo que necesite ayuda para organizar reuniones, encontrar nuevos miembros o cualquier otra cosa necesaria para la vida del capítulo.
 
 > ***¡No te preocupes, siempre habrá una R-Lady que camine contigo!***
+
+
+_Autora: [Nadejda Sero](https://twitter.com/sbnadejda), organizadora de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn). 
+Traducción al español: Florencia D'Andrea, Correcciones a la traducción al Inglés: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada_
