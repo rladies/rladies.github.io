@@ -16,13 +16,6 @@ jobs:
       with:
         repository: rladies/hugo-initio
         path: themes/hugo-initio-rladies
-        
-    - name: Checkout directory
-      uses: actions/checkout@v1
-      with:
-        repository: rladies/directory
-        token: ${{ secrets.DIRECTORY_TOKEN }}
-        path: data/directory2
 
     - name: Install Ruby Dev                     
       run: sudo apt-get install ruby-dev

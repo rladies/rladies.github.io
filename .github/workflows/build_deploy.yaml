@@ -12,6 +12,7 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
+    
       - name: Deploy to Netlify
         # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
         env:
