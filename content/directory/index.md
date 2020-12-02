@@ -4,7 +4,7 @@ type: "directory"
 ---
 
 **We would love more R-Ladies to appear in our Directory!** 
-Please fill out[our form]()! 
+Please fill out [our form]()! 
 It only takes a few minutes, and soon your profile will be online.
 
 If you want to **update** your profile just fill the same form and drop us a line in the comment box saying you want to update your profile!
