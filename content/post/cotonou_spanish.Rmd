@@ -33,8 +33,6 @@ R-Ladies Cotonou es un capítulo de [R-Ladies Global](https://twitter.com/RLadie
 blogdown::shortcode('tweet', '901597952837222401')
 ```
 
-<!-![*Encuentro con R-Ladies por primera vez! Descubrí R-Ladies en Twitter, a través de las respuestas de [Mine Dogucu](https://twitter.com/MineDogucu?s=20) y [Laura Acion](https://twitter.com/_lacion_?s=20) a mi tweet. Podrían ser consideradas como las madrinas de R-Ladies Cotonou, que nació luego de estos intercambios. Estaba twitteando sobre mi entusiasmo por #rstats, ¡pero encontré una comunidad!*](../../image/rladies_cotonou_fig01.png){width = 700px}->
-
 Estos tweets desencadenaron la apertura del capítulo en septiembre de 2017. Mayoritariamente comenzar a organizar el capítulo involucró configurar algunas plataformas: un email y una cuenta de Twitter. Benedicta Essuon, una amiga de Ghana que estudiaba en mi país me ayudó con este proceso.
 
 ## Las dificultades iniciales que limitaron la expansión de nuestro capítulo 😪
