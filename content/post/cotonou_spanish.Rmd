@@ -17,16 +17,9 @@ output: html_document
 Si quieres puedes compartir esta publicación en [francés](https://blog.rladies.org/post/cotonou_french/) o [inglés](https://blog.rladies.org/post/cotonou_english/).
 Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a christin@rladies.org.*
 
-
-# El programa de mentorías de R-Ladies: la historia de R-Ladies Cotonou
-
-[Nadejda Sero](https://twitter.com/sbnadejda), organizadora de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)
-
 ##¿Cómo comenzo todo?🤔
 
-R-Ladies Cotonou es un capítulo de [R-Ladies Global](https://twitter.com/RLadiesGlobal) ubicado en Cotonou, Benin (África Oeste). Hasta el día de hoy consta de treinta miembros y cuatro mujeres en el equipo organizador. 
-
-¡La idea de crear R-Ladies Cotonou nació en Twitter! Aquí su historia:
+R-Ladies Cotonou es un capítulo de [R-Ladies Global](https://twitter.com/RLadiesGlobal) ubicado en Cotonou, Benin (África Oeste). Hasta el día de hoy consta de treinta miembros y cuatro mujeres en el equipo organizador. ¡La idea de crear R-Ladies Cotonou nació en Twitter! Aquí su historia:
 
 ```{r echo=FALSE}
 #(https://twitter.com/sbnadejda/status/901597952837222401)!
@@ -38,15 +31,13 @@ Estos tweets desencadenaron la apertura del capítulo en septiembre de 2017. May
 ## Las dificultades iniciales que limitaron la expansión de nuestro capítulo 😪
 
 En sus inicios, R-Ladies Cotonou tenía dos miembros: Benedicta y yo. Sin embargo, ella volvió a su país de origen antes de la graduación y nuestro primer evento. Estuvo muy triste de dejar el capítulo pero siguió alentándome a que continue el trabajo que comenzamos juntas. Ella siguió apoyando a R-Ladies Cotonou en la distancia. 
-
 En aquel momento yo no poseía ninguna experiencia en el trabajo con comunidades o manejo de grupos y no sabía por dónde empezar. Tuve suerte de beneficiarme con algunos intercambios con [Maëlle Salmon](https://twitter.com/ma_salmon) (miembro del equipo de R-Ladies Global) que me ayudaron a seguir adelante. También aprendí de mirar lo que otros capítulos compartían por Twitter. Si bien aún dudaba bastante, no busqué más ayuda por parte del equipo global.
 
-El primer problema fue conseguir quienes co-organicen conmigo. Preparé un pequeño evento invitando algunas mujeres que pensé que podrían encontrarse interesadas en la idea y afortunadamente pronto nos volvimos un equipo de cuatro organizadoras. Ahora teníamos un segundo problema: conseguir miembros.
+*El primer problema fue conseguir quienes co-organicen conmigo.* Preparé un pequeño evento invitando algunas mujeres que pensé que podrían encontrarse interesadas en la idea y afortunadamente pronto nos volvimos un equipo de cuatro organizadoras. *Ahora teníamos un segundo problema: conseguir miembros.*  
+
 Antes de que pudieramos trabajar en ello, el acceso a internet se transformo un problema mayor en Benin. Se impusieron impuestos y todo era bastante caro. Dejamos de hablar sobre el desarrollo del capítulo. ¡La mayor fuente de mis ideas eran los tweets de otros capítulos! ¿Qué podía hacer sin Twitter? En ese momento, no usaba mucho el Slack de organizadoras de R-Ladies. Me llevo un tiempo acostumbrarme a los nuevos planes de internet y lentamente reaparecí en el Slack.
 
-Cerca de un año y medio habia pasado desde la creación del capítulo. Sin eventos, sin participantes. A comienzos de 2019 recibo un mensaje de [Claudia Vitolo](https://twitter.com/clavitolo), co-fundadora de R-Ladies Global, que quería saber si nuestro capítulo todavía existía. Me rompió el corazón ver esta iniciativa tan buena estaba cerca de desaparecer. Me sentía culpable y triste.
-¡Pero el milagro ocurrió! Claudia me sugirió que el programa de mentorías podría ayudarme con el desarrollo inicial del capítulo.
-Luego de aceptar la oferta, mi mentora se unió a los esfuerzos por salvar R-Ladies Cotonou.
+Cerca de un año y medio habia pasado desde la creación del capítulo. Sin eventos, sin participantes. A comienzos de 2019 recibo un mensaje de [Claudia Vitolo](https://twitter.com/clavitolo), co-fundadora de R-Ladies Global, que quería saber si nuestro capítulo todavía existía. Me rompió el corazón ver esta iniciativa tan buena estaba cerca de desaparecer. Me sentía culpable y triste. ¡Pero el milagro ocurrió! Claudia me sugirió que el programa de mentorías podría ayudarme con el desarrollo inicial del capítulo. Luego de aceptar la oferta, mi mentora se unió a los esfuerzos por salvar R-Ladies Cotonou.
 
 # ¡El programa de mentorías de R-Ladies al rescate! 💪
 
@@ -68,13 +59,11 @@ Uno de los problemas más importantes que atacamos con mi "R-hermana" fue motiva
 
 ¡Antes del segundo evento, R-Ladies Cotonou recibió un subsidio nivel vector de RConsortium! Apliqué a esos fondos gracias a el apoyo y los recordatorios de Florencia. Ella también me explicó como buscar fondos y como esto podría ser útil para el capítulo.
 
-![La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets.](../../image/rladies_cotonou_fig03.jpg){width=500px}
-
 Nuestro segundo encuentro estuvo muy bueno; comparto algunas imagenes [aquí](https://twitter.com/RLadiesCtn/status/1227670069305651201). Para motivar y alentar futuras charlas, al final de la charla le propuse a la oradora, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), que comparta su experiencia al momento de elegir un tema para presentar. Ella compartió su experiencia e inmediatamente se ofrecieron voluntarias para la próxima reunión. Para darle más sabor, agregamos un evento sorpresa extra, una charla relámpago de [Shériftah Mama Chabi](https://twitter.com/masherycha1) sobre el tema *"Mujeres en ciencia"*. Se presentó el el panorama de la mujer en la ciencia, se discutió sobre igualdad de género y los desafíos que enfrentan las mujeres científicas, y terminó dando varios de enlaces útiles a oportunidades y financiamiento.
 
-He aprendido mucho del programa y estoy difundiendo algunas de ideas que obtuve de el poniendo como ejemplo mi capítulo. Creo a su vez que si tuviera que renunciar a mi rol de organizadora, el capítulo estaría bien y en buenas manos.
+![La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets.](../../image/rladies_cotonou_fig03.jpg){width=500px}
 
-Estoy profunda y sinceramente agradecida con Florencia, mi mentora, que realmente invirtió su tiempo para estar disponible mientras duró, escuchando cualquier preocupación. ¡Gracias al equipo de R-Ladies global por presentar este programa y ofrecerme ser parte de él! ❤
+He aprendido mucho del programa y estoy difundiendo algunas de ideas que obtuve de el poniendo como ejemplo mi capítulo. Creo a su vez que si tuviera que renunciar a mi rol de organizadora, el capítulo estaría bien y en buenas manos. Estoy profunda y sinceramente agradecida con Florencia, mi mentora, que realmente invirtió su tiempo para estar disponible mientras duró, escuchando cualquier preocupación. ¡Gracias al equipo de R-Ladies global por presentar este programa y ofrecerme ser parte de él! 💜
 
 ## ¡GozaR de buena salud! 😉
 
