@@ -26,9 +26,6 @@ R-Ladies Cotonou is a local chapter of [R-Ladies Global](https://twitter.com/RLa
 blogdown::shortcode('tweet', '901597952837222401')
 ```
 
-<!-- Meeting with R-Ladies for the first time! I discovered R-Ladies, on Twitter,  -->
-<!-- through the responses of [Mine Dogucu](https://twitter.com/MineDogucu?s=20) and [Laura Acion](https://twitter.com/_lacion_?s=20) to my tweet. They could be considered as the godmothers of R-Ladies Cotonou which was born after these exchanges. I was just tweeting about my enthusiasm for #rstats, but found a community! -->
-
 These tweets led to the creation of R-Ladies Cotonou in September 2017! 
 This mainly involved setting some of the platforms we needed: an e-mail and a 
 Twitter account! [Benedicta Essuon](https://twitter.com/Bene_Essuon?s=20), a Ghanaian friend who was a scholar in my country helped me during that process.
