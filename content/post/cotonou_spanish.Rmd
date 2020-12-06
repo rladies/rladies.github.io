@@ -6,6 +6,7 @@ description: "Programa de mentorías de R-Ladies"
 tags: 
 - comunidad
 - mentorias
+- áfrica
 - español
 categories:
 - r-ladies
