@@ -1,0 +1,68 @@
+{{ define "languages" }}
+    {{ partial "languages.html" .}}
+{{ end }}
+
+{{ define "main" }}
+	
+	<!-- for searching and pagination List.js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  
+<main id="main">
+	<div class="container" >
+		<div class="row topspace">
+
+				<header class="entry-header">
+ 					<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+				</header>
+				
+        <div class="entry-content">
+					{{ .Content }}
+				</div>
+		
+        <div class="flex-container" id="directory-content">
+          
+          <center>
+            <input type="text" class="fuzzy-search" placeholder="Search directory..."/>
+            <button class="sort" data-sort="name">
+              Sort by name
+            </button>
+          </center>
+          
+          <ul class="list" id="directory-grid">
+            {{ if eq .Hugo.Environment "production" }}
+              {{ $url := "https://raw.githubusercontent.com/rladies/directory/master/directory/rladies_directory.json?token=" }}
+              {{ $pat := getenv "DIRECTORY_PAT" }}
+              {{ $directory := getJSON $url $pat | shuffle }}
+              {{ range $directory }}
+                {{ partial "directory/li.html" . }}
+              {{ end }}
+              
+            {{ else }}
+              {{ $directory := $.Site.Data.directory | shuffle }}
+              {{ range $directory }}
+                {{ partial "directory/li.html" . }}
+              {{ end }}
+            {{ end }}
+
+          </ul>
+          
+          <center>
+            <ul class="pagination"></ul>
+          </center>
+        </div>
+		</div> <!-- /row post  -->
+	</div>	<!-- /container -->
+</main>
+ 
+	<!-- linking javscript -->
+		<!-- <script src="/js/search.js"></script> -->
+
+	<script>
+    var monkeyList = new List('directory-content', {
+    valueNames: ['name', 'honorific', 'affiliation', 'interests', 'shiny_apps', 'r_groups', 'r_packages'],
+    page: 10,
+    pagination: true
+  });
+	</script>
+{{ end }}

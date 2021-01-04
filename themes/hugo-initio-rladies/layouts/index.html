@@ -1,0 +1,64 @@
+{{ define "hero" }}
+  <section class = "hero" style="height:100vh;">
+    <div class="banner" style="background-image:url({{.Site.BaseURL}}{{ .Site.Params.banner }}); padding: 20vh; background-attachment: fixed;" >
+      <div class = "logo">
+        <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+      </div>
+      <h1 class="text-center">
+        <span class="title">{{ .Site.Params.name }}</span>
+      </h1>
+      <a href="#Chapters">
+        <i class="fa fa-chevron-down" style="font-size:48px;color:#dbc3db;bottom: 10px;position:absolute;"></i>
+        </a>  
+    </div>
+    {{ partial "menu.html" . }}
+  </section>
+{{ end }}
+
+
+{{ define "languages" }}
+{{ end }}
+
+    
+{{ define "main"}}
+  <main id="main">
+
+    <div class="container">
+  
+      {{ if .Site.Params.showSubheader }}
+        {{ partial "home/subheader.html" . }}
+      {{ end }}
+      
+        {{ range .Site.Sections }}
+            {{ range .Sections.ByWeight }}
+              <div id="{{ .Title }}" class="row section featured topspace">
+                <h2 class="section-title">
+                  <span>{{.Title}}</span>
+                </h2>
+                {{ $stype := .Type}}
+                {{ if eq $stype "service"}}
+                  {{ partial "home/services.html" . }}
+                
+                {{ else if eq $stype "recentwork" }}
+                  {{ partial "home/recentworks.html" . }}
+                
+                {{ else if eq $stype "download" }}
+                  {{ partial "home/download.html" . }}
+                
+                {{ else if eq $stype "client" }}
+                  {{ partial "home/clients.html" . }}
+                  
+                {{ else if eq $stype "chapters" }}
+                  {{ partial "home/chapters.html" . }}
+                
+                {{ else if eq $stype "single"  }}
+                  <div style="text-align: center;">
+                    <p>{{ .Content }}</p> 
+                  </div>
+                {{ end }}
+            {{ end }}
+        {{ end }}
+  	</div>	<!-- /container -->
+  </main>
+
+{{ end }}

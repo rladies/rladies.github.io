@@ -1,0 +1,504 @@
+
+@import url(//db.onlinewebfonts.com/c/513e00a92551c7f365c8d2d6cb475658?family=Helvetica+Neue);
+@import url(//db.onlinewebfonts.com/c/32439590f99f4c85f653dddb5c1e2118?family=Helvetica+Neue+WGL);
+@import url(//db.onlinewebfonts.com/c/95cecf452d3208890088a5b4c19c7ecf?family=Helvetica+Neue+ME);
+@import url(//db.onlinewebfonts.com/c/1570d2f0f10dfe605a65f3d7c91108b6?family=Helvetica+CE+35+Thin);
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+}
+
+body {
+  font-family: "Open sans", Arial, sans-serif;
+  color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Helvetica Neue", "Lato", "Open Sans", sans-serif; 
+  color: #88398a;
+  font-weight: 450;
+}
+
+a {
+  color: #88398a;
+}
+ 
+a:hover, a:focus {
+  color: #441c45;
+}
+
+.navbar{
+  font-family: "Helvetica Neue WGL", "Lato", "Open Sans", sans-serif; 
+  color: #88398a;
+  font-weight: 500;
+}
+
+.navbar-collapse {
+  font-family: "Helvetica Neue WGL", "Lato", "Open Sans", sans-serif; 
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+   color: #88398a;
+}
+
+.navbar-default {
+  border-color: #441c45;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #441c45;
+}
+
+.entry-header .entry-meta .tagline{
+  font-family: "Helvetica Neue","Lato",  "Open Sans", sans-serif; 
+  color: #fff;
+}
+
+.hero{
+  width: 100%;
+  height: 50vh;
+}
+
+.hero .title {
+  font-family: "Helvetica CE 35 Thin","Lato",  "Open Sans", sans-serif; 
+  color: #fff;
+  font-size: 150%;
+}
+
+.hero  .tagline {
+  font-family: "Helvetica CE 35 Thin", "Lato", "Open Sans", sans-serif; 
+  color: #fff;
+}
+
+.hero .tagline a {
+  color: #ddd;
+}
+
+.logo{
+  padding-top: 2em;
+  text-align: center;   
+ }
+ 
+.logo img{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  height: 100%;
+  background-color: #88398a;
+  z-index: 2; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+#footer {
+  background: #88398a;
+  color: #f3ebf3;
+}
+
+#footer a {
+  color: #f3ebf3;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+#footer h3.widget-title {
+  color: #f3ebf3;
+}
+
+#underfooter {
+  background: #5f2760;
+  color: #aaa;
+}
+
+#main {
+  padding: 5em;
+}
+
+buttonr{
+  background-color: #88398a;
+  border-radius: 1em;
+  border: none;
+  color: white;
+  padding: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1em .5em;
+  cursor: pointer;
+}
+
+buttonr:hover {
+  background-color: #88398aee;
+}
+
+/******************/
+/* flex grid */
+/******************/
+.flex-container {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: 100px;
+  left: 50%;
+}
+
+
+.flex-container h1 {
+  font-size: 23px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.flex-container h2 {
+  font-size: 16px;
+  color: #111;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.flex-container h3 {
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 0;
+  letter-spacing: 5px;
+}
+
+.flex-container i {
+  font-size: 16px;
+}
+
+.flex-container p {
+  font-size: 12px;
+  text-indent: -20px;
+  padding-left: 29px; 
+  margin: 0;
+  padding-bottom: 0;
+}
+
+/******************/
+/* directory grid */
+/******************/
+
+#directory-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.imgdiv {
+  position: top left;
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.directory-grid-item {
+  flex-grow: 1 0 0; 
+  width: 600px; /* golden ratio */
+  height: calc(600px / 1.6);
+  border: 2px solid #88398a;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  margin: 15px;
+}
+
+.directory-grid-main {
+  width: 42%;
+  float: left;
+  height: 100%;
+  padding: 20px;
+}
+
+.directory-grid-desc {
+  width: 57%;
+  float: left;
+  height: 100%;
+  padding: 20px;
+}
+
+
+@media only screen and (max-width: 650px) {
+  .directory-grid-item {
+    width: 450px; /* golden ratio */
+    height: calc(450px * 1.6);
+    position: relative;
+  }
+  
+  .flex-container p {
+    width: 100%;
+  }
+  
+  .directory-grid-main,
+  .directory-grid-desc {
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  
+  .flex-container h1, 
+  .flex-container h2, 
+  .flex-container h3 {
+    text-align: center;
+  }
+  
+  .imgdiv {
+    margin: 0 auto;
+  }
+}
+
+
+/********************/
+/* global team grid */
+/********************/
+.gt-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  overflow: wrap;
+}
+
+.gt-grid-item {
+  flex-grow: 1 0 0; 
+  height: 250px;
+  width: 250px;
+}
+
+.gt-content {
+  position: relative;
+  height: 225px;
+  width: 225px;
+  text-align: center;
+  border-radius: 1em;
+  border: 1px solid #88398a;
+  background-size: cover;
+  -moz-transition: all 1s ease-in-out 0s;
+	-webkit-transition: all 1s ease-in-out 0s;
+	-ms-transition: all 1s ease-in-out 0s;
+	transition: all 1s ease-in-out 0s;
+}
+
+.gt-content-text{
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gt-content-text:hover {
+  opacity: 1;
+}
+
+.gt-content-text h1 {
+  position: absolute;
+  width: 101%;
+  top: -22px;
+  left: -1px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #88398abe;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 5px; 
+  padding-left: 8px;
+
+}
+
+.gt-content-text p {
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  font-size: 12px;
+  font-weight: 300;
+  width: 101%;
+  background-color: #ffffffde;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  color: #88398a;
+  padding: 4px; 
+  padding-left: 25px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .gt-card {
+    width: 100%;
+  }
+}
+
+
+/******************/
+/* mentoring grid */
+/******************/
+
+
+.mentoring-grid {
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  list-style-type: none;
+  overflow: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.mentoring-grid-item {
+  flex-grow: 1 0 0; 
+  padding: 10px;
+  width: 600px; 
+  height: calc(600px / 1.8);
+}
+
+.mentoring-grid-card {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+.mentorimg {
+  height: 100%;
+  width: 50%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}  
+
+.mentoring-grid-right {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 3%;
+  position: relative;
+}
+
+.mentoring-grid-statement {
+  width: 100%;
+  height: 70%;
+  text-align: left;
+}
+
+.mentoring-grid-statement p {
+  font-size: 16px;
+  color: #222;
+}
+
+.mentoring-grid-attribution{
+  padding: 3%;
+  width: 88%;
+  height: 30%; 
+  position: absolute;
+  bottom: 3%;
+  text-align: right;
+}
+
+.mentoring-grid-attribution h1 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+}
+
+.mentoring-grid-attribution h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.mentoring-grid-attribution h3 {
+  padding-left: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #777;
+  line-height: .3;
+}
+
+@media only screen and (max-width: 650px) {
+  .mentoring-grid-item {
+    width: 450px; /* golden ratio */
+    height: calc(450px * 1.4);
+    position: relative;
+  }
+  
+  .mentoring-grid-card {
+    position: relative;
+  }
+  
+  .mentorimg{
+    position: absolute;
+    float: none;
+    height: 60%;
+    width: 100%;
+  }
+  
+  .mentoring-grid-right {
+    height: 40%;
+    width: 100%;
+    top: 60%;
+    float: none;
+    position: absolute;
+  }
+  
+  .mentoring-grid-statement {
+    width: 100%;
+    height: 64%;
+  }
+  
+  .mentoring-grid-attribution {
+    height: 36%;
+    width: 94%;
+    bottom: 2%;
+    float: none;
+    position: absolute;
+    text-align: right;
+    padding: 0;
+  }
+  
+}
+
+
+/* TUI calendar */
+
+.tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator {
+  background: #88398a
+}
+
+.pagination li {
+  display: inline-block;
+  padding:5px;
+}
