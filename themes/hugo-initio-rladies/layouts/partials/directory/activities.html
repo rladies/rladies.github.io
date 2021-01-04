@@ -1,0 +1,21 @@
+
+{{ with .r_groups }}
+  <p class="r_groups">
+    <b><i class="fas fa-users" style = "font-size: 15px;"></i>&nbsp;</b>
+    {{ delimit . ", " }}
+  </p>
+{{ end }}
+    
+{{ with .r_packages }}
+  <p class="r_packages">
+    <b><i class="fas fa-cube" style = "font-size: 15px;"></i>&nbsp;</b>
+    {{ delimit . ", " }}
+  </p>
+{{ end }}
+
+{{ with .shiny_apps }}
+  <p class="shiny_apps">
+    <b><i class="fab fa-stripe-s" style="font-size: 15px;"></i>&nbsp;</b>
+    {{ delimit . ", " }}
+  </p>
+{{ end }}

@@ -1,0 +1,35 @@
+
+<p style="text-align: center;"><b>List of locations of currently active R-Ladies meetup groups</b></p>
+  <table class="table table-hover table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+    <thead>
+      <tr>
+        <th style="text-align:right;border-right: 1px solid;"> Country </th>
+        <th style="text-align:left;"> City </th>
+        <th style="text-align:right;"> Social Media </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ $url := "https://raw.githubusercontent.com/Athanasiamo/starter-kit/master/jsons/chapters.json" }}
+      {{ range $chapters := getJSON $url }}
+          
+      <tr>
+         <td style="text-align:right;font-weight: bold;border-right: 1px solid;" rowspan = "{{ len .chapters }}"> {{ .country}} </td>
+         
+         {{ range .chapters }}
+           <td style="text-align:left;"> <a href="http://meetup.com/{{ .meetup }}">{{ .city }}</a> </td>
+           
+           <td style="text-align:right;"> 
+              {{ with .socials }}
+                {{ range . }}
+                  {{ partial "some.html" . }}
+                {{ end }}
+              {{ end }}
+             </td>
+        </tr>
+           {{ end }}
+    
+        {{ end }}
+    </tbody>
+  </table>
+  
+  <p>If you are interested in starting an R-Ladies meetup group in your city, or would like more information about starting a meetup group, reach out at <b>info</b>[at]<b>rladies</b>[dot]<b>org</b></p>

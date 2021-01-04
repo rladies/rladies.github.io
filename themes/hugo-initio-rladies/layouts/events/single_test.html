@@ -1,0 +1,101 @@
+{{ define "languages" }}
+    {{ partial "languages.html" .}}
+{{ end }}
+
+{{ define "main" }}
+<main id="main">
+	<div class="container" >
+		<div class="row topspace">
+
+				<header class="entry-header">
+ 					<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+				</header>
+				
+        <div class="entry-content">
+					{{ .Content }}
+				</div>
+				
+        <div class="code-html">
+          <div id="menu">
+            <span id="menu-navi">
+              <button type="button" class="btn bttn-no-outline action-button move-today" data-action="move-today">Today</button>
+              <button type="button" class="btn bttn-no-outline action-button move-day" data-action="move-prev">
+                <i class="fa fa-chevron-left"></i>
+              </button>
+              <button type="button" class="btn bttn-no-outline action-button move-day" data-action="move-next">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+            </span>
+            <span id="renderRange" class="render-range"></span>
+          </div>
+          <br>
+          <div id="calendar" style='width:100%; height:600px;'></div>
+        </div>
+
+		</div> <!-- /row post  -->
+	</div>	<!-- /container -->
+</main>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partial "footer/footer.html" . }}
+  {{ partial "footer/tui-calendar.html" . }}
+  
+
+<script type="text/javascript" class="code-js">
+var cal = new tui.Calendar('#calendar', {
+  "calendars": {{ .Site.Data.events.calendars }},
+  "schedule": {{ .Site.Data.events.schedule }},
+  "defaultView": "month", 
+  "taskView":false,
+  "scheduleView":true,
+  "useDetailPopup":true,
+  "useCreationPopup":false,
+  "isReadOnly":true,
+  "usageStatistics":false,
+  "useNav":true,
+  "bttnOpts":{
+    "today_label":"Today",
+    "prev_label":"<i class=\"fa fa-chevron-left\"><\/i>",
+    "next_label":"<i class=\"fa fa-chevron-right\"><\/i>",
+    "class":" bttn-jelly bttn-sm bttn-primary",
+    "bg":"#88398a",
+    "color":"#FFF"},
+  "theme":{
+    "common.border":"1px solid #a7a9ac80",
+    "common.backgroundColor":"white",
+    "common.holiday.color":"#88398a",
+    "common.saturday.color":"#88398a",
+    "common.dayname.color":["function (level, alpha) ",
+                            ".Call(C_gray, level, if (missing(alpha)) NULL else alpha)"],
+    "common.today.color":"#a7a9ac",
+    "month.dayname.height":"31px",
+    "month.dayname.borderLeft":"1px solid #88398aFF",
+    "month.dayname.paddingLeft":"10px",
+    "month.dayname.paddingRight":"10px",
+    "month.dayname.backgroundColor":"#88398a64",
+    "month.dayname.fontSize":"12px",
+    "month.dayname.fontWeight":"normal",
+    "month.dayname.textAlign":"left",
+    "month.holidayExceptThisMonth.color":"#88398a0A",
+    "month.dayExceptThisMonth.color":"#a7a9acb4",
+    "month.weekend.backgroundColor":"inherit",
+    "month.day.fontSize":"14px",
+    "month.schedule.borderRadius":"2px",
+    "month.schedule.height":"24px",
+    "month.schedule.marginTop":"2px",
+    "month.schedule.marginLeft":"8px",
+    "month.schedule.marginRight":"8px",
+    "month.moreView.border":"1px solid #d5d5d5",
+    "month.moreView.boxShadow":"0 2px 6px 0 rgba(0, 0, 0, 0.1)",
+    "month.moreView.backgroundColor":"white",
+    "month.moreView.paddingBottom":"17px",
+    "month.moreViewTitle.height":"44px",
+    "month.moreViewTitle.marginBottom":"12px",
+    "month.moreViewTitle.backgroundColor":"inherit",
+    "month.moreViewTitle.borderBottom":"none",
+    "month.moreViewTitle.padding":"12px 17px 0 17px",
+    "month.moreViewList.padding":"0 17px"}
+});
+</script>
+{{ end }}
