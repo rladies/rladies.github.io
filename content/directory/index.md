@@ -1,6 +1,7 @@
 ---
 title: "Directory"
 type: "directory"
+image: "/images/logo.png"
 ---
 
 **We would love more R-Ladies to appear in our Directory!** 
