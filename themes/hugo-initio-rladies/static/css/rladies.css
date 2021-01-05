@@ -513,14 +513,14 @@ buttonr:hover {
     clear: both;
   }
 
-.jPaginateBack, 
-.jPaginateNext, 
+.paginate_back, 
+.paginate_next, 
 .pagination {
   float: left;
 }
 
-.jPaginateBack, 
-.jPaginateNext {  
+.paginate_back, 
+.paginate_next {  
     line-height:$input-height; 
     width:$input-height; 
     text-align: center; 
@@ -530,8 +530,8 @@ buttonr:hover {
 }
 
 
-.jPaginateBack .fas, 
-.jPaginateNext .fas { 
+.paginate_back .fas, 
+.paginate_next .fas { 
   display:block;
   font-size:16px;
   line-height:inherit;
