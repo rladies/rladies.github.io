@@ -23,10 +23,9 @@
         <div class="flex-container" id="directory-content">
           
           <center>
-            <input type="text" class="fuzzy-search" placeholder="Search directory..."/>
-            <button class="sort" data-sort="name">
-              Sort by name
-            </button>
+            <input type="text" style="border-radius: .5em;" class="fuzzy-search" placeholder="Search directory..."/>
+            <buttonr style="font-size: 12px;" class="sort" data-sort="name">Sort by name</buttonr>
+            <buttonr id="shuffle" style="font-size: 12px;" type="button">Randomly shuffle</buttonr>
           </center>
           
           <ul class="list" id="directory-grid">
@@ -46,23 +45,48 @@
             {{ end }}
 
           </ul>
-          
           <center>
-            <ul class="pagination"></ul>
+            <div class="pagination-nav">
+              <ul class="jPaginateBack"><i class="fas fa-chevron-left"></i></ul>
+              <ul class="pagination"></ul>
+              <ul class="jPaginateNext"><i class="fas fa-chevron-right"></i></ul>
+            </div>
           </center>
-        </div>
+        </div> 
 		</div> <!-- /row post  -->
 	</div>	<!-- /container -->
 </main>
  
-	<!-- linking javscript -->
-		<!-- <script src="/js/search.js"></script> -->
-
 	<script>
     var monkeyList = new List('directory-content', {
-    valueNames: ['name', 'honorific', 'affiliation', 'interests', 'shiny_apps', 'r_groups', 'r_packages'],
-    page: 10,
-    pagination: true
-  });
+      valueNames: ['name', 'honorific', 'affiliation', 'interests', 'shiny_apps', 'r_groups', 'r_packages'],
+      page: 10,
+      pagination: {
+        innerWindow: 3,
+        left: 1,
+        right: 1,
+        paginationClass: "pagination",
+      }
+    });
+    
+    $('.jPaginateNext').on('click', function(){
+	    var list = $('.pagination').find('li');
+	    $.each(list, function(position, element){
+	        if($(element).is('.active')){
+	            $(list[position+1]).trigger('click');
+	        }
+	    })
+	});
+
+
+	$('.jPaginateBack').on('click', function(){
+	    var list = $('.pagination').find('li');
+	    $.each(list, function(position, element){
+	        if($(element).is('.active')){
+	            $(list[position-1]).trigger('click');
+	        }
+	    })
+	});
+
 	</script>
 {{ end }}
