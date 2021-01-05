@@ -8,22 +8,25 @@
           {{ partial "some.html" . }}
         {{ end }}
       </h3>
-      </div>
-      <div class="directory-grid-desc">
-      <p class="affiliation">
-        <i>{{ .title }}</i>{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
-    <br><br>
-    <p>
-      <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
-    </p>
-    <p class="interests">
-      {{ with .interests }}
-        <b><i class="fas fa-tag" style = "font-size: 15px;"></i>&nbsp;</b>
-        {{ delimit . ", " }}
+    </div>
+    <div class="directory-grid-desc" style="position: relative;">
+        <p class="affiliation">
+          <i>{{ .title }}</i>{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
+      <br><br>
+      <p>
+        <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
+      </p>
+      <p class="interests">
+        {{ with .interests }}
+          <b><i class="fas fa-tag" style = "font-size: 15px;"></i>&nbsp;</b>
+          {{ delimit . ", " }}
+        {{ end }}
+      </p>
+      {{ range .activities }}
+          {{ partial "directory/activities.html" . }}
       {{ end }}
-    </p>
-    {{ range .activities }}
-        {{ partial "directory/activities.html" . }}
-    {{ end }}
+      <p style="color: #a2a2a2; position: absolute; bottom: 0; right: 0;">
+        Last updated: {{ .last_updated | default "Unknown"}}
+      </p>
    </div>
 </li>

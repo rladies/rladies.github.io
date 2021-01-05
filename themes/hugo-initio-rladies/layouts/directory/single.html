@@ -24,7 +24,7 @@
           
           <center>
             <input type="text" style="border-radius: .5em;" class="fuzzy-search" placeholder="Search directory..."/>
-            <buttonr style="font-size: 12px;" class="sort" data-sort="name">Sort by name</buttonr>
+            <buttonr style="font-size: 12px; padding: 8px;" class="sort" data-sort="name">Sort by name</buttonr>
             <!-- <buttonr id="shuffle" style="font-size: 12px;" type="button">Randomly shuffle</buttonr> -->
           </center>
           
@@ -78,7 +78,6 @@
 	    })
 	});
 
-
 	$('.paginate_back').on('click', function(){
 	    var list = $('.pagination').find('li');
 	    $.each(list, function(position, element){
@@ -86,7 +85,7 @@
 	            $(list[position-1]).trigger('click');
 	        }
 	    })
-	});
+	  }); 
 
 	</script>
 {{ end }}
