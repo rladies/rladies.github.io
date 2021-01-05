@@ -47,9 +47,9 @@
           </ul>
           <center>
             <div class="pagination-nav">
-              <ul class="jPaginateBack"><i class="fas fa-chevron-left"></i></ul>
+              <ul class="paginate_back"><i class="fas fa-chevron-left"></i></ul>
               <ul class="pagination"></ul>
-              <ul class="jPaginateNext"><i class="fas fa-chevron-right"></i></ul>
+              <ul class="paginate_next"><i class="fas fa-chevron-right"></i></ul>
             </div>
           </center>
         </div> 
@@ -69,7 +69,7 @@
       }
     });
     
-    $('.jPaginateNext').on('click', function(){
+    $('.paginate_next').on('click', function(){
 	    var list = $('.pagination').find('li');
 	    $.each(list, function(position, element){
 	        if($(element).is('.active')){
@@ -79,7 +79,7 @@
 	});
 
 
-	$('.jPaginateBack').on('click', function(){
+	$('.paginate_back').on('click', function(){
 	    var list = $('.pagination').find('li');
 	    $.each(list, function(position, element){
 	        if($(element).is('.active')){
