@@ -16,7 +16,7 @@
 				</div>
 				
         <div class="flex-container">
-          <ul class="directory-grid" style="border: none;">
+          <ul class="mentoring-grid" style="border: none;">
             {{ $mentoring := $.Site.Data.mentoring | shuffle }}
             {{ range $mentoring}}
               {{ partial "mentoring/li.html" .}}
