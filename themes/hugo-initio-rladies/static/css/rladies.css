@@ -492,13 +492,48 @@ buttonr:hover {
 }
 
 
-/* TUI calendar */
-
-.tui-full-calendar-month-week-item .tui-full-calendar-today .tui-full-calendar-weekday-grid-date-decorator {
-  background: #88398a
+/* pagination */
+ 
+.pagination-nav {
+  width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
 }
 
-.pagination li {
-  display: inline-block;
-  padding:5px;
+
+.pagination {
+  white-space:nowrap; 
 }
+
+.pagination:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+.jPaginateBack, 
+.jPaginateNext, 
+.pagination {
+  float: left;
+}
+
+.jPaginateBack, 
+.jPaginateNext {  
+    line-height:$input-height; 
+    width:$input-height; 
+    text-align: center; 
+    user-select: none;
+    padding-top: 30px;
+    margin-right: 35px;
+}
+
+
+.jPaginateBack .fas, 
+.jPaginateNext .fas { 
+  display:block;
+  font-size:16px;
+  line-height:inherit;
+} 
+
