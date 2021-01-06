@@ -16,10 +16,6 @@
 [translations]
     other = "Translations"
     
-[footer_form_title]
-    other = "Form widget"
-[footer_form_content]
-    other = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 [footer_followme_title]
     other = "Follow me"
 [footer_contact_title]
