@@ -64,3 +64,5 @@ vignettes/*.pdf
 
 content/**html
 node_modules
+
+README.html
