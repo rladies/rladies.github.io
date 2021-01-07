@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages("remotes", repos = "https://cloud.r-project.org")
-          remotes::install_github("rladies/meetupr"")
+          remotes::install_github("rladies/meetupr")
           remotes::install_cran(c("dplyr", "here", "purrr", "jsonlite"))
           remotes::install_cran(c("progress", "lubridate"))
         shell: Rscript {0}
