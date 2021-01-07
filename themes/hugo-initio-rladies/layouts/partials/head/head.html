@@ -14,6 +14,12 @@
 <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
 <link rel="stylesheet" href="{{ "css/rladies.css" | relURL }}">
 
+
+<!-- TUI calendar -->  
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
+<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
+
 <!-- Custom styles -->	
 {{ range .Site.Params.customCSS -}}
   {{ $style := resources.Get . }}
@@ -24,8 +30,3 @@
 {{ if .Site.Params.customsharethis }}
   <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
 {{ end }}
-
-<!-- TUI calendar -->  
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui-calendar/latest/tui-calendar.css" />
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.css" />
-<link rel="stylesheet" type="text/css" href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.css" />
