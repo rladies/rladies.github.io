@@ -26,7 +26,7 @@ jobs:
       - name:  Authenticate meetupr
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript -e 'source("R/autenticate_meetup.R", encoding = "UTF-8")'
+        run: Rscript R/mauth.R
       - name: Get all events
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
