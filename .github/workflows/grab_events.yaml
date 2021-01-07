@@ -22,6 +22,7 @@ jobs:
           remotes::install_github("rladies/meetupr")
           remotes::install_cran(c("dplyr", "here", "purrr", "jsonlite"))
           remotes::install_cran(c("progress", "lubridate"))
+          remotes::install_cran(c("cyphr", "sodium"))
         shell: Rscript {0}
       - name:  Authenticate meetupr
         env: 
