@@ -1,0 +1,42 @@
+on:
+  push:
+    branches: [ master ]
+  schedule:
+  - cron: "0 12 * * *"
+
+name: Events update
+
+jobs:
+  render:
+    name: Events update
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@v1
+      - uses: r-lib/actions/setup-pandoc@v1
+      - name: Install dependencies
+        run: |
+          install.packages("remotes", repos = "https://cloud.r-project.org")
+          remotes::install_github("rladies/meetupr)
+          remotes::install_cran(c("dplyr", "here", "purrr", "jsonlite"))
+          remotes::install_cran(c("progress", "lubridate"))
+        shell: Rscript {0}
+      - name:  Authenticate meetupr
+        env: 
+          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+        run: Rscript -e 'source("R/autenticate_meetup.R", encoding = "UTF-8")'
+      - name: Get all events
+        env: 
+          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+        run: Rscript R/get_events.R
+
+      - name: Commit results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add data/events/
+          git commit -m 'Update events' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
+
