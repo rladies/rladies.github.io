@@ -351,8 +351,6 @@ buttonr:hover {
   padding-left: 25px;
 }
 
-
-
 @media only screen and (max-width: 600px) {
   .gt-card {
     width: 100%;
@@ -363,7 +361,6 @@ buttonr:hover {
 /******************/
 /* mentoring grid */
 /******************/
-
 
 .mentoring-grid {
   display: flex;
@@ -491,8 +488,10 @@ buttonr:hover {
   
 }
 
-
+/******************/
 /* pagination */
+/* Currently only used in directory */
+/******************/
  
 .pagination-nav {
   width: 50%;
@@ -521,8 +520,8 @@ buttonr:hover {
 
 .paginate_back, 
 .paginate_next {  
-    line-height:$input-height; 
-    width:$input-height; 
+    line-height: $input-height; 
+    width: $input-height; 
     text-align: center; 
     user-select: none;
     padding-top: 30px;
