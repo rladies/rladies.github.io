@@ -1,8 +1,786 @@
 [
   {
-    "name":"rladies-barcelona",
-    "id":"rladies-barcelona",
-    "color":"#a7a9ac",
-    "bgColor":"#88398a"
+    "name": "R-Ladies Barcelona",
+    "id": "rladies-barcelona"
+  },
+  {
+    "name": "R-Ladies Tucson AZ",
+    "id": "rladies-tucson-az"
+  },
+  {
+    "name": "R-Ladies Bilbao",
+    "id": "rladies-bilbao"
+  },
+  {
+    "name": "R-Ladies Bariloche",
+    "id": "rladies-bariloche"
+  },
+  {
+    "name": "R-Ladies Melbourne",
+    "id": "rladies-melbourne"
+  },
+  {
+    "name": "R-Ladies Porto Alegre",
+    "id": "rladies-porto-alegre"
+  },
+  {
+    "name": "R-Ladies Kansas City",
+    "id": "rladies-kansas-city"
+  },
+  {
+    "name": "R-Ladies Guayaquil",
+    "id": "rladies-guayaquil"
+  },
+  {
+    "name": "R-Ladies Canberra",
+    "id": "rladies-canberra"
+  },
+  {
+    "name": "R-Ladies Riverside",
+    "id": "rladies-riverside"
+  },
+  {
+    "name": "R-Ladies Santa Barbara",
+    "id": "rladies-santa-barbara"
+  },
+  {
+    "name": "R-Ladies San Diego",
+    "id": "rladies-san-diego"
+  },
+  {
+    "name": "R-Ladies Frankfurt",
+    "id": "rladies-frankfurt"
+  },
+  {
+    "name": "R-Ladies Novi Sad",
+    "id": "rladies-novi-sad"
+  },
+  {
+    "name": "R-Ladies Highland Park",
+    "id": "rladies-highland-park"
+  },
+  {
+    "name": "R-Ladies Houston",
+    "id": "rladies-houston"
+  },
+  {
+    "name": "R-Ladies Puebla",
+    "id": "rladies-puebla"
+  },
+  {
+    "name": "R-Ladies Johannesburg",
+    "id": "rladies-johannesburg"
+  },
+  {
+    "name": "R-Ladies Quito",
+    "id": "rladies-quito"
+  },
+  {
+    "name": "R-Ladies Freiburg",
+    "id": "rladies-freiburg"
+  },
+  {
+    "name": "R-Ladies Seattle",
+    "id": "rladies-seattle"
+  },
+  {
+    "name": "R-Ladies Xalapa",
+    "id": "rladies-xalapa"
+  },
+  {
+    "name": "R-Ladies Bucharest",
+    "id": "rladies-bucharest"
+  },
+  {
+    "name": "R-Ladies Belgrade",
+    "id": "rladies-belgrade"
+  },
+  {
+    "name": "R-Ladies Salvador",
+    "id": "rladies-salvador"
+  },
+  {
+    "name": "R-Ladies Stockholm",
+    "id": "rladies-stockholm"
+  },
+  {
+    "name": "R-Ladies Newcastle",
+    "id": "rladies-newcastle"
+  },
+  {
+    "name": "R-Ladies Nijmegen",
+    "id": "rladies-nijmegen"
+  },
+  {
+    "name": "R-Ladies London",
+    "id": "rladies-london"
+  },
+  {
+    "name": "R-Ladies Vienna",
+    "id": "rladies-vienna"
+  },
+  {
+    "name": "R-Ladies Lausanne",
+    "id": "rladies-lausanne"
+  },
+  {
+    "name": "R-Ladies Lyon",
+    "id": "rladies-lyon"
+  },
+  {
+    "name": "R-Ladies Kyiv",
+    "id": "rladies-kyiv"
+  },
+  {
+    "name": "R-Ladies Madrid",
+    "id": "rladies-madrid"
+  },
+  {
+    "name": "R-Ladies East Lansing",
+    "id": "rladies-east-lansing"
+  },
+  {
+    "name": "R-Ladies Athens",
+    "id": "rladies-athens-ga"
+  },
+  {
+    "name": "R-Ladies Perth",
+    "id": "rladies-perth"
+  },
+  {
+    "name": "R-Ladies Edinburgh",
+    "id": "rladies-edinburgh"
+  },
+  {
+    "name": "R-Ladies Rotterdam",
+    "id": "rladies-rotterdam"
+  },
+  {
+    "name": "R-Ladies Goiânia",
+    "id": "rladies-goiania"
+  },
+  {
+    "name": "R-Ladies Utrecht",
+    "id": "rladies-utrecht"
+  },
+  {
+    "name": "R-Ladies Oslo",
+    "id": "rladies-oslo"
+  },
+  {
+    "name": "R-Ladies Copenhagen",
+    "id": "rladies-copenhagen"
+  },
+  {
+    "name": "R-Ladies Berlin",
+    "id": "rladies-berlin"
+  },
+  {
+    "name": "R-Ladies Montpellier",
+    "id": "rladies-montpellier"
+  },
+  {
+    "name": "R-Ladies New Delhi",
+    "id": "rladies-new-delhi"
+  },
+  {
+    "name": "R-Ladies Kathmandu",
+    "id": "rladies-kathmandu"
+  },
+  {
+    "name": "R-Ladies Iowa City",
+    "id": "rladies-iowa-city"
+  },
+  {
+    "name": "R-Ladies Des Moines",
+    "id": "rladies-des-moines"
+  },
+  {
+    "name": "R-Ladies Fayetteville",
+    "id": "rladies-fayetteville"
+  },
+  {
+    "name": "R-Ladies Boulder",
+    "id": "rladies-boulder"
+  },
+  {
+    "name": "R-Ladies Pasadena",
+    "id": "rladies-pasadena"
+  },
+  {
+    "name": "R-Ladies Niterói",
+    "id": "rladies-niteroi"
+  },
+  {
+    "name": "R-Ladies Brisbane",
+    "id": "rladies-brisbane"
+  },
+  {
+    "name": "R-Ladies Auckland",
+    "id": "rladies-auckland"
+  },
+  {
+    "name": "R-Ladies Christchurch",
+    "id": "rladies-christchurch"
+  },
+  {
+    "name": "R-Ladies Baltimore",
+    "id": "rladies-baltimore"
+  },
+  {
+    "name": "R-Ladies Lima",
+    "id": "rladies-lima"
+  },
+  {
+    "name": "R-Ladies Columbus",
+    "id": "rladies-columbus"
+  },
+  {
+    "name": "R-Ladies Addis Ababa",
+    "id": "rladies-addis-ababa"
+  },
+  {
+    "name": "R-Ladies L'viv",
+    "id": "rladies-lviv"
+  },
+  {
+    "name": "R-Ladies Toronto",
+    "id": "rladies-toronto"
+  },
+  {
+    "name": "R-Ladies Atlanta",
+    "id": "rladies-atlanta"
+  },
+  {
+    "name": "R-Ladies Gainesville",
+    "id": "rladies-gainesville"
+  },
+  {
+    "name": "R-Ladies Denver",
+    "id": "rladies-denver"
+  },
+  {
+    "name": "R-Ladies Lavras",
+    "id": "rladies-lavras"
+  },
+  {
+    "name": "R-Ladies Jakarta",
+    "id": "rladies-jakarta"
+  },
+  {
+    "name": "R-Ladies Amsterdam",
+    "id": "rladies-amsterdam"
+  },
+  {
+    "name": "R-Ladies Dallas",
+    "id": "rladies-dallas"
+  },
+  {
+    "name": "R-Ladies Göteborg",
+    "id": "rladies-goteborg"
+  },
+  {
+    "name": "R-Ladies Helsinki",
+    "id": "rladies-helsinki"
+  },
+  {
+    "name": "R-Ladies Lancaster",
+    "id": "rladies-lancaster"
+  },
+  {
+    "name": "R-Ladies Cotonou",
+    "id": "rladies-cotonou"
+  },
+  {
+    "name": "R-Ladies Mumbai",
+    "id": "rladies-mumbai"
+  },
+  {
+    "name": "R-Ladies Tampa",
+    "id": "rladies-tampa"
+  },
+  {
+    "name": "R-Ladies El Paso",
+    "id": "rladies-el-paso"
+  },
+  {
+    "name": "R-Ladies Remote",
+    "id": "rladies-remote"
+  },
+  {
+    "name": "R-Ladies Recife",
+    "id": "rladies-recife"
+  },
+  {
+    "name": "R-Ladies Sydney",
+    "id": "rladies-sydney"
+  },
+  {
+    "name": "R-Ladies Los Angeles",
+    "id": "rladies-la"
+  },
+  {
+    "name": "R-Ladies Mendoza",
+    "id": "rladies-mendoza"
+  },
+  {
+    "name": "R-Ladies Montevideo",
+    "id": "rladies-montevideo"
+  },
+  {
+    "name": "R-Ladies Chicago",
+    "id": "rladies-chicago"
+  },
+  {
+    "name": "R-Ladies Ames",
+    "id": "rladies-ames"
+  },
+  {
+    "name": "R-Ladies Resistencia-Corrientes",
+    "id": "rladies-resistencia-corrientes"
+  },
+  {
+    "name": "R-Ladies Santa Rosa",
+    "id": "rladies-santa-rosa"
+  },
+  {
+    "name": "R-Ladies Philly",
+    "id": "rladies-philly"
+  },
+  {
+    "name": "R-Ladies Boston",
+    "id": "rladies-boston"
+  },
+  {
+    "name": "R-Ladies Vancouver",
+    "id": "rladies-vancouver"
+  },
+  {
+    "name": "R-Ladies Manchester",
+    "id": "rladies-manchester"
+  },
+  {
+    "name": "R-Ladies Cambridge",
+    "id": "rladies-cambridge"
+  },
+  {
+    "name": "R-Ladies Oxford",
+    "id": "rladies-oxford"
+  },
+  {
+    "name": "R-Ladies London, Ontario",
+    "id": "rladies-ldnont"
+  },
+  {
+    "name": "R-Ladies Coventry",
+    "id": "rladies-coventry"
+  },
+  {
+    "name": "R-Ladies Tbilisi",
+    "id": "rladies-tbilisi"
+  },
+  {
+    "name": "R-Ladies Paris",
+    "id": "rladies-paris"
+  },
+  {
+    "name": "R-Ladies Niš",
+    "id": "rladies-nis"
+  },
+  {
+    "name": "R-Ladies São Paulo",
+    "id": "rladies-sao-paulo"
+  },
+  {
+    "name": "R-Ladies Santa Fe",
+    "id": "rladies-santa-fe"
+  },
+  {
+    "name": "R-Ladies Colombo",
+    "id": "rladies-colombo"
+  },
+  {
+    "name": "R-Ladies Irvine",
+    "id": "rladies-irvine"
+  },
+  {
+    "name": "R-Ladies Montreal",
+    "id": "rladies-montreal"
+  },
+  {
+    "name": "R-Ladies Buenos Aires",
+    "id": "rladies-buenos-aires"
+  },
+  {
+    "name": "R-Ladies Syracuse",
+    "id": "rladies-syracuse"
+  },
+  {
+    "name": "R-Ladies New Orleans",
+    "id": "rladies-new-orleans"
+  },
+  {
+    "name": "R-Ladies Manaus",
+    "id": "R-Ladies-Manaus"
+  },
+  {
+    "name": "R-Ladies San Jose",
+    "id": "rladies-san-jose"
+  },
+  {
+    "name": "R-Ladies Rio de Janeiro",
+    "id": "rladies-rio"
+  },
+  {
+    "name": "R-Ladies La Paz",
+    "id": "rladies-la-paz"
+  },
+  {
+    "name": "R-Ladies Monterrey",
+    "id": "rladies-monterrey"
+  },
+  {
+    "name": "R-Ladies Mid-Mo",
+    "id": "rladies-mid-mo"
+  },
+  {
+    "name": "R-Ladies Dublin",
+    "id": "rladies-dublin"
+  },
+  {
+    "name": "R-Ladies Nashville",
+    "id": "rladies-nashville"
+  },
+  {
+    "name": "R-Ladies Nairobi",
+    "id": "rladies-nairobi"
+  },
+  {
+    "name": "R-Ladies Santiago",
+    "id": "rladies-scl"
+  },
+  {
+    "name": "R-Ladies Charlottesville",
+    "id": "rladies-charlottesville"
+  },
+  {
+    "name": "R-Ladies Chennai",
+    "id": "rladies-chennai"
+  },
+  {
+    "name": "R-Ladies Brussels",
+    "id": "rladies-brussels"
+  },
+  {
+    "name": "R-Ladies Vitória",
+    "id": "rladies-vitoria"
+  },
+  {
+    "name": "R-Ladies Cape Town",
+    "id": "rladies-cape-town"
+  },
+  {
+    "name": "R-Ladies Strasbourg",
+    "id": "rladies-strasbourg"
+  },
+  {
+    "name": "R-Ladies Orlando",
+    "id": "rladies-orlando"
+  },
+  {
+    "name": "South Central PA R-Ladies",
+    "id": "South-Central-PA-R-Ladies"
+  },
+  {
+    "name": "R-Ladies RTP",
+    "id": "rladies-rtp"
+  },
+  {
+    "name": "R-Ladies San Francisco",
+    "id": "rladies-san-francisco"
+  },
+  {
+    "name": "R-Ladies Washington D.C.",
+    "id": "rladies-dc"
+  },
+  {
+    "name": "R-Ladies Valparaíso",
+    "id": "rladies-valparaiso"
+  },
+  {
+    "name": "R-Ladies Belo Horizonte",
+    "id": "rladies-belo-horizonte"
+  },
+  {
+    "name": "R-Ladies Bari",
+    "id": "rladies-bari"
+  },
+  {
+    "name": "R-Ladies Milan",
+    "id": "rladies-milan"
+  },
+  {
+    "name": "R-Ladies New York",
+    "id": "rladies-newyork"
+  },
+  {
+    "name": "R-Ladies Pune",
+    "id": "rladies-pune"
+  },
+  {
+    "name": "R-Ladies Lexington Park",
+    "id": "rladies-lexington-park"
+  },
+  {
+    "name": "R-Ladies Ottawa",
+    "id": "rladies-ottawa"
+  },
+  {
+    "name": "R-Ladies Bergen",
+    "id": "rladies-bergen"
+  },
+  {
+    "name": "R-Ladies Cuernavaca",
+    "id": "rladies-cuernavaca"
+  },
+  {
+    "name": "R-Ladies Buffalo",
+    "id": "rladies-buffalo"
+  },
+  {
+    "name": "R-Ladies CDMX",
+    "id": "rladies-cdmx"
+  },
+  {
+    "name": "R-Ladies Yaoundé",
+    "id": "rladies-yaounde"
+  },
+  {
+    "name": "R-Ladies Ribeirão Preto",
+    "id": "rladies-ribeirao-preto"
+  },
+  {
+    "name": "R Ladies Aarhus",
+    "id": "rladies-aarhus"
+  },
+  {
+    "name": "R-Ladies Taipei",
+    "id": "rladies-taipei"
+  },
+  {
+    "name": "R-Ladies Cusco",
+    "id": "rladies-cusco"
+  },
+  {
+    "name": "R-Ladies Cochabamba",
+    "id": "rladies-cochabamba"
+  },
+  {
+    "name": "R-Ladies Jujuy",
+    "id": "rladies-jujuy"
+  },
+  {
+    "name": "R-Ladies St. Louis",
+    "id": "rladies-st-louis"
+  },
+  {
+    "name": "R-Ladies PDX",
+    "id": "rladies-pdx"
+  },
+  {
+    "name": "R-Ladies Miami",
+    "id": "rladies-miami"
+  },
+  {
+    "name": "R-Ladies Abuja",
+    "id": "rladies-abuja"
+  },
+  {
+    "name": "R-Ladies Twin Cities",
+    "id": "rladies-tc"
+  },
+  {
+    "name": "R Users & R-Ladies Warsaw (Spotkania Entuzjastów R)",
+    "id": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup"
+  },
+  {
+    "name": "R-Ladies Madison",
+    "id": "R-Ladies-Madison"
+  },
+  {
+    "name": "R-Ladies Istanbul",
+    "id": "rladies-istanbul"
+  },
+  {
+    "name": "R-Ladies Budapest",
+    "id": "rladies-budapest"
+  },
+  {
+    "name": "R-Ladies Austin",
+    "id": "rladies-austin"
+  },
+  {
+    "name": "R-Ladies Ankara",
+    "id": "rladies-ankara"
+  },
+  {
+    "name": "R-Ladies Den Bosch",
+    "id": "rladies-den-bosch"
+  },
+  {
+    "name": "R-Ladies Ushuaia",
+    "id": "rladies-ushuaia"
+  },
+  {
+    "name": "R-Ladies Podgorica",
+    "id": "rladies-podgorica"
+  },
+  {
+    "name": "R-Ladies Eskisehir",
+    "id": "rladies-eskisehir"
+  },
+  {
+    "name": "R-Ladies Al-Khartum",
+    "id": "rladies-al-khartum"
+  },
+  {
+    "name": "R-Ladies Masqat",
+    "id": "rladies-masqat"
+  },
+  {
+    "name": "R-Ladies Oxford Ohio",
+    "id": "rladies-oxford-ohio"
+  },
+  {
+    "name": "R-Ladies Calgary",
+    "id": "rladies-calgary"
+  },
+  {
+    "name": "R-Ladies Beijing",
+    "id": "rladies-beijing"
+  },
+  {
+    "name": "R-Ladies Bogor",
+    "id": "rladies-bogor"
+  },
+  {
+    "name": "R-Ladies Nelson",
+    "id": "rladies-nelson"
+  },
+  {
+    "name": "R-Ladies Queretaro",
+    "id": "rladies-queretaro"
+  },
+  {
+    "name": "R-Ladies Lagos",
+    "id": "rladies-lagos"
+  },
+  {
+    "name": "R-Ladies Medellín",
+    "id": "rladies-medellin"
+  },
+  {
+    "name": "R-Ladies Floripa",
+    "id": "rladies-florianopolis"
+  },
+  {
+    "name": "R-Ladies Pachuca",
+    "id": "rladies-pachuca"
+  },
+  {
+    "name": "R-Ladies Galapagos Islands",
+    "id": "rladies-galapagos-islands"
+  },
+  {
+    "name": "R-Ladies Banda Aceh",
+    "id": "rladies-banda-aceh"
+  },
+  {
+    "name": "R-Ladies Bangalore",
+    "id": "rladies-bangalore"
+  },
+  {
+    "name": "R-Ladies Barranquilla",
+    "id": "rladies-barranquilla"
+  },
+  {
+    "name": "R-Ladies Asunción",
+    "id": "rladies-asuncion"
+  },
+  {
+    "name": "R-Ladies Tunis",
+    "id": "rladies-tunis"
+  },
+  {
+    "name": "R-Ladies Algiers",
+    "id": "rladies-algiers"
+  },
+  {
+    "name": "R-Ladies Waltham",
+    "id": "rladies-waltham"
+  },
+  {
+    "name": "R-Ladies Ha Noi",
+    "id": "rladies-ha-noi"
+  },
+  {
+    "name": "R-Ladies Natal",
+    "id": "rladies-natal"
+  },
+  {
+    "name": "R-Ladies Aguascalientes",
+    "id": "rladies-aguascalientes"
+  },
+  {
+    "name": "R-Ladies Kuala Lumpur",
+    "id": "rladies-kuala-lumpur"
+  },
+  {
+    "name": "R-Ladies Curitiba",
+    "id": "rladies-curitiba"
+  },
+  {
+    "name": "R-Ladies Saudi Arabia (Dammam)",
+    "id": "rladies-dammam"
+  },
+  {
+    "name": "R-Ladies Fortaleza",
+    "id": "rladies-fortaleza"
+  },
+  {
+    "name": "R-Ladies Cordoba",
+    "id": "rladies-cordoba"
+  },
+  {
+    "name": "R-Ladies Glasgow",
+    "id": "rladies-glasgow"
+  },
+  {
+    "name": "R-Ladies Tijuana",
+    "id": "rladies-tijuana"
+  },
+  {
+    "name": "R-Ladies General Pico",
+    "id": "rladies-general-pico"
+  },
+  {
+    "name": "R-Ladies Guadalajara",
+    "id": "rladies-guadalajara"
+  },
+  {
+    "name": "R-Ladies Concepción",
+    "id": "rladies-concepcion"
+  },
+  {
+    "name": "R-Ladies Talca",
+    "id": "rladies-talca"
+  },
+  {
+    "name": "R-Ladies Adelaide",
+    "id": "rladies-adelaide"
+  },
+  {
+    "name": "R-Ladies Bogotá",
+    "id": "rladies-bogota"
   }
 ]
