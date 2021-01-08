@@ -7,26 +7,33 @@ library(lubridate)
 library(progress)
 library(here)
 
-key <- cyphr::key_sodium(sodium::hex2bin(Sys.getenv("MEETUPR_PWD")))
-temptoken <- tempfile(fileext = ".rds")
-cyphr::decrypt_file(
-  here::here("R/secret.rds"),
-  key = key,
-  dest = temptoken
-)
+# If not running interactively, 
+# get token decrypted from env var
+if(!interactive()){
+  cat("Session is non-interactive. Starting meetup authentication process.\n")
+  
+  key <- cyphr::key_sodium(sodium::hex2bin(Sys.getenv("MEETUPR_PWD")))
+  temptoken <- tempfile(fileext = ".rds")
+  cyphr::decrypt_file(
+    here::here("R/secret.rds"),
+    key = key,
+    dest = temptoken
+  )
+  
+  token <- readRDS(temptoken)[[1]]
+  token <- meetup_auth(
+    token = temptoken,
+    set_renv = FALSE,
+    cache = FALSE
+  ) 
+  
+  Sys.setenv(MEETUPR_PAT = temptoken)
+  
+  cat("\t authenticating...\n")
+  meetup_auth(token = temptoken)
+}
 
-token <- readRDS(temptoken)[[1]]
-token <- meetup_auth(
-  token = temptoken,
-  set_renv = FALSE,
-  cache = FALSE
-) 
-
-Sys.setenv(MEETUPR_PAT = temptoken)
-
-
-meetup_auth(token = temptoken)
-
+# Cleanup chapter name and create link
 get_chapter <- function(x){
   cpt <- unname(sapply(x, function(x) strsplit(x, "/")[[1]][4]))
   
@@ -46,16 +53,12 @@ get_chapter <- function(x){
   k$cpt
 }
 
-# Getting all the R-Ladies groups
+cat("Getting all the R-Ladies groups\n")
 rladies_groups <- find_groups("r-ladies") %>% 
-  rbind(find_groups("rladies")) %>% 
-  rbind(find_groups("r ladies")) %>% 
-  distinct()
+  filter(organizer == "R-Ladies Global") %>% 
+  unique()
 
-# Cleaning the list
-rladies_groups <- filter(rladies_groups,
-                         grepl("ladies", name, ignore.case = TRUE))
-
+cat("\t writing 'data/events/calendars.json\n'")
 transmute(rladies_groups, 
           name, 
           id = urlname) %>% 
@@ -66,13 +69,24 @@ transmute(rladies_groups,
 
 ## Get events ----
 
+# to avoid making too many
+# requests too rapidly when
+slowly_get_events <- purrr::slowly(
+  get_events,
+  rate = purrr::rate_delay(pause = .3,
+                           max_times = Inf)
+)
+
+# Go through all chapters and get events upcoming and past
+# suppressing  meetupr download message but adding
+# a progressbar instead.
 pb <- progress_bar$new(
-  format = "  downloading [:bar] :elapsedfull",
-  total = 1000, clear = FALSE, width= 100)
+  format = "  Downloading chapter events [:bar] :elapsedfull",
+  total = nrows(rladies_groups), clear = FALSE, width= 100)
 get_events_pb <- function(x){
   pb$tick()
   suppressMessages( 
-    meetupr:::slowly_get_events(x, c("upcoming", "past"), verbose = FALSE)
+    slowly_get_events(x, c("upcoming", "past"), verbose = FALSE)
   )
 }
 
@@ -106,8 +120,17 @@ events <- new_events %>%
   as_tibble() %>% 
   distinct()
 
+cat("\t writing 'data/events/schedule.json'\n")
 jsonlite::write_json(x = events, 
                      path = here::here("data/events/schedule.json"),
                      pretty = TRUE)
+
+cat("Writing 'data/events/last_updated.json'\n")
+jsonlite::write_json(x = data.frame(date = Sys.time(),
+                                    n_events_past = filter(events, type == "past") %>% nrow(),
+                                    n_chapters = nrow(rladies_groups)), 
+                     path = here::here("data/events/last_updated.json"),
+                     pretty = TRUE)
+
 
 
