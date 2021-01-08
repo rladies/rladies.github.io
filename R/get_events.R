@@ -82,7 +82,7 @@ slowly_get_events <- purrr::slowly(
 # a progressbar instead.
 pb <- progress_bar$new(
   format = "  Downloading chapter events [:bar] :elapsedfull",
-  total = nrows(rladies_groups), clear = FALSE, width= 100)
+  total = nrow(rladies_groups), clear = FALSE, width= 100)
 get_events_pb <- function(x){
   pb$tick()
   suppressMessages( 
