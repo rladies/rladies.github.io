@@ -54,7 +54,7 @@ get_chapter <- function(x){
   k$cpt
 }
 
-cat("Getting all the R-Ladies groups\n")
+cat("Retrieving R-Ladies group information\n")
 rladies_groups <- find_groups("r-ladies") %>% 
   filter(organizer == "R-Ladies Global") %>% 
   unique()
@@ -70,8 +70,6 @@ transmute(rladies_groups,
 
 ## Get events ----
 
-
-
 # Go through all chapters and get events upcoming and past
 # suppressing  meetupr download message but adding
 # a progressbar instead.
@@ -86,19 +84,19 @@ get_events_pb <- function(x){
   # requests too rapidly when
   .slowly_get_events <- purrr::slowly(
     get_events,
-    rate = purrr::rate_delay(pause = 2,
+    rate = purrr::rate_delay(pause = 1,
                              max_times = Inf)
   )
   
-  if(interactive()){
-    pb$tick()
-    suppressMessages(
-      .slowly_get_events(x, c("upcoming", "past"))#, verbose = FALSE)
-    )
-  }else{
+  # if(interactive()){
+  #   pb$tick()
+  #   suppressMessages(
+  #     .slowly_get_events(x, c("upcoming", "past"))#, verbose = FALSE)
+  #   )
+  # }else{
     .slowly_get_events(x, c("upcoming", "past"))
-    cat("\n")
-  }
+  #   cat("\n")
+  # }
 }
 
 # Get all events
