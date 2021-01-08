@@ -70,25 +70,35 @@ transmute(rladies_groups,
 
 ## Get events ----
 
-# to avoid making too many
-# requests too rapidly when
-slowly_get_events <- purrr::slowly(
-  get_events,
-  rate = purrr::rate_delay(pause = .3,
-                           max_times = Inf)
-)
+
 
 # Go through all chapters and get events upcoming and past
 # suppressing  meetupr download message but adding
 # a progressbar instead.
-pb <- progress_bar$new(
-  format = "  Downloading chapter events [:bar] :elapsedfull",
-  total = nrow(rladies_groups), clear = FALSE, width= 100)
+cat("\n\n Downloading chapter events\n")
+if(interactive())
+  pb <- progress_bar$new(
+    format = "  Downloading chapter events [:bar] :elapsedfull",
+    total = nrow(rladies_groups), clear = FALSE, width= 100)
+
 get_events_pb <- function(x){
-  pb$tick()
-  suppressMessages( 
-    slowly_get_events(x, c("upcoming", "past"))#, verbose = FALSE)
+  # to avoid making too many
+  # requests too rapidly when
+  .slowly_get_events <- purrr::slowly(
+    get_events,
+    rate = purrr::rate_delay(pause = .5,
+                             max_times = Inf)
   )
+  
+  if(interactive()){
+    pb$tick()
+    suppressMessages(
+      .slowly_get_events(x, c("upcoming", "past"))#, verbose = FALSE)
+    )
+  }else{
+    .slowly_get_events(x, c("upcoming", "past"))
+    cat("\n")
+  }
 }
 
 # Get all events
