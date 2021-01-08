@@ -1,11 +1,12 @@
 
-library(meetupr)
-library(dplyr)
-library(purrr)
-library(jsonlite)
-library(lubridate)
-library(progress)
-library(here)
+load_lib <- function(x){
+  suppressPackageStartupMessages(
+    library(x, character.only = TRUE)
+  )
+}
+
+pkgs <- sapply(c("meetupr", "dplyr", "purrr", "lubridate", "progress"),
+       load_lib)
 
 # If not running interactively, 
 # get token decrypted from env var
@@ -29,8 +30,8 @@ if(!interactive()){
   
   Sys.setenv(MEETUPR_PAT = temptoken)
   
-  cat("\t authenticating...\n")
-  meetup_auth(token = temptoken)
+  cat("\t authenticating...\n\n")
+  k <- meetup_auth(token = temptoken)
 }
 
 # Cleanup chapter name and create link
@@ -86,7 +87,7 @@ pb <- progress_bar$new(
 get_events_pb <- function(x){
   pb$tick()
   suppressMessages( 
-    slowly_get_events(x, c("upcoming", "past"), verbose = FALSE)
+    slowly_get_events(x, c("upcoming", "past"))#, verbose = FALSE)
   )
 }
 
