@@ -86,7 +86,7 @@ get_events_pb <- function(x){
   # requests too rapidly when
   .slowly_get_events <- purrr::slowly(
     get_events,
-    rate = purrr::rate_delay(pause = .5,
+    rate = purrr::rate_delay(pause = 2,
                              max_times = Inf)
   )
   
