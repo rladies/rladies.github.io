@@ -16,4 +16,4 @@ token <- meetupr::meetup_auth(
 Sys.setenv(MEETUPR_PAT = temptoken)
 
 
-meetupr::meetup_auth(token = temp_token)
+meetupr::meetup_auth(token = temptoken)
