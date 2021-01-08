@@ -1,3 +1,4 @@
+
 library(meetupr)
 library(dplyr)
 library(purrr)
@@ -5,6 +6,26 @@ library(jsonlite)
 library(lubridate)
 library(progress)
 library(here)
+
+key <- cyphr::key_sodium(sodium::hex2bin(Sys.getenv("MEETUPR_PWD")))
+temptoken <- tempfile(fileext = ".rds")
+cyphr::decrypt_file(
+  here::here("R/secret.rds"),
+  key = key,
+  dest = temptoken
+)
+
+token <- readRDS(temptoken)[[1]]
+token <- meetup_auth(
+  token = temptoken,
+  set_renv = FALSE,
+  cache = FALSE
+) 
+
+Sys.setenv(MEETUPR_PAT = temptoken)
+
+
+meetup_auth(token = temptoken)
 
 get_chapter <- function(x){
   cpt <- unname(sapply(x, function(x) strsplit(x, "/")[[1]][4]))
