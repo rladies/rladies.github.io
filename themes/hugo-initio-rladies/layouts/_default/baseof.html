@@ -2,6 +2,11 @@
 <html>
   <head>
     {{ partial "head/meta.html" . }}
+    
+    {{ block "head" .}}
+      <!-- for extra header scripts etc -->
+    {{ end }}
+    
     {{ partial "head/head.html" . }}
   </head>
   
