@@ -2,7 +2,7 @@
   <section class = "hero" style="height:100vh;">
     <div class="banner" style="background-image:url({{ .Site.Params.banner | relURL }}); padding: 20vh; background-attachment: fixed;" >
       <div class = "logo">
-        <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
+        <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.Params.avatar | relURL }}" alt="">
       </div>
       <h1 class="text-center">
         <span class="title">{{ .Site.Params.name }}</span>
