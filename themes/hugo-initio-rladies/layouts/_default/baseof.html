@@ -17,7 +17,7 @@
     <div class="banner" style="background-image:url({{.Site.BaseURL}}{{ .Site.Params.banner }}); padding-top: 1em;" >
       <a href="{{.Site.BaseURL | absLangURL}}">
         <div class = "logo">
-          <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="" style = "width: 140px; height: 140px;">
+          <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.Params.avatar | relURL }}" alt="" style = "width: 140px; height: 140px;">
         </div>
       </a>
     </div>
