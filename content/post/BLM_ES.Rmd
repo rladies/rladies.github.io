@@ -1,7 +1,7 @@
 ---
 title: "#VidasNegrasImportan: Una declaración conjunta de Forwards y R-Ladies"
 author: "R-Ladies Global Leadership Team"
-date: "2021-01-11"
+date: "2021-06-06"
 description: "#VidasNegrasImportan: Una declaración conjunta de Forwards y R-Ladies"
 tags: 
 - social-justice
