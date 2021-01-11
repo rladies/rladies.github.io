@@ -1,6 +1,6 @@
 {{ define "hero" }}
   <section class = "hero" style="height:100vh;">
-    <div class="banner" style="background-image:url({{.Site.BaseURL}}{{ .Site.Params.banner }}); padding: 20vh; background-attachment: fixed;" >
+    <div class="banner" style="background-image:url({{ .Site.Params.banner | relURL }}); padding: 20vh; background-attachment: fixed;" >
       <div class = "logo">
         <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.BaseURL }}{{ .Site.Params.avatar }}" alt="">
       </div>
