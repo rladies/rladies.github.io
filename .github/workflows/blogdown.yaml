@@ -21,7 +21,6 @@ jobs:
       - name: Install pandoc and pandoc citeproc
         run: |
           brew install pandoc
-          brew install pandoc-citeproc
 
       - name: Cache Renv packages
         uses: actions/cache@v2
