@@ -23,11 +23,7 @@ jobs:
           remotes::install_cran(c("progress", "lubridate"))
           remotes::install_cran(c("cyphr", "sodium"))
         shell: Rscript {0}
-      - name:  Authenticate meetupr
-        env: 
-          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript R/mauth.R
-      - name: Get all events
+      - name: Get meetup data
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
         run: Rscript R/get_events.R
