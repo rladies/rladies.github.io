@@ -54,19 +54,32 @@ get_chapter <- function(x){
   k$cpt
 }
 
+str_count <- function(x)(
+  strsplit(x, "")
+)
+
 cat("Retrieving R-Ladies group information\n")
+# Better than getting pro groups, because we want timezone...
 rladies_groups <- find_groups("r-ladies") %>% 
-  filter(organizer == "R-Ladies Global") %>% 
-  unique()
+  filter(organizer_name == "R-Ladies Global") %>% 
+  distinct()
+
 
 cat("\t writing 'data/events/calendars.json\n'")
 transmute(rladies_groups, 
           name, 
-          id = urlname) %>% 
+          id = urlname,
+          country,
+          state, 
+          city,
+          members,
+          status,
+          lat,
+          lon,
+          timezone) %>% 
   distinct() %>% 
   jsonlite::write_json(path = here::here("data/events/calendars.json"),
                      pretty = TRUE)
-
 
 ## Get events ----
 
@@ -80,33 +93,35 @@ if(interactive())
     total = nrow(rladies_groups), clear = FALSE, width= 100)
 
 get_events_pb <- function(x){
-  # to avoid making too many
-  # requests too rapidly when
-  .slowly_get_events <- purrr::slowly(
-    get_events,
-    rate = purrr::rate_delay(pause = 1,
-                             max_times = Inf)
-  )
-  
-  # if(interactive()){
-  #   pb$tick()
-  #   suppressMessages(
-  #     .slowly_get_events(x, c("upcoming", "past"))#, verbose = FALSE)
-  #   )
-  # }else{
-    .slowly_get_events(x, c("upcoming", "past"))
-  #   cat("\n")
-  # }
+  k <- get_events(x, "upcoming")
+  k$urlname <- x
+  k
 }
 
 # Get all events
 new_events <- map_df(rladies_groups$urlname, get_events_pb)
- 
+
+# Join with groups, to convert all events to UTC.
+new_events <- new_events %>% 
+  left_join(select(rladies_groups, -name, -id, -created, -status, -resource))
+
+
+existing_events <- jsonlite::read_json(here::here("data/events/schedule.json"), 
+                                       simplifyVector = TRUE) %>% 
+  filter(!id %in% new_events$id)
+
+
+force_utc <- function(datetime, tz){
+  x <- as_datetime(datetime, tz = tz)
+  with_tz(x, "UTC")
+}
+
 `%||%` <- function(a, b) ifelse(!is.na(a), a, b)
 
 # Create df for json
 events <- new_events %>% 
  transmute(
+    id,
     calendarId = get_chapter(link),
     title = name, 
     body = sprintf(
@@ -114,19 +129,21 @@ events <- new_events %>%
       yes_rsvp_count,
       substr(description, 1, 300),
       link),
-    start = as.POSIXct(paste(local_date, local_time), format="%Y-%m-%d %H:%M"),
+    start = as.character(force_tz(time, "UTC")),
     ds = lubridate::dmilliseconds(duration), 
-    end = start + ifelse(!is.na(ds), ds, lubridate::dhours(2)),
+    end = as.character(time + (ds %||% lubridate::dhours(2))),
+    date = format(new_events$time, "%Y-%m-%d"),
     location = ifelse(
       is.na(venue_name), "Not announced",
       paste(venue_name, venue_address_1 %||% "", venue_city %||% "", toupper(venue_country) %||% "", sep=", ")),
     location = gsub(", , |, $", "", location),
     type = status,
-    lat = venue_lat,
-    lon = venue_lon
+    lat = venue_lat %||% lat,
+    lon = venue_lon %||% lon,
+    description
   ) %>%  
   select(-ds) %>% 
-  as_tibble() %>% 
+  bind_rows(existing_events) %>% 
   distinct()
 
 cat("\t writing 'data/events/schedule.json'\n")
