@@ -3,3 +3,5 @@
 ^\.github/workflows$
 ^\.travis\.yml$
 ^\.github$
+^\.httr-oauth$
+^/Users/athanasm/\.meetup_token\.rds$

@@ -46,3 +46,5 @@ vignettes/*.pdf
 content/**html
 node_modules
 README.html
+.httr-oauth
+/Users/athanasm/.meetup_token.rds
