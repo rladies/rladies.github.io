@@ -1,42 +1,94 @@
 
+{{ $events := .Site.Data.events.schedule }}
+  
 <script type="text/javascript" class="code-js">
+
   var rladies_monthly = {
-      "common.border":"1px solid #a7a9ac80",
-      "common.backgroundColor":"white",
-      "common.holiday.color":"#88398a",
-      "common.saturday.color":"#88398a",
-      "common.today.color":"#a7a9ac",
- 
-      "month.dayname.height":"31px",
-      "month.dayname.borderLeft":"1px solid #88398aFF",
-      "month.dayname.paddingLeft":"10px",
-      "month.dayname.paddingRight":"10px",
-      "month.dayname.backgroundColor":"#88398a64",
-      "month.dayname.fontSize":"12px",
-      "month.dayname.fontWeight":"normal",
-      "month.dayname.textAlign":"left",
-      
-      "month.holidayExceptThisMonth.color":"#88398a0A",
-      "month.dayExceptThisMonth.color":"#a7a9acb4",
-      "month.weekend.backgroundColor":"inherit",
-      "month.day.fontSize":"14px",
-      
-      "month.schedule.borderRadius":"2px",
-      "month.schedule.height":"24px",
-      "month.schedule.marginTop":"2px",
-      "month.schedule.marginLeft":"8px",
-      "month.schedule.marginRight":"8px",
-      
-      "month.moreView.border":"1px solid #d5d5d5",
-      "month.moreView.boxShadow":"0 2px 6px 0 rgba(0, 0, 0, 0.1)",
-      "month.moreView.backgroundColor":"white",
-      "month.moreView.paddingBottom":"17px",
-      
-      "month.moreViewTitle.height":"44px",
-      "month.moreViewTitle.marginBottom":"12px",
-      "month.moreViewTitle.backgroundColor":"inherit",
-      "month.moreViewTitle.borderBottom":"none",
-      "month.moreViewTitle.padding":"12px 17px 0 17px",
-      "month.moreViewList.padding":"0 17px"
+    "common.border":"1px solid #a7a9ac80",
+    "common.backgroundColor":"white",
+    "common.holiday.color":"#88398a",
+    "common.saturday.color":"#88398a",
+    "common.today.color":"#a7a9ac",
+    
+    "month.dayname.borderLeft":"1px solid #88398aFF",
+    "month.dayname.backgroundColor":"#88398a64",
+    
+    "month.holidayExceptThisMonth.color":"#88398a0A",
+    "month.dayExceptThisMonth.color":"#a7a9acb4",
+
+    // week header 'dayname'
+    'week.dayname.borderTop': '1px solid #88398a',
+    'week.dayname.borderBottom': '1px solid #88398a',
+    'week.today.color': '#88398a',
+    'week.pastDay.color': '#bbb',
+    
+    // week vertical panel 'vpanel'
+    'week.vpanelSplitter.border': '1px solid #88398a',
+
+    // week daygrid 'daygrid'
+    'week.today.backgroundColor': '#88398a0A',
+
+    // week timegrid 'timegrid'
+    'week.timegridLeft.borderRight': '1px solid #88398a',
+
+    'week.currentTime.color': '#88398a',
+    'week.pastTime.color': '#bbb',
+    'week.futureTime.color': '#555',
+
+    'week.currentTimeLinePast.border': '1px dashed #88398a',
+    'week.currentTimeLineBullet.backgroundColor': '#88398a',
+    'week.currentTimeLineToday.border': '1px solid #88398a',
+
   }
+  
+  var calendar = new tui.Calendar('#calendar', {
+    "view": "month", 
+    "defaultView": "month",
+    "taskView": false,
+    "scheduleView": true,
+    "useDetailPopup": true,
+    "useCreationPopup": false,
+    "month": {
+      "startDayOfWeek": 1, // monday
+    },
+    "week": {
+      "startDayOfWeek": 1, // monday
+    },
+    "isReadOnly": true,
+    "usageStatistics": false,
+    "useNav": true,
+    "theme": rladies_monthly,
+    "calendars":  [
+      {{ range .Site.Data.events.calendars }}
+        {
+          id: {{ .id }},
+          name: {{ .name | default "rladies" }},
+          color: {{ .color | default "#fff" }},
+          bgColor: {{ .bgColor | default "#88398a" }},
+          borderColor: {{ .color | default "#88398a" }},
+        },
+      {{ end }}
+    ] 
+  });
+  
+  calendar.createSchedules([
+    {{ range $events }}
+    {
+        category: "time",
+        isReadOnly: true, 
+        dueDateClass: '',
+        
+        id: {{ .id }},
+        calendarId: {{ .calendarId }},
+        title: {{ .title }},
+        start: {{ .start }},
+        end: {{ .end }},
+        body: {{ .body }},
+        type: {{ .type }},
+        location: {{ .location | default "Not announced"}},
+        lat: {{ .lat }},
+        lon: {{ .lon }}
+    },
+    {{ end }}
+  ]);  
 </script>
