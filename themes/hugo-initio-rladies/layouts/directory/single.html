@@ -27,7 +27,7 @@
             <buttonr style="font-size: 12px; padding: 8px;" class="sort" data-sort="name">Sort by name</buttonr>
             <!-- <buttonr id="shuffle" style="font-size: 12px;" type="button">Randomly shuffle</buttonr> -->
           </center>
-          
+          <div class="flex-container">
           <ul class="list" id="directory-grid">
             {{ if eq .Hugo.Environment "production" }}
               {{ $url := "https://raw.githubusercontent.com/rladies/directory/master/directory/rladies_directory.json?token=" }}
@@ -45,6 +45,7 @@
             {{ end }}
 
           </ul>
+          </div>
           <center>
             <div class="pagination-nav">
               <ul class="paginate_back"><i class="fas fa-chevron-left"></i></ul>
