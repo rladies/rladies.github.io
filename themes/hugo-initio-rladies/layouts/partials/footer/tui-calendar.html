@@ -1,6 +1,3 @@
-
-{{ $events := .Site.Data.events.schedule }}
-  
 <script type="text/javascript" class="code-js">
 
   var rladies_monthly = {
@@ -59,7 +56,7 @@
     "useNav": true,
     "theme": rladies_monthly,
     "calendars":  [
-      {{ range .Site.Data.events.calendars }}
+      {{ range .Site.Data.chapters }}
         {
           id: {{ .id }},
           name: {{ .name | default "rladies" }},
@@ -72,6 +69,7 @@
   });
   
   calendar.createSchedules([
+    {{ $events := .Site.Data.events }}
     {{ range $events }}
     {
         category: "time",

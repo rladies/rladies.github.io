@@ -1,4 +1,36 @@
 
+<div id = "chapter_map" style = "width: 100%; height: 580px"></div>
+  <script type="text/javascript" class="code-js">
+   // Creating map options
+   var mapOptions = {
+      center: [30, 0],
+      zoom: 2
+   }
+   
+   // Creating a map object
+   var chapter_map = new L.map('chapter_map', mapOptions);
+   
+   // Creating a Layer object
+   var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+   
+   // Adding layer to the map
+   chapter_map.addLayer(layer);
+   
+   var markers = L.markerClusterGroup();
+   
+   {{ range .Site.Data.chapters }}
+      {{ range where .chapters "status" "active"}}
+         var marker = L.marker([ {{ .lat }}, {{ .lon }}], 
+            {icon: rladiesIcon});
+         marker.bindPopup("<h4>{{ .name }}</h4><br><p style='font-size: 20px;'><i class='fa fa-users'></i>&emsp;{{ .members }}<br>{{ with .social_media }}{{ range . }}{{ partial "some.html" . }}{{ end }}{{ end }}</h5>");
+         markers.addLayer(marker);
+      {{ end }}
+   {{ end }}
+   
+   chapter_map.addLayer(markers);
+
+</script>
+
 <p style="text-align: center;"><b>List of locations of currently active R-Ladies meetup groups</b></p>
   <table class="table table-hover table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <thead>
@@ -9,22 +41,20 @@
       </tr>
     </thead>
     <tbody>
-      {{ $url := "https://raw.githubusercontent.com/Athanasiamo/starter-kit/master/jsons/chapters.json" }}
-      {{ range $chapters := getJSON $url }}
-          
+      {{ range .Site.Data.chapters }}
       <tr>
          <td style="text-align:right;font-weight: bold;border-right: 1px solid;" rowspan = "{{ len .chapters }}"> {{ .country}} </td>
          
-         {{ range .chapters }}
-           <td style="text-align:left;"> <a href="http://meetup.com/{{ .meetup }}">{{ .city }}</a> </td>
-           
-           <td style="text-align:right;"> 
-              {{ with .socials }}
-                {{ range . }}
-                  {{ partial "some.html" . }}
-                {{ end }}
-              {{ end }}
-             </td>
+      {{ range .chapters }}
+              <td style="text-align:left;"> <a href="http://meetup.com/{{ .meetup }}">{{ .name }}</a> </td>
+              
+              <td style="text-align:right;"> 
+                 {{ with .social_media }}
+                   {{ range . }}
+                     {{ partial "some.html" . }}
+                   {{ end }}
+                 {{ end }}
+                </td>
         </tr>
            {{ end }}
     
