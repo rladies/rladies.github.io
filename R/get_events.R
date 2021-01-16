@@ -5,7 +5,7 @@ load_lib <- function(x){
   )
 }
 
-pkgs <- sapply(c("meetupr", "dplyr", "purrr", "lubridate"),
+pkgs <- sapply(c("meetupr","tidyr", "dplyr", "purrr", "lubridate"),
                load_lib)
 
 # If not running interactively, 
@@ -47,6 +47,7 @@ rladies_groups <- jsonlite::read_json(
   here::here("data/chapters.json"), 
   simplifyVector = TRUE
 ) %>% 
+  unnest(chapters) %>% 
   filter(status == "active") %>% 
   transmute(group = name,
          urlname = id,
