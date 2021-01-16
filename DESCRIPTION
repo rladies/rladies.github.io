@@ -17,6 +17,8 @@ Imports:
     purrr,
     jsonlite,
     here,
+    cyphr,
+    sodium,
     meetupr
 Remotes:
     rladies/meetupr

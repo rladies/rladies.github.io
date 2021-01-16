@@ -20,7 +20,7 @@ jobs:
           install.packages("remotes", repos = "https://cloud.r-project.org")
           remotes::install_github("rladies/meetupr")
           remotes::install_cran(c("dplyr", "here", "purrr", "jsonlite"))
-          remotes::install_cran(c("progress", "lubridate"))
+          remotes::install_cran(c("tidyr", "lubridate"))
           remotes::install_cran(c("cyphr", "sodium"))
         shell: Rscript {0}
         
