@@ -483,6 +483,17 @@ buttonr:hover {
   
 }
 
+/*******/
+/* bootstrap cards */
+
+.card-header-rladies{
+  background-color: #88398a; 
+  color: #fff; 
+  font-size: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+  padding: 5px;
+}
 /******************/
 /* pagination */
 /* Currently only used in directory */
@@ -532,12 +543,23 @@ buttonr:hover {
 } 
 
 
-/******************/
+/****************/
 /* TUI calendar */
-/******************/
+/****************/
 .tui-full-calendar-month-week-item 
 .tui-full-calendar-today 
 .tui-full-calendar-weekday-grid-date-decorator {
   background: #88398a !important;
 }
 
+
+/******************/
+/*    leaflet     */
+/******************/
+
+.leaflet-icon-div {
+  text-align: center;
+  line-height: 20px;
+  text-shadow: 0 0 3px #000;
+}
+ 
