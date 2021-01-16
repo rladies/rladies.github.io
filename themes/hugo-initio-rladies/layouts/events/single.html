@@ -1,5 +1,6 @@
 {{ define "head" }}
     {{ partial "head/tui-calendar.html" .}}
+    {{ partial "head/leaflet.html" .}}
 {{ end }}
 
 {{ define "languages" }}
@@ -18,9 +19,47 @@
         <div class="entry-content">
 					{{ .Content }}
 				</div>
-				
+				{{ $update := .Site.Data.events_updated }}
+				{{ range $update }}
+				<center>
+            <div class="card col-3text-center" style="border: 1px solid #88398a; border-radius: 10px;">
+              <div class="card-header card-header-rladies">
+                Succesfully run events
+              </div>
+              <div class="card-body">
+                <h5 class="card-title Count">{{ .n_events_past }}</h5>
+              </div>
+            </div>
+        {{ end }}
+        </center>
+        <br>
         <div id="menu">
           <span id="menu-navi">
+              <span class="dropdown">
+                <button id="dropdownMenu-calendarType" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="true">
+                    <i id="calendarTypeIcon" class="calendar-icon ic_view_month" style="margin-right: 4px;"></i>
+                    <span id="calendarTypeName">Calendar type</span>&nbsp;
+                    <i class="calendar-icon tui-full-calendar-dropdown-arrow"></i>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu-calendarType">
+                    <li role="presentation">
+                        <a class="dropdown-menu-title" role="menuitem" onClick = "calendar.changeView('month', true)">
+                            <i class="calendar-icon ic_view_month"></i>Month
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a class="dropdown-menu-title" role="menuitem" onClick = "calendar.changeView('week', true)">
+                            <i class="calendar-icon ic_view_week"></i>Weekly
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a class="dropdown-menu-title" role="menuitem" onClick = "calendar.changeView('day', true)">
+                            <i class="calendar-icon ic_view_day"></i>Daily
+                        </a>
+                    </li>
+                  </ul>
+
             <button type="button" class="btn bttn-no-outline action-button move-today" onClick="calendar.today()">Today</button>
             <button type="button" class="btn bttn-no-outline action-button move-day" onClick="calendar.prev()">
               <i class="fa fa-chevron-left"></i>
@@ -32,10 +71,21 @@
           <span id="renderRange" class="render-range"></span>
         </div>
         <br>
-        <div id="calendar" style='width:100%; height:600px;'></div>
+        <div id="calendar" style='width: 100%; height: 600px;'></div>
+        <br>
+        <center>
+        <h1 style="margin: 20px;">Future events</h1>
+        <div id = "events_map" style = "width: 100%; height: 580px"></div>
+        </center>
 
 		</div> <!-- /row post  -->
 	</div>	<!-- /container -->
+	<br>
+	<center>
+  	{{ range $update }}
+  	<p>Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}</p>
+  	{{ end }}
+	</center>
 </main>
 {{ end }}
 
@@ -43,51 +93,42 @@
   {{ partial "footer/footer.html" . }}
   {{ partial "footer/tui-calendar.html" . }}
 
-<script type="text/javascript" class="code-js">
-  var calendar = new tui.Calendar('#calendar', {
-    "view": "month", 
-    "defaultView": "month",
-    "taskView": false,
-    "scheduleView": true,
-    "useDetailPopup": true,
-    "useCreationPopup": false,
-    "isReadOnly": true,
-    "usageStatistics": false,
-    "useNav": true,
-    "theme": rladies_monthly,
-    "calendars":  [
-      {{ range .Site.Data.events.calendars }}
-        {
-          id: {{ .id }},
-          name: {{ .name | default "rladies" }},
-          color: {{ .color | default "#88398a" }},
-          bgColor: {{ .bgColor | default "#88398a" }},
-          dragBgColor: {{ .color | default "#88398a" }},
-          borderColor: {{ .color | default "#88398a" }}
-        },
-      {{ end }}
-    ] 
-  });
+  {{ $events := .Site.Data.events }}
+
   
-  calendar.createSchedules([
-    {{ range .Site.Data.events.schedule }}
-    {
-        category: "time",
-        isReadOnly: true, 
-        dueDateClass: '',
-        
-        id: {{ .id }},
-        calendarId: {{ .calendarId }},
-        title: {{ .title }},
-        start: {{ .start }},
-        end: {{ .end }},
-        body: {{ .body }},
-        type: {{ .type }},
-        location: {{ .location | default "Not announced"}},
-        lat: {{ .lat }},
-        long: {{ .long }}
-    },
-    {{ end }}
-  ]);
+  <script type="text/javascript" class="code-js">
+     // Creating map options
+     var mapOptions = {
+        center: [30, 0],
+        zoom: 2
+     }
+     
+     // Creating a map object
+     var event_map = new L.map('events_map', mapOptions);
+     
+     // Creating a Layer object
+     var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+     
+     // Adding layer to the map
+     event_map.addLayer(layer);
+     {{ range where $events ".date" "ge" (now.Format "2006-01-02") }}
+       var marker = L.marker([ {{ .lat }}, {{ .lon }}], {icon: rladiesIcon}).addTo(event_map);
+       
+       marker.bindPopup("<h4>{{ .title }}</h4><li>{{ .calendarId }}</li> {{ .body }} ");
+     {{ end }}
+     
+  </script>
+  
+  <script>
+    $('.Count').each(function () {
+      var $this = $(this);
+      jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function () {
+          $this.text(Math.ceil(this.Counter));
+        }
+      });
+    });
   </script>
 {{ end }}
