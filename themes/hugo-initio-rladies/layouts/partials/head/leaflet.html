@@ -1,14 +1,31 @@
 <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
-<script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel = "stylesheet" href = "https://unpkg.com/leaflet.markercluster@1.4.1/dist//MarkerCluster.css"/>
+<link rel = "stylesheet" href = "https://unpkg.com/leaflet.markercluster@1.4.1/dist//MarkerCluster.Default.css"/>
+
+<script src = "https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet-src.min.js"></script>
+<script src = "https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster-src.js"></script>
 
 <script type="text/javascript" class="code-js">
      
-     var rladiesIcon = L.icon({
-          iconUrl: '/images/marker.png',
-
-          iconSize:     [38, 95], // size of the icon
-          iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-          popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-      });
+  const rladiesIcon = new L.divIcon({
+    html: '<i class="fa fa-map-marker fa-2x" style="color: #88398ae4; stroke: #5f2760; stroke-width: 1em;"></i>',
+    className: 'leaflet-icon-div',
+    iconAnchor: [6, 13],
+    popupAnchor: [3, -10]
+  });
+  
+  const rladiesRetired = new L.divIcon({
+    html: '<i class="fa fa-map-marker fa-2x" style="color: #88398ae4; stroke: #5f2760; stroke-width: 1em;"></i>',
+    className: 'leaflet-icon-div',
+    iconAnchor: [6, 13],
+    popupAnchor: [3, -10]
+  });
+  
+  const rladiesProspective = new L.divIcon({
+    html: '<i class="fa fa-map-marker fa-2x" style="color: #398a88e4; stroke: #5f2760; stroke-width: 1em;"></i>',
+    className: 'leaflet-icon-div',
+    iconAnchor: [6, 13],
+    popupAnchor: [3, -10]
+  });
 
 </script>
