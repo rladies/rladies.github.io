@@ -4,11 +4,11 @@ on:
   schedule:
   - cron: "0 12 * * *"
 
-name: Events update
+name: Update site data
 
 jobs:
   render:
-    name: Events update
+    name: Update site data
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -23,7 +23,18 @@ jobs:
           remotes::install_cran(c("progress", "lubridate"))
           remotes::install_cran(c("cyphr", "sodium"))
         shell: Rscript {0}
-      - name: Get meetup data
+        
+      - name: Meetup authentication
+        env: 
+          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+        run: Rscript R/meetup_auth.R
+        
+      - name: Update chapter data
+        env: 
+          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+        run: Rscript R/get_chapters.R
+        
+      - name: Update event data
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
         run: Rscript R/get_events.R
@@ -33,6 +44,6 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add data/events/
-          git commit -m 'Update events' || echo "No changes to commit"
+          git commit -m 'Update site data' || echo "No data to commit"
           git push origin || echo "No changes to commit"
 
