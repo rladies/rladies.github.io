@@ -9,7 +9,7 @@ cyphr::decrypt_file(
 )
 
 token <- readRDS(temptoken)[[1]]
-token <- meetup_auth(
+token <- meetupr::meetup_auth(
   token = temptoken,
   set_renv = FALSE,
   cache = FALSE
@@ -18,4 +18,4 @@ token <- meetup_auth(
 Sys.setenv(MEETUPR_PAT = temptoken)
 
 cat("\t authenticating...\n\n")
-k <- meetup_auth(token = temptoken)
+k <- meetupr::meetup_auth(token = temptoken)
