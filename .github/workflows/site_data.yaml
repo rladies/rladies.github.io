@@ -43,7 +43,7 @@ jobs:
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/events/
+          git add data/
           git commit -m 'Update site data' || echo "No data to commit"
           git push origin || echo "No changes to commit"
 
