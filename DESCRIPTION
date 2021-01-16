@@ -13,9 +13,9 @@ Encoding: UTF-8
 Imports:
     lubridate,
     dplyr,
+    tidyr,
     purrr,
     jsonlite,
-    progress,
     here,
     meetupr
 Remotes:
