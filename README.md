@@ -69,7 +69,7 @@ You can also use this same link to request content you feel is missing.
 If you would like to give us a hand at fixing some of the issues listed, we would grately appreciate that.
 
 ### Working on a local copy
-If you are working on your own local copy (either as a clone of the main repository [remember to make your own branch!] or as a local fork), the site should be rendered with hugo directly.
+If you are working on your own local copy (either as a clone of the main repository - remember to make your own branch! - or as a local fork, see [Happy Git and GitHub for the useR](https://happygitwithr.com/) for more information for tips), the site should be rendered with hugo directly.
 This website is developed for hugo, and not R-packages like blogdown or hugodown. 
 
 To render the site locally, open a terminal and use: 
@@ -80,6 +80,18 @@ hugo serve
 Open a browser and enter the localhost address to see the rendered page.
 
 If you are working from RStudio, the project can be opened in Rstudio as you would normally a blogdown/hugodown site, but instead of serving the site through the R console, open a terminal-tab in the console panel and type the above command. 
+
+#### Why we are not using an R-package to render the site
+There are several reasons we decided to create the website purely using Hugo, rather than going through an R package.
+
+**1. The site does not have a lot of new content to be added**  
+Unlike a blog or the like, the website does not need to render content from `Rmd` files, the [R-Ladies blog](https://blog.rladies.org/) does this. 
+The majority of updated content to this site is to the site's data (mentoring, directory, chapters, and events), and standard text-information. 
+The site does not need to run R code chunks for tutorials or the like
+
+**2. Making the site more stable & fast to render**  
+Doing everything in hugo directly gives us one less software that might introduce breaking changes to the site. Hugo also builds the site very fast on its own, meaning new changes are quickly implemented on the rendered site.
+
 
 ### Adding a new language
 We hope to be able to translate the site into different key languages. 
