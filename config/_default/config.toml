@@ -3,14 +3,7 @@ languageCode = "en"
 title = "R-Ladies Global"
 theme = "hugo-initio-rladies"
 publishDir = "public"
-ignoreFiles = ["\\.Rmd$", "_cache$", ".DS_Store", "_files$", 
-  "index\\.html", "_cache$", "README",
-  "data/directory2/DESCRIPTION",
-  "data/directory2/R", 
-  "data/directory2/*html",
-  "data/directory2/data-raw/",
-  "data/directory2/directory/wp_directory_20200923.csv",
-  "data/directory2/directory/wp_directory_20200923_cleannames.csv",
-  "data/directory2/directory.Rproj"]
+ignoreFiles = ["\\.Rmd$", "_cache$", "\\.DS_Store", "_files$", 
+  "index\\.html", "_cache$", "README"]
   
 defaultContentLanguage = "en"
