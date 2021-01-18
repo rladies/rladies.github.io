@@ -6,7 +6,7 @@ avatar      = "images/logo.png"
 avatarclass = "rounded"
 
 year      = 2013
-banner    = "images/user2017_banner.png"
+banner    = "images/user2017_banner_opt.png"
 favicon   = "images/favicon.png"
 DateForm  = "January 2, 2006"
 #customCSS = ["css/rladies.css"]
