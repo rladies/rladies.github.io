@@ -92,6 +92,10 @@ The site does not need to run R code chunks for tutorials or the like
 **2. Making the site more stable & fast to render**  
 Doing everything in hugo directly gives us one less software that might introduce breaking changes to the site. Hugo also builds the site very fast on its own, meaning new changes are quickly implemented on the rendered site.
 
+**3. Making use of more advanced Hugo options**
+As the R-Ladies website is meant for a global audience, it means we also need to build a site where we can incrementally add more language translations over time.
+Utilizing Hugo's systems for translated content, when wanting to support high amounts of it, is not 100% supported in, for instance, blogdown. 
+In particular, using the `config`-directory option, rather than a single `config`-file is convenient as we can more tidily organise translated config options.
 
 ### Adding a new language
 We hope to be able to translate the site into different key languages. 
