@@ -1,4 +1,4 @@
-<header class = "hero" style="background: {{ .Site.Params.bannerOverlay }}; height: {{ if .IsHome }} 100vh; {{else}} 40vh;{{end}}">
+<header class = "hero" style="background: {{ .Site.Params.bannerOverlay }}; height: {{ if .IsHome }} 100vh {{else}} 40vh{{end}}; width: 100vw;">
   
   <img src="{{ .Site.Params.banner | relURL }}">
   
