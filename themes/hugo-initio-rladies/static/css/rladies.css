@@ -60,48 +60,36 @@ a:hover, a:focus {
   color: #fff;
 }
 
-.hero{
+.hero {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 33vh;
   width: 100%;
-  height: 50vh;
 }
 
-.hero .title {
-  font-family: "Helvetica CE 35 Thin","Lato",  "Open Sans", sans-serif; 
-  color: #fff;
-  font-size: 150%;
+.hero img {
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover;
+  opacity: 0.4;
 }
 
-.hero  .tagline {
-  font-family: "Helvetica CE 35 Thin", "Lato", "Open Sans", sans-serif; 
-  color: #fff;
-}
-
-.hero .tagline a {
-  color: #ddd;
-}
-
-.logo{
-  padding-top: 2em;
-  text-align: center;   
- }
- 
-.logo img{
+.hero .logo img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  
+  display: block;
+  margin: auto; 
   height: 200px;
   width: 200px;
   border-radius: 20px;
+  opacity: 1;
 }
-
-.banner {
-  position: relative;
-  text-align: center;
-  height: 100%;
-  background-color: #88398a;
-  z-index: 2; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 
 #footer {
   background: #88398a;
