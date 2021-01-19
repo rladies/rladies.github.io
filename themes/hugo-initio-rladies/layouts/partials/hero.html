@@ -1,0 +1,18 @@
+<header class = "hero" style="background: {{ .Site.Params.bannerOverlay }}; height: {{ if .IsHome }} 100vh; {{else}} 40vh;{{end}}">
+  
+  <img src="{{ .Site.Params.banner | relURL }}">
+  
+  <a href="/">
+    <div class="logo">
+      <img src="{{ .Site.Params.avatar | relURL }}">
+    </div>
+  </a>
+
+  {{ if .IsHome }}
+    <a href="#Chapters">
+      <i class="fa fa-chevron-down" style="font-size:48px;color:#dbc3db;bottom: 10px;position:absolute;"></i>
+      </a>  
+  {{ end }}
+    
+</header>
+    {{ partial "menu.html" . }}

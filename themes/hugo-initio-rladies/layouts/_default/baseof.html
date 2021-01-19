@@ -2,30 +2,18 @@
 <html>
   <head>
     {{ partial "head/meta.html" . }}
-    
+    {{ partial "head/head.html" . }}
+
     {{ block "head" .}}
       <!-- for extra header scripts etc -->
     {{ end }}
     
-    {{ partial "head/head.html" . }}
   </head>
   
   <body>
 
-  {{ block "hero" . }}
-  <section class = "hero" style="height:33vh;">
-    <div class="banner" style="background-image:url({{ .Site.Params.banner | relURL }}); padding-top: 1em;" >
-      <a href="{{.Site.BaseURL | absLangURL}}">
-        <div class = "logo">
-          <img class="img-{{.Site.Params.avatarclass | default "circle"}}" src="{{ .Site.Params.avatar | relURL }}" alt="" style = "width: 140px; height: 140px;">
-        </div>
-      </a>
-    </div>
+    {{ partial "hero.html" . }}
 
-    {{ partial "menu.html" . }}
-  </section>
-  {{ end }}
-  
     {{ block "languages" . }}
     {{ end }}
     
