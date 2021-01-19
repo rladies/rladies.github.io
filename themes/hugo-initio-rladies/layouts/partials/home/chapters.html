@@ -31,8 +31,13 @@
 
 </script>
 
-<p style="text-align: center;"><b>List of locations of currently active R-Ladies meetup groups</b></p>
-  <table class="table table-hover table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<br>
+<center>
+  <buttonr data-toggle="collapse" data-target="#chapter-table">Click for table of currently active R-Ladies chapters</buttonr>
+  </center>
+  <br>
+  <div id="chapter-table" class="collapse">
+    <table class="table table-hover table-responsive" style="width: auto !important; margin-left: auto; margin-right: auto;">
     <thead>
       <tr>
         <th style="text-align:right;border-right: 1px solid;"> Country </th>
@@ -61,5 +66,6 @@
         {{ end }}
     </tbody>
   </table>
-  
+  </div>
+  <br>
   <p>If you are interested in starting an R-Ladies meetup group in your city, or would like more information about starting a meetup group, reach out at <b>info</b>[at]<b>rladies</b>[dot]<b>org</b></p>
