@@ -4,7 +4,8 @@
     "chapters": [
       {
         "name": "R-Ladies Bariloche",
-        "id": "rladies-bariloche",
+        "id": 28441250,
+        "urlname": "rladies-bariloche",
         "state": "",
         "city": "San Carlos de Bariloche",
         "members": 279,
@@ -19,13 +20,15 @@
             "twitter": "RLadiesBRC",
             "email": "bariloche@rladies.org",
             "facebook": "rladies.bariloche",
+            "github": "rladies/NA",
             "slack": "rladies-brc.slack.com"
           }
         ]
       },
       {
         "name": "R-Ladies Buenos Aires",
-        "id": "rladies-buenos-aires",
+        "id": 21760043,
+        "urlname": "rladies-buenos-aires",
         "state": "",
         "city": "Buenos Aires",
         "members": 1263,
@@ -42,13 +45,14 @@
             "facebook": "RladiesBA",
             "instagram": "rladiesba",
             "youtube": "UCztAJhENVqsqv0cvyxs4sgg",
-            "github": "meetup-presentations_buenosaires"
+            "github": "rladies/meetup-presentations_buenosaires"
           }
         ]
       },
       {
         "name": "R-Ladies Cordoba",
-        "id": "rladies-cordoba",
+        "id": 33717527,
+        "urlname": "rladies-cordoba",
         "state": "",
         "city": "Córdoba",
         "members": 32,
@@ -63,14 +67,15 @@
             "twitter": "RLadiesCba",
             "email": "cordoba@rladies.org",
             "facebook": "RLadiesCba",
-            "github": "meetup-presentations_cordoba",
+            "github": "rladies/meetup-presentations_cordoba",
             "slack": "rladies-cordoba.slack.com"
           }
         ]
       },
       {
         "name": "R-Ladies General Pico",
-        "id": "rladies-general-pico",
+        "id": 33554403,
+        "urlname": "rladies-general-pico",
         "state": "",
         "city": "General Pico",
         "members": 62,
@@ -83,13 +88,15 @@
           {
             "meetup": "rladies-general-pico",
             "twitter": "RLadiesGP",
-            "email": "generalpico@rladies.org"
+            "email": "generalpico@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Mendoza",
-        "id": "rladies-mendoza",
+        "id": 27651345,
+        "urlname": "rladies-mendoza",
         "state": "",
         "city": "Mendoza",
         "members": 290,
@@ -104,13 +111,14 @@
             "twitter": "RLadiesMza",
             "email": "mendoza@rladies.org",
             "facebook": "RLadiesMendoza",
-            "github": "meetup-presentations_mendoza"
+            "github": "rladies/meetup-presentations_mendoza"
           }
         ]
       },
       {
         "name": "R-Ladies Resistencia-Corrientes",
-        "id": "rladies-resistencia-corrientes",
+        "id": 28753666,
+        "urlname": "rladies-resistencia-corrientes",
         "state": "",
         "city": "Corrientes",
         "members": 143,
@@ -124,13 +132,15 @@
             "meetup": "rladies-resistencia-corrientes",
             "twitter": "RLadies_rciacte",
             "email": "rciactes@rladies.org",
-            "facebook": "R-Ladies-Rcia-Ctes"
+            "facebook": "R-Ladies-Rcia-Ctes",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Santa Fe",
-        "id": "rladies-santa-fe",
+        "id": 28424845,
+        "urlname": "rladies-santa-fe",
         "state": "",
         "city": "Santa Fe",
         "members": 214,
@@ -147,13 +157,14 @@
             "facebook": "RLadiesSantaFe",
             "instagram": "rladiessantafe",
             "youtube": "UCOFcXLjW9atcEuCa5kbOPSw",
-            "github": "meetup-presentations_santafe"
+            "github": "rladies/meetup-presentations_santafe"
           }
         ]
       },
       {
         "name": "R-Ladies Santa Rosa",
-        "id": "rladies-santa-rosa",
+        "id": 23174619,
+        "urlname": "rladies-santa-rosa",
         "state": "",
         "city": "Santa Rosa",
         "members": 136,
@@ -168,13 +179,14 @@
             "twitter": "RladiesSR",
             "email": "santarosa@rladies.org",
             "facebook": "RLadiesSR",
-            "github": "meetup-presentations_santarosa"
+            "github": "rladies/meetup-presentations_santarosa"
           }
         ]
       },
       {
         "name": "R-Ladies Ushuaia",
-        "id": "rladies-ushuaia",
+        "id": 33725126,
+        "urlname": "rladies-ushuaia",
         "state": "",
         "city": "Ushuaia",
         "members": 30,
@@ -188,7 +200,7 @@
             "meetup": "rladies-ushuaia",
             "twitter": "RLadiesUshuaia",
             "email": "ushuaia@rladies.org",
-            "github": "meetup-presentations_ushuaia"
+            "github": "rladies/meetup-presentations_ushuaia"
           }
         ]
       }
@@ -199,7 +211,8 @@
     "chapters": [
       {
         "name": "R-Ladies Adelaide",
-        "id": "rladies-adelaide",
+        "id": 22202405,
+        "urlname": "rladies-adelaide",
         "state": "",
         "city": "Adelaide",
         "members": 308,
@@ -213,13 +226,14 @@
             "meetup": "rladies-adelaide",
             "twitter": "RLadiesAdelaide",
             "email": "adelaide@rladies.org",
-            "github": "meetup-presentations_adelaide"
+            "github": "rladies/meetup-presentations_adelaide"
           }
         ]
       },
       {
         "name": "R-Ladies Brisbane",
-        "id": "rladies-brisbane",
+        "id": 28448818,
+        "urlname": "rladies-brisbane",
         "state": "",
         "city": "Brisbane",
         "members": 477,
@@ -233,14 +247,15 @@
             "meetup": "rladies-brisbane",
             "twitter": "RLadiesBrisbane",
             "email": "brisbane@rladies.org",
-            "github": "meetup-presentations_brisbane",
+            "github": "rladies/meetup-presentations_brisbane",
             "slack": "r-ladiesbrisbane.slack.com"
           }
         ]
       },
       {
         "name": "R-Ladies Canberra",
-        "id": "rladies-canberra",
+        "id": 30680825,
+        "urlname": "rladies-canberra",
         "state": "",
         "city": "Canberra",
         "members": 207,
@@ -253,13 +268,15 @@
           {
             "meetup": "rladies-canberra",
             "twitter": "RLadiesCanberra",
-            "email": "canberra@rladies.org"
+            "email": "canberra@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Melbourne",
-        "id": "rladies-melbourne",
+        "id": 20378903,
+        "urlname": "rladies-melbourne",
         "state": "",
         "city": "Melbourne",
         "members": 1741,
@@ -274,13 +291,14 @@
             "twitter": "RLadiesMelb",
             "email": "melbourne@rladies.org",
             "facebook": "RladiesMelbourne",
-            "github": "meetup-presentations_melbourne"
+            "github": "rladies/meetup-presentations_melbourne"
           }
         ]
       },
       {
         "name": "R-Ladies Perth",
-        "id": "rladies-perth",
+        "id": 30375344,
+        "urlname": "rladies-perth",
         "state": "",
         "city": "Perth",
         "members": 248,
@@ -293,13 +311,15 @@
           {
             "meetup": "rladies-perth",
             "twitter": "rladiesperth",
-            "email": "perth@rladies.org"
+            "email": "perth@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Sydney",
-        "id": "rladies-sydney",
+        "id": 28436046,
+        "urlname": "rladies-sydney",
         "state": "",
         "city": "Sydney",
         "members": 800,
@@ -313,7 +333,7 @@
             "meetup": "rladies-sydney",
             "twitter": "RLadiesSydney",
             "email": "sydney@rladies.org",
-            "github": "rladiessydney",
+            "github": "rladies/rladiessydney",
             "website": "https://rladiessydney.org/"
           }
         ]
@@ -325,7 +345,8 @@
     "chapters": [
       {
         "name": "R-Ladies Vienna",
-        "id": "rladies-vienna",
+        "id": 29851462,
+        "urlname": "rladies-vienna",
         "state": "",
         "city": "Vienna",
         "members": 216,
@@ -338,7 +359,8 @@
           {
             "meetup": "rladies-vienna",
             "twitter": "RLadiesVienna",
-            "email": "vienna@rladies.org"
+            "email": "vienna@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -349,7 +371,8 @@
     "chapters": [
       {
         "name": "R-Ladies Brussels",
-        "id": "rladies-brussels",
+        "id": 25492745,
+        "urlname": "rladies-brussels",
         "state": "",
         "city": "Brussels",
         "members": 232,
@@ -363,7 +386,7 @@
             "meetup": "rladies-brussels",
             "twitter": "RladiesBrussels",
             "email": "brussels@rladies.org",
-            "github": "meetup-presentations_brussels"
+            "github": "rladies/meetup-presentations_brussels"
           }
         ]
       }
@@ -374,7 +397,8 @@
     "chapters": [
       {
         "name": "R-Ladies Cotonou",
-        "id": "rladies-cotonou",
+        "id": 27986524,
+        "urlname": "rladies-cotonou",
         "state": "",
         "city": "Cotonou",
         "members": 35,
@@ -387,7 +411,8 @@
           {
             "meetup": "rladies-cotonou",
             "twitter": "RLadiesCtn",
-            "email": "cotonou@rladies.org"
+            "email": "cotonou@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -398,7 +423,8 @@
     "chapters": [
       {
         "name": "R-Ladies Cochabamba",
-        "id": "rladies-cochabamba",
+        "id": 33825315,
+        "urlname": "rladies-cochabamba",
         "state": "",
         "city": "Cochabamba",
         "members": 11,
@@ -409,13 +435,15 @@
         "status_text": "Active",
         "social_media": [
           {
-            "meetup": "rladies-cochabamba"
+            "meetup": "rladies-cochabamba",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies La Paz",
-        "id": "rladies-la-paz",
+        "id": 30375244,
+        "urlname": "rladies-la-paz",
         "state": "",
         "city": "La Paz",
         "members": 287,
@@ -429,7 +457,8 @@
             "meetup": "rladies-la-paz",
             "twitter": "RLadiesLaPaz",
             "email": "lapaz@rladies.org",
-            "facebook": "rladieslapaz"
+            "facebook": "rladieslapaz",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -440,7 +469,8 @@
     "chapters": [
       {
         "name": "R-Ladies Belo Horizonte",
-        "id": "rladies-belo-horizonte",
+        "id": 28226484,
+        "urlname": "rladies-belo-horizonte",
         "state": "",
         "city": "Belo Horizonte",
         "members": 825,
@@ -457,14 +487,15 @@
             "facebook": "rladiesbh",
             "instagram": "rladiesbh",
             "youtube": "rladiesbelohorizonte",
-            "github": "meetup-presentations_belohorizonte",
+            "github": "rladies/meetup-presentations_belohorizonte",
             "website": "http://rladiesbh.com.br/"
           }
         ]
       },
       {
         "name": "R-Ladies Floripa",
-        "id": "rladies-florianopolis",
+        "id": 31577218,
+        "urlname": "rladies-florianopolis",
         "state": "",
         "city": "Florianópolis",
         "members": 445,
@@ -477,13 +508,15 @@
           {
             "meetup": "rladies-florianopolis",
             "twitter": "RLadiesFloripa",
-            "email": "florianopolis@rladies.org"
+            "email": "florianopolis@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Fortaleza",
-        "id": "rladies-fortaleza",
+        "id": 33810889,
+        "urlname": "rladies-fortaleza",
         "state": "",
         "city": "Fortaleza",
         "members": 104,
@@ -495,13 +528,15 @@
         "social_media": [
           {
             "meetup": "rladies-fortaleza",
-            "email": "fortaleza@rladies.org"
+            "email": "fortaleza@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Goiânia",
-        "id": "rladies-goiania",
+        "id": 31829495,
+        "urlname": "rladies-goiania",
         "state": "",
         "city": "Goiania",
         "members": 339,
@@ -513,13 +548,15 @@
         "social_media": [
           {
             "meetup": "rladies-goiania",
-            "email": "goiania@rladies.org"
+            "email": "goiania@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Lavras",
-        "id": "rladies-lavras",
+        "id": 31653398,
+        "urlname": "rladies-lavras",
         "state": "",
         "city": "Lavras",
         "members": 45,
@@ -531,13 +568,15 @@
         "social_media": [
           {
             "meetup": "rladies-lavras",
-            "email": "lavras@rladies.org"
+            "email": "lavras@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Natal",
-        "id": "rladies-natal",
+        "id": 33801315,
+        "urlname": "rladies-natal",
         "state": "",
         "city": "Natal",
         "members": 348,
@@ -552,13 +591,14 @@
             "twitter": "RladiesNatal",
             "email": "natal@rladies.org",
             "facebook": "R-ladies-Natal-1601745646525923",
-            "github": "meetup-presentations_natal"
+            "github": "rladies/meetup-presentations_natal"
           }
         ]
       },
       {
         "name": "R-Ladies Niterói",
-        "id": "rladies-niteroi",
+        "id": 28706674,
+        "urlname": "rladies-niteroi",
         "state": "",
         "city": "Niterói",
         "members": 745,
@@ -570,13 +610,15 @@
         "social_media": [
           {
             "meetup": "rladies-niteroi",
-            "email": "niteroi@rladies.org"
+            "email": "niteroi@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Porto Alegre",
-        "id": "rladies-porto-alegre",
+        "id": 26434176,
+        "urlname": "rladies-porto-alegre",
         "state": "",
         "city": "Porto Alegre",
         "members": 354,
@@ -590,13 +632,15 @@
             "meetup": "rladies-porto-alegre",
             "twitter": "RLadiesPOA",
             "email": "poa@rladies.org",
-            "facebook": "RLadiesPortoAlegre"
+            "facebook": "RLadiesPortoAlegre",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Recife",
-        "id": "rladies-recife",
+        "id": 32713369,
+        "urlname": "rladies-recife",
         "state": "",
         "city": "Recife",
         "members": 147,
@@ -609,13 +653,14 @@
           {
             "meetup": "rladies-recife",
             "email": "recife@rladies.org",
-            "github": "meetup-presentations_recife"
+            "github": "rladies/meetup-presentations_recife"
           }
         ]
       },
       {
         "name": "R-Ladies Ribeirão Preto",
-        "id": "rladies-ribeirao-preto",
+        "id": 33504173,
+        "urlname": "rladies-ribeirao-preto",
         "state": "",
         "city": "Ribeirão Preto",
         "members": 111,
@@ -627,13 +672,15 @@
         "social_media": [
           {
             "meetup": "rladies-ribeirao-preto",
-            "email": "ribeirao-preto@rladies.org"
+            "email": "ribeirao-preto@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Rio de Janeiro",
-        "id": "rladies-rio",
+        "id": 22664282,
+        "urlname": "rladies-rio",
         "state": "",
         "city": "Rio de Janeiro",
         "members": 601,
@@ -649,13 +696,14 @@
             "email": "rio@rladies.org",
             "facebook": "rladiesrio",
             "instagram": "Rladiesrio",
-            "github": "meetup-presentations_rio"
+            "github": "rladies/meetup-presentations_rio"
           }
         ]
       },
       {
         "name": "R-Ladies Salvador",
-        "id": "rladies-salvador",
+        "id": 29332380,
+        "urlname": "rladies-salvador",
         "state": "",
         "city": "Salvador",
         "members": 228,
@@ -668,16 +716,18 @@
           {
             "meetup": "rladies-salvador",
             "twitter": "RLadiesSalvador",
-            "email": "salvador@rladies.org"
+            "email": "salvador@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies São Paulo",
-        "id": "rladies-sao-paulo",
+        "id": 27456719,
+        "urlname": "rladies-sao-paulo",
         "state": "",
         "city": "São Paulo",
-        "members": 1149,
+        "members": 1148,
         "status": "active",
         "lat": -23.53,
         "lon": -46.63,
@@ -691,13 +741,14 @@
             "facebook": "rladiessaopaulo",
             "instagram": "rladiessaopaulo",
             "youtube": "RLadiesS%C3%A3oPaulo",
-            "github": "meetup-presentations_sao-paulo"
+            "github": "rladies/meetup-presentations_sao-paulo"
           }
         ]
       },
       {
         "name": "R-Ladies Vitória",
-        "id": "rladies-vitoria",
+        "id": 32826513,
+        "urlname": "rladies-vitoria",
         "state": "",
         "city": "Vitória",
         "members": 184,
@@ -710,7 +761,7 @@
           {
             "meetup": "rladies-vitoria",
             "email": "vitoria@rladies.org",
-            "github": "meetup-presentations_vitoria"
+            "github": "rladies/meetup-presentations_vitoria"
           }
         ]
       }
@@ -721,7 +772,8 @@
     "chapters": [
       {
         "name": "R-Ladies Yaoundé",
-        "id": "rladies-yaounde",
+        "id": 33166554,
+        "urlname": "rladies-yaounde",
         "state": "",
         "city": "Yaoundé",
         "members": 49,
@@ -733,7 +785,8 @@
         "social_media": [
           {
             "meetup": "rladies-yaounde",
-            "email": "yaounde@rladies.org"
+            "email": "yaounde@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -744,7 +797,8 @@
     "chapters": [
       {
         "name": "R-Ladies Calgary",
-        "id": "rladies-calgary",
+        "id": 32763890,
+        "urlname": "rladies-calgary",
         "state": "AB",
         "city": "Calgary",
         "members": 103,
@@ -755,13 +809,15 @@
         "status_text": "Active",
         "social_media": [
           {
-            "meetup": "rladies-calgary"
+            "meetup": "rladies-calgary",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies London, Ontario",
-        "id": "rladies-ldnont",
+        "id": 21965959,
+        "urlname": "rladies-ldnont",
         "state": "ON",
         "city": "London",
         "members": 463,
@@ -776,13 +832,14 @@
             "twitter": "RLadiesLdnOnt",
             "email": "ldnont@rladies.org",
             "facebook": "rladiesldnont",
-            "github": "meetup-presentations_london_ontario"
+            "github": "rladies/meetup-presentations_london_ontario"
           }
         ]
       },
       {
         "name": "R-Ladies Montreal",
-        "id": "rladies-montreal",
+        "id": 25925303,
+        "urlname": "rladies-montreal",
         "state": "QC",
         "city": "Montréal",
         "members": 523,
@@ -796,13 +853,14 @@
             "meetup": "rladies-montreal",
             "twitter": "RLadiesMTL",
             "email": "montreal@rladies.org",
-            "github": "meetup-presentations_montreal"
+            "github": "rladies/meetup-presentations_montreal"
           }
         ]
       },
       {
         "name": "R-Ladies Ottawa",
-        "id": "rladies-ottawa",
+        "id": 30655714,
+        "urlname": "rladies-ottawa",
         "state": "ON",
         "city": "Ottawa",
         "members": 225,
@@ -814,13 +872,15 @@
         "social_media": [
           {
             "meetup": "rladies-ottawa",
-            "email": "ottawa@rladies.org"
+            "email": "ottawa@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Toronto",
-        "id": "rladies-toronto",
+        "id": 29862217,
+        "urlname": "rladies-toronto",
         "state": "ON",
         "city": "Toronto",
         "members": 618,
@@ -834,14 +894,15 @@
             "meetup": "rladies-toronto",
             "twitter": "rladiestoronto",
             "email": "toronto@rladies.org",
-            "github": "meetup-presentations_toronto",
+            "github": "rladies/meetup-presentations_toronto",
             "slack": "rladiestoronto.slack.com"
           }
         ]
       },
       {
         "name": "R-Ladies Vancouver",
-        "id": "rladies-vancouver",
+        "id": 26169684,
+        "urlname": "rladies-vancouver",
         "state": "BC",
         "city": "Vancouver",
         "members": 517,
@@ -855,7 +916,7 @@
             "meetup": "rladies-vancouver",
             "twitter": "RLadiesVan",
             "email": "vancouver@rladies.org",
-            "github": "meetup-presentations_vancouver"
+            "github": "rladies/meetup-presentations_vancouver"
           }
         ]
       }
@@ -866,7 +927,8 @@
     "chapters": [
       {
         "name": "R-Ladies Concepción",
-        "id": "rladies-concepcion",
+        "id": 31653468,
+        "urlname": "rladies-concepcion",
         "state": "",
         "city": "Concepción",
         "members": 498,
@@ -878,13 +940,15 @@
         "social_media": [
           {
             "meetup": "rladies-concepcion",
-            "email": "concepcion@rladies.org"
+            "email": "concepcion@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Santiago",
-        "id": "rladies-scl",
+        "id": 25039094,
+        "urlname": "rladies-scl",
         "state": "",
         "city": "Santiago",
         "members": 2166,
@@ -899,13 +963,14 @@
             "twitter": "RLadiesSantiago",
             "email": "santiago@rladies.org",
             "facebook": "RLadiesSantiago",
-            "github": "rladieschile"
+            "github": "rladies/rladieschile"
           }
         ]
       },
       {
         "name": "R-Ladies Talca",
-        "id": "rladies-talca",
+        "id": 33717562,
+        "urlname": "rladies-talca",
         "state": "",
         "city": "Talca",
         "members": 121,
@@ -917,16 +982,18 @@
         "social_media": [
           {
             "meetup": "rladies-talca",
-            "email": "talca@rladies.org"
+            "email": "talca@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Valparaíso",
-        "id": "rladies-valparaiso",
+        "id": 28530966,
+        "urlname": "rladies-valparaiso",
         "state": "",
         "city": "Valparaíso",
-        "members": 279,
+        "members": 280,
         "status": "active",
         "lat": -33.04,
         "lon": -71.64,
@@ -937,7 +1004,8 @@
             "meetup": "rladies-valparaiso",
             "twitter": "RLadiesValpo",
             "email": "valparaiso@rladies.org",
-            "facebook": "RLadiesValpo"
+            "facebook": "RLadiesValpo",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -948,7 +1016,8 @@
     "chapters": [
       {
         "name": "R-Ladies Beijing",
-        "id": "rladies-beijing",
+        "id": 33007355,
+        "urlname": "rladies-beijing",
         "state": "",
         "city": "Beijing",
         "members": 55,
@@ -960,7 +1029,8 @@
         "social_media": [
           {
             "meetup": "rladies-beijing",
-            "email": "beijing@rladies.org"
+            "email": "beijing@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -971,7 +1041,8 @@
     "chapters": [
       {
         "name": "R-Ladies Barranquilla",
-        "id": "rladies-barranquilla",
+        "id": 33683503,
+        "urlname": "rladies-barranquilla",
         "state": "",
         "city": "Barranquilla",
         "members": 211,
@@ -987,13 +1058,14 @@
             "email": "barranquilla@rladies.org",
             "instagram": "rladiesbquilla",
             "youtube": "UCHITDNNHzEXfD8AzSFQOh9A",
-            "github": "meetup-presentations_barranquilla"
+            "github": "rladies/meetup-presentations_barranquilla"
           }
         ]
       },
       {
         "name": "R-Ladies Bogotá",
-        "id": "rladies-bogota",
+        "id": 26017877,
+        "urlname": "rladies-bogota",
         "state": "",
         "city": "Bogotá",
         "members": 276,
@@ -1006,13 +1078,15 @@
           {
             "meetup": "rladies-bogota",
             "twitter": "RLadiesBogota",
-            "email": "bogota@rladies.org"
+            "email": "bogota@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Medellín",
-        "id": "rladies-medellin",
+        "id": 32823667,
+        "urlname": "rladies-medellin",
         "state": "",
         "city": "Medellín",
         "members": 437,
@@ -1025,7 +1099,8 @@
           {
             "meetup": "rladies-medellin",
             "twitter": "RLadiesMedellin",
-            "email": "medellin@rladies.org"
+            "email": "medellin@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -1036,7 +1111,8 @@
     "chapters": [
       {
         "name": "R-Ladies San Jose",
-        "id": "rladies-san-jose",
+        "id": 26203679,
+        "urlname": "rladies-san-jose",
         "state": "",
         "city": "San Jose",
         "members": 615,
@@ -1051,7 +1127,7 @@
             "twitter": "RLadiesCR",
             "email": "sanjoseCR@rladies.org",
             "facebook": "R-Ladies-San-Jos%C3%A9-CR-113831192660935",
-            "github": "meetup-presentations_sanjose"
+            "github": "rladies/meetup-presentations_sanjose"
           }
         ]
       }
@@ -1062,7 +1138,8 @@
     "chapters": [
       {
         "name": "R-Ladies Copenhagen",
-        "id": "rladies-copenhagen",
+        "id": 26653718,
+        "urlname": "rladies-copenhagen",
         "state": "",
         "city": "Copenhagen",
         "members": 450,
@@ -1075,7 +1152,8 @@
           {
             "meetup": "rladies-copenhagen",
             "twitter": "RLadiesCPH",
-            "email": "copenhagen@rladies.org"
+            "email": "copenhagen@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -1086,7 +1164,8 @@
     "chapters": [
       {
         "name": "R-Ladies Galapagos Islands",
-        "id": "rladies-galapagos-islands",
+        "id": 33194871,
+        "urlname": "rladies-galapagos-islands",
         "state": "",
         "city": "Puerto Ayora",
         "members": 237,
@@ -1100,13 +1179,14 @@
             "meetup": "rladies-galapagos-islands",
             "twitter": "RLadiesGps",
             "email": "galapagos@rladies.org",
-            "github": "meetup-presentations_galapagos-islands"
+            "github": "rladies/meetup-presentations_galapagos-islands"
           }
         ]
       },
       {
         "name": "R-Ladies Guayaquil",
-        "id": "rladies-guayaquil",
+        "id": 28062692,
+        "urlname": "rladies-guayaquil",
         "state": "",
         "city": "Guayaquil",
         "members": 541,
@@ -1120,13 +1200,14 @@
             "meetup": "rladies-guayaquil",
             "twitter": "RLadiesGye",
             "email": "guayaquil@rladies.org",
-            "github": "meetup-presentations_guayaquil"
+            "github": "rladies/meetup-presentations_guayaquil"
           }
         ]
       },
       {
         "name": "R-Ladies Quito",
-        "id": "rladies-quito",
+        "id": 25039212,
+        "urlname": "rladies-quito",
         "state": "",
         "city": "Quito",
         "members": 809,
@@ -1140,7 +1221,7 @@
             "meetup": "rladies-quito",
             "twitter": "RLadiesQuito",
             "email": "quito@rladies.org",
-            "github": "meetup-presentations_quito",
+            "github": "rladies/meetup-presentations_quito",
             "slack": "https://rladies-quito.slack.com/"
           }
         ]
@@ -1152,7 +1233,8 @@
     "chapters": [
       {
         "name": "R-Ladies Addis Ababa",
-        "id": "rladies-addis-ababa",
+        "id": 27902133,
+        "urlname": "rladies-addis-ababa",
         "state": "",
         "city": "Addis Abeba",
         "members": 510,
@@ -1166,6 +1248,7 @@
             "meetup": "rladies-addis-ababa",
             "twitter": "RLadiesAddis",
             "email": "addisababa@rladies.org",
+            "github": "rladies/NA",
             "website": "https://r-ladies-addis.github.io/rladies-addis/"
           }
         ]
@@ -1177,7 +1260,8 @@
     "chapters": [
       {
         "name": "R-Ladies Helsinki",
-        "id": "rladies-helsinki",
+        "id": 29734242,
+        "urlname": "rladies-helsinki",
         "state": "",
         "city": "Helsinki",
         "members": 381,
@@ -1191,7 +1275,7 @@
             "meetup": "rladies-helsinki",
             "twitter": "RLadiesHelsinki",
             "email": "helsinki@rladies.org",
-            "github": "meetup-presentations_helsinki"
+            "github": "rladies/meetup-presentations_helsinki"
           }
         ]
       }
@@ -1202,7 +1286,8 @@
     "chapters": [
       {
         "name": "R-Ladies Lyon",
-        "id": "rladies-lyon",
+        "id": 30421186,
+        "urlname": "rladies-lyon",
         "state": "",
         "city": "Lyon",
         "members": 78,
@@ -1216,13 +1301,14 @@
             "meetup": "rladies-lyon",
             "twitter": "RLadiesLyon",
             "email": "lyon@rladies.org",
-            "github": "meetup-presentations_lyon"
+            "github": "rladies/meetup-presentations_lyon"
           }
         ]
       },
       {
         "name": "R-Ladies Montpellier",
-        "id": "rladies-montpellier",
+        "id": 30339934,
+        "urlname": "rladies-montpellier",
         "state": "",
         "city": "Montpellier",
         "members": 133,
@@ -1235,13 +1321,15 @@
           {
             "meetup": "rladies-montpellier",
             "twitter": "RLadiesMontpel",
-            "email": "montpellier@rladies.org"
+            "email": "montpellier@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Paris",
-        "id": "rladies-paris",
+        "id": 20443056,
+        "urlname": "rladies-paris",
         "state": "",
         "city": "Paris",
         "members": 585,
@@ -1256,13 +1344,14 @@
             "twitter": "RLadiesParis",
             "email": "paris@rladies.org",
             "facebook": "1771828013098557",
-            "github": "rladies-paris"
+            "github": "rladies/rladies-paris"
           }
         ]
       },
       {
         "name": "R-Ladies Strasbourg",
-        "id": "rladies-strasbourg",
+        "id": 26068732,
+        "urlname": "rladies-strasbourg",
         "state": "",
         "city": "Strasbourg",
         "members": 74,
@@ -1276,7 +1365,7 @@
             "meetup": "rladies-strasbourg",
             "twitter": "RLadiesStras",
             "email": "strasbourg@rladies.org",
-            "github": "meetup-presentations_strasbourg"
+            "github": "rladies/meetup-presentations_strasbourg"
           }
         ]
       }
@@ -1287,7 +1376,8 @@
     "chapters": [
       {
         "name": "R-Ladies Tbilisi",
-        "id": "rladies-tbilisi",
+        "id": 21313292,
+        "urlname": "rladies-tbilisi",
         "state": "",
         "city": "Tbilisi",
         "members": 288,
@@ -1302,7 +1392,7 @@
             "twitter": "RLadiesTbilisi",
             "email": "tbilisi@rladies.org",
             "facebook": "rladiestbilisi",
-            "github": "meetup-presentations_tbilisi"
+            "github": "rladies/meetup-presentations_tbilisi"
           }
         ]
       }
@@ -1313,7 +1403,8 @@
     "chapters": [
       {
         "name": "R-Ladies Berlin",
-        "id": "rladies-berlin",
+        "id": 20977178,
+        "urlname": "rladies-berlin",
         "state": "",
         "city": "Berlin",
         "members": 645,
@@ -1328,14 +1419,15 @@
             "twitter": "RLadiesBerlin",
             "email": "berlin@rladies.org",
             "facebook": "RLadiesBerlin",
-            "github": "meetup-presentations_berlin",
+            "github": "rladies/meetup-presentations_berlin",
             "slack": "https://rstats-germany.slack.com/"
           }
         ]
       },
       {
         "name": "R-Ladies Frankfurt",
-        "id": "rladies-frankfurt",
+        "id": 31264536,
+        "urlname": "rladies-frankfurt",
         "state": "",
         "city": "Frankfurt",
         "members": 99,
@@ -1349,13 +1441,14 @@
             "meetup": "rladies-frankfurt",
             "twitter": "RLadiesFRA",
             "email": "frankfurt@rladies.org",
-            "github": "meetup-presentations_frankfurt"
+            "github": "rladies/meetup-presentations_frankfurt"
           }
         ]
       },
       {
         "name": "R-Ladies Freiburg",
-        "id": "rladies-freiburg",
+        "id": 30994180,
+        "urlname": "rladies-freiburg",
         "state": "",
         "city": "Freiburg",
         "members": 404,
@@ -1369,7 +1462,7 @@
             "meetup": "rladies-freiburg",
             "twitter": "RLadiesFreiburg",
             "email": "freiburg@rladies.org",
-            "github": "meetup-presentations_freiburg"
+            "github": "rladies/meetup-presentations_freiburg"
           }
         ]
       }
@@ -1380,7 +1473,8 @@
     "chapters": [
       {
         "name": "R-Ladies Budapest",
-        "id": "rladies-budapest",
+        "id": 22066895,
+        "urlname": "rladies-budapest",
         "state": "",
         "city": "Budapest",
         "members": 862,
@@ -1395,7 +1489,7 @@
             "twitter": "RLadiesBudapest",
             "email": "budapest@rladies.org",
             "facebook": "RLadiesBudapest",
-            "github": "meetup-presentations_budapest"
+            "github": "rladies/meetup-presentations_budapest"
           }
         ]
       }
@@ -1406,7 +1500,8 @@
     "chapters": [
       {
         "name": "R-Ladies Bangalore",
-        "id": "rladies-bangalore",
+        "id": 34086060,
+        "urlname": "rladies-bangalore",
         "state": "",
         "city": "Bangalore",
         "members": 103,
@@ -1418,13 +1513,15 @@
         "social_media": [
           {
             "meetup": "rladies-bangalore",
-            "email": "bangalore@rladies.org"
+            "email": "bangalore@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Chennai",
-        "id": "rladies-chennai",
+        "id": 26276685,
+        "urlname": "rladies-chennai",
         "state": "",
         "city": "Chennai",
         "members": 330,
@@ -1438,13 +1535,14 @@
             "meetup": "rladies-chennai",
             "twitter": "RLadiesChennai",
             "email": "chennai@rladies.org",
-            "github": "meetup-presentations_chennai"
+            "github": "rladies/meetup-presentations_chennai"
           }
         ]
       },
       {
         "name": "R-Ladies Mumbai",
-        "id": "rladies-mumbai",
+        "id": 33041359,
+        "urlname": "rladies-mumbai",
         "state": "",
         "city": "Mumbai",
         "members": 76,
@@ -1456,13 +1554,15 @@
         "social_media": [
           {
             "meetup": "rladies-mumbai",
-            "email": "mumbai@rladies.org"
+            "email": "mumbai@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies New Delhi",
-        "id": "rladies-new-delhi",
+        "id": 32705558,
+        "urlname": "rladies-new-delhi",
         "state": "",
         "city": "Delhi",
         "members": 332,
@@ -1476,13 +1576,15 @@
             "meetup": "rladies-new-delhi",
             "twitter": "newdelhirladies",
             "email": "newdelhi@rladies.org",
-            "facebook": "RLadies-Delhi-111066293606859"
+            "facebook": "RLadies-Delhi-111066293606859",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Pune",
-        "id": "rladies-pune",
+        "id": 32826541,
+        "urlname": "rladies-pune",
         "state": "",
         "city": "Pune",
         "members": 136,
@@ -1496,7 +1598,7 @@
             "meetup": "rladies-pune",
             "twitter": "RladiesPune",
             "email": "pune@rladies.org",
-            "github": "meetup-presentations_pune"
+            "github": "rladies/meetup-presentations_pune"
           }
         ]
       }
@@ -1507,7 +1609,8 @@
     "chapters": [
       {
         "name": "R-Ladies Banda Aceh",
-        "id": "rladies-banda-aceh",
+        "id": 33880224,
+        "urlname": "rladies-banda-aceh",
         "state": "",
         "city": "Banda Aceh",
         "members": 36,
@@ -1519,13 +1622,15 @@
         "social_media": [
           {
             "meetup": "rladies-banda-aceh",
-            "email": "bandaaceh@rladies.org"
+            "email": "bandaaceh@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Bogor",
-        "id": "rladies-bogor",
+        "id": 31577107,
+        "urlname": "rladies-bogor",
         "state": "",
         "city": "Bogor",
         "members": 278,
@@ -1537,13 +1642,15 @@
         "social_media": [
           {
             "meetup": "rladies-bogor",
-            "email": "bogor@rladies.org"
+            "email": "bogor@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Jakarta",
-        "id": "rladies-jakarta",
+        "id": 32327430,
+        "urlname": "rladies-jakarta",
         "state": "",
         "city": "Jakarta",
         "members": 545,
@@ -1556,7 +1663,7 @@
           {
             "meetup": "rladies-jakarta",
             "email": "jakarta@rladies.org",
-            "github": "meetup-presentations_jakarta"
+            "github": "rladies/meetup-presentations_jakarta"
           }
         ]
       }
@@ -1567,7 +1674,8 @@
     "chapters": [
       {
         "name": "R-Ladies Dublin",
-        "id": "rladies-dublin",
+        "id": 21149852,
+        "urlname": "rladies-dublin",
         "state": "",
         "city": "Dublin",
         "members": 820,
@@ -1581,7 +1689,7 @@
             "meetup": "rladies-dublin",
             "twitter": "RLadiesDublin",
             "email": "dublin@rladies.org",
-            "github": "meetup-presentations_dublin"
+            "github": "rladies/meetup-presentations_dublin"
           }
         ]
       }
@@ -1592,7 +1700,8 @@
     "chapters": [
       {
         "name": "R-Ladies Bari",
-        "id": "rladies-bari",
+        "id": 28519562,
+        "urlname": "rladies-bari",
         "state": "BA",
         "city": "Bari",
         "members": 92,
@@ -1607,13 +1716,14 @@
             "twitter": "RladiesBari",
             "email": "bari@rladies.org",
             "facebook": "rladiesbari",
-            "github": "meetup-presentations_bari"
+            "github": "rladies/meetup-presentations_bari"
           }
         ]
       },
       {
         "name": "R-Ladies Milan",
-        "id": "rladies-milan",
+        "id": 24752511,
+        "urlname": "rladies-milan",
         "state": "MI",
         "city": "Milano",
         "members": 940,
@@ -1627,7 +1737,7 @@
             "meetup": "rladies-milan",
             "twitter": "RLadiesMilan",
             "email": "milan@rladies.org",
-            "github": "meetup-presentations_milan"
+            "github": "rladies/meetup-presentations_milan"
           }
         ]
       }
@@ -1638,7 +1748,8 @@
     "chapters": [
       {
         "name": "R-Ladies Nairobi",
-        "id": "rladies-nairobi",
+        "id": 33827845,
+        "urlname": "rladies-nairobi",
         "state": "",
         "city": "Nairobi",
         "members": 423,
@@ -1650,7 +1761,8 @@
         "social_media": [
           {
             "meetup": "rladies-nairobi",
-            "email": "nairobi@rladies.org"
+            "email": "nairobi@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -1661,7 +1773,8 @@
     "chapters": [
       {
         "name": "R-Ladies Aguascalientes",
-        "id": "rladies-aguascalientes",
+        "id": 33409736,
+        "urlname": "rladies-aguascalientes",
         "state": "",
         "city": "Aguascalientes",
         "members": 312,
@@ -1673,16 +1786,18 @@
         "social_media": [
           {
             "meetup": "rladies-aguascalientes",
-            "email": "aguascalientes@rladies.org"
+            "email": "aguascalientes@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies CDMX",
-        "id": "rladies-cdmx",
+        "id": 24820200,
+        "urlname": "rladies-cdmx",
         "state": "",
         "city": "México City",
-        "members": 1785,
+        "members": 1786,
         "status": "active",
         "lat": 19.43,
         "lon": -99.14,
@@ -1694,14 +1809,15 @@
             "twitter": "RLadiesCDMX",
             "email": "cdmx@rladies.org",
             "facebook": "rladiescdmx",
-            "github": "meetup-presentations_CDMX",
+            "github": "rladies/meetup-presentations_CDMX",
             "slack": "rladiescdmx.slack.com"
           }
         ]
       },
       {
         "name": "R-Ladies Cuernavaca",
-        "id": "rladies-cuernavaca",
+        "id": 32604355,
+        "urlname": "rladies-cuernavaca",
         "state": "",
         "city": "Cuernavaca",
         "members": 476,
@@ -1714,13 +1830,15 @@
           {
             "meetup": "rladies-cuernavaca",
             "twitter": "RLadiesCuerna",
-            "email": "cuernavaca@rladies.org"
+            "email": "cuernavaca@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Guadalajara",
-        "id": "rladies-guadalajara",
+        "id": 34099620,
+        "urlname": "rladies-guadalajara",
         "state": "",
         "city": "Guadalajara",
         "members": 264,
@@ -1732,13 +1850,15 @@
         "social_media": [
           {
             "meetup": "rladies-guadalajara",
-            "email": "guadalajara@rladies.org"
+            "email": "guadalajara@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Monterrey",
-        "id": "rladies-monterrey",
+        "id": 33194964,
+        "urlname": "rladies-monterrey",
         "state": "",
         "city": "Monterrey",
         "members": 305,
@@ -1750,13 +1870,15 @@
         "social_media": [
           {
             "meetup": "rladies-monterrey",
-            "email": "monterrey@rladies.org"
+            "email": "monterrey@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Pachuca",
-        "id": "rladies-pachuca",
+        "id": 32767673,
+        "urlname": "rladies-pachuca",
         "state": "",
         "city": "Pachuca",
         "members": 11,
@@ -1769,13 +1891,15 @@
           {
             "meetup": "rladies-pachuca",
             "twitter": "RLadiesPachuca",
-            "email": "pachuca@rladies.org"
+            "email": "pachuca@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Puebla",
-        "id": "rladies-puebla",
+        "id": 32426344,
+        "urlname": "rladies-puebla",
         "state": "",
         "city": "Puebla",
         "members": 201,
@@ -1788,13 +1912,14 @@
           {
             "meetup": "rladies-puebla",
             "email": "puebla@rladies.org",
-            "github": "meetup-presentations_puebla"
+            "github": "rladies/meetup-presentations_puebla"
           }
         ]
       },
       {
         "name": "R-Ladies Queretaro",
-        "id": "rladies-queretaro",
+        "id": 31514006,
+        "urlname": "rladies-queretaro",
         "state": "",
         "city": "Querétaro",
         "members": 523,
@@ -1809,14 +1934,15 @@
             "twitter": "RLadies_Qro",
             "email": "qro@rladies.org",
             "periscope": "RLadies_Qro",
-            "github": "RladiesQro",
+            "github": "rladies/RladiesQro",
             "slack": "r-ladiesqro.slack.com"
           }
         ]
       },
       {
         "name": "R-Ladies Xalapa",
-        "id": "rladies-xalapa",
+        "id": 29397372,
+        "urlname": "rladies-xalapa",
         "state": "",
         "city": "Xalapa",
         "members": 402,
@@ -1829,7 +1955,8 @@
           {
             "meetup": "rladies-xalapa",
             "twitter": "RLadiesXalapa",
-            "email": "xalapa@rladies.org"
+            "email": "xalapa@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -1840,7 +1967,8 @@
     "chapters": [
       {
         "name": "R-Ladies Podgorica",
-        "id": "rladies-podgorica",
+        "id": 32783356,
+        "urlname": "rladies-podgorica",
         "state": "",
         "city": "Podgorica",
         "members": 25,
@@ -1852,7 +1980,8 @@
         "social_media": [
           {
             "meetup": "rladies-podgorica",
-            "email": "podgorica@rladies.org"
+            "email": "podgorica@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -1863,7 +1992,8 @@
     "chapters": [
       {
         "name": "R-Ladies Kathmandu",
-        "id": "rladies-kathmandu",
+        "id": 30017254,
+        "urlname": "rladies-kathmandu",
         "state": "",
         "city": "Kathmandu",
         "members": 80,
@@ -1876,7 +2006,8 @@
           {
             "meetup": "rladies-kathmandu",
             "twitter": "RLadiesKtm",
-            "email": "kathmandu@rladies.org"
+            "email": "kathmandu@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -1887,7 +2018,8 @@
     "chapters": [
       {
         "name": "R-Ladies Amsterdam",
-        "id": "rladies-amsterdam",
+        "id": 27443387,
+        "urlname": "rladies-amsterdam",
         "state": "",
         "city": "Amsterdam",
         "members": 875,
@@ -1900,13 +2032,15 @@
           {
             "meetup": "rladies-amsterdam",
             "twitter": "RLadiesAMS",
-            "email": "amsterdam@rladies.org"
+            "email": "amsterdam@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Den Bosch",
-        "id": "rladies-den-bosch",
+        "id": 31457077,
+        "urlname": "rladies-den-bosch",
         "state": "",
         "city": "Den Bosch",
         "members": 110,
@@ -1918,13 +2052,15 @@
         "social_media": [
           {
             "meetup": "rladies-den-bosch",
-            "email": "denbosch@rladies.org"
+            "email": "denbosch@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Nijmegen",
-        "id": "rladies-nijmegen",
+        "id": 28393787,
+        "urlname": "rladies-nijmegen",
         "state": "",
         "city": "Nijmegen",
         "members": 346,
@@ -1937,13 +2073,15 @@
           {
             "meetup": "rladies-nijmegen",
             "twitter": "RladiesNijmegen",
-            "email": "nijmegen@rladies.org"
+            "email": "nijmegen@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Rotterdam",
-        "id": "rladies-rotterdam",
+        "id": 26792997,
+        "urlname": "rladies-rotterdam",
         "state": "",
         "city": "Rotterdam",
         "members": 500,
@@ -1958,13 +2096,14 @@
             "twitter": "RladiesRdam",
             "email": "rotterdam@rladies.org",
             "facebook": "RLadiesRott",
-            "github": "meetup-presentations_rotterdam"
+            "github": "rladies/meetup-presentations_rotterdam"
           }
         ]
       },
       {
         "name": "R-Ladies Utrecht",
-        "id": "rladies-utrecht",
+        "id": 32144791,
+        "urlname": "rladies-utrecht",
         "state": "",
         "city": "Utrecht",
         "members": 175,
@@ -1976,7 +2115,7 @@
         "social_media": [
           {
             "meetup": "rladies-utrecht",
-            "github": "meetup-presentations_utrecht"
+            "github": "rladies/meetup-presentations_utrecht"
           }
         ]
       }
@@ -1987,7 +2126,8 @@
     "chapters": [
       {
         "name": "R-Ladies Auckland",
-        "id": "rladies-auckland",
+        "id": 26653882,
+        "urlname": "rladies-auckland",
         "state": "",
         "city": "Auckland",
         "members": 726,
@@ -2001,13 +2141,14 @@
             "meetup": "rladies-auckland",
             "twitter": "RLadiesAKL",
             "email": "auckland@rladies.org",
-            "github": "meetup-presentations_auckland"
+            "github": "rladies/meetup-presentations_auckland"
           }
         ]
       },
       {
         "name": "R-Ladies Christchurch",
-        "id": "rladies-christchurch",
+        "id": 31807417,
+        "urlname": "rladies-christchurch",
         "state": "",
         "city": "Christchurch",
         "members": 89,
@@ -2019,13 +2160,15 @@
         "social_media": [
           {
             "meetup": "rladies-christchurch",
-            "email": "chch@rladies.org"
+            "email": "chch@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Nelson",
-        "id": "rladies-nelson",
+        "id": 31457211,
+        "urlname": "rladies-nelson",
         "state": "",
         "city": "Nelson",
         "members": 13,
@@ -2037,7 +2180,8 @@
         "social_media": [
           {
             "meetup": "rladies-nelson",
-            "email": "nelson@rladies.org"
+            "email": "nelson@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2048,7 +2192,8 @@
     "chapters": [
       {
         "name": "R-Ladies Abuja",
-        "id": "rladies-abuja",
+        "id": 33291403,
+        "urlname": "rladies-abuja",
         "state": "",
         "city": "Abuja",
         "members": 166,
@@ -2061,13 +2206,14 @@
           {
             "meetup": "rladies-abuja",
             "email": "abuja@rladies.org",
-            "github": "meetup-presentations_abuja"
+            "github": "rladies/meetup-presentations_abuja"
           }
         ]
       },
       {
         "name": "R-Ladies Lagos",
-        "id": "rladies-lagos",
+        "id": 32612004,
+        "urlname": "rladies-lagos",
         "state": "",
         "city": "Lagos",
         "members": 290,
@@ -2079,7 +2225,8 @@
         "social_media": [
           {
             "meetup": "rladies-lagos",
-            "email": "lagos@rladies.org"
+            "email": "lagos@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2090,7 +2237,8 @@
     "chapters": [
       {
         "name": "R-Ladies Bergen",
-        "id": "rladies-bergen",
+        "id": 32946570,
+        "urlname": "rladies-bergen",
         "state": "",
         "city": "Bergen",
         "members": 244,
@@ -2103,13 +2251,14 @@
           {
             "meetup": "rladies-bergen",
             "email": "bergen@rladies.org",
-            "github": "meetup-presentations_bergen"
+            "github": "rladies/meetup-presentations_bergen"
           }
         ]
       },
       {
         "name": "R-Ladies Oslo",
-        "id": "rladies-oslo",
+        "id": 27651457,
+        "urlname": "rladies-oslo",
         "state": "",
         "city": "Oslo",
         "members": 538,
@@ -2123,7 +2272,7 @@
             "meetup": "rladies-oslo",
             "twitter": "RLadies_Oslo",
             "email": "oslo@rladies.org",
-            "github": "meetup-presentations_oslo"
+            "github": "rladies/meetup-presentations_oslo"
           }
         ]
       }
@@ -2134,7 +2283,8 @@
     "chapters": [
       {
         "name": "R-Ladies Masqat",
-        "id": "rladies-masqat",
+        "id": 32964072,
+        "urlname": "rladies-masqat",
         "state": "",
         "city": "Muscat",
         "members": 117,
@@ -2146,7 +2296,8 @@
         "social_media": [
           {
             "meetup": "rladies-masqat",
-            "email": "masqat@rladies.org"
+            "email": "masqat@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2157,7 +2308,8 @@
     "chapters": [
       {
         "name": "R-Ladies Asunción",
-        "id": "rladies-asuncion",
+        "id": 33917745,
+        "urlname": "rladies-asuncion",
         "state": "",
         "city": "Asunción",
         "members": 69,
@@ -2170,7 +2322,8 @@
           {
             "meetup": "rladies-asuncion",
             "twitter": "RLadiesAsuncion",
-            "email": "asuncion@rladies.org"
+            "email": "asuncion@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2181,7 +2334,8 @@
     "chapters": [
       {
         "name": "R-Ladies Cusco",
-        "id": "rladies-cusco",
+        "id": 33704099,
+        "urlname": "rladies-cusco",
         "state": "",
         "city": "Cusco",
         "members": 22,
@@ -2193,13 +2347,15 @@
         "social_media": [
           {
             "meetup": "rladies-cusco",
-            "email": "cusco@rladies.org"
+            "email": "cusco@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Lima",
-        "id": "rladies-lima",
+        "id": 27269070,
+        "urlname": "rladies-lima",
         "state": "",
         "city": "Lima",
         "members": 1437,
@@ -2214,7 +2370,7 @@
             "twitter": "RLadiesLima",
             "email": "lima@rladies.org",
             "facebook": "RLadiesLima",
-            "github": "meetup-presentations_lima",
+            "github": "rladies/meetup-presentations_lima",
             "slack": "r-ladieslima.slack.com"
           }
         ]
@@ -2225,7 +2381,7 @@
     "country": "Poland",
     "chapters": [
       {
-        "id": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
+        "urlname": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
         "status": "active",
         "status_text": "Active",
         "social_media": [
@@ -2233,7 +2389,7 @@
             "meetup": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
             "email": "warsaw@rladies.org",
             "facebook": "RLadiesWarsaw",
-            "github": "meetup-presentations_warsaw"
+            "github": "rladies/meetup-presentations_warsaw"
           }
         ]
       }
@@ -2244,7 +2400,8 @@
     "chapters": [
       {
         "name": "R-Ladies Bucharest",
-        "id": "rladies-bucharest",
+        "id": 31859491,
+        "urlname": "rladies-bucharest",
         "state": "",
         "city": "Bucharest",
         "members": 232,
@@ -2259,7 +2416,7 @@
             "twitter": "rladiesbuchares",
             "email": "bucuresti@rladies.org",
             "facebook": "RLadiesBucharest",
-            "github": "meetup-presentations_bucharest",
+            "github": "rladies/meetup-presentations_bucharest",
             "website": "https://www.rladiesbucharest.org/",
             "slack": "https://rladiesbucharest.slack.com"
           }
@@ -2272,7 +2429,8 @@
     "chapters": [
       {
         "name": "R-Ladies Belgrade",
-        "id": "rladies-belgrade",
+        "id": 25935651,
+        "urlname": "rladies-belgrade",
         "state": "",
         "city": "Belgrade",
         "members": 455,
@@ -2285,13 +2443,15 @@
           {
             "meetup": "rladies-belgrade",
             "twitter": "RLadiesBelgrade",
-            "email": "belgrade@rladies.org"
+            "email": "belgrade@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Niš",
-        "id": "rladies-nis",
+        "id": 33409584,
+        "urlname": "rladies-nis",
         "state": "",
         "city": "Niš",
         "members": 11,
@@ -2303,13 +2463,15 @@
         "social_media": [
           {
             "meetup": "rladies-nis",
-            "email": "nis@rladies.org"
+            "email": "nis@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Novi Sad",
-        "id": "rladies-novi-sad",
+        "id": 32012873,
+        "urlname": "rladies-novi-sad",
         "state": "",
         "city": "Novi Sad",
         "members": 137,
@@ -2322,7 +2484,7 @@
           {
             "meetup": "rladies-novi-sad",
             "email": "novisad@rladies.org",
-            "github": "meetup-presentations_novi-sad"
+            "github": "rladies/meetup-presentations_novi-sad"
           }
         ]
       }
@@ -2333,7 +2495,8 @@
     "chapters": [
       {
         "name": "R-Ladies Cape Town",
-        "id": "rladies-cape-town",
+        "id": 22790744,
+        "urlname": "rladies-cape-town",
         "state": "",
         "city": "Cape Town",
         "members": 718,
@@ -2347,13 +2510,14 @@
             "meetup": "rladies-cape-town",
             "twitter": "RLadiesCapeTown",
             "email": "capetown@rladies.org",
-            "github": "meetup-presentations_capetown"
+            "github": "rladies/meetup-presentations_capetown"
           }
         ]
       },
       {
         "name": "R-Ladies Johannesburg",
-        "id": "rladies-johannesburg",
+        "id": 27651490,
+        "urlname": "rladies-johannesburg",
         "state": "",
         "city": "Johannesburg",
         "members": 754,
@@ -2367,7 +2531,7 @@
             "meetup": "rladies-johannesburg",
             "twitter": "RLadiesJozi",
             "email": "jozi@rladies.org",
-            "github": "meetup-presentations_jozi"
+            "github": "rladies/meetup-presentations_jozi"
           }
         ]
       }
@@ -2378,7 +2542,8 @@
     "chapters": [
       {
         "name": "R-Ladies Barcelona",
-        "id": "rladies-barcelona",
+        "id": 20851840,
+        "urlname": "rladies-barcelona",
         "state": "",
         "city": "Barcelona",
         "members": 592,
@@ -2393,13 +2558,14 @@
             "twitter": "RLadiesBCN",
             "email": "bcn@rladies.org",
             "periscope": "RLadiesBCN",
-            "github": "meetup-presentations_barcelona"
+            "github": "rladies/meetup-presentations_barcelona"
           }
         ]
       },
       {
         "name": "R-Ladies Bilbao",
-        "id": "rladies-bilbao",
+        "id": 31264653,
+        "urlname": "rladies-bilbao",
         "state": "",
         "city": "Bilbao",
         "members": 185,
@@ -2412,13 +2578,15 @@
           {
             "meetup": "rladies-bilbao",
             "twitter": "RLadiesBIO",
-            "email": "bilbao@rladies.org"
+            "email": "bilbao@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Madrid",
-        "id": "rladies-madrid",
+        "id": 20381623,
+        "urlname": "rladies-madrid",
         "state": "",
         "city": "Madrid",
         "members": 1601,
@@ -2432,7 +2600,7 @@
             "meetup": "rladies-madrid",
             "twitter": "RLadiesMAD",
             "email": "madrid@rladies.org",
-            "github": "meetup-presentations_madrid"
+            "github": "rladies/meetup-presentations_madrid"
           }
         ]
       }
@@ -2443,7 +2611,8 @@
     "chapters": [
       {
         "name": "R-Ladies Colombo",
-        "id": "rladies-colombo",
+        "id": 33106550,
+        "urlname": "rladies-colombo",
         "state": "",
         "city": "Colombo",
         "members": 120,
@@ -2456,7 +2625,7 @@
           {
             "meetup": "rladies-colombo",
             "email": "colombo@rladies.org",
-            "github": "rladiescolombo",
+            "github": "rladies/rladiescolombo",
             "website": "https://rladiescolombo.netlify.com/"
           }
         ]
@@ -2468,7 +2637,8 @@
     "chapters": [
       {
         "name": "R-Ladies Al-Khartum",
-        "id": "rladies-al-khartum",
+        "id": 33041212,
+        "urlname": "rladies-al-khartum",
         "state": "",
         "city": "al-Khartum",
         "members": 38,
@@ -2480,7 +2650,8 @@
         "social_media": [
           {
             "meetup": "rladies-al-khartum",
-            "email": "al-khartum@rladies.org"
+            "email": "al-khartum@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2491,7 +2662,8 @@
     "chapters": [
       {
         "name": "R-Ladies Göteborg",
-        "id": "rladies-goteborg",
+        "id": 33041322,
+        "urlname": "rladies-goteborg",
         "state": "",
         "city": "Göteborg",
         "members": 156,
@@ -2503,13 +2675,15 @@
         "social_media": [
           {
             "meetup": "rladies-goteborg",
-            "email": "goteborg@rladies.org"
+            "email": "goteborg@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Stockholm",
-        "id": "rladies-stockholm",
+        "id": 29540437,
+        "urlname": "rladies-stockholm",
         "state": "",
         "city": "Stockholm",
         "members": 379,
@@ -2523,7 +2697,7 @@
             "meetup": "rladies-stockholm",
             "twitter": "RLadiesSthlm",
             "email": "stockholm@rladies.org",
-            "github": "meetup-presentations_stockholm"
+            "github": "rladies/meetup-presentations_stockholm"
           }
         ]
       }
@@ -2534,7 +2708,8 @@
     "chapters": [
       {
         "name": "R-Ladies Lausanne",
-        "id": "rladies-lausanne",
+        "id": 26765765,
+        "urlname": "rladies-lausanne",
         "state": "",
         "city": "Lausanne",
         "members": 317,
@@ -2549,7 +2724,7 @@
             "twitter": "RLadiesLausanne",
             "email": "rladieslausanne@gmail.com",
             "facebook": "RLadiesLausanne",
-            "github": "meetup-presentations_lausanne",
+            "github": "rladies/meetup-presentations_lausanne",
             "website": "https://rladieslausanne.github.io/"
           }
         ]
@@ -2561,7 +2736,8 @@
     "chapters": [
       {
         "name": "R-Ladies Taipei",
-        "id": "rladies-taipei",
+        "id": 20871369,
+        "urlname": "rladies-taipei",
         "state": "",
         "city": "Taipei",
         "members": 1671,
@@ -2575,7 +2751,7 @@
             "meetup": "rladies-taipei",
             "email": "taipei@rladies.org",
             "facebook": "twrladies",
-            "github": "meetup-presentations_taipei"
+            "github": "rladies/meetup-presentations_taipei"
           }
         ]
       }
@@ -2586,7 +2762,8 @@
     "chapters": [
       {
         "name": "R-Ladies Tunis",
-        "id": "rladies-tunis",
+        "id": 33719616,
+        "urlname": "rladies-tunis",
         "state": "",
         "city": "Tunis",
         "members": 529,
@@ -2598,7 +2775,8 @@
         "social_media": [
           {
             "meetup": "rladies-tunis",
-            "email": "tunis@rladies.org"
+            "email": "tunis@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2609,7 +2787,8 @@
     "chapters": [
       {
         "name": "R-Ladies Ankara",
-        "id": "rladies-ankara",
+        "id": 32299165,
+        "urlname": "rladies-ankara",
         "state": "",
         "city": "Ankara",
         "members": 540,
@@ -2621,13 +2800,15 @@
         "social_media": [
           {
             "meetup": "rladies-ankara",
-            "email": "ankara@rladies.org"
+            "email": "ankara@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Eskisehir",
-        "id": "rladies-eskisehir",
+        "id": 33007398,
+        "urlname": "rladies-eskisehir",
         "state": "",
         "city": "Eskisehir",
         "members": 115,
@@ -2641,13 +2822,14 @@
             "meetup": "rladies-eskisehir",
             "twitter": "RLadiesEskisehR",
             "email": "eskisehir@rladies.org",
-            "github": "meetup-presentations_eskisehir"
+            "github": "rladies/meetup-presentations_eskisehir"
           }
         ]
       },
       {
         "name": "R-Ladies Istanbul",
-        "id": "rladies-istanbul",
+        "id": 20394109,
+        "urlname": "rladies-istanbul",
         "state": "",
         "city": "Istanbul",
         "members": 1907,
@@ -2661,7 +2843,7 @@
             "meetup": "rladies-istanbul",
             "twitter": "RLadiesIstanbul",
             "email": "istanbul@rladies.org",
-            "github": "meetup-presentations_istanbul"
+            "github": "rladies/meetup-presentations_istanbul"
           }
         ]
       }
@@ -2672,7 +2854,8 @@
     "chapters": [
       {
         "name": "R-Ladies Kyiv",
-        "id": "rladies-kyiv",
+        "id": 31174585,
+        "urlname": "rladies-kyiv",
         "state": "",
         "city": "Kyiv",
         "members": 300,
@@ -2684,13 +2867,15 @@
         "social_media": [
           {
             "meetup": "rladies-kyiv",
-            "email": "kyiv@rladies.org"
+            "email": "kyiv@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies L'viv",
-        "id": "rladies-lviv",
+        "id": 32702177,
+        "urlname": "rladies-lviv",
         "state": "",
         "city": "L'viv",
         "members": 34,
@@ -2702,7 +2887,8 @@
         "social_media": [
           {
             "meetup": "rladies-lviv",
-            "email": "lviv@rladies.org"
+            "email": "lviv@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2713,7 +2899,8 @@
     "chapters": [
       {
         "name": "R-Ladies Cambridge",
-        "id": "rladies-cambridge",
+        "id": 26556368,
+        "urlname": "rladies-cambridge",
         "state": "C3",
         "city": "Cambridge",
         "members": 284,
@@ -2727,13 +2914,15 @@
             "meetup": "rladies-cambridge",
             "twitter": "RLadiesCam",
             "email": "cambridge@rladies.org",
+            "github": "rladies/NA",
             "website": "http://rladies.org.uk/"
           }
         ]
       },
       {
         "name": "R-Ladies Coventry",
-        "id": "rladies-coventry",
+        "id": 33409671,
+        "urlname": "rladies-coventry",
         "state": "43",
         "city": "Coventry",
         "members": 133,
@@ -2745,13 +2934,15 @@
         "social_media": [
           {
             "meetup": "rladies-coventry",
-            "email": "coventry@rladies.org"
+            "email": "coventry@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Edinburgh",
-        "id": "rladies-edinburgh",
+        "id": 29370129,
+        "urlname": "rladies-edinburgh",
         "state": "U8",
         "city": "Edinburgh",
         "members": 559,
@@ -2764,13 +2955,15 @@
           {
             "meetup": "rladies-edinburgh",
             "twitter": "RLadiesEdinb",
-            "email": "edinburgh@rladies.org"
+            "email": "edinburgh@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Glasgow",
-        "id": "rladies-glasgow",
+        "id": 33880125,
+        "urlname": "rladies-glasgow",
         "state": "V2",
         "city": "Glasgow",
         "members": 41,
@@ -2782,13 +2975,15 @@
         "social_media": [
           {
             "meetup": "rladies-glasgow",
-            "email": "glasgow@rladies.org"
+            "email": "glasgow@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Lancaster",
-        "id": "rladies-lancaster",
+        "id": 29783351,
+        "urlname": "rladies-lancaster",
         "state": "H2",
         "city": "Lancaster",
         "members": 129,
@@ -2802,13 +2997,14 @@
             "meetup": "rladies-lancaster",
             "twitter": "RLadiesLancs",
             "email": "lancaster@rladies.org",
-            "github": "meetup-presentations_lancaster"
+            "github": "rladies/meetup-presentations_lancaster"
           }
         ]
       },
       {
         "name": "R-Ladies London",
-        "id": "rladies-london",
+        "id": 19474893,
+        "urlname": "rladies-london",
         "state": "17",
         "city": "London",
         "members": 1552,
@@ -2823,13 +3019,14 @@
             "twitter": "RLadiesLondon",
             "email": "london@rladies.org",
             "periscope": "RLadiesLondon",
-            "github": "meetup-presentations_london"
+            "github": "rladies/meetup-presentations_london"
           }
         ]
       },
       {
         "name": "R-Ladies Manchester",
-        "id": "rladies-manchester",
+        "id": 21314716,
+        "urlname": "rladies-manchester",
         "state": "18",
         "city": "Manchester",
         "members": 477,
@@ -2843,13 +3040,14 @@
             "meetup": "rladies-manchester",
             "twitter": "RLadiesManchest",
             "email": "manchester@rladies.org",
-            "github": "RLadiesManchester"
+            "github": "rladies/RLadiesManchester"
           }
         ]
       },
       {
         "name": "R-Ladies Newcastle",
-        "id": "rladies-newcastle",
+        "id": 31264590,
+        "urlname": "rladies-newcastle",
         "state": "41",
         "city": "Newcastle Upon Tyne",
         "members": 259,
@@ -2861,13 +3059,15 @@
         "social_media": [
           {
             "meetup": "rladies-newcastle",
-            "email": "newcastle@rladies.org"
+            "email": "newcastle@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Oxford",
-        "id": "rladies-oxford",
+        "id": 33194933,
+        "urlname": "rladies-oxford",
         "state": "K2",
         "city": "Oxford",
         "members": 29,
@@ -2879,7 +3079,8 @@
         "social_media": [
           {
             "meetup": "rladies-oxford",
-            "email": "oxford@rladies.org"
+            "email": "oxford@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -2890,7 +3091,8 @@
     "chapters": [
       {
         "name": "R-Ladies Montevideo",
-        "id": "rladies-montevideo",
+        "id": 24222373,
+        "urlname": "rladies-montevideo",
         "state": "",
         "city": "Montevideo",
         "members": 377,
@@ -2905,7 +3107,7 @@
             "twitter": "RLadiesMVD",
             "email": "montevideo@rladies.org",
             "facebook": "RLadiesMVD",
-            "github": "meetup-presentations_montevideo"
+            "github": "rladies/meetup-presentations_montevideo"
           }
         ]
       }
@@ -2916,7 +3118,8 @@
     "chapters": [
       {
         "name": "R-Ladies Ames",
-        "id": "rladies-ames",
+        "id": 21280054,
+        "urlname": "rladies-ames",
         "state": "IA",
         "city": "Ames",
         "members": 237,
@@ -2930,13 +3133,14 @@
             "meetup": "rladies-ames",
             "twitter": "RLadiesAmes",
             "email": "ames@rladies.org",
-            "github": "rladies-ames"
+            "github": "rladies/rladies-ames"
           }
         ]
       },
       {
         "name": "R-Ladies Athens",
-        "id": "rladies-athens-ga",
+        "id": 32702266,
+        "urlname": "rladies-athens-ga",
         "state": "GA",
         "city": "Athens",
         "members": 30,
@@ -2948,13 +3152,14 @@
         "social_media": [
           {
             "meetup": "rladies-athens-ga",
-            "github": "meetup-presentations_athens-ga"
+            "github": "rladies/meetup-presentations_athens-ga"
           }
         ]
       },
       {
         "name": "R-Ladies Atlanta",
-        "id": "rladies-atlanta",
+        "id": 26871250,
+        "urlname": "rladies-atlanta",
         "state": "GA",
         "city": "Atlanta",
         "members": 270,
@@ -2967,13 +3172,15 @@
           {
             "meetup": "rladies-atlanta",
             "twitter": "RLadiesAtlanta",
-            "email": "atlanta@rladies.org"
+            "email": "atlanta@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Austin",
-        "id": "rladies-austin",
+        "id": 22180445,
+        "urlname": "rladies-austin",
         "state": "TX",
         "city": "Austin",
         "members": 628,
@@ -2987,13 +3194,14 @@
             "meetup": "rladies-austin",
             "twitter": "RLadiesAustin",
             "email": "austin@rladies.org",
-            "github": "meetup-presentations_austin"
+            "github": "rladies/meetup-presentations_austin"
           }
         ]
       },
       {
         "name": "R-Ladies Baltimore",
-        "id": "rladies-baltimore",
+        "id": 27651413,
+        "urlname": "rladies-baltimore",
         "state": "MD",
         "city": "Baltimore",
         "members": 661,
@@ -3007,13 +3215,14 @@
             "meetup": "rladies-baltimore",
             "twitter": "RLadiesBmore",
             "email": "bmore@rladies.org",
-            "github": "meetup-presentations_baltimore"
+            "github": "rladies/meetup-presentations_baltimore"
           }
         ]
       },
       {
         "name": "R-Ladies Boston",
-        "id": "rladies-boston",
+        "id": 20433637,
+        "urlname": "rladies-boston",
         "state": "MA",
         "city": "Boston",
         "members": 947,
@@ -3027,14 +3236,15 @@
             "meetup": "rladies-boston",
             "twitter": "RLadiesBoston",
             "email": "boston@rladies.org",
-            "github": "meetup-presentations_boston",
+            "github": "rladies/meetup-presentations_boston",
             "website": "https://rladies.github.io/Boston/"
           }
         ]
       },
       {
         "name": "R-Ladies Boulder",
-        "id": "rladies-boulder",
+        "id": 28789217,
+        "urlname": "rladies-boulder",
         "state": "CO",
         "city": "Boulder",
         "members": 166,
@@ -3048,13 +3258,14 @@
             "meetup": "rladies-boulder",
             "twitter": "RLadiesBoulder",
             "email": "boulder@rladies.org",
-            "github": "meetup-presentations_boulder"
+            "github": "rladies/meetup-presentations_boulder"
           }
         ]
       },
       {
         "name": "R-Ladies Buffalo",
-        "id": "rladies-buffalo",
+        "id": 24100709,
+        "urlname": "rladies-buffalo",
         "state": "NY",
         "city": "Buffalo",
         "members": 28,
@@ -3067,13 +3278,15 @@
           {
             "meetup": "rladies-buffalo",
             "twitter": "RLadiesBuff",
-            "email": "buffalo@rladies.org"
+            "email": "buffalo@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Charlottesville",
-        "id": "rladies-charlottesville",
+        "id": 26004745,
+        "urlname": "rladies-charlottesville",
         "state": "VA",
         "city": "Charlottesville",
         "members": 414,
@@ -3087,13 +3300,14 @@
             "meetup": "rladies-charlottesville",
             "twitter": "rladiescville",
             "email": "charlottesville@rladies.org",
-            "github": "meetup-presentations_charlottesville"
+            "github": "rladies/meetup-presentations_charlottesville"
           }
         ]
       },
       {
         "name": "R-Ladies Chicago",
-        "id": "rladies-chicago",
+        "id": 24848073,
+        "urlname": "rladies-chicago",
         "state": "IL",
         "city": "Chicago",
         "members": 1257,
@@ -3107,13 +3321,14 @@
             "meetup": "rladies-chicago",
             "twitter": "RLadiesChicago",
             "email": "chicago@rladies.org",
-            "github": "meetup-presentations_chicago"
+            "github": "rladies/meetup-presentations_chicago"
           }
         ]
       },
       {
         "name": "R-Ladies Columbus",
-        "id": "rladies-columbus",
+        "id": 20600376,
+        "urlname": "rladies-columbus",
         "state": "OH",
         "city": "Columbus",
         "members": 892,
@@ -3127,13 +3342,14 @@
             "meetup": "rladies-columbus",
             "twitter": "RLadiesColumbus",
             "email": "columbus@rladies.org",
-            "github": "meetup-presentations_columbus"
+            "github": "rladies/meetup-presentations_columbus"
           }
         ]
       },
       {
         "name": "R-Ladies Dallas",
-        "id": "rladies-dallas",
+        "id": 27724373,
+        "urlname": "rladies-dallas",
         "state": "TX",
         "city": "Dallas",
         "members": 513,
@@ -3146,13 +3362,15 @@
           {
             "meetup": "rladies-dallas",
             "twitter": "DallasRladies",
-            "email": "dallas@rladies.org"
+            "email": "dallas@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Washington D.C.",
-        "id": "rladies-dc",
+        "id": 21510971,
+        "urlname": "rladies-dc",
         "state": "DC",
         "city": "Washington",
         "members": 2067,
@@ -3166,13 +3384,14 @@
             "meetup": "rladies-dc",
             "twitter": "RLadiesDC",
             "email": "dc@rladies.org",
-            "github": "meetup-presentations_dc"
+            "github": "rladies/meetup-presentations_dc"
           }
         ]
       },
       {
         "name": "R-Ladies Denver",
-        "id": "rladies-denver",
+        "id": 32308998,
+        "urlname": "rladies-denver",
         "state": "CO",
         "city": "Denver",
         "members": 93,
@@ -3183,13 +3402,15 @@
         "status_text": "Active",
         "social_media": [
           {
-            "meetup": "rladies-denver"
+            "meetup": "rladies-denver",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Des Moines",
-        "id": "rladies-des-moines",
+        "id": 29929892,
+        "urlname": "rladies-des-moines",
         "state": "IA",
         "city": "Des Moines",
         "members": 25,
@@ -3201,13 +3422,15 @@
         "social_media": [
           {
             "meetup": "rladies-des-moines",
-            "email": "desmoines@rladies.org"
+            "email": "desmoines@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies East Lansing",
-        "id": "rladies-east-lansing",
+        "id": 26829576,
+        "urlname": "rladies-east-lansing",
         "state": "MI",
         "city": "East Lansing",
         "members": 507,
@@ -3222,7 +3445,7 @@
             "twitter": "RLadiesELansing",
             "email": "eastlansing@rladies.org",
             "facebook": "rladieseastlansing",
-            "github": "rladies-eastlansing",
+            "github": "rladies/rladies-eastlansing",
             "website": "https://rladies-eastlansing.github.io",
             "slack": "https://rladies-eastlansing.slack.com"
           }
@@ -3230,7 +3453,8 @@
       },
       {
         "name": "R-Ladies El Paso",
-        "id": "rladies-el-paso",
+        "id": 31679846,
+        "urlname": "rladies-el-paso",
         "state": "TX",
         "city": "El Paso",
         "members": 61,
@@ -3244,14 +3468,15 @@
             "meetup": "rladies-el-paso",
             "twitter": "RLadiesElPaso",
             "email": "elpaso@rladies.org",
-            "github": "meetup-presentations_el-paso",
+            "github": "rladies/meetup-presentations_el-paso",
             "slack": "r-ladies-el-paso.slack.com"
           }
         ]
       },
       {
         "name": "R-Ladies Fayetteville",
-        "id": "rladies-fayetteville",
+        "id": 32478325,
+        "urlname": "rladies-fayetteville",
         "state": "AR",
         "city": "Fayetteville",
         "members": 111,
@@ -3263,13 +3488,15 @@
         "social_media": [
           {
             "meetup": "rladies-fayetteville",
-            "email": "fayetteville@rladies.org"
+            "email": "fayetteville@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Gainesville",
-        "id": "rladies-gainesville",
+        "id": 29096058,
+        "urlname": "rladies-gainesville",
         "state": "FL",
         "city": "Gainesville",
         "members": 343,
@@ -3282,13 +3509,15 @@
           {
             "meetup": "rladies-gainesville",
             "twitter": "RLadiesGNV",
-            "email": "gainesville@rladies.org"
+            "email": "gainesville@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Highland Park",
-        "id": "rladies-highland-park",
+        "id": 31858594,
+        "urlname": "rladies-highland-park",
         "state": "NJ",
         "city": "Highland Park",
         "members": 70,
@@ -3300,13 +3529,15 @@
         "social_media": [
           {
             "meetup": "rladies-highland-park",
-            "email": "highlandpark@rladies.org"
+            "email": "highlandpark@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Houston",
-        "id": "rladies-houston",
+        "id": 30666379,
+        "urlname": "rladies-houston",
         "state": "TX",
         "city": "Houston",
         "members": 94,
@@ -3318,13 +3549,15 @@
         "social_media": [
           {
             "meetup": "rladies-houston",
-            "email": "houston@rladies.org"
+            "email": "houston@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Iowa City",
-        "id": "rladies-iowa-city",
+        "id": 29865126,
+        "urlname": "rladies-iowa-city",
         "state": "IA",
         "city": "Iowa City",
         "members": 109,
@@ -3336,13 +3569,15 @@
         "social_media": [
           {
             "meetup": "rladies-iowa-city",
-            "email": "iowacity@rladies.org"
+            "email": "iowacity@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Irvine",
-        "id": "rladies-irvine",
+        "id": 27819387,
+        "urlname": "rladies-irvine",
         "state": "CA",
         "city": "Irvine",
         "members": 459,
@@ -3356,7 +3591,7 @@
             "meetup": "rladies-irvine",
             "twitter": "RLadiesIrvine",
             "email": "irvine@rladies.org",
-            "github": "meetup-presentations_irvine",
+            "github": "rladies/meetup-presentations_irvine",
             "website": "http://www.rladiesirvine.org/",
             "slack": "http://bit.ly/SoCal-RUG-Slack"
           }
@@ -3364,7 +3599,8 @@
       },
       {
         "name": "R-Ladies Kansas City",
-        "id": "rladies-kansas-city",
+        "id": 32426227,
+        "urlname": "rladies-kansas-city",
         "state": "MO",
         "city": "Kansas City",
         "members": 64,
@@ -3377,13 +3613,14 @@
           {
             "meetup": "rladies-kansas-city",
             "email": "kansascity@rladies.org",
-            "github": "meetup-presentations_kansas-city"
+            "github": "rladies/meetup-presentations_kansas-city"
           }
         ]
       },
       {
         "name": "R-Ladies Los Angeles",
-        "id": "rladies-la",
+        "id": 20382018,
+        "urlname": "rladies-la",
         "state": "CA",
         "city": "Los Angeles",
         "members": 620,
@@ -3397,13 +3634,14 @@
             "meetup": "rladies-la",
             "twitter": "RLadiesLA",
             "email": "la@rladies.org",
-            "github": "meetup-presentations_la"
+            "github": "rladies/meetup-presentations_la"
           }
         ]
       },
       {
         "name": "R-Ladies Lexington Park",
-        "id": "rladies-lexington-park",
+        "id": 32611075,
+        "urlname": "rladies-lexington-park",
         "state": "MD",
         "city": "Lexington Park",
         "members": 35,
@@ -3415,13 +3653,15 @@
         "social_media": [
           {
             "meetup": "rladies-lexington-park",
-            "email": "lexingtonpark@rladies.org"
+            "email": "lexingtonpark@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Miami",
-        "id": "rladies-miami",
+        "id": 24259185,
+        "urlname": "rladies-miami",
         "state": "FL",
         "city": "Miami",
         "members": 1104,
@@ -3435,13 +3675,14 @@
             "meetup": "rladies-miami",
             "twitter": "RLadiesMiami",
             "email": "miami@rladies.org",
-            "github": "meetup-presentations_miami"
+            "github": "rladies/meetup-presentations_miami"
           }
         ]
       },
       {
         "name": "R-Ladies Mid-Mo",
-        "id": "rladies-mid-mo",
+        "id": 33107363,
+        "urlname": "rladies-mid-mo",
         "state": "MO",
         "city": "Columbia",
         "members": 85,
@@ -3453,13 +3694,15 @@
         "social_media": [
           {
             "meetup": "rladies-mid-mo",
-            "email": "mid-missouri@rladies.org"
+            "email": "mid-missouri@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Nashville",
-        "id": "rladies-nashville",
+        "id": 20493986,
+        "urlname": "rladies-nashville",
         "state": "TN",
         "city": "Nashville",
         "members": 507,
@@ -3473,13 +3716,14 @@
             "meetup": "rladies-nashville",
             "twitter": "RLadiesNash",
             "email": "nashville@rladies.org",
-            "github": "rladies-nashville"
+            "github": "rladies/rladies-nashville"
           }
         ]
       },
       {
         "name": "R-Ladies New Orleans",
-        "id": "rladies-new-orleans",
+        "id": 33061717,
+        "urlname": "rladies-new-orleans",
         "state": "LA",
         "city": "New Orleans",
         "members": 37,
@@ -3490,13 +3734,15 @@
         "status_text": "Active",
         "social_media": [
           {
-            "meetup": "rladies-new-orleans"
+            "meetup": "rladies-new-orleans",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies New York",
-        "id": "rladies-newyork",
+        "id": 20346526,
+        "urlname": "rladies-newyork",
         "state": "NY",
         "city": "New York",
         "members": 1980,
@@ -3510,14 +3756,15 @@
             "meetup": "rladies-newyork",
             "twitter": "RLadiesNYC",
             "email": "nyc@rladies.org",
-            "github": "meetup-presentations_newyork",
+            "github": "rladies/meetup-presentations_newyork",
             "website": "http://www.rladiesnyc.org/"
           }
         ]
       },
       {
         "name": "R-Ladies Orlando",
-        "id": "rladies-orlando",
+        "id": 24292488,
+        "urlname": "rladies-orlando",
         "state": "FL",
         "city": "Orlando",
         "members": 326,
@@ -3531,13 +3778,14 @@
             "meetup": "rladies-orlando",
             "twitter": "RLadiesOrlando",
             "email": "orlando@rladies.org",
-            "github": "meetup-presentations_orlando"
+            "github": "rladies/meetup-presentations_orlando"
           }
         ]
       },
       {
         "name": "R-Ladies Oxford Ohio",
-        "id": "rladies-oxford-ohio",
+        "id": 33041271,
+        "urlname": "rladies-oxford-ohio",
         "state": "OH",
         "city": "Oxford",
         "members": 48,
@@ -3549,13 +3797,15 @@
         "social_media": [
           {
             "meetup": "rladies-oxford-ohio",
-            "email": "oxford-ohio@rladies.org"
+            "email": "oxford-ohio@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Pasadena",
-        "id": "rladies-pasadena",
+        "id": 28280039,
+        "urlname": "rladies-pasadena",
         "state": "CA",
         "city": "Pasadena",
         "members": 95,
@@ -3567,13 +3817,15 @@
         "social_media": [
           {
             "meetup": "rladies-pasadena",
-            "email": "pasadena@rladies.org"
+            "email": "pasadena@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies PDX",
-        "id": "rladies-pdx",
+        "id": 25057217,
+        "urlname": "rladies-pdx",
         "state": "OR",
         "city": "Portland",
         "members": 246,
@@ -3587,13 +3839,14 @@
             "meetup": "rladies-pdx",
             "twitter": "RLadiesPDX",
             "email": "pdx@rladies.org",
-            "github": "meetup-presentations_portland"
+            "github": "rladies/meetup-presentations_portland"
           }
         ]
       },
       {
         "name": "R-Ladies Philly",
-        "id": "rladies-philly",
+        "id": 26229746,
+        "urlname": "rladies-philly",
         "state": "PA",
         "city": "Philadelphia",
         "members": 1360,
@@ -3607,14 +3860,15 @@
             "meetup": "rladies-philly",
             "twitter": "RLadiesPhilly",
             "email": "philly@rladies.org",
-            "github": "meetup-presentations_philadelphia",
+            "github": "rladies/meetup-presentations_philadelphia",
             "website": "http://www.rladiesphilly.org/"
           }
         ]
       },
       {
         "name": "R-Ladies Riverside",
-        "id": "rladies-riverside",
+        "id": 32522592,
+        "urlname": "rladies-riverside",
         "state": "CA",
         "city": "Riverside",
         "members": 348,
@@ -3628,13 +3882,14 @@
             "meetup": "rladies-riverside",
             "twitter": "RLadiesRiversd",
             "email": "riverside@rladies.org",
-            "github": "meetup-presentations_riverside"
+            "github": "rladies/meetup-presentations_riverside"
           }
         ]
       },
       {
         "name": "R-Ladies RTP",
-        "id": "rladies-rtp",
+        "id": 20317472,
+        "urlname": "rladies-rtp",
         "state": "NC",
         "city": "Durham",
         "members": 801,
@@ -3648,13 +3903,14 @@
             "meetup": "rladies-rtp",
             "twitter": "RLadiesRTP",
             "email": "rtp@rladies.org",
-            "github": "meetup-presentations_rtp"
+            "github": "rladies/meetup-presentations_rtp"
           }
         ]
       },
       {
         "name": "R-Ladies San Diego",
-        "id": "rladies-san-diego",
+        "id": 24506595,
+        "urlname": "rladies-san-diego",
         "state": "CA",
         "city": "San Diego",
         "members": 608,
@@ -3669,13 +3925,14 @@
             "twitter": "RLadiesSanDiego",
             "email": "sandiego@rladies.org",
             "facebook": "rladiessandiego",
-            "github": "meetup-presentations_sandiego"
+            "github": "rladies/meetup-presentations_sandiego"
           }
         ]
       },
       {
         "name": "R-Ladies San Francisco",
-        "id": "rladies-san-francisco",
+        "id": 5190472,
+        "urlname": "rladies-san-francisco",
         "state": "CA",
         "city": "San Francisco",
         "members": 1641,
@@ -3690,13 +3947,14 @@
             "twitter": "RladiesSF",
             "email": "sf@rladies.org",
             "periscope": "RLadiesSF",
-            "github": "meetup-presentations_sanfrancisco"
+            "github": "rladies/meetup-presentations_sanfrancisco"
           }
         ]
       },
       {
         "name": "R-Ladies Santa Barbara",
-        "id": "rladies-santa-barbara",
+        "id": 27283931,
+        "urlname": "rladies-santa-barbara",
         "state": "CA",
         "city": "Santa Barbara",
         "members": 439,
@@ -3710,13 +3968,14 @@
             "meetup": "rladies-santa-barbara",
             "twitter": "RLadiesSB",
             "email": "santabarbara@rladies.org",
-            "github": "meetup-presentations_santabarbara"
+            "github": "rladies/meetup-presentations_santabarbara"
           }
         ]
       },
       {
         "name": "R-Ladies Seattle",
-        "id": "rladies-seattle",
+        "id": 26537030,
+        "urlname": "rladies-seattle",
         "state": "WA",
         "city": "Seattle",
         "members": 819,
@@ -3730,7 +3989,7 @@
             "meetup": "rladies-seattle",
             "twitter": "RLadiesSeattle",
             "email": "seattle@rladies.org",
-            "github": "rladies-seattle",
+            "github": "rladies/rladies-seattle",
             "website": "https://rladiesseattle.org/",
             "slack": "https://rladies-sea.slack.com/"
           }
@@ -3738,7 +3997,8 @@
       },
       {
         "name": "R-Ladies St. Louis",
-        "id": "rladies-st-louis",
+        "id": 25681976,
+        "urlname": "rladies-st-louis",
         "state": "MO",
         "city": "Saint Louis",
         "members": 724,
@@ -3751,13 +4011,14 @@
           {
             "meetup": "rladies-st-louis",
             "twitter": "RLadiesSTL",
-            "github": "meetup-presentations_stlouis"
+            "github": "rladies/meetup-presentations_stlouis"
           }
         ]
       },
       {
         "name": "R-Ladies Syracuse",
-        "id": "rladies-syracuse",
+        "id": 33061635,
+        "urlname": "rladies-syracuse",
         "state": "NY",
         "city": "Syracuse",
         "members": 7,
@@ -3769,13 +4030,15 @@
         "social_media": [
           {
             "meetup": "rladies-syracuse",
-            "email": "syracuse@rladies.org"
+            "email": "syracuse@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Tampa",
-        "id": "rladies-tampa",
+        "id": 27797804,
+        "urlname": "rladies-tampa",
         "state": "FL",
         "city": "Tampa",
         "members": 313,
@@ -3789,13 +4052,14 @@
             "meetup": "rladies-tampa",
             "twitter": "RLadiesTampa",
             "email": "tampa@rladies.org",
-            "github": "meetup-presentations_tampa"
+            "github": "rladies/meetup-presentations_tampa"
           }
         ]
       },
       {
         "name": "R-Ladies Twin Cities",
-        "id": "rladies-tc",
+        "id": 18529799,
+        "urlname": "rladies-tc",
         "state": "MN",
         "city": "Minneapolis",
         "members": 398,
@@ -3808,13 +4072,15 @@
           {
             "meetup": "rladies-tc",
             "twitter": "RLadiesTC",
-            "email": "minneapolis-saintpaul@rladies.org"
+            "email": "minneapolis-saintpaul@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       },
       {
         "name": "R-Ladies Tucson AZ",
-        "id": "rladies-tucson-az",
+        "id": 26598934,
+        "urlname": "rladies-tucson-az",
         "state": "AZ",
         "city": "Tucson",
         "members": 354,
@@ -3827,7 +4093,8 @@
           {
             "meetup": "rladies-tucson-az",
             "twitter": "RLadiesTucson",
-            "email": "tuscon@rladies.org"
+            "email": "tuscon@rladies.org",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -3838,7 +4105,8 @@
     "chapters": [
       {
         "name": "R-Ladies Ha Noi",
-        "id": "rladies-ha-noi",
+        "id": 33361775,
+        "urlname": "rladies-ha-noi",
         "state": "",
         "city": "Ha Noi",
         "members": 39,
@@ -3849,7 +4117,8 @@
         "status_text": "Active",
         "social_media": [
           {
-            "meetup": "rladies-ha-noi"
+            "meetup": "rladies-ha-noi",
+            "github": "rladies/NA"
           }
         ]
       }
@@ -3860,7 +4129,8 @@
     "chapters": [
       {
         "name": "R-Ladies Remote",
-        "id": "rladies-remote",
+        "id": 28887085,
+        "urlname": "rladies-remote",
         "state": "CA",
         "city": "San Francisco",
         "members": 345,
@@ -3874,6 +4144,7 @@
             "meetup": "rladies-remote",
             "twitter": "rladiesremote",
             "email": "remote@rladies.org",
+            "github": "rladies/NA",
             "slack": "https://rladies-remote.slack.com"
           }
         ]
