@@ -50,7 +50,8 @@ rladies_groups <- jsonlite::read_json(
   unnest(chapters) %>% 
   filter(status == "active") %>% 
   transmute(group = name,
-         urlname = id,
+         urlname,
+         chapter_id = id,
          lat, 
          lon, 
          timezone)

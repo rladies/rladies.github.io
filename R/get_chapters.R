@@ -38,8 +38,9 @@ chapters <- read.table(
   select(-State.Region, -City, -Organizers) %>% 
   select(urlname, Status, Country, everything()) %>% 
   mutate(across(-all_of(c("Website", "Slack")), basename)) %>% 
-  mutate(across(where(is.character), change_empty))
-names(chapters) <- tolower(names(chapters))
+  mutate(across(where(is.character), change_empty)) %>% 
+  rename_all(tolower) %>% 
+  mutate(github = paste0("rladies/", github))
 
 some_cols <- names(chapters)[-1:-3]
 
@@ -49,7 +50,8 @@ to_file <- chapters %>%
   nest_by(across(-all_of(some_cols)), .key = "social_media") %>% 
   ungroup() %>% 
   transmute(name, 
-            id = urlname,
+            id,
+            urlname,
             country,
             state, 
             city,
