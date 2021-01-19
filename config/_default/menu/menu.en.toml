@@ -67,7 +67,7 @@
     parent = "activities"
 [[main]]
     name = "Community Slack"
-    url = "/activities/community-slack/"
+    url = "https://rladies-community-slack.herokuapp.com/"
     weight = 7
     parent = "activities"
 [[main]]

@@ -11,12 +11,12 @@ title: "Get Involved"
 
 * Support your local chapters with venue space and funding for food and beverages.  
 * Support your local R-Ladies speakers by inviting them to talk – no excuses for unequal conference speaker ratios.  
-* Use the R-Ladies directory here.  
-* Join the R-Ladies directory here.  
+* Use the [R-Ladies directory](/directory).  
+* Join the [R-Ladies directory](/directory) .  
 * Encourage coding women to be part of R-Ladies.  
 * Share code (R-Ladies Global Github).  
 * Inspire and support others.  
-* Join the community slack here.  
+* Join the [community slack](https://rladies-community-slack.herokuapp.com/).  
 * Teach.  
 * Blog.  
 * Tweet, Retweet and follow @RLadiesGlobal and R-Ladies chapter accounts.  
