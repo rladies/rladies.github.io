@@ -35,7 +35,7 @@ force_utc <- function(datetime, tz){
 `%||%` <- function(a, b) ifelse(!is.na(a), a, b)
 
 get_events_pb <- function(x){
-  k <- get_events(x, "upcoming")
+  k <- get_events(x, c( "upcoming"))
   k$urlname <- x
   k
 }
@@ -58,7 +58,8 @@ rladies_groups <- jsonlite::read_json(
   
 
 cat("\n\n Downloading chapter events\n")
-new_events <- map_df(rladies_groups$urlname, get_events_pb)
+new_events <- map_df(rladies_groups$urlname, get_events_pb) %>% 
+  select(-resource)
 
 # Read in existing json data
 existing_events <- jsonlite::read_json(
@@ -73,7 +74,7 @@ events <- new_events %>%
   left_join(rladies_groups) %>% 
   transmute(
     id,
-    calendarId = get_chapter(link),
+    chapter_id,
     title = name, 
     body = sprintf(
       "<i class='fa fa-users'></i>&emsp;%s<br><br>%s...  <br><br><center><a href='%s' target='_blank'><buttonr>Event page</buttonr></center></a>", 
@@ -93,9 +94,9 @@ events <- new_events %>%
     lon = venue_lon %||% lon,
     description
   ) %>%  
-  select(-ds) %>% 
-  bind_rows(existing_events) %>% 
-  distinct()
+  select(-ds)# %>%
+  # bind_rows(existing_events) %>% 
+  # distinct()
 
 cat("\t writing 'data/events.json'\n")
 jsonlite::write_json(x = events, 
