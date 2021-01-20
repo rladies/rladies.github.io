@@ -8,7 +8,7 @@ tags:
 - online-meetups
 categories:
 - r-ladies
-output: html_document
+always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -44,7 +44,7 @@ chapters <- groups %>%
   filter(str_detect(tolower(name), "r-ladies"))
 ```
 ```{r chapters_local, echo=FALSE, message=FALSE}
-chapters <- read_csv("../data/chapters.csv")
+chapters <- read_csv("chapters.csv")
 ```
 
 We want to avoid to exceed the API request limit so we'll use the [solution](https://github.com/rladies/meetupr/issues/30) posted by Jesse Mostipak.
@@ -74,7 +74,7 @@ all_events <- map_dfr(events,
 ```
 
 ```{r all_events_local, echo=FALSE, message=FALSE}
-all_events <- read_csv("../data/all_events.csv")
+all_events <- read_csv("all_events.csv")
 ```
 
 

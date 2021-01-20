@@ -15,9 +15,7 @@ categories:
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 Como cada 8 de marzo, una vez más se celebra el _Día Internacional de la Mujer (IWD/8M)_.  Aunque dicha fecha tiene distintas formas de celebración, mantiene un punto en común: la lucha por la igualdad de género. El año pasado, en 2018, un grupo de entusiastas R-Ladies tuvo la idea de visibilizar a las grandes mujeres que  forman parte del directorio de R-Ladies, mediante tweets posteados durante todo el 8 de marzo. Por lo que, en Febrero de este año, 2019, Yanina propuso continuar esta gran iniciativa, pero en esta oportunidad twittear sobre cada uno de los capítulos de R-Ladies. 
 
@@ -58,10 +56,11 @@ El enlace más importante fue el [Blog de R-Ladies que explica la Acción de Twi
 La lista de los capítulos actuales contenía la información del país, ciudad, nombre, organizadores, estado (activo o no) y las formas de contacto (correo, sitio web, meetup y redes sociales) de todos los capítulos de R-ladies. 
 Esta lista se convirtió en nuestra fuente de datos primarios. También usamos una conjunto de datos de ciudades geolocalizadas para hacer los mapas. Nuestro objetivo era lograr una imágen con los siguientes componentes:
 
-![](../../image/Chapter_SantaRosa.png) 
+![](Chapter_SantaRosa.png) 
 
 
-```
+
+```r
 library(readxl)
 library(magick)
 library(purrr)
@@ -298,10 +297,11 @@ for (i in 1:nrow(CCRL)) { #Para todos los capítulos
 
 For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:
 
-![](../../image/Chapter_Concepción.png) 
+![](Chapter_Concepción.png) 
 
 
-```
+
+```r
 #Capítulos sin datos
 
 
@@ -385,7 +385,6 @@ for (i in 1:nrow(SinData)) { #Line for all the chapters
  #Guarda la imágen final
   image_write(template, paste("Chapter",str_replace_all(SinData$City[i], fixed(" "), ""),".png"), format= "png")
 }
-
 ```
 
 
@@ -393,8 +392,8 @@ for (i in 1:nrow(SinData)) { #Line for all the chapters
 
 Este código para generar el texto de los tweets se basa en el código de Maëlle Salmon utilizado durante la primeta campaña realizada durante el 2018 presente en el  blog de R-Ladies que mencionamos al inicio de este post.
 
-```
 
+```r
 # Plantillas
  
 templates <- c("Did you know that there is an adjective chapter in X? They’d love for you to visit!",
@@ -477,9 +476,7 @@ CCRLTw <- dplyr::mutate(SinData,
 tweets <- dplyr::select(CCRLTw, City, tweet, picture) %>%
   arrange(City)
 readr::write_excel_csv2(tweets, path = "ready_tweets_nodata.csv")
-
 ```
 
 Autoras: "Como fue contado por Yanina Bellini, Patricia Loto y Divya Seernani; con notas de Roxana Noelia Villafañe y Gabriela De Queiroz"
 
-[English version](https://blog.rladies.org/post/blog_iwdtwitter_2019/)

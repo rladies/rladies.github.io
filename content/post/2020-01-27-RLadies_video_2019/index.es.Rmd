@@ -8,7 +8,7 @@ tags:
 - spanish
 categories:
 - R-Ladies
-output: html_document
+always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -105,7 +105,7 @@ _"R-Ladies 2019 en números: Más de 60.000 integrantes de 50 países de todo el
 
 Para ilustrar esta parte del mensaje, el mapa del mundo con la localización de todos los capítulos es una imagen poderosa y que ya hemos utilizado en otras campañas.  Me gustó mucho el [mapa](https://github.com/rladiescolombo/R-Ladies_world_map) que hicieron las [R-Ladies Colombo](https://rladiescolombo.netlify.com/) para presentar su capítulo asi que tomé de base su mapa para armar el del video, actualizando la información al 27/12/2019 y asegurandome que todos los capítulos cuenten con Latitud y Longitud para que sean mapeados.  
 
-![](../image/MapaVideo.png)
+![](MapaVideo.png)
 
 
 Este es el código completo para hacerlo:
@@ -189,7 +189,7 @@ rladies %>%
 La imágen seleccionada para acompañar esta parte fue tomada en LatinR 2019: ¡¡ estabamos preparandonos para la foto grupal de R-Ladies y sin darnos cuenta formamos un corazón !! (que fue capturado por el ojo y la cámara de [TuQmano](https://twitter.com/TuQmano)).  La imagen representa el crecimiento de R-Ladies en otras regiones del mundo más allá del norte y el código que nos mueve a trabajar en equipo por el bienestar de R-Ladies y de la comunidad en general.
 
 
-![](../image/corazon.png)
+![](corazon.png)
 
 El texto de la escena quedó armado de la siguiente manera:
 
@@ -205,7 +205,7 @@ El texto que acompaña la escena quedó así:
 _¡Feliz año nuevo a todas las R-Ladies y aliados! Más información en rladies punto org_
 
 
-![](../image/placafinal.png) 
+![](placafinal.png) 
 
 ### Idioma
 
@@ -226,4 +226,4 @@ La exportación posterior del video se pasó al equipo Global para su difusión 
 
 Autoras: "Yanina Bellini Saibene, Alejandra Bellini y Laura Acion"
 
-[English version](https://blog.rladies.org/post/rladies_video_2019/)
+[English version](/post/rladies_video_2019/index.en.html)

@@ -14,9 +14,7 @@ categories:
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 
  
@@ -54,7 +52,8 @@ Text Processing (including non-English charectors) is explained [here](https://w
 ## How the Pictures were created
 The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies. It became our primary data source.  We also used a list of cities geolocated for made the maps.  Our goal was to achieve an image with the following components:
 
-![](../../image/ExistingChapters.jpg)
+![](ExistingChapters.jpg)
+
 
 
 
@@ -282,14 +281,13 @@ for (i in 1:nrow(CCRL)) { #Line for all the chapters
   image_write(template, paste("Chapter",str_replace_all(CCRL$City[i], fixed(" "), ""),".png"), format= "png")
  
 }
-
-
 ```
 
 
 For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:
 
-![](../../image/NewChapterPrototype.png)
+![](NewChapterPrototype.png)
+
 
 ```r
 #Chapters without data
@@ -376,12 +374,11 @@ for (i in 1:nrow(SinData)) { #Line for all the chapters
   #Save the final picture
   image_write(template, paste("Chapter",str_replace_all(SinData$City[i], fixed(" "), ""),".png"), format= "png")
 }
- 
-
 ```
 
 ## How the Tweets were created
-```{r eval=FALSE}
+
+```r
 #Base code from Ma?lle and the post in R-Ladies blog
  
 # templates
@@ -464,7 +461,6 @@ CCRLTw <- dplyr::mutate(SinData,
 tweets <- dplyr::select(CCRLTw, City, tweet, picture) %>%
   arrange(City)
 readr::write_excel_csv2(tweets, path = "ready_tweets_nodata.csv")
-
 ```
 
 Authors: "As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz"

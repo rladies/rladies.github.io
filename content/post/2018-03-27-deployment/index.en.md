@@ -17,7 +17,7 @@ categories:
 
 ### As told by Kelly O'Briant
 
-On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [\@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! In this blog post, we'll cover the deployment and monitoring stages of our project. You can also read the [Part 1](https://blog.rladies.org/post/ideation_and_creation/).
+On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [\@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! In this blog post, we'll cover the deployment and monitoring stages of our project. You can also read the [Part 1](/post/ideation_and_creation/).
 
 ## Recap
 
@@ -114,4 +114,4 @@ Twitter and running twitter bots is still mostly a mystery to me. Is it an art, 
 
 ## Next Up: Part 3
 
-Continue Reading Part 3: [The Grand Conclusion](https://blog.rladies.org/post/conclusion/)!
+Continue Reading Part 3: [The Grand Conclusion](/post/conclusion/)!
