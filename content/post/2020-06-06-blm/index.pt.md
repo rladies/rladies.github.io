@@ -11,9 +11,7 @@ categories:
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 
 Como organizações comprometidas em ampliar a diversidade e a inclusão em nossa comunidade, apoiamos o movimento #BlackLivesMatter ou #VidasNegrasImportam e nos unimos a quem exige justiça frente a opressão sistêmica. O racismo generalizado afeta negativamente a participação das pessoas negras na sociedade. Os eventos atuais nos EUA ecoam o que aconteceu e continua acontecendo com pessoas que fazem parte de minorias em todo o mundo. Estamos agregando recursos e adotando ações deliberadas para amplificar as vozes de pessoas negras, indígenas e de outros grupos não-brancos da comunidade R, agora e no futuro.
 

@@ -8,7 +8,6 @@ tags:
 - spanish
 categories:
 - r-ladies
-output: html_document
 ---
 
 ```{r setup, include=FALSE}
