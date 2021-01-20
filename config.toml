@@ -1,15 +1,24 @@
 baseURL = "http://blog.rladies.org/"
 languageCode = "en-us"
-title = "R-Ladies"
-theme = "minimal"
+title = "R-Ladies Blog"
+theme = "jane"
 relativeURLs = true
 publishDir = "public"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 #disqusShortname = "username" # delete this to disable disqus comments
 #googleAnalytics = ""
 
+copyright = "R-Ladies CC-BY"
+pygmentsUseClasses = true
+enableEmoji = true
+
+# Getting raw html to render 
+[markup] 
+  defaultMarkdownHandler = "blackfriday"
+  
 [params]
     author = "R-Ladies Global"
+    since = 2012
     profilePic = "https://raw.githubusercontent.com/rladies/starter-kit/master/logo/R-LadiesGlobal_RBG_online_LogoWithText.png"
     horizontalPic = "https://raw.githubusercontent.com/rladies/starter-kit/master/logo/R-LadiesGlobal_RBG_online_LogoWithText_Horizontal.png"
     description = "R-Ladies Global Blog"
@@ -21,7 +30,20 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     highlight = true
     highlightStyle = "solarized-dark"
     highlightLanguages = ["r", "python", "bash"]
-    copyright = "&copy; R-Ladies 2012 CC-BY. Content created by [Hugo](https://gohugo.io/) and [Netlify](https://www.netlify.com/)"
+    showMenuLanguageChooser = true
+
+  # use public git repo url to link lastmod git commit, enableGitInfo should be true.
+  # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
+  [params.gitInfo]
+    gitRepo = "https://github.com/rladies/blog"
+    showCommitMessage = false
+
+customCSS = ["css/syntax_lovelace.css"] 
+
+[sitemap]                 # essential                     # 必需
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [[menu.main]]
     url = "https://rladies.org/"
@@ -32,32 +54,31 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "/post/"
     name = "Posts"
     weight = 2
-
-# Social icons to be shown on the right-hand side of the navigation bar
-# The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
-
-[[menu.icon]]
-    url = "mailto:info@rladies.org"
-    name = "envelope-o"
-    weight = 1
-
-[[menu.icon]]
-    url = "https://github.com/rladies/"
-    name = "github"
-    weight = 2
-
-[[menu.icon]]
-    url = "https://twitter.com/RLadiesGlobal/"
-    name = "twitter"
-    weight = 3
     
-[[menu.icon]]
-    url = "https://www.meetup.com/topics/r-ladies/all/"
-    name = "meetup"
-    weight = 4
+defaultContentLanguage = "en"  # Default language to use (if you setup multilingual support)
+[Languages.en]
+  languageCode = "en"
+  languageName = "English"
+  
+[Languages.fr] 
+  languageCode = "fr"
+  languageName = "Français"
 
-[[menu.icon]]
-    url = "https://www.linkedin.com/company/17981653/"
-    name = "linkedin"
-    weight = 5
+
+[Languages.pt]
+  languageCode = "pt"
+  languageName = "Português"
+
+[Languages.es]
+  languageCode = "es"
+  languageName = "Español"
+  
+  
+   [params.social]                                         # 社交链接
+    a-email = "mailto:info@rladies.org"
+    c-twitter = "https://twitter.com/RLadiesGlobal"
+    e-linkedin = "https://www.linkedin.com/company/17981653/"
+    g-github = "https://github.com/rladies"
+    m-instagram = "https://www.instagram.com/rladiesglobal"
+    t-youtube = "https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng"
+
