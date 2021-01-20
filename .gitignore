@@ -28,6 +28,10 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### hugo ###
+resources/
+public/
+
 ### R ###
 
 # blogdown
@@ -97,3 +101,5 @@ content/post/*html
 
 # End of https://www.gitignore.io/api/r,hugo,macos,windows
 .Rproj.user
+
+
