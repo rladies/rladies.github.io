@@ -1,7 +1,7 @@
 baseURL = "http://blog.rladies.org/"
 languageCode = "en-us"
 title = "R-Ladies Blog"
-theme = "jane"
+theme = "janeadapt"
 relativeURLs = true
 publishDir = "public"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
