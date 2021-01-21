@@ -17,6 +17,8 @@
     other = "Translations"
 [donate]
   other = "Donate to"
+[news]
+  other = "News"
     
 [current_chapters_table]
   other = "Click for table of currently active R-Ladies chapters"

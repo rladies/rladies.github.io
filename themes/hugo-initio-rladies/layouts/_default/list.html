@@ -5,36 +5,15 @@
 		<div class="row topspace">
 			<div class="col-sm-8 col-sm-offset-2">
         {{ range .Paginator.Pages }}
-				<article class="post">
-					<header class="entry-header">
-						<div class="entry-meta">
-               <span class="posted-on">
-                  {{ partial "post/dates.html" .}}
-               </span>
-						</div>
-						<h1 class="entry-title">
-						  <a  style="color: #88398a;"href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
-						</h1>
-					{{ partial "post/i18n.html" . }}
-						 
-					</header>
-					<hr class="style-rladies">
-					<div class="entry-content">
-						{{ .Summary }}
-					</div>
-			    <div class="read-more">
-            <a href="{{ .RelPermalink }}" class="read-more-link">{{ i18n "read_more" }}</a>
-          </div>
-				</article>
+          {{ partial "post/summary.html" .}}
         {{ end }}
+        <center>
+    			<ul class="pagination">
+            {{ template "_internal/pagination.html" . }}
+    			</ul>
+    		</center>
 			</div>
 		</div>
-
-		<center class="">
-			<ul class="pagination">
-        {{ template "_internal/pagination.html" . }}
-			</ul>
-		</center>
 	</div>	<!-- /container -->
 
 </main>
