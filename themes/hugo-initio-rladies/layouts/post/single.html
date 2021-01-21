@@ -1,0 +1,72 @@
+{{ define "main"}}
+<main id="main">
+	<div class="container" >
+		<div class="row topspace">
+
+				<header class="entry-header">
+ 					<h1 class="entry-title">
+ 					  <a style="color: #88398a;" href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+ 					</h1>
+ 		      <div class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
+              {{ .Date.Format (.Site.Params.DateForm | default "2006-01-02") }}
+            </time>
+            {{ with .Params.categories -}}
+              <div class="post-category">
+                {{ range . }}
+                {{- $name := . -}}
+                {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
+                  <a href="{{ .Permalink }}"> {{ $name }} </a>
+                {{ end -}}
+                {{ end }}
+              </div>
+            {{- end }}
+    				{{ partial "post/i18n.html" . }}
+      		</header>
+
+				
+				<p>{{ .Content }}</p>
+
+  <div class="container">
+      {{ with .Params.tags -}}
+        <div class="post-tags">
+          {{ range . }}
+          {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+          <a href="{{ .Permalink }}">{{ $name }}</a>
+          {{ end -}}
+          {{ end }}
+        </div>
+      {{- end }}
+
+      <!-- Post Pagination -->
+      <nav class="post-nav">
+        {{ with .NextInSection }}
+          <a class="prev" href="{{ .RelPermalink }}">
+            {{/* icon left */}}
+            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+            <span class="prev-text nav-default">{{ .Title }}</span>
+            <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
+          </a>
+        {{- end }}
+        {{ with .PrevInSection }}
+          <a class="next" href="{{ .RelPermalink }}">
+            <span class="next-text nav-default">{{ .Title }}</span>
+            <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
+            {{/* icon right */}}
+            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+          </a>
+        {{- end }}
+      </nav>
+  </div>
+
+  <!-- Author Info -->
+  {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
+  {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
+  {{ end }}
+
+		</div> <!-- /row post  -->
+	</div>	<!-- /container -->
+</main>
+
+{{- end }}

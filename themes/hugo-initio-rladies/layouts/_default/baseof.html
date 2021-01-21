@@ -14,10 +14,11 @@
 
     {{ partial "hero.html" . }}
 
-    {{ block "languages" . }}
-    {{ end }}
-    
     {{ block "main" . }}
+    {{ end }}
+
+    {{ block "languages" . }}
+      {{ partial "post/i18n.html"}}
     {{ end }}
     
     {{ block "footer" . }}

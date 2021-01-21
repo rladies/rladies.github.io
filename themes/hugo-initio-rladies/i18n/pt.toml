@@ -1,0 +1,93 @@
+[404_title]
+    other = "404"
+[404_description]
+    other = "Ops! Esta página não existe!"
+
+[subheader]
+    other = ""
+
+[read_more]
+    other = "Ler mais" 
+[see_details]
+    other = "Veja detalhes"
+[download]
+    other = "Baixar"
+[translations]
+    other = "Traduções"
+
+[footer_lang_title]
+    other = "Línguas"
+[footer_followme_title]
+    other = "Siga-me"
+[footer_contact_title]
+    other = "Contato"
+[footer_text_title]
+    other = "Código de Conducta"
+[footer_text_content]
+    other = "R-Ladies tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes. Leia nosso [código de conduta](/por/coc)"
+    
+[archive]
+  other = "Archivo"
+[tags]
+  other = "Tags"
+[tag]
+  other = "Tag: "
+
+[categories]
+  other = "Categorias"
+[category]
+  other = "Categoria: "
+
+# posts
+[prev]
+  other = "Prévio"
+
+[next]
+  other = "Seguinte"
+
+[prev_post]
+  other = "Prévio"
+
+[next_post]
+  other = "Seguinte"
+
+[toc]
+  other = "Contéudo"
+
+
+
+# copyright
+[author]
+  other = "Autor"
+
+[license]
+  other = "Licença"
+
+# counter
+[counter_archives]
+  other = "{{.Count}} Posts em Total"
+
+[counter_tagcloud]
+  other = "{{.Count}} Tags em Total"
+
+[counter_categories]
+  other = "{{.Count}} Categorias em Total"
+
+# other
+[morePost]
+  other = "Mais Posts >>>"
+
+[read_en]
+  other = "Read in English"
+
+[read_es]
+  other = "Leer en Español"
+
+[read_fr]
+  other = "Lire en français"
+
+[read_de]
+  other = "Lese in Deutsch"
+
+[language]
+  other = "Linguagem"
