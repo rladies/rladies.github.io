@@ -9,6 +9,9 @@ tags:
 categories:
 - r-ladies
 always_allow_html: yes
+output:
+  html_document:
+    keep_md: yes
 ---
 
 
@@ -93,7 +96,7 @@ all_events %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
 ```
 
-<img src="{{< blogdown/postref >}}index.en_files/figure-html/parallel_per_month_vis-1.png" width="960" />
+![](index.en_files/figure-html/parallel_per_month_vis-1.png)<!-- -->
 
 So parallel R-Ladies events are not uncommon but now the question is: how many events are happening at the same time?
 

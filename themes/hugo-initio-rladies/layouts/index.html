@@ -8,9 +8,15 @@
     
 {{ define "main"}}
   <main id="main">
-
     <div class="container">
-  
+        <div class="row section">
+          <h2 class="section-title">
+            <span>{{ i18n "news" }}</span>
+          </h2>
+        {{ range first 1 (where site.RegularPages "Type" "post") }}
+          {{ partial "post/summary.html" . }}
+        {{ end }}
+
       {{ if .Site.Params.showSubheader }}
         {{ partial "home/subheader.html" . }}
       {{ end }}
@@ -44,6 +50,8 @@
                 {{ end }}
             {{ end }}
         {{ end }}
+        </div>
+      </div>
   	</div>	<!-- /container -->
   </main>
 
