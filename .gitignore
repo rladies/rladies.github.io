@@ -43,7 +43,8 @@ vignettes/*.pdf
 **/*.httr-oauth$
 # stupid mac hidden files
 **/.DS_Store
-content/**html
+content/*/*html
+content/*/*/*html
 node_modules
 README.html
 .httr-oauth
