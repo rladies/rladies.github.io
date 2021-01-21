@@ -16,7 +16,7 @@
 {{/* RSS icon  */}}
 {{ with .Site.GetPage "home" -}}
   {{- with .OutputFormats.Get "RSS" -}}
-  <a href="{{ .Permalink }}" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
+  <a href="/post/index.xml" rel="noopener {{ .Rel }}" type="{{ .MediaType.Type }}"
     class="iconfont" title="rss" target="_blank">
     {{ partial "svg/rss.svg" }}
   </a>
