@@ -27,3 +27,67 @@
 [footer_text_content]
     other = "R-Ladies se dedica a proporcionar una experiencia libre de acoso para todos. Desde R-Ladies no toleramos el acoso de los participantes en ninguna de las formas posibles. Lea nuestro [código de conducta](/es/coc)"
     
+[archive]
+  other = "Archivo"
+
+[tags]
+  other = "Etiquetas"
+
+[tag]
+  other = "Etiqueta: "
+
+[categories]
+  other = "Categorías"
+
+[category]
+  other = "Categoría: "
+
+# posts
+[prev]
+  other = "Anterior"
+
+[next]
+  other = "Siguiente"
+
+[prev_post]
+  other = "Anterior"
+
+[next_post]
+  other = "Siguiente"
+
+[toc]
+  other = "Tabla de Contenido"
+
+
+# copyright
+[author]
+  other = "Autor"
+
+# counter
+[counter_archive]
+  other = "{{.Count}} Entradas en Total"
+
+[counter_tagcloud]
+  other = "{{.Count}} Etiquetas en Total"
+
+[counter_categories]
+  other = "{{.Count}} Categorías en Total"
+
+# other
+[morePost]
+  other = "Más Entradas >>>"
+
+[read_en]
+  other = "Read in English"
+
+[read_pt]
+  other = "Leia em português"
+
+[read_fr]
+  other = "Lire en français"
+  
+[read_de]
+  other = "Lese in Deutsch"
+
+[language]
+  other = "Lenguaje"

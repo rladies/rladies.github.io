@@ -1,0 +1,11 @@
+{{ if .IsTranslated }}
+  <buttonr2 data-toggle="collapse" data-target="#post-translations">
+    <i class="fas fa-globe"></i>
+  </buttonr2>
+  <br>
+  <div id="post-translations" class="collapse">
+    {{ range .Translations }}
+    <div><a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a></div>
+    {{ end }}
+  </div>
+{{ end }}

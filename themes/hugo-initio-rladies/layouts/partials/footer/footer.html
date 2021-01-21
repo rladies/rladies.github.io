@@ -8,7 +8,12 @@
   					<p>{{ if .Site.Params.phone }}{{ .Site.Params.phone | markdownify }}<br>{{ end }}
   					{{ if .Site.Params.email }}<a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email | markdownify }}</a><br>{{ end }}
   						<br>
-  						{{ if .Site.Params.address }}{{ .Site.Params.address | markdownify }}{{ end }}
+  						<h3 class="widget-title">{{ i18n "donate" }} R-Ladies</h3>
+  						<p class="follow-me-icons">
+  						  <a href="https://www.paypal.com/donate?token=8CwuseU4vQiiUdEWr5T2UlN49xfPPbPWBySI34ra3EdAHBa9smM4W6vK6n0NJN7uvD9jS6s34hImjffz" target="_blank">
+  						    <i class="fab fa-cc-paypal fa-1x" aria-hidden="true"></i>
+  						  </a>
+  						</p>
   					</p>
   				</div>
   			</div>
@@ -40,7 +45,9 @@
 
 			{{ if .Site.Params.footerEnableLangWidget }}
   			<div class="col-md-3 widget">
-  				<h3 class="widget-title">{{ i18n "footer_lang_title" . | markdownify }}</h3>
+  				<h3 class="widget-title">
+  				  <i class="fas fa-globe"></i> {{ i18n "footer_lang_title" . | markdownify }}
+  				</h3>
   				<div class="widget-body">
   					{{ range .Site.Languages -}}
               {{ if ne $.Site.Language.Lang .Lang }}
@@ -68,7 +75,7 @@
 				<div class="widget-body">
 					<p class="text-right">
 						Copyright &copy; {{ .Site.Params.year | markdownify }}, {{ .Site.Params.name  | markdownify }}<br>
-						Design: A. M. Mowinckel - <a href="http://www.gettemplate.com" rel="designer">customized Initio theme by GetTemplate</a><br>
+						Design: A. M. Mowinckel <br>
                         Powered by: <a href="https://gohugo.io/" rel="poweredby">Hugo</a> & <a href="https://www.netlify.com/" rel="poweredby">Netlify</a>
                     </p>
 				</div>

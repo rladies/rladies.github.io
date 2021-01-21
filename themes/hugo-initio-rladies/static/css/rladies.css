@@ -135,6 +135,48 @@ buttonr:hover {
   background-color: #88398aee;
 }
 
+buttonr2{
+  background-color: #fff;
+  border: none;
+  color: #88398a;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+buttonr2:hover {
+  color: #88398aee;
+}
+
+hr.style-rladies {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #88398a, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #88398a, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #88398a, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #88398a, #ccc);
+}
+
+p.date {
+   width: 150%; 
+   position: relative;
+   margin-left: -25%;
+   text-align: center; 
+   border-bottom: 1px solid #ddd; 
+   line-height: 0.1em;
+} 
+
+p.date span { 
+  background: #fff;
+  padding:0 10px; 
+}
+
+.read-more {
+  text-align: right;
+}
 /******************/
 /* flex grid */
 /******************/

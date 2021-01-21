@@ -33,7 +33,7 @@
 
 <br>
 <center>
-  <buttonr data-toggle="collapse" data-target="#chapter-table">Click for table of currently active R-Ladies chapters</buttonr>
+  <buttonr data-toggle="collapse" data-target="#chapter-table">{{ i18n "current_chapters_table" }}</buttonr>
   </center>
   <br>
   <div id="chapter-table" class="collapse">
@@ -68,4 +68,4 @@
   </table>
   </div>
   <br>
-  <p>If you are interested in starting an R-Ladies meetup group in your city, or would like more information about starting a meetup group, reach out at <b>info</b>[at]<b>rladies</b>[dot]<b>org</b></p>
+  <p>{{ .Content }}</p>
