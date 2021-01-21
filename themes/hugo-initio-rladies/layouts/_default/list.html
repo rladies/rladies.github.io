@@ -4,15 +4,12 @@
 	<div class="container">
 		<div class="row topspace">
 			<div class="col-sm-8 col-sm-offset-2">
-
         {{ range .Paginator.Pages }}
 				<article class="post">
 					<header class="entry-header">
 						<div class="entry-meta">
                <span class="posted-on">
-                  <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-                  <p class="date"><span>{{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}</span></p>
-                  </time>
+                  {{ partial "post/dates.html" .}}
                </span>
 						</div>
 						<h1 class="entry-title">

@@ -1,0 +1,3 @@
+<time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
+    {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+</time>
