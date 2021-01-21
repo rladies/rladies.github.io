@@ -1,7 +1,6 @@
 
 name        = "R-Ladies Global"
 email       = "info[at]rladies[dot]org"
-address     = "<h3 class=\"widget-title\">Donate to R-Ladies</h3><p class=\"follow-me-icons\"><a href=\"https://www.paypal.com/donate?token=8CwuseU4vQiiUdEWr5T2UlN49xfPPbPWBySI34ra3EdAHBa9smM4W6vK6n0NJN7uvD9jS6s34hImjffz\" target=\"_blank\"><i class=\"fab fa-cc-paypal fa-1x\" aria-hidden=\"true\"></i></a></p>"
 avatar      = "images/logo.png"
 avatarclass = "rounded"
 
@@ -18,14 +17,6 @@ footerEnableContact    = true
 footerEnableFollowme   = true
 footerEnableTextWidget = true
 footerEnableLangWidget = true
-
-# Analytics ----
-[sharethis]
-    property = "123456789012345678901234"
-    custom   = true
-
-[google.analytics]
-    trackerID = "GA-000000000-0"
 
 # Socials ----
 [[social]]
