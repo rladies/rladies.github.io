@@ -177,6 +177,23 @@ p.date span {
 .read-more {
   text-align: right;
 }
+
+/******************/
+/*   highlight    */
+/******************/
+
+pre {
+  border-radius: 10px;
+  border: 1px solid #88398a;
+  background-color: #88398a55;
+}
+
+pre.chroma {
+  background-color: #88398a22;
+  border: 1px solid #88398a;
+  border-radius: 10px;
+}
+
 /******************/
 /* flex grid */
 /******************/
