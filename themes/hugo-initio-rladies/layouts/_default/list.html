@@ -7,11 +7,9 @@
         {{ range .Paginator.Pages }}
           {{ partial "post/summary.html" .}}
         {{ end }}
-        <center>
     			<ul class="pagination">
             {{ template "_internal/pagination.html" . }}
     			</ul>
-    		</center>
 			</div>
 		</div>
 	</div>	<!-- /container -->
