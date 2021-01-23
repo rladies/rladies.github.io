@@ -353,7 +353,7 @@
     "id": "275193790",
     "chapter_id": 30994180,
     "title": "{Part 2: Tidy data} From Zero to (s)Hero: Multi-part intro to R",
-    "body": "<i class='fa fa-users'><\/i>&emsp;64<br><br><p>Just getting involved with R or want to level up your skills? Have you used base-R but are still trying to wrap your head around the tidyverse \"pipe\" (%&gt;%)? Have a messy dataset and don't know where to start? Seen beautiful visualizations on Twitter and want to make your own?<\/p> <p>If you’ve ...  <br><br><center><a href='https://www.meetup.com/rladies-freiburg/events/275193790/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
+    "body": "<i class='fa fa-users'><\/i>&emsp;65<br><br><p>Just getting involved with R or want to level up your skills? Have you used base-R but are still trying to wrap your head around the tidyverse \"pipe\" (%&gt;%)? Have a messy dataset and don't know where to start? Seen beautiful visualizations on Twitter and want to make your own?<\/p> <p>If you’ve ...  <br><br><center><a href='https://www.meetup.com/rladies-freiburg/events/275193790/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
     "start": "2021-02-17 17:00:00",
     "end": "2021-02-17 19:00:00",
     "date": "2021-02-17",
@@ -451,7 +451,7 @@
     "id": "275850692",
     "chapter_id": 24752511,
     "title": "LinkedIn & le sue (quasi) infinite potenzialità",
-    "body": "<i class='fa fa-users'><\/i>&emsp;35<br><br><p>Ciao a tutti!<br/>In questo evento faremo qualcosa di veramente diverso.<br/>Vogliamo tenere un workshop su come utilizzare Linkedin in modo efficiente e su come creare un miglior Personal Branding.<br/>Potrai quindi imparare come:<br/>* Aumentare il numero di contatti<br/>* Cercare lavoro e crea...  <br><br><center><a href='https://www.meetup.com/rladies-milan/events/275850692/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
+    "body": "<i class='fa fa-users'><\/i>&emsp;36<br><br><p>Ciao a tutti!<br/>In questo evento faremo qualcosa di veramente diverso.<br/>Vogliamo tenere un workshop su come utilizzare Linkedin in modo efficiente e su come creare un miglior Personal Branding.<br/>Potrai quindi imparare come:<br/>* Aumentare il numero di contatti<br/>* Cercare lavoro e crea...  <br><br><center><a href='https://www.meetup.com/rladies-milan/events/275850692/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
     "start": "2021-02-02 17:30:00",
     "end": "2021-02-02 19:30:00",
     "date": "2021-02-02",
@@ -946,6 +946,20 @@
     "lat": 40.12,
     "lon": -75.01,
     "description": "<p>DESCRIPTION:<br/>This panel and discussion event will be focused on R instruction. As a learner, what are some recommended resources for developing my R skills? As an instructor, how can I make my materials and presentations more effective? How can I gain experience teaching R?<\/p> <p>Our expert panelists will share their perspectives on learning and teaching R.<\/p> <p>More information coming soon...<\/p> <p>TENTATIVE AGENDA:<br/>[masked]pm: Arrivals<br/>[masked]pm: Introduction<br/>[masked]pm: Panel presentations<br/>[masked]pm: Discussion and Q&amp;A<\/p> <p>ABOUT OUR PANELISTS:<br/>Coming soon...<\/p> <p>Please note that the virtual meeting can support up to 100 attendees. While we won't cap the number of RSVPs, we encourage you to be on time to secure a spot.<\/p> "
+  },
+  {
+    "id": "275923993",
+    "chapter_id": 26537030,
+    "title": "Tutorial: Introduction to Parallel Processing in R",
+    "body": "<i class='fa fa-users'><\/i>&emsp;5<br><br><p>Please join us for a lunchtime R-Ladies meetup with Brittany Barker. Brittany will guide us through a beginner-level tutorial on how and why to use parallel computing in R.<\/p> <p>Brittany is a Research Associate (Postdoc) at the Oregon IPM Center at Oregon State University, where she is developi...  <br><br><center><a href='https://www.meetup.com/rladies-seattle/events/275923993/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
+    "start": "2021-02-10 20:00:00",
+    "end": "2021-02-10 21:00:00",
+    "date": "2021-02-10",
+    "location": "Online event",
+    "type": "upcoming",
+    "lat": 47.61,
+    "lon": -122.33,
+    "description": "<p>Please join us for a lunchtime R-Ladies meetup with Brittany Barker. Brittany will guide us through a beginner-level tutorial on how and why to use parallel computing in R.<\/p> <p>Brittany is a Research Associate (Postdoc) at the Oregon IPM Center at Oregon State University, where she is developing a spatial modeling platform (written in R) that predicts phenology and climate suitability of invasive insect species in real-time. She is broadly interested in how environmental perturbations such as climate change shape the population dynamics and geographical range limits of plant and animal species.<\/p> <p>In her demo, she will demonstrate the use and value of the parallel, doParallel, and foreach packages for parallel computing in R. The demo will center on analyzing very large spatial data sets, but parallel processing in R can be used for ANY type of data. She will provide examples of when you may want to use parallel computing for your work, and provide further resources to explore.<\/p> <p>This demo will be held over zoom and we will RStudio Cloud so you can follow along with the Brittany's code. We will email out instructions on what to expect and how to get set up.<\/p> "
   },
   {
     "id": "275705236",
