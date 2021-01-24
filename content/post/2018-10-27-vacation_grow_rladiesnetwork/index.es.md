@@ -10,7 +10,9 @@ tags:
 - spanish
 categories:
 - r-ladies
-output: html_document
+output: 
+  html_document:
+    keep_md: yes
 ---
 
 
