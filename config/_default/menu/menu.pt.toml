@@ -75,7 +75,12 @@
     weight = 8
     parent = "activities"
     
+#[[main]]
+#    name = "Blog"
+#    url = "https://blog.rladies.org/"
+#    weight = 5
+    
 [[main]]
     name = "Blog"
-    url = "https://blog.rladies.org/"
-    weight = 4
+    url = "/post"
+    weight = 5
