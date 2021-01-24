@@ -2,9 +2,8 @@
 # Find all non-post content
 content <- list.files("content","index", 
                       recursive = TRUE, 
-                      full.names = TRUE)
-content <- content[!grepl("/post|/placeholder",
-                          content)]
+                      full.names = TRUE)  
+content <- content[grepl("[.]md", content)]
 
 # Find content that is not translated
 content_translated <- sapply(content, 
@@ -24,9 +23,7 @@ invisible(file.remove(names(idx)))
 content <- list.files("content","index", 
                       recursive = TRUE, 
                       full.names = TRUE)
-content <- content[!grepl("/post|/placeholder",
-                          content)]
-
+content <- content[grepl("[.]md", content)]
 
 # Get the unique directories
 dirs <-  unique(dirname(content))
@@ -36,7 +33,7 @@ dirs <-  unique(dirname(content))
 site_lang <- list.files("config/_default/menu/")
 site_lang <- gsub("menu[.]|[.]toml", "", site_lang)
 
-
+cat("Populating untranslated files:\n ")
 # Loop through dirs
 for(k in dirs){
   tmp <- content[grepl(k, content)]
@@ -44,20 +41,23 @@ for(k in dirs){
   
   j <- sapply(site_lang, function(x) grepl(x, tmp_files))
   
-  en_file <- tmp[grep("index.en.md", tmp)]
-  en_cont <- readLines(en_file)
-  idx <- grep("---", en_cont)[2]
-  yaml <- en_cont[1:idx]
+  orig_file <- tmp[1]
+  orig_cont <- readLines(orig_file)
+  orig_lang <- sapply(sprintf(".%s.", site_lang), grepl, x = tmp)
+  orig_lang <- site_lang[orig_lang]
+  
+  idx <- grep("---", orig_cont)[2]
+  yaml <- orig_cont[1:idx]
   yaml <- c(yaml[1:(length(yaml)-1)], 
             "translated: no", 
             yaml[length(yaml)])
   
   for(lang in names(j)[which(!j)]){
-    new_file <- gsub("[.]en[.]", 
+    new_file <- gsub(sprintf("[.]%s[.]", orig_lang), 
                      sprintf(".%s.", lang), 
-                     en_file)
-    new_cont <- c(yaml, en_cont[-1:-idx], "")
-    cat("Populating untranslated file '", new_file, "'\n")
+                     orig_file)
+    new_cont <- c(yaml, orig_cont[-1:-idx], "")
+    cat("... '", new_file, "'\n")
     writeLines(new_cont, new_file)
   }
 }
