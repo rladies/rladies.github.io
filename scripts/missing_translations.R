@@ -1,23 +1,43 @@
 
-
+# Find all non-post content
 content <- list.files("content","index", 
                       recursive = TRUE, 
                       full.names = TRUE)
 content <- content[!grepl("/post|/placeholder",
                           content)]
 
+# Find content that is not translated
+content_translated <- sapply(content, 
+                       function(x){
+                         y <- readLines(x)
+                         y <- y[grep("translated:", y)]
+                         !any(grepl("no", y))
+                       })
+
+# Delete non-translated content
+# To update in-case english content has changed.
+idx <- which(!content_translated)
+invisible(file.remove(names(idx)))
+
+# Get again all mds, now that we have deleted some
+# Find all non-post content
+content <- list.files("content","index", 
+                      recursive = TRUE, 
+                      full.names = TRUE)
+content <- content[!grepl("/post|/placeholder",
+                          content)]
+
+
+# Get the unique directories
 dirs <-  unique(dirname(content))
 
+
+# Get the site languages
 site_lang <- list.files("config/_default/menu/")
 site_lang <- gsub("menu[.]|[.]toml", "", site_lang)
 
-placeholders <- list.files("content/placeholder", 
-                           full.names = TRUE)
-placeholders <- stats::setNames(
-  lapply(placeholders, readLines),
-         basename(placeholders))
-names(placeholders) <- gsub("[.]md", "", names(placeholders))
 
+# Loop through dirs
 for(k in dirs){
   tmp <- content[grepl(k, content)]
   tmp_files <- basename(tmp)
