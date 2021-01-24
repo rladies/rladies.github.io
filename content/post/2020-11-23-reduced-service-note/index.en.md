@@ -7,6 +7,9 @@ tags:
 - community
 categories:
 - r-ladies
+output: 
+  html_document:
+    keep_md: yes
 ---
 
 

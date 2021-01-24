@@ -11,6 +11,9 @@ tags:
 categories:
 - IWD
 - R-Ladies
+output: 
+  html_document:
+    keep_md: yes
 ---
 
 ### As told by Maëlle Salmon with notes from Bea Hernández
