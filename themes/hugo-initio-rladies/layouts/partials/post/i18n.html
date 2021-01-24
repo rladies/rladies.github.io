@@ -5,9 +5,12 @@
   </butttonr2>
     <div id="post-translations-{{ .Permalink | relURL | anchorize }}" class="collapse">
       {{ range .Translations }}
-        <div>
-          <a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a>
-        </div>
+        {{ $trans := .Params.translated | default true}}
+        {{ if $trans }}
+          <div>
+            <a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a>
+          </div>
+        {{ end }}
       {{ end }}
     </div>
   </center>
