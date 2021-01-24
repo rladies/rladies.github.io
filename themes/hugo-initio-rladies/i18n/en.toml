@@ -15,6 +15,8 @@
     other = "Download"
 [translations]
     other = "Translations"
+[missing_translation]
+  other = "We are sorry. This page is missing a translation to English."
 [donate]
   other = "Donate to"
 [news]

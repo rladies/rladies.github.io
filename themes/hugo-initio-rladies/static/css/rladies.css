@@ -60,6 +60,16 @@ a:hover, a:focus {
   color: #fff;
 }
 
+.not-translated{
+  background-color: #88398a66;
+  font-family: "Helvetica Neue","Lato",  "Open Sans", sans-serif; 
+  font-size: 20px;
+  text-align: center;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
 .hero {
   position: relative;
   display: table-cell;

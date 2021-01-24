@@ -14,7 +14,8 @@
     other = "Descargar"
 [translations]
     other = "Traducciones"
-
+[missing_translation]
+  other = "Lo sentimos, esta página aún no ha sido traducida al español."
 
 [footer_lang_title]
     other = "Idiomas"
