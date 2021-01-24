@@ -1,0 +1,27 @@
+on:
+  push:
+    branches: [ master ]
+
+name: Update missing page content
+
+jobs:
+  render:
+    name: Update missing page content
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@v1
+
+      - name: Re-populate untranslated pages
+        run: Rscript scripts/missing_translations.R
+
+      - name: Commit results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add content/
+          git commit -m 'Update untranslated pages' || echo "No data to commit"
+          git push origin || echo "No changes to commit"
+
