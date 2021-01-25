@@ -80,5 +80,27 @@
       {}
     ],
     "last_updated": "2021-01-01"
+  }, {
+    "name": "Jane Doe",
+    "honorific": "",
+    "categories": [],
+    "title": "Data afficionado",
+    "organization": "",
+    "department": "",
+    "notes": "",
+    "photo_url": "",
+    "logo_url": "",
+    "location": [
+      {}
+    ],
+    "social_media": [
+      {}
+    ],
+    "interests": [],
+    "contact_method": [],
+    "activities": [
+      {}
+    ],
+    "last_updated": "2021-01-01"
   }
 ]
