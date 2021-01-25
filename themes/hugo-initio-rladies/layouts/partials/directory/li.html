@@ -12,9 +12,16 @@
     <div class="directory-grid-desc" style="position: relative;">
         <p class="affiliation">
           <i>{{ .title }}</i>{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
-      <br><br>
+        </p>
+      <br>
       <p>
         <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
+      </p>
+      <p class="interests">
+        <i class="fas fa-map-marker-alt"></i> 
+        {{ range .location }}
+          {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
+        {{ end }}
       </p>
       <p class="interests">
         {{ with .interests }}

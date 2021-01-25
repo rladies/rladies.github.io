@@ -44,26 +44,26 @@
 			{{ end }}
 
 			{{ if .Site.Params.footerEnableLangWidget }}
-<div class="col-md-3 widget">
-	<h3 class="widget-title">
-    <i class="fas fa-globe"></i> 
-    {{ i18n "footer_lang_title" . | markdownify }}
-  </h3>
-<nav class="language-selector layout__language-selector" style = "list-style: none;">
-{{ if .IsTranslated -}}
-  {{ range .Translations }}
-  <li><a rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
-  {{ end -}}
-{{ else -}}
-  {{ range .Site.Languages -}}
-    {{ if ne $.Site.Language.Lang .Lang }}
-    <li><a rel="alternate" href="{{ .Lang | relURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a></li>
-    {{ end -}}
-  {{ end -}}
-{{ end -}}
-</ul>
-</div>
-{{ end }}
+        <div class="col-md-3 widget">
+        	<h3 class="widget-title">
+            <i class="fas fa-globe"></i> 
+            {{ i18n "footer_lang_title" . | markdownify }}
+          </h3>
+          <nav class="language-selector layout__language-selector" style = "list-style: none;">
+          {{ if .IsTranslated -}}
+            {{ range .Translations }}
+              <li><a rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
+            {{ end -}}
+          {{ else -}}
+            {{ range .Site.Languages -}}
+              {{ if ne $.Site.Language.Lang .Lang }}
+                <li><a rel="alternate" href="{{ .Lang | relURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a></li>
+              {{ end -}}
+            {{ end -}}
+          {{ end -}}
+          </ul>
+        </div>
+      {{ end }}
 
 		</div> <!-- /row of widgets -->
 	</div>
