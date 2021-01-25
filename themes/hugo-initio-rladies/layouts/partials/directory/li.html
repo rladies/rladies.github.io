@@ -17,12 +17,14 @@
       <p>
         <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
       </p>
-      <p class="interests">
-        <i class="fas fa-map-marker-alt"></i> 
-        {{ range .location }}
-          {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
-        {{ end }}
-      </p>
+      {{if gt (len .location) 1}}
+        <p class="interests">
+          <i class="fas fa-map-marker-alt"></i> 
+          {{ range .location }}
+            {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
+          {{ end }}
+        </p>
+      {{ end }}
       <p class="interests">
         {{ with .interests }}
           <b><i class="fas fa-tag" style = "font-size: 15px;"></i>&nbsp;</b>
