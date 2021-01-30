@@ -339,7 +339,7 @@
     "id": "275264114",
     "chapter_id": 30994180,
     "title": "{R-Ladies Toolbox Series} Part 2: Presenting Results ",
-    "body": "<i class='fa fa-users'><\/i>&emsp;82<br><br><p>R-Ladies Toolbox Series - Essentials for women and minority genders in academia, science and data analysis presents:<\/p> <p>Presenting Results by Manasi Mahadik (R-Ladies Mumbai)<\/p> <p>--&gt; A tryst with tabular data : Exploring the gt package in R &lt;--<\/p> <p>The tidyverse is undisputed roya...  <br><br><center><a href='https://www.meetup.com/rladies-freiburg/events/275264114/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
+    "body": "<i class='fa fa-users'><\/i>&emsp;83<br><br><p>R-Ladies Toolbox Series - Essentials for women and minority genders in academia, science and data analysis presents:<\/p> <p>Presenting Results by Manasi Mahadik (R-Ladies Mumbai)<\/p> <p>--&gt; A tryst with tabular data : Exploring the gt package in R &lt;--<\/p> <p>The tidyverse is undisputed roya...  <br><br><center><a href='https://www.meetup.com/rladies-freiburg/events/275264114/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
     "start": "2021-02-03 17:00:00",
     "end": "2021-02-03 19:00:00",
     "date": "2021-02-03",
@@ -607,7 +607,7 @@
     "id": "275784778",
     "chapter_id": 33719616,
     "title": "Getting the most out of text - Using supervised & unsupervised approaches in NLP",
-    "body": "<i class='fa fa-users'><\/i>&emsp;67<br><br><p>We're starting the year with an exceptional online session, and collaborating with the Facebook Developer Circles, a network of developers in Tunis and its surroundings who are interested in building on the Facebook platform to interact and collaborate with other developers who share similar inte...  <br><br><center><a href='https://www.meetup.com/rladies-tunis/events/275784778/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
+    "body": "<i class='fa fa-users'><\/i>&emsp;69<br><br><p>We're starting the year with an exceptional online session, and collaborating with the Facebook Developer Circles, a network of developers in Tunis and its surroundings who are interested in building on the Facebook platform to interact and collaborate with other developers who share similar inte...  <br><br><center><a href='https://www.meetup.com/rladies-tunis/events/275784778/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
     "start": "2021-01-30 16:00:00",
     "end": "2021-01-30 18:00:00",
     "date": "2021-01-30",
@@ -772,18 +772,18 @@
     "description": "<p>For the March 1st edition of our R-Ladies Dallas webinar series, we are excited to welcome our very own Pavitra Chakravarty as our guest speaker. Pavitra will introduce the gt package and show how you can easily create beautiful, presentation-ready tables with a few simple lines of code.<\/p> <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>Session title: Using the `gt` package to create presentation-ready tables<br/>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<\/p> <p>Abstract: In this talk, Pavitra Chakravarty will show how easy it is to create \"great looking tables\" with the `gt` package.<\/p> <p>Bio:<\/p> <p>Twitter: @genomixgmailcom<\/p> <p>*************************************************************************<\/p> <p>You are encouraged to click the link below to keep up with the group project and to join the Slack community. Slack is a messaging platform where we will share open job opportunities, free or low-cost online training materials, and R-Ladies group projects that will help you practice your R programming skills and develop a portfolio that could be used to showcase your skills to hiring managers.<\/p> <p>Slack sign-up: <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdJhvSg-YrNYOrmju1yrXvYhFM7xMey1WpDq1NSGIp6x41VaA/viewform\" class=\"linkified\">https://docs.google.com/forms/d/e/1FAIpQLSdJhvSg-YrNYOrmju1yrXvYhFM7xMey1WpDq1NSGIp6x41VaA/viewform<\/a><\/p> <p>*************************************************************************<\/p> <p>We expect all attendees to abide &amp; be governed by our community code of conduct. Please take a moment to review our R-Ladies Global code of conduct (particularly if this is your first time attending!): <a href=\"https://github.com/rladies/starter-kit/wiki/Code-of-Conduct\" class=\"linkified\">https://github.com/rladies/starter-kit/wiki/Code-of-Conduct<\/a>.<\/p> "
   },
   {
-    "id": "274857615",
+    "id": "276058011",
     "chapter_id": 21510971,
-    "title": "Books In Bars - Algorithms of Oppression",
-    "body": "<i class='fa fa-users'><\/i>&emsp;29<br><br><p>Spend Friday night discussing Algorithms of Oppression (<a href=\"https://www.bookdepository.com/Algorithms-Oppression-Safiya-Umoja-Noble/9781479837243\" class=\"linkified\">https://www.bookdepository.com/Algorithms-Oppression-Safiya-Umoja-Noble/9781479837243<\/a>).<\/p> <p>A revealing look at how nega...  <br><br><center><a href='https://www.meetup.com/rladies-dc/events/274857615/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
-    "start": "2021-01-29 23:00:00",
-    "end": "2021-01-30 01:00:00",
-    "date": "2021-01-29",
+    "title": "Movie night: TBD",
+    "body": "<i class='fa fa-users'><\/i>&emsp;2<br><br><p>Watch a movie on zoom with RLadiesDC.<\/p> ...  <br><br><center><a href='https://www.meetup.com/rladies-dc/events/276058011/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
+    "start": "2021-01-30 23:00:00",
+    "end": "2021-01-31 01:00:00",
+    "date": "2021-01-30",
     "location": "Online event",
     "type": "upcoming",
     "lat": 38.91,
     "lon": -77.02,
-    "description": "<p>Spend Friday night discussing Algorithms of Oppression (<a href=\"https://www.bookdepository.com/Algorithms-Oppression-Safiya-Umoja-Noble/9781479837243\" class=\"linkified\">https://www.bookdepository.com/Algorithms-Oppression-Safiya-Umoja-Noble/9781479837243<\/a>).<\/p> <p>A revealing look at how negative biases against women of color are embedded in search engine results and algorithms<\/p> <p>Run a Google search for \"black girls\"-what will you find? \"Big Booty\" and other sexually explicit terms are likely to come up as top search terms. But, if you type in \"white girls,\" the results are radically different. The suggested porn sites and un-moderated discussions about \"why black women are so sassy\" or \"why black women are so angry\" presents a disturbing portrait of black womanhood in modern society.<\/p> <p>In Algorithms of Oppression, Safiya Umoja Noble challenges the idea that search engines like Google offer an equal playing field for all forms of ideas, identities, and activities. Data discrimination is a real social problem; Noble argues that the combination of private interests in promoting certain sites, along with the monopoly status of a relatively small number of Internet search engines, leads to a biased set of search algorithms that privilege whiteness and discriminate against people of color, specifically women of color.<\/p> <p>Through an analysis of textual and media searches as well as extensive research on paid online advertising, Noble exposes a culture of racism and sexism in the way discoverability is created online. As search engines and their related companies grow in importance-operating as a source for email, a major vehicle for primary and secondary school learning, and beyond-understanding and reversing these disquieting trends and discriminatory practices is of utmost importance.<\/p> <p>An original, surprising and, at times, disturbing account of bias on the internet, Algorithms of Oppression contributes to our understanding of how racism is created, maintained, and disseminated in the 21st century.<\/p> <p>PS Please contact the organizer if you need support finding the book.<\/p> "
+    "description": "<p>Watch a movie on zoom with RLadiesDC.<\/p> "
   },
   {
     "id": "275770916",
@@ -812,6 +812,20 @@
     "lat": 38.91,
     "lon": -77.02,
     "description": "<p>Abstract: Our society remains profoundly unequal. This talk presents vignettes about how data science can be used to combat inequality, focusing on public health and healthcare as application areas.<\/p> <p>Bio: Emma Pierson is a senior researcher at Microsoft Research and an incoming assistant professor of computer science at Cornell Tech. She develops data science and machine learning methods to study inequality and healthcare. Her work has been recognized by a Rhodes Scholarship, Hertz Fellowship, Rising Star in EECS, and Forbes 30 Under 30 in Science. She has written for The New York Times, FiveThirtyEight, The Atlantic, The Washington Post, Wired, and various other publications.<\/p> "
+  },
+  {
+    "id": "276057994",
+    "chapter_id": 21510971,
+    "title": "Books In Bars - Data Feminism",
+    "body": "<i class='fa fa-users'><\/i>&emsp;4<br><br><p>Spend Friday night discussing Data Feminism (<a href=\"https://www.bookdepository.com/Data-Feminism-Catherine-DIgnazio/9780262044004\" class=\"linkified\">https://www.bookdepository.com/Data-Feminism-Catherine-DIgnazio/9780262044004<\/a>).<\/p> <p>A new way of thinking about data science and data ethic...  <br><br><center><a href='https://www.meetup.com/rladies-dc/events/276057994/' target='_blank'><buttonr>Event page<\/buttonr><\/center><\/a>",
+    "start": "2021-03-26 23:00:00",
+    "end": "2021-03-27 01:00:00",
+    "date": "2021-03-26",
+    "location": "Online event",
+    "type": "upcoming",
+    "lat": 38.91,
+    "lon": -77.02,
+    "description": "<p>Spend Friday night discussing Data Feminism (<a href=\"https://www.bookdepository.com/Data-Feminism-Catherine-DIgnazio/9780262044004\" class=\"linkified\">https://www.bookdepository.com/Data-Feminism-Catherine-DIgnazio/9780262044004<\/a>).<\/p> <p>A new way of thinking about data science and data ethics that is informed by the ideas of intersectional feminism.<\/p> <p>Today, data science is a form of power. It has been used to expose injustice, improve health outcomes, and topple governments. But it has also been used to discriminate, police, and surveil. This potential for good, on the one hand, and harm, on the other, makes it essential to ask: Data science by whom? Data science for whom? Data science with whose interests in mind? The narratives around big data and data science are overwhelmingly white, male, and techno-heroic. In Data Feminism, Catherine D'Ignazio and Lauren Klein present a new way of thinking about data science and data ethics—one that is informed by intersectional feminist thought.<\/p> <p>Illustrating data feminism in action, D'Ignazio and Klein show how challenges to the male/female binary can help challenge other hierarchical (and empirically wrong) classification systems. They explain how, for example, an understanding of emotion can expand our ideas about effective data visualization, and how the concept of invisible labor can expose the significant human efforts required by our automated systems. And they show why the data never, ever “speak for themselves.”<\/p> <p>Data Feminism offers strategies for data scientists seeking to learn how feminism can help them work toward justice, and for feminists who want to focus their efforts on the growing field of data science. But Data Feminism is about much more than gender. It is about power, about who has it and who doesn't, and about how those differentials of power can be challenged and changed..<\/p> <p>PS This book is available free online: <a href=\"https://data-feminism.mitpress.mit.edu/\" class=\"linkified\">https://data-feminism.mitpress.mit.edu/<\/a><\/p> "
   },
   {
     "id": "274537965",
