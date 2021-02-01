@@ -11,13 +11,11 @@ html {
 }
 
 body {
-  font-family: "Open sans", Arial, sans-serif;
   color: #666666;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", "Lato", "Open Sans", sans-serif; 
   color: #88398a;
   font-weight: 450;
 }
@@ -31,13 +29,8 @@ a:hover, a:focus {
 }
 
 .navbar{
-  font-family: "Helvetica Neue WGL", "Lato", "Open Sans", sans-serif; 
   color: #88398a;
   font-weight: 500;
-}
-
-.navbar-collapse {
-  font-family: "Helvetica Neue WGL", "Lato", "Open Sans", sans-serif; 
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -56,13 +49,11 @@ a:hover, a:focus {
 }
 
 .entry-header .entry-meta .tagline{
-  font-family: "Helvetica Neue","Lato",  "Open Sans", sans-serif; 
   color: #fff;
 }
 
 .not-translated{
   background-color: #88398a66;
-  font-family: "Helvetica Neue","Lato",  "Open Sans", sans-serif; 
   font-size: 20px;
   text-align: center;
   padding: 1.5em;

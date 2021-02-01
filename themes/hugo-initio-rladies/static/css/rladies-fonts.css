@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;300&family=Open+Sans:wght@300&display=swap');
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .navbar, .navbar-collapse {
+  font-family: 'Lato', sans-serif;
+}
+
+pre { 
+  font-family: 'Inconsolata', monospace; 
+}
+
