@@ -22,9 +22,9 @@ jobs:
         uses: actions/checkout@v1
         with:
           repository: rladies/directory
-          token: ${{ secrets.DIRECTORY_PAT }}
+          token: ${{ secrets.directory_PAT_mo }}
       
-      - name: Clean directory data
+      - name: Get directory data
         run: |
           mv directory/data data/directory
           rm -rf directory
