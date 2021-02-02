@@ -40,8 +40,17 @@ jobs:
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo --buildFuture 
 
-
       - name: Deploy to Netlify
+        if: github.event_name == 'push' && github.ref != 'refs/heads/master'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npm install netlify-cli -g
+          netlify deploy --prod
+          
+      - name: Deploy to Netlify
+        if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
