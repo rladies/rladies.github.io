@@ -16,10 +16,10 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Get directory data
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           repository: rladies/directory
           token: ${{ secrets.directory_PAT_mo }}
