@@ -1,0 +1,43 @@
+name: CI
+
+on: [push]
+
+jobs:
+  # This job will:
+  #   * deploy a production build every time there is a push only on the master branch
+  #   * comment that commit with the deploy URL
+  publishMasterCommit:
+    name: Publish to Netlify
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+        #with:
+        #  submodules: true  # Fetch Hugo themes (true OR recursive)
+        #  fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.79.1'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
+      #- name: Deploy production to Netlify
+      #  uses: South-Paw/action-netlify-deploy@v1.0.4
+      #  with:
+      #    github-token: ${{ secrets.GITHUB_TOKEN }}
+      #    netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #    netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+       #   build-dir: './build'
+      #    comment-on-commit: true
+
