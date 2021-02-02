@@ -1,6 +1,10 @@
-name: CI
+name: Build site and deploy
 
-on: [push, pull]
+on:  
+  push:
+  pull_request:
+    branches:
+      - master
 
 jobs:
   # This job will:
@@ -26,18 +30,13 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
 
-      #- name: Deploy production to Netlify
-      #  uses: South-Paw/action-netlify-deploy@v1.0.4
-      #  with:
-      #    github-token: ${{ secrets.GITHUB_TOKEN }}
-      #    netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      #    netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-       #   build-dir: './build'
-      #    comment-on-commit: true
+      - name: Deploy production to Netlify
+        uses: South-Paw/action-netlify-deploy@v1.0.4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          build-dir: './build'
+          comment-on-commit: true
 
