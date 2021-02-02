@@ -27,15 +27,13 @@
           <div class="flex-container">
           <ul class="list" id="directory-grid">
             {{ if eq .Hugo.Environment "production" }}
-              {{ $url := "https://raw.githubusercontent.com/rladies/directory/master/directory/rladies_directory.json?token=" }}
-              {{ $pat := getenv "DIRECTORY_PAT" }}
-              {{ $directory := getJSON $url $pat | shuffle }}
+              {{ $directory := $.Site.Data.directory }}
               {{ range $directory }}
                 {{ partial "directory/li.html" . }}
               {{ end }}
               
             {{ else }}
-              {{ $directory := $.Site.Data.directory | shuffle }}
+              {{ $directory := $.Site.Data.directory_mock  }}
               {{ range $directory }}
                 {{ partial "directory/li.html" . }}
               {{ end }}
