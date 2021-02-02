@@ -27,7 +27,7 @@ jobs:
       
       - name: Cleanup directory data
         run: |
-          ls
+          rm data/[1-9]_* 
           mv directory/data data/directory
           rm -rf directory
 
