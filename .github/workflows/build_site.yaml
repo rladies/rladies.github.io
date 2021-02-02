@@ -28,6 +28,8 @@ jobs:
           # extended: true
 
       - name: Build
+        env: 
+          DIRECTORY_TOKEN: ${{ secrets.DIRECTORY_TOKEN }}
         run: hugo --minify
 
 
