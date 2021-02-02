@@ -21,8 +21,8 @@ jobs:
       - name: Get directory data
         uses: actions/checkout@v1
         with:
-        repository: rladies/directory
-        token: ${{ secrets.DIRECTORY_PAT }}
+          repository: rladies/directory
+          token: ${{ secrets.DIRECTORY_PAT }}
       
       - name: Clean directory data
         run: |
