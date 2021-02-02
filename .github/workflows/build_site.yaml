@@ -41,11 +41,9 @@ jobs:
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo --buildFuture 
 
-      - name: Install npm
-        uses: actions/setup-node@v1
-        
+
       - name: Deploy to Netlify
-        # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
+        if: ${{ github.event.push }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -53,3 +51,11 @@ jobs:
           npm install netlify-cli -g
           netlify deploy --prod
 
+      - name: Deploy Netlify preview
+        if: ${{ github.event.pull_request }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npm install netlify-cli -g
+          netlify deploy
