@@ -39,15 +39,17 @@ jobs:
       - name: Build
         env: 
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
-        run: hugo
+        run: hugo --buildFuture 
 
-
-      - name: Deploy production to Netlify
-        uses: South-Paw/action-netlify-deploy@v1.0.4
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
-          build-dir: './build'
-          comment-on-commit: true
+      - name: Install npm
+        uses: actions/setup-node@v1
+        
+      - name: Deploy to Netlify
+        # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npm install netlify-cli -g
+          netlify deploy --prod
 
