@@ -38,7 +38,7 @@
               {{ end }}
               
             {{ else }}
-              {{ $directory := $.Site.Data.directory | shuffle }}
+              {{ $directory := $.Site.Data.directory_mock | shuffle }}
               {{ range $directory }}
                 {{ partial "directory/li.html" . }}
               {{ end }}
