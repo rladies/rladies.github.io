@@ -37,7 +37,7 @@ jobs:
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo --buildFuture 
 
-      - name: Install npm
+      - name: Install netlify
         run: npm install netlify-cli -g
         
       - name: Deploy to Netlify
