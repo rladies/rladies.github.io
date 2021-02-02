@@ -24,8 +24,9 @@ jobs:
           repository: rladies/directory
           token: ${{ secrets.directory_PAT_mo }}
       
-      - name: Get directory data
+      - name: Cleanup directory data
         run: |
+          ls
           mv directory/data data/directory
           rm -rf directory
 
