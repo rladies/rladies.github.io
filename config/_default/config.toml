@@ -2,7 +2,7 @@ baseURL = "https://pensive-babbage-969fad.netlify.app"
 languageCode = "en"
 title = "R-Ladies Global"
 theme = "hugo-initio-rladies"
-publishDir = "public"
+publishDir = "build"
 ignoreFiles = ["\\.Rmd$", "_cache$", "\\.DS_Store", "_files$", 
   "index\\.html", "_cache$", "README"]
   
