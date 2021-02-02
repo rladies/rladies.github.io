@@ -6,12 +6,9 @@ on:
       - master
 
 jobs:
-  # This job will:
-  #   * deploy a production build every time there is a push only on the master branch
-  #   * comment that commit with the deploy URL
-  publishMasterCommit:
+  build:
+    runs-on: macOS-latest
     name: Publish to Netlify
-    runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
       - name: Checkout repository
@@ -40,11 +37,19 @@ jobs:
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo --buildFuture 
 
-
+      - name: Install netlify
+        run: npm install netlify-cli -g
+        
       - name: Deploy to Netlify
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: |
-          npm install netlify-cli -g
-          netlify deploy --prod
+        run: netlify deploy --prod
+          
+      - name: Deploy Netlify preview
+        if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: netlify deploy
