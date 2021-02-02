@@ -1,0 +1,51 @@
+name: Build site and deploy
+
+on:  
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  # This job will:
+  #   * deploy a production build every time there is a push only on the master branch
+  #   * comment that commit with the deploy URL
+  publishMasterCommit:
+    name: Publish to Netlify
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Get directory data
+        uses: actions/checkout@v2
+        with:
+          repository: rladies/directory
+          token: ${{ secrets.directory_PAT_mo }}
+          path: directory
+      
+      - name: Cleanup directory data
+        run: |
+          rm directory/data/[1-9]_* # remove double entries. can be deleted after manual clean
+          mv directory/data data/directory
+          rm -rf directory
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.79.1'
+
+      - name: Build
+        env: 
+          DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
+        run: hugo --buildFuture 
+
+
+      - name: Deploy to Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          npm install netlify-cli -g
+          netlify deploy 
+          
