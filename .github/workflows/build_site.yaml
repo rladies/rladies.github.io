@@ -23,6 +23,7 @@ jobs:
         with:
           repository: rladies/directory
           token: ${{ secrets.directory_PAT_mo }}
+          path: directory
       
       - name: Cleanup directory data
         run: |
