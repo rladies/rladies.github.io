@@ -8,7 +8,7 @@ output:
   html_document:
     keep_md: yes
 ---
-
+ 
 R-Ladies was founded by [Gabriela de Queiroz](https://rladies.org/united-states-rladies/name/gabriela-de-queiroz/). She wanted to do something to give back to the R learning community after going to several meetups and learning a lot for free.  The first meetup took place in San Francisco, California (United States) on October 1, 2012. <!-- I think it would be great here to talk a bit about what an R-ladies meetup initially involved eg mentoring, training, guest speakers?  -->
 
 In the following years two more R-Ladies chapters launched independently around the world <!--who by?-->: Twin Cities, USA and Taipei. R-Ladies London launched in March 2016. <!--I don't really understand this bit - did Gabriella initiate the other R ladies groups or did they all start organically? was it a coincidence that they were all called R-Ladies? Who set up these groups?--> Although each chapter started working independently,<!-- ~~the need for high-level coordination and support became evident at useR! 2016 where the San Francisco and London chapters met.~~ -->all this changed at useR! 2016, when the organisers of the global R-ladies chapters met in person for the first time. 
