@@ -49,3 +49,7 @@ node_modules
 README.html
 .httr-oauth
 /Users/athanasm/.meetup_token.rds
+
+# Is added only during gh actions
+# should never be commited
+data/directory/

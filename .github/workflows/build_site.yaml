@@ -27,7 +27,7 @@ jobs:
       
       - name: Cleanup directory data
         run: |
-          rm directory/data/[1-9]_* 
+          rm directory/data/[1-9]_* #remove double entries. can be deleted after manual clean
           mv directory/data data/directory
           rm -rf directory
 
