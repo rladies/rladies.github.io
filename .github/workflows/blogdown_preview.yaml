@@ -4,7 +4,7 @@ on:
       - main
       - master
 
-name: blogdown
+name: Build site and preview
 
 jobs:
   build:
