@@ -9,51 +9,27 @@ name: blogdown
 jobs:
   build:
     runs-on: macOS-latest
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    name: Publish to Netlify
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v1
-
-      - name: Install pandoc
-        run: |
-          brew install pandoc
-          
-      - name: Install gfortran
-        run: |
-          brew install gfortran
-
-      - name: Cache Renv packages
-        uses: actions/cache@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          path: $HOME/.local/share/renv
-          key: r-${{ hashFiles('renv.lock') }}
-          restore-keys: r-
+          hugo-version: '0.79.1'
 
-      - name: Install packages
-        run: |
-          R -e 'install.packages("renv")'
-          R -e 'renv::restore()'
+      - name: Build
+        env: 
+          DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
+        run: hugo --buildFuture 
 
-      - name: Install hugo
-        run: |
-          R -e 'blogdown::install_hugo()'
-
-      - name: Build site
-        run: |
-          R -e 'blogdown::build_site(TRUE)'
-
-      - name: Install npm
-        uses: actions/setup-node@v1
-
+      - name: Install netlify
+        run: npm install netlify-cli -g
+        
       - name: Deploy to Netlify
-        # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: |
-          npm install netlify-cli -g
-          netlify deploy 
+        run: netlify deploy
