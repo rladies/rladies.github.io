@@ -9,8 +9,7 @@ name: Build site and publish
 jobs:
   build:
     runs-on: macOS-latest
-    name: Publish to Netlify
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    name: Build site and publish
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
