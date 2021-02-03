@@ -97,10 +97,15 @@ a {
 	height: 100%;
 }
 
-.bg-llight {
-  background-color: $theme-color-alpha;
-}
-
 .bg-white {
   background-color: #FFF;
+}
+
+.post{
+  border: 1px solid $theme-color;
+  border-radius: 10px;
+}
+
+header{
+  border-bottom: 5px solid $theme-color;
 }
