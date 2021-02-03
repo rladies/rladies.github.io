@@ -22,7 +22,7 @@ jobs:
       - name: Build
         env: 
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
-        run: hugo --buildFuture 
+        run: hugo --minify 
 
       - name: Install netlify
         run: npm install netlify-cli -g
