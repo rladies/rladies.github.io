@@ -1,0 +1,20 @@
+// ==============================
+// Custom style
+// ==============================
+// You can override the variables in _variables.scss to customize the style
+
+// Serif font family of the site.
+$global-serif-font-family: Helvetica Neue, Lato, Open Sans, serif !default;
+
+// Font family of the logo.
+$logo-font-family: Helvetica Neue, Lato, Open Sans, serif !default;
+
+$theme-color: #88398a !default;
+$theme-color-alpha:  #88398a24 !default;
+$deputy-color: #441c45 !default;
+
+// Border top of the post + post.
+$post-border: 1px solid $theme-color !default;
+
+$black: #88398a !default;
+$code-background: #fefefe
