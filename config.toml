@@ -1,4 +1,4 @@
-baseURL = "http://blog.rladies.org/"
+baseURL = "https://blog.rladies.org/"
 languageCode = "en-us"
 title = "R-Ladies Blog"
 theme = "janeadapt"
