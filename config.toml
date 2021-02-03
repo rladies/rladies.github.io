@@ -4,7 +4,7 @@ title = "R-Ladies Blog"
 theme = "janeadapt"
 relativeURLs = true
 publishDir = "public"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 #disqusShortname = "username" # delete this to disable disqus comments
 #googleAnalytics = ""
 

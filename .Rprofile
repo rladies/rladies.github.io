@@ -8,5 +8,6 @@ options(
   blogdown.knit.on_save = FALSE,
   blogdown.ext = ".Rmd",
   blogdown.subdir = "post",
-  blogdown.title_case = TRUE
+  blogdown.title_case = TRUE,
+  blogdown.hugo.version = "0.80.0"
 )

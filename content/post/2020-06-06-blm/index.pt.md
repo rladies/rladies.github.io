@@ -8,7 +8,6 @@ tags:
 - portuguese
 categories:
 - r-ladies
-output: html_document
 ---
 
 
