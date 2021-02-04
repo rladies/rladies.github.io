@@ -19,14 +19,14 @@ jobs:
         with:
           hugo-version: '0.80.0'
           extended: true
+      
+      - name: Install netlify
+        run: npm install netlify-cli -g
 
       - name: Build
         env: 
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo --minify
-
-      - name: Install netlify
-        run: npm install netlify-cli -g
         
       - name: Deploy to Netlify
         env:
