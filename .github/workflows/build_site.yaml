@@ -2,14 +2,17 @@ name: Build site and deploy
 
 on:
   pull_request:
+    branches:
+      - main
+      - master
   push:
-    branches: master
+    branches: 
+      - master
 
 jobs:
   build:
     runs-on: macOS-latest
-    name: Publish to Netlify
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    name: Build and publish to Netlify
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -40,7 +43,7 @@ jobs:
       - name: Install netlify
         run: npm install netlify-cli -g
         
-      - name: Deploy to Netlify
+      - name: Deploy to Netlify production
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
@@ -48,7 +51,7 @@ jobs:
         run: netlify deploy --prod
           
       - name: Deploy Netlify preview
-        if: github.event_name == 'pull_request' && github.ref != 'refs/heads/master'
+        if: github.event_name == 'pull_request'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
