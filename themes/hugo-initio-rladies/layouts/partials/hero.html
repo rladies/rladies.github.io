@@ -2,7 +2,7 @@
   
   <img src="{{ .Site.Params.banner | relURL }}">
   
-  <a href="/">
+  <a rel="alternate" href="{{ .Lang | relURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">
     <div class="logo">
       <img src="{{ .Site.Params.avatar | relURL }}">
     </div>

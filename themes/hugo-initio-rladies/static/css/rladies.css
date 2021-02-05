@@ -11,13 +11,11 @@ html {
 }
 
 body {
-  font-family: "Open sans", Arial, sans-serif;
   color: #666666;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", "Lato", "Open Sans", sans-serif; 
   color: #88398a;
   font-weight: 450;
 }
@@ -31,13 +29,8 @@ a:hover, a:focus {
 }
 
 .navbar{
-  font-family: "Helvetica Neue WGL", "Lato", "Open Sans", sans-serif; 
   color: #88398a;
   font-weight: 500;
-}
-
-.navbar-collapse {
-  font-family: "Helvetica Neue WGL", "Lato", "Open Sans", sans-serif; 
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -56,8 +49,16 @@ a:hover, a:focus {
 }
 
 .entry-header .entry-meta .tagline{
-  font-family: "Helvetica Neue","Lato",  "Open Sans", sans-serif; 
   color: #fff;
+}
+
+.not-translated{
+  background-color: #88398a66;
+  font-size: 20px;
+  text-align: center;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 10px;
 }
 
 .hero {
@@ -142,7 +143,6 @@ buttonr2{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
   cursor: pointer;
 }
 
@@ -177,6 +177,23 @@ p.date span {
 .read-more {
   text-align: right;
 }
+
+/******************/
+/*   highlight    */
+/******************/
+
+pre {
+  border-radius: 10px;
+  border: 1px solid #88398a;
+  background-color: #88398a55;
+}
+
+pre.chroma {
+  background-color: #88398a22;
+  border: 1px solid #88398a;
+  border-radius: 10px;
+}
+
 /******************/
 /* flex grid */
 /******************/

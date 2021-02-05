@@ -1,11 +1,7 @@
 [404_title]
     other = "404"
 [404_description]
-    other = "Oops! This page doesn't exist!"
-
-
-[subheader]
-    other = ""
+    other = "Oops! Cette page n'existe pas!"
 
 [read_more]
     other = "Lire la suite"
@@ -15,6 +11,8 @@
     other = "Download"
 [translations]
     other = "Translations"
+[missing_translation]    
+    other = "Nous sommes désolés, cette page n'a pas encore été traduite en français"
     
 [footer_followme_title]
     other = "Follow us"
@@ -30,29 +28,19 @@
 
 [tags]
   other = "Tags"
-
 [tag]
   other = "Tag: "
 
 [categories]
   other = "Catégories"
-
 [category]
   other = "Catégory: "
 
 # posts
 [prev]
   other = "Prec"
-
 [next]
   other = "Suiv"
-
-[prev_post]
-  other = "Prec"
-
-[next_post]
-  other = "Suiv"
-
 [toc]
   other = "Sommaire"
 
@@ -67,10 +55,8 @@
 # counter
 [counter_archives]
   other = "{{.Count}} articles au total"
-
 [counter_tagcloud]
   other = "{{.Count}} Tags au total"
-
 [counter_categories]
   other = "{{.Count}} Catégories au total"
 
@@ -78,6 +64,7 @@
 [morePost]
   other = "Plus d'articles >>>"
 
+# read in other languages
 [read_pt]
   other = "Leia em português"
 
