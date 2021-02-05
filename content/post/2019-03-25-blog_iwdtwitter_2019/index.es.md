@@ -12,7 +12,9 @@ categories:
 - IWD
 - 2019
 - r-ladies
-output: html_document
+output: 
+  html_document:
+    keep_md: yes
 ---
 
 

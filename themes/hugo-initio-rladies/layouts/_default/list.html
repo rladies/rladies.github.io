@@ -2,16 +2,14 @@
 <main id="main">
 
 	<div class="container">
-		<div class="row topspace">
+		<div class="row">
 			<div class="col-sm-8 col-sm-offset-2">
         {{ range .Paginator.Pages }}
           {{ partial "post/summary.html" .}}
         {{ end }}
-        <center>
     			<ul class="pagination">
             {{ template "_internal/pagination.html" . }}
     			</ul>
-    		</center>
 			</div>
 		</div>
 	</div>	<!-- /container -->

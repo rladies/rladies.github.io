@@ -8,8 +8,8 @@ year      = 2013
 banner    = "images/user2017.jpg"
 bannerOverlay = "#88398a"
 favicon   = "images/favicon.png"
-DateForm  = "January 2, 2006"
-#customCSS = ["css/rladies.css"]
+DateForm  = "2 January 2006"
+#customCSS = ["css/rladies.css", "css/syntax_lovelace.css"]
 
 showSubheader   = false
 

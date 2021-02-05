@@ -1,5 +1,6 @@
 ---
 title: "Mission"
+translated: yes
 ---
 
 

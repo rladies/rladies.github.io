@@ -2,17 +2,21 @@
 <title>{{ .Title }}</title>
 <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
 
-<!-- Bootstrap -->
-<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+<!-- Bootstrap 3 -->
+ <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet"> 
 
+<!-- Bootstrap 4 for updating when possible many great options like flex contains etc that could reduce our own css
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+ 
 <!-- Icons -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 
-<!-- Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext'type='text/css'>
+<!-- website css -->
 <link rel="stylesheet" href="{{ "css/styles.css" | relURL }}">
 <link rel="stylesheet" href="{{ "css/rladies.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/syntax_lovelace.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/rladies-fonts.css" | relURL }}">
 
 
 <!-- Custom styles -->	

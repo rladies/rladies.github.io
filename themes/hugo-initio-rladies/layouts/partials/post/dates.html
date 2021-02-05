@@ -1,4 +1,4 @@
-<time datetime="{{ .Date.Format "2006-01-02" }}" class="post-time">
+<time datetime="{{ .Date.Format .Site.Params.DateForm }}" class="post-time">
     <p class="date"><span>{{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
     </span></p>
 </time>

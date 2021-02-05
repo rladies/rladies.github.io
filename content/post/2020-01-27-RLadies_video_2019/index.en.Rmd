@@ -8,6 +8,9 @@ tags:
 categories:
 - R-Ladies
 always_allow_html: yes
+output: 
+  html_document:
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}

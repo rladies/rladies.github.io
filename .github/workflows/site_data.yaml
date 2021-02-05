@@ -25,17 +25,17 @@ jobs:
       - name: Meetup authentication
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript R/meetup_auth.R
+        run: Rscript scripts/meetup_auth.R
         
       - name: Update chapter data
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript R/get_chapters.R
+        run: Rscript scripts/get_chapters.R
         
       - name: Update event data
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript R/get_events.R
+        run: Rscript scripts/get_events.R
 
       - name: Commit results
         run: |

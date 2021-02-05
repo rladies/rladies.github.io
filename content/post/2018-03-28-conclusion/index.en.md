@@ -12,6 +12,9 @@ tags:
   - part3
   - twitter
   - 2018
+output: 
+  html_document:
+    keep_md: yes
 ---
 
 ### As told by Page and Sheila

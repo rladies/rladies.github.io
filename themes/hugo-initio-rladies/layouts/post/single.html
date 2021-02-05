@@ -4,6 +4,12 @@
 		<div class="row topspace">
 
 				<header class="entry-header">
+ 						{{ if eq .Params.translated false }}
+              <div class="not-translated">
+                 {{ i18n "missing_translation" }}
+               </div>
+            {{ end }}
+            
  					<h1 class="entry-title">
  					  <a title={{ i18n "translations" }} href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
  					</h1>
@@ -19,13 +25,13 @@
                 {{ end }}
               </div>
             {{- end }}
+ 						
     				{{ partial "post/i18n.html" . }}
       		</header>
 
 				
 				<p>{{ .Content }}</p>
 
-  <div class="container">
       {{ with .Params.tags -}}
         <div class="post-tags">
           {{ range . }}
@@ -36,32 +42,39 @@
           {{ end }}
         </div>
       {{- end }}
+    <br>
 
       <!-- Post Pagination -->
+    <div class="row">
       <nav class="post-nav">
-        {{ with .NextInSection }}
-          <a class="prev" href="{{ .RelPermalink }}">
-            {{/* icon left */}}
-            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
-            <span class="prev-text nav-default">{{ .Title }}</span>
-            <span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span>
-          </a>
-        {{- end }}
-        {{ with .PrevInSection }}
-          <a class="next" href="{{ .RelPermalink }}">
-            <span class="next-text nav-default">{{ .Title }}</span>
-            <span class="prev-text nav-mobile">{{ i18n "next_post" }}</span>
-            {{/* icon right */}}
-            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-          </a>
-        {{- end }}
+        <div class="col-md-6 text-align-left">
+          {{ with .NextInSection }}
+            <a class="prev" href="{{ .RelPermalink }}">
+              <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+              <b><span class="prev-text nav-mobile">{{ i18n "prev_post" }}</span></b>
+              <br>
+              <span class="prev-text nav-default">{{ .Title }}</span>
+            </a>
+          {{- end }}
+        </div>
+
+        <div class="col-md-6" style="text-align: right;">
+          {{ with .PrevInSection }}
+            <a class="next" href="{{ .RelPermalink }}">
+              <b><span class="prev-text nav-mobile">{{ i18n "next_post" }}</span></b>
+              <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+              <br>
+              <span class="next-text nav-default">{{ .Title }}</span>
+            </a>
+          {{- end }}
+        </div>
       </nav>
   </div>
 
-  <!-- Author Info -->
-  {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
-  {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
-  {{ end }}
+    <!-- Author Info -->
+    {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
+    {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
+    {{ end }}
 
 		</div> <!-- /row post  -->
 	</div>	<!-- /container -->
