@@ -35,7 +35,10 @@ jobs:
           remotes::install_cran(c("tidyr", "lubridate"))
           remotes::install_cran(c("cyphr", "sodium"))
         shell: Rscript {0}
-          
+              
+      - name: Populate untranslated pages
+        run: Rscript scripts/missing_translations.R
+        
       - name: Site data - Get directory data
         uses: actions/checkout@v2
         with:
@@ -63,9 +66,6 @@ jobs:
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
         run: Rscript scripts/get_events.R
-        
-      - name: Populate untranslated pages
-        run: Rscript scripts/missing_translations.R
 
       - name: Build
         env: 
