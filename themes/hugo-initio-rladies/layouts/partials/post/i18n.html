@@ -8,7 +8,7 @@
         {{ $trans := .Params.translated | default true}}
         {{ if $trans }}
           <div>
-            <a href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a>
+            <a lang="{{.Lang}}" href="{{ .Permalink }}">{{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}</a>
           </div>
         {{ end }}
       {{ end }}

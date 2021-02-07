@@ -26,19 +26,15 @@
           </center>
           <div class="flex-container">
           <ul class="list" id="directory-grid">
+            {{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
             {{ if eq .Hugo.Environment "production" }}
-              {{ $directory := $.Site.Data.directory }}
-              {{ range $directory }}
-                {{ partial "directory/li.html" . }}
-              {{ end }}
-              
-            {{ else }}
-              {{ $directory := $.Site.Data.directory_mock  }}
-              {{ range $directory }}
-                {{ partial "directory/li.html" . }}
-              {{ end }}
+              {{ .Scratch.Set "directory" $.Site.Data.directory }}
             {{ end }}
 
+              {{ $directory :=  ( .Scratch.Get "directory" ) }}
+              {{ range $directory }}
+                {{ partial "directory/li.html" . }}
+              {{ end }}
           </ul>
           </div>
           <center>

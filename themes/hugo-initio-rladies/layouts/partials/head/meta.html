@@ -20,3 +20,12 @@
     {{ end }}
   {{ end }}
 {{ end }}
+
+
+{{ $trans := .Params.translated | default true}}
+{{ if $trans }}
+  <html lang="{{.Lang}}" xml:lang="{{.Lang}}" xmlns="http://www.w3.org/1999/xhtml">  
+{{ else }}
+  <html lang="{{.Params.language}}" xml:lang="{{.Params.language}}" xmlns="http://www.w3.org/1999/xhtml">
+{{ end }}
+        

@@ -28,9 +28,22 @@ a:hover, a:focus {
   color: #441c45;
 }
 
+.rladies-color, .caret{
+  color: #88398a;
+  fill: #88398a;
+}
+
+.rladies-bkg{
+  background-color: #88398a;
+}
+
 .navbar{
   color: #88398a;
   font-weight: 500;
+}
+
+.navbar-toggle{
+  border-color: #88398a;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
