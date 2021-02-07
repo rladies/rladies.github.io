@@ -1,29 +1,11 @@
 
-# Find all non-post content
-content <- list.files("content","index", 
-                      recursive = TRUE, 
-                      full.names = TRUE)  
-content <- content[grepl("[.]md", content)]
-
-# Find content that is not translated
-content_translated <- sapply(content, 
-                       function(x){
-                         y <- readLines(x)
-                         y <- y[grep("translated:", y)]
-                         !any(grepl("no", y))
-                       })
-
-# Delete non-translated content
-# To update in-case english content has changed.
-idx <- which(!content_translated)
-invisible(file.remove(names(idx)))
-
 # Get again all mds, now that we have deleted some
 # Find all non-post content
 content <- list.files("content","index", 
                       recursive = TRUE, 
                       full.names = TRUE)
 content <- content[grepl("[.]md", content)]
+content <- content[!grepl("post/", content)]
 
 # Get the unique directories
 dirs <-  unique(dirname(content))
@@ -50,6 +32,9 @@ for(k in dirs){
   yaml <- orig_cont[1:idx]
   yaml <- c(yaml[1:(length(yaml)-1)], 
             "translated: no", 
+            yaml[length(yaml)])
+  yaml <- c(yaml[1:(length(yaml)-1)], 
+            paste("language:", orig_lang), 
             yaml[length(yaml)])
   
   for(lang in names(j)[which(!j)]){
