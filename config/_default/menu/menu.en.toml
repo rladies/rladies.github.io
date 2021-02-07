@@ -1,5 +1,6 @@
 [[main]]
     name = "Home"
+    identifier = "home"
     url = "/"
     weight = 1
     
@@ -37,8 +38,8 @@
     
 [[main]]
     name = "Activities"
-    url = "#"
     identifier = "activities"
+    url = "#"
     weight = 4
 [[main]]
     name = "Events"
@@ -58,6 +59,7 @@
 [[main]]
     name = "Abstract review"
     url = "/activities/review/"
+    identifier = "abstract-review"
     weight = 5
     parent = "activities"
 [[main]]

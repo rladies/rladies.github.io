@@ -1,8 +1,7 @@
 <nav class="navbar navbar-default navbar-sticky">
     <div class="container-fluid">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+        <div class="nav navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -10,29 +9,24 @@
             </button>
         </div>
 
-        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
-
+        <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
-                {{ range .Site.Menus.main }} {{ if .HasChildren }}
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        {{ .Name }}<b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        {{ range .Children }}
-                        <li>
-                            <a href="{{ .URL | absLangURL }}" {{ if $.IsHome }} data-target="{{ .URL | absLangURL }}" {{ end }}> 
-                                    {{ .Name }}
-                            </a>
+                {{ range .Site.Menus.main }} 
+                    {{ if .HasChildren }}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ .Name }}<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                {{ range .Children }}
+                                    <li><a class="dropdown-item" href="{{ .URL | absLangURL }}"> {{ .Name }} </a></li>
+                                {{ end }}
+                            </ul>
+
+                    {{ else }}
+                        <li class="nav-item">
+                            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
                         </li>
-                        {{end}}
-                    </ul>
-                </li>
-                {{ else }}
-                <li>
-                    <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                </li>
-                {{ end }} {{end}}
+                    {{ end }} 
+                {{end}}
 
             </ul>
 
@@ -40,4 +34,3 @@
         <!--/.nav-collapse -->
     </div>
 </nav>
-<nav class="navbar navbar-fake"></nav>
