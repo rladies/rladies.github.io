@@ -8,6 +8,8 @@ on:
   push:
     branches: 
       - master
+  schedule:
+  - cron: "0 */12 * * *"
 
 jobs:
   build:
@@ -16,24 +18,54 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Get directory data
+        
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.79.1'
+               
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v1
+              
+      - name: Install R dependencies
+        run: |
+          install.packages("remotes", repos = "https://cloud.r-project.org")
+          remotes::install_github("rladies/meetupr")
+          remotes::install_cran(c("dplyr", "here", "purrr", "jsonlite"))
+          remotes::install_cran(c("tidyr", "lubridate"))
+          remotes::install_cran(c("cyphr", "sodium"))
+        shell: Rscript {0}
+          
+      - name: Site data - Get directory data
         uses: actions/checkout@v2
         with:
           repository: rladies/directory
           token: ${{ secrets.directory_PAT_mo }}
           path: directory
       
-      - name: Cleanup directory data
+      - name: Site data - Cleanup directory data
         run: |
           rm directory/data/[1-9]_* # remove double entries. can be deleted after manual clean
           mv directory/data data/directory
           rm -rf directory
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.79.1'
+        
+      - name: Meetup authentication
+        env: 
+          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+        run: Rscript scripts/meetup_auth.R
+        
+      - name: Site data - Update chapter data
+        env: 
+          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+        run: Rscript scripts/get_chapters.R
+        
+      - name: Site data - Update event data
+        env: 
+          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+        run: Rscript scripts/get_events.R
+        
+      - name: Populate untranslated pages
+        run: Rscript scripts/missing_translations.R
 
       - name: Build
         env: 
