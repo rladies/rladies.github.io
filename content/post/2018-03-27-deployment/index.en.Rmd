@@ -12,9 +12,6 @@ tags:
 categories:
 - IWD
 - R-Ladies
-output: 
-  html_document:
-    keep_md: yes
 ---
 
 

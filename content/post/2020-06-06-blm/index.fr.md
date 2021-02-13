@@ -8,9 +8,7 @@ tags:
 - french
 categories:
 - r-ladies
-output: 
-  html_document:
-    keep_md: yes
+output: html_document
 ---
 
 
