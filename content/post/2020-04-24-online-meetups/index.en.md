@@ -9,7 +9,7 @@ tags:
 categories:
 - r-ladies
 always_allow_html: yes
-output: 
+output:
   html_document:
     keep_md: yes
 ---
