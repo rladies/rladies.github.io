@@ -3,7 +3,7 @@ cat("Session is non-interactive. Starting meetup authentication process.\n")
 key <- cyphr::key_sodium(sodium::hex2bin(Sys.getenv("MEETUPR_PWD")))
 temptoken <- tempfile(fileext = ".rds")
 cyphr::decrypt_file(
-  here::here("/secret.rds"),
+  here::here("scripts/secret.rds"),
   key = key,
   dest = temptoken
 )
