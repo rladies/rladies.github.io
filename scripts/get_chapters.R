@@ -20,7 +20,7 @@ change_empty <- function(x) ifelse(x == "", NA, x)
 # If not running interactively, 
 # get token decrypted from env var
 if(!interactive()){
-  source(here::here("R/meetup_auth.R"))
+  source(here::here("scripts/meetup_auth.R"))
 }
 
 cat("Retrieving R-Ladies group information\n")
@@ -32,7 +32,7 @@ rladies_groups <- find_groups("r-ladies") %>%
   distinct()
 
 chapters <- read.table(
-  "https://raw.githubusercontent.com/rladies/starter-kit/master/Current-Chapters.csv", 
+  "https://raw.githubusercontent.com/rladies/starter-kit/mastescripts/Current-Chapters.csv", 
   sep = ",", header = TRUE, stringsAsFactors = FALSE) %>% 
   mutate(urlname = basename(Meetup))  %>% 
   select(-State.Region, -City, -Organizers) %>% 
