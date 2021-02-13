@@ -32,7 +32,7 @@ rladies_groups <- find_groups("r-ladies") %>%
   distinct()
 
 chapters <- read.table(
-  "https://raw.githubusercontent.com/rladies/starter-kit/mastescripts/Current-Chapters.csv", 
+  "https://raw.githubusercontent.com/rladies/starter-kit/master/Current-Chapters.csv", 
   sep = ",", header = TRUE, stringsAsFactors = FALSE) %>% 
   mutate(urlname = basename(Meetup))  %>% 
   select(-State.Region, -City, -Organizers) %>% 
