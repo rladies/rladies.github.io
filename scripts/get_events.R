@@ -11,7 +11,7 @@ pkgs <- sapply(c("meetupr","tidyr", "dplyr", "purrr", "lubridate"),
 # If not running interactively, 
 # get token decrypted from env var
 if(!interactive()){
-  source(here::here("R/meetup_auth.R"))
+  source(here::here("scripts/meetup_auth.R"))
 }
 
 # Define helper functions ----
