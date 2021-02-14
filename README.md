@@ -9,9 +9,9 @@
 This repository contains the source files for the R-Ladies website. 
 The site is built with [hugo](https://gohugo.io/) and [netlify](www.netlify.com)
 
-## Setup information
-This hugo site is setup as made possible within the hugo framework.
-The following information should give you a general idea of how the website is configured and setup.
+## Set-up information
+This hugo site is set-up as made possible within the hugo framework.
+The following information should give you a general idea of how the website is configured and set-up.
 
 ### Config
 The site is configured using a [config directory](https://gohugo.io/getting-started/configuration/#configuration-directory) rather than a single config-file. 
@@ -30,15 +30,11 @@ This makes it possible to use relative paths in the `index.md` to the secondary 
 The site used hugo [data templates](https://gohugo.io/templates/data-templates/#readout) for three of the site pages.
 
 - Mentoring program
-- Directory 
-- Events (coming)
 
 Hugo data template source data are found in the `data` folder, where we have chosen to use `.json` files for this purpose. 
 
 Of these, only the mentoring program has a file that is updated manually by R-Ladies global team members working with the mentoring program. 
-The data for the directory contained in this repository is merely a dummy file for local development previews of the directory page. 
-The online directory data source is in a private github directory and is only accessed during production rendering of the online webpage. 
-The events data is still under development, but this will be updated periodically using github actions and information from [Meetup](https://www.meetup.com/pro/rladies/).
+
 
 ### Static
 In the static folder, all files that should be globally accessible to the content files can be placed.
@@ -60,16 +56,16 @@ There are many types of contributions we are happy to receive, for instance:
 - Bug reports  
 - Responding to and fixing [issues](https://github.com/rladies/website/issues)  
 
-If you want to contribute to the site, the best option is to fork (button to the top right) the repository to your own github, and work with it in the medium you are most comfortable with.
-If you are doing simple changes to text-files, you may also do this entirely in the main repository in github, if you are comfortable with that.
+If you want to contribute to the site, the best option is to branch the repo.
+PRs from branches will render previews, while PRs from forks will not. 
 
 ### Reports of bugs
 Please report any bugs or issues on the page on [github issues](https://github.com/rladies/website/issues).
 You can also use this same link to request content you feel is missing. 
-If you would like to give us a hand at fixing some of the issues listed, we would grately appreciate that.
+If you would like to give us a hand at fixing some of the issues listed, we would greatly appreciate that.
 
 ### Working on a local copy
-If you are working on your own local copy (either as a clone of the main repository - remember to make your own branch! - or as a local fork, see [Happy Git and GitHub for the useR](https://happygitwithr.com/) for more information for tips), the site should be rendered with hugo directly.
+If you are working on your own local copy (as a clone of the main repository - remember to make your own branch, see [Happy Git and GitHub for the useR](https://happygitwithr.com/) for more information for tips) - the site should be rendered with hugo directly.
 This website is developed for hugo, and not R-packages like blogdown or hugodown. 
 
 To render the site locally, open a terminal and use: 
@@ -105,6 +101,7 @@ First, the 2 or 3 [letter language code](https://www.science.co.il/language/Code
 - Add new language to `config/_default/languages.toml`
 - Copy and edit `config/_default/menu.en.toml` to the new language
 - Copy and edit `themes/hugo-initio-rladies/i18n/en.toml` to the new language
+- Copy and edit `data/month/en.toml` to the new language
 
 Serve the site and see how the new site language looks.
 
