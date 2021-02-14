@@ -34,7 +34,7 @@ knitr::opts_chunk$set(collapse = TRUE, echo = FALSE)
 # devtools::install_github("DataWookie/feedeR")
 library(feedeR)
 
-feed <- feed.extract("https://blog.rladies.org/tags/iwd//index.xml")$items
+feed <- feed.extract("https://blog.rladies.org/tags/iwd/index.xml")$items
 
 make_div <- function(title, date, link, desc){
   paste0(
