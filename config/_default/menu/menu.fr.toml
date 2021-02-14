@@ -1,6 +1,7 @@
 [[main]]
     name = "Home"
-    url = "/../"
+    identifier = "home"
+    url = "/"
     weight = 1
     
 [[main]]
@@ -28,21 +29,22 @@
     url = "/about-us/history/"
     weight = 4
     parent = "about-us"
+
+    
+[[main]]
+    name = "Directory"
+    url = "/directory/"
+    weight = 3
     
 [[main]]
     name = "Activities"
-    url = "#"
     identifier = "activities"
-    weight = 3
+    url = "#"
+    weight = 4
 [[main]]
     name = "Events"
     url = "/activities/events/"
     weight = 1
-    parent = "activities"
-[[main]]
-    name = "R-Ladies Directory"
-    url = "/activities/directory/"
-    weight = 2
     parent = "activities"
 [[main]]
     name = "Mentoring Program"
@@ -57,6 +59,7 @@
 [[main]]
     name = "Abstract review"
     url = "/activities/review/"
+    identifier = "abstract-review"
     weight = 5
     parent = "activities"
 [[main]]
@@ -74,6 +77,7 @@
     url = "https://benubah.github.io/r-community-explorer/rladies.html"
     weight = 8
     parent = "activities"
+
     
 #[[main]]
 #    name = "Blog"
@@ -84,3 +88,4 @@
     name = "Blog"
     url = "/post"
     weight = 5
+    
