@@ -38,6 +38,9 @@ jobs:
           remotes::install_cran(c("tidyr", "lubridate"))
           remotes::install_cran(c("cyphr", "sodium"))
         shell: Rscript {0}
+        
+      - name: Populate CoC
+        run: Rscript scripts/populate_coc.R
               
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
