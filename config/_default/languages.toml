@@ -7,16 +7,16 @@
 [es]
   languageName = "Español"
   weight = 1
-#  description = ""
+  description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
 
 [pt]
   languageName = "Português"
   weight = 1
-#  description = ""
+  description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
 
 
 [fr]
   languageName = "Français"
   weight = 1
-#  description = ""
+  description = "R-Ladies is a world-wide organization to promote gender diversity in the R community"
 
