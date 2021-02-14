@@ -1,7 +1,7 @@
 ---
 title: "Le programme de mentorat de R-Ladies : le voyage de R-Ladies Cotonou"
 author: "[Nadejda Sero](https://twitter.com/sbnadejda), organisatrice à [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
-date: "2021-02-04"
+date: "2021-02-14"
 description: "Le programme de mentorat de R-Ladies"
 tags: 
 - communauté
@@ -13,18 +13,13 @@ categories:
 output: html_document
 ---
 
-*Nous sommes très heureux de vous fournir cet article de blog dans différentes langues.
-Continuez à lire cet article en [Anglais](https://blog.rladies.org/post/cotonou_eng/) ou [Espagnol](https://blog.rladies.org/post/cotonou_spanish/).
-Si vous souhaitez en savoir plus sur la manière de contribuer au blog de R-Ladies en général ou souhaitez faire de recommendations, veuillez nous contacter par e-mail à christin@rladies.org.*
+*Nous sommes très heureux de vous fournir cet article de blog dans différentes langues: Anglais, Français et Espagnol. Si vous souhaitez en savoir plus sur la manière de contribuer au blog de R-Ladies en général ou souhaitez faire de recommendations, veuillez nous contacter par e-mail à <christin@rladies.org>.*
 
 ## Comment tout a commencé… ? 🤔
 
 R-Ladies Cotonou est un groupe local de [R-Ladies Global](https://twitter.com/RLadiesGlobal) basé à Cotonou, au Bénin (Afrique de l'Ouest). À ce jour, nous avons 30 membres avec quatre femmes dans l'équipe organisatrice. L'idée de créer R-Ladies Cotonou est née sur Twitter ! Voici l'histoire ! 
 
-```{r echo=FALSE}
-#(https://twitter.com/sbnadejda/status/901597952837222401)!
-blogdown::shortcode('tweet', '901597952837222401')
-```
+{{< tweet 901597952837222401 >}}
 
 Ces tweets ont conduit à la création de R-Ladies Cotonou en Septembre 2017 ! Cela a principalement consisté à créer et configurer certaines des plateformes dont nous avions besoin : un e-mail et un compte Twitter ! [Benedicta Essuon](https://twitter.com/Bene_Essuon?s=20), une amie ghanéenne, qui était une étudiante dans mon pays, m'a aidé pendant ce processus.  
 
@@ -49,7 +44,7 @@ Avec plus de confiance, je suis retournée à l'organisation de R-Ladies Cotonou
 
 Notre premier meetup (rencontre) officiel a eu lieu en Juillet 2019 ! Les diapositives étaient attrayantes et détaillées (pleines d'émojis aussi) et la pâtisserie partagée était délicieuse. En gros, j'ai présenté R-Ladies (mission, objectifs, système, ressources…) à nos membres. Nous avons eu une bonne discussion spécifiquement sur la vie de notre groupe local. Voir l’enthousiasme et la motivation des membres présents à planifier les prochains rendez-vous m'a fait pleurer. (J'ai célébré avec mon mentor avec beaucoup d'émojis heureux et festifs). Quelques photos peuvent être trouvées [ici](https://twitter.com/RLadiesCtn/status/1155935587188166657) !  
 
-![*Les membres joyeux de R-Ladies Cotonou partageant des pâtisseries. Cette photo a été prise lors du premier meetup officiel où les membres ont appris tout ce qui est utile sur R-Ladies et surtout sur R-Ladies Cotonou.*](../../image/rladies_cotonou_fig02.jpg){width=600px}
+![Les membres joyeux de R-Ladies Cotonou partageant des pâtisseries. Cette photo a été prise lors du premier meetup officiel où les membres ont appris tout ce qui est utile sur R-Ladies et surtout sur R-Ladies Cotonou.](../../image/rladies_cotonou_fig02.jpg)
 
 Le programme de mentorat de R-Ladies a été gratifiant pour mon groupe. Avec l’aide de mon mentor, j’ai pu trouver des solutions à long terme au problème d’Internet. Nous utilisons des e-mails et WhatsApp pour partager les documents et outils issus de nos rencontres et entrer en contact avec nos membres. Ces méthodes sont moins chères et les membres sont à l'aise avec ces moyens de communication. Cependant, nous encourageons toujours l'utilisation de Twitter et de Meetup.  
 
@@ -61,7 +56,7 @@ Avant la deuxième rencontre, R-Ladies Cotonou a reçu du financement de niveau 
 
 La deuxième rencontre s'est bien déroulée [(quelques photos ici)](https://twitter.com/RLadiesCtn/status/1227670069305651201). Pour encourager et motiver les potentielles présentatrices, j'ai demandé à la fin du tutoriel à la présentatrice, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), de partager son expérience depuis le choix de son sujet jusqu’à la présentation ! Elle a partagé cela avec joie et des volontaires pour la prochaine rencontre se sont immédiatement manifestées. Pour agrémenter un peu, nous avons ajouté un événement supplémentaire surprise qui était un court entretien par [Shériftah Mama Chabi](https://twitter.com/masherycha1) sur le thème *Ladies in Science (Les femmes en Science)*. Elle a présenté la situation des femmes dans les sciences, discuté de l'égalité des genres et des défis rencontrés par les femmes scientifiques, et a terminé sa présentation en donnant un répertoire de liens utiles vers des opportunités et du financement.  
 
-![La deuxième conférencière, Ruth Ouangbey, nous présente une revue des méthodes les plus pratiques pour l'importation et l'exportation des données. Les membres suivent et prennent des notes.](../../image/rladies_cotonou_fig03.jpg){width=500px}
+![La deuxième conférencière, Ruth Ouangbey, nous présente une revue des méthodes les plus pratiques pour l'importation et l'exportation des données. Les membres suivent et prennent des notes.](../../image/rladies_cotonou_fig03.jpg)
 
 J'ai beaucoup appris de ce programme de mentorat et je crois que je partage les idées en donnant l'exemple dans le groupe. Je pense aussi que même si je devais me retirer de mon rôle d’organisatrice, le groupe serait en bonne santé et entre de bonnes mains. Je suis profondément et sincèrement reconnaissante envers Florencia, mon mentor qui s'est vraiment investie dans ce mentorat de par sa disponibilité tout au long du programme et de par son écoute très attentive à chacune de mes préoccupations. Merci à l'équipe globale de R-Ladies d'avoir créé ce programme et de m'avoir proposé d'en faire partie ! 💜  
 
@@ -74,4 +69,6 @@ Aujourd'hui, R-Ladies Cotonou est en bonne santé, surtout grâce au programme d
 
 _Auteur: [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
 Traduction en Espagnol: Florencia D'Andrea, Relecture: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada_
+
+*Auteur et Traduction en Français:* [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn). *Traduction en Espagnol:* [Florencia D'Andrea](https://twitter.com/cantoflor_87?s=20). *Relecture et révision:* [Mine Dogucu](https://twitter.com/MineDogucu?s=20) et [Divya Seernani](https://twitter.com/DSeernani?s=20). *Blog:* [Christin Zasada](https://twitter.com/ChristinZasada?s=20) et [Athanasia Mowinckel](https://twitter.com/DrMowinckels?s=20).
 

@@ -1,7 +1,7 @@
 ---
 title: "El programa de mentorías de R-Ladies: la historia de  R-Ladies Cotonou"
 author: "[Nadejda Sero](https://twitter.com/sbnadejda), organizador en [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
-date: "2021-02-04"
+date: "2021-02-14"
 description: "Programa de mentorías de R-Ladies"
 tags: 
 - comunidad
@@ -12,18 +12,13 @@ categories:
 - r-ladies
 ---
 
-*Estamos felices de traerles este artículo en diferentes idiomas.
-Si quieres puedes compartir esta publicación en [francés](https://blog.rladies.org/post/cotonou_french/) o [inglés](https://blog.rladies.org/post/cotonou_english/).
-Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a christin@rladies.org.*
+*Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <christin@rladies.org>.*
 
-##¿Cómo comenzo todo?🤔
+## ¿Cómo comenzo todo?🤔
 
 R-Ladies Cotonou es un capítulo de [R-Ladies Global](https://twitter.com/RLadiesGlobal) ubicado en Cotonou, Benin (África Oeste). Hasta el día de hoy consta de treinta miembros y cuatro mujeres en el equipo organizador. ¡La idea de crear R-Ladies Cotonou nació en Twitter! Aquí su historia:
 
-```{r echo=FALSE}
-#(https://twitter.com/sbnadejda/status/901597952837222401)!
-blogdown::shortcode('tweet', '901597952837222401')
-```
+{{< tweet 901597952837222401 >}}
 
 Estos tweets desencadenaron la apertura del capítulo en septiembre de 2017. Mayoritariamente comenzar a organizar el capítulo involucró configurar algunas plataformas: un email y una cuenta de Twitter. Benedicta Essuon, una amiga de Ghana que estudiaba en mi país me ayudó con este proceso.
 
@@ -48,7 +43,7 @@ El programa de mentorías de R-Ladies me dió voz para poder expresar mis dificu
 
 Nuestro primer meetup ocurrió oficialmente en julio de 2019. Las filminas fueron bonitas y detalladas (llenas de emojis también) y la comida fue deliciosa. Basicamente presenté R-Ladies (misión, objetivos, sistema, recursos) a quienes asistieron. Una buena parte de la charla fue específica sobre el nacimiento de nuestro capítulo. Ver la motivación de los asistentes al planear próximos eventos me emocionó (celebramos con mi mentora con un montón de emojis de felicidad). Algunas fotos del primer evento pueden encontrarse [aquí](https://twitter.com/RLadiesCtn/status/1155935587188166657).
 
-![Asistentes a la primera reunión de R-Ladies Cotonou compartiendo algunas cosas dulces. Se tocaron temas útiles a saber sobre R-Ladies y especialmente sobre R-Ladies Cotonou.](../../image/rladies_cotonou_fig02.jpg){width=600px}
+![Asistentes a la primera reunión de R-Ladies Cotonou compartiendo algunas cosas dulces. Se tocaron temas útiles a saber sobre R-Ladies y especialmente sobre R-Ladies Cotonou.](../../image/rladies_cotonou_fig02.jpg)
 
 El programa de mentorías de R-Ladies ha sido beneficioso para mi capítulo. Con la ayuda de mi mentora pude encontrar formas de solucionar el problema de internet a largo plazo. Usamos emails y WhatsApp para compartir materiales para los eventos y ponernos en contacto entre los miembros. Estos métodos son baratos y la mayoría se siente cómoda con ellos. Sin embargo, aun aconsejamos el uso de Twitter y Meetup. 
 
@@ -60,7 +55,7 @@ Uno de los problemas más importantes que atacamos con mi "R-hermana" fue motiva
 
 Nuestro segundo encuentro estuvo muy bueno; comparto algunas imagenes [aquí](https://twitter.com/RLadiesCtn/status/1227670069305651201). Para motivar y alentar futuras charlas, al final de la charla le propuse a la oradora, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), que comparta su experiencia al momento de elegir un tema para presentar. Ella compartió su experiencia e inmediatamente se ofrecieron voluntarias para la próxima reunión. Para darle más sabor, agregamos un evento sorpresa extra, una charla relámpago de [Shériftah Mama Chabi](https://twitter.com/masherycha1) sobre el tema *"Mujeres en ciencia"*. Se presentó el el panorama de la mujer en la ciencia, se discutió sobre igualdad de género y los desafíos que enfrentan las mujeres científicas, y terminó dando varios de enlaces útiles a oportunidades y financiamiento.
 
-![La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets.](../../image/rladies_cotonou_fig03.jpg){width=500px}
+![La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets.](../../image/rladies_cotonou_fig03.jpg)
 
 He aprendido mucho del programa y estoy difundiendo algunas de ideas que obtuve de el poniendo como ejemplo mi capítulo. Creo a su vez que si tuviera que renunciar a mi rol de organizadora, el capítulo estaría bien y en buenas manos. Estoy profunda y sinceramente agradecida con Florencia, mi mentora, que realmente invirtió su tiempo para estar disponible mientras duró, escuchando cualquier preocupación. ¡Gracias al equipo de R-Ladies global por presentar este programa y ofrecerme ser parte de él! 💜
 
@@ -71,5 +66,4 @@ He aprendido mucho del programa y estoy difundiendo algunas de ideas que obtuve 
 > ***¡No te preocupes, siempre habrá una R-Lady que camine contigo!***
 
 
-_Autora: [Nadejda Sero](https://twitter.com/sbnadejda), organizadora de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn). 
-Traducción al español: Florencia D'Andrea, Correcciones a la traducción al Inglés: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada_
+*Autora y Traducción al Francés:* [Nadejda Sero](https://twitter.com/sbnadejda), organizador en [R-Ladies Cotonou](https://twitter.com/RLadiesCtn). *Traducción al español:* [Florencia D'Andrea](https://twitter.com/cantoflor_87?s=20). *Correcciones a la traducción al Inglés:* [Mine Dogucu](https://twitter.com/MineDogucu?s=20) y [Divya Seernani](https://twitter.com/DSeernani?s=20). *Blog:* [Christin Zasada](https://twitter.com/ChristinZasada?s=20) y [Athanasia Mowinckel](https://twitter.com/DrMowinckels?s=20).
