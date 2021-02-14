@@ -1,17 +1,8 @@
-# Initio theme for Hugo
-
-![GitHub](https://img.shields.io/github/license/miguelsimoni/hugo-initio.svg?style=flat-square)
-![GitHub top language](https://img.shields.io/github/languages/top/miguelsimoni/hugo-initio.svg?style=flat-square)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/miguelsimoni/hugo-initio.svg?style=flat-square)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/miguelsimoni/hugo-initio/master.svg?style=flat-square)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/miguelsimoni/hugo-initio.svg?style=flat-square)
-![GitHub forks](https://img.shields.io/github/forks/miguelsimoni/hugo-initio.svg?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/miguelsimoni/hugo-initio.svg?style=flat-square)
-![GitHub watchers](https://img.shields.io/github/watchers/miguelsimoni/hugo-initio.svg?style=flat-square)
+# Adapted Initio theme for Hugo
 
 [Hugo-Initio](https://miguelsimoni.github.io/hugo-initio-site/) is ported from the [Initio](http://www.gettemplate.com/info/initio/) template by [GetTemplate.com](http://www.gettemplate.com/) for [Hugo](https://gohugo.io/).
 
-![screenshot](https://raw.githubusercontent.com/miguelsimoni/hugo-initio/master/images/tn.png)
+
 
 ### Original Template Info
 
@@ -23,94 +14,6 @@
 **Libraries:** jQuery  
 **Designer:** Sergey Pozhilov  
 
-## Installation
-
-```
-$ cd /<your-hugo-site-directory>
-$ git submodule add https://github.com/miguelsimoni/hugo-initio.git themes/hugo-initio
-```
-
-More info: [hugo setup guide](https://gohugo.io/overview/installing/)
-
-## Configuration
-
-[Example Site](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite)
-
-[config.toml](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite/config.toml)
-
-### Sections
-
-
-```toml
-showSubheader = true
-showServices = true
-showRecentWorks = true
-showDownload = true
-showClients = true
-
-footerEnableContact = true
-footerEnableFollowme = true
-footerEnableTextWidget = false
-footerEnableFormWidget = false
-```
-### Social Networks Icons
-
-You can add as many social networks as you want in the params.social array following this template:
-
-```toml
-[[params.social]]
-  title = "facebook"
-  url = "https://www.facebook.com/nickname"
-  icon = "fa-facebook-square"
-  footer = true
-  sharethis = true
-  network = "facebook"
-```
-
-See the whole configuration in the [config.toml](https://github.com/miguelsimoni/hugo-initio/tree/master/exampleSite/config.toml) file.
-
-### Comments
-
-Powered by [Disqus](https://disqus.com)
-
-```toml
-[params.disqus]
-    site = "your-disqus-short-name"
-```
-
-Disable the comments system by leaving the `params.disqus.site` empty.
-
-### Google Analytics
-
-```toml
-[params.google.analytics]
-    trackerID = "GA-000000000-0"
-```
-
-Disable the Google Analytics by leaving `params.google.analytics.trackerID` empty.
-
-### Almost there...
-
-In order to see your site in action, you can run Hugo's built-in local server.
-
-```
-$ hugo server
-```
-
-Now enter [`http://localhost:1313/hugo-initio-site/`](http://localhost:1313/hugo-initio-site/) in the address bar of your browser.
-
-## Deployment
-
-- [Hosting on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-- [More hosting and deployment options](https://gohugo.io/hosting-and-deployment/)
-
-## Contributing
-
-- Found a bug?
-- Got an idea for a new feature?
-
-Let me know it using the [issue tracker](https://github.com/miguelsimoni/hugo-initio/issues).
-Or make it directly: [pull request](https://github.com/miguelsimoni/hugo-initio/pulls).
 
 ## License
 
