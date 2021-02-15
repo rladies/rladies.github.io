@@ -93,6 +93,7 @@ jobs:
         run: netlify deploy
         
       - name: Commit event data	
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         run: |	
           git config --local user.email "actions@github.com"	
           git config --local user.name "GitHub Actions"	
