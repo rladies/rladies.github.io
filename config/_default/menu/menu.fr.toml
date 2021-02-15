@@ -1,7 +1,7 @@
 [[main]]
     name = "Home"
     identifier = "home"
-    url = "/"
+    url = "/fr/"
     weight = 1
     
 [[main]]
@@ -11,29 +11,29 @@
     weight = 2
 [[main]]
     name = "Mission"
-    url = "/about-us/mission/"
+    url = "/fr/about-us/mission/"
     weight = 1
     parent = "about-us"
 [[main]]
     name = "Get involved"
-    url = "/about-us/involved/"
+    url = "/fr/about-us/involved/"
     weight = 2
     parent = "about-us"
 [[main]]
     name = "Meet the global team"
-    url = "/about-us/global-team/"
+    url = "/fr/about-us/global-team/"
     weight = 3
     parent = "about-us"
 [[main]]
     name = "History"
-    url = "/about-us/history/"
+    url = "/fr/about-us/history/"
     weight = 4
     parent = "about-us"
 
     
 [[main]]
     name = "Directory"
-    url = "/directory/"
+    url = "/fr/directory/"
     weight = 3
     
 [[main]]
@@ -43,28 +43,28 @@
     weight = 4
 [[main]]
     name = "Events"
-    url = "/activities/events/"
+    url = "/fr/activities/events/"
     weight = 1
     parent = "activities"
 [[main]]
     name = "Mentoring Program"
-    url = "/activities/mentoring/"
+    url = "/fr/activities/mentoring/"
     weight = 3
     parent = "activities"
 [[main]]
     name = "Rotating Twitter Curator"
-    url = "/activities/rocur/"
+    url = "/fr/activities/rocur/"
     weight = 4
     parent = "activities"
 [[main]]
     name = "Abstract review"
-    url = "/activities/review/"
+    url = "/fr/activities/review/"
     identifier = "abstract-review"
     weight = 5
     parent = "activities"
 [[main]]
     name = "International Women's Day Campaigns"
-    url = "/activities/iwd/"
+    url = "/fr/activities/iwd/"
     weight = 6
     parent = "activities"
 [[main]]
@@ -86,6 +86,6 @@
     
 [[main]]
     name = "Blog"
-    url = "/post"
+    url = "/fr/post"
     weight = 5
     
