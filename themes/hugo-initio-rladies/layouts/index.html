@@ -3,54 +3,47 @@
 {{ end }} 
 
 {{ define "main"}}
-  <main id="main">
-    <div class="container">
-        <div class="row section">
-          <h2 class="section-title">
-            <span>{{ i18n "news" }}</span>
-          </h2>
-          {{ range first 1 (where site.RegularPages "Type" "post") }}
-            {{ partial "post/summary.html" . }}
-          {{ end }}
+  <h2 class="section-title">
+    <span>{{ i18n "news" }}</span>
+  </h2>
+  {{ range first 1 (where site.RegularPages "Type" "post") }}
+    {{ partial "post/summary.html" . }}
+  {{ end }}
   
-          {{ if .Site.Params.showSubheader }}
-            {{ partial "home/subheader.html" . }}
+  {{ if .Site.Params.showSubheader }}
+    {{ partial "home/subheader.html" . }}
+  {{ end }}
+  
+  {{ range .Site.Sections }}
+      {{ range .Sections.ByWeight }}
+        <div id="{{ .Title }}" class="row section featured topspace">
+          <h2 class="section-title">
+            <span>{{.Title}}</span>
+          </h2>
+          {{ $stype := .Type}}
+          {{ if eq $stype "service"}}
+            {{ partial "home/services.html" . }}
+          
+          {{ else if eq $stype "recentwork" }}
+            {{ partial "home/recentworks.html" . }}
+          
+          {{ else if eq $stype "download" }}
+            {{ partial "home/download.html" . }}
+          
+          {{ else if eq $stype "client" }}
+            {{ partial "home/clients.html" . }}
+            
+          {{ else if eq $stype "chapters" }}
+            {{ partial "home/chapters.html" . }}
+          
+          {{ else if eq $stype "single"  }}
+            <div style="text-align: center;">
+              <p>{{ .Content }}</p> 
+            </div>
           {{ end }}
-      
-        {{ range .Site.Sections }}
-            {{ range .Sections.ByWeight }}
-              <div id="{{ .Title }}" class="row section featured topspace">
-                <h2 class="section-title">
-                  <span>{{.Title}}</span>
-                </h2>
-                {{ $stype := .Type}}
-                {{ if eq $stype "service"}}
-                  {{ partial "home/services.html" . }}
-                
-                {{ else if eq $stype "recentwork" }}
-                  {{ partial "home/recentworks.html" . }}
-                
-                {{ else if eq $stype "download" }}
-                  {{ partial "home/download.html" . }}
-                
-                {{ else if eq $stype "client" }}
-                  {{ partial "home/clients.html" . }}
-                  
-                {{ else if eq $stype "chapters" }}
-                  {{ partial "home/chapters.html" . }}
-                
-                {{ else if eq $stype "single"  }}
-                  <div style="text-align: center;">
-                    <p>{{ .Content }}</p> 
-                  </div>
-                {{ end }}
-            {{ end }}
-        {{ end }}
+      {{ end }}
+  {{ end }}
         </div>
-      </div>
-  	</div>	<!-- /container -->
-  </main>
-
 {{ end }}
 
 {{ define "footer" }}

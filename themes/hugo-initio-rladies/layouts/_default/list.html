@@ -1,18 +1,10 @@
 {{ define "main" }}
-<main id="main">
-
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
-        {{ range .Paginator.Pages }}
-          {{ partial "post/summary.html" .}}
-        {{ end }}
-    			<ul class="pagination">
-            {{ template "_internal/pagination.html" . }}
-    			</ul>
-			</div>
-		</div>
-	</div>	<!-- /container -->
-
-</main>
+  <div class="col-sm-8 col-sm-offset-2">
+    {{ range .Paginator.Pages }}
+      {{ partial "post/summary.html" .}}
+    {{ end }}
+  		<ul class="pagination">
+        {{ template "_internal/pagination.html" . }}
+  		</ul>
+  </div>
 {{ end }}

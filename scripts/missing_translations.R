@@ -10,7 +10,6 @@ content <- content[!grepl("post/", content)]
 # Get the unique directories
 dirs <-  unique(dirname(content))
 
-
 # Get the site languages
 site_lang <- list.files("config/_default/menu/")
 site_lang <- gsub("menu[.]|[.]toml", "", site_lang)

@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+ 			{{ if eq .Params.translated false }}
+        <div class="not-translated" lang="{{ .Lang }}">
+          {{ i18n "missing_translation" }}
+        </div>
+      {{ end }}
+	  </div>
+	</div> <!-- /row post  -->
+</div>	<!-- /container -->
