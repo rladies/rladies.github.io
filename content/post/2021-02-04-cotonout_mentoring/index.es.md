@@ -1,7 +1,7 @@
 ---
 title: "El programa de mentorías de R-Ladies: la historia de  R-Ladies Cotonou"
 author: "[Nadejda Sero](https://twitter.com/sbnadejda), organizador en [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
-date: "2021-02-14"
+date: "2021-02-24"
 description: "Programa de mentorías de R-Ladies"
 tags: 
 - comunidad
