@@ -1,17 +1,44 @@
 # Contribute to the R-Ladies Blog
 
+- [Clone the project](#clone-the-project)
+	- [Install the dependecies](#install-the-dependecies)
 - [Write a new blog post](#write-a-new-blog-post)
 	- [Header of your post](#header-of-your-post)
 	- [After you write your post](#after-you-write-your-post)
 - [PR your changes](#pr-your-changes)
 
+
+<!-- /TOC -->
+
+## Clone the project
+
+```sh
+# Clone
+git clone https://github.com/rladies/blog.git
+
+# Enter
+cd blog/
+
+# replace my_branch with any name you like
+# will now be working on a copy of the main repo
+git checkout -b my_branch
+```
+
+Open the folder in RStudio.
+
+
+### Install the dependecies
+
+```r
+install.packages('blogdown')
+```
+
 ## Write a new blog post
 
-Create a new file `.Rmd` in the folder **`content > post`**. This folder is watched by the blogdown server and all the `.Rmd` in that folder are rendered to `html`.
+Use the blogdown addin in RStudio to create a new post. 
+`Addin` -> `New post`
 
-The public folder is `public` which is the folder rendered in Netlify. The `public` folder is rendered by Travis, there's no need for it to be on the repository, the CI is capable of generate the `html`s necessary for the blog to work.
-
-### Header of your post
+Fill inn the fields with the relevant information. 
 
 We are going to follow a few rules to set the header of the post to set posts easily discoverable.
 
@@ -21,6 +48,8 @@ We are going to follow a few rules to set the header of the post to set posts ea
 - **Description**: Post subtitle. As an example, we used it to set the title of the post series of the 2018 IWD project. It shows in the posts list and in the post page.
 - **Tags**: Post tags. They should include meaningful information like date if it is a recurrent project (because dates are not shown anywhere for now). 4 or 5 tags is a good number. [Tags](http://blog.rladies.org/tags/).
 - **Categories**: Post categories. Like tags but the theme is more general. They are not visible right now. [Categories](http://blog.rladies.org/categories/).
+
+All of the information will be shown in the post yaml, and can also be edited later.
 
 Example:
 
@@ -38,26 +67,38 @@ tags:
 categories:
 - IWD
 - R-Ladies
-output: html_document
 ---
 ```
 
+Your post will be created in a folder within `content/post` and you can add all the files you need for you post here. 
+Any images, data files or other things you need to include in your post, add them directly in the folder.
+
+As you write you post, remember to `knit` your post so have a look at how it looks like! 
+The blogdown site will use the markdown file created from your knitted `Rmd` on the site, not your `Rmd` itself.
+You can preview the entire site with your post with `blogdown::serve_site()`. 
+
 ### After you write your post
 
-1. Upload the `.Rmd` in `content > post`
-2. Upload post images in `content > image`
-3. If there's any *executable* code within the post upload all data in `content > data` and make sure all the R packages used in your post are also listed in the Imports field of the DESCRIPTION file so that Travis installs them.
+Once your post looks as you want it to on your local machine, it's time to get it online!
+In the RStudio git pane, add your post folder, commit with a message, and push it online!
 
-**Note**: Don't upload the `html` or the public folder. This is regenerated everytime there's a push to *master*.
+You can also do this in the terminal in RStudio
+
+```sh
+# Add the post
+git add content/post/2020-01-01-my-post
+
+# Add a commit message to the post
+git commit -m "my commit message"
+
+# Push changes online (replace my_branch with your branch name)
+git push --set-upstream origin my_branch
+```
+
 
 ## PR your changes
-
-Don't merge your changes immediately, fork the project and work on your branch. After making the PR, assign any of the editors as reviewer.
-
-[This gist](https://gist.github.com/Chaser324/ce0505fbed06b947d962) has extense documentation on the fork + pull request workflow.
-
-### Assign the PR
+Once you have pushed your changes online, make a [Pull request (PR)](https://github.com/rladies/blog/pulls) to the master branch.
+You can follow the build of the site with your post in [GitHub actions](https://github.com/rladies/blog/actions), and see the previewed page once it is done building by looking at the Netlify section of the build.
 
 When the PR is open ([see here](https://github.com/rladies/blog/pulls)) assign the reviewer to **Chrisy** and she can merge the branch once the post is reviewed. 
-
 If you like for an specific someone to review your post assign her the PR too. 
