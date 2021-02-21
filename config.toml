@@ -13,8 +13,12 @@ pygmentsUseClasses = true
 enableEmoji = true
 
 # Getting raw html to render 
-[markup] 
-  defaultMarkdownHandler = "blackfriday"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
   
 [params]
     author = "R-Ladies Global"
