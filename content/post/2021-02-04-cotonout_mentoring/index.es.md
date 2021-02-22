@@ -12,11 +12,9 @@ categories:
 - r-ladies
 ---
 
-*Estamos felices de traerles este artículo en diferentes idiomas.
-Si quieres puedes compartir esta publicación en [francés](https://blog.rladies.org/post/cotonou_french/) o [inglés](https://blog.rladies.org/post/cotonou_english/).
-Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a christin@rladies.org.*
+*Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <christin@rladies.org>.*
 
-\#\#¿Cómo comenzo todo?🤔
+## ¿Cómo comenzo todo?🤔
 
 R-Ladies Cotonou es un capítulo de [R-Ladies Global](https://twitter.com/RLadiesGlobal) ubicado en Cotonou, Benin (África Oeste). Hasta el día de hoy consta de treinta miembros y cuatro mujeres en el equipo organizador. ¡La idea de crear R-Ladies Cotonou nació en Twitter! Aquí su historia:
 
@@ -46,7 +44,7 @@ El programa de mentorías de R-Ladies me dió voz para poder expresar mis dificu
 Nuestro primer meetup ocurrió oficialmente en julio de 2019. Las filminas fueron bonitas y detalladas (llenas de emojis también) y la comida fue deliciosa. Basicamente presenté R-Ladies (misión, objetivos, sistema, recursos) a quienes asistieron. Una buena parte de la charla fue específica sobre el nacimiento de nuestro capítulo. Ver la motivación de los asistentes al planear próximos eventos me emocionó (celebramos con mi mentora con un montón de emojis de felicidad). Algunas fotos del primer evento pueden encontrarse [aquí](https://twitter.com/RLadiesCtn/status/1155935587188166657).
 
 <figure>
-<img src="../../image/rladies_cotonou_fig02.jpg" width="600" alt="Asistentes a la primera reunión de R-Ladies Cotonou compartiendo algunas cosas dulces. Se tocaron temas útiles a saber sobre R-Ladies y especialmente sobre R-Ladies Cotonou." /><figcaption aria-hidden="true">Asistentes a la primera reunión de R-Ladies Cotonou compartiendo algunas cosas dulces. Se tocaron temas útiles a saber sobre R-Ladies y especialmente sobre R-Ladies Cotonou.</figcaption>
+<img src="rladies_cotonou_fig02.jpg" width="600" alt="Asistentes a la primera reunión de R-Ladies Cotonou compartiendo algunas cosas dulces. Se tocaron temas útiles a saber sobre R-Ladies y especialmente sobre R-Ladies Cotonou." /><figcaption aria-hidden="true">Asistentes a la primera reunión de R-Ladies Cotonou compartiendo algunas cosas dulces. Se tocaron temas útiles a saber sobre R-Ladies y especialmente sobre R-Ladies Cotonou.</figcaption>
 </figure>
 
 El programa de mentorías de R-Ladies ha sido beneficioso para mi capítulo. Con la ayuda de mi mentora pude encontrar formas de solucionar el problema de internet a largo plazo. Usamos emails y WhatsApp para compartir materiales para los eventos y ponernos en contacto entre los miembros. Estos métodos son baratos y la mayoría se siente cómoda con ellos. Sin embargo, aun aconsejamos el uso de Twitter y Meetup.
@@ -60,7 +58,7 @@ Uno de los problemas más importantes que atacamos con mi “R-hermana” fue mo
 Nuestro segundo encuentro estuvo muy bueno; comparto algunas imagenes [aquí](https://twitter.com/RLadiesCtn/status/1227670069305651201). Para motivar y alentar futuras charlas, al final de la charla le propuse a la oradora, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), que comparta su experiencia al momento de elegir un tema para presentar. Ella compartió su experiencia e inmediatamente se ofrecieron voluntarias para la próxima reunión. Para darle más sabor, agregamos un evento sorpresa extra, una charla relámpago de [Shériftah Mama Chabi](https://twitter.com/masherycha1) sobre el tema *“Mujeres en ciencia”*. Se presentó el el panorama de la mujer en la ciencia, se discutió sobre igualdad de género y los desafíos que enfrentan las mujeres científicas, y terminó dando varios de enlaces útiles a oportunidades y financiamiento.
 
 <figure>
-<img src="../../image/rladies_cotonou_fig03.jpg" width="500" alt="La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets." /><figcaption aria-hidden="true">La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets.</figcaption>
+<img src="rladies_cotonou_fig03.jpg" width="500" alt="La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets." /><figcaption aria-hidden="true">La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets.</figcaption>
 </figure>
 
 He aprendido mucho del programa y estoy difundiendo algunas de ideas que obtuve de el poniendo como ejemplo mi capítulo. Creo a su vez que si tuviera que renunciar a mi rol de organizadora, el capítulo estaría bien y en buenas manos. Estoy profunda y sinceramente agradecida con Florencia, mi mentora, que realmente invirtió su tiempo para estar disponible mientras duró, escuchando cualquier preocupación. ¡Gracias al equipo de R-Ladies global por presentar este programa y ofrecerme ser parte de él! 💜
