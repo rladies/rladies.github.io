@@ -98,6 +98,9 @@ git push --set-upstream origin my_branch
 
 ## PR your changes
 Once you have pushed your changes online, make a [Pull request (PR)](https://github.com/rladies/blog/pulls) to the master branch.
+If you are working on a fork of the repository, rather than a branch, you should PR to the `fork_merge` branch, and request a review from @Athanasiamo. 
+Previews are only created for branches of this repo, not forks, so she will need to merge it into a temporarty branch to generate the preview. 
+
 You can follow the build of the site with your post in [GitHub actions](https://github.com/rladies/blog/actions), and see the previewed page once it is done building by looking at the Netlify section of the build.
 
 When the PR is open ([see here](https://github.com/rladies/blog/pulls)) assign the reviewer to **Chrisy** and she can merge the branch once the post is reviewed. 
