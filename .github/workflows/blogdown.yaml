@@ -32,8 +32,6 @@ jobs:
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo --minify 
 
-        run: hugo --minify
-        
       - name: Deploy to Netlify production
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         env:
