@@ -8,7 +8,7 @@ on:
       - main
       - master
 
-name: Build site and publish
+name: Build site and submit to Netlify
 
 jobs:
   build:
