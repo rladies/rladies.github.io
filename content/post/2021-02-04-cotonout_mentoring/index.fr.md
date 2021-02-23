@@ -1,7 +1,7 @@
 ---
 title: "Le programme de mentorat de R-Ladies : le voyage de R-Ladies Cotonou"
 author: "[Nadejda Sero](https://twitter.com/sbnadejda), organisatrice à [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
-date: "2021-02-24"
+date: "2021-02-04"
 description: "Le programme de mentorat de R-Ladies"
 tags: 
 - communauté
