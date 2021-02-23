@@ -1,7 +1,7 @@
 ---
 title: "The R-Ladies Mentoring Program: R-Ladies Cotonou journey"
 author: "[Nadejda Sero](https://twitter.com/sbnadejda), organizer of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
-date: "2021-02-24"
+date: "2021-02-04"
 description: "R-Ladies Mentoring Program"
 tags: 
 - community
