@@ -21,15 +21,19 @@
     {{ end }}
 
     {{ $blogs :=  ( .Scratch.Get "blogs" ) }}
-    {{ range $blogs }}
     
     <table class="fixed">
+      {{ range $blogs }}
         <tr>
-          <th width="100px" style="text-align: center;"><img width="100px" src="{{ .photo_url }}"></img></th>
+          <th width="100px" style="text-align: center;">
+            <img width="100px" src="{{ .photo_url }}"></img>
+          </th>
           <th>{{ .name }}</th>
           {{ $url := replace .url "https://" "" }}
           {{ $url := replace $url "http://" "" }}
-          <th><a target="_blank" href="{{ .url }}">{{ $url }}</a></th>
+          <th>
+            <a target="_blank" href="{{ .url }}">{{ $url }}</a>
+          </th>
           <th><ul>
             {{ range .authors }}
               <li>
