@@ -61,7 +61,7 @@ jobs:
       - name: Site data - Get blogs list
         uses: actions/checkout@v2
         with:
-          repository: rladies/awesome-rladies-blogs/
+          repository: rladies/awesome-rladies-blogs
           token: ${{ secrets.directory_PAT_mo }}
           path: rblogs
       
