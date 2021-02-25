@@ -1,6 +1,5 @@
 ---
 title: "Blogs by R-Ladies"
-slug: "rladies-blogs"
 type: "rladies-blogs"
 ---
 
