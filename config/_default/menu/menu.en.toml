@@ -39,7 +39,6 @@
 [[main]]
     name = "Activities"
     identifier = "activities"
-    url = "#"
     weight = 4
 [[main]]
     name = "Events"
@@ -59,7 +58,6 @@
 [[main]]
     name = "Abstract review"
     url = "/activities/review/"
-    identifier = "abstract-review"
     weight = 5
     parent = "activities"
 [[main]]
@@ -80,7 +78,7 @@
 [[main]]
     name = "Blogs by R-Ladies"
     url = "activities/rladies-blogs"
-    weight = 8
+    weight = 9
     parent = "activities"
 
     

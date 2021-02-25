@@ -67,7 +67,7 @@ jobs:
       
       - name: Site data - Cleanup blogs dir
         run: |
-          mv rblogs/blogs data/blogs
+          mv rblogs/blogs data/
           rm -rf rblogs
         
       - name: Meetup authentication
