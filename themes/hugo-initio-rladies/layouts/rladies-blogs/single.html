@@ -1,0 +1,48 @@
+
+{{ define "main" }}
+ 	<article class="post">
+		<header class="entry-header">
+ 			<div class="entry-meta">
+         <span class="posted-on">
+            <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+               {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
+            </time>
+         </span>
+ 			</div>
+ 			<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+		</header>
+		<div class="entry-content">
+			{{ .Content }}
+		</div>
+		
+    {{ .Scratch.Set "blogs" $.Site.Data.blogs_mock  }}
+    {{ if eq .Hugo.Environment "production" }}
+      {{ .Scratch.Set "blogs" $.Site.Data.blogs }}
+    {{ end }}
+
+    {{ $blogs :=  ( .Scratch.Get "blogs" ) }}
+    {{ range $blogs }}
+    
+    <table class="fixed">
+        <tr>
+          <th width="100px" style="text-align: center;"><img width="100px" src="{{ .photo_url }}"></img></th>
+          <th>{{ .name }}</th>
+          {{ $url := replace .url "https://" "" }}
+          {{ $url := replace $url "http://" "" }}
+          <th><a target="_blank" href="{{ .url }}">{{ $url }}</a></th>
+          <th><ul>
+            {{ range .authors }}
+              <li>
+                {{ .name }}
+                {{ range .social_media }}
+                  {{ partial "some.html" .}}
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul></th>
+        </tr>
+      {{ end }}
+    </table>
+	</article><!-- #post-## -->
+
+{{ end }}
