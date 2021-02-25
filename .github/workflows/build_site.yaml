@@ -57,6 +57,18 @@ jobs:
           rm directory/data/[1-9]_* # remove double entries. can be deleted after manual clean
           mv directory/data data/directory
           rm -rf directory
+          
+      - name: Site data - Get blogs list
+        uses: actions/checkout@v2
+        with:
+          repository: rladies/awesome-rladies-blogs/
+          token: ${{ secrets.directory_PAT_mo }}
+          path: rblogs
+      
+      - name: Site data - Cleanup blogs dir
+        run: |
+          mv rblogs/blogs data/logs
+          rm -rf rblogs
         
       - name: Meetup authentication
         env: 
@@ -79,7 +91,7 @@ jobs:
         run: hugo --buildFuture 
         
       - name: Deploy to Netlify production
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -91,3 +103,12 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: netlify deploy
+        
+      - name: Commit event data	
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        run: |	
+          git config --local user.email "actions@github.com"	
+          git config --local user.name "GitHub Actions"	
+          git add data/events.json data/events_updated.json	
+          git commit -m 'Update events data' || echo "No data to commit"	
+          git push origin || echo "No changes to commit"
