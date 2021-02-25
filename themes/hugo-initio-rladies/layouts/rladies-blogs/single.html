@@ -38,7 +38,7 @@
             {{ range .authors }}
               <li>
                 {{ .name }}
-                {{ range .social_media }}
+                {{ range first 3 .social_media }}
                   {{ partial "some.html" .}}
                 {{ end }}
               </li>
