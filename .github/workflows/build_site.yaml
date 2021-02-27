@@ -32,11 +32,12 @@ jobs:
               
       - name: Install R dependencies
         run: |
+          option(Ncpus = 2)
           install.packages("remotes", repos = "https://cloud.r-project.org")
-          remotes::install_github("rladies/meetupr")
           remotes::install_cran(c("dplyr", "here", "purrr", "jsonlite"))
-          remotes::install_cran(c("tidyr", "lubridate"))
+          remotes::install_cran(c("tidyr", "lubridate", "tibble"))
           remotes::install_cran(c("cyphr", "sodium"))
+          remotes::install_github("rladies/meetupr")
         shell: Rscript {0}
         
       - name: Populate CoC
