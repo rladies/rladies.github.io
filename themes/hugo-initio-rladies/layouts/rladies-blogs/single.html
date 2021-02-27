@@ -17,7 +17,7 @@
 		
     {{ .Scratch.Set "blogs" $.Site.Data.blogs_mock  }}
     {{ if eq .Hugo.Environment "production" }}
-      {{ .Scratch.Set "blogs" $.Site.Data.blogs }}
+      {{ .Scratch.Set "blogs" $.Site.Data.rblogs.blogs }}
     {{ end }}
 
     {{ $blogs :=  ( .Scratch.Get "blogs" ) }}
