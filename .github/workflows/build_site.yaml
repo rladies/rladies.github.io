@@ -33,10 +33,13 @@ jobs:
       - name: Install R dependencies
         run: |
           options(Ncpus = 2)
-          install.packages("remotes", repos = "https://cloud.r-project.org")
-          remotes::install_cran(c("dplyr", "here", "purrr", "jsonlite"))
-          remotes::install_cran(c("tidyr", "lubridate", "tibble"))
-          remotes::install_cran(c("cyphr", "sodium"))
+          install.packages("remotes",
+                           repos = "https://cloud.r-project.org")
+          remotes::install_cran(c(
+            "dplyr", "here", "purrr", 
+            "jsonlite", "lubridate",
+            "tidyr", "cyphr", "sodium"
+          ))
           remotes::install_github("rladies/meetupr")
         shell: Rscript {0}
         
