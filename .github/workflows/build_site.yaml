@@ -63,7 +63,12 @@ jobs:
         with:
           repository: rladies/awesome-rladies-blogs
           token: ${{ secrets.directory_PAT_mo }}
-          path: data/rblogs
+          path: rblogs
+          
+      - name: Site data - Cleanup blogs list
+        run: |
+          mv rblogs/blogs data/blogs
+          rm -rf rblogs
         
       - name: Meetup authentication
         env: 
