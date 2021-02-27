@@ -1,0 +1,13 @@
+{
+    "name": "Google",
+    "url": "https://google.com",
+    "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png",
+    "description": "",
+    "authors": [
+      {
+        "name": "The whole world",
+        "social_media": [{}]
+      }
+    ]
+  }
+  
