@@ -92,7 +92,7 @@ jobs:
       - name: Build
         env: 
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
-        run: hugo -d public/ 
+        run: hugo
         
       - name: Deploy to Netlify production
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
