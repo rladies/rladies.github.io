@@ -53,3 +53,7 @@ README.html
 # should never be commited
 data/directory/
 /Users/athanasm/Library/Application Support/meetupr/meetupr-token.rds
+
+# npm
+node_modules/
+package-lock.json
