@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - master
+      - fork_merge
   push:
     branches: 
       - master
@@ -94,19 +95,19 @@ jobs:
           DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo
         
-      - name: Deploy to Netlify production
-        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+     - name: Deploy to Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: netlify deploy --prod
-          
-      - name: Deploy Netlify preview
-        if: github.event_name == 'pull_request'
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: netlify deploy
+        run: |
+          if [ github.event_name == 'pull_request' ]; then
+            echo "Running netlify preview deploy"
+            netlify deploy
+          else
+            echo "Running netlify production deploy"
+            netlify deploy #--prod
+          fi
+        shell: sh
         
       - name: Commit meetup data	
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
