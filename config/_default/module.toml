@@ -1,0 +1,13 @@
+
+[[mounts]]
+  source = "node_modules/tui-calendar/dist"
+  target = "assets/tui-calendar"
+  
+[[mounts]]
+  source = "node_modules/tui-date-picker/dist"
+  target = "assets/tui-date-picker"
+  
+[[mounts]]
+  source = "node_modules/tui-time-picker/dist"
+  target = "assets/tui-time-picker"
+  

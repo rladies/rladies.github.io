@@ -29,7 +29,6 @@
     url = "/about-us/history/"
     weight = 4
     parent = "about-us"
-
     
 [[main]]
     name = "Directory"
@@ -52,37 +51,20 @@
     weight = 3
     parent = "activities"
 [[main]]
-    name = "Rotating Twitter Curator"
-    url = "/activities/rocur/"
+    name = "Coordinated by the Global Team"
+    url = "/activities/gt-coordinated/"
     weight = 4
-    parent = "activities"
-[[main]]
-    name = "Abstract review"
-    url = "/activities/review/"
-    identifier = "abstract-review"
-    weight = 5
-    parent = "activities"
-[[main]]
-    name = "International Women's Day Campaigns"
-    url = "/activities/iwd/"
-    weight = 6
-    parent = "activities"
-[[main]]
-    name = "Community Slack"
-    url = "https://rladies-community-slack.herokuapp.com/"
-    weight = 7
     parent = "activities"
 [[main]]
     name = "Global dashboard"
     url = "https://benubah.github.io/r-community-explorer/rladies.html"
-    weight = 8
+    weight = 5
     parent = "activities"
-
-    
-#[[main]]
-#    name = "Blog"
-#    url = "https://blog.rladies.org/"
-#    weight = 5
+[[main]]
+    name = "Blogs by R-Ladies"
+    url = "activities/rladies-blogs"
+    weight = 6
+    parent = "activities"
     
 [[main]]
     name = "Blog"
