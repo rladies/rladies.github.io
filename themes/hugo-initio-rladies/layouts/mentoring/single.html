@@ -8,12 +8,24 @@
 		{{ .Content }}
 	</div>
 	
-  <div class="flex-container">
-    <ul class="mentoring-grid" style="border: none;">
+    <div class="container" id="mentoring">
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
       {{ $mentoring := $.Site.Data.mentoring | shuffle }}
       {{ range $mentoring}}
-        {{ partial "mentoring/li.html" .}}
-      {{ end }}
-    </ul>
+          <div class="card mx-auto m-1">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img class="card-img-top embed-responsive-item" src="img/{{ .img }}" alt="{{ .name }} - {{ .chapter }}">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ .chapter }}</h5>
+              <p class="mb-0"><i class="fas fa-quote-left"></i> {{ .statement }} <i class="fas fa-quote-right"></i></p>
+              <footer class="blockquote-footer text-right">{{ .name }} <cite title="Mentee"> - Mentee</cite></footer>
+              <span class="align-bottom font-weight-light pt-4">
+                <img class="card-img-bottom" src="/images/favicon.png" alt="R-Ladies mentoring program">-mentoring program
+              </span>
+            </div>
+          </div>
+        {{ end }}
+    </div>
   </div>
 {{ end }}

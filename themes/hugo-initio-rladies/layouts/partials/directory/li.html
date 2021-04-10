@@ -1,41 +1,42 @@
-<li class="directory-grid-item">
-  <div class="directory-grid-main">
-    <div class="imgdiv" style='background-image: url({{ .photo_url | default "/images/placeholder_user.png"}});' ></div>
-      <h1><b class="name">{{ .name }}</b></h1> 
-      {{with .honorific }}<h2 class="honorific">{{ . }}{{ end }}&emsp;{{with .pronouns }}{{ . }}</h2>{{ end }}
-      <h3>
-        {{ range .social_media }}
-          {{ partial "some.html" . }}
-        {{ end }}
-      </h3>
+<li>
+  <div class="card mx-auto m-1">
+    <div class="embed-responsive embed-responsive-4by3">
+      <img class="card-img-top embed-responsive-item" src="{{ .photo_url | default "/images/placeholder_user.png"}}" alt="{{ .name }} - {{with .honorific }}{{ . }}{{ end }}{{with .pronouns }}{{ . }}{{ end }}">
     </div>
-    <div class="directory-grid-desc" style="position: relative;">
-        <p class="affiliation">
-          <i>{{ .title }}</i>{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
-        </p>
-      <br>
+    <div class="card-body">
+      <h5 class="card-title name">{{ .name }}</h5>
+      <p class="honorific card-directory-text">
+        {{with .honorific }}<i>{{ . }}</i>{{ end }}&emsp;{{with .pronouns }}{{ . }}{{ end }}
+      </p>
+      {{ range .social_media }}
+        {{ partial "some.html" . }}
+      {{ end }}
+      <p class="title card-directory-text ">
+        {{ .title }}{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
+      </p>
       <p>
         <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
       </p>
       {{if gt (len .location) 1 }}
-      <p class="interests">
-        <i class="fas fa-map-marker-alt"></i> 
-        {{ range .location }}
-          {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
-        {{ end }}
-      </p>
+        <p class="location card-directory-text ">
+          <i class="fas fa-map-marker-alt"></i> 
+          {{ range .location }}
+            {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
+          {{ end }}
+        </p>
       {{ end }}
-      <p class="interests">
-        {{ with .interests }}
+      {{ with .interests }}
+        <p class="interests card-directory-text ">
           <b><i class="fas fa-tag" style = "font-size: 15px;"></i>&nbsp;</b>
           {{ delimit . ", " }}
-        {{ end }}
-      </p>
+        </p>
+      {{ end }}
       {{ range .activities }}
           {{ partial "directory/activities.html" . }}
       {{ end }}
-      <p style="color: #a2a2a2; position: absolute; bottom: 0; right: 0;">
+      <p class="card-text text-muted bottom-align-text">
         Last updated: {{ .last_updated | default "Unknown"}}
       </p>
    </div>
+  </div>
 </li>

@@ -2,7 +2,7 @@
 {{ define "main" }}
 	
 	<!-- for searching and pagination List.js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
 	<header class="entry-header">
@@ -20,20 +20,24 @@
       <buttonr style="font-size: 12px; padding: 8px;" class="sort" data-sort="name">Sort by name</buttonr>
       <!-- <buttonr id="shuffle" style="font-size: 12px;" type="button">Randomly shuffle</buttonr> -->
     </center>
-    <div class="flex-container">
-    <ul class="list" id="directory-grid">
-      {{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
-      {{ if eq .Hugo.Environment "production" }}
-        {{ .Scratch.Set "directory" $.Site.Data.directory }}
-      {{ end }}
-
-        {{ $directory :=  ( .Scratch.Get "directory" ) }}
-        {{ range $directory }}
-          {{ partial "directory/li.html" . }}
-        {{ end }}
-    </ul>
+    	
+    <div class="container">
+      <div class="card-columns">
+        <ul class="list" id="directory-grid">
+          {{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
+          {{ if eq .Hugo.Environment "production" }}
+            {{ .Scratch.Set "directory" $.Site.Data.directory }}
+          {{ end }}
+    
+            {{ $directory :=  ( .Scratch.Get "directory" ) }}
+            {{ range $directory }}
+              {{ partial "directory/li.html" . }}
+            {{ end }}
+        </ul>
+      </div>
     </div>
-    <center>
+  
+      <center>
       <div class="pagination-nav">
         <ul class="paginate_back"><i class="fas fa-chevron-left"></i></ul>
         <ul class="pagination"></ul>
@@ -43,14 +47,22 @@
   </div> 
 
 	<script>
+	
     var directoryList = new List('directory-content', {
-      valueNames: ['name', 'honorific', 'affiliation', 'interests', 'shiny_apps', 'r_groups', 'r_packages'],
+      valueNames: ['name', 'honorific', 'title', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'card-directory-text'],
       page: 10,
       pagination: {
         innerWindow: 2,
         left: 1,
         right: 1,
         paginationClass: "pagination",
+      },
+      fuzzySearch: {
+        searchClass: "fuzzy-search",
+        location: 0,
+        distance: 200,
+        threshold: 0.5,
+        multiSearch: true
       }
     });
     
