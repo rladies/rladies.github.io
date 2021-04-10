@@ -27,20 +27,20 @@
     </tbody>
   </table>
   
-  <div class="flex-container">
-    <ul class="gt-grid">
-      {{ range $leadership }}     
-        <li>
-          <div class="gt-grid-item">
-            <div class="gt-content" style="background-image: url(img/{{ .img | default "placeholder.png" }});">
-              <div class="gt-content-text">
-                <h1>{{ .name }}</h1>
-                <p>{{ delimit .role ", " }}</p>
-              </div>
+  <div class="container" id="global-team">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        {{ range $leadership | shuffle }}    
+          <div class="card mx-auto m-1">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img class="card-img-top embed-responsive-item" src="img/{{ .img | default "placeholder.png" }}" alt="{{ .name }} - {{ delimit .role ", " }}">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ .name }}</h5>
+              <p class="card-text">{{ delimit .role ", " }}</p>
             </div>
           </div>
-        </li>
-      {{ end }}
-    </ul>
+        {{ end }}
+    </div>
   </div>
+  
 {{ end }}

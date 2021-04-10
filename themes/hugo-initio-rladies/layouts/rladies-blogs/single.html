@@ -22,31 +22,39 @@
 
     {{ $blogs :=  ( .Scratch.Get "blogs" ) }}
     
-    <table class="fixed">
-      {{ range $blogs }}
-        <tr>
-          <th width="100px" style="text-align: center;">
-            <img width="100px" src="{{ .photo_url }}"></img>
-          </th>
-          <th>{{ .name }}</th>
+    
+    <div class="flex-container">
+      <ul class="rblogs-grid" style="border: none;">
+        {{ $mentoring := $.Site.Data.mentoring | shuffle }}
+        {{ range $blogs}}
           {{ $url := replace .url "https://" "" }}
           {{ $url := replace $url "http://" "" }}
-          <th>
-            <a target="_blank" href="{{ .url }}">{{ $url }}</a>
-          </th>
-          <th><ul>
-            {{ range .authors }}
-              <li>
-                {{ .name }}
-                {{ range first 3 .social_media }}
-                  {{ partial "some.html" .}}
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul></th>
-        </tr>
+          <div class="rblogs-grid-item">
+            <div class="rblogs-grid-card">
+              <a href={{ $url }}>
+                <div class="rblogsimg" style="background-image: url({{ .photo_url }});" ></div>
+                <div class="rblogs-grid-right">
+                  <div class="rblogs-grid-statement">
+                    <p>"{{ .name }}"</p>
+                  </div>
+                  <div class="rblogs-grid-attribution">
+                    {{ range .authors }}
+                      <li>
+                        {{ .name }}
+                        {{ range first 3 .social_media }}
+                          {{ partial "some.html" .}}
+                        {{ end }}
+                      </li>
+                    {{ end }}
+                    <h3>Authors</h3>
+                  </div> <!-- attribution -->
+                </div> <!-- right -->
+              </a>
+            </div> <!-- card -->
+        </div>
       {{ end }}
-    </table>
+    </ul>
+  </div>
 	</article><!-- #post-## -->
 
 {{ end }}
