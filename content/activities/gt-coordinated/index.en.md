@@ -57,3 +57,19 @@ The coordinators of these campaigns have written blog posts about them, which yo
 <center>
 <a href='/categories/iwd/'><buttonr type="button">Check out our blogposts on the campaigns</buttonr></a>  
 </center>
+
+## YouTube Channel
+The R-Ladies Global YouTube channel features videos of R-Ladies meetups from around the world!
+Make sure to check out the playlist with content in [Spanish](https://www.youtube.com/watch?v=lZICjcX7O0U&list=PLPwprT5wdzX54jSqytthvi3NKZHk1Aiuq), [Portuguese](https://www.youtube.com/watch?v=NkahvnQizp0&list=PLPwprT5wdzX75DU9MwCc_rkOO4K2rVR73) and [Turkish](https://www.youtube.com/watch?v=ykmoy3AO_qI&list=PLPwprT5wdzX7_OcP-QjajzQtIZCZ-0TVN).
+And once you are there, also have a look at the [channels we subscribe to](https://www.youtube.com/c/RLadiesGlobal/channels), which are channels of R-Ladies chapters that run their own YouTube channels.
+
+<center>
+<a href='https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng'><buttonr type="button">Check out our channel!</buttonr></a>  
+</center>
+
+## R-Ladies guide
+We have an online guide for R-Ladies volunteers, and those who’d like to become cool like them. 😉 More seriously, the guide is aimed at featuring all of R-Ladies organization guidance (how do I start an R-Ladies chapter?) and wisdom (what are our best tips for running events).
+
+<center>
+<a href='https://guide.rladies.org/'><buttonr type="button">Check out our guide!</buttonr></a>  
+</center>
