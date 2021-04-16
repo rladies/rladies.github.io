@@ -1,6 +1,6 @@
 ---
-title: "Groups"
-type: "chapters"
+title: "Grupos"
+type: "Secciones"
 weight: 1
 ---
 
