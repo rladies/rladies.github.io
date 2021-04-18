@@ -1,0 +1,123 @@
+
+<div id="chartdiv"></div>
+
+<div class="container text-center">
+  <button type="button" class="btn btn-primary p-2 m-2 center" data-toggle="collapse" data-target="#chapter-table">{{ i18n "current_chapters_table" }}</button>
+  
+  <div class="row justify-content-center">
+    <div id="chapter-table" class="collapse col-auto m-2">
+      <table class="table table-hover table-responsive chp-table">
+      <thead>
+        <tr>
+          <th class="text-right b-rladies b-rladies-r"> Country </th>
+          <th class="text-left"> City </th>
+          <th class="text-right"> Social Media </th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Site.Data.chapters }}
+        <tr>
+           <td class="text-right b-rladies b-rladies-r" rowspan = "{{ len .chapters }}"> <b>{{ .country}}</b> </td>
+           
+        {{ range .chapters }}
+                <td class="text-left"> <a href="http://meetup.com/{{ .meetup }}">{{ .name }}</a> </td>
+                
+                <td class="text-right"> 
+                   {{ with .social_media }}
+                     {{ range . }}
+                       {{ partial "some.html" . }}
+                     {{ end }}
+                   {{ end }}
+                  </td>
+          </tr>
+             {{ end }}
+      
+          {{ end }}
+      </tbody>
+    </table>
+       </div>
+  </div>
+
+  <p>{{ .Content }}</p>
+ </div>
+ 
+<!-- amcharts --> 
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+  am4core.ready(function() {
+    
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    // Create map instance
+    var chart = am4core.create("chartdiv", am4maps.MapChart);
+    
+    // Set map definition
+    chart.geodata = am4geodata_worldLow;
+    
+    // Set projection
+    chart.projection = new am4maps.projections.Miller();
+    
+    // Create map polygon series
+    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+    
+    // Exclude Antartica
+    polygonSeries.exclude = ["AQ"];
+    
+    // Make map load polygon (like country names) data from GeoJSON
+    polygonSeries.useGeodata = true;
+    
+    // Configure series
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    console.log(am4geodata_worldLow)
+    polygonTemplate.tooltipText = "{name}";
+    polygonTemplate.polygon.fillOpacity = 0.6;
+    
+    // Create hover state and set alternative fill color
+    var hs = polygonTemplate.states.create("hover");
+    hs.properties.fill = am4core.color("#88398a");
+    
+    // Add image series
+    var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+    imageSeries.mapImages.template.propertyFields.longitude = "longitude";
+    imageSeries.mapImages.template.propertyFields.latitude = "latitude";
+    imageSeries.mapImages.template.tooltipHTML = "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}<br>{socials}";
+    imageSeries.mapImages.template.propertyFields.url = "url";
+
+    imageSeries.tooltip.background.fillOpacity = 0.7;
+    imageSeries.tooltip.background.fill = am4core.color("#fff");
+    imageSeries.tooltip.label.interactionsEnabled = true;
+    imageSeries.tooltip.keepTargetHover = true;
+    
+    var circle = imageSeries.mapImages.template.createChild(am4core.Circle);
+    circle.radius = 4;
+    circle.propertyFields.fill = "color"
+    circle.nonScaling = "true"; 
+    
+    var colorSet = new am4core.ColorSet();
+    
+    imageSeries.data = [ 
+      {{ range .Site.Data.chapters }}
+        {{ range .chapters }}
+          {
+            "name": "{{ .name }}",
+            "members": "{{ .members }}",
+            "socials": {{ with .social_media }}{{ range . }}{{ partial "some.html" . }}{{ end }}{{ end }},
+            "latitude": {{ .lat }},
+            "longitude": {{ .lon }},
+            "color": "#88398acc"
+          },
+        {{ end }}
+      {{ end }}
+    ];
+  }); // end am4core.ready()
+</script>
+
+  

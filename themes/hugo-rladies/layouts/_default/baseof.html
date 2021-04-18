@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head/meta.html" . }}
+    {{ partial "head/head.html" . }}
+
+    {{ block "head" .}}
+      <!-- for extra header scripts etc -->
+    {{ end }}
+    
+  </head>
+  
+  <body>
+
+    {{ partial "hero.html" . }}
+    {{ partial "menu.html" . }}
+
+    <main id="main">
+      <div class="container col-md-8 offset-md-2">
+          {{ block "main" . }}
+          {{ end }}
+    	</div>	<!-- /container -->
+    </main>
+  
+    <div class="container col-md-8 offset-md-2">
+      <center>
+        <a href="#hero">
+          <i class="fa fa-chevron-up chevron"></i>
+        </a>  
+      </center>
+  	</div>
+
+    {{ block "languages" . }}
+      {{ partial "post/i18n.html"}}
+    {{ end }}
+  
+
+    {{ partial "footer/footer.html" . }}
+    {{ block "footer" . }}
+      
+    {{ end }}
+  </body>
+  
+</html>

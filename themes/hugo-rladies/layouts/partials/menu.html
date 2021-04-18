@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm sticky-top border-bottom m-1 p-1">
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class=”navbar-toggler-icon”><i class="fas fa-bars hamburger"></i></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse navbar-inner" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        {{ range .Site.Menus.main }} 
+            {{ if .HasChildren }}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ .Name }} <span class="caret"></span>
+                    </a>
+                   <div class="dropdown-menu">
+                        {{ range .Children }}
+                            <a class="dropdown-item" href="{{ .URL | absLangURL }}"> {{ .Name }} </a>
+                        {{ end }}
+                    </div>
+                </li>
+            {{ else }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{  .URL | absLangURL }}">{{ .Name }}</a>
+                </li>
+            {{ end }} 
+        {{ end }}
+    </ul>
+  </div>
+</nav>
+

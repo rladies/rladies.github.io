@@ -1,0 +1,477 @@
+
+// Your variable overrides
+$body-bg:    #fff;
+$primary:    #88398a;
+$table-hover-bg: rgba($primary, .2);
+
+$code-font: 'Inconsolata', monospace;
+$body-font: 'Open Sans', sans-serif;
+$nav-font: 'Lato', sans-serif;
+
+
+$dropdown-link-hover-bg: rgba($primary, .2);
+
+
+// Bootstrap and its default variables
+@import "scss/bootstrap";
+@import "scss/syntax";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;300&family=Open+Sans:wght@300&display=swap');
+
+body { 
+  font-family: $body-font;
+}
+
+h1, h2, h3, .navbar, .navbar-collapse {
+  font-family: $nav-font
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: 0 0 0;
+}
+
+
+#main {
+  padding: 5em;
+}
+
+.chevron {
+  position: absolute;
+  font-size: 48px;
+  color: $primary;
+  bottom: 10px; 
+  left: 0; 
+  right: 0;
+}
+
+.hamburger {
+  color: $primary;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+.full-width {
+   width: 100vw;
+   position: relative;
+   left: 50%;  
+   margin-left: -50vw;
+}
+
+.post {
+  width: 100%;
+
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.primary {
+  color: $primary;
+}
+
+.date {
+   width: 66%; 
+   margin: 0 auto;
+   position: relative;
+   text-align: center; 
+   border-bottom: 1px solid $gray-300; 
+   line-height: 0.1em;
+   color: $gray-500;
+} 
+
+.date span { 
+  background: $white;
+  padding:0 10px; 
+}
+
+.style-rladies {
+  border: 0;
+  height: 2px;
+  background-image: -webkit-linear-gradient(left, $white,$primary, $white);
+  background-image: -moz-linear-gradient(left, $white, $primary, $white);
+  background-image: -ms-linear-gradient(left, $white, $primary, $white);
+  background-image: -o-linear-gradient(left, $white, $primary, $white);
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+// footer
+#footer {
+  background: $primary;
+  color: $white;
+  font-size: $font-size-sm;
+  
+  a, .widget-title {
+    color: lighten($primary, 50%);
+  }
+  
+  .widget {
+    padding: 1.5em;
+  }
+  
+  .widget-title {
+    padding-top: 5px;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    color: lighten($primary, 40%);
+  }
+}
+
+.chp-table {
+  width: auto !important; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.b-rladies{
+  border: 1px solid $primary;
+}
+
+.b-rladies-r{
+  border-right: 1px solid $primary;
+}
+
+.b-rladies-l{
+  border-left: 1px solid $primary;
+}
+
+.b-rladies-b{
+  border-bottom: 1px solid $primary;
+}
+
+.b-rladies-t{
+  border-top: 1px solid $primary;
+}
+
+#underfooter {
+  padding-top: 5px;
+  background: darken($primary, 12%);
+  color: lighten($primary, 35%);
+  font-size: 12px;
+  
+  a {
+    color: lighten($primary, 45%);
+  }
+
+}
+
+/******************/
+/*  untranslated  */
+/******************/
+
+.not-translated{
+  background-color: rgba($primary, .3);
+  font-size: 20px;
+  text-align: center;
+  padding: 1.5em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+
+/******************/
+/*   highlight    */
+/******************/
+
+pre {
+  border-radius: 10px;
+  border: 1px solid $primary;
+  background-color: rgba($primary, .3);
+}
+
+pre.chroma {
+  background-color: rgba($primary, .1);
+  border: 1px solid $primary;
+  border-radius: 10px;
+}
+
+/****************/
+/* TUI calendar */
+/****************/
+.tui-full-calendar-month-week-item 
+.tui-full-calendar-today 
+.tui-full-calendar-weekday-grid-date-decorator {
+  background: $primary !important;
+}
+
+/******************/
+/*      menu      */
+/******************/
+.navbar {
+  background-color: rgba($white, .9);
+}
+.navbar .navbar-inner {
+  text-transform: uppercase;
+  text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar .navbar-inner .nav {
+  display:inline-block;
+  float: none;
+}
+
+.navbar-inner {
+  overflow: visible;
+}
+
+ 
+/******************/
+/* custom styles  */
+/******************/
+
+.section-title, 
+.entry-title { 
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  margin: 0px 0 25px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.25rem;
+  letter-spacing: 1px;
+  color: $gray-700;
+}
+
+.section-title {
+  text-transform: uppercase;
+}
+
+.section-title span,
+.entry-title span {
+  display: inline-block;
+  position: relative;
+}
+
+.section-title span:before,
+.entry-title span:before,
+.section-title span:after,
+.entry-title span:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: .53em;
+  width: 400%;
+  border-bottom: 1px solid $gray-500;
+  border-top: 1px solid $gray-500;
+}
+
+.section-title span:before,
+.entry-title span:before {
+  right: 100%;
+  margin-right: 45px;
+}
+
+.section-title span:after,
+.entry-title span:after {
+  left: 100%;
+  margin-left: 45px;
+}
+
+.entry-header .entry-meta {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0 0 15px 0;
+}
+ 
+.entry-content {
+  margin: 0 0 60px 0;
+}
+
+.entry-content h2 {
+  line-height: 1.2;
+  font-size: 30px;
+  font-size: 1.875rem;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.entry-title {
+  color: $primary;
+}
+
+
+.read-more {
+  text-align: right;
+}
+
+
+/******************/
+/* code highlight */
+/******************/
+pre { 
+  font-family: $code-font; 
+  width: 100%; 
+  padding: 1em;
+}
+
+.highlight {
+ width: 100%; 
+}
+
+
+/******************/
+/* parallax Hero  */
+/******************/
+.paral {
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  a {
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .chevron {
+    color: rgba(lighten($primary, 40%), .6);
+  }
+  
+  .logo img{
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+  
+    margin: auto; 
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    opacity: 1;
+  }
+  
+  .logo-home img{
+    bottom: 0;
+    top: 0;
+  }
+}
+
+
+/******************/
+/*   BS4 cards    */
+/******************/
+.embed-responsive .card-img-top {
+    object-fit: cover;
+}
+
+.card {
+  .card-img-rladies {
+      width: 50px !important;
+      height: 50px !important;
+      object-fit: contain;
+  }
+}
+
+.card-header-rladies{
+  background-color: $primary;
+  color: $white;
+}
+.card-directory-text {
+  font-size: 16px;
+}
+
+.bottom-align-text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.card-footer {
+  background-color: lighten($primary, 50%);
+  
+  small {
+    color: $gray-900;
+  }
+}
+
+.card-title {
+  color: $primary;
+}
+
+
+/******************/
+/*    List.js     */
+/******************/
+ 
+.pagination-nav {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+.pagination {
+  white-space: nowrap; 
+}
+
+.pagination:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+.paginate_back, 
+.paginate_next, 
+.pagination {
+  float: left;
+}
+
+.paginate_back, 
+.paginate_next {  
+    line-height: $input-height; 
+    width: $input-height; 
+    text-align: center; 
+    user-select: none;
+    padding-top: 30px;
+    margin-right: 35px;
+}
+
+
+.paginate_back .fas, 
+.paginate_next .fas { 
+  display: block;
+  font-size: 16px;
+  line-height: inherit;
+} 
+
+
+/******************/
+/*    amcharts    */
+/******************/
+#chartdiv {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+
+#chartdiv .fab {
+  color: #fff;
+}
+
+#chartdiv .fab:hover {
+  color: #e7d7e7;
+}
