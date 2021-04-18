@@ -1,9 +1,7 @@
 ---
 title: "Sponsors"
-type: "client"
+type: "cards"
 weight: 4
-file: "data.json"
+file: "sponsors.json"
 ---
-
-Lo sentimos, esta página aún no se ha traducido al inglés.
 

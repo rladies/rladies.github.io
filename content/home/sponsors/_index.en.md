@@ -1,6 +1,6 @@
 ---
 title: "Sponsors"
-type: "client"
+type: "cards"
 weight: 4
-file: "data.json"
+file: "sponsors.json"
 ---
