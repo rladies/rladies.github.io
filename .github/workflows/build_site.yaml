@@ -41,7 +41,7 @@ jobs:
             "dplyr", "here", "purrr", 
             "jsonlite", "lubridate",
             "tidyr", "cyphr", "sodium"
-          ))
+          ), Ncpus = 2)
           remotes::install_github("rladies/meetupr")
         shell: Rscript {0}
         
