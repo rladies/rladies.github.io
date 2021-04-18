@@ -1,6 +1,5 @@
 {{ define "main" }}
   </article class="post">
-  	<div class="row">
    		{{ if eq .Params.translated false }}
         <div class="not-translated" lang="{{ .Lang }}">
            {{ i18n "missing_translation" }}
@@ -15,6 +14,5 @@
           {{ template "_internal/pagination.html" . }}
   			</ul>
   		</div>
-  	</div>
   </article>
 {{ end }}
