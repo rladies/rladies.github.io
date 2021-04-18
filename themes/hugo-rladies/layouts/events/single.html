@@ -5,7 +5,6 @@
 {{ define "main" }}
 	{{ $update := .Site.Data.events_updated }}
 
-
 <article class="post">
 	<header class="entry-header">
  		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
@@ -171,16 +170,16 @@
   }); // end am4core.ready()
 </script>
   
-  <script>
-    $('.Count').each(function () {
-      var $this = $(this);
-      jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-        duration: 1000,
-        easing: 'swing',
-        step: function () {
-          $this.text(Math.ceil(this.Counter));
-        }
-      });
+<script>
+  $('.Count').each(function () {
+    var $this = $(this);
+    jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+      duration: 1000,
+      easing: 'swing',
+      step: function () {
+        $this.text(Math.ceil(this.Counter));
+      }
     });
-  </script>
+  });
+</script>
 {{ end }}
