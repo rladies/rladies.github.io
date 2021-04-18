@@ -1,0 +1,61 @@
+{{ define "main" }}
+<article class="post">
+		<header class="entry-header">
+ 			<div class="entry-meta">
+         <span class="posted-on">
+            <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+               {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
+            </time>
+         </span>
+ 			</div>
+ 			
+ 			{{ if eq .Params.translated false }}
+        <div class="not-translated" lang="{{ .Lang }}">
+           {{ i18n "missing_translation" }}
+         </div>
+      {{ end }}
+ 			
+ 		  <h1 class="entry-title">{{ .Title }}</h1>
+		</header>
+  
+  <p>{{ .Content }}</p>
+  
+  <table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+    <thead>
+      <tr>
+        <th style="text-align:right;"> name </th>
+        <th style="text-align:left;"> role </th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ $url := "https://raw.githubusercontent.com/Athanasiamo/starter-kit/master/jsons/global-team.json" }}
+      {{ $leadership := getJSON $url }}
+      {{ range $leadership | shuffle}}
+      <tr>
+        <td style="text-align:right;font-weight: bold;" rowspan="{{ len .role }}"> {{ .name }} </td>
+       
+        {{ range .role }}
+           <td style="text-align:left;vertical-align: top !important;"> {{ . }} </td> 
+           </tr>
+         {{ end }}
+       {{ end }}
+    </tbody>
+  </table>
+  
+  <div class="container" id="global-team">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        {{ range $leadership | shuffle }}    
+          <div class="card mx-auto m-1">
+            <div class="embed-responsive embed-responsive-4by3">
+              <img class="card-img-top embed-responsive-item" src="img/{{ .img | default "placeholder.png" }}" alt="{{ .name }} - {{ delimit .role ", " }}">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ .name }}</h5>
+              <p class="card-text">{{ delimit .role ", " }}</p>
+            </div>
+          </div>
+        {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

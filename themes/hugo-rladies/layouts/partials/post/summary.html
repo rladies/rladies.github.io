@@ -1,0 +1,21 @@
+<article class="post">
+	<header class="entry-header">
+		<div class="entry-meta">
+       <span class="posted-on">
+          {{ partial "post/dates.html" .}}
+       </span>
+		</div>
+		<h4 class="entry-title">
+		  <a  href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
+		</h4>
+	{{ partial "post/i18n.html" . }}
+		 
+	</header>
+	<hr class="style-rladies">
+	<div class="entry-content">
+		{{ .Summary }}
+	  <div class="read-more">
+      <a href="{{ .RelPermalink }}" class="read-more-link">{{ i18n "read_more" }}</a> 
+    </div>
+	</div>
+</article>

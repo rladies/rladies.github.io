@@ -1,0 +1,82 @@
+
+{{ define "main" }}
+	<header class="entry-header">
+ 		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+	</header>
+	
+  <div class="entry-content">
+		{{ .Content }}
+	</div>
+
+  <div class="flex-container full-width" id="directory-content">
+    
+    <center class="m-2">
+      <input type="text" class="fuzzy-search rounded" placeholder="Search directory..."/>
+      <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</buttonr>
+      <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
+    </center>
+    	
+    <div class="container" id="directory-cards">
+        <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
+          {{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
+          {{ if eq .Hugo.Environment "production" }}
+            {{ .Scratch.Set "directory" $.Site.Data.directory }}
+          {{ end }}
+    
+            {{ $directory :=  ( .Scratch.Get "directory" ) }}
+            {{ range $directory }}
+              {{ partial "directory/li.html" . }}
+            {{ end }}
+        </ul>
+      </div>
+    </div>
+  
+    <center>
+      <div class="pagination-nav">
+        <ul class="paginate_back"><i class="fas fa-chevron-left"></i></ul>
+        <ul class="pagination"></ul>
+        <ul class="paginate_next"><i class="fas fa-chevron-right"></i></ul>
+      </div>
+    </center>
+  </div> 
+
+	<script>
+	
+    var directoryList = new List('directory-content', {
+      valueNames: ['name', 'honorific', 'title', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'card-directory-text'],
+      page: 10,
+      pagination: {
+        innerWindow: 2,
+        left: 1,
+        right: 1,
+        paginationClass: "pagination",
+      },
+      fuzzySearch: {
+        searchClass: "fuzzy-search",
+        location: 0,
+        distance: 200,
+        threshold: 0.5,
+        multiSearch: true
+      }
+    });
+    
+    $('.paginate_next').on('click', function(){
+	    var list = $('.pagination').find('li');
+	    $.each(list, function(position, element){
+	        if($(element).is('.active')){
+	            $(list[position+1]).trigger('click');
+	        }
+	    })
+	});
+
+	$('.paginate_back').on('click', function(){
+	    var list = $('.pagination').find('li');
+	    $.each(list, function(position, element){
+	        if($(element).is('.active')){
+	            $(list[position-1]).trigger('click');
+	        }
+	    })
+	  }); 
+
+	</script>
+{{ end }}
