@@ -94,9 +94,9 @@ events <- new_events %>%
     lon = venue_lon %||% lon,
     description
   ) %>%  
-  select(-ds)# %>%
-  # bind_rows(existing_events) %>% 
-  # distinct()
+  select(-ds) %>%
+  bind_rows(existing_events) %>%
+  distinct()
 
 cat("\t writing 'data/events.json'\n")
 jsonlite::write_json(x = events, 
@@ -105,7 +105,7 @@ jsonlite::write_json(x = events,
 
 cat("Writing 'data/events_updated.json'\n")
 jsonlite::write_json(x = data.frame(date = Sys.time(),
-                                    n_events_past = filter(events, type == "past") %>% nrow(),
+                                    n_events_past = filter(events, status == "past") %>% nrow(),
                                     n_chapters = nrow(rladies_groups)), 
                      path = here::here("data/events_updated.json"),
                      pretty = TRUE)
