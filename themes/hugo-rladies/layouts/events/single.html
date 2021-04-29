@@ -121,9 +121,8 @@
       });
   
       function cal_change_ww(size){
-        var viewName = '';
+        var viewName = "";
         var options = cal.getOptions();
-            
         switch (true) {
             case (size < 650):
                 viewName = 'day';
@@ -131,24 +130,20 @@
             case (size < 900):
                 viewName = 'week';
                 break;
-            default:
+            case (size < 1200):
                 options.month.visibleWeeksCount = 2;
                 viewName = 'month';
                 break;
         }
-            cal.setOptions(options, true);
-            cal.changeView(viewName, true);
-            setDropdownCalendarType();
-            setRenderRangeText();
+        cal.setOptions(options, true);
+        cal.changeView(viewName, true);
+        setDropdownCalendarType();
+        setRenderRangeText();
       }
       
       cal_change_ww(document.documentElement.clientWidth);
       
-      // Attaching the event listener function to window's resize event
-      window.addEventListener("resize", function(){
-        var ww = document.documentElement.clientWidth;
-        cal_change_ww(ww)
-      });
+
 
       // event handlers
       cal.on({
