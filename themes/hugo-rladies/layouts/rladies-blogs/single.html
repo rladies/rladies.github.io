@@ -17,44 +17,43 @@
 		
     {{ .Scratch.Set "blogs" $.Site.Data.blogs_mock  }}
     {{ if eq .Hugo.Environment "production" }}
-      {{ .Scratch.Set "blogs" $.Site.Data.rblogs.blogs }}
+      {{ .Scratch.Set "blogs" $.Site.Data.rblogs }}
     {{ end }}
 
-    {{ $blogs :=  ( .Scratch.Get "blogs" ) }}
-    
-    
-    <div class="flex-container">
-      <ul class="rblogs-grid" style="border: none;">
-        {{ $mentoring := $.Site.Data.mentoring | shuffle }}
-        {{ range $blogs}}
-          {{ $url := replace .url "https://" "" }}
-          {{ $url := replace $url "http://" "" }}
-          <div class="rblogs-grid-item">
-            <div class="rblogs-grid-card">
-              <a href={{ $url }}>
-                <div class="rblogsimg" style="background-image: url({{ .photo_url }});" ></div>
-                <div class="rblogs-grid-right">
-                  <div class="rblogs-grid-statement">
-                    <p>"{{ .name }}"</p>
+      <div class="container full-width" id="rladies-blogs">
+        <div class="row justify-content-center row-cols-2 row-cols-sm-3 row-cols-lg-4">
+          {{ $blogs := ( .Scratch.Get "blogs" ) }}
+            {{ range $blogs }}    
+              <div class="card card-blogs mx-auto m-1">
+                <a href="{{ .url }}">
+                  <div class="embed-responsive embed-responsive-4by3">
+                    <img class="card-img-top embed-responsive-item" src="{{ .photo_url }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
                   </div>
-                  <div class="rblogs-grid-attribution">
-                    {{ range .authors }}
-                      <li>
-                        {{ .name }}
-                        {{ range first 3 .social_media }}
-                          {{ partial "some.html" .}}
-                        {{ end }}
-                      </li>
-                    {{ end }}
-                    <h3>Authors</h3>
-                  </div> <!-- attribution -->
-                </div> <!-- right -->
-              </a>
-            </div> <!-- card -->
+                  <div class="card-body card-img-overlay card-img-transp">
+                    <h3 class="card-title text-white">
+                      {{ .title }}
+                      {{ with .subtitle }}
+                        <i><small class="text-white">
+                          <br>{{ . }}
+                        </small></i>{{ end }}
+                    </h3>
+                    
+                    <div class="card-text text-rladies-light">
+                      {{ range .authors }}
+                        <p class="text-white text-rladies-light">
+                          {{ .name }}
+                          {{ range first 3 .social_media }}
+                            {{ partial "some.html" .}}
+                          {{ end }}
+                        </p>
+                      {{ end }}
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {{ end }}
         </div>
-      {{ end }}
-    </ul>
-  </div>
+      </div>
 	</article><!-- #post-## -->
 
 {{ end }}

@@ -1,5 +1,12 @@
-<script type="text/javascript" class="code-js">
+<script type="text/javascript" async src="{{ "js/moment.min.js" | relURL }}"></script>
 
+<!-- TUI calendar js-->  
+<script type="text/javascript" async src="{{ "js/tui-code-snippet.min.js" | relURL }}" ></script>
+<script type="text/javascript" async src="{{ "js/tui-time-picker.min.js" | relURL }}" ></script>
+<script type="text/javascript" async src="{{ "js/tui-date-picker.min.js" | relURL }}" ></script>
+<script type="text/javascript" async src="{{ "js/tui-calendar.min.js" | relURL }}" ></script>
+
+<script type="text/javascript">
   var rladies_cal = {
     "common.border":"1px solid #a7a9ac80",
     "common.backgroundColor":"white",
@@ -12,7 +19,7 @@
     
     "month.holidayExceptThisMonth.color":"#88398a0A",
     "month.dayExceptThisMonth.color":"#a7a9acb4",
-
+  
     // week header 'dayname'
     'week.dayname.borderTop': '1px solid #88398a',
     'week.dayname.borderBottom': '1px solid #88398a',
@@ -21,72 +28,19 @@
     
     // week vertical panel 'vpanel'
     'week.vpanelSplitter.border': '1px solid #88398a',
-
+  
     // week daygrid 'daygrid'
     'week.today.backgroundColor': '#88398a0A',
-
+  
     // week timegrid 'timegrid'
     'week.timegridLeft.borderRight': '1px solid #88398a',
-
+  
     'week.currentTime.color': '#88398a',
     'week.pastTime.color': '#bbb',
     'week.futureTime.color': '#555',
-
+  
     'week.currentTimeLinePast.border': '1px dashed #88398a',
     'week.currentTimeLineBullet.backgroundColor': '#88398a',
     'week.currentTimeLineToday.border': '1px solid #88398a',
-
   }
-  
-  var calendar = new tui.Calendar('#calendar', {
-    "view": "month", 
-    "defaultView": "month",
-    "taskView": false,
-    "scheduleView": true,
-    "useDetailPopup": true,
-    "useCreationPopup": false,
-    "month": {
-      "startDayOfWeek": 1, // monday
-    },
-    "week": {
-      "startDayOfWeek": 1, // monday
-    },
-    "isReadOnly": true,
-    "usageStatistics": false,
-    "useNav": true,
-    "theme": rladies_cal,
-    "calendars":  [
-      {{ range .Site.Data.chapters }}
-        {
-          id: {{ .id }},
-          name: {{ .name | default "rladies" }},
-          color: {{ .color | default "#fff" }},
-          bgColor: {{ .bgColor | default "#88398a" }},
-          borderColor: {{ .color | default "#88398a" }},
-        },
-      {{ end }}
-    ] 
-  });
-  
-  calendar.createSchedules([
-    {{ $events := .Site.Data.events }}
-    {{ range $events }}
-    {
-        category: "time",
-        isReadOnly: true, 
-        dueDateClass: '',
-        
-        id: {{ .id }},
-        calendarId: {{ .calendarId }},
-        title: {{ .title }},
-        start: {{ .start }},
-        end: {{ .end }},
-        body: {{ .body }},
-        type: {{ .type }},
-        location: {{ .location | default "Not announced"}},
-        lat: {{ .lat }},
-        lon: {{ .lon }}
-    },
-    {{ end }}
-  ]);  
 </script>

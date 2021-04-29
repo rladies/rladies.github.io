@@ -8,7 +8,6 @@ $code-font: 'Inconsolata', monospace;
 $body-font: 'Open Sans', sans-serif;
 $nav-font: 'Lato', sans-serif;
 
-
 $dropdown-link-hover-bg: rgba($primary, .2);
 
 
@@ -36,6 +35,21 @@ html {
     margin: 0 0 0;
 }
 
+.text-white{
+  color: $white;
+  
+  i {
+    color: $white;
+  }
+  
+  a {
+    color: $white;
+  }
+  
+  :hover {
+    color: lighten($primary, 30%);
+  }
+}
 
 #main {
   padding: 5em;
@@ -382,6 +396,22 @@ pre {
       height: 50px !important;
       object-fit: contain;
   }
+  
+  a {
+    text-decoration: none;  
+  }
+}
+
+.card-blogs {
+  min-width: 250px;
+}
+
+.card-img-transp {
+  background-color: rgba($black, .7);
+}
+  
+.card-directory {
+  max-width: 350px;  
 }
 
 .card-header-rladies{
@@ -410,53 +440,9 @@ pre {
   color: $primary;
 }
 
-
-/******************/
-/*    List.js     */
-/******************/
- 
-.pagination-nav {
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
+.page-item, .page-link {
+  border: none; 
 }
-
-.pagination {
-  white-space: nowrap; 
-}
-
-.pagination:after {
-    display: block;
-    content: "";
-    clear: both;
-  }
-
-.paginate_back, 
-.paginate_next, 
-.pagination {
-  float: left;
-}
-
-.paginate_back, 
-.paginate_next {  
-    line-height: $input-height; 
-    width: $input-height; 
-    text-align: center; 
-    user-select: none;
-    padding-top: 30px;
-    margin-right: 35px;
-}
-
-
-.paginate_back .fas, 
-.paginate_next .fas { 
-  display: block;
-  font-size: 16px;
-  line-height: inherit;
-} 
-
 
 /******************/
 /*    amcharts    */

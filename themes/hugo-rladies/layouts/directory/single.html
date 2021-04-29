@@ -1,5 +1,6 @@
 
 {{ define "main" }}
+<article class="post">
 	<header class="entry-header">
  		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
 	</header>
@@ -29,27 +30,37 @@
             {{ end }}
         </ul>
       </div>
-    </div>
-  
-    <center>
-      <div class="pagination-nav">
-        <ul class="paginate_back"><i class="fas fa-chevron-left"></i></ul>
-        <ul class="pagination"></ul>
-        <ul class="paginate_next"><i class="fas fa-chevron-right"></i></ul>
+      
+      <div class="text-xs-center" aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item paginate_back">
+            <a class="page-link" aria-label="Previous">
+              <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="paginator"></li>
+          <li class="page-item paginate_next">
+            <a class="page-link" aria-label="Next">
+              <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </center>
+      
+    </div>
   </div> 
+</article>
 
 	<script>
 	
     var directoryList = new List('directory-content', {
       valueNames: ['name', 'honorific', 'title', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'card-directory-text'],
-      page: 10,
+      page: 20,
       pagination: {
-        innerWindow: 2,
+        innerWindow: 3,
         left: 1,
         right: 1,
-        paginationClass: "pagination",
+        paginationClass: "paginator",
       },
       fuzzySearch: {
         searchClass: "fuzzy-search",
