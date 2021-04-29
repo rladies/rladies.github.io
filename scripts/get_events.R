@@ -71,13 +71,13 @@ existing_events <- jsonlite::read_json(
 
 # Create df for json
 events <- new_events %>% 
-  left_join(rladies_groups) %>% 
+  left_join(rladies_groups) %>%
   transmute(
     id,
     chapter_id,
     title = name, 
     body = sprintf(
-      "<i class='fa fa-users'></i>&emsp;%s<br><br>%s...  <br><br><center><a href='%s' target='_blank'><buttonr>Event page</buttonr></center></a>", 
+      "<i class='fa fa-users'></i>&emsp;%s<br><br>%s...  <br><br><center><a href='%s' target='_blank'><button class='btn btn-primary'>Event page</button></center></a>", 
       yes_rsvp_count,
       substr(description, 1, 300),
       link),
