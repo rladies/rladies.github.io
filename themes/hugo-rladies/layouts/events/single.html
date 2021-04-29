@@ -1,185 +1,343 @@
 {{ define "head" }}
-  {{ partial "head/tui-calendar.html" .}}
+  
 {{ end }}
 
 {{ define "main" }}
 	{{ $update := .Site.Data.events_updated }}
-
-<article class="post">
-	<header class="entry-header">
- 		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
- 			<center>
+  <article class="post">
+  	<header class="entry-header">
+   		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+   			<center>
+    	{{ range $update }}
+    	<small class="text-muted">Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}</small>
+    	{{ end }}
+  	</center>
+  	</header>
+  	
+    <div class="entry-content">
+  		{{ .Content }}
+  	</div>
   	{{ range $update }}
-  	<small class="text-muted">Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}</small>
-  	{{ end }}
-	</center>
-	</header>
-	
-  <div class="entry-content">
-		{{ .Content }}
-	</div>
-	{{ range $update }}
-	<center>
-      <div class="card col-3text-center b-rladies">
-        <div class="card-header card-header-rladies">
-          Succesfully run events
+  	<center>
+        <div class="card col-3text-center b-rladies">
+          <div class="card-header card-header-rladies">
+            Succesfully run events
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">{{ .n_events_past }}</h2>
+          </div>
         </div>
-        <div class="card-body">
-          <h2 class="card-title Count">{{ .n_events_past }}</h2>
-        </div>
-      </div>
-  {{ end }}
-  </center>
-  <br>
-  <div id="menu">
-    <span id="menu-navi">
+    {{ end }}
+    </center>
+    <div id="menu" class = "mt-4 mb-2 pr-4">
         <span class="dropdown">
-          <button id="dropdownMenu-calendarType" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="true">
-              <i id="calendarTypeIcon" class="calendar-icon ic_view_month" style="margin-right: 4px;"></i>
-              <span id="calendarTypeName">Calendar type</span>&nbsp;
-              <i class="calendar-icon tui-full-calendar-dropdown-arrow"></i>
-          </button>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu-calendarType">
-              <li role="presentation">
-                  <a class="dropdown-menu-title" role="menuitem" onClick = "calendar.changeView('month', true)">
-                      <i class="calendar-icon ic_view_month"></i>Month
-                  </a>
-              </li>
-              <li role="presentation">
-                  <a class="dropdown-menu-title" role="menuitem" onClick = "calendar.changeView('week', true)">
-                      <i class="calendar-icon ic_view_week"></i>Weekly
-                  </a>
-              </li>
-              <li role="presentation">
-                  <a class="dropdown-menu-title" role="menuitem" onClick = "calendar.changeView('day', true)">
-                      <i class="calendar-icon ic_view_day"></i>Daily
-                  </a>
-              </li>
+            <button id="dropdownMenu-calendarType" class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                <i id="calendarTypeIcon" class="calendar-icon ic_view_month" style="margin-right: 4px;"></i>
+                <span id="calendarTypeName">Dropdown</span>&nbsp;
+                <i class="calendar-icon tui-full-calendar-dropdown-arrow"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu-calendarType">
+                <li role="presentation">
+                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-daily">
+                        <i class="calendar-icon ic_view_day"></i>Daily
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weekly">
+                        <i class="calendar-icon ic_view_week"></i>Weekly
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-monthly">
+                        <i class="calendar-icon ic_view_month"></i>Month
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks2">
+                        <i class="calendar-icon ic_view_week"></i>2 weeks
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks3">
+                        <i class="calendar-icon ic_view_week"></i>3 weeks
+                    </a>
+                </li>
             </ul>
-
-      <button type="button" class="btn bttn-no-outline action-button move-today">Today</button>
-      <button type="button" class="btn bttn-no-outline action-button move-day">
-        <i class="fa fa-chevron-left"></i>
-      </button>
-      <button type="button" class="btn bttn-no-outline action-button move-day">
-        <i class="fa fa-chevron-right"></i>
-      </button>
-    </span>
-    <span id="renderRange" class="render-range"></span>
+        </span>
+        <span id="menu-navi">
+            <button type="button" class="btn btn-primary btn-sm move-today" data-action="move-today">Today</button>
+            <button type="button" class="btn btn-primary btn-sm move-day" data-action="move-prev">
+                <i class="fa fa-chevron-circle-left ic-arrow-line-left" data-action="move-prev"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-sm move-day" data-action="move-next">
+                <i class="fa fa-chevron-circle-right ic-arrow-line-right" data-action="move-next"></i>
+            </button>
+        </span>
+        <span id="renderRange" class="render-range"></span>
   </div>
-  <br>
   <div id="calendar" style='width: 100%; height: 600px;'></div>
-  <p class="help">If you are not seeing an events calendar, please disable your pop-up blockers or try in another browser.</p>
-  <br>
-  <center>
-    <h1 style="margin: 20px;">Future events</h1>
-    <div id="chartdiv"></div>
-  </center>
-
-	<br>
-
-</article>
+  <small class="text-muted">If you are not seeing an events calendar, please disable your pop-up blockers or try in another browser.</small>
+  </article>
 {{ end }}
-
+ 
 {{ define "footer" }}
   {{ partial "footer/tui-calendar.html" . }}
-
-  {{ $events := .Site.Data.events }}
-
-   <!-- amcharts --> 
-<!-- Resources -->
-<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
-<script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
-<script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
-<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
-
-<style>
-
-</style>
-
-<!-- Chart code -->
-<script>
-  am4core.ready(function() {
-    
-    // Themes begin
-    am4core.useTheme(am4themes_animated);
-    // Themes end
-    
-    // Create map instance
-    var chart = am4core.create("chartdiv", am4maps.MapChart);
-    
-    // Set map definition
-    chart.geodata = am4geodata_worldLow;
-    
-    // Set projection
-    chart.projection = new am4maps.projections.Miller();
-    
-    // Create map polygon series
-    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
-    
-    // Exclude Antartica
-    polygonSeries.exclude = ["AQ"];
-    
-    // Make map load polygon (like country names) data from GeoJSON
-    polygonSeries.useGeodata = true;
-    
-    // Configure series
-    var polygonTemplate = polygonSeries.mapPolygons.template;
-    console.log(am4geodata_worldLow)
-    polygonTemplate.tooltipText = "{name}";
-    polygonTemplate.polygon.fillOpacity = 0.6;
-    
-    // Create hover state and set alternative fill color
-    var hs = polygonTemplate.states.create("hover");
-    hs.properties.fill = am4core.color("#88398a");
-    
-    // Add image series
-    var imageSeries = chart.series.push(new am4maps.MapImageSeries());
-    imageSeries.mapImages.template.propertyFields.longitude = "longitude";
-    imageSeries.mapImages.template.propertyFields.latitude = "latitude";
-    imageSeries.mapImages.template.tooltipHTML = "<b>{title}</b><li>{calendarId}</li> {body} ";
-    imageSeries.mapImages.template.propertyFields.url = "url";
-
-    imageSeries.tooltip.background.fillOpacity = 0.7;
-    imageSeries.tooltip.background.fill = am4core.color("#fff");
-    imageSeries.tooltip.label.interactionsEnabled = true;
-    imageSeries.tooltip.keepTargetHover = true;
-    imageSeries.tooltip.label.wrap = true;
-    imageSeries.tooltip.label.width = 300;
-    
-    var circle = imageSeries.mapImages.template.createChild(am4core.Circle);
-    circle.radius = 4;
-    circle.propertyFields.fill = "color"
-    circle.nonScaling = "true"; 
-    
-    var colorSet = new am4core.ColorSet();
-    
-    imageSeries.data = [ 
-      {{ range where $events ".date" "ge" (now.Format "2006-01-02") }}
-        {
-          "title": "{{ .title }}",
-          "calendarId": "{{ .calendarId }}",
-          "body": "{{ .body }}",
-          "latitude": {{ .lat }},
-          "longitude": {{ .lon }},
-          "color": "#88398acc"
-        },
-      {{ end }}
-    ];
-  }); // end am4core.ready()
-</script>
   
-<script>
-  $('.Count').each(function () {
-    var $this = $(this);
-    jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-      duration: 1000,
-      easing: 'swing',
-      step: function () {
-        $this.text(Math.ceil(this.Counter));
+  <script type="text/javascript">
+    ( async function(window, Calendar) {
+      'use strict';
+      var cal, resizeThrottled;
+      var datePicker, selectedCalendar;
+      
+      var cal = new tui.Calendar('#calendar', {
+        "view": "month", 
+        "defaultView": "month",
+        "taskView": false,
+        "scheduleView": true,
+        "useDetailPopup": true,
+        "useCreationPopup": false,
+        "month": {
+          "startDayOfWeek": 1, // monday
+        },
+        "week": {
+          "startDayOfWeek": 1, // monday
+        },
+        "isReadOnly": true,
+        "usageStatistics": false,
+        "useNav": true,
+        "theme": rladies_cal,
+        "calendars":  [
+          {{ range .Site.Data.chapters }}
+            {
+              id: {{ .id }},
+              name: {{ .name | default "rladies" }},
+              color: {{ .color | default "#fff" }},
+              bgColor: {{ .bgColor | default "#88398a" }},
+              borderColor: {{ .color | default "#88398a" }},
+            },
+          {{ end }}
+        ] 
+      });
+  
+      function cal_change_ww(size){
+        var viewName = '';
+        var options = cal.getOptions();
+            
+        switch (true) {
+            case (size < 650):
+                viewName = 'day';
+                break;
+            case (size < 900):
+                viewName = 'week';
+                break;
+            default:
+                options.month.visibleWeeksCount = 2;
+                viewName = 'month';
+                break;
+        }
+            cal.setOptions(options, true);
+            cal.changeView(viewName, true);
+            setDropdownCalendarType();
+            setRenderRangeText();
       }
-    });
-  });
-</script>
+      
+      cal_change_ww(document.documentElement.clientWidth);
+      
+      // Attaching the event listener function to window's resize event
+      window.addEventListener("resize", function(){
+        var ww = document.documentElement.clientWidth;
+        cal_change_ww(ww)
+      });
+
+      // event handlers
+      cal.on({
+          'clickMore': function(e) {
+              console.log('clickMore', e);
+          },
+          'clickSchedule': function(e) {
+              console.log('clickSchedule', e);
+          },
+          'clickDayname': function(date) {
+              console.log('clickDayname', date);
+          },
+          'afterRenderSchedule': function(e) {
+              var schedule = e.schedule;
+              // var element = cal.getElement(schedule.id, schedule.calendarId);
+              // console.log('afterRenderSchedule', element);
+          },
+          'clickTimezonesCollapseBtn': function(timezonesCollapsed) {
+              console.log('timezonesCollapsed', timezonesCollapsed);
+  
+              if (timezonesCollapsed) {
+                  cal.setTheme({
+                      'week.daygridLeft.width': '77px',
+                      'week.timegridLeft.width': '77px'
+                  });
+              } else {
+                  cal.setTheme({
+                      'week.daygridLeft.width': '60px',
+                      'week.timegridLeft.width': '60px'
+                  });
+              }
+  
+              return true;
+          }
+      });
+  
+      function onClickMenu(e) {
+          var target = $(e.target).closest('a[role="menuitem"]')[0];
+          var action = getDataAction(target);
+          var options = cal.getOptions();
+          var viewName = '';
+  
+          console.log(action);
+          switch (action) {
+              case 'toggle-daily':
+                  viewName = 'day';
+                  break;
+              case 'toggle-weekly':
+                  viewName = 'week';
+                  break;
+              case 'toggle-monthly':
+                  options.month.visibleWeeksCount = 0;
+                  viewName = 'month';
+                  break;
+              case 'toggle-weeks2':
+                  options.month.visibleWeeksCount = 2;
+                  viewName = 'month';
+                  break;
+              case 'toggle-weeks3':
+                  options.month.visibleWeeksCount = 3;
+                  viewName = 'month';
+                  break;
+              default:
+                  break;
+          }
+  
+          cal.setOptions(options, true);
+          cal.changeView(viewName, true);
+  
+          setDropdownCalendarType();
+          setRenderRangeText();
+      }
+  
+      function onClickNavi(e) {
+          var action = getDataAction(e.target);
+          console.log(action)
+          switch (action) {
+              case 'move-prev':
+                  cal.prev();
+                  break;
+              case 'move-next':
+                  cal.next();
+                  break;
+              case 'move-today':
+                  cal.today();
+                  break;
+              default:
+                  return;
+          }
+  
+          setRenderRangeText();
+      }
+  
+      function setDropdownCalendarType() {
+          var calendarTypeName = document.getElementById('calendarTypeName');
+          var calendarTypeIcon = document.getElementById('calendarTypeIcon');
+          var options = cal.getOptions();
+          var type = cal.getViewName();
+          var iconClassName;
+  
+          if (type === 'day') {
+              type = 'Daily';
+              iconClassName = 'calendar-icon ic_view_day';
+          } else if (type === 'week') {
+              type = 'Weekly';
+              iconClassName = 'calendar-icon ic_view_week';
+          } else if (options.month.visibleWeeksCount === 2) {
+              type = '2 weeks';
+              iconClassName = 'calendar-icon ic_view_week';
+          } else if (options.month.visibleWeeksCount === 3) {
+              type = '3 weeks';
+              iconClassName = 'calendar-icon ic_view_week';
+          } else {
+              type = 'Monthly';
+              iconClassName = 'calendar-icon ic_view_month';
+          }
+  
+          calendarTypeName.innerHTML = type;
+          calendarTypeIcon.className = iconClassName;
+      }
+  
+      function currentCalendarDate(format) {
+        var currentDate = moment([cal.getDate().getFullYear(), cal.getDate().getMonth(), cal.getDate().getDate()]);
+  
+        return currentDate.format(format);
+      }
+  
+      function setRenderRangeText() {
+          var renderRange = document.getElementById('renderRange');
+          var options = cal.getOptions();
+          var viewName = cal.getViewName();
+  
+          var html = [];
+          if (viewName === 'day') {
+              html.push(currentCalendarDate('YYYY.MM.DD'));
+          } else if (viewName === 'month' &&
+              (!options.month.visibleWeeksCount || options.month.visibleWeeksCount > 4)) {
+              html.push(currentCalendarDate('YYYY.MM'));
+          } else {
+              html.push(moment(cal.getDateRangeStart().getTime()).format('YYYY.MM.DD'));
+              html.push(' ~ ');
+              html.push(moment(cal.getDateRangeEnd().getTime()).format(' MM.DD'));
+          }
+          renderRange.innerHTML = html.join('');
+      }
+      
+      cal.createSchedules([
+          {{ $events := .Site.Data.events }}
+          {{ range $events }}
+          {
+              category: "time",
+              isReadOnly: true, 
+              dueDateClass: '',
+              
+              id: {{ .id }},
+              calendarId: {{ .calendarId }},
+              title: {{ .title }},
+              start: {{ .start }},
+              end: {{ .end }},
+              body: {{ .body }},
+              type: {{ .type }},
+              location: {{ .location | default "Not announced"}},
+              lat: {{ .lat }},
+              lon: {{ .lon }}
+          },
+          {{ end }}
+        ]); 
+
+      function setEventListener() {
+          $('#menu-navi').on('click', onClickNavi);
+          $('.dropdown-menu a[role="menuitem"]').on('click', onClickMenu);
+          
+          window.addEventListener('resize', resizeThrottled);
+      }
+  
+      function getDataAction(target) {
+          return target.dataset ? target.dataset.action : target.getAttribute('data-action');
+      }
+  
+      resizeThrottled = tui.util.throttle(function() {
+          cal.render();
+      }, 50);
+  
+      window.cal = cal;
+  
+      setDropdownCalendarType();
+      setRenderRangeText();
+      // setSchedules();
+      setEventListener();
+    })(window, tui.Calendar);
+  </script>
 {{ end }}

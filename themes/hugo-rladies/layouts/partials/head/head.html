@@ -2,28 +2,17 @@
 <title>{{ .Title }}</title>
 <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
 
-
-<!-- jQuery -->
-<script src="{{ "js/jquery.min.js" | relURL }}"></script>
-
 <!-- bootstrap 4 -->
-<script type="text/javascript" src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
-
 <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}"> 
-
 <!-- Icons -->
 <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 
-<!-- for searching and pagination List.js -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-
+<!-- TUI calendar css-->  
+<link rel="stylesheet" href="{{ "css/tui-calendar.min.css" | relURL }}" />
+<link rel="stylesheet" type="text/css" href="{{ "css/tui-date-picker.min.css"| relURL }}" />
+<link rel="stylesheet" type="text/css" href="{{ "css/tui-time-picker.min.css"| relURL }}" />
 
 <!-- website css -->
 {{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
-
-<!-- Share this --> 
-{{ if .Site.Params.customsharethis }}
-    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property={{ .Site.Params.sharethis.property }}&product=custom-share-buttons"></script>
-{{ end }}
