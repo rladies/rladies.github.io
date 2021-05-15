@@ -14,11 +14,6 @@
 		<div class="entry-content">
 			{{ .Content }}
 		</div>
-		
-    {{ .Scratch.Set "blogs" $.Site.Data.blogs_mock  }}
-    {{ if eq .Hugo.Environment "production" }}
-      {{ .Scratch.Set "blogs" $.Site.Data.rblogs }}
-    {{ end }}
 
       <div class="container full-width" id="rladies-blogs">
         <div class="row justify-content-center row-cols-2 row-cols-sm-3 row-cols-lg-4">
