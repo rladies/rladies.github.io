@@ -51,6 +51,9 @@ jobs:
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
+      - name: Update Global Team
+        run: Rscript scripts/get_global_team.R
+        
       - name: Site data - Get directory data
         uses: actions/checkout@v2
         with:
@@ -73,7 +76,7 @@ jobs:
           
       - name: Site data - Cleanup blogs list
         run: |
-          mv rblogs/blogs data/
+          mv rblogs/blogs data/rblogs
           rm -rf rblogs
         
       - name: Meetup authentication
@@ -117,4 +120,6 @@ jobs:
           git config --local user.name "GitHub Actions"	
           git add data/events.json data/chapters.json data/events_updated.json	
           git commit -m 'Update meetup data' || echo "No data to commit"	
+          git add data/global_team.json
+          git commit -m 'Update global team' || echo "No data to commit"	
           git push origin || echo "No changes to commit"
