@@ -1,10 +1,5 @@
 ---
 title: "History"
-output:
-  html_document:
-    keep_md: yes
-slug: history
-type: "about-us"
 ---
 
 
