@@ -44,14 +44,11 @@ jobs:
           ), Ncpus = 2)
           remotes::install_github("rladies/meetupr")
         shell: Rscript {0}
-        
-      - name: Populate CoC
-        run: Rscript scripts/populate_coc.R
               
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
-      - name: Update Global Team
+      - name: Site Data - Update Global Team
         run: Rscript scripts/get_global_team.R
         
       - name: Site data - Get directory data
