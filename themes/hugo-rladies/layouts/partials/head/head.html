@@ -16,3 +16,5 @@
 {{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
+<!-- site data -->
+{{ partial "head/data.html" . }}

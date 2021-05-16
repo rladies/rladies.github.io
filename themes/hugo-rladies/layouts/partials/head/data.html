@@ -1,0 +1,7 @@
+{{ .Scratch.Set "blogs" $.Site.Data.blogs_mock  }}
+{{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
+
+{{ if eq .Hugo.Environment "production" }}
+  {{ .Scratch.Set "blogs" $.Site.Data.rblogs }}
+  {{ .Scratch.Set "directory" $.Site.Data.directory }}
+{{ end }}
