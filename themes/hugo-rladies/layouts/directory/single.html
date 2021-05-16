@@ -19,10 +19,6 @@
     	
     <div class="container" id="directory-cards">
         <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
-          {{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
-          {{ if eq .Hugo.Environment "production" }}
-            {{ .Scratch.Set "directory" $.Site.Data.directory }}
-          {{ end }}
     
             {{ $directory :=  ( .Scratch.Get "directory" ) }}
             {{ range $directory }}
