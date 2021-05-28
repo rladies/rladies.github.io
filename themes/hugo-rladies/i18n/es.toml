@@ -50,11 +50,6 @@
 [next]
   other = "Siguiente"
 
-[prev_post]
-  other = "Anterior"
-
-[next_post]
-  other = "Siguiente"
 
 [toc]
   other = "Tabla de Contenido"
@@ -76,7 +71,7 @@
 
 # other
 [morePost]
-  other = "Más Entradas >>>"
+  other = "Más Entradas"
 
 [read_en]
   other = "Read in English"
