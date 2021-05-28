@@ -47,12 +47,6 @@
 [next]
   other = "Seguinte"
 
-[prev_post]
-  other = "Prévio"
-
-[next_post]
-  other = "Seguinte"
-
 [toc]
   other = "Contéudo"
 
@@ -77,7 +71,7 @@
 
 # other
 [morePost]
-  other = "Mais Posts >>>"
+  other = "Mais Posts"
 
 [read_en]
   other = "Read in English"
