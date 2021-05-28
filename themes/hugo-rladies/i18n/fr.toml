@@ -7,8 +7,6 @@
     other = "Lire la suite"
 [see_details]
     other = "See details"
-[download]
-    other = "Download"
 [translations]
     other = "Translations"
 [missing_translation]    
@@ -62,7 +60,7 @@
 
 # other
 [morePost]
-  other = "Plus d'articles >>>"
+  other = "Plus d'articles"
 
 # read in other languages
 [read_pt]
