@@ -10,12 +10,12 @@
     identifier = "about-us"
     weight = 2
 [[main]]
-    name = "Mision"
+    name = "Misión"
     url = "/about-us/mission/"
     weight = 1
     parent = "about-us"
 [[main]]
-    name = "Involucrate"
+    name = "Involúcrate"
     url = "/about-us/involved/"
     weight = 2
     parent = "about-us"
