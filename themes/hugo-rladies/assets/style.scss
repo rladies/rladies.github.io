@@ -28,13 +28,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: 0 0 0;
-}
-
 .text-white{
   color: $white;
   
@@ -261,6 +254,14 @@ pre.chroma {
   font-size: 2.25rem;
   letter-spacing: 1px;
   color: $gray-700;
+  
+  :target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: 0 0 0;
+  }
+
 }
 
 .section-title {
@@ -411,7 +412,13 @@ pre {
 }
   
 .card-directory {
-  max-width: 350px;  
+  max-width: 350px; ¨
+  :target:before {
+    content: "";
+    display: block;
+    height: 400px;
+    margin: -400px 0 0;
+  }
 }
 
 .card-header-rladies{
