@@ -1,67 +1,67 @@
 [[main]]
-    name = "Home"
+    name = "Página inicial"
     identifier = "home"
     url = "/"
     weight = 1
     
 [[main]]
-    name = "About"
+    name = "Sobre nós"
     url = "#"
     identifier = "about-us"
     weight = 2
 [[main]]
-    name = "Mission"
+    name = "Missão"
     url = "/about-us/mission/"
     weight = 1
     parent = "about-us"
 [[main]]
-    name = "Get involved"
+    name = "Participe"
     url = "/about-us/involved/"
     weight = 2
     parent = "about-us"
 [[main]]
-    name = "Meet the global team"
+    name = "Conheça o Time Global"
     url = "/about-us/global-team/"
     weight = 3
     parent = "about-us"
 [[main]]
-    name = "History"
+    name = "História"
     url = "/about-us/history/"
     weight = 4
     parent = "about-us"
     
 [[main]]
-    name = "Directory"
+    name = "Diretório"
     url = "/directory/"
     weight = 3
     
 [[main]]
-    name = "Activities"
+    name = "Atividades"
     identifier = "activities"
     url = "#"
     weight = 4
 [[main]]
-    name = "Events"
+    name = "Eventos"
     url = "/activities/events/"
     weight = 1
     parent = "activities"
 [[main]]
-    name = "Mentoring Program"
+    name = "Programa de Mentoria"
     url = "/activities/mentoring/"
     weight = 3
     parent = "activities"
 [[main]]
-    name = "Coordinated by the Global Team"
+    name = "Coordenado pelo Time Global"
     url = "/activities/gt-coordinated/"
     weight = 4
     parent = "activities"
 [[main]]
-    name = "Global dashboard"
+    name = "Dashboard Global"
     url = "https://benubah.github.io/r-community-explorer/rladies.html"
     weight = 5
     parent = "activities"
 [[main]]
-    name = "Blogs by R-Ladies"
+    name = "Blogs da R-Ladies"
     url = "activities/rladies-blogs"
     weight = 6
     parent = "activities"
