@@ -52,6 +52,7 @@ jobs:
         run: Rscript scripts/get_global_team.R
         
       - name: Site data - Get directory data
+        if: github.event_name == 'push'
         uses: actions/checkout@v2
         with:
           repository: rladies/directory
@@ -59,6 +60,7 @@ jobs:
           path: directory
       
       - name: Site data - Cleanup directory data
+        if: github.event_name == 'push'
         run: |
           rm directory/data/[1-9]_* # remove double entries. can be deleted after manual clean
           mv directory/data data/directory
