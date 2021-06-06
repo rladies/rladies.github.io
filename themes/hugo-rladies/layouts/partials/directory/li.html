@@ -12,24 +12,26 @@
           {{ partial "some.html" . }}
         {{ end }}
       </h3>
-      <p class="title card-directory-text ">
+      <p class="card-directory-text ">
         {{ .title }}{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
       </p>
       <p>
         <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
       </p>
       {{if gt (len .location) 1 }}
-        <p class="location card-directory-text ">
+        <p class="card-directory-text">
           <i class="fas fa-map-marker-alt"></i> 
-          {{ range .location }}
-            {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
-          {{ end }}
+          <span class="r_groups">
+            {{ range .location }}
+              {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
+            {{ end }}
+          </span>
         </p>
       {{ end }}
       {{ with .interests }}
-        <p class="interests card-directory-text ">
+        <p class="card-directory-text">
           <b><i class="fas fa-tag" style = "font-size: 15px;"></i>&nbsp;</b>
-          {{ delimit . ", " }}
+          <span class="interests">{{ delimit . ", " }}</span>
         </p>
       {{ end }}
       {{ range .activities }}

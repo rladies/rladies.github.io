@@ -53,7 +53,8 @@
 	<script>
 	(async function(){
     var directoryList = new List('directory-content', {
-      valueNames: ['name', 'honorific', 'title', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'card-directory-text'],
+      valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
+      searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
       page: 20,
       pagination: {
         innerWindow: 3,
@@ -63,9 +64,7 @@
       },
       fuzzySearch: {
         searchClass: "fuzzy-search",
-        location: 0,
-        distance: 200,
-        threshold: 0.5,
+        distance: 150,
         multiSearch: true
       }
     });
