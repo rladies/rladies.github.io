@@ -9,6 +9,7 @@ on:
   push:
     branches: 
       - master
+      - main
   schedule:
   - cron: "0 */12 * * *"
 
@@ -52,7 +53,7 @@ jobs:
         run: Rscript scripts/get_global_team.R
         
       - name: Site data - Get directory data
-        if: github.event_name == 'push'
+        if: github.event_name != 'pull_request'
         uses: actions/checkout@v2
         with:
           repository: rladies/directory
@@ -60,7 +61,7 @@ jobs:
           path: directory
       
       - name: Site data - Cleanup directory data
-        if: github.event_name == 'push'
+        if: github.event_name != 'pull_request'
         run: |
           rm directory/data/[1-9]_* # remove double entries. can be deleted after manual clean
           mv directory/data data/directory
@@ -94,8 +95,6 @@ jobs:
         run: Rscript scripts/get_events.R
 
       - name: Build
-        env: 
-          DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
         run: hugo
         
       - name: Deploy to Netlify
@@ -104,11 +103,11 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           if [ github.event_name == 'pull_request' ]; then
-            echo "Running netlify preview deploy"
+            echo "Deploying netlify preview"
             netlify deploy
           else
-            echo "Running netlify production deploy"
-            netlify deploy #--prod
+            echo "Deploying netlify production"
+            netlify deploy --prod
           fi
         shell: sh
         

@@ -46,9 +46,11 @@
     </div>
   </div> 
 </article>
+{{ end }}
 
+{{ define  "footer" }}
 	<script>
-	
+	(async function(){
     var directoryList = new List('directory-content', {
       valueNames: ['name', 'honorific', 'title', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'card-directory-text'],
       page: 20,
@@ -84,6 +86,6 @@
 	        }
 	    })
 	  }); 
-
+  })();
 	</script>
 {{ end }}
