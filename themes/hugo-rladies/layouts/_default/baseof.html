@@ -17,6 +17,12 @@
 
     <main id="main">
       <div class="container col-md-8 offset-md-2">
+     			{{ if eq .Params.translated false }}
+            <div class="not-translated" lang="{{ .Lang }}">
+               {{ i18n "missing_translation" }}
+             </div>
+          {{ end }}
+          
           {{ block "main" . }}
           {{ end }}
     	</div>	<!-- /container -->
