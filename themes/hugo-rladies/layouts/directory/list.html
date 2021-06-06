@@ -1,0 +1,10 @@
+{{ define "main" }}
+  </article class="post">
+    {{ range .Paginator.Pages }}
+      {{ partial "post/summary.html" .}}
+    {{ end }}
+  	<ul class="pagination">
+      {{ template "_internal/pagination.html" . }}
+  	</ul>
+  </article>
+{{ end }}
