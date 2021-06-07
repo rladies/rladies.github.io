@@ -1,9 +1,9 @@
-  <li class="card mx-auto mt-1 b-rladies card-directory" id="{{ .name | urlize }}">
+  <li class="card mx-auto mt-1 b-rladies card-directory" id="{{ .name | safeJS }}">
     <div class="embed-responsive embed-responsive-4by3">
       <img class="card-img-top embed-responsive-item" src="{{ .photo_url | default "/images/placeholder_user.png"}}" alt="{{ .name }} - {{with .honorific }}{{ . }}{{ end }}{{with .pronouns }}{{ . }}{{ end }}">
     </div>
     <div class="card-body">
-      <a href="#{{ .name | urlize }}"><h3 class="card-title name">{{ .name }}</h3></a>
+      <a href="#{{ .name | safeJS }}"><h3 class="card-title name">{{ .name }}</h3></a>
       <p class="honorific card-directory-text">
         {{with .honorific }}<i>{{ . }}</i>{{ end }}&emsp;{{with .pronouns }}{{ . }}{{ end }}
       </p>
