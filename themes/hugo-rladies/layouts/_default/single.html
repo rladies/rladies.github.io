@@ -9,11 +9,6 @@
             </time>
          </span>
  			</div>
- 			{{ if eq .Params.translated false }}
-        <div class="not-translated" lang="{{ .Lang }}">
-           {{ i18n "missing_translation" }}
-         </div>
-      {{ end }}
  			
  		<h1 class="entry-title">{{ .Title }}</h1>
 		</header>

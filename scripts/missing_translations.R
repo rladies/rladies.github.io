@@ -1,5 +1,4 @@
-
-# Get again all mds, now that we have deleted some
+# Get all mds
 # Find all non-post content
 content <- list.files("content","index", 
                       recursive = TRUE, 
@@ -9,7 +8,6 @@ content <- content[!grepl("post/", content)]
 
 # Get the unique directories
 dirs <-  unique(dirname(content))
-
 
 # Get the site languages
 site_lang <- list.files("config/_default/menu/")
@@ -45,4 +43,23 @@ for(k in dirs){
     cat("... '", new_file, "'\n")
     writeLines(new_cont, new_file)
   }
+}
+
+# If you've generated non-translated content to
+# check out how it looks. Delete them again by 
+# running this function.
+delete_non_translates <- function(){
+  # Find all non-post content
+  content <- list.files("content","index", 
+                        recursive = TRUE, 
+                        full.names = TRUE)
+  yaml <- lapply(content, 
+                 readLines, 
+                 15)
+  
+  idx <- which(sapply(yaml, function(x){
+    any(grepl("translated: no", x))
+  }))
+  
+  sapply(content[idx], file.remove)
 }

@@ -12,7 +12,7 @@
   <div class="flex-container full-width" id="directory-content">
     
     <center class="m-2">
-      <input type="text" class="fuzzy-search rounded" placeholder="Search directory..."/>
+      <input type="text" id="dir-search" class="fuzzy-search rounded" placeholder="Search directory..."/>
       <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</buttonr>
       <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
     </center>
@@ -27,7 +27,8 @@
         </ul>
       </div>
       
-      <div class="text-xs-center" aria-label="Page navigation example">
+      <!-- pagination nav -->
+      <div class="row text-center justify-content-center" aria-label="Directory pagination">
         <ul class="pagination">
           <li class="page-item paginate_back">
             <a class="page-link" aria-label="Previous">
@@ -46,11 +47,15 @@
     </div>
   </div> 
 </article>
+{{ end }}
 
+{{ define  "footer" }}
 	<script>
 	
+	(async function(){
     var directoryList = new List('directory-content', {
-      valueNames: ['name', 'honorific', 'title', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'card-directory-text'],
+      valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
+      searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
       page: 20,
       pagination: {
         innerWindow: 3,
@@ -60,20 +65,25 @@
       },
       fuzzySearch: {
         searchClass: "fuzzy-search",
-        location: 0,
-        distance: 200,
-        threshold: 0.5,
+        distance: 150,
         multiSearch: true
       }
     });
+      
+    // find url anchor and populate search field.
+    var entry = decodeURIComponent(window.location.hash.substr(1));
+    document.getElementById("dir-search").value = entry;
+    // Search manually
+    directoryList.fuzzySearch(entry);
+	})();
     
-    $('.paginate_next').on('click', function(){
-	    var list = $('.pagination').find('li');
-	    $.each(list, function(position, element){
-	        if($(element).is('.active')){
-	            $(list[position+1]).trigger('click');
-	        }
-	    })
+  $('.paginate_next').on('click', function(){
+    var list = $('.pagination').find('li');
+    $.each(list, function(position, element){
+        if($(element).is('.active')){
+            $(list[position+1]).trigger('click');
+        }
+    })
 	});
 
 	$('.paginate_back').on('click', function(){

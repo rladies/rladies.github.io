@@ -1,9 +1,9 @@
-  <li class="card mx-auto mt-1 b-rladies card-directory" id="{{ .name | urlize }}">
+  <li class="card mx-auto mt-1 b-rladies card-directory" id="{{ .name | safeJS }}">
     <div class="embed-responsive embed-responsive-4by3">
       <img class="card-img-top embed-responsive-item" src="{{ .photo_url | default "/images/placeholder_user.png"}}" alt="{{ .name }} - {{with .honorific }}{{ . }}{{ end }}{{with .pronouns }}{{ . }}{{ end }}">
     </div>
     <div class="card-body">
-      <a href="#{{ .name | urlize }}"><h3 class="card-title name">{{ .name }}</h3></a>
+      <a href="#{{ .name | safeJS }}"><h3 class="card-title name">{{ .name }}</h3></a>
       <p class="honorific card-directory-text">
         {{with .honorific }}<i>{{ . }}</i>{{ end }}&emsp;{{with .pronouns }}{{ . }}{{ end }}
       </p>
@@ -12,24 +12,26 @@
           {{ partial "some.html" . }}
         {{ end }}
       </h3>
-      <p class="title card-directory-text ">
+      <p class="card-directory-text ">
         {{ .title }}{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
       </p>
       <p>
         <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
       </p>
       {{if gt (len .location) 1 }}
-        <p class="location card-directory-text ">
+        <p class="card-directory-text">
           <i class="fas fa-map-marker-alt"></i> 
-          {{ range .location }}
-            {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
-          {{ end }}
+          <span class="r_groups">
+            {{ range .location }}
+              {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
+            {{ end }}
+          </span>
         </p>
       {{ end }}
       {{ with .interests }}
-        <p class="interests card-directory-text ">
+        <p class="card-directory-text">
           <b><i class="fas fa-tag" style = "font-size: 15px;"></i>&nbsp;</b>
-          {{ delimit . ", " }}
+          <span class="interests">{{ delimit . ", " }}</span>
         </p>
       {{ end }}
       {{ range .activities }}
