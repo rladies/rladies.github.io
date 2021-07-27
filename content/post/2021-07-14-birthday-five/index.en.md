@@ -17,7 +17,7 @@ Little did we know five years ago that a community of only four chapters would i
 And here we are, counting over 200 chapters in 2021! 
 The graph below shows the growth of new chapters over time.
 
-![A bar chart showing the steady increase in R-Ladies chapters since the creating of the global organisation to around 200 chapters in 2021.](bday-2021.png)
+![A bar chart showing the steady increase in R-Ladies chapters since the creating of the global organisation to around 200 chapters in 2021.](bday-2021-en.png)
 
 #### Where Are We Now
 

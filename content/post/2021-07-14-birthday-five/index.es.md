@@ -16,7 +16,7 @@ Hoy estamos de festejo y queremos contarte por qué estamos tan orgullosxs de nu
 Poco sabíamos hace cinco años que un conjunto de solo cuatro capítulos inspiraría a tantas personas en todo el mundo. ¡Y aquí estamos, contando más de 200 capítulos en 2021!
 El siguiente gráfico muestra el aumento de los capítulos a lo largo del tiempo.
 
-![Crecimiento de los capítulos de R-Ladies desde la creación de la organización global a alrededor de 200 capítulos en 2021.](bday-2021.png)
+![Crecimiento de los capítulos de R-Ladies desde la creación de la organización global a alrededor de 200 capítulos en 2021.](bday-2021-es.png)
 
 #### ¿Dónde estamos ahora?
 
