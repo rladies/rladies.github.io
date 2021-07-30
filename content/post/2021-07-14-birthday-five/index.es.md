@@ -1,7 +1,7 @@
 ---
 title: "¡R-Ladies Global cumple cinco años!"
 author: "R-Ladies Global Team"
-date: "2021-07-14"
+date: "2021-07-30"
 description: "R-Ladies cumpleaños"
 tags: 
 - community
