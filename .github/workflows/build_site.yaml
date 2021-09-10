@@ -73,7 +73,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: rladies/awesome-rladies-blogs
-          token: ${{ secrets.directory_PAT_mo }}
+          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
           path: rblogs
           
       - name: Site data - Cleanup blogs list
