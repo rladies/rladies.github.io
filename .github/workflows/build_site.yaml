@@ -59,7 +59,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: rladies/directory
-          ssh-private-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
+          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
           path: directory
       
       - name: Site data - Cleanup directory data
