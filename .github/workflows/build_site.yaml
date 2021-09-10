@@ -34,6 +34,8 @@ jobs:
         uses: r-lib/actions/setup-r@v1
               
       - name: Install R dependencies
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           options(Ncpus = 2)
           install.packages("remotes",
@@ -57,7 +59,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: rladies/directory
-          token: ${{ secrets.directory_PAT_mo }}
+          ssh-private-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
           path: directory
       
       - name: Site data - Cleanup directory data
