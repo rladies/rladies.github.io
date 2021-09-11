@@ -4,5 +4,4 @@
 ^\.travis\.yml$
 ^\.github$
 ^\.httr-oauth$
-^/Users/athanasm/\.meetup_token\.rds$
-^/Users/athanasm/Library/Application Support/meetupr/meetupr-token\.rds$
+^~/\.meetup_token\.rds$
