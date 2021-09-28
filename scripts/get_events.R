@@ -1,39 +1,9 @@
-
-load_lib <- function(x){
-  suppressPackageStartupMessages(
-    library(x, character.only = TRUE)
-  )
-}
+source(here::here("scripts/utils.R"))
 
 pkgs <- sapply(c("meetupr","tidyr", "dplyr", "purrr", "lubridate"),
                load_lib)
 
-# If not running interactively, 
-# get token decrypted from env var
-if(!interactive()){
-  source(here::here("scripts/meetup_auth.R"))
-}
-
-# Define helper functions ----
-# Clean-up chapter name and create link
-get_chapter <- function(x){
-  y <- sapply(x, function(x) strsplit(x, "/")[[1]][4])
-  unname(y)
-}
-
-str_count <- function(x)(
-  strsplit(x, "")
-)
-
-# Force UTC timezone
-force_utc <- function(datetime, tz){
-  x <- as_datetime(datetime, tz = tz)
-  with_tz(x, "UTC")
-}
-
-# default value if given is NA
-`%||%` <- function(a, b) ifelse(!is.na(a), a, b)
-
+# grab upcoming events
 get_events_pb <- function(x){
   k <- get_events(x, c( "upcoming"))
   k$urlname <- x
@@ -41,14 +11,14 @@ get_events_pb <- function(x){
 }
 
 ## Get events ----
-
 cat("Retrieving R-Ladies group information\n")
 rladies_groups <- jsonlite::read_json(
   here::here("data/chapters.json"), 
   simplifyVector = TRUE
 ) %>% 
   unnest(chapters) %>% 
-  filter(status == "active") %>% 
+  filter(status == "active",
+         !is.na(urlname)) %>% 
   transmute(group = name,
          urlname,
          chapter_id = id,
