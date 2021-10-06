@@ -9,7 +9,7 @@ categories:
 tags:
   - useR
   - metameetup
-lastmod: '2021-09-24T14:59:29-03:00'
+lastmod: '2021-10-04T20:34:42+02:00'
 keywords: []
 description: ''
 comment: no
@@ -22,6 +22,10 @@ mathjax: no
 
 ![art_EN](https://user-images.githubusercontent.com/8397074/116813558-3e749e80-ab22-11eb-9c46-18fa17a3f1e7.png)
 
+In this post, you will see that we have used the R-Ladies logo with the colors of the rainbow and the trans flags. We have also added a + to the R-Ladies name.
+As symbols and words matter a lot, we wanted to explicitly communicate, with the use of these symbols, the importance of diversity and inclusion to our community. We used them in this useR! to reinforce that we welcome diversity and put an effort into creating collectively a safe and friendly space.
+This inclusively is innate in R-Ladies, and is a cornerstone of our organisation. The use of this logo and name in this meta-meetup was to more explicitly signal the values we already imbue as an organisation to those maybe less familiar with us.
+ 
 ## Who?
 R-Ladies+ from Vitória, East Lansing, Den Bosch, Cuernavaca, Guayaquil, Bangalore, Santa Rosa, Tunis and useR-Ladies+ got together to co-organize a Meetup to encourage people to attend useR! 2021. 
 
@@ -59,3 +63,5 @@ Até logo!
 + Adithi Upadhya's speech [here](https://github.com/rladies-eastlansing/2021-rladies_user/blob/main/speeches/adithi_upadhya.md)
 + Janani Ravi's [presentation](https://docs.google.com/presentation/d/17r3NdrySyJeqiVFpPkW1G1DEK6ZfLAmNFT1iHAl1t0s/preview)
 
+
+2021-20-04: This post was edited to explicitly explain the use of the term 'R-Ladies+' in this specific context.
