@@ -52,8 +52,7 @@ README.html
 # Is added only during gh actions
 # should never be commited
 data/directory/
-
 # npm
 node_modules/
 package-lock.json
-~/.rladies_meetup_token.rds
+.meetup_token.rds
