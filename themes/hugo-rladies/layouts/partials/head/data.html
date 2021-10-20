@@ -6,6 +6,10 @@
   {{ .Scratch.Set "directory" $.Site.Data.directory }}
 {{ end }}
 
+<!-- 
+Create an array that we can use to shuffle
+the directory entries on every build.
+-->
 {{ $directory := ( .Scratch.Get "directory" ) }}
 {{ $.Scratch.Set "dic" (slice) }}
 {{ range $name, $_ := $directory }}

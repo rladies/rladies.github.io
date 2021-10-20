@@ -446,7 +446,7 @@ pre {
 .card-title {
   color: $primary;
 }
-
+ 
 .page-item, .page-link {
   border: none; 
 }
@@ -467,4 +467,12 @@ pre {
 
 #chartdiv .fab:hover {
   color: #e7d7e7;
+}
+
+.paginator ul li{
+  display: inline;
+  a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
