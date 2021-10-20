@@ -19,10 +19,10 @@
     	
     <div class="container" id="directory-cards">
         <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
-    
-            {{ $directory :=  ( .Scratch.Get "directory" ) }}
-            {{ range $directory }}
-              {{ partial "directory/li.html" . }}
+            {{ $directory := ( .Scratch.Get "directory" ) }}
+            {{ range $name := $.Scratch.Get "dic" | shuffle }}
+              {{ $d := index $directory $name }}
+              {{ partial "directory/li.html" $d }}
             {{ end }}
         </ul>
       </div>

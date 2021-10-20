@@ -5,3 +5,9 @@
   {{ .Scratch.Set "blogs" $.Site.Data.rblogs }}
   {{ .Scratch.Set "directory" $.Site.Data.directory }}
 {{ end }}
+
+{{ $directory := ( .Scratch.Get "directory" ) }}
+{{ $.Scratch.Set "dic" (slice) }}
+{{ range $name, $_ := $directory }}
+    {{ $.Scratch.Add "dic" $name }}
+{{ end }}
