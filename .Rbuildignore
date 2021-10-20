@@ -4,4 +4,3 @@
 ^\.travis\.yml$
 ^\.github$
 ^\.httr-oauth$
-^~/\.meetup_token\.rds$
