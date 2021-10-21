@@ -469,10 +469,78 @@ pre {
   color: #e7d7e7;
 }
 
-.paginator ul li{
-  display: inline;
+.pagination-wrap {
+  user-select: none;
+  display: flex;
+    
   a {
-    margin-left: 5px;
-    margin-right: 5px;
+    text-decoration: none;
+  }
+}
+
+/******************/
+/*   pagination   */
+/******************/
+.pagination-layout {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    width: 24px;
+    margin: 0 1px;
+
+    a.page {
+      height: 24px;
+      width: 24px;
+      display: block;
+      border: none;
+      line-height: 24px;
+      padding: 0;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: 700;
+      color: $primary;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+
+    &.active {
+      a.page {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+
+    &.disabled {
+      a.page {
+        &:hover {
+          color: $primary;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.pagination-next, .pagination-prev {
+  color: $primary;
+
+  &:hover {
+    color: lighten($primary, 20%);
+  }
+
+  &.disabled {
+    color: lighten($primary, 40%);
+    cursor: default;
+
+    &:hover {
+      color: lighten($primary, 40%);
+    }
   }
 }
