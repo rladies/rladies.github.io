@@ -36,17 +36,12 @@ jobs:
       - name: Install R dependencies
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          options(Ncpus = 2)
-          install.packages("remotes",
-                           repos = "https://cloud.r-project.org")
-          remotes::install_cran(c(
-            "dplyr", "here", "purrr", 
-            "jsonlite", "lubridate",
-            "tidyr", "cyphr", "sodium"
-          ), Ncpus = 2)
-          remotes::install_github("rladies/meetupr")
+        run: pak::local_install()
         shell: Rscript {0}
+      
+      - name: Validate jsons
+        run: |
+          Rscript 'scripts/validate_jsons.R'
               
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
