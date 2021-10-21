@@ -13,9 +13,16 @@
     
     <center class="m-2">
       <input type="text" id="dir-search" class="fuzzy-search rounded" placeholder="Search directory..."/>
-      <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</buttonr>
+      <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</button>
       <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
+      <select id="directory-nitems">
+      	<option selected>10</option>
+      	<option>25</option>
+      	<option>50</option>
+      </select>
     </center>
+    
+
     	
     <div class="container" id="directory-cards">
         <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
@@ -30,7 +37,7 @@
       <!-- pagination nav -->
       <div class="nav justify-content-center align-content-center" aria-label="Directory pagination">
         <a class="pagination-prev" href="#"><</a>
-        <ul class="pagination-layout paginator"></ul>
+        <ul class="pagination-layout"></ul>
         <a class="pagination-next" href="#">></a>
       </div>
       
@@ -41,66 +48,68 @@
 
 {{ define  "footer" }}
 	<script>
-	
-	
-	(async function(){
-	  var perPage = 2
-    var directoryList = new List('directory-content', {
-      valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
-      searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
-      page: perPage,
-      pagination: {
-        innerWindow: 1,
-        left: 2,
-        right: 2,
-        paginationClass: "paginator",
-      },
-      fuzzySearch: {
-        searchClass: "fuzzy-search",
-        distance: 150,
-        multiSearch: true
-      }
-    }).on("updated", function(list) {
-      var isFirst = list.i == 1;
-      var isLast = list.i > list.matchingItems.length - list.page;
-    
-      // make the Prev and Nex buttons disabled on first and last pages accordingly
-      $(".pagination-prev.disabled, .pagination-next.disabled").removeClass(
-        "disabled"
-      );
-      if (isFirst) {
-        $(".pagination-prev").addClass("disabled");
-      }
-      if (isLast) {
-        $(".pagination-next").addClass("disabled");
-      }
-    
-      // hide pagination if there one or less pages to show
-      if (list.matchingItems.length <= perPage) {
-        $(".pagination-wrap").hide();
-      } else {
+  //	  var select = document.getElementById('language');
+  //  var value = select.options[select.selectedIndex].value;
+  //  console.log(value); // en
+    var perPage = $('#directory-nitems').val();
+  	(async function(){
+      var directoryList = new List('directory-content', {
+        valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
+        searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
+        page: perPage,
+        pagination: {
+          innerWindow: 1,
+          left: 2,
+          right: 2,
+          paginationClass: "pagination-layout",
+        },
+        fuzzySearch: {
+          searchClass: "fuzzy-search",
+          distance: 150,
+          multiSearch: true
+        }
+      }).on("updated", function(list) {
+        // make the Prev and Nex buttons disabled on first and last pages accordingly
+        $(".pagination-prev.disabled, .pagination-next.disabled").removeClass(
+          "disabled"
+        );
         $(".pagination-wrap").show();
-      }
-    });
-    
-    $(".pagination-next").click(function() {
-      $(".pagination-layout .active")
-        .next()
-        .trigger("click");
-    });
-    $(".pagination-prev").click(function() {
-      $(".pagination-layout .active")
-        .prev()
-        .trigger("click");
-    });
-      
-    // find url anchor and populate search field.
-    var entry = decodeURIComponent(window.location.hash.substr(1));
-    document.getElementById("dir-search").value = entry;
-    // Search manually
-    directoryList.fuzzySearch(entry);
-	})();
 
+        if (list.i == 1) {
+          $(".pagination-prev").addClass("disabled");
+        }
+        if (list.i > list.matchingItems.length - list.page) {
+          $(".pagination-next").addClass("disabled");
+        }
+      
+        // hide pagination if there one or less pages to show
+        if (list.matchingItems.length <= perPage) {
+          $(".pagination-wrap").hide();
+        }
+      });
+      
+      $(".pagination-next").click(function() {
+        $(".pagination-layout .active")
+          .next()
+          .trigger("click");
+      });
+      $(".pagination-prev").click(function() {
+        $(".pagination-layout .active")
+          .prev()
+          .trigger("click");
+      });
+
+      // find url anchor and populate search field.
+      var entry = decodeURIComponent(window.location.hash.substr(1));
+      document.getElementById("dir-search").value = entry;
+      // Search manually
+      directoryList.fuzzySearch(entry);
+  	})();
+        
+      $('.directory-nitems').on('change', function(){
+        directoryList.page = $('.directory-nitems option:selected').text();
+        directoryList.update();
+      });
 
 	</script>
 {{ end }}
