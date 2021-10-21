@@ -28,8 +28,10 @@
       </div>
       
       <!-- pagination nav -->
-      <div class="nav justify-content-center" aria-label="Directory pagination">
-        <ul class="pagination paginator"></ul>
+      <div class="nav justify-content-center align-content-center" aria-label="Directory pagination">
+        <a class="pagination-prev" href="#"><</a>
+        <ul class="pagination-layout paginator"></ul>
+        <a class="pagination-next" href="#">></a>
       </div>
       
     </div>
@@ -40,15 +42,17 @@
 {{ define  "footer" }}
 	<script>
 	
+	
 	(async function(){
+	  var perPage = 2
     var directoryList = new List('directory-content', {
       valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
       searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
-      page: 20,
+      page: perPage,
       pagination: {
-        innerWindow: 3,
-        left: 1,
-        right: 1,
+        innerWindow: 1,
+        left: 2,
+        right: 2,
         paginationClass: "paginator",
       },
       fuzzySearch: {
@@ -56,6 +60,38 @@
         distance: 150,
         multiSearch: true
       }
+    }).on("updated", function(list) {
+      var isFirst = list.i == 1;
+      var isLast = list.i > list.matchingItems.length - list.page;
+    
+      // make the Prev and Nex buttons disabled on first and last pages accordingly
+      $(".pagination-prev.disabled, .pagination-next.disabled").removeClass(
+        "disabled"
+      );
+      if (isFirst) {
+        $(".pagination-prev").addClass("disabled");
+      }
+      if (isLast) {
+        $(".pagination-next").addClass("disabled");
+      }
+    
+      // hide pagination if there one or less pages to show
+      if (list.matchingItems.length <= perPage) {
+        $(".pagination-wrap").hide();
+      } else {
+        $(".pagination-wrap").show();
+      }
+    });
+    
+    $(".pagination-next").click(function() {
+      $(".pagination-layout .active")
+        .next()
+        .trigger("click");
+    });
+    $(".pagination-prev").click(function() {
+      $(".pagination-layout .active")
+        .prev()
+        .trigger("click");
     });
       
     // find url anchor and populate search field.
@@ -64,28 +100,7 @@
     // Search manually
     directoryList.fuzzySearch(entry);
 	})();
-	
-	  $('.nav').prepend('<div class="paginate_prev page-link"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></div>');
-  $('.nav').append('<div class="paginate_next page-link"><i class="fa fa-chevron-circle-right" aria-hidden="true"></div>');
 
-    
-  $('.paginate_next').on('click', function(){
-    var list = $('.pagination').find('li');
-    $.each(list, function(position, element){
-        if($(element).is('.active')){
-            $(list[position+1]).trigger('click');
-        }
-    })
-	});
-
-	$('.paginate_prev').on('click', function(){
-	    var list = $('.pagination').find('li');
-	    $.each(list, function(position, element){
-	        if($(element).is('.active')){
-	            $(list[position-1]).trigger('click');
-	        }
-	    })
-	  }); 
 
 	</script>
 {{ end }}
