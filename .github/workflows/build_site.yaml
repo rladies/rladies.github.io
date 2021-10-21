@@ -36,7 +36,9 @@ jobs:
       - name: Install R dependencies
         env:
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-        run: pak::local_install()
+        run: |
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+          pak::local_install()
         shell: Rscript {0}
       
       - name: Validate jsons
