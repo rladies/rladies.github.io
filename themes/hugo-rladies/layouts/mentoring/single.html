@@ -1,7 +1,9 @@
 
 {{ define "main" }}
 	<header class="entry-header">
- 		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
+ 		<h1 class="entry-title">
+ 		  <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+ 	  </h1>
 	</header>
 	
   <div class="entry-content">
@@ -10,22 +12,11 @@
 	
     <div class="container" id="mentoring">
       <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
-      {{ $mentoring := $.Site.Data.mentoring | shuffle }}
-      {{ range $mentoring}}
-          <div class="card mx-auto m-1">
-            <div class="embed-responsive embed-responsive-4by3">
-              <img class="card-img-top embed-responsive-item" src="img/{{ .img }}" alt="{{ .name }} - {{ .chapter }}">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">{{ .chapter }}</h5>
-              <p class="mb-0"><i class="fas fa-quote-left"></i> {{ .statement }} <i class="fas fa-quote-right"></i></p>
-              <footer class="blockquote-footer text-right">{{ .name }} <cite title="Mentee">(Mentee)</cite></footer>
-              <span>
-                <img class="card-img-rladies" src="/images/favicon.png" alt="R-Ladies mentoring program"><small class="align-bottom font-weight-light pt-4 text-muted">&mdash;mentoring program</small>
-              </span>
-            </div>
-          </div>
-        {{ end }}
+      {{ $mentoring := ( .Scratch.Get "mentoring" ) }}
+      {{ range $name := $.Scratch.Get "ment" | shuffle }}
+        {{ $m := index $mentoring $name }}
+        {{ partial "mentoring/li.html" $m }}
+      {{ end }}
     </div>
   </div>
 {{ end }}
