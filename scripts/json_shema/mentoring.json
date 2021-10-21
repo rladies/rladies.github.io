@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "img": { "type": "string" },
+    "url": { "type": "string" },
+    "statement": { "type": "string" },
+    "year": { "type": "string" },
+    "name": { "type": "string" },
+    "chapter": { "type": "string" },
+    "twitter": { "type": "string" }
+  },
+  "required": [
+    "chapter",
+    "img",
+    "name",
+    "statement",
+    "year"
+  ]
+}
