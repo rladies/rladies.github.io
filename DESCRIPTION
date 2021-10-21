@@ -1,4 +1,5 @@
 Title: The source code for the R-ladies website
+Package: website
 Version: 1.0
 Authors@R:  c(
      person("Hernández", "Bea", 
@@ -16,6 +17,7 @@ Imports:
     tidyr,
     purrr,
     jsonlite,
+    jsonvalidate,
     here,
     cyphr,
     sodium,
