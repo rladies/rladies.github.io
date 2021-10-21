@@ -1,5 +1,7 @@
 {{ .Scratch.Set "blogs" $.Site.Data.blogs_mock  }}
 {{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
+{{ .Scratch.Set "mentoring" $.Site.Data.mentoring }}
+
 
 {{ if eq .Hugo.Environment "production" }}
   {{ .Scratch.Set "blogs" $.Site.Data.rblogs }}
@@ -10,8 +12,12 @@
 Create an array that we can use to shuffle
 the directory entries on every build.
 -->
-{{ $directory := ( .Scratch.Get "directory" ) }}
 {{ $.Scratch.Set "dic" (slice) }}
-{{ range $name, $_ := $directory }}
+{{ range $name, $_ := ( .Scratch.Get "directory" ) }}
     {{ $.Scratch.Add "dic" $name }}
+{{ end }}
+
+{{ $.Scratch.Set "ment" (slice) }}
+{{ range $name, $_ := ( .Scratch.Get "mentoring" ) }}
+    {{ $.Scratch.Add "ment" $name }}
 {{ end }}
