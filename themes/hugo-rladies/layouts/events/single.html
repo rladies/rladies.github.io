@@ -82,6 +82,7 @@
   {{ partial "footer/tui-calendar.html" . }}
   
   <script type="text/javascript">
+  var window_width = document.documentElement.clientWidth;
     ( async function(window, Calendar) {
       'use strict';
       var cal, resizeThrottled;
@@ -138,10 +139,6 @@
         setRenderRangeText();
       }
       
-      cal_change_ww(document.documentElement.clientWidth);
-      
-
-
       // event handlers
       cal.on({
           'clickMore': function(e) {
@@ -330,6 +327,8 @@
       setRenderRangeText();
       // setSchedules();
       setEventListener();
+      cal_change_ww(window_width);
+
     })(window, tui.Calendar);
   </script>
 {{ end }}
