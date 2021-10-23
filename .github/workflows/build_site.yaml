@@ -41,8 +41,8 @@ jobs:
           pak::local_install()
         shell: Rscript {0}
       
-      #- name: Validate jsons
-      #  run: Rscript scripts/validate_jsons.R
+      - name: Validate jsons
+        run: Rscript scripts/validate_jsons.R
               
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
