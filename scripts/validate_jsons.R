@@ -1,31 +1,17 @@
 validate_jsons <- function(files, schema){
-  catch_error <- function(x){
-    tryCatch(
-      jsonvalidate::json_validate(
-        x,
-        error = TRUE,
-        schema = schema
-      ),
-      error = function(e) list(e)
-    )
-  }
+  validate <- jsonvalidate::json_validator(
+    schema)
+
+  k <- validate(files, 
+                verbose = TRUE, 
+                error = FALSE, 
+                greedy = TRUE)
   
-  k <- sapply(files, catch_error)
-  k <- k[!sapply(k, is.null)]
-  
-  if(length(k) > 0){
-    names(k) <- basename(names(k))
-    k <- sapply(1:length(k), 
-                function(x) 
-                  sprintf("%s: %s", 
-                          names(k)[x], 
-                          k[[x]]$message
-                  )
-    )
-    
+  if(any(!k)){
+    errs <- attr(k, "errors", TRUE)
     stop(
       "Some jsons are not formatted correctly\n",
-      paste(k, collapse = "\n"),
+      paste(" ", errs$field, errs$message, "\n"),
       call. = FALSE
     )
   }
@@ -33,7 +19,7 @@ validate_jsons <- function(files, schema){
 
 #  Validate mentoring json
 validate_jsons(
-  list.files(here::here("data/mentoring.json"), full.names = TRUE),
+  list.files(here::here("data/mentoring/"), full.names = TRUE),
   here::here("scripts/json_shema/mentoring.json")
 )
 
