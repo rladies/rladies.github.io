@@ -42,8 +42,7 @@ jobs:
         shell: Rscript {0}
       
       - name: Validate jsons
-        run: |
-          Rscript 'scripts/validate_jsons.R'
+        run: Rscript scripts/validate_jsons.R
               
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
