@@ -6,14 +6,6 @@
       </h1>
       {{ .Content }}
     <hr>
-  {{ $taxo := "press" }}
-  <ul>
-    {{ range .Param $taxo }}
-      {{ with site.GetPage (printf "/%s/%s" $taxo (. | urlize)) }}
-          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    {{ end }}
-  </ul>
   	</div>
       {{ range .Paginator.Pages }}
         {{ partial "press/summary.html" .}}

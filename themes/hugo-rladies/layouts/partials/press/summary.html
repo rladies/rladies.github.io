@@ -4,7 +4,7 @@
 	</div>
 	<div class="container-md my-4" style="padding-bottom: 1em;">
 		<h6>
-		  <a  href="{{ .Params.source }}" rel="bookmark"> {{ .Title }} &nbsp;</a>
+		  <a  href="{{ .Params.source }}" rel="bookmark" lang={{ .Params.lnguage }}> {{ .Title }} &nbsp;</a>
 		  {{ with .Resources.Match "*pdf" }}
         	{{ range . }}
   		      <a href="{{ .RelPermalink }}" rel="bookmark" class="text-muted" target="_blank">[pdf]</a>
