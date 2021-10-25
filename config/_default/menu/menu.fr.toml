@@ -66,11 +66,11 @@
     url = "activities/rladies-blogs"
     weight = 6
     parent = "activities"
-    
-#[[main]]
-#    name = "Blog"
-#    url = "https://blog.rladies.org/"
-#    weight = 5
+[[main]]
+    name = "Dans la presse"
+    url = "activities/press"
+    weight = 7
+    parent = "activities"
     
 [[main]]
     name = "Blog"
