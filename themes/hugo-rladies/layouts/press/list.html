@@ -1,10 +1,25 @@
 {{ define "main" }}
   </article class="post">
-    {{ range .Paginator.Pages }}
-      {{ partial "press/summary.html" .}}
+    <div class="container-md pb-5">
+      <h1 class="entry-title">
+        {{ .Title }}
+      </h1>
+      {{ .Content }}
+    <hr>
+  {{ $taxo := "press" }}
+  <ul>
+    {{ range .Param $taxo }}
+      {{ with site.GetPage (printf "/%s/%s" $taxo (. | urlize)) }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
     {{ end }}
-  	<ul class="pagination d-flex justify-content-center">
-      {{ template "_internal/pagination.html" . }}
-  	</ul>
+  </ul>
+  	</div>
+      {{ range .Paginator.Pages }}
+        {{ partial "press/summary.html" .}}
+      {{ end }}
+    	<ul class="pagination d-flex justify-content-center">
+        {{ template "_internal/pagination.html" . }}
+    	</ul>
   </article>
 {{ end }}
