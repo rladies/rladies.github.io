@@ -1,0 +1,4 @@
+<time datetime="{{ .Date.Format .Site.Params.DateForm }}">
+    <h6 class="text-muted">{{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+    </h6>
+</time>
