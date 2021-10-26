@@ -4,9 +4,7 @@
     {{ $here := .RelPermalink }}
     {{ range where .Data.Pages "Section" .Section }}
       <div class="card mx-auto m-1 p-4 border-0">
-        {{ range first 1 (.Resources.ByType "image") }}
-        <img class="card-img-top" src="{{ printf "%s%s" $here . }}" alt="{{ .Title }}">
-        {{end }}
+        <img class="card-img-top" {{ range first 1 (.Resources.ByType "image") }}src="{{ printf "%s%s" $here . }}"{{ end }} alt="{{ .Title }}">
       </div>
     {{ end }}
   </div>
