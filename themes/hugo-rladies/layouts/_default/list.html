@@ -3,7 +3,7 @@
     {{ range .Paginator.Pages }}
       {{ partial "post/summary.html" .}}
     {{ end }}
-  	<ul class="pagination">
+  	<ul class="pagination d-flex justify-content-center">
       {{ template "_internal/pagination.html" . }}
   	</ul>
   </article>
