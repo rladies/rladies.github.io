@@ -11,7 +11,7 @@
  		  <a title={{ i18n "translations" }} href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
  		</h1>
      <div class="post-meta">
-      {{ partial "post/dates.html" .}}
+      {{ partial "dates.html" .}}
       {{ with .Params.categories -}}
         <div class="post-category">
           {{ range . }}
