@@ -9,27 +9,17 @@
 
     {{ range .Site.Sections }}
       {{ range .Sections.ByWeight }}
-        <div id="{{ .Title }}" class="row section featured topspace">
+        <div id="{{ .Title }}" class="row section  topspace">
           <h2 class="section-title">
             <span>{{.Title}}</span>
           </h2>
           {{ $stype := .Type}}
-          {{ if eq $stype "service"}}
-            {{ partial "home/services.html" . }}
-          
-          {{ else if eq $stype "recentwork" }}
-            {{ partial "home/recentworks.html" . }}
-          
-          {{ else if eq $stype "cards" }}
-            {{ partial "home/cards.html" . }}
-            
-          {{ else if eq $stype "chapters" }}
-            {{ partial "home/chapters.html" . }}
-          
-          {{ else if eq $stype "single"  }}
-            <div style="text-align: center;">
+          {{ if eq $stype "single"  }}
+            <div class="text-align-center">
               <p>{{ .Content }}</p> 
             </div>
+          {{ else }}
+            {{ partial (printf "home/%s.html" $stype) . }}
           {{ end }}
       {{ end }}
     {{ end }}

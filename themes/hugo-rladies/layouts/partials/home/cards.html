@@ -1,19 +1,13 @@
 
 <div class="container" id="{{.Title}}-cards">
-    <div class="card-columns">
-        {{ $here := .RelPermalink }}
-        {{ $data := .Resources.GetMatch .Params.file | transform.Unmarshal }} 
-        {{ range $index, $area := $data }}  
-            <div class="card mx-auto m-1 p-4">
-                <img class="card-img-top" src="{{ $here }}{{ .image }}" alt="{{ .name }}">
-            {{with .title }}
-                <div class="card-body">
-                    <h5 class="card-title">{{ . | markdownify }}</h5>
-                </div>
-            {{ end}}
-            </div>
-        {{ end }}
-    </div>
+  <div class="card-columns ">
+    {{ $here := .RelPermalink }}
+    {{ range where .Data.Pages "Section" .Section }}
+      <div class="card mx-auto m-1 p-4 border-0">
+        {{ range first 1 (.Resources.ByType "image") }}
+        <img class="card-img-top" src="{{ printf "%s%s" $here . }}" alt="{{ .Title }}">
+        {{end }}
+      </div>
+    {{ end }}
+  </div>
 </div>
-
- 
