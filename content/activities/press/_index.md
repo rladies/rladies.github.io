@@ -1,6 +1,6 @@
 ---
 title: "In the press"
-type: "press"
+type: "service"
 ---
 
 On this page you can see some of the mentions or interviews with R-Ladies in the press. 
