@@ -4,25 +4,46 @@ $body-bg:    #fff;
 $primary:    #88398a;
 $table-hover-bg: rgba($primary, .2);
 
-$code-font: 'Inconsolata', monospace;
-$body-font: 'Open Sans', sans-serif;
-$nav-font: 'Lato', sans-serif;
+$font-family-monospace:  'rladies code', monospace;
+$font-family-base:       'rladies body', sans-serif;
+$font-family-sans-serif: 'rladies header', sans-serif;
+$dropdown-link-hover-bg:  rgba($primary, .2);
 
-$dropdown-link-hover-bg: rgba($primary, .2);
+@font-face {
+  font-family: 'rladies header';
+  src: url('fonts/open-sans-condensed-v15-latin/font.eot'); /* IE9 Compat Modes */
+  src: url('fonts/open-sans-condensed-v15-latin/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/open-sans-condensed-v15-latin/font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-condensed-v15-latin/font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/open-sans-condensed-v15-latin/font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/open-sans-condensed-v15-latin/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
+@font-face {
+  font-family: 'rladies body';
+  src: url('fonts/open-sans-v26-latin/font.eot'); /* IE9 Compat Modes */
+  src: url('fonts/open-sans-v26-latin/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/open-sans-v26-latin/font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-v26-latin/font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/open-sans-v26-latin/font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/open-sans-v26-latin/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'rladies code';
+  src: url('fonts/inconsolata-v21-latin/font.eot'); /* IE9 Compat Modes */
+  src: url('fonts/inconsolata-v21-latin/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/inconsolata-v21-latin/font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/inconsolata-v21-latin/font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/inconsolata-v21-latin/font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/inconsolata-v21-latin/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 // Bootstrap and its default variables
 @import "scss/bootstrap";
 @import "scss/syntax";
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;300&family=Open+Sans:wght@300&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;300&family=Open+Sans:wght@300&display=swap');
 
-body { 
-  font-family: $body-font;
-}
-
-h1, h2, h3, .navbar, .navbar-collapse {
-  font-family: $nav-font
-}
 
 html {
 	scroll-behavior: smooth;
@@ -57,12 +78,7 @@ html {
   right: 0;
 }
 
-.hamburger {
-  color: $primary;
-  left: 0;
-  right: 0;
-  position: relative;
-}
+
 
 .full-width {
    width: 100vw;
@@ -92,6 +108,7 @@ html {
    border-bottom: 1px solid $gray-300; 
    line-height: 0.1em;
    color: $gray-500;
+   font-size: $font-size-base;
 } 
 
 .date span { 
@@ -183,7 +200,7 @@ html {
 
 .not-translated{
   background-color: rgba($primary, .3);
-  font-size: 20px;
+  font-size: $font-size-base;
   text-align: center;
   padding: 1.5em;
   margin-bottom: 1em;
@@ -216,29 +233,7 @@ pre.chroma {
   background: $primary !important;
 }
 
-/******************/
-/*      menu      */
-/******************/
-.navbar {
-  background-color: rgba($white, .9);
-}
-.navbar .navbar-inner {
-  text-transform: uppercase;
-  text-align: center;
-	align-items: center;
-	justify-content: center;
-}
 
-.navbar .navbar-inner .nav {
-  display:inline-block;
-  float: none;
-}
-
-.navbar-inner {
-  overflow: visible;
-}
-
- 
 /******************/
 /* custom styles  */
 /******************/
@@ -250,10 +245,9 @@ pre.chroma {
   overflow: hidden;
   margin: 0px 0 25px;
   text-align: center;
-  font-weight: 300;
-  font-size: 2.25rem;
   letter-spacing: 1px;
   color: $gray-700;
+  font-family: $font-family-sans-serif
   
   :target:before {
     content: "";
@@ -265,6 +259,7 @@ pre.chroma {
 }
 
 .section-title {
+  font-size: 2.75rem;
   text-transform: uppercase;
 }
 
@@ -301,8 +296,6 @@ pre.chroma {
 
 .entry-header .entry-meta {
   text-align: center;
-  font-family: Georgia, serif;
-  font-size: 18px;
   font-size: 1.125rem;
   font-style: italic;
   font-weight: normal;
@@ -323,6 +316,7 @@ pre.chroma {
 
 .entry-title {
   color: $primary;
+  font-size: 2.25rem;
 }
 
 
@@ -335,7 +329,7 @@ pre.chroma {
 /* code highlight */
 /******************/
 pre { 
-  font-family: $code-font; 
+  font-family: $font-family-monospace; 
   width: 100%; 
   padding: 1em;
 }
@@ -466,83 +460,6 @@ pre {
 }
 
 #chartdiv .fab:hover {
-  color: #e7d7e7;
+  color: lighten($primary, 20%);
 }
 
-
-/******************/
-/*   pagination   */
-/******************/
-
-.pagination-wrap {
-  user-select: none;
-  display: flex;
-    
-  a {
-    text-decoration: none;
-  }
-}
-
-.pagination-layout {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-
-  li {
-    width: 24px;
-    margin: 0 1px;
-
-    a.page {
-      height: 24px;
-      width: 24px;
-      display: block;
-      border: none;
-      line-height: 24px;
-      padding: 0;
-      text-align: center;
-      border-radius: 50%;
-      font-weight: 700;
-      color: $primary;
-      background-color: transparent;
-
-      &:hover {
-        background-color: $primary;
-        color: #fff;
-      }
-    }
-
-    &.active {
-      a.page {
-        background-color: $primary;
-        color: #fff;
-      }
-    }
-
-    &.disabled {
-      a.page {
-        &:hover {
-          color: $primary;
-          background-color: transparent;
-        }
-      }
-    }
-  }
-}
-
-.pagination-next, .pagination-prev {
-  color: $primary;
-
-  &:hover {
-    color: lighten($primary, 20%);
-  }
-
-  &.disabled {
-    color: lighten($primary, 40%);
-    cursor: default;
-
-    &:hover {
-      color: lighten($primary, 40%);
-    }
-  }
-}
