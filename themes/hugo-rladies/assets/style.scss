@@ -11,32 +11,32 @@ $dropdown-link-hover-bg:  rgba($primary, .2);
 
 @font-face {
   font-family: 'rladies header';
-  src: url('fonts/open-sans-condensed-v15-latin/font.eot'); /* IE9 Compat Modes */
-  src: url('fonts/open-sans-condensed-v15-latin/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/open-sans-condensed-v15-latin/font.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-condensed-v15-latin/font.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/open-sans-condensed-v15-latin/font.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/open-sans-condensed-v15-latin/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/open-sans-condensed-v15/font.eot'); /* IE9 Compat Modes */
+  src: url('fonts/open-sans-condensed-v15/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/open-sans-condensed-v15/font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-condensed-v15/font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/open-sans-condensed-v15/font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/open-sans-condensed-v15/font.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'rladies body';
-  src: url('fonts/open-sans-v26-latin/font.eot'); /* IE9 Compat Modes */
-  src: url('fonts/open-sans-v26-latin/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/open-sans-v26-latin/font.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-v26-latin/font.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/open-sans-v26-latin/font.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/open-sans-v26-latin/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/open-sans-v26/font.eot'); /* IE9 Compat Modes */
+  src: url('fonts/open-sans-v26/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/open-sans-v26/font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/open-sans-v26/font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/open-sans-v26/font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/open-sans-v26/font.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'rladies code';
-  src: url('fonts/inconsolata-v21-latin/font.eot'); /* IE9 Compat Modes */
-  src: url('fonts/inconsolata-v21-latin/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/inconsolata-v21-latin/font.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/inconsolata-v21-latin/font.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/inconsolata-v21-latin/font.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/inconsolata-v21-latin/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/inconsolata-v21/font.eot'); /* IE9 Compat Modes */
+  src: url('fonts/inconsolata-v21/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/inconsolata-v21/font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/inconsolata-v21/font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/inconsolata-v21/font.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/inconsolata-v21/font.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 // Bootstrap and its default variables
@@ -403,7 +403,7 @@ pre {
 }
   
 .card-directory {
-  max-width: 350px; ¨
+  max-width: 300px; ¨
   :target:before {
     content: "";
     display: block;
