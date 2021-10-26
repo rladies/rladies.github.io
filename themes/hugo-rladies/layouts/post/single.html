@@ -47,6 +47,11 @@
     {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
     {{ end }}
     
+    <div>
+      <p class="text-muted">
+      {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }} {{ i18n "last_message"}} <i>"{{ .GitInfo.Subject }}"</i>
+      </p>
+    </div>
       <!-- Post Pagination -->
     <div class="row">
         <div class="col-md-6 text-align-left">
