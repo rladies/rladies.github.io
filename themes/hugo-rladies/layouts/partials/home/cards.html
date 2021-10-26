@@ -1,10 +1,11 @@
 
 <div class="container" id="{{.Title}}-cards">
   <div class="card-columns ">
-    {{ $here := .RelPermalink }}
     {{ range where .Data.Pages "Section" .Section }}
       <div class="card mx-auto m-1 p-4 border-0">
-        <img class="card-img-top" {{ range first 1 (.Resources.ByType "image") }}src="{{ printf "%s%s" $here . }}"{{ end }} alt="{{ .Title }}">
+        <a href="{{ .Params.source }}" title="{{.Title}}">
+          <img class="card-img-top" {{ range first 1 (.Resources.ByType "image") }}src="{{ .RelPermalink }}"{{ end }} alt="{{ .Title }}">
+        </a>
       </div>
     {{ end }}
   </div>
