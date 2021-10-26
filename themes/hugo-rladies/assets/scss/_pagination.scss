@@ -91,13 +91,14 @@
   display: flex;
   @include list-unstyled();
   @include border-radius();
-  padding: 0 1rem;
-  margin: 0 1rem;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 
   li {
-    width: 24px;
-    margin: 0 1px;
+    width: $font-size-base*2;
+    margin: 0 .5rem;
+    padding: 0 0.5rem;
 
     a.page {
       height: 24px;
