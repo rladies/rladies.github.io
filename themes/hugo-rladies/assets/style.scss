@@ -439,12 +439,29 @@ pre {
 
 .card-title {
   color: $primary;
+  font-family: $font-family-sans-serif;
 }
  
 .page-item, .page-link {
   border: none; 
 }
 
+.card-text{
+  font-size: $font-size-base * .8;
+}
+
+.card-directory-title{
+  font-size: 3em; 
+  display: inline-block; 
+  font-size: $font-size-base;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    font-size: $font-size-base * 1.75;
+  }
+}
 /******************/
 /*    amcharts    */
 /******************/
@@ -463,3 +480,6 @@ pre {
   color: lighten($primary, 20%);
 }
 
+.card-home {
+  max-height: 100px;
+}
