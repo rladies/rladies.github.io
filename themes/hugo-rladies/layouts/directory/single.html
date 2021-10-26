@@ -15,13 +15,7 @@
       <input type="text" id="dir-search" class="fuzzy-search rounded" placeholder="Search directory..."/>
       <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</button>
       <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
-      <select id="directory-nitems">
-      	<option selected>10</option>
-      	<option>25</option>
-      	<option>50</option>
-      </select>
-    </center>
-    
+
     <div class="container" id="directory-cards">
         <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
             {{ $directory := ( .Scratch.Get "directory" ) }}
@@ -34,9 +28,9 @@
       
       <!-- pagination nav -->
       <div class="nav pagination justify-content-center align-content-center" aria-label="Directory pagination">
-        <a class="pagination-prev" href="#"><</a>
+        <a class="pagination-prev" href="#directory-content" onclick=".prev()"><</a>
         <ul class="pagination-layout"></ul>
-        <a class="pagination-next" href="#">></a>
+        <a class="pagination-next" href="#directory-content" onclick=".next()">></a>
       </div>
       
     </div>
@@ -46,10 +40,7 @@
 
 {{ define  "footer" }}
 	<script>
-  //	  var select = document.getElementById('language');
-  //  var value = select.options[select.selectedIndex].value;
-  //  console.log(value); // en
-    var perPage = $('#directory-nitems').val();
+    var perPage = 2;
   	(async function(){
       var directoryList = new List('directory-content', {
         valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
@@ -57,9 +48,10 @@
         page: perPage,
         pagination: {
           innerWindow: 1,
-          left: 2,
-          right: 2,
-          paginationClass: "pagination-layout"
+          left: 0,
+          right: 0,
+          paginationClass: "pagination-layout",
+          item: "<li><a class='page' href='#directory-content'></a></li>"
         },
         fuzzySearch: {
           searchClass: "fuzzy-search",
@@ -86,28 +78,17 @@
         }
       });
       
-      $(".pagination-next").click(function() {
-        $(".pagination-layout .active")
-          .next()
-          .trigger("click");
-      });
-      $(".pagination-prev").click(function() {
-        $(".pagination-layout .active")
-          .prev()
-          .trigger("click");
-      });
+
 
       // find url anchor and populate search field.
       var entry = decodeURIComponent(window.location.hash.substr(1));
-      document.getElementById("dir-search").value = entry;
-      // Search manually
-      directoryList.fuzzySearch(entry);
+      if(entry !== "directory-content"){
+        document.getElementById("dir-search").value = entry;
+        // Search manually
+        directoryList.fuzzySearch(entry);
+      }
   	})();
         
-      $('.directory-nitems').on('change', function(){
-        directoryList.page = $('.directory-nitems option:selected').text();
-        directoryList.update();
-      });
 
 	</script>
 {{ end }}
