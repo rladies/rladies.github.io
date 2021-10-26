@@ -40,6 +40,11 @@
 [category]
   other = "Categoria: "
 
+[last_edit]
+  other = "This post was last edited on"
+[last_message]
+  other = "with the message"
+  
 # posts
 [prev]
   other = "Prévio"
