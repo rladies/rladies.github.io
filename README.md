@@ -6,7 +6,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3bf48c17-2bd3-4452-83cb-0ac808ad745b/deploy-status)](https://app.netlify.com/sites/pensive-babbage-969fad/deploys)
 <!-- badges: end -->
 
-This repository contains the source files for the R-Ladies website. 
+This repository contains the source files for the R-Ladies website.
 The site is built with [hugo](https://gohugo.io/) and [netlify](www.netlify.com)
 
 Information about the site internals and setup can be found in the repo [wiki](https://github.com/rladies/website/wiki)
