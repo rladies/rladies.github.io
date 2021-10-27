@@ -93,7 +93,7 @@ jobs:
         run: Rscript scripts/get_events.R
 
       - name: Build
-        run: hugo
+        run: hugo --enableGitInfo
         
       - name: Deploy to Netlify
         env:
@@ -102,10 +102,10 @@ jobs:
         run: |
           if [ github.event_name == 'pull_request' ]; then
             echo "Deploying netlify preview"
-            netlify deploy --enableGitInfo
+            netlify deploy
           else
             echo "Deploying netlify production"
-            netlify deploy --prod --enableGitInfo
+            netlify deploy --prod
           fi
         shell: sh
         
