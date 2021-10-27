@@ -7,4 +7,6 @@ ignoreFiles = ["\\.Rmd$", "_cache$", "\\.DS_Store", "_files$",
   "content/post/\\*/index\\*\\.html", "_cache$", "README"]
   
 defaultContentLanguage = "en"
-pygmentsUseClasses=true
+pygmentsUseClasses = true
+enableGitInfo = true
+enableRobotsTXT= true
