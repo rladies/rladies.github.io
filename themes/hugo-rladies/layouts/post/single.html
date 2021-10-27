@@ -49,7 +49,10 @@
     
     <div>
       <p class="text-muted">
-      {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }} {{ i18n "last_message"}} <i>"{{ .GitInfo.Subject }}"</i>
+      {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }} {{ i18n "last_message"}} 
+      {{- if $.GitInfo -}}
+        <i>"{{ .GitInfo.Subject }}"</i>
+      {{- end -}}
       </p>
     </div>
       <!-- Post Pagination -->
