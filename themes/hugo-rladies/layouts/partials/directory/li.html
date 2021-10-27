@@ -3,23 +3,23 @@
       <img class="card-img-top embed-responsive-item" src="{{ .photo_url | default "/images/placeholder_user.png"}}" alt="{{ .name }} - {{with .honorific }}{{ . }}{{ end }}{{with .pronouns }}{{ . }}{{ end }}">
     </div>
     <div class="card-body">
-      <a href="#{{ .name | safeJS }}"><h3 class="card-title name">{{ .name }}</h3></a>
-      <p class="honorific card-directory-text">
-        {{with .honorific }}<i>{{ . }}</i>{{ end }}&emsp;{{with .pronouns }}{{ . }}{{ end }}
-      </p>
-      <h3 class="card-title">
+      <span class="card-directory-title">
+        <a href="#{{ .name | safeJS }}" class="card-title name">{{ .name }}</a>
+          {{with .honorific }}&emsp;<i>{{ . }}</i>{{ end }}&emsp;{{with .pronouns }}{{ . }}{{ end }}
+      </span>
+      <h4 class="card-title">
         {{ range .social_media }}
           {{ partial "some.html" . }}
         {{ end }}
-      </h3>
-      <p class="card-directory-text ">
-        {{ .title }}{{ with .organization }}&nbsp; - &nbsp;{{ . }}{{ end }}
+      </h4>
+      <p class="card-text">
+        {{ .title }}{{ with .organization }}&nbsp; <i>- &nbsp;{{ . }}</i>{{ end }}
       </p>
-      <p>
+      <p class="card-text">
         <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
       </p>
       {{if gt (len .location) 1 }}
-        <p class="card-directory-text">
+        <p class="card-text">
           <i class="fas fa-map-marker-alt"></i> 
           <span class="r_groups">
             {{ range .location }}
@@ -29,7 +29,7 @@
         </p>
       {{ end }}
       {{ with .interests }}
-        <p class="card-directory-text">
+        <p class="card-text">
           <b><i class="fas fa-tag" style = "font-size: 15px;"></i>&nbsp;</b>
           <span class="interests">{{ delimit . ", " }}</span>
         </p>

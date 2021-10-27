@@ -1,0 +1,30 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "role": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "start": {
+        "type": "string"
+      },
+      "img": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "name",
+      "role",
+      "start",
+      "img"
+    ]
+  }
+}

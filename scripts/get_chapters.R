@@ -1,27 +1,7 @@
 
-load_lib <- function(x){
-  suppressPackageStartupMessages(
-    library(x, character.only = TRUE)
-  )
-}
-
+source(here::here("scripts/utils.R"))
 pkgs <- sapply(c("meetupr", "dplyr"),
                load_lib)
-
-
-na_col_rm <- function(x){
-  indx <- apply(x, 2, function(y) all(is.na(y)))
-  as_tibble(x[, !indx])
-}
-
-change_empty <- function(x) ifelse(x == "", NA, x)
-
-
-# If not running interactively, 
-# get token decrypted from env var
-if(!interactive()){
-  source(here::here("scripts/meetup_auth.R"))
-}
 
 cat("Retrieving R-Ladies group information\n")
 # Better than getting pro groups, because we want timezone...

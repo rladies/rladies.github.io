@@ -8,6 +8,7 @@
     	{{ range $update }}
     	<small class="text-muted">Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}</small>
     	{{ end }}
+  	  {{ partial "head/tui-calendar.html" . }}
   	</center>
   	</header>
   	
@@ -79,9 +80,8 @@
 {{ end }}
  
 {{ define "footer" }}
-  {{ partial "footer/tui-calendar.html" . }}
-  
   <script type="text/javascript">
+    var window_width = document.documentElement.clientWidth;
     ( async function(window, Calendar) {
       'use strict';
       var cal, resizeThrottled;
@@ -138,10 +138,6 @@
         setRenderRangeText();
       }
       
-      cal_change_ww(document.documentElement.clientWidth);
-      
-
-
       // event handlers
       cal.on({
           'clickMore': function(e) {
@@ -263,7 +259,9 @@
       }
   
       function currentCalendarDate(format) {
-        var currentDate = moment([cal.getDate().getFullYear(), cal.getDate().getMonth(), cal.getDate().getDate()]);
+        var currentDate = moment([cal.getDate().getFullYear(), 
+        cal.getDate().getMonth(), 
+        cal.getDate().getDate()]);
   
         return currentDate.format(format);
       }
@@ -330,6 +328,8 @@
       setRenderRangeText();
       // setSchedules();
       setEventListener();
+      cal_change_ww(window_width);
+
     })(window, tui.Calendar);
   </script>
 {{ end }}

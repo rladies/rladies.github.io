@@ -22,6 +22,8 @@
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
+  background-color: rgba($white, .9);
+  text-transform: uppercase;
 
   // Because flex properties aren't inherited, we need to redeclare these first
   // few properties so that content nested within behave properly.
@@ -223,62 +225,6 @@
 }
 
 
-// Navbar themes
-//
-// Styles for switching between navbars with light or dark background.
-
-// Dark links against a light background
-.navbar-light {
-  .navbar-brand {
-    color: $navbar-light-brand-color;
-
-    @include hover-focus() {
-      color: $navbar-light-brand-hover-color;
-    }
-  }
-
-  .navbar-nav {
-    .nav-link {
-      color: $navbar-light-color;
-
-      @include hover-focus() {
-        color: $navbar-light-hover-color;
-      }
-
-      &.disabled {
-        color: $navbar-light-disabled-color;
-      }
-    }
-
-    .show > .nav-link,
-    .active > .nav-link,
-    .nav-link.show,
-    .nav-link.active {
-      color: $navbar-light-active-color;
-    }
-  }
-
-  .navbar-toggler {
-    color: $navbar-light-color;
-    border-color: $navbar-light-toggler-border-color;
-  }
-
-  .navbar-toggler-icon {
-    background-image: escape-svg($navbar-light-toggler-icon-bg);
-  }
-
-  .navbar-text {
-    color: $navbar-light-color;
-    a {
-      color: $navbar-light-active-color;
-
-      @include hover-focus() {
-        color: $navbar-light-active-color;
-      }
-    }
-  }
-}
-
 // White links against a dark background
 .navbar-dark {
   .navbar-brand {
@@ -330,3 +276,27 @@
     }
   }
 }
+
+ .hamburger {
+  color: $primary;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+
+.navbar .navbar-inner {
+  text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar .navbar-inner .nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar-inner {
+  overflow: visible;
+}
+

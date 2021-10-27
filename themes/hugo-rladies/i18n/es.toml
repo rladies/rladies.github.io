@@ -51,6 +51,11 @@
   other = "Siguiente"
 
 
+[last_edit]
+  other = "This post was last edited on"
+[last_message]
+  other = "with the message"
+  
 [toc]
   other = "Tabla de Contenido"
 

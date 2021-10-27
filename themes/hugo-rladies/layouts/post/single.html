@@ -11,7 +11,7 @@
  		  <a title={{ i18n "translations" }} href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
  		</h1>
      <div class="post-meta">
-      {{ partial "post/dates.html" .}}
+      {{ partial "dates.html" .}}
       {{ with .Params.categories -}}
         <div class="post-category">
           {{ range . }}
@@ -47,6 +47,14 @@
     {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
     {{ end }}
     
+    <div>
+      <p class="text-muted">
+      {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }} {{ i18n "last_message"}} 
+      {{- if $.GitInfo -}}
+        <i>"{{ .GitInfo.Subject }}"</i>
+      {{- end -}}
+      </p>
+    </div>
       <!-- Post Pagination -->
     <div class="row">
         <div class="col-md-6 text-align-left">

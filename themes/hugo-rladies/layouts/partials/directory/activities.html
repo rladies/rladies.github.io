@@ -1,20 +1,20 @@
 
 {{ with .r_groups }}
-  <p class="card-directory-text ">
+  <p class="card-text">
     <b><i class="fas fa-users" style = "font-size: 15px;"></i>&nbsp;</b>
     <span class="r_groups">{{ delimit . ", " }}</span>
   </p>
 {{ end }}
     
 {{ with .r_packages }}
-  <p class="card-directory-text ">
+  <p class="card-text">
     <b><i class="fas fa-cube" style = "font-size: 15px;"></i>&nbsp;</b>
     <span class="r_packages">{{ delimit . ", " }}</span>
   </p>
 {{ end }}
 
 {{ with .shiny_apps }}
-  <p class="card-directory-text ">
+  <p class="card-text">
     <b><i class="fab fa-stripe-s" style="font-size: 15px;"></i>&nbsp;</b>
     <span class="shiny_apps">{{ delimit . ", " }}</span>
   </p>

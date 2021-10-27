@@ -52,8 +52,7 @@ README.html
 # Is added only during gh actions
 # should never be commited
 data/directory/
-/Users/athanasm/Library/Application Support/meetupr/meetupr-token.rds
-
 # npm
 node_modules/
 package-lock.json
+.meetup_token.rds

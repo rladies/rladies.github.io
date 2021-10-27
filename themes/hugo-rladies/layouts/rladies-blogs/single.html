@@ -1,4 +1,3 @@
-
 {{ define "main" }}
  	<article class="post">
 		<header class="entry-header">
@@ -13,13 +12,10 @@
 		</header>
 		<div class="entry-content">
 			{{ .Content }}
-		</div>
-
-      <div class="container full-width" id="rladies-blogs">
-        <div class="row justify-content-center row-cols-2 row-cols-sm-3 row-cols-lg-4">
+        <div class="row justify-content-center row-cols-2 row-cols-sm-3 row-cols-lg-4" id="rladies-blogs">
           {{ $blogs := ( .Scratch.Get "blogs" ) }}
             {{ range $blogs }}    
-              <div class="card card-blogs mx-auto m-1">
+              <div class="card card-blogs">
                 <a href="{{ .url }}">
                   <div class="embed-responsive embed-responsive-4by3">
                     <img class="card-img-top embed-responsive-item" src="{{ .photo_url }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
@@ -32,8 +28,7 @@
                           <br>{{ . }}
                         </small></i>{{ end }}
                     </h3>
-                    
-                    <div class="card-text text-rladies-light">
+                    <div class="card-text text-rladies-light  align-bottom">
                       {{ range .authors }}
                         <p class="text-white text-rladies-light">
                           {{ .name }}
@@ -50,5 +45,4 @@
         </div>
       </div>
 	</article><!-- #post-## -->
-
 {{ end }}
