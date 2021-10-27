@@ -51,7 +51,7 @@ jobs:
         run: Rscript scripts/get_global_team.R
         
       - name: Site data - Get directory data
-        if: github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' 
         uses: actions/checkout@v2
         with:
           repository: rladies/directory
@@ -78,16 +78,19 @@ jobs:
           rm -rf rblogs
         
       - name: Meetup authentication
+        if: github.event_name != 'pull_request'
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
         run: Rscript scripts/meetup_auth.R
         
       - name: Site data - Update chapter data
+        if: github.event_name != 'pull_request'
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
         run: Rscript scripts/get_chapters.R
         
       - name: Site data - Update event data
+        if: github.event_name != 'pull_request'
         env: 
           MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
         run: Rscript scripts/get_events.R
