@@ -102,10 +102,10 @@ jobs:
         run: |
           if [ github.event_name == 'pull_request' ]; then
             echo "Deploying netlify preview"
-            netlify deploy
+            netlify deploy --enableGitInfo
           else
             echo "Deploying netlify production"
-            netlify deploy --prod
+            netlify deploy --prod --enableGitInfo
           fi
         shell: sh
         
