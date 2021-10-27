@@ -28,6 +28,7 @@ jobs:
           extended: true
       
       - name: Install netlify
+        if: github.repository == 'rladies/website'
         run: npm install netlify-cli -g
                
       - name: Setup R
@@ -99,6 +100,7 @@ jobs:
         run: hugo --enableGitInfo
         
       - name: Deploy to Netlify
+        if: github.repository == 'rladies/website'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -113,7 +115,7 @@ jobs:
         shell: sh
         
       - name: Commit meetup data	
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master' && github.repository == 'rladies/website'
         run: |	
           git config --local user.email "actions@github.com"	
           git config --local user.name "GitHub Actions"	
