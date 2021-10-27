@@ -57,14 +57,14 @@ jobs:
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
-          path: directory
+          path: tmp
       
       - name: Site data - Cleanup directory data
         if: github.event_name != 'pull_request'
         run: |
-          rm directory/data/[1-9]_* # remove double entries. can be deleted after manual clean
-          mv directory/data data/directory
-          rm -rf directory
+          mv tmp/data/json data/directory
+          mv tmp/data/img static/images/directory
+          rm -rf tmp
           
       - name: Site data - Get blogs list
         uses: actions/checkout@v2
