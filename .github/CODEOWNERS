@@ -2,4 +2,5 @@
 /scripts/      @website
 LICENCE.md     @website
 /themes/       @website
+/static/robots.txt       @website
 /themes/hugo-rladies/i18n/ 
