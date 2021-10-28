@@ -4,7 +4,7 @@ content <- list.files("content","index",
                       recursive = TRUE, 
                       full.names = TRUE)
 content <- content[grepl("[.]md", content)]
-content <- content[!grepl("post/", content)]
+content <- content[!grepl("post/|press/", content)]
 
 # Get the unique directories
 dirs <-  unique(dirname(content))
