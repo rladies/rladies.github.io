@@ -10,3 +10,6 @@ defaultContentLanguage = "en"
 pygmentsUseClasses = true
 enableGitInfo = true
 enableRobotsTXT= true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

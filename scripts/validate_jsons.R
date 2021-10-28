@@ -4,7 +4,7 @@ validate_jsons <- function(files, schema){
 
   k <- validate(files, 
                 verbose = TRUE, 
-                error = FALSE, 
+                error = TRUE, 
                 greedy = TRUE)
   
   if(any(!k)){

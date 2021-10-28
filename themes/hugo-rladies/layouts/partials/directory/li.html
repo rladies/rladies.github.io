@@ -15,9 +15,11 @@
       <p class="card-text">
         {{ .title }}{{ with .organization }}&nbsp; <i>- &nbsp;{{ . }}</i>{{ end }}
       </p>
+      {{ with .contact_method }} 
       <p class="card-text">
-        <b>Contact through:</b> {{ delimit .contact_method ", " | default "Not disclosed" }}<br>
+        <b>Contact through:</b>{{ delimit . ", "}}<br>
       </p>
+       {{ end }}
       {{if gt (len .location) 1 }}
         <p class="card-text">
           <i class="fas fa-map-marker-alt"></i> 
@@ -35,7 +37,26 @@
         </p>
       {{ end }}
       {{ range .activities }}
-          {{ partial "directory/activities.html" . }}
+        {{ with .r_groups }}
+          <p class="card-text">
+            <b><i class="fas fa-users" style = "font-size: 15px;"></i>&nbsp;</b>
+            <span class="r_groups">{{ delimit . ", " }}</span>
+          </p>
+        {{ end }}
+            
+        {{ with .r_packages }}
+          <p class="card-text">
+            <b><i class="fas fa-cube" style = "font-size: 15px;"></i>&nbsp;</b>
+            <span class="r_packages">{{ delimit . ", " }}</span>
+          </p>
+        {{ end }}
+        
+        {{ with .shiny_apps }}
+          <p class="card-text">
+            <b><i class="fab fa-stripe-s" style="font-size: 15px;"></i>&nbsp;</b>
+            <span class="shiny_apps">{{ delimit . ", " }}</span>
+          </p>
+        {{ end }}
       {{ end }}
    </div>
    <div class="card-footer">

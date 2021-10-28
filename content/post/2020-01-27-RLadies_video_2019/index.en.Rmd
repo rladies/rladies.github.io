@@ -11,7 +11,7 @@ always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
 To close the awesome R-Ladies 2019 year we made a video, if you haven't seen it yet, here it is:
@@ -48,7 +48,7 @@ The first three numbers were extracted from the [R-Ladies Community Board](https
 
 To follow our steps, the first thing is to load the necessary packages and generate the necessary variables and functions:
 
-```
+```{r}
 # API KEY of Meetup
 # The API keys is soon deprecated more info here: https://www.meetup.com/meetup_api/auth/
 Sys.setenv(MEETUP_KEY = "your API Key") 
@@ -64,7 +64,7 @@ library(lubridate)
 
 Now we have to get all the meetup groups that correspond to R-Ladies:
 
-```
+```{r}
 # Getting all the R-Ladies groups
 all_rladies_groups <- find_groups(text = "r-ladies")
 
@@ -76,7 +76,7 @@ rladies_groups <- all_rladies_groups[grep(pattern = "rladies|r-ladies",
 
 With the groups list, we search for all the events carried out by each of these groups and calculate the number of events:
 
-```
+```{r}
 # We get all the events that already took place.
 
 eventos <- rladies_groups$urlname %>%
@@ -121,7 +121,7 @@ To illustrate this part of the message, the world map with the location of all t
 
 This is the complete code to do it:
 
-```
+```{r}
 library(ggplot2)
 library(maptools)
 library(tibble)
@@ -163,7 +163,7 @@ p <- p +
 
 The objective is also to present _the number of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication media, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of volunteer work to achieve all these results. The [R-Ladies Global Team](https://rladies.org/about-us/team/) provided us with the numbers referred to the [R-Ladies directory](https://rladies.org/directory/) and from the [review network](tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use  the `rtweet` package with the following code:
 
-```
+```{r}
 # We load the necessary packages
 library(dplyr)
 library(lubridate)
@@ -235,5 +235,3 @@ The final video was sent to the Global team for dissemination through social net
 
 Authors: Yanina Bellini Saibene, Alejandra Bellini y Laura Acion
 
-
-[Spanish version](/post/rladies_video_2019/index.es.html)

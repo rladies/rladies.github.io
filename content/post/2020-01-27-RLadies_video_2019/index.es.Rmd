@@ -12,7 +12,7 @@ always_allow_html: yes
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 ```
 
 Para cerrar el 2019 desde R-Ladies hicimos un video, si aún no lo viste, aquí está:
@@ -38,7 +38,7 @@ Se muestran números globales de R-Ladies donde se represente nuestra forma de o
 
 Lo primero es cargar los paquetes necesarios y generar las variables y funciones necesarias:
 
-```
+```{r}
 #API KEY de Meetup
 Sys.setenv(MEETUP_KEY = "tu string de API Key")
 
@@ -54,7 +54,7 @@ library(lubridate)
 
 Ahora tenemos que obtener todos los grupos de meetup que corresponden a R-Ladies:
 
-```
+```{r}
 # Obteniendo todos los grupos de R-Ladies
 all_rladies_groups <- find_groups(text = "r-ladies")
 
@@ -66,7 +66,7 @@ rladies_groups <- all_rladies_groups[grep(pattern = "rladies|r-ladies",
 
 Con el listado de grupos, buscamos todos los eventos realizados por cada uno de esos grupos y calculamos la cantidad:
 
-```
+```{r}
 # Obtengo todos los eventos ya realizados. 
 eventos <- rladies_groups$urlname %>%
   map(purrr::slowly(safely(get_events)), event_status='past') %>% transpose()
@@ -110,7 +110,7 @@ Para ilustrar esta parte del mensaje, el mapa del mundo con la localización de 
 
 Este es el código completo para hacerlo:
 
-```
+```{r}
 library(ggplot2)
 library(maptools)
 library(tibble)
@@ -154,7 +154,7 @@ p <- p +
 El objetivo es presentar también _cifras de otras iniciativas de R-Ladies_ además de los capítulos y eventos, por lo que enfocamos en nuestros _medios de comunicación, nuestro directorio de personas expertas, nuestra red de revisión y la generación de material educativo_ para nuestros meetups, conferencias, eventos con otras organizaciones,etc. Resaltando el esfuerzo de un trabajo voluntario para conseguir todos estos resultados.  El equipo de [R-Ladies Global](https://rladies.org/about-us/team/) me facilitó las cantidades referidas al [directorio de R-Ladies](https://rladies.org/directory/) y de la [red de revisión](tinyurl.com/rladiesrevs).  Para la calcular la cantidad de seguidores de nuestras cuentas de twitter, utilizamos R y el paquete `rtweet` con el siguiente código:
 
 
-```
+```{r}
 #Cargo los paquetes necesarios
 library(dplyr)
 library(lubridate)

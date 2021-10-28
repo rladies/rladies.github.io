@@ -15,6 +15,9 @@
     {{ partial "hero.html" . }}
     {{ partial "menu.html" . }}
 
+    {{ block "fastsearch" .}}
+    {{ end }}
+   
     <main id="main">
       <div class="container col-md-8 offset-md-2">
      			{{ if eq .Params.translated false }}
@@ -39,8 +42,7 @@
     {{ block "languages" . }}
       {{ partial "post/i18n.html"}}
     {{ end }}
-  
-
+ 
     {{ partial "footer/footer.html" . }}
     {{ partial "footer/scripts.html" . }}
     {{ block "footer" . }}
