@@ -3,6 +3,7 @@
 ### Hugo ###
 # Generated files by hugo
 /public/
+/build/
 /resources/_gen/
 .hugo_build.lock
 
