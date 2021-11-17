@@ -33,14 +33,11 @@ jobs:
                
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
-              
-      - name: Install R dependencies
-        env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
-          pak::local_install()
-        shell: Rscript {0}
+        
+      - name: Run Renv
+        uses: r-lib/actions/setup-renv@v1
+        with:
+          cache-version: 2
       
       - name: Validate jsons
         run: Rscript scripts/validate_jsons.R
@@ -114,13 +111,13 @@ jobs:
           fi
         shell: sh
         
-      - name: Commit meetup data	
+      - name: Commit data	
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master' && github.repository == 'rladies/website'
         run: |	
           git config --local user.email "actions@github.com"	
           git config --local user.name "GitHub Actions"	
           git add data/events.json data/chapters.json data/events_updated.json	
-          git commit -m 'Update meetup data' || echo "No data to commit"	
+          git commit -m 'Update meetup data' || echo "No meetup data to commit"	
           git add data/global_team.json
-          git commit -m 'Update global team' || echo "No data to commit"	
-          git push origin || echo "No changes to commit"
+          git commit -m 'Update global team' || echo "No global team changes to commit"	
+          git push origin || echo "Nothing to push"
