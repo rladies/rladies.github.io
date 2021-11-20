@@ -4,11 +4,9 @@ on:
   pull_request:
     branches:
       - main
-      - master
       - fork_merge
   push:
     branches: 
-      - master
       - main
   schedule:
   - cron: "0 */12 * * *"
@@ -58,7 +56,7 @@ jobs:
   meetup:
     runs-on: macOS-latest
     name: Update meetup data
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master' && github.repository == 'rladies/website'
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'rladies/website'
     env: 
       MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
     steps:
