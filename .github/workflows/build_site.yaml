@@ -14,13 +14,29 @@ on:
   - cron: "0 */12 * * *"
 
 jobs:
-  validate:
+  check:
     runs-on: macOS-latest
-    name: Validate jsons
+    name: Check modified jsons
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
         
+      - name: Find modified json data
+        run: |
+          mods=$(git diff --name-only HEAD^ HEAD | grep ^data | grep json$)
+          echo "::set-output name=run_validation::true"
+  
+  validate:
+    runs-on: macOS-latest
+    name: Validate jsons
+    needs: check
+    if: needs.check.outputs.run_validation == 'true'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+          
       - name: Setup R
         uses: r-lib/actions/setup-r@v1
         
