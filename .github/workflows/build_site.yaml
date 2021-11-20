@@ -27,7 +27,8 @@ jobs:
         id: check_files
         run: |
           echo "step 1"
-          echo $(git diff --name-only HEAD^ HEAD) >> tmp
+          echo $(git diff --name-only HEAD^ HEAD) > tmp
+          cat tmp
           grep ^data tmp > tmp2 
           echo "step 2"
           grep json$ tmp2 > tmp 
