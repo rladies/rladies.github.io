@@ -27,13 +27,12 @@ jobs:
         id: check_files
         run: |
           echo "step 1"
-          mods=$(git diff --name-only HEAD^ HEAD)
-          echo $mods
-          mods=$(grep ^data $mods)
+          echo $(git diff --name-only HEAD^ HEAD) >> tmp
+          grep ^data tmp > tmp2 
           echo "step 2"
-          mods=$(grep json$ $mods)
+          grep json$ tmp2 > tmp 
           echo "step 3"
-          if [[ $mods == "" ]]; then 
+          if [[ -s tmp ]]; then 
             echo "::set-output name=run_validation::false"
           else
             echo "::set-output name=run_validation::true"

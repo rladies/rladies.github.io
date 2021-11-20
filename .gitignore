@@ -55,3 +55,6 @@ static/images/directory/
 node_modules/
 package-lock.json
 .meetup_token.rds
+
+# workflow tmp file
+tmp*
