@@ -17,6 +17,8 @@ jobs:
   check:
     runs-on: macOS-latest
     name: Check modified jsons
+    outputs:
+      run_job: ${{ steps.check_files.outputs.run_validation }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -24,10 +26,15 @@ jobs:
           fetch-depth: 2
         
       - name: Find modified json data
+        id: check_files
         run: |
           mods=$(git diff --name-only HEAD^ HEAD | grep ^data | grep json$)
-          echo "::set-output name=run_validation::true"
-  
+          if [ $mods ="" ]; then 
+            echo "::set-output name=run_validation::false"
+          else
+            echo "::set-output name=run_validation::true"
+          fi
+          
   validate:
     runs-on: macOS-latest
     name: Validate jsons
