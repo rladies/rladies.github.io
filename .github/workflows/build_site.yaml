@@ -26,9 +26,13 @@ jobs:
       - name: Find modified json data
         id: check_files
         run: |
+          echo "step 1"
           mods=$(git diff --name-only HEAD^ HEAD)
+          echo $mods
           mods=$(grep ^data $mods)
+          echo "step 2"
           mods=$(grep json$ $mods)
+          echo "step 3"
           if [[ $mods == "" ]]; then 
             echo "::set-output name=run_validation::false"
           else
