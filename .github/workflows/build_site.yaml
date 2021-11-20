@@ -50,8 +50,8 @@ jobs:
         with:
           cache-version: 2
           
-     - name: Meetup authentication
-       run:  Rscript scripts/meetup_auth.R
+      - name: Meetup authentication
+        run:  Rscript scripts/meetup_auth.R
         
       - name: Update chapter data
         run:  Rscript scripts/get_chapters.R
