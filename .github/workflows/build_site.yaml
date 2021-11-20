@@ -13,8 +13,8 @@ on:
 
 jobs:
   check:
-    runs-on: macOS-latest
     name: Check modified jsons
+    runs-on: macOS-latest
     outputs:
       run_job: ${{ steps.check_files.outputs.run_validation }}
     steps:
@@ -29,14 +29,16 @@ jobs:
           git diff-tree --no-commit-id --name-only -r HEAD | grep ^data | grep json$ > tmp
           cat tmp
           if [[ -s tmp ]]; then 
+            echo true
             echo "::set-output name=run_validation::true"
           else
+            echo false
             echo "::set-output name=run_validation::false"
           fi
           
   validate:
-    runs-on: macOS-latest
     name: Validate jsons
+    runs-on: macOS-latest
     needs: check
     if: needs.check.outputs.run_validation == 'true'
     steps:
@@ -55,8 +57,8 @@ jobs:
         run: Rscript scripts/validate_jsons.R
         
   meetup:
-    runs-on: macOS-latest
     name: Update meetup data
+    runs-on: macOS-latest
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'rladies/website'
     env: 
       MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
@@ -89,10 +91,13 @@ jobs:
           git commit -m 'Update meetup data' || echo "No meetup data to commit"	
         
   build:
-    runs-on: macOS-latest
     name: Build and publish to Netlify
+    runs-on: macOS-latest
     needs: [check, validate, meetup]
-    if: ${{ always() && github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository}}
+    if: |
+      github.event_name != 'pull_request' || 
+      github.event.pull_request.head.repo.full_name == github.repository
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
