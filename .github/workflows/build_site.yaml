@@ -35,6 +35,7 @@ jobs:
             echo false
             echo "::set-output name=run_job::false"
           fi
+          exit 0
           
   validate:
     name: Validate jsons
