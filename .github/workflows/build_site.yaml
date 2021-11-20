@@ -21,12 +21,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          fetch-depth: 2
+          fetch-depth: 3
         
       - name: Find modified json data
         id: check_files
         run: |
-          $(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| grep ^data | grep json$ | xargs) >tmp
+          $(git diff-tree --no-commit-id --name-only -r ${{ github.sha }}| grep ^data | grep json$) >tmp
           cat tmp
           if [[ -s tmp ]]; then 
             echo "::set-output name=run_validation::false"
