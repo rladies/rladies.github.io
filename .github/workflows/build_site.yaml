@@ -16,7 +16,7 @@ jobs:
     name: Check modified jsons
     runs-on: macOS-latest
     outputs:
-      run_job: ${{ steps.check_files.outputs.run_validation }}
+      run_job: ${{ steps.check_files.outputs.run_job }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -30,17 +30,17 @@ jobs:
           cat tmp
           if [[ -s tmp ]]; then 
             echo true
-            echo "::set-output name=run_validation::true"
+            echo "::set-output name=run_job::true"
           else
             echo false
-            echo "::set-output name=run_validation::false"
+            echo "::set-output name=run_job::false"
           fi
           
   validate:
     name: Validate jsons
     runs-on: macOS-latest
     needs: check
-    if: needs.check_files.outputs.run_validation == 'true'
+    if: needs.check.outputs.run_job == 'true'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
