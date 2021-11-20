@@ -92,7 +92,7 @@ jobs:
     runs-on: macOS-latest
     name: Build and publish to Netlify
     if: ${{ always() && github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository}}
-    needs: [validate, meetup]
+    needs: [check, validate, meetup]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
