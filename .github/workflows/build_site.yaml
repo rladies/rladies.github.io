@@ -14,9 +14,63 @@ on:
   - cron: "0 */12 * * *"
 
 jobs:
+  validate:
+    runs-on: macOS-latest
+    name: Validate jsons
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v1
+        
+      - name: Run Renv
+        uses: r-lib/actions/setup-renv@v1
+        with:
+          cache-version: 2
+      
+      - name: Validate jsons
+        run: Rscript scripts/validate_jsons.R
+        
+  meetup:
+    runs-on: macOS-latest
+    name: Update meetup data
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master' && github.repository == 'rladies/website'
+    env: 
+      MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v1
+        
+      - name: Run Renv
+        uses: r-lib/actions/setup-renv@v1
+        with:
+          cache-version: 2
+          
+     - name: Meetup authentication
+       run:  Rscript scripts/meetup_auth.R
+        
+      - name: Update chapter data
+        run:  Rscript scripts/get_chapters.R
+        
+      - name: Update event data
+        run:  Rscript scripts/get_events.R
+        
+      - name: Commit data	
+        run: |	
+          git config --local user.email "actions@github.com"	
+          git config --local user.name "GitHub Actions"	
+          git add data/events.json data/chapters.json data/events_updated.json	
+          git commit -m 'Update meetup data' || echo "No meetup data to commit"	
+        
   build:
     runs-on: macOS-latest
     name: Build and publish to Netlify
+    if: ${{ always() && github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository}}
+    needs: [validate, meetup]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -28,7 +82,6 @@ jobs:
           extended: true
       
       - name: Install netlify
-        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         run: npm install netlify-cli -g
                
       - name: Setup R
@@ -38,9 +91,6 @@ jobs:
         uses: r-lib/actions/setup-renv@v1
         with:
           cache-version: 2
-      
-      - name: Validate jsons
-        run: Rscript scripts/validate_jsons.R
               
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
@@ -49,20 +99,12 @@ jobs:
         run: Rscript scripts/get_global_team.R
         
       - name: Site data - Get directory data
-        if: github.event_name != 'pull_request' 
         uses: actions/checkout@v2
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
           path: tmp
       
-      - name: Site data - Cleanup directory data
-        if: github.event_name != 'pull_request'
-        run: |
-          mv tmp/data/json data/directory
-          mv tmp/data/img static/images/directory
-          rm -rf tmp
-          
       - name: Site data - Get blogs list
         uses: actions/checkout@v2
         with:
@@ -70,34 +112,17 @@ jobs:
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
           path: rblogs
           
-      - name: Site data - Cleanup blogs list
+      - name: Site data - cloned repos
         run: |
           mv rblogs/blogs data/rblogs
-          rm -rf rblogs
-        
-      - name: Meetup authentication
-        if: github.event_name != 'pull_request'
-        env: 
-          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript scripts/meetup_auth.R
-        
-      - name: Site data - Update chapter data
-        if: github.event_name != 'pull_request'
-        env: 
-          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript scripts/get_chapters.R
-        
-      - name: Site data - Update event data
-        if: github.event_name != 'pull_request'
-        env: 
-          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript scripts/get_events.R
+          mv tmp/data/json data/directory
+          mv tmp/data/img static/images/directory
+          rm -rf tmp rblogs
 
       - name: Build
         run: hugo --enableGitInfo
         
       - name: Deploy to Netlify
-        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -112,12 +137,9 @@ jobs:
         shell: sh
         
       - name: Commit data	
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master' && github.repository == 'rladies/website'
         run: |	
           git config --local user.email "actions@github.com"	
           git config --local user.name "GitHub Actions"	
-          git add data/events.json data/chapters.json data/events_updated.json	
-          git commit -m 'Update meetup data' || echo "No meetup data to commit"	
           git add data/global_team.json
           git commit -m 'Update global team' || echo "No global team changes to commit"	
           git push origin || echo "Nothing to push"
