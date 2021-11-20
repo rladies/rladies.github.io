@@ -29,9 +29,9 @@ jobs:
           git diff-tree --no-commit-id --name-only -r HEAD | grep ^data | grep json$ > tmp
           cat tmp
           if [[ -s tmp ]]; then 
-            echo "::set-output name=run_validation::false"
-          else
             echo "::set-output name=run_validation::true"
+          else
+            echo "::set-output name=run_validation::false"
           fi
           
   validate:
@@ -91,8 +91,8 @@ jobs:
   build:
     runs-on: macOS-latest
     name: Build and publish to Netlify
-    if: ${{ always() && github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository}}
     needs: [check, validate, meetup]
+    if: ${{ always() && github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository}}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
