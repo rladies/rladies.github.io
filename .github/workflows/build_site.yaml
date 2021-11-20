@@ -40,7 +40,7 @@ jobs:
     name: Validate jsons
     runs-on: macOS-latest
     needs: check
-    if: needs.check.outputs.run_validation == 'true'
+    if: needs.check_files.outputs.run_validation == 'true'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
