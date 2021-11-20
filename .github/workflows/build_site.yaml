@@ -27,7 +27,7 @@ jobs:
         id: check_files
         run: |
           mods=$(git diff --name-only HEAD^ HEAD | grep ^data | grep json$)
-          if [ $mods ="" ]; then 
+          if [[ $mods == "" ]]; then 
             echo "::set-output name=run_validation::false"
           else
             echo "::set-output name=run_validation::true"
