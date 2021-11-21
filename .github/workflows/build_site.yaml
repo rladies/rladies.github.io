@@ -34,8 +34,7 @@ jobs:
             echo "No jsons commited"
             echo "::set-output name=run_job::false"
           fi
-          exit 0
-          
+
   validate:
     name: Validate jsons
     runs-on: macOS-latest
