@@ -151,9 +151,6 @@ jobs:
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
-      - name: Site Data - Update Global Team
-        run: Rscript scripts/get_global_team.R
-        
       - name: Site data - Get directory data
         uses: actions/checkout@v2
         with:
