@@ -170,7 +170,7 @@ jobs:
           echo "::set-output name=value::${MSG}"
         
       - name: Deploy Netlify preview
-        if: github.event_name == 'pull_request' && contains(step.cmt_msg.outputs.value , 'preview')
+        if: github.event_name == 'pull_request' && contains(steps.cmt_msg.outputs.value , 'preview')
         run: netlify deploy
         shell: sh
         
