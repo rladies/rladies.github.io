@@ -35,7 +35,7 @@ jobs:
             done
             echo "${new[*]}"
             )
-          if [ "${#jsons[@]}" -gt 1 ]; then 
+          if [ "${#jsons[@]}" -ge 1 ]; then 
             echo "::set-output name=run_validation::true"
           else
             echo "No jsons commited"
