@@ -28,6 +28,7 @@ jobs:
         run: |
           jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep "json$" | xargs )
           if [ "${#jsons[@]}" -ge 1 ]; then 
+          echo "${jsons[@]}"
             echo "::set-output name=run_validation::true"
           else
             echo "No jsons commited"
