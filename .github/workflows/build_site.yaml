@@ -12,11 +12,12 @@ on:
   - cron: "0 */12 * * *"
 
 jobs:
-  cmt_msg:
-    name: Get commit message
+  vars:
+    name: Check modified jsons
     runs-on: macOS-latest
     outputs:
-      value: ${{ steps.cmt_msg.outputs.value }}
+      cmt_msg: ${{ steps.cmt_msg.outputs.value }}
+      hugo_vr: ${{ steps.hugo_vr.outputs.value }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -28,8 +29,15 @@ jobs:
         run: |
           MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
           echo $MSG
-          echo "::set-output name=value::${MSG}"      
-  
+          echo "::set-output name=value::${MSG}"
+          
+      - name: Get Hugo version
+        id: hugo_vr
+        run: |
+          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
+          echo $ver
+          echo "::set-output name=value::${ver}"
+
   check:
     name: Check modified jsons
     runs-on: macOS-latest
@@ -118,11 +126,11 @@ jobs:
   build:
     name: Build and publish to Netlify
     runs-on: macOS-latest
-    needs: [cmt_msg, check, validate, meetup]
+    needs: [vars, check, validate, meetup]
     if: |
       (github.event_name != 'pull_request' || 
       github.event.pull_request.head.repo.full_name == github.repository) &&
-      ( ${{ always() && !(contains(needs.*.result, 'failure')) }} )
+      ( ${{ !(contains(needs.*.result, 'failure')) }} )
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -134,7 +142,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.88.1'
+          hugo-version: ${{ needs.vars.outputs.hugo_vr }}
           extended: true
       
       - name: Install netlify cli
@@ -151,9 +159,6 @@ jobs:
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
-      - name: Site Data - Update Global Team
-        run: Rscript scripts/get_global_team.R
-        
       - name: Site data - Get directory data
         uses: actions/checkout@v2
         with:
@@ -168,7 +173,7 @@ jobs:
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
           path: rblogs
           
-      - name: Site data - cloned repos
+      - name: Site data - clean cloned repos
         run: |
           mv rblogs/blogs data/rblogs
           mv tmp/data/json data/directory
@@ -179,10 +184,10 @@ jobs:
         run: hugo --enableGitInfo
         
       - name: Deploy Netlify preview
-        if: github.event_name == 'pull_request' && contains(needs.cmt_msg.outputs.value , 'preview')
+        if: github.event_name == 'pull_request' && contains(needs.vars.outputs.cmt_msg , 'preview')
         run: netlify deploy
         shell: sh
-        
+
       - name: Deploy Netlify production
         if: github.event_name != 'pull_request'
         run: netlify deploy --prod
