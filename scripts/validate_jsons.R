@@ -1,13 +1,15 @@
 validate_jsons <- function(files, schema){
-  validate <- jsonvalidate::json_validator(
-    schema)
+  validate <- jsonvalidate::json_validator(schema)
 
-  k <- validate(files, 
-                verbose = TRUE, 
-                error = TRUE, 
-                greedy = TRUE)
+  k <- sapply(files, 
+              validate,
+              verbose = TRUE, 
+              error = FALSE, 
+              greedy = TRUE)
+
   
   if(any(!k)){
+    k <- k[!k]
     errs <- attr(k, "errors", TRUE)
     stop(
       "Some jsons are not formatted correctly\n",
@@ -25,6 +27,7 @@ validate_jsons(
 
 #  Validate global team json
 validate_jsons(
-  here::here("data/global_team.json"),
+  list.files(here::here("data/global_team"), 
+             full.names = TRUE, recursive = TRUE),
   here::here("scripts/json_shema/global-team.json")
 )
