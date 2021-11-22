@@ -58,7 +58,7 @@ jobs:
   meetup:
     name: Update meetup data
     runs-on: macOS-latest
-    if: github.event_name == "schedule" && github.ref == 'refs/heads/main' && github.repository == 'rladies/website'
+    if: github.event_name == 'schedule' && github.ref == 'refs/heads/main' && github.repository == 'rladies/website'
     env: 
       MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
     steps:
