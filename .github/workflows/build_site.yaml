@@ -122,7 +122,7 @@ jobs:
     if: |
       (github.event_name != 'pull_request' || 
       github.event.pull_request.head.repo.full_name == github.repository) &&
-      ( ${{ always() && !(contains(needs.*.result, 'failure')) }} )
+      ( ${{ !(contains(needs.*.result, 'failure')) }} )
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -151,9 +151,6 @@ jobs:
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
-      - name: Site Data - Update Global Team
-        run: Rscript scripts/get_global_team.R
-        
       - name: Site data - Get directory data
         uses: actions/checkout@v2
         with:
@@ -168,7 +165,7 @@ jobs:
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
           path: rblogs
           
-      - name: Site data - cloned repos
+      - name: Site data - clean cloned repos
         run: |
           mv rblogs/blogs data/rblogs
           mv tmp/data/json data/directory
