@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 2
 
-     - name: Get changed files
+      - name: Get changed files
         id: check_files
         run: |
           jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
