@@ -13,7 +13,7 @@ on:
 
 jobs:
   vars:
-    name: Check modified jsons
+    name: Get job variables
     runs-on: macOS-latest
     outputs:
       cmt_msg: ${{ steps.cmt_msg.outputs.value }}
@@ -24,7 +24,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           
-      - name: Get Commit Message
+      - name: Get commit message
         id: cmt_msg
         run: |
           MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
@@ -130,7 +130,7 @@ jobs:
     if: |
       (github.event_name != 'pull_request' || 
       github.event.pull_request.head.repo.full_name == github.repository) &&
-      ( ${{ !(contains(needs.*.result, 'failure')) }} )
+      ${{ always() && !(contains(needs.*.result, 'failure')) }} 
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
