@@ -16,7 +16,7 @@ jobs:
     name: Check modified jsons
     runs-on: macOS-latest
     outputs:
-      run_job: ${{ steps.check_files.outputs.run_job }}
+      run_validation: ${{ steps.check_files.outputs.run_validation }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -26,20 +26,20 @@ jobs:
       - name: Find modified json data
         id: check_files
         run: |
-          git diff-tree --no-commit-id --name-only -r HEAD | grep ^data | grep json$ > tmp
-          if [[ -s tmp ]]; then 
-            cat tmp
-            echo "::set-output name=run_job::true"
+          jsons=$(git diff-tree --no-commit-id --name-only -r HEAD | grep ^data | grep json$ )
+           if [ "${#jsons[@]}" -gt 1 ]; then 
+            echo $jsons
+            echo "::set-output name=run_validation::true"
           else
             echo "No jsons commited"
-            echo "::set-output name=run_job::false"
+            echo "::set-output name=run_validation::false"
           fi
 
   validate:
     name: Validate jsons
     runs-on: macOS-latest
     needs: check
-    if: needs.check.outputs.run_job == 'true'
+    if: needs.check.outputs.run_validation == 'true'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -58,7 +58,7 @@ jobs:
   meetup:
     name: Update meetup data
     runs-on: macOS-latest
-    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && github.repository == 'rladies/website'
+    if: github.event_name == "schedule" && github.ref == 'refs/heads/main' && github.repository == 'rladies/website'
     env: 
       MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
     steps:
@@ -161,11 +161,4 @@ jobs:
             netlify deploy --prod
           fi
         shell: sh
-        
-      - name: Commit data	
-        run: |	
-          git config --local user.email "actions@github.com"	
-          git config --local user.name "GitHub Actions"	
-          git add data/global_team.json
-          git commit -m 'Update global team' || echo "No global team changes to commit"	
-          git push origin || echo "Nothing to push"
+
