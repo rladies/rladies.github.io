@@ -26,7 +26,7 @@ jobs:
       - name: Find modified json data
         id: check_files
         run: |
-          jsons=$(git diff-tree --no-commit-id --name-only -r HEAD | grep ^data | grep json$ )
+          jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep ^data | grep json$ )
             echo $jsons
           if [ "${#jsons[@]}" -gt 1 ]; then 
             echo "::set-output name=run_validation::true"
