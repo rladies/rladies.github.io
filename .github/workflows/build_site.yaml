@@ -24,11 +24,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           
       - name: Get Commit Message
-          id: cmt_msg
-          run: |
-            MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
-            echo $MSG
-            echo "::set-output name=value::${MSG}"      
+        id: cmt_msg
+        run: |
+          MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
+          echo $MSG
+          echo "::set-output name=value::${MSG}"      
   
   check:
     name: Check modified jsons
