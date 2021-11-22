@@ -1,0 +1,16 @@
+<div class="card mx-auto m-1">
+  <div class="embed-responsive embed-responsive-4by3">
+    <img class="card-img-top embed-responsive-item" src="img/{{ .img | default "placeholder.png" }}" alt="{{ .name }} - {{ delimit .role ", " }}">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ .name }}</h5>
+    <p class="card-text">
+      {{ delimit .role ", " }} <br>
+    </p>
+  </div>
+  {{ if .end }} 
+    <div class="card-footer"> 
+      <small>{{.start}} - <br>{{.end}}</small>
+    </div>
+  {{end}}
+</div>

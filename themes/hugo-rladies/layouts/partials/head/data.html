@@ -1,6 +1,7 @@
-{{ .Scratch.Set "blogs" $.Site.Data.blogs_mock  }}
-{{ .Scratch.Set "directory" $.Site.Data.directory_mock  }}
-{{ .Scratch.Set "mentoring" $.Site.Data.mentoring }}
+{{ .Scratch.Set "blogs"      $.Site.Data.blogs_mock  }}
+{{ .Scratch.Set "directory"  $.Site.Data.directory_mock  }}
+{{ .Scratch.Set "mentoring"  $.Site.Data.mentoring }}
+{{ .Scratch.Set "globalteam" $.Site.Data.mentoring }}
 
 
 {{ if eq .Hugo.Environment "production" }}
@@ -10,7 +11,7 @@
 
 <!-- 
 Create an array that we can use to shuffle
-the directory entries on every build.
+the data entries on every build.
 -->
 {{ $.Scratch.Set "dic" (slice) }}
 {{ range $name, $_ := ( .Scratch.Get "directory" ) }}
@@ -20,4 +21,9 @@ the directory entries on every build.
 {{ $.Scratch.Set "ment" (slice) }}
 {{ range $name, $_ := ( .Scratch.Get "mentoring" ) }}
     {{ $.Scratch.Add "ment" $name }}
+{{ end }}
+
+{{ $.Scratch.Set "gt" (slice) }}
+{{ range $name, $_ := ( .Scratch.Get "globalteam" ) }}
+    {{ $.Scratch.Add "gt" $name }}
 {{ end }}
