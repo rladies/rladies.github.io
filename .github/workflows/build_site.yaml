@@ -51,7 +51,7 @@ jobs:
         id: check_files
         run: |
           jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
-          if (( ${#jsons[@]} )); then 
+          if [[ "${jsons[*]}" = *[![:space:]]* ]]; then 
             echo ${jsons}
             echo "::set-output name=run_validation::true"
           else
