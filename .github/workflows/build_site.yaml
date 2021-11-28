@@ -38,11 +38,9 @@ jobs:
           echo $ver
           echo "::set-output name=value::${ver}"
 
-  check:
+  jsons:
     name: Check modified jsons
     runs-on: macOS-latest
-    outputs:
-      run_validation: ${{ steps.check_files.outputs.run_validation }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -53,40 +51,26 @@ jobs:
         id: check_files
         run: |
           jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
-          # remove any empty elements
-          jsons=$(IFS=:
-            new=()
-            for p in $jsons; do
-              [[ $p != *x86* ]] && new+=("$p")
-            done
-            echo "${new[*]}"
-            )
-          if [ "${#jsons[@]}" -ge 1 ]; then 
+          if (( ${#jsons[@]} )); then 
             echo ${jsons}
             echo "::set-output name=run_validation::true"
           else
-            echo "No jsons commited"
+            echo "No jsons commited/changed"
             echo "::set-output name=run_validation::false"
           fi
 
-  validate:
-    name: Validate jsons
-    runs-on: macOS-latest
-    needs: check
-    if: needs.check.outputs.run_validation == 'true'
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
       - name: Setup R
+        if: {{ steps.check_files.outputs.run_validation }}
         uses: r-lib/actions/setup-r@v1
         
       - name: Run Renv
+        if: {{ steps.check_files.outputs.run_validation }}
         uses: r-lib/actions/setup-renv@v1
         with:
           cache-version: 2
       
       - name: Validate jsons
+        if: {{ steps.check_files.outputs.run_validation }}
         run: Rscript scripts/validate_jsons.R
         
   meetup:
@@ -126,7 +110,7 @@ jobs:
   build:
     name: Build and publish to Netlify
     runs-on: macOS-latest
-    needs: [vars, check, validate, meetup]
+    needs: [vars, jsons, meetup]
     if: |
       (github.event_name != 'pull_request' || 
       github.event.pull_request.head.repo.full_name == github.repository) &&
