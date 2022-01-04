@@ -80,7 +80,7 @@ timeline %>%
 
 # Selecting a date
 
-You can view the [schedule](https://docs.google.com/spreadsheets/d/1pmphnR9EinGuAKbVqGzMIt6cWYmHNbeFVzaKJB59JdY/edit#gid=1429703967){target="_blank"} of upcoming curators to identify available dates; records of previous curators are also maintained here.  
+You can view the [schedule](https://docs.google.com/spreadsheets/d/13NwIphQ6o-3YJUbHtbDRf4texfMOCvhIDNZgDZhHv7U/edit?usp=sharing){target="_blank"} of upcoming curators to identify available dates; records of previous curators are also maintained here.  
 
 Being a curator will be time intensive, so be kind to yourself. Choose dates when you will have time to invest and a flexible work schedule. I chose Feb 15-20 
 because I hoped by then I would be recovered from an intense Q4 work cycle;
@@ -94,7 +94,7 @@ R community. [Diversity best practices](https://www.diversitybestpractices.com/2
 
 # Signing up
 
-You sign up by [submitting a form](https://docs.google.com/forms/d/e/1FAIpQLSevtboT8TNjz87qe5HZzuBHuY0aNteaZNF5e2xFQXtSeU0c0w/viewform){target="_blank"} - give yourself at least 30 minutes to sign up as part of the
+You sign up by [submitting a form](https://forms.gle/4Z6EMbDzRyFQsB6C8){target="_blank"} - give yourself at least 30 minutes to sign up as part of the
 form includes filling out details that complete your [curating profile](https://twitter.com/WeAreRLadies/status/1361139211819180032){target="_blank"}. 
 
 There was a gap between when I filled out the form and when I was confirmed as a curator,
