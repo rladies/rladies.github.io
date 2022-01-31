@@ -66,6 +66,7 @@ jobs:
       - name: Install R-packages
         if: steps.check_files.outputs.run_validation == 'true'
         run: install.packages(c("here", "jsonvalidate"), Ncpus = 2)
+        shell: Rscript {0}
       
       - name: Validate jsons
         if: steps.check_files.outputs.run_validation == 'true'
