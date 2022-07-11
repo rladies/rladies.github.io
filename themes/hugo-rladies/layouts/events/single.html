@@ -8,7 +8,7 @@
     	{{ range $update }}
     	<small class="text-muted">Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}</small>
     	{{ end }}
-  	  {{ partial "head/tui-calendar.html" . }}
+  	  {{ partial "head/fullcalendar.html" . }}
   	</center>
   	</header>
   	
@@ -27,309 +27,140 @@
         </div>
     {{ end }}
     </center>
-    <div id="menu" class = "mt-4 mb-2 pr-4">
-        <span class="dropdown">
-            <button id="dropdownMenu-calendarType" class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="true">
-                <i id="calendarTypeIcon" class="calendar-icon ic_view_month" style="margin-right: 4px;"></i>
-                <span id="calendarTypeName">Dropdown</span>&nbsp;
-                <i class="calendar-icon tui-full-calendar-dropdown-arrow"></i>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu-calendarType">
-                <li role="presentation">
-                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-daily">
-                        <i class="calendar-icon ic_view_day"></i>Daily
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weekly">
-                        <i class="calendar-icon ic_view_week"></i>Weekly
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-monthly">
-                        <i class="calendar-icon ic_view_month"></i>Month
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks2">
-                        <i class="calendar-icon ic_view_week"></i>2 weeks
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a class="dropdown-menu-title" role="menuitem" data-action="toggle-weeks3">
-                        <i class="calendar-icon ic_view_week"></i>3 weeks
-                    </a>
-                </li>
-            </ul>
-        </span>
-        <span id="menu-navi">
-            <button type="button" class="btn btn-primary btn-sm move-today" data-action="move-today">Today</button>
-            <button type="button" class="btn btn-primary btn-sm move-day" data-action="move-prev">
-                <i class="fa fa-chevron-circle-left ic-arrow-line-left" data-action="move-prev"></i>
-            </button>
-            <button type="button" class="btn btn-primary btn-sm move-day" data-action="move-next">
-                <i class="fa fa-chevron-circle-right ic-arrow-line-right" data-action="move-next"></i>
-            </button>
-        </span>
-        <span id="renderRange" class="render-range"></span>
+   <div id='top'>
+
+  <div style='float:left'>
+    Timezone:
+    <select id='time-zone-selector'>
+<option value='America/Los_Angeles'>Los Angeles, Pacific Daylight Time (PDT)</option>
+<option value='utc'>Universal Time Coordinated (UTC)</option>
+<option value='Africa/Lagos'>Lagos, West Africa Time (WAT)</option>
+<option value='Europe/Zurich'>Zurich, Central European Summer Time (CEST)</option>   
+      <option value='Asia/Kolkata'>Mumbai, India Standard Time (IST)</option>
+<option value='Australia/Perth'>Perth, Australian West Standard Time (AWST)</option>
+
+    </select>
   </div>
+  <div style='float:right'>
+
+    <span id='loading'>loading...</span>
+
+  </div>
+
+  <div style='clear:both'></div>
+</div>
+ 
   <div id="calendar" style='width: 100%; height: 600px;'></div>
-  <small class="text-muted">If you are not seeing an events calendar, please disable your pop-up blockers or try in another browser.</small>
+  <small class="text-muted"></small>
   </article>
 {{ end }}
  
 {{ define "footer" }}
   <script type="text/javascript">
-    var window_width = document.documentElement.clientWidth;
-    ( async function(window, Calendar) {
-      'use strict';
-      var cal, resizeThrottled;
-      var datePicker, selectedCalendar;
-      
-      var cal = new tui.Calendar('#calendar', {
-        "view": "month", 
-        "defaultView": "month",
-        "taskView": false,
-        "scheduleView": true,
-        "useDetailPopup": true,
-        "useCreationPopup": false,
-        "month": {
-          "startDayOfWeek": 1, // monday
-        },
-        "week": {
-          "startDayOfWeek": 1, // monday
-        },
-        "isReadOnly": true,
-        "usageStatistics": false,
-        "useNav": true,
-        "theme": rladies_cal,
-        "calendars":  [
-          {{ range .Site.Data.chapters }}
-            {
-              id: {{ .id }},
-              name: {{ .name | default "rladies" }},
-              color: {{ .color | default "#fff" }},
-              bgColor: {{ .bgColor | default "#88398a" }},
-              borderColor: {{ .color | default "#88398a" }},
-            },
-          {{ end }}
-        ] 
-      });
-  
-      function cal_change_ww(size){
-        var viewName = "";
-        var options = cal.getOptions();
-        switch (true) {
-            case (size < 650):
-                viewName = 'day';
-                break;
-            case (size < 900):
-                viewName = 'week';
-                break;
-            case (size < 1200):
-                options.month.visibleWeeksCount = 2;
-                viewName = 'month';
-                break;
-        }
-        cal.setOptions(options, true);
-        cal.changeView(viewName, true);
-        setDropdownCalendarType();
-        setRenderRangeText();
-      }
-      
-      // event handlers
-      cal.on({
-          'clickMore': function(e) {
-              console.log('clickMore', e);
-          },
-          'clickSchedule': function(e) {
-              console.log('clickSchedule', e);
-          },
-          'clickDayname': function(date) {
-              console.log('clickDayname', date);
-          },
-          'afterRenderSchedule': function(e) {
-              var schedule = e.schedule;
-              // var element = cal.getElement(schedule.id, schedule.calendarId);
-              // console.log('afterRenderSchedule', element);
-          },
-          'clickTimezonesCollapseBtn': function(timezonesCollapsed) {
-              console.log('timezonesCollapsed', timezonesCollapsed);
-  
-              if (timezonesCollapsed) {
-                  cal.setTheme({
-                      'week.daygridLeft.width': '77px',
-                      'week.timegridLeft.width': '77px'
-                  });
-              } else {
-                  cal.setTheme({
-                      'week.daygridLeft.width': '60px',
-                      'week.timegridLeft.width': '60px'
-                  });
-              }
-  
-              return true;
-          }
-      });
-  
-      function onClickMenu(e) {
-          var target = $(e.target).closest('a[role="menuitem"]')[0];
-          var action = getDataAction(target);
-          var options = cal.getOptions();
-          var viewName = '';
-  
-          console.log(action);
-          switch (action) {
-              case 'toggle-daily':
-                  viewName = 'day';
-                  break;
-              case 'toggle-weekly':
-                  viewName = 'week';
-                  break;
-              case 'toggle-monthly':
-                  options.month.visibleWeeksCount = 0;
-                  viewName = 'month';
-                  break;
-              case 'toggle-weeks2':
-                  options.month.visibleWeeksCount = 2;
-                  viewName = 'month';
-                  break;
-              case 'toggle-weeks3':
-                  options.month.visibleWeeksCount = 3;
-                  viewName = 'month';
-                  break;
-              default:
-                  break;
-          }
-  
-          cal.setOptions(options, true);
-          cal.changeView(viewName, true);
-  
-          setDropdownCalendarType();
-          setRenderRangeText();
-      }
-  
-      function onClickNavi(e) {
-          var action = getDataAction(e.target);
-          console.log(action)
-          switch (action) {
-              case 'move-prev':
-                  cal.prev();
-                  break;
-              case 'move-next':
-                  cal.next();
-                  break;
-              case 'move-today':
-                  cal.today();
-                  break;
-              default:
-                  return;
-          }
-  
-          setRenderRangeText();
-      }
-  
-      function setDropdownCalendarType() {
-          var calendarTypeName = document.getElementById('calendarTypeName');
-          var calendarTypeIcon = document.getElementById('calendarTypeIcon');
-          var options = cal.getOptions();
-          var type = cal.getViewName();
-          var iconClassName;
-  
-          if (type === 'day') {
-              type = 'Daily';
-              iconClassName = 'calendar-icon ic_view_day';
-          } else if (type === 'week') {
-              type = 'Weekly';
-              iconClassName = 'calendar-icon ic_view_week';
-          } else if (options.month.visibleWeeksCount === 2) {
-              type = '2 weeks';
-              iconClassName = 'calendar-icon ic_view_week';
-          } else if (options.month.visibleWeeksCount === 3) {
-              type = '3 weeks';
-              iconClassName = 'calendar-icon ic_view_week';
-          } else {
-              type = 'Monthly';
-              iconClassName = 'calendar-icon ic_view_month';
-          }
-  
-          calendarTypeName.innerHTML = type;
-          calendarTypeIcon.className = iconClassName;
-      }
-  
-      function currentCalendarDate(format) {
-        var currentDate = moment([cal.getDate().getFullYear(), 
-        cal.getDate().getMonth(), 
-        cal.getDate().getDate()]);
-  
-        return currentDate.format(format);
-      }
-  
-      function setRenderRangeText() {
-          var renderRange = document.getElementById('renderRange');
-          var options = cal.getOptions();
-          var viewName = cal.getViewName();
-  
-          var html = [];
-          if (viewName === 'day') {
-              html.push(currentCalendarDate('YYYY.MM.DD'));
-          } else if (viewName === 'month' &&
-              (!options.month.visibleWeeksCount || options.month.visibleWeeksCount > 4)) {
-              html.push(currentCalendarDate('YYYY.MM'));
-          } else {
-              html.push(moment(cal.getDateRangeStart().getTime()).format('YYYY.MM.DD'));
-              html.push(' ~ ');
-              html.push(moment(cal.getDateRangeEnd().getTime()).format(' MM.DD'));
-          }
-          renderRange.innerHTML = html.join('');
-      }
-      
-      cal.createSchedules([
-          {{ $events := .Site.Data.events }}
-          {{ range $events }}
-          {
-              category: "time",
-              isReadOnly: true, 
-              dueDateClass: '',
-              
-              id: {{ .id }},
-              calendarId: {{ .calendarId }},
-              title: {{ .title }},
-              start: {{ .start }},
-              end: {{ .end }},
-              body: {{ .body }},
-              type: {{ .type }},
-              location: {{ .location | default "Not announced"}},
-              lat: {{ .lat }},
-              lon: {{ .lon }}
-          },
-          {{ end }}
-        ]); 
+   // var window_width = document.documentElement.clientWidth;
+  document.addEventListener('DOMContentLoaded', function() {
+  var timeZoneSelectorEl = document.getElementById('time-zone-selector');
+ timeZone = document.getElementById('time-zone-selector').value;
+  var loadingEl = document.getElementById('loading');
+  var calendarEl = document.getElementById('calendar');
+evnt = {
+                url: "https://raw.githubusercontent.com/rladies/website/main/data/events.json", //your url,
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    //based on the dropdown changetimezone of each event 
+//console.log(data);
 
-      function setEventListener() {
-          $('#menu-navi').on('click', onClickNavi);
-          $('.dropdown-menu a[role="menuitem"]').on('click', onClickMenu);
-          
-          window.addEventListener('resize', resizeThrottled);
-      }
-  
-      function getDataAction(target) {
-          return target.dataset ? target.dataset.action : target.getAttribute('data-action');
-      }
-  
-      resizeThrottled = tui.util.throttle(function() {
-          cal.render();
-      }, 50);
-  
-      window.cal = cal;
-  
-      setDropdownCalendarType();
-      setRenderRangeText();
-      // setSchedules();
-      setEventListener();
-      cal_change_ww(window_width);
+                    let updatedTime = [];
+                    $.each(data, function( k, v ) {
+v.start = moment.tz(v.start, timeZone).format();
+v.end = moment.tz(v.end, timeZone).format();
+                        updatedTime[k] = v ;
+                    });
+//console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
+                    return updatedTime;
+                }
+            };
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+    views: {
+    timeGridUseRWeek: {
+      type: 'timeGridWeek',
+      //duration: { days: 5 },
+visibleRange: {
+    start: '2019-12-17',
+    end: '2021-09-30'
+  },
+      buttonText: 'week'
+    }
+    },
+    headerToolbar: {
+      left: 'prev,next',
+      center: 'title',
+      right: 'dayGridMonth,timeGridUseRWeek,listWeek,timeGridDay'
+    },
+initialDate: '2021-01-04',
+titleFormat: { // will produce something like "Tuesday, September 18, 2018"
+    month: 'long',
+    year: 'numeric',
+    day: 'numeric'
+  },
+    initialView: 'dayGridMonth',
+height: "auto",
+        //slotDuration: "00:30:00",
+        //defaultTimedEventDuration: "00:30:00",
+    navLinks: true, // can click day/week names to navigate views
+    editable: true,
+    selectable: true,
+    dayMaxEvents: true, // allow "more" link when too many events
 
-    })(window, tui.Calendar);
+
+ eventDidMount: function(info) {
+      var tooltip = new Tooltip(info.el, {
+        title: info.event.extendedProps.description,
+        placement: 'top',
+        trigger: 'hover',
+        container: 'body'
+      });
+    },
+
+events: evnt,
+timeZone: timeZone,
+     
+    loading: function(bool) {
+      if (bool) {
+        loadingEl.style.display = 'inline'; // show
+      } else {
+        loadingEl.style.display = 'none'; // hide
+      }
+    },
+
+    eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }
+  });
+
+  calendar.render();  
+
+  // when the timezone selector changes, dynamically change the calendar option
+  timeZoneSelectorEl.addEventListener('change', function() {
+ timeZone = document.getElementById('time-zone-selector').value;
+
+var eventSource = [];
+                eventSource = calendar.getEventSources();
+                $.each(eventSource, function (key, value) {
+                    value.remove();
+                });
+                calendar.addEventSource(evnt);
+                calendar.refetchEvents(); 
+  });
+
+});
+
+var x = document.getElementById("time-zone-selector");
+  var option = document.createElement("option");
+option.id = "local"
+  option.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  option.innerText = "Local Time Zone";
+  x.add(option, x[0]);
+document.getElementById("local").selected = true; 
   </script>
 {{ end }}
