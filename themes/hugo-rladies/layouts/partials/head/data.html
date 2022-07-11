@@ -4,7 +4,7 @@
 {{ .Scratch.Set "globalteam" $.Site.Data.mentoring }}
 
 
-{{ if eq .Hugo.Environment "production" }}
+{{ if eq hugo.Environment "production" }}
   {{ .Scratch.Set "blogs" $.Site.Data.rblogs }}
   {{ .Scratch.Set "directory" $.Site.Data.directory }}
 {{ end }} 
