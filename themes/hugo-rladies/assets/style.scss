@@ -459,6 +459,20 @@ pre {
     font-size: $font-size-base * 1.75;
   }
 }
+.tooltip {
+  opacity: 1;
+  height: 300px; 
+  background: #e6a6e2;
+  overflow-y: auto;
+}
+
+.tooltip-inner {
+  width: 100%;
+  color: black;
+  text-align: center;
+  background-color: #e6a6e2;
+}
+
 /******************/
 /*    amcharts    */
 /******************/

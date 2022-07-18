@@ -29,13 +29,11 @@ white-space: wrap;
 .popper,
 .tooltip {
   position: absolute;
-  z-index: 9999;
-  background: #FFC107;
+  background: #e6a6e2;
   color: black;
-  width: 150px;
+  width: 300px;
   border-radius: 3px;
   box-shadow: 0 0 2px rgba(0,0,0,0.5);
-  padding: 10px;
   text-align: center;
 }
 .style5 .tooltip {
