@@ -28,8 +28,7 @@
     {{ end }}
     </center>
    <div id='top'>
-
-  <div style='float:left'>
+   <div style='float:left'>
     Timezone:
     <select id='time-zone-selector'>
 <option value='America/Los_Angeles'>Los Angeles, Pacific Daylight Time (PDT)</option>
@@ -82,7 +81,7 @@ v.end = moment.tz(v.end, timeZone).format();
                 }
             };
   var calendar = new FullCalendar.Calendar(calendarEl, {
-    schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+    //schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
     views: {
     timeGridUseRWeek: {
       type: 'timeGridWeek',
@@ -118,9 +117,10 @@ height: "auto",
  eventDidMount: function(info) {
       var tooltip = new Tooltip(info.el, {
         title: info.event.extendedProps.description,
-        placement: 'top',
+        placement: 'bottom',
         trigger: 'hover',
-        container: 'body'
+        container: 'article',
+		html: true
       });
     },
 
@@ -133,9 +133,9 @@ timeZone: timeZone,
       } else {
         loadingEl.style.display = 'none'; // hide
       }
-    },
+    }//,
 
-    eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }
+    //eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }
   });
 
   calendar.render();  
@@ -152,7 +152,6 @@ var eventSource = [];
                 calendar.addEventSource(evnt);
                 calendar.refetchEvents(); 
   });
-
 });
 
 var x = document.getElementById("time-zone-selector");
