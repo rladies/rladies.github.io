@@ -1,165 +1,164 @@
-
-{{ define "main" }}
-	{{ $update := .Site.Data.events_updated }}
-  <article class="post">
-  	<header class="entry-header">
-   		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
-   			<center>
-    	{{ range $update }}
-    	<small class="text-muted">Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}</small>
-    	{{ end }}
-  	  {{ partial "head/fullcalendar.html" . }}
-  	</center>
-  	</header>
-  	
-    <div class="entry-content">
-  		{{ .Content }}
-  	</div>
-  	{{ range $update }}
-  	<center>
-        <div class="card col-3text-center b-rladies">
-          <div class="card-header card-header-rladies">
-            Succesfully run events
-          </div>
-          <div class="card-body">
-            <h2 class="card-title">{{ .n_events_past }}</h2>
-          </div>
-        </div>
-    {{ end }}
+{{ define "main" }} {{ $update := .Site.Data.events_updated }}
+<article class="post">
+  <header class="entry-header">
+    <h1 class="entry-title">
+      <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
+    </h1>
+    <center>
+      {{ range $update }}
+      <small class="text-muted"
+        >Events were last updated on {{ dateFormat "January 2, 2006 15:04:05"
+        .date }}</small
+      >
+      {{ end }} {{ partial "head/fullcalendar.html" . }}
     </center>
-   <div id='top'>
-   <div style='float:left'>
-    Timezone:
-    <select id='time-zone-selector'>
-<option value='America/Los_Angeles'>Los Angeles, Pacific Daylight Time (PDT)</option>
-<option value='utc'>Universal Time Coordinated (UTC)</option>
-<option value='Africa/Lagos'>Lagos, West Africa Time (WAT)</option>
-<option value='Europe/Zurich'>Zurich, Central European Summer Time (CEST)</option>   
-      <option value='Asia/Kolkata'>Mumbai, India Standard Time (IST)</option>
-<option value='Australia/Perth'>Perth, Australian West Standard Time (AWST)</option>
+  </header>
 
-    </select>
+  <div class="entry-content">{{ .Content }}</div>
+  {{ range $update }}
+  <center>
+    <div class="card col-3text-center b-rladies">
+      <div class="card-header card-header-rladies">Succesfully run events</div>
+      <div class="card-body">
+        <h2 class="card-title">{{ .n_events_past }}</h2>
+      </div>
+    </div>
+    {{ end }}
+  </center>
+  <div id="top">
+    <div style="float: left">
+      Timezone:
+      <select id="time-zone-selector">
+        <option value="America/Los_Angeles">
+          Los Angeles, Pacific Daylight Time (PDT)
+        </option>
+        <option value="utc">Universal Time Coordinated (UTC)</option>
+        <option value="Africa/Lagos">Lagos, West Africa Time (WAT)</option>
+        <option value="Europe/Zurich">
+          Zurich, Central European Summer Time (CEST)
+        </option>
+        <option value="Asia/Kolkata">Mumbai, India Standard Time (IST)</option>
+        <option value="Australia/Perth">
+          Perth, Australian West Standard Time (AWST)
+        </option>
+      </select>
+    </div>
+    <div style="float: right">
+      <span id="loading">loading...</span>
+    </div>
+
+    <div style="clear: both"></div>
   </div>
-  <div style='float:right'>
 
-    <span id='loading'>loading...</span>
-
-  </div>
-
-  <div style='clear:both'></div>
-</div>
- 
-  <div id="calendar" style='width: 100%; height: 600px;'></div>
+  <div id="calendar" style="width: 100%; height: 600px"></div>
   <small class="text-muted"></small>
-  </article>
-{{ end }}
- 
-{{ define "footer" }}
-  <script type="text/javascript">
-   // var window_width = document.documentElement.clientWidth;
-  document.addEventListener('DOMContentLoaded', function() {
-  var timeZoneSelectorEl = document.getElementById('time-zone-selector');
- timeZone = document.getElementById('time-zone-selector').value;
-  var loadingEl = document.getElementById('loading');
-  var calendarEl = document.getElementById('calendar');
-evnt = {
-                url: "https://raw.githubusercontent.com/rladies/website/main/data/events.json", //your url,
-                type: "GET",
-                dataType: "json",
-                success: function (data) {
-                    //based on the dropdown changetimezone of each event 
-//console.log(data);
+</article>
+{{ end }} {{ define "footer" }}
+<script type="text/javascript">
+  // var window_width = document.documentElement.clientWidth;
+  document.addEventListener("DOMContentLoaded", function () {
+    var timeZoneSelectorEl = document.getElementById("time-zone-selector");
+    timeZone = document.getElementById("time-zone-selector").value;
+    var loadingEl = document.getElementById("loading");
+    var calendarEl = document.getElementById("calendar");
+    evnt = {
+      url: "https://raw.githubusercontent.com/rladies/website/main/data/events.json", //your url,
+      type: "GET",
+      dataType: "json",
+      success: function (data) {
+        //based on the dropdown changetimezone of each event
+        //console.log(data);
 
-                    let updatedTime = [];
-                    $.each(data, function( k, v ) {
-v.start = moment.tz(v.start, timeZone).format();
-v.end = moment.tz(v.end, timeZone).format();
-                        updatedTime[k] = v ;
-                    });
-//console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
-                    return updatedTime;
-                }
-            };
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    //schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
-    views: {
-    timeGridUseRWeek: {
-      type: 'timeGridWeek',
-      //duration: { days: 5 },
-visibleRange: {
-    start: '2019-12-17',
-    end: '2021-09-30'
-  },
-      buttonText: 'week'
-    }
-    },
-    headerToolbar: {
-      left: 'prev,next',
-      center: 'title',
-      right: 'dayGridMonth,timeGridUseRWeek,listWeek,timeGridDay'
-    },
-initialDate: '2021-01-04',
-titleFormat: { // will produce something like "Tuesday, September 18, 2018"
-    month: 'long',
-    year: 'numeric',
-    day: 'numeric'
-  },
-    initialView: 'dayGridMonth',
-height: "auto",
-        //slotDuration: "00:30:00",
-        //defaultTimedEventDuration: "00:30:00",
-    navLinks: true, // can click day/week names to navigate views
-    editable: true,
-    selectable: true,
-    dayMaxEvents: true, // allow "more" link when too many events
+        let updatedTime = [];
+        $.each(data, function (k, v) {
+          v.start = moment.tz(v.start, timeZone).format();
+          v.end = moment.tz(v.end, timeZone).format();
+          updatedTime[k] = v;
+        });
+        //console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
+        return updatedTime;
+      },
+    };
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      //schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+      views: {
+        timeGridUseRWeek: {
+          type: "timeGridWeek",
+          //duration: { days: 5 },
+          visibleRange: {
+            start: "2019-12-17",
+            end: "2021-09-30",
+          },
+          buttonText: "week",
+        },
+      },
+      headerToolbar: {
+        left: "prev,next",
+        center: "title",
+        right: "dayGridMonth,timeGridUseRWeek,listWeek,timeGridDay",
+      },
+      initialDate: "2021-01-04",
+      titleFormat: {
+        // will produce something like "Tuesday, September 18, 2018"
+        month: "long",
+        year: "numeric",
+        day: "numeric",
+      },
+      initialView: "dayGridMonth",
+      height: "auto",
+      //slotDuration: "00:30:00",
+      //defaultTimedEventDuration: "00:30:00",
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      selectable: true,
+      dayMaxEvents: true, // allow "more" link when too many events
 
+      eventDidMount: function (info) {
+        var tooltip = new Tooltip(info.el, {
+          title: info.event.extendedProps.description,
+          placement: "bottom",
+          trigger: "hover",
+          container: "article",
+          html: true,
+        });
+      },
 
- eventDidMount: function(info) {
-      var tooltip = new Tooltip(info.el, {
-        title: info.event.extendedProps.description,
-        placement: 'bottom',
-        trigger: 'hover',
-        container: 'article',
-		html: true
+      events: evnt,
+      timeZone: timeZone,
+
+      loading: function (bool) {
+        if (bool) {
+          loadingEl.style.display = "inline"; // show
+        } else {
+          loadingEl.style.display = "none"; // hide
+        }
+      }, //,
+
+      //eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }
+    });
+
+    calendar.render();
+
+    // when the timezone selector changes, dynamically change the calendar option
+    timeZoneSelectorEl.addEventListener("change", function () {
+      timeZone = document.getElementById("time-zone-selector").value;
+
+      var eventSource = [];
+      eventSource = calendar.getEventSources();
+      $.each(eventSource, function (key, value) {
+        value.remove();
       });
-    },
-
-events: evnt,
-timeZone: timeZone,
-     
-    loading: function(bool) {
-      if (bool) {
-        loadingEl.style.display = 'inline'; // show
-      } else {
-        loadingEl.style.display = 'none'; // hide
-      }
-    }//,
-
-    //eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }
+      calendar.addEventSource(evnt);
+      calendar.refetchEvents();
+    });
   });
 
-  calendar.render();  
-
-  // when the timezone selector changes, dynamically change the calendar option
-  timeZoneSelectorEl.addEventListener('change', function() {
- timeZone = document.getElementById('time-zone-selector').value;
-
-var eventSource = [];
-                eventSource = calendar.getEventSources();
-                $.each(eventSource, function (key, value) {
-                    value.remove();
-                });
-                calendar.addEventSource(evnt);
-                calendar.refetchEvents(); 
-  });
-});
-
-var x = document.getElementById("time-zone-selector");
+  var x = document.getElementById("time-zone-selector");
   var option = document.createElement("option");
-option.id = "local"
+  option.id = "local";
   option.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
   option.innerText = "Local Time Zone";
   x.add(option, x[0]);
-document.getElementById("local").selected = true; 
-  </script>
+  document.getElementById("local").selected = true;
+</script>
 {{ end }}
