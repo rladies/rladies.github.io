@@ -55,7 +55,6 @@
 </article>
 {{ end }} {{ define "footer" }}
 <script type="text/javascript">
-  // var window_width = document.documentElement.clientWidth;
   document.addEventListener("DOMContentLoaded", function () {
     var timeZoneSelectorEl = document.getElementById("time-zone-selector");
     timeZone = document.getElementById("time-zone-selector").value;
@@ -70,27 +69,14 @@
           v.end = moment.tz(v.end, timeZone).format();
           updatedTime[k] = v;
         });
-        //console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
         return updatedTime;
       }
 	 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      //schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
-      views: {
-        timeGridUseRWeek: {
-          type: "timeGridWeek",
-          //duration: { days: 5 },
-          visibleRange: {
-            start: "2019-12-17",
-            end: "2021-09-30",
-          },
-          buttonText: "week",
-        },
-      },
       headerToolbar: {
         left: "prev,next",
         center: "title",
-        right: "dayGridMonth,timeGridUseRWeek,listWeek,timeGridDay",
+        right: "dayGridMonth,listWeek,timeGridDay",
       },
       initialDate: moment().format("YYYY-MM-DD"),
       titleFormat: {
@@ -101,11 +87,6 @@
       },
       initialView: "listWeek",
       height: "auto",
-      //slotDuration: "00:30:00",
-      //defaultTimedEventDuration: "00:30:00",
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      selectable: true,
       dayMaxEvents: true, // allow "more" link when too many events
 
       eventDidMount: function (info) {
@@ -127,9 +108,7 @@
         } else {
           loadingEl.style.display = "none"; // hide
         }
-      }, //,
-
-      //eventTimeFormat: { hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }
+      }
     });
 
     calendar.render();
