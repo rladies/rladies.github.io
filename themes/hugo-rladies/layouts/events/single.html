@@ -61,14 +61,9 @@
     timeZone = document.getElementById("time-zone-selector").value;
     var loadingEl = document.getElementById("loading");
     var calendarEl = document.getElementById("calendar");
-    evnt = {
-      url: "https://raw.githubusercontent.com/rladies/website/main/data/events.json", //your url,
-      type: "GET",
-      dataType: "json",
-      success: function (data) {
-        //based on the dropdown changetimezone of each event
-        //console.log(data);
-
+	var events = {{ $.Site.Data.events }}
+	
+      function getRladiesEvents(data) {
         let updatedTime = [];
         $.each(data, function (k, v) {
           v.start = moment.tz(v.start, timeZone).format();
@@ -77,8 +72,8 @@
         });
         //console.log(Intl.DateTimeFormat().resolvedOptions().timeZone);
         return updatedTime;
-      },
-    };
+      }
+	 
     var calendar = new FullCalendar.Calendar(calendarEl, {
       //schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
       views: {
@@ -123,7 +118,7 @@
         });
       },
 
-      events: evnt,
+      events: getRladiesEvents(events),
       timeZone: timeZone,
 
       loading: function (bool) {
