@@ -488,8 +488,32 @@ pre {
 /* fullcalendar   */
 /******************/
 .fc .fc-list-event-dot {
-  border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,#ad37d8);
-  background-color: #ad37d8;
+  border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
+  background-color: $primary;
+}
+
+.fc-daygrid-event-dot {
+  border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
+  background-color: $primary;
+}
+
+.fc-v-event .fc-event-main {
+  background: $primary;
+}
+
+.fc-h-event .fc-event-main {
+  background-color: $primary;
+}
+
+.fc-h-event {
+  border: 0px;
+}
+.fc-v-event {
+  border: 0px;
+}
+
+.fc .fc-daygrid-event-harness-abs {
+  background-color: $primary;
 }
 
 #loading {
@@ -498,8 +522,8 @@ pre {
 
 .fc-event-time, .fc-event-title {
   font-size: 12px;
-padding: 0 1px;
-white-space: wrap;
+  padding: 0 1px;
+  white-space: wrap;
 }
 
 .tzo {
@@ -508,11 +532,12 @@ white-space: wrap;
 
 .tooltip {
   opacity: 1;
-  height: 300px; 
-  overflow-y: auto;
+  height: auto; 
+  overflow-y: hidden;
 }
 
 .tooltip-inner {
+  max-width: 300px !important;
   width: 100%;
   color: black;
   text-align: center;
@@ -524,7 +549,7 @@ white-space: wrap;
   position: absolute;
   background: #fff;
   color: black;
-  width: 300px;
+  width: auto;
   border-radius: 3px;
   box-shadow: 0 0 2px rgba(0,0,0,0.5);
   text-align: center;
@@ -532,7 +557,7 @@ white-space: wrap;
 .style5 .tooltip {
   background: #1E252B;
   color: #FFFFFF;
-  max-width: 200px;
+  max-width: 300px;
   width: auto;
   font-size: .8rem;
   padding: .5em 1em;
