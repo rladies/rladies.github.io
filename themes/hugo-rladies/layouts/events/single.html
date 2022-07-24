@@ -75,7 +75,7 @@
 	  headerToolbar: {
         left: "prev,next",
         center: "title",
-        right: "dayGridMonth,listWeek,timeGridDay",
+        right: "dayGridMonth,timeGridWeek,listWeek,timeGridDay",
       },
       initialDate: moment().format("YYYY-MM-DD"),
       titleFormat: {
@@ -107,7 +107,9 @@
         } else {
           loadingEl.style.display = "none"; // hide
         }
-      }
+      },
+	  
+	  eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false}
     });
 
     calendar.render();
