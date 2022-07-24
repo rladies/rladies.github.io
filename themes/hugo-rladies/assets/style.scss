@@ -487,6 +487,9 @@ pre {
 /******************/
 /* fullcalendar   */
 /******************/
+.fc .fc-toolbar-title {
+	font-size: 1.20em;
+}
 .fc .fc-list-event-dot {
   border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
   background-color: $primary;
