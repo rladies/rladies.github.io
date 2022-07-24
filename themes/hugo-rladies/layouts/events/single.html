@@ -68,7 +68,7 @@
         });
         return updatedTime;
       }
-	 
+
     var calendar = new FullCalendar.Calendar(calendarEl, {
 	themeSystem: 'bootstrap',
 	schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
@@ -123,7 +123,7 @@
       $.each(eventSource, function (key, value) {
         value.remove();
       });
-      calendar.addEventSource(evnt);
+      calendar.addEventSource(getRladiesEvents(events));
       calendar.refetchEvents();
     });
   });
