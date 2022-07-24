@@ -25,10 +25,8 @@
     </div>
     {{ end }}
   </center>
-  <div id="top">
-    <div style="float: left">
-      Timezone:
-      <select id="time-zone-selector">
+  <div class="my-4">
+      Timezone: <select id="time-zone-selector" class="form-select" aria-label="Timezone">
         <option value="America/Los_Angeles">
           Los Angeles, Pacific Daylight Time (PDT)
         </option>
@@ -42,13 +40,12 @@
           Perth, Australian West Standard Time (AWST)
         </option>
       </select>
-    </div>
+  </div>
     <div style="float: right">
       <span id="loading">loading...</span>
     </div>
 
     <div style="clear: both"></div>
-  </div>
 
   <div id="calendar" class="w-100 h-600 my-4"></div>
   <small class="text-muted"></small>
@@ -73,7 +70,8 @@
       }
 	 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-      headerToolbar: {
+	schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+	  headerToolbar: {
         left: "prev,next",
         center: "title",
         right: "dayGridMonth,listWeek,timeGridDay",
