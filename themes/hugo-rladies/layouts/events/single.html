@@ -27,18 +27,9 @@
   </center>
   <div class="my-4">
       Timezone: <select id="time-zone-selector" class="form-select" aria-label="Timezone">
-        <option value="America/Los_Angeles">
-          Los Angeles, Pacific Daylight Time (PDT)
-        </option>
+        
         <option value="utc">Universal Time Coordinated (UTC)</option>
-        <option value="Africa/Lagos">Lagos, West Africa Time (WAT)</option>
-        <option value="Europe/Zurich">
-          Zurich, Central European Summer Time (CEST)
-        </option>
-        <option value="Asia/Kolkata">Mumbai, India Standard Time (IST)</option>
-        <option value="Australia/Perth">
-          Perth, Australian West Standard Time (AWST)
-        </option>
+        
       </select>
   </div>
     <div  class="float-right">
@@ -58,7 +49,18 @@
     var loadingEl = document.getElementById("loading");
     var calendarEl = document.getElementById("calendar");
 	var events = {{ $.Site.Data.events }}
-	
+	var timezone_list = {{ $.Site.Data.timezones }}
+
+	timezone_list.forEach(function(timeZone) {
+      var optionEl;
+
+      if (timeZone !== 'UTC') { // UTC is already in the list
+        optionEl = document.createElement('option');
+        optionEl.value = timeZone;
+        optionEl.innerText = timeZone;
+        timeZoneSelectorEl.appendChild(optionEl);
+      }
+    });
       function getRladiesEvents(data) {
         let updatedTime = [];
         $.each(data, function (k, v) {
@@ -75,7 +77,7 @@
 	  headerToolbar: {
         left: "prev,next",
         center: "title",
-        right: "dayGridMonth,timeGridWeek,listWeek,timeGridDay",
+        right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
       },
       initialDate: moment().format("YYYY-MM-DD"),
       titleFormat: {
