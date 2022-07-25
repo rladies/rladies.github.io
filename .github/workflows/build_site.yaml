@@ -91,12 +91,12 @@ jobs:
       - name: Install packages
         run: |
           options(repos = c(
-            rladies = 'https://rladies.r-universe.dev',
+            rladies = 'https://rladies.r-universe.dev', #untill we get meetupr on cran
             CRAN = 'https://cloud.r-project.org'))
   
           install.packages(c("remotes","tidyr", "dplyr", "lubridate",
                              "cyphr", "sodium", "here", "jsonlite"), Ncpus = 2)
-          remotes::install_github("rladies/meetupr", ref = "return_null")
+          remotes::install_github("rladies/meetupr", ref = "return_null") #only needed untill that branch is merged.
 
         shell: Rscript {0}
           
