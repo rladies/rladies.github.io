@@ -96,7 +96,8 @@ jobs:
   
           install.packages(c("remotes","tidyr", "dplyr", "lubridate",
                              "cyphr", "sodium", "here", "jsonlite"), Ncpus = 2)
-          remotes::install_github("rladies/meetupr", ref = "return_null") #only needed untill that branch is merged.
+          #only needed untill that branch is merged.
+          remotes::install_github("rladies/meetupr", ref = "return_null", auth_token = "${{ secrets.GITHUB_TOKEN }}")
 
         shell: Rscript {0}
           
