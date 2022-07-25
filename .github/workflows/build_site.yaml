@@ -12,6 +12,8 @@ on:
     - cron: "0 */12 * * *"
 
 jobs:
+  env:
+    GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
   vars:
     name: Get job variables
     runs-on: macOS-latest
