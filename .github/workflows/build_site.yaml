@@ -91,8 +91,10 @@ jobs:
             rladies = 'https://rladies.r-universe.dev',
             CRAN = 'https://cloud.r-project.org'))
   
-          install.packages(c("meetupr","tidyr", "dplyr", "purrr", "lubridate",
+          install.packages(c("remotes","tidyr", "dplyr", "lubridate",
                              "cyphr", "sodium", "here", "jsonlite"), Ncpus = 2)
+          remotes::install_github("rladies/meetupr", ref = "return_null")
+
         shell: Rscript {0}
           
       - name: Meetup authentication
