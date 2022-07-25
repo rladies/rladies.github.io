@@ -7,11 +7,10 @@ pkgs <- sapply(c("meetupr","tidyr", "dplyr", "lubridate"),
 get_events_pb <- function(x){
   cat(x , sep="\n")
   k <- get_events(x)
-  k$urlname <- x
   if(!is.null(k)){
     k$id <- as.character(k$id)
-    k$chapter_id <- as.character(k$chapter_id)
   }
+  k$urlname <- x
   k
 }
 
@@ -34,7 +33,7 @@ rladies_groups <- jsonlite::read_json(
 
 cat("\n\n Downloading chapter events\n")
 new_events <- lapply(rladies_groups$urlname, get_events_pb) 
-new_events <-  new_events |> 
+new_events_df <-  new_events |> 
   bind_rows() |> 
   filter(status %in% c("published"))
 
@@ -43,11 +42,12 @@ existing_events <- jsonlite::read_json(
   here::here("data/events.json"), 
   simplifyVector = TRUE
 ) |> 
-  filter(!id %in% new_events$id)
+  filter(!id %in% new_events$id) |> 
+  mutate(chapter_id = as.character(chapter_id))
 
 
 # Create df for json
-events <- new_events |> 
+events <- new_events_df |> 
   left_join(rladies_groups) |>
   transmute(
     id,
@@ -60,7 +60,7 @@ events <- new_events |>
       substr(description, 1, 300),
       link),
     start = as.character(force_tz(time, "UTC")),
-    ds = lubridate::as.duration(new_events$duration), 
+    ds = lubridate::as.duration(duration), 
     end = as.character(time + (ds %||% lubridate::dhours(2))),
     date = format(new_events$time, "%Y-%m-%d"),
     location = ifelse(
