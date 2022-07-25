@@ -18,18 +18,20 @@
     {{ block "fastsearch" .}}
     {{ end }}
    
-    <main id="main">
-      <div class="container col-md-8 offset-md-2">
-     			{{ if eq .Params.translated false }}
-            <div class="not-translated" lang="{{ .Lang }}">
-               {{ i18n "missing_translation" }}
-             </div>
-          {{ end }}
-          
-          {{ block "main" . }}
-          {{ end }}
-    	</div>	<!-- /container -->
-    </main>
+    <main id="main" class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-xs-12" style='margin: 0 auto'>
+       			{{ if eq .Params.translated false }}
+              <div class="not-translated" lang="{{ .Lang }}">
+                 {{ i18n "missing_translation" }}
+               </div>
+            {{ end }}
+            
+            {{ block "main" . }}
+            {{ end }}
+      	</div>	
+    	</div>
+    </main> <!-- /container -->
   
     <div class="container col-md-8 offset-md-2">
       <center>

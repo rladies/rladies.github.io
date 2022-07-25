@@ -459,6 +459,8 @@ pre {
     font-size: $font-size-base * 1.75;
   }
 }
+
+
 /******************/
 /*    amcharts    */
 /******************/
@@ -479,4 +481,174 @@ pre {
 
 .card-home {
   max-height: 100px;
+}
+
+
+/******************/
+/* fullcalendar   */
+/******************/
+.fc .fc-toolbar-title {
+	font-size: 1.6em !important; 
+}
+.fc .fc-list-event-dot {
+  border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
+  background-color: $primary;
+}
+
+.fc-daygrid-event-dot {
+  border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
+  background-color: $primary;
+}
+
+.fc-v-event .fc-event-main {
+  background: $primary;
+}
+
+.fc-h-event .fc-event-main {
+  background-color: $primary;
+}
+
+.fc-h-event {
+  border: 0px;
+}
+.fc-v-event {
+  border: 0px;
+}
+
+.fc-dayGridMonth-view .fc-day-today,
+.fc-timeGridWeek-view .fc-day-today {
+    background: lighten($primary, 55%) !important;
+    border: none !important;
+} 
+
+.fc-timeGridDay-view .fc-day-today{
+    background: none !important;
+    border: none !important;
+} 
+
+#loading {
+  display: none;
+}
+
+.fc-event-time, .fc-event-title {
+  font-size: 12px;
+  padding: 0 1px;
+  white-space: wrap;
+}
+
+tr.fc-list-event {
+  color: #555658;;
+}
+
+.tzo {
+  color: #000;
+}
+
+.tooltip {
+  opacity: 1;
+  height: auto; 
+  overflow-y: hidden;
+}
+
+.tooltip-inner {
+  max-width: 300px !important;
+  width: 100%;
+  color: black;
+  text-align: center;
+  background-color: #fff;
+}
+
+.popper,
+.tooltip {
+  position: absolute;
+  background: #fff;
+  color: black;
+  width: auto;
+  border-radius: 3px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  text-align: center;
+}
+.style5 .tooltip {
+  background: #1E252B;
+  color: #FFFFFF;
+  max-width: 300px;
+  width: auto;
+  font-size: .8rem;
+  padding: .5em 1em;
+}
+.popper .popper__arrow,
+.tooltip .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.tooltip .tooltip-arrow,
+.popper .popper__arrow {
+  border-color: #FFC107;
+}
+.style5 .tooltip .tooltip-arrow {
+  border-color: #1E252B;
+}
+.popper[x-placement^="top"],
+.tooltip[x-placement^="top"] {
+  margin-bottom: 5px;
+}
+.popper[x-placement^="top"] .popper__arrow,
+.tooltip[x-placement^="top"] .tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.popper[x-placement^="bottom"],
+.tooltip[x-placement^="bottom"] {
+  margin-top: 5px;
+}
+.tooltip[x-placement^="bottom"] .tooltip-arrow,
+.popper[x-placement^="bottom"] .popper__arrow {
+  border-width: 0 5px 5px 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tooltip[x-placement^="right"],
+.popper[x-placement^="right"] {
+  margin-left: 5px;
+}
+.popper[x-placement^="right"] .popper__arrow,
+.tooltip[x-placement^="right"] .tooltip-arrow {
+  border-width: 5px 5px 5px 0;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+.popper[x-placement^="left"],
+.tooltip[x-placement^="left"] {
+  margin-right: 5px;
+}
+.popper[x-placement^="left"] .popper__arrow,
+.tooltip[x-placement^="left"] .tooltip-arrow {
+  border-width: 5px 0 5px 5px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
 }

@@ -9,9 +9,7 @@
 <link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
 
 <!-- TUI calendar css-->  
-<link rel="stylesheet" href="{{ "css/tui-calendar.min.css" | relURL }}" />
-<link rel="stylesheet" type="text/css" href="{{ "css/tui-date-picker.min.css"| relURL }}" />
-<link rel="stylesheet" type="text/css" href="{{ "css/tui-time-picker.min.css"| relURL }}" />
+<link rel="stylesheet" href="{{ "css/fullcalendar.min.css" | relURL }}" />
 
 <!-- website css -->
 {{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
