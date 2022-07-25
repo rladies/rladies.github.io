@@ -10,6 +10,7 @@ get_events_pb <- function(x){
   k$urlname <- x
   if(!is.null(k)){
     k$id <- as.character(k$id)
+    k$chapter_id <- as.character(k$chapter_id)
   }
   k
 }
