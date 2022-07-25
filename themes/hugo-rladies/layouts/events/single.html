@@ -25,12 +25,15 @@
     </div>
     {{ end }}
   </center>
-  <div class="my-4">
-      Timezone: <select id="time-zone-selector" class="form-select" aria-label="Timezone">
-        
-        <option value="utc">Universal Time Coordinated (UTC)</option>
-        
-      </select>
+  <div class="row my-4 g-3 align-items-center">
+      <div class="col-auto">
+        <label for="time-zone-selector" class="col-form-label">Timezone</label>
+      </div>
+      <div class="col-auto">
+        <select id="time-zone-selector" class="form-select" aria-label="Timezone">
+          <option value="utc">Universal Time Coordinated (UTC)</option>
+        </select>
+      </div>
   </div>
     <div  class="float-right">
       <span id="loading">loading...</span>
@@ -72,8 +75,8 @@
       }
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-	themeSystem: 'bootstrap',
-	schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+  	themeSystem: 'bootstrap',
+  	schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
 	  headerToolbar: {
         left: "prev,next",
         center: "title",
