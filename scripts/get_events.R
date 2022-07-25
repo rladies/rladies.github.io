@@ -6,7 +6,8 @@ pkgs <- sapply(c("meetupr","tidyr", "dplyr", "lubridate"),
 # grab upcoming events
 get_events_pb <- function(x){
   cat(x , sep="\n")
-  k <- get_events(x)
+  k <- get_events(x) |> 
+    mutate(id = as.character(id))
   k$urlname <- x
   k
 }
