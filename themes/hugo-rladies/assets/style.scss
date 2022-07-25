@@ -488,7 +488,7 @@ pre {
 /* fullcalendar   */
 /******************/
 .fc .fc-toolbar-title {
-	font-size: 1.20em;
+	font-size: 1.6em !important; 
 }
 .fc .fc-list-event-dot {
   border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
@@ -515,9 +515,16 @@ pre {
   border: 0px;
 }
 
-.fc .fc-daygrid-event-harness-abs {
-  background-color: $primary;
-}
+.fc-dayGridMonth-view .fc-day-today,
+.fc-timeGridWeek-view .fc-day-today {
+    background: lighten($primary, 55%) !important;
+    border: none !important;
+} 
+
+.fc-timeGridDay-view .fc-day-today{
+    background: none !important;
+    border: none !important;
+} 
 
 #loading {
   display: none;

@@ -17,20 +17,20 @@
   <div class="entry-content">{{ .Content }}</div>
   {{ range $update }}
   <center>
-    <div class="row my-4 w-100">
-      <div class="col-12 border border-primary rounded-top">
-        <div class="bg-primary text-white p-2 w-100">Succesfully run events</div>
-        <h2 class="my-2 card-title">{{ .n_events_past }}</h2>
+    <div class="row">
+      <div class="col-12 border border-primary rounded bg-primary text-white ">
+        <h2 class="entry-title p-2 w-100 text-white">Succesfully run events</h2>
+        <h4 class="my-2">{{ .n_events_past }}</h4>
       </div>
     </div>
     {{ end }}
   </center>
-  <div class="row my-4 w-100">
-      <div class="col-auto">
+  <div class="row my-4 w-100 align-items-center justify-content-between">
+      <div class="col-6 col-md-4">
         <label for="time-zone-selector" class="col-form-label">Timezone</label>
       </div>
-      <div class="col-10">
-        <select id="time-zone-selector" class="form-select" aria-label="Timezone">
+      <div class="col-12 col-md-8">
+        <select id="time-zone-selector" class="form-select w-100" aria-label="Timezone">
           <option value="utc">Universal Time Coordinated (UTC)</option>
         </select>
       </div>
@@ -145,11 +145,8 @@
   // add the responsive classes after page initialization
   window.onload = function () {
       $('.fc-toolbar.fc-header-toolbar').addClass('row col-xlg-12');
+      $('.fc-toolbar-title').addClass('entry-title');
   };
   
-  // add the responsive classes when navigating with calendar buttons
-  $(document).on('click', '.fc-button', function(e) {
-      $('.fc-toolbar.fc-header-toolbar').addClass('row col-xlg-12');
-  });
 </script>
 {{ end }}
