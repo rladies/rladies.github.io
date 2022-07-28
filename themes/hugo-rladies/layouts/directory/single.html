@@ -39,8 +39,14 @@
 {{ end }}
 
 {{ define  "footer" }}
+{{ if eq hugo.Environment "production" }}
+  {{ .Scratch.Set "n_page_directory" 25}}
+{{ else }}
+  {{ .Scratch.Set "n_page_directory" 5}}
+{{ end }} 
+
 	<script>
-    var perPage = 25;
+    var perPage = {{  ( .Scratch.Get "n_page_directory" ) }};
   	(async function(){
       var directoryList = new List('directory-content', {
         valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],

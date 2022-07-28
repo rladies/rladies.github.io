@@ -1,0 +1,26 @@
+{
+    "name": "Jane Doe",
+    "honorific": "",
+    "categories": [],
+    "title": "Data afficionado",
+    "organization": "",
+    "department": "",
+    "notes": "",
+    "photo_url": "",
+    "logo_url": "",
+    "location": [
+      {"city": "Tokyo",
+       "country": "Japan"
+      }
+    ],
+    "social_media": [
+      {}
+    ],
+    "interests": [],
+    "contact_method": [],
+    "activities": [
+      {}
+    ],
+    "last_updated": "2021-01-01"
+  }
+  
