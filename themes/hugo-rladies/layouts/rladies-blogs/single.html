@@ -10,38 +10,39 @@
  			</div>
  			<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
 		</header>
-		<div class="entry-content">
+		<div class="entry-content py-5 ">
 			{{ .Content }}
-        <div class="row justify-content-center row-cols-2 row-cols-sm-3 row-cols-lg-4" id="rladies-blogs">
+        <div class="row full-width " id="rladies-blogs">
           {{ $blogs := ( .Scratch.Get "blogs" ) }}
-            {{ range $blogs }}    
-              <div class="card card-blogs">
-                <a href="{{ .url }}">
-                  <div class="embed-responsive embed-responsive-4by3">
-                    <img class="card-img-top embed-responsive-item" src="{{ .photo_url }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
+          {{ range $blogs }}    
+          <a href="{{ .url }}" id="{{ .url }}">
+            <div class="col-sm-12 col-lg-6">
+              {{ $image := resources.GetRemote .photo_url }}
+              {{ $image := $image.Fill "600x600" }}
+              <div class="card h-100 hover hover-4 text-white rounded">
+                <img src="{{ $image.RelPermalink }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
+                <div class="hover-overlay"></div>
+                <div class="hover-4-content">
+                  <h3 class="hover-4-title mb-0">{{ .title }}</h3>
+                  {{ with .subtitle }}
+                    <p class="hover-4-subtitle font-weight-light">{{ . }}</p>
+                  {{ end }}
+                  {{ range .authors }}
+                    <p class="hover-4-description mb-0 small">
+                      {{ .name }}
+                      <span>
+                        {{ range first 3 .social_media }}
+                          {{ partial "some.html" .}}
+                        {{ end }}
+                      </span>
+                    </p>
+                  {{ end }}
                   </div>
-                  <div class="card-body card-img-overlay card-img-transp">
-                    <h3 class="card-title text-white">
-                      {{ .title }}
-                      {{ with .subtitle }}
-                        <i><small class="text-white">
-                          <br>{{ . }}
-                        </small></i>{{ end }}
-                    </h3>
-                    <div class="card-text text-rladies-light  align-bottom">
-                      {{ range .authors }}
-                        <p class="text-white text-rladies-light">
-                          {{ .name }}
-                          {{ range first 3 .social_media }}
-                            {{ partial "some.html" .}}
-                          {{ end }}
-                        </p>
-                      {{ end }}
-                    </div>
-                  </div>
-                </a>
+                </div>
               </div>
-            {{ end }}
+            </a>
+            </div>
+          {{ end }}
         </div>
       </div>
 	</article><!-- #post-## -->
