@@ -14,7 +14,7 @@
 			{{ .Content }}
         <div class="row full-width " id="rladies-blogs">
           {{ $blogs := ( .Scratch.Get "blogs" ) }}
-          {{ range $blogs }}    
+          {{ range $blogs }}
           <a href="{{ .url }}" id="{{ .url }}">
             <div class="col-sm-12 col-lg-6">
               {{ $image := resources.GetRemote .photo_url }}
