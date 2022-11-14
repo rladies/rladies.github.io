@@ -98,7 +98,6 @@ jobs:
                              "cyphr", "sodium", "here", "jsonlite"), Ncpus = 2)
           #only needed untill that branch is merged.
           remotes::install_github("rladies/meetupr", ref = "return_null", auth_token = "${{ secrets.GITHUB_TOKEN }}")
-
         shell: Rscript {0}
           
       - name: Meetup authentication
@@ -172,7 +171,7 @@ jobs:
       - name: Build
         run: hugo --enableGitInfo
         
-      - name: Deploy Netlify preview
+      - name: Deploy Netlify 
         if: github.event_name == 'pull_request' && contains(needs.vars.outputs.cmt_msg , 'preview')
         run: netlify deploy
         shell: sh
