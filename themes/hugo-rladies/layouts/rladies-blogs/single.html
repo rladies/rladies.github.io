@@ -6,10 +6,8 @@
           {{ range $blogs }}
           <a href="{{ .url }}" id="{{ .url }}">
             <div class="col-sm-12 col-lg-6">
-              {{ $image := resources.GetRemote .photo_url }}
-              {{ $image := $image.Fill "600x600" }}
               <div class="card h-100 hover hover-4 text-white rounded">
-                <img src="{{ $image.RelPermalink }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
+                <img src="{{ .photo_url }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
                 <div class="hover-overlay"></div>
                 <div class="hover-4-content">
                   <h3 class="hover-4-title mb-0">{{ .title }}</h3>
