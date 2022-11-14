@@ -67,6 +67,7 @@ html {
 
 #main {
   padding: 5em;
+  padding-top: 2em;
 }
 
 .chevron {
@@ -221,15 +222,6 @@ pre.chroma {
   border-radius: 10px;
 }
 
-/****************/
-/* TUI calendar */
-/****************/
-.tui-full-calendar-month-week-item 
-.tui-full-calendar-today 
-.tui-full-calendar-weekday-grid-date-decorator {
-  background: $primary !important;
-}
-
 
 /******************/
 /* custom styles  */
@@ -245,13 +237,6 @@ pre.chroma {
   letter-spacing: 1px;
   color: $gray-700;
   font-family: $font-family-sans-serif
-  
-  :target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: 0 0 0;
-  }
 
 }
 

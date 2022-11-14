@@ -1,15 +1,4 @@
 {{ define "main" }}
- 	<article class="post">
-		<header class="entry-header">
- 			<div class="entry-meta">
-         <span class="posted-on">
-            <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-               {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
-            </time>
-         </span>
- 			</div>
- 			<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
-		</header>
 		<div class="entry-content py-5 ">
 			{{ .Content }}
         <div class="row full-width " id="rladies-blogs">
@@ -45,5 +34,4 @@
           {{ end }}
         </div>
       </div>
-	</article><!-- #post-## -->
 {{ end }}

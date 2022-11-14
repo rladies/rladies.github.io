@@ -1,18 +1,4 @@
 {{ define "main" }} {{ $update := .Site.Data.events_updated }}
-<article class="post">
-  <header class="entry-header">
-    <h1 class="entry-title">
-      <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
-    </h1>
-    <center>
-      {{ range $update }}
-      <small class="text-muted">
-        Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}
-        </small>
-      {{ end }} {{ partial "head/fullcalendar.html" . }}
-    </center>
-  </header>
-
   <div class="entry-content">{{ .Content }}</div>
   {{ range $update }}
   <center>
@@ -43,8 +29,9 @@
     </div>
   </div>
   <small class="text-muted"></small>
-</article>
-{{ end }} {{ define "footer" }}
+{{ end }}
+
+{{ define "footer" }}
 <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function () {
     var timeZoneSelectorEl = document.getElementById("time-zone-selector");

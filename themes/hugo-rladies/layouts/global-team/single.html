@@ -1,23 +1,5 @@
+
 {{ define "main" }}
-<article class="post">
-		<header class="entry-header">
- 			<div class="entry-meta">
-         <span class="posted-on">
-            <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-               {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
-            </time>
-         </span>
- 			</div>
- 			
- 			{{ if eq .Params.translated false }}
-        <div class="not-translated" lang="{{ .Lang }}">
-           {{ i18n "missing_translation" }}
-         </div>
-      {{ end }}
- 			
- 		  <h1 class="entry-title">{{ .Title }}</h1>
-		</header>
-  
   <p>{{ .Content }}</p>
   
   <div class="my-5">
@@ -55,5 +37,4 @@
       </div>
     </div>
   </div>
-</article>
 {{ end }}

@@ -1,10 +1,5 @@
 
 {{ define "main" }}
-<article class="post">
-	<header class="entry-header">
- 		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
-	</header>
-	
   <div class="entry-content">
 		{{ .Content }}
 	</div>
@@ -35,7 +30,6 @@
       
     </div>
   </div> 
-</article>
 {{ end }}
 
 {{ define  "footer" }}

@@ -1,20 +1,29 @@
+{{ define "translation"}}
+   {{ if eq .Params.translated false }}
+    <div class="not-translated">
+       {{ i18n "missing_translation" }}
+     </div>
+  {{ end }}
+{{ end }}
+
+
+{{ define "title" }}
+<header class="entry-header">
+ 	<div class="entry-meta">
+     <span class="posted-on">
+        <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+           {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
+        </time>
+     </span>
+ 	</div>
+ 	
+ <h1 class="section-title">{{ .Title }}</h1>
+</header>
+{{ end }}
+
 
 {{ define "main" }}
- 	<article class="post">
-		<header class="entry-header">
- 			<div class="entry-meta">
-         <span class="posted-on">
-            <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-               {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
-            </time>
-         </span>
- 			</div>
- 			
- 		<h1 class="entry-title">{{ .Title }}</h1>
-		</header>
-
-		<div class="entry-content">
-			{{ .Content }}
-		</div>
-	</article><!-- #post-## -->
+<div class="entry-content">
+	{{ .Content }}
+</div>
 {{ end }}
