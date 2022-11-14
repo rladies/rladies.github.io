@@ -330,7 +330,8 @@ pre {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  height: 40vh;
+
   a {
     font-size: 24px;
     text-align: center;
@@ -346,20 +347,25 @@ pre {
     display: block;
     left: 0;
     right: 0;
-  
+    top: 4vh;
+
     margin: auto; 
     height: 200px;
     width: 200px;
     border-radius: 20px;
     opacity: 1;
   }
+
+}
+
+.home { 
+  height: 100vh;
   
-  .logo-home img{
+  .logo img{
     bottom: 0;
     top: 0;
   }
 }
-
 
 /******************/
 /*   BS4 cards    */
@@ -389,7 +395,7 @@ pre {
 }
   
 .card-directory {
-  max-width: 300px; ¨
+  max-width: 300px;
   :target:before {
     content: "";
     display: block;
