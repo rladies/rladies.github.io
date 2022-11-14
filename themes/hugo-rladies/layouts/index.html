@@ -3,9 +3,9 @@
 
 {{ define "main"}}
     <h2 class="section-title" id="home-news">
-      <span>{{ i18n "news" }}</span>
+      <a href="./news"><span>{{ i18n "news" }}</span></a>
     </h2>
-    {{ range first 1 (where site.RegularPages "Type" "post") }}
+    {{ range first 1 (where site.RegularPages "Type" "news") }}
       {{ partial "post/summary.html" . }}
     {{ end }}
 
@@ -23,8 +23,14 @@
           {{ else }}
             {{ partial (printf "home/%s.html" $stype) . }}
           {{ end }}
+        {{ end }}
       {{ end }}
+    </div>
+    <h2 class="section-title" id="home-blog">
+      <a href="./post"><span>{{ i18n "blog" }}</span></a>
+    </h2>
+    {{ range first 1 (where site.RegularPages "Type" "post") }}
+      {{ partial "post/summary.html" . }}
     {{ end }}
-  </div>
 {{ end }}
 
