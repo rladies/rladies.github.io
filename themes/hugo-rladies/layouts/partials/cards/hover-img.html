@@ -1,0 +1,19 @@
+{{ $descr := .descr | markdownify }}
+{{ $title := .title | markdownify }}
+{{ $image := .img | default "placeholder.png"  }}
+{{ $image := $image | absURL  }}
+
+
+<div class="col-lg-3 col-md-4 col-sm-6 col-9">
+  <div class="card hover hover-4 text-white rounded">
+    <img class="obj-fit-cover"src="{{ $image }}" alt="{{ $title }}">
+    <div class="hover-overlay"></div>
+    <div class="hover-4-content">
+      <h4 class="hover-4-title">{{ $title }}</h4>
+      {{ with .subtitle }}
+        <p class="hover-4-subtitle font-weight-light">{{ . | markdownify }}</p>
+      {{ end }}
+      <p class="hover-4-description small">{{ $descr }}</p>
+    </div>
+  </div>
+</div>

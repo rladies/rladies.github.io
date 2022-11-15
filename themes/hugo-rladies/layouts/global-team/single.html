@@ -19,9 +19,11 @@
     </table>
     
     <div class="container" id="global-team">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+      <div class="row justify-content-center full-width">
         {{ range $gt.current }}
-          {{ partial "global-team/grid.html" .}}
+          {{ $descr := delimit .role ", " }}
+          {{ $img := ( printf "about-us/global-team/img/%s" .img ) }}
+          {{ partial "cards/hover-img.html" (dict "title" .name "descr" $descr "img" $img ) }}
         {{ end }}
       </div>
     </div>
@@ -30,9 +32,11 @@
   <div class="my-5">
     <h3>Alumni</h3>
     <div class="container" id="global-team-alumni">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+      <div class="row justify-content-center full-width">
         {{ range $gt.alumni }}
-          {{ partial "global-team/grid.html" .}}
+          {{ $descr := delimit .role ", " }}
+          {{ $img := ( printf "about-us/global-team/img/%s" .img ) }}
+          {{ partial "cards/hover-img.html" (dict "title" .name "descr" $descr "img" $img ) }}
         {{ end }}
       </div>
     </div>

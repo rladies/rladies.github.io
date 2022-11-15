@@ -355,7 +355,6 @@ pre {
     border-radius: 20px;
     opacity: 1;
   }
-
 }
 
 .home { 
@@ -368,48 +367,98 @@ pre {
 }
 
 /******************/
+/*   object-fit   */
+/******************/
+
+.obj-fit-fill {
+  object-fit: fill;
+}
+
+.obj-fit-cover {
+  object-fit: cover;
+}
+
+.obj-fit-contain {
+  object-fit: contain;
+}
+
+.obj-fit-sd {
+  object-fit: scale-down;
+}
+
+.obj-fit-none {
+  object-fit: none;
+}
+
+/******************/
 /*   BS4 cards    */
 /******************/
-.embed-responsive .card-img-top {
-    object-fit: cover;
-}
 
 .card {
   .card-img-rladies {
-      width: 50px !important;
-      height: 50px !important;
       object-fit: contain;
   }
   
   a {
     text-decoration: none;  
   }
-}
-
-.card-blogs {
-  min-width: 250px;
-}
-
-.card-img-transp {
-  background-color: rgba($black, .7);
-}
   
-.card-directory {
-  max-width: 300px;
-  :target:before {
-    content: "";
-    display: block;
-    height: 400px;
-    margin: -400px 0 0;
+  .card-directory {
+    max-width: 300px;
+    :target:before {
+      content: "";
+      display: block;
+      height: 400px;
+      margin: -400px 0 0;
+    }
   }
-}
-
-.card-header-rladies{
-  background-color: $primary;
-  color: $white;
-}
-.card-directory-text {
-  font-size: 16px;
+  
+  .card-header-rladies{
+    background-color: $primary;
+    color: $white;
+  }
+  .card-directory-text {
+    font-size: 16px;
+  }
+  
+  .card-img-transp {
+    background-color: rgba($black, .7);
+  }
+  
+  .card-footer {
+    background-color: lighten($primary, 50%);
+    text-align: right;
+    small {
+      color: $gray-900;
+    }
+  }
+  
+  .card-title {
+    color: $primary;
+    font-family: $font-family-sans-serif;
+  }
+   
+    
+  .card-text{
+    font-size: $font-size-base * .8;
+  }
+  
+  .card-directory-title{
+    font-size: 3em; 
+    display: inline-block; 
+    font-size: $font-size-base;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      font-size: $font-size-base * 1.75;
+    }
+  }
+  
+  .card-home {
+    max-height: 100px;
+  }
 }
 
 .bottom-align-text {
@@ -418,39 +467,11 @@ pre {
   right: 0;
 }
 
-.card-footer {
-  background-color: lighten($primary, 50%);
-  text-align: right;
-  small {
-    color: $gray-900;
-  }
-}
 
-.card-title {
-  color: $primary;
-  font-family: $font-family-sans-serif;
-}
- 
 .page-item, .page-link {
   border: none; 
 }
 
-.card-text{
-  font-size: $font-size-base * .8;
-}
-
-.card-directory-title{
-  font-size: 3em; 
-  display: inline-block; 
-  font-size: $font-size-base;
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    font-size: $font-size-base * 1.75;
-  }
-}
 
 
 /******************/
@@ -471,9 +492,6 @@ pre {
   color: lighten($primary, 20%);
 }
 
-.card-home {
-  max-height: 100px;
-}
 
 
 /******************/
@@ -690,9 +708,10 @@ tr.fc-list-event {
 
 .hover-4-title {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.5rem;
   right: 0;
-  padding: 3rem;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
   z-index: 99;
 }
 
@@ -700,7 +719,7 @@ tr.fc-list-event {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 1rem;
+  padding-right: 1rem;
   z-index: 99;
 }
 

@@ -1,35 +1,27 @@
 {{ define "main" }}
-		<div class="entry-content py-5 ">
-			{{ .Content }}
-        <div class="row full-width " id="rladies-blogs">
-          {{ $blogs := ( .Scratch.Get "blogs" ) }}
-          {{ range $blogs }}
-          <a href="{{ .url }}" id="{{ .url }}">
-            <div class="col-sm-12 col-lg-6">
-              <div class="card h-100 hover hover-4 text-white rounded">
-                <img src="{{ .photo_url }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
-                <div class="hover-overlay"></div>
-                <div class="hover-4-content">
-                  <h3 class="hover-4-title mb-0">{{ .title }}</h3>
-                  {{ with .subtitle }}
-                    <p class="hover-4-subtitle font-weight-light">{{ . }}</p>
-                  {{ end }}
-                  {{ range .authors }}
-                    <p class="hover-4-description mb-0 small">
-                      {{ .name }}
-                      <span>
-                        {{ range first 3 .social_media }}
-                          {{ partial "some.html" .}}
-                        {{ end }}
-                      </span>
-                    </p>
-                  {{ end }}
-                  </div>
-                </div>
-              </div>
-            </a>
-            </div>
+	{{ .Content }}
+    <div class="container" id="rladies-blogs">
+      <div class="row justify-content-center full-width">
+        {{ $blogs := ( .Scratch.Get "blogs" ) }}
+        {{ range $blogs }}
+          {{ $data := newScratch }}
+          {{ $data.Set "descr" "" }}
+
+          {{ range .authors }}
+          {{ $data.Add "descr" .name }}
+              {{ range first 3 .social_media }}
+                {{ $data.Add "descr" (partial "some.html" .) }}
+              {{ end }}
           {{ end }}
-        </div>
+          {{ $descr :=  $data.Get "descr" }}
+          
+        <!-- <a href="{{ .url }}" id="{{ .url | safeJS }}"> -->
+            {{ $img := ( printf "about-us/global-team/img/%s" .img ) }}
+            {{ $subtitle := .subtitle | default "" }}
+            {{ partial "cards/hover-img.html" (dict "title" .title "subtitle" $subtitle "descr" $descr "img" .photo_url  ) }}
+         <!-- </a> -->
+        {{ end }}
       </div>
+    </div>
+  </div>
 {{ end }}

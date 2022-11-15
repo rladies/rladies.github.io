@@ -1,4 +1,9 @@
-{{ define "main" }} {{ $update := .Site.Data.events_updated }}
+{{ define "head" }}
+  {{ partial "head/fullcalendar.html"}}
+{{ end }}
+
+{{ define "main" }} 
+  {{ $update := .Site.Data.events_updated }}
   <div class="entry-content">{{ .Content }}</div>
   {{ range $update }}
   <center>
