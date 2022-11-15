@@ -8,18 +8,20 @@
           {{ $data.Set "descr" "" }}
 
           {{ range .authors }}
-          {{ $data.Add "descr" .name }}
+            {{ $data.Add "descr" "<p>" }}
+            {{ $data.Add "descr" .name }}
+            {{ $data.Add "descr" "<span>" }}
               {{ range first 3 .social_media }}
                 {{ $data.Add "descr" (partial "some.html" .) }}
               {{ end }}
+            {{ $data.Add "descr" "</span>" }}
+            {{ $data.Add "descr" "</p>" }}
           {{ end }}
           {{ $descr :=  $data.Get "descr" }}
           
-        <!-- <a href="{{ .url }}" id="{{ .url | safeJS }}"> -->
             {{ $img := ( printf "about-us/global-team/img/%s" .img ) }}
             {{ $subtitle := .subtitle | default "" }}
-            {{ partial "cards/hover-img.html" (dict "title" .title "subtitle" $subtitle "descr" $descr "img" .photo_url  ) }}
-         <!-- </a> -->
+            {{ partial "cards/hover-img.html" (dict "title" .title "subtitle" $subtitle "descr" $descr "img" .photo_url  "url" .url ) }}
         {{ end }}
       </div>
     </div>

@@ -5,6 +5,7 @@
 
 
 <div class="col-lg-3 col-md-4 col-sm-6 col-9">
+  {{with .url }} <a href="{{ . }}" id="{{ . | safeJS }}"> {{ end }}
   <div class="card hover hover-4 text-white rounded">
     <img class="obj-fit-cover"src="{{ $image }}" alt="{{ $title }}">
     <div class="hover-overlay"></div>
@@ -13,7 +14,8 @@
       {{ with .subtitle }}
         <p class="hover-4-subtitle font-weight-light">{{ . | markdownify }}</p>
       {{ end }}
-      <p class="hover-4-description small">{{ $descr }}</p>
+      <div class="hover-4-description small">{{ $descr }}</div>
     </div>
   </div>
+    {{with .url }} </a> {{ end }}
 </div>

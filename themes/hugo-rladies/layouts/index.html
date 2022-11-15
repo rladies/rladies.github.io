@@ -1,11 +1,8 @@
-{{ define "fastsearch" }}
-{{ end }}
+{{ define "fastsearch" }} <!-- empty to remove --> {{ end }}
 
-{{ define "title" }}
-{{ end }}
+{{ define "title" }} <!-- empty to remove --> {{ end }}
 
-{{ define "translation"}}
-{{ end }}
+{{ define "translation"}} <!-- empty to remove --> {{ end }}
 
 {{ define "main"}}
     <h2 class="section-title" id="home-news">
@@ -33,9 +30,9 @@
       {{ end }}
     </div>
     <h2 class="section-title" id="home-blog">
-      <a href="./post"><span>{{ i18n "blog" }}</span></a>
+      <a href="./blog"><span>{{ i18n "blog" }}</span></a>
     </h2>
-    {{ range first 1 (where site.RegularPages "Type" "post") }}
+    {{ range first 1 (where site.RegularPages "Type" "blog") }}
       {{ partial "post/summary.html" . }}
     {{ end }}
 {{ end }}

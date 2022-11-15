@@ -16,6 +16,7 @@
     {{ partial "menu.html" . }}
 
     {{ block "fastsearch" .}}
+    <!-- empty to remove -->
     {{ end }}
    
     <main id="main" class="container">
@@ -25,20 +26,21 @@
          	  
             {{ block "title" . }}
               <header class="entry-header">
-                 <div class="entry-meta">
+               	<div class="entry-meta">
                    <span class="posted-on">
-                      {{if isset .Params "date"}}
+                     {{if isset .Params "date"}}
                         <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
                            {{- .Date.Format "January 2, 2006" -}}
                         </time>
                       {{end}}
                    </span>
-                 </div>
-                <h1 class="section-title">{{ .Title }}</h1>
+               	</div>
+               	
+               <h1 class="section-title">{{ .Title }}</h1>
               </header>
             {{ end }}
             
-            {{ define "translation"}}
+            {{ block "translation" .}}
                {{ if eq .Params.translated false }}
                 <div class="not-translated">
                    {{ i18n "missing_translation" }}

@@ -1,11 +1,31 @@
-{{ define "head" }}
-  {{ partial "head/fullcalendar.html"}}
+{{ define "title" }}
+<header class="entry-header">
+ 	<div class="entry-meta">
+     <span class="posted-on">
+       {{if isset .Params "date"}}
+          <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+             {{- .Date.Format "January 2, 2006" -}}
+          </time>
+        {{end}}
+     </span>
+ 	</div>
+ 	
+ <h1 class="section-title">{{ .Title }}</h1>
+     <center>
+      {{ range .Site.Data.events_updated  }}
+      <small class="text-muted">
+        Events were last updated on {{ dateFormat "January 2, 2006 15:04:05" .date }}
+        </small>
+      {{ end }} 
+      {{ partial "head/fullcalendar.html" . }}
+    </center>
+</header>
 {{ end }}
 
+
 {{ define "main" }} 
-  {{ $update := .Site.Data.events_updated }}
   <div class="entry-content">{{ .Content }}</div>
-  {{ range $update }}
+  {{ range .Site.Data.events_updated  }}
   <center>
     <div class="row">
       <div class="col-12 border border-primary rounded bg-primary text-white ">
