@@ -12,7 +12,7 @@
     <div class="card-grid-hover-4-content">
       <h4 class="card-grid-hover-4-title">{{ $title }}</h4>
       {{ with .subtitle }}
-        <p class="card-grid-hover-4-subtitle font-weight-light">{{ . | markdownify }}</p>
+        <p class="card-grid-hover-4-subtitle font-weight-light">{{ $.Page.RenderString . "inline" }}</p>
       {{ end }}
       <div class="card-grid-hover-4-description small">{{ $descr }}</div>
     </div>

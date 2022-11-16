@@ -512,8 +512,9 @@ pre {
   bottom: 0.5rem;
   right: 0;
   padding: 1rem;
-  padding-bottom: 1.5rem;
+  padding-bottom:.2rem;
   z-index: 99;
+  text-align: right;
 }
 
 .card-grid-hover-4-subtitle {
@@ -522,22 +523,20 @@ pre {
 
 .card-grid-hover-4-description {
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 20% ;
+  left: 10%;
   text-align: right;
   border-right: 3px solid #fff;
-  padding: 0 1rem;
+  padding: 1rem;
+  padding-top:.2rem;
   z-index: 99;
   transform: translateX(-1.5rem);
   opacity: 0;
+  width: 60%;
   transition: all 0.3s;
 }
 
-@media (min-width: 992px) {
-  .card-grid-hover-4-description {
-    width: 50%;
-  }
-}
+
 
 .card-grid-hover-4:hover::after {
   opacity: 1;

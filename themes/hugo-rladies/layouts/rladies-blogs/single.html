@@ -18,7 +18,7 @@
             {{ $data.Add "descr" "</p>" }}
           {{ end }}
           {{ $descr :=  $data.Get "descr" }}
-          
+
             {{ $img := ( printf "about-us/global-team/img/%s" .img ) }}
             {{ $subtitle := .subtitle | default "" }}
             {{ partial "cards/hover-img.html" (dict "title" .title "subtitle" $subtitle "descr" $descr "img" .photo_url  "url" .url ) }}
