@@ -37,10 +37,13 @@ hugo.linux
 content/*/*html
 content/*/*/*html
 README.html
+
 # Is added only during gh actions
 # should never be commited
 data/directory/
 static/images/directory/
+data/rblogs
+
 # npm
 node_modules/
 package-lock.json
