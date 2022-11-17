@@ -84,7 +84,8 @@ html {
 .full-width {
    width: 100vw;
    position: relative;
-   left: 50%;  
+   left: 50%;
+   padding-left: .2rem;
    margin-left: -50vw;
 }
 
@@ -493,7 +494,7 @@ pre {
   z-index: 99;
 }
 
-.card-grid-hover-4{
+.card-grid-hover-img{
  .card-grid-hover-overlay {
     background: rgba(0, 0, 0, 0.4);
     z-index: 90;
@@ -506,8 +507,8 @@ pre {
   }
 }
 
-.card-grid-hover-4-title,
-.card-grid-hover-4-subtitle {
+.card-grid-hover-img-title,
+.card-grid-hover-img-subtitle {
   position: absolute;
   bottom: 0.5rem;
   right: 0;
@@ -517,11 +518,11 @@ pre {
   text-align: right;
 }
 
-.card-grid-hover-4-subtitle {
+.card-grid-hover-img-subtitle {
   opacity: 0;
 }
 
-.card-grid-hover-4-description {
+.card-grid-hover-img-description {
   position: absolute;
   top: 20% ;
   left: 10%;
@@ -536,14 +537,14 @@ pre {
   transition: all 0.3s;
 }
 
-.card-grid-hover-4:hover::after {
+.card-grid-hover-img:hover::after {
   opacity: 1;
   transform: none;
 }
 
-.card-grid-hover-4:hover{
-  .card-grid-hover-4-description,
-  .card-grid-hover-4-subtitle {
+.card-grid-hover-img:hover{
+  .card-grid-hover-img-description,
+  .card-grid-hover-img-subtitle {
     opacity: 1;
     transform: none;
   }
@@ -552,7 +553,7 @@ pre {
     width: 100%;
   }
   
- .card-grid-hover-4-title {
+ .card-grid-hover-img-title {
     opacity: 0;
     transform: none;
   }

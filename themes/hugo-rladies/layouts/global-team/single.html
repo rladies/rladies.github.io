@@ -58,7 +58,7 @@
           {{ $d := index $gt.current $name }}
           {{ $descr := delimit $d.role ", " }}
           {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
-          {{ partial "cards/hover-img.html" (dict "title" $d.name "descr" $descr "img" $img ) }}
+          {{ partial "cards/hover-img.html" (dict "title" $d.name "descr" $descr "img" $img  ) }}
         {{ end }}
       </div>
     </div>

@@ -1,20 +1,19 @@
-{{ $descr := .descr | markdownify }}
-{{ $title := .title | markdownify }}
+{{ $descr := .descr | safeHTML }}
+{{ $title := .title | safeHTML }}
 {{ $image := .img | default "placeholder.png"  }}
 {{ $image := $image | absURL  }}
 
-
-<div class="col-lg-3 col-md-4 col-sm-6 col-9">
+<div class= "col-xl-2 col-lg-3 col-md-4 col-sm-6 col-9">
   {{with .url }} <a href="{{ . }}" id="{{ . | safeJS }}"> {{ end }}
-  <div class="card card-grid-hover card-grid-hover-4 text-white rounded">
+  <div class="card card-grid-hover card-grid-hover-img text-white rounded m-2 mb-3">
     <img class="obj-fit-cover"src="{{ $image }}" alt="{{ $title }}">
     <div class="card-grid-hover-overlay"></div>
-    <div class="card-grid-hover-4-content">
-      <h4 class="card-grid-hover-4-title">{{ $title }}</h4>
+    <div class="card-grid-hover-img-content">
+      <h4 class="card-grid-hover-img-title">{{ $title }}</h4>
       {{ with .subtitle }}
-        <p class="card-grid-hover-4-subtitle font-weight-light">{{ . | markdownify }}</p>
+        <p class="card-grid-hover-img-subtitle font-weight-light">{{ . | safeHTML }}</p>
       {{ end }}
-      <div class="card-grid-hover-4-description small">{{ $descr }}</div>
+      <div class="card-grid-hover-img-description small">{{ $descr }}</div>
     </div>
   </div>
     {{with .url }} </a> {{ end }}
