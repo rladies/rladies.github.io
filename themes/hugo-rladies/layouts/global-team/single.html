@@ -78,7 +78,7 @@
           {{ $d := index $gt.alumni $name }}
           {{ $descr := delimit $d.role ", " }}
           {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
-          {{ $subt := (printf "%s -- %s" $d.start $d.end)}}
+          {{ $subt := (printf "%s &#8212 %s" $d.start $d.end)}}
           {{ partial "cards/hover-img.html" (dict "title" $d.name "subtitle" $subt  "descr" $descr "img" $img) }}
         {{ end }}
       </div>

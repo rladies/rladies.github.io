@@ -463,8 +463,7 @@ pre {
   }
 }
 
-
-/* blogs card  ============================== */
+/* hover-img  */
 .card-grid-hover {
   overflow: hidden;
   position: relative;
@@ -476,6 +475,14 @@ pre {
     top: 0;
     left: 0;
     transition: all 0.3s;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
   }
 }
 
@@ -516,7 +523,10 @@ pre {
   padding-bottom:.2rem;
   z-index: 99;
   text-align: right;
+  
+
 }
+
 
 .card-grid-hover-img-subtitle {
   opacity: 0;

@@ -1,5 +1,5 @@
 {{ $descr := .descr | safeHTML }}
-{{ $title := .title | safeHTML }}
+{{ $title := .title | markdownify }}
 {{ $image := .img | default "placeholder.png"  }}
 {{ $image := $image | absURL  }}
 {{ $size := .size }}
