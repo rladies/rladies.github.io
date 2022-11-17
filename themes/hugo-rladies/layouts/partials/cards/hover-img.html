@@ -2,8 +2,9 @@
 {{ $title := .title | safeHTML }}
 {{ $image := .img | default "placeholder.png"  }}
 {{ $image := $image | absURL  }}
+{{ $size := .size }}
 
-<div class= "col-xl-2 col-lg-3 col-md-4 col-sm-6 col-9">
+<div class={{ if eq $size "full-width" }} "col-xl-2 col-lg-3 col-md-4 col-sm-6 col-9" {{else}} "col-lg-4 col-md-6"  {{end}}>
   {{with .url }} <a href="{{ . }}" id="{{ . | safeJS }}"> {{ end }}
   <div class="card card-grid-hover card-grid-hover-img text-white rounded m-2 mb-3">
     <img class="obj-fit-cover"src="{{ $image }}" alt="{{ $title }}">

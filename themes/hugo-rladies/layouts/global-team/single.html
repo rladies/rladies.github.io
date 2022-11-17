@@ -47,7 +47,7 @@
     </table>
     
     <div class="container" id="global-team">
-      <div class="row justify-content-center full-width">
+      <div class="row justify-content-center">
         <!-- shuffle the grid -->
         {{ $.Scratch.Set "gtc" (slice) }}
         {{ range $name, $_ := $gt.current }}
@@ -58,7 +58,7 @@
           {{ $d := index $gt.current $name }}
           {{ $descr := delimit $d.role ", " }}
           {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
-          {{ partial "cards/hover-img.html" (dict "title" $d.name "descr" $descr "img" $img  ) }}
+          {{ partial "cards/hover-img.html" (dict "title" $d.name "descr" $descr "img" $img) }}
         {{ end }}
       </div>
     </div>
@@ -67,7 +67,7 @@
   <div class="my-5">
     <h1 class="section-title">Alumni</h1>
     <div class="container" id="global-team-alumni">
-      <div class="row justify-content-center full-width">
+      <div class="row justify-content-center">
         <!-- shuffle the grid -->
         {{ $.Scratch.Set "gta" (slice) }}
         {{ range $name, $_ := $gt.alumni }}
@@ -79,7 +79,7 @@
           {{ $descr := delimit $d.role ", " }}
           {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
           {{ $subt := (printf "%s -- %s" $d.start $d.end)}}
-          {{ partial "cards/hover-img.html" (dict "title" $d.name "subtitle" $subt  "descr" $descr "img" $img ) }}
+          {{ partial "cards/hover-img.html" (dict "title" $d.name "subtitle" $subt  "descr" $descr "img" $img) }}
         {{ end }}
       </div>
     </div>
