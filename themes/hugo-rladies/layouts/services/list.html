@@ -1,9 +1,5 @@
 {{ define "main" }}
-  </article class="post">
     <div class="container-md pb-5">
-      <h1 class="entry-title">
-        {{ .Title }}
-      </h1>
       {{ .Content }}
     <hr>
   	</div>
@@ -27,5 +23,4 @@
     	<ul class="pagination d-flex justify-content-center">
         {{ template "_internal/pagination.html" . }}
     	</ul>
-  </article>
 {{ end }}

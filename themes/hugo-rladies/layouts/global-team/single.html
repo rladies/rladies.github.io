@@ -1,59 +1,88 @@
+
 {{ define "main" }}
-<article class="post">
-		<header class="entry-header">
- 			<div class="entry-meta">
-         <span class="posted-on">
-            <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-               {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
-            </time>
-         </span>
- 			</div>
- 			
- 			{{ if eq .Params.translated false }}
-        <div class="not-translated" lang="{{ .Lang }}">
-           {{ i18n "missing_translation" }}
-         </div>
-      {{ end }}
- 			
- 		  <h1 class="entry-title">{{ .Title }}</h1>
-		</header>
-  
   <p>{{ .Content }}</p>
+  {{ $gt := $.Site.Data.global_team }}
+  {{ $.Scratch.Set "gt_roles" (slice) }}
+  {{ range $gt.current }}  
+    {{ $.Scratch.Add "gt_roles" .role }}
+  {{ end }}
+  {{ $.Scratch.Set "gt_roles" ($.Scratch.Get "gt_roles" | uniq | sort) }}
+  
+  <!-- create maps of names for gt_roles, becasue we cannot where over maps of maps -->
+  {{ range  $r_index, $r_name := ($.Scratch.Get "gt_roles" ) }}
+    {{ $.Scratch.Set $r_name (slice) }}
+    {{ range $idx, $value :=  $gt.current }}
+      {{ $sect := intersect $value.role (slice $r_name) }}
+      {{ if eq (len $sect) 1 }}
+        {{ $.Scratch.Add $r_name .name }}
+      {{ end }}
+    {{ end }}
+  {{ end }}  
   
   <div class="my-5">
     <table class="table table-sm ">
       <thead>
         <tr>
-          <th class="text-right b-rladies-r"> name </th>
-          <th class="text-left"> role </th>
+          <th class="text-right b-rladies-r"> role </th>
+          <th class="text-left"> name </th>
         </tr>
       </thead>
       <tbody>
-        {{ $gt := $.Site.Data.global_team }}
-        {{ range $gt.current }}
-          {{ partial "global-team/table.html" . }}  
+
+
+        {{ range ($.Scratch.Get "gt_roles" ) | shuffle }}
+          <tr class="mt-4">
+            <td class="text-right b-rladies-r" rowspan="{{ ($.Scratch.Get .) | len }}"> 
+              {{ . }} 
+            </td>
+            {{ $cur_role_names := ($.Scratch.Get .) }}
+            {{ range $cur_role_names | shuffle }}
+              <td class="text-left" style="vertical-align: top !important;"> 
+                {{ . }} 
+              </td> 
+           </tr>
+             {{ end }}
         {{ end }}
       </tbody>
     </table>
     
-    <div class="container" id="global-team">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-        {{ range $gt.current }}
-          {{ partial "global-team/grid.html" .}}
-        {{ end }}
-      </div>
+    <div class="container expand-grid full-width" id="global-team">
+        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9" id="directory-grid">
+           <!-- shuffle the grid -->
+          {{ $.Scratch.Set "gtc" (slice) }}
+          {{ range $name, $_ := $gt.current }}
+              {{ $.Scratch.Add "gtc" $name }}
+          {{ end }} 
+  
+          {{ range $name := $.Scratch.Get "gtc" | shuffle }}
+            {{ $d := index $gt.current $name }}
+            {{ $descr := delimit $d.role ", " }}
+            {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
+            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "subtitle" $descr ) }}
+          {{ end }}
+      </ul>
     </div>
   </div>
   
   <div class="my-5">
-    <h3>Alumni</h3>
-    <div class="container" id="global-team-alumni">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-        {{ range $gt.alumni }}
-          {{ partial "global-team/grid.html" .}}
+    <h1 class="section-title">Alumni</h1>
+    <div class="container expand-grid" id="global-team-alumni">
+        <ul class="list justify-content-center row row-xl-1 row-lg-2 row-md-3 row-sm-4 row-6" id="directory-grid">
+        <!-- shuffle the grid -->
+        {{ $.Scratch.Set "gta" (slice) }}
+        {{ range $name, $_ := $gt.alumni }}
+            {{ $.Scratch.Add "gta" $name }}
+        {{ end }} 
+        
+        {{ range $name := $.Scratch.Get "gta" | shuffle }}
+            {{ $d := index $gt.alumni $name }}
+            {{ $descr := delimit $d.role ", " }}
+            {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
+            {{ $foot := (printf "%s &#8212 %s" $d.start $d.end)}}
+            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "subtitle" $descr "foot" $foot) }}
         {{ end }}
+
       </div>
     </div>
   </div>
-</article>
 {{ end }}

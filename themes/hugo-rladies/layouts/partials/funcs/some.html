@@ -1,0 +1,70 @@
+{{ $data := newScratch }}
+
+{{ if eq .type "twitter" }}
+  {{ $data.Set "string" "https://twitter.com/%s" }}
+  {{ $data.Set "fa" "fab fa-twitter" }}
+  
+{{ else if eq .type "github" }}
+  {{ $data.Set "string" "https://github.com/%s" }}
+  {{ $data.Set "fa" "fab fa-github" }}
+
+{{ else if eq .type "instagram" }}
+  {{ $data.Set "string" "https://instagram.com/%s" }}
+  {{ $data.Set "fa" "fab fa-instagram" }}
+
+{{ else if eq .type "youtube" }}
+  {{ $data.Set "string" "https://youtube.com/%s" }}
+  {{ $data.Set "fa" "fab fa-youtube" }}
+
+{{ else if eq .type "tiktok" }}
+  {{ $data.Set "string" "https://tiktok.com/%s" }}
+  {{ $data.Set "fa" "fab fa-tiktok" }}
+
+{{ else if eq .type "periscope" }}
+  {{ $data.Set "string" "https://www.periscope.tv/%s" }}
+  {{ $data.Set "fa" "fab fa-periscope" }}
+
+{{ else if eq .type "researchgate" }}
+  {{ $data.Set "string" "https://www.researchgate.net/profile/%s" }}
+  {{ $data.Set "fa" "fab fa-researchgate" }}
+
+{{ else if eq .type "linkedin" }}
+  {{ $data.Set "string" "https://www.linkedin.com/in/%s" }}
+  {{ $data.Set "fa" "fab fa-linkedin" }}
+
+{{ else if eq .type "facebook" }}
+  {{ $data.Set "string" "https://www.linkedin.com/in/%s" }}
+  {{ $data.Set "fa" "fab fa-linkedin" }}
+
+{{ else if eq .type "linkedin" }}
+  {{ $data.Set "string" "https://www.facebook.com/%s" }}
+  {{ $data.Set "fa" "fab fa-facebook" }}
+
+{{ else if eq .type "orcid" }}
+  {{ $data.Set "string" "https://orcid.org/%s" }}
+  {{ $data.Set "fa" "fab fa-orcid" }}
+
+{{ else if eq .type "meetup" }}
+  {{ $data.Set "string" "https://www.meetup.com/%s" }}
+  {{ $data.Set "fa" "fab fa-meetup" }}
+  
+{{ else if eq .type "email" }}
+  {{ $data.Set "string" "mailto:%s" }}
+  {{ $data.Set "fa" "fa-solid fa-envelope" }}
+
+{{ else if eq .type "mastodon" }}
+  {{ $data.Set "string" "%s" }}
+  {{ $data.Set "fa" "fab fa-mastodon" }}
+  
+{{ else if eq .type "slack" }}
+  {{ $data.Set "string" "%s" }}
+  {{ $data.Set "fa" "fa-brands fa-slack" }}
+  
+{{ else }}
+  {{ $data.Set "string" "%s" }}
+  {{ $data.Set "fa" "fa fa-globe" }}
+{{ end }}
+
+{{ $url := printf ($data.Get "string") .handle }}
+
+{{ return (dict "url" $url "fa" ($data.Get "fa") ) }}

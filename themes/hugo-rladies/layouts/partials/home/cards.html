@@ -1,10 +1,10 @@
 
 <div class="container" id="{{.Title}}-cards">
-  <div class="card-columns ">
+  <div class="card-columns">
     {{ range where .Data.Pages "Section" .Section }}
-      <div class="card mx-auto m-1 p-4 border-0">
+      <div class="card card-service mx-auto m-1 p-4 border-0">
         <a href="{{ .Params.source }}" title="{{.Title}}">
-          <img class="card-img-top" {{ range first 1 (.Resources.ByType "image") }}src="{{ .RelPermalink }}"{{ end }} alt="{{ .Title }}">
+          <img class="card-img-top obj-fit-contain" {{ range first 1 (.Resources.ByType "image") }}src="{{ .RelPermalink }}"{{ end }} alt="{{ .Title }}">
         </a>
       </div>
     {{ end }}

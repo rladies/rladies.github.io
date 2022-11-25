@@ -1,15 +1,4 @@
-
 {{ define "main" }}
-	<header class="entry-header">
- 		<h1 class="entry-title">
- 		  <a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
- 	  </h1>
-	</header>
-	
-  <div class="entry-content">
-		{{ .Content }}
-	</div>
-	
     <div class="container" id="mentoring">
       <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
       {{ $mentoring := ( .Scratch.Get "mentoring" ) }}

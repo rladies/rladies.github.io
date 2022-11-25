@@ -3,7 +3,8 @@
 <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
 
 <!-- Icons -->
-<link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 
 <!-- website css -->
 {{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}

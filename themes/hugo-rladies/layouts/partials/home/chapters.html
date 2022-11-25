@@ -23,12 +23,12 @@
                 <td class="text-left"> <a href="http://meetup.com/{{ .meetup }}">{{ .name }}</a> </td>
                 
                 <td class="text-right"> 
-                   {{ with .social_media }}
-                     {{ range . }}
-                       {{ partial "some.html" . }}
-                     {{ end }}
-                   {{ end }}
-                  </td>
+                  {{ with .social_media }}
+                    {{ range . }}
+                      {{ partial "some.html" (dict "data" . ) }}
+                    {{ end }}
+                  {{ end }}
+                </td>
           </tr>
              {{ end }}
       
@@ -76,7 +76,6 @@
     
     // Configure series
     var polygonTemplate = polygonSeries.mapPolygons.template;
-    console.log(am4geodata_worldLow)
     polygonTemplate.tooltipText = "{name}";
     polygonTemplate.polygon.fillOpacity = 0.6;
     

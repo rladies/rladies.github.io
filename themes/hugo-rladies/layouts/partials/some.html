@@ -1,72 +1,25 @@
+{{ $data := newScratch }}
 
-{{ with .twitter }}
-  <a href="https://twitter.com/{{ . }}" target="_blank">
-    <i class="fab fa-twitter"></i>
-  </a>
-{{end}}
+<!--- turn map into slice so we can range with first --->
+{{ $data.Set "key" (slice) }}
+{{ $data.Set "value" (slice) }}
+{{ range $key, $value := .data }}
+    {{ $data.Add "key" $key }}
+    {{ $data.Add "value" $value }}
+{{ end }}
 
-{{ with .github }}
-  <a href="https://github.com/{{ . }}" target="_blank">
-    <i class="fab fa-github"></i>
-  </a>
-{{end}}
+<!--- Set the range --->
+{{ $data.Set "range" ($data.Get "value" | len ) }}
+{{ with .range }}
+  {{ $data.Set "range" . }}
+{{ end }}
 
-{{ with .instagram }}
-  <a href="https://www.instagram.com/{{ . }}" target="_blank">
-    <i class="fab fa-instagram"></i>
-  </a>
-{{end}}
+{{ range $index, $v := first ($data.Get "range") ($data.Get "value" ) }}
+  {{ $selection := index ($data.Get "key") $index }}
+  {{ $some:= partial "funcs/some.html" (dict "type" $selection "handle" $v ) }}
+    <a href="{{ $some.url }}" target="_blank">
+      <i class="{{ $some.fa }}"></i>
+    </a>
+{{ end }}
 
-{{ with .youtube }}
-  <a href="https://www.youtube.com/{{ . }}" target="_blank">
-    <i class="fab fa-youtube"></i>
-  </a>
-{{end}}
 
-{{ with .tiktok }}
-  <a href="https://www.tiktok.com/{{ . }}" target="_blank">
-    <i class="fab fa-tiktok"></i>
-  </a>
-{{end}}
-
-{{ with .periscope }}
-  <a href="https://www.periscope.tv/{{ . }}" target="_blank">
-    <i class="fab fa-periscope"></i>
-  </a>
-{{end}}
-
-{{ with .researchgate }}
-  <a href="https://www.researchgate.net/profile/{{ . }}" target="_blank">
-    <i class="fab fa-researchgate"></i>
-  </a>
-{{end}}
-
-{{ with .website }}
-  <a href="{{ . }}" target="_blank">
-    <i class="fa fa-globe"></i>
-  </a>
-{{end}}
-
-{{ with .linkedin }}
-  <a href="https://www.linkedin.com/in/{{ . }}" target="_blank">
-    <i class="fab fa-linkedin"></i>
-  </a>
-{{end}}
-
-{{ with .facebook }}
-  <a href="https://www.facebook.com/{{ . }}" target="_blank">
-    <i class="fab fa-facebook"></i>
-  </a>
-{{end}}
-
-{{ with .orcid }}
-  <a href="https://orcid.org/{{ . }}" target="_blank">
-    <i class="fab fa-orcid"></i>
-  </a>
-{{end}}
-
-{{ with .meetup }}
-  <a href="https://www.meetup.com/{{ . }}" target="_blank">
-    <i class="fab fa-meetup"></i>
-  </a>
-{{end}}

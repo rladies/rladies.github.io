@@ -2,6 +2,7 @@
 // Your variable overrides
 $body-bg:    #fff;
 $primary:    #88398a;
+$secondary:  #a7a9ac;
 $table-hover-bg: rgba($primary, .2);
 
 $font-family-monospace:  'rladies code', monospace;
@@ -105,9 +106,9 @@ html {
    margin: 0 auto;
    position: relative;
    text-align: center; 
-   border-bottom: 1px solid $gray-300; 
+   border-bottom: 1px solid $secondary; 
    line-height: 0.1em;
-   color: $gray-500;
+   color: darken($secondary, 15%);
    font-size: $font-size-base;
 } 
 
@@ -115,16 +116,6 @@ html {
   background: $white;
   padding:0 10px; 
 }
-
-.style-rladies {
-  border: 0;
-  height: 2px;
-  background-image: -webkit-linear-gradient(left, $white,$primary, $white);
-  background-image: -moz-linear-gradient(left, $white, $primary, $white);
-  background-image: -ms-linear-gradient(left, $white, $primary, $white);
-  background-image: -o-linear-gradient(left, $white, $primary, $white);
-}
-
 
 // footer
 #footer {
@@ -233,7 +224,7 @@ pre.chroma {
   margin: 0px 0 25px;
   text-align: center;
   letter-spacing: 1px;
-  color: $gray-700;
+  color: darken($secondary, 30%);
   font-family: $font-family-sans-serif
   
   :target:before {
@@ -265,8 +256,8 @@ pre.chroma {
   height: 4px;
   top: .53em;
   width: 400%;
-  border-bottom: 1px solid $gray-500;
-  border-top: 1px solid $gray-500;
+  border-bottom: 1px solid darken($secondary, 20%);
+  border-top: 1px solid darken($secondary, 20%);
 }
 
 .section-title span:before,
@@ -334,7 +325,8 @@ pre {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  height: 40vh;
+
   a {
     font-size: 24px;
     text-align: center;
@@ -350,23 +342,43 @@ pre {
     display: block;
     left: 0;
     right: 0;
-  
+    top: 4vh;
+
     margin: auto; 
     height: 200px;
     width: 200px;
     border-radius: 20px;
     opacity: 1;
   }
-  
-  .logo-home img{
-    bottom: 0;
-    top: 0;
-  }
+}
+
+/******************/
+/*   object-fit   */
+/******************/
+
+.obj-fit-fill {
+  object-fit: fill;
+}
+
+.obj-fit-cover {
+  object-fit: cover;
+}
+
+.obj-fit-contain {
+  object-fit: contain;
+}
+
+.obj-fit-sd {
+  object-fit: scale-down;
+}
+
+.obj-fit-none {
+  object-fit: none;
 }
 
 
 /******************/
-/*   BS4 cards    */
+/*      cards     */
 /******************/
 .embed-responsive .card-img-top {
     object-fit: cover;
@@ -450,6 +462,137 @@ pre {
   }
 }
 
+
+.expand-grid{
+  ul{
+    list-style-type: none;
+  }
+}
+
+.card-service {
+  height: 150px;
+  width: 150px;
+}
+.card-small {
+  height: 300px;
+}
+
+.card-medium {
+  height: 380px;
+}
+
+.card-large {
+  height: 470px;
+}
+
+.card-expand {
+  position: relative;
+  box-shadow: $box-shadow-sm;
+  background: $white;
+  margin: 1rem;
+  margin-bottom: 10px;
+  font-size: 14px;
+  min-width: 200px;
+  
+ img {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  
+  h4 {
+    font-size: 22px;
+  }
+  
+  h5 {
+    font-size: 18px;
+  }
+}
+
+.card-expand-title {
+  color: $secondary;
+  text-transform: uppercase;
+}
+
+.card-expand:hover,
+.card-expand-hover {
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+  
+  .card-expand-img {
+    opacity: .8;
+  }
+}
+
+.card-expand-img{
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-expand-content {
+  position: absolute;
+  bottom: 0;
+  background: transparentize($white, .1);
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 0.8rem;
+}
+
+.card-expand-content
+.card-expand-hover 
+.card-expand-description {
+  display: block !important;
+  height: auto !important;
+  opacity: 1 !important;
+}
+
+.card-expand-category {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  background: transparentize($primary, .15);
+  padding: 10px 15px;
+  color: $white;
+  font-size: 14px;
+}
+
+.card-expand-title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: darken($secondary, 30%);
+  font-size: 26px;
+}
+
+.card-expand-subtitle {
+  margin: 0;
+  padding: 0 0 20px;
+  color: $primary;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card-expand-description {
+  font-size: 14px;
+  color: darken($secondary, 30%);
+  line-height: 1.2em;
+  display: none;
+}
+
+.card-expand-up-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-expand-meta {
+  margin-top: 0.8rem;
+  font-size: 12px;
+  color: $secondary;
+   a {
+    text-decoration: none;
+  }
+}
 
 /******************/
 /*    amcharts    */

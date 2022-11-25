@@ -1,0 +1,40 @@
+{{ $data := newScratch }}
+{{ $data.Set "content" "" }}
+
+{{ with .interests }}
+  {{ $data.Add "content" "<p class=\"card-text\">" }}
+  {{ $data.Add "content" "<b><i class=\"fas fa-tag\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
+  {{ $data.Add "content" (printf "<span class=\"interests\"> %s </span>" (delimit . ", ") ) }}
+  {{ $data.Add "content" "</p>" }}
+{{ end }}
+
+{{ range .activities }}
+  {{ with .r_groups }}
+    {{ $data.Add "content" "<p class=\"card-text\">" }}
+    {{ $data.Add "content" "<b><i class=\"fas fa-users\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
+    {{ $data.Add "content" (printf "<span class=\"r_groups\"> %s </span>" (delimit . ", ") ) }}
+    {{ $data.Add "content" "</p>" }}
+  {{ end }}
+      
+  {{ with .r_packages }}
+    {{ $data.Add "content" "<p class=\"card-text\">" }}
+    {{ $data.Add "content" "<b><i class=\"fas fa-cube\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
+    {{ $data.Add "content" (printf "<span class=\"r_packages\"> %s </span>" (delimit . ", ") ) }}
+    {{ $data.Add "content" "</p>" }}
+  {{ end }}
+  
+  {{ with .shiny_apps }}
+    {{ $data.Add "content" "<p class=\"card-text\">" }}
+    {{ $data.Add "content" "<b><i class=\"fas fa-stripe-s\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
+    {{ $data.Add "content" (printf "<span class=\"shiny_apps\"> %s </span>" (delimit . ", ") ) }}
+    {{ $data.Add "content" "</p>" }}
+  {{ end }}
+{{ end }}
+
+{{ with .contact_method }} 
+  {{ $data.Add "content" "<p class=\"card-text\">" }}
+  {{ $data.Add "content" (printf "<b>Contact through:</b> %s" (delimit . ", ") ) }}
+  {{ $data.Add "content" "</p>" }}
+{{ end }}
+
+{{ return ($data.Get "content") }}
