@@ -150,25 +150,26 @@ html {
   margin-right: auto;
 }
 
+$border-rladies: 1px solid $primary;
 
 .b-rladies{
-  border: 1px solid $primary;
+  border: $border-rladies;
 }
 
 .b-rladies-r{
-  border-right: 1px solid $primary;
+  border-right: $border-rladies;
 }
 
 .b-rladies-l{
-  border-left: 1px solid $primary;
+  border-left: $border-rladies;
 }
 
 .b-rladies-b{
-  border-bottom: 1px solid $primary;
+  border-bottom: $border-rladies;
 }
 
 .b-rladies-t{
-  border-top: 1px solid $primary;
+  border-top: $border-rladies;
 }
 
 #underfooter {
