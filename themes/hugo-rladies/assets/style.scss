@@ -66,8 +66,9 @@ html {
   }
 }
 
-#main {
-  padding: 5em;
+#main{
+  padding: 4em;
+  padding-top: 2em;
 }
 
 .chevron {
@@ -228,7 +229,7 @@ pre.chroma {
   font-family: $font-family-sans-serif
   
   a {
-    color: darken($secondary, 30%);
+    color: darken($secondary, 30%) !important;
   }
   
   :target:before {
@@ -324,13 +325,14 @@ pre {
 /******************/
 /* parallax Hero  */
 /******************/
+  
 .paral {
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
 
+  
   a {
     font-size: 24px;
     text-align: center;
@@ -346,13 +348,25 @@ pre {
     display: block;
     left: 0;
     right: 0;
-    top: 4vh;
-
+  
     margin: auto; 
     height: 30vh;
+    max-height: 100px;
     width: 30vh;
+    max-width: 100px;
     border-radius: 20px;
     opacity: 1;
+    top: 15px;
+  }
+
+}
+
+.home {
+  height: 100vh;
+  
+  .logo img{
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -400,9 +414,6 @@ pre {
   }
 }
 
-.card-blogs {
-  min-width: 250px;
-}
 
 .card-img-transp {
   background-color: rgba($black, .7);
