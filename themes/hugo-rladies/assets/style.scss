@@ -325,13 +325,11 @@ pre {
 /******************/
 /* parallax Hero  */
 /******************/
-  
 .paral {
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-
   
   a {
     font-size: 24px;
@@ -350,25 +348,20 @@ pre {
     right: 0;
   
     margin: auto; 
-    height: 30vh;
-    max-height: 100px;
-    width: 30vh;
-    max-width: 100px;
+    height: 100px;
+    width: 100px;
     border-radius: 20px;
     opacity: 1;
-    top: 15px;
   }
-
-}
-
-.home {
-  height: 100vh;
   
-  .logo img{
+  .logo-home img {
+    bottom: 0;
+    top: 0;
     height: 200px;
     width: 200px;
   }
 }
+
 
 /******************/
 /*   object-fit   */
