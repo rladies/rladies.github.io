@@ -227,6 +227,10 @@ pre.chroma {
   color: darken($secondary, 30%);
   font-family: $font-family-sans-serif
   
+  a {
+    color: darken($secondary, 30%);
+  }
+  
   :target:before {
     content: "";
     display: block;
@@ -345,8 +349,8 @@ pre {
     top: 4vh;
 
     margin: auto; 
-    height: 200px;
-    width: 200px;
+    height: 30vh;
+    width: 30vh;
     border-radius: 20px;
     opacity: 1;
   }
@@ -473,16 +477,33 @@ pre {
   height: 150px;
   width: 150px;
 }
+
 .card-small {
-  height: 300px;
+  height: 270px;
+  min-width: 150px;
+  
+  .card-expand-content {
+    padding: 10px;
+  }
+  
 }
 
 .card-medium {
-  height: 380px;
+  height: 370px;
+  min-width: 200px;
+  
+  .card-expand-content {
+    padding: 20px;
+  }
+  
 }
 
 .card-large {
   height: 470px;
+  min-width: 200px;
+  .card-expand-content {
+    padding: 30px;
+  }
 }
 
 .card-expand {
@@ -492,7 +513,6 @@ pre {
   margin: 1rem;
   margin-bottom: 10px;
   font-size: 14px;
-  min-width: 200px;
   
  img {
     display: block;
@@ -501,11 +521,11 @@ pre {
   }
   
   h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
   
   h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -535,7 +555,6 @@ pre {
   bottom: 0;
   background: transparentize($white, .1);
   width: 100%;
-  padding: 30px;
   padding-bottom: 0.8rem;
 }
 

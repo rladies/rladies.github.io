@@ -58,7 +58,7 @@
             {{ $d := index $gt.current $name }}
             {{ $descr := delimit $d.role ", " }}
             {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
-            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "subtitle" $descr ) }}
+            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "descr" $descr "size" "small") }}
           {{ end }}
       </ul>
     </div>
@@ -66,8 +66,8 @@
   
   <div class="my-5">
     <h1 class="section-title">Alumni</h1>
-    <div class="container expand-grid" id="global-team-alumni">
-        <ul class="list justify-content-center row row-xl-1 row-lg-2 row-md-3 row-sm-4 row-6" id="directory-grid">
+    <div class="container expand-grid full-width" id="global-team-alumni">
+        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9" id="directory-grid">
         <!-- shuffle the grid -->
         {{ $.Scratch.Set "gta" (slice) }}
         {{ range $name, $_ := $gt.alumni }}
@@ -79,7 +79,7 @@
             {{ $descr := delimit $d.role ", " }}
             {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
             {{ $foot := (printf "%s &#8212 %s" $d.start $d.end)}}
-            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "subtitle" $descr "foot" $foot) }}
+            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "descr" $descr "size" "small" "foot" $foot) }}
         {{ end }}
 
       </div>
