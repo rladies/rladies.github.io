@@ -46,8 +46,8 @@
       </tbody>
     </table>
     
-    <div class="container expand-grid full-width" id="global-team">
-        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9" id="directory-grid">
+    <div class="container expand-grid" id="global-team">
+        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team">
            <!-- shuffle the grid -->
           {{ $.Scratch.Set "gtc" (slice) }}
           {{ range $name, $_ := $gt.current }}
@@ -66,8 +66,8 @@
   
   <div class="my-5">
     <h1 class="section-title">Alumni</h1>
-    <div class="container expand-grid full-width" id="global-team-alumni">
-        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9" id="directory-grid">
+    <div class="container expand-grid">
+        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team-alumni">
         <!-- shuffle the grid -->
         {{ $.Scratch.Set "gta" (slice) }}
         {{ range $name, $_ := $gt.alumni }}
