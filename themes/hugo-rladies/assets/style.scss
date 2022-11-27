@@ -810,3 +810,14 @@ tr.fc-list-event {
   margin-left: 0;
   margin-right: 0;
 }
+
+
+
+.page-arrow {
+  font-size:20px;
+  line-height:1;
+  font-weight:bold;
+  cursor:pointer;
+  background:$table-hover-bg;
+  padding:5px 10px;
+}

@@ -23,9 +23,9 @@
       
       <!-- pagination nav -->
       <div class="nav pagination justify-content-center align-content-center" aria-label="Directory pagination">
-        <a class="pagination-prev" href="#directory-content" onclick=".prev()"><</a>
+        <a class="pagination-prev disabled" href="#directory-content"><span class="page-arrow"><</span></a>
         <ul class="pagination-layout"></ul>
-        <a class="pagination-next" href="#directory-content" onclick=".next()">></a>
+        <a class="pagination-next" href="#directory-content"><span class="page-arrow">></span></a>
       </div>
       
     </div>
@@ -48,8 +48,8 @@
         page: perPage,
         pagination: {
           innerWindow: 1,
-          left: 0,
-          right: 0,
+          left: 2,
+          right: 2,
           paginationClass: "pagination-layout",
           item: "<li><a class='page' href='#directory-content'></a></li>"
         },
@@ -78,7 +78,12 @@
         }
       });
       
-
+	$(".pagination-next").click(function() {
+		$(".pagination-layout .active").next('li')[0].firstChild.click()
+	});
+	$(".pagination-prev").click(function() {
+		$(".pagination-layout .active").prev('li')[0].firstChild.click()
+	});
 
       // find url anchor and populate search field.
       var entry = decodeURIComponent(window.location.hash.substr(1));
