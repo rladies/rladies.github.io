@@ -83,7 +83,8 @@ html {
 .full-width {
    width: 100vw;
    position: relative;
-   left: 50%;  
+   left: 50%;
+   padding-left: .2rem;
    margin-left: -50vw;
    ul{
     width: 100%;
@@ -215,6 +216,8 @@ pre.chroma {
   border-radius: 10px;
 }
 
+
+
 /******************/
 /* custom styles  */
 /******************/
@@ -229,17 +232,6 @@ pre.chroma {
   letter-spacing: 1px;
   color: darken($secondary, 30%);
   font-family: $font-family-sans-serif
-  
-  a {
-    color: darken($secondary, 30%) !important;
-  }
-  
-  :target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: 0 0 0;
-  }
 
 }
 
@@ -250,6 +242,7 @@ pre.chroma {
 
 .section-title span,
 .entry-title span {
+  color: $gray-700;
   display: inline-block;
   position: relative;
 }
@@ -332,7 +325,8 @@ pre {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  
+  height: 40vh;
+
   a {
     font-size: 24px;
     text-align: center;
@@ -348,13 +342,18 @@ pre {
     display: block;
     left: 0;
     right: 0;
-  
+    top: 4vh;
+
     margin: auto; 
     height: 100px;
     width: 100px;
     border-radius: 20px;
     opacity: 1;
   }
+}
+
+.home { 
+  height: 100vh;
   
   .logo .home img {
     bottom: 0;
@@ -364,6 +363,29 @@ pre {
   }
 }
 
+/******************/
+/*   object-fit   */
+/******************/
+
+.obj-fit-fill {
+  object-fit: fill;
+}
+
+.obj-fit-cover {
+  object-fit: cover;
+}
+
+.obj-fit-contain {
+  object-fit: contain;
+}
+
+.obj-fit-sd {
+  object-fit: scale-down;
+}
+
+.obj-fit-none {
+  object-fit: none;
+}
 
 /******************/
 /*   object-fit   */
@@ -393,14 +415,9 @@ pre {
 /******************/
 /*      cards     */
 /******************/
-.embed-responsive .card-img-top {
-    object-fit: cover;
-}
 
 .card {
   .card-img-rladies {
-      width: 50px !important;
-      height: 50px !important;
       object-fit: contain;
   }
   
@@ -414,23 +431,174 @@ pre {
   background-color: rgba($black, .7);
 }
   
-.card-directory {
-  max-width: 300px; ¨
-  :target:before {
-    content: "";
-    display: block;
-    height: 400px;
-    margin: -400px 0 0;
+  .card-directory {
+    max-width: 300px;
+    :target:before {
+      content: "";
+      display: block;
+      height: 400px;
+      margin: -400px 0 0;
+    }
+  }
+  
+  .card-header-rladies{
+    background-color: $primary;
+    color: $white;
+  }
+  .card-directory-text {
+    font-size: 16px;
+  }
+  
+  .card-img-transp {
+    background-color: rgba($black, .7);
+  }
+  
+  .card-footer {
+    background-color: lighten($primary, 50%);
+    text-align: right;
+    small {
+      color: $gray-900;
+    }
+  }
+  
+  .card-title {
+    color: $primary;
+    font-family: $font-family-sans-serif;
+  }
+   
+    
+  .card-text{
+    font-size: $font-size-base * .8;
+  }
+  
+  .card-directory-title{
+    font-size: 3em; 
+    display: inline-block; 
+    font-size: $font-size-base;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      font-size: $font-size-base * 1.75;
+    }
+  }
+  
+  .card-home {
+    max-height: 100px;
+  }
+
+
+/* hover-img  */
+.card-grid-hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+  
+ img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+  }
+  
+  p {
+    font-size: 0.8rem;
   }
 }
 
-.card-header-rladies{
-  background-color: $primary;
-  color: $white;
+.card-grid-hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
 }
-.card-directory-text {
-  font-size: 16px;
+
+.card-grid-hover-content {
+  position: relative;
+  z-index: 99;
 }
+
+.card-grid-hover-img{
+ .card-grid-hover-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 90;
+  }
+  img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.card-grid-hover-img-title,
+.card-grid-hover-img-subtitle {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0;
+  padding: 1rem;
+  padding-bottom:.2rem;
+  z-index: 99;
+  text-align: right;
+  
+
+}
+
+
+.card-grid-hover-img-subtitle {
+  opacity: 0;
+}
+
+.card-grid-hover-img-description {
+  position: absolute;
+  top: 20% ;
+  left: 10%;
+  text-align: right;
+  border-right: 3px solid #fff;
+  padding: 1rem;
+  padding-top:.2rem;
+  z-index: 99;
+  transform: translateX(-1.5rem);
+  opacity: 0;
+  width: 60%;
+  transition: all 0.3s;
+}
+
+.card-grid-hover-img:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.card-grid-hover-img:hover{
+  .card-grid-hover-img-description,
+  .card-grid-hover-img-subtitle {
+    opacity: 1;
+    transform: none;
+  }
+  
+   img {
+    width: 100%;
+  }
+  
+ .card-grid-hover-img-title {
+    opacity: 0;
+    transform: none;
+  }
+  
+ .card-grid-hover-overlay {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
 
 .bottom-align-text {
   position: absolute;
@@ -438,39 +606,11 @@ pre {
   right: 0;
 }
 
-.card-footer {
-  background-color: lighten($primary, 50%);
-  text-align: right;
-  small {
-    color: $gray-900;
-  }
-}
 
-.card-title {
-  color: $primary;
-  font-family: $font-family-sans-serif;
-}
- 
 .page-item, .page-link {
   border: none; 
 }
 
-.card-text{
-  font-size: $font-size-base * .8;
-}
-
-.card-directory-title{
-  font-size: 3em; 
-  display: inline-block; 
-  font-size: $font-size-base;
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    font-size: $font-size-base * 1.75;
-  }
-}
 
 
 .expand-grid{
@@ -637,9 +777,6 @@ pre {
   color: lighten($primary, 20%);
 }
 
-.card-home {
-  max-height: 100px;
-}
 
 
 /******************/

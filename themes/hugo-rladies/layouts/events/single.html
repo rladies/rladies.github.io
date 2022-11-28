@@ -5,7 +5,7 @@
 {{ define "main" }} 
   {{ $update := .Site.Data.events_updated }}
   <div class="entry-content">{{ .Content }}</div>
-  {{ range $update }}
+  {{ range .Site.Data.events_updated  }}
   <center>
     <div class="row">
       <div class="col-12 border border-primary rounded bg-primary text-white ">

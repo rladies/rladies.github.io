@@ -3,7 +3,6 @@
 [404_description]
     other = "Oops! This page doesn't exist!"
 
-
 [subheader]
     other = ""
 
@@ -19,6 +18,8 @@
   other = "Donate to"
 [news]
   other = "News"
+[blog]
+  other = "Blog"
     
 [current_chapters_table]
   other = "Click for table of currently active R-Ladies chapters"
