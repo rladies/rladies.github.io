@@ -82,12 +82,21 @@ html {
 
 .full-width {
    width: 100vw;
-   position: relative;
    left: 50%;
-   padding-left: .2rem;
    margin-left: -50vw;
+   padding-left: .2rem;
+   position: relative;
+
    ul{
     width: 100%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.full-width {
+   width: 1200px;
+   margin-left: -600px;
   }
 }
 
@@ -464,6 +473,10 @@ pre {
   .card-title {
     color: $primary;
     font-family: $font-family-sans-serif;
+    
+    a {
+      color: $secondary;
+    }
   }
    
     
@@ -678,6 +691,10 @@ pre {
 .card-expand-title {
   color: $secondary;
   text-transform: uppercase;
+  
+  a {
+    color: darken($secondary, 20%);
+  }
 }
 
 .card-expand:hover,
