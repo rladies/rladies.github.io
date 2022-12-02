@@ -5,6 +5,9 @@
 <!-- Icons -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
+<!-- Fullcalendar css-->  
+<link rel="stylesheet" href="{{ "css/fullcalendar.min.css" | relURL }}" />
+
 <!-- website css -->
 {{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
