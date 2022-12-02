@@ -1,0 +1,24 @@
+{{ $data := newScratch }}
+
+{{ $data.Set "foot" "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i> "}}
+  {{ if isset . "last_updated" }}
+    {{ $data.Add "foot" .last_updated }}
+  {{ else }}
+    {{ $data.Add "foot" "unknown" }}
+  {{ end }}
+  {{ $data.Add "foot" "<br><br>" }}
+  {{ with .location }}
+    {{ range . }}
+      {{ $data.Add "foot" "<i class=\"fa-solid fa-location-dot\" aria-hidden=\"true\"></i> "}}
+      {{ with .city }} 
+        {{ $data.Add "foot" . }} 
+        {{ $data.Add "foot" ", " }}
+      {{ end }}
+      {{ with .state }} 
+        {{ $data.Add "foot" . }} 
+        {{ $data.Add "foot" ", " }}
+      {{ end }}
+      {{ with .country }} {{ $data.Add "foot" . }} {{ end }}
+    {{ end }}
+  {{ end }}
+{{ return ( $data.Get "foot" ) }}

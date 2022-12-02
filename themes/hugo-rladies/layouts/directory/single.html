@@ -4,19 +4,30 @@
 		{{ .Content }}
 	</div>
 
-  <div class="flex-container full-width" id="directory-content">
+  <div class="flex-container" id="directory-content">
     
-    <center class="m-2">
       <input type="text" id="dir-search" class="fuzzy-search rounded" placeholder="Search directory..."/>
       <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</button>
       <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
 
-    <div class="container" id="directory-cards">
-        <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
+    <div class="container expand-grid" id="directory-cards">
+        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="directory-grid">
             {{ $directory := ( .Scratch.Get "directory" ) }}
             {{ range $name := $.Scratch.Get "dic" | shuffle }}
               {{ $d := index $directory $name }}
-              {{ partial "directory/li.html" $d }}
+              {{ $data := newScratch }}
+              {{ $data.Set "subtitle" $d.title}}
+        
+              {{ with $d.social_media }}
+                {{ range . }}
+                  {{ $data.Add "subtitle" (partial "some.html" (dict "data" .)) }}
+                {{ end }}
+              {{ end }}
+
+              {{ $descr := partial "funcs/directory/descr.html" $d }}
+              {{ $subtitle := ($data.Get "subtitle" ) }}
+              {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo_url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2) }}
             {{ end }}
         </ul>
       </div>
