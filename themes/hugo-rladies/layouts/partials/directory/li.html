@@ -23,7 +23,7 @@
       {{if gt (len .location) 1 }}
         <p class="card-text">
           <i class="fas fa-map-marker-alt"></i> 
-          <span class="r_groups">
+          <span class="location">
             {{ range .location }}
               {{ .city }}, {{ with .state }} {{.}}, {{end}} {{ .country }}
             {{ end }}
