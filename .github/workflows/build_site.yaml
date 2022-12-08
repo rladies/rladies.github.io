@@ -71,51 +71,6 @@ jobs:
         if: steps.check_files.outputs.run_validation == 'true'
         run: Rscript scripts/validate_jsons.R
         
-  meetup:
-    name: Update meetup data
-    runs-on: macOS-latest
-    if: github.event_name == 'schedule' && 
-        github.ref == 'refs/heads/main' && 
-        github.repository == 'rladies/website' || 
-        ( github.ref == 'refs/heads/main' && github.repository == 'rladies/website' )
-    env: 
-      MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        
-      - name: Install packages
-        run: |
-          options(repos = c(
-            rladies = 'https://rladies.r-universe.dev', #untill we get meetupr on cran
-            CRAN = 'https://cloud.r-project.org'))
-  
-          install.packages(c("remotes","tidyr", "dplyr", "lubridate",
-                             "cyphr", "sodium", "here", "jsonlite"), Ncpus = 2)
-          #only needed untill that branch is merged.
-          remotes::install_github("rladies/meetupr", ref = "return_null", auth_token = "${{ secrets.GITHUB_TOKEN }}")
-
-        shell: Rscript {0}
-          
-      - name: Meetup authentication
-        run:  Rscript scripts/meetup_auth.R
-        
-      - name: Update chapter data
-        run:  Rscript scripts/get_chapters.R
-        
-      - name: Update event data
-        run:  Rscript scripts/get_events.R
-        
-      - name: Commit data	
-        run: |	
-          git config --local user.email "actions@github.com"	
-          git config --local user.name "GitHub Actions"	
-          git add data/events.json data/chapters.json data/events_updated.json	
-          git commit -m 'Update meetup data' || echo "No meetup data to commit"	
-        
   build:
     name: Build and publish to Netlify
     runs-on: macOS-latest
@@ -152,7 +107,14 @@ jobs:
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
-          path: tmp
+          path: dir
+          
+      - name: Site data - Meetup
+        uses: actions/checkout@v2
+        with:
+          repository: rladies/meetup_archive
+          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
+          path: mtp
       
       - name: Site data - Get blogs list
         uses: actions/checkout@v2
@@ -164,9 +126,10 @@ jobs:
       - name: Site data - clean cloned repos
         run: |
           mv rblogs/blogs data/rblogs
-          mv tmp/data/json data/directory
-          mv tmp/data/img static/images/directory
-          rm -rf tmp rblogs
+          mv dir/data/json data/directory
+          mv dir/data/img static/images/directory
+          mv mtp/data/* data/
+          rm -rf tmp rblogs mtp
 
       - name: Build
         run: hugo --enableGitInfo
