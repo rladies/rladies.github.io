@@ -12,7 +12,7 @@
       <div class="card-expand-category rounded-right">{{ . }}</div>
     {{ end }}
       <h4 class="card-expand-title">
-        <a href="#{{ .title | safeJS }}" class="name">{{ .title | markdownify }}</a>
+        <a href="#{{ .title | safeJS }}" class="name">{{ .title | safeHTML }}</a>
       </h4>
     {{ with .subtitle }}
       <h5 class="card-expand-subtitle">

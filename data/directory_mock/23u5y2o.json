@@ -1,31 +1,50 @@
 {
-    "name": "Athanasia Mo  Mowinckel",
-    "honorific": "PhD",
-    "categories": ["Speaker", "Norway"],
+  "name": "Athanasia Mo  Mowinckel",
+  "honorific": "PhD",
+  "categories": [
+    "Speaker",
+    "Norway"
+  ],
+  "notes": "",
+  "photo_url": "https://rladies.org/wp-content/uploads/connections-images/athanasia-mo-mowinckel/Athanasia.Mowinckel.2_square.png",
+  "logo_url": "",
+  "location": [
+    {
+      "city": "Oslo",
+      "country": "Norway"
+    }
+  ],
+  "social_media": [
+    {
+      "twitter": "DrMowinckels",
+      "github": "Athanasiamo"
+    }
+  ],
+  "interests": [
+    "Statistics",
+    "Bayesian Statistics",
+    "Neuroimaging",
+    "Data Visualisation",
+    "Cognitive Psychology"
+  ],
+  "contact_method": [
+    "Twitter"
+  ],
+  "activities": [
+    {
+      "r_groups": [
+        "R-Ladies Oslo"
+      ],
+      "r_packages": [
+        "ggseg",
+        "ggsegExtra",
+        "ggseg3d"
+      ]
+    }
+  ],
+  "work": {
     "title": "Staff researcher - Center for Lifespan Changes in Brain and Cognition, Dept. of Psychology",
-    "organization": "University of Oslo",
-    "department": "",
-    "notes": "",
-    "photo_url": "https://rladies.org/wp-content/uploads/connections-images/athanasia-mo-mowinckel/Athanasia.Mowinckel.2_square.png",
-    "logo_url": "",
-    "location": [
-      {
-        "city": "Oslo",
-        "country": "Norway"
-      }
-    ],
-    "social_media": [
-      {
-        "twitter": "DrMowinckels",
-        "github": "Athanasiamo"
-      }
-    ],
-    "interests": ["Statistics", "Bayesian Statistics", "Neuroimaging", "Data Visualisation", "Cognitive Psychology"],
-    "contact_method": ["Twitter"],
-    "activities": [
-      {
-        "r_groups": ["R-Ladies Oslo"],
-        "r_packages": ["ggseg", "ggsegExtra", "ggseg3d"]
-      }
-    ]
+    "organisation": "University of Oslo",
+    "department": ""
   }
+}

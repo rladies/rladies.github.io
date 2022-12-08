@@ -1,26 +1,28 @@
 {
-    "name": "Jane Doe",
-    "honorific": "",
-    "categories": [],
+  "name": "Jane Doe",
+  "honorific": "",
+  "categories": [],
+  "notes": "",
+  "photo_url": "",
+  "logo_url": "",
+  "location": [
+    {
+      "city": "Hongkong",
+      "country": "Hongkong"
+    }
+  ],
+  "social_media": [
+    {}
+  ],
+  "interests": [],
+  "contact_method": [],
+  "activities": [
+    {}
+  ],
+  "last_updated": "2021-01-01",
+  "work": {
     "title": "Data afficionado",
-    "organization": "",
-    "department": "",
-    "notes": "",
-    "photo_url": "",
-    "logo_url": "",
-    "location": [
-      {"city": "Hongkong",
-       "country": "Hongkong"
-      }
-    ],
-    "social_media": [
-      {}
-    ],
-    "interests": [],
-    "contact_method": [],
-    "activities": [
-      {}
-    ],
-    "last_updated": "2021-01-01"
+    "organisation": "",
+    "department": ""
   }
-  
+}
