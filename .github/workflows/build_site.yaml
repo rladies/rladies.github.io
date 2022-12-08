@@ -1,6 +1,9 @@
 name: Build site and deploy
 
 on:
+  workflow_dispatch:
+    types:
+        - completed
   pull_request:
     branches:
       - main
@@ -8,8 +11,6 @@ on:
   push:
     branches: 
       - main
-  schedule:
-    - cron: "0 */12 * * *"
 
 jobs:
   vars:
