@@ -767,9 +767,10 @@ pre {
   text-transform: uppercase;
 }
 
-.card-expand-meta {
-  margin-top: 0.8rem;
-  font-size: 12px;
+.card-expand-foot{
+  margin-top: 0.5rem;
+  margin-bottom: -10px;
+  font-size: 11px;
   color: $secondary;
    a {
     text-decoration: none;

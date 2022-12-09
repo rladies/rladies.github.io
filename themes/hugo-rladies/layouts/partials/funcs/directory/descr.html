@@ -1,6 +1,21 @@
 {{ $data := newScratch }}
 {{ $data.Set "content" "" }}
 
+{{ with .work.organisation }} 
+  {{ $data.Add "content" "<p class=\"card-text\">" }}
+  {{ $data.Add "content" "<i class=\"fa-solid fa-briefcase\"></i> " }}
+  {{ $data.Add "content" . }} 
+{{ end }}
+{{ with .work.department }} {{ $data.Add "content" . }} {{ end }}
+{{ with .work.organisation }} "</p>" {{ end }}
+
+{{ with .contact_method }} 
+  {{ $data.Add "content" "<p class=\"card-text\">" }}
+  {{ $data.Add "content" "<i class=\"fa-solid fa-comment\"></i> "}}
+  {{ $data.Add "content" (delimit . ", ") }}
+  {{ $data.Add "content" "</p>" }}
+{{ end }}
+              
 {{ with .interests }}
   {{ $data.Add "content" "<p class=\"card-text\">" }}
   {{ $data.Add "content" "<b><i class=\"fas fa-tag\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
@@ -31,10 +46,6 @@
   {{ end }}
 {{ end }}
 
-{{ with .contact_method }} 
-  {{ $data.Add "content" "<p class=\"card-text\">" }}
-  {{ $data.Add "content" (printf "<b>Contact through:</b> %s" (delimit . ", ") ) }}
-  {{ $data.Add "content" "</p>" }}
-{{ end }}
+
 
 {{ return ($data.Get "content") }}
