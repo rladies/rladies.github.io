@@ -1,6 +1,7 @@
 name: Build site and deploy
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
@@ -8,8 +9,6 @@ on:
   push:
     branches: 
       - main
-  schedule:
-    - cron: "0 */12 * * *"
 
 jobs:
   vars:
@@ -71,7 +70,6 @@ jobs:
         if: steps.check_files.outputs.run_validation == 'true'
         run: Rscript scripts/validate_jsons.R
         
-
   build:
     name: Build and publish to Netlify
     runs-on: macOS-latest
@@ -108,8 +106,15 @@ jobs:
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
-          path: directory
-      
+          path: dir
+          
+      - name: Site data - Meetup
+        uses: actions/checkout@v2
+        with:
+          repository: rladies/meetup_archive
+          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
+          path: mtp
+
       - name: Site data - Get blogs list
         uses: actions/checkout@v2
         with:
@@ -127,10 +132,10 @@ jobs:
       - name: Site data - clean cloned repos
         run: |
           mv rblogs/blogs data/rblogs
-          mv meetup_archive/data/* data/
-          mv directory/data/json data/directory
-          mv directory/data/img static/images/directory
-          rm -rf directory rblogs meetup_archive
+          mv dir/data/json data/directory
+          mv dir/data/img static/images/directory
+          mv mtp/data/* data/
+          rm -rf tmp rblogs mtp
 
       - name: Build
         run: hugo --enableGitInfo
