@@ -30,7 +30,7 @@
               {{ $descr := partial "funcs/directory/descr.html" $d }}
               {{ $subtitle := ($dir.Get "subtitle" ) }}
               {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
-              {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo_url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo_url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
             {{ end }}
         </ul>
       </div>

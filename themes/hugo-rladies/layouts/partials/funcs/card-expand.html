@@ -2,8 +2,10 @@
 {{ $image := $image | absURL  }}
 {{ $size := .size | default "medium" }}
 {{ $footcol := .footcol | default 1 }}
+{{ $id := .id }}
 
-<li class="card-expand rounded card-{{ $size }} card" id="{{ .title | safeJS }}">
+
+<li class="card-expand rounded card-{{ $size }} card" id="{{ $id | urlize }}">
   <div class="card-expand-img rounded-top">
     <img src="{{ $image }}"/>
   </div>
