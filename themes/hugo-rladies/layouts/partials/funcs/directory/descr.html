@@ -6,7 +6,10 @@
   {{ $data.Add "content" "<i class=\"fa-solid fa-briefcase\"></i> " }}
   {{ $data.Add "content" . }} 
 {{ end }}
-{{ with .work.department }} {{ $data.Add "content" . }} {{ end }}
+{{ with .work.department }} 
+  {{ $data.Add "content" ", " }} 
+  {{ $data.Add "content" . }} 
+{{ end }}
 {{ with .work.organisation }} "</p>" {{ end }}
 
 {{ with .contact_method }} 

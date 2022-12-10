@@ -11,7 +11,7 @@
       <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
 
     <div class="container expand-grid" id="directory-cards">
-        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="directory-grid">
+        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="directory-grid">
             {{ $directory := ( .Scratch.Get "directory" ) }}
             {{ range $name := $.Scratch.Get "dic" | shuffle }}
               {{ $d := index $directory $name }}
