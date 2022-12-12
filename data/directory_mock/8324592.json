@@ -1,43 +1,22 @@
 {
   "name": "Maëlle  Salmon",
   "honorific": "Dr.",
-  "categories": [
-    "France",
-    "Speaker"
-  ],
-  "notes": "",
-  "photo_url": "https://rladies.org/wp-content/uploads/connections-images/maille-salmon/Maelle.jpg",
-  "logo_url": "",
-  "location": [
-    {
-      "city": "Nancy",
-      "country": "France"
-    }
-  ],
-  "social_media": [
-    {
-      "twitter": "ma_salmon",
-      "website": "http://www.masalmon.eu/"
-    }
-  ],
-  "interests": [
-    "R in Research",
-    "Reproducible Analyses",
-    "Open Science and Open Data",
-    "Statistics",
-    "epidemiology",
-    "Public Health",
-    "R Blogging"
-  ],
-  "contact_method": [
-    "Twitter"
-  ],
-  "activities": [
-    {}
-  ],
+  "categories": ["France", "Speaker"],
+  "location": {
+    "city": "Nancy",
+    "country": "France"
+  },
+  "social_media": {
+    "twitter": "ma_salmon",
+    "website": "http://www.masalmon.eu/"
+  },
+  "interests": ["R in Research", "Reproducible Analyses", "Open Science and Open Data", "Statistics", "epidemiology", "Public Health", "R Blogging"],
+  "contact_method": ["Twitter"],
+  "activities": [],
   "work": {
-    "title": "Data scientist",
-    "organisation": "",
-    "department": ""
+    "title": "Data scientist"
+  },
+  "photo": {
+    "url": "https://rladies.org/wp-content/uploads/connections-images/maille-salmon/Maelle.jpg"
   }
 }

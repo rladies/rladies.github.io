@@ -16,21 +16,18 @@
             {{ range $name := $.Scratch.Get "dic" | shuffle }}
               {{ $d := index $directory $name }}
               {{ $dir := newScratch }}
-              {{ $dir.Set "subtitle" $d.work.title }} 
+              {{ $dir.Set "subtitle" "" }} 
+              {{ with $d.work.title }} {{$dir.Set "subtitle" . }} {{ end }}
 
               {{ with $d.social_media }}
-                {{ range . }}
-                  {{ if gt (len .) 0 }}
                     {{ $some := partial "some.html" (dict "data" .) }}
                     {{ $dir.Add "subtitle" $some }} 
-                  {{ end }}
-                {{ end }}
               {{ end }}
 
               {{ $descr := partial "funcs/directory/descr.html" $d }}
               {{ $subtitle := ($dir.Get "subtitle" ) }}
               {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
-              {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo_url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo.url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
             {{ end }}
         </ul>
       </div>

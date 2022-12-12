@@ -1,29 +1,15 @@
 {
   "name": "Jane Doe",
-  "honorific": "",
-  "categories": [],
-  "notes": "",
-  "photo_url": "",
-  "logo_url": "",
-  "location": [
-    {
-      "city": "Tuscaluca",
-      "state": "Alabama",
-      "country": "USA"
-    }
-  ],
-  "social_media": [
-    {}
-  ],
-  "interests": [],
-  "contact_method": [],
-  "activities": [
-    {}
-  ],
+  "location": {
+    "city": "Tuscaluca",
+    "state": "Alabama",
+    "country": "USA"
+  },
+  "social_media": [],
+  "activities": [],
   "last_updated": "2021-01-01",
   "work": {
-    "title": "Data afficionado",
-    "organisation": "",
-    "department": ""
-  }
+    "title": "Data afficionado"
+  },
+  "photo": {}
 }

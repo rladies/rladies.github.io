@@ -1,28 +1,15 @@
 {
   "name": "Yara Doe",
   "honorific": "MD",
-  "categories": [],
-  "notes": "",
-  "photo_url": "",
-  "logo_url": "",
-  "location": [
-    {
-      "city": "Stockholm",
-      "country": "Sweden"
-    }
-  ],
-  "social_media": [
-    {}
-  ],
-  "interests": [],
-  "contact_method": [],
-  "activities": [
-    {}
-  ],
+  "location": {
+    "city": "Stockholm",
+    "country": "Sweden"
+  },
+  "social_media": [],
+  "activities": [],
   "last_updated": "2021-01-01",
   "work": {
-    "title": "Data scientist",
-    "organisation": "",
-    "department": ""
-  }
+    "title": "Data scientist"
+  },
+  "photo": {}
 }

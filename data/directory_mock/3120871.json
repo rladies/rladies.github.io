@@ -1,25 +1,11 @@
 {
   "name": "Jane Doe",
-  "honorific": "",
-  "categories": [],
-  "notes": "",
-  "photo_url": "",
-  "logo_url": "",
-  "location": [
-    {}
-  ],
-  "social_media": [
-    {}
-  ],
-  "interests": [],
-  "contact_method": [],
-  "activities": [
-    {}
-  ],
+  "location": [],
+  "social_media": [],
+  "activities": [],
   "last_updated": "2021-01-01",
   "work": {
-    "title": "Data afficionado",
-    "organisation": "",
-    "department": ""
-  }
+    "title": "Data afficionado"
+  },
+  "photo": {}
 }
