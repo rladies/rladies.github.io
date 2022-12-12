@@ -1,6 +1,10 @@
-  {
-    "name": "Christin Zasada",
-    "role": ["Blog"],
-    "start": "Sept. 2019",
-    "img": "christin_zasada.png"
+{
+  "name": "Christin Zasada",
+  "role": [
+    "Blog"
+  ],
+  "start": "Sept. 2019",
+  "img": {
+    "url": "christin_zasada.png"
   }
+}

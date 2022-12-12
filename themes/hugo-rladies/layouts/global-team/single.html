@@ -59,11 +59,19 @@
           {{ range $name := $.Scratch.Get "gtc" | shuffle }}
             {{ $d := index $gt.current $name }}
             {{ $descr := delimit $d.role ", " }}
-            {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
+            {{ $img := ( printf "about-us/global-team/img/%s" $d.img.url ) }}
             {{ $image := $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
             {{ $image := $image.Fit "200x200" }}
+            
+            {{ $data := newScratch }}
+            {{ $data.Set "foot" "" }}
+            {{ with $d.img.credit }}
+                {{ $data.Set "foot" "<p class=\"card-text text-muted\"><small>" }}
+                {{ $data.Add "foot" (printf "Photo credit: %s" . ) }}
+                {{ $data.Add "foot" "</small></p>" }}
+            {{ end }}
 
-            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image.RelPermalink "descr" $descr "size" "small") }}
+            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image.RelPermalink "foot" $descr "size" "small" "descr" ($data.Get "foot")) }}
           {{ end }}
       </ul>
     </div>
@@ -82,7 +90,7 @@
         {{ range $name := $.Scratch.Get "gta" | shuffle }}
             {{ $d := index $gt.alumni $name }}
             {{ $descr := delimit $d.role ", " }}
-            {{ $img := ( printf "about-us/global-team/img/%s" $d.img ) }}
+            {{ $img := ( printf "about-us/global-team/img/%s" $d.img.url ) }}
             {{ $foot := (printf "%s &#8212 %s" $d.start $d.end)}}
             {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "descr" $descr "size" "small" "foot" $foot) }}
         {{ end }}

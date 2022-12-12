@@ -1,6 +1,10 @@
-  {
-    "name": "Noa Tamir",
-    "role": ["CoC Enforcement Support"],
-    "start": "March 2020",
-    "img": "noa_tamir.png"
+{
+  "name": "Noa Tamir",
+  "role": [
+    "CoC Enforcement Support"
+  ],
+  "start": "March 2020",
+  "img": {
+    "url": "noa_tamir.png"
   }
+}

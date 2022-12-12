@@ -1,7 +1,11 @@
-  {
-    "name": "Alice Daish",
-    "role": [" Leadership Team"],
-    "start": "July 2016",
-    "end": "2018",
-    "img": "alice_daish.png"
+{
+  "name": "Alice Daish",
+  "role": [
+    " Leadership Team"
+  ],
+  "start": "July 2016",
+  "end": "2018",
+  "img": {
+    "url": "alice_daish.png"
   }
+}
