@@ -330,8 +330,7 @@ pre {
 /* parallax Hero  */
 /******************/
 .paral {
-  background-attachment: fixed;
-  background-position: 50% 50%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
@@ -342,10 +341,6 @@ pre {
     line-height: 60px;
   }
 
-  .chevron {
-    color: rgba(lighten($primary, 40%), .6);
-  }
-  
   .logo img{
     position: absolute;
     display: block;
@@ -363,6 +358,14 @@ pre {
 
 .home { 
   height: 100vh;
+  
+  .paral {
+    background-attachment: none;
+  }
+  
+  .chevron {
+    color: rgba(lighten($primary, 40%), .6);
+  }
   
   .logo img {
     bottom: 0;
