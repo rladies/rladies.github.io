@@ -7,9 +7,6 @@
         {{ $data := newScratch }}
         {{ $data.Set "descr" "" }}
 
-        {{ $image := resources.GetRemote .photo_url }}
-        {{ $image := $image.Fill "323x200" }}
-        
         {{ range .authors }}
           {{ $data.Add "descr" "<p>" }}
           {{ $data.Add "descr" .name }}
@@ -23,7 +20,7 @@
         {{ $descr :=  $data.Get "descr" }}
         
         {{ $subtitle := .subtitle | default "" }}
-        {{ partial "funcs/card-expand.html" (dict "title" .title "img" $image.RelPermalink "subtitle" $subtitle "descr" $descr "category" .type ) }}
+        {{ partial "funcs/card-expand.html" (dict "title" .title "img" .photo_url "subtitle" $subtitle "descr" $descr "category" .type ) }}
       {{ end }}
     </ul>
   </div>
