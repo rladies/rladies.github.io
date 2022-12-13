@@ -50,9 +50,9 @@
 {{ end }}
 
 {{ with .photo.credit }}
-  {{ $data.Add "content" "<p class=\"card-text text-muted\">" }}
+  {{ $data.Add "content" "<p class=\"card-text text-muted\"><small>" }}
   {{ $data.Add "content" (printf "Photo credit: %s" . ) }}
-  {{ $data.Add "content" "</p>" }}
+  {{ $data.Add "content" "</small></p>" }}
 {{ end }}
 
 {{ return ($data.Get "content") }}
