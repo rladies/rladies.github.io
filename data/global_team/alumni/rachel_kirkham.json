@@ -1,7 +1,11 @@
-  {
-    "name": "Rachel Kirkham",
-    "role": [" Leadership Team"],
-    "start": "July 2016",
-    "end": "Dec. 2016",
-    "img": "rachel_kirkham.png"
+{
+  "name": "Rachel Kirkham",
+  "role": [
+    " Leadership Team"
+  ],
+  "start": "July 2016",
+  "end": "Dec. 2016",
+  "img": {
+    "url": "rachel_kirkham.png"
   }
+}

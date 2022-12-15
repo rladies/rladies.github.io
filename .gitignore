@@ -6,12 +6,10 @@
 /build/
 /resources/_gen/
 .hugo_build.lock
-
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
 hugo.linux
-
 ### R ###
 # History files
 .Rhistory
@@ -20,27 +18,21 @@ hugo.linux
 .RData
 # User-specific files
 .Ruserdata
-
 # Output files from R CMD check
 /*.Rcheck/
 # RStudio files
 .Rproj.user/
-
 # knitr and R markdown default cache directories
 *_cache/
 /cache/
-
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
-
 # End of https://www.gitignore.io/api/r,hugo
 # Meetupr auth
 **/*.httr-oauth$
-
 # stupid mac hidden files
 **/.DS_Store
-
 # html rendered content
 content/*/*html
 content/*/*/*html
@@ -50,11 +42,13 @@ README.html
 # should never be commited
 data/directory/
 static/images/directory/
+data/rblogs
 
 # npm
 node_modules/
 package-lock.json
 .meetup_token.rds
-
 # workflow tmp file
 tmp*
+~/Library/Application Support/meetupr/meetupr-token.rds
+/var/folders/ws/1mjqfpsj3kv_b_z2091qkm600000gq/T//Rtmp4EPJ8U/fileecc479130cbd.rds

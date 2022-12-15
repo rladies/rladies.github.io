@@ -1,7 +1,11 @@
-  {
-    "name": "Gabriela de Queiroz",
-    "role": [" Leadership Team"],
-    "start": "July 2016",
-    "end": "2019",
-    "img": "gabriela_de_queiroz.png"
+{
+  "name": "Gabriela de Queiroz",
+  "role": [
+    " Leadership Team"
+  ],
+  "start": "July 2016",
+  "end": "2019",
+  "img": {
+    "url": "gabriela_de_queiroz.png"
   }
+}

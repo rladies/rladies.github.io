@@ -1,12 +1,12 @@
-<div class="jumbotron paral m-0" style="height: {{ if .IsHome }} 100vh {{else}} 40vh{{end}}; background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url({{ .Site.Params.banner | relURL }})" id="hero">
+<div class="jumbotron paral m-0 {{ if .IsHome }} home {{ end }}" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url({{ .Site.Params.banner | relURL }})" id="hero">
   <a rel="alternate" href="{{ .Lang | relURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">
-    <div class="logo {{ if .IsHome }} home {{end}}">
+    <div class="logo">
       <img src="{{ .Site.Params.avatar | relURL }}">
     </div>
   </a>
   {{ if .IsHome }}
-    <a href="#home-news">
-      <i class="fa fa-chevron-down chevron"></i>
+    <a href="#home-news ">
+      <i class="fa fa-chevron-down chevron animated fadeInUp"></i>
     </a>  
   {{ end }}
 </div>

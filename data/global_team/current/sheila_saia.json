@@ -1,6 +1,10 @@
-  {
-    "name": "Sheila Saia",
-    "role": ["Directory"],
-    "start": "",
-    "img": "sheila_saia.png"
+{
+  "name": "Sheila Saia",
+  "role": [
+    "Directory"
+  ],
+  "start": "",
+  "img": {
+    "url": "sheila_saia.png"
   }
+}

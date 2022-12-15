@@ -4,28 +4,39 @@
 		{{ .Content }}
 	</div>
 
-  <div class="flex-container full-width" id="directory-content">
+  <div class="flex-container" id="directory-content">
     
-    <center class="m-2">
       <input type="text" id="dir-search" class="fuzzy-search rounded" placeholder="Search directory..."/>
       <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</button>
       <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
 
-    <div class="container" id="directory-cards">
-        <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
+    <div class="container expand-grid" id="directory-cards">
+        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="directory-grid">
             {{ $directory := ( .Scratch.Get "directory" ) }}
             {{ range $name := $.Scratch.Get "dic" | shuffle }}
               {{ $d := index $directory $name }}
-              {{ partial "directory/li.html" $d }}
+              {{ $dir := newScratch }}
+              {{ $dir.Set "subtitle" "" }} 
+              {{ with $d.work.title }} {{$dir.Set "subtitle" . }} {{ end }}
+
+              {{ with $d.social_media }}
+                    {{ $some := partial "some.html" (dict "data" .) }}
+                    {{ $dir.Add "subtitle" $some }} 
+              {{ end }}
+
+              {{ $descr := partial "funcs/directory/descr.html" $d }}
+              {{ $subtitle := ($dir.Get "subtitle" ) }}
+              {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo.url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
             {{ end }}
         </ul>
       </div>
       
       <!-- pagination nav -->
       <div class="nav pagination justify-content-center align-content-center" aria-label="Directory pagination">
-        <a class="pagination-prev" href="#directory-content" onclick=".prev()"><</a>
+        <a class="pagination-prev disabled" href="#directory-content"><span class="page-arrow"><</span></a>
         <ul class="pagination-layout"></ul>
-        <a class="pagination-next" href="#directory-content" onclick=".next()">></a>
+        <a class="pagination-next" href="#directory-content"><span class="page-arrow">></span></a>
       </div>
       
     </div>
@@ -48,8 +59,8 @@
         page: perPage,
         pagination: {
           innerWindow: 1,
-          left: 0,
-          right: 0,
+          left: 2,
+          right: 2,
           paginationClass: "pagination-layout",
           item: "<li><a class='page' href='#directory-content'></a></li>"
         },
@@ -78,7 +89,12 @@
         }
       });
       
-
+	$(".pagination-next").click(function() {
+		$(".pagination-layout .active").next('li')[0].firstChild.click()
+	});
+	$(".pagination-prev").click(function() {
+		$(".pagination-layout .active").prev('li')[0].firstChild.click()
+	});
 
       // find url anchor and populate search field.
       var entry = decodeURIComponent(window.location.hash.substr(1));

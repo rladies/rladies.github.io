@@ -77,4 +77,4 @@ Let's keep working on a safe community for everyone!
 
 + 2019-04-16, Julia Silge - [Writing a letter to DataCamp ](https://juliasilge.com/blog/datacamp-misconduct/)
 
-`{{% tweet "1116743032492253185" %}}`{=html}
+`{{% tweet user="EngelhardtCR" id="1116743032492253185" %}}`{=html}

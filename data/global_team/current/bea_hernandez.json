@@ -1,6 +1,10 @@
-  {
-    "name": "Bea Hernández",
-    "role": ["Community Slack"],
-    "start": "2017",
-    "img": "bea_hernandez.png"
+{
+  "name": "Bea Hernández",
+  "role": [
+    "Community Slack"
+  ],
+  "start": "2017",
+  "img": {
+    "url": "bea_hernandez.png"
   }
+}

@@ -1,6 +1,7 @@
-/themes/       @website
-/scripts/      @website
-LICENCE.md     @website
-/themes/       @website
-/static/robots.txt       @website
+/themes/                  @website
+/scripts/                 @website
+LICENCE.md                @website
+/themes/                  @website
+/static/robots.txt        @website
+/content/news             @global
 /themes/hugo-rladies/i18n/ 

@@ -11,5 +11,5 @@ options(
   blogdown.ext = ".Rmd",
   blogdown.subdir = "post",
   blogdown.title_case = TRUE,
-  blogdown.hugo.version = "0.88.1"
+  blogdown.hugo.version = "0.101.0"
 )

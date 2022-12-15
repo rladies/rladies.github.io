@@ -2,8 +2,10 @@
 {{ $image := $image | absURL  }}
 {{ $size := .size | default "medium" }}
 {{ $footcol := .footcol | default 1 }}
+{{ $id := .id }}
 
-<li class="card-expand rounded card-{{ $size }}">
+
+<li class="card-expand rounded card-{{ $size }} card" id="{{ $id | urlize }}">
   <div class="card-expand-img rounded-top">
     <img src="{{ $image }}"/>
   </div>
@@ -11,11 +13,9 @@
     {{ with .category }}
       <div class="card-expand-category rounded-right">{{ . }}</div>
     {{ end }}
-    {{ with .title }}
       <h4 class="card-expand-title">
-        {{ . | markdownify }}
+        <a href="#{{ .id }}" class="name">{{ .title | safeHTML }}</a>
       </h4>
-    {{ end }}
     {{ with .subtitle }}
       <h5 class="card-expand-subtitle">
         {{ . | safeHTML }}
@@ -26,7 +26,7 @@
         {{ . | safeHTML }} 
       </div>
     {{ end }}
-    <div class="card-expand-meta" style="column-count: {{$footcol}};">
+    <div class="card-expand-foot" style="column-count: {{$footcol}};">
       {{ with .foot }}
         <span>
           {{ . | safeHTML }}
