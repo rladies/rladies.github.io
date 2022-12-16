@@ -16,15 +16,15 @@
             {{ range $name := $.Scratch.Get "dic" | shuffle }}
               {{ $d := index $directory $name }}
               {{ $dir := newScratch }}
-              {{ $dir.Set "subtitle" "" }} 
-              {{ with $d.work.title }} {{$dir.Set "subtitle" . }} {{ end }}
+              {{ $dir.Set "subtitle" (printf "<p class=\"text-hide directory-id\">%s</p>" $name) }} 
+              {{ with $d.work.title }} {{$dir.Add "subtitle" . }} {{ end }}
 
               {{ with $d.social_media }}
-                    {{ $some := partial "some.html" (dict "data" .) }}
+                    {{ $some := partial "some.html" . }}
                     {{ $dir.Add "subtitle" $some }} 
               {{ end }}
 
-              {{ $descr := partial "funcs/directory/descr.html" $d }}
+              {{ $descr := partial "funcs/directory/descr.html" (dict "data" $d "id" $name ) }}
               {{ $subtitle := ($dir.Get "subtitle" ) }}
               {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
               {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo.url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
@@ -54,8 +54,8 @@
     var perPage = {{  ( .Scratch.Get "n_page_directory" ) }};
   	(async function(){
       var directoryList = new List('directory-content', {
-        valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
-        searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
+        valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'directory-id'], 
+        searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'directory-id'],
         page: perPage,
         pagination: {
           innerWindow: 1,
