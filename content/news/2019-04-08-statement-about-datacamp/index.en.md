@@ -65,7 +65,6 @@ Let's keep working on a safe community for everyone!
 
 + 2019-04-12, Noam Ross - [Don’t Take My DataCamp Course, There Must be Consequences for Sexual Assault](https://noamross.github.io/datacamp-sexual-assault/)
 
-`{{% tweet "1116709899159916544" %}}`{=html}
 
 + 2019-04-12, Bob Rudis - [A Note to Our Community On How To Hide Your Content From Search Engines](https://rud.is/b/2019/04/12/a-note-to-our-community-on-how-to-hide-your-content-from-search-engines/)
 
