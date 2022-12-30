@@ -1,55 +1,78 @@
 {{ $data := newScratch }}
 {{ $data.Set "content" "" }}
 
-{{ with .work.organisation }} 
+
+{{ with .data.work.organisation }} 
   {{ $data.Add "content" "<p class=\"card-text\">" }}
   {{ $data.Add "content" "<i class=\"fa-solid fa-briefcase\"></i> " }}
+{{ end }}
+{{ with .data.work.url }}
+  {{ $data.Add "content" (printf "<a href=\"%s\">" . ) }}
+{{ end }}
+{{ with .data.work.organisation }} 
   {{ $data.Add "content" . }} 
 {{ end }}
-{{ with .work.department }} 
+{{ with .data.work.url }}
+  {{ $data.Add "content" "</a>"}}
+{{ end }}
+{{ with .data.work.url }}
+{{ end }}
+{{ with .data.work.department }} 
   {{ $data.Add "content" ", " }} 
   {{ $data.Add "content" . }} 
 {{ end }}
-{{ with .work.organisation }} "</p>" {{ end }}
+{{ with .data.work.organisation }} "</p>" {{ end }}
 
-{{ with .contact_method }} 
+{{ with .data.contact_method }} 
   {{ $data.Add "content" "<p class=\"card-text\">" }}
   {{ $data.Add "content" "<i class=\"fa-solid fa-comment\"></i> "}}
   {{ $data.Add "content" (delimit . ", ") }}
   {{ $data.Add "content" "</p>" }}
 {{ end }}
               
-{{ with .interests }}
+{{ with .data.interests }}
   {{ $data.Add "content" "<p class=\"card-text\">" }}
   {{ $data.Add "content" "<b><i class=\"fas fa-tag\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
   {{ $data.Add "content" (printf "<span class=\"interests\"> %s </span>" (delimit . ", ") ) }}
   {{ $data.Add "content" "</p>" }}
 {{ end }}
 
-{{ with .activities }}
+{{ with .data.activities }}
   {{ with .r_groups }}
     {{ $data.Add "content" "<p class=\"card-text\">" }}
     {{ $data.Add "content" "<b><i class=\"fas fa-users\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
-    {{ $data.Add "content" (printf "<span class=\"r_groups\"> %s </span>" (delimit . ", ") ) }}
-    {{ $data.Add "content" "</p>" }}
+    {{ $data.Add "content" "<span class=\"r_groups\">" }}
+    {{ range $name , $url := .}}
+      {{  $data.Add "content" (partial "funcs/keypairlink.html" (dict "url" $url "name" $name )) }}
+      {{  $data.Add "content" ", " }}
+    {{ end }}
+    {{ $data.Add "content" "</span></p>" }}
   {{ end }}
       
   {{ with .r_packages }}
     {{ $data.Add "content" "<p class=\"card-text\">" }}
     {{ $data.Add "content" "<b><i class=\"fas fa-cube\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
-    {{ $data.Add "content" (printf "<span class=\"r_packages\"> %s </span>" (delimit . ", ") ) }}
-    {{ $data.Add "content" "</p>" }}
+    {{ $data.Add "content" "<span class=\"r_packages\">"  }}
+    {{ range $name , $url := .}}
+      {{  $data.Add "content" (partial "funcs/keypairlink.html" (dict "url" $url "name" $name )) }}
+      {{  $data.Add "content" ", " }}
+    {{ end }}
+    {{ $data.Add "content" "</span></p>" }}
   {{ end }}
   
   {{ with .shiny_apps }}
     {{ $data.Add "content" "<p class=\"card-text\">" }}
     {{ $data.Add "content" "<b><i class=\"fas fa-stripe-s\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
-    {{ $data.Add "content" (printf "<span class=\"shiny_apps\"> %s </span>" (delimit . ", ") ) }}
-    {{ $data.Add "content" "</p>" }}
+    {{ $data.Add "content" "<span class=\"shiny_apps\">" }}
+    {{ range $name , $url := .}}
+      {{  $data.Add "content" (partial "funcs/keypairlink.html" (dict "url" $url "name" $name )) }}
+      {{  $data.Add "content" ", " }}
+    {{ end }}
+    {{ $data.Add "content" "</span></p>" }}
   {{ end }}
 {{ end }}
 
-{{ with .photo.credit }}
+{{ with .data.photo.credit }}
   {{ $data.Add "content" "<p class=\"card-text text-muted\"><small>" }}
   {{ $data.Add "content" (printf "Photo credit: %s" . ) }}
   {{ $data.Add "content" "</small></p>" }}

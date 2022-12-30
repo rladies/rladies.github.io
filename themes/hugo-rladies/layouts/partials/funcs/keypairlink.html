@@ -1,0 +1,14 @@
+{{ $data := newScratch }}
+{{ $data.Set "content" "" }}
+
+{{ if ne .url "" }}
+  {{ $data.Add "content" (printf "<a href=\"%s\">" .url ) }}
+{{ end }}
+
+{{ $data.Add "content" .name }}
+
+{{ if ne .url "" }}
+  {{ $data.Add "content" "</a>" }}
+{{ end }}
+
+{{ return ( $data.Get "content" )}}

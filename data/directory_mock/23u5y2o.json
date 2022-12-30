@@ -13,13 +13,21 @@
   "interests": ["Statistics", "Bayesian Statistics", "Neuroimaging", "Data Visualisation", "Cognitive Psychology"],
   "contact_method": ["Twitter"],
   "activities": {
-    "r_groups": ["R-Ladies Oslo"],
-    "r_packages": ["ggseg", "ggsegExtra", "ggseg3d"]
+    "r_groups": {
+      "R-Ladies Oslo": "https://www.meetup.com/rladies-oslo/",
+      "R-Ladies global": ""
+      },
+    "r_packages": {
+      "ggseg": "https://ggseg.github.io/ggseg/",
+      "ggsegExtra": "",
+      "ggseg3d": ""
+    }
   },
   "work": {
     "title": "Staff researcher",
     "organisation": "University of Oslo",
-    "department": "Center for Lifespan Changes in Brain and Cognition, Dept. of Psychology"
+    "department": "Center for Lifespan Changes in Brain and Cognition, Dept. of Psychology",
+    "url": "https://www.oslobrains.no/"
   },
   "photo": {
     "url": "https://rladies.org/wp-content/uploads/connections-images/athanasia-mo-mowinckel/Athanasia.Mowinckel.2_square.png",
