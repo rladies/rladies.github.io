@@ -8,7 +8,13 @@
       "items": [{"type": "string"}]
     },
     "start": {"type": "string"},
-    "img": {"type": "string"}
+    "img": {
+      "type": "object",
+      "properties": {
+        "url":    { "type": "string"},
+        "credit": { "type": "string"}
+      },
+    },
   },
   "required": [
     "name",
