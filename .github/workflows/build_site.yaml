@@ -81,7 +81,7 @@ jobs:
     if: |
       (github.event_name != 'pull_request' || 
       github.event.pull_request.head.repo.full_name == github.repository) &&
-      ${{ always() && !(contains(needs.*.result, 'failure')) }} 
+      ( always() && !(contains(needs.*.result, 'failure')) )
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}

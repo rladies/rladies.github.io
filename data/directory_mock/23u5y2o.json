@@ -6,6 +6,7 @@
     "city": "Oslo",
     "country": "Norway"
   },
+  "languages": ["English", "Norwegian"],
   "social_media": {
     "twitter": "DrMowinckels",
     "github": "Athanasiamo"

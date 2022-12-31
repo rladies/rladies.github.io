@@ -29,6 +29,13 @@
   {{ $data.Add "content" (delimit . ", ") }}
   {{ $data.Add "content" "</p>" }}
 {{ end }}
+
+{{ with .data.languages }} 
+  {{ $data.Add "content" "<p class=\"card-text\">" }}
+  {{ $data.Add "content" "<i class=\"fa fa-language\"></i> "}}
+  {{ $data.Add "content" (delimit . ", ") }}
+  {{ $data.Add "content" "</p>" }}
+{{ end }}
               
 {{ with .data.interests }}
   {{ $data.Add "content" "<p class=\"card-text\">" }}
