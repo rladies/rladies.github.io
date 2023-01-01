@@ -20,8 +20,8 @@
               {{ with $d.work.title }} {{$dir.Add "subtitle" . }} {{ end }}
 
               {{ with $d.social_media }}
-                    {{ $some := partial "some.html" . }}
-                    {{ $dir.Add "subtitle" $some }} 
+                  {{ $some := partial "some.html" (dict "data" . ) }}
+                  {{ $dir.Add "subtitle" $some }} 
               {{ end }}
 
               {{ $descr := partial "funcs/directory/descr.html" (dict "data" $d "id" $name ) }}
