@@ -16,18 +16,22 @@
             {{ range $name := $.Scratch.Get "dic" | shuffle }}
               {{ $d := index $directory $name }}
               {{ $dir := newScratch }}
+              {{ $dir.Set "title" $d.name }} 
+              {{ $dir.Add "title" "<span><small>"}}
+              {{ with $d.social_media }}
+                  {{ $some := partial "some.html" (dict "data" . ) }}
+                  {{ $dir.Add "title" $some }} 
+              {{ end }}
+              {{ $dir.Add "title" "</small></span>"}}
+              
               {{ $dir.Set "subtitle" (printf "<p class=\"text-hide directory-id\">%s</p>" $name) }} 
               {{ with $d.work.title }} {{$dir.Add "subtitle" . }} {{ end }}
 
-              {{ with $d.social_media }}
-                  {{ $some := partial "some.html" (dict "data" . ) }}
-                  {{ $dir.Add "subtitle" $some }} 
-              {{ end }}
-
               {{ $descr := partial "funcs/directory/descr.html" (dict "data" $d "id" $name ) }}
               {{ $subtitle := ($dir.Get "subtitle" ) }}
+              {{ $title := ($dir.Get "title" ) }}
               {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
-              {{ partial "funcs/card-expand.html" (dict "title" $d.name "subtitle" $subtitle "size" "large" "img" $d.photo.url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" "large" "img" $d.photo.url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
             {{ end }}
         </ul>
       </div>
