@@ -27,11 +27,18 @@
               {{ $dir.Set "subtitle" (printf "<p class=\"text-hide directory-id\">%s</p>" $name) }} 
               {{ with $d.work.title }} {{$dir.Add "subtitle" . }} {{ end }}
 
+              {{ $dir.Set "img" "" }}
+              {{ with $d.photo.url  }}
+                {{ $image := resources.Get . }}
+                {{ $image := $image.Fill "300x300" }}
+                {{ $dir.Set "img" $image.Permalink }}
+              {{ end }}
+
               {{ $descr := partial "funcs/directory/descr.html" (dict "data" $d "id" $name ) }}
               {{ $subtitle := ($dir.Get "subtitle" ) }}
               {{ $title := ($dir.Get "title" ) }}
               {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
-              {{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" "large" "img" $d.photo.url "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" "large"  "img" ($dir.Get "img") "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
             {{ end }}
         </ul>
       </div>

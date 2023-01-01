@@ -137,7 +137,7 @@ jobs:
         run: |
           mv rblogs/blogs data/rblogs
           mv dir/data/json data/directory
-          mv dir/data/img static/images/directory
+          mv dir/data/img assets/directory
           mv mtp/data/* data/
           rm -rf tmp rblogs mtp
 
