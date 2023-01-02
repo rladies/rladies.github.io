@@ -29,7 +29,7 @@
 
               {{ $dir.Set "img" "" }}
               {{ with $d.photo.url  }}
-                {{ $image := resources.Get . }}
+                {{ $image := resources.Get (printf "directory/%s.png" $name) }}
                 {{ $image := $image.Fill "300x300" }}
                 {{ $dir.Set "img" $image.Permalink }}
               {{ end }}
