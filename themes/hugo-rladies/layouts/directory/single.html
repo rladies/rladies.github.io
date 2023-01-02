@@ -28,8 +28,8 @@
               {{ with $d.work.title }} {{$dir.Add "subtitle" . }} {{ end }}
 
               {{ $dir.Set "img" "" }}
-              {{ with $d.photo.url  }}
-                {{ $image := resources.Get (printf "directory/%s.png" $name) }}
+              {{ with (resources.GetMatch $d.photo.url ) }}
+                {{ $image :=  . }}
                 {{ $image := $image.Fill "300x300" }}
                 {{ $dir.Set "img" $image.Permalink }}
               {{ end }}
