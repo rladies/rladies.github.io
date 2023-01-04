@@ -14,10 +14,16 @@
   {{ $data.Set "range" . }}
 {{ end }}
 
+<!--- Set the rel --->
+{{ $data.Set "rel" false }}
+{{ with .relme }}
+  {{ $data.Set "rel" true }}
+{{ end }}
+
 {{ range $index, $v := first ($data.Get "range") ($data.Get "value" ) }}
   {{ $selection := index ($data.Get "key") $index }}
   {{ $some:= partial "funcs/some.html" (dict "type" $selection "handle" $v ) }}
-    <a href="{{ $some.url }}" target="_blank">
+    <a href="{{ $some.url }}" target="_blank" {{ if ( $data.Get "rel") }} rel="me" {{ end }} >
       <i class="{{ $some.fa }}"></i>
     </a>
 {{ end }}

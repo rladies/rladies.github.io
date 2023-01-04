@@ -30,13 +30,13 @@
       <tbody>
         {{ range $countries }}
           <tr>
-            <td class="text-right text-bold b-rladies b-rladies-r" rowspan = "{{ .n }}"> {{ .country }} </td>
+            <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country }} </td>
                 {{ range where $chapters "country" .country }}
             <td class="text-left"> <a href="http://meetup.com/{{ .meetup }}">{{ .name }}</a> </td>
               
               <td class="text-right"> 
                 {{ with .social_media }}
-                    {{ partial "some.html" (dict "data" . ) }}
+                    {{ partial "some.html" (dict "data" . "relme" true) }}
                 {{ end }}
               </td>
                 </tr>
