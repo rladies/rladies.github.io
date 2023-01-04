@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-auckland",
+    "status": "active",
+    "country": "New Zealand",
+    "city": "Auckland",
+    "social_media": {
+      "meetup": "rladies-auckland",
+      "twitter": "RLadiesAKL",
+      "email": "auckland@rladies.org",
+      "github": "rladies/meetup-presentations_auckland"
+    },
+    "organizers": {
+      "current": ["Kim Fitter", "Anna Fergusson", "Isabel Johnson"],
+      "former": []
+    }
+  }
+]

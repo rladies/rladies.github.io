@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-frankfurt",
+    "status": "active",
+    "country": "Germany",
+    "state.region": "Hessen",
+    "city": "Frankfurt",
+    "social_media": {
+      "meetup": "rladies-frankfurt",
+      "twitter": "RLadiesFRA",
+      "email": "frankfurt@rladies.org",
+      "github": "rladies/meetup-presentations_frankfurt"
+    },
+    "organizers": {
+      "current": ["Sandra Pintor", "Myriam Traub", "Lara Vivian", "Natalie Filmann"],
+      "former": []
+    }
+  }
+]

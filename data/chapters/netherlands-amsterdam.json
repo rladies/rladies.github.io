@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-amsterdam",
+    "status": "active",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "social_media": {
+      "meetup": "rladies-amsterdam",
+      "twitter": "RLadiesAMS",
+      "email": "amsterdam@rladies.org"
+    },
+    "organizers": {
+      "current": ["Tess Korthout", "Janine Khuc", "Iris de Vries"],
+      "former": []
+    }
+  }
+]

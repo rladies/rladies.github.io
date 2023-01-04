@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-nashville",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Tennessee",
+    "city": "Nashville",
+    "social_media": {
+      "meetup": "rladies-nashville",
+      "twitter": "RLadiesNash",
+      "email": "nashville@rladies.org",
+      "github": "rladies/rladies-nashville"
+    },
+    "organizers": {
+      "current": ["Lucy D'Agostino McGowan", "Mary van Valkenburg"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-cdmx",
+    "status": "active",
+    "country": "Mexico",
+    "city": "Mexico City",
+    "social_media": {
+      "meetup": "rladies-cdmx",
+      "twitter": "RLadiesCDMX",
+      "email": "cdmx@rladies.org",
+      "facebook": "rladiescdmx",
+      "github": "rladies/meetup-presentations_CDMX",
+      "slack": "rladiescdmx.slack.com"
+    },
+    "organizers": {
+      "current": ["Silvia Eunice Guti<e9>rrez de la Torre", "Maria Ortiz", "Mariana Carmona", "Mariana Godina"],
+      "former": []
+    }
+  }
+]

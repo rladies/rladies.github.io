@@ -1,0 +1,21 @@
+[
+  {
+    "urlname": "rladies-seattle",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Washington",
+    "city": "Seattle",
+    "social_media": {
+      "meetup": "rladies-seattle",
+      "twitter": "RLadiesSeattle",
+      "email": "seattle@rladies.org",
+      "github": "rladies/rladies-seattle",
+      "website": "https://rladiesseattle.org/",
+      "slack": "https://rladies-sea.slack.com/"
+    },
+    "organizers": {
+      "current": ["Chaya Eastwood Jones", "Monica Gerber", "Isabella Vel<e1>squez"],
+      "former": []
+    }
+  }
+]

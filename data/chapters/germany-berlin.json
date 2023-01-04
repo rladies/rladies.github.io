@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-berlin",
+    "status": "active",
+    "country": "Germany",
+    "city": "Berlin",
+    "social_media": {
+      "meetup": "rladies-berlin",
+      "twitter": "RLadiesBerlin",
+      "email": "berlin@rladies.org",
+      "facebook": "RLadiesBerlin",
+      "github": "rladies/meetup-presentations_berlin",
+      "slack": "https://rstats-germany.slack.com/"
+    },
+    "organizers": {
+      "current": ["Christin Zasada", "Noa Tamir", "Hannah Tillmann"],
+      "former": []
+    }
+  }
+]

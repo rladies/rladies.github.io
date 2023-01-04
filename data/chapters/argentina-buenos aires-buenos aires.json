@@ -1,0 +1,22 @@
+[
+  {
+    "urlname": "rladies-buenos-aires",
+    "status": "active",
+    "country": "Argentina",
+    "state.region": "Buenos Aires",
+    "city": "Buenos Aires",
+    "social_media": {
+      "meetup": "rladies-buenos-aires",
+      "twitter": "RLadiesBA",
+      "email": "buenosaires@rladies.org",
+      "facebook": "RladiesBA",
+      "instagram": "rladiesba",
+      "youtube": "UCztAJhENVqsqv0cvyxs4sgg",
+      "github": "rladies/meetup-presentations_buenosaires"
+    },
+    "organizers": {
+      "current": ["Paola Corrales", "Florencia D'Andrea", "Monica Alonso", "Priscilla Minotti", "Jimena Saucedo", "Maria Nanton", "Andrea Gomez", "Jesica Formoso", "Virginia Garc<ed>a Alonso"],
+      "former": []
+    }
+  }
+]

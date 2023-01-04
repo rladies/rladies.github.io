@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-lyon",
+    "status": "active",
+    "country": "France",
+    "city": "Lyon",
+    "social_media": {
+      "meetup": "rladies-lyon",
+      "twitter": "RLadiesLyon",
+      "email": "lyon@rladies.org",
+      "github": "rladies/meetup-presentations_lyon"
+    },
+    "organizers": {
+      "current": ["Shama Virani", "Hannah Lennon", "Citadel Cabasag", "Nada Assi", "Florence Guida"],
+      "former": []
+    }
+  }
+]

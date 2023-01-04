@@ -1,0 +1,15 @@
+[
+  {
+    "status": "prospective",
+    "country": "USA",
+    "state.region": "Texas",
+    "city": "San Antonio",
+    "social_media": {
+      "email": "sanantonio@rladies.org"
+    },
+    "organizers": {
+      "current": ["Emily Stone"],
+      "former": []
+    }
+  }
+]

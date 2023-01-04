@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-kathmandu",
+    "status": "active",
+    "country": "Nepal",
+    "city": "Kathmandu",
+    "social_media": {
+      "meetup": "rladies-kathmandu",
+      "twitter": "RLadiesKtm",
+      "email": "kathmandu@rladies.org"
+    },
+    "organizers": {
+      "current": ["Prakriti Dhungana", "Anupama Bishwokarma"],
+      "former": []
+    }
+  }
+]

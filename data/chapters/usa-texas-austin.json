@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-austin",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Texas",
+    "city": "Austin",
+    "social_media": {
+      "meetup": "rladies-austin",
+      "twitter": "RLadiesAustin",
+      "email": "austin@rladies.org",
+      "github": "rladies/meetup-presentations_austin"
+    },
+    "organizers": {
+      "current": ["Phanikumar Tata"],
+      "former": ["Victoria Valencia", "Caitlin Hudon"]
+    }
+  }
+]

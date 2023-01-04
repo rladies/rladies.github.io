@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-sydney",
+    "status": "active",
+    "country": "Australia",
+    "city": "Sydney",
+    "social_media": {
+      "meetup": "rladies-sydney",
+      "twitter": "RLadiesSydney",
+      "email": "sydney@rladies.org",
+      "github": "rladies/rladiessydney",
+      "website": "https://rladiessydney.org/"
+    },
+    "organizers": {
+      "current": ["Jenny Richmond"],
+      "former": []
+    }
+  }
+]

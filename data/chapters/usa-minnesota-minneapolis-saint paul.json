@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-tc",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Minnesota",
+    "city": "Minneapolis-Saint Paul",
+    "social_media": {
+      "meetup": "rladies-tc",
+      "twitter": "RLadiesTC",
+      "email": "minneapolis-saintpaul@rladies.org"
+    },
+    "organizers": {
+      "current": ["Christina Knudson", "Kierstin Catlett"],
+      "former": []
+    }
+  }
+]

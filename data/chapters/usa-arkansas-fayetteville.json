@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-fayetteville",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Arkansas",
+    "city": "Fayetteville",
+    "social_media": {
+      "meetup": "rladies-fayetteville",
+      "email": "fayetteville@rladies.org"
+    },
+    "organizers": {
+      "current": ["Morgan Middlebrooks"],
+      "former": []
+    }
+  }
+]

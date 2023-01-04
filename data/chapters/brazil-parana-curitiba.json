@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-curitiba",
+    "status": "retired on 04-04-2020",
+    "country": "Brazil",
+    "state.region": "Parana",
+    "city": "Curitiba",
+    "social_media": {
+      "meetup": "rladies-curitiba",
+      "email": "curitiba@rladies.org",
+      "github": "rladies/meetup-presentations_curitiba"
+    },
+    "organizers": {
+      "current": ["Suellen Teixeira Zavadzki de Pauli", "Jhenifer Caetano", "Bruna Wundervald"],
+      "former": []
+    }
+  }
+]

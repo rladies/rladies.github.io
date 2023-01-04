@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-baltimore",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Maryland",
+    "city": "Baltimore",
+    "social_media": {
+      "meetup": "rladies-baltimore",
+      "twitter": "RLadiesBmore",
+      "email": "bmore@rladies.org",
+      "github": "rladies/meetup-presentations_baltimore"
+    },
+    "organizers": {
+      "current": ["Stephanie Hicks", "Margaret Taub", "Rachel Sparklin"],
+      "former": []
+    }
+  }
+]

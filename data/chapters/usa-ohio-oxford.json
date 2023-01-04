@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-oxford-ohio",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Ohio",
+    "city": "Oxford",
+    "social_media": {
+      "meetup": "rladies-oxford-ohio",
+      "email": "oxford-ohio@rladies.org"
+    },
+    "organizers": {
+      "current": ["Sandy Steiger", "Skyler Perry"],
+      "former": []
+    }
+  }
+]

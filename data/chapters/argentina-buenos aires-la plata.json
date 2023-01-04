@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-la-plata",
+    "status": "retired on 04-04-2020",
+    "country": "Argentina",
+    "state.region": "Buenos Aires",
+    "city": "La Plata",
+    "social_media": {
+      "meetup": "rladies-la-plata",
+      "twitter": "RLadies_LP",
+      "email": "laplata@rladies.org"
+    },
+    "organizers": {
+      "current": ["Sol Represa", "Myrian Aguilar", "Daniela Esquivel"],
+      "former": []
+    }
+  }
+]

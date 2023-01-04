@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-salvador",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "Bahia",
+    "city": "Salvador",
+    "social_media": {
+      "meetup": "rladies-salvador",
+      "twitter": "RLadiesSalvador",
+      "email": "salvador@rladies.org"
+    },
+    "organizers": {
+      "current": ["Karla Patricia Santos Oliveira Rodriguez Esquerre", "J<fa>lia Carolina"],
+      "former": []
+    }
+  }
+]

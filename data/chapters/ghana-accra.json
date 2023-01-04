@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-accra",
+    "status": "active",
+    "country": "Ghana",
+    "city": "Accra",
+    "social_media": {
+      "meetup": "rladies-accra"
+    },
+    "organizers": {
+      "current": ["Benedicta Essuon Akaribo"],
+      "former": []
+    }
+  }
+]

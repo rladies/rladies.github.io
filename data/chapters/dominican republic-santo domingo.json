@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-santo-domingo",
+    "status": "active",
+    "country": "Dominican Republic",
+    "city": "Santo Domingo",
+    "social_media": {
+      "meetup": "rladies-santo-domingo"
+    },
+    "organizers": {
+      "current": ["Lissette Rodriguez", "Chigeira De La Rosa"],
+      "former": []
+    }
+  }
+]

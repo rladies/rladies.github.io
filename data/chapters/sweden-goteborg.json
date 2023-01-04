@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-goteborg",
+    "status": "active",
+    "country": "Sweden",
+    "city": "Goteborg",
+    "social_media": {
+      "meetup": "rladies-goteborg",
+      "email": "goteborg@rladies.org"
+    },
+    "organizers": {
+      "current": ["Erica Metheney", "Natalia Alvarado"],
+      "former": []
+    }
+  }
+]

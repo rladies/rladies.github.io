@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-budapest",
+    "status": "active",
+    "country": "Hungary",
+    "city": "Budapest",
+    "social_media": {
+      "meetup": "rladies-budapest",
+      "twitter": "RLadiesBudapest",
+      "email": "budapest@rladies.org",
+      "facebook": "RLadiesBudapest",
+      "github": "rladies/meetup-presentations_budapest"
+    },
+    "organizers": {
+      "current": ["<c1>gnes Sal<e1>nki", "Eszter Windhager-Pokol", "Zsuzsanna Szab<f3>", "Rita Klein", "Berta B<f6>jte", "Gerda Luk<e1>csn<e9> Szab<f3>"],
+      "former": []
+    }
+  }
+]

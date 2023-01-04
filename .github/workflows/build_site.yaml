@@ -138,8 +138,11 @@ jobs:
           mv rblogs/blogs data/rblogs
           mv dir/data/json data/directory
           mv dir/data/img/* assets/directory
-          mv mtp/data/* data/
+          mv mtp/data/* data/meetup/
           rm -rf tmp rblogs mtp
+          
+      - name: Site data - merge chapter and meetup
+        run: Rscript scripts/get_chapters.R
 
       - name: Build
         run: hugo --enableGitInfo

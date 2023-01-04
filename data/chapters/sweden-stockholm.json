@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-stockholm",
+    "status": "active",
+    "country": "Sweden",
+    "city": "Stockholm",
+    "social_media": {
+      "meetup": "rladies-stockholm",
+      "twitter": "RLadiesSthlm",
+      "email": "stockholm@rladies.org",
+      "github": "rladies/meetup-presentations_stockholm"
+    },
+    "organizers": {
+      "current": ["Elisabeth Dahlqwist", "Nina Lindell", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm", "Ashley Thompson"],
+      "former": []
+    }
+  }
+]

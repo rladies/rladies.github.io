@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-san-diego",
+    "status": "active",
+    "country": "USA",
+    "state.region": "California",
+    "city": "San Diego",
+    "social_media": {
+      "meetup": "rladies-san-diego",
+      "twitter": "RLadiesSanDiego",
+      "email": "sandiego@rladies.org",
+      "facebook": "rladiessandiego",
+      "github": "rladies/meetup-presentations_sandiego"
+    },
+    "organizers": {
+      "current": ["Juliana Capitanio", "Viola Glenn", "Elke Patton"],
+      "former": []
+    }
+  }
+]

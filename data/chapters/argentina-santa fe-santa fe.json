@@ -1,0 +1,22 @@
+[
+  {
+    "urlname": "rladies-santa-fe",
+    "status": "active",
+    "country": "Argentina",
+    "state.region": "Santa Fe",
+    "city": "Santa Fe",
+    "social_media": {
+      "meetup": "rladies-santa-fe",
+      "twitter": "RLadiesSantaFe",
+      "email": "santafe@rladies.org",
+      "facebook": "RLadiesSantaFe",
+      "instagram": "rladiessantafe",
+      "youtube": "UCOFcXLjW9atcEuCa5kbOPSw",
+      "github": "rladies/meetup-presentations_santafe"
+    },
+    "organizers": {
+      "current": ["Melina Vidoni", "Liza Dosso", "Andrea Bergesio", "Mariel Lovatto", "Cecilia Rom<e1>n Miyasato"],
+      "former": []
+    }
+  }
+]

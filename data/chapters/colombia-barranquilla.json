@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-barranquilla",
+    "status": "active",
+    "country": "Colombia",
+    "city": "Barranquilla",
+    "social_media": {
+      "meetup": "rladies-barranquilla",
+      "twitter": "RLadiesBquilla",
+      "email": "barranquilla@rladies.org",
+      "instagram": "rladiesbquilla",
+      "youtube": "UCHITDNNHzEXfD8AzSFQOh9A",
+      "github": "rladies/meetup-presentations_barranquilla"
+    },
+    "organizers": {
+      "current": ["Mary Rivero", "Isabel V<e1>zquez", "Viviana Fl<f3>rez", "Danisse Carrascal", "Mar<ed>a Arrieta."],
+      "former": []
+    }
+  }
+]

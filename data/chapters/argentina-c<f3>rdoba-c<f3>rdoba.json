@@ -1,0 +1,21 @@
+[
+  {
+    "urlname": "rladies-cordoba",
+    "status": "active",
+    "country": "Argentina",
+    "state.region": "C<f3>rdoba",
+    "city": "C<f3>rdoba",
+    "social_media": {
+      "meetup": "rladies-cordoba",
+      "twitter": "RLadiesCba",
+      "email": "cordoba@rladies.org",
+      "facebook": "RLadiesCba",
+      "github": "rladies/meetup-presentations_cordoba",
+      "slack": "rladies-cordoba.slack.com"
+    },
+    "organizers": {
+      "current": ["Juliana Benitez", "Fernanda Garc<ed>a", "Marina Compagnuci"],
+      "former": []
+    }
+  }
+]

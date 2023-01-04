@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-zurich",
+    "status": "active",
+    "country": "Switzerland",
+    "city": "Zurich",
+    "social_media": {
+      "meetup": "rladies-zurich",
+      "email": "zurich@rladies.org"
+    },
+    "organizers": {
+      "current": ["Lisa-Christina Winter", "Luisa Barbanti", "Seraphina Kissling"],
+      "former": []
+    }
+  }
+]

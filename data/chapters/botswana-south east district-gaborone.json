@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-gaborone",
+    "status": "active",
+    "country": "Botswana",
+    "state.region": "South East District",
+    "city": "Gaborone",
+    "social_media": {
+      "meetup": "rladies-gaborone",
+      "twitter": "RLadiesGaborone",
+      "email": "RLadiesGaborone",
+      "facebook": "r-ladies-gaborone"
+    },
+    "organizers": {
+      "current": ["Simisani Ndaba"],
+      "former": []
+    }
+  }
+]

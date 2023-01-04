@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-freiburg",
+    "status": "active",
+    "country": "Germany",
+    "city": "Freiburg",
+    "social_media": {
+      "meetup": "rladies-freiburg",
+      "twitter": "RLadiesFreiburg",
+      "email": "freiburg@rladies.org",
+      "github": "rladies/meetup-presentations_freiburg"
+    },
+    "organizers": {
+      "current": ["Elisa Schneider", "Kyla McConnell", "Julia M<fc>ller"],
+      "former": ["Divya Seernani"]
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-brasilia",
+    "status": "active",
+    "country": "Brazil",
+    "city": "Brasilia",
+    "social_media": {
+      "meetup": "rladies-brasilia"
+    },
+    "organizers": {
+      "current": ["Juliana Silva de Deus"],
+      "former": []
+    }
+  }
+]

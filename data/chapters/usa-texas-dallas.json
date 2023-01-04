@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-dallas",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Texas",
+    "city": "Dallas",
+    "social_media": {
+      "meetup": "rladies-dallas",
+      "twitter": "DallasRladies",
+      "email": "dallas@rladies.org"
+    },
+    "organizers": {
+      "current": ["Sydeaka Watson"],
+      "former": []
+    }
+  }
+]

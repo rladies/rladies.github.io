@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-connecticut",
+    "status": "retired on 01-04-2020",
+    "country": "USA",
+    "state.region": "Connecticut",
+    "city": "Hartford",
+    "social_media": {
+      "meetup": "rladies-connecticut",
+      "twitter": "RLadiesCT",
+      "email": "hartford@rladies.org"
+    },
+    "organizers": {
+      "current": ["Erica Holdridge", "Jasmine Dumas"],
+      "former": []
+    }
+  }
+]

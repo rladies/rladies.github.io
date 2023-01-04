@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-lagos",
+    "status": "active",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "social_media": {
+      "meetup": "rladies-lagos",
+      "email": "lagos@rladies.org"
+    },
+    "organizers": {
+      "current": ["Alimi Eyitayo"],
+      "former": []
+    }
+  }
+]

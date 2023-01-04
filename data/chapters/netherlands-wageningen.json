@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-wageningen",
+    "status": "retired on 04-04-2020",
+    "country": "Netherlands",
+    "city": "Wageningen",
+    "social_media": {
+      "meetup": "rladies-wageningen",
+      "twitter": "RLadiesWage",
+      "email": "wageningen@rladies.org"
+    },
+    "organizers": {
+      "current": ["Veronika Laine"],
+      "former": []
+    }
+  }
+]

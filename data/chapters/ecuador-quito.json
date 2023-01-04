@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-quito",
+    "status": "active",
+    "country": "Ecuador",
+    "city": "Quito",
+    "social_media": {
+      "meetup": "rladies-quito",
+      "twitter": "RLadiesQuito",
+      "email": "quito@rladies.org",
+      "github": "rladies/meetup-presentations_quito",
+      "slack": "https://rladies-quito.slack.com/"
+    },
+    "organizers": {
+      "current": ["Elena Chicaiza", "Carolina Ca<f1>izares", "Rosi Bola<f1>os"],
+      "former": []
+    }
+  }
+]

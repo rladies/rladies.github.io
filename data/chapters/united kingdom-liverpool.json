@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-liverpool",
+    "status": "retired on 01-04-2020",
+    "country": "United Kingdom",
+    "city": "Liverpool",
+    "social_media": {
+      "meetup": "rladies-liverpool",
+      "twitter": "RLadiesLivUK",
+      "email": "liverpool@rladies.org"
+    },
+    "organizers": {
+      "current": ["Diana Iserazo"],
+      "former": []
+    }
+  }
+]

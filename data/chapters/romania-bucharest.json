@@ -1,0 +1,21 @@
+[
+  {
+    "urlname": "rladies-bucharest",
+    "status": "active",
+    "country": "Romania",
+    "city": "Bucharest",
+    "social_media": {
+      "meetup": "rladies-bucharest",
+      "twitter": "rladiesbuchares",
+      "email": "bucuresti@rladies.org",
+      "facebook": "RLadiesBucharest",
+      "github": "rladies/meetup-presentations_bucharest",
+      "website": "https://www.rladiesbucharest.org/",
+      "slack": "https://rladiesbucharest.slack.com"
+    },
+    "organizers": {
+      "current": ["Ines Teaca", "Simona Gradinaru", "Ana-Maria Niculescu"],
+      "former": []
+    }
+  }
+]

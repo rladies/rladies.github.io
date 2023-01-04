@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-valparaiso",
+    "status": "active",
+    "country": "Chile",
+    "state.region": "Valpara<ed>so",
+    "city": "Valpara<ed>so",
+    "social_media": {
+      "meetup": "rladies-valparaiso",
+      "twitter": "RLadiesValpo",
+      "email": "valparaiso@rladies.org",
+      "facebook": "RLadiesValpo"
+    },
+    "organizers": {
+      "current": ["Riva Quiroga", "Tatiana Canales"],
+      "former": []
+    }
+  }
+]

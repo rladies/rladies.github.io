@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-leuven",
+    "status": "retired on 01-04-2020",
+    "country": "Belgium",
+    "city": "Leuven",
+    "social_media": {
+      "meetup": "rladies-leuven",
+      "twitter": "RLadiesLeuven",
+      "email": "leuven@rladies.org",
+      "github": "rladies/meetup-presentations_leuven"
+    },
+    "organizers": {
+      "current": ["Theresa Elise Wege", "Veronica Llorens"],
+      "former": []
+    }
+  }
+]

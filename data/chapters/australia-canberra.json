@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-canberra",
+    "status": "active",
+    "country": "Australia",
+    "city": "Canberra",
+    "social_media": {
+      "meetup": "rladies-canberra",
+      "twitter": "RLadiesCanberra",
+      "email": "canberra@rladies.org"
+    },
+    "organizers": {
+      "current": ["Emi Tanaka", "Alice Richardson", "Petra Kuhnert", "Pauline O'Shaughnessy", "Jiali Wang"],
+      "former": []
+    }
+  }
+]

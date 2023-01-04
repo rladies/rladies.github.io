@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-masqat",
+    "status": "active",
+    "country": "Oman",
+    "city": "Masqat",
+    "social_media": {
+      "meetup": "rladies-masqat",
+      "email": "masqat@rladies.org"
+    },
+    "organizers": {
+      "current": ["Noora Said"],
+      "former": []
+    }
+  }
+]

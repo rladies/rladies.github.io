@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-cambridge",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "Cambridge",
+    "social_media": {
+      "meetup": "rladies-cambridge",
+      "twitter": "RLadiesCam",
+      "email": "cambridge@rladies.org",
+      "website": "http://rladies.org.uk/"
+    },
+    "organizers": {
+      "current": ["Alexia Cardona"],
+      "former": []
+    }
+  }
+]

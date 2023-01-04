@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-reading",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "Reading",
+    "social_media": {
+      "meetup": "rladies-reading"
+    },
+    "organizers": {
+      "current": ["Emmanuelle Nunes"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "urlname": "rladies-irvine",
+    "status": "active",
+    "country": "USA",
+    "state.region": "California",
+    "city": "Irvine",
+    "social_media": {
+      "meetup": "rladies-irvine",
+      "twitter": "RLadiesIrvine",
+      "email": "irvine@rladies.org",
+      "github": "rladies/meetup-presentations_irvine",
+      "website": "http://www.rladiesirvine.org/",
+      "slack": "http://bit.ly/SoCal-RUG-Slack"
+    },
+    "organizers": {
+      "current": ["Alyssa Columbus", "Linda Palmer", "Madeline Bauer"],
+      "former": []
+    }
+  }
+]

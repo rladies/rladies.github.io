@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-darwin",
+    "status": "active",
+    "country": "Australia",
+    "state.region": "Northern Territory",
+    "city": "Darwin",
+    "social_media": {
+      "meetup": "rladies-darwin"
+    },
+    "organizers": {
+      "current": ["Petra Kuhnert"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-queretaro",
+    "status": "active",
+    "country": "Mexico",
+    "city": "Queretaro",
+    "social_media": {
+      "meetup": "rladies-queretaro",
+      "twitter": "RLadies_Qro",
+      "email": "qro@rladies.org",
+      "periscope": "RLadies_Qro",
+      "github": "rladies/RladiesQro",
+      "slack": "r-ladiesqro.slack.com"
+    },
+    "organizers": {
+      "current": ["Driselda Patricia S<e1>nchez Aguirre", "Ana Betty Villase<f1>or", "Azalea Reyes Aguilar"],
+      "former": []
+    }
+  }
+]

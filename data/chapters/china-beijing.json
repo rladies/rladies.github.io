@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-beijing",
+    "status": "active",
+    "country": "China",
+    "city": "Beijing",
+    "social_media": {
+      "meetup": "rladies-beijing",
+      "email": "beijing@rladies.org"
+    },
+    "organizers": {
+      "current": ["Xu Sabrina", "Zuqun WANG", "Hannah Rose Kirk", "Clara WANG", "Xiaolin LIU", "Yujie GUO", "Angelle LIU"],
+      "former": []
+    }
+  }
+]

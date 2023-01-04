@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-ldnont",
+    "status": "active",
+    "country": "Canada",
+    "state.region": "Ontario",
+    "city": "London",
+    "social_media": {
+      "meetup": "rladies-ldnont",
+      "twitter": "RLadiesLdnOnt",
+      "email": "ldnont@rladies.org",
+      "facebook": "rladiesldnont",
+      "github": "rladies/meetup-presentations_london_ontario"
+    },
+    "organizers": {
+      "current": ["Daryn Cushnie-Sparrow", "Caitlin Coughler", "Olivia Daub"],
+      "former": []
+    }
+  }
+]

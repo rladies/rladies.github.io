@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-addis-ababa",
+    "status": "active",
+    "country": "Ethiopia",
+    "city": "Addis Ababa",
+    "social_media": {
+      "meetup": "rladies-addis-ababa",
+      "twitter": "RLadiesAddis",
+      "email": "addisababa@rladies.org",
+      "website": "https://r-ladies-addis.github.io/rladies-addis/"
+    },
+    "organizers": {
+      "current": ["Margareth Gfrerer"],
+      "former": []
+    }
+  }
+]

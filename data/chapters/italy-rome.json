@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-rome",
+    "status": "active",
+    "country": "Italy",
+    "city": "Rome",
+    "social_media": {
+      "meetup": "rladies-rome",
+      "email": "rome@rladies.org"
+    },
+    "organizers": {
+      "current": ["Federica Gazzelloni"],
+      "former": ["Nina Deliu"]
+    }
+  }
+]

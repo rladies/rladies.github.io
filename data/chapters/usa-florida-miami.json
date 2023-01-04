@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-miami",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Florida",
+    "city": "Miami",
+    "social_media": {
+      "meetup": "rladies-miami",
+      "twitter": "RLadiesMiami",
+      "email": "miami@rladies.org",
+      "github": "rladies/meetup-presentations_miami"
+    },
+    "organizers": {
+      "current": ["Laura Gabrysiak G<f3>mez", "Catalina Arango", "Layla Bouzoubaa"],
+      "former": []
+    }
+  }
+]

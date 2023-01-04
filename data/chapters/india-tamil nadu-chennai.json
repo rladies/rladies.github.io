@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-chennai",
+    "status": "active",
+    "country": "India",
+    "state.region": "Tamil Nadu",
+    "city": "Chennai",
+    "social_media": {
+      "meetup": "rladies-chennai",
+      "twitter": "RLadiesChennai",
+      "email": "chennai@rladies.org",
+      "github": "rladies/meetup-presentations_chennai"
+    },
+    "organizers": {
+      "current": ["Praveena Mathews"],
+      "former": []
+    }
+  }
+]

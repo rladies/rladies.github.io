@@ -1,7 +1,7 @@
 {{ $chpt := newScratch }}
 {{ $chpt.Set "actives" (slice "") }}
-{{ $chapters := where .Site.Data.chapters "status" "active" }}
-
+{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+{{ $chpt.Set "n" (len $chapters) }}
 {{ range $chapters }}
   {{ $chpt.Add "actives" (slice .country) }}
 {{ end }}
@@ -36,9 +36,7 @@
               
               <td class="text-right"> 
                 {{ with .social_media }}
-                    {{ range .}}
-                      {{ partial "some.html" (dict "data" . ) }}
-                    {{ end }}
+                    {{ partial "some.html" (dict "data" . ) }}
                 {{ end }}
               </td>
                 </tr>
@@ -115,11 +113,11 @@
     var colorSet = new am4core.ColorSet();
     
     imageSeries.data = [ 
-    {{ range $chapters }}
+    {{ range where $chapters "members" "gt" 0 }}
       {
         "name": "{{ .name }}",
         "members": "{{ .members }}",
-        "socials": {{ with .social_media }}{{ range . }}{{ partial "some.html" . }}{{ end }}{{ end }},
+        "socials": {{ with .social_media }}{{ partial "some.html" . }}{{ end }},
         "latitude": {{ .lat }},
         "longitude": {{ .lon }},
         "color": "#88398acc"

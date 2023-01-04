@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-jujuy",
+    "status": "active",
+    "country": "Argentina",
+    "city": "Jujuy",
+    "social_media": {
+      "meetup": "rladies-jujuy",
+      "twitter": "RLadiesJujuy",
+      "email": "jujuy@rladies.org"
+    },
+    "organizers": {
+      "current": ["Laura Pereyra"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-nairobi",
+    "status": "active",
+    "country": "Kenya",
+    "city": "Nairobi",
+    "social_media": {
+      "meetup": "rladies-nairobi",
+      "email": "nairobi@rladies.org",
+      "linkedin": "r-ladies-nairobi-2572841b3"
+    },
+    "organizers": {
+      "current": ["Lucy Njoki", "Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-brisbane",
+    "status": "active",
+    "country": "Australia",
+    "state.region": "Queensland",
+    "city": "Brisbane",
+    "social_media": {
+      "meetup": "rladies-brisbane",
+      "twitter": "RLadiesBrisbane",
+      "email": "brisbane@rladies.org",
+      "github": "rladies/meetup-presentations_brisbane",
+      "slack": "r-ladiesbrisbane.slack.com"
+    },
+    "organizers": {
+      "current": ["Paula Andrea Martinez"],
+      "former": []
+    }
+  }
+]

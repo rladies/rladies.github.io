@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-columbus",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Ohio",
+    "city": "Columbus",
+    "social_media": {
+      "meetup": "rladies-columbus",
+      "twitter": "RLadiesColumbus",
+      "email": "columbus@rladies.org",
+      "github": "rladies/meetup-presentations_columbus"
+    },
+    "organizers": {
+      "current": ["Ezgi Karaesmen", "Katie Sasso", "Genelle Denzin"],
+      "former": []
+    }
+  }
+]

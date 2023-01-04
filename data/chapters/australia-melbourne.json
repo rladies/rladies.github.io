@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-melbourne",
+    "status": "active",
+    "country": "Australia",
+    "city": "Melbourne",
+    "social_media": {
+      "meetup": "rladies-melbourne",
+      "twitter": "RLadiesMelb",
+      "email": "melbourne@rladies.org",
+      "facebook": "RladiesMelbourne",
+      "github": "rladies/meetup-presentations_melbourne"
+    },
+    "organizers": {
+      "current": ["Anna Quaglieri", "Sepideh Foroutan", "Alex Garnham", "Marie Trussart", "Lucy Liu", "Adele Barugahare", "Nikki Rubinson"],
+      "former": []
+    }
+  }
+]

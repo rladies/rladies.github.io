@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-istanbul",
+    "status": "active",
+    "country": "Turkey",
+    "city": "Istanbul",
+    "social_media": {
+      "meetup": "rladies-istanbul",
+      "twitter": "RLadiesIstanbul",
+      "email": "istanbul@rladies.org",
+      "github": "rladies/meetup-presentations_istanbul"
+    },
+    "organizers": {
+      "current": ["Hazel Kavili"],
+      "former": []
+    }
+  }
+]

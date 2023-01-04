@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-bordeaux",
+    "status": "active",
+    "country": "France",
+    "city": "Bordeaux",
+    "social_media": {
+      "meetup": "rladies-bordeaux"
+    },
+    "organizers": {
+      "current": ["Natalija Plasonja", "H<e9>l<e8>ne Labarre", "Sandra Aka"],
+      "former": []
+    }
+  }
+]

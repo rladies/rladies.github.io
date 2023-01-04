@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-san-francisco",
+    "status": "active",
+    "country": "USA",
+    "state.region": "California",
+    "city": "San Francisco",
+    "social_media": {
+      "meetup": "rladies-san-francisco",
+      "twitter": "RladiesSF",
+      "email": "sf@rladies.org",
+      "periscope": "RLadiesSF",
+      "github": "rladies/meetup-presentations_sanfrancisco"
+    },
+    "organizers": {
+      "current": ["Gabriela de Queiroz", "Erin LeDell", "Ciera Martinez"],
+      "former": []
+    }
+  }
+]

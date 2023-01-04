@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-rabat",
+    "status": "active",
+    "country": "Morocco",
+    "city": "Rabat",
+    "social_media": {
+      "meetup": "rladies-rabat",
+      "twitter": "RLadiesRabat",
+      "email": "rabat@rladies.org"
+    },
+    "organizers": {
+      "current": ["Abir Alaoui"],
+      "former": []
+    }
+  }
+]

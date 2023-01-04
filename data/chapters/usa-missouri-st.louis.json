@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-st-louis",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Missouri",
+    "city": "St.Louis",
+    "social_media": {
+      "meetup": "rladies-st-louis",
+      "twitter": "RLadiesSTL",
+      "github": "rladies/meetup-presentations_stlouis"
+    },
+    "organizers": {
+      "current": ["Jenine Harris"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-thessaloniki",
+    "status": "active",
+    "country": "Greece",
+    "city": "Thessaloniki",
+    "social_media": {
+      "meetup": "rladies-thessaloniki"
+    },
+    "organizers": {
+      "current": ["Danjela Lura"],
+      "former": []
+    }
+  }
+]

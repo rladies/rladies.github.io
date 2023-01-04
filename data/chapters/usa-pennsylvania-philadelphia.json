@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-philly",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Pennsylvania",
+    "city": "Philadelphia",
+    "social_media": {
+      "meetup": "rladies-philly",
+      "twitter": "RLadiesPhilly",
+      "email": "philly@rladies.org",
+      "github": "rladies/meetup-presentations_philadelphia",
+      "website": "http://www.rladiesphilly.org/"
+    },
+    "organizers": {
+      "current": ["Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
+      "former": []
+    }
+  }
+]

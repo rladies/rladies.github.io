@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-dc",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Washington",
+    "city": "D.C.",
+    "social_media": {
+      "meetup": "rladies-dc",
+      "twitter": "RLadiesDC",
+      "email": "dc@rladies.org",
+      "github": "rladies/meetup-presentations_dc"
+    },
+    "organizers": {
+      "current": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"],
+      "former": []
+    }
+  }
+]

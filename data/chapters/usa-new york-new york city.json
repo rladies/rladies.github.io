@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-newyork",
+    "status": "active",
+    "country": "USA",
+    "state.region": "New York",
+    "city": "New York City",
+    "social_media": {
+      "meetup": "rladies-newyork",
+      "twitter": "RLadiesNYC",
+      "email": "nyc@rladies.org",
+      "github": "rladies/meetup-presentations_newyork",
+      "website": "http://www.rladiesnyc.org/"
+    },
+    "organizers": {
+      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang"],
+      "former": []
+    }
+  }
+]

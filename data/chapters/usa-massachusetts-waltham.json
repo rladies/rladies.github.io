@@ -1,0 +1,15 @@
+[
+  {
+    "status": "prospective",
+    "country": "USA",
+    "state.region": "Massachusetts",
+    "city": "Waltham",
+    "social_media": {
+      "email": "waltham@rladies.org"
+    },
+    "organizers": {
+      "current": ["Ines Patop", "Claire Pontbriand", "Margarita Corral", "Jasmine Quynh Le"],
+      "former": []
+    }
+  }
+]

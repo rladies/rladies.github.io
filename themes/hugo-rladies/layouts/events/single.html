@@ -1,11 +1,16 @@
 {{ define "head" }}
-  {{ partial "head/fullcalendar.html"}}
+  <script type="text/javascript" src="{{ "js/fullcalendar.min.js" | relURL }}"></script>
+  <script type="text/javascript" src="{{ "js/jquery.min.js" | relURL }}"></script>
+  <script type="text/javascript" src="{{ "js/moment.min.js" | relURL }}"></script>
+  <script type="text/javascript" src="{{ "js/moment-with-locales.min.js" | relURL }}" ></script>
+  <script type="text/javascript" src="{{ "js/moment-timezone-with-data.js" | relURL }}" ></script>
+  <script type="text/javascript" src="{{ "js/popper.min.js" | relURL }}" ></script>
+  <script type="text/javascript" src="{{ "js/tooltip.min.js" | relURL }}" ></script>
 {{ end }}
 
 {{ define "main" }} 
-  {{ $update := .Site.Data.events_updated }}
   <div class="entry-content">{{ .Content }}</div>
-  {{ range .Site.Data.events_updated  }}
+  {{ range .Site.Data.meetup.events_updated  }}
   <center>
     <div class="row">
       <div class="col-12 border border-primary rounded bg-primary text-white ">
@@ -43,7 +48,7 @@
     timeZone = document.getElementById("time-zone-selector").value;
     var loadingEl = document.getElementById("loading");
     var calendarEl = document.getElementById("calendar");
-	var events = {{ $.Site.Data.events }}
+	var events = {{ $.Site.Data.meetup.events }}
 	var timezone_list = {{ $.Site.Data.timezones }}
 
 	timezone_list.forEach(function(timeZone) {

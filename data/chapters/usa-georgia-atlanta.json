@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-atlanta",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Georgia",
+    "city": "Atlanta",
+    "social_media": {
+      "meetup": "rladies-atlanta",
+      "twitter": "RLadiesAtlanta",
+      "email": "atlanta@rladies.org"
+    },
+    "organizers": {
+      "current": ["Melinda Higgins", "Emilie Seena", "Patricia Castro"],
+      "former": []
+    }
+  }
+]

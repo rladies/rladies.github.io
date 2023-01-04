@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-wellington",
+    "status": "active",
+    "country": "New Zealand",
+    "city": "Wellington",
+    "social_media": {
+      "meetup": "rladies-wellington"
+    },
+    "organizers": {
+      "current": ["Silvina Pugliese", "Ravi Shrividya"],
+      "former": []
+    }
+  }
+]

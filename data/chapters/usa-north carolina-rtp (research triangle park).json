@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-rtp",
+    "status": "active",
+    "country": "USA",
+    "state.region": "North Carolina",
+    "city": "RTP (Research Triangle Park)",
+    "social_media": {
+      "meetup": "rladies-rtp",
+      "twitter": "RLadiesRTP",
+      "email": "rtp@rladies.org",
+      "github": "rladies/meetup-presentations_rtp"
+    },
+    "organizers": {
+      "current": ["Sheila Saia", "Elaine McVey"],
+      "former": []
+    }
+  }
+]

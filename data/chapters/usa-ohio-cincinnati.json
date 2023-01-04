@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-cincinnati",
+    "status": "retired on 04-04-2020",
+    "country": "USA",
+    "state.region": "Ohio",
+    "city": "Cincinnati",
+    "social_media": {
+      "meetup": "rladies-cincinnati",
+      "twitter": "RLadiesCincy",
+      "email": "cincinnati@rladies.org"
+    },
+    "organizers": {
+      "current": ["Renata Gerecke"],
+      "former": []
+    }
+  }
+]

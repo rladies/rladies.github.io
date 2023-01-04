@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-madrid",
+    "status": "active",
+    "country": "Spain",
+    "city": "Madrid",
+    "social_media": {
+      "meetup": "rladies-madrid",
+      "twitter": "RLadiesMAD",
+      "email": "madrid@rladies.org",
+      "github": "rladies/meetup-presentations_madrid"
+    },
+    "organizers": {
+      "current": ["Bea Hern<e1>ndez", "In<e9>s Huertas", "Leticia Mart<ed>n-Fuertes", "Elen Irazabal"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-johannesburg",
+    "status": "active",
+    "country": "South Africa",
+    "city": "Johannesburg",
+    "social_media": {
+      "meetup": "rladies-johannesburg",
+      "twitter": "RLadiesJozi",
+      "email": "jozi@rladies.org",
+      "github": "rladies/meetup-presentations_jozi"
+    },
+    "organizers": {
+      "current": ["Vebashini Naidoo", "Retha Langa"],
+      "former": []
+    }
+  }
+]

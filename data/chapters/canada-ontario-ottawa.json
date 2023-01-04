@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-ottawa",
+    "status": "active",
+    "country": "Canada",
+    "state.region": "Ontario",
+    "city": "Ottawa",
+    "social_media": {
+      "meetup": "rladies-ottawa",
+      "email": "ottawa@rladies.org"
+    },
+    "organizers": {
+      "current": ["Michelle Fairbrother", "Stephanie Houle"],
+      "former": []
+    }
+  }
+]

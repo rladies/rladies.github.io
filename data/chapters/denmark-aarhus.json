@@ -1,0 +1,14 @@
+[
+  {
+    "status": "prospective",
+    "country": "Denmark",
+    "city": "Aarhus",
+    "social_media": {
+      "email": "aarhus@rladies.org"
+    },
+    "organizers": {
+      "current": ["Bel<e9>n Jim<e9>nez", "Sara Tomiolo", "Elena Dudukina"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-london",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "London",
+    "social_media": {
+      "meetup": "rladies-london",
+      "twitter": "RLadiesLondon",
+      "email": "london@rladies.org",
+      "periscope": "RLadiesLondon",
+      "github": "rladies/meetup-presentations_london"
+    },
+    "organizers": {
+      "current": ["Claudia Vitolo", "Hannah Frick", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
+      "former": []
+    }
+  }
+]

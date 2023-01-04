@@ -1,0 +1,15 @@
+[
+  {
+    "status": "prospective",
+    "country": "Canada",
+    "state.region": "Alberta",
+    "city": "Edmonton",
+    "social_media": {
+      "email": "edmonton@rladies.org"
+    },
+    "organizers": {
+      "current": ["Sarah Sheldon"],
+      "former": []
+    }
+  }
+]

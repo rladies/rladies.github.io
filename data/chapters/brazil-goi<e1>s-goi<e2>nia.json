@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-goiania",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "Goi<e1>s",
+    "city": "Goi<e2>nia",
+    "social_media": {
+      "meetup": "rladies-goiania",
+      "email": "goiania@rladies.org"
+    },
+    "organizers": {
+      "current": ["Fernanda Kelly"],
+      "former": []
+    }
+  }
+]

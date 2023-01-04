@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-bangalore",
+    "status": "active",
+    "country": "India",
+    "state.region": "Karnataka",
+    "city": "Bangalore",
+    "social_media": {
+      "meetup": "rladies-bangalore",
+      "email": "bangalore@rladies.org"
+    },
+    "organizers": {
+      "current": ["Adithi Upadhya", "Aparna Bindu", "Muthumari S", "Diksha Chawla", "Pragati Parikh", "Smruthi R", "Shefali Lokesh", "Radha Subramanian", "Dincy Mariyam"],
+      "former": []
+    }
+  }
+]

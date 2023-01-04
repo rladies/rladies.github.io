@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-la-paz",
+    "status": "active",
+    "country": "Bolivia",
+    "city": "La Paz",
+    "social_media": {
+      "meetup": "rladies-la-paz",
+      "twitter": "RLadiesLaPaz",
+      "email": "lapaz@rladies.org",
+      "facebook": "rladieslapaz"
+    },
+    "organizers": {
+      "current": ["Nathaly Alarcon", "Orietha Castillo", "Ruth Chirinos"],
+      "former": []
+    }
+  }
+]

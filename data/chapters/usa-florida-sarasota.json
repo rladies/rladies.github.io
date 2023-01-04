@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-sarasota",
+    "status": "retired on 01-04-2020",
+    "country": "USA",
+    "state.region": "Florida",
+    "city": "Sarasota",
+    "social_media": {
+      "meetup": "rladies-sarasota",
+      "twitter": "RLadiesSarasota",
+      "email": "sarasota@rladies.org",
+      "github": "rladies/meetup-presentations_sarasota"
+    },
+    "organizers": {
+      "current": ["Fanny Chow"],
+      "former": []
+    }
+  }
+]

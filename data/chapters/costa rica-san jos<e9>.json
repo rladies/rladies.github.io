@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-san-jose",
+    "status": "active",
+    "country": "Costa Rica",
+    "city": "San Jos<e9>",
+    "social_media": {
+      "meetup": "rladies-san-jose",
+      "twitter": "RLadiesCR",
+      "email": "sanjoseCR@rladies.org",
+      "facebook": "R-Ladies-San-Jos%C3%A9-CR-113831192660935",
+      "github": "rladies/meetup-presentations_sanjose"
+    },
+    "organizers": {
+      "current": ["Marcela Alfaro-C<f3>rdoba", "Fabiola Salazar", "Jimena Ruiz", "Andrea Vargas", "Daniely Hern<e1>ndez", "Mar<ed>a Paula Mesen", "Paula Rodr<ed>guez"],
+      "former": []
+    }
+  }
+]

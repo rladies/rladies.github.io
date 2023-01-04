@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-linz",
+    "status": "retired on 29-09-2019",
+    "country": "Austria",
+    "city": "Linz",
+    "social_media": {
+      "meetup": "rladies-linz",
+      "twitter": "RladiesLinz",
+      "email": "linz@rladies.org",
+      "github": "rladies/meetup-presentations_linz"
+    },
+    "organizers": {
+      "current": ["Lucia Gjeltema"],
+      "former": []
+    }
+  }
+]
