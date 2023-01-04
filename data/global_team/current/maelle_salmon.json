@@ -1,10 +1,8 @@
-{
-  "name": "Maëlle Salmon",
-  "role": [
-    "Global Twitter Account"
-  ],
-  "start": "2017",
-  "img": {
-    "url": "maelle_salmon.png"
+  {
+    "name": "Maëlle Salmon",
+    "role": ["Global Twitter Account"],
+    "start": "2017",
+    "img": {
+      "url":  "maelle_salmon.png"
+    }
   }
-}

@@ -1,10 +1,8 @@
-{
-  "name": "Katherine Simeon",
-  "role": [
-    "RoCur Twitter Account"
-  ],
-  "start": "July 2019",
-  "img": {
-    "url": "katherine_simeon.png"
+  {
+    "name": "Katherine Simeon",
+    "role": ["RoCur Twitter Account"],
+    "start": "July 2019",
+    "img": {
+      "url":  "katherine_simeon.png"
+    }
   }
-}

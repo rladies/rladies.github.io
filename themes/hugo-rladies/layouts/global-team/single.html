@@ -60,8 +60,13 @@
             {{ $d := index $gt.current $name }}
             {{ $descr := delimit $d.role ", " }}
             {{ $img := ( printf "about-us/global-team/img/%s" $d.img.url ) }}
-            {{ $image := $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
-            {{ $image := $image.Fit "200x200" }}
+            {{ $.Scratch.Set "img" "" }}
+            {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
+              {{ $image := . }}
+              {{ $image := $image.Fit "200x200" }}
+              {{ $.Scratch.Set "img" $image.RelPermalink }}
+            {{ end }}
+            {{ $image := $.Scratch.Get "img" }}
             
             {{ $data := newScratch }}
             {{ $data.Set "foot" "" }}
@@ -71,7 +76,7 @@
                 {{ $data.Add "foot" "</small></p>" }}
             {{ end }}
 
-            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image.RelPermalink "foot" $descr "size" "small" "descr" ($data.Get "foot")) }}
+            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" $descr "size" "small" "descr" ($data.Get "foot")) }}
           {{ end }}
       </ul>
     </div>
@@ -90,9 +95,16 @@
         {{ range $name := $.Scratch.Get "gta" | shuffle }}
             {{ $d := index $gt.alumni $name }}
             {{ $descr := delimit $d.role ", " }}
-            {{ $img := ( printf "about-us/global-team/img/%s" $d.img.url ) }}
+            {{ $.Scratch.Set "img" "" }}
+            {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
+              {{ $image := . }}
+              {{ $image := $image.Fit "200x200" }}
+              {{ $.Scratch.Set "img" $image.RelPermalink }}
+            {{ end }}
+            {{ $image := $.Scratch.Get "img" }}
+            
             {{ $foot := (printf "%s &#8212 %s" $d.start $d.end)}}
-            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $img "descr" $descr "size" "small" "foot" $foot) }}
+            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $descr "size" "small" "foot" $foot) }}
         {{ end }}
 
       </div>

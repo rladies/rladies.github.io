@@ -1,11 +1,8 @@
-{
-  "name": "Florencia D’Andrea",
-  "role": [
-    "Community Slack",
-    " Chapter Mentoring"
-  ],
-  "start": "2018",
-  "img": {
-    "url": "florencia_dandrea.png"
+  {
+    "name": "Florencia D’Andrea",
+    "role": ["Community Slack", " Chapter Mentoring"],
+    "start": "2018",
+    "img": {
+      "url":  "florencia_dandrea.png"
+    }
   }
-}
