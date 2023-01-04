@@ -310,14 +310,6 @@
     "timezone": "Australia/Adelaide"
   },
   {
-    "status": "prospective",
-    "country": "Australia",
-    "organizers": {
-      "current": ["Martha Cooper"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-canberra",
     "status": "active",
     "country": "Australia",
@@ -462,14 +454,6 @@
     "timezone": "Australia/Sydney"
   },
   {
-    "status": "prospective",
-    "country": "Australia",
-    "organizers": {
-      "current": ["Legana Fingerhut"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-linz",
     "status": "retired on 29-09-2019",
     "country": "Austria",
@@ -506,14 +490,6 @@
     "lat": 48.22,
     "lon": 16.37,
     "timezone": "Europe/Vienna"
-  },
-  {
-    "status": "prospective",
-    "country": "Bahrain",
-    "organizers": {
-      "current": ["Fatima Alaradi"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-brussels",
@@ -623,14 +599,6 @@
     "timezone": "America/La_Paz"
   },
   {
-    "status": "prospective",
-    "country": "Bolivia",
-    "organizers": {
-      "current": ["Vanesa Bejarano Alegre"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-gaborone",
     "status": "active",
     "country": "Botswana",
@@ -654,15 +622,6 @@
     "lat": -24.65,
     "lon": 25.91,
     "timezone": "Africa/Maputo"
-  },
-  {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "Amazonas",
-    "organizers": {
-      "current": ["Themis Le<e3>o", "Amazoneida Pinheiro", "Camila Pinheiro", "M<e1>rcia Brand<e3>o", "Jocely Lopes", "Paula dos Santos", "Emilly Malveira", "Hanna Oliveira", "Yanna de Freitas", "Ewila Costa"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-salvador",
@@ -832,15 +791,6 @@
     "timezone": "America/Sao_Paulo"
   },
   {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "Paraiba",
-    "organizers": {
-      "current": ["Hadrizia Santos", "Dandara Sousa"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-curitiba",
     "status": "retired on 04-04-2020",
     "country": "Brazil",
@@ -887,15 +837,6 @@
     "lat": -8.08,
     "lon": -34.92,
     "timezone": "America/Recife"
-  },
-  {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "Piaui",
-    "organizers": {
-      "current": ["Rita de C<e1>ssia de Lima Idalino"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-niteroi",
@@ -1034,15 +975,6 @@
     }
   },
   {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
-    "organizers": {
-      "current": ["Cristiane Hayumi Taniguti"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-ribeirao-preto",
     "status": "active",
     "country": "Brazil",
@@ -1064,24 +996,6 @@
     "lat": -21.17,
     "lon": -47.8,
     "timezone": "America/Sao_Paulo"
-  },
-  {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
-    "organizers": {
-      "current": ["Mayara Formenton", "Marina de Souza Paiva"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
-    "organizers": {
-      "current": ["Let<ed>cia Silva"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-sao-paulo",
@@ -1136,32 +1050,6 @@
     "timezone": "America/Sao_Paulo"
   },
   {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "Santa Catarina",
-    "organizers": {
-      "current": ["Simone Silmara Werner"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Brazil",
-    "state.region": "Tocantins",
-    "organizers": {
-      "current": ["Katiuscia Martos"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Bulgaria",
-    "organizers": {
-      "current": ["Mimi Lazarova"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-yaounde",
     "status": "active",
     "country": "Cameroon",
@@ -1206,18 +1094,6 @@
     "timezone": "America/Edmonton"
   },
   {
-    "status": "prospective",
-    "country": "Canada",
-    "state.region": "Alberta",
-    "social_media": {
-      "email": "edmonton@rladies.org"
-    },
-    "organizers": {
-      "current": ["Sarah Sheldon"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-vancouver",
     "status": "active",
     "country": "Canada",
@@ -1255,15 +1131,6 @@
     },
     "organizers": {
       "current": ["Lisa McEwen"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Canada",
-    "state.region": "Manitoba",
-    "organizers": {
-      "current": ["Sarah Mutch"],
       "former": []
     }
   },
@@ -1593,30 +1460,6 @@
     "timezone": "America/Bogota"
   },
   {
-    "status": "prospective",
-    "country": "Colombia",
-    "organizers": {
-      "current": ["Viviana Romero Alarcon"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Colombia",
-    "organizers": {
-      "current": ["Isabel Cristina Garcia Arboleda"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Colombia",
-    "organizers": {
-      "current": ["Beatriz Mira"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-medellin",
     "status": "active",
     "country": "Colombia",
@@ -1663,25 +1506,6 @@
     "lat": 9.93,
     "lon": -84.08,
     "timezone": "America/Costa_Rica"
-  },
-  {
-    "status": "prospective",
-    "country": "Croatia",
-    "organizers": {
-      "current": ["Ana Jankovic", "Maja Kuzman"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Denmark",
-    "social_media": {
-      "email": "aarhus@rladies.org"
-    },
-    "organizers": {
-      "current": ["Bel<e9>n Jim<e9>nez", "Sara Tomiolo", "Elena Dudukina"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-copenhagen",
@@ -1822,14 +1646,6 @@
     "timezone": "Africa/Cairo"
   },
   {
-    "status": "prospective",
-    "country": "Estonia",
-    "organizers": {
-      "current": ["Merilin Paas"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-addis-ababa",
     "status": "active",
     "country": "Ethiopia",
@@ -1852,14 +1668,6 @@
     "lat": 9.03,
     "lon": 38.74,
     "timezone": "Africa/Nairobi"
-  },
-  {
-    "status": "prospective",
-    "country": "Ethiopia",
-    "organizers": {
-      "current": ["Mekdes Dessie Assena"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-helsinki",
@@ -1905,14 +1713,6 @@
     "lat": 44.84,
     "lon": -0.58,
     "timezone": "Europe/Paris"
-  },
-  {
-    "status": "prospective",
-    "country": "France",
-    "organizers": {
-      "current": ["Paulina Jedynak"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-lyon",
@@ -2139,14 +1939,6 @@
     "timezone": "Europe/Berlin"
   },
   {
-    "status": "prospective",
-    "country": "Germany",
-    "organizers": {
-      "current": ["Anna Stepanova"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-frankfurt",
     "status": "active",
     "country": "Germany",
@@ -2172,30 +1964,6 @@
     "timezone": "Europe/Berlin"
   },
   {
-    "status": "prospective",
-    "country": "Germany",
-    "organizers": {
-      "current": ["Deisy Gysi"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Germany",
-    "organizers": {
-      "current": ["Iris Morgenstern", "Thi Sam To"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Germany",
-    "organizers": {
-      "current": ["Glenda Mendieta"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-munich",
     "status": "retired on 04-04-2020",
     "country": "Germany",
@@ -2208,14 +1976,6 @@
     },
     "organizers": {
       "current": ["Daloha Rodriguez-Molina", "Pamela Raquel Matias Garcia", "Dan Huang", "Choi Wai Maggie Chak"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Germany",
-    "organizers": {
-      "current": ["Paula Gonzalez"],
       "former": []
     }
   },
@@ -2346,23 +2106,6 @@
     "timezone": "Asia/Kolkata"
   },
   {
-    "status": "prospective",
-    "country": "India",
-    "organizers": {
-      "current": ["Swetha Jegannathan"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "India",
-    "state.region": "Karnataka",
-    "organizers": {
-      "current": ["Divya Gowda"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-bangalore",
     "status": "active",
     "country": "India",
@@ -2474,24 +2217,6 @@
     }
   },
   {
-    "status": "prospective",
-    "country": "India",
-    "state.region": "Telangana",
-    "organizers": {
-      "current": ["Varnitha Kurli Reddy", "Radhika Garimella"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "India",
-    "state.region": "West Bengal",
-    "organizers": {
-      "current": ["A. Mani"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-banda-aceh",
     "status": "active",
     "country": "Indonesia",
@@ -2512,14 +2237,6 @@
     "lat": 5.55,
     "lon": 95.32,
     "timezone": "Asia/Jakarta"
-  },
-  {
-    "status": "prospective",
-    "country": "Indonesia",
-    "organizers": {
-      "current": ["Novi Tri Astutiningsih"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-bogor",
@@ -2603,14 +2320,6 @@
     "timezone": "Europe/Dublin"
   },
   {
-    "status": "prospective",
-    "country": "Israel",
-    "organizers": {
-      "current": ["Ayala Allon"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-bari",
     "status": "active",
     "country": "Italy",
@@ -2634,14 +2343,6 @@
     "lat": 41.13,
     "lon": 16.87,
     "timezone": "Europe/Rome"
-  },
-  {
-    "status": "prospective",
-    "country": "Italy",
-    "organizers": {
-      "current": ["Damia Noce"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-milan",
@@ -2668,22 +2369,6 @@
     "timezone": "Europe/Rome"
   },
   {
-    "status": "prospective",
-    "country": "Italy",
-    "organizers": {
-      "current": ["Micaela Arcaio"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Italy",
-    "organizers": {
-      "current": ["Nicoletta Simi"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-rome",
     "status": "active",
     "country": "Italy",
@@ -2704,38 +2389,6 @@
     "lat": 41.9,
     "lon": 12.48,
     "timezone": "Europe/Rome"
-  },
-  {
-    "status": "prospective",
-    "country": "Italy",
-    "organizers": {
-      "current": ["Teresa Del Bianco"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Italy",
-    "organizers": {
-      "current": ["Jana Hasen<e4>cker"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Japan",
-    "organizers": {
-      "current": ["Margaret Mars Brisbin"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Kenya",
-    "organizers": {
-      "current": ["Frida Oyucho"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-nairobi",
@@ -2761,50 +2414,6 @@
     "timezone": "Africa/Nairobi"
   },
   {
-    "status": "prospective",
-    "country": "Kenya",
-    "organizers": {
-      "current": ["Immaculate Kathomi"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Lebanon",
-    "social_media": {
-      "twitter": "RLadiesBEY",
-      "email": "beirut@rladies.org"
-    },
-    "organizers": {
-      "current": ["Sondos Atwi"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Luxembourg",
-    "organizers": {
-      "current": ["Claudia Albanese", "Irma Karabegovic"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Malawi",
-    "organizers": {
-      "current": ["Angeziwa Chirambo"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Malaysia",
-    "organizers": {
-      "current": ["Anuradha Yerukola"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-aguascalientes",
     "status": "active",
     "country": "Mexico",
@@ -2827,30 +2436,6 @@
     "timezone": "America/Mexico_City"
   },
   {
-    "status": "prospective",
-    "country": "Mexico",
-    "organizers": {
-      "current": ["Cecilia Escalante"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Mexico",
-    "organizers": {
-      "current": ["Cristina Alex", "Anah<ed> Canedo", "Mirna V<e1>zquez Rosas Landa", "Cristina Dominguez Mendoza"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Mexico",
-    "organizers": {
-      "current": ["Denisse Chacon"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-ciudad-obregon",
     "status": "active",
     "country": "Mexico",
@@ -2870,15 +2455,6 @@
     "lat": 27.49,
     "lon": -109.94,
     "timezone": "America/Hermosillo"
-  },
-  {
-    "status": "prospective",
-    "country": "Mexico",
-    "state.region": "Colima",
-    "organizers": {
-      "current": ["SALDA<d1>A ZEPEDA DAYNA PRISCILA"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-cuernavaca",
@@ -2993,14 +2569,6 @@
     "lat": 19.72,
     "lon": -101.18,
     "timezone": "America/Mexico_City"
-  },
-  {
-    "status": "prospective",
-    "country": "Mexico",
-    "organizers": {
-      "current": ["Irene Lopez", "Elisa M<e1>rquez Zavala", "Citlali Gil Aguillon"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-pachuca",
@@ -3229,14 +2797,6 @@
     "timezone": "Asia/Kathmandu"
   },
   {
-    "status": "prospective",
-    "country": "Netherlands",
-    "organizers": {
-      "current": ["Victoria Lopez"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-amsterdam",
     "status": "active",
     "country": "Netherlands",
@@ -3280,30 +2840,6 @@
     "lat": 51.7,
     "lon": 5.3,
     "timezone": "Europe/Amsterdam"
-  },
-  {
-    "status": "prospective",
-    "country": "Netherlands",
-    "organizers": {
-      "current": ["Suzanne Dekker"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Netherlands",
-    "organizers": {
-      "current": ["Margo Pacula"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Netherlands",
-    "organizers": {
-      "current": ["Vera Arntzen"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-nijmegen",
@@ -3352,14 +2888,6 @@
     "lat": 51.93,
     "lon": 4.48,
     "timezone": "Europe/Amsterdam"
-  },
-  {
-    "status": "prospective",
-    "country": "Netherlands",
-    "organizers": {
-      "current": ["Karin Groothuis-Oudshoorn"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-utrecht",
@@ -3511,14 +3039,6 @@
     "timezone": "Africa/Lagos"
   },
   {
-    "status": "prospective",
-    "country": "Nigeria",
-    "organizers": {
-      "current": ["Waliyat Olaide Oloyede"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-lagos",
     "status": "active",
     "country": "Nigeria",
@@ -3539,14 +3059,6 @@
     "lat": 6.45,
     "lon": 3.47,
     "timezone": "Africa/Lagos"
-  },
-  {
-    "status": "prospective",
-    "country": "Nigeria",
-    "organizers": {
-      "current": ["Fortune Awala"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-bergen",
@@ -3596,14 +3108,6 @@
     "timezone": "Europe/Oslo"
   },
   {
-    "status": "prospective",
-    "country": "Norway",
-    "organizers": {
-      "current": ["Emma Sofie Skarstein", "Susan Anyosa"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-masqat",
     "status": "active",
     "country": "Oman",
@@ -3624,14 +3128,6 @@
     "lat": 23.61,
     "lon": 58.54,
     "timezone": "Asia/Dubai"
-  },
-  {
-    "status": "prospective",
-    "country": "Pakistan",
-    "organizers": {
-      "current": ["Mareeha Kamran"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-asuncion",
@@ -3705,22 +3201,6 @@
     "timezone": "America/Lima"
   },
   {
-    "status": "prospective",
-    "country": "Philippines",
-    "organizers": {
-      "current": ["Ma. Regina Justina E. Estuar"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Poland",
-    "organizers": {
-      "current": ["Lidia Lipi_ska"],
-      "former": []
-    }
-  },
-  {
     "urlname": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
     "status": "active",
     "country": "Poland",
@@ -3779,22 +3259,6 @@
     "timezone": "Europe/Bucharest"
   },
   {
-    "status": "prospective",
-    "country": "Russia",
-    "organizers": {
-      "current": ["Alina Bakhitova"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Saudi Arabia",
-    "organizers": {
-      "current": ["Sarah Alduayj"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-dammam",
     "status": "active",
     "country": "Saudi Arabia",
@@ -3828,14 +3292,6 @@
     },
     "organizers": {
       "current": ["Khadeejah Alaslani"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Saudi Arabia",
-    "organizers": {
-      "current": ["Faten Alamri"],
       "former": []
     }
   },
@@ -3929,14 +3385,6 @@
     "timezone": "Europe/Belgrade"
   },
   {
-    "status": "prospective",
-    "country": "Somalia",
-    "organizers": {
-      "current": ["Munira Omar"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-cape-town",
     "status": "active",
     "country": "South Africa",
@@ -3959,14 +3407,6 @@
     "lat": -33.93,
     "lon": 18.46,
     "timezone": "Africa/Johannesburg"
-  },
-  {
-    "status": "prospective",
-    "country": "South Africa",
-    "organizers": {
-      "current": ["Nitya Manjari Dasi", "Deveshnie Mudaly"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-johannesburg",
@@ -4063,22 +3503,6 @@
     "lat": 40.42,
     "lon": -3.71,
     "timezone": "Europe/Madrid"
-  },
-  {
-    "status": "prospective",
-    "country": "Spain",
-    "organizers": {
-      "current": ["Ana Nieto Librero"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Spain",
-    "organizers": {
-      "current": ["Ana Magdalena Vargas Martinez", "Eva F. Caceres"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-valencia",
@@ -4185,14 +3609,6 @@
     "lat": 59.33,
     "lon": 18.07,
     "timezone": "Europe/Stockholm"
-  },
-  {
-    "status": "prospective",
-    "country": "Sweden",
-    "organizers": {
-      "current": ["Sarah Trochemowitz", "Cecilia Natalie Strom"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-lausanne",
@@ -4382,34 +3798,6 @@
     "timezone": "Europe/Istanbul"
   },
   {
-    "status": "prospective",
-    "country": "Turkey",
-    "organizers": {
-      "current": ["Cansu Uzunsimsek"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Turkey",
-    "organizers": {
-      "current": ["Gizem Akkus"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "Uganda",
-    "social_media": {
-      "twitter": "Rladieskampala",
-      "email": "kampala@rladies.org"
-    },
-    "organizers": {
-      "current": ["Aine Lorna Maria", "Shakirah Nakalungi"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-kyiv",
     "status": "active",
     "country": "Ukraine",
@@ -4452,14 +3840,6 @@
     "lat": 49.84,
     "lon": 24.03,
     "timezone": "Europe/Kiev"
-  },
-  {
-    "status": "prospective",
-    "country": "United Arab Emirates",
-    "organizers": {
-      "current": ["Lakshmi Krishnamurthy"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-cambridge",
@@ -4733,30 +4113,6 @@
     "timezone": "Europe/London"
   },
   {
-    "status": "prospective",
-    "country": "United Kingdom",
-    "organizers": {
-      "current": ["Harriet AB Patrick"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "United Kingdom",
-    "organizers": {
-      "current": ["Chia Liu"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "United Kingdom",
-    "organizers": {
-      "current": ["Kate Moody"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-montevideo",
     "status": "active",
     "country": "Uruguay",
@@ -4833,45 +4189,6 @@
     "timezone": "America/Chicago"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Arkansas",
-    "organizers": {
-      "current": ["Kristi Toblesky"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "organizers": {
-      "current": ["Shannon Boyle"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "organizers": {
-      "current": ["Manali Gadre"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "social_media": {
-      "github": "rladies/meetup-presentations_newcastle"
-    },
-    "organizers": {
-      "current": ["Meghan Klasic", "Michaela C Debolt"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-irvine",
     "status": "active",
     "country": "USA",
@@ -4922,15 +4239,6 @@
     "lat": 34.07,
     "lon": -118.45,
     "timezone": "America/Los_Angeles"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "organizers": {
-      "current": ["Andrea S<e1>nchez-Tapia"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-pasadena",
@@ -5058,15 +4366,6 @@
     "timezone": "America/Los_Angeles"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "organizers": {
-      "current": ["Kate Kelsey"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-boulder",
     "status": "active",
     "country": "USA",
@@ -5114,15 +4413,6 @@
     "timezone": "America/Denver"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Colorado",
-    "organizers": {
-      "current": ["Katie Willi", "Caitlin Mothes", "Kathleen Wendt"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-connecticut",
     "status": "retired on 01-04-2020",
     "country": "USA",
@@ -5134,15 +4424,6 @@
     },
     "organizers": {
       "current": ["Erica Holdridge", "Jasmine Dumas"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Connecticut",
-    "organizers": {
-      "current": ["Josephine Ankrah", "Xinran Wang"],
       "former": []
     }
   },
@@ -5191,15 +4472,6 @@
     "lat": 29.65,
     "lon": -82.3,
     "timezone": "America/New_York"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Florida",
-    "organizers": {
-      "current": ["Camille Knepper"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-miami",
@@ -5377,24 +4649,6 @@
     "timezone": "Pacific/Honolulu"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Idaho",
-    "organizers": {
-      "current": ["Adrienne Marshall"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Illinois",
-    "organizers": {
-      "current": ["Marisa Ashley Smith"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-chicago",
     "status": "active",
     "country": "USA",
@@ -5418,24 +4672,6 @@
     "lat": 41.88,
     "lon": -87.62,
     "timezone": "America/Chicago"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Indiana",
-    "organizers": {
-      "current": ["Ana Isabel Bento"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Indiana",
-    "organizers": {
-      "current": ["Myrthe Faber", "Kelsey M. Reese"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-west-lafayette",
@@ -5485,15 +4721,6 @@
     "timezone": "America/Chicago"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Iowa",
-    "organizers": {
-      "current": ["Laura Thomas"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-des-moines",
     "status": "active",
     "country": "USA",
@@ -5538,15 +4765,6 @@
     "lat": 41.66,
     "lon": -91.53,
     "timezone": "America/Chicago"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Kentucky",
-    "organizers": {
-      "current": ["Rebecca Jones"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-louisville-ky",
@@ -5637,15 +4855,6 @@
     "timezone": "America/New_York"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Maryland",
-    "organizers": {
-      "current": ["Lisa Ziegler"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-lexington-park",
     "status": "active",
     "country": "USA",
@@ -5694,36 +4903,6 @@
     "lat": 42.36,
     "lon": -71.07,
     "timezone": "America/New_York"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Massachusetts",
-    "organizers": {
-      "current": ["Paige Patrick"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Massachusetts",
-    "social_media": {
-      "email": "waltham@rladies.org"
-    },
-    "organizers": {
-      "current": ["Ines Patop", "Claire Pontbriand", "Margarita Corral", "Jasmine Quynh Le"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Massachusetts",
-    "organizers": {
-      "current": ["Ally Kim"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-east-lansing",
@@ -5776,33 +4955,6 @@
     "lat": 44.94,
     "lon": -93.22,
     "timezone": "America/Chicago"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Missisippi",
-    "organizers": {
-      "current": ["Megumi Oshima"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Missisippi",
-    "organizers": {
-      "current": ["Mariana Strawn"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Mississippi",
-    "organizers": {
-      "current": ["Joy Smithson"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-kansas-city",
@@ -5890,33 +5042,6 @@
     "timezone": "America/Chicago"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Montana",
-    "organizers": {
-      "current": ["Allison Theobold"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Nebraska",
-    "organizers": {
-      "current": ["Gabriella Palomo", "Lyndsie Wszola", "Alexis Saltzman", "Elise Thayer"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Nevada",
-    "organizers": {
-      "current": ["Maya Jaffe"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-highland-park",
     "status": "active",
     "country": "USA",
@@ -5938,24 +5063,6 @@
     "lat": 40.5,
     "lon": -74.43,
     "timezone": "America/New_York"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "New Mexico",
-    "organizers": {
-      "current": ["Nicole Thompson"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "New York",
-    "organizers": {
-      "current": ["Rebecca Cowan"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-buffalo",
@@ -5980,15 +5087,6 @@
     "lat": 42.9,
     "lon": -78.88,
     "timezone": "America/New_York"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "New York",
-    "organizers": {
-      "current": ["Dena Jane Clink"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-newyork",
@@ -6017,15 +5115,6 @@
     "timezone": "America/New_York"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "New York",
-    "organizers": {
-      "current": ["Monica Javidnia"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-syracuse",
     "status": "active",
     "country": "USA",
@@ -6047,15 +5136,6 @@
     "lat": 43.04,
     "lon": -76.15,
     "timezone": "America/New_York"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "North Carolina",
-    "organizers": {
-      "current": ["Sheenu Abraham", "Jessica Dunn"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-rtp",
@@ -6094,15 +5174,6 @@
     },
     "organizers": {
       "current": ["Renata Gerecke"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Ohio",
-    "organizers": {
-      "current": ["Shreya Louis", "Megan Sheehan"],
       "former": []
     }
   },
@@ -6203,15 +5274,6 @@
     "timezone": "America/Los_Angeles"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Pennsylvania",
-    "organizers": {
-      "current": ["Erin Feaser"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-philly",
     "status": "active",
     "country": "USA",
@@ -6236,36 +5298,6 @@
     "lat": 40.12,
     "lon": -75.01,
     "timezone": "America/New_York"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Pennsylvania",
-    "social_media": {
-      "email": "pittsburgh@rladies.org"
-    },
-    "organizers": {
-      "current": ["Jane Kong", "Elan Parsons"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Pennsylvania",
-    "organizers": {
-      "current": ["Elizabeth Eisenhauer"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Rhode Island",
-    "organizers": {
-      "current": ["Sarah Eltinge"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-memphis",
@@ -6407,39 +5439,6 @@
     "timezone": "America/Chicago"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Texas",
-    "social_media": {
-      "email": "sanantonio@rladies.org"
-    },
-    "organizers": {
-      "current": ["Emily Stone"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "U.S. Virgin Islands",
-    "organizers": {
-      "current": ["Lavida Rogers"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Utah",
-    "social_media": {
-      "email": "provo@rladies.org"
-    },
-    "organizers": {
-      "current": ["Megdalynn Fisher", "Katie Olson"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-charlottesville",
     "status": "active",
     "country": "USA",
@@ -6463,24 +5462,6 @@
     "lat": 38,
     "lon": -78.46,
     "timezone": "America/New_York"
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Virginia",
-    "organizers": {
-      "current": ["Erin Britton"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Virginia",
-    "organizers": {
-      "current": ["Rida Naseem"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-dc",
@@ -6535,41 +5516,6 @@
     "timezone": "America/Los_Angeles"
   },
   {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Washington",
-    "organizers": {
-      "current": ["Alexandra Gore"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Wisconsin",
-    "organizers": {
-      "current": ["Nichole Webster", "Eshara Mondal"],
-      "former": []
-    }
-  },
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Wyoming",
-    "organizers": {
-      "current": ["Heather N. Abernathy"],
-      "former": []
-    }
-  },
-  {
-    "status": "active",
-    "country": "Venezuela",
-    "organizers": {
-      "current": ["Beatriz Valdez", "Maria Helena Rivero", "Jeselys Hern<e1>ndez"],
-      "former": []
-    }
-  },
-  {
     "urlname": "rladies-ha-noi",
     "status": "active",
     "country": "Vietnam",
@@ -6589,14 +5535,6 @@
     "lat": 21.03,
     "lon": 105.84,
     "timezone": "Asia/Ho_Chi_Minh"
-  },
-  {
-    "status": "prospective",
-    "country": "Vilnius",
-    "organizers": {
-      "current": ["Paulius Alaburda"],
-      "former": []
-    }
   },
   {
     "urlname": "rladies-remote",
@@ -6621,13 +5559,5 @@
     "lat": 37.78,
     "lon": -122.42,
     "timezone": "America/Los_Angeles"
-  },
-  {
-    "status": "prospective",
-    "country": "Zambia",
-    "organizers": {
-      "current": ["Hannah Kibrom"],
-      "former": []
-    }
   }
 ]
