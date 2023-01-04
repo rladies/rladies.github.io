@@ -9,7 +9,7 @@ options(
   blogdown.new_bundle = TRUE,
   blogdown.knit.on_save = FALSE,
   blogdown.ext = ".Rmd",
-  blogdown.subdir = "post",
+  blogdown.subdir = "blog",
   blogdown.title_case = TRUE,
   blogdown.hugo.version = "0.101.0"
 )
