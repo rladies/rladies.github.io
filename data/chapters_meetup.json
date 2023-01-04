@@ -1288,7 +1288,7 @@
     "country_acronym": "ca",
     "state": "QC",
     "city": "Montréal",
-    "members": 611,
+    "members": 610,
     "lat": 45.53,
     "lon": -73.6,
     "timezone": "America/Toronto"
@@ -1785,7 +1785,7 @@
     "country_acronym": "fr",
     "state": "",
     "city": "Paris",
-    "members": 876,
+    "members": 877,
     "lat": 48.86,
     "lon": 2.34,
     "timezone": "Europe/Paris"
@@ -2385,7 +2385,7 @@
     "country_acronym": "it",
     "state": "RM",
     "city": "Roma",
-    "members": 72,
+    "members": 74,
     "lat": 41.9,
     "lon": 12.48,
     "timezone": "Europe/Rome"
@@ -2884,7 +2884,7 @@
     "country_acronym": "nl",
     "state": "",
     "city": "Rotterdam",
-    "members": 504,
+    "members": 503,
     "lat": 51.93,
     "lon": 4.48,
     "timezone": "Europe/Amsterdam"
@@ -3278,7 +3278,7 @@
     "country_acronym": "sa",
     "state": "",
     "city": "Dammam",
-    "members": 516,
+    "members": 517,
     "lat": 26.42,
     "lon": 50.09,
     "timezone": "Asia/Riyadh"
@@ -3653,7 +3653,7 @@
     "country_acronym": "ch",
     "state": "",
     "city": "Zürich",
-    "members": 185,
+    "members": 186,
     "lat": 47.38,
     "lon": 8.54,
     "timezone": "Europe/Zurich"
@@ -5483,7 +5483,7 @@
     "country_acronym": "us",
     "state": "DC",
     "city": "Washington",
-    "members": 2748,
+    "members": 2750,
     "lat": 38.91,
     "lon": -77.02,
     "timezone": "America/New_York"

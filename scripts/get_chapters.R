@@ -47,12 +47,17 @@ write_chapter <- function(data){
 }
 
 
-some_cols <- c("meetup", "twitter", "email", "facebook", "instagram", "linkedin", 
-               "periscope", "youtube", "github", "website", "slack", "mastodon")
+some_cols <- c("meetup", "twitter", 
+               "email", "facebook", 
+               "instagram", "linkedin", 
+               "periscope", "youtube", 
+               "github", "website", 
+               "slack", "mastodon")
 
 meetup <- read_json(here("data", "meetup", "chapters.json"),
                     simplifyVector = TRUE) |> 
   bind_rows()
+warning(names(meetup))
 
 chpt <- list.files(here("data", "chapters"), "json", full.names = TRUE) |> 
   lapply(read_json,
@@ -73,7 +78,9 @@ chpt <- list.files(here("data", "chapters"), "json", full.names = TRUE) |>
       lapply(x, unlist)
     })
   ) |> 
-  select(-city)
+  select(-city) |> 
+  drop_na(urlname)
+warning(names(chpt))
 
 chpt |> 
   left_join(meetup, by = "urlname") |> 

@@ -47,6 +47,9 @@ README.html
 data/directory/
 static/images/directory/
 data/rblogs
+mtp/
+dir/
+rblogs/
 
 # npm
 node_modules/

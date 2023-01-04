@@ -148,7 +148,7 @@ jobs:
           rm -rf tmp rblogs mtp
           
       - name: Site data - merge chapter and meetup
-        run: Rscript scripts/get_chapters.R
+        run: Rscript --verbose scripts/get_chapters.R
 
       - name: Build
         run: hugo --enableGitInfo
