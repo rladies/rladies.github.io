@@ -57,7 +57,7 @@ some_cols <- c("meetup", "twitter",
 meetup <- read_json(here("data", "meetup", "chapters.json"),
                     simplifyVector = TRUE) |> 
   bind_rows()
-cat(names(meetup))
+warning(names(meetup))
 
 chpt <- list.files(here("data", "chapters"), "json", full.names = TRUE) |> 
   lapply(read_json,
@@ -80,7 +80,7 @@ chpt <- list.files(here("data", "chapters"), "json", full.names = TRUE) |>
   ) |> 
   select(-city) |> 
   drop_na(urlname)
-cat(names(chpt))
+warning(names(chpt))
 
 chpt |> 
   left_join(meetup, by = "urlname") |> 
