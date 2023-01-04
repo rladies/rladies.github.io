@@ -11,6 +11,10 @@ hugo.exe
 hugo.darwin
 hugo.linux
 ### R ###
+
+# blogdown
+content/post/*.html
+
 # History files
 .Rhistory
 .Rapp.history

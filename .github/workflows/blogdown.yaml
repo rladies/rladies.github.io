@@ -1,0 +1,48 @@
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+name: Build site and submit to Netlify
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    name: Build site and publish
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.80.0'
+          extended: true
+      
+      - name: Install netlify
+        run: npm install netlify-cli -g
+            
+      - name: Build
+        env: 
+          DIRECTORY_PAT: ${{ secrets.DIRECTORY_PAT }}
+        run: hugo --minify 
+
+      - name: Deploy to Netlify production
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: netlify deploy --prod
+          
+      - name: Deploy Netlify preview
+        if: github.event_name == 'pull_request'
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: netlify deploy
+        
