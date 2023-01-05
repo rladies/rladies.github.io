@@ -29,6 +29,11 @@
     url = "/about-us/history/"
     weight = 4
     parent = "about-us"
+[[main]]
+    name = "News"
+    url = "/home/news/"
+    weight = 5
+    parent = "about-us"
 
     
 [[main]]
@@ -68,12 +73,12 @@
     parent = "activities"
 [[main]]
     name = "Dans la presse"
-    url = "activities/press"
+    url = "/home/press"
     weight = 7
     parent = "activities"
     
 [[main]]
     name = "Blog"
-    url = "/blog"
+    url = "/home/blog"
     weight = 5
     

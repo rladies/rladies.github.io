@@ -15,32 +15,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  vars:
-    name: Get job variables
-    runs-on: macOS-latest
-    outputs:
-      cmt_msg: ${{ steps.cmt_msg.outputs.value }}
-      hugo_vr: ${{ steps.hugo_vr.outputs.value }}
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          fetch-depth: 2
-          
-      - name: Get commit message
-        id: cmt_msg
-        run: |
-          MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
-          echo $MSG
-          echo "::set-output name=value::${MSG}"
-          
-      - name: Get Hugo version
-        id: hugo_vr
-        run: |
-          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
-          echo $ver
-          echo "::set-output name=value::${ver}"
 
   jsons:
     name: Check modified jsons
@@ -57,45 +31,47 @@ jobs:
           jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
           if [[ "${jsons[*]}" = *[![:space:]]* ]]; then 
             echo ${jsons}
-            echo "::set-output name=run_validation::true"
+            echo "{run_validation}={true}" >> $GITHUB_ENV
           else
             echo "No jsons commited/changed"
-            echo "::set-output name=run_validation::false"
+            echo "{run_validation}={false}" >> $GITHUB_ENV
           fi
           
       - name: Setup R
-        if: steps.check_files.outputs.run_validation == 'true'
+        if: env.run_validation == 'true'
         uses: r-lib/actions/setup-r@v2
         
       - name: Install R-packages
-        if: steps.check_files.outputs.run_validation == 'true'
+        if: env.run_validation == 'true'
         run: install.packages(c("here", "jsonvalidate"), Ncpus = 2)
         shell: Rscript {0}
       
       - name: Validate jsons
-        if: steps.check_files.outputs.run_validation == 'true'
+        if: env.run_validation == 'true'
         run: Rscript scripts/validate_jsons.R
-        
+          
+          
   build:
     name: Build and publish to Netlify
     runs-on: macOS-latest
-    needs: [vars, jsons]
-    if: |
-      (github.event_name != 'pull_request' || 
-      github.event.pull_request.head.repo.full_name == github.repository) &&
-      ( always() && !(contains(needs.*.result, 'failure')) )
-    env:
-      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-
+    needs: [jsons]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Get Hugo version
+        id: hugo_vr
+        run: |
+          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
+          echo $ver
+          echo "{hugovr}={ver}" >> $GITHUB_ENV
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: ${{ needs.vars.outputs.hugo_vr }}
+          hugo-version: ${{ env.hugovr }}
           extended: true
       
       - name: Install netlify cli
@@ -105,7 +81,11 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         
       - name: Install R-packages
-        run: install.packages(c("here", "jsonlite", "dplyr", "tidyr"), Ncpus = 2)
+        run: |
+          install.packages(c(
+            "here", "jsonlite",
+            "dplyr", "tidyr"),
+            Ncpus = 2)
         shell: Rscript {0}
 
       - name: Populate untranslated pages
@@ -132,13 +112,6 @@ jobs:
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
           path: rblogs
           
-      - name: Site data - Get meetup data
-        uses: actions/checkout@v3
-        with:
-          repository: rladies/meetup_archive
-          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
-          path: meetup_archive
-          
       - name: Site data - clean cloned repos
         run: |
           mv rblogs/blogs data/rblogs
@@ -152,14 +125,20 @@ jobs:
 
       - name: Build
         run: hugo --enableGitInfo
-        
-      - name: Deploy Netlify preview
-        if: github.event_name == 'pull_request' && contains(needs.vars.outputs.cmt_msg , 'preview')
-        run: netlify deploy
-        shell: sh
 
-      - name: Deploy Netlify production
-        if: github.event_name != 'pull_request'
-        run: netlify deploy --prod
+      - name: Deploy Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [[ ${{ github.event_name }} == 'pull_request' ]]; then
+            echo "Running netlify preview deploy"
+            netlify deploy --alias ${{ github.sha }}
+          elif [[ ${{ github.event_name }} == 'push' && github.ref == 'refs/heads/master' ]]; then
+            echo "Running netlify production deploy"
+            netlify deploy --prod
+          else
+            echo "Nothing to send to netlify"
+          fi
         shell: sh
 

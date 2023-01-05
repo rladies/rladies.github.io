@@ -29,6 +29,11 @@
     url = "/about-us/history/"
     weight = 4
     parent = "about-us"
+[[main]]
+    name = "News"
+    url = "/home/news/"
+    weight = 4
+    parent = "about-us"
 
 [[main]]
     name = "Directory"
@@ -61,17 +66,17 @@
     parent = "activities"
 [[main]]
     name = "Blogs by R-Ladies"
-    url = "activities/rladies-blogs"
+    url = "/activities/rladies-blogs"
     weight = 6
     parent = "activities"
 [[main]]
     name = "In the press"
-    url = "activities/press"
+    url = "/home/press"
     weight = 7
     parent = "activities"
 
 [[main]]
     name = "Blog"
-    url = "/blog"
+    url = "/home/blog"
     weight = 5
     

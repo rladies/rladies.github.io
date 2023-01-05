@@ -6,28 +6,25 @@
 
 
 {{ define "main"}}
-    {{ range .Site.Sections }}
-      {{ range .Sections.ByWeight }}
+  {{ range .Site.Sections.ByWeight }}
+    {{ range .Sections.ByWeight }}
+      {{ if .Params.home }}
         <div id="{{ .Title }}" class="row section topspace">
-          <h2 class="section-title">
-              <a href="./news"><span>{{.Title}}</span></a>
-          </h2>
-          {{ $stype := .Type}}
-          {{ if eq $stype "single"  }}
-            <div class="text-align-center">
-              <p>{{ .Content }}</p> 
-            </div>
-          {{ else }}
-            {{ partial (printf "home/%s.html" $stype) . }}
-          {{ end }}
+        <h2 class="section-title">
+        <a href="./news"><span>{{.Title}}</span></a>
+        </h2>
+        {{ $stype := .Type}}
+        {{ if eq $stype "single"  }}
+          <div class="text-align-center">
+            <p>{{ .Content }}</p> 
+          </div>
+        {{ else }}
+          {{ partial (printf "home/%s.html" $stype) . }}
         {{ end }}
+        </div>
       {{ end }}
-    </div>
-    <h2 class="section-title" id="home-blog">
-      <a href="./blog"><span>{{ i18n "blog" }}</span></a>
-    </h2>
-    {{ range first 1 (where site.RegularPages "Type" "blog") }}
-      {{ partial "post/summary.html" . }}
     {{ end }}
+    
+  {{ end }}
 {{ end }}
 

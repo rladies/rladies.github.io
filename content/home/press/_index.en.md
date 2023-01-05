@@ -2,6 +2,7 @@
 title: "In the press"
 type: "services"
 weight: 3
+home: true
 ---
 
 On this page you can see some of the mentions or interviews with R-Ladies in the press. 
