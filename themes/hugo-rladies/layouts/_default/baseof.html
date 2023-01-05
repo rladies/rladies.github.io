@@ -39,7 +39,7 @@
               </header>
             {{ end }}
             
-            {{ define "translation"}}
+            {{ block "translation" .}}
                {{ if eq .Params.translated false }}
                 <div class="not-translated">
                    {{ i18n "missing_translation" }}

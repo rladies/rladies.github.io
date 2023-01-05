@@ -1,7 +1,14 @@
 Title: The source code for the R-ladies website
 Version: 1.0
-Authors@R: person("Hernández", "Bea", email = "bea@rladies.org", role = c("aut", "cre"))
-Description: The source code for the R-ladies website
+Authors@R:  c(
+     person("Hernández", "Bea", 
+         email = "bea@rladies.org", 
+         role = c("aut")),
+     person("Athanasia Mo", "Mowinckel", 
+         email = "a.m.mowinckel@psykologi.uio.no", 
+         role = c("aut", "cre"),
+         comment = c(ORCID = "0000-0002-5756-0223"))
+      )
 Encoding: UTF-8
 Imports:
     blogdown

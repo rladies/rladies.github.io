@@ -5,16 +5,22 @@
 /public/
 /build/
 /resources/_gen/
+<<<<<<< HEAD
+=======
 .hugo_build.lock
+>>>>>>> main
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
 hugo.linux
 ### R ###
+<<<<<<< HEAD
+=======
 
 # blogdown
 content/post/*.html
 
+>>>>>>> main
 # History files
 .Rhistory
 .Rapp.history
@@ -22,6 +28,13 @@ content/post/*.html
 .RData
 # User-specific files
 .Ruserdata
+<<<<<<< HEAD
+# Example code in package build process
+*-Ex.R
+# Output files from R CMD build
+/*.tar.gz
+=======
+>>>>>>> main
 # Output files from R CMD check
 /*.Rcheck/
 # RStudio files

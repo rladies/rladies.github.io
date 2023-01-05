@@ -63,3 +63,4 @@ delete_non_translates <- function(){
   
   sapply(content[idx], file.remove)
 }
+# delete_non_translates()
