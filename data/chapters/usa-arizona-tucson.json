@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-tucson-az",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Arizona",
+    "city": "Tucson",
+    "social_media": {
+      "meetup": "rladies-tucson-az",
+      "twitter": "RLadiesTucson",
+      "email": "tuscon@rladies.org"
+    },
+    "organizers": {
+      "current": ["Amy Margaret Banka"],
+      "former": ["Adriana Picoral"]
+    }
+  }
+]

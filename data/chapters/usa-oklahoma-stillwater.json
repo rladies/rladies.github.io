@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-stillwater",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Oklahoma",
+    "city": "Stillwater",
+    "social_media": {
+      "meetup": "rladies-stillwater",
+      "email": "stillwater@rladies.org"
+    },
+    "organizers": {
+      "current": ["Kay Bjornen", "Danielle Kirsch"],
+      "former": []
+    }
+  }
+]

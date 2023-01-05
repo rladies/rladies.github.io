@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-santa-rosa",
+    "status": "active",
+    "country": "Argentina",
+    "state.region": "La Pampa",
+    "city": "Santa Rosa",
+    "social_media": {
+      "meetup": "rladies-santa-rosa",
+      "twitter": "RladiesSR",
+      "email": "santarosa@rladies.org",
+      "facebook": "RLadiesSR",
+      "github": "rladies/meetup-presentations_santarosa"
+    },
+    "organizers": {
+      "current": ["Yanina Bellini Saibene", "Marina Cock"],
+      "former": []
+    }
+  }
+]

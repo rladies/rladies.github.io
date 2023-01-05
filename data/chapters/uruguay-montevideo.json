@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-montevideo",
+    "status": "active",
+    "country": "Uruguay",
+    "city": "Montevideo",
+    "social_media": {
+      "meetup": "rladies-montevideo",
+      "twitter": "RLadiesMVD",
+      "email": "montevideo@rladies.org",
+      "facebook": "RLadiesMVD",
+      "github": "rladies/meetup-presentations_montevideo"
+    },
+    "organizers": {
+      "current": ["Daniela V<e1>zquez", "Natalia da Silva", "Mar<ed>a In<e9>s Fariello", "Paula Pereda"],
+      "former": []
+    }
+  }
+]

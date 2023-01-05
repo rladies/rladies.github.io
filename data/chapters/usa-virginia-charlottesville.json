@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-charlottesville",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Virginia",
+    "city": "Charlottesville",
+    "social_media": {
+      "meetup": "rladies-charlottesville",
+      "twitter": "rladiescville",
+      "email": "charlottesville@rladies.org",
+      "github": "rladies/meetup-presentations_charlottesville"
+    },
+    "organizers": {
+      "current": ["Samantha Toet"],
+      "former": []
+    }
+  }
+]

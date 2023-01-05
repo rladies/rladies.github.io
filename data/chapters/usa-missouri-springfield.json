@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-springfield",
+    "status": "retired on 29-09-2019",
+    "country": "USA",
+    "state.region": "Missouri",
+    "city": "Springfield",
+    "social_media": {
+      "meetup": "rladies-springfield",
+      "email": "springfieldmo@rladies.org"
+    },
+    "organizers": {
+      "current": ["Amber Gillenwaters"],
+      "former": []
+    }
+  }
+]

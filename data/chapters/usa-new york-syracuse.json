@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-syracuse",
+    "status": "active",
+    "country": "USA",
+    "state.region": "New York",
+    "city": "Syracuse",
+    "social_media": {
+      "meetup": "rladies-syracuse",
+      "email": "syracuse@rladies.org"
+    },
+    "organizers": {
+      "current": ["Heather Kropp", "Anna Talucci", "Angeline Protacio", "Anisha BharathSingh", "Emily Halford"],
+      "former": []
+    }
+  }
+]

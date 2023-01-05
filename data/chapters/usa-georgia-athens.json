@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-athens-ga",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Georgia",
+    "city": "Athens",
+    "social_media": {
+      "meetup": "rladies-athens-ga",
+      "github": "rladies/meetup-presentations_athens-ga"
+    },
+    "organizers": {
+      "current": ["Camila Livio Emidio"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-houston",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Texas",
+    "city": "Houston",
+    "social_media": {
+      "meetup": "rladies-houston",
+      "twitter": "rladieshouston",
+      "email": "houston@rladies.org"
+    },
+    "organizers": {
+      "current": ["Jasmine N. Baker"],
+      "former": ["Erin Hodgess", "Jennifer Cai", "Tulasi NARAYANAN Aayer"]
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-iowa-city",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Iowa",
+    "city": "Iowa City",
+    "social_media": {
+      "meetup": "rladies-iowa-city",
+      "email": "iowacity@rladies.org"
+    },
+    "organizers": {
+      "current": ["Marie Ozanne", "Anna Reisetter", "Alexandra Curtis"],
+      "former": []
+    }
+  }
+]

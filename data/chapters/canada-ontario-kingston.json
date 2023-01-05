@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-kingston",
+    "status": "active",
+    "country": "Canada",
+    "state.region": "Ontario",
+    "city": "Kingston",
+    "social_media": {
+      "meetup": "rladies-kingston"
+    },
+    "organizers": {
+      "current": ["Nerissa Mulligan"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-asuncion",
+    "status": "active",
+    "country": "Paraguay",
+    "city": "Asunci<f3>n",
+    "social_media": {
+      "meetup": "rladies-asuncion",
+      "twitter": "RLadiesAsuncion",
+      "email": "asuncion@rladies.org"
+    },
+    "organizers": {
+      "current": ["Ivonne Aristizabal", "Flavia Sacco"],
+      "former": []
+    }
+  }
+]

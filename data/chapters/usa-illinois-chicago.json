@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-chicago",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Illinois",
+    "city": "Chicago",
+    "social_media": {
+      "meetup": "rladies-chicago",
+      "twitter": "RLadiesChicago",
+      "email": "chicago@rladies.org",
+      "github": "rladies/meetup-presentations_chicago"
+    },
+    "organizers": {
+      "current": ["Angela Li", "Katherine Simeon", "Amy Yang", "Anne Corinne-Carroll", "Ola Giwa", "Caroline Williams", "Sushmita Gopalan", "Scarlett Winters", "Aarthi Vemuri"],
+      "former": []
+    }
+  }
+]

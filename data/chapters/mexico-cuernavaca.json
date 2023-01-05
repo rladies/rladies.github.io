@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-cuernavaca",
+    "status": "active",
+    "country": "Mexico",
+    "city": "Cuernavaca",
+    "social_media": {
+      "meetup": "rladies-cuernavaca",
+      "twitter": "RLadiesCuerna",
+      "email": "cuernavaca@rladies.org"
+    },
+    "organizers": {
+      "current": ["Joselyn Chavez", "Ver<f3>nica Jim<e9>nez Jacinto", "Leticia Vega Alvarado", "Elizabeth Ernestina Godoy Lozano", "Aurora Labastida"],
+      "former": []
+    }
+  }
+]

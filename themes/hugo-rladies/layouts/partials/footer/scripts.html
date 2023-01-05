@@ -3,8 +3,17 @@
 <!-- jQuery -->
 <script type="text/javascript" src="{{ "js/jquery.min.js" | relURL }}"></script>
 
-<!-- bootstrap 4 -->
+<!-- bootstrap js -->
 <script type="text/javascript" src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
 
 <!-- for searching and pagination List.js -->
 <script type="text/javascript" src="{{ "js/list.min.js" | relURL }}"></script>
+
+<script>
+  $('.card-expand').hover(function() {
+    $(this).find('.card-expand-description').stop().animate({
+        height: "toggle",
+        opacity: "toggle"
+      }, 300);
+    });
+</script>

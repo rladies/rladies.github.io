@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-xalapa",
+    "status": "active",
+    "country": "Mexico",
+    "city": "Xalapa",
+    "social_media": {
+      "meetup": "rladies-xalapa",
+      "twitter": "RLadiesXalapa",
+      "email": "xalapa@rladies.org"
+    },
+    "organizers": {
+      "current": ["Marcela Dolores Guerra Osorno"],
+      "former": []
+    }
+  }
+]

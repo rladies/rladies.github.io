@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-pdx",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Oregon",
+    "city": "Portland",
+    "social_media": {
+      "meetup": "rladies-pdx",
+      "twitter": "RLadiesPDX",
+      "email": "pdx@rladies.org",
+      "github": "rladies/meetup-presentations_portland"
+    },
+    "organizers": {
+      "current": ["Augustina Ragwitz", "Deeksha Thati", "Alison Presmanes Hill"],
+      "former": []
+    }
+  }
+]

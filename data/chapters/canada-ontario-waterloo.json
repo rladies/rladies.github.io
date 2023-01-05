@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-waterloo",
+    "status": "retired on 29-09-2019",
+    "country": "Canada",
+    "state.region": "Ontario",
+    "city": "Waterloo",
+    "social_media": {
+      "meetup": "rladies-waterloo",
+      "twitter": "RLadiesWaterloo",
+      "email": "waterloo@rladies.org"
+    },
+    "organizers": {
+      "current": ["Lauren Yee"],
+      "former": []
+    }
+  }
+]

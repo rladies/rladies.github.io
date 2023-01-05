@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-lviv",
+    "status": "active",
+    "country": "Ukraine",
+    "city": "Lviv",
+    "social_media": {
+      "meetup": "rladies-lviv",
+      "email": "lviv@rladies.org"
+    },
+    "organizers": {
+      "current": ["Mariia Koliada"],
+      "former": []
+    }
+  }
+]

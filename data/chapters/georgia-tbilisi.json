@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-tbilisi",
+    "status": "active",
+    "country": "Georgia",
+    "city": "Tbilisi",
+    "social_media": {
+      "meetup": "rladies-tbilisi",
+      "twitter": "RLadiesTbilisi",
+      "email": "tbilisi@rladies.org",
+      "facebook": "rladiestbilisi",
+      "github": "rladies/meetup-presentations_tbilisi"
+    },
+    "organizers": {
+      "current": ["Liili Abuladze", "Tamuna Margievi", "Mariam Asatiani"],
+      "former": []
+    }
+  }
+]

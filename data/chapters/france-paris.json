@@ -1,0 +1,22 @@
+[
+  {
+    "urlname": "rladies-paris",
+    "status": "active",
+    "country": "France",
+    "city": "Paris",
+    "social_media": {
+      "meetup": "rladies-paris",
+      "twitter": "RLadiesParis",
+      "email": "paris@rladies.org",
+      "facebook": "RLadiesParis",
+      "instagram": "rladiesparis",
+      "linkedin": "r-ladies-paris",
+      "youtube": "UCWTFKtW_ReLP9zmMTYjRqug",
+      "github": "rladies/r-ladies-paris"
+    },
+    "organizers": {
+      "current": ["Mouna Belaid"],
+      "former": ["Diane Beldame", "Christina Bergmann", "Sarah Hosking", "Stéphanie Terrasse"]
+    }
+  }
+]

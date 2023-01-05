@@ -11,15 +11,4 @@ Authors@R:  c(
       )
 Encoding: UTF-8
 Imports:
-    lubridate,
-    dplyr,
-    tidyr,
-    purrr,
-    jsonlite,
-    here,
-    cyphr,
-    sodium,
-    meetupr
-Remotes:
-    rladies/meetupr
-    
+    blogdown

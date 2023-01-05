@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-orlando",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Florida",
+    "city": "Orlando",
+    "social_media": {
+      "meetup": "rladies-orlando",
+      "twitter": "RLadiesOrlando",
+      "email": "orlando@rladies.org",
+      "github": "rladies/meetup-presentations_orlando"
+    },
+    "organizers": {
+      "current": ["Kathy Joshi", "Vanessa Eaton"],
+      "former": []
+    }
+  }
+]

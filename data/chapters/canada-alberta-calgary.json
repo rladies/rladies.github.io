@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-calgary",
+    "status": "active",
+    "country": "Canada",
+    "state.region": "Alberta",
+    "city": "Calgary",
+    "social_media": {
+      "meetup": "rladies-calgary"
+    },
+    "organizers": {
+      "current": ["Marta Vidal Garc<ed>a", "Soane Mota dos Santos"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-belgrade",
+    "status": "active",
+    "country": "Serbia",
+    "city": "Belgrade",
+    "social_media": {
+      "meetup": "rladies-belgrade",
+      "twitter": "RLadiesBelgrade",
+      "email": "belgrade@rladies.org"
+    },
+    "organizers": {
+      "current": ["Nadica Miljkovic", "Vesna Oro", "Tatjana Kecojevic"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "urlname": "rladies-rio",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "Rio de Janeiro",
+    "city": "Rio de Janeiro",
+    "social_media": {
+      "meetup": "rladies-rio",
+      "twitter": "RLadiesRio",
+      "email": "rio@rladies.org",
+      "facebook": "rladiesrio",
+      "instagram": "Rladiesrio",
+      "github": "rladies/meetup-presentations_rio"
+    },
+    "organizers": {
+      "current": ["Beatriz Pinna", "Clemencia Mora", "Priscila Hohberg", "Sara Mortara", "Noele Ribeiro"],
+      "former": []
+    }
+  }
+]

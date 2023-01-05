@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-copenhagen",
+    "status": "active",
+    "country": "Denmark",
+    "city": "Copenhagen",
+    "social_media": {
+      "meetup": "rladies-copenhagen",
+      "twitter": "RLadiesCPH",
+      "email": "copenhagen@rladies.org"
+    },
+    "organizers": {
+      "current": ["Kristina Gregorio", "Diana Lucatero"],
+      "former": []
+    }
+  }
+]

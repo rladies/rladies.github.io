@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-adelaide",
+    "status": "active",
+    "country": "Australia",
+    "city": "Adelaide",
+    "social_media": {
+      "meetup": "rladies-adelaide",
+      "twitter": "RLadiesAdelaide",
+      "email": "adelaide@rladies.org",
+      "github": "rladies/meetup-presentations_adelaide"
+    },
+    "organizers": {
+      "current": ["Marija Dmitrijeva", "Helen Dockrell", "Rachel Searston", "Melaine Smith", "Brittany Child"],
+      "former": []
+    }
+  }
+]

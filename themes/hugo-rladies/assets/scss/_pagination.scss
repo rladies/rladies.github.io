@@ -72,3 +72,84 @@
 .pagination-sm {
   @include pagination-size($pagination-padding-y-sm, $pagination-padding-x-sm, $font-size-sm, $line-height-sm, $pagination-border-radius-sm);
 }
+
+
+/******************/
+/*   custom   */
+/******************/
+
+.pagination-wrap {
+  user-select: none;
+  display: flex;
+    
+  a {
+    text-decoration: none;
+  }
+}
+
+.pagination-layout {
+  display: flex;
+  @include list-unstyled();
+  @include border-radius();
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  li {
+    width: $font-size-base*2;
+    margin: 0 .25rem;
+    padding: 0 0.25rem;
+
+    a.page {
+      height: 24px;
+      width: 24px;
+      display: block;
+      border: none;
+      line-height: 24px;
+      padding: 0;
+      text-align: center;
+      border-radius: 50%;
+      font-weight: 700;
+      color: $primary;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+
+    &.active {
+      a.page {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+
+    &.disabled {
+      a.page {
+        &:hover {
+          color: $primary;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.pagination-next, .pagination-prev {
+  color: $primary;
+
+  &:hover {
+    color: lighten($primary, 20%);
+  }
+
+  &.disabled {
+    color: lighten($primary, 40%);
+    cursor: default;
+
+    &:hover {
+      color: lighten($primary, 40%);
+    }
+  }
+}

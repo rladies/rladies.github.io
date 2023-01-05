@@ -1,99 +1,121 @@
 
 {{ define "main" }}
-<article class="post">
-	<header class="entry-header">
- 		<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
-	</header>
-	
   <div class="entry-content">
 		{{ .Content }}
 	</div>
 
-  <div class="flex-container full-width" id="directory-content">
+  <div class="flex-container" id="directory-content">
     
-    <center class="m-2">
       <input type="text" id="dir-search" class="fuzzy-search rounded" placeholder="Search directory..."/>
-      <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</buttonr>
+      <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</button>
       <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
-    </center>
-    	
-    <div class="container" id="directory-cards">
-        <ul class="list row row-cols-sm-1 row-cols-md-2 row-cols-lg-3" id="directory-grid">
-    
-            {{ $directory :=  ( .Scratch.Get "directory" ) }}
-            {{ range $directory }}
-              {{ partial "directory/li.html" . }}
+
+    <div class="container expand-grid" id="directory-cards">
+        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="directory-grid">
+            {{ $directory := ( .Scratch.Get "directory" ) }}
+            {{ range $name := $.Scratch.Get "dic" | shuffle }}
+              {{ $d := index $directory $name }}
+              {{ $dir := newScratch }}
+              {{ $dir.Set "title" $d.name }} 
+              {{ $dir.Add "title" "<span><small>"}}
+              {{ with $d.social_media }}
+                  {{ $some := partial "some.html" (dict "data" . ) }}
+                  {{ $dir.Add "title" $some }} 
+              {{ end }}
+              {{ $dir.Add "title" "</small></span>"}}
+              
+              {{ $dir.Set "subtitle" (printf "<p class=\"text-hide directory-id\">%s</p>" $name) }} 
+              {{ with $d.work.title }} {{$dir.Add "subtitle" . }} {{ end }}
+
+              {{ $dir.Set "img" "" }}
+              {{ with (resources.GetMatch $d.photo.url ) }}
+                {{ $image :=  . }}
+                {{ $image := $image.Fill "300x300" }}
+                {{ $dir.Set "img" $image.Permalink }}
+              {{ end }}
+
+              {{ $descr := partial "funcs/directory/descr.html" (dict "data" $d "id" $name ) }}
+              {{ $subtitle := ($dir.Get "subtitle" ) }}
+              {{ $title := ($dir.Get "title" ) }}
+              {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" "large"  "img" ($dir.Get "img") "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
             {{ end }}
         </ul>
       </div>
       
       <!-- pagination nav -->
-      <div class="row text-center justify-content-center" aria-label="Directory pagination">
-        <ul class="pagination">
-          <li class="page-item paginate_back">
-            <a class="page-link" aria-label="Previous">
-              <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li class="paginator"></li>
-          <li class="page-item paginate_next">
-            <a class="page-link" aria-label="Next">
-              <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
+      <div class="nav pagination justify-content-center align-content-center" aria-label="Directory pagination">
+        <a class="pagination-prev disabled" href="#directory-content"><span class="page-arrow"><</span></a>
+        <ul class="pagination-layout"></ul>
+        <a class="pagination-next" href="#directory-content"><span class="page-arrow">></span></a>
       </div>
       
     </div>
   </div> 
-</article>
 {{ end }}
 
 {{ define  "footer" }}
+{{ if eq hugo.Environment "production" }}
+  {{ .Scratch.Set "n_page_directory" 25}}
+{{ else }}
+  {{ .Scratch.Set "n_page_directory" 5}}
+{{ end }} 
+
 	<script>
-	
-	(async function(){
-    var directoryList = new List('directory-content', {
-      valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
-      searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location'],
-      page: 20,
-      pagination: {
-        innerWindow: 3,
-        left: 1,
-        right: 1,
-        paginationClass: "paginator",
-      },
-      fuzzySearch: {
-        searchClass: "fuzzy-search",
-        distance: 150,
-        multiSearch: true
-      }
-    });
-      
-    // find url anchor and populate search field.
-    var entry = decodeURIComponent(window.location.hash.substr(1));
-    document.getElementById("dir-search").value = entry;
-    // Search manually
-    directoryList.fuzzySearch(entry);
-	})();
-    
-  $('.paginate_next').on('click', function(){
-    var list = $('.pagination').find('li');
-    $.each(list, function(position, element){
-        if($(element).is('.active')){
-            $(list[position+1]).trigger('click');
+    var perPage = {{  ( .Scratch.Get "n_page_directory" ) }};
+  	(async function(){
+      var directoryList = new List('directory-content', {
+        valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'directory-id'], 
+        searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'directory-id'],
+        page: perPage,
+        pagination: {
+          innerWindow: 1,
+          left: 2,
+          right: 2,
+          paginationClass: "pagination-layout",
+          item: "<li><a class='page' href='#directory-content'></a></li>"
+        },
+        fuzzySearch: {
+          searchClass: "fuzzy-search",
+          distance: 150,
+          multiSearch: true
         }
-    })
+      }).on("updated", function(list) {
+        // make the Prev and Nex buttons disabled on first and last pages accordingly
+        $(".pagination-prev.disabled, .pagination-next.disabled").removeClass(
+          "disabled"
+        );
+        $(".pagination-wrap").show();
+
+        if (list.i == 1) {
+          $(".pagination-prev").addClass("disabled");
+        }
+        if (list.i > list.matchingItems.length - list.page) {
+          $(".pagination-next").addClass("disabled");
+        }
+      
+        // hide pagination if there one or less pages to show
+        if (list.matchingItems.length <= perPage) {
+          $(".pagination-wrap").hide();
+        }
+      });
+      
+	$(".pagination-next").click(function() {
+		$(".pagination-layout .active").next('li')[0].firstChild.click()
+	});
+	$(".pagination-prev").click(function() {
+		$(".pagination-layout .active").prev('li')[0].firstChild.click()
 	});
 
-	$('.paginate_back').on('click', function(){
-	    var list = $('.pagination').find('li');
-	    $.each(list, function(position, element){
-	        if($(element).is('.active')){
-	            $(list[position-1]).trigger('click');
-	        }
-	    })
-	  }); 
+      // find url anchor and populate search field.
+      var entry = decodeURIComponent(window.location.hash.substr(1));
+      if(entry !== "directory-content"){
+        document.getElementById("dir-search").value = entry;
+        // Search manually
+        directoryList.fuzzySearch(entry);
+      }
+  	})();
+        
 
 	</script>
 {{ end }}

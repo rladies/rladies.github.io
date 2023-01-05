@@ -1,0 +1,15 @@
+[
+  {
+    "status": "prospective",
+    "country": "Lebanon",
+    "city": "Beirut",
+    "social_media": {
+      "twitter": "RLadiesBEY",
+      "email": "beirut@rladies.org"
+    },
+    "organizers": {
+      "current": ["Sondos Atwi"],
+      "former": []
+    }
+  }
+]

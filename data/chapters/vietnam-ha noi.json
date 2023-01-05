@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-ha-noi",
+    "status": "active",
+    "country": "Vietnam",
+    "city": "Ha Noi",
+    "social_media": {
+      "meetup": "rladies-ha-noi"
+    },
+    "organizers": {
+      "current": ["Linh Dieu"],
+      "former": []
+    }
+  }
+]

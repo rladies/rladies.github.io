@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-eskisehir",
+    "status": "active",
+    "country": "Turkey",
+    "city": "Eskisehir",
+    "social_media": {
+      "meetup": "rladies-eskisehir",
+      "twitter": "RLadiesEskisehR",
+      "email": "eskisehir@rladies.org",
+      "github": "rladies/meetup-presentations_eskisehir"
+    },
+    "organizers": {
+      "current": ["Bet<fc>l KAN KILIN<c7>"],
+      "former": []
+    }
+  }
+]

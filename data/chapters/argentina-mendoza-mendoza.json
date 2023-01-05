@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-mendoza",
+    "status": "active",
+    "country": "Argentina",
+    "state.region": "Mendoza",
+    "city": "Mendoza",
+    "social_media": {
+      "meetup": "rladies-mendoza",
+      "twitter": "RLadiesMza",
+      "email": "mendoza@rladies.org",
+      "facebook": "RLadiesMendoza",
+      "github": "rladies/meetup-presentations_mendoza"
+    },
+    "organizers": {
+      "current": ["Ana Laura Diedrichs", "Jan Strappa", "Brenda Canizo"],
+      "former": []
+    }
+  }
+]

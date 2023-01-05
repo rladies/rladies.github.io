@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-coventry",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "Coventry",
+    "social_media": {
+      "meetup": "rladies-coventry",
+      "email": "coventry@rladies.org"
+    },
+    "organizers": {
+      "current": ["Marion Coumel", "Sophie Hardy"],
+      "former": []
+    }
+  }
+]

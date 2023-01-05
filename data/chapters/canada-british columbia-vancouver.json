@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-vancouver",
+    "status": "active",
+    "country": "Canada",
+    "state.region": "British Columbia",
+    "city": "Vancouver",
+    "social_media": {
+      "meetup": "rladies-vancouver",
+      "twitter": "RLadiesVan",
+      "email": "vancouver@rladies.org",
+      "github": "rladies/meetup-presentations_vancouver"
+    },
+    "organizers": {
+      "current": ["Anna Posacka", "Marion Shadbol", "Nazli <d6>z<fc>m Kafaee", "Ra<ef>ssa Philibert", "Jasmine Lai", "Lucia Darrow", "Lisa Cao"],
+      "former": []
+    }
+  }
+]

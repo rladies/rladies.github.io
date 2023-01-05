@@ -1,8 +1,1 @@
-^renv$
-^renv\.lock$
-^\.github/workflows$
-^\.travis\.yml$
-^\.github$
-^\.httr-oauth$
-^/Users/athanasm/\.meetup_token\.rds$
-^/Users/athanasm/Library/Application Support/meetupr/meetupr-token\.rds$
+^~/\.rladies_meetup_token\.rds$

@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-medellin",
+    "status": "active",
+    "country": "Colombia",
+    "city": "Medellin",
+    "social_media": {
+      "meetup": "rladies-medellin",
+      "twitter": "RLadiesMedellin",
+      "email": "medellin@rladies.org"
+    },
+    "organizers": {
+      "current": ["Angie Correa", "Valentina Clavijo", "Sara Garc<e9>s", "Olga <da>suga", "Carmen Pati<f1>o"],
+      "former": []
+    }
+  }
+]

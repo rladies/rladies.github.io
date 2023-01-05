@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-valencia",
+    "status": "retired on 29-09-2019",
+    "country": "Spain",
+    "city": "Valencia",
+    "social_media": {
+      "meetup": "rladies-valencia",
+      "twitter": "RLadiesValencia",
+      "email": "valencia@rladies.org"
+    },
+    "organizers": {
+      "current": ["Lidia Contreras"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-new-orleans",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Louisiana",
+    "city": "New Orleans",
+    "social_media": {
+      "meetup": "rladies-new-orleans"
+    },
+    "organizers": {
+      "current": ["Erin Cuyler", "Danielle Oberdier"],
+      "former": []
+    }
+  }
+]

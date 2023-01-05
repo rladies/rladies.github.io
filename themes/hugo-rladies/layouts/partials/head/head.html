@@ -2,16 +2,11 @@
 <title>{{ .Title }}</title>
 <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
 
-<!-- bootstrap 4 -->
-<link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}"> 
-
 <!-- Icons -->
-<link rel="stylesheet" type="text/css" href="//use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-<!-- TUI calendar css-->  
-<link rel="stylesheet" href="{{ "css/tui-calendar.min.css" | relURL }}" />
-<link rel="stylesheet" type="text/css" href="{{ "css/tui-date-picker.min.css"| relURL }}" />
-<link rel="stylesheet" type="text/css" href="{{ "css/tui-time-picker.min.css"| relURL }}" />
+<!-- Fullcalendar css-->  
+<link rel="stylesheet" href="{{ "css/fullcalendar.min.css" | relURL }}" />
 
 <!-- website css -->
 {{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
@@ -19,3 +14,6 @@
 
 <!-- site data -->
 {{ partial "head/data.html" . }}
+
+<!-- plausible -->
+<script defer data-domain="rladies.org" src="https://plausible.io/js/script.js"></script>

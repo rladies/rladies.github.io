@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-bogor",
+    "status": "active",
+    "country": "Indonesia",
+    "city": "Bogor",
+    "social_media": {
+      "meetup": "rladies-bogor",
+      "email": "bogor@rladies.org"
+    },
+    "organizers": {
+      "current": ["Sabhrina Aninta", "Sheherazade", "Ulfah Mardhiah"],
+      "former": []
+    }
+  }
+]

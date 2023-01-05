@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-gottingen",
+    "status": "active",
+    "country": "Germany",
+    "city": "Goettingen",
+    "social_media": {
+      "meetup": "rladies-gottingen",
+      "twitter": "RLadiesGoe",
+      "email": "goettingen@rladies.org",
+      "github": "rladies/meetup-presentations_goettingen",
+      "slack": "https://r-ladiesgttingen.slack.com"
+    },
+    "organizers": {
+      "current": ["Annika Ziereis", "Neele Engelmann", "Laura Julava"],
+      "former": []
+    }
+  }
+]

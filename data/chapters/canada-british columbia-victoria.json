@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-victoria",
+    "status": "retired on 29-09-2019",
+    "country": "Canada",
+    "state.region": "British Columbia",
+    "city": "Victoria",
+    "social_media": {
+      "meetup": "rladies-victoria",
+      "twitter": "RLadiesVicBC",
+      "email": "victoriabc@rladies.org",
+      "github": "rladies/RLadiesVicBC"
+    },
+    "organizers": {
+      "current": ["Lisa McEwen"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-exeter",
+    "status": "retired on 09-04-2020",
+    "country": "United Kingdom",
+    "city": "Exeter",
+    "social_media": {
+      "meetup": "rladies-exeter",
+      "email": "exeter@rladies.org"
+    },
+    "organizers": {
+      "current": ["Raluca Popp"],
+      "former": []
+    }
+  }
+]

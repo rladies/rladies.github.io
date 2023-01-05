@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-lancaster",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "Lancaster",
+    "social_media": {
+      "meetup": "rladies-lancaster",
+      "twitter": "RLadiesLancs",
+      "email": "lancaster@rladies.org",
+      "github": "rladies/meetup-presentations_lancaster"
+    },
+    "organizers": {
+      "current": ["Rhian Davies"],
+      "former": []
+    }
+  }
+]

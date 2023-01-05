@@ -1,54 +1,28 @@
-
 {{ define "main" }}
- 	<article class="post">
-		<header class="entry-header">
- 			<div class="entry-meta">
-         <span class="posted-on">
-            <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-               {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
-            </time>
-         </span>
- 			</div>
- 			<h1 class="entry-title"><a href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a></h1>
-		</header>
-		<div class="entry-content">
-			{{ .Content }}
-		</div>
+	{{ .Content }}
+  <div class="container expand-grid" id="rladies-blogs">
+    <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
+      {{ $blogs := ( .Scratch.Get "blogs" ) }}
+      {{ range $blogs }}
+        {{ $data := newScratch }}
+        {{ $data.Set "descr" "" }}
 
-      <div class="container full-width" id="rladies-blogs">
-        <div class="row justify-content-center row-cols-2 row-cols-sm-3 row-cols-lg-4">
-          {{ $blogs := ( .Scratch.Get "blogs" ) }}
-            {{ range $blogs }}    
-              <div class="card card-blogs mx-auto m-1">
-                <a href="{{ .url }}">
-                  <div class="embed-responsive embed-responsive-4by3">
-                    <img class="card-img-top embed-responsive-item" src="{{ .photo_url }}" alt="{{ .name }} {{ with .subtitle }}{{ . }}{{ end }}">
-                  </div>
-                  <div class="card-body card-img-overlay card-img-transp">
-                    <h3 class="card-title text-white">
-                      {{ .title }}
-                      {{ with .subtitle }}
-                        <i><small class="text-white">
-                          <br>{{ . }}
-                        </small></i>{{ end }}
-                    </h3>
-                    
-                    <div class="card-text text-rladies-light">
-                      {{ range .authors }}
-                        <p class="text-white text-rladies-light">
-                          {{ .name }}
-                          {{ range first 3 .social_media }}
-                            {{ partial "some.html" .}}
-                          {{ end }}
-                        </p>
-                      {{ end }}
-                    </div>
-                  </div>
-                </a>
-              </div>
+        {{ range .authors }}
+          {{ $data.Add "descr" "<p>" }}
+          {{ $data.Add "descr" .name }}
+            {{ with .social_media }}
+              {{ range . }}
+                {{ $data.Add "descr" (partial "some.html" (dict "data" . "range" 3)) }}
+              {{ end }}
             {{ end }}
-        </div>
-      </div>
-	</article><!-- #post-## -->
-
+          {{ $data.Add "descr" "</p>" }}
+        {{ end }}
+        {{ $descr :=  $data.Get "descr" }}
+        
+        {{ $subtitle := .subtitle | default "" }}
+        {{ partial "funcs/card-expand.html" (dict "title" .title "img" .photo_url "subtitle" $subtitle "descr" $descr "category" .type ) }}
+      {{ end }}
+    </ul>
+  </div>
 {{ end }}
+

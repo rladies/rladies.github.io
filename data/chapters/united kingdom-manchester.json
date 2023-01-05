@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-manchester",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "Manchester",
+    "social_media": {
+      "meetup": "rladies-manchester",
+      "twitter": "RLadiesManchest",
+      "email": "manchester@rladies.org",
+      "github": "rladies/RLadiesManchester"
+    },
+    "organizers": {
+      "current": ["Ellen Talbot", "Bethan Blakeley"],
+      "former": []
+    }
+  }
+]

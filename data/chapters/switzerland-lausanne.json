@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-lausanne",
+    "status": "retired on 12-02-2022",
+    "country": "Switzerland",
+    "city": "Lausanne",
+    "social_media": {
+      "meetup": "rladies-lausanne",
+      "twitter": "RLadiesLausanne",
+      "email": "rladieslausanne@gmail.com",
+      "facebook": "RLadiesLausanne",
+      "github": "rladies/meetup-presentations_lausanne",
+      "website": "https://rladieslausanne.github.io/"
+    },
+    "organizers": {
+      "current": ["Ninon Mounier", "Liza Darrous"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-remote",
+    "status": "active",
+    "country": "Worldwide",
+    "city": "Remote",
+    "social_media": {
+      "meetup": "rladies-remote",
+      "twitter": "rladiesremote",
+      "email": "remote@rladies.org",
+      "slack": "https://rladies-remote.slack.com"
+    },
+    "organizers": {
+      "current": ["Azadeh Gishani", "Katie Lee", "Frie Preu", "Heather Turner"],
+      "former": []
+    }
+  }
+]

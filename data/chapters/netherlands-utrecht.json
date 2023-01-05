@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-utrecht",
+    "status": "active",
+    "country": "Netherlands",
+    "city": "Utrecht",
+    "social_media": {
+      "meetup": "rladies-utrecht",
+      "email": "utrecht@rladies.org",
+      "github": "rladies/meetup-presentations_utrecht"
+    },
+    "organizers": {
+      "current": ["Annelies Kers", "Dewi Koning"],
+      "former": []
+    }
+  }
+]

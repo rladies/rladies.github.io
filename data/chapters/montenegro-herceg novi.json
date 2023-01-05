@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-montenegro",
+    "status": "retired on 01-04-2020",
+    "country": "Montenegro",
+    "city": "Herceg Novi",
+    "social_media": {
+      "meetup": "rladies-montenegro",
+      "twitter": "RLadiesMNE",
+      "email": "montenegro@rladies.org",
+      "github": "rladies/meetup-presentations_montenegro"
+    },
+    "organizers": {
+      "current": ["Ivana Kecojevic"],
+      "former": []
+    }
+  }
+]

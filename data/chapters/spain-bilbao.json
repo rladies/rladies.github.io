@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-bilbao",
+    "status": "active",
+    "country": "Spain",
+    "city": "Bilbao",
+    "social_media": {
+      "meetup": "rladies-bilbao",
+      "twitter": "RLadiesBIO",
+      "email": "bilbao@rladies.org"
+    },
+    "organizers": {
+      "current": ["Diana Marcela Perez Valencia", "Lore Zumeta Olaskoaga", "Maria Xose Rodriguez Alvarez", "Amaia Abanda Elustondo", "Leire Citores Martinez", "Amaia Iparragirre", "Ainhoa Ochoa"],
+      "former": []
+    }
+  }
+]

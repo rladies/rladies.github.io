@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-tallahassee",
+    "status": "prospective",
+    "country": "USA",
+    "state.region": "Florida",
+    "city": "Tallahassee",
+    "social_media": {
+      "meetup": "rladies-tallahassee",
+      "twitter": "RLadiesTLH",
+      "email": "tallahassee@rladies.org"
+    },
+    "organizers": {
+      "current": ["Abimbola Sanusi", "Beck"],
+      "former": []
+    }
+  }
+]

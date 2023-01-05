@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-pachuca",
+    "status": "active",
+    "country": "Mexico",
+    "city": "Pachuca",
+    "social_media": {
+      "meetup": "rladies-pachuca",
+      "twitter": "RLadiesPachuca",
+      "email": "pachuca@rladies.org"
+    },
+    "organizers": {
+      "current": ["Yesenia Jasso Arreola"],
+      "former": []
+    }
+  }
+]

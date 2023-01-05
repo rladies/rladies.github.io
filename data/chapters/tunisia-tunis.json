@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-tunis",
+    "status": "active",
+    "country": "Tunisia",
+    "city": "Tunis",
+    "social_media": {
+      "meetup": "rladies-tunis",
+      "email": "tunis@rladies.org"
+    },
+    "organizers": {
+      "current": ["Haifa Ben Messaoud"],
+      "former": ["Hédia Tnani", "Mouna Belaid"]
+    }
+  }
+]

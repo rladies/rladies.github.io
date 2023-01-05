@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-lisboa",
+    "status": "retired on 04-04-2020",
+    "country": "Portugal",
+    "city": "Lisbon",
+    "social_media": {
+      "meetup": "rladies-lisboa",
+      "twitter": "RLadiesLx",
+      "email": "lisbon@rladies.org",
+      "facebook": "RLadiesLisboa",
+      "github": "rladies/meetup-presentations_lisbon"
+    },
+    "organizers": {
+      "current": ["Andreia Carlos", "Carolina Frias"],
+      "former": []
+    }
+  }
+]

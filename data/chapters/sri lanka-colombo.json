@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-colombo",
+    "status": "active",
+    "country": "Sri Lanka",
+    "city": "Colombo",
+    "social_media": {
+      "meetup": "rladies-colombo",
+      "email": "colombo@rladies.org",
+      "github": "rladies/rladiescolombo",
+      "website": "https://rladiescolombo.netlify.com/"
+    },
+    "organizers": {
+      "current": ["Dilini Talagala", "Thiyanga Talagala"],
+      "former": []
+    }
+  }
+]

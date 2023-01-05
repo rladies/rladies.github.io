@@ -1,0 +1,15 @@
+[
+  {
+    "status": "prospective",
+    "country": "USA",
+    "state.region": "Pennsylvania",
+    "city": "Pittsburgh",
+    "social_media": {
+      "email": "pittsburgh@rladies.org"
+    },
+    "organizers": {
+      "current": ["Jane Kong", "Elan Parsons"],
+      "former": []
+    }
+  }
+]

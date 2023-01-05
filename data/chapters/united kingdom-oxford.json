@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-oxford",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "Oxford",
+    "social_media": {
+      "meetup": "rladies-oxford",
+      "email": "oxford@rladies.org"
+    },
+    "organizers": {
+      "current": ["Punam Amratia", "Kasia Kedzierska", "Fran Reynolds", "Varshita Sher"],
+      "former": []
+    }
+  }
+]

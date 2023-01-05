@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-montreal",
+    "status": "active",
+    "country": "Canada",
+    "state.region": "Qu<e9>bec",
+    "city": "Montr<e9>al",
+    "social_media": {
+      "meetup": "rladies-montreal",
+      "twitter": "RLadiesMTL",
+      "email": "montreal@rladies.org",
+      "github": "rladies/meetup-presentations_montreal"
+    },
+    "organizers": {
+      "current": ["Corinne Riddell", "Kathryn Morrison"],
+      "former": []
+    }
+  }
+]

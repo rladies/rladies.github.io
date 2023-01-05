@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-munich",
+    "status": "retired on 04-04-2020",
+    "country": "Germany",
+    "city": "Munich",
+    "social_media": {
+      "meetup": "rladies-munich",
+      "twitter": "RLadiesMunich",
+      "email": "munich@rladies.org",
+      "facebook": "RLadiesMunich",
+      "github": "rladies/meetup-presentations_munich"
+    },
+    "organizers": {
+      "current": ["Daloha Rodriguez-Molina", "Pamela Raquel Matias Garcia", "Dan Huang", "Choi Wai Maggie Chak"],
+      "former": []
+    }
+  }
+]

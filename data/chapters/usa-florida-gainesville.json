@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-gainesville",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Florida",
+    "city": "Gainesville",
+    "social_media": {
+      "meetup": "rladies-gainesville",
+      "twitter": "RLadiesGNV",
+      "email": "gainesville@rladies.org"
+    },
+    "organizers": {
+      "current": ["Geraldine Klarenberg", "Javiera Rudolph", "Kristen Sauby"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-talca",
+    "status": "active",
+    "country": "Chile",
+    "city": "Talca",
+    "social_media": {
+      "meetup": "rladies-talca",
+      "email": "talca@rladies.org"
+    },
+    "organizers": {
+      "current": ["Alejandra Andrea Tapia Silva"],
+      "former": []
+    }
+  }
+]

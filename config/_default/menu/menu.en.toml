@@ -30,7 +30,6 @@
     weight = 4
     parent = "about-us"
 
-    
 [[main]]
     name = "Directory"
     url = "/directory/"
@@ -65,9 +64,14 @@
     url = "activities/rladies-blogs"
     weight = 6
     parent = "activities"
+[[main]]
+    name = "In the press"
+    url = "activities/press"
+    weight = 7
+    parent = "activities"
 
 [[main]]
     name = "Blog"
-    url = "/post"
+    url = "/blog"
     weight = 5
     

@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-portland-maine",
+    "status": "retired on 29-09-2019",
+    "country": "USA",
+    "state.region": "Maine",
+    "city": "Portland",
+    "social_media": {
+      "meetup": "rladies-portland-maine",
+      "twitter": "RLadiesPortland",
+      "email": "portland@rladies.org",
+      "github": "rladies/meetup-presentations_portland"
+    },
+    "organizers": {
+      "current": ["Jennifer Fleck"],
+      "former": []
+    }
+  }
+]

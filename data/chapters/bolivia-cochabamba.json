@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-cochabamba",
+    "status": "active",
+    "country": "Bolivia",
+    "city": "Cochabamba",
+    "social_media": {
+      "meetup": "rladies-cochabamba"
+    },
+    "organizers": {
+      "current": ["Abigail Geronimo Jimenez"],
+      "former": []
+    }
+  }
+]

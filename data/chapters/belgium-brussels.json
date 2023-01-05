@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-brussels",
+    "status": "active",
+    "country": "Belgium",
+    "city": "Brussels",
+    "social_media": {
+      "meetup": "rladies-brussels",
+      "twitter": "RladiesBrussels",
+      "email": "brussels@rladies.org",
+      "github": "rladies/meetup-presentations_brussels"
+    },
+    "organizers": {
+      "current": ["Suzan Baert", "Huong Nguyen"],
+      "former": []
+    }
+  }
+]

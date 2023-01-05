@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-yaounde",
+    "status": "active",
+    "country": "Cameroon",
+    "city": "Yaounde",
+    "social_media": {
+      "meetup": "rladies-yaounde",
+      "email": "yaounde@rladies.org"
+    },
+    "organizers": {
+      "current": ["Marie Therese Feujio"],
+      "former": []
+    }
+  }
+]

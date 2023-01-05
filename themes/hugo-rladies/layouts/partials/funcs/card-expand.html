@@ -1,0 +1,37 @@
+{{ $image := .img | default "/images/placeholder_user.png" }}
+{{ $image := $image | absURL  }}
+{{ $size := .size | default "medium" }}
+{{ $footcol := .footcol | default 1 }}
+{{ $id := .id }}
+
+
+<li class="card-expand rounded card-{{ $size }} card" id="{{ $id | urlize }}">
+  <div class="card-expand-img rounded-top">
+    <img src="{{ $image }}"/>
+  </div>
+  <div class="card-expand-content">
+    {{ with .category }}
+      <div class="card-expand-category rounded-right">{{ . }}</div>
+    {{ end }}
+      <h4 class="card-expand-title">
+        <a href="#{{ .id }}" class="name">{{ .title | safeHTML }}</a>
+      </h4>
+    {{ with .subtitle }}
+      <h5 class="card-expand-subtitle">
+        {{ . | safeHTML }}
+      </h5>
+    {{ end }} 
+    {{ with .descr }}
+      <div class="card-expand-description">
+        {{ . | safeHTML }} 
+      </div>
+    {{ end }}
+    <div class="card-expand-foot" style="column-count: {{$footcol}};">
+      {{ with .foot }}
+        <span>
+          {{ . | safeHTML }}
+        </span>
+      {{ end  }}
+    </div>
+  </div>
+</li>

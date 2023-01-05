@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-highland-park",
+    "status": "active",
+    "country": "USA",
+    "state.region": "New Jersey",
+    "city": "Highland Park",
+    "social_media": {
+      "meetup": "rladies-highland-park",
+      "email": "highlandpark@rladies.org"
+    },
+    "organizers": {
+      "current": ["Michelle Stuart", "Laura Fernandez Arroyo"],
+      "former": []
+    }
+  }
+]

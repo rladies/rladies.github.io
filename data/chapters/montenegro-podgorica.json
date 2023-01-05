@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-podgorica",
+    "status": "active",
+    "country": "Montenegro",
+    "city": "Podgorica",
+    "social_media": {
+      "meetup": "rladies-podgorica",
+      "email": "podgorica@rladies.org"
+    },
+    "organizers": {
+      "current": ["Elma Dervic"],
+      "former": []
+    }
+  }
+]

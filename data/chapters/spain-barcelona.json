@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-barcelona",
+    "status": "active",
+    "country": "Spain",
+    "city": "Barcelona",
+    "social_media": {
+      "meetup": "rladies-barcelona",
+      "twitter": "RLadiesBCN",
+      "email": "bcn@rladies.org",
+      "periscope": "RLadiesBCN",
+      "github": "rladies/meetup-presentations_barcelona"
+    },
+    "organizers": {
+      "current": ["Ania Alay", "Mireia Ramos", "Natalia Vilor", "Sarah Bonnin"],
+      "former": []
+    }
+  }
+]

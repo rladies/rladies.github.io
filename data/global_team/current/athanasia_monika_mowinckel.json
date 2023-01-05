@@ -1,0 +1,16 @@
+  {
+    "name": "Athanasia Monika Mowinckel",
+    "role": ["Leadership", "Website", " YouTube"],
+    "start": "Oct. 2022",
+    "img": {
+      "url":  "athanasia_monika_mowinckel.png",
+      "credit": "Trond Tronsdal"
+    },
+    "history": {
+      "p1": {
+        "start": "Oct. 2019",
+        "end": "",
+        "role": ["Website", " YouTube"]
+      }
+    }
+  }

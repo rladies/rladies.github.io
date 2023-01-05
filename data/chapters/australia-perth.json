@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-perth",
+    "status": "active",
+    "country": "Australia",
+    "city": "Perth",
+    "social_media": {
+      "meetup": "rladies-perth",
+      "twitter": "rladiesperth",
+      "email": "perth@rladies.org"
+    },
+    "organizers": {
+      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange", "Sarita Bennett"],
+      "former": []
+    }
+  }
+]

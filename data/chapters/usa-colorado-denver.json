@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-denver",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Colorado",
+    "city": "Denver",
+    "social_media": {
+      "meetup": "rladies-denver"
+    },
+    "organizers": {
+      "current": ["Erin Hodgess", "Evangeline Reynolds", "Meghan Sposato"],
+      "former": []
+    }
+  }
+]

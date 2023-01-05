@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-toronto",
+    "status": "active",
+    "country": "Canada",
+    "state.region": "Ontario",
+    "city": "Toronto",
+    "social_media": {
+      "meetup": "rladies-toronto",
+      "twitter": "rladiestoronto",
+      "email": "toronto@rladies.org",
+      "github": "rladies/meetup-presentations_toronto",
+      "slack": "rladiestoronto.slack.com"
+    },
+    "organizers": {
+      "current": ["Sharla Gelfand", "Monica Alexander", "Nicole Radziwill"],
+      "former": []
+    }
+  }
+]

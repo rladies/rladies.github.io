@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-tampa",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Florida",
+    "city": "Tampa",
+    "social_media": {
+      "meetup": "rladies-tampa",
+      "twitter": "RLadiesTampa",
+      "email": "tampa@rladies.org",
+      "github": "rladies/meetup-presentations_tampa"
+    },
+    "organizers": {
+      "current": ["Gina Griffin", "Saarah Kison", "Nik Ford", "Heidi Bissell"],
+      "former": []
+    }
+  }
+]

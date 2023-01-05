@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-mumbai",
+    "status": "active",
+    "country": "India",
+    "state.region": "Maharashtra",
+    "city": "Mumbai",
+    "social_media": {
+      "meetup": "rladies-mumbai",
+      "email": "mumbai@rladies.org"
+    },
+    "organizers": {
+      "current": ["Heena Bhagat", "Manasi Mahadik"],
+      "former": []
+    }
+  }
+]

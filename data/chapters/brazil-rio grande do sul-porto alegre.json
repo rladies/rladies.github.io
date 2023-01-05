@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-porto-alegre",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "Rio Grande do Sul",
+    "city": "Porto Alegre",
+    "social_media": {
+      "meetup": "rladies-porto-alegre",
+      "twitter": "RLadiesPOA",
+      "email": "poa@rladies.org",
+      "facebook": "RLadiesPortoAlegre"
+    },
+    "organizers": {
+      "current": ["Iara Passos"],
+      "former": []
+    }
+  }
+]

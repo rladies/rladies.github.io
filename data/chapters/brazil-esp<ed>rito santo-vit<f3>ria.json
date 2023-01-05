@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-vitoria",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "Esp<ed>rito Santo",
+    "city": "Vit<f3>ria",
+    "social_media": {
+      "meetup": "rladies-vitoria",
+      "email": "vitoria@rladies.org",
+      "github": "rladies/meetup-presentations_vitoria"
+    },
+    "organizers": {
+      "current": ["Ornella Scardua", "Agatha Rodrigues"],
+      "former": []
+    }
+  }
+]

@@ -65,9 +65,14 @@
     url = "activities/rladies-blogs"
     weight = 6
     parent = "activities"
+[[main]]
+    name = "Na imprensa"
+    url = "activities/press"
+    weight = 7
+    parent = "activities"  
     
 [[main]]
     name = "Blog"
-    url = "/post"
+    url = "/blog"
     weight = 5
     

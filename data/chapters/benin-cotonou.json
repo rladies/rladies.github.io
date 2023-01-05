@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-cotonou",
+    "status": "active",
+    "country": "Benin",
+    "city": "Cotonou",
+    "social_media": {
+      "meetup": "rladies-cotonou",
+      "twitter": "RLadiesCtn",
+      "email": "cotonou@rladies.org"
+    },
+    "organizers": {
+      "current": ["Nadejda Sero", "Benedicta Essuon"],
+      "former": []
+    }
+  }
+]

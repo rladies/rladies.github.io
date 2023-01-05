@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-ushuaia",
+    "status": "active",
+    "country": "Argentina",
+    "state.region": "Tierra del Fuego",
+    "city": "Ushuaia",
+    "social_media": {
+      "meetup": "rladies-ushuaia",
+      "twitter": "RLadiesUshuaia",
+      "email": "ushuaia@rladies.org",
+      "github": "rladies/meetup-presentations_ushuaia"
+    },
+    "organizers": {
+      "current": ["Luc<ed>a Rodr<ed>guez Planes", "Sami Dodino"],
+      "former": []
+    }
+  }
+]

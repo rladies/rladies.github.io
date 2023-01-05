@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-nijmegen",
+    "status": "active",
+    "country": "Netherlands",
+    "city": "Nijmegen",
+    "social_media": {
+      "meetup": "rladies-nijmegen",
+      "twitter": "RladiesNijmegen",
+      "email": "nijmegen@rladies.org"
+    },
+    "organizers": {
+      "current": ["Sara Iacozza", "Eirini Zormpa"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-west-lafayette",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Indiana",
+    "city": "West Lafayette",
+    "social_media": {
+      "meetup": "rladies-west-lafayette"
+    },
+    "organizers": {
+      "current": ["Bee Redfield", "Naomi Popkin", "Jackie Getson"],
+      "former": []
+    }
+  }
+]

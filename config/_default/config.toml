@@ -1,10 +1,15 @@
-baseURL = "https://pensive-babbage-969fad.netlify.app"
+baseURL = "https://rladies-dev.netlify.app/"
 languageCode = "en"
 title = "R-Ladies Global"
 theme = "hugo-rladies"
-publishDir = "public"
+publishDir = "build"
 ignoreFiles = ["\\.Rmd$", "_cache$", "\\.DS_Store", "_files$", 
   "content/post/\\*/index\\*\\.html", "_cache$", "README"]
   
 defaultContentLanguage = "en"
-pygmentsUseClasses=true
+pygmentsUseClasses = true
+enableGitInfo = true
+enableRobotsTXT= true
+
+#[outputs]
+#  home = ["HTML", "RSS", "JSON"]

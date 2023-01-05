@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-strasbourg",
+    "status": "active",
+    "country": "France",
+    "city": "Strasbourg",
+    "social_media": {
+      "meetup": "rladies-strasbourg",
+      "twitter": "RLadiesStras",
+      "email": "strasbourg@rladies.org",
+      "github": "rladies/meetup-presentations_strasbourg"
+    },
+    "organizers": {
+      "current": ["Rita Giordano"],
+      "former": []
+    }
+  }
+]

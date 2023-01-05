@@ -1,0 +1,22 @@
+[
+  {
+    "urlname": "rladies-east-lansing",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Michigan",
+    "city": "East Lansing",
+    "social_media": {
+      "meetup": "rladies-east-lansing",
+      "twitter": "RLadiesELansing",
+      "email": "eastlansing@rladies.org",
+      "facebook": "rladieseastlansing",
+      "github": "rladies/rladies-eastlansing",
+      "website": "https://rladies-eastlansing.github.io",
+      "slack": "https://rladies-eastlansing.slack.com"
+    },
+    "organizers": {
+      "current": ["Janani Ravi", "Kayla Johnson", "Stephanie Hickey"],
+      "former": []
+    }
+  }
+]

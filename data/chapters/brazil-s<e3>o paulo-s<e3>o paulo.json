@@ -1,0 +1,22 @@
+[
+  {
+    "urlname": "rladies-sao-paulo",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "S<e3>o Paulo",
+    "city": "S<e3>o Paulo",
+    "social_media": {
+      "meetup": "rladies-sao-paulo",
+      "twitter": "RLadiesSaoPaulo",
+      "email": "saopaulo@rladies.org",
+      "facebook": "rladiessaopaulo",
+      "instagram": "rladiessaopaulo",
+      "youtube": "RLadiesS%C3%A3oPaulo",
+      "github": "rladies/meetup-presentations_sao-paulo"
+    },
+    "organizers": {
+      "current": ["Hayd<e9>e Svab", "Alissa Munerato", "Bruna Wundervald", "Beatriz Milz", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jean Prado", "Renata Hirota"],
+      "former": []
+    }
+  }
+]

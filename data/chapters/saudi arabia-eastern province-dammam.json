@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-dammam",
+    "status": "active",
+    "country": "Saudi Arabia",
+    "state.region": "Eastern Province",
+    "city": "Dammam",
+    "social_media": {
+      "meetup": "rladies-dammam",
+      "twitter": "RLadiesDammam",
+      "email": "dammam@rladies.org",
+      "github": "rladies/RLadies-Saudi"
+    },
+    "organizers": {
+      "current": ["Batool Almarzouq"],
+      "former": []
+    }
+  }
+]

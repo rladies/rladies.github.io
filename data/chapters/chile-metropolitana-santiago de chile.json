@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-scl",
+    "status": "active",
+    "country": "Chile",
+    "state.region": "Metropolitana",
+    "city": "Santiago de Chile",
+    "social_media": {
+      "meetup": "rladies-scl",
+      "twitter": "RLadiesSantiago",
+      "email": "santiago@rladies.org",
+      "facebook": "RLadiesSantiago",
+      "github": "rladies/rladieschile"
+    },
+    "organizers": {
+      "current": ["Gabriela Sandoval", "Riva Quiroga", "Stephanie Orellana", "Sara Acevedo"],
+      "former": []
+    }
+  }
+]

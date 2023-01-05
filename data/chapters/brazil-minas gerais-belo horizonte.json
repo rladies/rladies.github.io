@@ -1,0 +1,23 @@
+[
+  {
+    "urlname": "rladies-belo-horizonte",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "Minas Gerais",
+    "city": "Belo Horizonte",
+    "social_media": {
+      "meetup": "rladies-belo-horizonte",
+      "twitter": "RLadiesBH",
+      "email": "belohorizonte@rladies.org",
+      "facebook": "rladiesbh",
+      "instagram": "rladiesbh",
+      "youtube": "rladiesbelohorizonte",
+      "github": "rladies/meetup-presentations_belohorizonte",
+      "website": "http://rladiesbh.com.br/"
+    },
+    "organizers": {
+      "current": ["Layla Comparin", "Larissa Sayuri", "Numi<e1> Gomes", "Ana Carolina Dias"],
+      "former": []
+    }
+  }
+]

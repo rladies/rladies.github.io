@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-athens-gr",
+    "status": "active",
+    "country": "Greece",
+    "city": "Athens",
+    "social_media": {
+      "meetup": "rladies-athens-gr"
+    },
+    "organizers": {
+      "current": ["Evangelia Balatsou"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-lima",
+    "status": "active",
+    "country": "Peru",
+    "city": "Lima",
+    "social_media": {
+      "meetup": "rladies-lima",
+      "twitter": "RLadiesLima",
+      "email": "lima@rladies.org",
+      "facebook": "RLadiesLima",
+      "github": "rladies/meetup-presentations_lima",
+      "slack": "r-ladieslima.slack.com"
+    },
+    "organizers": {
+      "current": ["Ivonne Renter<ed>a", "Vilma Romero", "Evelyn Gutierrez", "Yuriko Sosa", "Sherly Tarazona", "Luisa Quispe"],
+      "former": []
+    }
+  }
+]

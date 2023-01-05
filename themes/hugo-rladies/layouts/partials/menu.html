@@ -1,10 +1,17 @@
 <nav class="navbar navbar-expand-sm sticky-top border-bottom m-1 p-1">
 
+  <div class="nav-brand order-md-1 d-sm-none position-relative">
+    <img src="{{ .Site.BaseURL }}/images/logo-wide.png" height="30px">
+  </div>
+  
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class=”navbar-toggler-icon”><i class="fas fa-bars hamburger"></i></span>
+    <span class="navbar-toggler-icon">
+      <i class="fas fa-bars hamburger mt-2"></i> 
+      </span>
   </button>
 
+        
   <!-- Navbar links -->
   <div class="collapse navbar-collapse navbar-inner" id="collapsibleNavbar">
     <ul class="navbar-nav">

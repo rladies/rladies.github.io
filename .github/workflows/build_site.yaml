@@ -1,123 +1,165 @@
 name: Build site and deploy
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
-      - master
       - fork_merge
   push:
     branches: 
-      - master
       - main
-  schedule:
-  - cron: "0 */12 * * *"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build:
+  vars:
+    name: Get job variables
     runs-on: macOS-latest
-    name: Build and publish to Netlify
+    outputs:
+      cmt_msg: ${{ steps.cmt_msg.outputs.value }}
+      hugo_vr: ${{ steps.hugo_vr.outputs.value }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 2
+          
+      - name: Get commit message
+        id: cmt_msg
+        run: |
+          MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
+          echo $MSG
+          echo "::set-output name=value::${MSG}"
+          
+      - name: Get Hugo version
+        id: hugo_vr
+        run: |
+          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
+          echo $ver
+          echo "::set-output name=value::${ver}"
+
+  jsons:
+    name: Check modified jsons
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Get changed files
+        id: check_files
+        run: |
+          jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
+          if [[ "${jsons[*]}" = *[![:space:]]* ]]; then 
+            echo ${jsons}
+            echo "::set-output name=run_validation::true"
+          else
+            echo "No jsons commited/changed"
+            echo "::set-output name=run_validation::false"
+          fi
+          
+      - name: Setup R
+        if: steps.check_files.outputs.run_validation == 'true'
+        uses: r-lib/actions/setup-r@v2
         
+      - name: Install R-packages
+        if: steps.check_files.outputs.run_validation == 'true'
+        run: install.packages(c("here", "jsonvalidate"), Ncpus = 2)
+        shell: Rscript {0}
+      
+      - name: Validate jsons
+        if: steps.check_files.outputs.run_validation == 'true'
+        run: Rscript scripts/validate_jsons.R
+        
+  build:
+    name: Build and publish to Netlify
+    runs-on: macOS-latest
+    needs: [vars, jsons]
+    if: |
+      (github.event_name != 'pull_request' || 
+      github.event.pull_request.head.repo.full_name == github.repository) &&
+      ( always() && !(contains(needs.*.result, 'failure')) )
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.79.1'
+          hugo-version: ${{ needs.vars.outputs.hugo_vr }}
           extended: true
       
-      - name: Install netlify
+      - name: Install netlify cli
         run: npm install netlify-cli -g
                
       - name: Setup R
-        uses: r-lib/actions/setup-r@v1
-              
-      - name: Install R dependencies
-        run: |
-          options(Ncpus = 2)
-          install.packages("remotes",
-                           repos = "https://cloud.r-project.org")
-          remotes::install_cran(c(
-            "dplyr", "here", "purrr", 
-            "jsonlite", "lubridate",
-            "tidyr", "cyphr", "sodium"
-          ), Ncpus = 2)
-          remotes::install_github("rladies/meetupr")
+        uses: r-lib/actions/setup-r@v2
+        
+      - name: Install R-packages
+        run: install.packages(c("here", "jsonlite", "dplyr", "tidyr"), Ncpus = 2)
         shell: Rscript {0}
-              
+
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
-      - name: Site Data - Update Global Team
-        run: Rscript scripts/get_global_team.R
-        
       - name: Site data - Get directory data
-        if: github.event_name != 'pull_request'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: rladies/directory
-          token: ${{ secrets.directory_PAT_mo }}
-          path: directory
-      
-      - name: Site data - Cleanup directory data
-        if: github.event_name != 'pull_request'
-        run: |
-          rm directory/data/[1-9]_* # remove double entries. can be deleted after manual clean
-          mv directory/data data/directory
-          rm -rf directory
+          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
+          path: dir
           
+      - name: Site data - Meetup
+        uses: actions/checkout@v3
+        with:
+          repository: rladies/meetup_archive
+          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
+          path: mtp
+
       - name: Site data - Get blogs list
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           repository: rladies/awesome-rladies-blogs
-          token: ${{ secrets.directory_PAT_mo }}
+          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
           path: rblogs
           
-      - name: Site data - Cleanup blogs list
+      - name: Site data - Get meetup data
+        uses: actions/checkout@v3
+        with:
+          repository: rladies/meetup_archive
+          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
+          path: meetup_archive
+          
+      - name: Site data - clean cloned repos
         run: |
           mv rblogs/blogs data/rblogs
-          rm -rf rblogs
-        
-      - name: Meetup authentication
-        env: 
-          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript scripts/meetup_auth.R
-        
-      - name: Site data - Update chapter data
-        env: 
-          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript scripts/get_chapters.R
-        
-      - name: Site data - Update event data
-        env: 
-          MEETUPR_PWD: ${{ secrets.MEETUPR_PWD }}
-        run: Rscript scripts/get_events.R
+          mv dir/data/json data/directory
+          mv dir/data/img/* assets/directory
+          mv mtp/data/* data/meetup/
+          rm -rf tmp rblogs mtp
+          
+      - name: Site data - merge chapter and meetup
+        run: Rscript --verbose scripts/get_chapters.R
 
       - name: Build
-        run: hugo
+        run: hugo --enableGitInfo
         
-      - name: Deploy to Netlify
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: |
-          if [ github.event_name == 'pull_request' ]; then
-            echo "Deploying netlify preview"
-            netlify deploy
-          else
-            echo "Deploying netlify production"
-            netlify deploy --prod
-          fi
+      - name: Deploy Netlify preview
+        if: github.event_name == 'pull_request' && contains(needs.vars.outputs.cmt_msg , 'preview')
+        run: netlify deploy
         shell: sh
-        
-      - name: Commit meetup data	
-        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
-        run: |	
-          git config --local user.email "actions@github.com"	
-          git config --local user.name "GitHub Actions"	
-          git add data/events.json data/chapters.json data/events_updated.json	
-          git commit -m 'Update meetup data' || echo "No data to commit"	
-          git add data/global_team.json
-          git commit -m 'Update global team' || echo "No data to commit"	
-          git push origin || echo "No changes to commit"
+
+      - name: Deploy Netlify production
+        if: github.event_name != 'pull_request'
+        run: netlify deploy --prod
+        shell: sh
+

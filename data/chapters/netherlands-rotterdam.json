@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-rotterdam",
+    "status": "active",
+    "country": "Netherlands",
+    "city": "Rotterdam",
+    "social_media": {
+      "meetup": "rladies-rotterdam",
+      "twitter": "RladiesRdam",
+      "email": "rotterdam@rladies.org",
+      "facebook": "RLadiesRott",
+      "github": "rladies/meetup-presentations_rotterdam"
+    },
+    "organizers": {
+      "current": ["Paloma Rojas", "Elena He", "Yalda Mohammadian", "Madalina Naghi"],
+      "former": []
+    }
+  }
+]

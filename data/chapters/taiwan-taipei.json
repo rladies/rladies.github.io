@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-taipei",
+    "status": "active",
+    "country": "Taiwan",
+    "city": "Taipei",
+    "social_media": {
+      "meetup": "rladies-taipei",
+      "email": "taipei@rladies.org",
+      "facebook": "twrladies",
+      "github": "rladies/meetup-presentations_taipei"
+    },
+    "organizers": {
+      "current": ["Juyin Tang", "Chiayi Yen", "Ning Chen"],
+      "former": []
+    }
+  }
+]

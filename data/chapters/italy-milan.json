@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-milan",
+    "status": "active",
+    "country": "Italy",
+    "city": "Milan",
+    "social_media": {
+      "meetup": "rladies-milan",
+      "twitter": "RLadiesMilan",
+      "email": "milan@rladies.org",
+      "github": "rladies/meetup-presentations_milan"
+    },
+    "organizers": {
+      "current": ["Parvaneh Shafiei"],
+      "former": []
+    }
+  }
+]

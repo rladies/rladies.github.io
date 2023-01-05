@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-bari",
+    "status": "active",
+    "country": "Italy",
+    "city": "Bari",
+    "social_media": {
+      "meetup": "rladies-bari",
+      "twitter": "RladiesBari",
+      "email": "bari@rladies.org",
+      "facebook": "rladiesbari",
+      "github": "rladies/meetup-presentations_bari"
+    },
+    "organizers": {
+      "current": ["Giovanna de Vincenzo", "Francesca Lamontanara"],
+      "former": []
+    }
+  }
+]

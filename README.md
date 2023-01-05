@@ -3,7 +3,9 @@
 
 <!-- badges: start -->
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3bf48c17-2bd3-4452-83cb-0ac808ad745b/deploy-status)](https://app.netlify.com/sites/pensive-babbage-969fad/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3bf48c17-2bd3-4452-83cb-0ac808ad745b/deploy-status)](https://app.netlify.com/sites/rladies-dev/deploys)
+
+
 <!-- badges: end -->
 
 This repository contains the source files for the R-Ladies website. 

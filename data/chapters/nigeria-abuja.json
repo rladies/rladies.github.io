@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-abuja",
+    "status": "active",
+    "country": "Nigeria",
+    "city": "Abuja",
+    "social_media": {
+      "meetup": "rladies-abuja",
+      "email": "abuja@rladies.org",
+      "github": "rladies/meetup-presentations_abuja"
+    },
+    "organizers": {
+      "current": ["Bilikisu Wunmi Aderinto"],
+      "former": []
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-sao-mateus",
+    "status": "active",
+    "country": "Brazil",
+    "city": "S<e3>o Mateus",
+    "social_media": {
+      "meetup": "rladies-sao-mateus"
+    },
+    "organizers": {
+      "current": ["Daniela Cassol", "Liz Nascimento"],
+      "former": []
+    }
+  }
+]

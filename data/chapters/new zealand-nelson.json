@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-nelson",
+    "status": "active",
+    "country": "New Zealand",
+    "city": "Nelson",
+    "social_media": {
+      "meetup": "rladies-nelson",
+      "email": "nelson@rladies.org"
+    },
+    "organizers": {
+      "current": ["Dana Briscoe"],
+      "former": []
+    }
+  }
+]

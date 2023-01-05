@@ -1,3 +1,16 @@
+{{ $chpt := newScratch }}
+{{ $chpt.Set "actives" (slice "") }}
+{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+{{ $chpt.Set "n" (len $chapters) }}
+{{ range $chapters }}
+  {{ $chpt.Add "actives" (slice .country) }}
+{{ end }}
+
+{{ $chpt.Set "countries" slice }}
+{{ range ($chpt.Get "actives" | uniq ) }}
+  {{ $chpt.Add "countries" (dict "country" . "n" (where $chapters "country" . | len) )  }}
+{{ end }}
+{{ $countries := where ($chpt.Get "countries") "n" "gt" 1 }}
 
 <div id="chartdiv"></div>
 
@@ -15,24 +28,21 @@
         </tr>
       </thead>
       <tbody>
-        {{ range .Site.Data.chapters }}
-        <tr>
-           <td class="text-right b-rladies b-rladies-r" rowspan = "{{ len .chapters }}"> <b>{{ .country}}</b> </td>
-           
-        {{ range .chapters }}
-                <td class="text-left"> <a href="http://meetup.com/{{ .meetup }}">{{ .name }}</a> </td>
-                
-                <td class="text-right"> 
-                   {{ with .social_media }}
-                     {{ range . }}
-                       {{ partial "some.html" . }}
-                     {{ end }}
-                   {{ end }}
-                  </td>
+        {{ range $countries }}
+          <tr>
+            <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country }} </td>
+                {{ range where $chapters "country" .country }}
+            <td class="text-left"> <a href="http://meetup.com/{{ .meetup }}">{{ .name }}</a> </td>
+              
+              <td class="text-right"> 
+                {{ with .social_media }}
+                    {{ partial "some.html" (dict "data" . "relme" true) }}
+                {{ end }}
+              </td>
+                </tr>
+                {{ end }}  
           </tr>
-             {{ end }}
-      
-          {{ end }}
+        {{ end }}
       </tbody>
     </table>
        </div>
@@ -76,7 +86,6 @@
     
     // Configure series
     var polygonTemplate = polygonSeries.mapPolygons.template;
-    console.log(am4geodata_worldLow)
     polygonTemplate.tooltipText = "{name}";
     polygonTemplate.polygon.fillOpacity = 0.6;
     
@@ -104,18 +113,16 @@
     var colorSet = new am4core.ColorSet();
     
     imageSeries.data = [ 
-      {{ range .Site.Data.chapters }}
-        {{ range .chapters }}
-          {
-            "name": "{{ .name }}",
-            "members": "{{ .members }}",
-            "socials": {{ with .social_media }}{{ range . }}{{ partial "some.html" . }}{{ end }}{{ end }},
-            "latitude": {{ .lat }},
-            "longitude": {{ .lon }},
-            "color": "#88398acc"
-          },
-        {{ end }}
-      {{ end }}
+    {{ range where $chapters "members" "gt" 0 }}
+      {
+        "name": "{{ .name }}",
+        "members": "{{ .members }}",
+        "socials": {{ with .social_media }}{{ partial "some.html" . }}{{ end }},
+        "latitude": {{ .lat }},
+        "longitude": {{ .lon }},
+        "color": "#88398acc"
+      },
+    {{ end }}
     ];
   }); // end am4core.ready()
 </script>

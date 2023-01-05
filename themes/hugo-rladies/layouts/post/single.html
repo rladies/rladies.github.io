@@ -1,32 +1,5 @@
-{{ define "main"}}
-<article class="post">
-	<header class="entry-header">
- 			{{ if eq .Params.translated false }}
-        <div class="not-translated">
-           {{ i18n "missing_translation" }}
-         </div>
-      {{ end }}
-      
- 		<h1 class="entry-title">
- 		  <a title={{ i18n "translations" }} href="{{ .Permalink }}" rel="bookmark">{{ .Title }}</a>
- 		</h1>
-     <div class="post-meta">
-      {{ partial "post/dates.html" .}}
-      {{ with .Params.categories -}}
-        <div class="post-category">
-          {{ range . }}
-          {{- $name := . -}}
-          {{- with $.Site.GetPage "taxonomy" (printf "categories/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "categories/%s" ($name | urlize))) -}}
-            <a href="{{ .Permalink }}"> {{ $name }} </a>
-          {{ end -}}
-          {{ end }}
-        </div>
-      {{- end }}
- 			
-			{{ partial "post/i18n.html" . }}
-		</header>
 
-				
+{{ define "main"}}
 		<p>{{ .Content }}</p>
 
     {{ with .Params.tags -}}
@@ -47,6 +20,14 @@
     {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
     {{ end }}
     
+    <div>
+      <p class="text-muted">
+      {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }} {{ i18n "last_message"}} 
+      {{- if $.GitInfo -}}
+        <i>"{{ .GitInfo.Subject }}"</i>
+      {{- end -}}
+      </p>
+    </div>
       <!-- Post Pagination -->
     <div class="row">
         <div class="col-md-6 text-align-left">
@@ -71,6 +52,4 @@
           {{- end }}
         </div>
     </div>
-
-</article>
 {{- end }}

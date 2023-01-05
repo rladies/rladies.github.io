@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-ames",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Iowa",
+    "city": "Ames",
+    "social_media": {
+      "meetup": "rladies-ames",
+      "twitter": "RLadiesAmes",
+      "email": "ames@rladies.org",
+      "github": "rladies/rladies-ames"
+    },
+    "organizers": {
+      "current": ["Anabelle Laurent", "Stephanie Reinders"],
+      "former": []
+    }
+  }
+]

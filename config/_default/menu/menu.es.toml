@@ -5,17 +5,17 @@
     weight = 1
     
 [[main]]
-    name = "Sobre R-Ladies"
+    name = "Sobre nosotros"
     url = "#"
     identifier = "about-us"
     weight = 2
 [[main]]
-    name = "Misión"
+    name = "Mision"
     url = "/about-us/mission/"
     weight = 1
     parent = "about-us"
 [[main]]
-    name = "Involúcrate"
+    name = "Involucrate"
     url = "/about-us/involved/"
     weight = 2
     parent = "about-us"
@@ -66,9 +66,14 @@
     url = "activities/rladies-blogs"
     weight = 6
     parent = "activities"
+[[main]]
+    name = "En la prensa"
+    url = "activities/press"
+    weight = 7
+    parent = "activities"  
     
 [[main]]
     name = "Blog"
-    url = "/post"
+    url = "/blog"
     weight = 5
     

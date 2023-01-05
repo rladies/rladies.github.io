@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-la",
+    "status": "active",
+    "country": "USA",
+    "state.region": "California",
+    "city": "Los Angeles",
+    "social_media": {
+      "meetup": "rladies-la",
+      "twitter": "RLadiesLA",
+      "email": "la@rladies.org",
+      "github": "rladies/meetup-presentations_la"
+    },
+    "organizers": {
+      "current": ["Katie Leap", "Amanda Tilot"],
+      "former": []
+    }
+  }
+]

@@ -1,5 +1,8 @@
-{{ define "main" }}
+{{ define "title" }}
     <h2 class="section-title">{{ i18n "404_title" . }}</h2>
+{{ end }}
+
+{{ define "main" }}
     <div class="col-md-12">
        <p class="lead text-center text-muted">
            {{ i18n "404_description" . | markdownify }}

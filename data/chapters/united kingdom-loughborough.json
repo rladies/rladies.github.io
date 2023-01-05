@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-loughborough",
+    "status": "retired on 04-04-2020",
+    "country": "United Kingdom",
+    "city": "Loughborough",
+    "social_media": {
+      "meetup": "rladies-loughborough",
+      "twitter": "RLadiesLboro",
+      "email": "loughborough@rladies.org",
+      "github": "rladies/meetup-presentations_loughborough"
+    },
+    "organizers": {
+      "current": ["Theresa Elise Wege", "Kerry Rosenthal", "Steph Farley"],
+      "former": []
+    }
+  }
+]

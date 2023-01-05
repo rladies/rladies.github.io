@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-edinburgh",
+    "status": "active",
+    "country": "United Kingdom",
+    "city": "Edinburgh",
+    "social_media": {
+      "meetup": "rladies-edinburgh",
+      "twitter": "RLadiesEdinb",
+      "email": "edinburgh@rladies.org"
+    },
+    "organizers": {
+      "current": ["Karim Rivera", "Alicia Forsberg"],
+      "former": []
+    }
+  }
+]

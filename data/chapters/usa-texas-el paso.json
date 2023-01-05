@@ -1,0 +1,20 @@
+[
+  {
+    "urlname": "rladies-el-paso",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Texas",
+    "city": "El Paso",
+    "social_media": {
+      "meetup": "rladies-el-paso",
+      "twitter": "RLadiesElPaso",
+      "email": "elpaso@rladies.org",
+      "github": "rladies/meetup-presentations_el-paso",
+      "slack": "r-ladies-el-paso.slack.com"
+    },
+    "organizers": {
+      "current": ["Grace Smith Vidaurre", "Marguerite Mauritz"],
+      "former": []
+    }
+  }
+]

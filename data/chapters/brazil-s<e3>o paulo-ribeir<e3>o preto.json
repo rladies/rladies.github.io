@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-ribeirao-preto",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "S<e3>o Paulo",
+    "city": "Ribeir<e3>o Preto",
+    "social_media": {
+      "meetup": "rladies-ribeirao-preto",
+      "email": "ribeirao-preto@rladies.org"
+    },
+    "organizers": {
+      "current": ["Francesca Belem Lopes Palmeira"],
+      "former": []
+    }
+  }
+]

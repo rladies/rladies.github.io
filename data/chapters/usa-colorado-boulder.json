@@ -1,0 +1,19 @@
+[
+  {
+    "urlname": "rladies-boulder",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Colorado",
+    "city": "Boulder",
+    "social_media": {
+      "meetup": "rladies-boulder",
+      "twitter": "RLadiesBoulder",
+      "email": "boulder@rladies.org",
+      "github": "rladies/meetup-presentations_boulder"
+    },
+    "organizers": {
+      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Leigh Alexander", "Marta Jankowska"],
+      "former": []
+    }
+  }
+]

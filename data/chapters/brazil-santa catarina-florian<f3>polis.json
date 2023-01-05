@@ -1,0 +1,18 @@
+[
+  {
+    "urlname": "rladies-florianopolis",
+    "status": "active",
+    "country": "Brazil",
+    "state.region": "Santa Catarina",
+    "city": "Florian<f3>polis",
+    "social_media": {
+      "meetup": "rladies-florianopolis",
+      "twitter": "RLadiesFloripa",
+      "email": "florianopolis@rladies.org"
+    },
+    "organizers": {
+      "current": ["Camila Thais Weber"],
+      "former": []
+    }
+  }
+]
