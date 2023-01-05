@@ -18,9 +18,6 @@
   other = "News"
 [blog]
   other = "Blog"
-    
-[current_chapters_table]
-  other = "Click for table of currently active R-Ladies chapters"
   
 [footer_lang_title]
   other = "Languages"

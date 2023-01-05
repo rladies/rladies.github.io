@@ -1,6 +1,6 @@
 ---
 title: "Sponsors"
 type: "sponsors"
-weight: 4
+weight: 99
 ---
 

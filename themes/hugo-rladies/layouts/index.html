@@ -6,18 +6,11 @@
 
 
 {{ define "main"}}
-    <h2 class="section-title" id="home-news">
-      <a href="./news"><span>{{ i18n "news" }}</span></a>
-    </h2>
-    {{ range first 1 (where site.RegularPages "Type" "news") }}
-      {{ partial "post/summary.html" . }}
-    {{ end }}
-
     {{ range .Site.Sections }}
       {{ range .Sections.ByWeight }}
-        <div id="{{ .Title }}" class="row section  topspace">
+        <div id="{{ .Title }}" class="row section topspace">
           <h2 class="section-title">
-            <span>{{.Title}}</span>
+              <a href="./news"><span>{{.Title}}</span></a>
           </h2>
           {{ $stype := .Type}}
           {{ if eq $stype "single"  }}

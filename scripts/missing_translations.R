@@ -4,7 +4,6 @@ content <- list.files("content","index",
                       recursive = TRUE, 
                       full.names = TRUE)
 content <- content[grepl("[.]md", content)]
-content <- content[!grepl("press/", content)]
 
 # Get the unique directories
 dirs <-  unique(dirname(content))
@@ -20,10 +19,13 @@ for(k in dirs){
   tmp_files <- basename(tmp)
   
   j <- sapply(site_lang, function(x) grepl(x, tmp_files))
+  if(!is.null(dim(j)))
+    j <- apply(j, 2, any)
+  j <- j[!j]
   
   orig_file <- tmp[1]
   orig_cont <- readLines(orig_file)
-  orig_lang <- sapply(sprintf(".%s.", site_lang), grepl, x = tmp)
+  orig_lang <- sapply(sprintf("\\.%s\\.", site_lang), grepl, x = orig_file)
   orig_lang <- site_lang[orig_lang]
   
   idx <- grep("---", orig_cont)[2]
@@ -35,12 +37,15 @@ for(k in dirs){
             paste("language:", orig_lang), 
             yaml[length(yaml)])
   
-  for(lang in names(j)[which(!j)]){
+  for(lang in names(j)){
     new_file <- gsub(sprintf("[.]%s[.]", orig_lang), 
                      sprintf(".%s.", lang), 
                      orig_file)
-    new_cont <- c(yaml, orig_cont[-1:-idx], "")
-    cat("... '", new_file, "'\n")
+    yaml2 <- gsub(sprintf("language: %s", orig_lang), 
+                  sprintf("language: %s", lang), 
+                  yaml)
+    new_cont <- c(yaml2, orig_cont[-1:-idx], "")
+    cat(new_file, "'\n")
     writeLines(new_cont, new_file)
   }
 }
