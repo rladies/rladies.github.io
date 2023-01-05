@@ -23,10 +23,12 @@
     other = "Siga-me"
 [footer_contact_title]
     other = "Contato"
+[footer_donate]
+    other = "Donate to"
 [footer_text_title]
     other = "Código de Conducta"
 [footer_text_content]
-    other = "R-Ladies tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes. Leia nosso [código de conduta](/por/coc)"
+    other = "R-Ladies tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes. Leia nosso [código de conduta](/pt/coc)"
     
 [archive]
   other = "Archivo"
@@ -78,6 +80,10 @@
 [morePost]
   other = "Mais Posts"
 
+[language]
+  other = "Linguagem"
+  
+# Read in: other languages
 [read_en]
   other = "Read in English"
 
@@ -90,5 +96,3 @@
 [read_de]
   other = "Lese in Deutsch"
 
-[language]
-  other = "Linguagem"

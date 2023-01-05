@@ -14,8 +14,6 @@
     other = "Translations"
 [missing_translation]
   other = "We are sorry. This page is missing a translation to English."
-[donate]
-  other = "Donate to"
 [news]
   other = "News"
 [blog]
@@ -30,6 +28,8 @@
     other = "Follow us"
 [footer_contact_title]
     other = "Contact"
+[footer_donate]
+    other = "Donate to"
 [footer_text_title]
     other = "Code of Conduct"
 [footer_text_content]
@@ -82,6 +82,8 @@
 
 [language]
   other = "Language"
+  
+# Read in other languages
 [read_es]
   other = "Leer en español"
 [read_pt]

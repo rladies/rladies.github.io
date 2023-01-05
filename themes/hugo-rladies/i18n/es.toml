@@ -23,6 +23,8 @@
     other = "Sígueme"
 [footer_contact_title]
     other = "Contacto"
+[footer_donate]
+    other = "Donate to"
 [footer_text_title]
     other = "Código de Conducta"
 [footer_text_content]
@@ -78,6 +80,11 @@
 [morePost]
   other = "Más Entradas"
 
+
+[language]
+  other = "Lenguaje"
+  
+# Read in other languages
 [read_en]
   other = "Read in English"
 
@@ -90,5 +97,3 @@
 [read_de]
   other = "Lese in Deutsch"
 
-[language]
-  other = "Lenguaje"

@@ -16,10 +16,12 @@
     other = "Follow us"
 [footer_contact_title]
     other = "Contact"
+[footer_donate]
+    other = "Donate"
 [footer_text_title]
     other = "Code of Conduct"
 [footer_text_content]
-    other = "R-Ladies is dedicated to providing a harassment-free experience for everyone. We do not tolerate harassment of participants in any form. Read our [Code of Conduct](/coc)"
+    other = "R-Ladies is dedicated to providing a harassment-free experience for everyone. We do not tolerate harassment of participants in any form. Read our [Code of Conduct](/fr/coc)"
     
 [archive]
   other = "Archive"
@@ -67,6 +69,10 @@
 [morePost]
   other = "Plus d'articles"
 
+[language]
+  other = "Langage"
+
+
 # read in other languages
 [read_pt]
   other = "Leia em português"
@@ -76,6 +82,3 @@
 
 [read_de]
   other = "Lese in Deutsch"
-
-[language]
-  other = "Langage"
