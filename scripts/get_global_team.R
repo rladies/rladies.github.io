@@ -1,21 +1,6 @@
 library(dplyr)
 library(jsonlite)
 
-<<<<<<< HEAD
-url <- "https://raw.githubusercontent.com/rladies/starter-kit/master/global-team.csv"
-gt <- read.csv(url) %>%
-  mutate(
-    role = strsplit(role, "; ")
-  ) %>% 
-  as_tibble()
-
-jsonlite::write_json(
-  gt,
-  here::here("data/global_team.json"),
-  simplifyVector = TRUE,
-  pretty = TRUE
-)
-=======
 filename <- function(x){
   sapply(x, function(x){
     x <- gsub(tools::file_ext(x), "", x)
@@ -59,4 +44,3 @@ lapply(1:nrow(gt), function(x){
   save_json(gt$data[[x]], gt$nm[x])
 })
 
->>>>>>> main
