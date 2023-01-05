@@ -1,6 +1,6 @@
 ---
 title: "Sponsors"
-type: "cards"
+type: "sponsors"
 weight: 4
 ---
 
