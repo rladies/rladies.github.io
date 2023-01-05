@@ -134,7 +134,7 @@ jobs:
           if [[ ${{ github.event_name }} == 'pull_request' ]]; then
             echo "Running netlify preview deploy"
             netlify deploy --alias ${{ github.sha }}
-          elif [[ ${{ github.event_name }} == 'push' && github.ref == 'refs/heads/master' ]]; then
+          elif [[ ${{ github.event_name }} == 'push' && github.ref == 'refs/heads/main' ]]; then
             echo "Running netlify production deploy"
             netlify deploy --prod
           else
