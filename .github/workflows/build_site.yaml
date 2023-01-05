@@ -66,7 +66,7 @@ jobs:
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
           echo $ver
-          echo "{hugovr}={$ver}" >> $GITHUB_ENV
+          echo "hugovr=$ver" >> $GITHUB_ENV
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
