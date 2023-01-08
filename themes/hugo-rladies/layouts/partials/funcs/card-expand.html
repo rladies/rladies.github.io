@@ -2,19 +2,18 @@
 {{ $image := $image | absURL  }}
 {{ $size := .size | default "medium" }}
 {{ $footcol := .footcol | default 1 }}
-{{ $id := .id }}
+{{ $anim := .anim | default true }}
 
-
-<li class="card-expand rounded card-{{ $size }} card" id="{{ $id | urlize }}">
+<li class="card-expand rounded card-{{ $size }} card" {{ with .id }} id="{{ . | urlize }}" {{ end }} >
   <div class="card-expand-img rounded-top">
     <img src="{{ $image }}"/>
   </div>
   <div class="card-expand-content">
     {{ with .category }}
-      <div class="card-expand-category rounded-right">{{ . }}</div>
+      <div class="card-expand-category rounded-right">{{ . | safeHTML }}</div>
     {{ end }}
       <h4 class="card-expand-title">
-        <a href="#{{ .id }}" class="name">{{ .title | safeHTML }}</a>
+         <a {{ with .id }} href="#{{ . }}" {{ end }} class="name">{{ .title | safeHTML }}</a>
       </h4>
     {{ with .subtitle }}
       <h5 class="card-expand-subtitle">
@@ -22,7 +21,7 @@
       </h5>
     {{ end }} 
     {{ with .descr }}
-      <div class="card-expand-description">
+      <div class="card-expand-description {{ if $anim }} card-expand-animate {{ end }}">
         {{ . | safeHTML }} 
       </div>
     {{ end }}

@@ -565,8 +565,6 @@ pre {
   padding-bottom:.2rem;
   z-index: 99;
   text-align: right;
-  
-
 }
 
 
@@ -647,7 +645,6 @@ pre {
   .card-expand-content {
     padding: 10px;
   }
-  
 }
 
 .card-medium {
@@ -657,14 +654,22 @@ pre {
   .card-expand-content {
     padding: 20px;
   }
-  
 }
 
 .card-large {
   height: 470px;
-  min-width: 200px;
+  min-width: 250px;
   .card-expand-content {
     padding: 30px;
+  }
+}
+
+.card-wide {
+  height: 370px;
+  min-width: 250px;
+
+  .card-expand-content {
+    padding: 10px;
   }
 }
 
@@ -676,6 +681,20 @@ pre {
   margin-bottom: 10px;
   font-size: 14px;
   
+    blockquote:before {
+     content: "\f10d";
+     font-family: FontAwesome;
+     color: $primary;
+     margin-right: 4px
+    }
+  
+  blockquote:after {
+     content: "\f10e";
+     font-family: FontAwesome;
+     color: $primary;
+     margin-left: 4px
+  }
+
  img {
     display: block;
     width: 100%;
@@ -732,6 +751,10 @@ pre {
   opacity: 1 !important;
 }
 
+.card-expand-animate {
+  display: none;
+}
+
 .card-expand-category {
   position: absolute;
   top: -30px;
@@ -761,7 +784,6 @@ pre {
   font-size: 14px;
   color: darken($secondary, 30%);
   line-height: 1.2em;
-  display: none;
 }
 
 .card-expand-up-title {

@@ -13,8 +13,6 @@
 	</header>
 	<div class="entry-content">
 		{{ .Summary }}
-	  <div class="read-more">
-      <a href="{{ .RelPermalink }}" class="read-more-link">{{ i18n "read_more" }}</a> 
-    </div>
+		{{ partial "funcs/read_more.html" .RelPermalink | safeHTML }}
 	</div>
 </article>

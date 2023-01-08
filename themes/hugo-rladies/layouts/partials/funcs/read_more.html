@@ -1,0 +1,9 @@
+{{ $data := newScratch }}
+
+{{ $data.Set "return" "<div class=\"read-more\">" }}
+{{ $data.Add "return" (printf "<a href=\"%s\" class=\"read-more-link\">" . ) }}
+{{ $data.Add "return" ( i18n "read_more" ) }}
+{{ $data.Add "return" "</a></div>" }}
+
+{{ return ( $data.Get "return") }}
+
