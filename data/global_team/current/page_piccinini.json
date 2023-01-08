@@ -1,8 +1,10 @@
-  {
-    "name": "Page Piccinini",
-    "role": ["Directory"],
-    "start": "2017",
-    "img": {
-      "url":  "page_piccinini.png"
-    }
+{
+  "name": "Page Piccinini",
+  "role": [
+    "Directory"
+  ],
+  "start": "2017",
+  "img": {
+    "url": "page_piccinini.png"
   }
+}

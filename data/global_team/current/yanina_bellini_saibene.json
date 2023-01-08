@@ -1,19 +1,13 @@
-  {
-    "name": "Yanina Bellini Saibene",
-    "role": ["Leadership", "Conferences liaison and Metameetups"],
-    "start": "2022",
-    "img": {
-      "url":  "yanina_bellini_saibene.png"
-    },
-    "history": {
-      "p1": {
-        "start": "2018",
-        "end": "Oct. 2022",
-        "role": [
-          "Conferences liaison and Metameetups", 
-          "IWD Campaign", 
-          "Educational materials"
-        ]
-      }
-    }
+{
+  "name": "Yanina Bellini Saibene",
+  "role": ["Leadership"],
+  "start": "2018",
+  "img": {
+    "url": "yanina_bellini_saibene.png"
+  },
+  "history": {
+    "p1" : ["Conferences liaison and Metameetups",
+      "IWD Campaign",
+      "Educational materials"]
   }
+}

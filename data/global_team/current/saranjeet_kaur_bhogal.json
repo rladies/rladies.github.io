@@ -1,8 +1,10 @@
-  {
-    "name": "Saranjeet Kaur Bhogal",
-    "role": ["Chapter Activity"],
-    "start": "April 2020",
-    "img": {
-      "url":  "saranjeet_kaur_bhogal.png"
-    }
+{
+  "name": "Saranjeet Kaur Bhogal",
+  "role": [
+    "Chapter Activity"
+  ],
+  "start": "April 2020",
+  "img": {
+    "url": "saranjeet_kaur_bhogal.png"
   }
+}

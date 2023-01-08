@@ -1,8 +1,10 @@
-  {
-    "name": "Nadejda Sero",
-    "role": ["Chapter Mentoring"],
-    "start": "May 2020",
-    "img": {
-      "url":  "nadeja_sero.png"
-    }
+{
+  "name": "Nadejda Sero",
+  "role": [
+    "Chapter Mentoring"
+  ],
+  "start": "May 2020",
+  "img": {
+    "url": "nadeja_sero.png"
   }
+}

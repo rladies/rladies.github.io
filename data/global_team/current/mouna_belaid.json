@@ -1,8 +1,10 @@
-  {
-    "name": "Mouna Belaid",
-    "role": ["Onboarding"],
-    "start": "April 2021",
-    "img": {
-      "url":  "mouna_belaid.png"
-    }
+{
+  "name": "Mouna Belaid",
+  "role": [
+    "Onboarding"
+  ],
+  "start": "April 2021",
+  "img": {
+    "url": "mouna_belaid.png"
   }
+}

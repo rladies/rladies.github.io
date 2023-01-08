@@ -1,8 +1,10 @@
-  {
-    "name": "Batool Almarzouq",
-    "role": ["RUGS grant administration"],
-    "start": "April 2021",
-    "img": {
-      "url":  "batool_almarzouq.png"
-    }
+{
+  "name": "Batool Almarzouq",
+  "role": [
+    "RUGS grant administration"
+  ],
+  "start": "April 2021",
+  "img": {
+    "url": "batool_almarzouq.png"
   }
+}
