@@ -1,18 +1,19 @@
 {
   "type": "object",
   "properties": {
-    "img": { "type": "string" },
-    "url": { "type": "string" },
-    "statement": { "type": "string" },
-    "year": { "type": "string" },
-    "name": { "type": "string" },
-    "chapter": { "type": "string" },
-    "twitter": { "type": "string" }
+    "img":       { "type": "string" },
+    "url":       { "type": "string" },
+    "year":      { "type": "string" },
+    "mentee":    { "type": "string" },
+    "mentor":    { "type": "string" },
+    "chapter":   { "type": "string" },
+    "statement": { "type": "string" }
   },
   "required": [
     "chapter",
     "img",
-    "name",
+    "mentee",
+    "mentor",
     "statement",
     "year"
   ]

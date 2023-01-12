@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "urlname": {"type": "string"},
+        "status":  {"type": "string"},
+        "country": {"type": "string"},
+        "state.region": {"type": "string"},
+        "city":    {"type": "string"},
+        "social_media": {"type": "object"},
+        "organizers": {
+          "type": "object",
+          "properties": {
+            "current": {
+              "type": "array",
+              "items": [{"type": "string"}]
+            },
+            "former": {
+              "type": "array",
+              "items": [{"type": "string"}]
+            }
+          },
+          "required": ["current"]
+        }
+      },
+      "required": [
+        "status",
+        "country",
+        "city",
+        "social_media",
+        "organizers"
+      ]
+    }
+  ]
+}

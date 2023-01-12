@@ -813,7 +813,7 @@ pre {
 }
 
 #chartdiv .fab {
-  color: #fff;
+  color: $white;
 }
 
 #chartdiv .fab:hover {
@@ -925,10 +925,10 @@ tr.fc-list-event {
 
 .tooltip .tooltip-arrow,
 .popper .popper__arrow {
-  border-color: #FFC107;
+  border-color: $primary;
 }
 .style5 .tooltip .tooltip-arrow {
-  border-color: #1E252B;
+  border-color: $gray-700;
 }
 .popper[x-placement^="top"],
 .tooltip[x-placement^="top"] {

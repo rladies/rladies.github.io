@@ -47,3 +47,10 @@ validate_jsons(
              full.names = TRUE, recursive = TRUE),
   here::here("scripts/json_shema/global-team.json")
 )
+
+#  Validate chapters json
+validate_jsons(
+  list.files(here::here("data/chapters"), 
+             full.names = TRUE, recursive = TRUE),
+  here::here("scripts/json_shema/chapter.json")
+)
