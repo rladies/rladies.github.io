@@ -17,6 +17,13 @@
 [missing_translation]
   other = "Lo sentimos, esta página aún no ha sido traducida al español."
 
+[counter_countries]
+  other = "Countries"
+[counter_chapters]
+  other = "Chapters"
+[counter_events]
+  other = "Events"
+  
 [footer_lang_title]
     other = "Idiomas"
 [footer_followme_title]

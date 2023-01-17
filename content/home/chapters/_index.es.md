@@ -1,7 +1,7 @@
 ---
 title: "Capítulos"
 type: "chapters"
-weight: 2
+weight: 1
 home: true
 button: "Tabla de Capítulos"
 ---

@@ -1,7 +1,7 @@
 {{ .Scratch.Set "blogs"      $.Site.Data.blogs_mock  }}
 {{ .Scratch.Set "directory"  $.Site.Data.directory_mock  }}
 {{ .Scratch.Set "mentoring"  $.Site.Data.mentoring }}
-{{ .Scratch.Set "globalteam" $.Site.Data.mentoring }}
+{{ .Scratch.Set "globalteam" $.Site.Data.global_team }}
 
 
 {{ if eq hugo.Environment "production" }}
@@ -26,4 +26,18 @@ the data entries on every build.
 {{ $.Scratch.Set "gt" (slice) }}
 {{ range $name, $_ := ( .Scratch.Get "globalteam" ) }}
     {{ $.Scratch.Add "gt" $name }}
+{{ end }}
+
+
+<!-- Chapter data -->
+{{ $.Scratch.Set "chpt_actives" (slice "") }}
+{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+{{ $.Scratch.Set "n" (len $chapters) }}
+{{ range $chapters }}
+  {{ $.Scratch.Add "chpt_actives" (slice .country) }}
+{{ end }}
+
+{{ $.Scratch.Set "chpt_countries" slice }}
+{{ range ($.Scratch.Get "chpt_actives" | uniq ) }}
+  {{ $.Scratch.Add "chpt_countries" (dict "country" . "n" (where $chapters "country" . | len) )  }}
 {{ end }}

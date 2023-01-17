@@ -1,7 +1,7 @@
 ---
 title: "Chapters"
 type: "chapters"
-weight: 2
+weight: 1
 home: true
 button: "Table of all Chapters"
 ---

@@ -19,6 +19,13 @@
 [blog]
   other = "Blog"
   
+[counter_countries]
+  other = "Countries"
+[counter_chapters]
+  other = "Chapters"
+[counter_events]
+  other = "Events"
+  
 [footer_lang_title]
   other = "Languages"
 [footer_followme_title]
