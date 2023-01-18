@@ -31,7 +31,7 @@
               {{ with (resources.GetMatch $d.photo.url ) }}
                 {{ $image :=  . }}
                 {{ $image := $image.Fill "300x300" }}
-                {{ $dir.Set "img" $image.Permalink }}
+                {{ $dir.Set "img" $image.RelPermalink }}
               {{ end }}
 
               {{ $descr := partial "funcs/directory/descr.html" (dict "data" $d "id" $name ) }}
