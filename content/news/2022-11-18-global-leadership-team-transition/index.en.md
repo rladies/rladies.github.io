@@ -25,4 +25,8 @@ We are indebted to both Yanina and Saranjeet Kaur Bhogal (India), as well as the
 We are committed to the R-Ladies Global mission of encouraging, inspiring, and empowering people of minority genders in the R community, and we are honored to serve the global organization in this capacity.
 We are also committed to stay true to the promises made by the departing leadership team, and carry on their legacy to the best of our ability.
 
+![New Leadership of R-Ladies global (from top left) Athanasia Monika Mowinckel, Averi Giudicessi, Yanina Bellini Saibene, SHannon Pileggi, Riva Quiroga](new-team.png)
+<small>New Leadership of R-Ladies global (from top left) Athanasia Monika Mowinckel, Averi Giudicessi, Yanina Bellini Saibene, SHannon Pileggi, Riva Quiroga</small>
+
+
 Erin LeDell, Claudia Vitolo, Hannah Frick, Athanasia Monika Mowinckel, Yanina Bellini Saibene, Shannon Pileggi, Riva Quiroga, and Averi Giudicessi

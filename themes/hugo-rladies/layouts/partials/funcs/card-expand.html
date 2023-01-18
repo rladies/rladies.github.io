@@ -13,7 +13,9 @@
       <div class="card-expand-category rounded-right">{{ . | safeHTML }}</div>
     {{ end }}
       <h4 class="card-expand-title">
-         <a {{ with .id }} href="#{{ . }}" {{ end }} class="name">{{ .title | safeHTML }}</a>
+          {{ with .id }} <a href="#{{ . }}" class="name">{{ end }} 
+            {{ .title | safeHTML }}
+          {{ with .id }} </a> {{ end }}
       </h4>
     {{ with .subtitle }}
       <h5 class="card-expand-subtitle">

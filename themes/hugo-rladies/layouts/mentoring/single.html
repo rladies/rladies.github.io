@@ -29,7 +29,7 @@
         {{ with resources.GetMatch (printf "mentoring/%s" $m.img ) }}
           {{ $img := . }}
           {{ $img := $img.Fit "400x800" }}
-          {{ $data.Set "img" $img.Permalink }}
+          {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
 
         {{ partial "funcs/card-expand.html" (dict "title" $m.chapter "img" ($data.Get "img") "size" "wide" "descr" ($data.Get "content") "category" $m.year "anim" false "foot" ( $data.Get "foot") "footcol" 2 )}}

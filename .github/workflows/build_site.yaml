@@ -133,7 +133,7 @@ jobs:
         run: |
           if [[ ${{ github.event_name }} == 'pull_request' ]]; then
             echo "Running netlify preview deploy"
-            netlify deploy --alias ${{ github.sha }}
+            netlify deploy --alias ${{github.event.number}}
           elif [[ ${{ github.event_name }} != 'pull_request' && ${{ github.ref }} == 'refs/heads/main' ]]; then
             echo "Running netlify production deploy"
             netlify deploy --prod

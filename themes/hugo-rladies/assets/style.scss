@@ -399,30 +399,6 @@ pre {
   object-fit: none;
 }
 
-/******************/
-/*   object-fit   */
-/******************/
-
-.obj-fit-fill {
-  object-fit: fill;
-}
-
-.obj-fit-cover {
-  object-fit: cover;
-}
-
-.obj-fit-contain {
-  object-fit: contain;
-}
-
-.obj-fit-sd {
-  object-fit: scale-down;
-}
-
-.obj-fit-none {
-  object-fit: none;
-}
-
 
 /******************/
 /*      cards     */
@@ -763,6 +739,10 @@ pre {
   padding: 10px 15px;
   color: $white;
   font-size: 14px;
+  
+  a {
+    color: $white;
+  }
 }
 
 .card-expand-title {
@@ -991,8 +971,6 @@ tr.fc-list-event {
   margin-right: 0;
 }
 
-
-
 .page-arrow {
   font-size:20px;
   line-height:1;
@@ -1001,3 +979,67 @@ tr.fc-list-event {
   background:$table-hover-bg;
   padding:5px 10px;
 }
+
+
+/*=================================================================
+  Item counter section
+==================================================================*/
+
+.block .icon-box i{
+  color: #fff;
+  font-size: 50px;
+}
+
+.block:hover .icon-box {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.block .icon-box {
+  color: #fff;
+  width: 160px;
+  height: 92.38px;
+  background-color: $primary;
+  margin: 46.19px auto 60px;
+  border-left: 2px solid $primary;
+  border-right: 2px solid $primary;
+  font-size: 20px;
+  -webkit-transform: translateZ(0px);
+  transform: translateZ(0px);
+  transition-duration: 0.3s;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.block .icon-box:after,
+.block .icon-box:before {
+  content: "";
+  position: absolute;
+  z-index: -99;
+  width: 113.14px;
+  height: 113.14px;
+  background-color: inherit;
+  left: 20.4315px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+}
+
+.block .icon-box:before {
+  top: -56.5685px;
+  border-top: 2px solid $primary;
+  border-right: 2px solid $primary;
+}
+
+.block .icon-box:after {
+  bottom: -56.5685px;
+  border-bottom: 2px solid $primary;
+  border-left: 2px solid $primary;
+}
+
+.block .icon-box h3 {
+  font-size: 20px;
+  bottom: -90px !important;
+  transform: uppercase;
+}
+

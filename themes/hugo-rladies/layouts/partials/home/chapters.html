@@ -1,19 +1,9 @@
-{{ $chpt := newScratch }}
-{{ $chpt.Set "actives" (slice "") }}
+{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 1 }}
 {{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
-{{ $chpt.Set "n" (len $chapters) }}
-{{ range $chapters }}
-  {{ $chpt.Add "actives" (slice .country) }}
-{{ end }}
 
-{{ $chpt.Set "countries" slice }}
-{{ range ($chpt.Get "actives" | uniq ) }}
-  {{ $chpt.Add "countries" (dict "country" . "n" (where $chapters "country" . | len) )  }}
-{{ end }}
-{{ $countries := where ($chpt.Get "countries") "n" "gt" 1 }}
+  {{ with .Site.GetPage "section" "chapters" }}
 
 <div id="chartdiv"></div>
-
 <div class="container text-center">
   <button type="button" class="btn btn-primary p-2 m-2 center" data-toggle="collapse" data-target="#chapter-table">{{ .Params.button }}</button>
   
@@ -50,6 +40,8 @@
 
   <p>{{ .Content }}</p>
  </div>
+ 
+ {{ end }}
  
 <!-- amcharts --> 
 <!-- Resources -->

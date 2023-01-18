@@ -1,0 +1,31 @@
+{{ $data := newScratch }}
+ 
+<div class="container expand-grid section topspace" id="feed">
+  <h2 class="section-title"><span>Latest posts</span></h2>
+  <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
+    {{ with .Site.GetPage "section" "news" }}
+      {{ range first 1 .Pages }}
+        {{ partial "funcs/home/feed.html" . }}
+      {{ end }}
+    {{ end }}
+    
+    {{ with .Site.GetPage "section" "blog" }}
+      {{ range first 1 .Pages }}
+        {{ partial "funcs/home/feed.html" . }}
+      {{ end }}
+    {{ end }}
+    
+    {{ with .Site.GetPage "section" "press" }}
+      {{ range first 1 .Pages }}
+
+        {{ $date := (printf "%d" .Date.Year | printf "%s %s"  (index .Site.Data.months .Lang (printf "%d" .Date.Month) ) | printf "%d %s" .Date.Day) }}
+        
+        {{ $title := (printf  "%s</a>" .Title | printf "<a  href=\"%s\" rel=\"bookmark\">%s" .Params.source  ) }}
+        
+        {{ $category := "<a href=\"/press\">Press</a>"}}
+        
+        {{ partial "funcs/card-expand.html" (dict "title" $title  "category" $category  "foot" $date ) }}
+      {{ end }}
+    {{ end }}
+  </ul>
+</div>

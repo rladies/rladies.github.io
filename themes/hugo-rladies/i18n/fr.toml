@@ -12,6 +12,13 @@
 [missing_translation]    
     other = "Nous sommes désolé·e·s, cette page n'a pas été traduite en français."
     
+[counter_countries]
+  other = "Countries"
+[counter_chapters]
+  other = "Chapters"
+[counter_events]
+  other = "Events"
+  
 [footer_followme_title]
     other = "Follow us"
 [footer_contact_title]

@@ -12,7 +12,27 @@
 		 
 	</header>
 	<div class="entry-content">
-		{{ .Summary }}
+	  <div class="row">
+      {{ if .Resources.ByType "image" }}
+        {{ $data := newScratch }} 
+        {{ range first 1 (.Resources.ByType "image") }}
+          {{ $img := . }}
+          {{ $img := $img.Fill "400x400" }}
+          {{ $data.Set "img" $img.RelPermalink }}
+        {{ end }}
+        
+        {{ with .Resources.Get .Params.image }}
+          {{ $img := . }}
+          {{ $img := $img.Fill "400x400" }}
+          {{ $data.Set "img" $img.RelPermalink }}
+        {{ end }}
+        <div class="col-md-4 col-sm-12">
+          <img src={{$data.Get "img"}}>
+        </div>
+      {{ end }}
+
+	    <div class = "col">{{ .Summary }}</div>
+	  </div>
 		{{ partial "funcs/read_more.html" .RelPermalink | safeHTML }}
 	</div>
 </article>
