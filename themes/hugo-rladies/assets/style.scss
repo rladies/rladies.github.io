@@ -739,8 +739,10 @@ pre {
   padding: 10px 15px;
   color: $white;
   font-size: 14px;
+  text-transform: capitalize;
   
   a {
+    text-transform: capitalize;
     color: $white;
   }
 }
