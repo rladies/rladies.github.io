@@ -5,31 +5,19 @@
   <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
     {{ with .Site.GetPage "section" "news" }}
       {{ range first 1 .Pages }}
-        
-        {{ $date := (printf "%d" .Date.Year | printf "%s %s"  (index .Site.Data.months .Lang (printf "%d" .Date.Month) ) | printf "%d %s" .Date.Day) }}
-        
-        {{ $title := (printf  "%s</a>" .Title | printf "<a  href=\"%s\" rel=\"bookmark\">%s" .RelPermalink  ) }}
-        
-        {{ $category := "<a href=\"/news\">News</a>"}}
-        
-        {{ partial "funcs/card-expand.html" (dict "title" $title "descr" (slicestr .Summary 0 200) "category" $category  "foot" $date ) }}
+        {{ partial "funcs/home/feed.html" . }}
       {{ end }}
     {{ end }}
     
     {{ with .Site.GetPage "section" "blog" }}
       {{ range first 1 .Pages }}
-          {{ $date := (printf "%d" .Date.Year | printf "%s %s"  (index .Site.Data.months .Lang (printf "%d" .Date.Month) ) | printf "%d %s" .Date.Day) }}
-        
-        {{ $title := (printf  "%s</a>" .Title | printf "<a  href=\"%s\" rel=\"bookmark\">%s" .RelPermalink  ) }}
-        
-        {{ $category := "<a href=\"/blog\">Blog</a>"}}
-        
-        {{ partial "funcs/card-expand.html" (dict "title" $title "descr" (slicestr .Summary 0 200) "category" $category  "foot" $date ) }}
+        {{ partial "funcs/home/feed.html" . }}
       {{ end }}
     {{ end }}
     
     {{ with .Site.GetPage "section" "press" }}
       {{ range first 1 .Pages }}
+
         {{ $date := (printf "%d" .Date.Year | printf "%s %s"  (index .Site.Data.months .Lang (printf "%d" .Date.Month) ) | printf "%d %s" .Date.Day) }}
         
         {{ $title := (printf  "%s</a>" .Title | printf "<a  href=\"%s\" rel=\"bookmark\">%s" .Params.source  ) }}

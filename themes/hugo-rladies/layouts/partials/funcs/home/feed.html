@@ -1,0 +1,26 @@
+{{ $data := newScratch }}
+
+{{ $date := (printf "%d" .Date.Year | printf "%s %s"  (index .Site.Data.months .Lang (printf "%d" .Date.Month) ) | printf "%d %s" .Date.Day) }}
+
+{{ $title := (printf  "%s</a>" .Title | printf "<a  href=\"%s\" rel=\"bookmark\">%s" .RelPermalink  ) }}
+
+{{ $category := (printf "%s</a>" .Section | printf "<a href=\"/%s\">%s" .Section )}}
+
+{{ $data.Set "img" "" }}
+{{ if .Resources.ByType "image" }}
+  {{ range first 1 (.Resources.ByType "image") }}
+    {{ $img := . }}
+    {{ $img := $img.Fit "400x400" }}
+    {{ $data.Set "img" $img.Permalink }}
+  {{ end }}
+  
+  {{ with .Resources.Get .Params.image }}
+    {{ $img := . }}
+    {{ $img := $img.Fit "400x400" }}
+    {{ $data.Set "img" $img.Permalink }}
+  {{ end }}
+{{ end }}
+
+
+
+{{ partial "funcs/card-expand.html" (dict "title" $title "descr" (slicestr .Summary 0 200) "category" $category  "foot" $date "img" ($data.Get "img") ) }}

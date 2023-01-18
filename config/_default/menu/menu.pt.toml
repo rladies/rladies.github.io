@@ -31,7 +31,7 @@
     parent = "about-us"
 [[main]]
     name = "News"
-    url = "/home/news/"
+    url = "/news/"
     weight = 4
     parent = "about-us"
     
@@ -72,12 +72,12 @@
     parent = "activities"
 [[main]]
     name = "Na imprensa"
-    url = "/home/press"
+    url = "/press"
     weight = 7
     parent = "activities"  
     
 [[main]]
     name = "Blog"
-    url = "/home/blog"
+    url = "/blog"
     weight = 5
     
