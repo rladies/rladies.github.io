@@ -17,13 +17,13 @@
         {{ $data := newScratch }} 
         {{ range first 1 (.Resources.ByType "image") }}
           {{ $img := . }}
-          {{ $img := $img.Fit "400x400" }}
+          {{ $img := $img.Fill "400x400" }}
           {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
         
         {{ with .Resources.Get .Params.image }}
           {{ $img := . }}
-          {{ $img := $img.Fit "400x400" }}
+          {{ $img := $img.Fill "400x400" }}
           {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
         <div class="col-md-4 col-sm-12">
