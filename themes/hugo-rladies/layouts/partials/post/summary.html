@@ -18,13 +18,13 @@
         {{ range first 1 (.Resources.ByType "image") }}
           {{ $img := . }}
           {{ $img := $img.Fit "400x400" }}
-          {{ $data.Set "img" $img.Permalink }}
+          {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
         
         {{ with .Resources.Get .Params.image }}
           {{ $img := . }}
           {{ $img := $img.Fit "400x400" }}
-          {{ $data.Set "img" $img.Permalink }}
+          {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
         <div class="col col-md-4">
           <img src={{$data.Get "img"}}>
