@@ -50,19 +50,26 @@
             {{ i18n "footer_lang_title" . | markdownify }}
           </h3>
           <div class="widget-body">
-            <nav class="language-selector layout__language-selector" style = "list-style: none;">
-            {{ if .IsTranslated -}}
-              {{ range .Translations }}
-                <li><a rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
-              {{ end -}}
-            {{ else -}}
-              {{ range .Site.Languages -}}
-                {{ if ne $.Site.Language.Lang .Lang }}
-                  <li><a rel="alternate" href="{{ .Lang | relURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a></li>
-                {{ end -}}
-              {{ end -}}
-            {{ end -}}
-            </nav>
+    				{{- if site.IsMultiLingual }}
+    				<select id="select-language" onchange="location = this.value;">
+    					{{ $siteLanguages := site.Languages}}
+    					{{ $pageLang := .Page.Lang}}
+      					{{ range .Page.AllTranslations }}
+      					{{ $translation := .}}
+        					{{ range $siteLanguages }}
+          					{{ if eq $translation.Lang .Lang }}
+          					{{ $selected := false }}
+            					{{ if eq $pageLang .Lang}}
+            					  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+            					  </option>
+            					{{ else }}
+            					  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+            					{{ end }}
+          					{{ end }}
+        					{{ end }}
+      					{{ end }}
+    				</select>
+    				{{ end }}
           </div>
         </div>
       {{ end }}

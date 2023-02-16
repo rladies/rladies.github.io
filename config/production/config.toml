@@ -1,0 +1,2 @@
+baseURL = "https://rladies-dev.netlify.app/"
+disableLanguages = ["fr", "pt", "es"]
