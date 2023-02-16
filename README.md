@@ -21,7 +21,7 @@ There are many types of contributions we are happy to receive, for instance:
 
 If you want to contribute to the site, the best option is to branch the repo if you have access. 
 PRs from branches will render previews, while PRs from forks will not. 
-If you do not have access to branch the repo, fork and PR when ready, and tag @Athanasiamo for review. 
+If you do not have access to branch the repo, fork and PR when ready, and tag @drmowinckels for review. 
 She will get to it asap.
 
 ### Reports of bugs
