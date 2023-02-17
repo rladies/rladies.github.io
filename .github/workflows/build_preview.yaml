@@ -121,11 +121,30 @@ jobs:
         run: Rscript --verbose scripts/get_chapters.R
 
       - name: Build
-        run:  hugo --enableGitInfo --minify 
+        run: |
+          if [[ ${{ github.event_name }} == 'pull_request' ]]; then
+            hugo --enableGitInfo --minify \
+              -b https://${{github.event.number}}--rladies-dev.netlify.app/
+          elif [[ ${{ github.event_name }} != 'pull_request' && ${{ github.ref }} == 'refs/heads/main' ]]; then
+            hugo --enableGitInfo --minify 
+          fi
         
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+      - name: Install netlify cli
+        run: npm install netlify-cli -g
+
+      - name: Deploy Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [[ ${{ github.event_name }} == 'pull_request' ]]; then
+            echo "Running netlify preview deploy"
+            netlify deploy --alias ${{github.event.number}}
+          elif [[ ${{ github.event_name }} != 'pull_request' && ${{ github.ref }} == 'refs/heads/main' ]]; then
+            echo "Running netlify production deploy"
+            netlify deploy --prod
+          else
+            echo "Nothing to send to netlify"
+          fi
+        shell: sh
 
