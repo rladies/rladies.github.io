@@ -1,4 +1,4 @@
-name: Build site and deploy
+name: Build site and deploy preview
 
 on:
   workflow_dispatch:
@@ -6,6 +6,7 @@ on:
     branches:
       - main
       - fork_merge
+
 
 jobs:
   jsons:
