@@ -60,8 +60,9 @@ jobs:
         id: hugo_vr
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
-          echo $ver
+          pubdir=$(cat config/_default/config.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
           echo "hugovr=$ver" >> $GITHUB_ENV
+          echo "hugobd=pubdir" >> $GITHUB_ENV
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -122,5 +123,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+          folder: ${{ env.hugobd }} # The folder the action should deploy.
 

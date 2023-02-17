@@ -125,12 +125,6 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: |
-          if [[ ${{ github.event_name }} == 'pull_request' ]]; then
-            echo "Running netlify preview deploy"
-            netlify deploy --alias ${{github.event.number}}
-          else
-            echo "Nothing to send to netlify"
-          fi
+        run: netlify deploy --alias ${{github.event.number}}
         shell: sh
 
