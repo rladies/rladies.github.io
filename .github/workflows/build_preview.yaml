@@ -6,16 +6,8 @@ on:
     branches:
       - main
       - fork_merge
-  push:
-    branches: 
-      - main
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
-
   jsons:
     name: Check modified jsons
     runs-on: macOS-latest
@@ -122,12 +114,8 @@ jobs:
 
       - name: Build
         run: |
-          if [[ ${{ github.event_name }} == 'pull_request' ]]; then
             hugo --enableGitInfo --minify \
               -b https://${{github.event.number}}--rladies-dev.netlify.app/
-          elif [[ ${{ github.event_name }} != 'pull_request' && ${{ github.ref }} == 'refs/heads/main' ]]; then
-            hugo --enableGitInfo --minify 
-          fi
         
       - name: Install netlify cli
         run: npm install netlify-cli -g
@@ -140,9 +128,6 @@ jobs:
           if [[ ${{ github.event_name }} == 'pull_request' ]]; then
             echo "Running netlify preview deploy"
             netlify deploy --alias ${{github.event.number}}
-          elif [[ ${{ github.event_name }} != 'pull_request' && ${{ github.ref }} == 'refs/heads/main' ]]; then
-            echo "Running netlify production deploy"
-            netlify deploy --prod
           else
             echo "Nothing to send to netlify"
           fi
