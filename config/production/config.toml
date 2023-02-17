@@ -1,2 +1,2 @@
-baseURL = "https://rladies.org/"
+baseURL = "https://rladies.github.io/"
 disableLanguages = ["fr", "pt", "es"]
