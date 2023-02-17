@@ -62,7 +62,7 @@ jobs:
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
           pubdir=$(cat config/_default/config.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
           echo "hugovr=$ver" >> $GITHUB_ENV
-          echo "hugobd=pubdir" >> $GITHUB_ENV
+          echo "hugobd=$pubdir" >> $GITHUB_ENV
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
