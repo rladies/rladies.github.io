@@ -126,7 +126,7 @@ jobs:
             hugo --enableGitInfo --minify \
               -b https://${{github.event.number}}--rladies-dev.netlify.app/
           elif [[ ${{ github.event_name }} != 'pull_request' && ${{ github.ref }} == 'refs/heads/main' ]]; then
-            hugo --enableGitInfo --minify \
+            hugo --enableGitInfo --minify 
           fi
         
       - name: Install netlify cli
