@@ -1,14 +1,12 @@
-name: Build site and deploy production
+name: Build site and deploy preview
 
 on:
   workflow_dispatch:
-  push:
-    branches: 
+  pull_request:
+    branches:
       - main
+      - fork_merge
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   jsons:
@@ -116,11 +114,23 @@ jobs:
         run: Rscript --verbose scripts/get_chapters.R
 
       - name: Build
-        run:  hugo --enableGitInfo --minify 
+        run: |
+            hugo --enableGitInfo --minify \
+              -b https://${{github.event.number}}--rladies-dev.netlify.app/
         
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: public # The folder the action should deploy.
+      - name: Install netlify cli
+        run: npm install netlify-cli -g
+
+      - name: Deploy Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [[ ${{ github.event_name }} == 'pull_request' ]]; then
+            echo "Running netlify preview deploy"
+            netlify deploy --alias ${{github.event.number}}
+          else
+            echo "Nothing to send to netlify"
+          fi
+        shell: sh
 
