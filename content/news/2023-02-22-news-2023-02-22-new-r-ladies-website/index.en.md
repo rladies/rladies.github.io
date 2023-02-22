@@ -61,6 +61,8 @@ And more!
 
 There are still some things we are working on in the background, that we hope will improve the experience of our website, and also fulfil obligations we have promised previously.
 
+We have a [website wiki](https://github.com/rladies/rladies.github.io/wiki) with more information about the setup of the website, and how people can contribute to the site.
+
 ### Multilingual webpage
 
 We have set the website up to be multilingual, and have some development content for French, Spanish and Portuguese.
@@ -68,6 +70,8 @@ But, there is still a long way to go before we get to a point where these langua
 Also, we are assuming that once we start having more translated content, we will see areas where the code needs fixing for proper multilingual support.
 
 We hope with community help we can make an effort to cover the major languages used by our community.
+The website wiki has its own section for [contributing site language translations](https://github.com/rladies/rladies.github.io/wiki/Adding-a-new-language). 
+It likely needs work so it is more explicit on what the needs are, but we hope it provide a starting guide.
 
 ### Directory improvements
 
