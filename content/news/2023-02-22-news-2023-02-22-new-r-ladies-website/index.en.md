@@ -62,6 +62,7 @@ And more!
 There are still some things we are working on in the background, that we hope will improve the experience of our website, and also fulfil obligations we have promised previously.
 
 ### Multilingual webpage
+
 We have set the website up to be multilingual, and have some development content for French, Spanish and Portuguese.
 But, there is still a long way to go before we get to a point where these languages are well enough translated and enough content has been translated, for the language to be released in the production website.
 Also, we are assuming that once we start having more translated content, we will see areas where the code needs fixing for proper multilingual support.
@@ -71,6 +72,7 @@ We hope with community help we can make an effort to cover the major languages u
 ### Directory improvements
 
 #### Updating entries
+
 The directory has been ported from Wordpress with some rather elaborate and hacky scripts to get the content working for our new website.
 This means, that for quite a lot of the entries, the content looks weird and out of place on the new website.
 The best way to update your own entry in the directory, is to locate your entry and fill out the [form](https://airtable.com/shr54Z3BqfRJqypZ7) for updating the directory.
