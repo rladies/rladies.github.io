@@ -84,6 +84,7 @@ The best way to update your own entry in the directory, is to locate your entry 
 This way, we can create a better and more unified directory for all!
 
 #### Better search / filtering
+
 Currently, we are using a fuzzy search for the directory.
 While this does help somewhat, it can give odd results and it can be hard to find exactly what you are after.
 
