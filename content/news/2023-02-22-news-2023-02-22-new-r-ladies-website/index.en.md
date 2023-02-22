@@ -17,20 +17,16 @@ It's been a long journey, with many people involved, and we are happy to be able
 
 There were some key issues we wanted to resolve with our webpage, that we could not easily maintain with the Wordpress site we had going:
 
-- Multilingual website 
-  - This is not the easiest to maintain with Wordpress
-- Very slow directory
-  - The database was just too slow and heavy, page loading time was horrible
-- Integrate the blog into the website
-  - The blog was a Blogdown site maintained through Github and Netlify
-- Easier long-term maintenance and collaboration
-  - Wordpress would require making a user for every person that wanted to contribute to the site
+- Multilingual website: This is not the easiest to maintain with Wordpress
+- Very slow directory: The database was just too slow and heavy, page loading time was horrible
+- Integrate the blog into the website: The blog was a Blogdown site maintained through Github and Netlify
+- Easier long-term maintenance and collaboration: Wordpress would require making a user for every person that wanted to contribute to the site
   - Changing to something hosted on GitHub would mean easier community help and collaboration
 
 ## History
 
 The work already started in 2019, with Bea Hernandez, Daloha Rodríguez-Molina and Maëlle Salmon.
-The initial work was in making a [blogdown](https://bookdown.org/yihui/blogdown/) website, which utilises [Hugo](https://gohugo.io/) and Rmarkdown integration.
+The initial work was in making a [blogdown](https://bookdown.org/yihui/blogdown/) website, which utilises [Hugo](https://gohugo.io/) and R markdown integration.
 It was a natural place to start porting our Wordpress site into something more common to use in our community. 
 Additionally, the Wordpress site was requiring more and more maintenance, and in particular our [R-Ladies directory](https://www.rladies.org/directory/) was so slow we were getting reports of people not using it because the loading time of the page was so long!
 
@@ -54,12 +50,9 @@ We have now released the new website and are thrilled about how it works so far!
 The theme is well suited to us, and the content is much easier to deal with now that we can collaborate through GitHub.
 It's also made it possible to integrate the website with certain other automatic pipelines, which enables us to have a couple of new features to the website from before!
 
-- [Events page](https://www.rladies.org/activities/events/) with a calendar of R-Ladies events
-  - These are fetched daily from meetup through their API
-- [Direcotry page](https://www.rladies.org/directory/) which is actually fast!
-  - Updated and maintained in another private repository with Airtable integration
-- [Blog](https://www.rladies.org/blog/) where we welcome contributing posts and cross-posts!
-  - We'd love to see the blog revived and used by our community to show their skills and fun things they are doing with R!
+- [Events page](https://www.rladies.org/activities/events/) with a calendar of R-Ladies events: These are fetched daily from meetup through their API
+- [Direcotry page](https://www.rladies.org/directory/) which is actually fast!: Updated and maintained in another private repository with Airtable integration
+- [Blog](https://www.rladies.org/blog/) where we welcome contributing posts and cross-posts: We'd love to see the blog revived and used by our community to show their skills and fun things they are doing with R!
 - [News page](https://www.rladies.org/news/) where the R-Ladies Global team can announce important notices about the global governance of our community
 
 And more!
