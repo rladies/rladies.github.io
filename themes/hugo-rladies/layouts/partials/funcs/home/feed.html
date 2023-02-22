@@ -23,4 +23,4 @@
 
 
 
-{{ partial "funcs/card-expand.html" (dict "title" $title "descr" (slicestr .Summary 0 200) "category" $category  "foot" $date "img" ($data.Get "img") ) }}
+{{ partial "funcs/card-expand.html" (dict "title" $title "descr" (slicestr .Summary ) "category" $category  "foot" $date "img" ($data.Get "img") ) }}
