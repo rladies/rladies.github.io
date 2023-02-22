@@ -91,6 +91,7 @@ While this does help somewhat, it can give odd results and it can be hard to fin
 We are working on making better search and filtering functions for the directory, and if you have suggestions of how you would like to search it, we [value your input](https://github.com/rladies/rladies.github.io/issues).
 
 ### Adding new pages
+
 There are quite some pages we are eager to start work on, so we can provide the best information available to our community and Funders.
 We promised certain resources in our [BML](https://130--rladies-dev.netlify.app/news/2020-06-06-blm/) statement, and we are keenly aware that we have yet to fulfil this.
 Also, we know that our funders regularly want summaries of our activities, and we hoe to make a page dedicated to this type of information.
