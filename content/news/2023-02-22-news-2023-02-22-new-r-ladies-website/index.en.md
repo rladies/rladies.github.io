@@ -89,7 +89,7 @@ We are working on making better search and filtering functions for the directory
 
 There are quite some pages we are eager to start work on, so we can provide the best information available to our community and Funders.
 We promised certain resources in our [BML](https://rladies.org/news/2020-06-06-blm/) statement, and we are keenly aware that we have yet to fulfil this.
-Also, we know that our funders regularly want summaries of our activities, and we hoe to make a page dedicated to this type of information.
+Also, we know that our funders regularly want summaries of our activities, and we want to make a page dedicated to this type of information.
 
 If there are pages you feel should exist, [please do let us know](https://github.com/rladies/rladies.github.io/issues) and we will consider your proposals.
 
