@@ -9,7 +9,7 @@ tags: []
 ---
 
 
-We finally managed to release a new R-Lades website!
+We are thrilled to announce the release of our new R-Ladies website!
 
 It's been a long journey, with many people involved, and we are happy to be able to finally share with you this new site and some new content.
 
