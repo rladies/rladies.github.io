@@ -51,7 +51,7 @@ The theme is well suited to us, and the content is much easier to deal with now 
 It's also made it possible to integrate the website with certain other automatic pipelines, which enables us to have a couple of new features to the website from before!
 
 - [Events page](https://www.rladies.org/activities/events/) with a calendar of R-Ladies events: These are fetched daily from meetup through their API
-- [Direcotry page](https://www.rladies.org/directory/) which is actually fast!: Updated and maintained in another private repository with Airtable integration
+- [Directory page](https://www.rladies.org/directory/) which is actually fast!: Updated and maintained in another private repository with Airtable integration
 - [Blog](https://www.rladies.org/blog/) where we welcome contributing posts and cross-posts: We'd love to see the blog revived and used by our community to show their skills and fun things they are doing with R!
 - [News page](https://www.rladies.org/news/) where the R-Ladies Global team can announce important notices about the global governance of our community
 
