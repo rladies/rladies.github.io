@@ -38,11 +38,11 @@ At that point, it was due to some Hugo features not existing in Blogdown (yet) t
 These were settings for multi-lingual websites we really wanted to take advantage of.
 Furthermore, since only the blog would ever need code execution, having a site build that does not need R means a much faster build, and easier to maintain.
 
-Then Covid hit, and we all felt the stress of that period.
+Then Covid hit, and we all [felt the stress of that period](https://www.rladies.org/news/2020-11-23-reduced-service-note/).
 Development went slow, and things dragged out.
 Thankfully, the Leadership contacted me and asked if I needed help to get the last pieces in place, and that we could set aside a little budget to hire help for the javascript pieces I was struggling with.
 
-We [announced](https://130--rladies-dev.netlify.app/news/2022-03-28-request-for-proposal-javascript-development/) the need, and hired Ben Ubah to help me get the last crucial pieces in place. Finally, we were nearing completion!
+We [announced](https://rladies.org/news/2022-03-28-request-for-proposal-javascript-development/) the need, and hired [Ben Ubah](https://github.com/benubah) to help me get the last crucial pieces in place. Finally, we were nearing completion!
 
 ## Release & new features!
 
@@ -71,7 +71,7 @@ We hope with community help we can make an effort to cover the major languages u
 ### Directory improvements
 
 #### Updating entries
-The directory has been ported from wordpress with some rather elaborate and hacky scripts to get the content working for our new website.
+The directory has been ported from Wordpress with some rather elaborate and hacky scripts to get the content working for our new website.
 This means, that for quite a lot of the entries, the content looks weird and out of place on the new website.
 The best way to update your own entry in the directory, is to locate your entry and fill out the [form](https://airtable.com/shr54Z3BqfRJqypZ7) for updating the directory.
 This way, we can create a better and more unified directory for all!
@@ -86,7 +86,7 @@ We are working on making better search and filtering functions for the directory
 ### Adding new pages
 
 There are quite some pages we are eager to start work on, so we can provide the best information available to our community and Funders.
-We promised certain resources in our [BML](https://130--rladies-dev.netlify.app/news/2020-06-06-blm/) statement, and we are keenly aware that we have yet to fulfil this.
+We promised certain resources in our [BML](https://rladies.org/news/2020-06-06-blm/) statement, and we are keenly aware that we have yet to fulfil this.
 Also, we know that our funders regularly want summaries of our activities, and we hoe to make a page dedicated to this type of information.
 
 If there are pages you feel should exist, [please do let us know](https://github.com/rladies/rladies.github.io/issues) and we will consider your proposals.
