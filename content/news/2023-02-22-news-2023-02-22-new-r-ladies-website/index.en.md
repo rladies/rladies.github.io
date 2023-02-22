@@ -37,6 +37,7 @@ In mid-2020 we decided that the webpage was better served as a pure Hugo site, n
 At that point, it was due to some Hugo features not existing in Blogdown (yet) that we wanted to utilise for the website.
 These were settings for multi-lingual websites we really wanted to take advantage of.
 Furthermore, since only the blog would ever need code execution, having a site build that does not need R means a much faster build, and easier to maintain.
+At this point, I realised I was heavily invested in getting all the Hugo backbone working for R-Ladies, and that would mean creating our own custom theme, rather than something pre-made.
 
 Then Covid hit, and we all [felt the stress of that period](https://www.rladies.org/news/2020-11-23-reduced-service-note/).
 Development went slow, and things dragged out.
