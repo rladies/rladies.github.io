@@ -99,6 +99,7 @@ Also, we know that our funders regularly want summaries of our activities, and w
 If there are pages you feel should exist, [please do let us know](https://github.com/rladies/rladies.github.io/issues) and we will consider your proposals.
 
 ## Final thoughts from the main developer
+
 It has been an amazing journey for me to work on this website. 
 I've learned so much, and I am thrilled to finally see it go "live".
 I look forward to the continued development, and we will be announcing the need for new website team members in not too long, to help me with the translation efforts, in revitalising the blog and in taking over the general maintenance of the new website.
