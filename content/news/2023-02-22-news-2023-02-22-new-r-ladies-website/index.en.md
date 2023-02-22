@@ -28,6 +28,7 @@ There were some key issues we wanted to resolve with our webpage, that we could 
   - Changing to something hosted on GitHub would mean easier community help and collaboration
 
 ## History
+
 The work already started in 2019, with Bea Hernandez, Daloha Rodríguez-Molina and Maëlle Salmon.
 The initial work was in making a [blogdown](https://bookdown.org/yihui/blogdown/) website, which utilises [Hugo](https://gohugo.io/) and Rmarkdown integration.
 It was a natural place to start porting our Wordpress site into something more common to use in our community. 
