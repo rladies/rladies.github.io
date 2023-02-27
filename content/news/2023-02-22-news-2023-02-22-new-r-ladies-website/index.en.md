@@ -15,6 +15,14 @@ It's been a long journey, with many people involved, and we are happy to be able
 
 <!--more-->
 
+The R-Ladies Leadership and Global Team want to express our sincere gratitude to Mo for her incredible work developing the new R-Ladies website. Mo dedicated many hours of hard and invisible work to accomplish this important milestone.
+
+Her technical expertise has been instrumental in bringing this project to fruition. She's put a lot of care into creating a professional and beautiful interface, but also in creating sustainable update workflows for humans and machines. The new website is a significant improvement over the previous one, and we are sure it will enhance our ability to connect with and serve our community of R-Ladies worldwide.
+	
+Thanks a ton, Mo!
+
+---
+
 There were some key issues we wanted to resolve with our webpage, that we could not easily maintain with the Wordpress site we had going:
 
 - Multilingual website: This is not the easiest to maintain with Wordpress
