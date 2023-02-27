@@ -6,6 +6,8 @@
 
 {{ $category := (printf "%s</a>" .Section | printf "<a href=\"/%s\">%s" .Section )}}
 
+{{ $decr := .Summary }}
+
 {{ $data.Set "img" "" }}
 {{ if .Resources.ByType "image" }}
   {{ range first 1 (.Resources.ByType "image") }}
@@ -21,6 +23,4 @@
   {{ end }}
 {{ end }}
 
-
-
-{{ partial "funcs/card-expand.html" (dict "title" $title "descr" (slicestr .Summary 0 200) "category" $category  "foot" $date "img" ($data.Get "img") ) }}
+{{ partial "funcs/card-expand.html" (dict "title" $title "descr" $decr "category" $category  "foot" $date "img" ($data.Get "img") ) }}
