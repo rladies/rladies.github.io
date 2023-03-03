@@ -1,4 +1,4 @@
-{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 1 }}
+{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 0 }}
 {{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
 
   {{ with .Site.GetPage "section" "chapters" }}
