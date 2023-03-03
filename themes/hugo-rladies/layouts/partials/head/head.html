@@ -8,6 +8,9 @@
 <!-- Fullcalendar css-->  
 <link rel="stylesheet" href="{{ "css/fullcalendar.min.css" | relURL }}" />
 
+<!-- Multiselect bootstrap css-->  
+<link rel="stylesheet" href="{{ "css/bootstrap-multiselect.min.css" | relURL }}" />
+
 <!-- website css -->
 {{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">

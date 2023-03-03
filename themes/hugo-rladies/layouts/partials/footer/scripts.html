@@ -6,8 +6,11 @@
 <!-- bootstrap js -->
 <script type="text/javascript" src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
 
-<!-- for searching and pagination List.js -->
-<script type="text/javascript" src="{{ "js/list.min.js" | relURL }}"></script>
+<!-- bootstrap multiselect js -->
+<script type="text/javascript" src="{{ "js/bootstrap-multiselect.min.js" | relURL }}"></script>
+
+<!-- shuffle js -->
+<script type="text/javascript" src="{{ "js/shuffle.min.js" | relURL }}"></script>
 
 <script>
   $('.card-expand').hover(function() {
@@ -18,5 +21,21 @@
     });
 </script>
 
+<script>
+var containerEl = document.querySelector('.shuffle-wrapper');
+if (containerEl) {
+  var Shuffle = window.Shuffle;
+  var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+    itemSelector: '.shuffle-item',
+    buffer: 1,
+    isCentered: true
+  });
+  jQuery('.custom-select').on('change', function (evt) {
+    var i = $('.custom-select option:selected').map(function(a, item){return item.value;});
+    console.log(i);
+    myShuffle.filter(i.get());
+  });
+}
+</script>
 <script type="text/javascript" src="{{ "js/counter.js" | relURL }}"></script>
 
