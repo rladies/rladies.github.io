@@ -3,11 +3,13 @@
 
   {{ with .Site.GetPage "section" "chapters" }}
 
-<div id="chartdiv"></div>
-<div class="container text-center">
+<div class="container row justify-content-center section topspace">
+  <h2 class="section-title"><span>Our Chapters</span></h2>
+  <small class="text-muted text-center">{{ .Content }}</small>
   <button type="button" class="btn btn-primary p-2 m-2 center" data-toggle="collapse" data-target="#chapter-table">{{ .Params.button }}</button>
   
   <div class="row justify-content-center">
+
     <div id="chapter-table" class="collapse col-auto m-2">
       <table class="table table-hover table-responsive chp-table">
       <thead>
@@ -37,10 +39,10 @@
     </table>
        </div>
   </div>
+  <div id="chartdiv"></div>
 
-  <p>{{ .Content }}</p>
  </div>
- 
+
  {{ end }}
  
 <!-- amcharts --> 
