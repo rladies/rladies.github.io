@@ -1,0 +1,13 @@
+{{ $data := newScratch }}
+ {{ $directory := ( .Scratch.Get "directory" ) }}
+
+<div class="container expand-grid section topspace" id="feed">
+  <h2 class="section-title"><span>Featured R-Ladies</span></h2>
+  <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
+    {{ $name := $.Scratch.Get "dic" | shuffle }}
+    {{ range first 4 $name }}
+        {{ $d := index $directory . }}
+        {{ partial "funcs/directory/card.html" (dict "data" $d "name" . "size" "small") }}
+    {{ end }}
+  </ul>
+</div>

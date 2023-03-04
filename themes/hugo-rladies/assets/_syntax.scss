@@ -1,0 +1,165 @@
+$blue: #287088;
+$green: #288870;
+$red: #882840;
+
+.chroma {
+  /* Background */
+  background-color: $white;
+  padding: 1em;
+  
+  /* Other */.x {  }
+  /* Error */
+  .err { 
+    background-color: lighten($primary, 20%),
+  }
+  
+  /* LineTableTD */ 
+  .lntd { 
+    vertical-align: top; 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+  }
+  
+  /* LineTable */ 
+  .lntable { 
+    border-spacing: 0; 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    width: auto; 
+    overflow: auto; 
+    display: block; 
+  }
+  
+  /* LineHighlight */.hl { 
+     display: block; 
+     width: 100%;
+     background-color: lighten($primary, 60%);
+  }
+  
+  /* LineNumbersTable */ 
+  .lnt { 
+    margin-right: 0.4em; 
+    padding: 0 0.4em 0 0.4em;
+    color: $gray-400 
+  }
+  
+  /* LineNumbers */ 
+  .ln { 
+      margin-right: 0.4em; 
+      padding: 0 0.4em 0 0.4em;
+      color: $gray-400 
+  }
+  
+  /* Keyword */
+  .k { color: $blue }
+  /* KeywordConstant */
+  .kc { color: $blue; font-style: italic }
+  /* KeywordDeclaration */
+  .kd { color: $blue; font-style: italic }
+  /* KeywordNamespace */
+  .kn { color: $blue }
+  /* KeywordPseudo */
+  .kp { color: $blue }
+  /* KeywordReserved */
+  .kr { color: $blue }
+  /* KeywordType */
+  .kt { color: $blue; font-style: italic }
+  
+  /* Name */
+  .n {  }
+  /* NameAttribute */
+  .na { color: $green }
+  /* NameBuiltin */
+  .nb { color: $green }
+  /* NameBuiltinPseudo */
+  .bp { font-style: italic }
+  /* NameClass */
+  .nc { color: darken($blue, 30%) }
+  /* NameConstant */
+  .no { color: $red }
+  /* NameDecorator */
+  .nd { color: darken($blue, 30%) }
+  /* NameEntity */
+  .ni { color: lighten($green, 30%) }
+  /* NameException */
+  .ne { color: $primary }
+  /* NameFunction */
+  .nf { color:$primary }
+  /* NameFunctionMagic */
+  .fm { color: $red }
+  /* NameLabel */
+  .nl { color: darken($green, 30%) }
+  /* NameNamespace */
+  .nn { color: darken($green, 30%) }
+  /* NameOther */
+  .nx {  }
+  /* NameProperty */
+  .py {  }
+  /* NameTag */
+  .nt { color: $blue }
+  /* NameVariable */
+  .nv { color: lighten($red, 20%) }
+  /* NameVariableClass */
+  .vc {  }
+  /* NameVariableGlobal */
+  .vg { color: $primary }
+  /* NameVariableInstance */
+  .vi {  }
+  /* NameVariableMagic */
+  .vm { color: $red }
+  
+  /* Literal */
+  .l {  }
+  /* LiteralDate */
+  .ld {  }
+  /* LiteralString */
+  .s { color:lighten($red, 20%) }
+  /* LiteralStringAffix */
+  .sa { color: $gray-600 }
+  /* LiteralStringBacktick */.sb { color:lighten($red, 20%) }
+  /* LiteralStringChar */.sc { color: $primary }
+  /* LiteralStringDelimiter */.dl { color: $red }
+  /* LiteralStringDoc */.sd { color: $red; font-style: italic }
+  /* LiteralStringDouble */.s2 { color:lighten($red, 20%) }
+  /* LiteralStringEscape */.se { color: lighten($green, 30%) }
+  /* LiteralStringHeredoc */.sh { color:lighten($red, 20%) }
+  /* LiteralStringInterpol */.si { color:lighten($red, 20%); text-decoration: underline }
+  /* LiteralStringOther */.sx { color: lighten($primary, 20%) }
+  /* LiteralStringRegex */.sr { color: lighten($primary, 20%) }
+  /* LiteralStringSingle */.s1 { color:lighten($red, 20%) }
+  /* LiteralStringSymbol */.ss { color:lighten($red, 20%) }
+  /* LiteralNumber */.m { color: $gray-600 }
+  /* LiteralNumberBin */.mb { color: $gray-600 }
+  /* LiteralNumberFloat */.mf { color: $gray-600 }
+  /* LiteralNumberHex */.mh { color: $gray-600 }
+  /* LiteralNumberInteger */.mi { color: $gray-600 }
+  /* LiteralNumberIntegerLong */.il { color: $gray-600 }
+  /* LiteralNumberOct */.mo { color: $gray-600 }
+  /* Operator */.o { color: $gray-600}
+  /* OperatorWord */.ow { color: lighten($primary, 20%) }
+  /* Punctuation */.p { color: $gray-800 }
+  
+  /* Comment */.c { color: $gray-600; font-style: italic }
+  /* CommentHashbang */.ch { color: darken($blue, 30%); font-style: italic }
+  /* CommentMultiline */.cm { color: $gray-600; font-style: italic }
+  /* CommentSingle */.c1 { color: $gray-600; font-style: italic }
+  /* CommentSpecial */.cs { color: $gray-600; font-style: italic }
+  /* CommentPreproc */.cp { color: darken($green, 30%) }
+  /* CommentPreprocFile */.cpf { color: darken($green, 30%) }
+  
+  /* Generic */.g {  }
+  /* GenericDeleted */.gd { color: darken($red, 20%) }
+  /* GenericEmph */.ge { font-style: italic }
+  /* GenericError */.gr { color: darken($red, 20%) }
+  /* GenericHeading */.gh { color: $gray-600}
+  /* GenericInserted */.gi { color: $green }
+  /* GenericOutput */.go { color: $gray-600}
+  /* GenericPrompt */.gp { color: $gray-600 }
+  /* GenericStrong */.gs { font-weight: bold }
+  /* GenericSubheading */.gu { color: $gray-600 }
+  /* GenericTraceback */.gt { color: $blue }
+  /* GenericUnderline */.gl { text-decoration: underline }
+  /* TextWhitespace */.w { color: $primary }
+}

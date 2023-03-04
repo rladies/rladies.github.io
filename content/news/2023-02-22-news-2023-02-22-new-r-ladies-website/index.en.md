@@ -8,7 +8,6 @@ categories:
 tags: []
 ---
 
-
 We are thrilled to announce the release of our new R-Ladies website!
 
 It's been a long journey, with many people involved, and we are happy to be able to finally share with you this new site and some new content.
@@ -44,7 +43,6 @@ After just a little while, I also started working on the blogdown site.
 In mid-2020 we decided that the webpage was better served as a pure Hugo site, not as blogdown. 
 At that point, it was due to some Hugo features not existing in Blogdown (yet) that we wanted to utilise for the website.
 These were settings for multi-lingual websites we really wanted to take advantage of.
-Furthermore, since only the blog would ever need code execution, having a site build that does not need R means a much faster build, and easier to maintain.
 At this point, I realised I was heavily invested in getting all the Hugo backbone working for R-Ladies, and that would mean creating our own custom theme, rather than something pre-made.
 
 Then Covid hit, and we all [felt the stress of that period](https://www.rladies.org/news/2020-11-23-reduced-service-note/).
@@ -69,7 +67,6 @@ And more!
 ## Future work & call for community help
 
 There are still some things we are working on in the background, that we hope will improve the experience of our website, and also fulfil obligations we have promised previously.
-
 We have a [website wiki](https://github.com/rladies/rladies.github.io/wiki) with more information about the setup of the website, and how people can contribute to the site.
 
 ### Multilingual webpage

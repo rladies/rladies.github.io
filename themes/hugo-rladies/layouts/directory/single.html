@@ -1,55 +1,104 @@
 
 {{ define "main" }}
+<!-- Selects -->
+{{ $directory := ( .Scratch.Get "directory" ) }}
+{{ $ints := slice }}
+{{ $langs := slice }}
+{{ $loc := slice }}
+{{ $countries := slice }}
+
+{{ range $directory }}
+  {{ with .interests }}
+      {{ $ints = $ints | append  . }}
+    {{ end }}
+    
+    {{ with .languages }}
+      {{ $langs = $langs | append  . }}
+    {{ end }}
+    
+    {{ with .location }}
+      {{ $tmp := newScratch }}
+      {{ with .country }}
+        {{ $tmp.Set "loc" . }}
+        {{ $countries = $countries | append  . }}
+      {{ end }}
+      
+      {{ with .state }}
+        {{ $tmp.Add "loc" ( . | printf ", %s") }}
+      {{ end }}
+      
+      {{ with .city }}
+        {{ $tmp.Add "loc" ( . | printf ", %s") }}
+      {{ end }}
+      
+      {{ $loc = $loc | append  ($tmp.Get "loc") }}
+  {{ end }}
+{{ end }}
+{{ $ints := $ints | uniq | sort }}
+{{ $langs := $langs | uniq | sort }}
+{{ $loc := $loc | uniq | sort }}
+{{ $countries := $countries | uniq | sort }}
+<!-- -->
+
   <div class="entry-content">
 		{{ .Content }}
 	</div>
 
   <div class="flex-container" id="directory-content">
     
-      <input type="text" id="dir-search" class="fuzzy-search rounded" placeholder="Search directory..."/>
-      <button class="btn btn-primary rounded sort" data-sort="name">Sort by name</button>
-      <!-- <buttonr id="shuffle" type="button" class="btn btn-primary rounded">Randomly shuffle</buttonr> -->
+
+    <div id="selection">
+      
+      <div class="input-group w-100">
+        <div class="input-group-prepend" for="filter-interests">
+          <label class="input-group-text" style="min-width:120px;" >Interests</label>
+        </div>
+        <select class="custom-select" id="filter-interests" multiple="multiple">
+          {{ range $ints }}
+            <option value="{{. | urlize }}" >{{.}}</option>
+          {{ end }}
+        </select>
+      </div>
+              
+      <div class="input-group">
+        <div class="input-group-prepend" for="filter-language">
+          <label class="input-group-text" style="min-width:120px;" >Languages</label>
+        </div>
+        <select class="custom-select" id="filter-language" multiple="multiple">
+          {{ range $langs }}
+              <option value="{{. | urlize }}" >{{.}}</option>
+          {{ end }}
+        </select>
+      </div>
+                      
+      <div class="input-group">
+        <div class="input-group-prepend" for="filter-location">
+          <label class="input-group-text" style="min-width:120px;" >Location</label>
+        </div>
+        <select class="custom-select" id="filter-location" multiple="multiple">
+          {{ range $countries }}
+            {{ $c := . }}
+            <optgroup label="{{$c}}" class="{{$c}}">
+            {{ range $loc }}
+              {{ $l := findRE (printf "^%s" $c) . }}
+              {{ if gt (len $l) 0 }}
+                <option value="{{. | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
+              {{ end }}
+            {{ end }}
+            </optgroup>
+          {{ end }}
+        </select>
+      </div>
+              
+    </div>
 
     <div class="container expand-grid" id="directory-cards">
-        <ul class="list justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="directory-grid">
-            {{ $directory := ( .Scratch.Get "directory" ) }}
-            {{ range $name := $.Scratch.Get "dic" | shuffle }}
+        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width shuffle-wrapper" id="directory-grid">
+          {{ range $name := $.Scratch.Get "dic" | shuffle }}
               {{ $d := index $directory $name }}
-              {{ $dir := newScratch }}
-              {{ $dir.Set "title" $d.name }} 
-              {{ $dir.Add "title" "<span><small>"}}
-              {{ with $d.social_media }}
-                  {{ $some := partial "some.html" (dict "data" . ) }}
-                  {{ $dir.Add "title" $some }} 
-              {{ end }}
-              {{ $dir.Add "title" "</small></span>"}}
-              
-              {{ $dir.Set "subtitle" (printf "<p class=\"text-hide directory-id\">%s</p>" $name) }} 
-              {{ with $d.work.title }} {{$dir.Add "subtitle" . }} {{ end }}
-
-              {{ $dir.Set "img" "" }}
-              {{ with (resources.GetMatch $d.photo.url ) }}
-                {{ $image :=  . }}
-                {{ $image := $image.Fill "300x300" }}
-                {{ $dir.Set "img" $image.RelPermalink }}
-              {{ end }}
-
-              {{ $descr := partial "funcs/directory/descr.html" (dict "data" $d "id" $name ) }}
-              {{ $subtitle := ($dir.Get "subtitle" ) }}
-              {{ $title := ($dir.Get "title" ) }}
-              {{ $foot := (partial "funcs/directory/foot.html" $d ) }}
-              {{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" "large"  "img" ($dir.Get "img") "category" $d.honorific "descr" $descr "foot" $foot "footcol" 2 "id" $name ) }}
-            {{ end }}
-        </ul>
-      </div>
-      
-      <!-- pagination nav -->
-      <div class="nav pagination justify-content-center align-content-center" aria-label="Directory pagination">
-        <a class="pagination-prev disabled" href="#directory-content"><span class="page-arrow"><</span></a>
-        <ul class="pagination-layout"></ul>
-        <a class="pagination-next" href="#directory-content"><span class="page-arrow">></span></a>
-      </div>
-      
+              {{ partial "funcs/directory/card.html" (dict "data" $d "name" $name "size" "large") }}
+          {{ end }}
+      </ul>
     </div>
   </div> 
 {{ end }}
@@ -61,61 +110,16 @@
   {{ .Scratch.Set "n_page_directory" 5}}
 {{ end }} 
 
-	<script>
-    var perPage = {{  ( .Scratch.Get "n_page_directory" ) }};
-  	(async function(){
-      var directoryList = new List('directory-content', {
-        valueNames: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'directory-id'], 
-        searchColumns: ['name', 'interests', 'shiny_apps', 'r_groups', 'r_packages', 'location', 'directory-id'],
-        page: perPage,
-        pagination: {
-          innerWindow: 1,
-          left: 2,
-          right: 2,
-          paginationClass: "pagination-layout",
-          item: "<li><a class='page' href='#directory-content'></a></li>"
-        },
-        fuzzySearch: {
-          searchClass: "fuzzy-search",
-          distance: 150,
-          multiSearch: true
-        }
-      }).on("updated", function(list) {
-        // make the Prev and Nex buttons disabled on first and last pages accordingly
-        $(".pagination-prev.disabled, .pagination-next.disabled").removeClass(
-          "disabled"
-        );
-        $(".pagination-wrap").show();
-
-        if (list.i == 1) {
-          $(".pagination-prev").addClass("disabled");
-        }
-        if (list.i > list.matchingItems.length - list.page) {
-          $(".pagination-next").addClass("disabled");
-        }
-      
-        // hide pagination if there one or less pages to show
-        if (list.matchingItems.length <= perPage) {
-          $(".pagination-wrap").hide();
-        }
-      });
-      
-	$(".pagination-next").click(function() {
-		$(".pagination-layout .active").next('li')[0].firstChild.click()
-	});
-	$(".pagination-prev").click(function() {
-		$(".pagination-layout .active").prev('li')[0].firstChild.click()
-	});
-
-      // find url anchor and populate search field.
-      var entry = decodeURIComponent(window.location.hash.substr(1));
-      if(entry !== "directory-content"){
-        document.getElementById("dir-search").value = entry;
-        // Search manually
-        directoryList.fuzzySearch(entry);
-      }
-  	})();
-        
-
-	</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.custom-select').multiselect({
+      includeSelectAllOption: true,
+      maxHeight: 300,
+      enableFiltering: true,
+      enableClickableOptGroups: true,
+      enableCollapsibleOptGroups: true
+    });
+    $('.form-check-input').attr('name', 'shuffle-filter');
+  });
+</script>
 {{ end }}

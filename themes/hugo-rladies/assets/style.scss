@@ -1,14 +1,19 @@
+// Bootstrap and its default variables
+@import "bootstrap/functions";
 
 // Your variable overrides
 $body-bg:    #fff;
 $primary:    #88398a;
 $secondary:  #a7a9ac;
 $table-hover-bg: rgba($primary, .2);
-
 $font-family-monospace:  'rladies code', monospace;
 $font-family-base:       'rladies body', sans-serif;
 $font-family-sans-serif: 'rladies header', sans-serif;
 $dropdown-link-hover-bg:  rgba($primary, .2);
+
+@import "bootstrap/bootstrap";
+@import "_syntax";
+//@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;300&family=Open+Sans:wght@300&display=swap');
 
 @font-face {
   font-family: 'rladies header';
@@ -39,12 +44,6 @@ $dropdown-link-hover-bg:  rgba($primary, .2);
        url('fonts/inconsolata-v21/font.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('fonts/inconsolata-v21/font.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
-// Bootstrap and its default variables
-@import "scss/bootstrap";
-@import "scss/syntax";
-//@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lato:wght@100;300&family=Open+Sans:wght@300&display=swap');
-
 
 html {
 	scroll-behavior: smooth;
@@ -86,7 +85,8 @@ html {
    margin-left: -50vw;
    padding-left: .2rem;
    position: relative;
-
+   align-content: center;
+   
    ul{
     width: 100%;
   }

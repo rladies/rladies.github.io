@@ -4,7 +4,7 @@
 {{ $footcol := .footcol | default 1 }}
 {{ $anim := .anim | default true }}
 
-<li class="card-expand rounded card-{{ $size }} card" {{ with .id }} id="{{ . | urlize }}" {{ end }} >
+<li class="shuffle-item card-expand rounded card-{{ $size }} card" {{ with .id }} id="{{ . | urlize }}" {{ end }} {{ with .shuffle }} data-groups="[{{range  $index, $item := . }}{{if ne $index 0}},{{end}}&quot;{{$item | urlize}}&quot;{{ end }}]" {{ end}} >
   <div class="card-expand-img rounded-top">
     <img src="{{ $image }}"/>
   </div>
