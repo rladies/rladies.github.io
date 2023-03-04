@@ -5,6 +5,8 @@
 {{ $ints := slice }}
 {{ $langs := slice }}
 {{ $loc := slice }}
+{{ $countries := slice }}
+
 {{ range $directory }}
   {{ with .interests }}
       {{ $ints = $ints | append  . }}
@@ -18,6 +20,7 @@
       {{ $tmp := newScratch }}
       {{ with .country }}
         {{ $tmp.Set "loc" . }}
+        {{ $countries = $countries | append  . }}
       {{ end }}
       
       {{ with .state }}
@@ -34,8 +37,8 @@
 {{ $ints := $ints | uniq | sort }}
 {{ $langs := $langs | uniq | sort }}
 {{ $loc := $loc | uniq | sort }}
+{{ $countries := $countries | uniq | sort }}
 <!-- -->
-
 
   <div class="entry-content">
 		{{ .Content }}
@@ -73,8 +76,16 @@
           <label class="input-group-text" style="min-width:120px;" >Location</label>
         </div>
         <select class="custom-select" id="filter-location" multiple="multiple">
-          {{ range $loc }}
-            <option value="{{. | urlize }}" >{{.}}</option>
+          {{ range $countries }}
+            {{ $c := . }}
+            <optgroup label="{{$c}}" class="{{$c}}">
+            {{ range $loc }}
+              {{ $l := findRE (printf "^%s" $c) . }}
+              {{ if gt (len $l) 0 }}
+                <option value="{{. | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
+              {{ end }}
+            {{ end }}
+            </optgroup>
           {{ end }}
         </select>
       </div>
@@ -160,7 +171,10 @@
   $(document).ready(function() {
     $('.custom-select').multiselect({
       includeSelectAllOption: true,
-      maxHeight: 300
+      maxHeight: 300,
+      enableFiltering: true,
+      enableClickableOptGroups: true,
+      enableCollapsibleOptGroups: true
     });
     $('.form-check-input').attr('name', 'shuffle-filter');
   });
