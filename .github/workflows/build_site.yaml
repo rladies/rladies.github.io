@@ -48,7 +48,7 @@ jobs:
           
   build:
     name: Build and publish to Netlify
-    runs-on: macOS-latest
+    runs-on: ubuntu-22.04
     needs: [jsons]
     steps:
       - name: Checkout repository
