@@ -48,7 +48,7 @@ body:
         - retired
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: some_meetup
     attributes:
       label: Meetup group name 
@@ -56,19 +56,19 @@ body:
       description: Please only create this issue once meetup is initiated, this url is important for other website logistics.
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: some_email
     attributes:
       label: Email 
       placeholder: chapter@rladies.org
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: some_twitter
     attributes:
       label: twitter handle
       placeholder: '@rladies_city'
-  - type: textarea
+  - type: input
     id: some_mastodon
     attributes:
       label: Mastodon url handle
