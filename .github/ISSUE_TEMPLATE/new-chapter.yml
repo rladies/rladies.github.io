@@ -48,7 +48,7 @@ body:
         id: twitter
         attributes:
           label: Twitter handle
-          placeholder: @rladies_city
+          placeholder: '@rladies_city'
       - type: input
         id: email
         attributes:
