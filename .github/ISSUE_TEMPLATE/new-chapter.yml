@@ -67,7 +67,7 @@ body:
     id: some_twitter
     attributes:
       label: twitter handle
-      placeholder: @rladies_city
+      placeholder: '@rladies_city'
   - type: textarea
     id: some_mastodon
     attributes:
