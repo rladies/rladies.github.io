@@ -1,0 +1,35 @@
+name: Initiate chapter.json
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  new-chapter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Print issue inputs
+        run: |
+          echo '[
+            {
+              "urlname": "${{ github.event.issue.inputs.some_meetup }}",
+              "status": "prospective",
+              "country": "${{ github.event.issue.inputs.country }}",
+              "city": "${{ github.event.issue.inputs.city }}",
+              "state": "${{ github.event.issue.inputs.region }}",
+              "social_media": {
+                "meetup": "${{ github.event.issue.inputs.some_meetup }}",
+                "twitter": "${{ github.event.issue.inputs.some_twitter }}",
+                "mastodon": "${{ github.event.issue.inputs.some_mastodon }}",
+                "facebook": "${{ github.event.issue.inputs.some_facebook }}",
+                "email": "algiers@rladies.org"
+              },
+              "organizers": {
+                "current": ["Kamila Benadrouche", "Lounas Fairouz", "Zibani Fazia"],
+                "former": []
+              }
+            }
+          ]
+        '
