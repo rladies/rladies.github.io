@@ -48,7 +48,7 @@ jobs:
           
   build:
     name: Build and publish to Netlify
-    runs-on: macOS-latest
+    runs-on: ubuntu-22.04
     needs: [jsons]
     steps:
       - name: Checkout repository
@@ -89,29 +89,30 @@ jobs:
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
-          path: dir
+          path: tmpd/dir
           
       - name: Site data - Meetup
         uses: actions/checkout@v3
         with:
           repository: rladies/meetup_archive
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
-          path: mtp
+          path: tmpd/mtp
 
       - name: Site data - Get blogs list
         uses: actions/checkout@v3
         with:
           repository: rladies/awesome-rladies-blogs
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          path: rblogs
+          path: tmpd/rblogs
           
       - name: Site data - clean cloned repos
         run: |
-          mv rblogs/blogs data/rblogs
-          mv dir/data/json data/directory
-          mv dir/data/img/* assets/directory
-          mv mtp/data/* data/meetup/
-          rm -rf dir rblogs mtp
+          rm -r data/directory data/rblogs
+          cp -r tmpd/rblogs/blogs data/rblogs
+          cp -r tmpd/dir/data/json data/directory
+          cp -r tmpd/dir/data/img/* assets/directory
+          cp -r tmpd/mtp/data/* data/meetup/
+          rm -rf tmpd
           
       - name: Site data - merge chapter and meetup
         run: Rscript --verbose scripts/get_chapters.R
