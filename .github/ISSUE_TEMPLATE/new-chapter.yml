@@ -1,6 +1,6 @@
 name: New chapter
 description: Add a new R-Ladies chapter
-title: "[chapter-new]: "
+title: "NEW CHAPTER: "
 labels: ["chapter", "new"]
 body:
   - type: markdown
@@ -8,65 +8,69 @@ body:
       value: |
         Thanks for reporting in a new chapter.
   - type: input
-    id: Country
+    id: country
     attributes:
       label: Chapter country
-      description: Be diligent in spelling.
+      description: Be dilligent in spelling.
       placeholder: ex. India
     validations:
       required: true
   - type: input
-    id: StateRegion
+    id: region
     attributes:
-      label: Chapter state/region
-      description: Be diligent in spelling.
+      label: Chapter region/state/province
+      description: Be dilligent in spelling.
       placeholder: ex. Eastern
     validations:
       required: false
   - type: input
-    id: City
+    id: city
     attributes:
       label: Chapter city
-      description: All chapters must be in a city. Be diligent in spelling.
-      placeholder: ex. New Delhi
+      description: All chapters must be in a city. Be dilligent in spelling.
+      placeholder: ex. New Dehli
     validations:
       required: true
-  - type: group
-    id: social_media
-    attributes:
-      label: Social media
-    children:
-      - type: input
-        id: meetup
-        attributes:
-          label: Meetup group name
-          placeholder: rladies/city
-          description: Please only create this issue once meetup is initiated, this URL is important for other website logistics.
-        validations:
-          required: true
-      - type: input
-        id: twitter
-        attributes:
-          label: Twitter handle
-          placeholder: '@rladies_city'
-      - type: input
-        id: email
-        attributes:
-          label: Email address
-          placeholder: r-ladies@domain.com
-      - type: input
-        id: facebook
-        attributes:
-          label: Facebook page URL
-  - type: group
+  - type: textarea
     id: organizers
     attributes:
-      label: Organizers
-    children:
-      - type: input
-        id: current
-        attributes:
-          label: Current organizers
-          description: Please provide a comma-separated list of current organizers, without quotes.
-        validations:
-          required: true
+      label: Chapter organisers
+      description: Please provide a comma-separated list of organisers, without quotes
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Chapter status
+      options:
+        - prospective
+        - active
+        - retired
+    validations:
+      required: true
+  - type: textarea
+    id: some_meetup
+    attributes:
+      label: Meetup group name 
+      placeholder: rladies/city
+      description: Please only create this issue once meetup is initiated, this url is important for other website logistics.
+    validations:
+      required: true
+  - type: textarea
+    id: some_email
+    attributes:
+      label: Email 
+      placeholder: chapter@rladies.org
+    validations:
+      required: true
+  - type: textarea
+    id: some_twitter
+    attributes:
+      label: twitter handle
+      placeholder: '@rladies_city'
+  - type: textarea
+    id: some_mastodon
+    attributes:
+      label: Mastodon url handle
+      placeholder: user@server.org
+      
