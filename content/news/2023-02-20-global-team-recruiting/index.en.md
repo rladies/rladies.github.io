@@ -63,26 +63,26 @@ Of course, vacations and exceptions may occur.
 
 # Positions
 
-|Team|Brief resposibilities|Current team members|Current # members|Desired # members|Seeking # members|
+|Team|Brief responsibilities|Current team members|Current # members|Desired # members|Seeking # members|
 |:----|:----|:----|:----|:----|:----|
 |Community slack management|Monitor Slack for any content that is inappropriate and needs to be removed, ensure that no bots or individuals spamming the channel have access.|Yanina Bellini Saibene, Riva Quiroga, Averi Giudicessi| |3|3|
-|Social Media|Post regularly on social media platforms (e.g., Twitter, Mastodon, LinkedIn, etc.) and create a regular newletter|Maëlle Salmon|1|4|3|
+|Social Media|Post regularly on social media platforms (e.g., Twitter, Mastodon, LinkedIn, etc.) and create a regular newsletter|Maëlle Salmon|1|4|3|
 |Website|Maintenance / further development of the website. Review potential translations coming in, review json files added / updated. Should be unafraid to want to learn about Hugo & Github Actions.|Athanasia Monika Mowinckel (temporary), will remain highly involved even if not officially on the team in the future)|0|2|2|
 |Blog administration|Recruit, review and support guest bloggers. Guests are welcome to cross-post to their own blogs.|Athanasia Monika Mowinckel (temporary)|0|2|2|
-|Chapter Mentoring|Help organizers create or reactivate a chapter. Create a list of potential mnetors and mentees by advertizing the program. Match mentees to their mentors following their linguistic, geographical preferences, and desired topics. Regular follow-up mentorships to provide mediation/solutions for any concerns and make sure that confidentiality and guidelines are respected.|Nadejda Sero|1|3|2|
-|IWD Campaign|Recruit a team of people that want to do this (It is a very good first ope source project). Decide what we will do for the campaing (there is a repo with ideas). Create the R scripts and material to do the campaing. Schedulle all the tweets on tweetdeck on the rladiesIWD account. Monitoring during the campaing to RT, answer, like, etc.|Yanina Bellini Saibene|0|2|2|
+|Chapter Mentoring|Help organizers create or reactivate a chapter. Create a list of potential mentors and mentees by advertising the program. Match mentees to their mentors following their linguistic, geographical preferences, and desired topics. Regular follow-up mentorships to provide mediation/solutions for any concerns and make sure that confidentiality and guidelines are respected.|Nadejda Sero|1|3|2|
+|IWD Campaign|Recruit a team of people that want to do this (It is a very good first ope source project). Decide what we will do for the campaign (there is a repo with ideas). Create the R scripts and material to do the campaign. Schedule all content for social media. Monitoring during the campaign. |Yanina Bellini Saibene|0|2|2|
 |YouTube|Respond to form requests to add a video or managers to the global YouTube channel.|Athanasia Monika Mowinckel|0|1|1|
-|CoC enforcement|Recieve, review a solve CoC reports. Periodically revise CoC and process. Support organizers and moderators and help them to create and mantain a safe and friendly space|Pao Corrales, Sara Mortara? (I haven't heard from her for a while though).|2|3|1|
-|Onboarding|Make sure the city does not have a chapter yet, send information on how to get a new chapter, invite prospective organizers to the R-Ladies Community Slack,and add prospective chapter to the current-chapters.csv file|Mouna Belaid|1|2|1|
+|CoC enforcement|Receive, review a solve CoC reports. Periodically revise CoC and process. Support organizers and moderators and help them to create and maintain a safe and friendly space|Pao Corrales, Sara Mortara? (I haven't heard from her for a while though).|2|3|1|
+|On-boarding|Make sure the city does not have a chapter yet, send information on how to get a new chapter, invite prospective organizers to the R-Ladies Community Slack,and add prospective chapter to the current-chapters.csv file|Mouna Belaid|1|2|1|
 |Directory managment|Review and approve new R-Ladies Global directory entries to be posted on the website|Sheila Saia|1|2|1|
 |Meetup Pro|Create new chapters on Meetup|Riva Quiroga|1|2|1|
-|Zoom + calendly|Keep an eye on the Zoom + Calendly integration for booking zoom for meetups. Help and support organisers book and set up their zoom.|Athanasia Monika Mowinckel (temporary)|0|1|1|
+|Zoom + calendly|Keep an eye on the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.|Athanasia Monika Mowinckel (temporary)|0|1|1|
 |Leadership|Finances, operational & infrastructure management, strategic planning, reporting & documentation. Representing R-Ladies on the RConsortium ISC board.|Athanasia Monika Mowinckel, Yanina Bellini Saibene, Shannon Pileggi, Riva Quiroga, Averi Giudicessi|5|5|0|
 |RUGS grant administration| |Batool Almarzouq|1|1|0|
 |Abstract Review System| |Jennifer Thompson| | |0|
-|RoCur Twitter Account|Nominate, onboard, and support curators.|Katherine Simeon, Shannon Pileggi, and Emmanuelle Rodrigues Nunes|3|3|0|
+|RoCur Twitter Account|Nominate, on-board, and support curators.|Katherine Simeon, Shannon Pileggi, and Emmanuelle Rodrigues Nunes|3|3|0|
 |E-mail management| |Yanina Bellini Saibene| | |0|
-|RConsortium ISC board|Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies anual budget. Help with communications and selections of the grants, etc.|Yanina Bellini Saibene|1|1|0|
-|Conferences liaison and Metameetups|Conferences: Be part of organizers committe. identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific commitee.
+|RConsortium ISC board|Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies annual budget. Help with communications and selections of the grants, etc.|Yanina Bellini Saibene|1|1|0|
+|Conferences liaison and Metameetups|Conferences: Be part of organizers committee. identify members of the R-Ladies community for organizers committee, keynote speakers, program and scientific committee.
 Metameetup: identify a topic that can be of interest of several chapters and organize the event together.|Yanina Bellini Saibene|1|1|0|
 
