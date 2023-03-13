@@ -89,6 +89,7 @@ html {
    
    ul{
     width: 100%;
+    align-items: flex-start;
   }
 }
 
@@ -415,8 +416,6 @@ pre {
   border: none; 
 }
 
-
-
 .expand-grid{
   ul{
     list-style-type: none;
@@ -487,8 +486,12 @@ pre {
 
  img {
     display: block;
-    width: 100%;
+    width: auto;
     height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    
   }
   
   h4 {
