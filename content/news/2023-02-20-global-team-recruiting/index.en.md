@@ -45,7 +45,7 @@ A new team member is not expected to satisfy all criteria.
 
 -   Background and experience such as education, skills, and knowledge \<--Note: if we keep this here then should google form should be ammended to capture this??--\>
 
--   R-Ladies/R community involvement
+-   R-Ladies/R community involvement.
 
 # Benefits
 
