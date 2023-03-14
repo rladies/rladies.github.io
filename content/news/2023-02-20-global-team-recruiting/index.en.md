@@ -78,11 +78,11 @@ team member is not present on Slack, then we require them to be responsive via e
 ## Operations 
 
 Individual teams within the Global Team may operate relatively independently from the 
-Global team or may work more closely with 
-the Global team. Individual teams may establish their own work preferences or set
+Global Team or may work more closely with 
+the Global Team. Individual teams may establish their own work preferences or set
 their own small team meetings. In addition, many, but not all, members of the 
 Global Team serve on multiple individual teams. Lastly, applying to a specific team
-does not mean your contributions are limited to that team. Individual teams often
+does not mean your contributions or communications are limited to that team. Individual teams often
 solicit and receive feedback or assistance from other members of the Global Team.
 
 
