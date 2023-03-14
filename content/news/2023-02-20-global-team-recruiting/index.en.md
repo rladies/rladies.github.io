@@ -39,11 +39,11 @@ We will consider various aspects with the aim of increasing the diversity of the
 The following are not an exhaustive list of requirements but rather an illustration of the various paths possible.
 A new team member is not expected to satisfy all criteria.
 
--   Geographical location
+-   Geographical location;
 
--   Demographic characteristics like ethnicity, age, and gender identity
+-   Demographic characteristics like ethnicity, age, and gender identity;
 
--   Background and experience such as education, skills, and knowledge \<--Note: if we keep this here then should google form should be ammended to capture this??--\>
+-   Background and experience such as education, skills, and knowledge; \<--Note: if we keep this here then should google form should be ammended to capture this??--\>
 
 -   R-Ladies/R community involvement.
 
