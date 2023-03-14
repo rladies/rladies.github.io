@@ -36,8 +36,8 @@ We want to build a diverse Global Team with good representation of all community
 # Selection considerations
 
 We will consider various aspects with the aim of increasing the diversity of the team.
-The following are not an exhaustive list of requirements but rather an illustration of the various paths possible.
-A new team member is not expected to satisfy all criteria.
+The following are not an exhaustive list of consideration but rather an illustration of the various paths possible.
+A new team member may contribute to the diversity of the Global Team via:
 
 -   Geographical location;
 
@@ -109,7 +109,7 @@ your interest.
 |RUGS grant administration| |0|
 |Abstract Review System| |0|
 |RoCur Twitter Account|Nominate, onboard, and support curators.|0|
-|E-mail management| |0|
+|E-mail management| |1|
 |RConsortium ISC board|Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies anual budget. Help with communications and selections of the grants, etc.|0|
 |Conferences liaison|Identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific committee.|0|
 |Meta-meetup liaison|Identify a topic that can be of interest of several chapters and organize the event together.|0|
