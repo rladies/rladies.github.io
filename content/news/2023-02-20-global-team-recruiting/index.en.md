@@ -57,21 +57,41 @@ Depending on the role, there also may be opportunities for technical upskilling.
 For example, some members of the Global team use R, reproducible reports, git/GitHub, GitHub Actions, Hugo website development, and database integrations.
 (Knowledge of these tools is not a requirement for selection; the Global team will provide training on processes specific to your role.)
 
-# Commitment
+# Expectations
 
-We ask those seeking consideration to commit to one year of 1 to 4 hours a week for service to the Global Team.
-Of course, vacations and exceptions may occur.
+## Commitment
+
+As R-Ladies is a purely volunteer run organisation, we respect and encourage 
+your need to have vacations, free-time and focus on other aspects of your life. The 
+hours spent on R-Ladies work should happen when you are truly available to do them.
+We do ask those that are seeking consideration to commit 
+to one year of service to the Global Team (of course, we would understand
+if life interrupts this commitment), and an estimate of the weekly time commitment
+is 1 to 4 hours a week. In addition, the needs of the specific roles may vary: 
+some volunteers work on a weekly, monthly, or quarterly basis due to natural workload fluctuations.
+
+## Communication
+
+Our primary communication channel is Slack, and the common language we communicate 
+in is English. We hope for Global Team members to regularly check Slack; if the
+team member is not present on Slack, then we require them to be responsive via email.
+
+## Operations 
+
+Individual teams within the Global Team may operate relatively independently from the 
+Global team or may work more closely with 
+the Global team. Individual teams may establish their own work preferences or set
+their own small team meetings. In addition, many, but not all, members of the 
+Global Team serve on multiple individual teams. Lastly, applying to a specific team
+does not mean your contributions are limited to that team. Individual teams often
+solicit and receive feedback or assistance from other members of the Global Team.
+
 
 # Positions
 
 Below is a list of all current global team operations. All teams are listed, however
 not all teams are currently recruiting. Please refer to this table when submitting
 your interest. 
-
-In addition, applying to a specific team does not mean your contributions are limited to that
-team. Individual teams often solicit and receive feedback or assistance from other
-members of the Global Team.
-
 
 |Team|Brief responsibilities|Seeking # members|
 |:----|:----|:----|
