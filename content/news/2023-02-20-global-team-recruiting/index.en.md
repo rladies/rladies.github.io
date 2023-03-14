@@ -101,19 +101,19 @@ your interest.
 |Chapter Mentoring|Help organizers create or reactivate a chapter. Match mentees to their mentors and follow-up mentorships.|2|
 |IWD Campaign|A new team for the International Women's Day Campaign. Create, disseminate, and engage in communications.|2|
 |YouTube|Respond to requests to add a video or managers to the global YouTube channel.|1|
-|CoC enforcement|Receive, review a solve CoC reports. Periodically revise CoC and process. Support organizers and moderators.|1|
-|Chapter onboarding|Share information on how to create a new chapter, invite prospective organizers to the R-Ladies Community Slack, and add chapter to internal records.|1|
-|Directory management|Review and approve new R-Ladies Global directory entries to be posted on the website.|1|
+|CoC enforcement|Receive, review a solve Code of Conduct (CoC) reports. Periodically revise CoC and process. Support organizers and moderators.|1|
+|Chapter Onboarding|Share information on how to create a new chapter, invite prospective organizers to the R-Ladies Community Slack, and add chapter to internal records.|1|
+|Directory Management|Review and approve new R-Ladies Global directory entries to be posted on the website.|1|
 |Meetup Pro|Create new chapters on Meetup.|1|
-|Zoom + calendly|Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.|1|
-|RUGS grant administration| |0|
+|Zoom + Calendly|Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.|1|
+|E-mail Management| |1|
+|RUGS Grant Administration| |0|
 |Abstract Review System| |0|
 |RoCur Twitter Account|Nominate, onboard, and support curators.|0|
-|E-mail management| |1|
 |RConsortium ISC board|Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies anual budget. Help with communications and selections of the grants, etc.|0|
-|Conferences liaison|Identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific committee.|0|
-|Meta-meetup liaison|Identify a topic that can be of interest of several chapters and organize the event together.|0|
-|Community slack management|Monitor Slack for any content that is inappropriate and needs to be removed, ensure that no bots or individuals spamming the channel have access.|0|
+|Conferences Liaison|Identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific committee.|0|
+|Meta-meetup Liaison|Identify a topic that can be of interest of several chapters and organize the event together.|0|
+|Community Slack Management|Monitor Slack for any content that is inappropriate and needs to be removed, ensure that no bots or individuals spamming the channel have access.|0|
 |Leadership|Finances, operational & infrastructure management, strategic planning, reporting & documentation. Representing R-Ladies on the RConsortium ISC board.|0|
 
 # Submitting interest
