@@ -102,7 +102,7 @@ your interest.
 |IWD Campaign|A new team for the International Women's Day Campaign. Create, disseminate, and engage in communications.|2|
 |YouTube|Respond to requests to add a video or managers to the global YouTube channel.|1|
 |CoC enforcement|Receive, review a solve CoC reports. Periodically revise CoC and process. Support organizers and moderators.|1|
-|Chapter on-boarding|Share information on how to create a new chapter, invite prospective organizers to the R-Ladies Community Slack, and add chapter to internal records.|1|
+|Chapter onboarding|Share information on how to create a new chapter, invite prospective organizers to the R-Ladies Community Slack, and add chapter to internal records.|1|
 |Directory management|Review and approve new R-Ladies Global directory entries to be posted on the website.|1|
 |Meetup Pro|Create new chapters on Meetup.|1|
 |Zoom + calendly|Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.|1|
