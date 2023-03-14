@@ -54,7 +54,7 @@ Some of the personal benefits that we think come with joining the global team an
 
 Depending on the role, there also may be opportunities for technical upskilling.
 For example, some members of the Global team use R, reproducible reports, git/GitHub, GitHub Actions, Hugo website development, and database integrations.
-(Knowledge of these tools is not a requirement for selection; the Global team will provide training on processes specific to your role.)
+Knowledge of these tools is not a requirement for selection; the Global team will provide training on processes specific to your role.
 
 # Expectations
 
