@@ -36,7 +36,6 @@ We want to build a diverse Global Team with good representation of all community
 # Selection considerations
 
 We will consider various aspects with the aim of increasing the diversity of the team.
-The following are not an exhaustive list of consideration but rather an illustration of the various paths possible.
 A new team member may contribute to the diversity of the Global Team via:
 
 -   Geographical location;
