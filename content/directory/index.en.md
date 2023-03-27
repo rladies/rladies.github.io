@@ -4,7 +4,7 @@ type: "directory"
 ---
 
 **We would love more R-Ladies to appear in our Directory!** 
-Please fill out [our form](https://airtable.com/shr54Z3BqfRJqypZ7)! 
+Please fill out [our form](/directory-update)! 
 It only takes a few minutes, and soon your profile will be online.
 
 If you want to **update** your profile just fill the same form and drop us a line in the comment box saying you want to update your profile!
