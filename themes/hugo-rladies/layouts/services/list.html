@@ -3,24 +3,58 @@
       {{ .Content }}
     <hr>
   	</div>
-      {{ range .Paginator.Pages }}
-        <header class="entry-header">
-        	<div class="entry-meta">
-            {{ partial "dates.html" .}}
-        	</div>
-        	<div class="container-md my-4" style="padding-bottom: 1em;">
-        		<h6>
-        		  <a  href="{{ .Params.source }}" rel="bookmark" lang={{ .Params.lnguage }}> {{ .Title }} &nbsp;</a>
-        		  {{ with .Resources.Match "*pdf" }}
-                	{{ range . }}
-          		      <a href="{{ .RelPermalink }}" rel="bookmark" class="text-muted" target="_blank">[pdf]</a>
-            	{{ end }}
-            {{ end }}
-        		</h6>
-          </div>
-        </header>
-      {{ end }}
-    	<ul class="pagination d-flex justify-content-center">
-        {{ template "_internal/pagination.html" . }}
-    	</ul>
+    <header class="entry-header">
+
+{{ $years := slice }}
+{{ range .Pages }}
+  {{ $years = $years | append  .Date.Year }}
 {{ end }}
+{{ $years = $years | uniq }}
+
+    <div id="selection">
+      <div class="input-group w-100">
+        <div class="input-group-prepend" for="filter-interests">
+          <label class="input-group-text" style="min-width:120px;" >Years</label>
+        </div>
+        <select class="custom-select" id="filter-press" multiple="multiple">
+          {{ range $years }}
+            <option value="{{. | urlize }}" >{{.}}</option>
+          {{ end }}
+        </select>
+      </div>
+      
+    	<div class="container-md my-4 pb-2 table-responsive">
+    		<table class="table table-borderless w-100">
+    		  <tbody class="w-100 shuffle-wrapper">
+	          {{ range .Pages }}
+	            <tr class="border-bottom shuffle-item" data-groups="[&quot;{{ .Date.Year | urlize }}&quot;]" >
+                <td class="w-50 text-right">
+                  {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+                </td>
+                <td>
+            		  <a href="{{ .Params.source }}" rel="bookmark" lang={{ .Params.language }}> {{ .Title }} &nbsp;</a>            		  {{ with .Resources.Match "*pdf" }}
+                  	{{ range . }}
+            		      <a href="{{ .RelPermalink }}" rel="bookmark" class="text-muted" target="_blank">[pdf]</a>
+                  	{{ end }}
+                  {{ end }}
+                </td>
+              </tr>
+            {{ end }}
+          </tbody>
+        </table>
+{{ end }}
+
+{{ define "footer" }}
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.custom-select').multiselect({
+      includeSelectAllOption: true,
+      maxHeight: 300,
+      enableFiltering: true,
+      enableClickableOptGroups: true,
+      enableCollapsibleOptGroups: true
+    });
+    $('.form-check-input').attr('name', 'shuffle-filter');
+  });
+</script>
+{{end}}
