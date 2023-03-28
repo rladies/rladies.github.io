@@ -94,7 +94,7 @@ your interest.
 
 |Team|Brief responsibilities|Seeking # members|
 |:----|:----|:----|
-|Social Media|Post regularly on social media platforms (e.g., Twitter, Mastodon, LinkedIn, etc.) and create a regular newsletter|3|
+|Communications|Post regularly on social media platforms (e.g., Twitter, Mastodon, LinkedIn, etc.) and create a regular newsletter|3|
 |Website|Maintenance / further development of the website. Review json files added / updated.|2|
 |Translations|Translate content for the website, social media, or newsletters. |2|
 |Blog administration|Recruit, review and support guest bloggers. Guests are welcome to cross-post to their own blogs.|2|
