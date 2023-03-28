@@ -106,7 +106,7 @@ your interest.
 |Directory Management|Review and approve new R-Ladies Global directory entries to be posted on the website.|1|
 |Meetup Pro|Create new chapters on Meetup.|1|
 |Zoom + Calendly|Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.|1|
-|E-mail Management| |1|
+|E-mail Management| Manage existing accounts and create new email accounts. Provide support to organizers on the use of email.  Help keep the organizers' guide on this topic up to date. |1| 
 |RUGS Grant Administration| |0|
 |Abstract Review System| |0|
 |RoCur Twitter Account|Nominate, onboard, and support curators.|0|
