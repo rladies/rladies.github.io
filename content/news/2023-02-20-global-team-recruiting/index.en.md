@@ -107,7 +107,7 @@ your interest.
 |Meetup Pro|Create new chapters on Meetup.|1|
 |Zoom + Calendly|Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.|1|
 |E-mail Management| Manage existing accounts and create new email accounts. Provide support to organizers on the use of email.  Help keep the organizers' guide on this topic up to date. |1| 
-|RUGS Grant Administration| |0|
+|RUGS Grant Administration| Support R-Ladies groups in applying for and tracking applications to the R Users Groups Support (RUGS) grant program. |0|
 |Abstract Review System| |0|
 |RoCur Twitter Account|Nominate, onboard, and support curators.|0|
 |RConsortium ISC board|Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies anual budget. Help with communications and selections of the grants, etc.|0|
