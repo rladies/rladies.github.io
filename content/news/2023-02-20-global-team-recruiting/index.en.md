@@ -10,6 +10,8 @@ categories:
 - r-ladies
 ---
 
+![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg "Photo by <a href="https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hannah Busing</a> on <a href="https://unsplash.com/photos/Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>")
+
 # TL; DR
 
 The R-Ladies Global Team is recruiting new members!
@@ -42,7 +44,8 @@ A new team member may contribute to the diversity of the Global Team via:
 
 -   Demographic characteristics like ethnicity, age, and gender identity;
 
--   Background and experience such as education, skills, and knowledge; \<--Note: if we keep this here then should google form should be ammended to capture this??--\>
+-   Background and experience such as education, skills, and knowledge; \<--Note: if we keep this here then should google form should be ammended to capture this??--
+    \>
 
 -   R-Ladies/R community involvement.
 
@@ -60,65 +63,57 @@ Knowledge of these tools is not a requirement for selection; the Global team wil
 
 ## Commitment
 
-As R-Ladies is a purely volunteer run organisation, we respect and encourage 
-your need to have vacations, free-time and focus on other aspects of your life. The 
-hours spent on R-Ladies work should happen when you are truly available to do them.
-We do ask those that are seeking consideration to commit 
-to one year of service to the Global Team (of course, we would understand
-if life interrupts this commitment), and an estimate of the weekly time commitment
-is 1 to 4 hours a week. In addition, the needs of the specific roles may vary: 
-some volunteers work on a weekly, monthly, or quarterly basis due to natural workload fluctuations.
+As R-Ladies is a purely volunteer run organisation, we respect and encourage your need to have vacations, free-time and focus on other aspects of your life.
+The hours spent on R-Ladies work should happen when you are truly available to do them.
+We do ask those that are seeking consideration to commit to one year of service to the Global Team (of course, we would understand if life interrupts this commitment), and an estimate of the weekly time commitment is 1 to 4 hours a week.
+In addition, the needs of the specific roles may vary: some volunteers work on a weekly, monthly, or quarterly basis due to natural workload fluctuations.
 
 ## Communication
 
-Our primary communication channel is Slack, and the common language we communicate 
-in is English. We hope for Global Team members to regularly check Slack; if the
-team member is not present on Slack, then we require them to be responsive via email.
+Our primary communication channel is Slack, and the common language we communicate in is English.
+We hope for Global Team members to regularly check Slack; if the team member is not present on Slack, then we require them to be responsive via email.
 
-## Operations 
+## Operations
 
-Individual teams within the Global Team may operate relatively independently from the 
-Global Team or may work more closely with 
-the Global Team. Individual teams may establish their own work preferences or set
-their own small team meetings. In addition, many, but not all, members of the 
-Global Team serve on multiple individual teams. Lastly, applying to a specific team
-does not mean your contributions or communications are limited to that team. Individual teams often
-solicit and receive feedback or assistance from other members of the Global Team.
-
+Individual teams within the Global Team may operate relatively independently from the Global Team or may work more closely with the Global Team.
+Individual teams may establish their own work preferences or set their own small team meetings.
+In addition, many, but not all, members of the Global Team serve on multiple individual teams.
+Lastly, applying to a specific team does not mean your contributions or communications are limited to that team.
+Individual teams often solicit and receive feedback or assistance from other members of the Global Team.
 
 # Positions
 
-Below is a list of all current global team operations. All teams are listed, however
-not all teams are currently recruiting. Please refer to this table when submitting
-your interest. 
+Below is a list of all current global team operations.
+All teams are listed, however not all teams are currently recruiting.
+Please refer to this table when submitting your interest.
 
-|Team|Brief responsibilities|Seeking # members|
-|:----|:----|:----|
-|Communications|Post regularly on social media platforms (e.g., Twitter, Mastodon, LinkedIn, etc.) and create a regular newsletter|3|
-|Website|Maintenance / further development of the website. Review json files added / updated.|2|
-|Translations|Translate content for the website, social media, or newsletters. |2|
-|Blog administration|Recruit, review and support guest bloggers. Guests are welcome to cross-post to their own blogs.|2|
-|Chapter Mentoring|Help organizers create or reactivate a chapter. Match mentees to their mentors and follow-up mentorships.|2|
-|IWD Campaign|A new team for the International Women's Day Campaign. Create, disseminate, and engage in communications.|2|
-|YouTube|Respond to requests to add a video or managers to the global YouTube channel.|1|
-|CoC enforcement|Receive, review a solve Code of Conduct (CoC) reports. Periodically revise CoC and process. Support organizers and moderators.|1|
-|Chapter Onboarding|Share information on how to create a new chapter, invite prospective organizers to the R-Ladies Community Slack, and add chapter to internal records.|1|
-|Directory Management|Review and approve new R-Ladies Global directory entries to be posted on the website.|1|
-|Meetup Pro|Create new chapters on Meetup.|1|
-|Zoom + Calendly|Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.|1|
-|E-mail Management| Manage existing accounts and create new email accounts. Provide support to organizers on the use of email.  Help keep the organizers' guide on this topic up to date. |1| 
-|RUGS Grant Administration| Support R-Ladies groups in applying for and tracking applications to the R Users Groups Support (RUGS) grant program. |0|
-|Abstract Review System| |0|
-|RoCur Twitter Account|Nominate, onboard, and support curators.|0|
-|RConsortium ISC board|Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies anual budget. Help with communications and selections of the grants, etc.|0|
-|Conferences Liaison|Identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific committee.|0|
-|Meta-meetup Liaison|Identify a topic that can be of interest of several chapters and organize the event together.|0|
-|Community Slack Management|Monitor Slack for any content that is inappropriate and needs to be removed, ensure that no bots or individuals spamming the channel have access.|0|
-|Leadership|Finances, operational & infrastructure management, strategic planning, reporting & documentation. Representing R-Ladies on the RConsortium ISC board.|0|
+| Team                       | Brief responsibilities                                                                                                                                                 | Seeking \# members |
+|:-----------------------|:-----------------------|:-----------------------|
+| Communications             | Post regularly on social media platforms (e.g., Twitter, Mastodon, LinkedIn, etc.) and create a regular newsletter                                                     | 3                  |
+| Website                    | Maintenance / further development of the website. Review json files added / updated.                                                                                   | 2                  |
+| Translations               | Translate content for the website, social media, or newsletters.                                                                                                       | 2                  |
+| Blog administration        | Recruit, review and support guest bloggers. Guests are welcome to cross-post to their own blogs.                                                                       | 2                  |
+| Chapter Mentoring          | Help organizers create or reactivate a chapter. Match mentees to their mentors and follow-up mentorships.                                                              | 2                  |
+| IWD Campaign               | A new team for the International Women's Day Campaign. Create, disseminate, and engage in communications.                                                              | 2                  |
+| YouTube                    | Respond to requests to add a video or managers to the global YouTube channel.                                                                                          | 1                  |
+| CoC enforcement            | Receive, review a solve Code of Conduct (CoC) reports. Periodically revise CoC and process. Support organizers and moderators.                                         | 1                  |
+| Chapter Onboarding         | Share information on how to create a new chapter, invite prospective organizers to the R-Ladies Community Slack, and add chapter to internal records.                  | 1                  |
+| Directory Management       | Review and approve new R-Ladies Global directory entries to be posted on the website.                                                                                  | 1                  |
+| Meetup Pro                 | Create new chapters on Meetup.                                                                                                                                         | 1                  |
+| Zoom + Calendly            | Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.                                          | 1                  |
+| E-mail Management          | Manage existing accounts and create new email accounts. Provide support to organizers on the use of email. Help keep the organizers' guide on this topic up to date.   | 1                  |
+| RUGS Grant Administration  | Support R-Ladies groups in applying for and tracking applications to the R Users Groups Support (RUGS) grant program.                                                  | 0                  |
+| Abstract Review System     |                                                                                                                                                                        | 0                  |
+| RoCur Twitter Account      | Nominate, onboard, and support curators.                                                                                                                               | 0                  |
+| RConsortium ISC board      | Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies anual budget. Help with communications and selections of the grants, etc. | 0                  |
+| Conferences Liaison        | Identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific committee.                                                | 0                  |
+| Meta-meetup Liaison        | Identify a topic that can be of interest of several chapters and organize the event together.                                                                          | 0                  |
+| Community Slack Management | Monitor Slack for any content that is inappropriate and needs to be removed, ensure that no bots or individuals spamming the channel have access.                      | 0                  |
+| Leadership                 | Finances, operational & infrastructure management, strategic planning, reporting & documentation. Representing R-Ladies on the RConsortium ISC board.                  | 0                  |
 
 # Submitting interest
 
 Please [submit this Google form](https://forms.gle/dGzkbSWcD7qAaTfk6) to indicate your interest in joining the Global Team.
-The survey should take approximately 10-15 minutes to complete. Thank you for considering! 💜
-
-
+The survey should take approximately 10-15 minutes to complete.
+Thank you for considering!
+💜
