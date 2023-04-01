@@ -108,8 +108,8 @@ jobs:
       - name: Site data - clean cloned repos
         run: |
           rm -r data/directory data/rblogs
-          cp -r tmpd/rblogs/blogs data/rblogs
-          cp -r tmpd/dir/data/json data/directory
+          mv tmpd/rblogs/blogs data/rblogs
+          mv tmpd/dir/data/json data/directory
           cp -r tmpd/dir/data/img/* assets/directory
           cp -r tmpd/mtp/data/* data/meetup/
           rm -rf tmpd
