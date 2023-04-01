@@ -10,7 +10,10 @@ categories:
 - r-ladies
 ---
 
-![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg "photo of women with hands piled together") Photo by <a href="https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Hannah Busing</a> on <a href="https://unsplash.com/photos/Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg) 
+
+Photo by [Hannah Busing](https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText). Alt text: Image of arms and hands of women wearing colorful sweaters 
+in a circle with hands piled together.
 
 # TL; DR
 
