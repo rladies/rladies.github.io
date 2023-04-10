@@ -10,10 +10,10 @@ categories:
 - r-ladies
 ---
 
-![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg) 
+![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg)
 
-Photo by [Hannah Busing](https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText). Alt text: Image of arms and hands of women wearing colorful sweaters 
-in a circle with hands piled together.
+Photo by [Hannah Busing](https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+Alt text: Image of arms and hands of women wearing colorful sweaters in a circle with hands piled together.
 
 # TL; DR
 
@@ -32,8 +32,7 @@ We want to build a diverse Global Team with good representation of all community
 
 -   2023-04-27 - 2023-05-11: Global team reviews submissions (2 weeks).
 
--   2023-05-12 - 2023-05-19: Target date to notify individuals of selection
-    (1 week).
+-   2023-05-12 - 2023-05-19: Target date to notify individuals of selection (1 week).
 
 -   date7-date8: Invitation to meet with 1-3 global team members to clarify any questions or expectations to ensure a good match for all parties.
     (2 weeks)
@@ -98,6 +97,7 @@ Please refer to this table when submitting your interest.
 | Blog administration        | Recruit, review and support guest bloggers. Guests are welcome to cross-post to their own blogs.                                                                       | 2                  |
 | Chapter Mentoring          | Help organizers create or reactivate a chapter. Match mentees to their mentors and follow-up mentorships.                                                              | 2                  |
 | IWD Campaign               | A new team for the International Women's Day Campaign. Create, disseminate, and engage in communications.                                                              | 2                  |
+| Chapter Activity           | Monitor chapter activity for operational, reporting, and financial needs.                                                                                              | 2                  |
 | YouTube                    | Respond to requests to add a video or managers to the global YouTube channel.                                                                                          | 1                  |
 | CoC enforcement            | Receive, review a solve Code of Conduct (CoC) reports. Periodically revise CoC and process. Support organizers and moderators.                                         | 1                  |
 | Chapter Onboarding         | Share information on how to create a new chapter, invite prospective organizers to the R-Ladies Community Slack, and add chapter to internal records.                  | 1                  |
@@ -106,7 +106,7 @@ Please refer to this table when submitting your interest.
 | Zoom + Calendly            | Monitor the Zoom + Calendly integration for booking zoom for meetups. Help and support organizers book and set up their zoom.                                          | 1                  |
 | E-mail Management          | Manage existing accounts and create new email accounts. Provide support to organizers on the use of email. Help keep the organizers' guide on this topic up to date.   | 1                  |
 | RUGS Grant Administration  | Support R-Ladies groups in applying for and tracking applications to the R Users Groups Support (RUGS) grant program.                                                  | 0                  |
-| Abstract Review System     |                                                                                                                                                                        | 0                  |
+| Abstract Review System     | Review and provide feedback on various types of R-related abstracts and applications prior to submission.                                                              | 0                  |
 | RoCur Twitter Account      | Nominate, onboard, and support curators.                                                                                                                               | 0                  |
 | RConsortium ISC board      | Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies anual budget. Help with communications and selections of the grants, etc. | 0                  |
 | Conferences Liaison        | Identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific committee.                                                | 0                  |
