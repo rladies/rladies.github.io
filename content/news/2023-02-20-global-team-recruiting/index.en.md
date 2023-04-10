@@ -28,12 +28,12 @@ We want to build a diverse Global Team with good representation of all community
 
 # Timeline (approximate)
 
--   date1-date2: Google form is open to submissions (2 weeks)
+-   2023-04-12 - 2023-04-26: Google form is open to submissions (2 weeks).
 
--   date3-date4: Global team reviews submissions (2 weeks)
+-   2023-04-27 - 2023-05-11: Global team reviews submissions (2 weeks).
 
--   date5-date6: Target date to notify individuals of selection.
-    (1 week)
+-   2023-05-12 - 2023-05-19: Target date to notify individuals of selection
+    (1 week).
 
 -   date7-date8: Invitation to meet with 1-3 global team members to clarify any questions or expectations to ensure a good match for all parties.
     (2 weeks)
