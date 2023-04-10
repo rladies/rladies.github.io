@@ -46,8 +46,7 @@ A new team member may contribute to the diversity of the Global Team via:
 
 -   Demographic characteristics like ethnicity, age, and gender identity;
 
--   Background and experience such as education, skills, and knowledge; \<--Note: if we keep this here then should google form should be ammended to capture this??--
-    \>
+-   Background and experience such as education, skills, and knowledge; 
 
 -   R-Ladies/R community involvement.
 
@@ -107,9 +106,9 @@ Please refer to this table when submitting your interest.
 | E-mail Management          | Manage existing accounts and create new email accounts. Provide support to organizers on the use of email. Help keep the organizers' guide on this topic up to date.   | 1                  |
 | RUGS Grant Administration  | Support R-Ladies groups in applying for and tracking applications to the R Users Groups Support (RUGS) grant program.                                                  | 0                  |
 | Abstract Review System     | Review and provide feedback on various types of R-related abstracts and applications prior to submission.                                                              | 0                  |
-| RoCur Twitter Account      | Nominate, onboard, and support curators.                                                                                                                               | 0                  |
+| RoCur Twitter Account      | Nominate, on-board, and support curators.                                                                                                                               | 0                  |
 | RConsortium ISC board      | Attend and Participate monthly meeting, report R-Ladies activities, create and sent R-Ladies annual budget. Help with communications and selections of the grants, etc. | 0                  |
-| Conferences Liaison        | Identify members of the R-Ladies community for organizers commitee, keynote speakers, program and scientific committee.                                                | 0                  |
+| Conferences Liaison        | Identify members of the R-Ladies community for organizers committee, keynote speakers, program and scientific committee.                                                | 0                  |
 | Meta-meetup Liaison        | Identify a topic that can be of interest of several chapters and organize the event together.                                                                          | 0                  |
 | Community Slack Management | Monitor Slack for any content that is inappropriate and needs to be removed, ensure that no bots or individuals spamming the channel have access.                      | 0                  |
 | Leadership                 | Finances, operational & infrastructure management, strategic planning, reporting & documentation. Representing R-Ladies on the RConsortium ISC board.                  | 0                  |
