@@ -82,7 +82,7 @@
             {{ range $loc }}
               {{ $l := findRE (printf "^%s" $c) . }}
               {{ if gt (len $l) 0 }}
-                <option value="{{. | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
+                <option value="{{ . | htmlUnescape | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
               {{ end }}
             {{ end }}
             </optgroup>
