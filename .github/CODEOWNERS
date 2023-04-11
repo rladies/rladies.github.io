@@ -1,6 +1,10 @@
-/themes/                    @website
-/scripts/                   @website
-LICENCE.md                  @website
-/static/robots.txt          @website
-/content/home/news          @global
-/themes/hugo-rladies/i18n/ 
+/.github/                   @rladies/website
+/themes/                    @rladies/website
+/scripts/                   @rladies/website
+LICENCE.md                  @rladies/website
+/static/robots.txt          @rladies/website
+/assets                     @rladies/website
+/content/                   @rladies/translation
+/i18n/                      @rladies/translation
+/content/news               @rladies/global
+/content/blog               @rladies/blog
