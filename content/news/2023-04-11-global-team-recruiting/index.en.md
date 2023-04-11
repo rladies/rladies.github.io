@@ -34,8 +34,7 @@ We want to build a diverse Global Team with good representation of all community
 
 -   2023-05-12 - 2023-05-19: Target date to notify individuals of selection (1 week).
 
--   date7-date8: Invitation to meet with 1-3 global team members to clarify any questions or expectations to ensure a good match for all parties.
-    (2 weeks)
+-   2023-05-22 - 2023-05-26: Invitation to meet with 1-3 global team members to clarify any questions or expectations to ensure a good match for all parties (2 weeks).
 
 # Selection considerations
 
