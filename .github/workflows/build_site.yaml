@@ -47,9 +47,8 @@ jobs:
           
           
   build:
-    name: Build and publish to Netlify
+    name: Build and publish production
     runs-on: ubuntu-22.04
-    needs: [jsons]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
