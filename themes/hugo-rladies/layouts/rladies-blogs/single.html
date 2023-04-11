@@ -19,8 +19,15 @@
         {{ end }}
         {{ $descr :=  $data.Get "descr" }}
         
+        {{ $data.Set "photo" "" }}
+        {{ $image := resources.GetRemote .photo_url }}
+        {{ with $image }}
+          {{ $image := $image.Fit "600x400"}}
+          {{ $data.Set "photo" $image.RelPermalink }}
+        {{ end }}
+        
         {{ $subtitle := .subtitle | default "" }}
-        {{ partial "funcs/card-expand.html" (dict "title" .title "img" .photo_url "subtitle" $subtitle "descr" $descr "category" .type ) }}
+        {{ partial "funcs/card-expand.html" (dict "title" .title "img" ($data.Get "photo") "subtitle" $subtitle "descr" $descr "category" .type ) }}
       {{ end }}
     </ul>
   </div>
