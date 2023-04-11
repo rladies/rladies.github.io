@@ -19,11 +19,16 @@
         {{ end }}
         {{ $descr :=  $data.Get "descr" }}
         
-        {{ $data.Set "photo" "" }}
-        {{ $image := resources.GetRemote .photo_url }}
-        {{ with $image }}
-          {{ $image := $image.Fit "600x400"}}
-          {{ $data.Set "photo" $image.RelPermalink }}
+        {{ $grav := ( md5 .url ) }}
+        {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" $grav )}}
+        {{ with .photo_url }}
+          {{ $image := resources.GetRemote . }}
+          {{ with $image }}
+            {{ $img := . }}
+            {{ $img := $img.Fit "600x400"}}
+            {{ $img := $img.Fit "600x400"}}
+            {{ $data.Set "photo" $img.RelPermalink }}
+          {{ end }}
         {{ end }}
         
         {{ $subtitle := .subtitle | default "" }}

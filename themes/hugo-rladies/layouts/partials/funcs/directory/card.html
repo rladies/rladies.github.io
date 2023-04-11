@@ -14,7 +14,8 @@
   {{ $dir.Add "shuffle" . }}
 {{ end }}
 
-{{ $dir.Set "img" "" }}
+{{ $grav := md5 ( .data.name | printf "%s-%s" .name ) }}
+{{ $dir.Set "img" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" $grav )}}
 {{ with (resources.GetMatch .data.photo.url ) }}
   {{ $image :=  . }}
   {{ $image := $image.Fill "300x300" }}
