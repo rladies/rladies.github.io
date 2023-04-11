@@ -60,11 +60,17 @@
   {{ $data.Set "string" "%s" }}
   {{ $data.Set "fa" "fa-brands fa-slack" }}
   
+  
 {{ else }}
   {{ $data.Set "string" "%s" }}
   {{ $data.Set "fa" "fa fa-globe" }}
 {{ end }}
 
-{{ $url := printf ($data.Get "string") .handle }}
+{{ $data.Set "url" (printf ($data.Get "string") .handle) }}
 
-{{ return (dict "url" $url "fa" ($data.Get "fa") ) }}
+<!-- mastodon workaround if given handle rather than url -->
+{{ if and (eq .type "mastodon") (strings.HasPrefix .handle "@") }}
+  {{ $data.Set "url" (replaceRE "@(.*?)@(.+)" "https://$2/@$1" .handle) }}
+{{ end }}
+
+{{ return (dict "url" ($data.Get "url") "fa" ($data.Get "fa") ) }}
