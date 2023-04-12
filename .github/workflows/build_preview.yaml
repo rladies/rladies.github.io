@@ -51,7 +51,7 @@ jobs:
           
   build:
     name: Build and publish preview through Netlify
-    runs-on: ubuntu-22.04
+    runs-on: macOS-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
