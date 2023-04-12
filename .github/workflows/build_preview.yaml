@@ -3,10 +3,6 @@ name: Build site and deploy preview
 on:
   workflow_dispatch:
     inputs:
-      directory_branch:
-        description: 'Directory branch'
-        required: true
-        default: 'main'
       directory_artifact:
         description: 'Directory artifact'
         required: true
@@ -79,11 +75,11 @@ jobs:
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
+        if: not ${{ github.event.inputs.directory_artifact }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
           path: tmpd/dir
-          ref: ${{ github.event.inputs.directory_branch }}
 
       - name: Site data  - DIRECTORY - Download artifact
         if: ${{ github.event.inputs.directory_artifact }}
@@ -92,11 +88,11 @@ jobs:
           name: entries
           path: entries/
           token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
-          
+        
       - name: Site data - DIRECTORY - Move
         run: |
           rm -rf data/directory/* assets/directory/*
-          if( ${{ github.event.inputs.directory_artifact }} )
+          if [ "${{ github.event.inputs.directory_artifact }}" = "true" ]; then
             mv entries/json data/directory
             mv entries/img/* assets/directory
           else
