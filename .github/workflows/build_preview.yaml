@@ -77,7 +77,7 @@ jobs:
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
-      - name: Site data - Get directory data
+      - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
         with:
           repository: rladies/directory
@@ -85,7 +85,7 @@ jobs:
           path: tmpd/dir
           ref: ${{ github.event.inputs.directory_branch }}
 
-      - name: Download directory artifact
+      - name: Site data  - DIRECTORY - Download artifact
         if: ${{ github.event.inputs.directory_artifact }}
         uses: actions/download-artifact@v2
         with:
@@ -93,18 +93,16 @@ jobs:
           path: entries/
           token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
           
-      - name: Move directory artifact
-        if: ${{ github.event.inputs.directory_artifact }}
+      - name: Site data - DIRECTORY - Move
         run: |
           rm -rf data/directory/* assets/directory/*
-          mv entries/json data/directory
-          mv entries/img/* assets/directory
-          
-      - name: Site data - move directory data
-        run: |
-          cp -r tmpd/rblogs/blogs data/rblogs
-          cp -r tmpd/mtp/data/* data/meetup/
-          rm -rf tmpd
+          if( ${{ github.event.inputs.directory_artifact }} )
+            mv entries/json data/directory
+            mv entries/img/* assets/directory
+          else
+            cp -r tmpd/dir/data/json data/directory
+            cp -r tmpd/dir/data/img/* assets/directory
+          fi
           
       - name: Site data - Meetup
         uses: actions/checkout@v3
