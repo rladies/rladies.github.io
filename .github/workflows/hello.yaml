@@ -1,0 +1,25 @@
+name: Auto message for PR's and Issues
+on: [pull_request, issues]
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged
+    steps:
+      - uses: actions/github-script@v6
+        name: send-message
+        with:
+          github-token: ${{ secrets.GHA_WORKFLOW_DISPATCH }}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `Hello!
+              
+              Thank you for contributing! 🙂 
+              
+              We are a 100% volunteer lead organisation, and will get to this as soon as we can.
+              Thank you for your patience!`
+            })
+
