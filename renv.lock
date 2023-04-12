@@ -3,18 +3,6 @@
     "Version": "4.2.0",
     "Repositories": [
       {
-        "Name": "ggseg",
-        "URL": "https://ggseg.r-universe.dev"
-      },
-      {
-        "Name": "lcbc",
-        "URL": "https://lcbc-uio.r-universe.dev"
-      },
-      {
-        "Name": "stan",
-        "URL": "https://mc-stan.org/r-packages"
-      },
-      {
         "Name": "CRAN",
         "URL": "https://cloud.r-project.org"
       }
@@ -986,28 +974,6 @@
       "Requirements": [
         "commonmark",
         "xfun"
-      ]
-    },
-    "meetupr": {
-      "Package": "meetupr",
-      "Version": "0.2.99.9002",
-      "Source": "unknown",
-      "Hash": "132ec0e13bb0855f8e6573cdef06b13e",
-      "Requirements": [
-        "anytime",
-        "countrycode",
-        "dplyr",
-        "ellipsis",
-        "gh",
-        "glue",
-        "httr",
-        "progress",
-        "purrr",
-        "rappdirs",
-        "ratelimitr",
-        "rlang",
-        "rlist",
-        "tibble"
       ]
     },
     "memoise": {
