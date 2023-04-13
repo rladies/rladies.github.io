@@ -57,17 +57,6 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Site data  - DIRECTORY - Download artifact
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          name: entries
-          # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
-          github_token: ${{ secrets.GLOBAL_PAT }}
-          # Optional, will get head commit SHA
-          run_id: ${{ github.event.inputs.directory }}
-          # Optional, defaults to current repo
-          repo: rladies/directory
-        
       - name: Get Hugo version
         id: hugo_vr
         run: |
@@ -94,6 +83,18 @@ jobs:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
           path: tmpd/dir
+          
+      - name: Site data  - DIRECTORY - Download artifact
+        uses: dawidd6/action-download-artifact@v2
+        if:  ${{ github.event.inputs.directory_artifact }} != 'main'
+        with:
+          name: entries
+          # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
+          github_token: ${{ secrets.GLOBAL_PAT }}
+          # Optional, will get head commit SHA
+          run_id: ${{ github.event.inputs.directory }}
+          # Optional, defaults to current repo
+          repo: rladies/directory
 
       - name: Site data - DIRECTORY - Move
         run: |
