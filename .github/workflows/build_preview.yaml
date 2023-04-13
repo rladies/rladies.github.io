@@ -2,6 +2,11 @@ name: Build site and deploy preview
 
 on:
   workflow_dispatch:
+    inputs:
+      directory_artifact:
+        description: 'Directory artifact'
+        required: true
+        default: 'main'
   pull_request:
     branches:
       - main
@@ -36,18 +41,16 @@ jobs:
         
       - name: Install R-packages
         if: env.run_validation == 'true'
-        run: install.packages(c("here", "jsonvalidate"), Ncpus = 2)
-        shell: Rscript {0}
-      
+        uses: r-lib/actions/setup-renv@v2    
+       
       - name: Validate jsons
         if: env.run_validation == 'true'
         run: Rscript scripts/validate_jsons.R
           
           
   build:
-    name: Build and publish to Netlify
+    name: Build and publish preview through Netlify
     runs-on: ubuntu-22.04
-    needs: [jsons]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -61,32 +64,45 @@ jobs:
           echo $ver
           echo "hugovr=$ver" >> $GITHUB_ENV
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: ${{ env.hugovr }}
-          extended: true
-      
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
+      - name: Install cURL Headers
+        run: sudo apt-get install libcurl4-openssl-dev
         
-      - name: Install R-packages
-        run: |
-          install.packages(c(
-            "here", "jsonlite",
-            "dplyr", "tidyr"),
-            Ncpus = 2)
-        shell: Rscript {0}
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-renv@v2    
 
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
         
-      - name: Site data - Get directory data
+      - name: Site data - Clean folders
+        run: rm -r data/directory data/rblogs
+        
+      - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
+        if: ${{ github.event.inputs.directory_artifact }} == 'main'
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
           path: tmpd/dir
+
+      - name: Site data  - DIRECTORY - Download artifact
+        if: ${{ github.event.inputs.directory_artifact }} != 'main'
+        uses: actions/download-artifact@v2
+        with:
+          name: entries
+          path: entries/
+          run_id: ${{ github.event.inputs.directory_artifact }}
+          token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
+        
+      - name: Site data - DIRECTORY - Move
+        run: |
+          rm -rf data/directory/* assets/directory/*
+          if [ "${{ github.event.inputs.directory_artifact }}" = "true" ]; then
+            mv entries/json data/directory
+            mv entries/img/* assets/directory
+          else
+            cp -r tmpd/dir/data/json data/directory
+            cp -r tmpd/dir/data/img/* assets/directory
+          fi
           
       - name: Site data - Meetup
         uses: actions/checkout@v3
@@ -104,16 +120,19 @@ jobs:
           
       - name: Site data - clean cloned repos
         run: |
-          rm -r data/directory data/rblogs
           cp -r tmpd/rblogs/blogs data/rblogs
-          cp -r tmpd/dir/data/json data/directory
-          cp -r tmpd/dir/data/img/* assets/directory
           cp -r tmpd/mtp/data/* data/meetup/
           rm -rf tmpd
           
       - name: Site data - merge chapter and meetup
         run: Rscript --verbose scripts/get_chapters.R
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.hugovr }}
+          extended: true
+          
       - name: Build
         run: |
             hugo --enableGitInfo --minify \

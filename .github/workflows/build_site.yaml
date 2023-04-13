@@ -14,11 +14,11 @@ jobs:
   jsons:
     name: Check modified jsons
     runs-on: macOS-latest
+    env:
+      RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
 
       - name: Get changed files
         id: check_files
@@ -31,10 +31,24 @@ jobs:
             echo "No jsons commited/changed"
             echo "{run_validation}={false}" >> $GITHUB_ENV
           fi
-          
+      
       - name: Setup R
         if: env.run_validation == 'true'
         uses: r-lib/actions/setup-r@v2
+        
+      - name: Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+      
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
         
       - name: Install R-packages
         if: env.run_validation == 'true'
@@ -47,9 +61,8 @@ jobs:
           
           
   build:
-    name: Build and publish to Netlify
+    name: Build and publish production
     runs-on: ubuntu-22.04
-    needs: [jsons]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -63,23 +76,9 @@ jobs:
           pubdir=$(cat config/_default/config.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "hugobd=$pubdir" >> $GITHUB_ENV
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: ${{ env.hugovr }}
-          extended: true
-      
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        
-      - name: Install R-packages
-        run: |
-          install.packages(c(
-            "here", "jsonlite",
-            "dplyr", "tidyr"),
-            Ncpus = 2)
-        shell: Rscript {0}
+          
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-renv@v2
 
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
@@ -116,6 +115,12 @@ jobs:
           
       - name: Site data - merge chapter and meetup
         run: Rscript --verbose scripts/get_chapters.R
+        
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.hugovr }}
+          extended: true
 
       - name: Build
         run:  hugo --enableGitInfo --minify 

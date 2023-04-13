@@ -11,4 +11,6 @@ Authors@R:  c(
       )
 Encoding: UTF-8
 Imports:
-    blogdown
+    blogdown,
+    jsonlite,
+    jsonvalidate

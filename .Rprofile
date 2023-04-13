@@ -1,3 +1,4 @@
+source("renv/activate.R")
 # Project Renvironment in this case must take
 # precedent over user Renvironment.
 if (file.exists("~/.Rprofile")) {
