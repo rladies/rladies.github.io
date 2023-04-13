@@ -57,6 +57,16 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Site data  - DIRECTORY - Download artifact
+        if: not ${{ github.event.inputs.directory_artifact }} == 'main'
+        uses: actions/download-artifact@v2
+        with:
+          name: entries
+          path: entries/
+          run_id: ${{ github.event.inputs.directory_artifact }}
+          token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
+        
+        
       - name: Get Hugo version
         id: hugo_vr
         run: |
@@ -84,15 +94,6 @@ jobs:
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
           path: tmpd/dir
 
-      - name: Site data  - DIRECTORY - Download artifact
-        if: ${{ github.event.inputs.directory_artifact }} != 'main'
-        uses: actions/download-artifact@v2
-        with:
-          name: entries
-          path: entries/
-          run_id: ${{ github.event.inputs.directory_artifact }}
-          token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
-        
       - name: Site data - DIRECTORY - Move
         run: |
           rm -rf data/directory/* assets/directory/*
