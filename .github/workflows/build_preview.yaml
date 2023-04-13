@@ -60,7 +60,6 @@ jobs:
       - name: Set env parameters
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
-          echo $ver
           echo "hugovr=$ver" >> $GITHUB_ENV
           if [ "${{ github.event.inputs.directory }}" = "main" ]; then
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
@@ -82,7 +81,7 @@ jobs:
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
-        if: ${{ github.event.inputs.directory_artifact }} == 'main'
+        if: ${{ github.event.inputs.directory }} == 'main'
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
@@ -90,7 +89,7 @@ jobs:
           
       - name: Site data  - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if:  ${{ github.event.inputs.directory_artifact }} != 'main'
+        if:  ${{ github.event.inputs.directory }} != 'main'
         with:
           name: entries
           # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
