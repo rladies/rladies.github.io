@@ -90,7 +90,7 @@ jobs:
         with:
           name: entries
           path: entries/
-          ref: @${{ github.event.inputs.directory_artifact }}:entries.zip
+          ref: ${{ github.event.inputs.directory_artifact }}:entries.zip
           token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
         
       - name: Site data - DIRECTORY - Move
