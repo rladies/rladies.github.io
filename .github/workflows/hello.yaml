@@ -1,10 +1,13 @@
 name: Auto message for PR's and Issues
-on: [pull_request, issues]
+on: 
+  pull_request:
+    types: [opened]
+  issues:
+    types: [opened]
 
 jobs:
   send-message:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
     steps:
       - uses: actions/github-script@v6
         name: send-message
