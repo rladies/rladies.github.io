@@ -57,12 +57,16 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Get Hugo version
-        id: hugo_vr
+      - name: Set env parameters
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
           echo $ver
           echo "hugovr=$ver" >> $GITHUB_ENV
+          if [ "${{ github.event.inputs.directory }}" = "main" ]; then
+            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
+          else
+            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+          fi
 
       - name: Install cURL Headers
         run: sudo apt-get install libcurl4-openssl-dev
@@ -148,6 +152,6 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: netlify deploy --alias ${{github.event.number}}
+        run: netlify deploy --alias ${{ env.netalias }}
         shell: sh
 
