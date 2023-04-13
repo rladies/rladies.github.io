@@ -62,7 +62,7 @@ jobs:
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
-          if [ "${{ github.event }}" = "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
           else
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
