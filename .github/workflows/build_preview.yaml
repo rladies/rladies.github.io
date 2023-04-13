@@ -6,8 +6,7 @@ on:
       directory_artifact:
         description: 'Directory artifact'
         required: true
-        default: false
-        type: bool
+        default: "main"
   pull_request:
     branches:
       - main
@@ -79,18 +78,19 @@ jobs:
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
-        if: not ${{ github.event.inputs.directory_artifact }}
+        if: ${{ github.event.inputs.directory_artifact }} == "main"
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
           path: tmpd/dir
 
       - name: Site data  - DIRECTORY - Download artifact
-        if: ${{ github.event.inputs.directory_artifact }}
+        if: ${{ github.event.inputs.directory_artifact }} != "main"
         uses: actions/download-artifact@v2
         with:
           name: entries
           path: entries/
+          ref: @${{ github.event.inputs.directory_artifact }}:entries.zip
           token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
         
       - name: Site data - DIRECTORY - Move
