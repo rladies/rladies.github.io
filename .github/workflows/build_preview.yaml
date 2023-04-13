@@ -3,8 +3,8 @@ name: Build site and deploy preview
 on:
   workflow_dispatch:
     inputs:
-      directory_artifact:
-        description: 'Directory artifact'
+      directory:
+        description: 'Directory reference'
         required: true
         default: 'main'
   pull_request:
@@ -57,6 +57,17 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Site data  - DIRECTORY - Download artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          name: entries
+          # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
+          github_token: ${{ secrets.GLOBAL_PAT }}
+          # Optional, will get head commit SHA
+          run_id: ${{ github.event.inputs.directory }}
+          # Optional, defaults to current repo
+          repo: rladies/directory
+        
       - name: Get Hugo version
         id: hugo_vr
         run: |
@@ -81,18 +92,9 @@ jobs:
         if: ${{ github.event.inputs.directory_artifact }} == 'main'
         with:
           repository: rladies/directory
-          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
+          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
           path: tmpd/dir
 
-      - name: Site data  - DIRECTORY - Download artifact
-        if: ${{ github.event.inputs.directory_artifact }} != 'main'
-        uses: actions/download-artifact@v2
-        with:
-          name: entries
-          path: entries/
-          run_id: ${{ github.event.inputs.directory_artifact }}
-          token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
-        
       - name: Site data - DIRECTORY - Move
         run: |
           rm -rf data/directory/* assets/directory/*
