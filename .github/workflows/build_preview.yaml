@@ -62,7 +62,7 @@ jobs:
         with:
           name: entries
           # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
-          github_token: ${{ secrets.GHA_WORKFLOW_PAT }}
+          github_token: ${{ secrets.GHA_WORKFLOW_DISPATCH }}
           # Optional, will get head commit SHA
           pr: ${{ github.event.inputs.directory }}
           # Optional, defaults to current repo
