@@ -98,7 +98,8 @@ jobs:
           run_id: ${{ github.event.inputs.directory }}
           # Optional, defaults to current repo
           repo: rladies/directory
-
+          path: entries/
+          
       - name: Site data - DIRECTORY - Move
         run: |
           rm -rf data/directory/* assets/directory/*
