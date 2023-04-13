@@ -62,11 +62,11 @@ jobs:
         with:
           name: entries
           # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
-          github_token: ${{secrets.DIRECTORY_DEPLOY_SECRET}}
+          github_token: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
           # Optional, will get head commit SHA
           pr: ${{ github.event.inputs.directory }}
           # Optional, defaults to current repo
-          repo: ${{ github.repository }}
+          repo: rladies/directory
         
       - name: Get Hugo version
         id: hugo_vr
@@ -92,7 +92,7 @@ jobs:
         if: ${{ github.event.inputs.directory_artifact }} == 'main'
         with:
           repository: rladies/directory
-          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET}}
+          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
           path: tmpd/dir
 
       - name: Site data - DIRECTORY - Move
