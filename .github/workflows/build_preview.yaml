@@ -73,7 +73,7 @@ jobs:
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
-        if: ${{ env.directory }} == 'main'
+        if: "${{ env.directory == 'main' }}"
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
@@ -81,7 +81,7 @@ jobs:
           
       - name: Site data  - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if:  ${{ env.directory }} != 'main'
+        if:  "${{ env.directory != 'main' }}"
         with:
           name: entries
           # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
