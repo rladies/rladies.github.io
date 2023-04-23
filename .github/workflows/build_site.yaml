@@ -13,7 +13,7 @@ concurrency:
 jobs:
   jsons:
     name: Check modified jsons
-    runs-on: ubuntu-22.04
+    runs-on: macOS-latest
     env:
       RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
@@ -77,9 +77,10 @@ jobs:
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "hugobd=$pubdir" >> $GITHUB_ENV
           
+      - name: Install cURL Headers
+        run: sudo apt-get install libcurl4-openssl-dev
       - uses: r-lib/actions/setup-r@v2
-      - uses: r-lib/actions/setup-renv@v2
-      - run: sudo apt-get libcurl4-openssl-dev
+      - uses: r-lib/actions/setup-renv@v2   
 
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
