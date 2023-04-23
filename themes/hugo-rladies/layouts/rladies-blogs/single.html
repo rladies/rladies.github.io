@@ -25,8 +25,7 @@
           {{ $image := resources.GetRemote . }}
           {{ with $image }}
             {{ $img := . }}
-            {{ $img := $img.Fit "600x400"}}
-            {{ $img := $img.Fit "600x400"}}
+            {{ $img := $img.Fill "300x300" }}
             {{ $data.Set "photo" $img.RelPermalink }}
           {{ end }}
         {{ end }}
