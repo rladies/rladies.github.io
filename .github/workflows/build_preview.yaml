@@ -168,8 +168,8 @@ jobs:
           script: |
             await github.rest.issues.createComment({
               issue_number: ${{ github.event.inputs.orig_pr }},
-              owner: rladies,
-              repo: directory,
+              owner: `rladies`,
+              repo: `directory`,
               body: `:tada: The preview is built! [Check it out](https://${{github.event.number}}--rladies-dev.netlify.app/directory)`
             })
 
