@@ -88,7 +88,7 @@ jobs:
           # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
           github_token: ${{ secrets.GLOBAL_PAT }}
           # Optional, will get head commit SHA
-          run_id: ${{ github.event.inputs.directory }}
+          run_id: ${{ env.directory }}
           # Optional, defaults to current repo
           repo: rladies/directory
           path: entries/
@@ -96,7 +96,7 @@ jobs:
       - name: Site data - DIRECTORY - Move
         run: |
           rm -rf data/directory/* assets/directory/*
-          if [ "${{ github.event.inputs.directory }}" = "main" ]; then
+          if [ "${{ env.directory }}" = "main" ]; then
             cp -r tmpd/dir/data/json data/directory
             cp -r tmpd/dir/data/img/* assets/directory
           else
