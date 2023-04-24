@@ -65,7 +65,7 @@ jobs:
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
           else
-            echo "directory='main'" >> $GITHUB_ENV
+            echo "directory=main" >> $GITHUB_ENV
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
           fi
         
