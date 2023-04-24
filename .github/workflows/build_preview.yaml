@@ -9,8 +9,6 @@ on:
         default: 'main'
       orig_pr:
         description: 'Originating PR'
-        required: true
-        default: 'main'
   pull_request:
     branches:
       - main
