@@ -7,6 +7,10 @@ on:
         description: 'Directory reference'
         required: true
         default: 'main'
+      orig_pr:
+        description: 'Originating PR'
+        required: true
+        default: 'main'
   pull_request:
     branches:
       - main
@@ -157,4 +161,17 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: netlify deploy --alias ${{ env.netalias }}
         shell: sh
+        
+      - uses: actions/github-script@v6
+        name: send-message
+        if: ${{ github.event.inputs.orig_pr }}
+        with:
+          github-token: ${{ secrets.GHA_WORKFLOW_DISPATCH }}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: ${{ github.event.inputs.orig_pr }},
+              owner: rladies,
+              repo: directory,
+              body: `:tada: The preview is built! [Check it out](https://${{github.event.number}}--rladies-dev.netlify.app/directory)`
+            })
 
