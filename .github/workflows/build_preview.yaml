@@ -103,7 +103,7 @@ jobs:
             cp -r tmpd/dir/data/img/* assets/directory
           else
             mv entries/json data/directory
-            if [ -d "tmpd/dir/data/img" ]; then
+            if [ -d "entries/img" ]; then
               mv entries/img/* assets/directory
             fi
           fi
