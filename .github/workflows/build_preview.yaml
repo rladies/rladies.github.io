@@ -163,16 +163,13 @@ jobs:
       - uses: actions/github-script@v6
         name: send-message
         if: ${{ github.event.inputs.orig_pr }}
-        env:
-          netlify: ${{ env.netalias }}
-          orig_pr: ${{ github.event.inputs.orig_pr }}
         with:
           github-token: ${{ secrets.GLOBAL_PAT }}
           script: |
             await github.rest.issues.createComment({
-              issue_number: process.env.orig_pr,
+              issue_number: ${{ github.event.inputs.orig_pr }},
               owner: `rladies`,
               repo: `directory`,
-              body: `:tada: The preview is built! [Check it out](https://${{process.env.netlify}}--rladies-dev.netlify.app/directory)`
+              body: `:tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app/directory)`
             })
 
