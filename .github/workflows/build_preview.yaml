@@ -63,12 +63,13 @@ jobs:
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
+          echo "directory=no" >> $GITHUB_ENV
+          echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
-          else
+          else if [ "${{ github.ref }}" = "main"]; then
             echo "directory=main" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
           fi
         
       - name: Site data - Clean folders
@@ -96,6 +97,7 @@ jobs:
           path: entries/
           
       - name: Site data - DIRECTORY - Move
+        if:  "${{ env.directory != 'no' }}"
         run: |
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
@@ -114,6 +116,9 @@ jobs:
           repository: rladies/meetup_archive
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
           path: tmpd/mtp
+          
+      - name: Site data - Meetup XML
+        run: Rscript scripts/meetup_xml.R
 
       - name: Site data - Get blogs list
         uses: actions/checkout@v3

@@ -98,6 +98,9 @@ jobs:
           repository: rladies/meetup_archive
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
           path: tmpd/mtp
+          
+      - name: Site data - Meetup XML
+        run: Rscript scripts/meetup_xml.R
 
       - name: Site data - Get blogs list
         uses: actions/checkout@v3
