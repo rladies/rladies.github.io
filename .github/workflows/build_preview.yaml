@@ -42,7 +42,7 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.2.0'
-          
+
       - name: Install R-packages
         if: env.run_validation == 'true'
         uses: r-lib/actions/setup-renv@v2    
@@ -132,8 +132,14 @@ jobs:
 
       - name: Install cURL Headers
         run: sudo apt-get install libcurl4-openssl-dev
-      - uses: r-lib/actions/setup-r@v2
-      - uses: r-lib/actions/setup-renv@v2    
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.2.0'
+          
+      - name: Setup renv
+        uses: r-lib/actions/setup-renv@v2    
 
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
