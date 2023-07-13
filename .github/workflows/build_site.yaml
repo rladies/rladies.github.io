@@ -1,4 +1,4 @@
-name: Build site and deploy production
+name: "Production: Build and deploy""
 
 on:
   workflow_dispatch:
