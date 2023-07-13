@@ -136,15 +136,20 @@ jobs:
         shell: sh
         
       - uses: actions/github-script@v6
-        name: send-message
-        if: ${{ github.event.inputs.orig_pr }}
+        name: Notify PR about build
+        if: ${{ github.event_name == 'pull_request' && github.event.inputs.orig_pr }}
+        env:
+          issue: ${{ github.event.inputs.orig_pr || github.event.pull_request.number }}
+          repo_name: ${{ github.event.inputs.orig_pr && 'directory' || (github.repository)#*/ }}
         with:
           github-token: ${{ secrets.GLOBAL_PAT }}
           script: |
+            repo_name="${{ github.repository }}"
+            repo_name="${repo_name#*/}"
             await github.rest.issues.createComment({
-              issue_number: ${{ github.event.inputs.orig_pr }},
+              issue_number: ${{ env.issue }},
               owner: `rladies`,
-              repo: `directory`,
+              repo: ${{ env.repo_name }},
               body: `:tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app/directory)`
             })
-
+        
