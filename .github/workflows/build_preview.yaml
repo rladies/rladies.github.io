@@ -1,4 +1,4 @@
-name: "Preview: Build and deploy""
+name: "Preview: Build and deploy"
 
 on:
   workflow_dispatch:

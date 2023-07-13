@@ -22,7 +22,6 @@ jobs:
         id: check_files
         run: |
           git diff-tree --no-commit-id --name-only -r ${{ github.sha }}~10..${{ github.sha }} | grep "^data/"
-          jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
           echo "{run_validation}={$(grep -c "^data/" $GITHUB_WORKSPACE/.git/FETCH_HEAD)}" >> $GITHUB_ENV
 
       - name: Setup R
