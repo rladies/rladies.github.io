@@ -56,20 +56,24 @@ some_cols <- c("meetup", "twitter",
 
 meetup <- read_json(here("data", "meetup", "chapters.json"),
                     simplifyVector = TRUE) |> 
-  bind_rows()
-warning(names(meetup))
+  bind_rows() |> 
+  arrange(urlname)
 
-chpt <- list.files(here("data", "chapters"), "json", full.names = TRUE) |> 
+list.files(here("data", "chapters"), 
+                   pattern = "json",
+                   full.names = TRUE) |> 
   lapply(read_json,
          simplifyVector = TRUE) |> 
   bind_rows() |> 
   as_tibble() |> 
   unnest(cols = c(social_media, organizers)) |> 
   nest(
-    social_media = one_of(some_cols),
+    social_media = any_of(some_cols),
     organizers = c(current, former)
   ) |> 
   mutate(
+    urlname = tolower(urlname),
+    urlname = gsub(" ", "", (urlname)),
     social_media = lapply(social_media, function(x){
       k <- na_col_rm(x)
       as.list(k)
@@ -78,12 +82,21 @@ chpt <- list.files(here("data", "chapters"), "json", full.names = TRUE) |>
       lapply(x, unlist)
     })
   ) |> 
-  select(-city) |> 
-  drop_na(urlname)
-warning(names(chpt))
-
-chpt |> 
-  left_join(meetup, by = "urlname") |> 
+  select(-city, -name) |> 
+  left_join(meetup) |> 
+  rowwise() |>
+  mutate(
+    name = if_else(
+      any(state == "", is.na(state)),
+      sprintf("R-Ladies %s", city),
+      sprintf("R-Ladies %s, %s", city, state),
+    ),
+    country_acronym = toupper(country_acronym)
+  ) |>
+  ungroup() |>
+  filter(country == "Mexico") |> 
+  drop_na(urlname) #|> 
+  #select(-city, -name) |> 
   write_chapter()
-  
-  
+
+
