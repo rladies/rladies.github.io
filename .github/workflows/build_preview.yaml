@@ -140,7 +140,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' && github.event.inputs.orig_pr }}
         env:
           issue: ${{ github.event.inputs.orig_pr || github.event.pull_request.number }}
-          repo_name: ${{ github.event.inputs.orig_pr && 'directory' || (github.repository)#*/ }}
+          repo_name: ${{ github.event.inputs.orig_pr && 'directory' || (split('/', github.repository)[1]) }}
         with:
           github-token: ${{ secrets.GLOBAL_PAT }}
           script: |
