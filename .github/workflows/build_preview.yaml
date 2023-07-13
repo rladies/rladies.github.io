@@ -140,16 +140,16 @@ jobs:
         if: ${{ github.event_name == 'pull_request' && github.event.inputs.orig_pr }}
         env:
           issue: ${{ github.event.inputs.orig_pr || github.event.pull_request.number }}
-          repo_name: ${{ github.event.inputs.orig_pr && 'directory' || (split('/', github.repository)[1]) }}
+          repo_name: ${{ github.event.inputs.orig_pr && 'rladies/directory' || (github.repository) }}
         with:
           github-token: ${{ secrets.GLOBAL_PAT }}
           script: |
-            repo_name="${{ github.repository }}"
-            repo_name="${repo_name#*/}"
+            const repoParts = process.env.repo_name.split('/');
+            const repo = repoParts[repoParts.length - 1];
             await github.rest.issues.createComment({
               issue_number: ${{ env.issue }},
-              owner: `rladies`,
-              repo: ${{ env.repo_name }},
-              body: `:tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app/directory)`
+              owner: 'rladies',
+              repo: repo,
+              body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app/directory)'
             })
         
