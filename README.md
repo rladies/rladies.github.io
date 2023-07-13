@@ -53,5 +53,11 @@ H --> J
 I --> J
 K --> L[Setup Hugo]
 L --> M[Build]
-M --> N[Deploy]
+
+M -->|Production| N[Deploy]
+
+M -->|Preview| O[Install netlify cli]
+O --> P[Deploy Netlify]
+P --> Q["Notify PR about build"]
+
 ```
