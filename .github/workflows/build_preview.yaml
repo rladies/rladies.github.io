@@ -20,6 +20,8 @@ concurrency:
 
 jobs:
   build:
+    env:
+      RENV_CONFIG_AUTOLOADER_ENABLED: FALSE
     name: Build and publish preview through Netlify
     runs-on: ubuntu-22.04
     steps:
