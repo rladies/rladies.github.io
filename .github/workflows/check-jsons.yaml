@@ -7,6 +7,10 @@ on:
       - main
       - fork_merge
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  
 jobs:
   jsons:
     name: Check modified jsons
