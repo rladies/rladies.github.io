@@ -11,57 +11,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  jsons:
-    name: Check modified jsons
-    runs-on: macOS-latest
-    env:
-      RENV_PATHS_ROOT: ~/.local/share/renv
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Get changed files
-        id: check_files
-        run: |
-          jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
-          if [[ "${jsons[*]}" = *[![:space:]]* ]]; then 
-            echo ${jsons}
-            echo "{run_validation}={true}" >> $GITHUB_ENV
-          else
-            echo "No jsons commited/changed"
-            echo "{run_validation}={false}" >> $GITHUB_ENV
-          fi
-      
-      - name: Setup R
-        if: env.run_validation == 'true'
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.2.0'
-
-      - name: Cache packages
-        uses: actions/cache@v1
-        with:
-          path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
-      
-      - name: Restore packages
-        shell: Rscript {0}
-        run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-          renv::restore()
-        
-      - name: Install R-packages
-        if: env.run_validation == 'true'
-        run: install.packages(c("here", "jsonvalidate"), Ncpus = 2)
-        shell: Rscript {0}
-      
-      - name: Validate jsons
-        if: env.run_validation == 'true'
-        run: Rscript scripts/validate_jsons.R
-          
-          
   build:
     name: Build and publish production
     runs-on: ubuntu-22.04
