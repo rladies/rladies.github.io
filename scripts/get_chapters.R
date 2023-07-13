@@ -94,9 +94,7 @@ list.files(here("data", "chapters"),
     country_acronym = toupper(country_acronym)
   ) |>
   ungroup() |>
-  filter(country == "Mexico") |> 
-  drop_na(urlname) #|> 
-  #select(-city, -name) |> 
+  drop_na(urlname) |> 
   write_chapter()
 
 
