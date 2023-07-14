@@ -53,3 +53,6 @@ package-lock.json
 tmp*
 ~/Library/Application Support/meetupr/meetupr-token.rds
 /var/folders/ws/1mjqfpsj3kv_b_z2091qkm600000gq/T//Rtmp4EPJ8U/fileecc479130cbd.rds
+
+.history
+.quarto
