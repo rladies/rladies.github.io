@@ -13,11 +13,10 @@ concurrency:
   
 jobs:
   jsons:
-    env:
-      RENV_PROFILE: "json"
     name: Check modified jsons
     runs-on: macOS-latest
     env:
+      RENV_PROFILE: "json"
       RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
       - name: Checkout repository
