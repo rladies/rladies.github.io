@@ -3,14 +3,6 @@
     "Version": "4.3.0",
     "Repositories": [
       {
-        "Name": "ggseg",
-        "URL": "https://ggseg.r-universe.dev"
-      },
-      {
-        "Name": "lcbc",
-        "URL": "https://lcbc-uio.r-universe.dev"
-      },
-      {
         "Name": "CRAN",
         "URL": "https://cloud.r-project.org"
       }

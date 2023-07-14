@@ -1,7 +1,7 @@
 name: New chapter
 description: Add a new R-Ladies chapter
 title: "NEW CHAPTER: "
-labels: ["chapter", "new"]
+labels: ["new-chapter"]
 body:
   - type: markdown
     attributes:
