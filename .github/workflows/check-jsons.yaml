@@ -13,6 +13,8 @@ concurrency:
   
 jobs:
   jsons:
+    env:
+      RENV_PROFILE: "json"
     name: Check modified jsons
     runs-on: macOS-latest
     env:
@@ -26,9 +28,19 @@ jobs:
         with:
           r-version: '4.2.0'
 
-      - name: Install R-packages
-        run: install.packages(c("here", "jsonvalidate"), Ncpus = 2)
+      - name: Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+      
+      - name: Restore packages
         shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
       
       - name: Validate jsons
         run: Rscript scripts/validate_jsons.R

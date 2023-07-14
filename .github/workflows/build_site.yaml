@@ -14,6 +14,8 @@ jobs:
   build:
     name: Build and publish production
     runs-on: ubuntu-22.04
+    env:
+      RENV_PATHS_ROOT: ~/.local/share/renv
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -36,8 +38,19 @@ jobs:
         with:
           r-version: '4.2.0'
           
-      - name: Setup renv
-        uses: r-lib/actions/setup-renv@v2    
+      - name: Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+      
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
 
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R

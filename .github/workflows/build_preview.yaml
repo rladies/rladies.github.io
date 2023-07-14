@@ -19,9 +19,9 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build: 
     env:
-      RENV_CONFIG_AUTOLOADER_ENABLED: FALSE
+      RENV_PATHS_ROOT: ~/.local/share/renv
     name: Build and publish preview through Netlify
     runs-on: ubuntu-22.04
     steps:
@@ -107,8 +107,19 @@ jobs:
         with:
           r-version: '4.2.0'
           
-      - name: Setup renv
-        uses: r-lib/actions/setup-renv@v2    
+      - name: Cache packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.RENV_PATHS_ROOT }}
+          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-renv-
+      
+      - name: Restore packages
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+          renv::restore()
 
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
