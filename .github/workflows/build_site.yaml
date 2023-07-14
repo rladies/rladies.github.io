@@ -36,19 +36,12 @@ jobs:
         with:
           r-version: '4.3.0'
           
-      - name: Cache packages
-        uses: actions/cache@v1
+      - name: Setup Renv
+        uses: r-lib/actions/setup-renv@v2
+        env:
+          RENV_CONFIG_SANDBOX_ENABLED: FALSE
         with:
-          path: ${{ env.RENV_PATHS_ROOT }}
-          key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-renv-
-      
-      - name: Restore packages
-        shell: Rscript {0}
-        run: |
-          if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
-          renv::restore()
+          profile: '"dev"'
 
       - name: Populate untranslated pages
         run: Rscript scripts/missing_translations.R
