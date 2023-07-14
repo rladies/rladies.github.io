@@ -12,5 +12,6 @@ options(
   blogdown.ext = ".Rmd",
   blogdown.subdir = "blog",
   blogdown.title_case = TRUE,
-  blogdown.hugo.version = "0.111.2"
+  blogdown.hugo.version = "0.111.2",
+  renv.config.autoloader.enabled = FALSE
 )

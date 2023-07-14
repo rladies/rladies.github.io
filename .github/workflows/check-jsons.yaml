@@ -16,7 +16,7 @@ jobs:
     name: Check modified jsons
     runs-on: macOS-latest
     env:
-      RENV_PROFILE: json
+      RENV_PROFILE: "json"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
