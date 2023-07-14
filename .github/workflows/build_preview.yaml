@@ -107,8 +107,6 @@ jobs:
           
       - name: Setup Renv
         uses: r-lib/actions/setup-renv@v2
-        env:
-          RENV_CONFIG_SANDBOX_ENABLED: FALSE
         with:
           profile: '"dev"'
           
