@@ -13,6 +13,8 @@ hugo.linux
 # History files
 .Rhistory
 .Rapp.history
+.history
+
 # Session Data files
 .RData
 # User-specific files
@@ -53,3 +55,13 @@ package-lock.json
 tmp*
 ~/Library/Application Support/meetupr/meetupr-token.rds
 /var/folders/ws/1mjqfpsj3kv_b_z2091qkm600000gq/T//Rtmp4EPJ8U/fileecc479130cbd.rds
+
+# default renv lock is here omitted
+# we only use renv for development
+# so make sure blog contributors dont add
+# the lockfile when making their post
+renv.lock
+=======
+.history
+.quarto
+
