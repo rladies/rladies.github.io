@@ -1,4 +1,4 @@
-name: "Preview: Build and deploy"
+name: "Build and deploy"
 
 on:
   workflow_dispatch:
@@ -10,9 +10,9 @@ on:
       orig_pr:
         description: 'Originating PR'
   pull_request:
+  push: 
     branches:
       - main
-      - fork_merge
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -20,27 +20,32 @@ concurrency:
 
 jobs:
   build: 
-    name: Build and publish preview through Netlify
+    name: Build and deploy
     runs-on: ubuntu-22.04
     env:
       RENV_PROFILE: "dev"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
     steps:
+    
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 2
-      
+
       - name: Set env parameters
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
-          echo "repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}" >> $GITHUB_ENV
+          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
+          echo "owner=$(dirname ${repo_name})" >> $GITHUB_ENV
+          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "token=${{ secrets.GLOBAL_PAT }}" >> $GITHUB_ENV
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
           else
+            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
             echo "directory=main" >> $GITHUB_ENV
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
           fi
@@ -127,31 +132,43 @@ jobs:
           
       - name: Build
         run: |
+          if [[ "${GITHUB_REF#refs/heads/}" == "main" ]]; then
             hugo --enableGitInfo --minify \
               -b https://${{ env.netalias }}--rladies-dev.netlify.app/
-        
+          else
+            hugo --enableGitInfo --minify 
+          fi
+
+      - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ${{ env.hugobd }}
+
+
       - name: Install netlify cli
+        if: github.ref != 'refs/heads/main'
         run: npm install netlify-cli -g
 
       - name: Deploy Netlify
+        if: github.ref != 'refs/heads/main'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: netlify deploy --alias ${{ env.netalias }}
         shell: sh
-        
+ 
+           
       - uses: actions/github-script@v6
         name: Notify PR about build
         if: ${{ github.event_name == 'pull_request' || github.event.inputs.orig_pr }}
         with:
-          github-token: ${{ secrets.GLOBAL_PAT }}
+          github-token: ${{ env.token }}
           script: |
-            const repoParts = process.env.repo_name.split('/');
-            const repo = repoParts[repoParts.length - 1];
             await github.rest.issues.createComment({
               issue_number: ${{ env.issue }},
-              owner: 'rladies',
-              repo: repo,
+              owner: '${{ env.owner }}',
+              repo: '${{ env.repo_name }}',
               body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app/directory)'
-            })
-        
+            })       

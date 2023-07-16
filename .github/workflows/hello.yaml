@@ -1,28 +1,41 @@
-name: Auto message for PR's and Issues
-on: 
+name: Hello on PR or Issue
+on:
+  workflow_dispatch:
   pull_request:
     types: [opened]
   issues:
     types: [opened]
 
 jobs:
-  send-message:
+  comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v6
-        name: send-message
-        with:
-          github-token: ${{ secrets.GHA_WORKFLOW_PAT }}
-          script: |
-            await github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `Hello!
-              
-              Thank you for contributing! 🙂 
-              
-              We are a 100% volunteer lead organisation, and will get to this as soon as we can.
-              Thank you for your patience!`
-            })
 
+      - name: Is Global team member?
+        run: |
+          author=$(jq -r '.pull_request.user.login' "$GITHUB_EVENT_PATH")
+          hello='false'
+          is_member=$(curl -s \
+            -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.GHA_WORKFLOW_PAT }}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/orgs/rladies/teams/global/memberships/${author})
+            
+          if [[ "$is_member" == "200" ]]; then
+            hello='true'
+          fi
+          echo "say_hello=${hello}" >> $GITHUB_ENV
+
+
+      - name: Comment on PR or Issue
+        if: env.TERMINUS_RELEASE == 'true'
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GHA_WORKFLOW_PAT }}
+          repository: ${{ github.repository }}
+          event-type: issue_comment
+          client-payload: |
+            '{"body": "Hello! :wave: 
+              Thanks for opening this PR/Issue. 
+              We are a volunteer organisation, 
+              but we will get back to you as soon as we can." }'
