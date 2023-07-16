@@ -61,7 +61,7 @@ tmp*
 # so make sure blog contributors dont add
 # the lockfile when making their post
 renv.lock
-=======
+
 .history
 .quarto
 
