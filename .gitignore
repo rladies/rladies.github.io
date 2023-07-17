@@ -60,7 +60,7 @@ tmp*
 # we only use renv for development
 # so make sure blog contributors dont add
 # the lockfile when making their post
-renv.lock
+/renv.lock
 
 .history
 .quarto

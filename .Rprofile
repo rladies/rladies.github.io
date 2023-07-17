@@ -1,5 +1,4 @@
 source("renv/activate.R")
-renv::restore()
 
 # Project Renvironment in this case must take
 # precedent over user Renvironment.
