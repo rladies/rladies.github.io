@@ -3,7 +3,7 @@
     "urlname": "rladies-bariloche",
     "status": "active",
     "country": "Argentina",
-    "state.region": "R<ed>o Negro",
+    "state.region": "Río Negro",
     "city": "Bariloche",
     "social_media": {
       "meetup": "rladies-bariloche",
@@ -13,7 +13,7 @@
       "slack": "rladies-brc.slack.com"
     },
     "organizers": {
-      "current": ["Lina Moreno Az<f3>car", "Sof<ed>a Ruiz", "Paula Fergnani"],
+      "current": ["Lina Moreno Az<f3>car", "Sofía Ruiz", "Paula Fergnani"],
       "former": []
     }
   }
