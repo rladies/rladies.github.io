@@ -20,7 +20,7 @@ concurrency:
 
 jobs:
   build: 
-    name: Build and deploy
+    name: Build site
     runs-on: ubuntu-22.04
     env:
       RENV_PROFILE: "dev"
@@ -36,16 +36,12 @@ jobs:
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
-          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
-          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
-          echo "owner=$(dirname ${repo_name})" >> $GITHUB_ENV
-          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
+          pubdir=$(cat config/_default/config.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
+          echo "hugobd=$pubdir" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "token=${{ secrets.GLOBAL_PAT }}" >> $GITHUB_ENV
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
           else
-            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
             echo "directory=main" >> $GITHUB_ENV
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
           fi
@@ -138,37 +134,77 @@ jobs:
           else
             hugo --enableGitInfo --minify 
           fi
+          
+      - name: Archive Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path:  ${{ env.hugobd }}
 
+  deploy-production: 
+    name: Deploy production
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path: public
+          
       - name: Deploy 🚀
         if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ${{ env.hugobd }}
+          folder: public
 
-
+  deploy-preview: 
+    name: Deploy preview
+    needs: build
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+          
       - name: Install netlify cli
         if: github.ref != 'refs/heads/main'
         run: npm install netlify-cli -g
 
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path: public
+          
       - name: Deploy Netlify
-        if: github.ref != 'refs/heads/main'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: netlify deploy --alias ${{ env.netalias }}
-        shell: sh
- 
-           
+        run: |
+          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
+          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
+          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "token=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+          else
+            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
+          fi
+          netlify deploy \
+            --alias ${{ env.netalias }} \
+            --dir=public
+
       - uses: actions/github-script@v6
         name: Notify PR about build
-        if: ${{ github.event_name == 'pull_request' || github.event.inputs.orig_pr }}
         with:
           github-token: ${{ env.token }}
           script: |
             await github.rest.issues.createComment({
               issue_number: ${{ env.issue }},
-              owner: '${{ env.owner }}',
+              owner: 'rladies',
               repo: '${{ env.repo_name }}',
-              body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app/directory)'
+              body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app)'
             })       
+
