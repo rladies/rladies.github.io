@@ -166,6 +166,18 @@ jobs:
     if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-22.04
     steps:
+      - name: Get environment
+        run: |
+          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
+          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
+          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "token=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+          else
+            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
+          fi
           
       - name: Install netlify cli
         if: github.ref != 'refs/heads/main'
@@ -182,16 +194,6 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
-          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
-          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
-          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "token=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
-          else
-            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
-          fi
           netlify deploy \
             --alias ${{ env.netalias }} \
             --dir=public
