@@ -147,6 +147,11 @@ jobs:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-22.04
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+          
       - name: Download Build Artifact
         uses: actions/download-artifact@v3
         with:
@@ -180,7 +185,6 @@ jobs:
           fi
           
       - name: Install netlify cli
-        if: github.ref != 'refs/heads/main'
         run: npm install netlify-cli -g
 
       - name: Download Build Artifact
