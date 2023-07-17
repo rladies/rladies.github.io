@@ -1,4 +1,4 @@
-name: Build site and deploy preview
+name: "Build and deploy"
 
 on:
   workflow_dispatch:
@@ -10,50 +10,23 @@ on:
       orig_pr:
         description: 'Originating PR'
   pull_request:
+  push: 
     branches:
       - main
-      - fork_merge
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  jsons:
-    name: Check modified jsons
-    runs-on: macOS-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-
-      - name: Get changed files
-        id: check_files
-        run: |
-          jsons=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep json$ | xargs)
-          if [[ "${jsons[*]}" = *[![:space:]]* ]]; then 
-            echo ${jsons}
-            echo "{run_validation}={true}" >> $GITHUB_ENV
-          else
-            echo "No jsons commited/changed"
-            echo "{run_validation}={false}" >> $GITHUB_ENV
-          fi
-          
-      - name: Setup R
-        if: env.run_validation == 'true'
-        uses: r-lib/actions/setup-r@v2
-        
-      - name: Install R-packages
-        if: env.run_validation == 'true'
-        uses: r-lib/actions/setup-renv@v2    
-       
-      - name: Validate jsons
-        if: env.run_validation == 'true'
-        run: Rscript scripts/validate_jsons.R
-          
-          
-  build:
-    name: Build and publish preview through Netlify
+  build: 
+    name: Build site
     runs-on: ubuntu-22.04
+    env:
+      RENV_PROFILE: "dev"
+      RENV_CONFIG_SANDBOX_ENABLED: FALSE
     steps:
+    
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
@@ -61,8 +34,10 @@ jobs:
 
       - name: Set env parameters
         run: |
-          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g)
+          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
+          pubdir=$(cat config/_default/config.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
+          echo "hugobd=$pubdir" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
@@ -70,6 +45,20 @@ jobs:
             echo "directory=main" >> $GITHUB_ENV
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
           fi
+          
+      - name: Install cURL Headers
+        run: sudo apt-get install libcurl4-openssl-dev
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          
+      - name: Setup Renv
+        uses: r-lib/actions/setup-renv@v2
+          
+      - name: Populate untranslated pages
+        run: Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
         run: rm -r data/directory data/rblogs
@@ -82,7 +71,7 @@ jobs:
           ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
           path: tmpd/dir
           
-      - name: Site data  - DIRECTORY - Download artifact
+      - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
         if:  "${{ env.directory != 'main' }}"
         with:
@@ -127,14 +116,6 @@ jobs:
           cp -r tmpd/rblogs/blogs data/rblogs
           cp -r tmpd/mtp/data/* data/meetup/
           rm -rf tmpd
-
-      - name: Install cURL Headers
-        run: sudo apt-get install libcurl4-openssl-dev
-      - uses: r-lib/actions/setup-r@v2
-      - uses: r-lib/actions/setup-renv@v2    
-
-      - name: Populate untranslated pages
-        run: Rscript scripts/missing_translations.R
         
       - name: Site data - merge chapter and meetup
         run: Rscript --verbose scripts/get_chapters.R
@@ -147,29 +128,85 @@ jobs:
           
       - name: Build
         run: |
+          if [[ "${GITHUB_REF#refs/heads/}" == "main" ]]; then
             hugo --enableGitInfo --minify \
               -b https://${{ env.netalias }}--rladies-dev.netlify.app/
-        
+          else
+            hugo --enableGitInfo --minify 
+          fi
+          
+      - name: Archive Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path:  ${{ env.hugobd }}
+
+  deploy-production: 
+    name: Deploy production
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path: public
+          
+      - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+
+  deploy-preview: 
+    name: Deploy preview
+    needs: build
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Get environment
+        run: |
+          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
+          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
+          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "token=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+          else
+            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
+          fi
+          
       - name: Install netlify cli
+        if: github.ref != 'refs/heads/main'
         run: npm install netlify-cli -g
 
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path: public
+          
       - name: Deploy Netlify
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        run: netlify deploy --alias ${{ env.netalias }}
-        shell: sh
-        
+        run: |
+          netlify deploy \
+            --alias ${{ env.netalias }} \
+            --dir=public
+
       - uses: actions/github-script@v6
-        name: send-message
-        if: ${{ github.event.inputs.orig_pr }}
+        name: Notify PR about build
         with:
-          github-token: ${{ secrets.GLOBAL_PAT }}
+          github-token: ${{ env.token }}
           script: |
             await github.rest.issues.createComment({
-              issue_number: ${{ github.event.inputs.orig_pr }},
-              owner: `rladies`,
-              repo: `directory`,
-              body: `:tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app/directory)`
-            })
+              issue_number: ${{ env.issue }},
+              owner: 'rladies',
+              repo: '${{ env.repo_name }}',
+              body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app)'
+            })       
 
