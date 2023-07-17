@@ -1,0 +1,212 @@
+name: "Build and deploy"
+
+on:
+  workflow_dispatch:
+    inputs:
+      directory:
+        description: 'Directory reference'
+        required: true
+        default: 'main'
+      orig_pr:
+        description: 'Originating PR'
+  pull_request:
+  push: 
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build: 
+    name: Build site
+    runs-on: ubuntu-22.04
+    env:
+      RENV_PROFILE: "dev"
+      RENV_CONFIG_SANDBOX_ENABLED: FALSE
+    steps:
+    
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Set env parameters
+        run: |
+          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
+          echo "hugovr=$ver" >> $GITHUB_ENV
+          pubdir=$(cat config/_default/config.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
+          echo "hugobd=$pubdir" >> $GITHUB_ENV
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+          else
+            echo "directory=main" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
+          fi
+          
+      - name: Install cURL Headers
+        run: sudo apt-get install libcurl4-openssl-dev
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          
+      - name: Setup Renv
+        uses: r-lib/actions/setup-renv@v2
+          
+      - name: Populate untranslated pages
+        run: Rscript scripts/missing_translations.R
+        
+      - name: Site data - Clean folders
+        run: rm -r data/directory data/rblogs
+        
+      - name: Site data - DIRECTORY - Get
+        uses: actions/checkout@v3
+        if: "${{ env.directory == 'main' }}"
+        with:
+          repository: rladies/directory
+          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
+          path: tmpd/dir
+          
+      - name: Site data - DIRECTORY - Download artifact
+        uses: dawidd6/action-download-artifact@v2
+        if:  "${{ env.directory != 'main' }}"
+        with:
+          name: entries
+          # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
+          github_token: ${{ secrets.GLOBAL_PAT }}
+          # Optional, will get head commit SHA
+          run_id: ${{ env.directory }}
+          # Optional, defaults to current repo
+          repo: rladies/directory
+          path: entries/
+          
+      - name: Site data - DIRECTORY - Move
+        run: |
+          rm -rf data/directory/* assets/directory/*
+          if [ "${{ env.directory }}" = "main" ]; then
+            cp -r tmpd/dir/data/json data/directory
+            cp -r tmpd/dir/data/img/* assets/directory
+          else
+            mv entries/json data/directory
+            if [ -d "entries/img" ]; then
+              mv entries/img/* assets/directory
+            fi
+          fi
+          
+      - name: Site data - Meetup
+        uses: actions/checkout@v3
+        with:
+          repository: rladies/meetup_archive
+          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
+          path: tmpd/mtp
+
+      - name: Site data - Get blogs list
+        uses: actions/checkout@v3
+        with:
+          repository: rladies/awesome-rladies-blogs
+          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
+          path: tmpd/rblogs
+          
+      - name: Site data - clean cloned repos
+        run: |
+          cp -r tmpd/rblogs/blogs data/rblogs
+          cp -r tmpd/mtp/data/* data/meetup/
+          rm -rf tmpd
+        
+      - name: Site data - merge chapter and meetup
+        run: Rscript --verbose scripts/get_chapters.R
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.hugovr }}
+          extended: true
+          
+      - name: Build
+        run: |
+          if [[ "${GITHUB_REF#refs/heads/}" == "main" ]]; then
+            hugo --enableGitInfo --minify \
+              -b https://${{ env.netalias }}--rladies-dev.netlify.app/
+          else
+            hugo --enableGitInfo --minify 
+          fi
+          
+      - name: Archive Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path:  ${{ env.hugobd }}
+
+  deploy-production: 
+    name: Deploy production
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path: public
+          
+      - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+
+  deploy-preview: 
+    name: Deploy preview
+    needs: build
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Get environment
+        run: |
+          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
+          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
+          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "token=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+          else
+            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
+          fi
+          
+      - name: Install netlify cli
+        if: github.ref != 'refs/heads/main'
+        run: npm install netlify-cli -g
+
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact-${{ github.run_id }}
+          path: public
+          
+      - name: Deploy Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          netlify deploy \
+            --alias ${{ env.netalias }} \
+            --dir=public
+
+      - uses: actions/github-script@v6
+        name: Notify PR about build
+        with:
+          github-token: ${{ env.token }}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: ${{ env.issue }},
+              owner: 'rladies',
+              repo: '${{ env.repo_name }}',
+              body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app)'
+            })       
+
