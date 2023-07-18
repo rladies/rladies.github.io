@@ -128,11 +128,11 @@ jobs:
           
       - name: Build
         run: |
-          if [[ "${GITHUB_REF#refs/heads/}" == "main" ]]; then
+          if [[ ${{github.ref}} == 'refs/heads/main' ]]; then
+            hugo --enableGitInfo --minify 
+          else
             hugo --enableGitInfo --minify \
               -b https://${{ env.netalias }}--rladies-dev.netlify.app/
-          else
-            hugo --enableGitInfo --minify 
           fi
           
       - name: Archive Build Artifact
