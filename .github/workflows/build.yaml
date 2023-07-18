@@ -128,7 +128,7 @@ jobs:
           
       - name: Build
         run: |
-          if [[ ${{github.ref}} == 'refs/heads/main' ]]; then
+          if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
             hugo --enableGitInfo --minify 
           else
             hugo --enableGitInfo --minify \
