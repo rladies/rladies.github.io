@@ -1,0 +1,71 @@
+404_title: '404'
+404_description: 'Ops! Esta página não existe!'
+subheader: ''
+
+# menu ----
+home: "Home"
+about-us: 'About'
+mission: "Mission"
+get-involved: 'Get involved'
+global-team: 'Meet the global team'
+history: 'History'
+news: 'News'
+directory: 'Directory'
+activities: 'Activities'
+events: 'Events'
+mentoring: 'Mentoring Program'
+coordinated: 'Coordinated by the Global Team'
+dashboard: 'Global dashboard'
+rladies-blogs: 'Blogs by R-Ladies'
+press: 'In the press'
+blog: 'Blog'
+
+# counters ----
+counter_countries: 'Countries'
+counter_chapters: 'Chapters'
+counter_events: 'Events'
+counter_archives: '{{.Count}} Posts em Total'
+counter_tagcloud: '{{.Count}} Tags em Total'
+counter_categories: '{{.Count}} Categorias em Total'
+
+# footer ----
+footer_lang_title: 'Línguas'
+footer_followme_title: 'Siga-me'
+footer_contact_title: 'Contato'
+footer_donate: 'Donate to'
+footer_text_title: 'Código de Conducta'
+footer_text_content: |
+    R-Ladies tem como objetivo proporcionar uma experiência livre de assédio
+    para todos. Não toleramos nenhuma forma de assédio aos participantes. Leia
+    nosso [código de conduta](/pt/coc)
+
+# Other ----
+archive: 'Archivo'
+tags: 'Tags'
+tag: 'Tag: '
+categories: 'Categorias'
+category: 'Categoria: '
+last_edit: 'This post was last edited on'
+last_message: 'with the message'
+prev: 'Prévio'
+next: 'Seguinte'
+toc: 'Contéudo'
+author: 'Autor'
+license: 'Licença'
+morePost: 'Mais Posts'
+read_more: 'Ler mais'
+see_details: 'Veja detalhes'
+download: 'Baixar'
+
+# Language ----
+language: 'Linguagem'
+translations: 'Traduções'
+missing_translation: |
+    Desculpe, esta página ainda não foi traduzida 
+    para o português.
+    
+# Read more in other langs ----
+read_en: 'Read in English'
+read_es: 'Leer en Español'
+read_fr: 'Lire en français'
+read_de: 'Lese in Deutsch'

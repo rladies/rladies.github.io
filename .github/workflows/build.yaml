@@ -129,7 +129,7 @@ jobs:
       - name: Build
         run: |
           if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
-            hugo --enableGitInfo --minify 
+            hugo --enableGitInfo --minify --environment production
           else
             hugo --enableGitInfo --minify \
               -b https://${{ env.netalias }}--rladies-dev.netlify.app/
