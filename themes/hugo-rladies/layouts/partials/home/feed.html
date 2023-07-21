@@ -1,7 +1,7 @@
 {{ $data := newScratch }}
  
 <div class="container expand-grid section topspace" id="feed">
-  <h2 class="section-title"><span>Latest posts</span></h2>
+  <h2 class="section-title"><span> {{ i18n "home_feed" | markdownify }}</span></h2>
   <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
     {{ with .Site.GetPage "section" "news" }}
       {{ range first 1 .Pages }}
