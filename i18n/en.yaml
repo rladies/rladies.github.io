@@ -21,7 +21,6 @@ press: 'In the press'
 blog: 'Blog'
 
 # counters ----
-counter_events: 'Events'
 counter_archives: '{{.Count}} posts In Total'
 counter_tagcloud: '{{.Count}} Tags In Total'
 counter_categories: '{{.Count}} Categories In Total'
@@ -50,18 +49,17 @@ chapters: 'Chapters'
 city: "City"
 cities: "Cities"
 event: "Event"
-events: "Events
 
 # Other ----
 social_media: "Social media"
 archive: 'Archive'
-tags: 'Tags'
 tag: 'Tag: '
-categories: 'Categories'
+tags: 'Tags'
 category: 'Category: '
+categories: 'Categories'
+author: 'Author'
 authors: 'Authors'
 author_item: 'Author: '
-author: 'Author'
 prev: 'Prev'
 next: 'Next'
 toc: 'Table of Contents'

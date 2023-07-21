@@ -33,7 +33,8 @@ main:
     
   - identifier: activities
     weight: 4
-  - url: /activities/events/
+  - identifier: events
+    url: /activities/events/
     weight: 1
     parent: activities
   - identifier: mentoring
