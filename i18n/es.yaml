@@ -71,7 +71,6 @@ last_edit: 'This post was last edited on'
 last_message: 'with the message'
 
 # Language ----
-language: 'Lenguaje'
 translations: 'Traducciones'
 missing_translation: |
   Lo sentimos, esta página aún no ha sido 
