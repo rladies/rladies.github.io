@@ -21,9 +21,6 @@ press: 'In the press'
 blog: 'Blog'
 
 # counters ----
-counter_countries: 'Countries'
-counter_chapters: 'Chapters'
-counter_events: 'Events'
 counter_archives: '{{.Count}} Posts em Total'
 counter_tagcloud: '{{.Count}} Tags em Total'
 counter_categories: '{{.Count}} Categorias em Total'
@@ -39,33 +36,43 @@ footer_text_content: |
     para todos. Não toleramos nenhuma forma de assédio aos participantes. Leia
     nosso [código de conduta](/pt/coc)
 
+# Home ----
+home_feed: 'Latest posts'
+home_featured: 'Featured R-Ladies'
+home_activity: 'Our activities'
+
+# Globals ----
+country: 'Country'
+countries: 'Countries'
+chapter: "Chapter"
+chapters: 'Chapters'
+city: "City"
+cities: "Cities"
+event: "Event"
+
 # Other ----
+social_media: "Social media"
 archive: 'Archivo'
-tags: 'Tags'
 tag: 'Tag: '
-categories: 'Categorias'
+tags: 'Tags'
 category: 'Categoria: '
-last_edit: 'This post was last edited on'
-last_message: 'with the message'
+categories: 'Categorias'
+author: 'Autor'
+authors: 'Authors'
 prev: 'Prévio'
 next: 'Seguinte'
 toc: 'Contéudo'
-author: 'Autor'
-license: 'Licença'
-morePost: 'Mais Posts'
+comments: 'Comments'
 read_more: 'Ler mais'
 see_details: 'Veja detalhes'
-download: 'Baixar'
+
+# git history
+last_edit: 'This post was last edited on'
+last_message: 'with the message'
 
 # Language ----
-language: 'Linguagem'
 translations: 'Traduções'
 missing_translation: |
     Desculpe, esta página ainda não foi traduzida 
     para o português.
-    
-# Read more in other langs ----
-read_en: 'Read in English'
-read_es: 'Leer en Español'
-read_fr: 'Lire en français'
-read_de: 'Lese in Deutsch'
+   

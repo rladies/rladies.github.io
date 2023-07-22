@@ -21,14 +21,12 @@ press: 'Dans la presse'
 blog: 'Blog'
 
 # counters ----
-counter_countries: 'Countries'
-counter_chapters: 'Chapters'
-counter_events: 'Events'
 counter_archives: '{{.Count}} articles au total'
 counter_tagcloud: '{{.Count}} Tags au total'
 counter_categories: '{{.Count}} Catégories au total'
 
 # footer ----
+footer_lang_title: 'Langage'
 footer_followme_title: 'Follow us'
 footer_contact_title: 'Contact'
 footer_donate: 'Donate'
@@ -37,31 +35,43 @@ footer_text_content: |
     R-Ladies is dedicated to providing a harassment-free experience for
     everyone. We do not tolerate harassment of participants in any form. Read
     our [Code of Conduct](/fr/coc)
-    
+
+# Home ----
+home_feed: 'Latest posts'
+home_featured: 'Featured R-Ladies'
+home_activity: 'Our activities'
+
+# Globals ----
+country: 'Country'
+countries: 'Countries'
+chapter: "Chapter"
+chapters: 'Chapters'
+city: "City"
+cities: "Cities"
+event: "Event"
+
 # Other ----
+social_media: "Social media"
 archive: 'Archive'
-tags: 'Tags'
 tag: 'Tag: '
-categories: 'Catégories'
+tags: 'Tags'
 category: 'Catégory: '
-last_edit: 'This post was last edited on'
-last_message: 'with the message'
+categories: 'Catégories'
+author: 'Auteur'
+authors: 'Authors'
 prev: 'Prec'
 next: 'Suiv'
 toc: 'Sommaire'
-author: 'Auteur'
-license: 'Licence'
+comments: 'Comments'
 read_more: 'Lire la suite'
 see_details: 'See details'
-morePost: "Plus d'articles"
+
+# git history
+last_edit: 'This post was last edited on'
+last_message: 'with the message'
 
 # Language ----
-language: 'Langage'
 translations: 'Translations'
-missing_translation: 'Nous sommes désolé·e·s, cette page n''a pas été traduite en français.'
-
-# Read more in other langs ----
-read_pt: 'Leia em português'
-read_en: 'Read in english'
-read_de: 'Lese in Deutsch'
-read_es: 'Leer en Español'
+missing_translation: |
+    Nous sommes désolé·e·s, cette page 
+    n''a pas été traduite en français.'

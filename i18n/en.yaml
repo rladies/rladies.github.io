@@ -59,24 +59,19 @@ category: 'Category: '
 categories: 'Categories'
 author: 'Author'
 authors: 'Authors'
-author_item: 'Author: '
 prev: 'Prev'
 next: 'Next'
 toc: 'Table of Contents'
-last_edit: 'This post was last edited on'
-last_message: 'with the message'
 comments: 'Comments'
 read_more: 'Read more'
 see_details: 'See details'
+
+# git history
+last_edit: 'This post was last edited on'
+last_message: 'with the message'
 
 # Language ----
 translations: 'Translations'
 missing_translation: |
     We are sorry. This page is missing a 
     translation to English.
-
-# Read more in other langs ----
-read_es: 'Leer en español'
-read_pt: 'Leia em português'
-read_fr: 'Lire en français'
-read_de: 'Lese in Deutsch'
