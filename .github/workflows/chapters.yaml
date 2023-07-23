@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-    - 'data/chatpers/'
+    - 'data/chapters/'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
