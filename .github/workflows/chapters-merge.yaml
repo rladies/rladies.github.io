@@ -1,0 +1,63 @@
+name: "Merge chapters and meetup"
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+    - 'data/chapters/'
+  schedule:
+    - cron: "10 */12 * * *"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  merge: 
+    name: Merge chapters and meetup
+    runs-on: ubuntu-22.04
+    env:
+      RENV_PROFILE: "dev"
+      RENV_CONFIG_SANDBOX_ENABLED: FALSE
+    steps:
+    
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+          
+      - name: Install cURL Headers
+        run: |
+          sudo apt-get update
+          sudo apt-get install libcurl4-openssl-dev
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.0'
+          
+      - name: Setup Renv
+        uses: r-lib/actions/setup-renv@v2
+          
+      - name: Site data - Meetup
+        uses: actions/checkout@v3
+        with:
+          repository: rladies/meetup_archive
+          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
+          path: tmpd/mtp
+          
+      - name: Site data - clean cloned repos
+        run: |
+          cp -r tmpd/mtp/data/* data/meetup/
+          rm -rf tmpd
+        
+      - name: Site data - merge chapter and meetup
+        run: Rscript --verbose scripts/get_chapters.R
+
+      - name: Commit data	
+        run: |	
+          git config --local user.email "actions@github.com"	
+          git config --local user.name "GitHub Actions"	
+          git add data/	
+          git commit -m 'Update chapters data' || echo "No meetup data to commit"	
+          
