@@ -1,4 +1,4 @@
-name: "Build and deploy"
+name: "Merge chapters and meetup"
 
 on:
   workflow_dispatch:
@@ -11,8 +11,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build: 
-    name: Build site
+  merge: 
+    name: Merge chapters and meetup
     runs-on: ubuntu-22.04
     env:
       RENV_PROFILE: "dev"
