@@ -58,6 +58,6 @@ jobs:
         run: |	
           git config --local user.email "actions@github.com"	
           git config --local user.name "GitHub Actions"	
-          git add data/	
-          git commit -m 'Update chapters data' || echo "No meetup data to commit"	
+          git add data/chapters_meetup.json	
+          git commit -m 'Update chapters data' || echo "No new data to commit"	
           
