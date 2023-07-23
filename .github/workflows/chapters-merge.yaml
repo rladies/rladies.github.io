@@ -5,6 +5,8 @@ on:
   push:
     paths:
     - 'data/chapters/'
+  schedule:
+    - cron: "10 */12 * * *"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
