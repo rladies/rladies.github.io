@@ -59,7 +59,9 @@ jobs:
           r-version: '4.3.0'
           
       - name: Populate untranslated pages
-        run: Rscript scripts/missing_translations.R
+        run: |
+          rm .Rprofile # avoid starting renv
+          Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
         run: rm -r data/directory data/rblogs
