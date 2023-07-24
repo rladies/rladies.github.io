@@ -38,7 +38,7 @@ jobs:
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
-          pubdir=$(cat config/_default/config.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
+          pubdir=$(cat config/_default/hugo.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
           echo "hugobd=$pubdir" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
