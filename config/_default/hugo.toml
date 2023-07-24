@@ -1,7 +1,7 @@
 baseURL = "https://rladies-dev.netlify.app/"
 title = "R-Ladies Global"
 theme = "hugo-rladies"
-publishDir = "build"
+publishDir = "public"
 ignoreFiles = ["\\.Rmd$","\\.qmd$", "_cache$", "\\.DS_Store", "_files$", 
   "content/post/\\*/index\\*\\.html", "_cache$", "README", "README_img/"]
 
