@@ -20,6 +20,9 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  hugobd: public
+  
 jobs:
   build: 
     name: Build site
@@ -38,8 +41,6 @@ jobs:
         run: |
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
-          pubdir=$(cat config/_default/hugo.toml | grep publishDir | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g )
-          echo "hugobd=$pubdir" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
@@ -129,9 +130,12 @@ jobs:
       - name: Build
         run: |
           if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
-            hugo --enableGitInfo --minify --environment production
+            hugo --enableGitInfo --minify \
+              --environment production \
+              -d ${{ env.hugobd }}
           else
             hugo --enableGitInfo --minify \
+              -d ${{ env.hugobd }} \
               -b https://${{ env.netalias }}--rladies-dev.netlify.app/
           fi
           
