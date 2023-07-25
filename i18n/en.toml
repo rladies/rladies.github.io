@@ -25,6 +25,8 @@
   other = "Chapters"
 [counter_events]
   other = "Events"
+[counter_entries]
+  other = "Entries"
   
 [footer_lang_title]
   other = "Languages"
