@@ -20,5 +20,5 @@ title: "Get Involved"
 * Teach.  
 * Blog.  
 * Tweet, Retweet and follow @RLadiesGlobal and R-Ladies chapter accounts.  
-* And if you are an R-Lady and want to start a chapter near you, please get in touch via info[at]rladies[dot]org.  
+* And if you are an R-Lady and want to start a chapter near you, please get in touch via chapters[at]rladies[dot]org.  
 
