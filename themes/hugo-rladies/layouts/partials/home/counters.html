@@ -1,5 +1,3 @@
-{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 1 }}
-{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
 {{ $events := where .Site.Data.meetup.events "type" "PAST" }}
 
 <!-- Start Counter Section -->
@@ -10,7 +8,7 @@
   		<div class="icon-box">
   			<h3>{{ i18n "counter_countries" | markdownify }}</h3>
   			<i class="fa-solid fa-globe"></i>
-  			<p class="count" data-count="{{ $countries | len}}">0</p>
+  			<p class="count" data-count="{{  .Site.Data.chapter_stats.countries }}">0</p>
   		</div>
 		</div>
 	</div>
@@ -20,7 +18,7 @@
   		<div class="icon-box">
 			<h3>{{ i18n "counter_chapters" | markdownify }}</h3>
 			  <i class="fa-solid fa-map-location-dot"></i>
-  			<p class="count" data-count="{{ $chapters | len }}">0</p>
+  			<p class="count" data-count="{{ .Site.Data.chapter_stats.chapters }}">0</p>
   		</div>
 		</div>
 	</div>
