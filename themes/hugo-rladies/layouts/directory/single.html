@@ -43,10 +43,18 @@
   <div class="entry-content">
 		{{ .Content }}
 	</div>
-
+  <div id="counters" class="row justify-content-center section topspace">
+  	<div class="col-sm-5 col-md-4 text-center fadeInUp" data-wow-duration="500ms">
+    	<div class="block">
+    		<div class="icon-box">
+    			<h3>{{ i18n "counter_entries" | markdownify }}</h3>
+    			<i class="fa-solid fa-user"></i>
+    			<p class="count" data-count="{{ $directory | len }}">0</p>
+    		</div>
+  		</div>
+  	</div>
+  </div>
   <div class="flex-container" id="directory-content">
-    
-
     <div id="selection">
       
       <div class="input-group w-100">
