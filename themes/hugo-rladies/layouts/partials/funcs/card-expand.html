@@ -6,8 +6,7 @@
 
 {{ $tags := slice }}
 {{ range $index, $item := . }}
-    {{ $item := $item | urlize | safeHTML}}
-    {{ $replaced := replaceRE "[[:punct:]]" "," ($item | safeHTML) }}
+    {{ $replaced := replaceRE "[[:punct:]]" "," ($item | urlize) }}
     {{ $split := split $replaced "," }}
     {{ $tags = $tags | append $split }}
 {{ end }}
