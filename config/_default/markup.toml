@@ -1,5 +1,0 @@
-defaultMarkdownHandler = "goldmark"
-
-[goldmark.renderer]
-  unsafe= true
-  

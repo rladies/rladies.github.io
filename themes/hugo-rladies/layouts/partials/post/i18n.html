@@ -9,7 +9,7 @@
         {{ if $trans }}
           <div>
             <a lang="{{.Lang}}" href="{{ .Permalink }}">
-              {{ i18n (printf "read_%s" .Lang) }}: {{ .Title }}
+              {{ index .Site.Data.read_in_lang .Lang }}
             </a>
           </div>
         {{ end }}

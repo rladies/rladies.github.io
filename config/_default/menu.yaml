@@ -1,0 +1,63 @@
+main:
+  - identifier: home
+    url: /
+    weight: 1
+    
+  - identifier: about-us
+    url: '#'
+    weight: 2
+  - identifier: mission
+    url: /about-us/mission/
+    weight: 1
+    parent: about-us
+  - identifier: get-involved
+    url: /about-us/involved/
+    weight: 2
+    parent: about-us
+  - identifier: global-team
+    url: /about-us/global-team/
+    weight: 3
+    parent: about-us
+  - identifier: history
+    url: /about-us/history/
+    weight: 4
+    parent: about-us
+  - identifier: news
+    url: /news/
+    weight: 5
+    parent: about-us
+    
+  - identifier: directory
+    url: /directory/
+    weight: 3
+    
+  - identifier: activities
+    weight: 4
+  - identifier: events
+    url: /activities/events/
+    weight: 1
+    parent: activities
+  - identifier: mentoring
+    url: /activities/mentoring/
+    weight: 2
+    parent: activities
+  - identifier: coordinated
+    url: /activities/gt-coordinated/
+    weight: 3
+    parent: activities
+  - identifier: dashboard
+    url: 'https://benubah.github.io/r-community-explorer/rladies.html'
+    weight: 4
+    parent: activities
+  - identifier: rladies-blogs
+    url: /activities/rladies-blogs
+    weight: 5
+    parent: activities
+  - identifier: press
+    url: /press
+    weight: 7
+    parent: activities
+    
+  - identifier: blog
+    url: /blog
+    weight: 5
