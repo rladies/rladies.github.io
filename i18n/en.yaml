@@ -1,0 +1,77 @@
+404_title:  '404'
+404_description: "Oops! This page doesn't exist!"
+subheader: ''
+
+# menu ----
+home: "Home"
+about-us: 'About'
+mission: "Mission"
+get-involved: 'Get involved'
+global-team: 'Meet the global team'
+history: 'History'
+news: 'News'
+directory: 'Directory'
+activities: 'Activities'
+events: 'Events'
+mentoring: 'Mentoring Program'
+coordinated: 'Coordinated by the Global Team'
+dashboard: 'Global dashboard'
+rladies-blogs: 'Blogs by R-Ladies'
+press: 'In the press'
+blog: 'Blog'
+
+# counters ----
+counter_archives: '{{.Count}} posts In Total'
+counter_tagcloud: '{{.Count}} Tags In Total'
+counter_categories: '{{.Count}} Categories In Total'
+
+# footer ----
+footer_lang_title: 'Languages'
+footer_followme_title: 'Follow us'
+footer_contact_title: 'Contact'
+footer_donate: 'Donate to'
+footer_text_title: 'Code of Conduct'
+footer_text_content: |
+    R-Ladies is dedicated to providing a harassment-free 
+    experience for everyone. We do not tolerate harassment 
+    of participants in any form. Read our [Code of Conduct](/coc)
+
+# Home ----
+home_feed: 'Latest posts'
+home_featured: 'Featured R-Ladies'
+home_activity: 'Our activities'
+
+# Globals ----
+country: 'Country'
+countries: 'Countries'
+chapter: "Chapter"
+chapters: 'Chapters'
+city: "City"
+cities: "Cities"
+event: "Event"
+
+# Other ----
+social_media: "Social media"
+archive: 'Archive'
+tag: 'Tag: '
+tags: 'Tags'
+category: 'Category: '
+categories: 'Categories'
+author: 'Author'
+authors: 'Authors'
+prev: 'Prev'
+next: 'Next'
+toc: 'Table of Contents'
+comments: 'Comments'
+read_more: 'Read more'
+see_details: 'See details'
+
+# git history
+last_edit: 'This post was last edited on'
+last_message: 'with the message'
+
+# Language ----
+translations: 'Translations'
+missing_translation: |
+    We are sorry. This page is missing a 
+    translation to English.

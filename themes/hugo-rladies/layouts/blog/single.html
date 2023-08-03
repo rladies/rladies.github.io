@@ -1,9 +1,10 @@
 
 {{ define "main"}}
 		<p>{{ .Content }}</p>
-
     {{ with .Params.tags -}}
-      <div class="post-tags">
+    
+      <div class="post-tags my-2">
+        {{ i18n "tags"}}:
         {{ range . }}
         {{- $name := . -}}
         {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
@@ -12,15 +13,25 @@
         {{ end }}
       </div>
     {{- end }}
-    <br>
-
 
     <!-- Author Info -->
-    {{ if and (.Params.author | default .Site.Author.name) (.Params.showAuthorInfo | default .Site.Params.showAuthorInfo) }}
-    {{ partial "author_info.html" (dict "author" (.Params.author | default .Site.Author.name) "context" $) }}
-    {{ end }}
-    
-    <div>
+     <div class="my-2">
+       {{ $type := (printf "%T" .Params.author) }}
+      
+      {{ if eq $type "string" }}
+         {{ i18n "author" }}: {{ .Params.author | markdownify }}
+      {{ else }}
+        {{ with .Params.author }}
+          {{ i18n "authors" }}: 
+          {{ range . }}
+            <li>{{. | markdownify }}</li>
+          {{ end }}
+        {{end}}
+      {{ end }}
+
+    </div>
+
+    <div class="my-2">
       <p class="text-muted">
       {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }} {{ i18n "last_message"}} 
       {{- if $.GitInfo -}}

@@ -1,0 +1,60 @@
+name: R-Ladies Global
+email: 'info[at]rladies[dot]org'
+avatar: images/logo.png
+avatarclass: rounded
+year: 2013
+
+banner: images/user2017.jpg
+bannerOverlay: '#88398a'
+
+favicon: images/favicon.png
+DateForm: 2 January 2006
+showSubheader: false
+
+footerEnableContact: true
+footerEnableFollowme: true
+footerEnableTextWidget: true
+footerEnableLangWidget: true
+
+social:
+  - title: twitter
+    url: 'https://twitter.com/RLadiesGlobal'
+    icon: fab fa-twitter-square
+    footer: true
+    sharethis: true
+    network: twitter
+  - title: instagram
+    url: 'https://www.instagram.com/rladiesglobal'
+    icon: fab fa-instagram
+    footer: true
+    sharethis: false
+    network: ''
+  - title: github
+    url: 'https://github.com/rladies'
+    icon: fab fa-github-square
+    footer: true
+    sharethis: false
+    network: ''
+  - title: meetup
+    url: 'https://www.meetup.com/pro/rladies/'
+    footer: true
+    sharethis: true
+    icon: fab fa-meetup
+    network: ''
+  - title: youtube
+    url: 'https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng'
+    footer: true
+    sharethis: true
+    icon: fab fa-youtube
+    network: ''
+twitter:
+  - title: We are R-Ladies
+    url: 'https://twitter.com/WeAreRLadies'
+    footer: true
+    sharethis: false
+    network: ''
+  - title: IWD R-Ladies
+    url: 'https://twitter.com/rladies_iwd'
+    footer: true
+    sharethis: false
+    network: ''

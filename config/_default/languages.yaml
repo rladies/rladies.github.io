@@ -1,0 +1,25 @@
+
+en:
+  params:
+    languageName: "English"
+    weight: 1
+    description: "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+
+es:
+  params:
+    languageName: "Español"
+    weight: 2
+    description: "R-Ladies es una organización mundial para promover la diversidad de género en la comunidad R"
+
+pt:
+  params:
+    languageName: "Português"
+    weight: 3
+    description: "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+
+fr:
+  params:
+    languageName: "Français"
+    weight: 4
+    description: "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+
