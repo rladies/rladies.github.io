@@ -9,9 +9,8 @@ content <- content[grepl("[.]md", content)]
 dirs <-  unique(dirname(content))
 
 # Get the site languages
-site_lang <- list.files("config/_default/menu/")
-site_lang <- gsub("menu[.]|[.]toml", "", site_lang)
-
+site_lang <- readLines("config/_default/languages.yaml")
+site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
 cat("Populating untranslated files:\n ")
 # Loop through dirs
 for(k in dirs){

@@ -2,11 +2,11 @@
 
 <!-- Start Counter Section -->
 <div id="counters" class="row justify-content-center section topspace">
-    <h2 class="section-title"><span>Our activity</span></h2>
+    <h2 class="section-title"><span>{{ i18n "home_activity" | markdownify }}</span></h2>
 	<div class="col-sm-5 col-md-4 text-center fadeInUp" data-wow-duration="500ms">
   	<div class="block">
   		<div class="icon-box">
-  			<h3>{{ i18n "counter_countries" | markdownify }}</h3>
+  			<h3>{{ i18n "countries" | markdownify }}</h3>
   			<i class="fa-solid fa-globe"></i>
   			<p class="count" data-count="{{  .Site.Data.chapter_stats.countries }}">0</p>
   		</div>
@@ -16,7 +16,7 @@
 	<div class="col-sm-5 col-md-4 text-center fadeInUp" data-wow-duration="500ms">
   	<div class="block">
   		<div class="icon-box">
-			<h3>{{ i18n "counter_chapters" | markdownify }}</h3>
+			<h3>{{ i18n "chapters" | markdownify }}</h3>
 			  <i class="fa-solid fa-map-location-dot"></i>
   			<p class="count" data-count="{{ .Site.Data.chapter_stats.chapters }}">0</p>
   		</div>
@@ -26,7 +26,7 @@
 	<div class="col-sm-5 col-md-4 text-center fadeInUp" data-wow-duration="500ms">
   	<div class="block">
   		<div class="icon-box">
-			  <h3>{{ i18n "counter_events" | markdownify }}</h3>
+			  <h3>{{ i18n "events" | markdownify }}</h3>
 			  <i class="fa-solid fa-calendar-days"></i>
   			<p class="count" data-count="{{ $events | len }}">0</p>
   		</div>
