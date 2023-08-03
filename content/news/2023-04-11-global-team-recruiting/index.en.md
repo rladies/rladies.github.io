@@ -1,6 +1,7 @@
 ---
 title: "Global Team Recruiting"
 author: "Global Leadership Team"
+type: blog
 date: "2023-04-11"
 description: ""
 tags: 
