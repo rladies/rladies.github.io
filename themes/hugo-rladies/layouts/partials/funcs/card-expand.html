@@ -11,7 +11,7 @@
     {{ $tags = $tags | append $split }}
 {{ end }}
 
-<li class="shuffle-item card-expand rounded card-{{ $size }} card" {{ with .id }} id="{{  . | htmlUnescape | urlize }}" {{ end }} {{ with .shuffle }} data-groups="[{{range  $index, $tags := . }}{{if ne $index 0}},{{end}}&quot;{{$tags | urlize}}&quot;{{ end }}]" {{ end}} >
+<li class="shuffle-item card-expand rounded card-{{ $size }} card" {{ with .id }} id="{{  . | htmlUnescape | urlize }}" {{ end }} data-groups="[{{ with .shuffle }} {{range  $index, $tags := . }}{{if ne $index 0}},{{end}}&quot;{{$tags | urlize}}&quot;{{ end }}{{ end}}]" >
   <div class="card-expand-img rounded-top">
     <img src="{{ $image }}"/>
   </div>

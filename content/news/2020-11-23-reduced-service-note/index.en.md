@@ -1,6 +1,7 @@
 ---
 title: "Reduced Service Mode for R-Ladies Global"
 author: "R-Ladies Global Leadership Team"
+type: blog
 date: "2020-11-23"
 description: "Reduced Service Mode for R-Ladies Global"
 tags: 

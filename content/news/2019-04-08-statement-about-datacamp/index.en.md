@@ -1,6 +1,7 @@
 ---
 title: "R-Ladies Global's disapproval of DataCamp"
 author: "R-Ladies Global Leadership Team"
+type: blog
 date: "2019-04-08"
 description: "R-Ladies Global's disapproval of DataCamp's handling of sexual assault"
 tags: 
