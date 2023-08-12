@@ -182,7 +182,7 @@ jobs:
           repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
           echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "token=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
+            echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
           else
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
