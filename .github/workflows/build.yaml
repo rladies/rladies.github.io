@@ -72,7 +72,7 @@ jobs:
         if: "${{ env.directory == 'main' }}"
         with:
           repository: rladies/directory
-          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
+          ssh-key: ${{ secrets.ssh_directoryy_repo }}
           path: tmpd/dir
           
       - name: Site data - DIRECTORY - Download artifact
@@ -83,7 +83,7 @@ jobs:
           # Required, if the repo is private a Personal Access Token with 
           # `repo` scope is needed or GitHub token in a job 
           # where the permissions `action` scope set to `read`
-          github_token: ${{ secrets.GH_WORKFLOW_DISPATCH }}
+          github_token: ${{ secrets.GLOBAL_GHA_PAT }}
           # Optional, will get head commit SHA
           run_id: ${{ env.directory }}
           # Optional, defaults to current repo
