@@ -173,7 +173,7 @@ jobs:
   deploy-preview: 
     name: Deploy preview
     needs: build
-    if: github.ref != 'refs/heads/main' || env.directory != 'main'
+    if: github.ref != 'refs/heads/main' || github.event.inputs.directory != 'main'
     runs-on: ubuntu-22.04
     steps:
       - name: Get environment
