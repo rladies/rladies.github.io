@@ -18,7 +18,3 @@ options(
   renv.config.sandbox.enabled = FALSE,
   renv.config.auto.snapshot = FALSE
 )
-
-cli::cli_h1("Welcome to the R-Ladies website code!")
-cli::cli_alert("Your libraries are located in:")
-cli::cli_bullets(.libPaths())
