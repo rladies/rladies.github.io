@@ -19,14 +19,6 @@ options(
   renv.config.auto.snapshot = FALSE
 )
 
-profile <- function(){
-  profile <- strsplit(.libPaths(), "/")[[1]]
-  idx <- grep("renv", profile)
-  profile[idx[length(idx)]-1] 
-}
-
-
 cli::cli_h1("Welcome to the R-Ladies website code!")
-cli::cli_alert(paste("renv profile:", profile()))
 cli::cli_alert("Your libraries are located in:")
 cli::cli_bullets(.libPaths())
