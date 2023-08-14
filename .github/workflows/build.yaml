@@ -17,7 +17,7 @@ on:
     - cron: "45 */12 * * *"
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.inputs.directory }}
   cancel-in-progress: true
 
 env:
@@ -72,7 +72,7 @@ jobs:
         if: "${{ env.directory == 'main' }}"
         with:
           repository: rladies/directory
-          ssh-key: ${{ secrets.DIRECTORY_DEPLOY_SECRET }}
+          ssh-key: ${{ secrets.ssh_directoryy_repo }}
           path: tmpd/dir
           
       - name: Site data - DIRECTORY - Download artifact
@@ -80,8 +80,10 @@ jobs:
         if:  "${{ env.directory != 'main' }}"
         with:
           name: entries
-          # Required, if the repo is private a Personal Access Token with `repo` scope is needed or GitHub token in a job where the permissions `action` scope set to `read`
-          github_token: ${{ secrets.GLOBAL_PAT }}
+          # Required, if the repo is private a Personal Access Token with 
+          # `repo` scope is needed or GitHub token in a job 
+          # where the permissions `action` scope set to `read`
+          github_token: ${{ secrets.GLOBAL_GHA_PAT }}
           # Optional, will get head commit SHA
           run_id: ${{ env.directory }}
           # Optional, defaults to current repo
@@ -148,7 +150,7 @@ jobs:
   deploy-production: 
     name: Deploy production
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' &&  github.event_name != 'workflow_dispatch'
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout repository
@@ -171,7 +173,7 @@ jobs:
   deploy-preview: 
     name: Deploy preview
     needs: build
-    if: github.ref != 'refs/heads/main'
+    if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-22.04
     steps:
       - name: Get environment
@@ -180,7 +182,7 @@ jobs:
           repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
           echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "token=${{ secrets.GITHUB_PAT }}" >> $GITHUB_ENV
+            echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
           else
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
