@@ -61,7 +61,7 @@
         <div class="input-group-prepend" for="filter-interests">
           <label class="input-group-text" style="min-width:120px;" >Interests</label>
         </div>
-        <select class="custom-select" id="filter-interests" multiple="multiple">
+        <select class="custom-select" id="filter-interests" multiple data-group="interests">
           {{ range $ints }}
             <option value="{{. | urlize }}" >{{.}}</option>
           {{ end }}
@@ -69,10 +69,10 @@
       </div>
               
       <div class="input-group">
-        <div class="input-group-prepend" for="filter-language">
+        <div class="input-group-prepend" for="filter-languages">
           <label class="input-group-text" style="min-width:120px;" >Languages</label>
         </div>
-        <select class="custom-select" id="filter-language" multiple="multiple">
+        <select class="custom-select" id="filter-languages" multiple data-group="languages">
           {{ range $langs }}
               <option value="{{. | urlize }}" >{{.}}</option>
           {{ end }}
@@ -83,7 +83,7 @@
         <div class="input-group-prepend" for="filter-location">
           <label class="input-group-text" style="min-width:120px;" >Location</label>
         </div>
-        <select class="custom-select" id="filter-location" multiple="multiple">
+        <select class="custom-select" id="filter-location" multiple data-group="location">
           {{ range $countries }}
             {{ $c := . }}
             <optgroup label="{{$c}}" class="{{$c}}">
@@ -108,19 +108,14 @@
           {{ end }}
       </ul>
     </div>
-  </div> 
+  </div>
 {{ end }}
 
 {{ define  "footer" }}
-{{ if eq hugo.Environment "production" }}
-  {{ .Scratch.Set "n_page_directory" 25}}
-{{ else }}
-  {{ .Scratch.Set "n_page_directory" 5}}
-{{ end }} 
-
 <script type="text/javascript">
+  
   $(document).ready(function() {
-    $('.custom-select').multiselect({
+    $('[id^="filter-"]').multiselect({
       includeSelectAllOption: true,
       maxHeight: 300,
       enableFiltering: true,
@@ -128,6 +123,41 @@
       enableCollapsibleOptGroups: true
     });
     $('.form-check-input').attr('name', 'shuffle-filter');
+    
+    // Attach event listeners to the multiselect change event
+    $('[id^="filter-"]').on('change', applyFilters);
+
+    // Select the container for shuffle items
+    const shuffleContainer = document.getElementById('directory-grid');
+
+    // Initialize Shuffle.js
+    const shuffleInstance = new Shuffle(shuffleContainer, {
+      itemSelector: '.shuffle-item',
+      buffer: 1,
+      isCentered: true
+    });
+
+    // Function to apply filters
+    function applyFilters() {
+      // Get selected values from multiselects || Default to empty array if no values selected
+      const interests = $('#filter-interests').val() || []; 
+      const languages = $('#filter-languages').val() || [];
+      const locations = $('#filter-location').val() || [];
+        
+      // Use Shuffle.js filter method
+      shuffleInstance.filter(item => {
+        const itemInterests = JSON.parse(item.getAttribute('data-interests'));
+        const itemLanguages = JSON.parse(item.getAttribute('data-languages'));
+        const itemLocations = JSON.parse(item.getAttribute('data-location'));
+    
+        // Check if item passes the selected filters
+        return (
+          (interests.length === 0 || interests.some(i => itemInterests.includes(i))) &&
+          (languages.length === 0 || languages.some(l => itemLanguages.includes(l))) &&
+          (locations.length === 0 || locations.some(loc => itemLocations.includes(loc)))
+        );
+      });
+    }
   });
 </script>
 {{ end }}
