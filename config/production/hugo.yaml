@@ -3,3 +3,5 @@ disableLanguages:
     - "fr"
     - "pt"
     - "es"
+buildFuture: false
+buildDrafts: false
