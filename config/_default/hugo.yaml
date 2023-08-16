@@ -2,6 +2,18 @@ baseURL: "."
 title: "R-Ladies Global"
 theme: "hugo-rladies"
 publishDir: "build"
+
+languageCode: "en"
+defaultContentLanguage: "en"
+summaryLength: 30
+
+pygmentsUseClasses: true
+enableGitInfo: true
+enableRobotsTXT: true
+enableGitInfo: true
+minify:
+  minifyOutput: true
+  
 ignoreFiles:
   - "\\.Rmd$"
   - "\\.qmd$"
@@ -12,13 +24,5 @@ ignoreFiles:
   - "_cache$"
   - "README"
   - "README_img/"
-
-pygmentsUseClasses: true
-enableGitInfo: true
-enableRobotsTXT: true
-
-languageCode: "en"
-defaultContentLanguage: "en"
-summaryLength: 30
 #[outputs]
 #  home = ["HTML", "RSS", "JSON"]

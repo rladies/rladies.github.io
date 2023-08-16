@@ -132,13 +132,10 @@ jobs:
       - name: Build
         run: |
           if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
-            hugo --enableGitInfo --minify \
-              --environment production \
-              -d ${{ env.hugobd }}
+            hugo -d ${{ env.hugobd }}
           else
-            hugo --enableGitInfo --minify \
-              -d ${{ env.hugobd }} \
-              -b https://${{ env.netalias }}--rladies-dev.netlify.app/
+            hugo  -d ${{ env.hugobd }} \
+            -b https://${{ env.netalias }}--rladies-dev.netlify.app/
           fi
           
       - name: Archive Build Artifact
