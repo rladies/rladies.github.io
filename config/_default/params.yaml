@@ -17,11 +17,17 @@ footerEnableTextWidget: true
 footerEnableLangWidget: true
 
 social:
+  - title: mastodon
+    url: 'https://hachyderm.io/@RLadiesGlobal'
+    icon: fab fa-mastodon
+    footer: true
+    sharethis: true
+    network: ''
   - title: twitter
     url: 'https://twitter.com/RLadiesGlobal'
     icon: fab fa-twitter-square
-    footer: true
-    sharethis: true
+    footer: false
+    sharethis: false
     network: twitter
   - title: instagram
     url: 'https://www.instagram.com/rladiesglobal'
