@@ -1228,8 +1228,8 @@
       "email": "ottawa@rladies.org"
     },
     "organizers": {
-      "current": ["Michelle Fairbrother", "Stephanie Houle"],
-      "former": []
+      "current": ["Melissa Van Bussel", "Alexandra McSween"],
+      "former": ["Michelle Fairbrother", "Stephanie Houle"]
     },
     "name": "R-Ladies Ottawa, ON",
     "id": "30655714",
@@ -2015,6 +2015,20 @@
     "lat": 5.56,
     "lon": -0.2,
     "timezone": "Africa/Accra"
+  },
+  {
+    "urlname": "rladies-kumasi",
+    "status": "prospective",
+    "country": "Ghana",
+    "social_media": {
+      "meetup": "rladies-kumasi",
+      "email": "kumasi@rladies.org"
+    },
+    "organizers": {
+      "current": ["Jane Esi Monkah"],
+      "former": []
+    },
+    "name": "R-Ladies NA"
   },
   {
     "urlname": "rladies-athens-gr",
