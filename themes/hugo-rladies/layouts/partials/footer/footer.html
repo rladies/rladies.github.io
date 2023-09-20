@@ -26,7 +26,10 @@
   					<p class="follow-me-icons">
               {{ range .Site.Params.social }}
                   {{ if .footer }}
-                      <a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-2x"></i></a>
+                    {{ $some:= partial "funcs/some.html" (dict "type" .title "handle" .handle ) }}
+                    <a href="{{ $some.url }}" target="_blank" {{ if .relme }} rel="me" {{ end }} >
+                      <i class="{{ $some.fa }} fa-2x"></i>
+                    </a>
                   {{ end }}
               {{ end }}
   					</p>

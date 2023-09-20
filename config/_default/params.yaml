@@ -17,44 +17,45 @@ footerEnableTextWidget: true
 footerEnableLangWidget: true
 
 social:
-  - title: twitter
-    url: 'https://twitter.com/RLadiesGlobal'
-    icon: fab fa-twitter-square
+  - title: mastodon
+    handle: '@RLadiesGlobal@hachyderm.io'
+    relme: true
     footer: true
     sharethis: true
+    network: ''
+  - title: twitter
+    handle: 'RLadiesGlobal'
+    footer: false
+    sharethis: false
     network: twitter
   - title: instagram
-    url: 'https://www.instagram.com/rladiesglobal'
-    icon: fab fa-instagram
+    handle: 'rladiesglobal'
     footer: true
     sharethis: false
     network: ''
   - title: github
-    url: 'https://github.com/rladies'
-    icon: fab fa-github-square
+    handle: 'rladies'
     footer: true
     sharethis: false
     network: ''
   - title: meetup
-    url: 'https://www.meetup.com/pro/rladies/'
+    handle: 'pro/rladies/'
     footer: true
     sharethis: true
-    icon: fab fa-meetup
     network: ''
   - title: youtube
-    url: 'https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng'
+    handle: 'channel/UCDgj5-mFohWZ5irWSFMFcng'
     footer: true
     sharethis: true
-    icon: fab fa-youtube
     network: ''
 twitter:
   - title: We are R-Ladies
-    url: 'https://twitter.com/WeAreRLadies'
+    handle: 'WeAreRLadies'
     footer: true
     sharethis: false
     network: ''
   - title: IWD R-Ladies
-    url: 'https://twitter.com/rladies_iwd'
+    handle: 'rladies_iwd'
     footer: true
     sharethis: false
     network: ''
