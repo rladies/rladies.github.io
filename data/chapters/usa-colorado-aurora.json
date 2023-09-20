@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-aurora",
+    "status": "prospective",
+    "country": "usa",
+    "city": "colorado",
+    "social_media": {
+      "meetup": "rladies-aurora",
+      "email": "aurora@rladies.org"
+    },
+    "organizers": {
+      "current": ["Janani Ravi"]
+    }
+  }
+]
