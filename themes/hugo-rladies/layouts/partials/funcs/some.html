@@ -73,4 +73,4 @@
   {{ $data.Set "url" (replaceRE "@(.*?)@(.+)" "https://$2/@$1" .handle) }}
 {{ end }}
 
-{{ return (dict "url" ($data.Get "url") "fa" ($data.Get "fa") ) }}
+{{ return (dict "url" ($data.Get "url") "fa" ($data.Get "fa") "type" .type ) }}
