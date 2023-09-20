@@ -2017,6 +2017,20 @@
     "timezone": "Africa/Accra"
   },
   {
+    "urlname": "rladies-kumasi",
+    "status": "prospective",
+    "country": "Ghana",
+    "social_media": {
+      "meetup": "rladies-kumasi",
+      "email": "kumasi@rladies.org"
+    },
+    "organizers": {
+      "current": ["Jane Esi Monkah"],
+      "former": []
+    },
+    "name": "R-Ladies NA"
+  },
+  {
     "urlname": "rladies-athens-gr",
     "status": "active",
     "country": "Greece",
