@@ -3173,8 +3173,8 @@
       "github": "rladies/meetup-presentations_oslo"
     },
     "organizers": {
-      "current": ["Anne Claire Fouilloux", "Athanasia Monika Mowinckel", "Lene Norderhaug Drosdal", "Aurora Voje", "Isabelle Valette"],
-      "former": []
+      "current": ["Athanasia Monika Mowinckel", "Lene Norderhaug Drosdal", "Aurora Voje"],
+      "former": ["Anne Claire Fouilloux", "Isabelle Valette"]
     },
     "name": "R-Ladies Oslo",
     "id": "27651457",
@@ -4452,6 +4452,20 @@
     "lat": 34.42,
     "lon": -119.71,
     "timezone": "America/Los_Angeles"
+  },
+  {
+    "urlname": "rladies-aurora",
+    "status": "prospective",
+    "country": "usa",
+    "social_media": {
+      "meetup": "rladies-aurora",
+      "email": "aurora@rladies.org"
+    },
+    "organizers": {
+      "current": ["Janani Ravi"],
+      "former": []
+    },
+    "name": "R-Ladies NA"
   },
   {
     "urlname": "rladies-boulder",
