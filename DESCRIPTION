@@ -12,3 +12,14 @@ Authors@R:  c(
 Encoding: UTF-8
 Imports:
     blogdown
+Config/renv/profiles/json/dependencies:
+    jsonlite,
+    jsonvalidate,
+    here,
+    cli
+Config/renv/profiles/dev/dependencies: 
+    jsonlite,
+    dplyr,
+    here,
+    tidyr,
+    cli

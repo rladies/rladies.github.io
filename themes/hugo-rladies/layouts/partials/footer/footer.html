@@ -26,7 +26,7 @@
   					<p class="follow-me-icons">
               {{ range .Site.Params.social }}
                   {{ if .footer }}
-                      <a href="{{ .Params.url }}" target="_blank"><i class="{{ .icon }} fa-2x"></i></a>
+                      <a href="{{ .url }}" target="_blank"><i class="{{ .icon }} fa-2x"></i></a>
                   {{ end }}
               {{ end }}
   					</p>
@@ -60,10 +60,10 @@
           					{{ if eq $translation.Lang .Lang }}
           					{{ $selected := false }}
             					{{ if eq $pageLang .Lang}}
-            					  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+            					  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .Params.LanguageName }}
             					  </option>
             					{{ else }}
-            					  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+            					  <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .Params.LanguageName }}</option>
             					{{ end }}
           					{{ end }}
         					{{ end }}

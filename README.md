@@ -29,3 +29,35 @@ Please report any bugs or issues on the page on [github issues](https://github.c
 You can also use this same link to request content you feel is missing. 
 If you would like to give us a hand at fixing some of the issues listed, we would greatly appreciate that.
 
+
+## Visualisation of build process
+
+```mermaid
+graph TB
+
+A[Checkout repository] --> B[Get Hugo version]
+B --> C[Install cURL Headers]
+C --> D[Setup R]
+D --> E[Setup renv]
+E --> F["Populate untranslated pages\n(scripts/missing_translations.R)"]
+
+subgraph Site Data
+  F --> G["Get directory data\n(rladies/directory)"]
+  F --> H["Meetup\n(rladies/meetup_archive)"]
+  F --> I["Get blogs list\n(rladies/awesome-rladies-blogs)"]
+  G --> J["Clean cloned repos"]
+  J --> K["Merge chapter and meetup\n(scripts/get_chapters.R)"]
+end
+
+H --> J
+I --> J
+K --> L[Setup Hugo]
+L --> M[Build]
+
+M -->|Production| N[Deploy]
+
+M -->|Preview| O[Install netlify cli]
+O --> P[Deploy Netlify]
+P --> Q["Notify PR about build"]
+
+```

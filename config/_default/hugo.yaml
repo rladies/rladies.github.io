@@ -1,0 +1,28 @@
+baseURL: "."
+title: "R-Ladies Global"
+theme: "hugo-rladies"
+publishDir: "build"
+
+languageCode: "en"
+defaultContentLanguage: "en"
+summaryLength: 30
+
+pygmentsUseClasses: true
+enableGitInfo: true
+enableRobotsTXT: true
+enableGitInfo: true
+minify:
+  minifyOutput: true
+  
+ignoreFiles:
+  - "\\.Rmd$"
+  - "\\.qmd$"
+  - "_cache$"
+  - "\\.DS_Store"
+  - "_files$"
+  - "content/*/\\*/index\\*\\.html"
+  - "_cache$"
+  - "README"
+  - "README_img/"
+#[outputs]
+#  home = ["HTML", "RSS", "JSON"]

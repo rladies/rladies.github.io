@@ -6,10 +6,14 @@
     "city": "Rome",
     "social_media": {
       "meetup": "rladies-rome",
-      "email": "rome@rladies.org"
+      "email": "rome@rladies.org",
+      "twitter": "rladiesrome",
+      "youtube": "@rladiesrome",
+      "github": "rladies/meetup-presentations_rome",
+      "linkedin": "company/r-ladies-rome/"
     },
     "organizers": {
-      "current": ["Federica Gazzelloni"],
+      "current": ["Federica Gazzelloni", "Katie Wood"],
       "former": ["Nina Deliu"]
     }
   }

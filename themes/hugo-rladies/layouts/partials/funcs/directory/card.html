@@ -11,28 +11,30 @@
 {{ $dir.Set "subtitle" (printf "<p class=\"text-hide directory-id\">%s</p>" .name) }} 
 {{ with .data.work.title }} 
   {{ $dir.Add "subtitle" . }} 
-  {{ $dir.Add "shuffle" . }}
 {{ end }}
 
-{{ $dir.Set "img" "" }}
+{{ $grav := md5 ( .data.name | printf "%s-%s" .name ) }}
+{{ $dir.Set "img" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" $grav )}}
 {{ with (resources.GetMatch .data.photo.url ) }}
   {{ $image :=  . }}
   {{ $image := $image.Fill "300x300" }}
   {{ $dir.Set "img" $image.RelPermalink }}
 {{ end }}
 
+{{ $interests := dict "interests" "" }}
 {{ with .data.interests }}
-  {{ $dir.Add "shuffle" . }}
+  {{ $dir.Set "interests" .}}
 {{ end }}
+{{ $interests := dict "interests" ($dir.Get "interests") }}
 
+{{ $languages := dict "languages" "" }}
 {{ with .data.languages }}
-  {{ $dir.Add "shuffle" . }}
+  {{ $dir.Set "languages" .}}
 {{ end }}
+{{ $languages := dict "languages" ($dir.Get "languages") }}
 
-{{ with .data.honorific }}
-  {{ $dir.Add "shuffle" . }}
-{{ end }}
 
+{{ $location := dict "location" "" }}
 {{ with .data.location }}
   {{ $tmp := newScratch }}
   {{ with .country }}
@@ -46,13 +48,15 @@
   {{ with .city }}
     {{ $tmp.Add "loc" ( . | printf ", %s") }}
   {{ end }}
-  {{ $dir.Add "shuffle" ($tmp.Get "loc")}}
+  {{ $dir.Add "location" ($tmp.Get "loc")}}
+  {{ $location := dict "location" . }}
 {{ end }}
+{{ $location := dict "location" ($dir.Get "location" | slice ) }}
 
 {{ $descr := partial "funcs/directory/descr.html" (dict "data" .data "id" .name ) }}
 {{ $subtitle := ($dir.Get "subtitle" ) }}
 {{ $title := ($dir.Get "title" ) }}
 {{ $foot := (partial "funcs/directory/foot.html" .data ) }}
-{{ $shuffle := ( $dir.Get "shuffle" ) }}
+{{ $shuffle := merge $interests $languages $location }}
 
 {{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" .size  "img" ($dir.Get "img") "category" .data.honorific "descr" $descr "foot" $foot "footcol" 2 "id" .name  "shuffle" $shuffle ) }}

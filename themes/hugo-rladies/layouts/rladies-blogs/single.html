@@ -2,12 +2,13 @@
 	{{ .Content }}
   <div class="container expand-grid" id="rladies-blogs">
     <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
-      {{ $blogs := ( .Scratch.Get "blogs" ) }}
-      {{ range $blogs }}
+      {{ $rblogs := ( .Scratch.Get "rblogs" ) }}
+      {{ range $name := $.Scratch.Get "rb" | shuffle }}
+        {{ $rb := index $rblogs $name }}
         {{ $data := newScratch }}
         {{ $data.Set "descr" "" }}
 
-        {{ range .authors }}
+        {{ range $rb.authors }}
           {{ $data.Add "descr" "<p>" }}
           {{ $data.Add "descr" .name }}
             {{ with .social_media }}
@@ -19,8 +20,19 @@
         {{ end }}
         {{ $descr :=  $data.Get "descr" }}
         
-        {{ $subtitle := .subtitle | default "" }}
-        {{ partial "funcs/card-expand.html" (dict "title" .title "img" .photo_url "subtitle" $subtitle "descr" $descr "category" .type ) }}
+        {{ $grav := ( md5 $rb.url ) }}
+        {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" $grav )}}
+        {{ with $rb.photo_url }}
+          {{ $image := resources.GetRemote . }}
+          {{ with $image }}
+            {{ $img := . }}
+            {{ $img := $img.Fill "300x300" }} 
+            {{ $data.Set "photo" $img.RelPermalink }}
+          {{ end }}
+        {{ end }}
+        
+        {{ $subtitle := $rb.subtitle | default "" }}
+        {{ partial "funcs/card-expand.html" (dict "title" $rb.title "img" ($data.Get "photo") "subtitle" $subtitle "descr" $descr "category" $rb.type ) }}
       {{ end }}
     </ul>
   </div>

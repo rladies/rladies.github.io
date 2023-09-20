@@ -4,7 +4,14 @@
 {{ $footcol := .footcol | default 1 }}
 {{ $anim := .anim | default true }}
 
-<li class="shuffle-item card-expand rounded card-{{ $size }} card" {{ with .id }} id="{{ . | urlize }}" {{ end }} {{ with .shuffle }} data-groups="[{{range  $index, $item := . }}{{if ne $index 0}},{{end}}&quot;{{$item | urlize}}&quot;{{ end }}]" {{ end}} >
+{{ $tags := slice }}
+{{ range $index, $item := . }}
+    {{ $replaced := replaceRE "[[:punct:]]" "," ($item | urlize) }}
+    {{ $split := split $replaced "," }}
+    {{ $tags = $tags | append $split }}
+{{ end }}
+
+<li class="shuffle-item card-expand rounded card-{{ $size }} card" {{ with .id }} id="{{  . | htmlUnescape | urlize }}" {{ end }} {{ range $key, $value := .shuffle }} data-{{ $key }}="[{{range  $index, $tags := $value }}{{if ne $index 0}},{{end}}&quot;{{$tags | urlize}}&quot;{{ end }}]"{{ end }} >
   <div class="card-expand-img rounded-top">
     <img src="{{ $image }}"/>
   </div>
