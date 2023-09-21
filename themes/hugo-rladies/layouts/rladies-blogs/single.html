@@ -13,7 +13,7 @@
           {{ $data.Add "descr" .name }}
             {{ with .social_media }}
               {{ range . }}
-                {{ $data.Add "descr" (partial "some.html" (dict "data" . "range" 3)) }}
+                {{ $data.Add "descr" (partial "social_media.html" (dict "data" . "range" 3)) }}
               {{ end }}
             {{ end }}
           {{ $data.Add "descr" "</p>" }}

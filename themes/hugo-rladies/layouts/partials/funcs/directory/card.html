@@ -3,7 +3,7 @@
 {{ $dir.Set "title" .data.name }} 
 {{ $dir.Add "title" "<span><small>"}}
 {{ with .data.social_media }}
-  {{ $some := partial "some.html" (dict "data" . ) }}
+  {{ $some := partial "social_media.html" (dict "data" . ) }}
   {{ $dir.Add "title" $some }} 
 {{ end }}
 {{ $dir.Add "title" "</small></span>"}}

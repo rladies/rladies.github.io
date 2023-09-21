@@ -28,7 +28,7 @@
               
               <td class="text-right"> 
                 {{ with .social_media }}
-                    {{ partial "some.html" (dict "data" . "relme" true) }}
+                    {{ partial "social_media.html" (dict "data" . "relme" true) }}
                 {{ end }}
               </td>
                 </tr>
@@ -111,7 +111,7 @@
       {
         "name": "{{ .name }}",
         "members": "{{ .members }}",
-        "socials": {{ with .social_media }}{{ partial "some.html" . }}{{ end }},
+        "socials": {{ with .social_media }}{{ partial "social_media.html" . }}{{ end }},
         "latitude": {{ .lat }},
         "longitude": {{ .lon }},
         "color": "#88398acc"
