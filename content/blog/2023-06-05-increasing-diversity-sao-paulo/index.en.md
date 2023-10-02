@@ -15,7 +15,6 @@ tags:
   - latin america
   - community
 lastmod: '2023-05-06T15:53:00+03:00'
-keywords: []
 ---
 
 ## Introduction
