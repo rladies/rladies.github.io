@@ -99,7 +99,7 @@ decision.
 ## Any thoughts about age diversity and creating more inclusive accessible meetups?
 
 *Mo:* We provide our organizers a lot of freedom to set up meet-ups in a
-way that make them accessible. When Oslo started, we had a ton of age
+way that make them accessible. When Oslo started, we had good age
 diversity and associate professors retiring and it was nice to see
 everyone connecting; however, it can be hard reaching other people, and
 there are things we can think about to make it more inclusive. Things
