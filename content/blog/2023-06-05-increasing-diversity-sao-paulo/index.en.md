@@ -23,6 +23,8 @@ The [R-Ladies](https://www.rladies.org/) is a global organization that promotes 
 
 In this post, our goal is to discuss diversity issues in the R-Ladies São Paulo community and the **actions that are being taken to increase diversity**.
 
+> This post was written in April/2023. Since that time, **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to expand the actions to increase diversity.
+
 ![Picture of participants in a recent event.](logo2.jpeg)
 
 To do so, two points are important to be discussed: what is intersectionality, and the Brazilian context.
@@ -181,6 +183,8 @@ The city of São Paulo is very large, and depending on where you need to go, it 
 Based on the survey answers and the community experience over time, these are some of the next steps that we plan to do (or continue doing) in order to increase diversity in our community:
 
 1.  Offer assistance (such as money for transportation fare and food) to allow people with limited financial resources to participate and make the most of events;
+
+> **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to offer financial assistance at the events.
 
 2.  Encourage greater participation of people who belong to any social minority through quotas, an internal stance of positive discrimination; including these people in the organization; inviting them to offer lectures/workshops; promoting visibility; and giving space for these individuals to bring their perspective, experience, and perception to the ongoing structuring of the R-Ladies São Paulo community.
 
