@@ -76,7 +76,7 @@ this of course has to do with the R community that we are in and this R
 community is influenced that R-Ladies is breaking stereotypes and making
 spaces for all of us. That has been a huge success for us,
 as interest for R-Ladies chapters quickly developed  and
-became popular very fast). The organization has made space for all of us
+became popular very fast. The organization has made space for all of us
 in data science fields. It benefits us and the entire community. There
 are amazing initiatives going on as well. R-Ladies is being translated
 to different languages, R-Ladies in Latin American is making a huge
