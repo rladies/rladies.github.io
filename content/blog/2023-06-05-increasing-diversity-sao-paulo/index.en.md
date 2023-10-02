@@ -124,7 +124,7 @@ Among the suggestions offered by the community to increase the participation of 
 
 ### Geographic Regions
 
-The following map shows the Metropolitan Region of São Paulo (the largest polygon), and the City of São Paulo (divided by regions). Most of the people who participate in the event are from the West and South regions of the city. To increase the participation of people from the East and North regions of the city, it is interesting to seek to hold events there.
+The following map shows the Metropolitan Region of São Paulo (the largest polygon), and the City of São Paulo (divided by regions). Most of the people who participate in the event are from the West and South regions of the city. To increase the participation of people from the East and North regions of the city, it is interesting to hold events there.
 
 ![Map of the City of Sao Paulo: most part of the respondents said they are from the South and West part of the city.](2020-map.png)
 
