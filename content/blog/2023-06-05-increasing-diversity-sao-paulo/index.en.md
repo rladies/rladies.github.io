@@ -116,7 +116,7 @@ In 2020, 13% of the respondents had children. Similar to what was done with race
 
 ### Inclusion of LGBTQIA+
 
-![Bar chart where the X axis shows the percentage of respondents of the survey, and the Y axis represents if the person is part of the LGBTQIA+ community. Around 70% of the respondents said YES and 30% said NO.](2020-LGBTQIA.png)
+![Bar chart where the X axis shows the percentage of respondents of the survey, and the Y axis represents if the person is part of the LGBTQIA+ community. Around 70% of the respondents said NO and 30% said YES.](2020-LGBTQIA.png)
 
 In 2020, 30% of respondents were part of the LGBTQIA+ community. Although there are no data on the percentage of the Brazilian population that is part of the LGBTQIA+ community, the results of this survey indicate that the community is on the right path regarding LGBTQIA+ population inclusion.
 
