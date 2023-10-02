@@ -64,7 +64,7 @@ amazing to give back as an organizer.
 comfortable here; I have learned a lot and I made really good friends. I
 also like that it is an international community. I didn't have
 international friends before this and now I have friends in other
-R-ladies in Spanish and they ask me to share my knowledge with them.
+R-Ladies in Spanish and they ask me to share my knowledge with them.
 
 *Riva:* It is a great community to be an introvert in; R-ladies also
 changed my life. You have fun, you learn, and it helps with imposter
