@@ -66,7 +66,7 @@ also like that it is an international community. I didn't have
 international friends before this and now I have friends in other
 R-Ladies in Spanish and they ask me to share my knowledge with them.
 
-*Riva:* It is a great community to be an introvert in; R-ladies also
+*Riva:* It is a great community to be an introvert in; R-Ladies also
 changed my life. You have fun, you learn, and it helps with imposter
 syndrome. I don't have words to express how it changed my life.
 
