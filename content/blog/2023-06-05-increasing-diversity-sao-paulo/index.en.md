@@ -142,7 +142,7 @@ Seeking a greater diversity of participants in our events, we saved spots focusi
 
 -   Black, Brown and Indigenous people
 
--   mothers;
+-   mothers
 
 -   women and other gender minorities
 
