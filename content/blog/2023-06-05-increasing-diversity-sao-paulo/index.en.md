@@ -215,6 +215,8 @@ There are several people currently involved in the organization of the R-Ladies 
 
 -   [Jean Gabriel Reis do Prado](https://www.linkedin.com/in/jeangprado/)
 
+-   [Luana Antunes Tolentino Souza](https://www.linkedin.com/in/luana-antunes-alexandre-aa572b48/)
+
 -   [Nathália Demétrio](https://www.linkedin.com/in/nathaliademetrio/)
 
 -   [Tatyane Paz Dominguez](https://www.linkedin.com/in/tatyane-paz-dominguez-264224213/)
