@@ -31,7 +31,9 @@ To do so, two points are important to be discussed: what is intersectionality, a
 
 The target audience of R-Ladies is gender minorities: cis women, trans women, trans men, non-binary people, and queer people. The main purpose of the community is to include these minority groups in the R community. However, for each of these groups, there are people who are part of other groups that may also suffer other oppressions arising from social markers of difference, such as race, sexual orientation, maternity, disabilities, age, etc. Therefore, the oppressions are not just based on a person's gender, but are interrelated and overlapping. This understanding is a concept called "intersectionality".
 
-According to [Bridie Taylor (2019)](https://www.womankind.org.uk/intersectionality-101-what-is-it-and-why-is-it-important/): "Intersectionality is the acknowledgment that **everyone has their own unique experiences of discrimination and oppression** and we must consider everything and anything that can marginalize people -- gender, race, social class, sexual orientation, physical ability, etc."
+According to [Bridie Taylor (2019)](https://www.womankind.org.uk/intersectionality-101-what-is-it-and-why-is-it-important/): 
+
+> "Intersectionality is the acknowledgment that **everyone has their own unique experiences of discrimination and oppression** and we must consider everything and anything that can marginalize people -- gender, race, social class, sexual orientation, physical ability, etc."
 
 Here is a simple example that can illustrate this concept: imagine a White cisgender woman and a Black cisgender woman. Both suffer gender oppression, but only the Black woman experiences racism. Now, consider a cisgender, Black, bisexual woman with atypical children. Even though the first and the last suffer gender oppression, there is no doubt that the last one always has longer and harder ways to reach the same positions.
 
