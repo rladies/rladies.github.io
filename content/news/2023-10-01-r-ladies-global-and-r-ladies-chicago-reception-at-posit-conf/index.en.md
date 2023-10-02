@@ -12,6 +12,10 @@ editor_options:
     wrap: 72
 ---
 
+![](posit-conf.jpg)
+
+Photo captured at the conclusion of the Question and Answer session of the reception. Alt text: R-Ladies community members gathered in a room of the Hyatt in Chicago, with rows of individuals standing, kneeling, and sitting.
+
 # TL;DR
 
 On Wednesday, September 20, 2023 R-Ladies Global and R-Ladies Chicago
