@@ -103,7 +103,7 @@ way that make them accessible. When Oslo started, we had good age
 diversit, from studens, profesionnals and retiring professors, it was nice to see
 everyone connecting. However, it can be hard reaching other people, and
 there are things we can think about to make it more inclusive. Things
-live having your space easily accessible, we follow Carpentries rules
+like having your space easily accessible, in Oslo follow Carpentries rules
 about where the talks are, for example it should be wheelchair
 accessible, and near public transportation, not too late in the evening
 so they are not falling asleep and not too early to account for
