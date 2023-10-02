@@ -165,7 +165,7 @@ events channel of the Community Slack channel or on Meet-up.
 ## Have you considered expanding to include Python?
 
 *Riva:* I am a PyLadies organizer and we often host joint R-Ladies and
-PyLadies events together in Santiago. Cosima also organizes joint events
+PyLadies events together in Santiago. Cosima Meyer (Cologne organiser, Germany) also organizes joint events
 in Germany and it is a great way to expand the way they are reaching
 people.
 
