@@ -60,7 +60,7 @@ Professionally, I wouldn't have the job that I have right now without
 R-Ladies. It has been a hugely positive experience, and it has been
 amazing to give back as an organizer.
 
-*Stephanie:* R-ladies changed my life, I am a super introvert and felt
+*Stephanie:* R-Ladies changed my life, I am a super introvert and felt
 comfortable here; I have learned a lot and I made really good friends. I
 also like that it is an international community. I didn't have
 international friends before this and now I have friends in other
