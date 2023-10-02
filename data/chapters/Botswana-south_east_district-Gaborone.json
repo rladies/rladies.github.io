@@ -7,7 +7,7 @@
     "city": "Gaborone",               
     "social_media": {                 
       "meetup": "rladies-gaborone", 
-      "mastodon": "@R_Ladies_Gaborone@mastodon.social",
+      "mastodon": "@R_Ladies_Gaborone@fosstodon.org",
       "twitter": "RLadiesGaborone",
       "email": "gaborone@rladies.org",
       "github": "meetup_presentations_gaborone",
