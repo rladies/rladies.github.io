@@ -8,7 +8,6 @@ author:
   - Ana Paula Rocha
 date: '2023-05-06'
 categories:
-  - r-ladies
   - R-Ladies
   - community
   - latin america
