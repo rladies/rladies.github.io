@@ -140,7 +140,7 @@ In order to achieve that, some actions have been taken and will be briefly comme
 
 Seeking a greater diversity of participants in our events, we saved spots focusing on three groups (quotas):
 
--   Black, Brown and Indigenous people;
+-   Black, Brown and Indigenous people
 
 -   mothers;
 
