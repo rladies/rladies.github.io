@@ -26,7 +26,7 @@ summarize the question and answer portion of the meet-up.
 Per tradition, at the conclusion of Posit Conf R-Ladies Global and
 R-Ladies Chicago (the local R-Ladies chapter) jointly hosted a reception
 at the conference hotel in Chicago, Illinois. In attendance were all
-members of the R-Ladies leadership team, R-Ladies global team members,
+members of the R-Ladies leadership team, several R-Ladies global team members,
 chapter organizers, regular participants, and first time R-Ladies
 meet-up attendees. The in-person, not recorded event was open to both
 conference attendees and local chapter members and adhered to R-Ladies
