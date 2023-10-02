@@ -101,7 +101,7 @@ decision.
 *Mo:* We provide our organizers a lot of freedom to set up meet-ups in a
 way that make them accessible. When Oslo started, we had good age
 diversit, from studens, profesionnals and retiring professors, it was nice to see
-everyone connecting; however, it can be hard reaching other people, and
+everyone connecting. However, it can be hard reaching other people, and
 there are things we can think about to make it more inclusive. Things
 live having your space easily accessible, we follow Carpentries rules
 about where the talks are, for example it should be wheelchair
