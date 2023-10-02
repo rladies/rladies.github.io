@@ -7,7 +7,6 @@ author:
   - Ianni Muliterno
   - Ana Paula Rocha
 date: '2023-05-06'
-slug: []
 categories:
   - r-ladies
   - R-Ladies
