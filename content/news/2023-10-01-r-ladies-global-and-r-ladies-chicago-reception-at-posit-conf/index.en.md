@@ -78,7 +78,10 @@ spaces for all of us. That has been a huge success for us,
 as interest for R-Ladies chapters quickly developed  and
 became popular very fast. The organization has made space for all of us
 in data science fields. It benefits us and the entire community. There
-are amazing initiatives going on as well. R-Ladies is being translated
+are amazing initiatives going on as well. By establishing the idea of creating more diversity
+in gender representation in our community (here: the larger R-community), other aspects of
+diversity have become more highlighted also. The efforts on translation of content and even R
+it self, R-Ladies, is one of these.
 to different languages, R-Ladies in Latin American is making a huge
 impact on a larger scale and all the personal stories are fantastic to
 listen to.
