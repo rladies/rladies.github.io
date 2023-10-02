@@ -144,7 +144,7 @@ Seeking a greater diversity of participants in our events, we saved spots focusi
 
 -   mothers;
 
--   women and other gender minorities.
+-   women and other gender minorities
 
 The quotas are also advertised on the community's social networks (mainly Instagram), in order to make it clear that the presence of these groups is welcome and desired.
 
