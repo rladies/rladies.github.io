@@ -195,7 +195,7 @@ Based on the survey answers and the community experience over time, these are so
 
 ## **Current organizing team**
 
-There are several people currently involved in the organization of the R-Ladies São Paulo community. It is important to mention that the community organizers belong to different minority groups (such as Black women, mothers, trans people, non-binary people, LGBTQIA+, and people over 40 years), and this is important to offer different perspectives and experiences. Furthermore, it is important to highlight that the participation in the organization is voluntary. Therefore, we list and thank the people who are involved in the various stages of organizing the community:
+There are several people currently involved in the organization of the R-Ladies São Paulo community. It is important to mention that the community organizers belong to different minority groups (such as Black women, mothers, trans people, non-binary people, LGBTQIA+, neurodivergent people, and people over 40 years), and this is important to offer different perspectives and experiences. Furthermore, it is important to highlight that the participation in the organization is voluntary. Therefore, we list and thank the people who are involved in the various stages of organizing the community:
 
 ![Pictures of the members of the co-organizing team.](team-1.jpg)
 ![Pictures of the members of the co-organizing team.](team-2.jpg)
