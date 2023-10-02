@@ -6,7 +6,6 @@ tags:
 - community
 categories:
 - r-ladies
-output: html_document
 editor_options: 
   markdown: 
     wrap: 72
