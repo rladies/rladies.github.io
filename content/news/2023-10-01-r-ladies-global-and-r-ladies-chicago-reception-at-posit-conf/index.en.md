@@ -82,7 +82,7 @@ are amazing initiatives going on as well. By establishing the idea of creating m
 in gender representation in our community (here: the larger R-community), other aspects of
 diversity have become more highlighted also. The efforts on translation of content and even R
 it self, R-Ladies, is one of these.
-to different languages, R-Ladies in Latin American is making a huge
+R-Ladies in Latin American is making a huge
 impact on a larger scale and all the personal stories are fantastic to
 listen to.
 
