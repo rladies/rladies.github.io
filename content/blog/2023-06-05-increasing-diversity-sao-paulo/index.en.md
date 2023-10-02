@@ -16,13 +16,6 @@ tags:
   - community
 lastmod: '2023-05-06T15:53:00+03:00'
 keywords: []
-description: ''
-comment: yes
-toc: yes
-autoCollapseToc: no
-contentCopyright: no
-reward: no
-mathjax: no
 ---
 
 ## Introduction
