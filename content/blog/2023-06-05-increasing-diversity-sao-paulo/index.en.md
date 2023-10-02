@@ -188,10 +188,9 @@ The city of São Paulo is very large, and depending on where you need to go, it 
 
 Based on the survey answers and the community experience over time, these are some of the next steps that we plan to do (or continue doing) in order to increase diversity in our community:
 
+1.  Encourage greater participation of people who belong to any social minority through quotas, an internal stance of positive discrimination; including these people in the organization; inviting them to offer lectures/workshops; promoting visibility; and giving space for these individuals to bring their perspective, experience, and perception to the ongoing structuring of the R-Ladies São Paulo community.
 
-2.  Encourage greater participation of people who belong to any social minority through quotas, an internal stance of positive discrimination; including these people in the organization; inviting them to offer lectures/workshops; promoting visibility; and giving space for these individuals to bring their perspective, experience, and perception to the ongoing structuring of the R-Ladies São Paulo community.
-
-3.  Search for partnerships in peripheral regions to be able to hold events in those areas, making it easier for people who live far from the city center to attend.
+2.  Search for partnerships in peripheral regions to be able to hold events in those areas, making it easier for people who live far from the city center to attend.
 
 ## **Current organizing team**
 
