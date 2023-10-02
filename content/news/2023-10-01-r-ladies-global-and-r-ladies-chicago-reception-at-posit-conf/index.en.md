@@ -56,7 +56,7 @@ would be amazing to give those benefits to someone else to make
 connections and build their careers.
 
 *Maria:* A space where you can grow in a supportive environment.
-Professionally, I wouldn't have the job that I have right now without of
+Professionally, I wouldn't have the job that I have right now without
 R-ladies. It has been a hugely positive experience, and it has been
 amazing to give back as an organizer.
 
