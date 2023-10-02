@@ -29,7 +29,7 @@ at the conference hotel in Chicago, Illinois. In attendance were all
 members of the R-Ladies leadership team, several R-Ladies global team members,
 chapter organizers from around the world, regular participants, and first time R-Ladies
 meet-up attendees. The in-person, unrecorded, event was open to both
-conference attendees and local chapter members and adhered to R-Ladies
+conference attendees and local chapter members, and adhered to R-Ladies
 Chicago chapter policies and guidelines.
 
 The reception began with announcements from the leadership team followed
