@@ -57,7 +57,7 @@ connections and build their careers.
 
 *Maria:* A space where you can grow in a supportive environment.
 Professionally, I wouldn't have the job that I have right now without
-R-ladies. It has been a hugely positive experience, and it has been
+R-Ladies. It has been a hugely positive experience, and it has been
 amazing to give back as an organizer.
 
 *Stephanie:* R-ladies changed my life, I am a super introvert and felt
