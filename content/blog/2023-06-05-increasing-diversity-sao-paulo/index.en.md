@@ -170,6 +170,12 @@ This coffee format (available all the time during the event) is very good for th
 
 Given the nature of the R-Ladies community, it is important to provide a minimum level of support to ensure that everyone has the opportunity to enjoy the event experience regardless of whether they have something to eat during the day. In addition, collaborative coffee is also a way to encourage integration among people!
 
+### **Transportation and Meal Assistance**
+
+To allow people with limited financial means to have access to and benefit from the events, an important action is providing transportation and meal assistance. Meal assistance is offered at in-person events that last a whole day. Transportation assistance is offered at all in-person events. A notable point is that many people who request transportation assistance are from cities outside the Metropolitan Region of São Paulo, which shows the potential for creating new R-Ladies chapters in these cities.
+
+> **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to offer financial assistance at the events.
+
 ### **Working in pairs**
 
 Not all the participants have a laptop to take to the activity. As we hope that everyone can participate regardless of financial condition, in publicizing, we encourage people to participate regardless of being able to bring a computer. So, in cases where someone goes without a laptop, we encourage people to form pairs and work together during the event. This has always worked and ends up stimulating greater proximity and solidarity between people.
@@ -182,9 +188,6 @@ The city of São Paulo is very large, and depending on where you need to go, it 
 
 Based on the survey answers and the community experience over time, these are some of the next steps that we plan to do (or continue doing) in order to increase diversity in our community:
 
-1.  Offer assistance (such as money for transportation fare and food) to allow people with limited financial resources to participate and make the most of events;
-
-> **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to offer financial assistance at the events.
 
 2.  Encourage greater participation of people who belong to any social minority through quotas, an internal stance of positive discrimination; including these people in the organization; inviting them to offer lectures/workshops; promoting visibility; and giving space for these individuals to bring their perspective, experience, and perception to the ongoing structuring of the R-Ladies São Paulo community.
 
