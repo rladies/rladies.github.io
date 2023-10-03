@@ -14,7 +14,6 @@ categories:
 tags:
   - latin america
   - community
-lastmod: '2023-10-02T10:00:00+03:00'
 ---
 
 ## Introduction
