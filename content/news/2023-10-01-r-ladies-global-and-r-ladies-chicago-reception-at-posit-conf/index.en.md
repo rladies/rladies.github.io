@@ -88,7 +88,7 @@ listen to.
 
 ## Will R-Ladies ever re-brand to a name that is more inclusive to R users of marginalized genders?
 
-*Yani:* Yes. As of now our plan is to open a discussion within the
+*Yani:* Yes, it is under consideration. As of now our plan is to open a discussion within the
 R-Ladies community where members can comment anonymously and individuals
 from the community outside the leadership/global team will join the
 discussion. We hope this allows people to feel free to openly share
