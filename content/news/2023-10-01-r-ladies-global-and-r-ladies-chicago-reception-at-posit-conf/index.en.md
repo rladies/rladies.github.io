@@ -66,9 +66,6 @@ also like that it is an international community. I didn't have
 international friends before this and now I have friends in other
 R-Ladies in Spanish and they ask me to share my knowledge with them.
 
-*Riva:* It is a great community to be an introvert in; R-Ladies also
-changed my life. You have fun, you learn, and it helps with imposter
-syndrome. I don't have words to express how it changed my life.
 
 *Mo:* It is changing individual lives, but it is also changing an entire
 community. We are at tech conference and there are so many women here -
@@ -89,11 +86,11 @@ listen to.
 ## Will R-Ladies ever re-brand to a name that is more inclusive to R users of marginalized genders?
 
 *Yani:* Yes, it is under consideration. As of now our plan is to open a discussion within the
-R-Ladies community where members can comment anonymously and individuals
+R-Ladies community where members can comment anonymously or not, and individuals
 from the community outside the leadership/global team will join the
 discussion. We hope this allows people to feel free to openly share
-their opinion. We plan to have guidelines and rules written ahead of
-time to help guide the discussion. The results of that discussion will
+their opinion. We have written rules and guidelines to help guide the discussion.
+The results of that discussion will
 help guide the decision of the leadership team, and then it will be
 announced to the broader community. The idea is to have the current, and
 future potential, members of R-Ladies have a voice heard in this
@@ -132,10 +129,10 @@ plan to keep running online meet ups in a 50/50 way. I am glad to be
 back in person also to meet people and connect in a different way.
 
 *Stephanie:* I have had similar experience; we have people from all
-different universities and working in different sectors and because it
-is very difficult to move around city after work and we had talked about
-virtual before the pandemic because we wanted to reach a wider audience
-and now most of our events are virtual to be more inclusive and make it
+different universities and working in different sectors attending our events. Because it
+is very difficult to move around city after work, we had talked about
+virtual even before the pandemic, because we wanted to reach a wider audience.
+Now most of our events are virtual to be more inclusive and make it
 easier for people to attend events.
 
 *Angela:* Online events allow for the possibility of collaborations with
@@ -146,7 +143,7 @@ easier on the organizers and those people that are coming to speak.
 
 ## What is the process of starting a chapter?
 
-*Riva:* Send an email to `chapters@rladies.org`. Mouna will welcome you
+*Riva:* Send an email to `chapters@rladies.org`. Mouna from our Onboarding Team will welcome you
 and explain process. Chapters are permitted for cities, but not for a
 university or company. If you wish to have a thematic meet-up, you could
 approach a chapter like R-Ladies Remote and they can help create
@@ -167,8 +164,8 @@ events channel of the Community Slack channel or on Meet-up.
 
 ## Have you considered expanding to include Python?
 
-*Riva:* I am a PyLadies organizer and we often host joint R-Ladies and
-PyLadies events together in Santiago. Cosima Meyer (Cologne organiser, Germany) also organizes joint events
+*Riva:* With Stephanie we are also PyLadies organizers, and we are now planning to host joint R-Ladies and
+PyLadies events together in Valparaíso. Cosima Meyer (Cologne organiser, Germany) also organizes joint events
 in Germany and it is a great way to expand the way they are reaching
 people.
 
