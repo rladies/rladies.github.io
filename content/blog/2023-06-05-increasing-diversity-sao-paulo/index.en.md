@@ -6,7 +6,7 @@ author:
   - Tatyane Paz Dominguez
   - Ianni Muliterno
   - Ana Paula Rocha
-date: '2023-10-04
+date: '2023-10-04'
 categories:
   - R-Ladies
   - community
@@ -32,7 +32,7 @@ To do so, two points are important to be discussed: what is intersectionality, a
 
 The target audience of R-Ladies is gender minorities: cis women, trans women, trans men, non-binary people, and queer people. The main purpose of the community is to include these minority groups in the R community. However, for each of these groups, there are people who are part of other groups that may also suffer other oppressions arising from social markers of difference, such as race, sexual orientation, maternity, disabilities, age, etc. Therefore, the oppressions are not just based on a person's gender, but are interrelated and overlapping. This understanding is a concept called "intersectionality".
 
-According to [Bridie Taylor (2019)](https://www.womankind.org.uk/intersectionality-101-what-is-it-and-why-is-it-important/): 
+According to [Bridie Taylor (2019)](https://www.womankind.org.uk/intersectionality-101-what-is-it-and-why-is-it-important/):
 
 > "Intersectionality is the acknowledgment that **everyone has their own unique experiences of discrimination and oppression** and we must consider everything and anything that can marginalize people -- gender, race, social class, sexual orientation, physical ability, etc."
 
@@ -48,8 +48,7 @@ For historical reasons, Brazil is a country that presents different racial compo
 
 Despite representing about half of the region's population, the Black population has been marginalized. They are still underrepresented in spaces of power, such as politics, higher education, decision-making positions in companies, etc.
 
-![Infographic by the Brazilian Institute of Geography and Statistics, translated by the authors, showing the percentages of the population by color/race in Brazil.](ibge.png)
-Source: [IBGE - Continuous National Household Sample Survey, 2021](https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/18319-cor-ou-raca.html).
+![Infographic by the Brazilian Institute of Geography and Statistics, translated by the authors, showing the percentages of the population by color/race in Brazil.](ibge.png) Source: [IBGE - Continuous National Household Sample Survey, 2021](https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/18319-cor-ou-raca.html).
 
 Another relevant issue to understand the Brazilian context and the results presented here is the high level of violence with LGBTQIA+ groups, especially transgender people. The results of the [Trans Murder Monitoring (TMM) study in 2022](https://transrespect.org/en/trans-murder-monitoring/tmm-resources/) can be seen in the map below: Brazil is the country with the highest absolute values of murders of transgender people since the beginning of the historical series obtained by the TMM.
 
@@ -153,13 +152,11 @@ The quotas are also advertised on the community's social networks (mainly Instag
 
 ### **Space for children and babies**
 
-
 GuGuDaDados (free translation GuguDadata) is a collaborative and experimental space that RLadies São Paulo proposes with the aim of keeping children entertained and cared for while their mothers/fathers/caretakers can participate in community activities. The space itself consists of a room next to the room where the R-Ladies' activities take place, on the same floor, so that all caregivers feel comfortable to leave their children there.
 
 With financial support from other organizations, we hired a primary school teacher to promote recreational activities with the children in the GuGuDaDadosthroughout the activity. The organizers of R-Ladies also take toys, drawings, markers, games and temporary tattoos to entertain and amuse the children.
 
 ![Pictures of the Gugudadados space in recent events.](gugudadados.png)
-
 
 ### **Potluck: Collaborative Coffee**
 
@@ -195,8 +192,7 @@ Based on the survey answers and the community experience over time, these are so
 
 There are several people currently involved in the organization of the R-Ladies São Paulo community. It is important to mention that the community organizers belong to different minority groups (such as Black women, mothers, trans people, non-binary people, LGBTQIA+, neurodivergent people, and people over 40 years), and this is important to offer different perspectives and experiences. Furthermore, it is important to highlight that the participation in the organization is voluntary. Therefore, we list and thank the people who are involved in the various stages of organizing the community:
 
-![Pictures of the members of the co-organizing team.](team-1.jpg)
-![Pictures of the members of the co-organizing team.](team-2.jpg)
+![Pictures of the members of the co-organizing team.](team-1.jpg) ![Pictures of the members of the co-organizing team.](team-2.jpg)
 
 -   [Ana Carolina Moreno](https://www.linkedin.com/in/anacarolinamoreno/)
 
