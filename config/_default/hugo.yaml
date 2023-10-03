@@ -15,8 +15,8 @@ minify:
   minifyOutput: true
   
 build:
-  buildFuture: false
-  buildDrafts: false
+  buildFuture: true
+  buildDrafts: true
   
 ignoreFiles:
   - "\\.Rmd$"
