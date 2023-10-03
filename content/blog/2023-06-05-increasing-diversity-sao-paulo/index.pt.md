@@ -6,7 +6,7 @@ author:
   - Tatyane Paz Dominguez
   - Ianni Muliterno
   - Ana Paula Rocha
-date: '2023-10-02'
+date: '2023-10-04'
 categories:
   - R-Ladies
   - community
