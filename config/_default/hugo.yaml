@@ -1,7 +1,6 @@
-baseURL: "."
 title: "R-Ladies Global"
 theme: "hugo-rladies"
-publishDir: "build"
+publishDir: "public"
 
 languageCode: "en"
 defaultContentLanguage: "en"
