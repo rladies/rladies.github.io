@@ -132,79 +132,35 @@ jobs:
       - name: Build
         run: |
           if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
-            hugo -d ${{ env.hugobd }}
+            hugo \
+              -e production \
+              -d ${{ env.hugobd }}
           else
-            hugo  -d ${{ env.hugobd }} \
-            -b https://${{ env.netalias }}--rladies-dev.netlify.app/
+            hugo  \
+              -e development \
+              -d ${{ env.hugobd }} \
+              -b https://${{ env.netalias }}--rladies-dev.netlify.app/
           fi
           
-      - name: Archive Build Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: build-artifact-${{ github.run_id }}
-          path:  ${{ env.hugobd }}
-
-  deploy-production: 
-    name: Deploy production
-    needs: build
-    if: github.ref == 'refs/heads/main' &&  github.event_name != 'workflow_dispatch'
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-          
-      - name: Download Build Artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: build-artifact-${{ github.run_id }}
-          path: public
-          
-      - name: Deploy 🚀
+      - name: Deploy Production
+        if: github.ref == 'refs/heads/main' &&  github.event_name != 'workflow_dispatch'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: public
-
-  deploy-preview: 
-    name: Deploy preview
-    needs: build
-    if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Get environment
-        run: |
-          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
-          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
-          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
-          else
-            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
-          fi
+          folder: ${{ env.hugobd }}
           
-      - name: Install netlify cli
-        run: npm install netlify-cli -g
-
-      - name: Download Build Artifact
-        uses: actions/download-artifact@v3
-        with:
-          name: build-artifact-${{ github.run_id }}
-          path: public
-          
-      - name: Deploy Netlify
+      - name: Deploy Preview
+        if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           netlify deploy \
             --alias ${{ env.netalias }} \
-            --dir=public
+            --dir=${{ env.hugobd }}
 
       - uses: actions/github-script@v6
+        if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
         name: Notify PR about build
         with:
           github-token: ${{ env.token }}

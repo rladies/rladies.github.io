@@ -1,7 +1,6 @@
-baseURL: "."
 title: "R-Ladies Global"
 theme: "hugo-rladies"
-publishDir: "build"
+publishDir: "public"
 
 languageCode: "en"
 defaultContentLanguage: "en"
@@ -13,10 +12,6 @@ enableRobotsTXT: true
 enableGitInfo: true
 minify:
   minifyOutput: true
-  
-build:
-  buildFuture: true
-  buildDrafts: true
   
 ignoreFiles:
   - "\\.Rmd$"
