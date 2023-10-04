@@ -39,14 +39,19 @@ jobs:
 
       - name: Set env parameters
         run: |
+          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
+          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
+          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
+            echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
           else
             echo "directory=main" >> $GITHUB_ENV
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
+            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           fi
           
       - name: Install cURL Headers
@@ -142,7 +147,7 @@ jobs:
               -b https://${{ env.netalias }}--rladies-dev.netlify.app/
           fi
           
-      - name: Deploy Production
+      - name: Deploy production 🚀
         if: github.ref == 'refs/heads/main' &&  github.event_name != 'workflow_dispatch'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
@@ -150,11 +155,12 @@ jobs:
           folder: ${{ env.hugobd }}
           
       - name: Deploy Preview
-        if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+          if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
+          npm install netlify-cli -g
           netlify deploy \
             --alias ${{ env.netalias }} \
             --dir=${{ env.hugobd }}
