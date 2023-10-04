@@ -32,7 +32,7 @@
         {{ end }}
         
         {{ $subtitle := $rb.subtitle | default "" }}
-        {{ partial "funcs/card-expand.html" (dict "title" $rb.title "img" ($data.Get "photo") "subtitle" $subtitle "descr" $descr "category" $rb.type ) }}
+        {{ partial "funcs/card-expand.html" (dict "title" $rb.title "img" ($data.Get "photo") "subtitle" $subtitle "descr" $descr "category" $rb.type "url" $rb.url) }}
       {{ end }}
     </ul>
   </div>
