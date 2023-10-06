@@ -28,7 +28,7 @@ R-Ladies Chicago (the local R-Ladies chapter) jointly hosted a reception
 at the conference hotel in Chicago, Illinois. In attendance were all
 members of the R-Ladies leadership team, several R-Ladies global team members,
 chapter organizers from around the world, regular participants, and first time R-Ladies
-meet-up attendees. The in-person, unrecorded, event was open to both
+meet-up attendees. The in-person, unrecorded event was open to both
 conference attendees and local chapter members, and adhered to R-Ladies
 Chicago chapter policies and guidelines.
 
@@ -50,8 +50,8 @@ operational/procedural questions.
 
 *Angela:* Improving my data science skills in a community that was
 really supportive, which then quickly cascaded into talking to people in
-different sectors doing different things that you didn't yet know.
-Angela and Ola are stepping down as R-Ladies Chicago organizers, and
+different sectors doing different things that I didn't yet know.
+Angela and Ola are stepping down as R-Ladies Chicago organizers, and it
 would be amazing to give those benefits to someone else to make
 connections and build their careers.
 
@@ -60,25 +60,25 @@ Professionally, I wouldn't have the job that I have right now without
 R-Ladies. It has been a hugely positive experience, and it has been
 amazing to give back as an organizer.
 
-*Stephanie:* R-Ladies changed my life, I am a super introvert and felt
+*Stephanie:* R-Ladies changed my life. I am a super introvert and felt
 comfortable here; I have learned a lot and I made really good friends. I
 also like that it is an international community. I didn't have
-international friends before this and now I have friends in other
-R-Ladies in Spanish and they ask me to share my knowledge with them.
+international friends before this and now I am friends with other Spanish
+speaking R-Ladies and they ask me to share my knowledge with them.
 
 
 *Mo:* It is changing individual lives, but it is also changing an entire
 community. We are at tech conference and there are so many women here -
 this of course has to do with the R community that we are in and this R
-community is influenced that R-Ladies is breaking stereotypes and making
+community is influenced by R-Ladies is breaking stereotypes and making
 spaces for all of us. That has been a huge success for us,
 as interest for R-Ladies chapters quickly developed  and
 became popular very fast. The organization has made space for all of us
 in data science fields. It benefits us and the entire community. There
 are amazing initiatives going on as well. By establishing the idea of creating more diversity
 in gender representation in our community (here: the larger R-community), other aspects of
-diversity have become more highlighted also. The efforts on translation of content and even R
-it self, R-Ladies, is one of these.
+diversity have become more highlighted also. The efforts on translation of content in even R
+itself is one of these.
 R-Ladies in Latin American is making a huge
 impact on a larger scale and all the personal stories are fantastic to
 listen to.
@@ -87,23 +87,23 @@ listen to.
 
 *Yani:* Yes, it is under consideration. As of now our plan is to open a discussion within the
 R-Ladies community where members can comment anonymously or not, and individuals
-from the community outside the leadership/global team will join the
+from the community outside the leadership/global team can join the
 discussion. We hope this allows people to feel free to openly share
 their opinion. We have written rules and guidelines to help guide the discussion.
 The results of that discussion will
 help guide the decision of the leadership team, and then it will be
-announced to the broader community. The idea is to have the current, and
-future potential, members of R-Ladies have a voice heard in this
+announced to the broader community. The idea is to have the current and
+future potential members of R-Ladies have a voice heard in this
 decision.
 
 ## Any thoughts about age diversity and creating more inclusive accessible meetups?
 
 *Mo:* We provide our organizers a lot of freedom to set up meet-ups in a
 way that make them accessible. When Oslo started, we had good age
-diversit, from studens, profesionnals and retiring professors, it was nice to see
+diversity, from students, professionals and retiring professors, and it was nice to see
 everyone connecting. However, it can be hard reaching other people, and
 there are things we can think about to make it more inclusive. Things
-like having your space easily accessible, in Oslo follow Carpentries rules
+like having your space easily accessible: in Oslo we follow Carpentries rules
 about where the talks are, for example it should be wheelchair
 accessible, and near public transportation, not too late in the evening
 so they are not falling asleep and not too early to account for
@@ -121,10 +121,10 @@ to be more established, but it is definitely something to consider.
 
 # Operational/procedural questions
 
-## Q: What are chapter organizers finding helpful as we go back in person?
+## What are chapter organizers finding helpful as we go back in person?
 
 *María:* Online meetings have been helpful to reach other people that we
-haven't previously been able to and other parts of Latin America; we
+haven't previously been able to and in other parts of Latin America; we
 plan to keep running online meet ups in a 50/50 way. I am glad to be
 back in person also to meet people and connect in a different way.
 
@@ -143,7 +143,7 @@ easier on the organizers and those people that are coming to speak.
 
 ## What is the process of starting a chapter?
 
-*Riva:* Send an email to `chapters@rladies.org`. Mouna from our Onboarding Team will welcome you
+*Riva:* Send an email to `chapters@rladies.org`. A member of the Onboarding Team will welcome you
 and explain process. Chapters are permitted for cities, but not for a
 university or company. If you wish to have a thematic meet-up, you could
 approach a chapter like R-Ladies Remote and they can help create
@@ -164,9 +164,9 @@ events channel of the Community Slack channel or on Meet-up.
 
 ## Have you considered expanding to include Python?
 
-*Riva:* With Stephanie we are also PyLadies organizers, and we are now planning to host joint R-Ladies and
+*Riva:* Stephanie and I are also PyLadies organizers, and we are now planning to host joint R-Ladies and
 PyLadies events together in Valparaíso. Cosima Meyer (Cologne organiser, Germany) also organizes joint events
-in Germany and it is a great way to expand the way they are reaching
+in Germany, and it is a great way to expand the way you are reaching
 people.
 
 ## Does R-Ladies raise funding for events?
@@ -184,7 +184,7 @@ oranganize their funding.
 *Mo:* Yes but it is not active. We are establishing a social media team
 and creating a social media strategy to better reach community members.
 
-## Should local chapters create a mastodon account?
+## Should local chapters create a Mastodon account?
 
 *Mo:* Social media strategy at the chapter level is up to chapter
 organizers; different chapters have different reasons for using
@@ -201,7 +201,7 @@ the coming year, so keep an eye on our social media and website.
 ## How have you been successful in getting people to attend meetups?
 
 Here are some ideas on organizing events from our guide:
-<https://guide.rladies.org/organization/events/general/>
+<https://guide.rladies.org/organization/events/general/>.
 
 ## For the funding from RConsortium for local events, what is a typical grant amount?
 
@@ -215,4 +215,5 @@ and in the R Consortium page:
 
 Please see the guide for the full policy, which provides recommendations
 but also offers flexibility for individual chapters to maintain their
-own policies: <https://guide.rladies.org/about/mission/>
+own policies: <https://guide.rladies.org/about/mission/>. You can also
+refer them to guidance on helping R-Ladies as an ally <https://guide.rladies.org/ally/>.
