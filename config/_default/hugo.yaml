@@ -8,7 +8,6 @@ defaultContentLanguage: "en"
 summaryLength: 30
 
 pygmentsUseClasses: true
-enableGitInfo: true
 enableRobotsTXT: true
 enableGitInfo: true
 minify:
