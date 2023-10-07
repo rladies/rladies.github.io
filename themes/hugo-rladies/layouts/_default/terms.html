@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <ul class="tags-list">
+    {{- range $key, $value:= .Data.Terms -}}
+      <li>
+        <a class="tag-cloud" 
+          href="{{ "" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"
+        >{{ $key }}&nbsp;({{ $value.Count }})
+        </a>
+      </li>
+    {{- end -}}
+  </ul>
+{{ end }}
