@@ -1,8 +1,8 @@
 {{ define "main" }}
-  <ul class="tags-list">
+  <ul class="word-cloud">
     {{- range $key, $value:= .Data.Terms -}}
-      <li>
-        <a class="tag-cloud" 
+      <li class="word" style="font-size: calc({{ $value.Count }}*.5 * 1rem);">
+        <a
           href="{{ "" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"
         >{{ $key }}&nbsp;({{ $value.Count }})
         </a>

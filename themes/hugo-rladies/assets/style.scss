@@ -862,3 +862,21 @@ tr.fc-list-event {
   transform: uppercase;
 }
 
+
+.word-cloud {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  
+   li {
+    display: block;
+    padding: 0.2rem;
+    text-decoration: none;
+    position: relative;
+  }
+}
+
