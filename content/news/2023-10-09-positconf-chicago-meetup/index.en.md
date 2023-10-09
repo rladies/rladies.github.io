@@ -143,7 +143,7 @@ easier on the organizers and those people that are coming to speak.
 
 ## What is the process of starting a chapter?
 
-*Riva:* Send an email to `chapters@rladies.org`. A member of the Onboarding Team will welcome you
+*Riva:* Send an email to [chapters\@rladies.org](mailto:chapters@rladies.org). A member of the Onboarding Team will welcome you
 and explain process. Chapters are permitted for cities, but not for a
 university or company. If you wish to have a thematic meet-up, you could
 approach a chapter like R-Ladies Remote and they can help create
