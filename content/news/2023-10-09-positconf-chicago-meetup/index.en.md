@@ -172,7 +172,7 @@ people.
 ## Does R-Ladies raise funding for events?
 
 *Yani:* R-Ladies receives money from institutional and individuals
-donors; R Consortium is also a large donor and that mostly goes to
+donors; R Consortium is our main sponsor because R-Ladies is a Top Level project, this money mostly goes to
 Meetup fees. For R-Ladies chapters there is a different process -
 chapters can apply for R Consortium grants. If you do not want to manage
 money you can ask for non-monetary donations, like a venue, pizza,
