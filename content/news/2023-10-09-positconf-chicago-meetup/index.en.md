@@ -176,7 +176,7 @@ donors; R Consortium is also a large donor and that mostly goes to
 Meetup fees. For R-Ladies chapters there is a different process -
 chapters can apply for R Consortium grants. If you do not want to manage
 money you can ask for non-monetary donations, like a venue, pizza,
-drinks, etc. More recently some chapters have use Open Collective to
+drinks, speaker travel expenses, child care services, etc. More recently some chapters have use Open Collective to
 oranganize their funding.
 
 ## Is there a LinkedIn group for R-Ladies Global?
