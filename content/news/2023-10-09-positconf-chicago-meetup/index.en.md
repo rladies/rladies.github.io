@@ -157,7 +157,7 @@ happy to begin the process to reactivate your chapter.
 
 ## If I don't have a local chapter, is there a way to join a "virtual" chapter? Or are there chapters that regularly meet online?
 
-The R-Ladies Remote chapter serves this purpose. Additionally, many
+*Riva*: The R-Ladies Remote chapter serves this purpose. Additionally, many
 chapters continue to have virtual events and many welcome participants
 outside of their geographic location; they are often announced in the
 events channel of the Community Slack channel or on Meet-up.
