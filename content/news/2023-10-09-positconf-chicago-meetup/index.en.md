@@ -114,7 +114,7 @@ suggestions. We have the R-Ladies guide and there are general
 recommendations; please reach out to us with new ideas so we can share
 with the global community.
 
-## What do we think about the idea of having a RLadies conference day? 👀😊
+## What do we think about the idea of having a R-Ladies conference day? 👀😊
 
 *Mo:* That is the dream! We are not there yet, and the leadership needs
 to be more established, but it is definitely something to consider.
@@ -209,7 +209,7 @@ proposal. More info in our guide:
 and in the R Consortium page:
 <https://www.r-consortium.org/all-projects/r-user-group-support-program>.
 
-## What do we say to men who want to join an R Ladies chapter?
+## What do we say to men who want to join an R-Ladies chapter?
 
 Please see the guide for the full policy, which provides recommendations
 but also offers flexibility for individual chapters to maintain their
