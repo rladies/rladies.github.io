@@ -1369,12 +1369,12 @@
       "meetup": "rladies-scl",
       "twitter": "RLadiesSantiago",
       "email": "santiago@rladies.org",
-      "facebook": "RLadiesSantiago",
-      "github": "rladies/rladieschile"
+      "github": "rladies/rladieschile",
+      "mastodon": "@RLadiesSantiago@lile.cl"
     },
     "organizers": {
-      "current": ["Gabriela Sandoval", "Riva Quiroga", "Stephanie Orellana", "Sara Acevedo"],
-      "former": []
+      "current": ["Riva Quiroga", "Stephanie Orellana", "Sara Acevedo"],
+      "former": ["Gabriela Sandoval"]
     },
     "name": "R-Ladies Santiago",
     "id": "25039094",
@@ -1417,7 +1417,7 @@
       "meetup": "rladies-valparaiso",
       "twitter": "RLadiesValpo",
       "email": "valparaiso@rladies.org",
-      "facebook": "RLadiesValpo"
+      "mastodon": "@RLadiesValpo@lile.cl"
     },
     "organizers": {
       "current": ["Riva Quiroga", "Tatiana Canales"],
@@ -2048,7 +2048,7 @@
   },
   {
     "urlname": "rladies-kumasi",
-    "status": "prospective",
+    "status": "active",
     "country": "Ghana",
     "social_media": {
       "meetup": "rladies-kumasi",
@@ -3826,8 +3826,8 @@
       "email": "ankara@rladies.org"
     },
     "organizers": {
-      "current": ["Mubina Ipek"],
-      "former": []
+      "current": ["Fulya Gökalp"],
+      "former": ["Mubina İpek"]
     },
     "name": "R-Ladies Ankara",
     "id": "32299165",
@@ -4070,8 +4070,8 @@
       "github": "rladies/meetup-presentations_lancaster"
     },
     "organizers": {
-      "current": ["Rhian Davies"],
-      "former": []
+      "current": ["Nicola Rennie"],
+      "former": ["Rhian Davies"]
     },
     "name": "R-Ladies Lancaster, H2",
     "id": "29783351",
@@ -4913,7 +4913,7 @@
       "github": "rladies/meetup-presentation_louisville"
     },
     "organizers": {
-      "current": ["Ann Holmes"],
+      "current": ["Ann Holmes", "Lauren Girouard-Hallam"],
       "former": []
     },
     "name": "R-Ladies Louisville, KY",
