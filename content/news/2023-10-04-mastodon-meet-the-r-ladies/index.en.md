@@ -12,13 +12,13 @@ categories:
 
 # TL; DR
 
-[Follow us here!](https://hachyderm.io/@RLadiesGlobal)
+Follow us at [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)!
 
 # Why we are migrating to Mastodon
 
 Today, we want to share an important update concerning our communication strategy. Over the years, Twitter (now X) has served as a vital platform where we have fostered connections, celebrated R-Ladies' achievements, and shared our passion for R as a programming language. It has played an integral role in our journey. Nevertheless, given the shifting values of that platform, we no longer consider it a healthy environment to engage with our community. Consequently, our presence on Twitter has gradually diminished, leading us to cease tweeting in May.
 
-As R-Ladies Global’s commitment to building an inclusive and friendly community remains unwavering, we believe it is time to embrace the change that serves this commitment and enhances our community's experience. Following many of our community members, we are excited to share that we have joined Mastodon on the [Hachyderm server](https://hachyderm.io/about), a platform that we believe aligns more closely with our values. Mastodon provides us with an opportunity to create a space focused on meaningful interactions, inclusivity, and community building. We hope to make Mastodon an integral part of our communication strategy moving forward. If you are interested in learning more about how to interact on Mastodon, check out [this link](https://github.com/joyeusenoelle/GuideToMastodon).
+As R-Ladies' commitment to building an inclusive and friendly community remains unwavering, we believe it is time to embrace the change that serves this commitment and enhances our community's experience. Following many of our community members, we are excited to share that we have joined Mastodon on the [Hachyderm server](https://hachyderm.io/about), a platform that we believe aligns more closely with our values. Mastodon provides us with an opportunity to create a space focused on meaningful interactions, inclusivity, and community building. We hope to make Mastodon an integral part of our communication strategy moving forward. If you are interested in learning more about how to interact on Mastodon, see this [guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon).
 
 # Some considerations
 
