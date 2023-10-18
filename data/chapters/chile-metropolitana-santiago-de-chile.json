@@ -9,12 +9,12 @@
       "meetup": "rladies-scl",
       "twitter": "RLadiesSantiago",
       "email": "santiago@rladies.org",
-      "facebook": "RLadiesSantiago",
-      "github": "rladies/rladieschile"
+      "github": "rladies/rladieschile",
+      "mastodon": "@RLadiesSantiago@lile.cl"
     },
     "organizers": {
-      "current": ["Gabriela Sandoval", "Riva Quiroga", "Stephanie Orellana", "Sara Acevedo"],
-      "former": []
+      "current": ["Riva Quiroga", "Stephanie Orellana", "Sara Acevedo"],
+      "former": ["Gabriela Sandoval"]
     }
   }
 ]
