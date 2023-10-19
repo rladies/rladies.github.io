@@ -1,12 +1,15 @@
 {{ define "main" }}
-  <ul class="word-cloud">
+  <div class="d-flex justify-content-center align-items-center flex-wrap m-1">
     {{- range $key, $value:= .Data.Terms -}}
-      <li class="word" style="font-size: calc({{ $value.Count }}*.5 * 1rem);">
+      <button class="btn btn-md list-group-item m-2 b-0">
         <a
           href="{{ "" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"
-        >{{ $key }}&nbsp;({{ $value.Count }})
+        > {{ $key }}
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary text-white">
+            {{ $value.Count }}
+          </span>
         </a>
-      </li>
+      </button>
     {{- end -}}
-  </ul>
+  </div>
 {{ end }}
