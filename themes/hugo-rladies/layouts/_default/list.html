@@ -1,16 +1,3 @@
-{{ define "title" }}
-<header class="entry-header">
- 	<div class="entry-meta">
-     <span class="posted-on">
-        <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-           {{if isset .Params "date"}}{{- .Date.Format "January 2, 2006" -}}{{end}}
-        </time>
-     </span>
- 	</div>
- 	
- <h1 class="section-title">{{ .Title }}</h1>
-</header>
-{{ end }}
 
 {{ define "main" }}
   {{ range .Paginator.Pages }}

@@ -19,11 +19,13 @@
     {{ with .category }}
       <div class="card-expand-category rounded-right">{{ . | safeHTML }}</div>
     {{ end }}
+      {{ with .url }}<a href="{{.}}" target="_blank">{{end}}
       <h4 class="card-expand-title">
           {{ with .id }} <a href="#{{ . }}" class="name">{{ end }} 
             {{ .title | safeHTML }}
           {{ with .id }} </a> {{ end }}
       </h4>
+    {{ with .url }}</a>{{end}}
     {{ with .subtitle }}
       <h5 class="card-expand-subtitle">
         {{ . | safeHTML }}
