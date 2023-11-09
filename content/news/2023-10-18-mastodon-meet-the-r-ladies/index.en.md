@@ -2,7 +2,7 @@
 title: "Mastodon: Meet the R-Ladies!"
 author: "Daniela Vázquez"
 type: blog
-date: "2023-10-18"
+date: "2023-11-10"
 output: html_document
 tags: 
 - community
