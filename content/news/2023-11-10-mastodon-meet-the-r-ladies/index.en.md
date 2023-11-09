@@ -8,7 +8,7 @@ tags:
 - community
 categories: 
 - R-Ladies
-summary: R-Ladies are on mastodon's Hackyderm server!
+summary: R-Ladies are on mastodon's Hackyderm server! Follow us at [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)!
 ---
 
 # TL; DR
