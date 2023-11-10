@@ -43,7 +43,7 @@ to actively submit code or do exercises.
 
 Use of Posit Cloud requires both administrators of the Posit Cloud space and
 workshop participants to have a Posit Cloud account. This may require
-a bit of extra time to get started as user may need to create an account.
+a bit of extra time to get started as users may need to create an account.
 
 There are limits to the computing capacity of the Posit Cloud account. We haven't
 tested the boundaries, but be aware that computationally heavy workshops could 
