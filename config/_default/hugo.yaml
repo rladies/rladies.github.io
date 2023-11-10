@@ -11,6 +11,9 @@ enableRobotsTXT: true
 enableGitInfo: true
 minify:
   minifyOutput: true
+
+buildFuture: true
+buildDrafts: true
   
 ignoreFiles:
   - "\\.Rmd$"
