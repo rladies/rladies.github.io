@@ -1,28 +1,3 @@
-{{ define "translation"}}
-   {{ if eq .Params.translated false }}
-    <div class="not-translated">
-       {{ i18n "missing_translation" }}
-     </div>
-  {{ end }}
-{{ end }}
-
-
-{{ define "title" }}
-<header class="entry-header">
- 	<div class="entry-meta">
-     <span class="posted-on">
-       {{if isset .Params "date"}}
-          <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-             {{- .Date.Format "January 2, 2006" -}}
-          </time>
-        {{end}}
-     </span>
- 	</div>
- 	
- <h1 class="section-title">{{ .Title }}</h1>
-</header>
-{{ end }}
-
 
 {{ define "main" }}
 <div class="entry-content">
