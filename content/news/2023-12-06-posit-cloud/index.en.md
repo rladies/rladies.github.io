@@ -2,7 +2,7 @@
 title: "R-Ladies & Posit Cloud"
 author: "Leadership Team"
 type: blog
-date: "2023-11-15"
+date: "2023-12-06"
 output: html_document
 tags: 
 - community
@@ -32,8 +32,8 @@ Posit Cloud account free of charge for R-Ladies meet-ups.
 
 # How to request access
 
-Please follow the Posit Cloud section of the 
-R-Ladies guide [insert link]() to request access.
+Please follow the [Posit Cloud section of the 
+R-Ladies guide](https://guide.rladies.org/organization/tech/accounts/#posit-cloud) to request access.
 
 # Considerations
 
