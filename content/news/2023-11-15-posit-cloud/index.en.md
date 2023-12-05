@@ -11,7 +11,7 @@ categories:
 summary: R-Ladies now has a Posit Cloud account available for R-Ladies meet-ups.
 ---
 
-![R-Ladies and Posit Cloud logos](rladies_posit_cloud.PNG)
+![R-Ladies and Posit Cloud logos](rladies_posit_cloud_hex.PNG)
 
 # TL; DR
 
