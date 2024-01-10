@@ -16,7 +16,7 @@ title: "Get Involved"
 * Encourage coding women to be part of R-Ladies.  
 * Share code (R-Ladies Global Github).  
 * Inspire and support others.  
-* Join the [community slack](https://rladies-community-slack.herokuapp.com/).  
+* Join the [community slack](https://airtable.com/appJZFYABfCIdPYMR/shrReqdN8fhuXGY3P).  
 * Teach.  
 * Blog.  
 * Tweet, Retweet and follow @RLadiesGlobal and R-Ladies chapter accounts.  
