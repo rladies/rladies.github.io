@@ -76,7 +76,7 @@ jobs:
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
         if: |
-          ${{ github.event.pull_request.head.repo.full_name == github.repository }} ||
+          ${{ github.event.pull_request.head.repo.full_name == github.repository }} &&
           ${{ env.directory == 'main' }}
           
         with:
@@ -91,13 +91,8 @@ jobs:
           ${{ env.directory != 'main' }}
         with:
           name: entries
-          # Required, if the repo is private a Personal Access Token with 
-          # `repo` scope is needed or GitHub token in a job 
-          # where the permissions `action` scope set to `read`
           github_token: ${{ secrets.GLOBAL_GHA_PAT }}
-          # Optional, will get head commit SHA
           run_id: ${{ env.directory }}
-          # Optional, defaults to current repo
           repo: rladies/directory
           path: entries/
           
