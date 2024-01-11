@@ -54,10 +54,10 @@ jobs:
             echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           fi
-          echo "run directory: ${{ env.on_fork && env.directory == 'main' }}"
           
       - name: Install cURL Headers
         run: |
+          echo "run directory: ${{ env.on_fork && env.directory == 'main' }}"
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
 
