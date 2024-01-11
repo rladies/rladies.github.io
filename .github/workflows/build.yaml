@@ -168,8 +168,8 @@ jobs:
             --dir=${{ env.hugobd }}
 
       - uses: actions/github-script@v6
-        if: ${{ (!env.on_fork) && github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'}}
-        name: Notify PR about build
+        if: ${{ (!env.on_fork) && (github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch' ) }}
+        name: "Notify about build preview"
         with:
           github-token: ${{ env.token }}
           script: |
@@ -182,14 +182,14 @@ jobs:
             
       - uses: actions/github-script@v6
         if: ${{ env.on_fork }}
-        name: Notify PR about build
+        name: "Notify about no Preview"
         with:
-          github-token: ${{ env.token }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             await github.rest.issues.createComment({
-              issue_number: ${{ env.issue }},
-              owner: 'rladies',
-              repo: '${{ env.repo_name }}',
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
               body: '
                 :tada: The PR has successfully run, but will not deploy a preview because it is from a fork. 
                 Please merge into a new branch in the main repo to actually preview.
