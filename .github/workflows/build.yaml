@@ -76,7 +76,7 @@ jobs:
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
         if: |
-          ${{ env.directory == 'main' }} &&
+          ${{ env.directory == 'main' }} ||
           ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         with:
           repository: rladies/directory
@@ -85,7 +85,9 @@ jobs:
           
       - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if:  "${{ env.directory != 'main' }}"
+        if: |
+          ${{ env.directory != 'main' }} &&
+          ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         with:
           name: entries
           # Required, if the repo is private a Personal Access Token with 
