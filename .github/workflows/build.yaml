@@ -58,7 +58,7 @@ jobs:
           
       - name: Install cURL Headers
         run: |
-          echo "run directory: ${{ env.on_fork || env.directory == 'main' }}"
+          echo "run directory: ${{ (!env.on_fork) && env.directory == 'main' }}"
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
 
@@ -73,12 +73,12 @@ jobs:
           Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        if: ${{ !env.on_fork }}
         run: rm -r data/directory data/rblogs
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
-        if: ${{ env.on_fork && env.directory == 'main' }}
+        if: ${{ (!env.on_fork) && env.directory == 'main' }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
@@ -86,7 +86,7 @@ jobs:
           
       - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if: ${{ env.on_fork && env.directory != 'main' }}
+        if: ${{ (!env.on_fork) && env.directory != 'main' }}
         with:
           name: entries
           github_token: ${{ secrets.GLOBAL_GHA_PAT }}
@@ -95,7 +95,7 @@ jobs:
           path: entries/
           
       - name: Site data - DIRECTORY - Move
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        if: ${{ !env.on_fork }}
         run: |
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
@@ -109,7 +109,7 @@ jobs:
           fi
           
       - name: Site data - Meetup
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        if: ${{ !env.on_fork }}
         uses: actions/checkout@v3
         with:
           repository: rladies/meetup_archive
@@ -117,7 +117,7 @@ jobs:
           path: tmpd/mtp
 
       - name: Site data - Get blogs list
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        if: ${{ !env.on_fork }}
         uses: actions/checkout@v3
         with:
           repository: rladies/awesome-rladies-blogs
