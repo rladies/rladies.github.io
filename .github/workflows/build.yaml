@@ -184,7 +184,6 @@ jobs:
         uses: KeisukeYamashita/create-comment@v1
         if: ${{ env.on_fork }}
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           comment: |
             **Thank you for the PR!**
               
