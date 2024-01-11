@@ -70,11 +70,17 @@ jobs:
           Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         run: rm -r data/directory data/rblogs
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
-        if: "${{ env.directory == 'main' }}"
+        if: |
+          ${{ env.directory == 'main' }} &&
+          (
+            ${{ github.event_name != 'pull_request' }} ||
+            ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+          )
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
@@ -96,6 +102,7 @@ jobs:
           path: entries/
           
       - name: Site data - DIRECTORY - Move
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         run: |
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
@@ -109,6 +116,7 @@ jobs:
           fi
           
       - name: Site data - Meetup
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         uses: actions/checkout@v3
         with:
           repository: rladies/meetup_archive
@@ -116,6 +124,7 @@ jobs:
           path: tmpd/mtp
 
       - name: Site data - Get blogs list
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         uses: actions/checkout@v3
         with:
           repository: rladies/awesome-rladies-blogs
