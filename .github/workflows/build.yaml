@@ -176,7 +176,7 @@ jobs:
             await github.rest.issues.createComment({
               issue_number: ${{ env.issue }},
               owner: 'rladies',
-              repo: '${{ env.repo_name }}',
+              repo: 'rladies.github.io',
               body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
             })  
             
