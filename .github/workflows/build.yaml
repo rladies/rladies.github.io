@@ -177,6 +177,22 @@ jobs:
               issue_number: ${{ env.issue }},
               owner: 'rladies',
               repo: '${{ env.repo_name }}',
-              body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app)'
+              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
+            })  
+            
+      - uses: actions/github-script@v6
+        if: ${{ !env.on_fork }}
+        name: Notify PR about build
+        with:
+          github-token: ${{ env.token }}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: ${{ env.issue }},
+              owner: 'rladies',
+              repo: '${{ env.repo_name }}',
+              body: '
+                :tada: The PR has successfully run, but will not deploy a preview because it is from a fork. 
+                Please merge into a new branch in the main repo to actually preview.
+              '
             })       
 
