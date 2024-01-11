@@ -58,7 +58,6 @@ jobs:
           
       - name: Install cURL Headers
         run: |
-          echo "run directory: ${{ (!env.on_fork) && env.directory == 'main' }}"
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
 
@@ -125,6 +124,7 @@ jobs:
           path: tmpd/rblogs
           
       - name: Site data - clean cloned repos
+        if: ${{ !env.on_fork }}
         run: |
           cp -r tmpd/rblogs/blogs data/rblogs
           cp -r tmpd/mtp/data/* data/meetup/
