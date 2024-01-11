@@ -31,12 +31,6 @@ jobs:
       RENV_PROFILE: "dev"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
     steps:
-    
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-
       - name: Set env parameters
         run: |
           echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
@@ -55,9 +49,16 @@ jobs:
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           fi
           
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+
+          
       - name: Install cURL Headers
         run: |
-          echo "run directory: ${{ env.on_fork && env.directory == 'main' }}"
+          echo "run directory: ${{ env.on_fork & env.directory == 'main' }}"
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
 
