@@ -44,6 +44,7 @@ jobs:
           echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
+          echo "on_fork=github.event.pull_request.head.repo.full_name == github.repository" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
@@ -75,9 +76,7 @@ jobs:
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v3
-        if: |
-          ${{ github.event.pull_request.head.repo.full_name == github.repository &&
-              env.directory == 'main' }}
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository && env.directory == 'main' }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
@@ -85,9 +84,7 @@ jobs:
           
       - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if: |
-          ${{ github.event.pull_request.head.repo.full_name == github.repository &&
-              env.directory != 'main' }}
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository && env.directory != 'main' }}
         with:
           name: entries
           github_token: ${{ secrets.GLOBAL_GHA_PAT }}
