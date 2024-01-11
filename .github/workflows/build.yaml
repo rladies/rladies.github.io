@@ -168,7 +168,7 @@ jobs:
             --dir=${{ env.hugobd }}
 
       - uses: actions/github-script@v6
-        if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+        if: ${{ (!env.on_fork) && github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'}}
         name: Notify PR about build
         with:
           github-token: ${{ env.token }}
@@ -181,7 +181,7 @@ jobs:
             })  
             
       - uses: actions/github-script@v6
-        if: ${{ !env.on_fork }}
+        if: ${{ env.on_fork }}
         name: Notify PR about build
         with:
           github-token: ${{ env.token }}
