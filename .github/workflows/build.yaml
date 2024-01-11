@@ -179,15 +179,4 @@ jobs:
               repo: 'rladies.github.io',
               body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
             })  
-            
-      - name: "Notify about no Preview"
-        uses: KeisukeYamashita/create-comment@v1
-        if: ${{ env.on_fork }}
-        with:
-          comment: |
-            **Thank you for the PR!**
-              
-            The PR has successfully run :tada:, but will not deploy a preview because it is from a fork. 
-            We will review its content, and merge into a new branch to generate the preview.
-                    
 
