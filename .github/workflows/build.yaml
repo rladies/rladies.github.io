@@ -190,9 +190,10 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `
-                :tada: The PR has successfully run, but will not deploy a preview because it is from a fork. 
-                Please merge into a new branch in the main repo to actually preview.
-              `
-            })       
+              body: `**Thank you for the PR!**
+
+                The PR has successfully run :tada:, but will not deploy a preview because it is from a fork. 
+                We will review its content, and merge into a new branch to generate the preview.`
+            })
+            
 
