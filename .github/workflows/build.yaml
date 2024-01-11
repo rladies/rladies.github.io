@@ -39,8 +39,8 @@ jobs:
           
       - name: Show github vars
         run: |
-          ${{ github.event.pull_request.head.repo.full_name}}
-          ${{ github.repository  }}
+          echo ${{ github.event.pull_request.head.repo.full_name}}
+          echo ${{ github.repository  }}
 
       - name: Set env parameters
         run: |
