@@ -8,12 +8,13 @@
     "social_media": {
       "meetup": "rladies-dc",
       "twitter": "RLadiesDC",
+      "linkedin": "https://www.linkedin.com/company/rladies-dc/",
       "email": "dc@rladies.org",
       "github": "rladies/meetup-presentations_dc"
     },
     "organizers": {
-      "current": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"],
-      "former": []
+      "current": ["Arati Krishnamoorthy","Parker Dority"],
+      "former": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"]
     }
   }
 ]
