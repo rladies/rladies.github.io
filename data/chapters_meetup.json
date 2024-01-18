@@ -1621,6 +1621,29 @@
     "timezone": "America/Guayaquil"
   },
   {
+    "urlname": "rladies-milagro",
+    "status": "active",
+    "country": "Ecuador",
+    "social_media": {
+      "meetup": "rladies-milagro",
+      "twitter": "Rladies_Milagro",
+      "email": "milagro@rladies.org"
+    },
+    "organizers": {
+      "current": ["Mercedes Gisela Soledispa Lucas", "Jhanelly Chalá", "Naomy Vera"],
+      "former": []
+    },
+    "name": "R-Ladies Milagro",
+    "id": "35058835",
+    "country_acronym": "EC",
+    "state": "",
+    "city": "Milagro",
+    "members": 316,
+    "lat": -2.18,
+    "lon": -79.6,
+    "timezone": "America/Guayaquil"
+  },
+  {
     "urlname": "rladies-galapagos-islands",
     "status": "active",
     "country": "Ecuador",
@@ -1818,8 +1841,9 @@
       "facebook": "RLadiesParis",
       "instagram": "rladiesparis",
       "linkedin": "r-ladies-paris",
-      "youtube": "UCWTFKtW_ReLP9zmMTYjRqug",
-      "github": "rladies/r-ladies-paris"
+      "youtube": "@rladiesparis",
+      "github": "R-Ladies-Paris",
+      "mastodon": "https://mastodon.social/@rladies_paris"
     },
     "organizers": {
       "current": ["Mouna Belaid"],
@@ -2452,8 +2476,8 @@
       "github": "rladies/meetup-presentations_rome"
     },
     "organizers": {
-      "current": ["Federica Gazzelloni", "Katie Wood"],
-      "former": ["Nina Deliu"]
+      "current": ["Federica Gazzelloni"],
+      "former": ["Nina Deliu", "Katie Wood"]
     },
     "name": "R-Ladies Roma, RM",
     "id": "36128420",
@@ -5611,11 +5635,12 @@
       "meetup": "rladies-dc",
       "twitter": "RLadiesDC",
       "email": "dc@rladies.org",
+      "linkedin": "https://www.linkedin.com/company/rladies-dc/",
       "github": "rladies/meetup-presentations_dc"
     },
     "organizers": {
-      "current": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"],
-      "former": []
+      "current": ["Arati Krishnamoorthy", "Parker Dority"],
+      "former": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"]
     },
     "name": "R-Ladies Washington, DC",
     "id": "21510971",
