@@ -2215,7 +2215,7 @@
     },
     "organizers": {
       "current": ["Adithi Upadhya", "Aparna Bindu", "Muthumari S", "Diksha Chawla", "Pragati Parikh", "Smruthi R", "Shefali Lokesh", "Radha Subramanian", "Dincy Mariyam"],
-      "former": []
+      "former": ["Saumya Singh"]
     },
     "name": "R-Ladies Bangalore",
     "id": "34086060",
@@ -3546,7 +3546,7 @@
     },
     "organizers": {
       "current": ["Theoni Photopoulou"],
-      "former": []
+      "former": ["Megan Rogers"]
     },
     "name": "R-Ladies Cape Town",
     "id": "22790744",
@@ -3748,8 +3748,8 @@
       "github": "rladies/meetup-presentations_stockholm"
     },
     "organizers": {
-      "current": ["Elisabeth Dahlqwist", "Nina Lindell", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm", "Ashley Thompson"],
-      "former": []
+      "current": ["Elisabeth Dahlqwist", "Nina Lindell", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm"],
+      "former": ["Ashley Thompson"]
     },
     "name": "R-Ladies Stockholm",
     "id": "29540437",
