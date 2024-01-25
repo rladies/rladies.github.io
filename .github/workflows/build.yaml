@@ -2,6 +2,8 @@ name: "Build and deploy non-production"
 
 on:
   pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       directory:
