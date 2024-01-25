@@ -480,6 +480,20 @@
     "name": "R-Ladies NA"
   },
   {
+    "urlname": "rladies-salzburg",
+    "status": "active",
+    "country": "austria",
+    "social_media": {
+      "meetup": "rladies-salzburg",
+      "email": "salzburg@rladies.org"
+    },
+    "organizers": {
+      "current": ["Ekaterina Akimova"],
+      "former": []
+    },
+    "name": "R-Ladies NA"
+  },
+  {
     "urlname": "rladies-vienna",
     "status": "active",
     "country": "Austria",
