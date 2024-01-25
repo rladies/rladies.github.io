@@ -24,7 +24,7 @@ jobs:
     name: Build site
     runs-on: ubuntu-22.04
     env:
-      RENV_PROFILE: "dev"
+      RENV_PROFILE: "production"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
       hugobd: public
       on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
@@ -63,7 +63,6 @@ jobs:
           
       - name: Populate untranslated pages
         run: |
-          rm .Rprofile # avoid starting renv
           Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
