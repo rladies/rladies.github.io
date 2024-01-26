@@ -19,7 +19,7 @@ summary: R-Ladies Global Team has 13 new members!
 In 2023 we [announced openings](https://rladies.org/news/2023-04-11-global-team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts.
 We are delighted to welcome 13 new members to the R-Ladies Global Team.
 R-Ladies is 100% volunteer driven, and we very grateful to those who 
-support us with their time and effort to champion our mission.
+support us with their time and effort to champion our [mission](https://rladies.org/about-us/mission/).
 
 
 
