@@ -179,13 +179,12 @@ jobs:
     steps:
       - name: Set env parameters
         run: |
-          echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
-          echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
+
       - name: Create repository dispatch event
         env:
           GITHUB_TOKEN: ${{ secrets.GLOBAL_GHA_PAT }}
         run: |
-          gh api repos/${{env.repo_owner}}/${{ env.repo_name}}/dispatches \
+          gh api repos/${{ env.repo_name }}/dispatches \
             --input type=pr \
             --input pr_number=${{ env.issue }} \
             --input status=failed \
