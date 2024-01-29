@@ -117,7 +117,7 @@ jobs:
         with:
           repository: rladies/awesome-rladies-blogs
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          ref: 'refs/pull/${{ env.blogs }}'
+          ref: 'refs/pull/${{ env.blogs }}/head'
           path: tmpd/rblogs
           
       - name: Site data - Meetup
