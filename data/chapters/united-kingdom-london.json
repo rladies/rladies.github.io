@@ -12,8 +12,8 @@
       "github": "rladies/meetup-presentations_london"
     },
     "organizers": {
-      "current": ["Claudia Vitolo", "Hannah Frick", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
-      "former": []
+      "current": ["Claudia Vitolo", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
+      "former": ["Hannah Frick"]
     }
   }
 ]
