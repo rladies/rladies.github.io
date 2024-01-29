@@ -48,7 +48,7 @@ jobs:
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
-          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-${{ github.event.number }}" >> $GITHUB_ENV
+          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-${{ github.event.number }}--rladies-dev.netlify.app" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
           else
@@ -56,7 +56,7 @@ jobs:
           fi
 
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
           
@@ -80,7 +80,7 @@ jobs:
         run: rm -r data/directory data/rblogs
         
       - name: Site data - DIRECTORY - Get
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         if: ${{ (env.on_fork != true) && env.directory == 'main' }}
         with:
           repository: rladies/directory
@@ -113,7 +113,7 @@ jobs:
     
       - name: Site data - Get blogs list
         if: ${{ env.on_fork != true }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: rladies/awesome-rladies-blogs
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
@@ -122,7 +122,7 @@ jobs:
           
       - name: Site data - Meetup
         if: ${{ env.on_fork != true }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: rladies/meetup_archive
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
@@ -146,7 +146,7 @@ jobs:
           hugo  \
             -e development \
             -d ${{ env.hugobd }} \
-            -b https://${{ env.netalias }}--rladies-dev.netlify.app/
+            -b https://${{ env.netalias }}/
           
           
       - name: Deploy Preview
@@ -170,7 +170,7 @@ jobs:
               issue_number: ${{ env.issue }},
               owner: 'rladies',
               repo: '${{ env.repo_name }}',
-              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
+              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }})'
             })  
             
   notify:
