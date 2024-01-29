@@ -10,44 +10,53 @@ on:
         description: 'Directory reference'
         required: true
         default: 'main'
-      orig_pr:
-        description: 'Originating PR'
+      blogs:
+        description: 'Blogs reference'
+        required: true
+        default: 'main'
+      triggering_issue:
+        description: 'Triggering PR'
+        required: false
+      triggering_repo:
+        description: 'Triggering repo'
+        required: false
 
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.inputs.directory }}
   cancel-in-progress: true
 
-  
+env:
+  RENV_PROFILE: "dev"
+  RENV_CONFIG_SANDBOX_ENABLED: FALSE
+  issue: ${{ github.event.inputs.triggering_issue || github.event.pull_request.number }}
+  repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
+  directory: ${{ github.event.inputs.directory || 'main' }}
+  blogs: ${{ github.event.inputs.blogs || 'main' }}
+      
 jobs:
   build: 
     name: Build site
     runs-on: ubuntu-22.04
     env:
-      RENV_PROFILE: "dev"
-      RENV_CONFIG_SANDBOX_ENABLED: FALSE
       hugobd: public
       on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
-      issue: ${{ github.event.inputs.orig_pr || github.event.pull_request.number }}
-      repo_name: ${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
     steps:
       - name: Set env parameters
         run: |
-          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
+          echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
+          echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
+          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-${{ github.event.number }}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
           else
-            echo "directory=main" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           fi
-          
+
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
           
@@ -71,7 +80,7 @@ jobs:
         run: rm -r data/directory data/rblogs
         
       - name: Site data - DIRECTORY - Get
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         if: ${{ (env.on_fork != true) && env.directory == 'main' }}
         with:
           repository: rladies/directory
@@ -101,23 +110,24 @@ jobs:
               mv entries/img/* assets/directory
             fi
           fi
+    
+      - name: Site data - Get blogs list
+        if: ${{ env.on_fork != true }}
+        uses: actions/checkout@v4
+        with:
+          repository: rladies/awesome-rladies-blogs
+          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
+          ref: 'refs/pull/${{ env.issue }}/head'
+          path: tmpd/rblogs
           
       - name: Site data - Meetup
         if: ${{ env.on_fork != true }}
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: rladies/meetup_archive
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
           path: tmpd/mtp
 
-      - name: Site data - Get blogs list
-        if: ${{ env.on_fork != true }}
-        uses: actions/checkout@v3
-        with:
-          repository: rladies/awesome-rladies-blogs
-          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          path: tmpd/rblogs
-          
       - name: Site data - clean cloned repos
         if: ${{ env.on_fork != true }}
         run: |
@@ -136,7 +146,7 @@ jobs:
           hugo  \
             -e development \
             -d ${{ env.hugobd }} \
-            -b https://${{ env.netalias }}--rladies-dev.netlify.app/
+            -b https://${{ env.netalias }}-rladies-dev.netlify.app/
           
           
       - name: Deploy Preview
@@ -159,7 +169,24 @@ jobs:
             await github.rest.issues.createComment({
               issue_number: ${{ env.issue }},
               owner: 'rladies',
-              repo: 'rladies.github.io',
-              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
+              repo: '${{ env.repo_name }}',
+              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}-rladies-dev.netlify.app)'
             })  
+            
+  notify:
+    runs-on: ubuntu-latest
+    if: ${{ failure() && (github.event_name == 'workflow_dispatch' ) }}
+    steps:
+      - name: Set env parameters
+        run: |
+
+      - name: Create repository dispatch event
+        env:
+          GITHUB_TOKEN: ${{ secrets.GLOBAL_GHA_PAT }}
+        run: |
+          gh api repos/${{ env.repo_name }}/dispatches \
+            --input type=pr \
+            --input pr_number=${{ env.issue }} \
+            --input status=failed \
+            --input conclusion=${{ github.event.workflow_run.conclusion }}
 
