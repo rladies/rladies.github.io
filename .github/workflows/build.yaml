@@ -175,7 +175,7 @@ jobs:
             
   notify:
     runs-on: ubuntu-latest
-    if: ${{ failure() && (github.event_name = "workflow_dispatch") }}
+    if: ${{ failure() && (github.event_name == "workflow_dispatch") }}
     steps:
       - name: Set env parameters
         run: |
