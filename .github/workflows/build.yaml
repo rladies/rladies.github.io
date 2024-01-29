@@ -26,20 +26,21 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.inputs.directory }}
   cancel-in-progress: true
 
-  
+env:
+  RENV_PROFILE: "dev"
+  RENV_CONFIG_SANDBOX_ENABLED: FALSE
+  issue: ${{ github.event.inputs.triggering_issue || github.event.pull_request.number }}
+  repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
+  directory: ${{ github.event.inputs.directory || 'main' }}
+  blogs: ${{ github.event.inputs.blogs || 'main' }}
+      
 jobs:
   build: 
     name: Build site
     runs-on: ubuntu-22.04
     env:
-      RENV_PROFILE: "dev"
-      RENV_CONFIG_SANDBOX_ENABLED: FALSE
       hugobd: public
       on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
-      issue: ${{ github.event.inputs.triggering_issue || github.event.pull_request.number }}
-      repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
-      directory: ${{ github.event.inputs.directory || 'main' }}
-      blogs: ${{ github.event.inputs.blogs || 'main' }}
     steps:
       - name: Set env parameters
         run: |
@@ -171,4 +172,22 @@ jobs:
               repo: ${{ env.repo_name }},
               body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
             })  
+            
+  notify:
+    runs-on: ubuntu-latest
+    if: ${{ failure() & github.event_name = "workflow_dispatch" }}
+    steps:
+      - name: Set env parameters
+        run: |
+          echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
+          echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
+      - name: Create repository dispatch event
+        env:
+          GITHUB_TOKEN: ${{ secrets.GLOBAL_GHA_PAT }}
+        run: |
+          gh api repos/${{env.repo_owner}}/${{ env.repo_name}}/dispatches \
+            --input type=pr \
+            --input pr_number=${{ env.issue }} \
+            --input status=failed \
+            --input conclusion=${{ github.event.workflow_run.conclusion }}
 
