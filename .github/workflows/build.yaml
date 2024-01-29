@@ -10,6 +10,10 @@ on:
         description: 'Directory reference'
         required: true
         default: 'main'
+      blogs:
+        description: 'Blogs reference'
+        required: true
+        default: 'main'
       orig_pr:
         description: 'Originating PR'
 
@@ -30,6 +34,9 @@ jobs:
       on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
       issue: ${{ github.event.inputs.orig_pr || github.event.pull_request.number }}
       repo_name: ${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
+      directory: ${{ github.event.inputs.directory || 'main' }}
+      blogs: ${{ github.event.inputs.blogs || 'main' }}
+      netalias: ${{ github.event.number }}
     steps:
       - name: Set env parameters
         run: |
@@ -37,12 +44,8 @@ jobs:
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
           else
-            echo "directory=main" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           fi
           
@@ -101,6 +104,15 @@ jobs:
               mv entries/img/* assets/directory
             fi
           fi
+    
+      - name: Site data - Get blogs list
+        if: ${{ env.on_fork != true }}
+        uses: actions/checkout@v3
+        with:
+          repository: rladies/awesome-rladies-blogs
+          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
+          ref: ${{ env.blogs }}
+          path: tmpd/rblogs
           
       - name: Site data - Meetup
         if: ${{ env.on_fork != true }}
@@ -110,14 +122,6 @@ jobs:
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
           path: tmpd/mtp
 
-      - name: Site data - Get blogs list
-        if: ${{ env.on_fork != true }}
-        uses: actions/checkout@v3
-        with:
-          repository: rladies/awesome-rladies-blogs
-          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          path: tmpd/rblogs
-          
       - name: Site data - clean cloned repos
         if: ${{ env.on_fork != true }}
         run: |
