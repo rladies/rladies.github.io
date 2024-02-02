@@ -834,7 +834,7 @@
     },
     "organizers": {
       "current": ["Izabela Oliveira", "Paula Santos"],
-      "former": []
+      "former": ["Kelly P de Lima"]
     },
     "name": "R-Ladies Lavras",
     "id": "31653398",
@@ -2998,7 +2998,7 @@
     },
     "organizers": {
       "current": ["Sara Iacozza", "Eirini Zormpa"],
-      "former": []
+      "former": ["Anne Mickan", "Laura Giglio"]
     },
     "name": "R-Ladies Nijmegen",
     "id": "28393787",
@@ -3748,8 +3748,8 @@
       "github": "rladies/meetup-presentations_stockholm"
     },
     "organizers": {
-      "current": ["Elisabeth Dahlqwist", "Nina Lindell", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm"],
-      "former": ["Ashley Thompson"]
+      "current": ["Elisabeth Dahlqwist", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm"],
+      "former": ["Nina Lindell", "Ashley Thompson"]
     },
     "name": "R-Ladies Stockholm",
     "id": "29540437",
@@ -4148,8 +4148,8 @@
       "github": "rladies/meetup-presentations_london"
     },
     "organizers": {
-      "current": ["Claudia Vitolo", "Hannah Frick", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
-      "former": []
+      "current": ["Claudia Vitolo", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
+      "former": ["Hannah Frick"]
     },
     "name": "R-Ladies London, 17",
     "id": "19474893",
@@ -4383,8 +4383,8 @@
       "github": "rladies/meetup-presentations_la"
     },
     "organizers": {
-      "current": ["Katie Leap", "Amanda Tilot"],
-      "former": []
+      "current": ["Katie Leap"],
+      "former": ["Amanda Tilot"]
     },
     "name": "R-Ladies Los Angeles, CA",
     "id": "20382018",
@@ -4406,8 +4406,8 @@
       "email": "pasadena@rladies.org"
     },
     "organizers": {
-      "current": ["Gail Peretsman-Clement", "Zhi Yang", "Donna Wrublewski"],
-      "former": []
+      "current": ["Gail Peretsman-Clement", "Donna Wrublewski"],
+      "former": ["Zhi Yang"]
     },
     "name": "R-Ladies Pasadena, CA",
     "id": "28280039",
@@ -4547,8 +4547,8 @@
       "github": "rladies/meetup-presentations_boulder"
     },
     "organizers": {
-      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Leigh Alexander", "Marta Jankowska"],
-      "former": []
+      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Marta Jankowska"],
+      "former": ["Leigh Alexander"]
     },
     "name": "R-Ladies Boulder, CO",
     "id": "28789217",
@@ -5039,8 +5039,8 @@
       "email": "lexingtonpark@rladies.org"
     },
     "organizers": {
-      "current": ["Linden McBride", "Caitlin Eger", "Cassie Gurbisz"],
-      "former": []
+      "current": ["Caitlin Eger", "Cassie Gurbisz"],
+      "former": ["Linden McBride"]
     },
     "name": "R-Ladies Lexington Park, MD",
     "id": "32611075",
@@ -5437,7 +5437,7 @@
     },
     "organizers": {
       "current": ["Augustina Ragwitz", "Deeksha Thati", "Alison Presmanes Hill"],
-      "former": []
+      "former": ["Beth Duckles"]
     },
     "name": "R-Ladies Portland, OR",
     "id": "25057217",
@@ -5578,8 +5578,8 @@
       "slack": "r-ladies-el-paso.slack.com"
     },
     "organizers": {
-      "current": ["Grace Smith Vidaurre", "Marguerite Mauritz"],
-      "former": []
+      "current": ["Grace Smith Vidaurre"],
+      "former": ["Marguerite Mauritz"]
     },
     "name": "R-Ladies El Paso, TX",
     "id": "31679846",
