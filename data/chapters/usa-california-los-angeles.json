@@ -12,8 +12,8 @@
       "github": "rladies/meetup-presentations_la"
     },
     "organizers": {
-      "current": ["Katie Leap", "Amanda Tilot"],
-      "former": []
+      "current": ["Katie Leap"],
+      "former": [ "Amanda Tilot"]
     }
   }
 ]
