@@ -51,8 +51,10 @@ jobs:
           echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-${{ github.event.number }}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
+            echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
           else
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+            echo "blogsref=main" >> $GITHUB_ENV
           fi
 
       - name: Checkout repository
@@ -117,7 +119,7 @@ jobs:
         with:
           repository: rladies/awesome-rladies-blogs
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          ref: 'refs/pull/${{ env.issue }}/head'
+          ref: ${{ env.blogsref }}
           path: tmpd/rblogs
           
       - name: Site data - Meetup
