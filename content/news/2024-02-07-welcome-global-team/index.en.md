@@ -17,9 +17,9 @@ slug: /news/new-to-global-team-2023/
 
 # Overview
 
-In 2023 we [announced openings](https://rladies.org/news/2023-04-11-global-team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts.
+In 2023 we [announced openings](https://rladies.org/news/2023-04-11-global-team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts and facilitate the growth of the R-Ladies community.
 We are delighted to welcome 13 new members to the R-Ladies Global Team.
-R-Ladies is 100% volunteer driven, and we very grateful to those who 
+R-Ladies is 100% volunteer-driven, and we are very grateful to those who 
 support us with their time and effort to champion our [mission](https://rladies.org/about-us/mission/).
 
 
@@ -54,7 +54,7 @@ we hope that it will be a smoother process for future members.
 # What the future holds
 
 We are excited to see what the future holds for R-Ladies with these new
-members on the Global Team. Having new people, with fresh ideas and 
+members of the Global Team. Having new people, with fresh ideas and 
 perspectives, will help us to continue to grow and improve as an organization.
 We are looking forward to working with these new members, and we hope
 that you will join us in welcoming them to the Global Team!
