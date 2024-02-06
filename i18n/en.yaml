@@ -52,8 +52,12 @@ event: "Event"
 
 # About Global Team ----
 leadership: 'Leadership'
-alumni: 'Alumni'
 global-team: 'Global Team'
+alumni: 'Alumni'
+alumni-text: |
+  R-Ladies is extremely thankful for all the hard work 
+  and dedication of our past members and leaders.
+  We would not be where we are today without them.
 
 # Other ----
 social_media: "Social media"
