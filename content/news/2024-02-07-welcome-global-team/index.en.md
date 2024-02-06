@@ -62,6 +62,6 @@ perspectives, will help us to continue to grow and improve as an organization.
 We are looking forward to working with these new members, and we hope
 that you will join us in welcoming them to the Global Team!
 
-You can see an overview of the entire global team [here](/about-us/global-team/).
+You can see an overview of the entire global team at [About -> Meet the Global Team](/about-us/global-team/).
 
 
