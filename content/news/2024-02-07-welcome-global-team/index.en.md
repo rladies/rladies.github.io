@@ -44,7 +44,7 @@ support us with their time and effort to champion our [mission](https://rladies.
 
 # Onboarding process
 The global governance of R-Ladies is seeing increased activity as we all  slowly are
-coming out of 4 difficult years. The new members of the Global team are vital to
+coming out of four difficult years. The new members of the Global team are vital to
 help support and grow our community.
 
 With these amazing new members, we have also been able to develop
