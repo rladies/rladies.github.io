@@ -50,6 +50,11 @@ city: "City"
 cities: "Cities"
 event: "Event"
 
+# About Global Team ----
+leadership: 'Leadership'
+alumni: 'Alumni'
+global-team: 'Global Team'
+
 # Other ----
 social_media: "Social media"
 archive: 'Archive'
