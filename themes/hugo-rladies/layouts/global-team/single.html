@@ -1,24 +1,68 @@
 
 {{ define "main" }}
-  <p>{{ .Content }}</p>
   {{ $gt := $.Site.Data.global_team }}
+    <!-- create maps of names for gt_roles, becasue we cannot 'where' over maps of maps -->
   {{ $.Scratch.Set "gt_roles" (slice) }}
   {{ range $gt.current }}  
     {{ $.Scratch.Add "gt_roles" .role }}
   {{ end }}
   {{ $.Scratch.Set "gt_roles" ($.Scratch.Get "gt_roles" | uniq | sort) }}
   
-  <!-- create maps of names for gt_roles, becasue we cannot where over maps of maps -->
+  {{ $.Scratch.Set "leadership" (slice) }}
+
+  <!-- Create maps of members in various roles -->
   {{ range  $r_index, $r_name := ($.Scratch.Get "gt_roles" ) }}
     {{ $.Scratch.Set $r_name (slice) }}
     {{ range $idx, $value :=  $gt.current }}
       {{ $sect := intersect $value.role (slice $r_name) }}
       {{ if eq (len $sect) 1 }}
         {{ $.Scratch.Add $r_name .name }}
+        {{ if eq $r_name "Leadership" }}
+          {{ $.Scratch.Add "leadership" $idx }}
+        {{ end }}
       {{ end }}
     {{ end }}
-  {{ end }}  
+  {{ end }} 
   
+  <!-- to emable shuffle of the grid -->
+  {{ $.Scratch.Set "gtc" (slice) }}
+  {{ range $name, $_ := $gt.current }}
+      {{ $.Scratch.Add "gtc" $name }}
+  {{ end }} 
+  
+  {{ $path := $.Site.GetPage "section" "global-team" }}
+
+  <p>{{ .Content }}</p>
+  
+  <div class="container expand-grid" id="leadership-team">
+    <h1 class="section-title">Leadership</h1>
+    <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team">
+
+      {{ range $name := $.Scratch.Get "leadership" | shuffle }}
+        {{ $d := index $gt.current $name }}
+        {{ $img := ( printf "about-us/global-team/img/%s" $d.img.url ) }}
+        {{ $.Scratch.Set "img" "" }}
+        {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
+          {{ $image := . }}
+          {{ $image := $image.Fill "200x200" }}
+          {{ $.Scratch.Set "img" $image.RelPermalink }}
+        {{ end }}
+        {{ $image := $.Scratch.Get "img" }}
+        
+        {{ $data := newScratch }}
+        {{ $data.Set "foot" "" }}
+        {{ with $d.img.credit }}
+            {{ $data.Set "foot" "<p class=\"card-text text-muted\"><small>" }}
+            {{ $data.Add "foot" (printf "Photo credit: %s" . ) }}
+            {{ $data.Add "foot" "</small></p>" }}
+        {{ end }}
+
+        {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" ($data.Get "foot")) }}
+      {{ end }}
+      </ul>
+  </div>
+
+  <h1 class="section-title">Global Team</h1>
   <div class="my-5">
     <table class="table table-sm ">
       <thead>
@@ -28,7 +72,6 @@
         </tr>
       </thead>
       <tbody>
-
 
         {{ range ($.Scratch.Get "gt_roles" ) | shuffle }}
           <tr class="mt-4">
@@ -41,21 +84,13 @@
                 {{ . }} 
               </td> 
            </tr>
-             {{ end }}
+           {{ end }}
         {{ end }}
       </tbody>
     </table>
     
     <div class="container expand-grid" id="global-team">
-        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team">
-           <!-- shuffle the grid -->
-          {{ $.Scratch.Set "gtc" (slice) }}
-          {{ range $name, $_ := $gt.current }}
-              {{ $.Scratch.Add "gtc" $name }}
-          {{ end }} 
-          
-          {{ $path := $.Site.GetPage "section" "global-team" }}
-
+       <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team">
           {{ range $name := $.Scratch.Get "gtc" | shuffle }}
             {{ $d := index $gt.current $name }}
             {{ $descr := delimit $d.role ", " }}
@@ -63,7 +98,7 @@
             {{ $.Scratch.Set "img" "" }}
             {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
               {{ $image := . }}
-              {{ $image := $image.Fit "200x200" }}
+              {{ $image := $image.Fill "200x200" }}
               {{ $.Scratch.Set "img" $image.RelPermalink }}
             {{ end }}
             {{ $image := $.Scratch.Get "img" }}
@@ -98,7 +133,7 @@
             {{ $.Scratch.Set "img" "" }}
             {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
               {{ $image := . }}
-              {{ $image := $image.Fit "200x200" }}
+              {{ $image := $image.Fill "200x200" }}
               {{ $.Scratch.Set "img" $image.RelPermalink }}
             {{ end }}
             {{ $image := $.Scratch.Get "img" }}
