@@ -148,7 +148,7 @@ jobs:
           hugo  \
             -e development \
             -d ${{ env.hugobd }} \
-            -b https://${{ env.netalias }}-rladies-dev.netlify.app/
+            -b https://${{ env.netalias }}--rladies-dev.netlify.app/
           
           
       - name: Deploy Preview
