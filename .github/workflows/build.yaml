@@ -164,6 +164,7 @@ jobs:
             
       - uses: actions/github-script@v6
         name: "Notify about build failure"
+        if: ${{ failure() }}
         with:
           github-token: ${{ env.token }}
           script: |
