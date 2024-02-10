@@ -161,9 +161,20 @@ jobs:
           netlify deploy \
             --alias ${{ env.netalias }} \
             --dir=${{ env.hugobd }}
-
+            
       - uses: actions/github-script@v6
-        if: ${{ (env.on_fork != true) && (github.event_name == 'workflow_dispatch' ) }}
+        name: "Notify about build failure"
+        with:
+          github-token: ${{ env.token }}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: ${{ env.issue }},
+              owner: 'rladies',
+              repo: '${{ env.repo_name }}',
+              body: 'Test build failed :sob: [Check out the build logs](https://github.com/rladies/rladies.github.io/actions/runs/${{ github.run_id }}).
+            }) 
+            
+      - uses: actions/github-script@v6
         name: "Notify about build preview"
         with:
           github-token: ${{ env.token }}
@@ -172,23 +183,9 @@ jobs:
               issue_number: ${{ env.issue }},
               owner: 'rladies',
               repo: '${{ env.repo_name }}',
-              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}-rladies-dev.netlify.app)'
+              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
             })  
-            
-  notify:
-    runs-on: ubuntu-latest
-    if: ${{ failure() && (github.event_name == 'workflow_dispatch' ) }}
-    steps:
-      - name: Set env parameters
-        run: |
+       
 
-      - name: Create repository dispatch event
-        env:
-          GITHUB_TOKEN: ${{ secrets.GLOBAL_GHA_PAT }}
-        run: |
-          gh api repos/${{ env.repo_name }}/dispatches \
-            --input type=pr \
-            --input pr_number=${{ env.issue }} \
-            --input status=failed \
-            --input conclusion=${{ github.event.workflow_run.conclusion }}
+
 
