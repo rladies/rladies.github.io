@@ -1,6 +1,6 @@
 ---
 type: redirect
-redirect: https://airtable.com/appqgHVVotuCP6aLy/shrGbnOgAfF7DWm9j
+redirect: https://airtable.com/appqgHVVotuCP6aLy/pagJAHjC8DqlPzWqZ/form
 title: "R-Ladies Mentoring Sign-up"
 slug: /form/mentoring-signup
 ---

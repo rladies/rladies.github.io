@@ -1,6 +1,6 @@
 ---
 type: redirect
-redirect: https://airtable.com/shrFQJgAH5AQ0zH3f
+redirect: https://airtable.com/appzYxePUruG9Nwyg/pagF4TCWTbkjfuyLn/form
 title: "R-Ladies Directory form"
 slug: /form/directory-update
 alias:
