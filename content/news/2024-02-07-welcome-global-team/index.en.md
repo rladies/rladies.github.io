@@ -13,7 +13,7 @@ summary: R-Ladies Global Team has 15 new members!
 slug: /news/new-to-global-team-2023/
 ---
 
-![Thumbnail photos of 13 new global team members on purple background with text `Welcome`.](img/welcome.PNG)
+![Thumbnail photos of 15 new global team members on purple background with text `Welcome`.](img/welcome.PNG)
 
 <!---
 link to ppt that contains this image on rladies google account
