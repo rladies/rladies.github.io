@@ -9,7 +9,7 @@ tags:
 - community
 categories: 
 - R-Ladies
-summary: R-Ladies Global Team has 13 new members!
+summary: R-Ladies Global Team has 15 new members!
 slug: /news/new-to-global-team-2023/
 ---
 
