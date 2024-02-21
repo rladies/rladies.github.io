@@ -399,8 +399,8 @@
       "email": "perth@rladies.org"
     },
     "organizers": {
-      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange", "Sarita Bennett"],
-      "former": []
+      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange"],
+      "former": ["Sarita Bennett"]
     },
     "name": "R-Ladies Perth",
     "id": "30375344",
@@ -1298,8 +1298,8 @@
       "slack": "rladiestoronto.slack.com"
     },
     "organizers": {
-      "current": ["Sharla Gelfand", "Monica Alexander", "Nicole Radziwill"],
-      "former": []
+      "current": ["Monica Alexander", "Nicole Radziwill"],
+      "former": ["Sharla Gelfand"]
     },
     "name": "R-Ladies Toronto, ON",
     "id": "29862217",
@@ -1860,7 +1860,7 @@
       "mastodon": "https://mastodon.social/@rladies_paris"
     },
     "organizers": {
-      "current": ["Mouna Belaid"],
+      "current": ["Mouna Belaid", "Chaima Boughanmi"],
       "former": ["Diane Beldame", "Christina Bergmann", "Sarah Hosking", "Stéphanie Terrasse"]
     },
     "name": "R-Ladies Paris",
@@ -2415,8 +2415,8 @@
       "github": "rladies/meetup-presentations_dublin"
     },
     "organizers": {
-      "current": ["Jo Nie_"],
-      "former": []
+      "current": [],
+      "former": ["Jo Niec"]
     },
     "name": "R-Ladies Dublin",
     "id": "21149852",
@@ -2490,7 +2490,7 @@
       "github": "rladies/meetup-presentations_rome"
     },
     "organizers": {
-      "current": ["Federica Gazzelloni"],
+      "current": ["Federica Gazzelloni", "Francesca Picone"],
       "former": ["Nina Deliu", "Katie Wood"]
     },
     "name": "R-Ladies Roma, RM",
@@ -4383,8 +4383,8 @@
       "github": "rladies/meetup-presentations_la"
     },
     "organizers": {
-      "current": ["Katie Leap"],
-      "former": ["Amanda Tilot"]
+      "current": [],
+      "former": ["Amanda Tilot", "Katie Leap"]
     },
     "name": "R-Ladies Los Angeles, CA",
     "id": "20382018",
@@ -5462,7 +5462,7 @@
       "website": "http://www.rladiesphilly.org/"
     },
     "organizers": {
-      "current": ["Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
+      "current": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
       "former": []
     },
     "name": "R-Ladies Philadelphia, PA",

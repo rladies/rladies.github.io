@@ -13,8 +13,8 @@
       "slack": "rladiestoronto.slack.com"
     },
     "organizers": {
-      "current": ["Sharla Gelfand", "Monica Alexander", "Nicole Radziwill"],
-      "former": []
+      "current": ["Monica Alexander", "Nicole Radziwill"],
+      "former": ["Sharla Gelfand"]
     }
   }
 ]
