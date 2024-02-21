@@ -40,7 +40,7 @@ support us with their time and effort to champion our [mission](https://rladies.
 | ![](img/priyanka_gagneja.jpg)       | Priyanka Gagneja          | Community Slack    |
 | ![](img/renata_hirota.png)          | Renata Hirota             | Blog               |
 | ![](img/virginia_garcia_alonso.jpg) | Virginia A. García Alonso | Mentoring          |
-| ![](img/nicola_rennie.jpg)          | Nic Crane                 | Meetup Pro         |
+| ![](img/nic_crane.jpg)          | Nic Crane                 | Meetup Pro         |
 | ![](img/alyssa_columbus.png)        | Alyssa Columbus           | Chapter Onboarding |
 | ![](img/luana_atunes.png)           | Luana Atunes              | Abstract Review    |
 | ![](img/sayantika_banik.png)        | Sayantika Banik           | Abstract Review    |
