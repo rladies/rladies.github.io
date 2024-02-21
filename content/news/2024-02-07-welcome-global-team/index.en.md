@@ -51,7 +51,7 @@ support us with their time and effort to champion our [mission](https://rladies.
 
 # Onboarding needs
 
-Between 2020-2023, membership R-Ladies global organization increased 
+Between 2020-2023, membership in the R-Ladies global organization increased 
 while the availability of volunteers remained limited. At the conclusion of this
 time period several global team members retired. We are indebted for their 
 efforts that helped the organization thrive and grateful for their time spent 
