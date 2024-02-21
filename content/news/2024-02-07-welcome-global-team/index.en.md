@@ -34,7 +34,7 @@ support us with their time and effort to champion our [mission](https://rladies.
 |                                     |                           |                    |
 |-------------------------------------|---------------------------|--------------------|
 | ![](img/glenda_mendieta.jpg)        | Glenda Mendieta           | Translation        |
-| ![](img/sara_acevedo.jpg)           | Nicola Rennie             | Campaigns          |
+| ![](img/nicola_rennie.jpg)           | Nicola Rennie             | Campaigns          |
 | ![](img/sara_acevedo.jpg)           | Sara Acevedo              | Code of Conduct    |
 | ![](img/hebah_bukhari.jpg)          | Hebah Bukhari             | Community Slack    |
 | ![](img/priyanka_gagneja.jpg)       | Priyanka Gagneja          | Community Slack    |
