@@ -15,10 +15,15 @@ slug: /news/new-to-global-team-2023/
 
 ![Thumbnail photos of 13 new global team members on purple background with text `Welcome`.](img/welcome.PNG)
 
+<!---
+link to ppt that contains this image on rladies google account
+https://docs.google.com/presentation/d/1ZnCmaO_gBSKSbtx_1tTicQSxnTJZaYGc/edit#slide=id.p1
+-->
+
 # Overview
 
 In 2023 we [announced openings](https://rladies.org/news/2023-04-11-global-team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts and facilitate the growth of the R-Ladies community.
-We are delighted to welcome 13 new members to the R-Ladies Global Team.
+We are delighted to welcome 15 new members to the R-Ladies Global Team.
 R-Ladies is 100% volunteer-driven, and we are very grateful to those who 
 support us with their time and effort to champion our [mission](https://rladies.org/about-us/mission/).
 
@@ -28,12 +33,14 @@ support us with their time and effort to champion our [mission](https://rladies.
 
 |                                     |                           |                    |
 |-------------------------------------|---------------------------|--------------------|
+| ![](img/glenda_mendieta.jpg)        | Glenda Mendieta           | Translation        |
+| ![](img/sara_acevedo.jpg)           | Nicola Rennie             | Campaigns          |
 | ![](img/sara_acevedo.jpg)           | Sara Acevedo              | Code of Conduct    |
 | ![](img/hebah_bukhari.jpg)          | Hebah Bukhari             | Community Slack    |
 | ![](img/priyanka_gagneja.jpg)       | Priyanka Gagneja          | Community Slack    |
 | ![](img/renata_hirota.png)          | Renata Hirota             | Blog               |
 | ![](img/virginia_garcia_alonso.jpg) | Virginia A. García Alonso | Mentoring          |
-| ![](img/nic_crane.jpg)              | Nic Crane                 | Meetup Pro         |
+| ![](img/nicola_rennie.jpg)          | Nic Crane                 | Meetup Pro         |
 | ![](img/alyssa_columbus.png)        | Alyssa Columbus           | Chapter Onboarding |
 | ![](img/luana_atunes.png)           | Luana Atunes              | Abstract Review    |
 | ![](img/sayantika_banik.png)        | Sayantika Banik           | Abstract Review    |
@@ -42,16 +49,26 @@ support us with their time and effort to champion our [mission](https://rladies.
 | ![](img/leena_el_seed.jpg)          | Leena El Seed             | Conference Liaison |
 | ![](img/daniela_vazquez.png)        | Daniela Vázquez           | Social Media       |
 
-# Onboarding process
-The global governance of R-Ladies is seeing increased activity as we all  slowly are
-coming out of four difficult years. The new members of the Global team are vital to
+# Onboarding needs
+
+Between 2020-2023, membership R-Ladies global organization increased 
+while the availability of volunteers remained limited. At the conclusion of this
+time period several global team members retired. We are indebted for their 
+efforts that helped the organization thrive and grateful for their time spent 
+on the global team. 
+
+As the shift in personnel occurred, new teams and team structures were identified
+to distribute the workload as well as to provide coverage of roles for times when
+volunteers are unavailable. The new members of the global team are vital to
 help support and grow our community.
 
+# Onboarding process
+
+
 With these amazing new members, we have also been able to develop
-a new onboarding system for the Global Team. By using GitHub actions
+a new onboarding system for the global team. By using GitHub actions
 and issues, we hope that the onboarding process will be more streamlined
-in the future.
-While the current new members did experience this system in its infancy,
+in the future. While the current new members did experience this system in its infancy,
 we hope that it will be a smoother process for future members.
 
 # What the future holds
