@@ -1298,8 +1298,8 @@
       "slack": "rladiestoronto.slack.com"
     },
     "organizers": {
-      "current": ["Iva Brunec", "Shireen Parimoo", "Sharla Gelfand", "Monica Alexander", "Nicole Radziwill"],
-      "former": []
+      "current": ["Monica Alexander", "Nicole Radziwill"],
+      "former": ["Sharla Gelfand"]
     },
     "name": "R-Ladies Toronto, ON",
     "id": "29862217",
