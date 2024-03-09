@@ -2490,8 +2490,8 @@
       "github": "rladies/meetup-presentations_rome"
     },
     "organizers": {
-      "current": ["Federica Gazzelloni", "Francesca Picone"],
-      "former": ["Nina Deliu", "Katie Wood"]
+      "current": ["Federica Gazzelloni", "Silvana Acosta"],
+      "former": ["Nina Deliu", "Katie Wood", "Francesca Picone"]
     },
     "name": "R-Ladies Roma, RM",
     "id": "36128420",
@@ -3264,7 +3264,7 @@
     },
     "organizers": {
       "current": ["Noora Said"],
-      "former": []
+      "former": ["Iman Al Hasani"]
     },
     "name": "R-Ladies Muscat",
     "id": "32964072",
@@ -5164,8 +5164,8 @@
       "email": "mid-missouri@rladies.org"
     },
     "organizers": {
-      "current": ["Hope Snyder", "Linda A. Landon", "Krista Galyen"],
-      "former": []
+      "current": ["Hope Snyder", "Linda A. Landon"],
+      "former": ["Krista Galyen"]
     },
     "name": "R-Ladies Columbia, MO",
     "id": "33107363",
@@ -5276,7 +5276,7 @@
       "website": "http://www.rladiesnyc.org/"
     },
     "organizers": {
-      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang"],
+      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang", "Jordan Amann", "Dana Trembley", "Anni Liu", "Nicole Burke"],
       "former": []
     },
     "name": "R-Ladies New York, NY",
