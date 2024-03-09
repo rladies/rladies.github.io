@@ -57,7 +57,7 @@ time period several global team members retired. We are indebted for their
 efforts that helped the organization thrive and grateful for their time spent 
 on the global team. 
 
-As the shift in personnel occurred, new teams and team structures were identified
+As the shift in volunteers occurred, new teams and team structures were identified
 to distribute the workload as well as to provide coverage of roles for times when
 volunteers are unavailable. The new members of the global team are vital to
 help support and grow our community.
