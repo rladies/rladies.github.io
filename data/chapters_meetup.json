@@ -399,8 +399,8 @@
       "email": "perth@rladies.org"
     },
     "organizers": {
-      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange", "Sarita Bennett"],
-      "former": []
+      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange"],
+      "former": ["Sarita Bennett"]
     },
     "name": "R-Ladies Perth",
     "id": "30375344",
@@ -475,6 +475,20 @@
     },
     "organizers": {
       "current": ["Lucia Gjeltema"],
+      "former": []
+    },
+    "name": "R-Ladies NA"
+  },
+  {
+    "urlname": "rladies-salzburg",
+    "status": "active",
+    "country": "austria",
+    "social_media": {
+      "meetup": "rladies-salzburg",
+      "email": "salzburg@rladies.org"
+    },
+    "organizers": {
+      "current": ["Ekaterina Akimova"],
       "former": []
     },
     "name": "R-Ladies NA"
@@ -795,7 +809,7 @@
     },
     "organizers": {
       "current": ["Izabela Oliveira", "Paula Santos"],
-      "former": []
+      "former": ["Kelly P de Lima"]
     },
     "name": "R-Ladies Lavras",
     "id": "31653398",
@@ -1259,8 +1273,8 @@
       "slack": "rladiestoronto.slack.com"
     },
     "organizers": {
-      "current": ["Sharla Gelfand", "Monica Alexander", "Nicole Radziwill"],
-      "former": []
+      "current": ["Monica Alexander", "Nicole Radziwill"],
+      "former": ["Sharla Gelfand"]
     },
     "name": "R-Ladies Toronto, ON",
     "id": "29862217",
@@ -1596,6 +1610,29 @@
     "timezone": "America/Guayaquil"
   },
   {
+    "urlname": "rladies-milagro",
+    "status": "active",
+    "country": "Ecuador",
+    "social_media": {
+      "meetup": "rladies-milagro",
+      "twitter": "Rladies_Milagro",
+      "email": "milagro@rladies.org"
+    },
+    "organizers": {
+      "current": ["Mercedes Gisela Soledispa Lucas", "Jhanelly Chalá", "Naomy Vera"],
+      "former": []
+    },
+    "name": "R-Ladies Milagro",
+    "id": "35058835",
+    "country_acronym": "EC",
+    "state": "",
+    "city": "Milagro",
+    "members": 316,
+    "lat": -2.18,
+    "lon": -79.6,
+    "timezone": "America/Guayaquil"
+  },
+  {
     "urlname": "rladies-galapagos-islands",
     "status": "active",
     "country": "Ecuador",
@@ -1793,11 +1830,12 @@
       "facebook": "RLadiesParis",
       "instagram": "rladiesparis",
       "linkedin": "r-ladies-paris",
-      "youtube": "UCWTFKtW_ReLP9zmMTYjRqug",
-      "github": "rladies/r-ladies-paris"
+      "youtube": "@rladiesparis",
+      "github": "R-Ladies-Paris",
+      "mastodon": "https://mastodon.social/@rladies_paris"
     },
     "organizers": {
-      "current": ["Mouna Belaid"],
+      "current": ["Mouna Belaid", "Chaima Boughanmi"],
       "former": ["Diane Beldame", "Christina Bergmann", "Sarah Hosking", "Stéphanie Terrasse"]
     },
     "name": "R-Ladies Paris",
@@ -2152,7 +2190,7 @@
     },
     "organizers": {
       "current": ["Adithi Upadhya", "Aparna Bindu", "Muthumari S", "Diksha Chawla", "Pragati Parikh", "Smruthi R", "Shefali Lokesh", "Radha Subramanian", "Dincy Mariyam"],
-      "former": []
+      "former": ["Saumya Singh"]
     },
     "name": "R-Ladies Bangalore",
     "id": "34086060",
@@ -2352,8 +2390,8 @@
       "github": "rladies/meetup-presentations_dublin"
     },
     "organizers": {
-      "current": ["Jo Nie_"],
-      "former": []
+      "current": [],
+      "former": ["Jo Niec"]
     },
     "name": "R-Ladies Dublin",
     "id": "21149852",
@@ -2427,8 +2465,8 @@
       "github": "rladies/meetup-presentations_rome"
     },
     "organizers": {
-      "current": ["Federica Gazzelloni", "Katie Wood"],
-      "former": ["Nina Deliu"]
+      "current": ["Federica Gazzelloni", "Silvana Acosta"],
+      "former": ["Nina Deliu", "Katie Wood", "Francesca Picone"]
     },
     "name": "R-Ladies Roma, RM",
     "id": "36128420",
@@ -2935,7 +2973,7 @@
     },
     "organizers": {
       "current": ["Sara Iacozza", "Eirini Zormpa"],
-      "former": []
+      "former": ["Anne Mickan", "Laura Giglio"]
     },
     "name": "R-Ladies Nijmegen",
     "id": "28393787",
@@ -3201,7 +3239,7 @@
     },
     "organizers": {
       "current": ["Noora Said"],
-      "former": []
+      "former": ["Iman Al Hasani"]
     },
     "name": "R-Ladies Muscat",
     "id": "32964072",
@@ -3483,7 +3521,7 @@
     },
     "organizers": {
       "current": ["Theoni Photopoulou"],
-      "former": []
+      "former": ["Megan Rogers"]
     },
     "name": "R-Ladies Cape Town",
     "id": "22790744",
@@ -3685,8 +3723,8 @@
       "github": "rladies/meetup-presentations_stockholm"
     },
     "organizers": {
-      "current": ["Elisabeth Dahlqwist", "Nina Lindell", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm", "Ashley Thompson"],
-      "former": []
+      "current": ["Elisabeth Dahlqwist", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm"],
+      "former": ["Nina Lindell", "Ashley Thompson"]
     },
     "name": "R-Ladies Stockholm",
     "id": "29540437",
@@ -4085,8 +4123,8 @@
       "github": "rladies/meetup-presentations_london"
     },
     "organizers": {
-      "current": ["Claudia Vitolo", "Hannah Frick", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
-      "former": []
+      "current": ["Claudia Vitolo", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
+      "former": ["Hannah Frick"]
     },
     "name": "R-Ladies London, 17",
     "id": "19474893",
@@ -4320,8 +4358,8 @@
       "github": "rladies/meetup-presentations_la"
     },
     "organizers": {
-      "current": ["Katie Leap", "Amanda Tilot"],
-      "former": []
+      "current": [],
+      "former": ["Amanda Tilot", "Katie Leap"]
     },
     "name": "R-Ladies Los Angeles, CA",
     "id": "20382018",
@@ -4343,8 +4381,8 @@
       "email": "pasadena@rladies.org"
     },
     "organizers": {
-      "current": ["Gail Peretsman-Clement", "Zhi Yang", "Donna Wrublewski"],
-      "former": []
+      "current": ["Gail Peretsman-Clement", "Donna Wrublewski"],
+      "former": ["Zhi Yang"]
     },
     "name": "R-Ladies Pasadena, CA",
     "id": "28280039",
@@ -4484,8 +4522,8 @@
       "github": "rladies/meetup-presentations_boulder"
     },
     "organizers": {
-      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Leigh Alexander", "Marta Jankowska"],
-      "former": []
+      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Marta Jankowska"],
+      "former": ["Leigh Alexander"]
     },
     "name": "R-Ladies Boulder, CO",
     "id": "28789217",
@@ -4976,8 +5014,8 @@
       "email": "lexingtonpark@rladies.org"
     },
     "organizers": {
-      "current": ["Linden McBride", "Caitlin Eger", "Cassie Gurbisz"],
-      "former": []
+      "current": ["Caitlin Eger", "Cassie Gurbisz"],
+      "former": ["Linden McBride"]
     },
     "name": "R-Ladies Lexington Park, MD",
     "id": "32611075",
@@ -5101,8 +5139,8 @@
       "email": "mid-missouri@rladies.org"
     },
     "organizers": {
-      "current": ["Hope Snyder", "Linda A. Landon", "Krista Galyen"],
-      "former": []
+      "current": ["Hope Snyder", "Linda A. Landon"],
+      "former": ["Krista Galyen"]
     },
     "name": "R-Ladies Columbia, MO",
     "id": "33107363",
@@ -5213,7 +5251,7 @@
       "website": "http://www.rladiesnyc.org/"
     },
     "organizers": {
-      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang"],
+      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang", "Jordan Amann", "Dana Trembley", "Anni Liu", "Nicole Burke"],
       "former": []
     },
     "name": "R-Ladies New York, NY",
@@ -5374,7 +5412,7 @@
     },
     "organizers": {
       "current": ["Augustina Ragwitz", "Deeksha Thati", "Alison Presmanes Hill"],
-      "former": []
+      "former": ["Beth Duckles"]
     },
     "name": "R-Ladies Portland, OR",
     "id": "25057217",
@@ -5399,7 +5437,7 @@
       "website": "http://www.rladiesphilly.org/"
     },
     "organizers": {
-      "current": ["Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
+      "current": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
       "former": []
     },
     "name": "R-Ladies Philadelphia, PA",
@@ -5515,8 +5553,8 @@
       "slack": "r-ladies-el-paso.slack.com"
     },
     "organizers": {
-      "current": ["Grace Smith Vidaurre", "Marguerite Mauritz"],
-      "former": []
+      "current": ["Grace Smith Vidaurre"],
+      "former": ["Marguerite Mauritz"]
     },
     "name": "R-Ladies El Paso, TX",
     "id": "31679846",
@@ -5586,11 +5624,12 @@
       "meetup": "rladies-dc",
       "twitter": "RLadiesDC",
       "email": "dc@rladies.org",
+      "linkedin": "https://www.linkedin.com/company/rladies-dc/",
       "github": "rladies/meetup-presentations_dc"
     },
     "organizers": {
-      "current": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"],
-      "former": []
+      "current": ["Arati Krishnamoorthy", "Parker Dority"],
+      "former": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"]
     },
     "name": "R-Ladies Washington, DC",
     "id": "21510971",

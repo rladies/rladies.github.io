@@ -1,4 +1,2 @@
 baseURL: "."
-build:
-  buildFuture: true
-  buildDrafts: true
+

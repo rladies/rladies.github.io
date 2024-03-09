@@ -1,58 +1,66 @@
-name: "Build and deploy"
+name: "Build and deploy non-production"
 
 on:
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       directory:
         description: 'Directory reference'
         required: true
         default: 'main'
-      orig_pr:
-        description: 'Originating PR'
-  pull_request:
-  push: 
-    branches:
-      - main
-  schedule:
-    - cron: "45 */12 * * *"
+      blogs:
+        description: 'Blogs reference'
+        required: true
+        default: 'main'
+      triggering_issue:
+        description: 'Triggering PR'
+        required: false
+      triggering_repo:
+        description: 'Triggering repo'
+        required: false
+
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.inputs.directory }}
   cancel-in-progress: true
 
 env:
-  hugobd: public
-  
+  RENV_PROFILE: "dev"
+  RENV_CONFIG_SANDBOX_ENABLED: FALSE
+  issue: ${{ github.event.inputs.triggering_issue || github.event.pull_request.number }}
+  repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
+  directory: ${{ github.event.inputs.directory || 'main' }}
+  blogs: ${{ github.event.inputs.blogs || 'main' }}
+      
 jobs:
   build: 
     name: Build site
     runs-on: ubuntu-22.04
     env:
-      RENV_PROFILE: "dev"
-      RENV_CONFIG_SANDBOX_ENABLED: FALSE
+      hugobd: public
+      on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
     steps:
-    
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
-
       - name: Set env parameters
         run: |
-          echo "issue=${{ github.event.inputs.orig_pr || github.event.pull_request.number }}" >> $GITHUB_ENV
-          repo_name=${{ github.event.inputs.orig_pr && 'rladies/directory' || github.repository }}
-          echo "repo_name=$(basename ${repo_name})" >> $GITHUB_ENV
           ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
           echo "hugovr=$ver" >> $GITHUB_ENV
+          echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
+          echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
+          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-${{ github.event.number }}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "directory=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.inputs.directory }}" >> $GITHUB_ENV
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
+            echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
           else
-            echo "directory=main" >> $GITHUB_ENV
-            echo "netalias=${{ github.event.number }}" >> $GITHUB_ENV
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+            echo "blogsref=main" >> $GITHUB_ENV
           fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
           
       - name: Install cURL Headers
         run: |
@@ -70,11 +78,12 @@ jobs:
           Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
+        if: ${{ env.on_fork != true }}
         run: rm -r data/directory data/rblogs
         
       - name: Site data - DIRECTORY - Get
-        uses: actions/checkout@v3
-        if: "${{ env.directory == 'main' }}"
+        uses: actions/checkout@v4
+        if: ${{ (env.on_fork != true) && env.directory == 'main' }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
@@ -82,20 +91,16 @@ jobs:
           
       - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if:  "${{ env.directory != 'main' }}"
+        if: ${{ (env.on_fork != true) && env.directory != 'main' }}
         with:
           name: entries
-          # Required, if the repo is private a Personal Access Token with 
-          # `repo` scope is needed or GitHub token in a job 
-          # where the permissions `action` scope set to `read`
           github_token: ${{ secrets.GLOBAL_GHA_PAT }}
-          # Optional, will get head commit SHA
           run_id: ${{ env.directory }}
-          # Optional, defaults to current repo
           repo: rladies/directory
           path: entries/
           
       - name: Site data - DIRECTORY - Move
+        if: ${{ env.on_fork != true }}
         run: |
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
@@ -107,22 +112,26 @@ jobs:
               mv entries/img/* assets/directory
             fi
           fi
+    
+      - name: Site data - Get blogs list
+        if: ${{ env.on_fork != true }}
+        uses: actions/checkout@v4
+        with:
+          repository: rladies/awesome-rladies-blogs
+          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
+          ref: ${{ env.blogsref }}
+          path: tmpd/rblogs
           
       - name: Site data - Meetup
-        uses: actions/checkout@v3
+        if: ${{ env.on_fork != true }}
+        uses: actions/checkout@v4
         with:
           repository: rladies/meetup_archive
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
           path: tmpd/mtp
 
-      - name: Site data - Get blogs list
-        uses: actions/checkout@v3
-        with:
-          repository: rladies/awesome-rladies-blogs
-          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          path: tmpd/rblogs
-          
       - name: Site data - clean cloned repos
+        if: ${{ env.on_fork != true }}
         run: |
           cp -r tmpd/rblogs/blogs data/rblogs
           cp -r tmpd/mtp/data/* data/meetup/
@@ -136,26 +145,14 @@ jobs:
           
       - name: Build
         run: |
-          if [[ '${{github.ref}}' == 'refs/heads/main' ]]; then
-            hugo \
-              -e production \
-              -d ${{ env.hugobd }}
-          else
-            hugo  \
-              -e development \
-              -d ${{ env.hugobd }} \
-              -b https://${{ env.netalias }}--rladies-dev.netlify.app/
-          fi
+          hugo  \
+            -e development \
+            -d ${{ env.hugobd }} \
+            -b https://${{ env.netalias }}--rladies-dev.netlify.app/
           
-      - name: Deploy production 🚀
-        if: github.ref == 'refs/heads/main' &&  github.event_name != 'workflow_dispatch'
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: ${{ env.hugobd }}
           
       - name: Deploy Preview
-        if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
+        if: ${{ env.on_fork != true }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
@@ -164,10 +161,10 @@ jobs:
           netlify deploy \
             --alias ${{ env.netalias }} \
             --dir=${{ env.hugobd }}
-
+            
       - uses: actions/github-script@v6
-        if: github.ref != 'refs/heads/main' || github.event_name == 'workflow_dispatch'
-        name: Notify PR about build
+        name: "Notify about build failure"
+        if: ${{ failure() }}
         with:
           github-token: ${{ env.token }}
           script: |
@@ -175,6 +172,21 @@ jobs:
               issue_number: ${{ env.issue }},
               owner: 'rladies',
               repo: '${{ env.repo_name }}',
-              body: ':tada: The preview is built! [Check it out](https://${{ env.netalias }}--rladies-dev.netlify.app)'
-            })       
+              body: 'Test build failed :sob: [Check out the build logs](https://github.com/rladies/rladies.github.io/actions/runs/${{ github.run_id }}).
+            }) 
+            
+      - uses: actions/github-script@v6
+        name: "Notify about build preview"
+        with:
+          github-token: ${{ env.token }}
+          script: |
+            await github.rest.issues.createComment({
+              issue_number: ${{ env.issue }},
+              owner: 'rladies',
+              repo: '${{ env.repo_name }}',
+              body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
+            })  
+       
+
+
 

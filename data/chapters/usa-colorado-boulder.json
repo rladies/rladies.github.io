@@ -12,8 +12,8 @@
       "github": "rladies/meetup-presentations_boulder"
     },
     "organizers": {
-      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Leigh Alexander", "Marta Jankowska"],
-      "former": []
+      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Marta Jankowska"],
+      "former": ["Leigh Alexander"]
     }
   }
 ]
