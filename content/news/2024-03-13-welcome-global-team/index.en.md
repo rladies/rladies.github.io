@@ -4,7 +4,7 @@ author: "Leadership Team"
 type: blog
 date: "2024-03-13"
 output: html_document
-image: img/welcome.PNG
+image: img/global_team.png
 tags: 
 - community
 categories: 
@@ -13,7 +13,7 @@ summary: R-Ladies Global Team has 15 new members!
 slug: /news/new-to-global-team-2023/
 ---
 
-![Thumbnail photos of 15 new global team members on purple background.](img/welcome.PNG)
+![Thumbnail photos of 15 new global team members cropped in circle images outlined in purple.](img/global_team.png)
 
 <!---
 link to ppt that contains this image on rladies google account
