@@ -655,31 +655,6 @@
     "timezone": "Africa/Maputo"
   },
   {
-    "urlname": "rladies-gaborone",
-    "status": "active",
-    "country": "Botswana",
-    "state.region": "South East District",
-    "social_media": {
-      "meetup": "rladies-gaborone",
-      "twitter": "RLadiesGaborone",
-      "email": "RLadiesGaborone",
-      "facebook": "r-ladies-gaborone"
-    },
-    "organizers": {
-      "current": ["Simisani Ndaba"],
-      "former": []
-    },
-    "name": "R-Ladies Gaborone",
-    "id": "35897820",
-    "country_acronym": "BW",
-    "state": "",
-    "city": "Gaborone",
-    "members": 564,
-    "lat": -24.65,
-    "lon": 25.91,
-    "timezone": "Africa/Maputo"
-  },
-  {
     "urlname": "rladies-salvador",
     "status": "active",
     "country": "Brazil",
