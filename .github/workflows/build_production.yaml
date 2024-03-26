@@ -17,7 +17,7 @@ jobs:
     name: Build site
     runs-on: ubuntu-22.04
     env:
-      RENV_PROFILE: "dev"
+      RENV_PROFILE: "production"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
       hugobd: public
     steps:

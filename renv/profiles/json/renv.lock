@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.3.0",
+    "Version": "4.3.2",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -11,18 +11,18 @@
   "Packages": {
     "Rcpp": {
       "Package": "Rcpp",
-      "Version": "1.0.11",
+      "Version": "1.0.12",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "methods",
         "utils"
       ],
-      "Hash": "ae6cbbe1492f4de79c45fce06f967ce8"
+      "Hash": "5ea2700d21e038ace58269ecdbeb9ec0"
     },
     "V8": {
       "Package": "V8",
-      "Version": "4.3.2",
+      "Version": "4.4.1",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -31,28 +31,28 @@
         "jsonlite",
         "utils"
       ],
-      "Hash": "85986a8a9f63af35ad24a022dfa48fdb"
+      "Hash": "435359b59b8a9b8f9235135da471ea3c"
     },
     "cli": {
       "Package": "cli",
-      "Version": "3.6.1",
+      "Version": "3.6.2",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "utils"
       ],
-      "Hash": "89e6d8219950eac806ae0c489052048a"
+      "Hash": "1216ac65ac55ec0058a6f75d7ca0fd52"
     },
     "curl": {
       "Package": "curl",
-      "Version": "5.0.1",
+      "Version": "5.2.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
-      "Hash": "2118af9cb164c8d2dddc7b89eaf732d9"
+      "Hash": "ce88d13c0b10fe88a37d9c59dba2d7f9"
     },
     "here": {
       "Package": "here",
@@ -66,13 +66,13 @@
     },
     "jsonlite": {
       "Package": "jsonlite",
-      "Version": "1.8.7",
+      "Version": "1.8.8",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "methods"
       ],
-      "Hash": "266a20443ca13c65688b2116d5220f76"
+      "Hash": "e1b9c55281c5adc4dd113652d9e26768"
     },
     "jsonvalidate": {
       "Package": "jsonvalidate",
@@ -84,15 +84,25 @@
       ],
       "Hash": "cdc2843ef7f44f157198bb99aea7552d"
     },
+    "renv": {
+      "Package": "renv",
+      "Version": "1.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "41b847654f567341725473431dd0d5ab"
+    },
     "rprojroot": {
       "Package": "rprojroot",
-      "Version": "2.0.3",
+      "Version": "2.0.4",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
-      "Hash": "1de7ab598047a87bba48434ba35d497d"
+      "Hash": "4c8415e0ec1e29f3f4f6fc108bef0144"
     }
   }
 }

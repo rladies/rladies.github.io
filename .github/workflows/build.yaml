@@ -74,7 +74,6 @@ jobs:
           
       - name: Populate untranslated pages
         run: |
-          rm .Rprofile # avoid starting renv
           Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
