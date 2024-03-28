@@ -23,11 +23,11 @@ if(interactive()){
   cat(
     "",
     "This project uses different renv profiles for different operations",
+    "You should be on the default profile if you are contributing a blogpost",
     " - `renv::activate('json')` enables profile with packages for json validation",
     " - `renv::activate('production')` enables profile with packages needed to build the website",
     " - `renv::activate('dev')` enables profile with all packages working locally on the website",
     "",
-    "By default you should be on the 'dev' profile so you can render the website locally with blogdown.",
     sep="\n"
   )
 }
