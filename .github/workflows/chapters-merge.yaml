@@ -15,7 +15,7 @@ concurrency:
 jobs:
   merge: 
     name: Merge chapters and meetup
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     env:
       RENV_PROFILE: "dev"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
