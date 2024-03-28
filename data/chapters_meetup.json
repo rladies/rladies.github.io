@@ -628,7 +628,7 @@
     "urlname": "rladies-gaborone",
     "status": "active",
     "country": "Botswana",
-    "state.region": "South East district",
+    "state.region": "South East District",
     "social_media": {
       "meetup": "rladies-gaborone",
       "twitter": "RLadiesGaborone",
@@ -639,31 +639,6 @@
       "github": "meetup_presentations_gaborone",
       "website": "https://rladiesgaboronebw.netlify.app/",
       "mastodon": "@R_Ladies_Gaborone@fosstodon.org"
-    },
-    "organizers": {
-      "current": ["Simisani Ndaba"],
-      "former": []
-    },
-    "name": "R-Ladies Gaborone",
-    "id": "35897820",
-    "country_acronym": "BW",
-    "state": "",
-    "city": "Gaborone",
-    "members": 564,
-    "lat": -24.65,
-    "lon": 25.91,
-    "timezone": "Africa/Maputo"
-  },
-  {
-    "urlname": "rladies-gaborone",
-    "status": "active",
-    "country": "Botswana",
-    "state.region": "South East District",
-    "social_media": {
-      "meetup": "rladies-gaborone",
-      "twitter": "RLadiesGaborone",
-      "email": "RLadiesGaborone",
-      "facebook": "r-ladies-gaborone"
     },
     "organizers": {
       "current": ["Simisani Ndaba"],
@@ -2952,8 +2927,8 @@
       "email": "amsterdam@rladies.org"
     },
     "organizers": {
-      "current": ["Tess Korthout", "Janine Khuc", "Iris de Vries"],
-      "former": []
+      "current": ["Kylie Ainslie", "Asli Kucukosmanoglu"],
+      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries"]
     },
     "name": "R-Ladies Amsterdam",
     "id": "27443387",
@@ -3264,7 +3239,7 @@
     },
     "organizers": {
       "current": ["Noora Said"],
-      "former": []
+      "former": ["Iman Al Hasani"]
     },
     "name": "R-Ladies Muscat",
     "id": "32964072",
@@ -5164,8 +5139,8 @@
       "email": "mid-missouri@rladies.org"
     },
     "organizers": {
-      "current": ["Hope Snyder", "Linda A. Landon", "Krista Galyen"],
-      "former": []
+      "current": ["Hope Snyder", "Linda A. Landon"],
+      "former": ["Krista Galyen"]
     },
     "name": "R-Ladies Columbia, MO",
     "id": "33107363",
@@ -5276,7 +5251,7 @@
       "website": "http://www.rladiesnyc.org/"
     },
     "organizers": {
-      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang"],
+      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang", "Jordan Amann", "Dana Trembley", "Anni Liu", "Nicole Burke"],
       "former": []
     },
     "name": "R-Ladies New York, NY",
