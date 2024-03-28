@@ -22,7 +22,7 @@ jobs:
     steps:
     
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
           
@@ -40,7 +40,7 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
           
       - name: Site data - Meetup
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: rladies/meetup_archive
           ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
