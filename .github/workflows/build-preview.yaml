@@ -161,7 +161,7 @@ jobs:
         run: |
           npm install netlify-cli -g
           netlify deploy \
-            --alias ${{ env.netalias }} \
+            --alias=${{ env.netalias }} \
             --dir=${{ env.hugobd }}
             
       - uses: actions/github-script@v6
