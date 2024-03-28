@@ -399,8 +399,8 @@
       "email": "perth@rladies.org"
     },
     "organizers": {
-      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange", "Sarita Bennett"],
-      "former": []
+      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange"],
+      "former": ["Sarita Bennett"]
     },
     "name": "R-Ladies Perth",
     "id": "30375344",
@@ -628,7 +628,7 @@
     "urlname": "rladies-gaborone",
     "status": "active",
     "country": "Botswana",
-    "state.region": "South East district",
+    "state.region": "South East District",
     "social_media": {
       "meetup": "rladies-gaborone",
       "twitter": "RLadiesGaborone",
@@ -639,31 +639,6 @@
       "github": "meetup_presentations_gaborone",
       "website": "https://rladiesgaboronebw.netlify.app/",
       "mastodon": "@R_Ladies_Gaborone@fosstodon.org"
-    },
-    "organizers": {
-      "current": ["Simisani Ndaba"],
-      "former": []
-    },
-    "name": "R-Ladies Gaborone",
-    "id": "35897820",
-    "country_acronym": "BW",
-    "state": "",
-    "city": "Gaborone",
-    "members": 564,
-    "lat": -24.65,
-    "lon": 25.91,
-    "timezone": "Africa/Maputo"
-  },
-  {
-    "urlname": "rladies-gaborone",
-    "status": "active",
-    "country": "Botswana",
-    "state.region": "South East District",
-    "social_media": {
-      "meetup": "rladies-gaborone",
-      "twitter": "RLadiesGaborone",
-      "email": "RLadiesGaborone",
-      "facebook": "r-ladies-gaborone"
     },
     "organizers": {
       "current": ["Simisani Ndaba"],
@@ -1298,8 +1273,8 @@
       "slack": "rladiestoronto.slack.com"
     },
     "organizers": {
-      "current": ["Sharla Gelfand", "Monica Alexander", "Nicole Radziwill"],
-      "former": []
+      "current": ["Monica Alexander", "Nicole Radziwill"],
+      "former": ["Sharla Gelfand"]
     },
     "name": "R-Ladies Toronto, ON",
     "id": "29862217",
@@ -1860,7 +1835,7 @@
       "mastodon": "https://mastodon.social/@rladies_paris"
     },
     "organizers": {
-      "current": ["Mouna Belaid"],
+      "current": ["Mouna Belaid", "Chaima Boughanmi"],
       "former": ["Diane Beldame", "Christina Bergmann", "Sarah Hosking", "Stéphanie Terrasse"]
     },
     "name": "R-Ladies Paris",
@@ -2415,8 +2390,8 @@
       "github": "rladies/meetup-presentations_dublin"
     },
     "organizers": {
-      "current": ["Jo Nie_"],
-      "former": []
+      "current": [],
+      "former": ["Jo Niec"]
     },
     "name": "R-Ladies Dublin",
     "id": "21149852",
@@ -2490,8 +2465,8 @@
       "github": "rladies/meetup-presentations_rome"
     },
     "organizers": {
-      "current": ["Federica Gazzelloni"],
-      "former": ["Nina Deliu", "Katie Wood"]
+      "current": ["Federica Gazzelloni", "Silvana Acosta"],
+      "former": ["Nina Deliu", "Katie Wood", "Francesca Picone"]
     },
     "name": "R-Ladies Roma, RM",
     "id": "36128420",
@@ -2952,8 +2927,8 @@
       "email": "amsterdam@rladies.org"
     },
     "organizers": {
-      "current": ["Tess Korthout", "Janine Khuc", "Iris de Vries"],
-      "former": []
+      "current": ["Kylie Ainslie", "Asli Kucukosmanoglu"],
+      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries"]
     },
     "name": "R-Ladies Amsterdam",
     "id": "27443387",
@@ -3264,7 +3239,7 @@
     },
     "organizers": {
       "current": ["Noora Said"],
-      "former": []
+      "former": ["Iman Al Hasani"]
     },
     "name": "R-Ladies Muscat",
     "id": "32964072",
@@ -4383,8 +4358,8 @@
       "github": "rladies/meetup-presentations_la"
     },
     "organizers": {
-      "current": ["Katie Leap"],
-      "former": ["Amanda Tilot"]
+      "current": [],
+      "former": ["Amanda Tilot", "Katie Leap"]
     },
     "name": "R-Ladies Los Angeles, CA",
     "id": "20382018",
@@ -5164,8 +5139,8 @@
       "email": "mid-missouri@rladies.org"
     },
     "organizers": {
-      "current": ["Hope Snyder", "Linda A. Landon", "Krista Galyen"],
-      "former": []
+      "current": ["Hope Snyder", "Linda A. Landon"],
+      "former": ["Krista Galyen"]
     },
     "name": "R-Ladies Columbia, MO",
     "id": "33107363",
@@ -5276,7 +5251,7 @@
       "website": "http://www.rladiesnyc.org/"
     },
     "organizers": {
-      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang"],
+      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang", "Jordan Amann", "Dana Trembley", "Anni Liu", "Nicole Burke"],
       "former": []
     },
     "name": "R-Ladies New York, NY",
@@ -5462,7 +5437,7 @@
       "website": "http://www.rladiesphilly.org/"
     },
     "organizers": {
-      "current": ["Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
+      "current": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
       "former": []
     },
     "name": "R-Ladies Philadelphia, PA",
