@@ -1,6 +1,7 @@
 # Get all mds
 # Find all non-post content
-content <- list.files("content","index", 
+library(here)
+content <- list.files(here("content"),"index", 
                       recursive = TRUE, 
                       full.names = TRUE)
 content <- content[grepl("[.]md", content)]
@@ -9,7 +10,7 @@ content <- content[grepl("[.]md", content)]
 dirs <-  unique(dirname(content))
 
 # Get the site languages
-site_lang <- readLines("config/_default/languages.yaml")
+site_lang <- readLines(here("config/_default/languages.yaml"))
 site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
 cat("Populating untranslated files:\n ")
 # Loop through dirs
