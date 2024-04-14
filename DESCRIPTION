@@ -10,7 +10,7 @@ Authors@R:  c(
          comment = c(ORCID = "0000-0002-5756-0223"))
       )
 Encoding: UTF-8
-Imports:
+Config/renv/profiles/default/dependencies:
     blogdown
 Config/renv/profiles/json/dependencies:
     jsonlite,
@@ -18,8 +18,13 @@ Config/renv/profiles/json/dependencies:
     here,
     cli
 Config/renv/profiles/dev/dependencies: 
+    blogdown,
     jsonlite,
     dplyr,
     here,
     tidyr,
-    cli
+    cli,
+    yaml
+Config/renv/profiles/production/dependencies:
+    here,
+    yaml
