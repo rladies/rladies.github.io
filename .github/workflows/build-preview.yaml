@@ -81,12 +81,12 @@ jobs:
           Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         run: rm -r data/directory data/rblogs
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v4
-        if: ${{ (env.on_fork != true) && env.directory == 'main' }}
+        if: ${{ (env.on_fork != 'true') && env.directory == 'main' }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
@@ -94,7 +94,7 @@ jobs:
           
       - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if: ${{ (env.on_fork != true) && env.directory != 'main' }}
+        if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
         with:
           name: entries
           github_token: ${{ secrets.GLOBAL_GHA_PAT }}
@@ -103,7 +103,7 @@ jobs:
           path: entries/
           
       - name: Site data - DIRECTORY - Move
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         run: |
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
@@ -117,7 +117,7 @@ jobs:
           fi
     
       - name: Site data - Get blogs list
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         uses: actions/checkout@v4
         with:
           repository: rladies/awesome-rladies-blogs
@@ -126,7 +126,7 @@ jobs:
           path: tmpd/rblogs
           
       - name: Site data - Meetup
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         uses: actions/checkout@v4
         with:
           repository: rladies/meetup_archive
@@ -134,7 +134,7 @@ jobs:
           path: tmpd/mtp
 
       - name: Site data - clean cloned repos
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         run: |
           cp -r tmpd/rblogs/blogs data/rblogs
           cp -r tmpd/mtp/data/* data/meetup/
@@ -155,7 +155,7 @@ jobs:
           
           
       - name: Deploy Preview
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
