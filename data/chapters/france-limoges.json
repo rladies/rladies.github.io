@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-limoges",
+    "status": "prospective",
+    "country": "France",
+    "city": "Limoges",
+    "social_media": {
+      "meetup": "rladies-XXX",
+      "email": "XXX@rladies.org"
+    },
+    "organizers": {
+      "current": ["Maelle Amand"]
+    }
+  }
+]
