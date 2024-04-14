@@ -33,6 +33,7 @@ env:
   repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
   directory: ${{ github.event.inputs.directory || 'main' }}
   blogs: ${{ github.event.inputs.blogs || 'main' }}
+  rid: ${{ github.event.number || github.run_id }}
       
 jobs:
   build: 
@@ -48,7 +49,7 @@ jobs:
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
-          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-${{ github.event.number }}" >> $GITHUB_ENV
+          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-r${{ env.rid}}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
             echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
