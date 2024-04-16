@@ -1,15 +1,7 @@
 {
   "R": {
-    "Version": "4.3.0",
+    "Version": "4.3.2",
     "Repositories": [
-      {
-        "Name": "ggseg",
-        "URL": "https://ggseg.r-universe.dev"
-      },
-      {
-        "Name": "lcbc",
-        "URL": "https://lcbc-uio.r-universe.dev"
-      },
       {
         "Name": "CRAN",
         "URL": "https://cloud.r-project.org"
@@ -19,13 +11,13 @@
   "Packages": {
     "renv": {
       "Package": "renv",
-      "Version": "1.0.1",
+      "Version": "1.0.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "utils"
       ],
-      "Hash": "6523639dd021b32c3199a41cbe6db340"
+      "Hash": "41b847654f567341725473431dd0d5ab"
     }
   }
 }

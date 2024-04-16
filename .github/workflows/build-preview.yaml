@@ -33,11 +33,12 @@ env:
   repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
   directory: ${{ github.event.inputs.directory || 'main' }}
   blogs: ${{ github.event.inputs.blogs || 'main' }}
+  rid: ${{ github.event.number || github.run_id }}
       
 jobs:
   build: 
     name: Build site
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     env:
       hugobd: public
       on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
@@ -48,7 +49,7 @@ jobs:
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
-          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-${{ github.event.number }}" >> $GITHUB_ENV
+          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-r${{ env.rid}}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
             echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
@@ -71,19 +72,21 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: '4.3.0'
-          
+
+      - name: Serup renv
+        uses: r-lib/actions/setup-renv@v2
+        
       - name: Populate untranslated pages
         run: |
-          rm .Rprofile # avoid starting renv
           Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         run: rm -r data/directory data/rblogs
         
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v4
-        if: ${{ (env.on_fork != true) && env.directory == 'main' }}
+        if: ${{ (env.on_fork != 'true') && env.directory == 'main' }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
@@ -91,7 +94,7 @@ jobs:
           
       - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v2
-        if: ${{ (env.on_fork != true) && env.directory != 'main' }}
+        if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
         with:
           name: entries
           github_token: ${{ secrets.GLOBAL_GHA_PAT }}
@@ -100,7 +103,7 @@ jobs:
           path: entries/
           
       - name: Site data - DIRECTORY - Move
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         run: |
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
@@ -114,7 +117,7 @@ jobs:
           fi
     
       - name: Site data - Get blogs list
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         uses: actions/checkout@v4
         with:
           repository: rladies/awesome-rladies-blogs
@@ -123,7 +126,7 @@ jobs:
           path: tmpd/rblogs
           
       - name: Site data - Meetup
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         uses: actions/checkout@v4
         with:
           repository: rladies/meetup_archive
@@ -131,7 +134,7 @@ jobs:
           path: tmpd/mtp
 
       - name: Site data - clean cloned repos
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         run: |
           cp -r tmpd/rblogs/blogs data/rblogs
           cp -r tmpd/mtp/data/* data/meetup/
@@ -152,17 +155,17 @@ jobs:
           
           
       - name: Deploy Preview
-        if: ${{ env.on_fork != true }}
+        if: ${{ env.on_fork != 'true' }}
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         run: |
           npm install netlify-cli -g
           netlify deploy \
-            --alias ${{ env.netalias }} \
+            --alias=${{ env.netalias }} \
             --dir=${{ env.hugobd }}
             
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v7
         name: "Notify about build failure"
         if: ${{ failure() }}
         with:
@@ -175,7 +178,7 @@ jobs:
               body: 'Test build failed :sob: [Check out the build logs](https://github.com/rladies/rladies.github.io/actions/runs/${{ github.run_id }}).
             }) 
             
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v7
         name: "Notify about build preview"
         with:
           github-token: ${{ env.token }}
