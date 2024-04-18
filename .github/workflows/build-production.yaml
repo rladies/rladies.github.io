@@ -23,7 +23,7 @@ jobs:
     steps:
       - name: Set env parameters
         run: |
-          ver=$(cat .Rprofile | grep hugo.version | cut -d"=" -f2 | sed -e s.\"..g | sed -e s.\ ..g | sed -e s.,..g)
+          ver=$(cat .hugoversion)
           echo "hugovr=$ver" >> $GITHUB_ENV
 
       - name: Checkout repository
