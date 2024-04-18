@@ -43,6 +43,11 @@ jobs:
       hugobd: public
       on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          
       - name: Set env parameters
         run: |
           ver=$(cat .hugoversion)
@@ -57,11 +62,6 @@ jobs:
             echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
             echo "blogsref=main" >> $GITHUB_ENV
           fi
-
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
           
       - name: Install cURL Headers
         run: |
