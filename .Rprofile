@@ -13,7 +13,7 @@ options(
   blogdown.ext = ".Rmd",
   blogdown.subdir = "blog",
   blogdown.title_case = TRUE,
-  blogdown.hugo.version = "0.111.2",
+  blogdown.hugo.version = readLines(".hugoversion"),
   
   renv.config.sandbox.enabled = FALSE,
   renv.config.auto.snapshot = FALSE
