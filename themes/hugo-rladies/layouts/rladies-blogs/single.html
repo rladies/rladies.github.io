@@ -25,6 +25,7 @@
         {{ with $rb.photo_url }}
           {{ with resources.GetRemote . }}
             {{ with .Err }}
+              {{ errorf "Unable to get remote resource %q: %s" . $rb.photo_url }}
             {{ else }}
               {{ $img := . }}
               {{ $img := $img.Fill "300x300" }} 
