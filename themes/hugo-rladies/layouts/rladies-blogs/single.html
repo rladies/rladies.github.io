@@ -20,19 +20,18 @@
         {{ end }}
         {{ $descr :=  $data.Get "descr" }}
         
-        {{ $grav := ( md5 $rb.url ) }}
-        {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" $grav )}}
+        {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" ( md5 $rb.url ) ) }}
         {{ with $rb.photo_url }}
           {{ with resources.GetRemote . }}
             {{ with .Err }}
-              {{ errorf "Unable to get remote resource %q: %s" . $rb.photo_url }}
+
             {{ else }}
               {{ $img := . }}
               {{ $img := $img.Fill "300x300" }} 
               {{ $data.Set "photo" $img.RelPermalink }}
             {{ end }}
           {{ else }}
-            {{ errorf "Unable to get remote resource %q" . }}
+            {{ warnf "Unable to get remote resource %q" . }}
           {{ end }}
         {{ end }}
         
