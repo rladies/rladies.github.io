@@ -482,7 +482,7 @@
   {
     "urlname": "rladies-salzburg",
     "status": "active",
-    "country": "austria",
+    "country": "Austria",
     "social_media": {
       "meetup": "rladies-salzburg",
       "email": "salzburg@rladies.org"
@@ -491,7 +491,7 @@
       "current": ["Ekaterina Akimova"],
       "former": []
     },
-    "name": "R-Ladies NA"
+    "name": "R-Ladies Salzburg"
   },
   {
     "urlname": "rladies-vienna",
