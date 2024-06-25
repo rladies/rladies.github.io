@@ -1,9 +1,11 @@
 [
   {
-    "status": "prospective",
+    "status": "active",
     "country": "Croatia",
     "city": "Zagreb",
-    "social_media": {},
+    "social_media": {
+      "meetup": "rladies-zagreb"
+    },
     "organizers": {
       "current": ["Dora Popovic", "Lana Bojanic", "Ana Jankovic", "Maja Kuzman"],
       "former": []
