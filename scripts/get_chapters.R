@@ -102,6 +102,7 @@ chpt <- list.files(here("data", "chapters"),
     country_acronym = toupper(country_acronym)
   ) |>
   ungroup() |>
+  select(-city2, -name2) |> 
   # drop_na(urlname) |> 
   as_tibble()
 
