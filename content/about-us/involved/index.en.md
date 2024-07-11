@@ -11,7 +11,7 @@ title: "Get Involved"
 
 We welcome your contributions, below are handful of ideas 💜
 
-### 🏁 Getting started 
+#### 🏁 Getting started 
 
 - Update [R-Ladies directory](/directory) with your details 
 - Join our [community slack](https://rladies.org/form/community-slack) channel
@@ -20,13 +20,13 @@ We welcome your contributions, below are handful of ideas 💜
 - Attend the online/in-person events. The details for upcoming events could be found over slack channels/ social media
 - Content along with recordings for our past events are openly accessible over YouTube channel, reach out to speakers that you like and let them know that you appreciate their content
 
-### 💡Always room for more 
+#### 💡Always room for more 
 
 - Propose a talk for a meetup/event/conference 
 - Become a chapter organizer by volunteering with your local chapter or starting your own (please get in touch via chapters[at]rladies[dot]org)
 - Contribute a blog post to the website, we are always here to help. 
 
-### 🤝 Above and beyond 
+#### 🤝 Above and beyond 
 
 - Join the global team, help us create a diverse space 
 - Create issues or PR(s) over our guide or website when you see things that can be improved
