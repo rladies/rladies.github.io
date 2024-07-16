@@ -1742,10 +1742,14 @@
     "timezone": "America/Costa_Rica"
   },
   {
-    "status": "prospective",
+    "status": "active",
     "country": "Croatia",
+    "city2": "Zagreb",
+    "social_media": {
+      "meetup": "rladies-zagreb"
+    },
     "organizers": {
-      "current": ["Ana Jankovic", "Maja Kuzman"],
+      "current": ["Dora Popovic", "Lana Bojanic", "Ana Jankovic", "Maja Kuzman"],
       "former": []
     },
     "name": "R-Ladies Zagreb",
@@ -2187,8 +2191,8 @@
       "linkedin": "r-ladies-cologne"
     },
     "organizers": {
-      "current": ["Cosima Meyer", "Gabe Winter", "Paula Nemcova"],
-      "former": ["Luciana Imbiriba"]
+      "current": ["Cosima Meyer", "Gabe Winter"],
+      "former": ["Luciana Imbiriba", "Paulina Nemcova"]
     },
     "name": "R-Ladies Cologne",
     "id": "35897809",
@@ -5491,7 +5495,7 @@
     "country": "USA",
     "state.region": "Connecticut",
     "organizers": {
-      "current": ["Josephine Ankrah", "Xinran Wang"],
+      "current": ["Karinne Tennenbaum", "Josephine Ankrah", "Xinran Wang"],
       "former": []
     },
     "name": "R-Ladies New Haven",
