@@ -4,10 +4,10 @@
 <div class="container expand-grid section topspace" id="feed">
   <h2 class="section-title"><span>{{ i18n "home_featured" }}</span></h2>
   <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
-    {{ $name := $.Scratch.Get "dic" | shuffle }}
-    {{ range first 3 $name }}
-        {{ $d := index $directory . }}
-        {{ partial "funcs/directory/card.html" (dict "data" $d "name" .) }}
-    {{ end }}
+      {{ $section := where $.Site.RegularPages "Section" "directory"}}
+      {{ range first 3 ($section | shuffle) }}
+          {{ partial "funcs/directory/card.html" (dict "data" . "size" "medium") }}
+      {{ end }}
+      
   </ul>
 </div>
