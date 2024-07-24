@@ -2409,11 +2409,11 @@
     "city": "Leipzig"
   },
   {
-    "status": "prospective",
+    "status": "active",
     "country": "Germany",
     "city2": "Marburg",
     "organizers": {
-      "current": ["Lara Orphal"],
+      "current": ["Lara Orphal", "Violetta Biermann"],
       "former": []
     },
     "name": "R-Ladies Marburg",
@@ -7364,7 +7364,7 @@
     "city2": "Laramie",
     "state.region": "Wyoming",
     "organizers": {
-      "current": ["Heather N. Abernathy"],
+      "current": ["Heather N. Abernathy", "Molly Caldwell"],
       "former": []
     },
     "name": "R-Ladies Laramie",
