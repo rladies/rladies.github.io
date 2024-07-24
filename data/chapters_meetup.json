@@ -4023,8 +4023,8 @@
       "github": "rladies/meetup-presentations_bergen"
     },
     "organizers": {
-      "current": ["Jonelle Dickow Villar", "Julia Romanowska", "Astrid Lunde", "Ellisif Nygaard"],
-      "former": []
+      "current": ["Jonelle Dickow Villar", "Seehee Rim", "Astrid Lunde", "Ellisif Nygaard"],
+      "former": ["Julia Romanowska"]
     },
     "name": "R-Ladies Bergen",
     "id": "32946570",
@@ -6024,8 +6024,8 @@
       "meetup": "rladies-honolulu"
     },
     "organizers": {
-      "current": ["Emily E. Conklin", "Juliette Verstaen", "Jayslen Serrano"],
-      "former": []
+      "current": ["Madeline Berger", "Juliette Verstaen", "Jayslen Serrano"],
+      "former": ["Emily E. Conklin"]
     },
     "name": "R-Ladies Honolulu, HI",
     "id": "36221103",
