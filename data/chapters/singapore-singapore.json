@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-singapore",
+    "status": "active",
+    "country": "Singapore",
+    "city": "Singapore",
+    "social_media": {
+      "meetup": "rladies-singapore-sg",
+      "email": "singapore@rladies.org"
+    },
+    "organizers": {
+      "current": ["Liang Tian"]
+    }
+  }
+]
