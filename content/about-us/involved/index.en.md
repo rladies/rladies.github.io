@@ -31,4 +31,5 @@ We welcome your contributions, below are handful of ideas 💜
 - Join the [global team](https://rladies.org/about-us/global-team/), help us create a diverse space 
 - Create issues or PR(s) over [GitHub](https://github.com/rladies) for our [website](https://github.com/rladies/rladies.github.io) & [guide](https://github.com/rladies/rladiesguide) when you encounter sections which could be improved
 - Contribute to community discussion and share your thoughts
-- Support your local chapters with venue space and [funding](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E) for food and beverages
+- Support your local chapters with venue space and funding for food and beverages
+- Support our infrastructure and behind-the-scenes operations. We appreciate your donations via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E)
