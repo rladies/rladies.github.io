@@ -15,6 +15,7 @@
   <div class="card-expand-img rounded-top">
     <img src="{{ $image }}"/>
   </div>
+  <a href="{{ .link }}">
   <div class="card-expand-content">
     {{ with .category }}
       <div class="card-expand-category rounded-right">{{ . | safeHTML }}</div>
@@ -44,4 +45,5 @@
       {{ end  }}
     </div>
   </div>
+  </a>
 </li>

@@ -1,0 +1,16 @@
+{{ $tmp := newScratch }}
+{{ with . }}
+  {{ with .country }}
+    {{ $tmp.Set "loc" . }}
+  {{ end }}
+  
+  {{ with .state }}
+    {{ $tmp.Add "loc" ( . | printf ", %s") }}
+  {{ end }}
+  
+  {{ with .city }}
+    {{ $tmp.Add "loc" ( . | printf ", %s") }}
+  {{ end }}
+
+{{ end }}
+{{ return ($tmp.Get "loc") }}
