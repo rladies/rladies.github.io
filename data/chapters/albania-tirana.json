@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-tirana",
+    "status": "active",
+    "country": "Albania",
+    "city": "Tirana",
+    "social_media": {
+      "meetup": "rladies-tirana",
+      "email": "tirana@rladies.org"
+    },
+    "organizers": {
+      "current": ["Eralda Gjika"]
+    }
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-cape-coast",
+    "status": "active",
+    "country": "Ghana",
+    "city": "Cape Coast",
+    "social_media": {
+      "meetup": "rladies-cape-coast"
+    },
+    "organizers": {
+      "current": ["Lois Keh"],
+      "former": []
+    }
+  }
+]

@@ -1,10 +1,14 @@
 [
   {
-    "status": "prospective",
+    "urlname": "rladies-laramie",
+    "status": "active",
     "country": "USA",
     "state.region": "Wyoming",
     "city": "Laramie",
-    "social_media": {},
+    "social_media": {
+      "meetup": "rladies-laramie",
+      "email": "laramie@rladies.org"
+    },
     "organizers": {
       "current": ["Heather N. Abernathy", "Molly Caldwell"],
       "former": []

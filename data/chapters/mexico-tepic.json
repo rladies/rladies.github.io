@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-tepic",
+    "status": "active",
+    "country": "Mexico",
+    "city": "Tepic",
+    "social_media": {
+      "meetup": "rladies-tepic",
+      "email": "tepic@rladies.org"
+    },
+    "organizers": {
+      "current": ["Zulia Fernandina Nieves L<f3>pez", "Fabiola Ay<f3>n", "Angelica Nallelhy", "Aida Gabriela Mora"]
+    }
+  }
+]
