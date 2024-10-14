@@ -1,5 +1,5 @@
 ---
-title: "Invitation to participate in the new R-Ladies–Bioconductor collaboration!"
+title: "New R-Ladies–Bioconductor collaboration!"
 description: |
   Announcing a new collaboration between R-Ladies and Bioconductor
 author:
