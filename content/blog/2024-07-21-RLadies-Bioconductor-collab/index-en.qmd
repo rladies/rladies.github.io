@@ -44,7 +44,7 @@ Here are a few concrete ways in which we want to get the ball rolling:
 Excited to join us in this initiative?
 Here's how you can get started:
 
--   Learn more about and partake in our joint initiative at the [Bioconductor Working Group page](https://workinggroups.bioconductor.org/currently-active-working-groups-committees.html#r-ladies-and-bioc).
+-   Learn more about and partake in our joint initiative at the [Bioconductor Working Group page](https://workinggroups.bioconductor.org/currently-active-working-groups-committees.html#r-ladies-and-bioc): this groups is for Bioconductor members to learn about R-Ladies and how to get in contact with the community.
 -   Join #rladies channel in [Bioconductor Slack](https://slack.bioconductor.org/) to stay updated and connect with the community.
 -   Join the [R-Ladies Community Slack](https://guide.rladies.org/comm/slack/) to engage with the global community.
 
