@@ -46,7 +46,7 @@ Here's how you can get started:
 
 -   Learn more about and partake in our joint initiative at the [Bioconductor Working Group page](https://workinggroups.bioconductor.org/currently-active-working-groups-committees.html#r-ladies-and-bioc): this groups is for Bioconductor members to learn about R-Ladies and how to get in contact with the community.
 -   Join #rladies channel in [Bioconductor Slack](https://slack.bioconductor.org/) to stay updated and connect with the community.
--   Join the [R-Ladies Community Slack](https://guide.rladies.org/comm/slack/) to engage with the global community.
+-   Join the [R-Ladies Community Slack](https://guide.rladies.org/comm/slack/) to engage with the global community. (only for women and other gender minorities) 
 
 We recently kicked off this journey with local networking in R-Ladies chapters worldwide (e.g., [Aurora, Colorado](https://www.meetup.com/rladies-aurora/events/302185687/)) and an R-Ladies meetup in Michigan during BioC 2024, co-hosted with [R-Ladies East Lansing](https://www.meetup.com/rladies-east-lansing/events/302185529/) (Michigan)!
 
