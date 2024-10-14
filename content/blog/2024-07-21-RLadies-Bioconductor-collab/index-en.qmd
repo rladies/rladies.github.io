@@ -29,7 +29,9 @@ To this end, they have periodically elected scientific, technical, and community
 
 We are excited to begin a new initiative that aims to connect R-Ladies members who are also Bioconductor users or developers.
 This effort is designed as a key step towards bringing together passionate individuals committed to expanding diversity in the computational biology and bioinformatics developer space.
+This coincidence of interest between members of both communities has already manifested in several R-Ladies chapters organizing events related to Bioinformatics and several R-Ladies members being part of the Bioconductor community. 
 
+This announcement formalizes this spontaneous collaboration between the two communities. 
 Here are a few concrete ways in which we want to get the ball rolling:
 
 -   Announce each others' events on websites or social media
