@@ -33,7 +33,7 @@ This effort is designed as a key step towards bringing together passionate indiv
 Here are a few concrete ways in which we want to get the ball rolling:
 
 -   Announce each others' events on websites or social media
--   Jointly host events with local chapters
+-   Jointly host events about Bioinformatics with local R-Ladies Chapters interested in the topic. 
 -   Promote R-Ladies local watch parties of live-casted or pre-recorded events and professional networking events for Bioconductor conferences (using content from BioC: BioC North America, BioCAsia, EuroBioC).
 -   Highlight Bioconductor speakers at R + computational biology R-Ladies events across chapters
 
