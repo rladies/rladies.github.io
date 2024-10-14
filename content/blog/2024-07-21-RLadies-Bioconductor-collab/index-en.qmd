@@ -17,7 +17,7 @@ editor:
 
 ![](rladies-bioc.png){ width=50% fig-align="center"}
 
-We are excited to invite you to join a new collaboration between two global communities, each committed to building diverse developer communities around the world, R-Ladies and Bioconductor.
+We are excited to share a new collaboration between R-Ladies and Bioconductor, two global communities committed to building diverse developer communities around the world.
 
 [R-Ladies](http://rladies.org) is a worldwide organization whose mission is to promote gender diversity in the R community.
 R-Ladies Global started in 2016 and has expanded to more than 200 chapters in 60+ countries worldwide.
