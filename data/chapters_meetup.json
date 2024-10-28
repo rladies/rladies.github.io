@@ -1,5 +1,20 @@
 [
   {
+    "urlname": "rladies-tirana",
+    "status": "active",
+    "country": "Albania",
+    "social_media": {
+      "meetup": "rladies-tirana",
+      "email": "tirana@rladies.org"
+    },
+    "organizers": {
+      "current": ["Eralda Gjika"],
+      "former": []
+    },
+    "name": "R-Ladies Tirana",
+    "city": "Tirana"
+  },
+  {
     "urlname": "rladies-algiers",
     "status": "prospective",
     "country": "Algeria",
@@ -1506,8 +1521,8 @@
       "email": "concepcion@rladies.org"
     },
     "organizers": {
-      "current": ["Macarena Valenzuela Beltr<e1>n", "Camila Molina"],
-      "former": []
+      "current": ["Natalia Elizabeth Riquelme Sanhueza", "Camila Molina"],
+      "former": ["Macarena Valenzuela Beltr<e1>n"]
     },
     "name": "R-Ladies Concepción",
     "id": "31653468",
@@ -2367,6 +2382,20 @@
     "timezone": "Africa/Accra"
   },
   {
+    "urlname": "rladies-cape-coast",
+    "status": "active",
+    "country": "Ghana",
+    "social_media": {
+      "meetup": "rladies-cape-coast"
+    },
+    "organizers": {
+      "current": ["Lois Keh"],
+      "former": []
+    },
+    "name": "R-Ladies Cape Coast",
+    "city": "Cape Coast"
+  },
+  {
     "urlname": "rladies-kumasi",
     "status": "active",
     "country": "Ghana",
@@ -3153,6 +3182,21 @@
     "timezone": "America/Mexico_City"
   },
   {
+    "urlname": "rladies-guanajuato",
+    "status": "active",
+    "country": "Mexico",
+    "social_media": {
+      "meetup": "rladies-guanajuato",
+      "email": "guanajuato@rladies.org"
+    },
+    "organizers": {
+      "current": ["Lavinia Lav<ed>n L<f3>pez"],
+      "former": []
+    },
+    "name": "R-Ladies Guanajuato",
+    "city": "Guanajuato"
+  },
+  {
     "urlname": "rladies-cdmx",
     "status": "active",
     "country": "Mexico",
@@ -3323,6 +3367,21 @@
     "lat": 16.75,
     "lon": -92.63,
     "timezone": "America/Mexico_City"
+  },
+  {
+    "urlname": "rladies-tepic",
+    "status": "active",
+    "country": "Mexico",
+    "social_media": {
+      "meetup": "rladies-tepic",
+      "email": "tepic@rladies.org"
+    },
+    "organizers": {
+      "current": ["Zulia Fernandina Nieves L<f3>pez", "Fabiola Ay<f3>n", "Angelica Nallelhy", "Aida Gabriela Mora"],
+      "former": []
+    },
+    "name": "R-Ladies Tepic",
+    "city": "Tepic"
   },
   {
     "urlname": "rladies-tijuana",
@@ -4193,6 +4252,21 @@
     "timezone": "Europe/Belgrade"
   },
   {
+    "urlname": "rladies-singapore",
+    "status": "active",
+    "country": "Singapore",
+    "social_media": {
+      "meetup": "rladies-singapore-sg",
+      "email": "singapore@rladies.org"
+    },
+    "organizers": {
+      "current": ["Liang Tian"],
+      "former": []
+    },
+    "name": "R-Ladies Singapore",
+    "city": "Singapore"
+  },
+  {
     "urlname": "rladies-ljubljana",
     "status": "active",
     "country": "Slovenia",
@@ -5044,10 +5118,10 @@
     "timezone": "Europe/London"
   },
   {
-    "status": "prospective",
+    "status": "active",
     "country": "United Kingdom",
     "organizers": {
-      "current": ["Harriet AB Patrick"],
+      "current": ["Grace Accad", "Sophie Lee", "Harriet Patrick"],
       "former": []
     },
     "name": "R-Ladies Sheffield",
@@ -5210,12 +5284,11 @@
       "twitter": "RLadiesIrvine",
       "email": "irvine@rladies.org",
       "github": "rladies/meetup-presentations_irvine",
-      "website": "http://www.rladiesirvine.org/",
-      "slack": "http://bit.ly/SoCal-RUG-Slack"
+      "website": "http://www.rladiesirvine.org/"
     },
     "organizers": {
-      "current": ["Alyssa Columbus", "Linda Palmer", "Madeline Bauer"],
-      "former": []
+      "current": ["Alyssa Columbus", "Madeline Bauer"],
+      "former": ["Linda Palmer"]
     },
     "name": "R-Ladies Irvine, CA",
     "id": "27819387",
@@ -6636,8 +6709,8 @@
       "website": "http://www.rladiesphilly.org/"
     },
     "organizers": {
-      "current": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
-      "former": []
+      "current": ["Jenny Luong", "Shannon Pileggi"],
+      "former": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"]
     },
     "name": "R-Ladies Philadelphia, PA",
     "id": "26229746",
@@ -6988,9 +7061,14 @@
     "city": "Madison"
   },
   {
-    "status": "prospective",
+    "urlname": "rladies-laramie",
+    "status": "active",
     "country": "USA",
     "state.region": "Wyoming",
+    "social_media": {
+      "meetup": "rladies-laramie",
+      "email": "laramie@rladies.org"
+    },
     "organizers": {
       "current": ["Heather N. Abernathy", "Molly Caldwell"],
       "former": []
