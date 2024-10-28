@@ -1,13 +1,15 @@
 [
   {
+    "urlname": "rladies-fort-collins",
     "status": "prospective",
-    "country": "USA",
-    "state.region": "Colorado",
+    "country": "US",
     "city": "Fort Collins",
-    "social_media": {},
+    "social_media": {
+      "meetup": "rladies-fort-collins",
+      "email": "fortcollins@rladies.org"
+    },
     "organizers": {
-      "current": ["Katie Willi", "Caitlin Mothes"],
-      "former": []
+      "current": ["Caitlin Mothes", "Katie Willi"]
     }
   }
 ]
