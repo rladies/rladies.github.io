@@ -5535,11 +5535,16 @@
     "timezone": "America/Denver"
   },
   {
+    "urlname": "rladies-fort-collins",
     "status": "prospective",
     "country": "USA",
     "state.region": "Colorado",
+    "social_media": {
+      "meetup": "rladies-fort-collins",
+      "email": "fortcollins@rladies.org"
+    },
     "organizers": {
-      "current": ["Katie Willi", "Caitlin Mothes"],
+      "current": ["Caitlin Mothes", "Katie Willi"],
       "former": []
     },
     "name": "R-Ladies Fort Collins",
