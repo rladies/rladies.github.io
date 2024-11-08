@@ -1197,16 +1197,16 @@
     "state.region": "S<e3>o Paulo",
     "social_media": {
       "meetup": "rladies-sao-paulo",
-      "twitter": "RLadiesSaoPaulo",
-      "email": "saopaulo@rladies.org",
+      "email": "certificados.rladiessp@gmail.com",
       "facebook": "rladiessaopaulo",
       "instagram": "rladiessaopaulo",
       "youtube": "RLadiesS%C3%A3oPaulo",
-      "github": "rladies/meetup-presentations_sao-paulo"
+      "github": "https://github.com/R-Ladies-Sao-Paulo/",
+      "website": "https://rladies-sp.org/"
     },
     "organizers": {
-      "current": ["Hayd<e9>e Svab", "Alissa Munerato", "Bruna Wundervald", "Beatriz Milz", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jean Prado", "Renata Hirota"],
-      "former": []
+      "current": ["Hayd<e9>e Svab", "Beatriz Milz", "Tatyane Paz Dominguez", "Luana Antunes Alexandre", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jade Mar<e9>", "Ana Carolina Moreno", "Fernanda Fiel Peres", "Geovana Lopes"],
+      "former": ["Bruna Wundervald", "Alissa Munerato"]
     },
     "name": "R-Ladies São Paulo",
     "id": "27456719",
