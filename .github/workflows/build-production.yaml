@@ -43,7 +43,7 @@ jobs:
         with:
           r-version: '4.3.0'
     
-      - name: Serup renv
+      - name: Setup renv
         uses: r-lib/actions/setup-renv@v2
         
       - name: Populate untranslated pages
