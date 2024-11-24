@@ -27,3 +27,6 @@ ignoreFiles:
   - "README_img/"
 #[outputs]
 #  home = ["HTML", "RSS", "JSON"]
+
+ignoreLogs:
+  - warning-goldmark-raw-html
