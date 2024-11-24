@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+	<ul>
+  {{ range .Pages }}
+    <li class="p-2">
+    	{{ .Title }} 
+	    {{ if .Params.redirect }}
+	      <span>
+    		  <a  href="{{ .RelPermalink }}" rel="bookmark">{{.Params.redirect}}</a>
+  		  </span>
+      {{ end }}
+    </li>
+  {{ end }}
+	</ul>
+{{ end }}
