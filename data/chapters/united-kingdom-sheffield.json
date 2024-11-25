@@ -1,12 +1,11 @@
 [
   {
-    "status": "prospective",
+    "status": "active",
     "country": "United Kingdom",
     "city": "Sheffield",
     "social_media": {},
     "organizers": {
-      "current": ["Harriet AB Patrick"],
-      "former": []
+      "current": ["Grace Accad", "Sophie Lee", "Harriet Patrick"]
     }
   }
 ]

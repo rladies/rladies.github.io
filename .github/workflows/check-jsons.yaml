@@ -2,10 +2,11 @@ name: Validate jsons
 
 on:
   push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
-      - fork_merge
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -17,10 +18,10 @@ jobs:
       RENV_PROFILE: "json"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
     name: Check modified jsons
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 2
 

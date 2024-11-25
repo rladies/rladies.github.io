@@ -57,7 +57,11 @@ some_cols <- c("meetup", "twitter",
 meetup <- read_json(here("data", "meetup", "chapters.json"),
                     simplifyVector = TRUE) |> 
   bind_rows() |> 
-  arrange(urlname)
+  arrange(urlname) |> 
+  as_tibble() |> 
+  mutate(
+    name = tolower(name)
+    )
 
 chpt <- list.files(here("data", "chapters"), 
                    pattern = "json",
@@ -82,10 +86,14 @@ chpt <- list.files(here("data", "chapters"),
       lapply(x, unlist)
     })
   ) |> 
-  select(-city, -name) |> 
+  rename(
+    city2 = city, 
+    name2 = name) |> 
   left_join(meetup) |> 
   rowwise() |>
   mutate(
+    city = coalesce(city, city2),
+    name = coalesce(name, name2),
     name = if_else(
       any(state == "", is.na(state)),
       sprintf("R-Ladies %s", city),
@@ -94,7 +102,9 @@ chpt <- list.files(here("data", "chapters"),
     country_acronym = toupper(country_acronym)
   ) |>
   ungroup() |>
-  drop_na(urlname)
+  select(-city2, -name2) |> 
+  # drop_na(urlname) |> 
+  as_tibble()
 
 
 write_chapter(chpt)

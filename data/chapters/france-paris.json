@@ -11,11 +11,12 @@
       "facebook": "RLadiesParis",
       "instagram": "rladiesparis",
       "linkedin": "r-ladies-paris",
-      "youtube": "UCWTFKtW_ReLP9zmMTYjRqug",
-      "github": "rladies/r-ladies-paris"
+      "youtube": "@rladiesparis",
+      "github": "R-Ladies-Paris",
+      "mastodon": "https://mastodon.social/@rladies_paris"
     },
     "organizers": {
-      "current": ["Mouna Belaid"],
+      "current": ["Mouna Belaid", "Chaima Boughanmi"],
       "former": ["Diane Beldame", "Christina Bergmann", "Sarah Hosking", "Stéphanie Terrasse"]
     }
   }

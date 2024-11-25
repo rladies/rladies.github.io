@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-salzburg",
+    "status": "active",
+    "country": "Austria",
+    "city": "salzburg",
+    "social_media": {
+      "meetup": "rladies-salzburg",
+      "email": "salzburg@rladies.org"
+    },
+    "organizers": {
+      "current": ["Ekaterina Akimova"]
+    }
+  }
+]

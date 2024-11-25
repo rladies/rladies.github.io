@@ -1,11 +1,11 @@
 [
   {
-    "status": "prospective",
+    "status": "active",
     "country": "Germany",
     "city": "Marburg",
     "social_media": {},
     "organizers": {
-      "current": ["Glenda Mendieta"],
+      "current": ["Lara Orphal", "Violetta Biermann"],
       "former": []
     }
   }

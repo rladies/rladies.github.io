@@ -4,7 +4,7 @@
   {{ with .Site.GetPage "section" "chapters" }}
 
 <div class="container row justify-content-center section topspace">
-  <h2 class="section-title"><span>{{ .Title }}</span></h2>
+  <h2 class="section-title"><span>{{ .Title | title }}</span></h2>
   <small class="text-muted text-center">{{ .Content }}</small>
   <button type="button" class="btn btn-primary p-2 m-2 center" data-toggle="collapse" data-target="#chapter-table">{{ .Params.button }}</button>
   
@@ -14,17 +14,17 @@
       <table class="table table-hover table-responsive chp-table">
       <thead>
         <tr>
-          <th class="text-right b-rladies b-rladies-r"> {{ i18n "country"  | markdownify}} </th>
-          <th class="text-left"> {{ i18n "city" | markdownify}} </th>
-          <th class="text-right"> {{ i18n "social_media"  | markdownify}} </th>
+          <th class="text-right b-rladies b-rladies-r"> {{ i18n "country"  | markdownify | title }} </th>
+          <th class="text-left"> {{ i18n "city" | markdownify | title }} </th>
+          <th class="text-right"> {{ i18n "social_media" | markdownify }} </th>
         </tr>
       </thead>
       <tbody>
         {{ range $countries }}
           <tr>
-            <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country }} </td>
+            <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country | title }} </td>
                 {{ range where $chapters "country" .country }}
-            <td class="text-left"> <a href="http://meetup.com/{{ .social_media.meetup }}">{{ .name }}</a> </td>
+            <td class="text-left"> <a href="http://meetup.com/{{ .social_media.meetup }}">{{ .name | title }}</a> </td>
               
               <td class="text-right"> 
                 {{ with .social_media }}

@@ -1,9 +1,14 @@
 {
+  "bioconductor.version": null,
+  "external.libraries": [],
+  "ignored.packages": [],
   "package.dependency.fields": [
     "Imports",
     "Depends",
     "LinkingTo"
   ],
+  "ppm.enabled": null,
+  "ppm.ignored.urls": [],
   "r.version": "4.3.0",
   "snapshot.type": "explicit",
   "use.cache": true,
