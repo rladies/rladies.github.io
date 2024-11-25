@@ -67,18 +67,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
-
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.3.0'
-
-      - name: Serup renv
-        uses: r-lib/actions/setup-renv@v2
-        
-      - name: Populate untranslated pages
-        run: |
-          Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
         if: ${{ env.on_fork != 'true' }}
