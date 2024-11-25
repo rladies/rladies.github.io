@@ -41,7 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       hugobd: public
-      on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
+      on_fork: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -55,12 +55,11 @@ jobs:
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-r${{ env.rid}}" >> $GITHUB_ENV
+          echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+          echo "blogsref=main" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
             echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
-          else
-            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-            echo "blogsref=main" >> $GITHUB_ENV
           fi
           
       - name: Install cURL Headers
