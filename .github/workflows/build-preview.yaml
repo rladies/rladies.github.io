@@ -34,22 +34,13 @@ env:
   directory: ${{ github.event.inputs.directory || 'main' }}
   blogs: ${{ github.event.inputs.blogs || 'main' }}
   rid: ${{ github.event.number || github.run_id }}
+  hugobd: public
+  on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
       
 jobs:
-  check-state:
-    name: Check GHA status
-    runs-on: ubuntu-latest
-    steps:
-      - name: Look at vars.
-        run:
-          echo "Is this from fork? ${{ github.event.pull_request.head.repo.fork }}"
-
   build: 
     name: Build site
     runs-on: ubuntu-latest
-    env:
-      hugobd: public
-      on_fork: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -79,17 +70,16 @@ jobs:
         if: ${{ env.on_fork != 'true' }}
         run: rm -r data/directory data/rblogs
         
-
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v4
         if: ${{ (env.on_fork != 'true') && env.directory == 'main' }}
         with:
           repository: rladies/directory
-          ssh-key: ${{ secrets.SSH_DIRECTORYY_REPO }}
+          ssh-key: ${{ secrets.ssh_directoryy_repo }}
           path: tmpd/dir
           
       - name: Site data - DIRECTORY - Download artifact
-        uses: dawidd6/action-download-artifact@v6
+        uses: dawidd6/action-download-artifact@v2
         if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
         with:
           name: entries
