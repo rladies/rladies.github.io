@@ -75,9 +75,8 @@ jobs:
         uses: actions/checkout@v4
         if: ${{ (env.on_fork != 'true') && env.directory == 'main' }}
         with:
-          github_token: ${{ secrets.GLOBAL_GHA_PAT }}
           repository: rladies/directory
-          ssh-key: ${{ secrets.ssh_directoryy_repo }}
+          ssh-key: ${{ secrets.SSH_DIRECTORYY_REPO }}
           ref: main
           path: tmpd/dir
           

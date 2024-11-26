@@ -57,7 +57,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: rladies/directory
-          ssh-key: ${{ secrets.ssh_directoryy_repo }}
+          ssh-key: ${{ secrets.SSH_DIRECTORYY_REPO }}
           path: tmpd/dir
           
       - name: Site data - DIRECTORY - Move
