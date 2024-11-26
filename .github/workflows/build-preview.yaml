@@ -71,13 +71,13 @@ jobs:
         if: ${{ env.on_fork != 'true' }}
         run: rm -r data/directory data/rblogs
         
+
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v4
         if: ${{ (env.on_fork != 'true') && env.directory == 'main' }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.SSH_DIRECTORYY_REPO }}
-          ref: main
           path: tmpd/dir
           
       - name: Site data - DIRECTORY - Download artifact
