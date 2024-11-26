@@ -93,7 +93,7 @@ jobs:
           path: tmpd/dir
           
       - name: Site data - DIRECTORY - Download artifact
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
         with:
           name: entries
