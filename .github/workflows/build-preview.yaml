@@ -42,8 +42,7 @@ jobs:
     steps:
       - name: Look at vars.
         run:
-          echo ${{ github.event.pull_request.head.repo }}
-          echo on_fork ${{ github.event.pull_request.head.repo.fork }}
+          echo "Is this from fork? ${{ github.event.pull_request.head.repo.fork }}"
 
   build: 
     name: Build site
