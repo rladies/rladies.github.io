@@ -36,6 +36,15 @@ env:
   rid: ${{ github.event.number || github.run_id }}
       
 jobs:
+  check-state:
+    name: Check GHA status
+    runs-on: ubuntu-latest
+    steps:
+      - name: Look at vars.
+        run:
+          echo ${{ github.event.pull_request.head.repo }}
+          echo on_fork ${{ github.event.pull_request.head.repo.fork }}
+
   build: 
     name: Build site
     runs-on: ubuntu-latest
