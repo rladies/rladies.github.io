@@ -10,12 +10,11 @@
       "twitter": "RLadiesIrvine",
       "email": "irvine@rladies.org",
       "github": "rladies/meetup-presentations_irvine",
-      "website": "http://www.rladiesirvine.org/",
-      "slack": "http://bit.ly/SoCal-RUG-Slack"
+      "website": "http://www.rladiesirvine.org/"
     },
     "organizers": {
-      "current": ["Alyssa Columbus", "Linda Palmer", "Madeline Bauer"],
-      "former": []
+      "current": ["Alyssa Columbus", "Madeline Bauer"],
+      "former": ["Linda Palmer"]
     }
   }
 ]

@@ -1,11 +1,11 @@
 {
-  "title": "Google",
+  "title": "Google test",
   "url": "https://google.com",
-  "photo_url": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png",
+  "photo_url": "https://assets.stickpng.com/images/580b57fcd9996e24bc4f.png",
   "description": "",
   "authors": [
     {
-      "name": "The whole world",
+      "name": "This should have no image",
       "social_media": [{}]
     }
   ]
