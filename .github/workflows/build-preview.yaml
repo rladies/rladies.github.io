@@ -27,21 +27,18 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  RENV_PROFILE: "dev"
-  RENV_CONFIG_SANDBOX_ENABLED: FALSE
   issue: ${{ github.event.inputs.triggering_issue || github.event.pull_request.number }}
   repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
   directory: ${{ github.event.inputs.directory || 'main' }}
   blogs: ${{ github.event.inputs.blogs || 'main' }}
   rid: ${{ github.event.number || github.run_id }}
+  hugobd: public
+  on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
       
 jobs:
   build: 
     name: Build site
     runs-on: ubuntu-latest
-    env:
-      hugobd: public
-      on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -67,18 +64,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
-
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: '4.3.0'
-
-      - name: Serup renv
-        uses: r-lib/actions/setup-renv@v2
-        
-      - name: Populate untranslated pages
-        run: |
-          Rscript scripts/missing_translations.R
         
       - name: Site data - Clean folders
         if: ${{ env.on_fork != 'true' }}
@@ -93,7 +78,7 @@ jobs:
           path: tmpd/dir
           
       - name: Site data - DIRECTORY - Download artifact
-        uses: dawidd6/action-download-artifact@v2
+        uses: dawidd6/action-download-artifact@v6
         if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
         with:
           name: entries
