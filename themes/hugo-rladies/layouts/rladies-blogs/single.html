@@ -21,6 +21,7 @@
         {{ $descr :=  $data.Get "descr" }}
         
         {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" ( md5 $rb.url ) ) }}
+        {{ warnf "Processing %q" $name }}
         {{ with $rb.photo_url }}
           {{ with resources.GetRemote . }}
             {{ with .Err }}
