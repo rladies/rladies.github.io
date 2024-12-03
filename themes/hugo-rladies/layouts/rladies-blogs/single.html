@@ -24,7 +24,7 @@
         {{ with $rb.photo_url }}
           {{ with resources.GetRemote . }}
             {{ with .Err }}
-
+              {{ warnf "%s" . }}
             {{ else }}
               {{ $img := . }}
               {{ $img := $img.Fill "300x300" }} 
