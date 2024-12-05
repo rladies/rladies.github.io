@@ -27,7 +27,7 @@
             {{ with .Err }}
               {{ warnf "%s" . }}
             {{ else }}
-              {{ warnf "Content type is: %s" .ContentType }}
+              {{ warnf "Content type is: %s" .Data.ContentType }}
               {{ $img := . }}
               {{ $img := $img.Fill "300x300" }} 
               {{ $data.Set "photo" $img.RelPermalink }}
