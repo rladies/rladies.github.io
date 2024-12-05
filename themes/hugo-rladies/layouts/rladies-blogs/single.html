@@ -21,12 +21,13 @@
         {{ $descr :=  $data.Get "descr" }}
         
         {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" ( md5 $rb.url ) ) }}
-        {{ warnf "Processing %q" $name }}
         {{ with $rb.photo_url }}
+          {{ warnf "Processing %q" $name }}
           {{ with resources.GetRemote . }}
             {{ with .Err }}
               {{ warnf "%s" . }}
             {{ else }}
+              {{ warnf "Content type is: %s" .ContentType }}
               {{ $img := . }}
               {{ $img := $img.Fill "300x300" }} 
               {{ $data.Set "photo" $img.RelPermalink }}
