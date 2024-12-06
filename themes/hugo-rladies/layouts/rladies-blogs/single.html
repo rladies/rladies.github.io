@@ -24,11 +24,15 @@
         {{ with $rb.photo_url }}
           {{ with resources.GetRemote . }}
             {{ with .Err }}
-
+              {{ warnf "%s" . }}
             {{ else }}
-              {{ $img := . }}
-              {{ $img := $img.Fill "300x300" }} 
-              {{ $data.Set "photo" $img.RelPermalink }}
+              {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
+                {{ $img := . }}
+                {{ $img := $img.Fill "300x300" }} 
+                {{ $data.Set "photo" $img.RelPermalink }}
+              {{ else }}
+                {{ warnf "Entry %s has a photo url without an image type" $name }}
+              {{ end }}
             {{ end }}
           {{ else }}
             {{ warnf "Unable to get remote resource %q" . }}
