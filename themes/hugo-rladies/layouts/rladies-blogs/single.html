@@ -3,7 +3,7 @@
   <div class="container expand-grid" id="rladies-blogs">
     <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
       {{ $rblogs := ( .Scratch.Get "rblogs" ) }}
-      {{ range $name := $.Scratch.Get "rb"  }}
+      {{ range $name := $.Scratch.Get "rb" | shuffle }}
         {{ $rb := index $rblogs $name }}
         {{ $data := newScratch }}
         {{ $data.Set "descr" "" }}
