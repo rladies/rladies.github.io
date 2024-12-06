@@ -607,7 +607,7 @@
   },
   {
     "urlname": "rladies-cotonou",
-    "status": "active",
+    "status": "retired on 25-11-2024",
     "country": "Benin",
     "social_media": {
       "meetup": "rladies-cotonou",
@@ -615,8 +615,8 @@
       "email": "cotonou@rladies.org"
     },
     "organizers": {
-      "current": ["Nadejda Sero", "Benedicta Essuon"],
-      "former": []
+      "current": [],
+      "former": ["Nadejda Sero", "Benedicta Essuon"]
     },
     "name": "R-Ladies Cotonou",
     "id": "27986524",
