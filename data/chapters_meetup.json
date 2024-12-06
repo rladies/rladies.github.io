@@ -1,5 +1,20 @@
 [
   {
+    "urlname": "rladies-tirana",
+    "status": "active",
+    "country": "Albania",
+    "social_media": {
+      "meetup": "rladies-tirana",
+      "email": "tirana@rladies.org"
+    },
+    "organizers": {
+      "current": ["Eralda Gjika"],
+      "former": []
+    },
+    "name": "R-Ladies Tirana",
+    "city": "Tirana"
+  },
+  {
     "urlname": "rladies-algiers",
     "status": "prospective",
     "country": "Algeria",
@@ -592,7 +607,7 @@
   },
   {
     "urlname": "rladies-cotonou",
-    "status": "active",
+    "status": "retired on 25-11-2024",
     "country": "Benin",
     "social_media": {
       "meetup": "rladies-cotonou",
@@ -600,8 +615,8 @@
       "email": "cotonou@rladies.org"
     },
     "organizers": {
-      "current": ["Nadejda Sero", "Benedicta Essuon"],
-      "former": []
+      "current": [],
+      "former": ["Nadejda Sero", "Benedicta Essuon"]
     },
     "name": "R-Ladies Cotonou",
     "id": "27986524",
@@ -1182,16 +1197,16 @@
     "state.region": "S<e3>o Paulo",
     "social_media": {
       "meetup": "rladies-sao-paulo",
-      "twitter": "RLadiesSaoPaulo",
-      "email": "saopaulo@rladies.org",
+      "email": "certificados.rladiessp@gmail.com",
       "facebook": "rladiessaopaulo",
       "instagram": "rladiessaopaulo",
       "youtube": "RLadiesS%C3%A3oPaulo",
-      "github": "rladies/meetup-presentations_sao-paulo"
+      "github": "https://github.com/R-Ladies-Sao-Paulo/",
+      "website": "https://rladies-sp.org/"
     },
     "organizers": {
-      "current": ["Hayd<e9>e Svab", "Alissa Munerato", "Bruna Wundervald", "Beatriz Milz", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jean Prado", "Renata Hirota"],
-      "former": []
+      "current": ["Hayd<e9>e Svab", "Beatriz Milz", "Tatyane Paz Dominguez", "Luana Antunes Alexandre", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jade Mar<e9>", "Ana Carolina Moreno", "Fernanda Fiel Peres", "Geovana Lopes"],
+      "former": ["Bruna Wundervald", "Alissa Munerato"]
     },
     "name": "R-Ladies São Paulo",
     "id": "27456719",
@@ -1506,8 +1521,8 @@
       "email": "concepcion@rladies.org"
     },
     "organizers": {
-      "current": ["Macarena Valenzuela Beltr<e1>n", "Camila Molina"],
-      "former": []
+      "current": ["Natalia Elizabeth Riquelme Sanhueza", "Camila Molina"],
+      "former": ["Macarena Valenzuela Beltr<e1>n"]
     },
     "name": "R-Ladies Concepción",
     "id": "31653468",
@@ -2367,6 +2382,20 @@
     "timezone": "Africa/Accra"
   },
   {
+    "urlname": "rladies-cape-coast",
+    "status": "active",
+    "country": "Ghana",
+    "social_media": {
+      "meetup": "rladies-cape-coast"
+    },
+    "organizers": {
+      "current": ["Lois Keh"],
+      "former": []
+    },
+    "name": "R-Ladies Cape Coast",
+    "city": "Cape Coast"
+  },
+  {
     "urlname": "rladies-kumasi",
     "status": "active",
     "country": "Ghana",
@@ -2475,8 +2504,8 @@
       "facebook": "RLadies-Delhi-111066293606859"
     },
     "organizers": {
-      "current": ["Anukriti Gupta", "Riya Gupta"],
-      "former": []
+      "current": ["Kritika Verma"],
+      "former": ["Anukriti Gupta", "Riya Gupta"]
     },
     "name": "R-Ladies Delhi",
     "id": "32705558",
@@ -3153,6 +3182,21 @@
     "timezone": "America/Mexico_City"
   },
   {
+    "urlname": "rladies-guanajuato",
+    "status": "active",
+    "country": "Mexico",
+    "social_media": {
+      "meetup": "rladies-guanajuato",
+      "email": "guanajuato@rladies.org"
+    },
+    "organizers": {
+      "current": ["Lavinia Lav<ed>n L<f3>pez"],
+      "former": []
+    },
+    "name": "R-Ladies Guanajuato",
+    "city": "Guanajuato"
+  },
+  {
     "urlname": "rladies-cdmx",
     "status": "active",
     "country": "Mexico",
@@ -3323,6 +3367,21 @@
     "lat": 16.75,
     "lon": -92.63,
     "timezone": "America/Mexico_City"
+  },
+  {
+    "urlname": "rladies-tepic",
+    "status": "active",
+    "country": "Mexico",
+    "social_media": {
+      "meetup": "rladies-tepic",
+      "email": "tepic@rladies.org"
+    },
+    "organizers": {
+      "current": ["Zulia Fernandina Nieves L<f3>pez", "Fabiola Ay<f3>n", "Angelica Nallelhy", "Aida Gabriela Mora"],
+      "former": []
+    },
+    "name": "R-Ladies Tepic",
+    "city": "Tepic"
   },
   {
     "urlname": "rladies-tijuana",
@@ -4193,6 +4252,21 @@
     "timezone": "Europe/Belgrade"
   },
   {
+    "urlname": "rladies-singapore",
+    "status": "active",
+    "country": "Singapore",
+    "social_media": {
+      "meetup": "rladies-singapore-sg",
+      "email": "singapore@rladies.org"
+    },
+    "organizers": {
+      "current": ["Liang Tian"],
+      "former": []
+    },
+    "name": "R-Ladies Singapore",
+    "city": "Singapore"
+  },
+  {
     "urlname": "rladies-ljubljana",
     "status": "active",
     "country": "Slovenia",
@@ -5044,10 +5118,10 @@
     "timezone": "Europe/London"
   },
   {
-    "status": "prospective",
+    "status": "active",
     "country": "United Kingdom",
     "organizers": {
-      "current": ["Harriet AB Patrick"],
+      "current": ["Grace Accad", "Sophie Lee", "Harriet Patrick"],
       "former": []
     },
     "name": "R-Ladies Sheffield",
@@ -5210,12 +5284,11 @@
       "twitter": "RLadiesIrvine",
       "email": "irvine@rladies.org",
       "github": "rladies/meetup-presentations_irvine",
-      "website": "http://www.rladiesirvine.org/",
-      "slack": "http://bit.ly/SoCal-RUG-Slack"
+      "website": "http://www.rladiesirvine.org/"
     },
     "organizers": {
-      "current": ["Alyssa Columbus", "Linda Palmer", "Madeline Bauer"],
-      "former": []
+      "current": ["Alyssa Columbus", "Madeline Bauer"],
+      "former": ["Linda Palmer"]
     },
     "name": "R-Ladies Irvine, CA",
     "id": "27819387",
@@ -5462,11 +5535,16 @@
     "timezone": "America/Denver"
   },
   {
+    "urlname": "rladies-fort-collins",
     "status": "prospective",
     "country": "USA",
     "state.region": "Colorado",
+    "social_media": {
+      "meetup": "rladies-fort-collins",
+      "email": "fortcollins@rladies.org"
+    },
     "organizers": {
-      "current": ["Katie Willi", "Caitlin Mothes"],
+      "current": ["Caitlin Mothes", "Katie Willi"],
       "former": []
     },
     "name": "R-Ladies Fort Collins",
@@ -6636,8 +6714,8 @@
       "website": "http://www.rladiesphilly.org/"
     },
     "organizers": {
-      "current": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"],
-      "former": []
+      "current": ["Jenny Luong", "Shannon Pileggi"],
+      "former": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"]
     },
     "name": "R-Ladies Philadelphia, PA",
     "id": "26229746",
@@ -6988,9 +7066,14 @@
     "city": "Madison"
   },
   {
-    "status": "prospective",
+    "urlname": "rladies-laramie",
+    "status": "active",
     "country": "USA",
     "state.region": "Wyoming",
+    "social_media": {
+      "meetup": "rladies-laramie",
+      "email": "laramie@rladies.org"
+    },
     "organizers": {
       "current": ["Heather N. Abernathy", "Molly Caldwell"],
       "former": []
