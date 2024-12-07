@@ -377,7 +377,8 @@
       "twitter": "RLadiesMelb",
       "email": "melbourne@rladies.org",
       "facebook": "RladiesMelbourne",
-      "github": "rladies/meetup-presentations_melbourne"
+      "github": "rladies/meetup-presentations_melbourne",
+      "bluesky": "rladiesmelb.bsky.social"
     },
     "organizers": {
       "current": ["Anna Quaglieri", "Sepideh Foroutan", "Alex Garnham", "Marie Trussart", "Lucy Liu", "Adele Barugahare", "Nikki Rubinson"],
@@ -2202,7 +2203,8 @@
       "meetup": "rladies-cologne",
       "twitter": "rladies_cologne",
       "email": "cologne@rladies.org",
-      "linkedin": "r-ladies-cologne"
+      "linkedin": "r-ladies-cologne",
+      "bluesky": "rladies-cologne.bsky.social"
     },
     "organizers": {
       "current": ["Cosima Meyer", "Gabe Winter"],
@@ -2894,7 +2896,8 @@
       "email": "rome@rladies.org",
       "linkedin": "company/r-ladies-rome/",
       "youtube": "@rladiesrome",
-      "github": "rladies/meetup-presentations_rome"
+      "github": "rladies/meetup-presentations_rome",
+      "bluesky": "rladiesrome.bsky.social"
     },
     "organizers": {
       "current": ["Federica Gazzelloni", "Silvana Acosta", "Rafaela Ribeiro Lucas"],
@@ -3553,7 +3556,8 @@
     "social_media": {
       "meetup": "rladies-amsterdam",
       "twitter": "RLadiesAMS",
-      "email": "amsterdam@rladies.org"
+      "email": "amsterdam@rladies.org",
+      "bluesky": "rladiesamsterdam.bsky.social"
     },
     "organizers": {
       "current": ["Kylie Ainslie", "Asli Kucukosmanoglu"],
@@ -3729,8 +3733,8 @@
       "github": "rladies/meetup-presentations_auckland"
     },
     "organizers": {
-      "current": ["Kim Fitter", "Anna Fergusson", "Isabel Johnson"],
-      "former": []
+      "current": ["Anna Fergusson"],
+      "former": ["Kim Fitter", "Anjali Gupta", "Isabel Johnson"]
     },
     "name": "R-Ladies Auckland",
     "id": "26653882",
