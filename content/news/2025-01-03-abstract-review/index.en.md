@@ -10,7 +10,7 @@ tags:
 categories: 
 - R-Ladies
 summary: Volunteer as an R-Ladies Abstract Reviewer to support diversity in tech!
-slug: /news/abstract-review-2025/
+slug: abstract-review-2025
 ---
 
 Are you passionate about supporting diversity in tech, data science, and academia? Want to help aspiring speakers craft compelling abstracts for conferences? Volunteer to be a reviewer for the R-Ladies Abstract Review System and make a difference in creating a more inclusive and representative speaker lineup at key industry and academic events!
