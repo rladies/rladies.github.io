@@ -24,6 +24,9 @@ Our abstract review system connects aspiring speakers with experienced reviewers
 * Flexible Commitment: Sign up now, and we'll reach out when abstracts come in.
 * Support a Global Movement: Contribute to R-Ladies' mission of promoting diverse voices in the R community.
 * Minimal Time Commitment: Totally flexible, depending on the level of feedback you wish to provide and number of abstracts you wish to review.
+* Expand Your Network: Meet new people from around the world and learn about their work.
+
+
 
 ## Who Can Be a Reviewer?
 
