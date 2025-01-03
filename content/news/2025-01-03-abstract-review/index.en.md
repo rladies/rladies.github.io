@@ -27,7 +27,6 @@ Our abstract review system connects aspiring speakers with experienced reviewers
 * Expand Your Network: Meet new people from around the world and learn about their work.
 
 
-
 ## Who Can Be a Reviewer?
 
 Anyone with experience writing or reviewing conference abstracts, giving talks, or attending conferences is encouraged to sign up. Our reviewers come from diverse backgrounds and skill levels, and we welcome all genders to participate.
