@@ -377,7 +377,8 @@
       "twitter": "RLadiesMelb",
       "email": "melbourne@rladies.org",
       "facebook": "RladiesMelbourne",
-      "github": "rladies/meetup-presentations_melbourne"
+      "github": "rladies/meetup-presentations_melbourne",
+      "bluesky": "rladiesmelb.bsky.social"
     },
     "organizers": {
       "current": ["Anna Quaglieri", "Sepideh Foroutan", "Alex Garnham", "Marie Trussart", "Lucy Liu", "Adele Barugahare", "Nikki Rubinson"],
@@ -607,7 +608,7 @@
   },
   {
     "urlname": "rladies-cotonou",
-    "status": "active",
+    "status": "retired on 25-11-2024",
     "country": "Benin",
     "social_media": {
       "meetup": "rladies-cotonou",
@@ -615,8 +616,8 @@
       "email": "cotonou@rladies.org"
     },
     "organizers": {
-      "current": ["Nadejda Sero", "Benedicta Essuon"],
-      "former": []
+      "current": [],
+      "former": ["Nadejda Sero", "Benedicta Essuon"]
     },
     "name": "R-Ladies Cotonou",
     "id": "27986524",
@@ -1197,16 +1198,16 @@
     "state.region": "S<e3>o Paulo",
     "social_media": {
       "meetup": "rladies-sao-paulo",
-      "twitter": "RLadiesSaoPaulo",
-      "email": "saopaulo@rladies.org",
+      "email": "certificados.rladiessp@gmail.com",
       "facebook": "rladiessaopaulo",
       "instagram": "rladiessaopaulo",
       "youtube": "RLadiesS%C3%A3oPaulo",
-      "github": "rladies/meetup-presentations_sao-paulo"
+      "github": "https://github.com/R-Ladies-Sao-Paulo/",
+      "website": "https://rladies-sp.org/"
     },
     "organizers": {
-      "current": ["Hayd<e9>e Svab", "Alissa Munerato", "Bruna Wundervald", "Beatriz Milz", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jean Prado", "Renata Hirota"],
-      "former": []
+      "current": ["Hayd<e9>e Svab", "Beatriz Milz", "Tatyane Paz Dominguez", "Luana Antunes Alexandre", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jade Mar<e9>", "Ana Carolina Moreno", "Fernanda Fiel Peres", "Geovana Lopes"],
+      "former": ["Bruna Wundervald", "Alissa Munerato"]
     },
     "name": "R-Ladies São Paulo",
     "id": "27456719",
@@ -2202,7 +2203,8 @@
       "meetup": "rladies-cologne",
       "twitter": "rladies_cologne",
       "email": "cologne@rladies.org",
-      "linkedin": "r-ladies-cologne"
+      "linkedin": "r-ladies-cologne",
+      "bluesky": "rladies-cologne.bsky.social"
     },
     "organizers": {
       "current": ["Cosima Meyer", "Gabe Winter"],
@@ -2504,8 +2506,8 @@
       "facebook": "RLadies-Delhi-111066293606859"
     },
     "organizers": {
-      "current": ["Anukriti Gupta", "Riya Gupta"],
-      "former": []
+      "current": ["Kritika Verma"],
+      "former": ["Anukriti Gupta", "Riya Gupta"]
     },
     "name": "R-Ladies Delhi",
     "id": "32705558",
@@ -2894,7 +2896,8 @@
       "email": "rome@rladies.org",
       "linkedin": "company/r-ladies-rome/",
       "youtube": "@rladiesrome",
-      "github": "rladies/meetup-presentations_rome"
+      "github": "rladies/meetup-presentations_rome",
+      "bluesky": "rladiesrome.bsky.social"
     },
     "organizers": {
       "current": ["Federica Gazzelloni", "Silvana Acosta", "Rafaela Ribeiro Lucas"],
@@ -3553,7 +3556,8 @@
     "social_media": {
       "meetup": "rladies-amsterdam",
       "twitter": "RLadiesAMS",
-      "email": "amsterdam@rladies.org"
+      "email": "amsterdam@rladies.org",
+      "bluesky": "rladiesamsterdam.bsky.social"
     },
     "organizers": {
       "current": ["Kylie Ainslie", "Asli Kucukosmanoglu"],
@@ -3729,8 +3733,8 @@
       "github": "rladies/meetup-presentations_auckland"
     },
     "organizers": {
-      "current": ["Kim Fitter", "Anna Fergusson", "Isabel Johnson"],
-      "former": []
+      "current": ["Anna Fergusson"],
+      "former": ["Kim Fitter", "Anjali Gupta", "Isabel Johnson"]
     },
     "name": "R-Ladies Auckland",
     "id": "26653882",
@@ -5535,11 +5539,16 @@
     "timezone": "America/Denver"
   },
   {
+    "urlname": "rladies-fort-collins",
     "status": "prospective",
     "country": "USA",
     "state.region": "Colorado",
+    "social_media": {
+      "meetup": "rladies-fort-collins",
+      "email": "fortcollins@rladies.org"
+    },
     "organizers": {
-      "current": ["Katie Willi", "Caitlin Mothes"],
+      "current": ["Caitlin Mothes", "Katie Willi"],
       "former": []
     },
     "name": "R-Ladies Fort Collins",

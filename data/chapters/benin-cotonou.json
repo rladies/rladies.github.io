@@ -1,7 +1,7 @@
 [
   {
     "urlname": "rladies-cotonou",
-    "status": "active",
+    "status": "retired on 25-11-2024",
     "country": "Benin",
     "city": "Cotonou",
     "social_media": {
@@ -10,8 +10,8 @@
       "email": "cotonou@rladies.org"
     },
     "organizers": {
-      "current": ["Nadejda Sero", "Benedicta Essuon"],
-      "former": []
+      "current": [],
+      "former": ["Nadejda Sero", "Benedicta Essuon"]
     }
   }
 ]

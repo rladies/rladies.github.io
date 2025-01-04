@@ -59,8 +59,11 @@
 {{ else if eq .type "slack" }}
   {{ $data.Set "string" "%s" }}
   {{ $data.Set "fa" "fa-brands fa-slack" }}
-  
-  
+
+{{ else if eq .type "bluesky" }}
+  {{ $data.Set "string" "https://bsky.app/profile/%s" }}
+  {{ $data.Set "fa" "fa-brands fa-bluesky" }}
+
 {{ else }}
   {{ $data.Set "string" "%s" }}
   {{ $data.Set "fa" "fa fa-globe" }}
