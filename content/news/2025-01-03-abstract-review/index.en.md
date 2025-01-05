@@ -29,7 +29,7 @@ Our abstract review system connects aspiring speakers with reviewers who can pro
 
 ## Who Can Be a Reviewer?
 
-Anyone with experience writing or reviewing conference abstracts, giving talks, or attending conferences is encouraged to sign up. Our reviewers come from diverse backgrounds and skill levels, and we welcome all genders to participate.
+Anyone with experience writing or reviewing conference abstracts, giving talks, or attending conferences is encouraged to sign up. Our reviewers come from diverse backgrounds and skill levels, and we welcome all genders to participate.  The default sign-up duration is 1 year, but you can opt out at any time.
 
 ## How to Sign Up
 
@@ -39,7 +39,7 @@ Anyone with experience writing or reviewing conference abstracts, giving talks, 
 
 Once you sign up:
 
-1. We'll reach out as abstract review opportunities arise which you can accept or decline depending on your availability.
+1. We'll reach out as abstract review opportunities arise over the year which you can accept or decline depending on your availability.
 2. You'll be part of a supportive network making a tangible difference in the R and tech communities.
 
 Join us today and help shape the future of conference lineups—one abstract at a time!
