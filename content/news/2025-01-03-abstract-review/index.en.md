@@ -16,7 +16,7 @@ Are you passionate about supporting diversity in tech, data science, and academi
 
 ## What is the R-Ladies Abstract Review System?
 
-Our abstract review system connects aspiring speakers with experienced reviewers who can provide feedback and support. By volunteering as a reviewer, you'll play a critical role in helping individuals from underrepresented groups take their first steps into public speaking or advance their speaking careers.
+Our abstract review system connects aspiring speakers with reviewers who can provide feedback and support. By volunteering as a reviewer, you'll play a critical role in helping individuals from underrepresented groups take their first steps into public speaking or advance their speaking careers.
 
 ## Why Join as a Reviewer?
 
