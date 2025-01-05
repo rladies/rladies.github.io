@@ -3,7 +3,7 @@ title: "Volunteer as an R-Ladies Abstract Reviewer!"
 author: "Abstract Review Team"
 type: blog
 date: "2025-01-03"
-image: img/global_team.png
+image: img/typing.jpg
 tags: 
 - community
 categories: 
