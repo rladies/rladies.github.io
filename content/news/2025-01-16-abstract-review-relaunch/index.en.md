@@ -1,5 +1,5 @@
 ---
-title: "We're Relaunching the RLadies Abstract Review System!"
+title: "We're Relaunching the R-Ladies Abstract Review System!"
 author: "Abstract Review Team"
 type: blog
 date: "2025-01-16"
@@ -14,7 +14,7 @@ slug: abstract-review-relaunch-2025
 
 We know how challenging it can be to take that first step into public speaking and submit an abstract for a conference. 
 
-That's why we're thrilled to announce the **relaunch of the RLadies Abstract Review System**! 🎉
+That's why we're thrilled to announce the **relaunch of the R-Ladies Abstract Review System**! 🎉
 
 Our system connects aspiring speakers with reviewers who provide feedback and guidance, helping them refine their abstracts and scholarship applications. 
 
