@@ -28,10 +28,10 @@ We are excited to revive the RoCur program on Bluesky, picking up where we left 
 
 ## Become a Curator
 
-*Are you interested in becoming a curator?* Curating is a great way to build your social media presence, develop your science communication skills, expand your CV, and connect with a supportive community. Sign up to be a curator on [this form](https://airtable.com/appjkZZgtF0iEWFjx/pagqsAma1WmUYxa9j/form). We're currently looking for curators until the middle of 2025, and we'll open up more spots as the year progresses.
+*Are you interested in becoming a curator?* Curating is a great way to build your social media presence, develop your science communication skills, expand your CV, and connect with a supportive community. Sign up to be a curator on the [@weare.rladies.org Curator Sign Up form](https://airtable.com/appjkZZgtF0iEWFjx/pagqsAma1WmUYxa9j/form). We are currently looking for curators until the middle of 2025, and we will open up more spots as the year progresses.
 
 ## Nominate Someone
 
-*Do you know someone who'd be a perfect curator?* Perhaps a colleague, someone from your local R-Ladies chapter, or a user you can't get enough of on Bluesky! You can help us identify fantastic curators by nominating them. Submit your nominations on [this form](https://airtable.com/appFIBzsk2AxWlGMt/pagfezjuCxohikOOa/form). You can nominate as many people as you'd like, so don't hesitate to share this opportunity.
+*Do you know someone who would be a great curator?* Perhaps a colleague, someone from your local R-Ladies chapter, or a user you can't get enough of on Bluesky! You can help us identify fantastic curators by nominating them. Submit your nominations on the [@weare.rladies.org Curator Nomination Form](https://airtable.com/appFIBzsk2AxWlGMt/pagfezjuCxohikOOa/form). You can nominate as many people as you would like, so do not hesitate to share this opportunity.
 
-If you have any questions, feel free to reach out to the RoCur admins at [weare\@rladies.org](mailto:weare@rladies.org) or shoot a message on the **#rocur** channel on the [R-Ladies Community Slack](https://rladies.org/form/community-slack/).
+If you have any questions, feel free to reach out to the RoCur admins at [weare\@rladies.org](mailto:weare@rladies.org) or send a message on the **#rocur** channel on the [R-Ladies Community Slack](https://rladies.org/form/community-slack/).
