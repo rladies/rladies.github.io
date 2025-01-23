@@ -24,7 +24,7 @@ Some of you might recall the RoCur account on Twitter. The program ran for about
 
 ## How You Can Help
 
-We're excited to revive the RoCur program on Bluesky, picking up where we left off. You can help us build back the community stronger than ever by signing up to be a curator or nominating someone to be a curator!
+We are excited to revive the RoCur program on Bluesky, picking up where we left off. You can help us build back the community stronger than ever by signing up to be a curator or nominating someone to be a curator!
 
 ## Become a Curator
 
