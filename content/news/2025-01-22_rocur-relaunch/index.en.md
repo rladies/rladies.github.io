@@ -16,7 +16,7 @@ slug: rocur-relaunch-2025
 
 **Caption:** Bluesky logo, sourced from the official [Bluesky media kit](https://drive.google.com/drive/folders/16mlJPfWNnc6jj-3vGZ88SFysIY13GBp0).
 
-We're absolutely thrilled to announce that the [R-Ladies Rotating Curation (RoCur) account](https://bsky.app/profile/weare.rladies.org) is now live on Bluesky! Each week, a new member of the R-Ladies community will take over the account to talk about all things R. This will be a fantastic opportunity for individuals who identify as a minority gender in the R community to amplify their voices and connect with others in the greater data science community.
+We are absolutely thrilled to announce the R-Ladies Rotating Curation (RoCur) Bluesky account [bsky.app/profile/weare.rladies.org](https://bsky.app/profile/weare.rladies.org) is now live! Each week, a new member of the R-Ladies community will take over the account to talk about all things R. This will be a fantastic opportunity for individuals who identify as a minority gender in the R community to amplify their voices and connect with others in the greater data science community.
 
 ## History
 
