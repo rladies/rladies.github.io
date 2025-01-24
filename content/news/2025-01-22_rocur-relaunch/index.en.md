@@ -2,7 +2,7 @@
 title: "We're Launching the R-Ladies Rotating Curation Account on Bluesky!"
 author: "Rotating Curation Team"
 type: blog
-date: "2025-01-22"
+date: "2025-01-24"
 image: img/rladies-bluesky.jpg
 tags: 
 - rocur
