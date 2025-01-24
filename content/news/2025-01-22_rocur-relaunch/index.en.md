@@ -18,7 +18,7 @@ We are absolutely thrilled to announce the R-Ladies Rotating Curation (RoCur) Bl
 
 ## History
 
-Some of you might recall the RoCur account on Twitter. The program ran for about five years, giving over 100 curators the chance to take over the account and share their stories. While the Twitter account is no longer active, the archive of posts can still be viewed [here](https://rladies.org/tweet-archive/wearerladies/).
+Some of you might recall the RoCur account on Twitter. The program ran for about five years, giving over 100 curators the chance to take over the account and share their stories. While the Twitter account is no longer active, the archive of posts can still be [viewed](https://rladies.org/tweet-archive/wearerladies/).
 
 ## How You Can Help
 
