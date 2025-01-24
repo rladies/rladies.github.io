@@ -1,6 +1,6 @@
 ---
-title: "We're Launching the R-Ladies Rotating Curation (RoCur) Account on Bluesky!"
-author: "RoCur team"
+title: "We're Launching the R-Ladies Rotating Curation Account on Bluesky!"
+author: "Rotating Curation Team"
 type: blog
 date: "2025-01-22"
 image: img/rladies-bluesky.jpg
