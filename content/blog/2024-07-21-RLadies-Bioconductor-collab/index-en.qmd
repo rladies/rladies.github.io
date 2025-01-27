@@ -5,7 +5,7 @@ description: |
 author:
   - name: Janani Ravi
     url: https://github.com/jananiravi
-date: 2025-01-19
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
 categories:
   - RLadies
   - Bioconductor
