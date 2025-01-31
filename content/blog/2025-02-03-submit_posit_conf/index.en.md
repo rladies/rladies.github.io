@@ -1,0 +1,67 @@
+---
+title: "Tips for Submitting a Video Abstract to Posit Conf 2025"
+author: 
+  - Nic Crane
+  - Sayantika Banik
+date: '2025-02-03'
+---
+
+Thinking about submitting a talk for **Posit Conf 2025** but feeling nervous about recording a video abstract? You're not alone! It can feel intimidating at first, but the good news is—it's just **one minute** and all about showcasing your enthusiasm.
+
+## **Tips from the R-Ladies Global Team**
+
+We know that recording a video can feel like a challenge, so we asked members of **R-Ladies Global** to share their best advice:
+
+🎤  *[Placeholder for a tip from an R-Ladies member]*
+
+📽️  *[Placeholder for a tip from an R-Ladies member]*
+
+💡 **Nic Crane**: Check out the [Posit blog post which tells you what they're looking for](https://posit.co/blog/how-we-build-the-positconf-program/) and has examples of past submissions.  Before recording, I try to get myself pumped up with energy by doing a dummy run pretending my idea is the most interesting thing I've heard in my entire life, with exaggerated enthusiasm, so then the normal version I do immediately afterwards has a bit of bounce to it.
+
+## **What Tech Should You Use?**
+
+*[Placeholder for Saya's content]*
+
+## **How to Structure Your Video**
+
+Here's a simple way to approach your **one-minute** video:
+
+### **1. Start with the Basics**
+
+Introduce yourself and your idea. Pull from the abstract of your talk and expand slightly to explain what your talk is about.
+
+### **2. Share Why It Matters**
+
+Why is your idea important to you? Why does it excite you? People love to see genuine enthusiasm—it's contagious! Highlight why your topic could be interesting or helpful to the audience.
+
+### **3. Keep It Conversational**
+
+Talk as if you're **explaining to a friend,** not reading from a script. Keep it engaging and natural.
+
+### **4. Speak Clearly & With Energy**
+
+Passion is contagious! **Slow down a bit,** use your voice expressively, and **have fun with it.**
+
+### **5. Don't Worry About Perfection**
+
+Your video doesn't need to be flawless—just **authentic**. If selected, you'll get speaker training!
+
+### **6. Humor and Creativity are Welcome**
+
+If your idea lends itself to something quirky or funny, don't shy away. Even if your topic seems niche, an engaging presentation can make it appealing to everyone.  But don't worry if you're not naturally funny either - this is only optional.
+
+## **Tips for Success**
+
+* **Pep Talk Yourself:** Before recording, remind yourself that you're great at what you do. Boosting your confidence will help you project positivity and ease.  
+* **Keep It Simple:** Your video doesn't need to be polished or perfect. Focus on your enthusiasm and message.  
+* **Check Out Examples:** Watch [other video abstracts](https://posit.co/blog/how-we-build-the-positconf-program/) for inspiration.
+
+## **Need Feedback?**
+
+If you'd like input on your abstract or video, we're happy to help! Share a link to your draft (Google Drive or similar and a Google Doc where a reviewer can put their comments), and a reviewer will take a look.
+
+Although we encourage submitting at least 3 weeks from the final deadline, there is still a chance we'll be able to pair you up with a reviewer with a shorter timeline, so just do it.
+
+Posit Conf's Call for talks: https://posit.co/blog/speak-at-posit-conf-2025/
+
+Our abstract review system: https://airtable.com/appJadVolZxoDGSIK/pagkXaAIuPged83dn/form
