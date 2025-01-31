@@ -12,11 +12,16 @@ Thinking about submitting a talk for **Posit Conf 2025** but feeling nervous abo
 
 We know that recording a video can feel like a challenge, so we asked members of **R-Ladies Global** to share their best advice:
 
-🎤  *[Placeholder for a tip from an R-Ladies member]*
-
-📽️  *[Placeholder for a tip from an R-Ladies member]*
+📽️  **Shannon Pileggi**: Ask more than one person for feedback on your abstract and video content - everyone has a different and valuable point of view.Think about the way the principles of your content apply broadly to a general audience. [[Read Shannon's blog post talking about her experience of getting expected to speak at Posit Conf here](https://www.pipinghotdata.com/posts/2024-10-24-iterating-to-achieve-my-first-accepted-positconf-talk/)]
 
 💡 **Nic Crane**: Check out the [Posit blog post which tells you what they're looking for](https://posit.co/blog/how-we-build-the-positconf-program/) and has examples of past submissions.  Before recording, I try to get myself pumped up with energy by doing a dummy run pretending my idea is the most interesting thing I've heard in my entire life, with exaggerated enthusiasm, so then the normal version I do immediately afterwards has a bit of bounce to it.
+
+📽  *[Placeholder for a tip from another R-Ladies member]*
+
+🎤  *[Placeholder for a tip from another R-Ladies member]*
+
+💡  *[Placeholder for a tip from another R-Ladies member]*
+
 
 ## **What Tech Should You Use?**
 
