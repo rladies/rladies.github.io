@@ -62,7 +62,7 @@ If your idea lends itself to something quirky or funny, don't shy away. Even if 
 
 ## **Tips for Success**
 
-* **Pep Talk Yourself:** Before recording, remind yourself that you're great at what you do. Boosting your confidence will help you project positivity and ease.  
+* **Pep Talk Yourself:** Before recording, remind yourself that you are great at what you do. Boosting your confidence will help you project positivity and ease.  
 * **Keep It Simple:** Your video doesn't need to be polished or perfect. Focus on your enthusiasm and message.  
 * **Check Out Examples:** Watch [other video abstracts](https://posit.co/blog/how-we-build-the-positconf-program/) for inspiration.
 
