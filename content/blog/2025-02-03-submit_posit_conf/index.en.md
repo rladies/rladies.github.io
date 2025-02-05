@@ -54,7 +54,7 @@ Passion is contagious! **Slow down a bit,** use your voice expressively, and **h
 
 ### **5. Don't Worry About Perfection**
 
-Your video doesn't need to be flawless—just **authentic**. If selected, you'll get speaker training!
+Your video doesn't need to be flawless - just **authentic**. If selected, you will get speaker training!
 
 ### **6. Humor and Creativity are Welcome**
 
