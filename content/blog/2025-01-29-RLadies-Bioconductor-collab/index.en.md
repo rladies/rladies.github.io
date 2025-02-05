@@ -4,8 +4,7 @@ description: |
   Announcing a new collaboration between R-Ladies and Bioconductor
 author:
   - name: Janani Ravi
-    url: https://github.com/jananiravi
-date: "2025-01-29"
+date: "2025-02-08"
 categories:
   - RLadies
   - Bioconductor
