@@ -70,7 +70,7 @@ If your idea lends itself to something quirky or funny, don't shy away. Even if 
 
 If you would like input on your abstract or video, we are happy to help! Share a link to your draft (Google Drive or similar), and a reviewer will take a look.
 
-Although we encourage submitting at least 3 weeks from the final deadline, there is still a chance we'll be able to pair you up with a reviewer with a shorter timeline, so just do it.
+Although we encourage submitting at least 3 weeks from the final deadline, there is still a chance we will be able to pair you up with a reviewer with a shorter timeline, so just do it.
 
 Posit Conf's Call for talks: https://posit.co/blog/speak-at-posit-conf-2025/
 
