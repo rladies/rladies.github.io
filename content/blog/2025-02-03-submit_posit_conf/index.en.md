@@ -12,7 +12,7 @@ Thinking about submitting a talk for **Posit Conf 2025** but feeling nervous abo
 
 We know that recording a video can feel like a challenge, so we collated some advice from past speakers:
 
-📽   **Rachael Dempsey**: Go ahead and set a date and time on your calendar and block it off to record your video. 🗓 I had blocked off a Friday afternoon at 2pm. Give yourself a bit more time than you think you need. You might record yourself about 4+ times. [Read more excellent advise from Rachael in this detailed LinkedIn post](https://www.linkedin.com/posts/rachaeldempsey_a-little-birdie-told-me-that-the-call-for-activity-7282863651554754563-Zy_I/).
+📽  **Rachael Dempsey**: Go ahead and set a date and time on your calendar and block it off to record your video. 🗓 I had blocked off a Friday afternoon at 2pm. Give yourself a bit more time than you think you need. You might record yourself about 4+ times. [Read more excellent advise from Rachael in this detailed LinkedIn post](https://www.linkedin.com/posts/rachaeldempsey_a-little-birdie-told-me-that-the-call-for-activity-7282863651554754563-Zy_I/).
 
 📽️  **Shannon Pileggi**: Ask more than one person for feedback on your abstract and video content - everyone has a different and valuable point of view.Think about the way the principles of your content apply broadly to a general audience. [[Read Shannon's blog post talking about her experience of getting accepted to speak at Posit Conf here](https://www.pipinghotdata.com/posts/2024-10-24-iterating-to-achieve-my-first-accepted-positconf-talk/)]
 
