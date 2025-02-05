@@ -42,7 +42,7 @@ Introduce yourself and your idea. Pull from the abstract of your talk and expand
 
 ### **2. Share Why It Matters**
 
-Why is your idea important to you? Why does it excite you? People love to see genuine enthusiasm—it's contagious! Highlight why your topic could be interesting or helpful to the audience.
+Why is your idea important to you? Why does it excite you? People love to see genuine enthusiasm - it is contagious! Highlight why your topic could be interesting or helpful to the audience.
 
 ### **3. Keep It Conversational**
 
