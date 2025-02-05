@@ -58,7 +58,7 @@ Your video doesn't need to be flawless - just **authentic**. If selected, you wi
 
 ### **6. Humor and Creativity are Welcome**
 
-If your idea lends itself to something quirky or funny, don't shy away. Even if your topic seems niche, an engaging presentation can make it appealing to everyone.  But don't worry if you're not naturally funny either - this is only optional.
+If your idea lends itself to something quirky or funny, don't shy away. Even if your topic seems niche, an engaging presentation can make it appealing to everyone.  But don't worry if you are not naturally funny either - this is only optional.
 
 ## **Tips for Success**
 
