@@ -16,7 +16,8 @@ We know that recording a video can feel like a challenge, so we asked members of
 
 💡 **Nic Crane**: Check out the [Posit blog post which tells you what they're looking for](https://posit.co/blog/how-we-build-the-positconf-program/) and has examples of past submissions.  Before recording, I try to get myself pumped up with energy by doing a dummy run pretending my idea is the most interesting thing I've heard in my entire life, with exaggerated enthusiasm, so then the normal version I do immediately afterwards has a bit of bounce to it.
 
-📽  *[Placeholder for a tip from another R-Ladies member]*
+📽   **Rachael Dempsey**: Go ahead and set a date and time on your calendar and block it off to record your video. 🗓 I had blocked off a Friday afternoon at 2pm. Give yourself a bit more time than you think you need. You might record yourself about 4+ times. [Read more excellent advise from Rachel in this detailed LinkedIn post](https://www.linkedin.com/posts/rachaeldempsey_a-little-birdie-told-me-that-the-call-for-activity-7282863651554754563-Zy_I/).
+
 
 🎤  *[Placeholder for a tip from another R-Ladies member]*
 
