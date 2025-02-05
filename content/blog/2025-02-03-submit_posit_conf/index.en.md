@@ -1,5 +1,5 @@
 ---
-title: "Tips for Submitting a Video Abstract to Posit Conf 2025"
+title: "Tips for Submitting a Video Abstract to Posit Conf"
 author: 
   - Nic Crane
   - Sayantika Banik
