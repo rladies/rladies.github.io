@@ -68,7 +68,7 @@ If your idea lends itself to something quirky or funny, don't shy away. Even if 
 
 ## **Need Feedback?**
 
-If you would like input on your abstract or video, we are happy to help! Share a link to your draft (Google Drive or similar), and a reviewer will take a look.
+If you would like input on your abstract or video, we are happy to help! Share a link to your draft (Google Drive or similar), and we will assign a reviewer to take a look at it.  If you want feedback on a specific aspects of the video, please mention in the form, otherwise we will assume you're looking for general feedback.
 
 Although we encourage submitting at least 3 weeks from the final deadline, there is still a chance we will be able to pair you up with a reviewer with a shorter timeline, so just do it.
 
