@@ -6,7 +6,7 @@ author:
 date: '2025-02-03'
 ---
 
-Thinking about submitting a talk for **Posit Conf 2025** but feeling nervous about recording a video abstract? You're not alone! It can feel intimidating at first, but the good news is—it's just **one minute** and all about showcasing your idea effectively.
+Thinking about submitting a talk for **Posit Conf 2025** but feeling nervous about recording a video abstract? You are not alone! It can feel intimidating at first, but the good news is it is just **one minute** and all about showcasing your idea effectively.
 
 ## **Tips from the R-Ladies Global Team**
 
