@@ -3,7 +3,7 @@ title: "New R-Ladies–Bioconductor collaboration!"
 description: |
   Announcing a new collaboration between R-Ladies and Bioconductor
 author:
-  - name: Janani Ravi
+  - Janani Ravi
 date: "2025-02-08"
 categories:
   - RLadies
@@ -14,7 +14,7 @@ editor:
     wrap: sentence
 ---
 
-![](rladies-bioc.png){ width=50% fig-align="center"}
+![](rladies-bioc.png)
 
 We are excited to share a new collaboration between R-Ladies and Bioconductor, two global communities committed to building diverse developer communities around the world.
 
