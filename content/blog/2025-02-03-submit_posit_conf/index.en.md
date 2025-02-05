@@ -46,7 +46,7 @@ Why is your idea important to you? Why does it excite you? People love to see ge
 
 ### **3. Keep It Conversational**
 
-Talk as if you're **explaining to a friend,** not reading from a script. Keep it engaging and natural.
+Talk as if you are **explaining to a friend,** not reading from a script. Keep it engaging and natural.
 
 ### **4. Speak Clearly & With Energy**
 
