@@ -27,7 +27,7 @@ We know that recording a video can feel like a challenge, so we collated some ad
 
 #### Slightly Advanced (Free/Open Source):
  - `OBS Studio (Windows, Mac, Linux)`: OBS Studio is free and open-source, offering more control over your recording, including screen capture, webcam input, and basic audio mixing. While powerful, it might have a small learning curve.
- - `VLC Media Player (Windows, Mac, Linux)`22: VLC can also be used for basic recording. It's a versatile player that can capture video from your webcam. 
+ - `VLC Media Player (Windows, Mac, Linux)`: VLC can also be used for basic recording. It's a versatile player that can capture video from your webcam. 
 
 #### User Friendly (Paid):
  - `Canva`: offers a user-friendly platform with recording capabilities. You can easily create slides with your key points and record yourself presenting them. Canva also provides editing features to polish your video.
