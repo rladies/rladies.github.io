@@ -80,4 +80,4 @@ Although we encourage submitting at least 3 weeks from the final deadline, there
 
 Posit Conf's Call for talks: https://posit.co/blog/speak-at-posit-conf-2025/.
 
-Our abstract review system: https://airtable.com/appJadVolZxoDGSIK/pagkXaAIuPged83dn/form
+Form to [Request Feedback for Your Abstract or Scholarship Application](https://airtable.com/appJadVolZxoDGSIK/pagkXaAIuPged83dn/form).
