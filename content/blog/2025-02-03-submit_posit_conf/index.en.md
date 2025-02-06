@@ -32,7 +32,7 @@ We know that recording a video can feel like a challenge, so we collated some ad
 #### User Friendly (Paid):
  - `Canva`: offers a user-friendly platform with recording capabilities. You can easily create slides with your key points and record yourself presenting them. Canva also provides editing features to polish your video.
 
-## How to Structure Your Video
+## **How to Structure Your Video**
 
 Here's a simple way to approach your **one-minute** video:
 
