@@ -74,7 +74,7 @@ If you would like input on your abstract or video, we are happy to help! Share a
 
 - **Video Draft** : Share a link to your draft recording. The recording could be uploaded to Google Drive, YouTube (unlisted), Vimeo, or any other sharable platform.
 
-If you want feedback on specific aspects of your video (e.g., pacing, clarity, or technical quality), please mention it in the form. Otherwise, we will assume you’re looking for general feedback.
+By "video draft" we mean an initial recording that reviewers will offer one round of feedback on.  If you want feedback on specific aspects of your video (e.g., pacing, clarity, or technical quality), please mention it in the form. Otherwise, we will assume you’re looking for general feedback.
 
 Although we encourage submitting at least 3 weeks from the final deadline, there is still a chance we will be able to pair you up with a reviewer with a shorter timeline, so just do it.
 
