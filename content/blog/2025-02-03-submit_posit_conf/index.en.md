@@ -78,6 +78,6 @@ By "video draft" we mean an initial recording that reviewers will offer one roun
 
 Although we encourage submitting at least 3 weeks from the final deadline, there is still a chance we will be able to pair you up with a reviewer with a shorter timeline, so just do it.
 
-Posit Conf's Call for talks: https://posit.co/blog/speak-at-posit-conf-2025/
+Posit Conf's Call for talks: https://posit.co/blog/speak-at-posit-conf-2025/.
 
 Our abstract review system: https://airtable.com/appJadVolZxoDGSIK/pagkXaAIuPged83dn/form
