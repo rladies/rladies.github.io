@@ -27,7 +27,7 @@ We know that recording a video can feel like a challenge, so we collated some ad
 
 #### Slightly Advanced (Free/Open Source):
  - `OBS Studio (Windows, Mac, Linux)`: OBS Studio is free and open-source, offering more control over your recording, including screen capture, webcam input, and basic audio mixing. While powerful, it might have a small learning curve.
- - `VLC Media Player (Windows, Mac, Linux)`: VLC can also be used for basic recording. It's a versatile player that can capture video from your webcam. 
+ - `VLC Media Player (Windows, Mac, Linux)`22: VLC can also be used for basic recording. It's a versatile player that can capture video from your webcam. 
 
 #### User Friendly (Paid):
  - `Canva`: offers a user-friendly platform with recording capabilities. You can easily create slides with your key points and record yourself presenting them. Canva also provides editing features to polish your video.
@@ -36,27 +36,27 @@ We know that recording a video can feel like a challenge, so we collated some ad
 
 Here's a simple way to approach your **one-minute** video:
 
-### **1. Start with the Basics**
+#### **1. Start with the Basics**
 
 Introduce yourself and your idea. Pull from the abstract of your talk and expand slightly to explain what your talk is about.
 
-### **2. Share Why It Matters**
+#### **2. Share Why It Matters**
 
 Why is your idea important to you? Why does it excite you? People love to see genuine enthusiasm - it is contagious! Highlight why your topic could be interesting or helpful to the audience.
 
-### **3. Keep It Conversational**
+#### **3. Keep It Conversational**
 
 Talk as if you are **explaining to a friend,** not reading from a script. Keep it engaging and natural.
 
-### **4. Speak Clearly & With Energy**
+#### **4. Speak Clearly & With Energy**
 
 Passion is contagious! **Slow down a bit,** use your voice expressively, and **have fun with it.**
 
-### **5. Don't Worry About Perfection**
+#### **5. Don't Worry About Perfection**
 
 Your video doesn't need to be flawless - just **authentic**. If selected, you will get speaker training!
 
-### **6. Humor and Creativity are Welcome**
+#### **6. Humor and Creativity are Welcome**
 
 If your idea lends itself to something quirky or funny, don't shy away. Even if your topic seems niche, an engaging presentation can make it appealing to everyone.  But don't worry if you are not naturally funny either - this is only optional.
 
