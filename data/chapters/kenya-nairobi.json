@@ -7,11 +7,12 @@
     "social_media": {
       "meetup": "rladies-nairobi",
       "email": "nairobi@rladies.org",
-      "linkedin": "r-ladies-nairobi-2572841b3"
+      "linkedin": "r-ladies-nairobi-2572841b3",
+      "twitter": "RladiesNairobi"
     },
     "organizers": {
-      "current": ["Lucy Njoki", "Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"],
-      "former": []
+      "current": ["Lucy Njoki Njuki", "Happiness Ndanu", "Agnes Ndirangu"],
+      "former": ["Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"]
     }
   }
 ]
