@@ -2959,12 +2959,13 @@
     "country": "Kenya",
     "social_media": {
       "meetup": "rladies-nairobi",
+      "twitter": "RladiesNairobi",
       "email": "nairobi@rladies.org",
       "linkedin": "r-ladies-nairobi-2572841b3"
     },
     "organizers": {
-      "current": ["Lucy Njoki", "Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"],
-      "former": []
+      "current": ["Lucy Njoki Njuki", "Happiness Ndanu", "Agnes Ndirangu"],
+      "former": ["Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"]
     },
     "name": "R-Ladies Nairobi",
     "id": "33827845",
