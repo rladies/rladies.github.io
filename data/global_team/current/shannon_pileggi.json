@@ -1,8 +1,15 @@
-  {
+{
     "name": "Shannon Pileggi",
-    "role": ["Leadership", "RoCur Twitter Account"],
+    "role": [
+      "Leadership"
+      ],
     "start": "May 2022",
     "img": {
       "url":  "shannon_pileggi.jpg"
-    }
+    },
+    "history":{
+    "2022-2024": [
+      "RoCur Twitter Account"
+    ]
   }
+}
