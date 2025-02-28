@@ -1,14 +1,14 @@
 [
   {
-    "urlname": "rladies-tirana",
+    "urlname": "rladies-tirane",
     "status": "active",
     "country": "Albania",
     "social_media": {
-      "meetup": "rladies-tirana",
+      "meetup": "rladies-tirane",
       "email": "tirana@rladies.org"
     },
     "organizers": {
-      "current": ["Eralda Gjika"],
+      "current": ["Eralda Gjika", "Agresa Qosja"],
       "former": []
     },
     "name": "R-Ladies Tirana",
