@@ -3561,8 +3561,8 @@
       "bluesky": "rladiesamsterdam.bsky.social"
     },
     "organizers": {
-      "current": ["Kylie Ainslie", "Asli Kucukosmanoglu"],
-      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries"]
+      "current": ["Kylie Ainslie", "Josefina Bernardo"],
+      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries", "Asli Kucukosmanoglu"]
     },
     "name": "R-Ladies Amsterdam",
     "id": "27443387",
@@ -3925,11 +3925,15 @@
     "timezone": "Europe/Oslo"
   },
   {
-    "status": "prospective",
+    "status": "active",
     "country": "Norway",
+    "social_media": {
+      "meetup": "rladies-trondheim",
+      "email": "trondheim@rladies.org"
+    },
     "organizers": {
-      "current": ["Emma Sofie Skarstein", "Susan Anyosa"],
-      "former": []
+      "current": ["Brooke Wolford"],
+      "former": ["Emma Sofie Skarstein", "Susan Anyosa"]
     },
     "name": "R-Ladies Trondheim",
     "city": "Trondheim"
