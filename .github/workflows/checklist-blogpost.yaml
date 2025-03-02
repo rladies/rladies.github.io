@@ -1,0 +1,66 @@
+name: PR Checklist for Content Changes
+
+on:
+  pull_request:
+    paths:
+      - 'content/**/index?.md'
+      - 'content/**/index?.qmd'
+      - 'content/**/index?.rmd'
+
+jobs:
+  generate-checklist:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the codebase
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Generate a checklist and post it as a comment
+    - name: Post checklist to PR
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const checklist = `
+          Thank you for submitting a blogpost to R-Ladies!
+          We appreciate all contributions to help create an active community.
+          
+          If this is your first time contributing, the [website wiki](https://github.com/rladies/rladies.github.io/wiki) might be a good place to learn more about our website setup and expectations.
+          Below is a set up checkpoints that helps us all make sure the process to publication is a smooth and transparent as possible.
+          
+          ## Content Checklist
+          - [ ] Ensure the PR is kept as a draft untill you are ready to have a reviewer approve it.
+          - [ ] Ensure the title is appropriate for publication.
+          - [ ] Verify all links are working and point to correct destinations.
+          - [ ] Verify internal cross-references (if any) are correct.
+          - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also commited and up to date.
+          - [ ] Ensure no sensitive or confidential information is included.
+          - [ ] Check grammar and spelling.
+          - [ ] Ensure that all images have alt text `![alt goes here](image.png)`.
+          
+          ### Review ready
+          - [ ] Remove draft mode for the PR, reviewers will be automatically assigned.
+          
+          ### Reviewers checks
+          - [ ] Ensure the title is appropriate for publication.
+          - [ ] Verify all links are working and point to correct destinations.
+          - [ ] Verify internal cross-references (if any) are correct.
+          - [ ] Ensure that all images have alt text `![alt goes here](image.png)`.
+          - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also commited and up to date.
+
+          ### Once all checks are done
+          - [ ] Set a date for publication.
+          - [ ] Change label of post to "pending".
+            - Publication of the post will happen automatically on that day.
+          `;
+
+          const { context, github } = require("@actions/github");
+          const issue_number = context.payload.pull_request.number;
+
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: issue_number,
+            body: checklist
+          });
+          

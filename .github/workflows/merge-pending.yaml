@@ -1,0 +1,54 @@
+name: Auto Merge Pending PRs
+
+on:
+  schedule:
+    # Run daily at noon
+    - cron: '0 12 * * *'
+
+jobs:
+  check-and-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Find PRs with "pending" label
+        id: find_pending_prs
+        run: |
+          # Get all open PRs with the "pending" label
+          prs=$(gh pr list --label "pending" --state "open" --json number,title -q '.[] | .number')
+          
+          # Pass down the PR List for future use (space-separated)
+          echo "prs=$prs" >> $GITHUB_ENV
+
+      - name: Process and Merge Qualifying PRs
+        if: env.prs != ""
+        run: |
+          current_date=$(date +'%Y-%m-%d')
+          for pr_number in $prs; do
+            # Check if the PR modifies index.md in any subdirectory of "content"
+            index_files=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index\.md$' || true)
+
+            if [ -n "$index_files" ]; then
+              # Extract the date from the YAML front matter in index.md
+              for file in $index_files; do
+                yaml_date=$(cat $file | grep -E '^date:' | awk '{print $2}' | sed -e s/\'//g)
+                
+                # Check if the date matches today
+                if [ "$yaml_date" == "$current_date" ]; then
+                  echo "Merging PR #$pr_number (matching YAML date: $yaml_date)"
+                  gh pr merge "$pr_number" --squash
+                  gh pr close "$pr_number"
+                  break
+                fi
+              done
+            fi
+          done
+
+      - name: Push results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git push origin || echo "No changes to commit"
+
