@@ -25,11 +25,11 @@ jobs:
           Below is a set up checkpoints that helps us all make sure the process to publication is a smooth and transparent as possible.
           
           ## Content Checklist
-          - [ ] Ensure the PR is kept as a draft untill you are ready to have a reviewer approve it.
+          - [ ] Ensure the PR is kept as a draft until you are ready to have a reviewer approve it.
           - [ ] Ensure the title is appropriate for publication.
           - [ ] Verify all links are working and point to correct destinations.
           - [ ] Verify internal cross-references (if any) are correct.
-          - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also commited and up to date.
+          - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also committed and up to date.
           - [ ] Ensure no sensitive or confidential information is included.
           - [ ] Check grammar and spelling.
           - [ ] Ensure that all images have alt text `![alt goes here](image.png)`.
@@ -42,7 +42,7 @@ jobs:
           - [ ] Verify all links are working and point to correct destinations.
           - [ ] Verify internal cross-references (if any) are correct.
           - [ ] Ensure that all images have alt text `![alt goes here](image.png)`.
-          - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also commited and up to date.
+          - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also committed and up to date.
 
           ### Once all checks are done
           - [ ] Set a date for publication.

@@ -3,8 +3,7 @@ name: Auto Merge Pending PRs
 on:
   workflow_dispatch:
   schedule:
-    # Run daily at noon
-    - cron: '0 12 * * *'
+    - cron: '26 14 * * *'
 
 env:
   GH_TOKEN: ${{ github.token }}
@@ -66,7 +65,7 @@ jobs:
                   # Check if the date matches today's date
                   if [ "$yaml_date" == "$current_date" ]; then
                     echo "Merging PR #$pr_number (matching YAML date: $yaml_date)"
-                    gh pr merge "$pr_number" --squash --delete
+                    gh pr merge "$pr_number" --squash --delete-branch
                     gh pr close "$pr_number"
                     break
                   else
