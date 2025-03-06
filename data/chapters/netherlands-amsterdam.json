@@ -7,11 +7,12 @@
     "social_media": {
       "meetup": "rladies-amsterdam",
       "twitter": "RLadiesAMS",
-      "email": "amsterdam@rladies.org"
+      "email": "amsterdam@rladies.org",
+      "bluesky": "rladiesamsterdam.bsky.social"
     },
     "organizers": {
-      "current": ["Kylie Ainslie", "Asli Kucukosmanoglu"],
-      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries"]
+      "current": ["Kylie Ainslie", "Josefina Bernardo"],
+      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries", "Asli Kucukosmanoglu"]
     }
   }
 ]

@@ -1,12 +1,15 @@
 [
   {
-    "status": "prospective",
+    "status": "active",
     "country": "Norway",
     "city": "Trondheim",
-    "social_media": {},
+    "social_media": {
+      "meetup": "rladies-trondheim",
+      "email": "trondheim@rladies.org"
+    },
     "organizers": {
-      "current": ["Emma Sofie Skarstein", "Susan Anyosa"],
-      "former": []
+      "current": ["Brooke Wolford"],
+      "former": ["Emma Sofie Skarstein", "Susan Anyosa"]
     }
   }
 ]

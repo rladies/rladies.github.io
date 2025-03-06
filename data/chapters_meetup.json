@@ -1,14 +1,14 @@
 [
   {
-    "urlname": "rladies-tirana",
+    "urlname": "rladies-tirane",
     "status": "active",
     "country": "Albania",
     "social_media": {
-      "meetup": "rladies-tirana",
+      "meetup": "rladies-tirane",
       "email": "tirana@rladies.org"
     },
     "organizers": {
-      "current": ["Eralda Gjika"],
+      "current": ["Eralda Gjika", "Agresa Qosja"],
       "former": []
     },
     "name": "R-Ladies Tirana",
@@ -377,7 +377,8 @@
       "twitter": "RLadiesMelb",
       "email": "melbourne@rladies.org",
       "facebook": "RladiesMelbourne",
-      "github": "rladies/meetup-presentations_melbourne"
+      "github": "rladies/meetup-presentations_melbourne",
+      "bluesky": "rladiesmelb.bsky.social"
     },
     "organizers": {
       "current": ["Anna Quaglieri", "Sepideh Foroutan", "Alex Garnham", "Marie Trussart", "Lucy Liu", "Adele Barugahare", "Nikki Rubinson"],
@@ -607,7 +608,7 @@
   },
   {
     "urlname": "rladies-cotonou",
-    "status": "active",
+    "status": "retired on 25-11-2024",
     "country": "Benin",
     "social_media": {
       "meetup": "rladies-cotonou",
@@ -615,8 +616,8 @@
       "email": "cotonou@rladies.org"
     },
     "organizers": {
-      "current": ["Nadejda Sero", "Benedicta Essuon"],
-      "former": []
+      "current": [],
+      "former": ["Nadejda Sero", "Benedicta Essuon"]
     },
     "name": "R-Ladies Cotonou",
     "id": "27986524",
@@ -2202,11 +2203,12 @@
       "meetup": "rladies-cologne",
       "twitter": "rladies_cologne",
       "email": "cologne@rladies.org",
-      "linkedin": "r-ladies-cologne"
+      "linkedin": "r-ladies-cologne",
+      "bluesky": "rladies-cologne.bsky.social"
     },
     "organizers": {
-      "current": ["Cosima Meyer", "Gabe Winter"],
-      "former": ["Luciana Imbiriba", "Paulina Nemcova"]
+      "current": ["Sara Schiesberg", "Gabe Winter"],
+      "former": ["Luciana Imbiriba", "Paulina Nemcova", "Cosima Meyer"]
     },
     "name": "R-Ladies Cologne",
     "id": "35897809",
@@ -2894,7 +2896,8 @@
       "email": "rome@rladies.org",
       "linkedin": "company/r-ladies-rome/",
       "youtube": "@rladiesrome",
-      "github": "rladies/meetup-presentations_rome"
+      "github": "rladies/meetup-presentations_rome",
+      "bluesky": "rladiesrome.bsky.social"
     },
     "organizers": {
       "current": ["Federica Gazzelloni", "Silvana Acosta", "Rafaela Ribeiro Lucas"],
@@ -2956,12 +2959,13 @@
     "country": "Kenya",
     "social_media": {
       "meetup": "rladies-nairobi",
+      "twitter": "RladiesNairobi",
       "email": "nairobi@rladies.org",
       "linkedin": "r-ladies-nairobi-2572841b3"
     },
     "organizers": {
-      "current": ["Lucy Njoki", "Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"],
-      "former": []
+      "current": ["Lucy Njoki Njuki", "Happiness Ndanu", "Agnes Ndirangu"],
+      "former": ["Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"]
     },
     "name": "R-Ladies Nairobi",
     "id": "33827845",
@@ -3553,11 +3557,12 @@
     "social_media": {
       "meetup": "rladies-amsterdam",
       "twitter": "RLadiesAMS",
-      "email": "amsterdam@rladies.org"
+      "email": "amsterdam@rladies.org",
+      "bluesky": "rladiesamsterdam.bsky.social"
     },
     "organizers": {
-      "current": ["Kylie Ainslie", "Asli Kucukosmanoglu"],
-      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries"]
+      "current": ["Kylie Ainslie", "Josefina Bernardo"],
+      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries", "Asli Kucukosmanoglu"]
     },
     "name": "R-Ladies Amsterdam",
     "id": "27443387",
@@ -3729,8 +3734,8 @@
       "github": "rladies/meetup-presentations_auckland"
     },
     "organizers": {
-      "current": ["Kim Fitter", "Anna Fergusson", "Isabel Johnson"],
-      "former": []
+      "current": ["Anna Fergusson"],
+      "former": ["Kim Fitter", "Anjali Gupta", "Isabel Johnson"]
     },
     "name": "R-Ladies Auckland",
     "id": "26653882",
@@ -3920,11 +3925,15 @@
     "timezone": "Europe/Oslo"
   },
   {
-    "status": "prospective",
+    "status": "active",
     "country": "Norway",
+    "social_media": {
+      "meetup": "rladies-trondheim",
+      "email": "trondheim@rladies.org"
+    },
     "organizers": {
-      "current": ["Emma Sofie Skarstein", "Susan Anyosa"],
-      "former": []
+      "current": ["Brooke Wolford"],
+      "former": ["Emma Sofie Skarstein", "Susan Anyosa"]
     },
     "name": "R-Ladies Trondheim",
     "city": "Trondheim"
