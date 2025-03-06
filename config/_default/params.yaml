@@ -1,6 +1,7 @@
 name: R-Ladies Global
 email: 'info[at]rladies[dot]org'
 avatar: images/logo.png
+avatar_redirect: "/"
 avatarclass: rounded
 year: 2013
 
