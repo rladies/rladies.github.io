@@ -18,7 +18,7 @@ footerEnableLangWidget: true
 
 social:
   - title: bluesky
-    handle: ''
+    handle: 'rladies.org'
     relme: true
     footer: true
     sharethis: true
@@ -51,6 +51,12 @@ social:
     network: ''
   - title: youtube
     handle: 'channel/UCDgj5-mFohWZ5irWSFMFcng'
+    footer: true
+    sharethis: true
+    network: ''
+bluesky:
+  - title: We are R-Ladies
+    handle: 'weare.rladies.org'
     footer: true
     sharethis: true
     network: ''
