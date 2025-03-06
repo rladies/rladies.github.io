@@ -17,6 +17,12 @@ footerEnableTextWidget: true
 footerEnableLangWidget: true
 
 social:
+  - title: bluesky
+    handle: ''
+    relme: true
+    footer: true
+    sharethis: true
+    network: ''
   - title: mastodon
     handle: '@RLadiesGlobal@hachyderm.io'
     relme: true
