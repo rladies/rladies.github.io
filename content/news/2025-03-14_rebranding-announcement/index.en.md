@@ -3,7 +3,6 @@ title: "R-Ladies is rebranding to R-Ladies+"
 author: "Leadership Team"
 type: blog
 date: "2025-03-14"
-image: rainbow-inclusive.svg
 categories: 
 - R-Ladies
 slug: rebranding-rladies
