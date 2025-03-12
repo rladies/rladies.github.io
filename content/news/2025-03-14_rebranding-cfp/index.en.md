@@ -50,7 +50,9 @@ We envision this involves:
 -   Visual imagery of diverse gender minorities for the website or slides
 
 -   Certificates & letterhead
+- Social media post templates (BlueSky, Mastodon, LinkedIn)
 
+- YouTube templates. 
 Along with instructions for use and guidelines for chapters on how to adapt logos and other materials for their needs.
 
 ## Timeline
