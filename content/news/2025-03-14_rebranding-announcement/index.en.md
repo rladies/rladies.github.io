@@ -9,7 +9,7 @@ categories:
 slug: rebranding-rladies
 ---
 
-![Muted rainbow background with R-Ladies+ in white large font and Welcomes You underneath in white font with pink background.](rainbow-inclusive.svg)
+![Muted rainbow background with R-Ladies+ in white large font and Welcomes You underneath in white font with pink background.](rladiesplus.png)
 
 ## Background
 
