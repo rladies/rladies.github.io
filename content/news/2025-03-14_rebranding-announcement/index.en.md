@@ -16,7 +16,7 @@ slug: rebranding-rladies
 The [mission of R-Ladies](https://rladies.org/about-us/mission/) is to promote gender diversity in the R community.
 The organization aims to support all minority genders, including but not limited to cis/trans women, trans men, non-binary, genderqueer, and agender individuals. 
 The organization received feedback that not all minority genders identify with the name "R-Ladies". 
-In April of 2024, we, the R-Ladies Global Leadership Team, opened the [“Re-branding from R-Ladies to R-Ladies+” GitHub issue](https://github.com/rladies/community/issues/10) to address the organization’s need to be more explicit about our mission to serve underrepresented gender minorities beyond cis-women while preserving the established identity of our organization and also recognizing global variation in the ability to safely do so.
+In April of 2024, we, the R-Ladies Global Leadership Team, opened the [“Re-branding from R-Ladies to R-Ladies+” GitHub issue](https://github.com/rladies/community/issues/10) to address the organization’s need to be more explicit about our mission to serve underrepresented gender minorities beyond cis women while preserving the established identity of our organization and also recognizing global variation in the ability to safely do so.
 
 ## Initial Proposal
 
@@ -51,7 +51,7 @@ A complete name change could cause confusion regarding who we are as an organiza
 3. R-Ladies operates in a decentralized manner such that individual chapters have autonomy over their own web presence. 
 There would be a risk that chapters could persist under both the R-Ladies name and the new suggested name, creating confusion about the identity of the organization.
 
-4, All who serve this organization are volunteers with limited capacity, including the leadership team, the broader global team, and local chapter leaders. 
+4. All who serve this organization are volunteers with limited capacity, including the leadership team, the broader global team, and local chapter leaders. 
 A complete name change would require time consuming communications and administrative work for the 200+ existing chapters which would make it difficult to establish a timeline for full name change in the absence of hiring paid services for assistance. 
 
 The rationale in favor of R-Ladies+ includes signaling broader inclusivity while maintaining its well-recognized brand identity. 
@@ -62,7 +62,7 @@ While changing from R-Ladies to R-Ladies+ does require administrative work from 
 ## Next steps
 
 The global organization will work to develop a new branding package, including a new logo, slide templates, and other imagery, by soliciting the services of a graphic designer ([see Call For Proposal](https://rladies.org/news/rebranding-cfp/)). 
-This rebranding effort intends to signal that R-Ladies+ is an organization inclusive of all gender minorities beyond cis-women while preserving its established identity and global recognition. 
+This rebranding effort intends to signal that R-Ladies+ is an organization inclusive of all gender minorities beyond cis women while preserving its established identity and global recognition. 
 This material will also provide all chapter organizers with elements to communicate R-Ladies+ mission and values clearly and align with the global organization, saving them time and effort that can be used in the management of their chapters. 
 
 Upon receipt of the rebranding package, we will also work towards improved social infrastructure via website updates and chapter support that are essential to create the community we aim to serve. 
