@@ -3,12 +3,13 @@ title: "R-Ladies is rebranding to R-Ladies+"
 author: "Leadership Team"
 type: blog
 date: "2025-03-14"
+image: rladiesplus.png
 categories: 
 - R-Ladies
 slug: rebranding-rladies
 ---
 
-![Hex sticker with R-Ladies purple outline and the letter R with inclusive rainbow colors.](rainbow-inclusive.svg)
+![Muted rainbow background with R-Ladies+ in white large font and Welcomes You underneath in white font with pink background.](rainbow-inclusive.svg)
 
 ## Background
 

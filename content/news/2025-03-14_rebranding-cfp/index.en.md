@@ -3,12 +3,13 @@ title: "Rebranding Call For Proposal"
 author: "Leadership Team"
 type: blog
 date: "2025-03-14"
+image: cfp.png
 categories: 
 - R-Ladies
 slug: rebranding-cfp
 ---
 
-![Hex sticker with R-Ladies purple outline and the letter R with inclusive rainbow colors.](rainbow-inclusive.svg)
+![Colors fade blue to violet left to right with white box in the middle that says Call for Proposal Rebranding R-Ladies to R-Ladies+; image of laptop adjacent.](cfp.png)
 
 ## TL;DR
 
