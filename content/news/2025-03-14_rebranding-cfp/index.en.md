@@ -60,11 +60,10 @@ Along with instructions for use and guidelines for chapters on how to adapt logo
 
 | Item                         | Date                   |
 |------------------------------|------------------------|
-| Proposal Submission Deadline &nbsp &nbsp| April 15, 2025         |
+| Proposal Submission Deadline <&nbsp>| April 15, 2025         |
 | Internal review of proposals | April 16 - May 7, 2025 |
 | Project kickoff              | by June 1, 2025        |
 
-<br>
 
 ## Budget
 
