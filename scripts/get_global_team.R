@@ -39,7 +39,7 @@ get_tables <- function(base, tables) {
 #' of a given table. Each file is
 #' named based on the `name` field (converted to
 #' lowercase and hyphen-separated)
-#' and saved in the "data/global_team/current"
+#' and saved in the "data/global-team/current"
 #' directory relative to the project's
 #' root using the `here` package.
 #'
@@ -132,7 +132,7 @@ airt$Members$select_all() |>
   ) |>
   dplyr::ungroup() |>
   write_jsons(
-    here::here("data", "global_team", "current")
+    here::here("data", "global-team", "current")
   )
 
 # Alumni ----
@@ -169,5 +169,5 @@ alum |>
   ) |>
   dplyr::ungroup() |>
   write_jsons(
-    here::here("data", "global_team", "alumni")
+    here::here("data", "global-team", "alumni")
   )

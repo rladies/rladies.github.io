@@ -1,6 +1,6 @@
 
 {{ define "main" }}
-  {{ $gt := $.Site.Data.global_team }}
+  {{ $gt := $.Site.Data.global-team }}
     <!-- create maps of names for gt_roles, becasue we cannot 'where' over maps of maps -->
   {{ $.Scratch.Set "gt_roles" (slice) }}
   {{ range $gt.current }}  
