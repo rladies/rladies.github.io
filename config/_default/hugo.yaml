@@ -14,7 +14,9 @@ minify:
 
 buildFuture: true
 buildDrafts: true
-  
+
+ignoreLogs: 'warning-goldmark-raw-html'
+
 ignoreFiles:
   - "\\.Rmd$"
   - "\\.qmd$"
@@ -27,3 +29,5 @@ ignoreFiles:
   - "README_img/"
 #[outputs]
 #  home = ["HTML", "RSS", "JSON"]
+
+

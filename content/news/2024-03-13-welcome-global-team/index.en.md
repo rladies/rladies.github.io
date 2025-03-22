@@ -10,7 +10,7 @@ tags:
 categories: 
 - R-Ladies
 summary: R-Ladies Global Team has 15 new members!
-slug: /news/new-to-global-team-2023/
+slug: /news/new-to-global_team-2023/
 ---
 
 ![Thumbnail photos of 15 new global team members cropped in circle images outlined in purple.](img/global_team.png)
@@ -22,7 +22,7 @@ https://docs.google.com/presentation/d/1ZnCmaO_gBSKSbtx_1tTicQSxnTJZaYGc/edit#sl
 
 # Overview
 
-In 2023 we [announced openings](https://rladies.org/news/2023-04-11-global-team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts and facilitate the growth of the R-Ladies community.
+In 2023 we [announced openings](https://rladies.org/news/2023-04-11-global_team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts and facilitate the growth of the R-Ladies community.
 We are delighted to welcome 15 new members to the R-Ladies Global Team.
 R-Ladies is 100% volunteer-driven, and we are very grateful to those who 
 support us with their time and effort to champion our [mission](https://rladies.org/about-us/mission/).
@@ -79,6 +79,6 @@ perspectives, will help us to continue to grow and improve as an organization.
 We are looking forward to working with these new members, and we hope
 that you will join us in welcoming them to the Global Team!
 
-You can see an overview of the entire global team at [About -> Meet the Global Team](/about-us/global-team/).
+You can see an overview of the entire global team at [Meet the Global Team](/about-us/global-team/).
 
 

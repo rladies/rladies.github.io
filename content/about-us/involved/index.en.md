@@ -28,7 +28,7 @@ We welcome your contributions, below are handful of ideas 💜
 
 #### 🤝 Above and beyond 
 
-- Join the [global team](https://rladies.org/about-us/global-team/), help us create a diverse space 
+- Join the [global team](https://rladies.org/about-us/global_team/), help us create a diverse space 
 - Create issues or PR(s) over [GitHub](https://github.com/rladies) for our [website](https://github.com/rladies/rladies.github.io) & [guide](https://github.com/rladies/rladiesguide) when you encounter sections which could be improved
 - Contribute to community discussion and share your thoughts
 - Support your local chapters with venue space and funding for food and beverages

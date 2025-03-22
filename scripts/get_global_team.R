@@ -21,58 +21,77 @@
 #' tables <- get_tables(base_id, table_names)
 #' @export
 get_tables <- function(base, tables) {
-  cli::cli_alert_info("Fetching tables...")
-  airtabler::airtable(base = base, tables = tables)
-}
-get_tables <- function(base, tables) {
-  cli::cli_alert_info("Fetching tables...")
-
   airtabler::airtable(
     base = base,
     tables = tables
   )
 }
 
-#' Write JSON Files for Each Row in a Table
+#' Write and Save Data to JSON Files
+#' and Download Images
 #'
-#' This function creates JSON files for each row
-#' of a given table. Each file is
-#' named based on the `name` field (converted to
-#' lowercase and hyphen-separated)
-#' and saved in the "data/global-team/current"
-#' directory relative to the project's
-#' root using the `here` package.
+#' This function processes a data
+#' table, downloads images associated with each
+#' row's `img` column, and saves each row's
+#' data as a JSON file in a specified
+#' folder.
 #'
-#' @details{
-#'  The data should contain:
-#'   - `name`: The name of the person (string).
-#'   - `role`: The role of the person (string vector).
-#'   - `start`: Start date (date, optional).
-#'   - `end`: End date (date, optional).
-#'   - `img`: URL to the image (string).
-#' }
-#'
-#' @param table A data frame.
-#'
-#' @return This function does not return a value; it writes
-#'    JSON files to disk.
-#'
-#' @examples
-#' # Example data
-#' table <- data.frame(
-#'   name = c("Alice", "Bob"),
-#'   role = c("Developer", "Designer"),
-#'   start = c("2023-01-01", "2023-02-01"),
-#'   end = c("2023-12-31", "2023-11-30"),
-#'   img = c("https://example.com/alice.jpg", "https://example.com/bob.jpg"),
-#'   stringsAsFactors = FALSE
+#' @details(
+#' table should contain:
+#' - `name`: Name of the entity (used for filenames).
+#' - `role`: Role associated with the entity.
+#' - `start`: Start information (e.g., employment start date).
+#' - `end`: End information (e.g., employment end date).
+#' - `img`: A list column containing sub-columns:
+#'    - `type`: File type of the image (e.g., "jpg", "png").
+#'    - `url`: URL for downloading the image.
 #' )
 #'
-#' # Write JSON files for each row in the table
-#' write_jsons(table)
+#' @param table A data frame containing the data to process.
+#' @param folder A string specifying the folder to save the
+#'    resulting JSON files.
 #'
-#' @export
-write_jsons <- function(table, folder) {
+#' @return This function does not return a value. It
+#'   performs the side effects of
+#' downloading images to the
+#' "content/about-us/global-team/img" folder and saving
+#' JSON files in the `folder` parameter location.
+#'
+#' @examples
+#' \dontrun{
+#' # Example data table
+#' data <- data.frame(
+#'   name = c("Alice Smith", "Bob Johnson"),
+#'   role = c("Manager", "Engineer"),
+#'   start = c("2020-01-01", "2021-05-15"),
+#'   end = c("2023-01-01", NA),
+#'   img = I(list(
+#'     list(type = "jpg", url = "http://example.com/alice.jpg"),
+#'     list(type = "png", url = "http://example.com/bob.png")
+#'   ))
+#' )
+#'
+#' # Save data to JSON folder
+#' write_data(data, folder = "output/json")
+#' }
+write_data <- function(table, folder) {
+  table$img <- sapply(1:nrow(table), function(x) {
+    y <- as.list(table[x, ])
+    if (length(y$img[[1]]$type) == 0) return(NA)
+    filename <- sprintf(
+      "%s/%s.%s",
+      here::here("content/about-us/global-team/img"),
+      gsub(" ", "-", tolower(y$name)),
+      basename(y$img[[1]]$type)
+    )
+    download.file(
+      y$img[[1]]$url,
+      filename,
+      quiet = TRUE
+    )
+    basename(filename)
+  })
+
   apply(table, 1, function(x) {
     filename <- sprintf(
       "%s/%s.json",
@@ -124,20 +143,14 @@ airt$Members$select_all() |>
   dplyr::summarise(
     role = list(role)
   ) |>
-  dplyr::group_by(name) |>
-  tidyr::unnest(img) |>
-  dplyr::summarise(
-    img = list(url = url),
-    role
-  ) |>
-  dplyr::ungroup() |>
-  write_jsons(
-    here::here("data", "global-team", "current")
+  write_data(
+    here::here("data", "global_team", "current")
   )
 
 # Alumni ----
 alum <- airt$Alumni$select_all() |>
   dplyr::transmute(
+    id = id,
     name = Name,
     role = strsplit(History, ", "),
     img = photo,
@@ -145,29 +158,14 @@ alum <- airt$Alumni$select_all() |>
     end = `End Date`
   )
 
-alum$img <- sapply(1:nrow(alum), function(x) {
-  y <- as.list(alum[x, ])
-  filename <- sprintf(
-    "%s/%s.%s",
-    here::here("content/about-us/global-team/img"),
-    gsub(" ", "-", tolower(y$name)),
-    basename(y$img[[1]]$type)
-  )
-  download.file(
-    y$img[[1]]$url,
-    filename,
-    quiet = TRUE
-  )
-  basename(filename)
-})
-
-alum |>
-  dplyr::group_by(name, start, end) |>
-  dplyr::summarise(
-    img = list(url = img),
-    role
-  ) |>
-  dplyr::ungroup() |>
+if (nrow(alum) > 0) {
   write_jsons(
-    here::here("data", "global-team", "alumni")
+    alum,
+    here::here("data", "global_team", "alumni")
   )
+
+  # Delete from Airtable, to keep tidy.
+  # Singular place for history of Global Team members
+  # is website repo.
+  airt$Alumni$delete(record_id = alum$id)
+}

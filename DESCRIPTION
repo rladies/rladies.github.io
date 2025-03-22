@@ -35,5 +35,4 @@ Config/renv/profiles/airtable/dependencies:
     dplyr,
     here,
     tidyr,
-    cli,
     airtabler

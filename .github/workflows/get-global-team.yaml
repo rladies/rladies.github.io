@@ -45,8 +45,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git add content/about-us/global-team/img
-          git add data/global-team
+          git add content/about-us/global_team/img
+          git add data/global_team
           git commit -m "Automated update: Update Global Team"
           git push origin ${{ github.ref }}
 

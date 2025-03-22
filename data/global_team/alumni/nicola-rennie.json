@@ -1,0 +1,34 @@
+{
+  "name": "Nicola Rennie",
+  "role": ["Campaigns"],
+  "start": "2025-03-21",
+  "end": "2025-01-01",
+  "img": {
+    "url": {
+        "id": "attWskTTm3nVMyCUH",
+        "width": 2701,
+        "height": 2699,
+        "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/KSnG7Qt2U5vqstf8fcCVrg/470LgM-KlpsPcidoqSNehEzldBTDoZMKnOhBFy8WMb6v07ieqaoYi97W7EiaF5jj__I2fr5vFr1xKuXsgpjfmP74TLRSW1LoeR4zlE2tJPMZ8wE-SqNgy_Rr9GkbxzBI91euIWpxzzfsCci8b2SRne1IQzJ8h68-SKeb_qe7O-I/5ovoXtoSiZwxzJCCbBnGsLSUsKqS8Wy02NdPZBimryo",
+        "filename": "nicola_rennie.png",
+        "size": 2852322,
+        "type": "image/png",
+        "thumbnails": {
+          "small": {
+            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/yeRe_a0na19x7KfP364J2A/Iq-qV9fGgKWzPPnlyilB-Gj9767kmh1uBWQ0y-FHrYh1qRjFQR0I9zu0jyrBvl1hBCUVBoCvzC7u1DKdjyIPnWjElXC2JRqs7e96DXTN1XeH_A65SN8f6je97KMB85ztwWQmGHRDESdNh4Gjl0mGLQ/KonLpCNXivgP6znVUnNu0Cf8Y48VxR6Y_l1dE7eqSkg",
+            "width": 36,
+            "height": 36
+          },
+          "large": {
+            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/x9LMrl508ZUW_5bBQAcHZw/pNTbS9w7ae5joy6CWlROZSnGiDfiu42LP0ek-J_-7gThv9syiHOWnHwQN_uJoSkydvX4B8o9MqzElmaxogzrFffM2PCrs51tQYvcPXJIjat0UxcECaZlpSsvKed6VU7W4Ly1Yo7WxzyNIZ1nZ4pBiA/x_nKbcb5lNZaGHyx8cgzSBJIl6O4cuHXMx0T_65JNkA",
+            "width": 512,
+            "height": 512
+          },
+          "full": {
+            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/KrtfnPhBOzKmdwD2dp8aOQ/eUJpmmhRUME1PHvf0VeE_8Lxo7BK1Dimu56wilz4vLLvxPExLH6oJ6LzVy-lJzSNNubXOnD7RvN2lBKDy3iRPqoec6YVYbOZ78ji3kBF1Sy6tyNVzB4FAbS1VlrfjKTfPqQzz0d09n5UxfXle1kUmA/QuZ-erfAVafUT5Y_Cohb2hQ7pT-0JPaVO8aaNxsH4So",
+            "width": 2701,
+            "height": 2699
+          }
+        }
+      }
+  }
+}

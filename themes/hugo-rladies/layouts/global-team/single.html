@@ -1,7 +1,7 @@
 
 {{ define "main" }}
-  {{ $gt := $.Site.Data.global-team }}
-    <!-- create maps of names for gt_roles, becasue we cannot 'where' over maps of maps -->
+  {{ $gt := $.Site.Data.global_team }}
+    <!-- create maps of names for gt_roles, because we cannot 'where' over maps of maps -->
   {{ $.Scratch.Set "gt_roles" (slice) }}
   {{ range $gt.current }}  
     {{ $.Scratch.Add "gt_roles" .role }}
@@ -24,7 +24,7 @@
     {{ end }}
   {{ end }} 
   
-  <!-- to emable shuffle of the grid -->
+  <!-- to enable shuffle of the grid -->
   {{ $.Scratch.Set "gtc" (slice) }}
   {{ range $name, $_ := $gt.current }}
       {{ $.Scratch.Add "gtc" $name }}

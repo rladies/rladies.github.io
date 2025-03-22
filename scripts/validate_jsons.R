@@ -44,7 +44,7 @@ validate_jsons(
 #  Validate global team json
 validate_jsons(
   list.files(
-    here::here("data/global-team"),
+    here::here("data/global_team"),
     full.names = TRUE,
     recursive = TRUE
   ),
