@@ -50,3 +50,4 @@ jobs:
           git add data/global_team
           git commit -m "Automated update: Update Global Team"
           git push origin ${{ github.ref }}
+          
