@@ -8,12 +8,13 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
+env:
+  RENV_PROFILE: "airtable"
+  RENV_CONFIG_SANDBOX_ENABLED: FALSE
   
 jobs:
   airtable:
-    env:
-      RENV_PROFILE: "airtable"
-      RENV_CONFIG_SANDBOX_ENABLED: FALSE
     name: Retrieve Airtable data
     runs-on: ubuntu-latest
     steps:
