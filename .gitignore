@@ -9,11 +9,13 @@
 hugo.exe
 hugo.darwin
 hugo.linux
+
 ### R ###
 # History files
 .Rhistory
 .Rapp.history
 .history
+.Renviron
 
 # Session Data files
 .RData
@@ -51,6 +53,7 @@ tmpd
 node_modules/
 package-lock.json
 .meetup_token.rds
+
 # workflow tmp file
 tmp*
 ~/Library/Application Support/meetupr/meetupr-token.rds
