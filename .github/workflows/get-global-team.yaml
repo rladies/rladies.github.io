@@ -33,5 +33,21 @@ jobs:
       - name: Setup Renv
         uses: r-lib/actions/setup-renv@v2
       
-      - name: Validate jsons
-        run: Rscript scripts/validate_jsons.R
+      - name: Get Airtable data and write to file
+        run: Rscript scripts/get_global_team.R
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and Push Changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add content/about-us/global-team/img
+          git add data/global-team
+          git commit -m "Automated update: Update Global Team"
+          git push origin ${{ github.ref }}
+
+
