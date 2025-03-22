@@ -10,13 +10,14 @@ concurrency:
   cancel-in-progress: true
   
 jobs:
-  jsons:
+  airtable:
     env:
       RENV_PROFILE: "airtable"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
     name: Retrieve Airtable data
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -42,8 +43,8 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and Push Changes
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add content/about-us/global_team/img
           git add data/global_team
