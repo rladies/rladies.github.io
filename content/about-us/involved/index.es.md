@@ -15,7 +15,7 @@ title: "Involucrate"
 * Anime a las mujeres codificadoras a ser parte de R-Ladies.
 * Comparte código (R-Ladies Global Github).  
 * Inspira y apoya a otras.
-* Únete a [community slack](https://rladies.org/form/community-slack).  
+* Únete a [community slack](/form/community-slack).  
 * Enseña.  
 * Blog.  
 * Tuitea, Retuitea y sigue @RLadiesGlobal y las cuentas de sección de R-Ladies .  
