@@ -26,7 +26,6 @@
             {{ with .Err }}
               {{ warnf "%s" . }}
             {{ else with .Value }}
-              <p>{{ . }}</p>
               {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
                 {{ $img := . }}
                 {{ $img := $img.Fill "300x300" }} 
