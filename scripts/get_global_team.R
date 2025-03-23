@@ -69,23 +69,26 @@ get_tables <- function(base, tables) {
 #'
 #' tojson(input)
 tojson <- function(x) {
-  x <- list(
+  json <- list(
     name = jsonlite::unbox(x$name),
     role = x$role,
     start = jsonlite::unbox(x$start),
-    end = jsonlite::unbox(x$end),
-    img = list(
+    end = jsonlite::unbox(x$end)
+  )
+
+  if (!is.na(x$img)) {
+    json$img = list(
       url = jsonlite::unbox(x$img)
     )
-  )
+  }
   idx <- sapply(
-    x,
+    json,
     function(y) {
       length(y) != 0
     }
   )
   lapply(which(idx), function(y) {
-    x[[y]]
+    json[[y]]
   })
 }
 
