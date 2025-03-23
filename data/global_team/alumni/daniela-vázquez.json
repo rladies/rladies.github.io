@@ -4,31 +4,6 @@
   "start": "2023-06-01",
   "end": "2025-01-01",
   "img": {
-    "url": {
-        "id": "att4Kn4xxYgLuKmFX",
-        "width": 828,
-        "height": 821,
-        "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/p3RupZCilP8nvsCOehEvLw/SkDTNZveWVt488VsM545t6QHXR47eHrz5i94_3-4y600hxh1rbQkJUNliYBwg1U1wWSEKqQDWtMkMNuBbc1uC2XK-4N5ozjq1J9NdxhzyVu_lzzyAm8IDjJDmIw51kOxWcLzeM84ilS-DfUPy04Lkddw0JPSKuuvj_yF90pZNKI/aeGlIA4I1VEZb3NFX-tpH2AHucQOcgQbuqEK02LYh5Q",
-        "filename": "daniela_vazquez.png",
-        "size": 884161,
-        "type": "image/png",
-        "thumbnails": {
-          "small": {
-            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/_RYw3URkXSNr9bxfxyq-3A/jiIJgiZOxsAmH46yBAiC7h_JuyyMVCgTmGZy7LG1gVUyGs1qaCCpbCkcn_AAWOGl1nzJUj2uteethF2ekWcJgzkBJv5y8A3msEU_0HFqh_p78IfGVOZqUhm6sEStuIAf-RStUsWghUjEGrp6ms6bfQ/nJFgGSerw_Qpo9vha3cLjG3J3R1X9dJnKmdZsU3-z-0",
-            "width": 36,
-            "height": 36
-          },
-          "large": {
-            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/TmTCAX0mGGdHbi6c6sO_Ag/cNT-0NuvHO0bu0quvpooA5ztPq2aH8W4DxWN01dS24bkjbq_Ua_YoR297OUlqX2kkxqPtRbmZhQ_ezcymsd_VrN8Vv1_pCCerGMU5y6Zdwck0HHZ7yEvrVi0FEbwPRWD-NRzKzgKQJPoabHHF7wSSg/PWn50mJMTMqdnNCo8RtVhaWkfpttMZzlxZrsutZizbU",
-            "width": 516,
-            "height": 512
-          },
-          "full": {
-            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/2O_g1Yibzgi3EDHsBQhi4g/SCCWu2h9JcBg1PrdvSKgDaD0L-kVuOej-ocFEpGEJVWFPBnrIdu2UceHJ3BSGiw2b2hIEbb8_90nUJThs28WZAtqlyxE3re9qinnismm2Hl_UaZFQtAPjBl6LWvTZk8JSXnRAIT5UlIOHz7kd7GxUw/DvCRQ3-Oz6O5q-cw-H7WEQILhKQThVhqqj91clXDteI",
-            "width": 828,
-            "height": 821
-          }
-        }
-      }
+    "url": "daniela_vazquez.png"
   }
 }

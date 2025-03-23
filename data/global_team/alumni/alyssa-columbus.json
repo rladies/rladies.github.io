@@ -4,31 +4,6 @@
   "start": "2023-11-01",
   "end": "2025-01-01",
   "img": {
-    "url": {
-        "id": "att7lUOh6fr6zWP9c",
-        "width": 512,
-        "height": 512,
-        "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/FCuGLDNbjMgef_mtBYQMmw/8YR82n9I_uBV2akzipQwZFmajSN8lPGgWt7IKMvs0_2Y1Xh_1-yjUyFn_4pa2LrCE_OCKzr0UJkY1qWUy1O_Q6uiStcsWK1-9kXHTaCFAWvzq5-FGENqbfN9G7APjJNEHHyq1JA897fFyiUbt1LWm6xGpEnYjAZV5ahCflN7QAs/z5RCeoLnNUAJWN5Ap3eWsmaMu-ftPJ766Pz6ZsN_JBs",
-        "filename": "alyssa_columbus.png",
-        "size": 257365,
-        "type": "image/png",
-        "thumbnails": {
-          "small": {
-            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/m3I4BUlE5zaRTCy5kbCIcw/E6Znw003XPnseURuORk7ykOdNjD9vuQO2BwWw69HB5lYcncrJEBEfsD1CxOBQ2GooyEbF4SrPMNy4TvjUSukToHw-PdRM8XPr2vbFC6F5ionGkE4tuqwMqZPktfGkuOWpYFml-S6b3IfNu2391SK0g/jXnRSIcupx2rIkwjFlp78Fk5r936rYWjaI2rMFDo7rE",
-            "width": 36,
-            "height": 36
-          },
-          "large": {
-            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/zEsVsYSbmp1kfir6VLC3Xg/IrfW5uyHMHZFqFsKYCtssGdoHl3qavd8kSg_mcgFsm6S0YCGKsEK1slTi54onOxW9MUV7DXT5EyhBhQ8H75XiMgGz8x12waCdMCwAxgxFWKkQs5NGN-eKZnj8nKJSiIJCDdi4yiP3waVuszzLHzv-A/3XQWpJ68BZJKNZmVAhwGJI1ouKKPedfgrY2jCaWH5fw",
-            "width": 512,
-            "height": 512
-          },
-          "full": {
-            "url": "https://v5.airtableusercontent.com/v3/u/39/39/1742688000000/sappHkKzuN9x8eR855FQ7g/NcYUtYMiKj5g6dHmv9ilrmEfVCFsn7dN8yfpMHAL5ffGgTNXEzTT8vz2gBKpm6tzzsSzQjT7aFtln3kQ-c5Bh2GTS1Xvpnetn_5FTiA3QoAcr5d9XO4sKz9CziP-WTcZ1mBhR9WcT_DvxCsn-ngYIw/wmZoHdW_spNzmgq-Q8I7UrFCNgGeD1_5LnLmfAvv07A",
-            "width": 512,
-            "height": 512
-          }
-        }
-      }
+    "url": "alyssa_columbus.png"       
   }
 }
