@@ -27,6 +27,68 @@ get_tables <- function(base, tables) {
   )
 }
 
+#' Convert a Named List to JSON-like Structure
+#'
+#' This function converts a named list into a
+#' JSON-like structure by reformulating
+#' the input's elements into a specific nested
+#' format. Any empty elements (length 0)
+#' are excluded from the resulting list.
+#'
+#' @details{
+#'
+#'   - `name`: A single character string.
+#'   - `role`: A character vector.
+#'   - `start`: A single character string (optional).
+#'   - `end`: A single character string (optional).
+#'   - `img`: list with `url` and/or `credit`
+#' }
+#'
+#' @param x A named list
+#' @return A list reformatted to a JSON-like
+#'    structure where `name`, `start`, and
+#'   `end` are unboxed strings, and `img` is
+#'    nested as a list with an unboxed URL.
+#'   Elements with length 0 are excluded
+#'   from the output list.
+#'
+#' @details This function uses `jsonlite::unbox`
+#'   to ensure single values are stored
+#'   as scalars. It filters out any empty
+#'   elements (length 0) before returning
+#'   the final structure.
+#'
+#' @examples
+#' input <- list(
+#'   name = "Alice",
+#'   role = c("Developer", "Team Lead"),
+#'   start = "2023-01-01",
+#'   end = "2023-12-31",
+#'   img = "https://example.com/image.png"
+#' )
+#'
+#' tojson(input)
+tojson <- function(x) {
+  x <- list(
+    name = jsonlite::unbox(x$name),
+    role = x$role,
+    start = jsonlite::unbox(x$start),
+    end = jsonlite::unbox(x$end),
+    img = list(
+      url = jsonlite::unbox(x$img)
+    )
+  )
+  idx <- sapply(
+    x,
+    function(y) {
+      length(y) != 0
+    }
+  )
+  lapply(which(idx), function(y) {
+    x[[y]]
+  })
+}
+
 #' Write and Save Data to JSON Files
 #' and Download Images
 #'
@@ -96,24 +158,20 @@ write_data <- function(table, folder) {
     filename <- sprintf(
       "%s/%s.json",
       folder,
-      gsub(" ", "-", tolower(x$name))
+      gsub(" ", "-", tolower(x$name)),
+      na = "null"
     )
 
+    y <- tojson(x)
     jsonlite::write_json(
-      list(
-        name = jsonlite::unbox(x$name),
-        role = x$role,
-        start = jsonlite::unbox(x$start),
-        end = jsonlite::unbox(x$end),
-        img = list(
-          url = jsonlite::unbox(x$img)
-        )
-      ),
+      y,
       filename,
       pretty = TRUE
     )
+    y
   })
 }
+
 
 # Run things ----
 
@@ -148,17 +206,19 @@ airt$Members$select_all() |>
   )
 
 # Alumni ----
-alum <- airt$Alumni$select_all() |>
-  dplyr::transmute(
-    id = id,
-    name = Name,
-    role = strsplit(History, ", "),
-    img = photo,
-    start = `Start Date`,
-    end = `End Date`
-  )
+alum <- airt$Alumni$select_all()
 
-if (nrow(alum) > 0) {
+if (ncol(alum) > 0) {
+  alum <- alum |>
+    dplyr::transmute(
+      id = id,
+      name = Name,
+      role = strsplit(History, ", "),
+      img = photo,
+      start = `Start Date`,
+      end = `End Date`
+    )
+
   write_jsons(
     alum,
     here::here("data", "global_team", "alumni")
