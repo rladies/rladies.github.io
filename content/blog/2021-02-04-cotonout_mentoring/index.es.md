@@ -19,7 +19,7 @@ categories:
 
 R-Ladies Cotonou es un capítulo de [R-Ladies Global](https://twitter.com/RLadiesGlobal) ubicado en Cotonou, Benin (África Oeste). Hasta el día de hoy consta de treinta miembros y cuatro mujeres en el equipo organizador. ¡La idea de crear R-Ladies Cotonou nació en Twitter! Aquí su historia:
 
-{{% tweet user="sbnadejda" id="901597952837222401" %}}
+{{% x user="sbnadejda" id="901597952837222401" %}}
 
 Estos tweets desencadenaron la apertura del capítulo en septiembre de 2017. Mayoritariamente comenzar a organizar el capítulo involucró configurar algunas plataformas: un email y una cuenta de Twitter. Benedicta Essuon, una amiga de Ghana que estudiaba en mi país me ayudó con este proceso.
 
