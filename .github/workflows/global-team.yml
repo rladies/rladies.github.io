@@ -35,6 +35,8 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
       
       - name: Get Airtable data and write to file
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
         run: Rscript scripts/get_global_team.R
 
       - name: Configure Git
