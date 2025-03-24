@@ -190,6 +190,15 @@ teams <- airt$Teams$select_all() |>
   )
 
 # Global team ----
+# Purge existing files
+list.files(
+  here::here("data", "global_team", "current"),
+  "json",
+  full.names = TRUE
+) |>
+  file.remove()
+
+# Write new ones
 airt$Members$select_all() |>
   dplyr::transmute(
     name = Name,
