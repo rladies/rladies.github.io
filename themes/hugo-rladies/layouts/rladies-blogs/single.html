@@ -22,16 +22,16 @@
         
         {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" ( md5 $rb.url ) ) }}
         {{ with $rb.photo_url }}
-          {{ with resources.GetRemote . }}
+          {{ with try (resources.GetRemote .) }}
             {{ with .Err }}
               {{ warnf "%s" . }}
-            {{ else }}
+            {{ else with .Value }}
               {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
                 {{ $img := . }}
                 {{ $img := $img.Fill "300x300" }} 
                 {{ $data.Set "photo" $img.RelPermalink }}
               {{ else }}
-                {{ warnf "Entry %s has a photo url without an image type" $name }}
+                {{ warnf "Entry %s has a photo url without a supported image type" $name }}
               {{ end }}
             {{ end }}
           {{ else }}

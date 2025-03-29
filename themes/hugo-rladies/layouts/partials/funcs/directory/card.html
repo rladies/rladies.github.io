@@ -21,20 +21,16 @@
   {{ $dir.Set "img" $image.RelPermalink }}
 {{ end }}
 
-{{ $interests := dict "interests" "" }}
+{{ $shuffle := dict }}
+
 {{ with .data.interests }}
-  {{ $dir.Set "interests" .}}
+  {{ $shuffle = merge $shuffle (dict "interests" . ) }}
 {{ end }}
-{{ $interests := dict "interests" ($dir.Get "interests") }}
 
-{{ $languages := dict "languages" "" }}
 {{ with .data.languages }}
-  {{ $dir.Set "languages" .}}
+  {{ $shuffle = merge $shuffle (dict "languages" . ) }}
 {{ end }}
-{{ $languages := dict "languages" ($dir.Get "languages") }}
 
-
-{{ $location := dict "location" "" }}
 {{ with .data.location }}
   {{ $tmp := newScratch }}
   {{ with .country }}
@@ -48,15 +44,13 @@
   {{ with .city }}
     {{ $tmp.Add "loc" ( . | printf ", %s") }}
   {{ end }}
-  {{ $dir.Add "location" ($tmp.Get "loc")}}
-  {{ $location := dict "location" . }}
+  {{ $location := ($tmp.Get "loc" | slice ) }}
+  {{ $shuffle = merge $shuffle (dict "location" $location) }}
 {{ end }}
-{{ $location := dict "location" ($dir.Get "location" | slice ) }}
 
 {{ $descr := partial "funcs/directory/descr.html" (dict "data" .data "id" .name ) }}
 {{ $subtitle := ($dir.Get "subtitle" ) }}
 {{ $title := ($dir.Get "title" ) }}
 {{ $foot := (partial "funcs/directory/foot.html" .data ) }}
-{{ $shuffle := merge $interests $languages $location }}
 
 {{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" .size  "img" ($dir.Get "img") "category" .data.honorific "descr" $descr "foot" $foot "footcol" 2 "id" .name  "shuffle" $shuffle ) }}

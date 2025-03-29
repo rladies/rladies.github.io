@@ -20,7 +20,7 @@ output: html_document
 
 R-Ladies Cotonou est un groupe local de [R-Ladies Global](https://twitter.com/RLadiesGlobal) basé à Cotonou, au Bénin (Afrique de l’Ouest). À ce jour, nous avons 30 membres avec quatre femmes dans l’équipe organisatrice. L’idée de créer R-Ladies Cotonou est née sur Twitter ! Voici l’histoire !
 
-{{% tweet user="sbnadejda" id="901597952837222401" %}}
+{{% x user="sbnadejda" id="901597952837222401" %}}
 
 Ces tweets ont conduit à la création de R-Ladies Cotonou en Septembre 2017 ! Cela a principalement consisté à créer et configurer certaines des plateformes dont nous avions besoin : un e-mail et un compte Twitter ! [Benedicta Essuon](https://twitter.com/Bene_Essuon?s=20), une amie ghanéenne, qui était une étudiante dans mon pays, m’a aidé pendant ce processus.
 
