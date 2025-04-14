@@ -54,20 +54,8 @@ social:
     footer: true
     sharethis: true
     network: ''
-bluesky:
   - title: We are R-Ladies
     handle: 'weare.rladies.org'
     footer: true
     sharethis: true
-    network: ''
-twitter:
-  - title: We are R-Ladies
-    handle: 'WeAreRLadies'
-    footer: true
-    sharethis: false
-    network: ''
-  - title: IWD R-Ladies
-    handle: 'rladies_iwd'
-    footer: true
-    sharethis: false
     network: ''
