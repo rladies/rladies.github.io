@@ -1,5 +1,5 @@
 <div class="jumbotron paral m-0 {{ if .IsHome }} home {{ end }}" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url({{ .Site.Params.banner | relURL }})" id="hero">
-  <a rel="alternate" href="{{ .Lang | absURL }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">
+  <a rel="alternate" href="/" hreflang="{{ .Lang }}" lang="{{ .Lang }}">
     <div class="logo">
       <img src="{{ .Site.Params.avatar | relURL }}">
     </div>
