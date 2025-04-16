@@ -2,16 +2,10 @@
 title: "What happened in 2018?"
 description: "Retrospective"
 author: R-Ladies
-date: '2018-12-12'
+date: "2018-12-12"
 categories:
   - R-Ladies
-tags:
-  - rladies
-  - 2018
-
 ---
-
-
 
 ## Retrospective 2018
 
