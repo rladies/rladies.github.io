@@ -1,19 +1,17 @@
 ---
 title: "The R-Ladies Mentoring Program: R-Ladies Cotonou journey"
-author: 
-- "[Nadejda Sero](https://twitter.com/sbnadejda), organizer of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
+author:
+  - "[Nadejda Sero](https://twitter.com/sbnadejda), organizer of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
 date: "2021-02-04"
 description: "R-Ladies Mentoring Program"
-tags: 
-- community
-- mentoring
-- africa
-- english
+tags:
+  - community
+  - mentoring
 categories:
-- r-ladies
+  - R-Ladies
 ---
 
-*We are very happy to provide you this blog article in different languages, English, French and Spanish. If you would like to know more about how to contribute to the R-Ladies Blog in general or would like to recommend anything, please reach out to us with an e-mail at <christin@rladies.org>.*
+_We are very happy to provide you this blog article in different languages, English, French and Spanish. If you would like to know more about how to contribute to the R-Ladies Blog in general or would like to recommend anything, please reach out to us with an e-mail at <christin@rladies.org>._
 
 ## How it all started …? 🤔
 
@@ -28,7 +26,7 @@ These tweets led to the creation of R-Ladies Cotonou in September 2017! This mai
 At its creation, R-Ladies Cotonou had two members, Benedicta and me. However, she went back to her home country after graduation before our first meetup. She was very sad about leaving the chapter but she kept encouraging me a lot to continue the work we started together. She continued to support R-Ladies Cotonou.
 Back then, I did not have any experience with communities or managing groups and did not know where to start. However, I was lucky enough to benefit from my exchanges with [Maëlle Salmon](https://twitter.com/ma_salmon). I also learned from what the other chapters were sharing on Twitter. Still, I was doubting a lot and did not try to reach out the global team for help.
 
-*So, the first issue was recruiting co-organizers.* I set up a small meeting with some women who I thought may be interested in the idea and fortunately we became a team of four organizers. *Now, the second issue followed: we had to recruit members.*
+_So, the first issue was recruiting co-organizers._ I set up a small meeting with some women who I thought may be interested in the idea and fortunately we became a team of four organizers. _Now, the second issue followed: we had to recruit members._
 
 Before we could work on that issue, Internet access became a major problem in the country. Taxes were imposed and everything was quite expensive. We stopped discussing about the chapter development. The main source of my ideas was the tweets of other chapters! What could I do without Twitter? At the time, I did not use the R-Ladies organizer’s Slack much. It took us some time to get used to the new internet plans and slowly I appeared back on Slack.
 
@@ -68,7 +66,7 @@ I have learned a lot from this mentorship program and I believe I am spreading t
 
 Today, R-Ladies Cotonou is in good health, mostly because of the mentorship program! I recommend it to any chapter that needs help to set up, organize meetups, recruit members or anything else required for the chapter’s life.
 
-> ***Never worry, there is always an R-Ladies mentor to walk with you!***
+> **_Never worry, there is always an R-Ladies mentor to walk with you!_**
 
-*Author: [Nadejda Sero](https://twitter.com/sbnadejda), organizer of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
-Spanish translation: Florencia D’Andrea, Proofreading: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada*
+_Author: [Nadejda Sero](https://twitter.com/sbnadejda), organizer of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
+Spanish translation: Florencia D’Andrea, Proofreading: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada_

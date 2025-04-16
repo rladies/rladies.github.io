@@ -1,16 +1,14 @@
 ---
 title: "Actions to increase diversity in the R-Ladies São Paulo community"
-author: 
+author:
   - Beatriz Milz
   - Haydee Svab
   - Tatyane Paz Dominguez
   - Ianni Muliterno
   - Ana Paula Rocha
-date: '2023-10-04'
+date: "2023-10-04"
 categories:
   - R-Ladies
-  - community
-  - latin america
 tags:
   - latin america
   - community
@@ -80,25 +78,25 @@ Regarding racial diversity in the community in 2020, it is important to highligh
 
 It is also important to mention the [text written by the R-Ladies Global and R Forwards team about #BlackLivesMatter in 2020](https://www.rladies.org/news/2020-06-06-blm/). In this text, that was [translated into Portuguese by the R-Ladies São Paulo and that is on the community's blog](https://rladies-sp.org/posts/2020-06-rladies-global-blm/), R-Ladies Global committed to improving the way the organization supports Black, Indigenous, and other non-white groups:
 
-> *"While the R-Ladies mission is focused on improving gender diversity within the R community, we also recognize both the struggle that Black people face, and the compound effect of intersectionality when a member identifies with multiple underrepresented groups. \[...\] We commit to making our community spaces places of not only safety for all our members, but of active work towards equity and justice."* Source: [R-Ladies Global Blog](https://www.rladies.org/news/2020-06-06-blm/).
+> _"While the R-Ladies mission is focused on improving gender diversity within the R community, we also recognize both the struggle that Black people face, and the compound effect of intersectionality when a member identifies with multiple underrepresented groups. \[...\] We commit to making our community spaces places of not only safety for all our members, but of active work towards equity and justice."_ Source: [R-Ladies Global Blog](https://www.rladies.org/news/2020-06-06-blm/).
 
 In the questionnaire, we left an open question so that people could make suggestions to increase ethnic-racial diversity in the community, and below are some suggestions received:
 
--   Publicize R-Ladies in groups that address racial issues;
+- Publicize R-Ladies in groups that address racial issues;
 
--   Create quotas for the participation of Black people;
+- Create quotas for the participation of Black people;
 
--   Invite Black people to speak;
+- Invite Black people to speak;
 
--   Publish group statistics on this representation gap;
+- Publish group statistics on this representation gap;
 
--   Promote events focused on the theme of race;
+- Promote events focused on the theme of race;
 
--   Hold events in peripheral regions;
+- Hold events in peripheral regions;
 
--   Promote events focused on Black people;
+- Promote events focused on Black people;
 
--   Have Black people in the organization of the community.
+- Have Black people in the organization of the community.
 
 ### Inclusion of mothers/fathers/caregivers
 
@@ -106,11 +104,11 @@ In the questionnaire, we left an open question so that people could make suggest
 
 In 2020, 13% of the respondents had children. Similar to what was done with race, an open question was left and some of the suggestions received for including more people with children were:
 
--   Providing a space to leave children during events;
+- Providing a space to leave children during events;
 
--   Recording events so that mothers/fathers/caregivers can watch when it is more convenient;
+- Recording events so that mothers/fathers/caregivers can watch when it is more convenient;
 
--   Conducting online broadcasts of events to promote the participation of people who cannot attend in person.
+- Conducting online broadcasts of events to promote the participation of people who cannot attend in person.
 
 ### Inclusion of LGBTQIA+
 
@@ -132,9 +130,9 @@ The questionnaire conducted in 2020, and the discussions established above, poin
 
 In order to achieve that, some actions have been taken and will be briefly commented on below. In posts related to recent events, the activities were described in greater detail, for example:
 
--   [Event: Open Data Analysis with R](https://rladies-sp.org/posts/2023-03-evento-open-data-day/english.html)
+- [Event: Open Data Analysis with R](https://rladies-sp.org/posts/2023-03-evento-open-data-day/english.html)
 
--   [Event: Introduction to R Workshop](https://rladies-sp.org/posts/2023-01-evento-oficina-intro-R/)
+- [Event: Introduction to R Workshop](https://rladies-sp.org/posts/2023-01-evento-oficina-intro-R/)
 
 ![Picture of participants in a recent event.](logo.png)
 
@@ -142,11 +140,11 @@ In order to achieve that, some actions have been taken and will be briefly comme
 
 Seeking a greater diversity of participants in our events, we saved spots focusing on three groups (quotas):
 
--   Black, Brown and Indigenous people
+- Black, Brown and Indigenous people
 
--   mothers
+- mothers
 
--   women and other gender minorities
+- women and other gender minorities
 
 The quotas are also advertised on the community's social networks (mainly Instagram), in order to make it clear that the presence of these groups is welcome and desired.
 
@@ -194,26 +192,26 @@ There are several people currently involved in the organization of the R-Ladies 
 
 ![Pictures of the members of the co-organizing team.](team-1.jpg) ![Pictures of the members of the co-organizing team.](team-2.jpg)
 
--   [Ana Carolina Moreno](https://www.linkedin.com/in/anacarolinamoreno/)
+- [Ana Carolina Moreno](https://www.linkedin.com/in/anacarolinamoreno/)
 
--   [Ana Paula Rocha](https://www.linkedin.com/in/aprocha/)
+- [Ana Paula Rocha](https://www.linkedin.com/in/aprocha/)
 
--   [Angélica Custódio](https://www.linkedin.com/in/angelicacustodio/)
+- [Angélica Custódio](https://www.linkedin.com/in/angelicacustodio/)
 
--   [Beatriz Milz](https://beamilz.com/)
+- [Beatriz Milz](https://beamilz.com/)
 
--   [Fernanda Peres](https://www.linkedin.com/in/fernandafielperes/)
+- [Fernanda Peres](https://www.linkedin.com/in/fernandafielperes/)
 
--   [Geovana Lopes Batista](https://www.linkedin.com/in/geovanalopes/)
+- [Geovana Lopes Batista](https://www.linkedin.com/in/geovanalopes/)
 
--   [Haydee Svab](https://www.linkedin.com/in/hsvab/)
+- [Haydee Svab](https://www.linkedin.com/in/hsvab/)
 
--   [Ianní Muliterno](https://www.linkedin.com/in/iannimuliterno/)
+- [Ianní Muliterno](https://www.linkedin.com/in/iannimuliterno/)
 
--   [Jean Gabriel Reis do Prado](https://www.linkedin.com/in/jeangprado/)
+- [Jean Gabriel Reis do Prado](https://www.linkedin.com/in/jeangprado/)
 
--   [Luana Antunes Tolentino Souza](https://www.linkedin.com/in/luana-antunes-alexandre-aa572b48/)
+- [Luana Antunes Tolentino Souza](https://www.linkedin.com/in/luana-antunes-alexandre-aa572b48/)
 
--   [Nathália Demétrio](https://www.linkedin.com/in/nathaliademetrio/)
+- [Nathália Demétrio](https://www.linkedin.com/in/nathaliademetrio/)
 
--   [Tatyane Paz Dominguez](https://www.linkedin.com/in/tatyane-paz-dominguez-264224213/)
+- [Tatyane Paz Dominguez](https://www.linkedin.com/in/tatyane-paz-dominguez-264224213/)
