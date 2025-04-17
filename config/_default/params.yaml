@@ -17,6 +17,12 @@ footerEnableTextWidget: true
 footerEnableLangWidget: true
 
 social:
+  - title: linkedin
+    handle: 'rladies'
+    relme: true
+    footer: true
+    sharethis: true
+    network: ''
   - title: bluesky
     handle: 'rladies.org'
     relme: true
