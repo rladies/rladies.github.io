@@ -1,16 +1,14 @@
 ---
 title: "1. Behind the scenes of R-Ladies IWD2018 Twitter action!"
 author: "R-Ladies"
-date: '2018-03-26'
-description: 'Part 1: Ideation and Creation!'
+date: "2018-03-26"
+description: "Part 1: Ideation and Creation!"
 tags:
-- iwd
-- twitter
-- part1
-- 2018
+  - Twitter
+  - RStats
 categories:
-- IWD
-- R-Ladies
+  - IWD
+  - R-Ladies
 ---
 
 ### As told by Maëlle Salmon with notes from Bea Hernández
@@ -33,7 +31,7 @@ We advertised the directory again via different channels, in particular our glob
 
 ### Prettifying the directory
 
-*A Note from [Bea](https://twitter.com/chucheria) on Prettifying the Directory:* After doing the first "ugly" screenshots, we (Page, Sheila, and I) discovered we didn't have a method for adding names, so titles and other info were placed in the name. In addition to the big font for the name, it made the name too long and some of the screenshots ended up looking ugly.
+_A Note from [Bea](https://twitter.com/chucheria) on Prettifying the Directory:_ After doing the first "ugly" screenshots, we (Page, Sheila, and I) discovered we didn't have a method for adding names, so titles and other info were placed in the name. In addition to the big font for the name, it made the name too long and some of the screenshots ended up looking ugly.
 
 We modified the information, but even after that we discovered that depending on who made the screenshot the font was different. We haven't found the problem to that, but everything points to an issue with `revealJS`.
 
@@ -87,20 +85,19 @@ ladies <- dplyr::mutate(ladies, twitter = stringr::str_replace(social_network_tw
 
 ```
 
-
 ## Webshooting and random complimenting
 
 What does posting R-Ladies profile mean? I decided a good recipe for a tweet was:
 
-* A screenshot of the R-Ladies directory entry, since it'd mean an image, and since it contains important information about the talents and interests of each R-Lady
+- A screenshot of the R-Ladies directory entry, since it'd mean an image, and since it contains important information about the talents and interests of each R-Lady
 
-* The #rladies and #iwd2018 hashtags (Thanks to [Heather Turner](http://www.heatherturner.net) for showing me where to find the official hashtag in advance!) to increase visibility of the feed and to promote our hashtag.
+- The #rladies and #iwd2018 hashtags (Thanks to [Heather Turner](http://www.heatherturner.net) for showing me where to find the official hashtag in advance!) to increase visibility of the feed and to promote our hashtag.
 
-* Random compliments to make it friendlier and more fun
+- Random compliments to make it friendlier and more fun
 
-* A direct link to the directory entry to drive traffic to the directory and allow the tweet reader to really go learn more about the R-Lady, since most entries list other profiles such as a personal website or GitHub account
+- A direct link to the directory entry to drive traffic to the directory and allow the tweet reader to really go learn more about the R-Lady, since most entries list other profiles such as a personal website or GitHub account
 
-* The Twitter handle of the R-Lady if available to help their visibility
+- The Twitter handle of the R-Lady if available to help their visibility
 
 ### Preparing the tweets
 
@@ -175,6 +172,7 @@ get_shot <- function(url, person){
   file.remove("webshot.png")
 }
 ```
+
 All images were prepared before tweeting, so that they were ready a bit before IWD.
 
 ## Next Up: Part 2

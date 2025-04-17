@@ -1,17 +1,14 @@
 ---
-title: '3. Behind the scenes of R-Ladies IWD2018 Twitter action!'
+title: "3. Behind the scenes of R-Ladies IWD2018 Twitter action!"
 description: "Part 3: The Grand Conclusion!"
 author: R-Ladies
-date: '2018-03-28'
+date: "2018-03-28"
 slug: conclusion
 categories:
   - IWD
   - R-Ladies
 tags:
-  - iwd
-  - part3
-  - twitter
-  - 2018
+  - Twitter
 ---
 
 ### As told by Page and Sheila

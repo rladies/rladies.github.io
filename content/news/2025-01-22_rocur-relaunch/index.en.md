@@ -4,10 +4,10 @@ author: "Rotating Curation Team"
 type: blog
 date: "2025-01-24"
 image: img/rladies-bluesky.jpg
-tags: 
-- rocur
-categories: 
-- R-Ladies
+tags:
+  - rocur
+categories:
+  - R-Ladies
 summary: We're looking for curators for the We Are R-Ladies Bluesky account!
 slug: rocur-relaunch-2025
 ---
@@ -26,13 +26,13 @@ We are excited to revive the RoCur program on Bluesky, picking up where we left 
 
 ## Become a Curator
 
-*Are you interested in becoming a curator?* Curating is a great way to share and learn new R techniques, build your social media presence, develop your science communication skills, and connect with a supportive community. We welcome curators of all experiences levels and professional backgrounds. Curation may be conducted in any language; posts are not restricted to English!
+_Are you interested in becoming a curator?_ Curating is a great way to share and learn new R techniques, build your social media presence, develop your science communication skills, and connect with a supportive community. We welcome curators of all experiences levels and professional backgrounds. Curation may be conducted in any language; posts are not restricted to English!
 
 Sign up to be a curator on the [\@weare.rladies.org Curator Sign Up Form](https://airtable.com/appjkZZgtF0iEWFjx/pagqsAma1WmUYxa9j/form). We are currently looking for curators until the middle of 2025, and we will open up more spots as the year progresses.
 
 ## Nominate Someone
 
-*Do you know someone who would be a great curator?* Perhaps a colleague, someone from your local R-Ladies chapter, or a user you can't get enough of on Bluesky! You can help us identify fantastic curators by nominating them. Submit your nominations on the [\@weare.rladies.org Curator Nomination Form](https://airtable.com/appFIBzsk2AxWlGMt/pagfezjuCxohikOOa/form). You can nominate as many people as you would like, so do not hesitate to share this opportunity.
+_Do you know someone who would be a great curator?_ Perhaps a colleague, someone from your local R-Ladies chapter, or a user you can't get enough of on Bluesky! You can help us identify fantastic curators by nominating them. Submit your nominations on the [\@weare.rladies.org Curator Nomination Form](https://airtable.com/appFIBzsk2AxWlGMt/pagfezjuCxohikOOa/form). You can nominate as many people as you would like, so do not hesitate to share this opportunity.
 
 ## Got Questions?
 

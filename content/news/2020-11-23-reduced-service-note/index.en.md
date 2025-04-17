@@ -4,13 +4,11 @@ author: "R-Ladies Global Leadership Team"
 type: blog
 date: "2020-11-23"
 description: "Reduced Service Mode for R-Ladies Global"
-tags: 
-- community
+tags:
+  - community
 categories:
-- r-ladies
+  - R-Ladies
 ---
-
-
 
 This year has been and continues to be a challenging year for many, if not all, of us.
 
@@ -30,15 +28,15 @@ In order to provide this, we have to largely pause work on a lot of initiatives 
 
 Depending-on-capacity activities:
 
-Most of our other initiatives may see some activity but it will largely be determined by whatever capacity we have at a given moment. This affects things like: 
+Most of our other initiatives may see some activity but it will largely be determined by whatever capacity we have at a given moment. This affects things like:
 
-* Mentoring program
-* Website and R-Ladies blog
-* R-Ladies Directory
-* Reviewer network
-* RoCur Twitter account (@WeAreRLadies)
-* Community Slack
-* Any changes in existing chapter infrastructure (email, GitHub, YouTube, Meetup, Slack Organizers, chapter’s social media)
-* Liaison with others orgs and conferences
+- Mentoring program
+- Website and R-Ladies blog
+- R-Ladies Directory
+- Reviewer network
+- RoCur Twitter account (@WeAreRLadies)
+- Community Slack
+- Any changes in existing chapter infrastructure (email, GitHub, YouTube, Meetup, Slack Organizers, chapter’s social media)
+- Liaison with others orgs and conferences
 
 We thank you for your understanding. We want to get through this together and return to making the R community a better, fairer, and more inclusive place, soon!

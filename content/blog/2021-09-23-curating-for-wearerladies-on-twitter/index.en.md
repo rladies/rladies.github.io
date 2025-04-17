@@ -3,13 +3,13 @@ title: "Curating for @WeAreRLadies on Twitter"
 author: "Shannon Pileggi"
 date: "2021-09-23"
 description: "From creating content to cultivating connections."
-tags: 
-- WeAreRLadies
-- twitter
-- rocur
-- community
+tags:
+  - WeAreRLadies
+  - twitter
+  - rocur
+  - community
 categories:
-- R-Ladies
+  - R-Ladies
 ---
 
 <script src="{{< blogdown/postref >}}index.en_files/twitter-widget/widgets.js"></script>
@@ -29,13 +29,13 @@ Figure 1: Photo by Arno Smit on Unsplash (https://unsplash.com/photos/iI72r3gSwW
 
 </div>
 
-*This post was originally published on Shannon Pileggi’s <a href="https://www.pipinghotdata.com/posts/2021-09-23-curating-for-wearerladies-on-twitter/" target="_blank">personal blog</a>.*
+_This post was originally published on Shannon Pileggi’s <a href="https://www.pipinghotdata.com/posts/2021-09-23-curating-for-wearerladies-on-twitter/" target="_blank">personal blog</a>._
 
 # TL; DR
 
 In February 2021 I tweeted to a daunting &gt;20k followers by curating for <a href="https://twitter.com/WeAreRLadies" target="_blank"><code>@WeAreLadies</code></a> on Twitter. This was great opportunity to share knowledge, interact with others, and learn something in return, ultimately cultivating new connections and collaborations. From preparation to fruition, I hope this post helps you confidently enroll as a curator!
 
-*Added 2021-10-05:* For a broad overview, check out the poster presentation <a href="https://www.pipinghotdata.com/talks/2021-10-07-be-great-and-curate/" target="_blank">Be great and curate!</a> for the 2021 Women in Statistics and Data Science conference.
+_Added 2021-10-05:_ For a broad overview, check out the poster presentation <a href="https://www.pipinghotdata.com/talks/2021-10-07-be-great-and-curate/" target="_blank">Be great and curate!</a> for the 2021 Women in Statistics and Data Science conference.
 
 # About `@WeAreRLadies`
 
@@ -57,7 +57,7 @@ My personal strategy for combating imposter syndrome is to prepare. For my curat
 Here is my personal timeline to leading up to curation.
 
 | Time before curation | Action taken                                     |
-|:---------------------|:-------------------------------------------------|
+| :------------------- | :----------------------------------------------- |
 | 3 years              | Became active on twitter                         |
 | 3 months             | Signed up to curate                              |
 | 3 weeks              | Notified manager; discussed work-related content |
@@ -138,7 +138,7 @@ memorable for me, my previous experience as an educator, and some reflection
 questions to inspire content.
 
 | Inspiration source                                                                                                                                                                                                                                                       | Example realization                                                                                                                     |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | 1\. Rotating curator Mine Çetinkaya-Rundel (<a href="https://twitter.com/minebocek" target="_blank"><code>@minebocek</code></a>) tweets awesome <a href="https://twitter.com/WeAreRLadies/status/1064704918102163457" target="_blank">gifs</a>                           | <a href="https://twitter.com/WeAreRLadies/status/1361802517735178243" target="_blank">Gifs</a> for R code demos                         |
 | 2\. Rotating curator Megan Stodel (<a href="https://twitter.com/MeganStodel" target="_blank"><code>@MeganStodel</code></a>) tweets a <a href="https://twitter.com/WeAreRLadies/status/1313177623128944645" target="_blank">project</a> inspired by curating              | An R project to <a href="https://twitter.com/WeAreRLadies/status/1361286341317779456" target="_blank">introduce myself</a> as a curator |
 | 3\. Rotating curator Julia Piaskowski (<a href="https://twitter.com/SeedsAndBreeds" target="_blank"><code>@SeedsAndBreeds</code></a>) tweets a great technical thread on <a href="https://twitter.com/WeAreRLadies/status/1223790298024726528" target="_blank">ANOVA</a> | A thread on <a href="https://twitter.com/WeAreRLadies/status/1363144545677017089" target="_blank">blogging resources</a>                |
@@ -183,7 +183,7 @@ Moreover, there were limitations to the platform that added challenges to curati
 
 5.  When uploading local content, you can add <a href="https://help.twitter.com/en/using-twitter/picture-descriptions" target="_blank">descriptions</a> to both gifs and images in the regular Twitter interface to create inclusive content for community members that use assistive reading technology; however, in TweetDeck, descriptions were enabled for images but not gifs.
 
-6.  With TweetDeck, you can tweet from both your personal account and your curator account. You can set the options to default to the curator account, *but* there were still some instances where I still managed to inadvertently tweet from my personal account when I meant to tweet from the curator account. (I did delete the tweet and re-tweet from the correct account.)
+6.  With TweetDeck, you can tweet from both your personal account and your curator account. You can set the options to default to the curator account, _but_ there were still some instances where I still managed to inadvertently tweet from my personal account when I meant to tweet from the curator account. (I did delete the tweet and re-tweet from the correct account.)
 
 I spent a lot of time my first couple of days as a curator getting used to TweetDeck, reaching out to other curators for tips, and researching alternative solutions and plug-ins that ultimately did not help. Twitter is targeting TweetDeck <a href="https://www.theverge.com/2021/3/9/22321991/twitter-tweetdeck-overhaul-redesign-product-changes" target="_blank">enhancements</a> later in 2021, so I don’t think it is worth documenting all of my methods and work-arounds. However, if you are serving as a curator and struggling with TweetDeck, please reach out - I am happy to share what ended up working for me. You can also prepare yourself by practicing tweeting from TweetDeck with your personal account prior to curating.
 
@@ -206,7 +206,7 @@ questions you might not have been comfortable asking from your own personal acco
 
 # Supporting your curators
 
-Just because a Twitter account has &gt;20K followers, the likes, re-tweets, and comments don’t come automatically. You still have to earn engagement with your content. Many of the tweets I sent had little engagement, and that is okay. Supporting your curators by engaging with their tweets or sending notes of encouragement is *much* appreciated. I thank **everyone** who engaged with me during my curation, with a special shout out to Alison Hill who re-energized me mid-week with comments on the R-Ladies bloggers <a href="https://twitter.com/WeAreRLadies/status/1362021673239785473" target="_blank">thread</a>. I cannot emphasize this enough: every like, re-tweet, comment, and direct message helps!
+Just because a Twitter account has &gt;20K followers, the likes, re-tweets, and comments don’t come automatically. You still have to earn engagement with your content. Many of the tweets I sent had little engagement, and that is okay. Supporting your curators by engaging with their tweets or sending notes of encouragement is _much_ appreciated. I thank **everyone** who engaged with me during my curation, with a special shout out to Alison Hill who re-energized me mid-week with comments on the R-Ladies bloggers <a href="https://twitter.com/WeAreRLadies/status/1362021673239785473" target="_blank">thread</a>. I cannot emphasize this enough: every like, re-tweet, comment, and direct message helps!
 
 In addition, if you have curated in the past, consider sending new curators a personal welcome message and an invitation to ask you any questions. Following my curation week, I offered camaraderie and tips to <a href="https://twitter.com/alehsegura13" target="_blank">Ale Segura</a>, and in return, she did the same for <a href="https://twitter.com/ShreyaLouis" target="_blank">Shreya Louis</a> following her.
 
@@ -216,19 +216,19 @@ Between prepared and ad-hoc content and discussions with followers, I tweeted a 
 
 Serving as a curator was intimidating and time consuming, but I am very glad I did it. Many good things have happened as direct result of that week, including:
 
--   <a href="https://twitter.com/WeAreRLadies/status/1363144545677017089" target="_blank">discussing</a> comparisons between `{blogdown}` and `{distill}` with Alison Hill.
+- <a href="https://twitter.com/WeAreRLadies/status/1363144545677017089" target="_blank">discussing</a> comparisons between `{blogdown}` and `{distill}` with Alison Hill.
 
--   <a href="https://www.pipinghotdata.com/posts/2021-03-08-r-ladies-styled-code-gifs-with-xaringan-and-flipbookr/" target="_blank">collaborating</a> with Silvia Canelón to style code gifs.
+- <a href="https://www.pipinghotdata.com/posts/2021-03-08-r-ladies-styled-code-gifs-with-xaringan-and-flipbookr/" target="_blank">collaborating</a> with Silvia Canelón to style code gifs.
 
--   engaging with new people on Twitter that I want to continue to engage with.
+- engaging with new people on Twitter that I want to continue to engage with.
 
--   learning about valuable new-to-me packages, functions, and work flows.
+- learning about valuable new-to-me packages, functions, and work flows.
 
--   being invited to <a href="https://www.pipinghotdata.com/talks/2021-04-22-growing-into-the-r-community/" target="_blank">speak for R-Ladies Miami</a>.
+- being invited to <a href="https://www.pipinghotdata.com/talks/2021-04-22-growing-into-the-r-community/" target="_blank">speak for R-Ladies Miami</a>.
 
--   seeing my “Asking for help online” content re-used in Sharla Gelfand’s <a href="https://twitter.com/sharlagelfand/status/1365665149063987201" target="_blank">“make a reprex… please”</a> presentation.
+- seeing my “Asking for help online” content re-used in Sharla Gelfand’s <a href="https://twitter.com/sharlagelfand/status/1365665149063987201" target="_blank">“make a reprex… please”</a> presentation.
 
--   co-developing a unit testing workshop with Gordon Shotwell for R-Ladies Philly.
+- co-developing a unit testing workshop with Gordon Shotwell for R-Ladies Philly.
 
 During my curating week I tried to embody the tweets that I value: honest questions, thoughtful discussion, generous sharing, supportive community, and humorous exchanges. To borrow from Vicki Boykis in the rstudio::global(2021) <a href="https://rstudio.com/resources/rstudioglobal-2021/your-public-garden/" target="_blank">keynote</a>, I created my own public garden that cultivated new connections and collaborations. And now, I am more confident in continuing these practices from my personal Twitter account.
 

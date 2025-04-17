@@ -4,10 +4,10 @@ author: "Daniela Vázquez"
 type: blog
 date: "2023-11-10"
 output: html_document
-tags: 
-- community
-categories: 
-- R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: R-Ladies are on mastodon's Hackyderm server! Follow us at [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)!
 ---
 
@@ -25,7 +25,7 @@ As R-Ladies' commitment to building an inclusive and friendly community remains 
 
 # Some considerations
 
-In order to maintain  control of our handle and archive, the X  `@RLadiesGlobal` account will remain open; however, we will no longer engage in that platform.
+In order to maintain control of our handle and archive, the X `@RLadiesGlobal` account will remain open; however, we will no longer engage in that platform.
 
 We believe each local chapter knows their community and is best qualified to determine which social media channels are most appropriate. Therefore, we are not requiring local chapters to follow this change, but strongly encourage them to consider expanding their engagement to Mastodon.
 
