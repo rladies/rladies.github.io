@@ -52,7 +52,7 @@ some_cols <- c("meetup", "twitter",
                "instagram", "linkedin", 
                "periscope", "youtube", 
                "github", "website", 
-               "slack", "mastodon")
+               "slack", "mastodon", "bluesky")
 
 meetup <- read_json(here("data", "meetup", "chapters.json"),
                     simplifyVector = TRUE) |> 

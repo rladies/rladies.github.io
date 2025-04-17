@@ -8,11 +8,12 @@
       "meetup": "rladies-cologne",
       "twitter": "rladies_cologne",
       "email": "cologne@rladies.org",
-      "linkedin": "r-ladies-cologne"
+      "linkedin": "r-ladies-cologne",
+      "bluesky": "rladies-cologne.bsky.social"
     },
     "organizers": {
-      "current": ["Cosima Meyer", "Gabe Winter"],
-      "former": ["Luciana Imbiriba", "Paulina Nemcova"]
+      "current": ["Sara Schiesberg", "Gabe Winter", "Lívia Oliveira"],
+      "former": ["Luciana Imbiriba", "Paulina Nemcova", "Cosima Meyer"]
     }
   }
 ]
