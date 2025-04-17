@@ -17,6 +17,18 @@ footerEnableTextWidget: true
 footerEnableLangWidget: true
 
 social:
+  - title: linkedin
+    handle: 'rladies'
+    relme: true
+    footer: true
+    sharethis: true
+    network: ''
+  - title: bluesky
+    handle: 'rladies.org'
+    relme: true
+    footer: true
+    sharethis: true
+    network: ''
   - title: mastodon
     handle: '@RLadiesGlobal@hachyderm.io'
     relme: true
@@ -48,14 +60,8 @@ social:
     footer: true
     sharethis: true
     network: ''
-twitter:
-  - title: We are R-Ladies
-    handle: 'WeAreRLadies'
+  - title: bluesky
+    handle: 'weare.rladies.org'
     footer: true
-    sharethis: false
-    network: ''
-  - title: IWD R-Ladies
-    handle: 'rladies_iwd'
-    footer: true
-    sharethis: false
+    sharethis: true
     network: ''
