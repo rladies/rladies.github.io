@@ -1,3 +1,0 @@
-# ignore all renv related files and folders
-**/renv.lock
-**renv/

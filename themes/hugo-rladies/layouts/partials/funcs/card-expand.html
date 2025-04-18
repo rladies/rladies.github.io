@@ -6,7 +6,7 @@
 
 {{ $tags := slice }}
 {{ range $index, $item := . }}
-    {{ $replaced := replaceRE "[[:punct:]]" "," ($item | urlize) }}
+    {{ $replaced := replaceRE "[[:punct:]]" "," ($item | jsonify | urlize) }}
     {{ $split := split $replaced "," }}
     {{ $tags = $tags | append $split }}
 {{ end }}
