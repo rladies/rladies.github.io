@@ -1,78 +1,86 @@
-404_title: '404'
-404_description: "Oops! Cette page n'existe pas!"
+404_title:  '404'
+404_description: "Oups ! Cette page n'existe pas !"
 subheader: ''
 
 # menu ----
-home: "Home"
-about-us: 'About'
+home: "Accueil"
+about-us: 'À propos'
 mission: "Mission"
-get-involved: 'Get involved'
-global-team: 'Meet the global team'
-history: 'History'
-news: 'News'
+get-involved: 'Impliquez-vous'
+global-team: 'Rencontrez l\'équipe mondiale'
+history: 'Histoire'
+news: 'Actualités'
 coc: 'Code de Conduite'
-directory: 'Directory'
-activities: 'Activities'
-events: 'Events'
-mentoring: 'Mentoring Program'
-coordinated: 'Coordinated by the Global Team'
-dashboard: 'Global dashboard'
-rladies-blogs: 'Blogs by R-Ladies'
+directory: 'Annuaire'
+activities: 'Activités'
+events: 'Événements'
+mentoring: 'Programme de Mentorat'
+coordinated: 'Coordonné par l\'équipe mondiale'
+dashboard: 'Tableau de bord global'
+rladies-blogs: 'Blogs par R-Ladies'
 press: 'Dans la presse'
 blog: 'Blog'
 
 # counters ----
 counter_archives: '{{.Count}} articles au total'
-counter_tagcloud: '{{.Count}} Tags au total'
-counter_categories: '{{.Count}} Catégories au total'
+counter_tagcloud: '{{.Count}} mots-clés au total'
+counter_categories: '{{.Count}} catégories au total'
 
 # footer ----
-footer_lang_title: 'Langage'
-footer_followme_title: 'Follow us'
+footer_lang_title: 'Langues'
+footer_followme_title: 'Suivez-nous'
 footer_contact_title: 'Contact'
-footer_donate: 'Donate'
-footer_text_title: 'Code of Conduct'
+footer_donate: 'Faire un don à'
+footer_text_title: 'Code de Conduite'
 footer_text_content: |
-    R-Ladies is dedicated to providing a harassment-free experience for
-    everyone. We do not tolerate harassment of participants in any form. Read
-    our [Code of Conduct](/fr/coc)
+    R-Ladies s'engage à offrir une expérience sans harcèlement
+    pour tout le monde. Nous ne tolérons aucune forme de harcèlement
+    à l'égard des participants. Lisez notre [Code de Conduite](/coc)
 
 # Home ----
-home_feed: 'Latest posts'
-home_featured: 'Featured R-Ladies'
-home_activity: 'Our activities'
+home_feed: 'Derniers articles'
+home_featured: 'R-Ladies en vedette'
+home_activity: 'Nos activités'
 
 # Globals ----
-country: 'Country'
-countries: 'Countries'
-chapter: "Chapter"
-chapters: 'Chapters'
-city: "City"
-cities: "Cities"
-event: "Event"
+country: 'Pays'
+countries: 'Pays'
+chapter: "Chapitre"
+chapters: 'Chapitres'
+city: "Ville"
+cities: "Villes"
+event: "Événement"
+
+# About Global Team ----
+leadership: 'Direction'
+global-team: 'Équipe Mondiale'
+alumni: 'Anciennes membres'
+alumni-text: |
+  R-Ladies est extrêmement reconnaissante pour tout le travail acharné
+  et le dévouement de nos anciennes membres et dirigeantes.
+  Nous ne serions pas où nous en sommes aujourd'hui sans elles.
 
 # Other ----
-social_media: "Social media"
+social_media: "Réseaux sociaux"
 archive: 'Archive'
-tag: 'Tag: '
-tags: 'Tags'
-category: 'Catégory: '
+tag: 'Mot-clé : '
+tags: 'Mots-clés'
+category: 'Catégorie : '
 categories: 'Catégories'
 author: 'Auteur'
-authors: 'Authors'
-prev: 'Prec'
-next: 'Suiv'
-toc: 'Sommaire'
-comments: 'Comments'
+authors: 'Auteurs'
+prev: 'Précédent'
+next: 'Suivant'
+toc: 'Table des matières'
+comments: 'Commentaires'
 read_more: 'Lire la suite'
-see_details: 'See details'
+see_details: 'Voir les détails'
 
 # git history
-last_edit: 'This post was last edited on'
-last_message: 'with the message'
+last_edit: 'Ce message a été modifié pour la dernière fois le'
+last_message: 'avec le message'
 
 # Language ----
-translations: 'Translations'
+translations: 'Traductions'
 missing_translation: |
-    Nous sommes désolé·e·s, cette page 
-    n''a pas été traduite en français.'
+    Cette page a été traduite automatiquement avec [DeepL](https://www.deepl.com/fr/translator) et n'a pas encore été relue par un humain. Veuillez en tenir compte lors de la lecture, car certaines choses peuvent avoir été perdues lors de la traduction.
