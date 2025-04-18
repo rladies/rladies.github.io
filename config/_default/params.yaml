@@ -22,6 +22,7 @@ social:
     relme: true
     footer: true
     sharethis: true
+    company: true
     network: ''
   - title: bluesky
     handle: 'rladies.org'

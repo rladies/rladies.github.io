@@ -29,14 +29,14 @@
   {{ $data.Set "fa" "fab fa-researchgate" }}
 
 {{ else if eq .type "linkedin" }}
+  {{ if .company }}
   {{ $data.Set "string" "https://www.linkedin.com/company/%s" }}
+  {{ else }}
+    {{ $data.Set "string" "https://www.linkedin.com/in/%s" }}
+  {{ end }}
   {{ $data.Set "fa" "fab fa-linkedin" }}
 
 {{ else if eq .type "facebook" }}
-  {{ $data.Set "string" "https://www.facebook.com/%s" }}
-  {{ $data.Set "fa" "fab fa-facebook" }}
-
-{{ else if eq .type "linkedin" }}
   {{ $data.Set "string" "https://www.facebook.com/%s" }}
   {{ $data.Set "fa" "fab fa-facebook" }}
 
