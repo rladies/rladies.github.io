@@ -5,4 +5,5 @@ summary: "I asked the speaker on that day to share her experience from choosing 
 date: "01-01-2019"
 mentee: "Nadeja Sero"
 mentor: ""
+article: /blog/2021-02-04-cotonout_mentoring
 ---

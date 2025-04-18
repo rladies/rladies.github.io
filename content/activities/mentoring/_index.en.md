@@ -1,5 +1,6 @@
 ---
 title: "Mentoring program"
+type: "mentoring"
 ---
 
 Never worry, there is always an R-Lady mentor to walk with you!
