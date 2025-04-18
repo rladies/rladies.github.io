@@ -20,9 +20,10 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ or (T .Identifier) .Name | safeHTML }} <span class="caret"></span>
                     </a>
+
                    <div class="dropdown-menu">
                         {{ range .Children }}
-                            <a class="dropdown-item" href="{{ .URL | relLangURL }}"> {{ or (T .Identifier) .Name | safeHTML }} </a>
+                            <a class="dropdown-item" href="{{ .URL | relLangURL }}"> {{ .Name | safeHTML }} </a>
                         {{ end }}
                     </div>
                 </li>

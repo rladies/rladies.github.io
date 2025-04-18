@@ -4,29 +4,30 @@ main:
     weight: 1
     
   - identifier: about-us
+    name: About us
     url: '#'
     weight: 2
-  - identifier: mission
+  - name: mission
     url: /about-us/mission/
     weight: 1
     parent: about-us
-  - identifier: get-involved
+  - name: Get involved
     url: /about-us/involved/
     weight: 2
     parent: about-us
-  - identifier: global-team
+  - name: Global team
     url: /about-us/global-team/
     weight: 3
     parent: about-us
-  - identifier: history
+  - name: history
     url: /about-us/history/
     weight: 4
     parent: about-us
-  - identifier: news
+  - name: news
     url: /news/
     weight: 5
     parent: about-us
-  - identifier: code-of-conduct
+  - name: Code of Conduct
     url: /coc/
     weight: 6
     parent: about-us
