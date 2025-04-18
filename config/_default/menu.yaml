@@ -1,8 +1,4 @@
 main:
-  - identifier: home
-    url: /
-    weight: 1
-    
   - identifier: about-us
     name: About us
     url: '#'
@@ -33,36 +29,38 @@ main:
     parent: about-us
 
   - identifier: directory
+    name: Directory
     url: /directory/
     weight: 3
     
   - identifier: activities
     weight: 4
-  - identifier: events
+  - name: events
     url: /activities/events/
     weight: 1
     parent: activities
-  - identifier: mentoring
+  - name: mentoring
     url: /activities/mentoring/
     weight: 2
     parent: activities
-  - identifier: coordinated
+  - name: coordinated
     url: /activities/gt-coordinated/
     weight: 3
     parent: activities
-  - identifier: dashboard
+  - name: dashboard
     url: 'https://benubah.github.io/r-community-explorer/rladies.html'
     weight: 4
     parent: activities
-  - identifier: rladies-blogs
+  - name: R-Ladies blogs
     url: /activities/rladies-blogs
     weight: 5
     parent: activities
-  - identifier: press
+  - name: press
     url: /press
     weight: 7
     parent: activities
     
   - identifier: blog
+    name: blog
     url: /blog
     weight: 5

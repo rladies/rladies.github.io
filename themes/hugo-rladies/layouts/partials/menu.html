@@ -18,12 +18,12 @@
         {{ range .Site.Menus.main }} 
             {{ if .HasChildren }}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ .Name | safeHTML }} <span class="caret"></span>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ or .Name (T .Identifier) | safeHTML }} <span class="caret"></span>
                     </a>
 
                    <div class="dropdown-menu">
                         {{ range .Children }}
-                            <a class="dropdown-item" href="{{ .URL | relLangURL }}"> {{ .Name | safeHTML }} </a>
+                            <a class="dropdown-item" href="{{ .URL | relLangURL }}"> {{ or .Name (T .Identifier) | safeHTML }} </a>
                         {{ end }}
                     </div>
                 </li>
