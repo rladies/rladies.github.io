@@ -18,7 +18,7 @@
         {{ range .Site.Menus.main }} 
             {{ if .HasChildren }}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ or (T .Identifier) .Name | safeHTML }} <span class="caret"></span>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ .Name | safeHTML }} <span class="caret"></span>
                     </a>
 
                    <div class="dropdown-menu">
