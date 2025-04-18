@@ -16,7 +16,7 @@ Information about the site internals and setup can be found in the repo [wiki](h
 There are many types of contributions we are happy to receive, for instance:
 
 - [Blog guest entry](https://github.com/rladies/website/wiki/Adding-a-new-blog-entry-or-translation)
-- [Add or Site language](https://github.com/rladies/website/wiki/Adding-a-new-language)
+- [Add a site language](https://github.com/rladies/website/wiki/Adding-a-new-language)
 - [Add a Press appearances](https://github.com/rladies/website/wiki/Adding-press-entries)
 - [Adding a chapter](https://github.com/rladies/website/wiki/Adding-a-chapter)
 - [Retiring former chapter organizers](https://github.com/rladies/rladies.github.io/wiki/Retiring-former-chapter-organizers)
