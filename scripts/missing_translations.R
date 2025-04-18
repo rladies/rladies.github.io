@@ -72,7 +72,7 @@ site_lang <- readLines(here::here("config/_default/languages.yaml"))
 site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
 
 # Loop through dirs
-for (bundle in bundles) {
+for (bundle in bundles[2:length(bundles)]) {
   bundle_index <- index_files[grepl(bundle, index_files)]
   source_file <- bundle_index[1]
 
