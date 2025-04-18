@@ -26,7 +26,7 @@ main:
     url: /news/
     weight: 5
     parent: about-us
-  - identifier: code-of-conduct
+  - identifier: coc
     url: /coc/
     weight: 6
     parent: about-us
@@ -34,7 +34,7 @@ main:
   - identifier: directory
     url: /directory/
     weight: 3
-    
+
   - identifier: activities
     weight: 4
   - identifier: events
