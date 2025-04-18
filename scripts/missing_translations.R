@@ -23,26 +23,7 @@
 #'
 #' @export
 autotranslate <- function(to_lang, from_lang, file) {
-  cat("Translating", file, "to", to_lang, "\n ")
-
-  aeolus::unleash(file)
-
-  deepl <- babeldown::deepl_translate_hugo(
-    post_path = file,
-    yaml_fields = c("title", "description", "summary"),
-    glossary_name = NULL,
-    source_lang = from_lang,
-    target_lang = to_lang,
-    formality = "default",
-  )
-
-  # Add custom yaml to indicate auto translation
-  deepl <- c(
-    "---",
-    sprintf("language: %s", to_lang),
-    sprintf("translated: no"),
-    deepl[2:(length(deepl))]
-  )
+  cat("  ", from_lang, "-->", to_lang, "\n ")
 
   new_file <- gsub(
     sprintf("[.]%s[.]", from_lang),
@@ -50,15 +31,34 @@ autotranslate <- function(to_lang, from_lang, file) {
     file
   )
 
-  writeLines(deepl, new_file)
+  if (!file.exists(new_file)) {
+    # Make sure file is sentence wrapped, for best translation.
+    aeolus::unleash(file)
+
+    deepl <- babeldown::deepl_translate_hugo(
+      post_path = file,
+      yaml_fields = c("title", "description", "summary"),
+      glossary_name = NULL,
+      source_lang = from_lang,
+      target_lang = ifelse(to_lang == "pt", "pt-pt", to_lang),
+      formality = "default",
+    )
+
+    # Add custom yaml to indicate auto translation
+    deepl <- c(
+      "---",
+      sprintf("language: %s", to_lang),
+      sprintf("translated: no"),
+      deepl[2:(length(deepl))]
+    )
+
+    writeLines(deepl, new_file)
+  }
 }
 
 # Get all index mds
-
-Sys.setenv(DEEPL_API_KEY = "8e104762-81f7-422c-ac2f-c71239bf973d:fx")
-
 index_files <- list.files(
-  here("content/news"),
+  here::here("content/news"),
   "^index",
   recursive = TRUE,
   full.names = TRUE
@@ -68,16 +68,16 @@ index_files <- index_files[grepl("[.]md", index_files)]
 bundles <- unique(dirname(index_files))
 
 # Get the site languages
-site_lang <- readLines(here("config/_default/languages.yaml"))
+site_lang <- readLines(here::here("config/_default/languages.yaml"))
 site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
 
 # Loop through dirs
-for (content in bundles) {
-  bundle_index <- index_files[grepl(content, index_files)]
+for (bundle in bundles) {
+  bundle_index <- index_files[grepl(bundle, index_files)]
   source_file <- bundle_index[1]
 
   j <- sapply(site_lang, function(x) {
-    grepl(paste0(".", x, ".md$"), bundle_index)
+    grepl(sprintf("[.]%s[.]md$", x), bundle_index)
   })
   if (!is.null(dim(j))) j <- apply(j, 2, any)
   if (all(j == FALSE)) {
@@ -95,12 +95,14 @@ for (content in bundles) {
     file.rename(tmpf, source_file)
   }
 
-  lapply(
+  cat("Translating", source_file, "\n ")
+  k <- lapply(
     names(j[!j]),
     autotranslate,
     from_lang = orig_lang,
     file = source_file
   )
+  cat("\n ")
 }
 
 # If you've generated non-translated content to
