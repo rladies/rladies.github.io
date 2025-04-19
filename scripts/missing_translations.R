@@ -1,3 +1,38 @@
+#' Get Site Languages from Configuration
+#'
+#' This function reads the `languages.yaml` file from the site's configuration and
+#' extracts the list of language codes defined for the site. It is used to identify
+#' the supported languages for content translation or other operations.
+#'
+#' @return A character vector containing the site language codes as defined in
+#'         "config/_default/languages.yaml". Language codes are stripped of trailing colons.
+#'
+#' @description
+#' The function reads the "languages.yaml" file, finds lines starting with lowercase
+#' alphabets (assumed to correspond to language codes), removes trailing colons, and
+#' returns them as a vector.
+#'
+#' @note This function requires the `here` package to locate the configuration file.
+#'       Ensure the "languages.yaml" file exists at "config/_default/languages.yaml".
+#'
+#' @examples
+#' # Get the list of supported site languages
+#' site_languages <- get_site_lang()
+#' print(site_languages)
+
+get_site_lang <- function() {
+  readLines(
+    here::here(
+      "config/_default/languages.yaml"
+    )
+  )
+  gsub(
+    ":",
+    "",
+    site_lang[grep("^[a-z]", site_lang)]
+  )
+}
+
 #' Automatically translate a text file using DeepL API.
 #'
 #' @description
@@ -40,7 +75,12 @@ autotranslate <- function(to_lang, from_lang, file) {
       yaml_fields = c("title", "description", "summary"),
       glossary_name = NULL,
       source_lang = from_lang,
-      target_lang = ifelse(to_lang == "pt", "pt-pt", to_lang),
+      target_lang = switch(
+        to_lang,
+        "pt" = "pt-pt",
+        "en" = "en-us",
+        to_lang
+      ),
       formality = "default",
     )
 
@@ -83,8 +123,8 @@ autotranslate <- function(to_lang, from_lang, file) {
 #'
 #' @examples
 #' # Translate all "index.md" files in the "content" folder
-#' translate_content(folder = "content", pattern = "index.md")
-translate_content <- function(folder, pattern) {
+#' translate_all(folder = "content", pattern = "index.md")
+translate_all <- function(folder, pattern) {
   # Get all index mds
   index_files <- list.files(
     folder,
@@ -93,48 +133,81 @@ translate_content <- function(folder, pattern) {
     full.names = TRUE
   )
 
+  # Don't run sections
+  index_files <- index_files[!grepl("_index", index_files)]
+
   bundles <- unique(dirname(index_files))
+  bundles <- lapply(bundles, function(x) {
+    index_files[grepl(x, index_files)]
+  })
+  k <- lapply(bundles, translate_content)
+}
+
+
+#' Translate Content for Multiple Site Languages
+#'
+#' This function translates a given Markdown content file (`bundle`) into multiple
+#' language versions available in the site configuration. Translations are generated
+#' for site languages as needed when matching files do not already exist in the `bundle`.
+#'
+#' @param bundle A character vector containing file paths. The first element represents
+#' the source content file, and the rest are related file paths if applicable.
+#' @return None. The function translates the content and writes language-specific files
+#' in place. It also renames the input file if necessary to align with the detected
+#' source language format.
+#'
+#' @details
+#' - Determines the site's configured languages by calling `get_site_lang()`.
+#' - Identifies which language files already exist in `bundle`.
+#' - If the English version (`en`) isn't found, it is assumed as the default source.
+#' - Renames the source file if it does not match the detected language format.
+#' - Automatically translates the content into missing language variants using the
+#' `autotranslate()` function, specifying the original and target languages.
+#'
+#' @examples
+#' # Example: Translating a file bundle to other languages
+#' bundle <- c("content/example.md", "content/example.es.md")
+#' translate_content(bundle)
+#'
+#' # Example: No translations exist; assumes 'en' as the default language
+#' bundle <- c("content/example.md")
+#' translate_content(bundle)
+translate_content <- function(bundle) {
+  source_file <- bundle[1]
 
   # Get the site languages
-  site_lang <- readLines(here::here("config/_default/languages.yaml"))
-  site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
+  site_lang <- get_site_lang()
 
-  # Loop through dirs
-  for (bundle in bundles) {
-    bundle_index <- index_files[grepl(bundle, index_files)]
-    source_file <- bundle_index[1]
+  j <- sapply(site_lang, function(x) {
+    grepl(sprintf("[.]%s[.]md$", x), bundle)
+  })
+  if (!is.null(dim(j))) j <- apply(j, 2, any)
+  if (all(j == FALSE)) {
+    j["en"] <- TRUE
+  }
+  orig_lang <- names(j[j])[1]
 
-    j <- sapply(site_lang, function(x) {
-      grepl(sprintf("[.]%s[.]md$", x), bundle_index)
-    })
-    if (!is.null(dim(j))) j <- apply(j, 2, any)
-    if (all(j == FALSE)) {
-      j["en"] <- TRUE
-    }
-    orig_lang <- names(j[j])[1]
+  if (!grepl(sprintf("[.]%s[.]md", orig_lang), source_file)) {
+    tmpf <- source_file
+    source_file <- sprintf(
+      "%s.%s.md",
+      tools::file_path_sans_ext(source_file),
+      orig_lang
+    )
+    file.rename(tmpf, source_file)
+  }
 
-    if (!grepl(sprintf("[.]%s[.]md", orig_lang), source_file)) {
-      tmpf <- source_file
-      source_file <- sprintf(
-        "%s.%s.md",
-        tools::file_path_sans_ext(source_file),
-        orig_lang
-      )
-      file.rename(tmpf, source_file)
-    }
-
-    to_translate <- names(j[!j])
-    if (length(to_translate) > 0) {
-      cat("Translating", source_file, "\n ")
-      k <- lapply(
-        to_translate,
-        autotranslate,
-        from_lang = orig_lang,
-        file = source_file
-      )
-      Sys.sleep(10)
-      cat("\n ")
-    }
+  to_translate <- names(j[!j])
+  if (length(to_translate) > 0) {
+    cat("Translating", source_file, "\n ")
+    k <- lapply(
+      to_translate,
+      autotranslate,
+      from_lang = orig_lang,
+      file = source_file
+    )
+    Sys.sleep(10)
+    cat("\n ")
   }
 }
 
@@ -165,8 +238,15 @@ delete_autotranslated <- function() {
   sapply(content[idx], file.remove)
 }
 
-translate_content(
-  here::here("content/about-us"),
-  "[.]md$"
+list.files(
+  here::here("content/news"),
+  "[.]md$",
+  full.names = TRUE
+) |>
+  translate_content()
+
+translate_all(
+  folder = here::here("content/news"),
+  pattern = "[.]md$"
 )
 # delete_autotranslated()

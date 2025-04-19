@@ -1,10 +1,12 @@
 ---
-title: "Directory"
-type: "directory"
+language: es
+translated: no
+title: Directorio
+type: directory
 ---
 
-**We would love more R-Ladies to appear in our Directory!** 
-Please fill out [our form](/form/directory-update)! 
-It only takes a few minutes, and soon your profile will be online.
+**Nos encantaría que aparecieran más R-Ladies en nuestro directorio.**
+Por favor, rellene [nuestro formulario](/form/directory-update) ¡!
+Solo le llevará unos minutos, y pronto su perfil estará en línea.
 
-If you want to **update** your profile, fill out the same form and choose the "Update directory entry" option. 
+Si desea **actualizar** su perfil, rellene el mismo formulario y elija la opción "Actualizar entrada del directorio".

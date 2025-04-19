@@ -2,7 +2,6 @@
 language: fr
 translated: no
 title: S'impliquer
-slug: s_impliquer
 ---
 
 <center>
@@ -35,5 +34,3 @@ Vos contributions sont les bienvenues, voici quelques idées
 - Contribuez à la discussion au sein de la communauté et partagez vos idées
 - Soutenez vos sections locales en leur fournissant des locaux et en finançant la nourriture et les boissons.
 - Soutenir notre infrastructure et nos opérations en coulisses. Nous apprécions vos dons via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E)
-
-

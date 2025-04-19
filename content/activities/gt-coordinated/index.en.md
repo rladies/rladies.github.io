@@ -13,20 +13,20 @@ In addition, many of the activities facilitate visibility of R-Ladies actions an
 
 The Community Slack is intended for people that identify as a woman or gender minority and are interested in the R programming language.
 It is a friendly and welcoming community, where you can share information, learn new things and connect with other R-Ladies.
-The Community Slack is intended to be a harassment-free experience for everyone and the [Code of Conduct](coc/) is enforced to make sure everyone can enjoy the space.
+The Community Slack is intended to be a harassment-free experience for everyone and the [Code of Conduct](/coc/) is enforced to make sure everyone can enjoy the space.
 
-{{% button " <http://rladies-community-slack.herokuapp.com>" "Join the community slack!"%}}
+{{% button "/form/community-slack" "Join the community slack!"  %}}
 
 ## Abstract Review
 
 R-Ladies Global has a system for review and feedback of conference abstracts and funding opportunities for both R-related and domain-specific conferences.
 To encourage R-Ladies to submit proposals and improve chances of having work or applications selected, 80 international reviewers provide constructive feedback on areas including topics and pitch, phrasing, and subject matter.
 
-{{% button " <https://docs.google.com/forms/d/e/1FAIpQLSck8FBjNWjziI8pPIoCBlf5J4oQ_6pzeUdbQ1HjYfJ2bNDwDw/viewform?usp=send_form>" "Submit a proposal/abstract for review" %}}
+{{% button "/form/abstract-request/" "Submit a proposal/abstract for review" %}}
 
 <br>
 
-{{% button " <https://docs.google.com/forms/d/e/1FAIpQLSdj44iOqfg6cyhRH57YjQuI-OjbksDmY5LHfsqGSXZrhOONTw/viewform>" "Become a reviewer" %}}
+{{% button "form/abtract-volunteer/>" "Become a reviewer" %}}
 
 <center>
 Estimated time commitment = 1 review per year
@@ -49,9 +49,9 @@ Featured curators come from a diversity of professions and have a range of exper
 
 Check out [@WeAreRLadies](https://twitter.com/WeAreRLadies) every Monday for a new curator!
 
-{{% button " <https://goo.gl/forms/bQ7mHQDXrNHXEZCl2>" "Sign up to be a curator!"%}}
+{{% button "/form/rocur-signup/" "Sign up to be a curator!"%}}
 
-## International Womens Day Campaigns
+## International Women's Day Campaigns
 
 R-Ladies Global has coordinated International Women Day actions to encourage more people from gender minorities to participate in the community on Twitter and to promote people in the community.
 The coordinators of these campaigns have written blog posts about them, which you can find links to below.
@@ -71,6 +71,4 @@ And once you are there, also have a look at the [channels we subscribe to](https
 We have an online guide for R-Ladies volunteers, and those who'd like to become cool like them.
 More seriously, the guide is aimed at featuring all of R-Ladies organization guidance (how do I start an R-Ladies chapter?)and wisdom (what are our best tips for running events).
 
-{{% button " <https://guide.rladies.org/>" "Check out our guide!"%}}
-
-
+{{% button "<https://guide.rladies.org/>" "Check out our guide!"%}}

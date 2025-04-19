@@ -2,7 +2,6 @@
 language: pt
 translated: no
 title: Participe
-slug: participe
 ---
 
 <center>
@@ -35,5 +34,3 @@ Agradecemos as vossas contribuições, abaixo estão algumas ideias
 - Contribuir para o debate na comunidade e partilhar as suas ideias
 - Apoiar as suas secções locais com espaço e financiamento para alimentos e bebidas
 - Apoiar as nossas infra-estruturas e operações de bastidores. Agradecemos os seus donativos através de [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E)
-
-

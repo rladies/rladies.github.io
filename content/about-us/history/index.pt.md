@@ -2,7 +2,6 @@
 language: pt
 translated: no
 title: História
-slug: história
 ---
 
 [Gabriela de Queiroz](https://rladies.org/united-states-rladies/name/gabriela-de-queiroz/)fundou a R-Ladies em 1 de outubro de 2012.
@@ -22,5 +21,3 @@ Desde então, a R-Ladies cresceu para [Mais de 200 capítulos em mais de 60 paí
 ![R-Ladies na UseR 2019](img/user2019.jpeg)
 
 </div>
-
-

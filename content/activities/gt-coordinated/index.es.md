@@ -16,23 +16,20 @@ Además, muchas de las actividades facilitan la visibilidad de las acciones de R
 
 El Community Slack está dirigido a personas que se identifican como mujer o minoría de género y están interesadas en el lenguaje de programación R.
 Es una comunidad amistosa y acogedora, donde puedes compartir información, aprender cosas nuevas y conectar con otras R-Ladies.
-El Slack de la Comunidad pretende ser una experiencia libre de acoso para todos y el [Código de conducta](coc/) se aplica para garantizar que todos puedan disfrutar del espacio.
+El Slack de la Comunidad pretende ser una experiencia libre de acoso para todos y el [Código de conducta](/coc/) se aplica para garantizar que todos puedan disfrutar del espacio.
 
-{{% button " 
-" "Join the community slack!"%}}<http://rladies-community-slack.herokuapp.com>
+{{% button "/form/community-slack" "Join the community slack!" %}}
 
 ## Resumen
 
 R-Ladies Global cuenta con un sistema de revisión y retroalimentación de resúmenes de conferencias y oportunidades de financiación tanto para conferencias relacionadas con R como con dominios específicos.
 Para animar a las R-Ladies a presentar propuestas y mejorar las posibilidades de que sus trabajos o solicitudes sean seleccionados, 80 revisores internacionales proporcionan comentarios constructivos en áreas como los temas y el tono, la redacción y la temática.
 
-{{% button " 
-" "Submit a proposal/abstract for review" %}}<https://docs.google.com/forms/d/e/1FAIpQLSck8FBjNWjziI8pPIoCBlf5J4oQ_6pzeUdbQ1HjYfJ2bNDwDw/viewform?usp=send_form>
+{{% button "/form/abstract-request/" "Submit a proposal/abstract for review" %}}
 
 <br>
 
-{{% button " 
-" "Become a reviewer" %}}<https://docs.google.com/forms/d/e/1FAIpQLSdj44iOqfg6cyhRH57YjQuI-OjbksDmY5LHfsqGSXZrhOONTw/viewform>
+{{% button "/form/abtract-volunteer/>" "Become a reviewer" %}}
 
 <center>
 Compromiso de tiempo estimado = 1 revisión al año
@@ -55,8 +52,7 @@ Las curadoras destacadas provienen de una diversidad de profesiones y tienen una
 
 Eche un vistazo a [@WeAreRLadies](https://twitter.com/WeAreRLadies) todos los lunes.
 
-{{% button " 
-" "Sign up to be a curator!"%}}<https://goo.gl/forms/bQ7mHQDXrNHXEZCl2>
+{{% button "/form/rocur-signup/" "Sign up to be a curator!"%}}
 
 ## Campañas del Día Internacional de la Mujer
 
@@ -71,15 +67,11 @@ El canal de YouTube de R-Ladies Global contiene vídeos de reuniones de R-Ladies
 Asegúrese de consultar la lista de reproducción con contenido en [español](https://www.youtube.com/watch?v=lZICjcX7O0U&list=PLPwprT5wdzX54jSqytthvi3NKZHk1Aiuq), [Portugués](https://www.youtube.com/watch?v=NkahvnQizp0&list=PLPwprT5wdzX75DU9MwCc_rkOO4K2rVR73) y [turco](https://www.youtube.com/watch?v=ykmoy3AO_qI&list=PLPwprT5wdzX7_OcP-QjajzQtIZCZ-0TVN).
 Y una vez allí, eche también un vistazo al [canales a los que estamos suscritos](https://www.youtube.com/c/RLadiesGlobal/channels) que son canales de secciones de R-Ladies que gestionan sus propios canales de YouTube.
 
-{{% button " 
-" "Check out our channel!"%}}<https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng>
+{{% button "<https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng>" "Check out our channel!"%}}
 
 ## Guía R-Ladies
 
 Disponemos de una guía en línea para las voluntarias de R-Ladies y quienes quieran ser tan guays como ellas.
 Más en serio, la guía está destinada a ofrecer toda la orientación organizativa de R-Ladies (¿cómo puedo crear una sección de R-Ladies?) y sabiduría (cuáles son nuestros mejores consejos para organizar eventos).
 
-{{% button " 
-" "Check out our guide!"%}}<https://guide.rladies.org/>
-
-
+{{% button "<https://guide.rladies.org/>" "Check out our guide!"%}}

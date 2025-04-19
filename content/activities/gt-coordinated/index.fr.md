@@ -16,23 +16,20 @@ En outre, de nombreuses activités facilitent la visibilité des actions des R-L
 
 Le Community Slack est destiné aux personnes qui s'identifient comme des femmes ou des minorités de genre et qui s'intéressent au langage de programmation R.
 C'est une communauté amicale et accueillante, où vous pouvez partager des informations, apprendre de nouvelles choses et vous connecter avec d'autres R-Ladies.
-Le Slack de la communauté se veut une expérience sans harcèlement pour tout le monde et le Slack de la communauté se veut une expérience sans harcèlement pour tout le monde et le Slack de la communauté. [Code de conduite](coc/) est appliqué pour s'assurer que tout le monde puisse profiter de l'espace.
+Le Slack de la communauté se veut une expérience sans harcèlement pour tout le monde et le Slack de la communauté se veut une expérience sans harcèlement pour tout le monde et le Slack de la communauté. [Code de conduite](/coc/) est appliqué pour s'assurer que tout le monde puisse profiter de l'espace.
 
-{{% button " 
-" "Join the community slack!"%}}<http://rladies-community-slack.herokuapp.com>
+{{% button "/form/community-slack" "Join the community slack!" %}}
 
 ## Résumé de l'examen
 
 R-Ladies Global dispose d'un système d'examen et de retour d'information sur les résumés de conférences et les possibilités de financement pour les conférences liées à R et les conférences spécifiques à un domaine.
 Afin d'encourager les R-Ladies à soumettre des propositions et d'améliorer leurs chances de voir leurs travaux ou leurs demandes sélectionnés, 80 évaluateurs internationaux fournissent des commentaires constructifs sur des sujets tels que les thèmes et la présentation, la formulation et le sujet.
 
-{{% button " 
-" "Submit a proposal/abstract for review" %}}<https://docs.google.com/forms/d/e/1FAIpQLSck8FBjNWjziI8pPIoCBlf5J4oQ_6pzeUdbQ1HjYfJ2bNDwDw/viewform?usp=send_form>
+{{% button "/form/abstract-request/" "Submit a proposal/abstract for review" %}}
 
 <br>
 
-{{% button " 
-" "Become a reviewer" %}}<https://docs.google.com/forms/d/e/1FAIpQLSdj44iOqfg6cyhRH57YjQuI-OjbksDmY5LHfsqGSXZrhOONTw/viewform>
+{{% button "/form/abtract-volunteer/>" "Become a reviewer" %}}
 
 <center>
 Durée estimée de l'engagement = 1 examen par an
@@ -55,8 +52,7 @@ Les curateurs en vedette sont issus de diverses professions et ont une expérien
 
 A voir [@WeAreRLadies](https://twitter.com/WeAreRLadies) tous les lundis pour un nouveau conservateur !
 
-{{% button " 
-" "Sign up to be a curator!"%}}<https://goo.gl/forms/bQ7mHQDXrNHXEZCl2>
+{{% button "/form/rocur-signup/" "Sign up to be a curator!"%}}
 
 ## Campagnes pour la Journée internationale de la femme
 
@@ -71,15 +67,11 @@ La chaîne YouTube R-Ladies Global présente des vidéos de rencontres R-Ladies 
 Ne manquez pas de consulter la liste de lecture avec le contenu en [espagnol](https://www.youtube.com/watch?v=lZICjcX7O0U&list=PLPwprT5wdzX54jSqytthvi3NKZHk1Aiuq), [portugais](https://www.youtube.com/watch?v=NkahvnQizp0&list=PLPwprT5wdzX75DU9MwCc_rkOO4K2rVR73) et [turc](https://www.youtube.com/watch?v=ykmoy3AO_qI&list=PLPwprT5wdzX7_OcP-QjajzQtIZCZ-0TVN).
 Et une fois sur place, jetez également un coup d'œil à la rubrique [chaînes auxquelles nous sommes abonnés](https://www.youtube.com/c/RLadiesGlobal/channels) qui sont des chaînes de sections R-Ladies qui gèrent leurs propres chaînes YouTube.
 
-{{% button " 
-" "Check out our channel!"%}}<https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng>
+{{% button "<https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng>" "Check out our channel!"%}}
 
 ## R-Guide des dames
 
 Nous avons un guide en ligne pour les bénévoles des R-Ladies, et pour ceux qui voudraient devenir cool comme elles.
 Plus sérieusement, le guide a pour but de présenter tous les conseils d'organisation des R-Ladies (comment créer un chapitre R-Ladies ?) et leur sagesse (quels sont nos meilleurs conseils pour organiser des événements).
 
-{{% button " 
-" "Check out our guide!"%}}<https://guide.rladies.org/>
-
-
+{{% button "<https://guide.rladies.org/>" "Check out our guide!"%}}
