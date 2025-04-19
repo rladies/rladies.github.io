@@ -239,14 +239,14 @@ delete_autotranslated <- function() {
 }
 
 list.files(
-  here::here("content/news"),
+  here::here("content/blog/2025-02-08-RLadies-Bioconductor-collab/"),
   "[.]md$",
   full.names = TRUE
 ) |>
   translate_content()
 
 translate_all(
-  folder = here::here("content/news"),
+  folder = here::here("content/blog"),
   pattern = "[.]md$"
 )
 # delete_autotranslated()

@@ -81,5 +81,6 @@ last_message: 'con el mensaje'
 
 # Language ----
 translations: 'Traducciones'
+edit_github: "Ayúdanos a mejorar el contenido editándolo en GitHub"
 missing_translation: |
     Esta página ha sido traducida automáticamente con [DeepL](https://www.deepl.com/es/translator) y aún no ha sido revisada por una persona. Por favor, ten esto en cuenta al leer, ya que algunas cosas pueden haberse perdido en la traducción.

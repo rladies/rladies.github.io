@@ -80,6 +80,7 @@ last_edit: 'This post was last edited on'
 last_message: 'with the message'
 
 # Language ----
-translations: 'Traducciones'
+translations: 'Tramslations'
+edit_github: "Help us improve the content by editing on GitHub"
 missing_translation: |
     This page has been Auto-translated with [DeepL](https://www.deepl.com/en/translator), and has not been reviewed by a human, yet. Please consider this when reading, as some things may have been lost in translation.
