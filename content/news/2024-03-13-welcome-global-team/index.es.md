@@ -4,11 +4,13 @@ translated: no
 title: Bienvenido al Equipo Global
 author: Leadership Team
 type: blog
-date: '2024-03-13'
+date: "2024-03-13"
 output: html_document
 image: img/global_team.png
-tags: community
-categories: R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: ¡El R-Ladies Global Team cuenta con 15 nuevos miembros!
 slug: bienvenido_al_equipo_global
 ---
@@ -68,5 +70,3 @@ Tener gente nueva, con ideas y perspectivas frescas, nos ayudará a seguir creci
 Estamos deseando trabajar con estos nuevos miembros y esperamos que se unan a nosotros para darles la bienvenida al Equipo Global.
 
 Puede ver una descripción general de todo el equipo mundial en [Acerca de -> Conozca al equipo mundial](/about-us/global-team/).
-
-

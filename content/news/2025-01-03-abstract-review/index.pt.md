@@ -4,11 +4,14 @@ translated: no
 title: Seja voluntário como revisor de resumos da R-Ladies!
 author: Abstract Review Team
 type: blog
-date: '2025-01-03'
+date: "2025-01-03"
 image: img/typing.jpg
-tags: community
-categories: R-Ladies
-summary: Seja voluntário como revisor de resumos da R-Ladies para apoiar a diversidade
+tags:
+  - community
+categories:
+  - R-Ladies
+summary: |
+  Seja voluntário como revisor de resumos da R-Ladies para apoiar a diversidade
   na tecnologia!
 slug: seja_voluntário_como_revisor_de_resumos_da_r_ladies
 ---
@@ -49,5 +52,3 @@ Depois de se registar:
 2. Fará parte de uma rede de apoio que está a fazer uma diferença tangível nas comunidades de R e de tecnologia.
 
 Junte-se a nós hoje e ajude a moldar o futuro dos alinhamentos das conferências - um resumo de cada vez!
-
-

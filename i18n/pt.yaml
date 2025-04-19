@@ -7,7 +7,7 @@ home: "Início"
 about-us: 'Sobre'
 mission: "Missão"
 get-involved: 'Participe'
-global-team: 'Conheça a equipe global'
+global-team: 'Equipe Global'
 history: 'História'
 news: 'Notícias'
 coc: 'Código de Conduta'
@@ -53,7 +53,6 @@ event: "Evento"
 
 # About Global Team ----
 leadership: 'Liderança'
-global-team: 'Equipe Global'
 alumni: 'Ex-membros'
 alumni-text: |
   A R-Ladies agradece imensamente todo o trabalho árduo

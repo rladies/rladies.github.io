@@ -4,10 +4,10 @@ author: "R-Ladies Global Leadership Team"
 type: blog
 date: "2020-11-23"
 description: "Reduced Service Mode for R-Ladies Global"
-tags: 
-- community
+tags:
+  - community
 categories:
-- r-ladies
+  - r-ladies
 ---
 
 This year has been and continues to be a challenging year for many, if not all, of us.
@@ -51,5 +51,3 @@ This affects things like:
 
 We thank you for your understanding.
 We want to get through this together and return to making the R community a better, fairer, and more inclusive place, soon!
-
-

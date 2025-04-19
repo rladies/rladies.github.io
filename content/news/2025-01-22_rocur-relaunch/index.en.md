@@ -4,10 +4,10 @@ author: "Rotating Curation Team"
 type: blog
 date: "2025-01-24"
 image: img/rladies-bluesky.jpg
-tags: 
-- rocur
-categories: 
-- R-Ladies
+tags:
+  - rocur
+categories:
+  - R-Ladies
 summary: We're looking for curators for the We Are R-Ladies Bluesky account!
 slug: rocur-relaunch-2025
 ---
@@ -51,5 +51,3 @@ You can nominate as many people as you would like, so do not hesitate to share t
 
 You can visit the [R-Ladies RoCur Guide](https://guide.rladies.org/rocur/about/)to learn more about the initiative.
 If you have any questions, feel free to reach out to the RoCur admins at [weare@rladies.org](mailto:weare@rladies.org) or send a message on the **\#rocur** channel on the [R-Ladies Community Slack](https://rladies.org/form/community-slack/).
-
-

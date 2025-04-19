@@ -4,11 +4,14 @@ translated: no
 title: Devenez volontaire pour réviser les résumés de R-Ladies !
 author: Abstract Review Team
 type: blog
-date: '2025-01-03'
+date: "2025-01-03"
 image: img/typing.jpg
-tags: community
-categories: R-Ladies
-summary: Devenez réviseur de résumés pour R-Ladies afin de soutenir la diversité dans
+tags:
+  - community
+categories:
+  - R-Ladies
+summary:
+  Devenez réviseur de résumés pour R-Ladies afin de soutenir la diversité dans
   la technologie !
 slug: devenez_volontaire_pour_réviser_les_résumés_de_r_ladies
 ---
@@ -49,5 +52,3 @@ Une fois que vous vous êtes inscrit :
 2. Vous ferez partie d'un réseau de soutien qui fera une différence tangible dans les communautés de la recherche et de la technologie.
 
 Rejoignez-nous dès aujourd'hui et contribuez à façonner l'avenir des listes de conférences, un résumé à la fois !
-
-

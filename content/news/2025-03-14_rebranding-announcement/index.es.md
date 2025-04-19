@@ -4,9 +4,10 @@ translated: no
 title: R-Ladies pasa a llamarse R-Ladies+.
 author: Leadership Team
 type: blog
-date: '2025-03-14'
+date: "2025-03-14"
 image: rladiesplus.png
-categories: R-Ladies
+categories:
+  - R-Ladies
 slug: r_ladies_pasa_a_llamarse_r_ladies
 ---
 
@@ -42,18 +43,18 @@ Se decidió por unanimidad seguir adelante con la propuesta de cambiar el nombre
 Las razones en contra de un cambio de nombre completo incluyeron:
 
 1. No hubo consenso en el debate entre los miembros de GitHub sobre un único nombre alternativo.
-  Además, muchos de los nombres propuestos no eran fácilmente comprensibles para los hablantes no nativos de inglés.
-  Como organización mundial, es esencial que el nombre tenga sentido en todos los contextos lingüísticos.
+   Además, muchos de los nombres propuestos no eran fácilmente comprensibles para los hablantes no nativos de inglés.
+   Como organización mundial, es esencial que el nombre tenga sentido en todos los contextos lingüísticos.
 
 2. Antes de 2022, la Comunidad R contaba con numerosos seguidores en X (antes Twitter), lo que facilitaba la comunicación y el conocimiento de las actividades de R-Ladies.
-  Sin embargo, el panorama actual de las redes sociales está fracturado entre entidades como LinkedIn, Mastodon, Bluesky, Facebook, Instagram y otras.
-  Un cambio de nombre completo podría causar confusión respecto a quiénes somos como organización.
+   Sin embargo, el panorama actual de las redes sociales está fracturado entre entidades como LinkedIn, Mastodon, Bluesky, Facebook, Instagram y otras.
+   Un cambio de nombre completo podría causar confusión respecto a quiénes somos como organización.
 
 3. R-Ladies funciona de forma descentralizada, de modo que cada sección tiene autonomía sobre su propia presencia en Internet.
-  Existiría el riesgo de que los capítulos pudieran persistir tanto bajo el nombre de R-Ladies como bajo el nuevo nombre sugerido, creando confusión sobre la identidad de la organización.
+   Existiría el riesgo de que los capítulos pudieran persistir tanto bajo el nombre de R-Ladies como bajo el nuevo nombre sugerido, creando confusión sobre la identidad de la organización.
 
 4. Todos los que sirven a esta organización son voluntarios con capacidad limitada, incluido el equipo de liderazgo, el equipo global más amplio y los líderes de los capítulos locales.
-  Un cambio de nombre completo requeriría mucho tiempo de comunicaciones y trabajo administrativo para los más de 200 capítulos existentes, lo que haría difícil establecer un calendario para el cambio de nombre completo en ausencia de la contratación de servicios pagados para la asistencia.
+   Un cambio de nombre completo requeriría mucho tiempo de comunicaciones y trabajo administrativo para los más de 200 capítulos existentes, lo que haría difícil establecer un calendario para el cambio de nombre completo en ausencia de la contratación de servicios pagados para la asistencia.
 
 La justificación a favor de R-Ladies+ incluye señalar una mayor inclusividad, manteniendo al mismo tiempo su reconocida identidad de marca.
 Además de añadir "+" en R-Ladies+ para englobar a todos los géneros infrarrepresentados, crearemos un nuevo perfil visual que señale más claramente la inclusividad de género, y esperamos que esto comunique más claramente una marca que se alinea con nuestra misión.
@@ -85,5 +86,3 @@ Y, por ahora, no percibimos riesgo alguno de perder nuestra condición de organi
 
 Creemos que ahora es más importante que nunca proceder al cambio de marca a R-Ladies+ para alinear nuestra misión con nuestra marca en un esfuerzo por crear una comunidad R acogedora y alentadora.
 Nuestra misión es más importante que nuestra condición de organización sin ánimo de lucro; si la perdiéramos, trabajaríamos para encontrar otros medios de mantener la organización.
-
-

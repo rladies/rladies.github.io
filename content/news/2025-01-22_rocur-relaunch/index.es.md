@@ -4,10 +4,12 @@ translated: no
 title: ¡Lanzamos la cuenta de selección rotativa de R-Ladies en Bluesky!
 author: Rotating Curation Team
 type: blog
-date: '2025-01-24'
+date: "2025-01-24"
 image: img/rladies-bluesky.jpg
-tags: rocur
-categories: R-Ladies
+tags:
+  - rocur
+categories:
+  - R-Ladies
 summary: ¡Buscamos conservadoras para la cuenta We Are R-Ladies Bluesky!
 slug: lanzamos_la_cuenta_de_selección_rotativa_de_r_ladies_en_bluesky
 ---
@@ -49,5 +51,3 @@ Puede nominar a tantas personas como desee, así que no dude en compartir esta o
 
 Puede visitar la [Guía RoCur de R-Ladies](https://guide.rladies.org/rocur/about/)para saber más sobre la iniciativa.
 Si tiene alguna pregunta, no dude en ponerse en contacto con los administradores de RoCur en [weare@rladies.org](mailto:weare@rladies.org) o envíe un mensaje a **\#rocur** en el canal [Slack de la Comunidad de R-Ladies](https://rladies.org/form/community-slack/).
-
-

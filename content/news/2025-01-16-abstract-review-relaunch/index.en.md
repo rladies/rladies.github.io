@@ -4,10 +4,10 @@ author: "Abstract Review Team"
 type: blog
 date: "2025-01-16"
 image: img/letstalk.jpg
-tags: 
-- community
-categories: 
-- R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: Supporting Aspiring Speakers in the R Community!
 slug: abstract-review-relaunch-2025
 ---
@@ -52,5 +52,3 @@ Do you have experience with public speaking, abstract writing, or reviewing?
 Consider joining our amazing team of reviewers!
 Volunteering is a flexible, rewarding way to support our mission and give back to the community.
 Sign up [here](https://airtable.com/appJadVolZxoDGSIK/pag4bpfeGIATQFefk/form).
-
-

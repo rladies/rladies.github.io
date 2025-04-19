@@ -1,14 +1,17 @@
 ---
 language: es
 translated: no
-title: 'Mastodon: ¡Conoce a las R-Ladies!'
+title: "Mastodon: ¡Conoce a las R-Ladies!"
 author: Daniela Vázquez
 type: blog
-date: '2023-11-10'
+date: "2023-11-10"
 output: html_document
-tags: community
-categories: R-Ladies
-summary: ¡R-Ladies están en el servidor Hackyderm de mastodon! Síguenos en [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)
+tags:
+  - community
+categories:
+  - R-Ladies
+summary:
+  ¡R-Ladies están en el servidor Hackyderm de mastodon! Síguenos en [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)
   ¡!
 slug: mastodon_conoce_a_las_r_ladies
 ---
@@ -44,5 +47,3 @@ Estamos trabajando en otras formas de comprometernos con nuestra comunidad, y co
 Háganos saber si cree que deberíamos incluir un canal concreto en nuestra estrategia de medios sociales.
 
 ¡Nos vemos en Mastodon y en otros lugares!
-
-

@@ -4,11 +4,13 @@ translated: no
 title: Bienvenue à l'équipe mondiale
 author: Leadership Team
 type: blog
-date: '2024-03-13'
+date: "2024-03-13"
 output: html_document
 image: img/global_team.png
-tags: community
-categories: R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: L'équipe mondiale R-Ladies compte 15 nouveaux membres !
 slug: bienvenue_à_l_équipe_mondiale
 ---
@@ -68,5 +70,3 @@ L'arrivée de nouvelles personnes, avec des idées et des perspectives nouvelles
 Nous nous réjouissons de travailler avec ces nouveaux membres et nous espérons que vous vous joindrez à nous pour leur souhaiter la bienvenue au sein de l'équipe mondiale !
 
 Vous pouvez consulter une vue d'ensemble de l'équipe mondiale à l'adresse suivante [À propos -> Rencontrer l'équipe mondiale](/about-us/global-team/).
-
-

@@ -4,10 +4,12 @@ translated: no
 title: Estamos a relançar o sistema de revisão abstrata R-Ladies!
 author: Abstract Review Team
 type: blog
-date: '2025-01-16'
+date: "2025-01-16"
 image: img/letstalk.jpg
-tags: community
-categories: R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: Apoiar os aspirantes a oradores na comunidade R!
 slug: estamos_a_relançar_o_sistema_de_revisão_abstrata_r_ladies
 ---
@@ -52,5 +54,3 @@ Tem experiência em falar em público, escrever resumos ou fazer revisões?
 Considere juntar-se à nossa fantástica equipa de revisores!
 O voluntariado é uma forma flexível e gratificante de apoiar a nossa missão e retribuir à comunidade.
 Inscrever-se [aqui](https://airtable.com/appJadVolZxoDGSIK/pag4bpfeGIATQFefk/form).
-
-

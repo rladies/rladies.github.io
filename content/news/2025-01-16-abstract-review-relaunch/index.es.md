@@ -4,10 +4,12 @@ translated: no
 title: ¡Relanzamos el sistema de revisión de resúmenes de R-Ladies!
 author: Abstract Review Team
 type: blog
-date: '2025-01-16'
+date: "2025-01-16"
 image: img/letstalk.jpg
-tags: community
-categories: R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: Apoyo a los aspirantes a oradores de la comunidad R
 slug: relanzamos_el_sistema_de_revisión_de_resúmenes_de_r_ladies
 ---
@@ -52,5 +54,3 @@ Así de fácil.
 Considere la posibilidad de unirse a nuestro increíble equipo de revisores.
 El voluntariado es una forma flexible y gratificante de apoyar nuestra misión y devolver algo a la comunidad.
 Inscríbete [aquí](https://airtable.com/appJadVolZxoDGSIK/pag4bpfeGIATQFefk/form).
-
-

@@ -4,10 +4,12 @@ translated: no
 title: Gabriela de Queiroz abandona el equipo directivo mundial de R-Ladies
 author: R-Ladies Global Leadership Team
 type: blog
-date: '2019-12-18'
+date: "2019-12-18"
 description: Gabriela de Queiroz abandona el equipo directivo mundial de R-Ladies
-tags: community
-categories: r-ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 output: html_document
 slug: gabriela_de_queiroz_abandona_el_equipo_directivo_mundial_de_r_ladies
 ---
@@ -24,5 +26,3 @@ Le agradecemos profundamente por habernos iniciado en este empeño y por todo el
 ¡Todo lo mejor para el futuro, Gabriela!
 
 Claudia Vitolo, Erin LeDell, Gabriela de Queiroz, Hannah Frick, Laura Acion
-
-

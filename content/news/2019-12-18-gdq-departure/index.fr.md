@@ -4,10 +4,12 @@ translated: no
 title: Gabriela de Queiroz se retire de l'équipe dirigeante mondiale de R-Ladies
 author: R-Ladies Global Leadership Team
 type: blog
-date: '2019-12-18'
+date: "2019-12-18"
 description: Gabriela de Queiroz se retire de l'équipe dirigeante mondiale de R-Ladies
-tags: community
-categories: r-ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 output: html_document
 slug: gabriela_de_queiroz_se_retire_de_l_équipe_dirigeante_mondiale_de_r_ladies
 ---
@@ -24,5 +26,3 @@ Nous la remercions profondément de nous avoir permis de nous lancer dans cette 
 Tous nos vœux de réussite pour l'avenir, Gabriela !
 
 Claudia Vitolo, Erin LeDell, Gabriela de Queiroz, Hannah Frick, Laura Acion
-
-

@@ -7,7 +7,6 @@ home: "Accueil"
 about-us: 'À propos'
 mission: "Mission"
 get-involved: 'Impliquez-vous'
-global-team: 'Rencontrez l\'équipe mondiale'
 history: 'Histoire'
 news: 'Actualités'
 coc: 'Code de Conduite'
@@ -15,7 +14,7 @@ directory: 'Annuaire'
 activities: 'Activités'
 events: 'Événements'
 mentoring: 'Programme de Mentorat'
-coordinated: 'Coordonné par l\'équipe mondiale'
+coordinated: "Coordonné par l'équipe mondiale"
 dashboard: 'Tableau de bord global'
 rladies-blogs: 'Blogs par R-Ladies'
 press: 'Dans la presse'
@@ -53,7 +52,7 @@ event: "Événement"
 
 # About Global Team ----
 leadership: 'Direction'
-global-team: 'Équipe Mondiale'
+global-team: "Équipe Mondiale"
 alumni: 'Anciennes membres'
 alumni-text: |
   R-Ladies est extrêmement reconnaissante pour tout le travail acharné

@@ -4,10 +4,10 @@ author: "R-Ladies Global Leadership Team"
 type: blog
 date: "2019-12-18"
 description: "Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team"
-tags: 
-- community
+tags:
+  - community
 categories:
-- r-ladies
+  - R-Ladies
 output: html_document
 ---
 
@@ -23,5 +23,3 @@ We profoundly thank her for getting us all started on this endeavour and all the
 All the best for the future, Gabriela!
 
 Claudia Vitolo, Erin LeDell, Gabriela de Queiroz, Hannah Frick, Laura Acion
-
-

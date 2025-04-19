@@ -4,10 +4,12 @@ translated: no
 title: Nous relançons le système d'évaluation des résumés R-Ladies !
 author: Abstract Review Team
 type: blog
-date: '2025-01-16'
+date: "2025-01-16"
 image: img/letstalk.jpg
-tags: community
-categories: R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: Soutenir les orateurs en herbe de la communauté R !
 slug: nous_relançons_le_système_d_évaluation_des_résumés_r_ladies
 ---
@@ -52,5 +54,3 @@ Avez-vous de l'expérience en matière d'art oratoire, de rédaction de résumé
 Pensez à rejoindre notre formidable équipe de réviseurs !
 Le bénévolat est un moyen souple et gratifiant de soutenir notre mission et de rendre service à la communauté.
 S'inscrire [ici](https://airtable.com/appJadVolZxoDGSIK/pag4bpfeGIATQFefk/form).
-
-

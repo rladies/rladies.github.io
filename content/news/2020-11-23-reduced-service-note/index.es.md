@@ -4,10 +4,12 @@ translated: no
 title: Modo de servicio reducido para R-Ladies Global
 author: R-Ladies Global Leadership Team
 type: blog
-date: '2020-11-23'
+date: "2020-11-23"
 description: Modo de servicio reducido para R-Ladies Global
-tags: community
-categories: r-ladies
+tags:
+  - community
+categories:
+  - r-ladies
 slug: modo_de_servicio_reducido_para_r_ladies_global
 ---
 
@@ -52,5 +54,3 @@ Esto afecta a cosas como:
 
 Le agradecemos su comprensión.
 Queremos superar esto juntos y volver a hacer de la comunidad R un lugar mejor, más justo y más inclusivo, ¡pronto!
-
-

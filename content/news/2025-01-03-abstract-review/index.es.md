@@ -4,11 +4,14 @@ translated: no
 title: Ofrézcase como voluntario para la revisión de resúmenes de R-Ladies.
 author: Abstract Review Team
 type: blog
-date: '2025-01-03'
+date: "2025-01-03"
 image: img/typing.jpg
-tags: community
-categories: R-Ladies
-summary: Ofrézcase como voluntaria como revisora de resúmenes de R-Ladies para apoyar
+tags:
+  - community
+categories:
+  - R-Ladies
+summary: |
+  O frézcase como voluntaria como revisora de resúmenes de R-Ladies para apoyar
   la diversidad en la tecnología.
 slug: ofrézcase_como_voluntario_para_la_revisión_de_resúmenes_de_r_ladies
 ---
@@ -49,5 +52,3 @@ Una vez que te registres:
 2. Formarás parte de una red de apoyo que marca una diferencia tangible en las comunidades tecnológicas y de investigación.
 
 Únase a nosotros hoy mismo y ayude a dar forma al futuro de los programas de conferencias, ¡un resumen cada vez!
-
-
