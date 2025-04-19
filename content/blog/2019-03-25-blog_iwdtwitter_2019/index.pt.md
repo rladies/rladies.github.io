@@ -1,8 +1,11 @@
 ---
-title: "IWD 2019 Twitter Action"
-author: "As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz"
-date: "2019-03-25"
-description: "Explaining IWD 2019 Twitter project"
+language: pt
+translated: no
+title: Ação Twitter IWD 2019
+author: As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from
+  Roxana Noelia Villafane and Gabriela De Queiroz
+date: '2019-03-25'
+description: Explicação do projeto do Twitter para o IWD 2019
 tags:
 - iwd
 - twitter
@@ -12,89 +15,90 @@ categories:
 - 2019
 - r-ladies
 output: html_document
+slug: ação_twitter_iwd_2019
 ---
 
-Every year on March 8th, the world celebrates International Women's Day (IWD).
-Although this date has different ways of celebration, it has one point in common - the fight for gender equality.
-The [previous year](http://blog.rladies.org/post/ideation_and_creation/), in 2018, an enthusiast R-Ladies' group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018.
-In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.
+Todos os anos, a 8 de março, o mundo celebra o Dia Internacional da Mulher (DIM).
+Embora esta data tenha diferentes formas de celebração, tem um ponto em comum - a luta pela igualdade de género.
+O [ano anterior](http://blog.rladies.org/post/ideation_and_creation/) Em 2018, um grupo de entusiastas do R-Ladies tomou a iniciativa de um grande projeto de tweet sobre todos os perfis registados no diretório R-ladies, durante todo o dia 8 de março de 2018.
+Em fevereiro deste ano, o ano de 2019, Yanina propôs seguir o seu exemplo e tweetar sobre todos os Capítulos R-Ladies, durante todo o dia 8 de março de 2019.
 
-Yanina's call for volunteers was responded to instantly.
-In a matter of days, we had a team of brilliant, knowledgeable R-Ladies consisting of [Yanina](https://twitter.com/yabellini), [Gabriela](https://twitter.com/gdequeiroz), [Patricia](https://twitter.com/patriloto), [Roxana](https://twitter.com/data_datum), and [Divya](https://twitter.com/DSeernani).
-Yanina took the wheel of this fantastic project, making a list of tasks to be done and everyone stepped up to volunteer for what they could do.
-Yanina proposed using the IWD twitter account from 2018, continuing what they had built then, but focusing on increasing visibility for chapters this year.
-R-Ladies chapters are the foundation of R-Ladies because this is where the community gathers, teaches and learns; where experiences are exchanged in every part of the world.
-The chapters sustain and magnify the community.
-It was logical to use these to celebrate IWD2019, and everyone was immediately on board.
+O apelo de Yanina a voluntários foi respondido de imediato.
+Em poucos dias, tínhamos uma equipa de R-Ladies brilhantes e conhecedoras, constituída por [Yanina](https://twitter.com/yabellini), [Gabriela](https://twitter.com/gdequeiroz), [Patrícia](https://twitter.com/patriloto), [Roxana](https://twitter.com/data_datum), e [Divya](https://twitter.com/DSeernani).
+Yanina assumiu o comando deste fantástico projeto, fazendo uma lista de tarefas a realizar e todos se ofereceram como voluntários para fazer o que podiam.
+Yanina propôs a utilização da conta de twitter do IWD de 2018, continuando o que tinham construído na altura, mas concentrando-se em aumentar a visibilidade dos capítulos este ano.
+Os capítulos do R-Ladies são a base do R-Ladies porque é aqui que a comunidade se reúne, ensina e aprende; onde as experiências são trocadas em todas as partes do mundo.
+Os capítulos sustentam e ampliam a comunidade.
+Era lógico utilizá-los para celebrar o IWD2019, e toda a gente aderiu imediatamente.
 
-The next month and particularly days leading up to the event was a profound learning experience for everyone as we worked and helped in whichever ways we could.
-This blog post tells you what was done behind the scenes to make IWD 2019 an immense success for R-Ladies.
+O mês seguinte e, em particular, os dias que antecederam o evento foram uma experiência de aprendizagem profunda para todos, à medida que trabalhámos e ajudámos de todas as formas possíveis.
+Esta publicação do blogue conta-lhe o que foi feito nos bastidores para tornar o IWD 2019 um enorme sucesso para as R-Ladies.
 
-## Leading up to IWD.
+## Antes do IWD.
 
-First, we invited all the R-Ladies Chapter founders and organisers to update their chapter information on GitHub.
-All organisers from all over the world rose to this occasion with Gabriela getting pull requests on an almost daily basis!
+Em primeiro lugar, convidámos todas as fundadoras e organizadoras dos capítulos R-Ladies a actualizarem as informações sobre os seus capítulos no GitHub.
+Todas as organizadoras de todo o mundo estiveram à altura desta ocasião e a Gabriela recebeu pedidos de atualização quase diariamente!
 
-Then it was important to put the Twitter account in order by updating its visual identity and inviting R-ladies to follow the account. [The IWD account](https://twitter.com/rladies_iwd)started following all the existing R-Ladies chapters.
-Twitter accounts of chapters all over the world, R-Ladies Global and even other women organisations that heard about this stepped up to the occasion and followed the IWD account, actively spreading the word about what to look forward to on IWD 2019.
+Depois, era importante pôr a conta do Twitter em ordem, actualizando a sua identidade visual e convidando as R-ladies a seguirem a conta. [A conta IWD](https://twitter.com/rladies_iwd)começou a seguir todos os capítulos de R-Ladies existentes.
+As contas de Twitter das secções de todo o mundo, da R-Ladies Global e até de outras organizações de mulheres que souberam desta iniciativa, seguiram a conta do IWD, divulgando ativamente o que esperar do IWD 2019.
 
-Finally, on the days leading up to IWD, a campaign was carried out using images created in the tool canva.com by Patricia and Yanina.
-The first of these images was tweeted on 17th Feb, and almost 25 tweets were sent from this day on, till 7th March.
-The images informed people about the upcoming IWD event and invited them to follow the IWD Twitter account.
-Property tags were used for visually challenged readers to know what the image associated with the tweet was saying.
-All these efforts increased the users of the R-Ladies IWD Twitter account by 53%.
-We were ready to roll out the IWD Campaign!
+Por último, nos dias que antecederam o IWD, foi realizada uma campanha com imagens criadas na ferramenta canva.com por Patricia e Yanina.
+A primeira destas imagens foi tweetada a 17 de fevereiro, tendo sido enviados quase 25 tweets desde esse dia até 7 de março.
+As imagens informavam as pessoas sobre o evento IWD que se aproximava e convidavam-nas a seguir a conta do Twitter da IWD.
+Foram utilizadas etiquetas de propriedade para que os leitores com deficiência visual pudessem saber o que a imagem associada ao tweet estava a dizer.
+Todos estes esforços aumentaram em 53% o número de utilizadores da conta do Twitter do R-Ladies IWD.
+Estávamos prontos para lançar a campanha IWD!
 
-## The IWD Campaign
+## A campanha IWD
 
-The IWD Campaign consisted of 256 tweets programmed to be set out every 12 minutes from the first hour of IWD in the east-most part of the world, till the last hour of IWD in the west-most part of the world.
-The Campaign started out by highlighting the R-Ladies Global Team.
-This was followed by tweets in 4 broad categories - information about existing chapters, new chapters that would be starting soon, how to start a new chapter in your city, and information about R-Ladies Remote that people not wanting to be bound to geographic restriction could join.
-Since a picture speaks a thousand words, all this info was presented pictorially with texts to highlight the message.
-Again, most of this groundwork was done by Yanina, Patricia and Roxana, and the text to go with the pictures was written by Divya.
-The first two categories of pictures even came with a world map to point out where the chapters were and a link to the meetup account so people could join instantly.
-The images for Remote, Leadership Team and Global Masters was created using Canvas and Yanina went a step further to make a video explaining how to start a new chapter was using Doodly.
-A 'tag-if-you-know-someone' game initiated by the IWD twitter account soon swooped through the chapters all tagging each other, the Ladies behind the Chapters and R-Ladies IWD Twitter account fueling all the excitement!
-The excitement led to a lot of queries and updates from chapters old and new, most of which were resolved by Gabriela.
-If you are wondering who won this game, the R\_Forwards account had the most number of RTs and our very own R-Lady Laura Aci?
-n was tagged the most!
+A campanha IWD consistiu em 256 tweets programados para serem publicados a cada 12 minutos, desde a primeira hora do IWD na parte mais oriental do mundo até à última hora do IWD na parte mais ocidental do mundo.
+A campanha começou por destacar a equipa global da R-Ladies.
+Seguiram-se tweets em quatro grandes categorias: informações sobre as secções existentes, novas secções que vão começar em breve, como iniciar uma nova secção na sua cidade e informações sobre o R-Ladies Remote, ao qual se podem juntar pessoas que não querem estar sujeitas a restrições geográficas.
+Uma vez que uma imagem vale mais do que mil palavras, todas estas informações foram apresentadas de forma pictórica com textos para realçar a mensagem.
+Mais uma vez, a maior parte deste trabalho de base foi feito por Yanina, Patricia e Roxana, e o texto para acompanhar as imagens foi escrito por Divya.
+As duas primeiras categorias de imagens incluíam até um mapa-mundo para indicar onde se situavam os capítulos e uma ligação para a conta do encontro, para que as pessoas pudessem aderir imediatamente.
+As imagens para Remote, Leadership Team e Global Masters foram criadas utilizando o Canvas e Yanina deu um passo em frente para fazer um vídeo a explicar como começar um novo capítulo utilizando Doodly.
+Um jogo de "etiquetar se conhecer alguém" iniciado pela conta do Twitter da IWD rapidamente se espalhou pelos capítulos, todos se etiquetando uns aos outros, as senhoras por detrás dos capítulos e a conta do Twitter da IWD das R-Ladies, alimentando toda a excitação!
+A excitação levou a muitas perguntas e actualizações de capítulos antigos e novos, a maioria das quais foi resolvida pela Gabriela.
+Se estão a pensar quem ganhou este jogo, a conta R\_Forwards teve o maior número de RT e a nossa própria R-Lady Laura Aci?
+n foi a mais etiquetada!
 
-## What we achieved
+## O que alcançámos
 
-On IWD2019, the R-Ladies IWD Account sent out 417 tweets and retweets across 48 hours, advertising 231 new and existing chapters, the Leadership Team, Global Team, RLadies Remote Chapter and info about how to start a new chapter.
-Through pictures, tweets, sharing meetup links, tagging and complimenting fellow R-Ladies, the shared experiences of #rladies and #IWD2019 brought the global R-Ladies Network closer, onto one IWD Twitter platform.
-We achieved three main goals by doing this.
-First, we presented all the chapters around the world so that those interested in participating or helping know the closest place to join.
-Second, we highlighted RLadies Remote as the option for those who cannot attend local meetings.
-Third, we explained how to create a new chapter.
-In the process, we learnt so much more than we intended to, and hey, R-Ladies now has an up-to-date Chapters List for everyone to explore!
+No IWD2019, a conta IWD das R-Ladies enviou 417 tweets e retweets em 48 horas, anunciando 231 capítulos novos e existentes, a Equipa de Liderança, a Equipa Global, o Capítulo Remoto das RLadies e informações sobre como iniciar um novo capítulo.
+Através de fotografias, tweets, partilha de ligações para encontros, marcação e elogios a outras R-Ladies, as experiências partilhadas de #rladies e #IWD2019 aproximaram a rede global de R-Ladies numa única plataforma do Twitter do IWD.
+Ao fazê-lo, atingimos três objectivos principais.
+Em primeiro lugar, apresentámos todos os capítulos em todo o mundo, para que os interessados em participar ou ajudar saibam qual o local mais próximo onde se podem juntar.
+Em segundo lugar, destacámos os RLadies Remote como uma opção para aqueles que não podem participar nas reuniões locais.
+Em terceiro lugar, explicámos como criar uma nova secção.
+No processo, aprendemos muito mais do que pretendíamos e, agora, o R-Ladies tem uma lista de capítulos actualizada para todos explorarem!
 
-## What we learnt as Volunteers on this project?
+## O que aprendemos como Voluntários neste projeto?
 
-First of all, an animate team with a shared aim can work efficiently and harmoniously to achieve big goals.
-Secondly, teams do now have to be homogeneous.
-The volunteers for this project were all across the world, working in different time zones and speaking different languages.
-This just added to the understanding atmosphere and gave everyone an opportunity to learn more.
-Third, Every member can contribute and every contribution, big and small, is valuable.
-A mammoth task can be realised by working incrementally towards it.
-Finally, we had the joy of learning from and about other R-ladies in different parts of the world; and the satisfaction of contributing to a community striving to give every member recognition and the support required to grow.
+Em primeiro lugar, uma equipa animada com um objetivo comum pode trabalhar de forma eficiente e harmoniosa para atingir grandes objectivos.
+Em segundo lugar, as equipas não têm de ser homogéneas.
+Os voluntários para este projeto estavam espalhados por todo o mundo, trabalhando em diferentes fusos horários e falando diferentes línguas.
+Este facto contribuiu para aumentar a atmosfera de compreensão e deu a todos a oportunidade de aprender mais.
+Em terceiro lugar, todos os membros podem contribuir e todas as contribuições, grandes ou pequenas, são valiosas.
+Uma tarefa gigantesca pode ser realizada trabalhando progressivamente para a concretizar.
+Finalmente, tivemos a alegria de aprender com e sobre outras R-ladies em diferentes partes do mundo; e a satisfação de contribuir para uma comunidade que se esforça por dar a cada membro o reconhecimento e o apoio necessários para crescer.
 
-## The R Action!
+## A Ação R!
 
-We are R-Ladies!
-So, using R was obviously an integral part of the whole project.
-We provide the scripts we used in the box below, along with some useful links to that helped guide behind the scenes of Twitter.
-The most important link was [the R-Ladies Blog](http://blog.rladies.org/post/ideation_and_creation/) explaining IWD 2018 Twitter Action.
-Learn how to use Magick [here](https://ropensci.org/blog/2016/08/23/z-magick-release/) and [here](https://ropensci.org/tutorials/magick_tutorial/).
-A [blog](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) explaining how to make Maps.
-Text Processing (including non-English charectors) is explained [here](https://www.gastonsanchez.com/r4strings/stringr-basics.html) and [here](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).
+Nós somos as R-Ladies!
+Assim, a utilização do R era obviamente uma parte integrante de todo o projeto.
+Fornecemos os scripts que utilizámos na caixa abaixo, juntamente com algumas ligações úteis que ajudaram a guiar os bastidores do Twitter.
+A ligação mais importante foi [o blogue R-Ladies](http://blog.rladies.org/post/ideation_and_creation/) que explica a ação do Twitter do IWD 2018.
+Aprender a usar Magick [aqui](https://ropensci.org/blog/2016/08/23/z-magick-release/) e [aqui](https://ropensci.org/tutorials/magick_tutorial/).
+A [blogue](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) que explica como fazer mapas.
+O processamento de texto (incluindo caracteres não ingleses) é explicado [aqui](https://www.gastonsanchez.com/r4strings/stringr-basics.html) e [aqui](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).
 
-## How the Pictures were created
+## Como foram criadas as imagens
 
-The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies.
-It became our primary data source.
-We also used a list of cities geolocated for made the maps.
-Our goal was to achieve an image with the following components:
+A lista de capítulos actuais contém informações sobre o país, a cidade, o nome, as organizadoras, o estatuto e todas as formas de contacto (correio, Internet, encontros, redes sociais) de todos os capítulos do R-Ladies.
+Tornou-se a nossa principal fonte de dados.
+Também utilizámos uma lista de cidades geolocalizadas para fazer os mapas.
+O nosso objetivo era obter uma imagem com os seguintes componentes:
 
 ![](ExistingChapters.jpg)
 
@@ -324,8 +328,8 @@ for (i in 1:nrow(CCRL)) { #Line for all the chapters
 }
 ```
 
-For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network.
-The objective was to produce this image:
+Para os capítulos em processo de criação, não dispomos de informações de contacto, pelo que substituímos essas informações por algumas imagens agradáveis sobre a R-Ladies e a sua rede.
+O objetivo era produzir esta imagem:
 
 ![](NewChapterPrototype.png)
 
@@ -416,7 +420,7 @@ for (i in 1:nrow(SinData)) { #Line for all the chapters
 }
 ```
 
-## How the Tweets were created
+## Como foram criados os Tweets
 
 ```r
 #Base code from Ma?lle and the post in R-Ladies blog
@@ -503,6 +507,6 @@ tweets <- dplyr::select(CCRLTw, City, tweet, picture) %>%
 readr::write_excel_csv2(tweets, path = "ready_tweets_nodata.csv")
 ```
 
-Authors: "As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz"
+Autoras: "Contado por Yanina Bellini, Patricia Loto e Divya Seernani; com notas de Roxana Noelia Villafane e Gabriela De Queiroz"
 
 

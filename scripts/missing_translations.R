@@ -56,58 +56,103 @@ autotranslate <- function(to_lang, from_lang, file) {
   }
 }
 
-# Get all index mds
-index_files <- list.files(
-  here::here("content/news"),
-  "^index",
-  recursive = TRUE,
-  full.names = TRUE
-)
-index_files <- index_files[grepl("[.]md", index_files)]
-
-bundles <- unique(dirname(index_files))
-
-# Get the site languages
-site_lang <- readLines(here::here("config/_default/languages.yaml"))
-site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
-
-# Loop through dirs
-for (bundle in bundles[2:length(bundles)]) {
-  bundle_index <- index_files[grepl(bundle, index_files)]
-  source_file <- bundle_index[1]
-
-  j <- sapply(site_lang, function(x) {
-    grepl(sprintf("[.]%s[.]md$", x), bundle_index)
-  })
-  if (!is.null(dim(j))) j <- apply(j, 2, any)
-  if (all(j == FALSE)) {
-    j["en"] <- TRUE
-  }
-  orig_lang <- names(j[j])[1]
-
-  if (!grepl(sprintf("[.]%s[.]md", orig_lang), source_file)) {
-    tmpf <- source_file
-    source_file <- sprintf(
-      "%s.%s.md",
-      tools::file_path_sans_ext(source_file),
-      orig_lang
-    )
-    file.rename(tmpf, source_file)
-  }
-
-  cat("Translating", source_file, "\n ")
-  k <- lapply(
-    names(j[!j]),
-    autotranslate,
-    from_lang = orig_lang,
-    file = source_file
+#' Translate Content Files in a Folder
+#'
+#' This function identifies content files in a specified folder and translates them
+#' into all languages defined in the site configuration ("languages.yaml"). It detects
+#' untranslated files based on file naming patterns and calls the `autotranslate`
+#' function for automatic translation.
+#'
+#' @param folder Character. The directory containing content files to process.
+#' @param pattern Character. A regex pattern to identify index files (e.g., "index.md").
+#'
+#' @return This function performs actions on the filesystem and does not return a value.
+#'
+#' @description
+#' The function scans the `folder` for content files matching `pattern`, groups files into
+#' bundles, identifies missing translations, and translates them. It uses the site languages
+#' defined in the "config/_default/languages.yaml" file and ensures that each file bundle has
+#' translations for all target languages. If a "source" language is not explicitly specified
+#' in the filename, the function renames it to include the source language code.
+#'
+#' If a file has no translations, it will be auto-translated from the source language.
+#'
+#' @note The function uses the `autotranslate` helper for translations. The `autotranslate`
+#'       function must be implemented beforehand for this to work. Files are renamed and
+#'       translated in
+#'
+#' @examples
+#' # Translate all "index.md" files in the "content" folder
+#' translate_content(folder = "content", pattern = "index.md")
+translate_content <- function(folder, pattern) {
+  # Get all index mds
+  index_files <- list.files(
+    folder,
+    pattern,
+    recursive = TRUE,
+    full.names = TRUE
   )
-  cat("\n ")
+
+  bundles <- unique(dirname(index_files))
+
+  # Get the site languages
+  site_lang <- readLines(here::here("config/_default/languages.yaml"))
+  site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
+
+  # Loop through dirs
+  for (bundle in bundles) {
+    bundle_index <- index_files[grepl(bundle, index_files)]
+    source_file <- bundle_index[1]
+
+    j <- sapply(site_lang, function(x) {
+      grepl(sprintf("[.]%s[.]md$", x), bundle_index)
+    })
+    if (!is.null(dim(j))) j <- apply(j, 2, any)
+    if (all(j == FALSE)) {
+      j["en"] <- TRUE
+    }
+    orig_lang <- names(j[j])[1]
+
+    if (!grepl(sprintf("[.]%s[.]md", orig_lang), source_file)) {
+      tmpf <- source_file
+      source_file <- sprintf(
+        "%s.%s.md",
+        tools::file_path_sans_ext(source_file),
+        orig_lang
+      )
+      file.rename(tmpf, source_file)
+    }
+
+    to_translate <- names(j[!j])
+    if (length(to_translate) > 0) {
+      cat("Translating", source_file, "\n ")
+      k <- lapply(
+        to_translate,
+        autotranslate,
+        from_lang = orig_lang,
+        file = source_file
+      )
+      Sys.sleep(10)
+      cat("\n ")
+    }
+  }
 }
 
-# If you've generated non-translated content to
-# check out how it looks. Delete them again by
-# running this function.
+#' Delete Auto-Translated Content Files
+#'
+#' This function identifies and deletes content files within the "content"
+#' directory that are marked as "translated: no" in their YAML front matter.
+#' It is designed to help clean up auto-translated content that is deemed
+#' unnecessary or incomplete.
+#'
+#' @return This function does not return any value. It performs an action by
+#'         removing specific files from the filesystem.
+#'
+#' @note This function permanently deletes files. Use with caution.
+#'
+#' @examples
+#' # To delete all files in the "content" directory marked "translated: no":
+#' delete_autotranslated()
 delete_autotranslated <- function() {
   # Find all non-post content
   content <- list.files("content", "index", recursive = TRUE, full.names = TRUE)
@@ -119,4 +164,9 @@ delete_autotranslated <- function() {
 
   sapply(content[idx], file.remove)
 }
+
+translate_content(
+  here::here("content/about-us"),
+  "[.]md$"
+)
 # delete_autotranslated()

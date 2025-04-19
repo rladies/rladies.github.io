@@ -42,7 +42,7 @@
             {{ block "translation" .}}
                {{ if eq .Params.translated false }}
                 <div class="not-translated">
-                   {{ i18n "missing_translation" }}
+                   {{ i18n "missing_translation" | markdownify }}
                  </div>
               {{ end }}
             {{ end }}
