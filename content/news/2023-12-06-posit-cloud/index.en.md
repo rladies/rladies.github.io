@@ -4,10 +4,10 @@ author: "Leadership Team"
 type: blog
 date: "2023-12-06"
 output: html_document
-tags: 
-- community
-categories: 
-- R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: R-Ladies now has a Posit Cloud account available for R-Ladies meet-ups.
 ---
 
@@ -41,5 +41,3 @@ This may require a bit of extra time to get started as users may need to create 
 
 There are limits to the computing capacity of the Posit Cloud account.
 We haven't tested the boundaries, but be aware that computationally heavy workshops could possibly have slow performance.
-
-

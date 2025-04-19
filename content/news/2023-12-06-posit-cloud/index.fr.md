@@ -4,10 +4,12 @@ translated: no
 title: R-Ladies \& Posit Cloud
 author: Leadership Team
 type: blog
-date: '2023-12-06'
+date: "2023-12-06"
 output: html_document
-tags: community
-categories: R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: R-Ladies dispose désormais d'un compte Posit Cloud pour les réunions R-Ladies.
 slug: r_ladies_posit_cloud
 ---
@@ -42,5 +44,3 @@ Cela peut nécessiter un peu plus de temps pour démarrer, car les utilisateurs 
 
 La capacité de calcul du compte Posit Cloud est limitée.
 Nous n'avons pas testé les limites, mais sachez que les ateliers lourds en calcul pourraient avoir des performances lentes.
-
-
