@@ -1,8 +1,5 @@
 baseURL: "https://rladies.org/"
-disableLanguages:
-    - "fr"
-    - "pt"
-    - "es"
+disableLanguages: []
 build:
   buildFuture: false
   buildDrafts: false
