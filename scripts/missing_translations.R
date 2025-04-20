@@ -19,7 +19,6 @@
 #' # Get the list of supported site languages
 #' site_languages <- get_site_lang()
 #' print(site_languages)
-
 get_site_lang <- function() {
   readLines(
     here::here(
