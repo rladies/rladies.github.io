@@ -5,6 +5,7 @@
 $body-bg:    #fff;
 $primary:    #88398a;
 $secondary:  #a7a9ac;
+$third: #d621cd;
 $table-hover-bg: rgba($primary, .2);
 $font-family-monospace:  'rladies code', monospace;
 $font-family-base:       'rladies body', sans-serif;
@@ -307,6 +308,10 @@ pre.chroma {
   font-size: 2.25rem;
 }
 
+.entry-content a {
+  color: $third;
+  font-weight: bold;
+}
 
 .read-more {
   text-align: right;
