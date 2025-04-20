@@ -11,8 +11,6 @@ tags:
 
 ---
 
-
-
 ## Retrospective 2018
 
 - Include IWD 2018
@@ -20,3 +18,5 @@ tags:
 - LatinR
 - Conferences
 - Blog posts
+
+
