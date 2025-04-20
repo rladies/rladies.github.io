@@ -1,5 +1,11 @@
 
+
 {{ define "main" }}
+
+<div class="entry-content">
+	{{ .Content }}
+</div>
+
   {{ $gt := $.Site.Data.global_team }}
     <!-- create maps of names for gt_roles, because we cannot 'where' over maps of maps -->
   {{ $.Scratch.Set "gt_roles" (slice) }}
