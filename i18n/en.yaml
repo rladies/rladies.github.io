@@ -7,8 +7,8 @@ home: "Home"
 about-us: 'About'
 mission: "Mission"
 get-involved: 'Get involved'
-global-team: 'Meet the global team'
 history: 'History'
+global-team: 'Global Team'
 news: 'News'
 coc: 'Code of Conduct'
 directory: 'Directory'
@@ -53,7 +53,6 @@ event: "Event"
 
 # About Global Team ----
 leadership: 'Leadership'
-global-team: 'Global Team'
 alumni: 'Alumni'
 alumni-text: |
   R-Ladies is extremely thankful for all the hard work 
@@ -81,7 +80,7 @@ last_edit: 'This post was last edited on'
 last_message: 'with the message'
 
 # Language ----
-translations: 'Translations'
+translations: 'Tramslations'
+edit_github: "Help us improve the content by editing on GitHub"
 missing_translation: |
-    We are sorry. This page is missing a 
-    translation to English.
+    This page has been Auto-translated with [DeepL](https://www.deepl.com/en/translator), and has not been reviewed by a human, yet. Please consider this when reading, as some things may have been lost in translation.

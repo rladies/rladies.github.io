@@ -14,48 +14,89 @@ categories:
 output: html_document
 ---
 
+Every year on March 8th, the world celebrates International Women's Day (IWD).
+Although this date has different ways of celebration, it has one point in common - the fight for gender equality.
+The [previous year](http://blog.rladies.org/post/ideation_and_creation/), in 2018, an enthusiast R-Ladies' group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018.
+In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.
 
+Yanina's call for volunteers was responded to instantly.
+In a matter of days, we had a team of brilliant, knowledgeable R-Ladies consisting of [Yanina](https://twitter.com/yabellini), [Gabriela](https://twitter.com/gdequeiroz), [Patricia](https://twitter.com/patriloto), [Roxana](https://twitter.com/data_datum), and [Divya](https://twitter.com/DSeernani).
+Yanina took the wheel of this fantastic project, making a list of tasks to be done and everyone stepped up to volunteer for what they could do.
+Yanina proposed using the IWD twitter account from 2018, continuing what they had built then, but focusing on increasing visibility for chapters this year.
+R-Ladies chapters are the foundation of R-Ladies because this is where the community gathers, teaches and learns; where experiences are exchanged in every part of the world.
+The chapters sustain and magnify the community.
+It was logical to use these to celebrate IWD2019, and everyone was immediately on board.
 
+The next month and particularly days leading up to the event was a profound learning experience for everyone as we worked and helped in whichever ways we could.
+This blog post tells you what was done behind the scenes to make IWD 2019 an immense success for R-Ladies.
 
- 
-Every year on March 8th, the world celebrates International Women's Day (IWD). Although this date has different ways of celebration, it has one point in common - the fight for gender equality. The [previous year](http://blog.rladies.org/post/ideation_and_creation/), in 2018, an enthusiast R-Ladies' group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018. In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.
-
-Yanina's call for volunteers was responded to instantly. In a matter of days, we had a team of brilliant, knowledgeable R-Ladies consisting of [Yanina](https://twitter.com/yabellini), [Gabriela](https://twitter.com/gdequeiroz), [Patricia](https://twitter.com/patriloto), [Roxana](https://twitter.com/data_datum), and [Divya](https://twitter.com/DSeernani). Yanina took the wheel of this fantastic project, making a list of tasks to be done and everyone stepped up to volunteer for what they could do. Yanina proposed using the IWD twitter account from 2018, continuing what they had built then, but focusing on increasing visibility for chapters this year. R-Ladies chapters are the foundation of R-Ladies because this is where the community gathers, teaches and learns; where experiences are exchanged in every part of the world. The chapters sustain and magnify the community. It was logical to use these to celebrate IWD2019, and everyone was immediately on board.
-
-The next month and particularly days leading up to the event was a profound learning experience for everyone as we worked and helped in whichever ways we could. This blog post tells you what was done behind the scenes to make IWD 2019 an immense success for R-Ladies.
-
- 
 ## Leading up to IWD.
-First, we invited all the R-Ladies Chapter founders and organisers to update their chapter information on GitHub. All organisers from all over the world rose to this occasion with Gabriela getting pull requests on an almost daily basis!
 
-Then it was important to put the Twitter account in order by updating its visual identity and inviting R-ladies to follow the account. [The IWD account](https://twitter.com/rladies_iwd) started following all the existing R-Ladies chapters. Twitter accounts of chapters all over the world, R-Ladies Global and even other women organisations that heard about this stepped up to the occasion and followed the IWD account, actively spreading the word about what to look forward to on IWD 2019.
+First, we invited all the R-Ladies Chapter founders and organisers to update their chapter information on GitHub.
+All organisers from all over the world rose to this occasion with Gabriela getting pull requests on an almost daily basis!
 
-Finally, on the days leading up to IWD, a campaign was carried out using images created in the tool canva.com by Patricia and Yanina. The first of these images was tweeted on 17th Feb, and almost 25 tweets were sent from this day on, till 7th March. The images informed people about the upcoming IWD event and invited them to follow the IWD Twitter account. Property tags were used for visually challenged readers to know what the image associated with the tweet was saying. All these efforts increased the users of the R-Ladies IWD Twitter account by 53%. We were ready to roll out the IWD Campaign!
- 
+Then it was important to put the Twitter account in order by updating its visual identity and inviting R-ladies to follow the account. [The IWD account](https://twitter.com/rladies_iwd)started following all the existing R-Ladies chapters.
+Twitter accounts of chapters all over the world, R-Ladies Global and even other women organisations that heard about this stepped up to the occasion and followed the IWD account, actively spreading the word about what to look forward to on IWD 2019.
+
+Finally, on the days leading up to IWD, a campaign was carried out using images created in the tool canva.com by Patricia and Yanina.
+The first of these images was tweeted on 17th Feb, and almost 25 tweets were sent from this day on, till 7th March.
+The images informed people about the upcoming IWD event and invited them to follow the IWD Twitter account.
+Property tags were used for visually challenged readers to know what the image associated with the tweet was saying.
+All these efforts increased the users of the R-Ladies IWD Twitter account by 53%.
+We were ready to roll out the IWD Campaign!
+
 ## The IWD Campaign
-The IWD Campaign consisted of 256 tweets programmed to be set out every 12 minutes from the first hour of IWD in the east-most part of the world, till the last hour of IWD in the west-most part of the world. The Campaign started out by highlighting the R-Ladies Global Team. This was followed by tweets in 4 broad categories - information about existing chapters, new chapters that would be starting soon, how to start a new chapter in your city, and information about R-Ladies Remote that people not wanting to be bound to geographic restriction could join. Since a picture speaks a thousand words, all this info was presented pictorially with texts to highlight the message. Again, most of this groundwork was done by Yanina, Patricia and Roxana, and the text to go with the pictures was written by Divya. The first two categories of pictures even came with a world map to point out where the chapters were and a link to the meetup account so people could join instantly. The images for Remote, Leadership Team and Global Masters was created using Canvas and Yanina went a step further to make a video explaining how to start a new chapter was using Doodly. 
-A 'tag-if-you-know-someone' game initiated by the IWD twitter account soon swooped through the chapters all tagging each other, the Ladies behind the Chapters and R-Ladies IWD Twitter account fueling all the excitement! The excitement led to a lot of queries and updates from chapters old and new, most of which were resolved by Gabriela. If you are wondering who won this game, the R_Forwards account had the most number of RTs and our very own R-Lady Laura Aci?n was tagged the most!
- 
+
+The IWD Campaign consisted of 256 tweets programmed to be set out every 12 minutes from the first hour of IWD in the east-most part of the world, till the last hour of IWD in the west-most part of the world.
+The Campaign started out by highlighting the R-Ladies Global Team.
+This was followed by tweets in 4 broad categories - information about existing chapters, new chapters that would be starting soon, how to start a new chapter in your city, and information about R-Ladies Remote that people not wanting to be bound to geographic restriction could join.
+Since a picture speaks a thousand words, all this info was presented pictorially with texts to highlight the message.
+Again, most of this groundwork was done by Yanina, Patricia and Roxana, and the text to go with the pictures was written by Divya.
+The first two categories of pictures even came with a world map to point out where the chapters were and a link to the meetup account so people could join instantly.
+The images for Remote, Leadership Team and Global Masters was created using Canvas and Yanina went a step further to make a video explaining how to start a new chapter was using Doodly.
+A 'tag-if-you-know-someone' game initiated by the IWD twitter account soon swooped through the chapters all tagging each other, the Ladies behind the Chapters and R-Ladies IWD Twitter account fueling all the excitement!
+The excitement led to a lot of queries and updates from chapters old and new, most of which were resolved by Gabriela.
+If you are wondering who won this game, the R\_Forwards account had the most number of RTs and our very own R-Lady Laura Aci?
+n was tagged the most!
+
 ## What we achieved
-On IWD2019, the R-Ladies IWD Account sent out 417 tweets and retweets across 48 hours, advertising 231 new and existing chapters, the Leadership Team, Global Team, RLadies Remote Chapter and info about how to start a new chapter. Through pictures, tweets, sharing meetup links, tagging and complimenting fellow R-Ladies, the shared experiences of #rladies and #IWD2019 brought the global R-Ladies Network closer, onto one IWD Twitter platform. We achieved three main goals by doing this. First, we presented all the chapters around the world so that those interested in participating or helping know the closest place to join. Second, we highlighted RLadies Remote as the option for those who cannot attend local meetings. Third, we explained how to create a new chapter. In the process, we learnt so much more than we intended to, and hey, R-Ladies now has an up-to-date Chapters List for everyone to explore!
- 
+
+On IWD2019, the R-Ladies IWD Account sent out 417 tweets and retweets across 48 hours, advertising 231 new and existing chapters, the Leadership Team, Global Team, RLadies Remote Chapter and info about how to start a new chapter.
+Through pictures, tweets, sharing meetup links, tagging and complimenting fellow R-Ladies, the shared experiences of #rladies and #IWD2019 brought the global R-Ladies Network closer, onto one IWD Twitter platform.
+We achieved three main goals by doing this.
+First, we presented all the chapters around the world so that those interested in participating or helping know the closest place to join.
+Second, we highlighted RLadies Remote as the option for those who cannot attend local meetings.
+Third, we explained how to create a new chapter.
+In the process, we learnt so much more than we intended to, and hey, R-Ladies now has an up-to-date Chapters List for everyone to explore!
+
 ## What we learnt as Volunteers on this project?
-First of all, an animate team with a shared aim can work efficiently and harmoniously to achieve big goals. Secondly, teams do now have to be homogeneous. The volunteers for this project were all across the world, working in different time zones and speaking different languages. This just added to the understanding atmosphere and gave everyone an opportunity to learn more. Third, Every member can contribute and every contribution, big and small, is valuable. A mammoth task can be realised by working incrementally towards it. Finally, we had the joy of learning from and about other R-ladies in different parts of the world; and the satisfaction of contributing to a community striving to give every member recognition and the support required to grow.
- 
+
+First of all, an animate team with a shared aim can work efficiently and harmoniously to achieve big goals.
+Secondly, teams do now have to be homogeneous.
+The volunteers for this project were all across the world, working in different time zones and speaking different languages.
+This just added to the understanding atmosphere and gave everyone an opportunity to learn more.
+Third, Every member can contribute and every contribution, big and small, is valuable.
+A mammoth task can be realised by working incrementally towards it.
+Finally, we had the joy of learning from and about other R-ladies in different parts of the world; and the satisfaction of contributing to a community striving to give every member recognition and the support required to grow.
+
 ## The R Action!
-We are R-Ladies! So, using R was obviously an integral part of the whole project. We provide the scripts we used in the box below, along with some useful links to that helped guide behind the scenes of Twitter.
+
+We are R-Ladies!
+So, using R was obviously an integral part of the whole project.
+We provide the scripts we used in the box below, along with some useful links to that helped guide behind the scenes of Twitter.
 The most important link was [the R-Ladies Blog](http://blog.rladies.org/post/ideation_and_creation/) explaining IWD 2018 Twitter Action.
 Learn how to use Magick [here](https://ropensci.org/blog/2016/08/23/z-magick-release/) and [here](https://ropensci.org/tutorials/magick_tutorial/).
 A [blog](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) explaining how to make Maps.
 Text Processing (including non-English charectors) is explained [here](https://www.gastonsanchez.com/r4strings/stringr-basics.html) and [here](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).
 
 ## How the Pictures were created
-The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies. It became our primary data source.  We also used a list of cities geolocated for made the maps.  Our goal was to achieve an image with the following components:
+
+The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies.
+It became our primary data source.
+We also used a list of cities geolocated for made the maps.
+Our goal was to achieve an image with the following components:
 
 ![](ExistingChapters.jpg)
-
-
-
 
 ```r
 library(readxl)
@@ -283,11 +324,10 @@ for (i in 1:nrow(CCRL)) { #Line for all the chapters
 }
 ```
 
-
-For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:
+For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network.
+The objective was to produce this image:
 
 ![](NewChapterPrototype.png)
-
 
 ```r
 #Chapters without data
@@ -464,3 +504,5 @@ readr::write_excel_csv2(tweets, path = "ready_tweets_nodata.csv")
 ```
 
 Authors: "As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz"
+
+

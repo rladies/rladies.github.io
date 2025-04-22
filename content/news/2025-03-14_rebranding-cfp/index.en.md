@@ -36,34 +36,33 @@ Please see the news post [R-Ladies is rebranding to R-Ladies+](https://rladies.o
 We are seeking a completely new brand book to accompany the new R-Ladies+ name.
 We envision this involves:
 
--   Brand manual
+- Brand manual
 
--   Logo redesign
+- Logo redesign
 
--   Google slides template (specifications should be transferable to a quarto template)
+- Google slides template (specifications should be transferable to a quarto template)
 
--   Canva or otherwise infographic template for meetup events
+- Canva or otherwise infographic template for meetup events
 
--   WeAreLadies infographic template
+- WeAreLadies infographic template
 
--   Visual imagery of diverse gender minorities for the website or slides
+- Visual imagery of diverse gender minorities for the website or slides
 
--   Certificates & letterhead
-  
--   Social media post templates (BlueSky, Mastodon, LinkedIn, Instagram)
+- Certificates \& letterhead
 
--   YouTube templates.
-  
+- Social media post templates (BlueSky, Mastodon, LinkedIn, Instagram)
+
+- YouTube templates.
+
 Along with instructions for use and guidelines for chapters on how to adapt logos and other materials for their needs.
 
 ## Timeline
 
-| Item                         | Date                   |
-|------------------------------|------------------------|
-| Proposal Submission Deadline | April 15, 2025         |
-| Internal review of proposals | April 16 - May 7, 2025 |
-| Project kickoff              | by June 1, 2025        |
-
+| Item                         | Date                   | 
+| ---------------------------- | ---------------------- |
+| Proposal Submission Deadline | April 15, 2025         | 
+| Internal review of proposals | April 16 - May 7, 2025 | 
+| Project kickoff              | by June 1, 2025        | 
 
 ## Budget
 
@@ -75,18 +74,20 @@ We understand that estimated hours to completion might diverge somewhat from pro
 
 The following will also count positively to any application
 
--   Minority representation (particularly gender and ethnicity)
+- Minority representation (particularly gender and ethnicity)
 
--   History of working with minority communities
+- History of working with minority communities
 
--   Experience with branding used to convey allyship with trans and other gender minor communities
+- Experience with branding used to convey allyship with trans and other gender minor communities
 
--   Member of the R community
+- Member of the R community
 
 ## Submission Instructions
 
 Please submit your proposal via the [R-Ladies Call For Proposal - Rebranding form](https://airtable.com/apphrsts5IruOEGJo/pagmZISNXBiAfDfpC/form).
 
-If you have questions regarding the submission or RFP itself, please send an email to [leadership\@rladies.org](mailto:leadership@rladies.org) with "CFP: rebranding" in the subject field.
+If you have questions regarding the submission or RFP itself, please send an email to [leadership@rladies.org](mailto:leadership@rladies.org) with "CFP: rebranding" in the subject field.
 
-Thank you!💜
+Thank you!
+
+
