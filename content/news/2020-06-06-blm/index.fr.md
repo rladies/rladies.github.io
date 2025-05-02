@@ -4,20 +4,17 @@ author: "R-Ladies Global Leadership Team"
 type: blog
 date: "2020-06-06"
 description: "#BlackLivesMatters : une déclaration commune de Forwards et R-Ladies"
-tags: 
-- social-justice
-- french
+tags:
+  - social-justice
 categories:
-- r-ladies
+  - R-Ladies
 output: html_document
 ---
-
-
 
 En tant qu'organisations dédiées à augmenter la diversité et
 l'intégration de tous dans nos communautés, nous soutenons #BlackLivesMatter et rejoignons ceux qui demandent justice face à
 l'oppression systémique. Le racisme omniprésent affecte négativement la participation
-de personnes noires dans notre société. Les événements en cours aux États-Unis font écho à ce qui s'est produit et continue de se produire pour les personnes marginalisées (ou réduites à être des minorités) à travers le monde. 
+de personnes noires dans notre société. Les événements en cours aux États-Unis font écho à ce qui s'est produit et continue de se produire pour les personnes marginalisées (ou réduites à être des minorités) à travers le monde.
 Nous rassemblons des ressources et prenons des mesures pour amplifier la
 voix des personnes noires, indigènes et de couleur dans la communauté R
 maintenant et dans le futur.
@@ -39,21 +36,21 @@ afin de développer leurs talents en tant que programmeurs en R et leaders commu
 Nous travaillons à travers de petites actions, qui nous espérons ont un impact, telles que :
 
 - Mettre en valeur le travail de personnes de groupes sous-représentés
-et partager des informations sur des événements clés et des opportunités
-sur [\@R_Forwards Twitter](https://twitter.com/r_forwards).
+  et partager des informations sur des événements clés et des opportunités
+  sur [\@R_Forwards Twitter](https://twitter.com/r_forwards).
 
 - Soutenir les organisateurs de la conference useR! avec le programme de bourses pour la diversité
 
 - Recommander des personnes de groupes sous-représentés pour des rôles
-tels que conférenciers, membres de comités, président de séances,
-etc.
+  tels que conférenciers, membres de comités, président de séances,
+  etc.
 
 - Soutenir l'équipe organisatrice de [AfricaR](https://africa-r.org/).
 
 - Atteindre un groupe diversifié avec nos [ateliers pour femmes et
-filles](https://forwards.github.io/blog/2019/09/22/workshops-for-women-and-girls/)
-et ateliers dans des régions mal desservies (par exemple
-[Cuba](https://forwards.github.io/blog/2018/07/07/havanar/), [le Sud de l'Afrique](https://forwards.github.io/blog/2020/05/25/southern-africa-project-2020/)).
+  filles](https://forwards.github.io/blog/2019/09/22/workshops-for-women-and-girls/)
+  et ateliers dans des régions mal desservies (par exemple
+  [Cuba](https://forwards.github.io/blog/2018/07/07/havanar/), [le Sud de l'Afrique](https://forwards.github.io/blog/2020/05/25/southern-africa-project-2020/)).
 
 Nous comprenons qu'il y aurait beaucoup plus à faire pour soutenir et
 représenter directement les personnes noires, indigènes et de couleur
@@ -67,12 +64,12 @@ Bien que la mission des R-Ladies se concentre sur l'amélioration de la diversit
 personnes noires, indigènes et de couleur à travers les actions suivantes :
 
 - Nous entamerons et continuerons le dialogue autour d'actions
-concrètes pour promouvoir la justice sociale partout dans le monde via des chaînes y dédiées dans nos espaces de travail Slack.
-Nous nous engageons à écouter,
-faire preuve d'empathie et chercher à comprendre et transformer nos
-discussions en action. Nous nous engageons à faire de nos espaces communautaires
-des endroits non seulement sûrs pour tous nos membres, mais aussi
-d'espace de travail pour plus d'équité et de justice.
+  concrètes pour promouvoir la justice sociale partout dans le monde via des chaînes y dédiées dans nos espaces de travail Slack.
+  Nous nous engageons à écouter,
+  faire preuve d'empathie et chercher à comprendre et transformer nos
+  discussions en action. Nous nous engageons à faire de nos espaces communautaires
+  des endroits non seulement sûrs pour tous nos membres, mais aussi
+  d'espace de travail pour plus d'équité et de justice.
 
 - Nous intégrerons à notre site web une page dédiée aux ressources et informations concernant les actions tangibles ou concrètes que nous, en tant qu'organisation, et en tant qu'individus pouvons entreprendre pour soutenir #BlackLivesMatter et d'autres mouvements pour la justice sociale.
 
@@ -89,7 +86,7 @@ responsabilité. Nous invitons, pressons chacun dans la communauté R à faire d
 Équipe principale de Forwards : Heather Turner, Noa Tamir, Tatjana
 Kecojevic, Emily Dodwell, Kevin O’Brien, Julie Josse.
 
-Équipe de R-Ladies Global : Claudia Vitolo, Erin LeDell, Hannah Frick, Laura Ación, Athanasia Monika Mowinckel, Yanina Bellini Saibene, Noa Tamir, Maëlle Salmon, Jennifer Thompson, Florencia D’Andrea, Patricia A. Loto, Saranjeet Kaur Bhogal, Christin Zasada, Nadejda Sero, Sheila Saia. 
+Équipe de R-Ladies Global : Claudia Vitolo, Erin LeDell, Hannah Frick, Laura Ación, Athanasia Monika Mowinckel, Yanina Bellini Saibene, Noa Tamir, Maëlle Salmon, Jennifer Thompson, Florencia D’Andrea, Patricia A. Loto, Saranjeet Kaur Bhogal, Christin Zasada, Nadejda Sero, Sheila Saia.
 
 Organisatrices (actuelles et passées) d'antennes locales de R-Ladies et
 autres fortement impliquées dans R-ladies et dans les communautés

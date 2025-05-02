@@ -1,25 +1,23 @@
 ---
 title: "El programa de mentorías de R-Ladies: la historia de  R-Ladies Cotonou"
-author: 
-- "[Nadejda Sero](https://twitter.com/sbnadejda), organizador en [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
+author:
+  - "[Nadejda Sero](https://twitter.com/sbnadejda), organizador en [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
 date: "2021-02-04"
 description: "Programa de mentorías de R-Ladies"
-tags: 
-- comunidad
-- mentorias
-- áfrica
-- español
+tags:
+  - comunidad
+  - mentorias
 categories:
-- r-ladies
+  - R-Ladies
 ---
 
-*Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <christin@rladies.org>.*
+_Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <christin@rladies.org>._
 
 ## ¿Cómo comenzo todo?🤔
 
 R-Ladies Cotonou es un capítulo de [R-Ladies Global](https://twitter.com/RLadiesGlobal) ubicado en Cotonou, Benin (África Oeste). Hasta el día de hoy consta de treinta miembros y cuatro mujeres en el equipo organizador. ¡La idea de crear R-Ladies Cotonou nació en Twitter! Aquí su historia:
 
-{{% tweet user="sbnadejda" id="901597952837222401" %}}
+{{% x user="sbnadejda" id="901597952837222401" %}}
 
 Estos tweets desencadenaron la apertura del capítulo en septiembre de 2017. Mayoritariamente comenzar a organizar el capítulo involucró configurar algunas plataformas: un email y una cuenta de Twitter. Benedicta Essuon, una amiga de Ghana que estudiaba en mi país me ayudó con este proceso.
 
@@ -28,7 +26,7 @@ Estos tweets desencadenaron la apertura del capítulo en septiembre de 2017. May
 En sus inicios, R-Ladies Cotonou tenía dos miembros: Benedicta y yo. Sin embargo, ella volvió a su país de origen antes de la graduación y nuestro primer evento. Estuvo muy triste de dejar el capítulo pero siguió alentándome a que continue el trabajo que comenzamos juntas. Ella siguió apoyando a R-Ladies Cotonou en la distancia.
 En aquel momento yo no poseía ninguna experiencia en el trabajo con comunidades o manejo de grupos y no sabía por dónde empezar. Tuve suerte de beneficiarme con algunos intercambios con [Maëlle Salmon](https://twitter.com/ma_salmon) (miembro del equipo de R-Ladies Global) que me ayudaron a seguir adelante. También aprendí de mirar lo que otros capítulos compartían por Twitter. Si bien aún dudaba bastante, no busqué más ayuda por parte del equipo global.
 
-*El primer problema fue conseguir quienes co-organicen conmigo.* Preparé un pequeño evento invitando algunas mujeres que pensé que podrían encontrarse interesadas en la idea y afortunadamente pronto nos volvimos un equipo de cuatro organizadoras. *Ahora teníamos un segundo problema: conseguir miembros.*
+_El primer problema fue conseguir quienes co-organicen conmigo._ Preparé un pequeño evento invitando algunas mujeres que pensé que podrían encontrarse interesadas en la idea y afortunadamente pronto nos volvimos un equipo de cuatro organizadoras. _Ahora teníamos un segundo problema: conseguir miembros._
 
 Antes de que pudieramos trabajar en ello, el acceso a internet se transformo un problema mayor en Benin. Se impusieron impuestos y todo era bastante caro. Dejamos de hablar sobre el desarrollo del capítulo. ¡La mayor fuente de mis ideas eran los tweets de otros capítulos! ¿Qué podía hacer sin Twitter? En ese momento, no usaba mucho el Slack de organizadoras de R-Ladies. Me llevo un tiempo acostumbrarme a los nuevos planes de internet y lentamente reaparecí en el Slack.
 
@@ -56,7 +54,7 @@ Uno de los problemas más importantes que atacamos con mi “R-hermana” fue mo
 
 ¡Antes del segundo evento, R-Ladies Cotonou recibió un subsidio nivel vector de RConsortium! Apliqué a esos fondos gracias a el apoyo y los recordatorios de Florencia. Ella también me explicó como buscar fondos y como esto podría ser útil para el capítulo.
 
-Nuestro segundo encuentro estuvo muy bueno; comparto algunas imagenes [aquí](https://twitter.com/RLadiesCtn/status/1227670069305651201). Para motivar y alentar futuras charlas, al final de la charla le propuse a la oradora, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), que comparta su experiencia al momento de elegir un tema para presentar. Ella compartió su experiencia e inmediatamente se ofrecieron voluntarias para la próxima reunión. Para darle más sabor, agregamos un evento sorpresa extra, una charla relámpago de [Shériftah Mama Chabi](https://twitter.com/masherycha1) sobre el tema *“Mujeres en ciencia”*. Se presentó el el panorama de la mujer en la ciencia, se discutió sobre igualdad de género y los desafíos que enfrentan las mujeres científicas, y terminó dando varios de enlaces útiles a oportunidades y financiamiento.
+Nuestro segundo encuentro estuvo muy bueno; comparto algunas imagenes [aquí](https://twitter.com/RLadiesCtn/status/1227670069305651201). Para motivar y alentar futuras charlas, al final de la charla le propuse a la oradora, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), que comparta su experiencia al momento de elegir un tema para presentar. Ella compartió su experiencia e inmediatamente se ofrecieron voluntarias para la próxima reunión. Para darle más sabor, agregamos un evento sorpresa extra, una charla relámpago de [Shériftah Mama Chabi](https://twitter.com/masherycha1) sobre el tema _“Mujeres en ciencia”_. Se presentó el el panorama de la mujer en la ciencia, se discutió sobre igualdad de género y los desafíos que enfrentan las mujeres científicas, y terminó dando varios de enlaces útiles a oportunidades y financiamiento.
 
 <figure>
 <img src="rladies_cotonou_fig03.jpg" width="500" alt="La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets." /><figcaption aria-hidden="true">La segunda oradora del meetup, Ruth Ouangbey hace un recuento de métodos prácticos para importar y exportar datasets.</figcaption>
@@ -68,7 +66,7 @@ He aprendido mucho del programa y estoy difundiendo algunas de ideas que obtuve 
 
 ¡Hoy R-Ladies Cotonou goza de buena salud gracias al programa de mentorías! Se lo recomiendo a cualquier capítulo que necesite ayuda para organizar reuniones, encontrar nuevos miembros o cualquier otra cosa necesaria para la vida del capítulo.
 
-> ***¡No te preocupes, siempre habrá una R-Lady que camine contigo!***
+> **_¡No te preocupes, siempre habrá una R-Lady que camine contigo!_**
 
-*Autora: [Nadejda Sero](https://twitter.com/sbnadejda), organizadora de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
-Traducción al español: Florencia D’Andrea, Correcciones a la traducción al Inglés: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada*
+_Autora: [Nadejda Sero](https://twitter.com/sbnadejda), organizadora de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
+Traducción al español: Florencia D’Andrea, Correcciones a la traducción al Inglés: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada_

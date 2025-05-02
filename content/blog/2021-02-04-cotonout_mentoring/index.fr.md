@@ -1,26 +1,24 @@
 ---
 title: "Le programme de mentorat de R-Ladies : le voyage de R-Ladies Cotonou"
-author: 
-- "[Nadejda Sero](https://twitter.com/sbnadejda), organisatrice à [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
+author:
+  - "[Nadejda Sero](https://twitter.com/sbnadejda), organisatrice à [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
 date: "2021-02-04"
 description: "Le programme de mentorat de R-Ladies"
-tags: 
-- communauté
-- mentorat
-- afrique
-- français
+tags:
+  - communauté
+  - mentorat
 categories:
-- r-ladies
+  - R-Ladies
 output: html_document
 ---
 
-*Nous sommes très heureux de vous fournir cet article de blog dans différentes langues: Anglais, Français et Espagnol. Si vous souhaitez en savoir plus sur la manière de contribuer au blog de R-Ladies en général ou souhaitez faire de recommendations, veuillez nous contacter par e-mail à <christin@rladies.org>.*
+_Nous sommes très heureux de vous fournir cet article de blog dans différentes langues: Anglais, Français et Espagnol. Si vous souhaitez en savoir plus sur la manière de contribuer au blog de R-Ladies en général ou souhaitez faire de recommendations, veuillez nous contacter par e-mail à <christin@rladies.org>._
 
 ## Comment tout a commencé… ? 🤔
 
 R-Ladies Cotonou est un groupe local de [R-Ladies Global](https://twitter.com/RLadiesGlobal) basé à Cotonou, au Bénin (Afrique de l’Ouest). À ce jour, nous avons 30 membres avec quatre femmes dans l’équipe organisatrice. L’idée de créer R-Ladies Cotonou est née sur Twitter ! Voici l’histoire !
 
-{{% tweet user="sbnadejda" id="901597952837222401" %}}
+{{% x user="sbnadejda" id="901597952837222401" %}}
 
 Ces tweets ont conduit à la création de R-Ladies Cotonou en Septembre 2017 ! Cela a principalement consisté à créer et configurer certaines des plateformes dont nous avions besoin : un e-mail et un compte Twitter ! [Benedicta Essuon](https://twitter.com/Bene_Essuon?s=20), une amie ghanéenne, qui était une étudiante dans mon pays, m’a aidé pendant ce processus.
 
@@ -29,7 +27,7 @@ Ces tweets ont conduit à la création de R-Ladies Cotonou en Septembre 2017 ! C
 A sa création, R-Ladies Cotonou comptait deux membres, Benedicta et moi-même. Cependant, cette dernière est retournée dans son pays d’origine après avoir obtenu son diplôme et ce avant notre première rencontre. Elle était très triste de quitter le groupe mais elle a continué à beaucoup m’encourager à poursuivre le travail que nous avions commencé ensemble. Elle a continué à soutenir R-Ladies Cotonou.
 À l’époque, je n’avais aucune expérience avec les communautés ou la gestion de groupes et je ne savais pas par où commencer. Néanmoins, j’ai eu la chance de bénéficier de mes échanges avec [Maëlle Salmon](https://twitter.com/ma_salmon) (membre de l’équipe globale de R-Ladies – R-Ladies Global team) pour aller de l’avant. J’ai également appris de ce que les autres groupes R-Ladies partageaient sur Twitter. Toutefois, je doutais beaucoup et je n’ai pas essayé de contacter l’équipe globale pour obtenir de l’aide.
 
-*Ainsi, le premier problème à gérer était le recrutement de co-organisatrices.* J’ai organisé une petite réunion avec des femmes qui, selon moi, pourraient être intéressées par l’idée et heureusement, nous sommes devenues une équipe de quatre organisatrices. *Ensuite, le deuxième problème s’en est suivi : nous devions de recruter des membres.*
+_Ainsi, le premier problème à gérer était le recrutement de co-organisatrices._ J’ai organisé une petite réunion avec des femmes qui, selon moi, pourraient être intéressées par l’idée et heureusement, nous sommes devenues une équipe de quatre organisatrices. _Ensuite, le deuxième problème s’en est suivi : nous devions de recruter des membres._
 
 Avant de pouvoir régler cette question, l’accès à Internet est devenu un problème majeur dans le pays. Des taxes ont été imposées et tout était assez cher. Nous avons arrêté de discuter du développement de notre groupe. La principale source de mes idées était les tweets d’autres groupes ! Que pouvais-je faire sans Twitter ? À l’époque, je n’utilisais pas beaucoup le Slack de R-Ladies pour les organisatrices. Il nous a fallu un certain temps pour nous habituer aux nouveaux forfaits Internet et lentement, je suis revenue sur Slack.
 
@@ -53,11 +51,11 @@ Le programme de mentorat de R-Ladies a été gratifiant pour mon groupe. Avec l�
 
 De même, j’ai eu à appliquer différentes stratégies, inspirées de mon expérience de mentoring, pour impliquer les membres dans l’organisation et maintenir le groupe en vie. Bien que l’équipe d’organisation s’occupe de la plupart des tâches, nous avons demandé à des volontaires de nous aider dans des tâches spécifiques telles que la rédaction d’e-mails ou la conception de dépliants. Nos membres aiment vraiment acquérir de nouvelles compétences et nous avons des bénévoles pour chaque tâche. Cette stratégie est utile car elle rend le groupe indépendant des organisatrices principales. Elle aide les membres à voir ce qui se passe dans les coulisses avant la rencontre et à révéler leurs propres compétences en matière d’organisation.
 
-L’une des questions les plus importantes que nous avons abordées avec ma R-sister était *Comment motiver les conférenciers*. Après la rencontre de Juillet, nous avons échoué dans nos tentatives de rencontre car les intervenants ont abandonné pour diverses raisons. J’ai compris les probables causes de cela et Florencia a partagé de nombreuses suggestions. J’ai choisi de promouvoir de courtes présentations pour commencer. Grâce à notre groupe WhatsApp, j’ai expliqué comment faire une courte présentation et assuré que je serais personnellement impliqué à 100%. Un volontaire s’est présenté et la deuxième rencontre a eu lieu en Février 2020.
+L’une des questions les plus importantes que nous avons abordées avec ma R-sister était _Comment motiver les conférenciers_. Après la rencontre de Juillet, nous avons échoué dans nos tentatives de rencontre car les intervenants ont abandonné pour diverses raisons. J’ai compris les probables causes de cela et Florencia a partagé de nombreuses suggestions. J’ai choisi de promouvoir de courtes présentations pour commencer. Grâce à notre groupe WhatsApp, j’ai expliqué comment faire une courte présentation et assuré que je serais personnellement impliqué à 100%. Un volontaire s’est présenté et la deuxième rencontre a eu lieu en Février 2020.
 
 Avant la deuxième rencontre, R-Ladies Cotonou a reçu du financement de niveau vecteur de R Consortium ! J’avais postulé à ce financement avec les encouragements et les rappels de Florencia. Elle m’a également expliqué comment rechercher du financement et comment cela pourrait être utile à un groupe local.
 
-La deuxième rencontre s’est bien déroulée [(quelques photos ici)](https://twitter.com/RLadiesCtn/status/1227670069305651201). Pour encourager et motiver les potentielles présentatrices, j’ai demandé à la fin du tutoriel à la présentatrice, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), de partager son expérience depuis le choix de son sujet jusqu’à la présentation ! Elle a partagé cela avec joie et des volontaires pour la prochaine rencontre se sont immédiatement manifestées. Pour agrémenter un peu, nous avons ajouté un événement supplémentaire surprise qui était un court entretien par [Shériftah Mama Chabi](https://twitter.com/masherycha1) sur le thème *Ladies in Science (Les femmes en Science)*. Elle a présenté la situation des femmes dans les sciences, discuté de l’égalité des genres et des défis rencontrés par les femmes scientifiques, et a terminé sa présentation en donnant un répertoire de liens utiles vers des opportunités et du financement.
+La deuxième rencontre s’est bien déroulée [(quelques photos ici)](https://twitter.com/RLadiesCtn/status/1227670069305651201). Pour encourager et motiver les potentielles présentatrices, j’ai demandé à la fin du tutoriel à la présentatrice, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), de partager son expérience depuis le choix de son sujet jusqu’à la présentation ! Elle a partagé cela avec joie et des volontaires pour la prochaine rencontre se sont immédiatement manifestées. Pour agrémenter un peu, nous avons ajouté un événement supplémentaire surprise qui était un court entretien par [Shériftah Mama Chabi](https://twitter.com/masherycha1) sur le thème _Ladies in Science (Les femmes en Science)_. Elle a présenté la situation des femmes dans les sciences, discuté de l’égalité des genres et des défis rencontrés par les femmes scientifiques, et a terminé sa présentation en donnant un répertoire de liens utiles vers des opportunités et du financement.
 
 <figure>
 <img src="rladies_cotonou_fig03.jpg" width="500" alt="La deuxième conférencière, Ruth Ouangbey, nous présente une revue des méthodes les plus pratiques pour l’importation et l’exportation des données. Les membres suivent et prennent des notes." /><figcaption aria-hidden="true">La deuxième conférencière, Ruth Ouangbey, nous présente une revue des méthodes les plus pratiques pour l’importation et l’exportation des données. Les membres suivent et prennent des notes.</figcaption>
@@ -69,7 +67,7 @@ J’ai beaucoup appris de ce programme de mentorat et je crois que je partage le
 
 Aujourd’hui, R-Ladies Cotonou est en bonne santé, surtout grâce au programme de mentorat ! Je le recommande à tout groupe local de R-Ladies qui a besoin d’aide pour mettre en place et organiser des rencontres, recruter des membres ou tout autre élément nécessaire à la vie du groupe.
 
-> ***Ne vous inquiétez pas, il y a toujours un mentor de R-Ladies pour vous accompagner !***
+> **_Ne vous inquiétez pas, il y a toujours un mentor de R-Ladies pour vous accompagner !_**
 
-*Auteur: [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
-Traduction en Espagnol: Florencia D’Andrea, Relecture: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada*
+_Auteur: [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
+Traduction en Espagnol: Florencia D’Andrea, Relecture: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada_
