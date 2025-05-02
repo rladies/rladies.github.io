@@ -22,7 +22,7 @@ These are some initial steps you can take to become part of the R-Ladies communi
 - **Join Our Community Slack:** Engage in discussions, ask questions, and stay informed by joining our [community slack channel](https://rladies.org/form/community-slack).
 - **Follow Us on Social Media:** Keep up with the latest news, events, and activities by following us on [social media](https://hachyderm.io/@RLadiesGlobal).
 - **Connect with Your Local Chapter:** Join your regional [R-Ladies chapter](https://www.meetup.com/pro/rladies/) or the remote chapter to connect with like-minded individuals in your area or online.
-- **Attend Events:** Participate in online and in-person events to learn, network, and engage with the community. Event details are usually shared on our Slack channels and social media.
+- **Attend Events:** Participate in online and in-person events to learn, network, and engage with the community. Event details are often shared on our Slack channels and social media; upcoming events can also be found on the [events page of our website](/activities/events/) as well as on the [R-Ladies Meetup page](https://www.meetup.com/pro/rladies/?msockid=05f645055feb6d6c3770515d5e726c4b).
 - **Explore Past Event Content:** Our past event recordings and materials are openly accessible on our [YouTube](https://www.youtube.com/@RLadiesGlobal) channel. Feel free to reach out to speakers whose content you appreciate!
 
 ### ✨ Making a Difference
