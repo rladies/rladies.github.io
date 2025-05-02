@@ -45,7 +45,7 @@ We deeply value the support of organizations that help us grow and sustain our c
 
 - **Sponsor a Local Chapter:** Provide financial or in-kind support (e.g., venue space, food, beverages) for your local R-Ladies chapter's meetups and events. This helps us create welcoming and accessible spaces for our members. Contact your local chapter organizers directly to discuss sponsorship opportunities.
 - **Host Events:** Offer your company's venue for R-Ladies meetups or workshops. This provides a valuable space for our community to gather and learn. Reach out to your local chapter organizers.
-- **Provide Speakers and Workshop Leaders:** Encourage your employees who are R users to volunteer their time and expertise by leading talks or workshops at R-Ladies events.
+- **Nominate Speakers and Workshop Leaders:** Encourage your employees who are R users to volunteer their time and expertise by leading talks or workshops at R-Ladies events.
 - **Offer Financial Contributions:** Consider making a donation to the R-Ladies Global organization via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E) to support our infrastructure and global initiatives.
 - **Partner with R-Ladies for Events and Initiatives:** Explore opportunities to collaborate on larger events, workshops, or initiatives that align with R-Ladies' mission of promoting gender diversity in the R community. Contact the global team at [chapters@rladies.org](mailto:chapters@rladies.org) to discuss potential partnerships.
 - **Promote R-Ladies within Your Organization:** Encourage your employees to join and participate in R-Ladies events and activities. You can also share information about R-Ladies on your internal communication channels.
