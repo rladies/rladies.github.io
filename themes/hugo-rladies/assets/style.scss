@@ -309,8 +309,9 @@ pre.chroma {
 }
 
 .entry-content a {
-  color: $third;
-  font-weight: bold;
+  // color: $third;
+  //font-weight: bold;
+  text-decoration: underline;
 }
 
 .read-more {
