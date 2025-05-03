@@ -5,7 +5,7 @@ A &rsquo;tag-if-you-know-someone&rsquo; game initiated by the IWD twitter accoun
 The most important link was <a href=http://blog.rladies.org/post/ideation_and_creation/>the R-Ladies Blog</a> explaining IWD 2018 Twitter Action.
 Learn how to use Magick <a href=https://ropensci.org/blog/2016/08/23/z-magick-release/>here</a> and <a href=https://ropensci.org/tutorials/magick_tutorial/>here</a>.
 A <a href=https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r>blog</a> explaining how to make Maps.
-Text Processing (including non-English charectors) is explained <a href=https://www.gastonsanchez.com/r4strings/stringr-basics.html>here</a> and <a href=https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/>here</a>.</p><h2 id=how-the-pictures-were-created>How the Pictures were created</h2><p>The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies. It became our primary data source. We also used a list of cities geolocated for made the maps. Our goal was to achieve an image with the following components:</p><p><img src=/blog/2019-03-25-blog_iwdtwitter_2019/ExistingChapters.jpg alt></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-r data-lang=r><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>readxl</span><span class=p>)</span>
+Text Processing (including non-English charectors) is explained <a href=https://www.gastonsanchez.com/r4strings/stringr-basics.html>here</a> and <a href=https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/>here</a>.</p><h2 id=how-the-pictures-were-created>How the Pictures were created</h2><p>The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies. It became our primary data source. We also used a list of cities geolocated for made the maps. Our goal was to achieve an image with the following components:</p><p><figure class=figure><img class="figure-img img-fluid rounded" src=ExistingChapters.jpg alt><figcaption class=figure-caption></figcaption></figure></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-r data-lang=r><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>readxl</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>magick</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>purrr</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>dplyr</span><span class=p>)</span>
@@ -14,48 +14,48 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>maps</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>ggthemes</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nf>library</span><span class=p>(</span><span class=n>stringr</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>#R-Ladies Current Chapter</span>
 </span></span><span class=line><span class=cl><span class=n>CCRL</span> <span class=o>&lt;-</span> <span class=nf>read_excel</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/CCRL2.xlsx&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=c1>#-List of Latitude and Longitude for Cities of the world</span>
 </span></span><span class=line><span class=cl><span class=n>LatLong</span> <span class=o>&lt;-</span> <span class=nf>read_excel</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/LatLong.xlsx&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>#Join for City and State and Country because we have cities with the same name</span>
 </span></span><span class=line><span class=cl><span class=n>CCRL</span> <span class=o>&lt;-</span> <span class=n>CCRL</span> <span class=o>%&gt;%</span> <span class=nf>inner_join</span><span class=p>(</span><span class=n>LatLong</span><span class=p>,</span> <span class=n>by</span> <span class=o>=</span> <span class=nf>c</span><span class=p>(</span><span class=s>&#34;City&#34;</span><span class=p>,</span> <span class=s>&#34;State/Region&#34;</span><span class=p>,</span> <span class=s>&#34;Country&#34;</span><span class=p>))</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>#We have prospective chapters that are being organised so they do not have official accounts yet. We need filter Chapters without Data because the picture will be different</span>
 </span></span><span class=line><span class=cl><span class=n>SinData</span> <span class=o>&lt;-</span> <span class=n>CCRL</span> <span class=o>%&gt;%</span>
 </span></span><span class=line><span class=cl>  <span class=nf>filter </span><span class=p>(</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Meetup</span><span class=p>)</span><span class=o>&amp;</span> <span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Twitter</span><span class=p>)</span> <span class=o>&amp;</span> <span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Email</span><span class=p>)</span> <span class=o>&amp;</span> <span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Facebook</span><span class=p>)</span> <span class=o>&amp;</span>
 </span></span><span class=line><span class=cl>    	   	<span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Instagram</span><span class=p>)</span> <span class=o>&amp;</span> <span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Periscope</span><span class=p>)</span> <span class=o>&amp;</span> <span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Youtube</span><span class=p>)</span> <span class=o>&amp;</span> <span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>GitHub</span><span class=p>)</span> <span class=o>&amp;</span>
 </span></span><span class=line><span class=cl>    	   	<span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Website</span><span class=p>)</span> <span class=o>&amp;</span> <span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Slack</span><span class=p>))</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>#Filter Chapters with Data</span>
 </span></span><span class=line><span class=cl><span class=n>CCRL</span> <span class=o>&lt;-</span> <span class=n>CCRL</span> <span class=o>%&gt;%</span>
 </span></span><span class=line><span class=cl>  <span class=nf>filter</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Country</span> <span class=o>!=</span><span class=s>&#39;Remote&#39;</span><span class=p>)</span> <span class=o>%&gt;%</span>
 </span></span><span class=line><span class=cl>  <span class=nf>anti_join</span><span class=p>(</span><span class=n>SinData</span><span class=p>,</span> <span class=n>by</span> <span class=o>=</span> <span class=nf>c</span><span class=p>(</span><span class=s>&#34;City&#34;</span><span class=p>,</span> <span class=s>&#34;State/Region&#34;</span><span class=p>,</span> <span class=s>&#34;Country&#34;</span><span class=p>))</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>#For loop for every row in Current Chapter</span>
 </span></span><span class=line><span class=cl><span class=c1>#Add 30-40 pixel for each column only in the cases that have data, have to choose the correct logo</span>
 </span></span><span class=line><span class=cl><span class=c1>#Make a map highlighting the place of the Chapter in the world</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1>#I could not find a way to avoid the for loop</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=kr>for</span> <span class=p>(</span><span class=n>i</span> <span class=kr>in</span> <span class=m>1</span><span class=o>:</span><span class=nf>nrow</span><span class=p>(</span><span class=n>CCRL</span><span class=p>))</span> <span class=p>{</span> <span class=c1>#Line for all the chapters</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#We used an R-Ladies template for start the picture</span>
 </span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/RLTemplate.png&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add the chapter map</span>
 </span></span><span class=line><span class=cl>  <span class=c1>#The world map is generated with all the chapters marked with black dots. The current chapter is marked #with a larger purple dot R-Ladies.</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>world</span> <span class=o>&lt;-</span> <span class=nf>ggplot</span><span class=p>()</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>            	<span class=nf>borders</span><span class=p>(</span><span class=s>&#34;world&#34;</span><span class=p>,</span> <span class=n>colour</span> <span class=o>=</span> <span class=s>&#34;gray85&#34;</span><span class=p>,</span> <span class=n>fill</span> <span class=o>=</span> <span class=s>&#34;gray80&#34;</span><span class=p>)</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>            	<span class=nf>theme_map</span><span class=p>()</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#We have some chapters that belong to two cities, like Resistencia-Corrientes in Argentina, in that case, we must draw two points and not one.</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span><span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Lat[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>map</span> <span class=o>&lt;-</span> <span class=n>world</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>           	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Longitude</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Latitude</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>1</span><span class=p>),</span>
@@ -65,8 +65,8 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>           	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Lon[i]</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Lat[i]</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>10</span><span class=p>),</span>
 </span></span><span class=line><span class=cl>         	 <span class=n>data</span><span class=o>=</span> <span class=n>CCRL</span><span class=p>,</span> <span class=n>colour</span><span class=o>=</span> <span class=s>&#39;purple&#39;</span><span class=p>,</span> <span class=n>alpha</span> <span class=o>=</span> <span class=m>.5</span><span class=p>)</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>           	<span class=nf>theme</span><span class=p>(</span><span class=n>legend.position</span><span class=o>=</span><span class=s>&#34;none&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span> <span class=kr>else</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>            	<span class=n>map</span> <span class=o>&lt;-</span> <span class=n>world</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>           	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Longitude</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Latitude</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>1</span><span class=p>),</span>
@@ -74,41 +74,41 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>           	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Longitude[i]</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Latitude[i]</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>10</span><span class=p>),</span>
 </span></span><span class=line><span class=cl>         	 <span class=n>data</span><span class=o>=</span> <span class=n>CCRL</span><span class=p>,</span> <span class=n>colour</span><span class=o>=</span> <span class=s>&#39;purple&#39;</span><span class=p>,</span> <span class=n>alpha</span> <span class=o>=</span> <span class=m>.5</span><span class=p>)</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>           	<span class=nf>theme</span><span class=p>(</span><span class=n>legend.position</span><span class=o>=</span><span class=s>&#34;none&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>	
-</span></span><span class=line><span class=cl>            
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Save the map</span>
 </span></span><span class=line><span class=cl>  <span class=nf>ggsave</span><span class=p>(</span><span class=s>&#34;map.png&#34;</span><span class=p>,</span> <span class=n>width</span> <span class=o>=</span> <span class=m>7</span><span class=p>,</span> <span class=n>height</span> <span class=o>=</span> <span class=m>4</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Read the map</span>
 </span></span><span class=line><span class=cl>  <span class=n>map</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/map.png&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Indicate the place in the image where to place the map</span>
 </span></span><span class=line><span class=cl>  <span class=n>place</span> <span class=o>=</span> <span class=m>230</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add the map to the template</span>
-</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>map</span><span class=p>,</span> <span class=s>&#39;x200&#39;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+620+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>map</span><span class=p>,</span> <span class=s>&#39;x200&#39;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+620+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Ad the rest of the info</span>
 </span></span><span class=line><span class=cl>  <span class=c1>#Indicate the place in the image where to place the data</span>
-</span></span><span class=line><span class=cl>  <span class=n>place</span><span class=o>=</span><span class=m>190</span> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>  <span class=n>place</span><span class=o>=</span><span class=m>190</span>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add text and data</span>
 </span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;Chapter R-Ladies&#34;</span><span class=p>,</span><span class=n>CCRL</span><span class=o>$</span><span class=n>City[i]</span><span class=p>,</span><span class=s>&#39;in&#39;</span><span class=p>,</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Country[i]</span><span class=p>),</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>32</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=s>&#34;+50+20&#34;</span><span class=p>)</span> <span class=o>%&gt;%</span>
 </span></span><span class=line><span class=cl>            	<span class=nf>image_annotate</span><span class=p>(</span> <span class=s>&#34;Organized by:&#34;</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>22</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=s>&#34;+50+65&#34;</span><span class=p>,</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span> <span class=o>%&gt;%</span>
-</span></span><span class=line><span class=cl>            	<span class=nf>image_annotate</span><span class=p>(</span><span class=s>&#34;Contact information:&#34;</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>22</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span> <span class=o>%&gt;%</span>														
+</span></span><span class=line><span class=cl>            	<span class=nf>image_annotate</span><span class=p>(</span><span class=s>&#34;Contact information:&#34;</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>22</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span> <span class=o>%&gt;%</span>
 </span></span><span class=line><span class=cl>            	<span class=nf>image_annotate</span><span class=p>(</span><span class=s>&#34;Location:&#34;</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>22</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+640+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#There are chapters with several organizers (Yay!) And the string with their names may be longer than the template. Therefore, the text must be cut to the appropriate length.</span>
 </span></span><span class=line><span class=cl>  <span class=n>org</span> <span class=o>&lt;-</span><span class=nf>str_wrap</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Organizers[i]</span><span class=p>,</span> <span class=n>width</span> <span class=o>=</span> <span class=m>70</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add the organizers names with the appropriate length.</span>
 </span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>org</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>25</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=s>&#34;+50+90&#34;</span><span class=p>,</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#We add the info of each communication channel and social network only if the chapter has an active account.</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Maybe I should have made a function for this part .</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Twitter</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Twitter[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span> <span class=c1>#Add some lines</span>
@@ -116,119 +116,119 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span> <span class=c1>#Add the logo</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Twitter[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span> <span class=c1>#Add the URL or account</span>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Meetup</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Meetup[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/meetup.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Meetup[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Mail </span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Mail</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Email[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/mail.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Email[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Facebook</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Facebook[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/facebook.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Facebook[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Instagram</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Instagram[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/instagram.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Instagram[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Periscope</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Periscope[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/periscope.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Periscope[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for YouTube</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Youtube[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/youtube.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Youtube[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for GitHub</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>GitHub[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/github.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>GitHub[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for WebSite</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Website[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/web.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Website[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Cheking for Slack</span>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Slack[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/slack.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#34;x30&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl>	
-</span></span><span class=line><span class=cl>	
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Slack[i]</span> <span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>20</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+95+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;purple&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add Founders</span>
 </span></span><span class=line><span class=cl>   <span class=kr>if</span> <span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>Founders[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+40</span>
-</span></span><span class=line><span class=cl>            	 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=s>&#34;Founded by:&#34;</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>22</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>            	<span class=n>place</span><span class=o>=</span><span class=n>place</span><span class=m>+30</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>            	<span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Founders[i]</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>25</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste </span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>            	 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>   <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Save the final picture</span>
 </span></span><span class=line><span class=cl>  <span class=nf>image_write</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;Chapter&#34;</span><span class=p>,</span><span class=nf>str_replace_all</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>City[i]</span><span class=p>,</span> <span class=nf>fixed</span><span class=p>(</span><span class=s>&#34; &#34;</span><span class=p>),</span> <span class=s>&#34;&#34;</span><span class=p>),</span><span class=s>&#34;.png&#34;</span><span class=p>),</span> <span class=n>format</span><span class=o>=</span> <span class=s>&#34;png&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></div><p>For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:</p><p><img src=/blog/2019-03-25-blog_iwdtwitter_2019/NewChapterPrototype.png alt></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-r data-lang=r><span class=line><span class=cl><span class=c1>#Chapters without data</span>
+</span></span></code></pre></div><p>For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:</p><p><figure class=figure><img class="figure-img img-fluid rounded" src=NewChapterPrototype.png alt><figcaption class=figure-caption></figcaption></figure></p><div class=highlight><pre tabindex=0 class=chroma><code class=language-r data-lang=r><span class=line><span class=cl><span class=c1>#Chapters without data</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># We dont have contact information for this chapter, so we replace the info with a picture</span>
 </span></span><span class=line><span class=cl><span class=c1>#Pictures</span>
@@ -245,21 +245,21 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/RLTemplate.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=n>qr</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/qrcode_rladiesorg.png&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add the pic</span>
 </span></span><span class=line><span class=cl>  <span class=n>place</span> <span class=o>=</span> <span class=m>170</span>
 </span></span><span class=line><span class=cl>  <span class=n>file</span> <span class=o>&lt;-</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/&#34;</span><span class=p>,</span><span class=nf>str_trim</span><span class=p>(</span><span class=nf>as.character</span><span class=p>(</span><span class=n>pics[i]</span><span class=p>)),</span><span class=s>&#34;.png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>  <span class=n>pic</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=nf>str_replace_all</span><span class=p>(</span><span class=n>file</span><span class=p>,</span><span class=s>&#34; &#34;</span><span class=p>,</span><span class=s>&#34;&#34;</span><span class=p>))</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#39;x250&#39;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+75+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>  
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>pic</span><span class=p>,</span> <span class=s>&#39;x250&#39;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+75+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add the chapter map</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>world</span> <span class=o>&lt;-</span> <span class=nf>ggplot</span><span class=p>()</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>	<span class=nf>borders</span><span class=p>(</span><span class=s>&#34;world&#34;</span><span class=p>,</span> <span class=n>colour</span> <span class=o>=</span> <span class=s>&#34;gray85&#34;</span><span class=p>,</span> <span class=n>fill</span> <span class=o>=</span> <span class=s>&#34;gray80&#34;</span><span class=p>)</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>	<span class=nf>theme_map</span><span class=p>()</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=kr>if</span><span class=p>(</span><span class=o>!</span><span class=nf>is.na</span><span class=p>(</span><span class=n>SinData</span><span class=o>$</span><span class=n>Lat[i]</span><span class=p>)){</span>
 </span></span><span class=line><span class=cl>	<span class=n>map</span> <span class=o>&lt;-</span> <span class=n>world</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>  	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Longitude</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Latitude</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>1</span><span class=p>),</span>
@@ -269,8 +269,8 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>  	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Lon[i]</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Lat[i]</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>10</span><span class=p>),</span>
 </span></span><span class=line><span class=cl>             	<span class=n>data</span><span class=o>=</span> <span class=n>SinDataL</span><span class=p>,</span> <span class=n>colour</span><span class=o>=</span> <span class=s>&#39;purple&#39;</span><span class=p>,</span> <span class=n>alpha</span> <span class=o>=</span> <span class=m>.5</span><span class=p>)</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>  	<span class=nf>theme</span><span class=p>(</span><span class=n>legend.position</span><span class=o>=</span><span class=s>&#34;none&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    
-</span></span><span class=line><span class=cl>   
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span> <span class=kr>else</span> <span class=p>{</span>
 </span></span><span class=line><span class=cl>	<span class=n>map</span> <span class=o>&lt;-</span> <span class=n>world</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>  	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Longitude</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Latitude</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>1</span><span class=p>),</span>
@@ -278,44 +278,44 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>  	<span class=nf>geom_point</span><span class=p>(</span><span class=nf>aes</span><span class=p>(</span><span class=n>x</span> <span class=o>=</span> <span class=n>Longitude[i]</span><span class=p>,</span> <span class=n>y</span> <span class=o>=</span> <span class=n>Latitude[i]</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>10</span><span class=p>),</span>
 </span></span><span class=line><span class=cl>             	<span class=n>data</span><span class=o>=</span> <span class=n>SinData</span><span class=p>,</span> <span class=n>colour</span><span class=o>=</span> <span class=s>&#39;purple&#39;</span><span class=p>,</span> <span class=n>alpha</span> <span class=o>=</span> <span class=m>.5</span><span class=p>)</span> <span class=o>+</span>
 </span></span><span class=line><span class=cl>  	<span class=nf>theme</span><span class=p>(</span><span class=n>legend.position</span><span class=o>=</span><span class=s>&#34;none&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl>    
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=nf>ggsave</span><span class=p>(</span><span class=s>&#34;map.png&#34;</span><span class=p>,</span> <span class=n>width</span> <span class=o>=</span> <span class=m>7</span><span class=p>,</span> <span class=n>height</span> <span class=o>=</span> <span class=m>4</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>map</span> <span class=o>&lt;-</span> <span class=nf>image_read</span><span class=p>(</span><span class=s>&#34;D:/Rladies/IWD019/IWD2019/map.png&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>map</span><span class=p>,</span> <span class=s>&#39;x250&#39;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+550+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>  
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>map</span><span class=p>,</span> <span class=s>&#39;x250&#39;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+550+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add the rest of the info</span>
-</span></span><span class=line><span class=cl>  <span class=n>place</span><span class=o>=</span><span class=m>190</span>  
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>  <span class=n>place</span><span class=o>=</span><span class=m>190</span>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;Chapter R-Ladies&#34;</span><span class=p>,</span><span class=n>SinData</span><span class=o>$</span><span class=n>City[i]</span><span class=p>,</span><span class=s>&#39;in&#39;</span><span class=p>,</span><span class=n>SinData</span><span class=o>$</span><span class=n>Country[i]</span><span class=p>),</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>32</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=s>&#34;+50+20&#34;</span><span class=p>)</span> <span class=o>%&gt;%</span>
 </span></span><span class=line><span class=cl>	<span class=nf>image_annotate</span><span class=p>(</span> <span class=s>&#34;Organized by:&#34;</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>22</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=s>&#34;+50+65&#34;</span><span class=p>,</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>org</span> <span class=o>&lt;-</span><span class=nf>str_wrap</span><span class=p>(</span><span class=n>SinData</span><span class=o>$</span><span class=n>Organizers[i]</span><span class=p>,</span> <span class=n>width</span> <span class=o>=</span> <span class=m>70</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>org</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>25</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=s>&#34;+50+90&#34;</span><span class=p>,</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
 </span></span><span class=line><span class=cl>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>org</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>25</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=s>&#34;+50+90&#34;</span><span class=p>,</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Add the QR</span>
 </span></span><span class=line><span class=cl>  <span class=n>place</span><span class=o>=</span><span class=m>440</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_annotate</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=s>&#34;+Info:&#34;</span><span class=p>,</span> <span class=n>font</span> <span class=o>=</span> <span class=s>&#39;helvetica&#39;</span><span class=p>,</span> <span class=n>size</span> <span class=o>=</span> <span class=m>22</span><span class=p>,</span> <span class=n>location</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+50+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)),</span> <span class=n>color</span> <span class=o>=</span> <span class=s>&#34;black&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>place</span><span class=o>=</span><span class=n>place</span> <span class=o>+</span> <span class=m>10</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=n>template</span> <span class=o>&lt;-</span> <span class=nf>image_composite</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>image_scale</span><span class=p>(</span><span class=n>qr</span><span class=p>,</span> <span class=s>&#34;x70&#34;</span><span class=p>),</span> <span class=n>offset</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;+125+&#34;</span><span class=p>,</span> <span class=nf>as.character</span><span class=p>(</span><span class=n>place</span><span class=p>)))</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>  <span class=c1>#Save the final picture</span>
 </span></span><span class=line><span class=cl>  <span class=nf>image_write</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=nf>paste</span><span class=p>(</span><span class=s>&#34;Chapter&#34;</span><span class=p>,</span><span class=nf>str_replace_all</span><span class=p>(</span><span class=n>SinData</span><span class=o>$</span><span class=n>City[i]</span><span class=p>,</span> <span class=nf>fixed</span><span class=p>(</span><span class=s>&#34; &#34;</span><span class=p>),</span> <span class=s>&#34;&#34;</span><span class=p>),</span><span class=s>&#34;.png&#34;</span><span class=p>),</span> <span class=n>format</span><span class=o>=</span> <span class=s>&#34;png&#34;</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
 </span></span></code></pre></div><h2 id=how-the-tweets-were-created>How the Tweets were created</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-r data-lang=r><span class=line><span class=cl><span class=c1>#Base code from Ma?lle and the post in R-Ladies blog</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># templates</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>templates</span> <span class=o>&lt;-</span> <span class=nf>c</span><span class=p>(</span><span class=s>&#34;Did you know that there is an adjective chapter in X? They&#39;d love for you to visit!&#34;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>       	   <span class=s>&#34;Hop over and join this adjective group of #rladies in X!&#34;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>       	   <span class=s>&#34;Do you like #rstats? Looking for like-minded people? Come to have fun with us in X!&#34;</span><span class=p>,</span>
@@ -327,25 +327,25 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>       	   <span class=s>&#34;Nourish your mind today! Join adjective chapter X!&#34;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>       	   <span class=s>&#34;We are privileged to have adjective chapter X in our network!&#34;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>       	   <span class=s>&#34;We are privileged to feature adjective chapter X this women&#39;s day!&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>Chapter_adjectives</span> <span class=o>&lt;-</span> <span class=nf>c</span><span class=p>(</span><span class=s>&#34;awesome&#34;</span><span class=p>,</span> <span class=s>&#34;fantastic&#34;</span><span class=p>,</span> <span class=s>&#34;wonderful&#34;</span><span class=p>,</span> <span class=s>&#34;amazing&#34;</span><span class=p>,</span> <span class=s>&#34;brilliant&#34;</span><span class=p>,</span> <span class=s>&#34;phenomenal&#34;</span><span class=p>,</span> <span class=s>&#34;remarkable&#34;</span><span class=p>,</span> <span class=s>&#34;talented&#34;</span><span class=p>,</span> <span class=s>&#34;incredible&#34;</span><span class=p>,</span> <span class=s>&#34;top-notch&#34;</span><span class=p>,</span> <span class=s>&#34;magnificent&#34;</span><span class=p>,</span> <span class=s>&#34;marvelous&#34;</span><span class=p>,</span> <span class=s>&#34;insightful&#34;</span><span class=p>,</span> <span class=s>&#34;capable&#34;</span><span class=p>,</span> <span class=s>&#34;admirable&#34;</span><span class=p>,</span> <span class=s>&#34;outstanding&#34;</span><span class=p>,</span> <span class=s>&#34;splendid&#34;</span><span class=p>,</span> <span class=s>&#34;exceptional&#34;</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># get as many sentences as there are Chapters</span>
 </span></span><span class=line><span class=cl><span class=n>combinations</span> <span class=o>&lt;-</span> <span class=nf>expand.grid</span><span class=p>(</span><span class=n>templates</span><span class=p>,</span> <span class=n>Chapter_adjectives</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>combinations</span> <span class=o>&lt;-</span> <span class=n>dplyr</span><span class=o>::</span><span class=nf>mutate_all</span><span class=p>(</span><span class=n>combinations</span><span class=p>,</span> <span class=n>as.character</span><span class=p>)</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>create_sentence</span> <span class=o>&lt;-</span> <span class=kr>function</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=n>adjective</span><span class=p>){</span>
 </span></span><span class=line><span class=cl>  <span class=n>stringr</span><span class=o>::</span><span class=nf>str_replace</span><span class=p>(</span><span class=n>template</span><span class=p>,</span> <span class=s>&#34;adjective&#34;</span><span class=p>,</span> <span class=n>adjective</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=n>sentences</span> <span class=o>&lt;-</span> <span class=n>purrr</span><span class=o>::</span><span class=nf>map2_chr</span><span class=p>(</span><span class=n>combinations</span><span class=o>$</span><span class=n>Var1</span><span class=p>,</span> <span class=n>combinations</span><span class=o>$</span><span class=n>Var2</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>                     		<span class=n>create_sentence</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=nf>set.seed</span><span class=p>(</span><span class=m>42</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=c1># the first one is chosen, this way it&#39;s not &#34;another&#34; or &#34;one more&#34;</span>
 </span></span><span class=line><span class=cl><span class=n>sentences</span> <span class=o>&lt;-</span> <span class=nf>c</span><span class=p>(</span><span class=n>sentences[1]</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>       	   <span class=nf>sample</span><span class=p>(</span><span class=n>sentences</span><span class=p>,</span> <span class=nf>nrow</span><span class=p>(</span><span class=n>CCRL</span><span class=p>)</span> <span class=o>-</span> <span class=m>1</span><span class=p>,</span> <span class=n>replace</span> <span class=o>=</span> <span class=kc>TRUE</span><span class=p>))</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># add actual tweet text</span>
 </span></span><span class=line><span class=cl><span class=n>CCRLTw</span> <span class=o>&lt;-</span> <span class=n>dplyr</span><span class=o>::</span><span class=nf>mutate</span><span class=p>(</span><span class=n>CCRL</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>                	     	<span class=n>tweet</span> <span class=o>=</span> <span class=n>stringr</span><span class=o>::</span><span class=nf>str_replace</span><span class=p>(</span><span class=n>sentences</span><span class=p>,</span><span class=s>&#34;X&#34;</span><span class=p>,</span><span class=n>CCRL</span><span class=o>$</span><span class=n>City</span><span class=p>),</span>
@@ -353,7 +353,7 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>                      	             	<span class=nf>paste0</span><span class=p>(</span><span class=n>tweet</span><span class=p>,</span> <span class=s>&#34; Meetups here: &#34;</span><span class=p>,</span> <span class=n>CCRL</span><span class=o>$</span><span class=n>Meetup</span><span class=p>),</span> <span class=n>tweet</span><span class=p>),</span>
 </span></span><span class=line><span class=cl>                	     	<span class=n>tweet</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=n>tweet</span><span class=p>,</span> <span class=s>&#34;#rladies #iwd2018&#34;</span><span class=p>),</span>
 </span></span><span class=line><span class=cl>                	     	<span class=n>picture</span><span class=o>=</span><span class=nf>paste</span><span class=p>(</span><span class=s>&#34;Chapter&#34;</span><span class=p>,</span><span class=nf>str_replace_all</span><span class=p>(</span><span class=n>CCRL</span><span class=o>$</span><span class=n>City</span><span class=p>,</span> <span class=nf>fixed</span><span class=p>(</span><span class=s>&#34; &#34;</span><span class=p>),</span> <span class=s>&#34;&#34;</span><span class=p>),</span><span class=s>&#34;.png&#34;</span><span class=p>))</span>
-</span></span><span class=line><span class=cl> 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># save tweets</span>
 </span></span><span class=line><span class=cl><span class=n>tweets</span> <span class=o>&lt;-</span> <span class=n>dplyr</span><span class=o>::</span><span class=nf>select</span><span class=p>(</span><span class=n>CCRLTw</span><span class=p>,</span> <span class=n>City</span><span class=p>,</span> <span class=n>tweet</span><span class=p>,</span> <span class=n>picture</span><span class=p>)</span> <span class=o>%&gt;%</span>
 </span></span><span class=line><span class=cl>  <span class=nf>arrange</span><span class=p>(</span><span class=n>City</span><span class=p>)</span>
@@ -385,9 +385,9 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl><span class=c1># add actual tweet text</span>
 </span></span><span class=line><span class=cl><span class=n>CCRLTw</span> <span class=o>&lt;-</span> <span class=n>dplyr</span><span class=o>::</span><span class=nf>mutate</span><span class=p>(</span><span class=n>SinData</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>                    	<span class=n>tweet</span> <span class=o>=</span> <span class=n>stringr</span><span class=o>::</span><span class=nf>str_replace</span><span class=p>(</span><span class=n>templates</span><span class=p>,</span><span class=s>&#34;X&#34;</span><span class=p>,</span><span class=n>SinData</span><span class=o>$</span><span class=n>City</span><span class=p>),</span>
-</span></span><span class=line><span class=cl>                   	 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>                    	<span class=n>tweet</span> <span class=o>=</span> <span class=nf>paste</span><span class=p>(</span><span class=n>tweet</span><span class=p>,</span> <span class=s>&#34;#rladies #iwd2018&#34;</span><span class=p>),</span>
-</span></span><span class=line><span class=cl>                   	 
+</span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl>                    	<span class=n>picture</span><span class=o>=</span><span class=nf>paste</span><span class=p>(</span><span class=s>&#34;Chapter&#34;</span><span class=p>,</span><span class=nf>str_replace_all</span><span class=p>(</span><span class=n>SinData</span><span class=o>$</span><span class=n>City</span><span class=p>,</span> <span class=nf>fixed</span><span class=p>(</span><span class=s>&#34; &#34;</span><span class=p>),</span> <span class=s>&#34;&#34;</span><span class=p>),</span><span class=s>&#34;.png&#34;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl>
 </span></span><span class=line><span class=cl><span class=c1># save tweets</span>
@@ -395,9 +395,8 @@ Text Processing (including non-English charectors) is explained <a href=https://
 </span></span><span class=line><span class=cl>  <span class=nf>arrange</span><span class=p>(</span><span class=n>City</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=n>readr</span><span class=o>::</span><span class=nf>write_excel_csv2</span><span class=p>(</span><span class=n>tweets</span><span class=p>,</span> <span class=n>path</span> <span class=o>=</span> <span class=s>&#34;ready_tweets_nodata.csv&#34;</span><span class=p>)</span>
 </span></span></code></pre></div><p>Authors: &ldquo;As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz&rdquo;</p></p><div class="post-tags my-2">Tags:
-<a href=https://rladies.org/tags/iwd/>iwd</a>
-<a href=https://rladies.org/tags/twitter/>twitter</a>
-<a href=https://rladies.org/tags/2019/>2019</a></div><div class=my-2>Author: As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz</div><div class=my-2><p class=text-muted>This post was last edited on 22 April 2025.</p></div><div class=row><div class="col-md-6 text-align-left"><a class=prev href=/blog/2020-01-27-rladies_video_2019/><i class="fa fa-chevron-circle-left" aria-hidden=true></i>
+<a href=https://rladies.org/tags/twitter/>Twitter</a>
+<a href=https://rladies.org/tags/rstats/>RStats</a></div><div class=my-2>Author: As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz</div><div class=my-2><p class=text-muted>This post was last edited on 29 April 2025.</p></div><div class=row><div class="col-md-6 text-align-left"><a class=prev href=/blog/2020-01-27-rladies_video_2019/><i class="fa fa-chevron-circle-left" aria-hidden=true></i>
 <b><span class="prev-text nav-mobile">Prev</span></b><br><span class="prev-text nav-default">Recipe for a year-end video</span></a></div><div class="col-md-6 text-align-righ"><a class=next href=/blog/2018-12-12-what-happened-in-2018/><b><span class="prev-text nav-mobile">Next</span></b>
 <i class="fa fa-chevron-circle-right" aria-hidden=true></i><br><span class="next-text nav-default">What happened in 2018?</span></a></div></div></article></div></div></main><div class="container col-md-8 offset-md-2"><center><a href=#hero><i class="fa fa-chevron-up chevron"></i></a></center></div><footer id=footer><div class="container pl-2"><div class=row><div class="col-md-3 widget"><h3 class=widget-title>Contact</h3><div class=widget-body><p><a href=mailto:info[at]rladies[dot]org>info[at]rladies[dot]org</a><br><br><h3 class=widget-title>Donate to R-Ladies</h3><p class=follow-me-icons><a href="https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E" target=_blank><i class="fab fa-cc-paypal fa-4x" aria-hidden=true></i></a></p></p></div></div><div class="col-md-3 widget"><h3 class=widget-title>Follow us</h3><div class=widget-body><p class=follow-me-icons><a href=https://www.linkedin.com/in/rladies target=_blank rel=me><i class="fab fa-linkedin fa-2x"></i>
 </a><a href=https://bsky.app/profile/rladies.org target=_blank rel=me><i class="fa-brands fa-bluesky fa-2x"></i>

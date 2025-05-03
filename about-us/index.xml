@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About-Uses on R-Ladies Global</title><link>https://rladies.org/about-us/</link><description>Recent content in About-Uses on R-Ladies Global</description><generator>Hugo</generator><language>en</language><atom:link href="https://rladies.org/about-us/index.xml" rel="self" type="application/rss+xml"/><item><title>Get Involved</title><link>https://rladies.org/about-us/involved/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://rladies.org/about-us/involved/</guid><description>&lt;center>
-&lt;p>&lt;img src="https://rladies.org/about-us/involved/img/rladies-help.png" alt="">&lt;/p>
+&lt;p>&lt;figure class="figure">
+ &lt;img class="figure-img img-fluid rounded" 
+ src="img/rladies-help.png" 
+ alt="">
+ &lt;figcaption class="figure-caption">
+ 
+ &lt;/figcaption>
+&lt;/figure>&lt;/p>
 &lt;/center>
 &lt;p>We welcome your contributions, below are handful of ideas 💜&lt;/p>
 &lt;h4 id="-getting-started">🏁 Getting started&lt;/h4>
