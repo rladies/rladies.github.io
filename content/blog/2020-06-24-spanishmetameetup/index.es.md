@@ -10,10 +10,6 @@ categories:
   - R-Ladies
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ### Versión corta
 
 💻 **¿Qué?**
