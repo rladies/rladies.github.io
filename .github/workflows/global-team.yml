@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.push-to-protected }}
 
       - name: Install cURL Headers
         run: |
@@ -56,6 +58,5 @@ jobs:
         if: github.ref_name == 'main'
         uses: CasperWA/push-protected@v2
         with:
-          token: ${{ secrets.GLOBAL_GHA_PAT }}
-          branch: main
+          token: ${{ secrets.push-to-protected  }}          branch: main
           
