@@ -2,8 +2,8 @@ name: Get Global Team from Airtable
 
 on:
   schedule:
-    - cron: "16 16 * * 0" 
-  workflow_dispatch: 
+    - cron: "16 16 * * 0"
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -12,7 +12,7 @@ concurrency:
 env:
   RENV_PROFILE: "airtable"
   RENV_CONFIG_SANDBOX_ENABLED: FALSE
-  
+
 jobs:
   airtable:
     name: Retrieve Airtable data
@@ -27,15 +27,15 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
-        
+
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: 'renv'
+          r-version: "renv"
 
       - name: Setup Renv
         uses: r-lib/actions/setup-renv@v2
-      
+
       - name: Get Airtable data and write to file
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
@@ -52,11 +52,11 @@ jobs:
         run: |
           git add content/about-us/global-team/img
           git add data/global_team
-          git commit -m "Automated update: Update Global Team"  || echo "No new data to commit"	
+          git commit -m "Automated update: Update Global Team"  || echo "No new data to commit"
 
       - name: Pushing to the protected branch 'main'
         if: github.ref_name == 'main'
         uses: CasperWA/push-protected@v2
         with:
-          token: ${{ secrets.push-to-protected  }}          branch: main
-          
+          token: ${{ secrets.push-to-protected  }}
+          branch: main
