@@ -65,6 +65,6 @@ jobs:
       - name: Pushing to the protected branch 'main'
         uses: CasperWA/push-protected@v2
         with:
-          token: ${{ secrets.GLOBAL_GHA_PAT  }}
+          token: ${{ secrets.ADMIN_TOKEN  }}
           branch: main
           unprotect_reviews: true
