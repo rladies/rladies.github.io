@@ -48,11 +48,12 @@
       "facebook": "RladiesBA",
       "instagram": "rladiesba",
       "youtube": "UCztAJhENVqsqv0cvyxs4sgg",
-      "github": "rladies/meetup-presentations_buenosaires"
+      "github": "rladies/meetup-presentations_buenosaires",
+      "website": "https://rladiesba.netlify.app/"
     },
     "organizers": {
-      "current": ["Paola Corrales", "Florencia D'Andrea", "Monica Alonso", "Priscilla Minotti", "Jimena Saucedo", "Maria Nanton", "Andrea Gomez", "Jesica Formoso", "Virginia Garc<ed>a Alonso"],
-      "former": []
+      "current": ["Maria Nanton", "Jesica Formoso", "Virginia Garc<ed>a Alonso", "Betsabé Cohen"],
+      "former": ["Laura Acion", "Paola Corrales", "Florencia D'Andrea", "Monica Alonso", "Priscilla Minotti", "Jimena Saucedo", "Verónica Rojo", "Andrea Gomez Vargas", "Daniela Vázquez", "Karina Bartolomé", "L. Paloma Rojas-Saunero", "Natsumi Shokida", "Paola Prieto"]
     },
     "name": "R-Ladies Buenos Aires",
     "id": "21760043",
