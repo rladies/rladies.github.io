@@ -2,9 +2,7 @@ name: "Merge chapters and meetup"
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - "push-action/**"
+  pull_request:
     paths:
       - "data/chapters/"
   schedule:
