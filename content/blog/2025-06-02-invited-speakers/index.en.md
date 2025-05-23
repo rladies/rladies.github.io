@@ -71,7 +71,7 @@ Do not create or edit those without their explicit approval.
 
 If you want to record, ask speakers ahead of time and tell them what you want to do with the recording. 
 
-Clarify the speaking logistics with the speaker: in what kind of room will they speak? will they have access to a clicker? what are the power characteristics?
+Clarify the speaking logistics with the speaker: in what kind of room will they speak? will they have access to a clicker? what are the power characteristics? what will be the slide aspect ratio?
 Do let them use their own laptop. 
 Do not expect them to have slides in a certain format for your AV team without telling them in advance. Better yet, just let them use their own laptop and tell them about available connections.
 
