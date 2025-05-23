@@ -128,5 +128,5 @@ Ideally, use a platform like Slido for moderating questions (filtering some of t
 ## Conclusion
 
 In this post we summarized what we think are important aspects of working with invited speakers.
-Together, organizers and speakers have the common goal to create a memorable and instructive events.
+Together, organizers and speakers have the common goal to create a memorable and instructive event.
 We hope that our tips can facilitate the collaboration.
