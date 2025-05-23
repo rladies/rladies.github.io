@@ -43,7 +43,7 @@ If someone recommended the speaker to you, only state it if you have the agreeme
 
 Even if you made an effort to invite someone from a underrepresented group (and yes you should make an effort to have diversity in your speaker panel, we’re in the XXIst century)… do not tell this person.
 
-Send the invitation in advance, especially if the thing requires travelling, but even if not. 
+Send the invitation in advance, especially if the event requires travelling, but even if not. 
 Be mindful of timelines, challenges, and costs with [procuring travel visas](https://yabellini.netlify.app/blog/2023-05-06-visa/). 
 Does the speaker have sufficient notice, and can organizers provide the required documentation?
 
