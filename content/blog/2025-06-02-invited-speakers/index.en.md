@@ -15,9 +15,9 @@ editor:
     wrap: sentence
 ---
 
-As a conference or meetup organizers you probably routinely invite speakers to your events.
+As a conference or meetup organizer you probably routinely invite speakers to your events.
 Kindness and good organization skills on your part will go a long way towards making it easier for speakers to do their job: prepare and deliver their talk!
-In this post we provide a list of tips, drawing on our good and bad experiences on both sides of the equation.
+In this post we provide a list of tips, drawing on both our good and bad experiences as invited speakers.
 
 As a common thread let's share this quote of [Brene Brown](https://brenebrown.com/articles/2018/10/15/clear-is-kind-unclear-is-unkind/):
 
@@ -29,9 +29,10 @@ What are you inviting the person for exactly?
 Your initial contact should state it explicitly, introducing the event in one or a few sentences and providing a link to the next or, if needed, past editions.
 
 Example questions your invitation should answer: 
-- How long will the talk be? 
+- How long is to the total speaker session? What is the expectation for time speaking versus time for question and answer?
 - Do you have a topic in mind or does the speaker have free reign? 
-- Will it be online? 
+- Will it be online or in person? 
+- Is there a fixed date for the event or is it flexible? If it is flexible, provide information around target days / days of the week / time and time zone.
 - Will travel and accommodation be covered? Do state the budget.
 - Will you pay for it or will it be by reimbursement? Give details of the process. Ideally, be prepared to either do the bookings on behalf of the speaker to prevent their having to advance funds, or to let the speaker do the bookings, based on their preferences and constraints. See also the post section about logistics!
 - Will there be a speaker honorarium? If there is, it should be the same for all speakers.
@@ -40,7 +41,7 @@ Don’t hesitate to throw in a compliment regarding why you are inviting this pe
 Explain why you invited the person: show that you know and respect their work.
 If someone recommended the speaker to you, only state it if you have the agreement of the recommender.
 
-Even if you made an effort to invite someone from a minority (and yes you should make an effort to have diversity in your speaker panel, we’re in the XXIst century)… do not tell this person.
+Even if you made an effort to invite someone from a underrepresented group (and yes you should make an effort to have diversity in your speaker panel, we’re in the XXIst century)… do not tell this person.
 
 Send the invitation in advance, especially if the thing requires travelling, but even if not. 
 Be mindful of timelines, challenges, and costs with [procuring travel visas](https://yabellini.netlify.app/blog/2023-05-06-visa/). 
@@ -66,10 +67,13 @@ It is very unlikely the person is faking their concern or health issue.
 Ask about your guest’s needs, for instance but not limited to: room accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
 Even better, have public information about how these things are handled at your event, as non guests will have similar problems!
 
-Ask the speaker for a title, abstract, bio and picture.
+Ask the speaker for a title, abstract, brief biography and picture.
 Do not create or edit those without their explicit approval.
+Once this information is publicly available on a website or otherwise, send it to the speaker.
 
-If you want to record, ask speakers ahead of time and tell them what you want to do with the recording. 
+If you want to record, ask for the speakers consent ahead of time and tell them what you want to do with the recording. 
+Also ask the speaker if they will share the slides or the material of their participation and how. 
+Do not share this material without their consent.
 
 Clarify the speaking logistics with the speaker: in what kind of room will they speak? will they have access to a clicker? what are the power characteristics? what will be the slide aspect ratio?
 Do let them use their own laptop. 
@@ -84,9 +88,9 @@ Travel planning is a key piece of an in-person event.
 Be mindful of your guest’s preferences and constraints regarding the booking process: do they prefer to book themselves and be reimbursed? 
 Does advancing money actually mean they pay taxes on the reimbursement? 
 Will they fly or travel on trains or use their car? 
-Your speaker’s job is probably to spend more time preparing their content than figuring out how not to lose money.
+Your speaker would rather focus on on preparing content rather than figuring out how not to lose money.
 
-Get to know your guest and trust that he/she knows the ins and outs of travel logistics better than you do. 
+Get to know your guest and trust that they know the ins and outs of travel logistics better than you do. 
 Ask if they need to arrive a day earlier or leave a day later to take it into account at the T&A. 
 Trips of many hours plus time differences are tiring for many people. 
 Your speaker will be better if they sleep in a bed and not on a plane and will surely give a better talk if they are rested. 
@@ -108,7 +112,7 @@ Thank the speaker for coming/participating.
 
 ## Be a good session chair
 
-Don’t mess up their bio. 
+Confirm bios prior to announcing the speaker on your event's website and on social media.
 Read it with enthusiasm.
 
 Know whether they want to take questions, prepare mic etc.
