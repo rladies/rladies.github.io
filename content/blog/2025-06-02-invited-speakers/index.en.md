@@ -60,6 +60,8 @@ It is much better to answer about uncertainty, rather than not to answer.
 
 ## Respect your guest
 
+Confirm bios prior to announcing the speaker on your event's website and on social media.
+
 If the guest has to adapt, or cancel, their participation in your event due to health, safety or other concerns, just accept this. 
 Do not push them to participate in a certain way disregarding their safety. 
 It is very unlikely the person is faking their concern or health issue.
@@ -114,8 +116,8 @@ Thank the speaker for coming/participating.
 
 ## Be a good session chair
 
-Confirm bios prior to announcing the speaker on your event's website and on social media.
-Read it with enthusiasm.
+After confirming the bio with the speaker one more time in advance,
+on the day of your talk introduce them with enthusiasm.
 
 Know whether they want to take questions, prepare mic etc.
 You can even suggest a preparation/test short session before the talk.
