@@ -21,7 +21,7 @@ In this post we provide a list of tips, drawing on our good and bad experiences 
 
 As a common thread let's share this quote of [Brene Brown](https://brenebrown.com/articles/2018/10/15/clear-is-kind-unclear-is-unkind/):
 
-> Clear Is Kind. Unclear Is Unkind.
+> _"Clear Is Kind. Unclear Is Unkind."_
 
 ## Invite them clearly, in advance
 
