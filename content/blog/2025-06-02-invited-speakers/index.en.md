@@ -76,7 +76,9 @@ Also ask the speaker if they will share the slides or the material of their part
 Do not share this material without their consent.
 
 Clarify the speaking logistics with the speaker: in what kind of room will they speak? will they have access to a clicker? what are the power characteristics? what will be the slide aspect ratio?
-Do let them use their own laptop. 
+Ask the speaker if they have a travel laptop and if they would like to use it. 
+If they do, do let them use their computer. 
+Otherwise, plan a way for them to present their talk.
 Do not expect them to have slides in a certain format for your AV team without telling them in advance. Better yet, just let them use their own laptop and tell them about available connections.
 
 ## Be mindful of travel logistics!
