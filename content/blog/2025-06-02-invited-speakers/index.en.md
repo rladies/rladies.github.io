@@ -1,7 +1,7 @@
 ---
-title: "How to handle invited speakers"
+title: "Organizer tips for inviting speakers"
 description: |
-  Some tips for conference and event organizers, to facilitate the participation of invited speakers.
+  Considerations for conference and event organizers, to facilitate the participation of invited speakers.
 author:
   - Maëlle Salmon
   - Hannah Frick
