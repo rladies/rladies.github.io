@@ -66,7 +66,7 @@ If the guest has to adapt, or cancel, their participation in your event due to h
 Do not push them to participate in a certain way disregarding their safety. 
 It is very unlikely the person is faking their concern or health issue.
 
-Ask about your guest’s needs, for instance but not limited to: room accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
+Ask about your guest’s needs, for instance but not limited to: room and venue accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
 Even better, have public information about how these things are handled at your event, as non guests will have similar problems!
 
 Ask the speaker for a title, abstract, brief biography and picture.
