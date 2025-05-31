@@ -21,10 +21,10 @@ jobs:
       - name: Find PRs with "pending" label
         id: find_pending_prs
         run: |
-          prs=$(gh pr list --label "pending" --state "open" --json number,title -q '.[] | .number')
+          prs=$(gh pr list --label "pending" --state "open" --json number,title,isDraft -q '.[] | select(.isDraft == false) | .number')
           process='false'
           if [ -n "$prs" ]; then
-            process='true'
+          process='true'
           fi
           echo "prs=${prs}" >> $GITHUB_OUTPUT
           echo "process=${process}" >> $GITHUB_OUTPUT
