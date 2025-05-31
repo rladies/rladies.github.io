@@ -9,9 +9,12 @@ on:
 jobs:
   comment:
     runs-on: ubuntu-latest
+    outputs:
+      say_hello: ${{ steps.global-team.outputs.say_hello }}
     steps:
 
       - name: Is Global team member?
+        id: global-team
         run: |
           author=$(jq -r '.pull_request.user.login' "$GITHUB_EVENT_PATH")
           hello='false'
@@ -24,11 +27,10 @@ jobs:
           if [[ "$is_member" == "200" ]]; then
             hello='true'
           fi
-          echo "say_hello=${hello}" >> $GITHUB_ENV
-
+          echo "say_hello=${hello}" >> $GITHUB_OUTPUT
 
       - name: Comment on PR or Issue
-        if: env.TERMINUS_RELEASE == 'true'
+        if: steps.global-team.outputs.say_hello == 'true'
         uses: peter-evans/repository-dispatch@v1
         with:
           token: ${{ secrets.GLOBAL_GHA_PAT }}
