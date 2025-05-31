@@ -7,14 +7,7 @@ description: "Reduced Service Mode for R-Ladies Global"
 tags:
   - community
 categories:
-<<<<<<< HEAD:content/news/2020-11-23-reduced-service-note/index.en.md
   - r-ladies
-=======
-  - R-Ladies
-slug: "reduced-service-note"
-aliases:
-  - '/news/2020-11-23-reduced-service-note'
->>>>>>> main:content/news/2020/11-23-reduced-service-note/index.en.md
 ---
 
 This year has been and continues to be a challenging year for many, if not all, of us.
@@ -49,7 +42,8 @@ Most of our other initiatives may see some activity but it will largely be deter
 This affects things like:
 =======
 Most of our other initiatives may see some activity but it will largely be determined by whatever capacity we have at a given moment. This affects things like:
->>>>>>> main:content/news/2020/11-23-reduced-service-note/index.en.md
+
+> > > > > > > main:content/news/2020/11-23-reduced-service-note/index.en.md
 
 - Mentoring program
 - Website and R-Ladies blog
@@ -57,11 +51,10 @@ Most of our other initiatives may see some activity but it will largely be deter
 - Reviewer network
 - RoCur Twitter account (@WeAreRLadies)
 - Community Slack
-<<<<<<< HEAD:content/news/2020-11-23-reduced-service-note/index.en.md
-- Any changes in existing chapter infrastructure (email, GitHub, YouTube, Meetup, Slack Organizers, chapter's social media)
-=======
+  <<<<<<< HEAD:content/news/2020-11-23-reduced-service-note/index.en.md
+- # Any changes in existing chapter infrastructure (email, GitHub, YouTube, Meetup, Slack Organizers, chapter's social media)
 - Any changes in existing chapter infrastructure (email, GitHub, YouTube, Meetup, Slack Organizers, chapter’s social media)
->>>>>>> main:content/news/2020/11-23-reduced-service-note/index.en.md
+  > > > > > > > main:content/news/2020/11-23-reduced-service-note/index.en.md
 - Liaison with others orgs and conferences
 
 We thank you for your understanding.
