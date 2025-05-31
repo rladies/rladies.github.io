@@ -1,0 +1,89 @@
+name: Merge Pending PRs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "58 10 * * *"
+
+env:
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  find_pending_prs:
+    runs-on: ubuntu-latest
+    outputs:
+      prs: ${{ steps.find_pending_prs.outputs.prs }}
+      process: ${{ steps.find_pending_prs.outputs.process }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Find PRs with "pending" label
+        id: find_pending_prs
+        run: |
+          prs=$(gh pr list --label "pending" --state "open" --json number,title,isDraft -q '.[] | select(.isDraft == false) | .number')
+          process='false'
+          if [ -n "$prs" ]; then
+          process='true'
+          fi
+          echo "prs=${prs}" >> $GITHUB_OUTPUT
+          echo "process=${process}" >> $GITHUB_OUTPUT
+
+  process_prs:
+    runs-on: ubuntu-latest
+    needs: find_pending_prs
+    if: ${{ needs.find_pending_prs.outputs.process == 'true' }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Process and Merge Qualifying PRs
+        env:
+          prs: ${{ needs.find_pending_prs.outputs.prs }}
+        run: |
+          current_date=$(date +'%Y-%m-%d')
+
+          for pr_number in $prs; do
+              echo "Checking PR #$pr_number"
+
+              # Check if the PR modifies any index.md file in the "content/" directory
+              index_files=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
+              
+              if [ -n "$index_files" ]; then
+                echo "PR #$pr_number modifies the following index.md files:"
+                echo "$index_files"
+
+                # Loop through each index.md file modified by the PR
+                for file in $index_files; do
+                  # Fetch the content of the file from the PR's branch
+                  branch_name=$(gh pr view "$pr_number" --json headRefName -q .headRefName)
+                  file_content=$(gh api "repos/$GITHUB_REPOSITORY/contents/$file?ref=$branch_name" --jq '.content' | base64 --decode || true)
+
+                  # Extract the date from the YAML front matter (assuming "date: " is on its own line)
+                  yaml_date=$(echo "$file_content" | grep -E '^date:' | awk '{print $2}' | sed -e s/\'//g)
+
+                  # Check if the date matches today's date
+                  if [ "$yaml_date" == "$current_date" ]; then
+                    echo "Merging PR #$pr_number (matching YAML date: $yaml_date)"
+                    gh pr merge "$pr_number" --squash --delete-branch
+                    break
+                  else
+                    echo "Date in $file ($yaml_date) does not match today's date ($current_date)."
+                  fi
+                done
+              else
+                echo "PR #$pr_number does not modify any index.md file."
+              fi
+            done
+
+      - name: Trigger Website build
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'rladies',
+              repo: 'rladies.github.io',
+              workflow_id: 'build-production.yaml',
+              ref: 'main'
+            })
