@@ -4,10 +4,10 @@ author: "Abstract Review Team"
 type: blog
 date: "2025-01-03"
 image: img/typing.jpg
-tags: 
-- community
-categories: 
-- R-Ladies
+tags:
+  - community
+categories:
+  - R-Ladies
 summary: Volunteer as an R-Ladies Abstract Reviewer to support diversity in tech!
 slug: abstract-review-2025
 ---
@@ -20,16 +20,15 @@ Our abstract review system connects aspiring speakers with reviewers who can pro
 
 ## Why Join as a Reviewer?
 
-* Make an Impact: Help new voices shine by sharing your expertise and guidance.
-* Flexible Commitment: Sign up now, and we'll reach out when abstracts come in.
-* Support a Global Movement: Contribute to R-Ladies' mission of promoting diverse voices in the R community.
-* Minimal Time Commitment: Totally flexible, depending on the level of feedback you wish to provide and number of abstracts you wish to review.
-* Expand Your Network: Meet new people from around the world and learn about their work.
-
+- Make an Impact: Help new voices shine by sharing your expertise and guidance.
+- Flexible Commitment: Sign up now, and we'll reach out when abstracts come in.
+- Support a Global Movement: Contribute to R-Ladies' mission of promoting diverse voices in the R community.
+- Minimal Time Commitment: Totally flexible, depending on the level of feedback you wish to provide and number of abstracts you wish to review.
+- Expand Your Network: Meet new people from around the world and learn about their work.
 
 ## Who Can Be a Reviewer?
 
-Anyone with experience writing or reviewing conference abstracts, giving talks, or attending conferences is encouraged to sign up. Our reviewers come from diverse backgrounds and skill levels, and we welcome all genders to participate.  The default sign-up duration is 1 year, but you can opt out at any time.
+Anyone with experience writing or reviewing conference abstracts, giving talks, or attending conferences is encouraged to sign up. Our reviewers come from diverse backgrounds and skill levels, and we welcome all genders to participate. The default sign-up duration is 1 year, but you can opt out at any time.
 
 ## How to Sign Up
 
@@ -43,4 +42,3 @@ Once you sign up:
 2. You'll be part of a supportive network making a tangible difference in the R and tech communities.
 
 Join us today and help shape the future of conference lineups—one abstract at a time!
-

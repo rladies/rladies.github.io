@@ -1,6 +1,9 @@
 
 {{ define "main"}}
-		<p>{{ .Content }}</p>
+    <div class="entry-content">
+      <p>{{ .Content }}</p>
+    </div>
+
     {{ with .Params.tags -}}
     
       <div class="post-tags my-2">
