@@ -12,10 +12,6 @@ However, a number of experienced R-Ladies organisers are willing to mentor new o
 
 For mentors, this is an opportunity to help build the community, learn about the realities of other chapters, gain experience as a mentor, and contributing to R-Ladies' goals.
 
-<<<<<<< HEAD:content/activities/mentoring/index.en.md
 {{% button "/form/mentoring-signup/" "Join the program" %}}
-=======
-{{% button "https://tinyurl.com/rladies-mentoring" "Join the program" %}}
->>>>>>> main:content/activities/mentoring/_index.en.md
 
 ## Experiences from the program

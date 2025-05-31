@@ -3,18 +3,18 @@ language: fr
 translated: no
 title: vacation \<- grow(RLadiesNetwork)
 author: Paloma, Mine, Laura
-date: '2018-10-27'
+date: "2018-10-27"
 description: Développer le réseau R-Ladies après des vacances
 tags:
-- vacation
-- south america
-- 2018
+  - vacation
+  - south america
+  - 2018
 categories: r-ladies
 output: html_document
 slug: vacation_grow_r_ladies_network
 ---
 
-*Nous aimerions vous raconter comment des vacances ont conduit à la croissance d'une communauté de femmes en Amérique du Sud. L'histoire implique plusieurs pays et des chemins qui se croisent au bon moment de la vie.*
+_Nous aimerions vous raconter comment des vacances ont conduit à la croissance d'une communauté de femmes en Amérique du Sud. L'histoire implique plusieurs pays et des chemins qui se croisent au bon moment de la vie._
 
 #### [Mine Dogucu](https://twitter.com/MineDogucu)
 
@@ -50,7 +50,7 @@ J'étais intéressée par l'apprentissage de R, mais mes pairs me décourageaien
 Lorsque j'en ai parlé à Mine, elle a partagé avec moi le document de son atelier pour apprendre les bases de R en quelques heures.
 Ces quelques jours ont été déterminants pour ma vie professionnelle. Je ne m'étais jamais sentie aussi encouragée à continuer à apprendre la biostatistique et à poursuivre un doctorat à l'étranger.
 Mine m'a même promis de m'aider à rédiger ma lettre de motivation dans le cadre du processus de candidature.
-*Je me suis sentie extrêmement motivée et aussi soutenue, je savais que j'avais trouvé une amie, une grande sœur, un mentor. C'est difficile à définir (je pense que je n'étais même pas consciente de la signification du terme "sororité" jusqu'à ce moment-là). J'avais trouvé quelqu'un qui partageait mes intérêts, que j'admirais et sur qui je pouvais compter.*
+_Je me suis sentie extrêmement motivée et aussi soutenue, je savais que j'avais trouvé une amie, une grande sœur, un mentor. C'est difficile à définir (je pense que je n'étais même pas consciente de la signification du terme "sororité" jusqu'à ce moment-là). J'avais trouvé quelqu'un qui partageait mes intérêts, que j'admirais et sur qui je pouvais compter._
 
 À la fin de cette année-là, après avoir terminé mon programme de maîtrise, j'ai décidé de m'inscrire au programme de spécialisation en biostatistique de l'Institut de calcul de l'Université de Buenos Aires, le programme de maîtrise en biostatistique le plus proche de la ville.
 C'est là que j'ai enfin rencontré d'autres femmes ayant une formation en mathématiques et en statistiques et que j'ai fait la connaissance de Laura.
@@ -114,5 +114,3 @@ La cerise sur le gâteau a été [LatinR](http://latin-r.com/en) une conférence
 LatinR n'est qu'une initiative parmi d'autres, dont nous vous parlerons dans de prochains articles.
 
 Il est difficile de croire que tout cela a commencé en surfant sur le canapé de la mine en Amérique du Sud, mais c'est pourtant ce qui s'est passé.
-
-

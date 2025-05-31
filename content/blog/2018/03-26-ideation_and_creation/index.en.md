@@ -11,12 +11,12 @@ categories:
   - R-Ladies
 slug: "ideation_and_creation"
 aliases:
-  - '/blog/2018-03-26-ideation_and_creation'
+  - "/blog/2018-03-26-ideation_and_creation"
 ---
 
 ### As told by Maëlle Salmon with notes from Bea Hernández
 
-On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [@rladies\_iwd2018](https://twitter.com/rladies_iwd2018).
+On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [@rladies_iwd2018](https://twitter.com/rladies_iwd2018).
 It was a blast!
 And a lot of team work too!
 In this blog post, we'll explain how we designed and completed our Twitter action.
@@ -46,12 +46,8 @@ This created a flow of new entries to be tackled which Sheila and Page did effic
 
 ### Prettifying the directory
 
-<<<<<<< HEAD:content/blog/2018-03-26-ideation_and_creation/index.en.md
 \*A Note from [Bea](https://twitter.com/chucheria) on Prettifying the Directory:\*After doing the first "ugly" screenshots, we (Page, Sheila, and I) discovered we didn't have a method for adding names, so titles and other info were placed in the name.
 In addition to the big font for the name, it made the name too long and some of the screenshots ended up looking ugly.
-=======
-_A Note from [Bea](https://twitter.com/chucheria) on Prettifying the Directory:_ After doing the first "ugly" screenshots, we (Page, Sheila, and I) discovered we didn't have a method for adding names, so titles and other info were placed in the name. In addition to the big font for the name, it made the name too long and some of the screenshots ended up looking ugly.
->>>>>>> main:content/blog/2018/03-26-ideation_and_creation/index.en.md
 
 We modified the information, but even after that we discovered that depending on who made the screenshot the font was different.
 We haven't found the problem to that, but everything points to an issue with`revealJS`.
@@ -202,5 +198,3 @@ All images were prepared before tweeting, so that they were ready a bit before I
 ## Next Up: Part 2
 
 Continue Reading Part 2: [Deployment and Bot Wrangling](/post/deployment/)!
-
-

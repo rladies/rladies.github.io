@@ -11,12 +11,12 @@ categories:
   - R-Ladies
 slug: "deployment"
 aliases:
-  - '/blog/2018-03-27-deployment'
+  - "/blog/2018-03-27-deployment"
 ---
 
 ### As told by Kelly O'Briant
 
-On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [@rladies\_iwd2018](https://twitter.com/rladies_iwd2018).
+On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [@rladies_iwd2018](https://twitter.com/rladies_iwd2018).
 It was a blast!
 And a lot of team work too!
 In this blog post, we'll cover the deployment and monitoring stages of our project.
@@ -70,7 +70,7 @@ I cloned the GitHub repo we used for all our code and data, linked that volume t
 My initial instinct was to try and run the tweeting code as a cron scheduled script. [What is cron?](http://www.unixgeeks.org/security/newbie/unix/cron-1.html) I planned to set up crontab by [modifying the Docker file](https://www.ekito.fr/people/run-a-cron-job-with-docker/) for Rocker.
 
 But in keeping with the theme of "simple wins out", I ended up just using a for loop and `Sys.sleep()`.
-I was paranoid about our account getting flagged as a malicious bot by the folks at twitter, so I thought it would help to add a couple of "extra\_seconds" to each sleep cycle.
+I was paranoid about our account getting flagged as a malicious bot by the folks at twitter, so I thought it would help to add a couple of "extra_seconds" to each sleep cycle.
 This way we wouldn't be tweeting every six minutes on the dot.
 I have no idea whether this helped us or not... we still got blocked a few times.
 
@@ -119,21 +119,16 @@ Logs are comforting, you know?
 Our first application was blocked after three hours of tweeting, and we guessed that the shutdown was due in part to using ladies' twitter handles in the body of the tweet messages.
 It would have been nice to continue to tag people in the tweets, but we decided to remove handles in order to get our application running again (and keep it running).
 
-<<<<<<< HEAD:content/blog/2018-03-27-deployment/index.en.md
 My wonderful R-Ladies friend, [Hannah Frick](https://twitter.com/hfcfrick), hit me up on slack and encouraged us to lean into the gamification of tagging twitter handles by hand.
 This ended up being really fun.
 I spent*a lot*of time watching the feed, and people were routinely swooping in to tag people before I ever got the chance!
 I'm really happy with how this part turned out - thank you Hannah!
 And thank you to everyone who spent time tagging people and writing personal messages!
-=======
-My wonderful R-Ladies friend, [Hannah Frick](https://twitter.com/hfcfrick), hit me up on slack and encouraged us to lean into the gamification of tagging twitter handles by hand. This ended up being really fun. I spent _a lot_ of time watching the feed, and people were routinely swooping in to tag people before I ever got the chance! I'm really happy with how this part turned out - thank you Hannah! And thank you to everyone who spent time tagging people and writing personal messages!
->>>>>>> main:content/blog/2018/03-27-deployment/index.en.md
 
 All of the other errors we had were fixed by switching application bots (we had three), regenerating a token, or some combination of those things.
 
 ### Deployment Conclusion
 
-<<<<<<< HEAD:content/blog/2018-03-27-deployment/index.en.md
 Twitter and running twitter bots is still mostly a mystery to me.
 Is it an art, a science?
 I have no idea.
@@ -142,12 +137,7 @@ That being said, I think I'll be carrying the feeling of engaging with this wond
 It was amazing!
 I'm so glad and grateful for this opportunity.
 Here's to meeting more awesome R-Ladies in 2018!
-=======
-Twitter and running twitter bots is still mostly a mystery to me. Is it an art, a science? I have no idea. I'm glad that this was an International Women's Day project, and didn't last a week or a month! That being said, I think I'll be carrying the feeling of engaging with this wonderful, fantastic #rladies #rstats community around with me for a long time. It was amazing! I'm so glad and grateful for this opportunity. Here's to meeting more awesome R-Ladies in 2018!
->>>>>>> main:content/blog/2018/03-27-deployment/index.en.md
 
 ## Next Up: Part 3
 
 Continue Reading Part 3: [The Grand Conclusion](/post/conclusion/)!
-
-
