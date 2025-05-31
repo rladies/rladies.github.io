@@ -3,9 +3,7 @@ name: PR Checklist for Content Changes
 on:
   pull_request:
     paths:
-      - "content/**/index?.md"
-      - "content/**/index?.qmd"
-      - "content/**/index?.rmd"
+      - "content/{blog,news}/**/index*.{md,qmd,rmd}"
 
 jobs:
   generate-checklist:
