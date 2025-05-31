@@ -4,3 +4,6 @@ date: 2022-07-14
 source: "https://www.r-consortium.org/blog/2022/07/14/r-ladies-santa-rosa-leading-with-other-r-communities-in-latin-america-to-create-more-accessibility"
 language: "en"
 ---
+
+
+

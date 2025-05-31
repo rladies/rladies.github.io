@@ -18,9 +18,19 @@ aliases:
   - '/blog/2020-04-24-online-meetups'
 ---
 
+<<<<<<< HEAD:content/blog/2020-04-24-online-meetups/index.en.md
+Our chapters have cancelled in-person meetups due to the corona virus pandemic.
+However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys.
+To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.
+
+Our network has grown to over 160 chapters worldwide so we were wondering how many meeting rooms we would need.
+Was one enough or would that mean we'd have a lot of scheduling conflicts?
+What a nice opportunity to make use of our [{meetupr}](https://github.com/rladies/meetupr) package and get a sense of how often we've had overlapping events in the past!
+=======
 Our chapters have cancelled in-person meetups due to the corona virus pandemic. However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys. To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.
 
 Our network has grown to over 160 chapters worldwide so we were wondering how many meeting rooms we would need. Was one enough or would that mean we'd have a lot of scheduling conflicts? What a nice opportunity to make use of our [{meetupr}](https://github.com/rladies/meetupr) package and get a sense of how often we've had overlapping events in the past!
+>>>>>>> main:content/blog/2020/04-24-online-meetups/index.en.md
 
 ### Get the data
 
@@ -61,7 +71,12 @@ events <- map(chapters$urlname,
   set_names(chapters$name)
 ```
 
+<<<<<<< HEAD:content/blog/2020-04-24-online-meetups/index.en.md
+The use of `safely()`means that our mapping doesn't fail altogether if getting the events for any of the chapters fails.
+Now we just need to extract the events for those chapters where we succeeded.
+=======
 The use of `safely()` means that our mapping doesn't fail altogether if getting the events for any of the chapters fails. Now we just need to extract the events for those chapters where we succeeded.
+>>>>>>> main:content/blog/2020/04-24-online-meetups/index.en.md
 
 ```r
 all_events <- map_dfr(events,
@@ -73,7 +88,12 @@ all_events <- map_dfr(events,
 
 First thing we want to know is whether two or more events happening at the same time was common or not?
 
+<<<<<<< HEAD:content/blog/2020-04-24-online-meetups/index.en.md
+To keep things simple, we are looking at events that start at the same time and are not looking at overlapping events for the time being.
+This includes past and upcoming events.
+=======
 To keep things simple, we are looking at events that start at the same time and are not looking at overlapping events for the time being. This includes past and upcoming events.
+>>>>>>> main:content/blog/2020/04-24-online-meetups/index.en.md
 
 ```r
 all_events %>%
@@ -112,7 +132,12 @@ all_events %>%
 ## 5                   1  1953
 ```
 
+<<<<<<< HEAD:content/blog/2020-04-24-online-meetups/index.en.md
+One time we had 9 R-Ladies events happening at the same time!
+Looking at the date reveals that those were the rstudio::conf watch parties (Jan 29, 2020):
+=======
 One time we had 9 R-Ladies events happening at the same time! Looking at the date reveals that those were the rstudio::conf watch parties (Jan 29, 2020):
+>>>>>>> main:content/blog/2020/04-24-online-meetups/index.en.md
 
 ```r
 all_events %>%
@@ -132,9 +157,16 @@ all_events %>%
 ```
 
 More than 2 parallel events have been relatively rare so we are starting with one virtual meeting room that our chapters can book and hope that scheduling conflicts can be avoided.
+<<<<<<< HEAD:content/blog/2020-04-24-online-meetups/index.en.md
+
+If you are an R-Ladies organiser and want to use this new infrastructure, please join the #online\_meetups channel on the organisers' Slack.
+There you'll find instructions on how to book a meeting and tips for running safe online events.
+
+=======
 
 If you are an R-Ladies organiser and want to use this new infrastructure, please join the #online_meetups channel on the organisers' Slack. There you'll find instructions on how to book a meeting and tips for running safe online events.
 
+>>>>>>> main:content/blog/2020/04-24-online-meetups/index.en.md
 ### Next online events
 
 If you'd like to join events of R-Ladies chapters from around the world, the next events are
@@ -144,10 +176,20 @@ If you'd like to join events of R-Ladies chapters from around the world, the nex
 - April 25 R-Ladies La Paz: [Study Group - R para Ciencia de Datos [Sesión 4]](https://www.meetup.com/rladies-la-paz/events/270212766/)
 - April 28 R-Ladies Bucharest: [R-Ladies Bucharest Community #8 ](https://www.meetup.com/rladies-bucharest/events/270178279/)
 - April 28 R-Ladies Gainesville: [Tidy Tuesday: Practicing Data Science in R](https://www.meetup.com/rladies-gainesville/events/268773535/)
+<<<<<<< HEAD:content/blog/2020-04-24-online-meetups/index.en.md
+- April 28 R-Ladies Mid-Mo: [Code-RLadies April Lightning Talk \& Workshop - Virtual!](https://www.meetup.com/rladies-mid-mo/events/268698590/)
+- April 29 R-Ladies New York: [[Online event] R-Ladies Panel: All About Blogs](https://www.meetup.com/rladies-newyork/events/270210924/)
+- April 30 R-Ladies Miami: [From Underdogs to Winners](https://www.meetup.com/rladies-miami/events/270087598/)
+- May 05 R-Ladies Freiburg: [Tidy Tuesday - Tips and Tricks](https://www.meetup.com/rladies-freiburg/events/270214676/)
+- May 06 R-Ladies Chicago: [Learning \& Community Building in Data Science: Conference Talks!](https://www.meetup.com/rladies-chicago/events/269909895/)
+=======
 - April 28 R-Ladies Mid-Mo: [Code-RLadies April Lightning Talk & Workshop - Virtual!](https://www.meetup.com/rladies-mid-mo/events/268698590/)
 - April 29 R-Ladies New York: [[Online event] R-Ladies Panel: All About Blogs](https://www.meetup.com/rladies-newyork/events/270210924/)
 - April 30 R-Ladies Miami: [From Underdogs to Winners](https://www.meetup.com/rladies-miami/events/270087598/)
 - May 05 R-Ladies Freiburg: [Tidy Tuesday - Tips and Tricks](https://www.meetup.com/rladies-freiburg/events/270214676/)
 - May 06 R-Ladies Chicago: [Learning & Community Building in Data Science: Conference Talks!](https://www.meetup.com/rladies-chicago/events/269909895/)
+>>>>>>> main:content/blog/2020/04-24-online-meetups/index.en.md
 
 **All R-Ladies meetup events are also listed at <https://www.meetup.com/pro/rladies/>.**
+
+

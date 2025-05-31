@@ -11,18 +11,29 @@ categories:
   - R-Ladies
 slug: "ideation_and_creation"
 aliases:
-  - '/blog/2018-03-26-ideation_and_creation'
+  - "/blog/2018-03-26-ideation_and_creation"
 ---
 
 ### As told by Maëlle Salmon with notes from Bea Hernández
 
-On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [\@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! In this blog post, we'll explain how we designed and completed our Twitter action.
+On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [@rladies_iwd2018](https://twitter.com/rladies_iwd2018).
+It was a blast!
+And a lot of team work too!
+In this blog post, we'll explain how we designed and completed our Twitter action.
 
 ## An idea sown on IWD2017!
 
-Last year on International Women's day, [R-Ladies ally David Robinson](https://twitter.com/drob/) [promoted](https://twitter.com/drob/status/839564664321282048) Twitter accounts of female data scientists. I (Maëlle) had the honor to be featured in this tweet, and still remember a) being very flattered b) seeing my followers count skyrocket! I'm pretty sure quite a few of the opportunities I received since then are at least partly related to this [sponsorship](https://robinsones.github.io/The-Importance-of-Sponsorship/) by Dave. Therefore, I wanted to pay it forward this year!
+Last year on International Women's day, [R-Ladies ally David Robinson](https://twitter.com/drob/) [promoted](https://twitter.com/drob/status/839564664321282048)Twitter accounts of female data scientists.
+I (Maëlle) had the honor to be featured in this tweet, and still remember a) being very flattered b) seeing my followers count skyrocket!
+I'm pretty sure quite a few of the opportunities I received since then are at least partly related to this [sponsorship](https://robinsones.github.io/The-Importance-of-Sponsorship/)by Dave.
+Therefore, I wanted to pay it forward this year!
 
-On January the 1st I realized that new year meant new IWD so it was time to plan! I wanted us to have an action celebrating many R-Ladies, not only those who already receive much attention. Indeed, R-Ladies local chapters and global organization have a mission to amplify the voices of R-Ladies, all of them! I am a Twitter addict so I immediately thought of having a Twitter feed ot R-Ladies profile, but I envisioned our identifying the R-Ladies via a survey. [Steph Locke](https://twitter.com/stefflocke?lang=es) got a much better idea when I mentioned mine in our Slack: using entries from our directory and using this as an opportunity to promote the directory! So this became our plan!
+On January the 1st I realized that new year meant new IWD so it was time to plan!
+I wanted us to have an action celebrating many R-Ladies, not only those who already receive much attention.
+Indeed, R-Ladies local chapters and global organization have a mission to amplify the voices of R-Ladies, all of them!
+I am a Twitter addict so I immediately thought of having a Twitter feed ot R-Ladies profile, but I envisioned our identifying the R-Ladies via a survey.
+[Steph Locke](https://twitter.com/stefflocke?lang=es)got a much better idea when I mentioned mine in our Slack: using entries from our directory and using this as an opportunity to promote the directory!
+So this became our plan!
 
 ## Working on the directory
 
@@ -30,19 +41,24 @@ Since the directory became central in our plan, it got a lot of love from Bea an
 
 ### The more entries the merrier!
 
-We advertised the directory again via different channels, in particular our global Twitter account and the organizers of local chapters. This created a flow of new entries to be tackled which Sheila and Page did efficiently.
+We advertised the directory again via different channels, in particular our global Twitter account and the organizers of local chapters.
+This created a flow of new entries to be tackled which Sheila and Page did efficiently.
 
 ### Prettifying the directory
 
-_A Note from [Bea](https://twitter.com/chucheria) on Prettifying the Directory:_ After doing the first "ugly" screenshots, we (Page, Sheila, and I) discovered we didn't have a method for adding names, so titles and other info were placed in the name. In addition to the big font for the name, it made the name too long and some of the screenshots ended up looking ugly.
+\*A Note from [Bea](https://twitter.com/chucheria) on Prettifying the Directory:\*After doing the first "ugly" screenshots, we (Page, Sheila, and I) discovered we didn't have a method for adding names, so titles and other info were placed in the name.
+In addition to the big font for the name, it made the name too long and some of the screenshots ended up looking ugly.
 
-We modified the information, but even after that we discovered that depending on who made the screenshot the font was different. We haven't found the problem to that, but everything points to an issue with `revealJS`.
+We modified the information, but even after that we discovered that depending on who made the screenshot the font was different.
+We haven't found the problem to that, but everything points to an issue with`revealJS`.
 
 Thanks to this, we have new procedures to add new files and we hope to improve the directory soon with new features too.
 
 ### Exporting the directory
 
-For further processing, we needed the direct link to each entry, and other entry-specific information such as a potential Twitter handle. For that, we had to rely on both a Wordpress export and webscraping the directory because the export didn't include individual links, and these links couldn't be guessed (for instance mine is https://rladies.org/spain-rladies/name/maille-salmon/ because I was first entered as Maille). Bea and I wrote the code below
+For further processing, we needed the direct link to each entry, and other entry-specific information such as a potential Twitter handle.
+For that, we had to rely on both a Wordpress export and webscraping the directory because the export didn't include individual links, and these links couldn't be guessed (for instance mine is <https://rladies.org/spain-rladies/name/maille-salmon/>because I was first entered as Maille).
+Bea and I wrote the code below
 
 ```r
 url <- read_html("https://rladies.org/ladies-complete-list/")
@@ -75,7 +91,7 @@ ladies <- dplyr::group_by(ladies, entry_id) %>%
   dplyr::select(name, dplyr::everything())
 
 # join two tables to get URLS
-ladies <- dplyr::mutate(ladies, name = stringr::str_replace_all(name, "\\\\'", "’"))
+ladies <- dplyr::mutate(ladies, name = stringr::str_replace_all(name, "\\\\'", "'"))
 ladies <- dplyr::left_join(ladies, df, by = "name")
 
 # a few issues
@@ -90,7 +106,8 @@ ladies <- dplyr::mutate(ladies, twitter = stringr::str_replace(social_network_tw
 
 ## Webshooting and random complimenting
 
-What does posting R-Ladies profile mean? I decided a good recipe for a tweet was:
+What does posting R-Ladies profile mean?
+I decided a good recipe for a tweet was:
 
 - A screenshot of the R-Ladies directory entry, since it'd mean an image, and since it contains important information about the talents and interests of each R-Lady
 
@@ -104,7 +121,7 @@ What does posting R-Ladies profile mean? I decided a good recipe for a tweet was
 
 ### Preparing the tweets
 
-Once we had created the table of R-Ladies with their direct directory URLs, preparing the tweets only meant creating random compliments that could apply to any R-Lady (yes, all R-Ladies are awesome and talented!) and gluing all text together.
+Once we had created the table of R-Ladies with their direct directory URLs, preparing the tweets only meant creating random compliments that could apply to any R-Lady (yes, all R-Ladies are awesome and talented!)and gluing all text together.
 
 ```r
 # templates

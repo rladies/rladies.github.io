@@ -31,3 +31,5 @@ We are also committed to stay true to the promises made by the departing leaders
 <small>New Leadership of R-Ladies global (from top left) Athanasia Monika Mowinckel, Averi Giudicessi, Yanina Bellini Saibene, SHannon Pileggi, Riva Quiroga</small>
 
 Erin LeDell, Claudia Vitolo, Hannah Frick, Athanasia Monika Mowinckel, Yanina Bellini Saibene, Shannon Pileggi, Riva Quiroga, and Averi Giudicessi
+
+
