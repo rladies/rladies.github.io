@@ -1,9 +1,9 @@
-name: Auto Merge Pending PRs
+name: Merge Pending PRs
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '26 14 * * *'
+    - cron: "58 10 * * *"
 
 env:
   GH_TOKEN: ${{ github.token }}
@@ -38,7 +38,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Process and Merge Qualifying PRs
-        env: 
+        env:
           prs: ${{ needs.find_pending_prs.outputs.prs }}
         run: |
           current_date=$(date +'%Y-%m-%d')
@@ -47,7 +47,7 @@ jobs:
               echo "Checking PR #$pr_number"
 
               # Check if the PR modifies any index.md file in the "content/" directory
-              index_files=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index\.md$' || true)
+              index_files=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
               
               if [ -n "$index_files" ]; then
                 echo "PR #$pr_number modifies the following index.md files:"
@@ -66,7 +66,6 @@ jobs:
                   if [ "$yaml_date" == "$current_date" ]; then
                     echo "Merging PR #$pr_number (matching YAML date: $yaml_date)"
                     gh pr merge "$pr_number" --squash --delete-branch
-                    gh pr close "$pr_number"
                     break
                   else
                     echo "Date in $file ($yaml_date) does not match today's date ($current_date)."
@@ -76,3 +75,15 @@ jobs:
                 echo "PR #$pr_number does not modify any index.md file."
               fi
             done
+
+      - name: Trigger Website build
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'rladies',
+              repo: 'rladies.github.io',
+              workflow_id: 'build-production.yaml',
+              ref: 'main'
+            })
