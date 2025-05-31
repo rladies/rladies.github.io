@@ -1,4 +1,7 @@
 {
   "name": "Naiki Olivas Gaspar",
-  "role": ["Social Media"]
+  "role": ["Social Media"],
+  "img": {
+    "url": "naiki-olivas-gaspar.jpeg"
+  }
 }
