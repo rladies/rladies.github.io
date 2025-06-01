@@ -49,17 +49,13 @@ main:
     url: /activities/gt-coordinated/
     weight: 3
     parent: activities
-  - identifier: dashboard
-    url: 'https://benubah.github.io/r-community-explorer/rladies.html'
-    weight: 4
-    parent: activities
   - identifier: rladies-blogs
     url: /activities/rladies-blogs
-    weight: 5
+    weight: 4
     parent: activities
   - identifier: press
     url: /press
-    weight: 7
+    weight: 5
     parent: activities
     
   - identifier: blog
