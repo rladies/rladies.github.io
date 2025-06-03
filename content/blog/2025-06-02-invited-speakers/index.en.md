@@ -23,6 +23,9 @@ As a common thread let's share this quote of [Brene Brown](https://brenebrown.co
 
 > _"Clear Is Kind. Unclear Is Unkind."_
 
+A good way of being clear is to provide information in advance and check in on preferences rather than assuming things.
+Here are several examples of how how that plays out in practice.
+
 ## Invite them clearly, in advance
 
 What are you inviting the person for exactly? 
@@ -60,7 +63,10 @@ It is much better to answer about uncertainty, rather than not to answer.
 
 ## Respect your guest
 
+Ask the speaker for a title, abstract, brief biography, pronouns and picture.
+Do not create or edit those without their explicit approval.
 Confirm bios prior to announcing the speaker on your event's website and on social media.
+Once this information is publicly available on a website or otherwise, send it to the speaker.
 
 If the guest has to adapt, or cancel, their participation in your event due to health, safety or other concerns, just accept this. 
 Do not push them to participate in a certain way disregarding their safety. 
@@ -69,18 +75,18 @@ It is very unlikely the person is faking their concern or health issue.
 Ask about your guest’s needs, for instance but not limited to: room and venue accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
 Even better, have public information about how these things are handled at your event, as non guests will have similar problems!
 
-Ask the speaker for a title, abstract, brief biography, pronouns and picture.
-Do not create or edit those without their explicit approval.
-Once this information is publicly available on a website or otherwise, send it to the speaker.
-
 If you want to record, ask for the speakers consent ahead of time and tell them what you want to do with the recording. 
 Do not share the speaker's material without their consent.
 
-Clarify the speaking logistics with the speaker: in what kind of room will they speak? will they have access to a clicker? what are the power characteristics? what will be the slide aspect ratio?
-Ask the speaker if they have a travel laptop and if they would like to use it. 
-If they do, do let them use their computer. 
-Otherwise, plan a way for them to present their talk.
-Do not expect them to have slides in a certain format for your AV team without telling them in advance. Better yet, just let them use their own laptop and tell them about available connections.
+Clarify the speaking logistics with the speaker. Examples include:
+- In what kind of room will they speak?
+- Will they have access to a clicker?
+- What are the power characteristics?
+- What will be the slide aspect ratio?
+- Which computer can they present from? Their own or the venue's/ours?
+- What kind of connection is available (HDMI, VGA, etc.)?
+- If the AV setup requires a specific format for slides, let them know in advance.
+- If they won't have direct access to the presentation computer, let them know in advance as that means they can't do any live coding or similar.
 
 ## Be mindful of travel logistics!
 
@@ -102,18 +108,18 @@ Take those cost into account.
 
 If you pay for their hotel but they need to put a credit card on file for incidentials, do let them know ahead of time - and also how much. If the hotel puts a hold on that amount, ask if they can advance that and don't assume.
 
-## Be nice on site
+## On site
 
 Offer support but don’t overdo it either. 
 Do they need tourism tips? Do they know how to get around? 
-Probably also something useful for any event participant.
+Again, if the information might be useful for any event participant, put it on the event website.
 
 Don’t assume alcohol is equal to entertainment for everybody,
 or that everybody drinks alcohol.
 
 Thank the speaker for coming/participating.
 
-## Be a good session chair
+## When it's time for the talk
 
 After confirming the bio with the speaker one more time in advance,
 on the day of your talk introduce them with enthusiasm.
@@ -126,6 +132,6 @@ Ideally, use a platform like Slido for moderating questions (filtering some of t
 
 ## Conclusion
 
-In this post we summarized what we think are important aspects of working with invited speakers.
 Together, organizers and speakers have the common goal to create a memorable and instructive event.
+Make it easy for your speaker to focus on delivering a great talk by being a clear and well-organized host.
 We hope that our tips can facilitate the collaboration.
