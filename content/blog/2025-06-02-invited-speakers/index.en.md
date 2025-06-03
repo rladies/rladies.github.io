@@ -69,7 +69,7 @@ It is very unlikely the person is faking their concern or health issue.
 Ask about your guest’s needs, for instance but not limited to: room and venue accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
 Even better, have public information about how these things are handled at your event, as non guests will have similar problems!
 
-Ask the speaker for a title, abstract, brief biography and picture.
+Ask the speaker for a title, abstract, brief biography, pronouns and picture.
 Do not create or edit those without their explicit approval.
 Once this information is publicly available on a website or otherwise, send it to the speaker.
 
