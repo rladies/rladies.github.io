@@ -75,7 +75,7 @@ It is very unlikely the person is faking their concern or health issue.
 Ask about your guest’s needs, for instance but not limited to: room and venue accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
 Even better, have public information about how these things are handled at your event, as non guests will have similar problems!
 
-If you want to record, ask for the speakers consent ahead of time and tell them what you want to do with the recording. 
+If you want to record, ask for the speaker's consent ahead of time and tell them what you want to do with the recording. 
 Do not share the speaker's material without their consent.
 
 Clarify the speaking logistics with the speaker. Examples include:
