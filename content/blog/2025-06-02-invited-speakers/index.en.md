@@ -74,8 +74,7 @@ Do not create or edit those without their explicit approval.
 Once this information is publicly available on a website or otherwise, send it to the speaker.
 
 If you want to record, ask for the speakers consent ahead of time and tell them what you want to do with the recording. 
-Also ask the speaker if they will share the slides or the material of their participation and how. 
-Do not share this material without their consent.
+Do not share the speaker's material without their consent.
 
 Clarify the speaking logistics with the speaker: in what kind of room will they speak? will they have access to a clicker? what are the power characteristics? what will be the slide aspect ratio?
 Ask the speaker if they have a travel laptop and if they would like to use it. 
