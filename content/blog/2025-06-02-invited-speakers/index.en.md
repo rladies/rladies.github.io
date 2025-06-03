@@ -42,7 +42,7 @@ Example questions your invitation should answer:
 
 Don’t hesitate to throw in a compliment regarding why you are inviting this person, but do not overdo it.
 Explain why you invited the person: show that you know and respect their work.
-If someone recommended the speaker to you, only state it if you have the agreement of the recommender.
+If someone recommended the speaker to you, only state it if you have the consent of the recommender.
 
 Even if you made an effort to invite someone from a underrepresented group (and yes you should make an effort to have diversity in your speaker panel, we’re in the XXIst century)… do not tell this person.
 
