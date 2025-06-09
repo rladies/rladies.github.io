@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-temuco",
+    "status": "active",
+    "country": "Chile",
+    "city": "Temuco",
+    "social_media": {
+      "meetup": "rladies-temuco",
+      "email": ""
+    },
+    "organizers": {
+      "current": ["Macarena Soledad Valenzuela Beltrán"],
+      "former": []
+    }
+  }
+]
