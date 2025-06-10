@@ -1585,6 +1585,21 @@
     "timezone": "America/Santiago"
   },
   {
+    "urlname": "rladies-temuco",
+    "status": "active",
+    "country": "Chile",
+    "social_media": {
+      "meetup": "rladies-temuco",
+      "email": ""
+    },
+    "organizers": {
+      "current": ["Macarena Soledad Valenzuela Beltrán"],
+      "former": []
+    },
+    "name": "R-Ladies Temuco",
+    "city": "Temuco"
+  },
+  {
     "urlname": "rladies-valparaiso",
     "status": "active",
     "country": "Chile",
