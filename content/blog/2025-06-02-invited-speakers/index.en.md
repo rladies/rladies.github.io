@@ -106,7 +106,7 @@ Your speaker will be better if they sleep in a bed and not on a plane and will s
 Take into account that some people live far away from major airports or train stations and probably need transportation between airports or airports/train-bus stations to get to your event. 
 Take those cost into account.
 
-If you pay for their hotel but they need to put a credit card on file for incidentials, do let them know ahead of time - and also how much. If the hotel puts a hold on that amount, ask if they can advance that and don't assume.
+If you pay for their hotel but they need to put a credit card on file for incidentals, do let them know ahead of time - and also how much. If the hotel puts a hold on that amount, ask if they can advance that and don't assume.
 
 ## On site
 
