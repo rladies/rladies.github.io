@@ -73,7 +73,7 @@ Do not push them to participate in a certain way disregarding their safety.
 It is very unlikely the person is faking their concern or health issue.
 
 Ask about your guest’s needs, for instance but not limited to: room and venue accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
-Even better, have public information about how these things are handled at your event, as non guests will have similar problems!
+Even better, have public information about how these things are handled at your event, as other participants will have similar problems!
 
 If you want to record, ask for the speaker's consent ahead of time and tell them what you want to do with the recording. 
 Do not share the speaker's material without their consent.
@@ -82,7 +82,7 @@ Clarify the speaking logistics with the speaker. Examples include:
 - In what kind of room will they speak?
 - Will they have access to a clicker?
 - What are the power characteristics?
-- What will be the slide aspect ratio?
+- What is the expected slide aspect ratio?
 - Which computer can they present from? Their own or the venue's/ours?
 - What kind of connection is available (HDMI, VGA, etc.)?
 - If the AV setup requires a specific format for slides, let them know in advance.
