@@ -9,6 +9,7 @@ author:
   - Yanina Bellini Saibene
 date: "2025-06-13"
 image: mic.jpg
+slug: invited-speakers
 categories:
   - R-Ladies
 editor:
