@@ -75,15 +75,3 @@ jobs:
                 echo "PR #$pr_number does not modify any index.md file."
               fi
             done
-
-      - name: Trigger Website build
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: 'rladies',
-              repo: 'rladies.github.io',
-              workflow_id: 'build-production.yaml',
-              ref: 'main'
-            })
