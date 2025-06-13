@@ -36,14 +36,10 @@ jobs:
             exit 0
           fi
 
-          echo "Found PRs with 'pending' label: $PR_NUMBERS"
-
           for pr_number in $PR_NUMBERS; do
               echo "--- Checking PR #$pr_number ---"
 
               # Check if the PR modifies any index.md file in the "content/" directory
-              # Use gh pr diff for more robust file change detection
-              # gh pr diff "$pr_number" --name-only
               INDEX_FILES_CHANGED=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
               
               if [ -z "$INDEX_FILES_CHANGED" ]; then
@@ -63,7 +59,7 @@ jobs:
                 BRANCH_NAME=$(gh pr view "$pr_number" --json headRefName -q .headRefName)
                 
                 # Use gh api directly to get the file content without base64 decoding issues
-                FILE_CONTENT_RAW=$(gh api "repos/$GITHUB_REPOSITORY/contents/$file?ref=$BRANCH_NAME" --jq '.content')
+                FILE_CONTENT_RAW=$(gh api "repos/$GITHUB_REPOSITORY/$file?ref=$BRANCH_NAME" --jq '.content')
                 
                 if [ -z "$FILE_CONTENT_RAW" ]; then
                     echo "    - Could not fetch content for $file. Skipping date check for this file."
