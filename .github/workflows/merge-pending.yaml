@@ -47,9 +47,30 @@ jobs:
               # gh pr diff "$pr_number" --name-only
               INDEX_FILES_CHANGED=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
               
-              if [ -z "$INDEX_FILES_CHANGED" ]; then
-                echo "PR #$pr_number does not modify any content/index.md file. Skipping."
-                continue # Go to the next PR
+              if [ -n "$index_files" ]; then
+                echo "PR #$pr_number modifies the following index.md files:"
+                echo "$index_files"
+
+                # Loop through each index.md file modified by the PR
+                for file in $index_files; do
+                  # Fetch the content of the file from the PR's branch
+                  branch_name=$(gh pr view "$pr_number" --json headRefName -q .headRefName)
+                  file_content=$(gh api "repos/$GITHUB_REPOSITORY/contents/$file?ref=$branch_name" --jq '.content' | base64 --decode || true)
+
+                  # Extract the date from the YAML front matter (assuming "date: " is on its own line)
+                  yaml_date=$(echo "$file_content" | grep -E '^date:' | awk '{print $2}' | sed -e s/\'//g| sed -e s/\"//g)
+
+                  # Check if the date matches today's date
+                  if [ "$yaml_date" == "$current_date" ]; then
+                    echo "Merging PR #$pr_number (matching YAML date: $yaml_date)"
+                    gh pr merge "$pr_number" --squash --delete-branch
+                    break
+                  else
+                    echo "Date in $file ($yaml_date) does not match today's date ($current_date)."
+                  fi
+                done
+              else
+                echo "PR #$pr_number does not modify any index.md file."
               fi
 
               echo "PR #$pr_number modifies the following content/index.md files:"
