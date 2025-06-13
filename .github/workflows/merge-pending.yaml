@@ -60,7 +60,7 @@ jobs:
                   file_content=$(gh api "repos/$GITHUB_REPOSITORY/contents/$file?ref=$branch_name" --jq '.content' | base64 --decode || true)
 
                   # Extract the date from the YAML front matter (assuming "date: " is on its own line)
-                  yaml_date=$(echo "$file_content" | grep -E '^date:' | awk '{print $2}' | sed -e s/\'//g)
+                  yaml_date=$(echo "$file_content" | grep -E '^date:' | awk '{print $2}' | sed -e s/\'//g| sed -e s/\"//g)
 
                   # Check if the date matches today's date
                   if [ "$yaml_date" == "$current_date" ]; then
