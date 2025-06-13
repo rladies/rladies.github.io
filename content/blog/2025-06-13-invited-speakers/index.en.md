@@ -8,6 +8,7 @@ author:
   - Shannon Pileggi
   - Yanina Bellini Saibene
 date: "2025-06-13"
+image: "min.jpg"
 categories:
   - R-Ladies
 editor:
