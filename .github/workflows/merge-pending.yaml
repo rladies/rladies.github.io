@@ -97,57 +97,58 @@ jobs:
               MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch 2>&1)
               MERGE_STATUS=$?
 
-              if [ $MERGE_STATUS -eq 0 ]; then
-                echo "Successfully merged PR #$pr_number."
+              if [ "$PR_READY_TO_MERGE" == "true" ]; then
+                echo "Attempting to merge PR #$pr_number..."
+                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch 2>&1)
+                MERGE_STATUS=$?
+
+                if [ $MERGE_STATUS -eq 0 ]; then
+                  echo "Successfully merged PR #$pr_number."
+                else
+                  echo "Failed to merge PR #$pr_number. Error details:"
+                  echo "$MERGE_OUTPUT"
+
+                  FAILURE_REASONS="" # Initialize an empty string to collect reasons
+
+                  if echo "$MERGE_OUTPUT" | grep -q "required status checks"; then
+                    FAILURE_REASONS+="* Required status checks are not passing."$'\n'
+                  fi
+                  if echo "$MERGE_OUTPUT" | grep -q "required reviews"; then
+                    FAILURE_REASONS+="* Required pull request reviews are missing."$'\n'
+                  fi
+                  if echo "$MERGE_OUTPUT" | grep -q "behind main"; then
+                    FAILURE_REASONS+="* The branch is out of date with the base branch (main)."$'\n'
+                  fi
+                  if echo "$MERGE_OUTPUT" | grep -q "conflicts"; then
+                    FAILURE_REASONS+="* There are merge conflicts."$'\n'
+                  fi
+                  if echo "$MERGE_OUTPUT" | grep -q "draft"; then
+                    FAILURE_REASONS+="* The pull request is a draft and cannot be merged."$'\n'
+                  fi
+
+                  if [ -z "$FAILURE_REASONS" ]; then
+                    FAILURE_REASONS="* An unknown branch protection rule or other issue prevented the merge. Please refer to the full error output below for more details."$'\n'
+                    FAILURE_REASONS+="```\n$MERGE_OUTPUT\n```"$'\n'
+                  fi
+                  
+                  # Comment on the PR - FIX IS HERE: Remove leading spaces from EOF
+                  COMMENT_BODY=$(cat <<EOF
+Hi there,
+
+Unfortunately, the automated merge for this Pull Request (#$pr_number) failed for the following reason(s):
+
+$FAILURE_REASONS
+
+Please check the branch protection rules for \`main\` and ensure all requirements are met.
+
+_This comment was automatically generated._
+EOF
+                  ) # Make sure this closing EOF) has NO leading spaces
+                  
+                  gh pr comment "$pr_number" --body "$COMMENT_BODY"
+                  echo "Commented on PR #$pr_number about the merge failure."
+                fi
               else
-                echo "Failed to merge PR #$pr_number. Error details:"
-                echo "$MERGE_OUTPUT"
-
-                FAILURE_REASONS="" # Initialize an empty string to collect reasons
-
-                if echo "$MERGE_OUTPUT" | grep -q "required status checks"; then
-                  FAILURE_REASONS+="* Required status checks are not passing."$'\n'
-                fi
-                if echo "$MERGE_OUTPUT" | grep -q "required reviews"; then
-                  FAILURE_REASONS+="* Required pull request reviews are missing."$'\n'
-                fi
-                if echo "$MERGE_OUTPUT" | grep -q "behind main"; then # Updated from 'master' to 'main'
-                  FAILURE_REASONS+="* The branch is out of date with the base branch (main)."$'\n'
-                fi
-                if echo "$MERGE_OUTPUT" | grep -q "conflicts"; then
-                  FAILURE_REASONS+="* There are merge conflicts."$'\n'
-                fi
-                if echo "$MERGE_OUTPUT" | grep -q "draft"; then
-                  FAILURE_REASONS+="* The pull request is a draft and cannot be merged."$'\n'
-                fi
-                # Add more specific checks if you encounter other common error messages
-                # Example: if echo "$MERGE_OUTPUT" | grep -q "linear history"; then
-                #   FAILURE_REASONS+="* Linear history is required but not met."$'\n'
-                # fi
-
-                # If no specific reason was found, provide a generic message
-                if [ -z "$FAILURE_REASONS" ]; then
-                  FAILURE_REASONS="* An unknown branch protection rule or other issue prevented the merge. Please refer to the full error output below for more details."$'\n'
-                  FAILURE_REASONS+="```\n$MERGE_OUTPUT\n```"$'\n' # Include full output for unknown errors
-                fi
-                
-                # Comment on the PR
-                COMMENT_BODY=$(cat <<EOF
-                Hi there,
-
-                Unfortunately, the automated merge for this Pull Request (#$pr_number) failed for the following reason(s):
-                
-                $FAILURE_REASONS
-                
-                Please check the branch protection rules for \`main\` and ensure all requirements are met.
-
-                _This comment was automatically generated._
-                EOF)
-                
-                gh pr comment "$pr_number" --body "$COMMENT_BODY"
-                echo "Commented on PR #$pr_number about the merge failure."
+                echo "PR #$pr_number is not eligible for merge based on date check."
               fi
-            else
-              echo "PR #$pr_number is not eligible for merge based on date check."
-            fi
-          done
+            done # This `done` must also be correctly indented
