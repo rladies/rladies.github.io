@@ -142,7 +142,7 @@ jobs:
                   Please check the branch protection rules for \`main\` and ensure all requirements are met.
 
                   _This comment was automatically generated._
-                  EOF
+EOF
                   ) # Make sure this closing EOF) has NO leading spaces
                   
                   gh pr comment "$pr_number" --body "$COMMENT_BODY"
