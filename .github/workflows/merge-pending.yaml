@@ -125,22 +125,22 @@ jobs:
                     FAILURE_REASONS="* An unknown branch protection rule or other issue prevented the merge. Please refer to the full error output below for more details."$'\n'
                     FAILURE_REASONS+="```\n$MERGE_OUTPUT\n```"$'\n'
                   fi
+                  # Read the template file
+                  TEMPLATE_PATH=".github/reply_templates/merge_errors.txt"
+                  if [ ! -f "$TEMPLATE_PATH" ]; then
+                      echo "ERROR: Merge error template file not found at $TEMPLATE_PATH. Skipping comment."
+                      # Fallback to a hardcoded generic message if template is missing
+                      COMMENT_BODY="Hi there,\n\nUnfortunately, the automated merge for this Pull Request (#$pr_number) failed. Please check the workflow logs for details.\n\n_This comment was automatically generated._"
+                  else
+                      # Use sed to replace the placeholder with collected failure reasons
+                      # Need to escape newlines in FAILURE_REASONS for sed 's' command if it becomes multiline
+                      # For safety, we'll use a delimiter other than / (like @) and escape any @ in the variable
+                      ESCAPED_FAILURE_REASONS=$(echo "$FAILURE_REASONS" | sed -e 's/[]\/$*.^[]/\\&/g' | sed -e ':a;N;$!ba;s/\n/\\n/g')
+                      
+                      COMMENT_BODY=$(sed "s|<<FAILURE_REASONS>>|$ESCAPED_FAILURE_REASONS|g" "$TEMPLATE_PATH")
+                  fi
                   
-                  # Comment on the PR - CORRECTED HEREDOC INDENTATION
-                  # Use <<-EOF and indent the closing EOF with tabs (or spaces if that's what your editor does for indentation)
-                  gh pr comment "$pr_number" --body "$(cat <<-EOF
-                    Hi there,
-
-                    Unfortunately, the automated merge for this Pull Request (#$pr_number) failed for the following reason(s):
-                    
-                    $FAILURE_REASONS
-                    
-                    Please check the branch protection rules for \`main\` and ensure all requirements are met.
-
-                    _This comment was automatically generated._
-                    EOF
-                  )"
-                  
+                  gh pr comment "$pr_number" --body "$COMMENT_BODY"
                   echo "Commented on PR #$pr_number about the merge failure."
                 fi
               else
