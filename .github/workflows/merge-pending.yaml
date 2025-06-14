@@ -80,9 +80,6 @@ jobs:
                     continue
                 fi
 
-                echo "    - Date in $file: '$YAML_DATE'"
-                echo "    - Current date: '$CURRENT_DATE'"
-
                 if [ "$YAML_DATE" == "$CURRENT_DATE" ]; then
                   echo "    - Date matches today's date. This PR is a candidate for merge."
                   PR_READY_TO_MERGE="true"
