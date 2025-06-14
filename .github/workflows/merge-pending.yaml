@@ -133,16 +133,16 @@ jobs:
                   
                   # Comment on the PR - FIX IS HERE: Remove leading spaces from EOF
                   COMMENT_BODY=$(cat <<EOF
-Hi there,
+                  Hi there,
 
-Unfortunately, the automated merge for this Pull Request (#$pr_number) failed for the following reason(s):
+                  Unfortunately, the automated merge for this Pull Request (#$pr_number) failed for the following reason(s):
 
-$FAILURE_REASONS
+                  $FAILURE_REASONS
 
-Please check the branch protection rules for \`main\` and ensure all requirements are met.
+                  Please check the branch protection rules for \`main\` and ensure all requirements are met.
 
-_This comment was automatically generated._
-EOF
+                  _This comment was automatically generated._
+                  EOF
                   ) # Make sure this closing EOF) has NO leading spaces
                   
                   gh pr comment "$pr_number" --body "$COMMENT_BODY"
