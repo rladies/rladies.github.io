@@ -94,6 +94,8 @@ jobs:
                 MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch 2>&1 || true)
                 MERGE_STATUS=$?
 
+                echo $MERGE_OUTPUT
+
                 if [ $MERGE_STATUS -eq 0 ]; then
                   echo "Successfully merged PR #$pr_number."
                 else
