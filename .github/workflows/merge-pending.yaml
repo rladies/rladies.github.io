@@ -1,15 +1,16 @@
-name: Auto-Merge Pending PRs with Date Check
+name: Auto-Merge Labeled PRs with Date Check
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual trigger
   schedule:
-    - cron: "58 10 * * *"
+    # Runs daily at 10:58 AM UTC (adjust for your timezone, cron is UTC)
+    - cron: "58 10 * * *" 
 
 # Minimum permissions required for this workflow
-permissions:
-  pull-requests: write
-  contents: write
-  repository-projects: read
+permissions: 
+  pull-requests: write 
+  contents: write      
+  repository-projects: read 
 
 jobs:
   find_and_merge_prs:
@@ -30,21 +31,24 @@ jobs:
       - name: Find and Process PRs with "pending" label
         run: |
           PR_NUMBERS=$(gh pr list --label "pending" --state "open" --json number,title,isDraft -q '.[] | select(.isDraft == false) | .number')
-
+          
           if [ -z "$PR_NUMBERS" ]; then
-            echo "No non-draft PRs with 'pending' label found. Exiting gracefully."
+            echo "No non-draft PRs with 'pending' label found. Exiting."
             exit 0
           fi
+
+          echo "Found PRs with 'pending' label: $PR_NUMBERS"
+
+          MERGED_PRS=()
 
           for pr_number in $PR_NUMBERS; do
               echo "--- Checking PR #$pr_number ---"
 
-              # Check if the PR modifies any index.md file in the "content/" directory
               INDEX_FILES_CHANGED=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
               
               if [ -z "$INDEX_FILES_CHANGED" ]; then
                 echo "PR #$pr_number does not modify any content/index.md file. Skipping."
-                continue # Go to the next PR
+                continue
               fi
 
               echo "PR #$pr_number modifies the following content/index.md files:"
@@ -52,25 +56,25 @@ jobs:
 
               PR_READY_TO_MERGE="false"
 
-              # Loop through each index.md file modified by the PR
               for file in $INDEX_FILES_CHANGED; do
                 echo "  - Checking file: $file"
-                # Fetch the content of the file from the PR's branch
                 BRANCH_NAME=$(gh pr view "$pr_number" --json headRefName -q .headRefName)
                 
-                # Use gh api directly to get the file content without base64 decoding issues
-                FILE_CONTENT_RAW=$(gh api "repos/$GITHUB_REPOSITORY/$file?ref=$BRANCH_NAME" --jq '.content')
+                if [ -z "$BRANCH_NAME" ]; then
+                  echo "    - Could not determine head branch name for PR #$pr_number. Skipping file."
+                  continue
+                fi
+
+                API_URL="repos/$GITHUB_REPOSITORY/contents/$file?ref=$BRANCH_NAME"
+                FILE_CONTENT_RAW=$(gh api "$API_URL" --jq '.content' || true)
                 
                 if [ -z "$FILE_CONTENT_RAW" ]; then
-                    echo "    - Could not fetch content for $file. Skipping date check for this file."
+                    echo "    - ERROR: Failed to fetch content for $file from branch '$BRANCH_NAME'. This likely means the branch does not exist or the file is not on that branch."
                     continue
                 fi
 
-                # Decode base64 content
                 FILE_CONTENT=$(echo "$FILE_CONTENT_RAW" | base64 --decode || true)
 
-                # Extract the date from the YAML front matter
-                # Using sed for more precise extraction within the YAML front matter block
                 YAML_DATE=$(echo "$FILE_CONTENT" | sed -n '/^---$/,/^---$/p' | grep -E '^date:' | head -1 | awk '{print $2}' | sed -e "s/'//g" -e "s/\"//g" -e "s/\\[//g" -e "s/\\]//g" -e "s/,//g")
 
                 if [ -z "$YAML_DATE" ]; then
@@ -84,25 +88,77 @@ jobs:
                 if [ "$YAML_DATE" == "$CURRENT_DATE" ]; then
                   echo "    - Date matches today's date. This PR is a candidate for merge."
                   PR_READY_TO_MERGE="true"
-                  break # If any index.md file matches, consider the PR eligible
+                  break
                 else
                   echo "    - Date in $file ('$YAML_DATE') does not match today's date ('$CURRENT_DATE')."
                 fi
-              done # End of file loop
+              done
 
               if [ "$PR_READY_TO_MERGE" == "true" ]; then
                   echo "Attempting to merge PR #$pr_number..."
-                  # Use gh pr merge. This command respects branch protection rules.
-                  # It will only succeed if the PR is approved and all status checks pass.
-                  # If --delete-branch is included, the head branch will be deleted after merge.
-                  if gh pr merge "$pr_number" --squash --delete-branch; then
+                  MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch 2>&1)
+                  MERGE_STATUS=$?
+
+                  if [ $MERGE_STATUS -eq 0 ]; then
                     echo "Successfully merged PR #$pr_number."
+                    MERGED_PRS+=("$pr_number")
                   else
-                    echo "Failed to merge PR #$pr_number. It might not meet branch protection requirements (e.g., reviews, passing checks)."
-                    # You might want to add a step here to comment on the PR why it failed to merge
-                    # e.g., gh pr comment "$pr_number" --body "Automated merge failed: Missing approvals or failed status checks."
+                    echo "Failed to merge PR #$pr_number. Error details:"
+                    echo "$MERGE_OUTPUT"
+
+                    FAILURE_REASONS="" # Initialize an empty string to collect reasons
+
+                    if echo "$MERGE_OUTPUT" | grep -q "required status checks"; then
+                      FAILURE_REASONS+="* Required status checks are not passing."$'\n'
+                    fi
+                    if echo "$MERGE_OUTPUT" | grep -q "required reviews"; then
+                      FAILURE_REASONS+="* Required pull request reviews are missing."$'\n'
+                    fi
+                    if echo "$MERGE_OUTPUT" | grep -q "behind main"; then # Updated from 'master' to 'main'
+                      FAILURE_REASONS+="* The branch is out of date with the base branch (main)."$'\n'
+                    fi
+                    if echo "$MERGE_OUTPUT" | grep -q "conflicts"; then
+                      FAILURE_REASONS+="* There are merge conflicts."$'\n'
+                    fi
+                    if echo "$MERGE_OUTPUT" | grep -q "draft"; then
+                      FAILURE_REASONS+="* The pull request is a draft and cannot be merged."$'\n'
+                    fi
+                    # Add more specific checks if you encounter other common error messages
+                    # Example: if echo "$MERGE_OUTPUT" | grep -q "linear history"; then
+                    #   FAILURE_REASONS+="* Linear history is required but not met."$'\n'
+                    # fi
+
+                    # If no specific reason was found, provide a generic message
+                    if [ -z "$FAILURE_REASONS" ]; then
+                      FAILURE_REASONS="* An unknown branch protection rule or other issue prevented the merge. Please refer to the full error output below for more details."$'\n'
+                      FAILURE_REASONS+="```\n$MERGE_OUTPUT\n```"$'\n' # Include full output for unknown errors
+                    fi
+                    
+                    # Comment on the PR
+                    COMMENT_BODY=$(cat <<EOF
+                    Hi there,
+
+                    Unfortunately, the automated merge for this Pull Request (#$pr_number) failed for the following reason(s):
+                    
+                    $FAILURE_REASONS
+                    
+                    Please check the branch protection rules for \`main\` and ensure all requirements are met.
+
+                    _This comment was automatically generated._
+EOF
+                    )
+                    gh pr comment "$pr_number" --body "$COMMENT_BODY"
+                    echo "Commented on PR #$pr_number about the merge failure."
                   fi
               else
                   echo "PR #$pr_number is not eligible for merge based on date check."
               fi
-          done # End of PR loop
+          done
+
+          if [ ${#MERGED_PRS[@]} -gt 0 ]; then
+            echo "Successfully merged the following PRs: ${MERGED_PRS[*]}"
+          else
+            echo "No eligible PRs were merged in this run."
+          fi
+          
+          echo "merged_prs=${MERGED_PRS[*]}" >> $GITHUB_OUTPUT
