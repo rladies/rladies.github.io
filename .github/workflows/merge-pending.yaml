@@ -67,7 +67,7 @@ jobs:
                 FILE_CONTENT_RAW=$(gh api "$API_URL" --jq '.content' || true)
                 
                 if [ -z "$FILE_CONTENT_RAW" ]; then
-                    echo "    - ERROR: Failed to fetch content for $file from branch '$BRANCH_NAME'. This likely means the branch does not exist or the file is not on that branch."
+                    echo "    - ERROR: Failed to fetch content for file from branch '$BRANCH_NAME'. This likely means the branch does not exist or the file is not on that branch."
                     continue
                 fi
 
@@ -76,16 +76,16 @@ jobs:
                 YAML_DATE=$(echo "$FILE_CONTENT" | sed -n '/^---$/,/^---$/p' | grep -E '^date:' | head -1 | awk '{print $2}' | sed -e "s/'//g" -e "s/\"//g" -e "s/\\[//g" -e "s/\\]//g" -e "s/,//g")
 
                 if [ -z "$YAML_DATE" ]; then
-                    echo "    - No 'date:' found in front matter of $file or unable to parse. Skipping date check for this file."
+                    echo "    - No 'date:' found in front matter or unable to parse. Skipping date check for this file."
                     continue
                 fi
 
                 if [ "$YAML_DATE" == "$CURRENT_DATE" ]; then
-                  echo "    - Date matches today's date. This PR is a candidate for merge."
+                  echo "   - Date matches today's date. This PR is a candidate for merge."
                   PR_READY_TO_MERGE="true"
                   break
                 else
-                  echo "    - Date in $file ('$YAML_DATE') does not match today's date ('$CURRENT_DATE')."
+                  echo "   - Date in file ('$YAML_DATE') does not match today's date ('$CURRENT_DATE')."
                 fi
               done
 
