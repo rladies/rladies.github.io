@@ -91,12 +91,12 @@ jobs:
 
               if [ "$PR_READY_TO_MERGE" == "true" ]; then
                 echo "Attempting to merge PR #$pr_number..."
-                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch --auto -t "Closing #{$pr_number}" 2>&1 || true)
+                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch --auto" 2>&1 || true)
                 MERGE_STATUS=$?
 
                 echo $MERGE_OUTPUT
 
-                if [ echo "$MERGE_OUTPUT" | grep -q "Merged pull request #$pr_number" ]; then
+                if echo "$MERGE_OUTPUT" | grep -q "Merged pull request"; then
                   echo "Successfully merged PR #$pr_number."
                 else
                   echo "Failed to merge PR #$pr_number. Error details:"
@@ -110,7 +110,7 @@ jobs:
                       COMMENT_BODY="Hi there,\n\nUnfortunately, the automated merge for this Pull Request (#$pr_number) failed. Please check the workflow logs for details.\n\n_This comment was automatically generated._"
                   else
                       # For safety, we'll use a delimiter other than / (like @) and escape any @ in the variable
-                      ESCAPED_FAILURE_REASONS=$(echo "$$MERGE_OUTPUT" | sed -e 's/[]\/$*.^[]/\\&/g' | sed -e ':a;N;$!ba;s/\n/\\n/g')
+                      ESCAPED_FAILURE_REASONS=$(echo "$MERGE_OUTPUT" | sed -e 's/[]\/$*.^[]/\\&/g' | sed -e ':a;N;$!ba;s/\n/\\n/g')
                       
                       COMMENT_BODY=$(sed "s|<<FAILURE_REASONS>>|$ESCAPED_FAILURE_REASONS|g" "$TEMPLATE_PATH")
                   fi
