@@ -7,7 +7,7 @@ author:
   - Hannah Frick
   - Shannon Pileggi
   - Yanina Bellini Saibene
-date: "2025-06-14"
+date: "2025-06-15"
 image: mic.jpg
 slug: invited-speakers
 categories:
