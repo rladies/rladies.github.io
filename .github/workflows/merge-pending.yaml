@@ -1,53 +1,51 @@
-name: Merge Pending PRs
+name: Auto-Merge Labeled PRs with Date Check
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Allows manual trigger
   schedule:
+    # Runs daily at 10:58 AM UTC (adjust for your timezone, cron is UTC)
+    # This is 12:58 PM CEST in Indre Østfold Municipality, Østfold, Norway
     - cron: "58 10 * * *"
 
-env:
-  GH_TOKEN: ${{ github.token }}
+permissions: # Minimum permissions required for this workflow
+  pull-requests: write # To merge PRs
+  contents: write # To delete branches after merge (if gh pr merge --delete-branch is used)
+  repository-projects: read # For gh pr list/view (not strictly needed but good to have)
 
 jobs:
-  find_pending_prs:
+  find_and_merge_prs:
     runs-on: ubuntu-latest
-    outputs:
-      prs: ${{ steps.find_pending_prs.outputs.prs }}
-      process: ${{ steps.find_pending_prs.outputs.process }}
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Find PRs with "pending" label
-        id: find_pending_prs
+      - name: Setup GitHub CLI
         run: |
-          prs=$(gh pr list --label "pending" --state "open" --json number,title,isDraft -q '.[] | select(.isDraft == false) | .number')
-          process='false'
-          if [ -n "$prs" ]; then
-          process='true'
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          gh config set prompt-enabled false
+
+      - name: Get current date for comparison
+        id: get_date
+        run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Find and Process PRs with "pending" label
+        run: |
+          PR_NUMBERS=$(gh pr list --label "pending" --state "open" --json number,title,isDraft -q '.[] | select(.isDraft == false) | .number')
+
+          if [ -z "$PR_NUMBERS" ]; then
+            echo "No non-draft PRs with 'pending' label found. Exiting."
+            exit 0
           fi
-          echo "prs=${prs}" >> $GITHUB_OUTPUT
-          echo "process=${process}" >> $GITHUB_OUTPUT
 
-  process_prs:
-    runs-on: ubuntu-latest
-    needs: find_pending_prs
-    if: ${{ needs.find_pending_prs.outputs.process == 'true' }}
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+          echo "Found PRs with 'pending' label: $PR_NUMBERS"
 
-      - name: Process and Merge Qualifying PRs
-        env:
-          prs: ${{ needs.find_pending_prs.outputs.prs }}
-        run: |
-          current_date=$(date +'%Y-%m-%d')
-
-          for pr_number in $prs; do
-              echo "Checking PR #$pr_number"
+          for pr_number in $PR_NUMBERS; do
+              echo "--- Checking PR #$pr_number ---"
 
               # Check if the PR modifies any index.md file in the "content/" directory
-              index_files=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
+              # Use gh pr diff for more robust file change detection
+              # gh pr diff "$pr_number" --name-only
+              INDEX_FILES_CHANGED=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
               
               if [ -n "$index_files" ]; then
                 echo "PR #$pr_number modifies the following index.md files:"
@@ -60,7 +58,7 @@ jobs:
                   file_content=$(gh api "repos/$GITHUB_REPOSITORY/contents/$file?ref=$branch_name" --jq '.content' | base64 --decode || true)
 
                   # Extract the date from the YAML front matter (assuming "date: " is on its own line)
-                  yaml_date=$(echo "$file_content" | grep -E '^date:' | awk '{print $2}' | sed -e s/\'//g)
+                  yaml_date=$(echo "$file_content" | grep -E '^date:' | awk '{print $2}' | sed -e s/\'//g| sed -e s/\"//g)
 
                   # Check if the date matches today's date
                   if [ "$yaml_date" == "$current_date" ]; then
@@ -74,16 +72,63 @@ jobs:
               else
                 echo "PR #$pr_number does not modify any index.md file."
               fi
-            done
 
-      - name: Trigger Website build
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: 'rladies',
-              repo: 'rladies.github.io',
-              workflow_id: 'build-production.yaml',
-              ref: 'main'
-            })
+              echo "PR #$pr_number modifies the following content/index.md files:"
+              echo "$INDEX_FILES_CHANGED"
+
+              PR_READY_TO_MERGE="false"
+
+              # Loop through each index.md file modified by the PR
+              for file in $INDEX_FILES_CHANGED; do
+                echo "  - Checking file: $file"
+                # Fetch the content of the file from the PR's branch
+                BRANCH_NAME=$(gh pr view "$pr_number" --json headRefName -q .headRefName)
+                
+                # Use gh api directly to get the file content without base64 decoding issues
+                FILE_CONTENT_RAW=$(gh api "repos/$GITHUB_REPOSITORY/contents/$file?ref=$BRANCH_NAME" --jq '.content')
+                
+                if [ -z "$FILE_CONTENT_RAW" ]; then
+                    echo "    - Could not fetch content for $file. Skipping date check for this file."
+                    continue
+                fi
+
+                # Decode base64 content
+                FILE_CONTENT=$(echo "$FILE_CONTENT_RAW" | base64 --decode || true)
+
+                # Extract the date from the YAML front matter
+                # Using sed for more precise extraction within the YAML front matter block
+                YAML_DATE=$(echo "$FILE_CONTENT" | sed -n '/^---$/,/^---$/p' | grep -E '^date:' | head -1 | awk '{print $2}' | sed -e "s/'//g" -e "s/\"//g" -e "s/\\[//g" -e "s/\\]//g" -e "s/,//g")
+
+                if [ -z "$YAML_DATE" ]; then
+                    echo "    - No 'date:' found in front matter of $file or unable to parse. Skipping date check for this file."
+                    continue
+                fi
+
+                echo "    - Date in $file: '$YAML_DATE'"
+                echo "    - Current date: '$CURRENT_DATE'"
+
+                if [ "$YAML_DATE" == "$CURRENT_DATE" ]; then
+                  echo "    - Date matches today's date. This PR is a candidate for merge."
+                  PR_READY_TO_MERGE="true"
+                  break # If any index.md file matches, consider the PR eligible
+                else
+                  echo "    - Date in $file ('$YAML_DATE') does not match today's date ('$CURRENT_DATE')."
+                fi
+              done # End of file loop
+
+              if [ "$PR_READY_TO_MERGE" == "true" ]; then
+                  echo "Attempting to merge PR #$pr_number..."
+
+                  # It will only succeed if the PR is approved and all status checks pass.
+                  # If --delete-branch is included, the head branch will be deleted after merge.
+                  if gh pr merge "$pr_number" --squash --delete-branch; then
+                    echo "Successfully merged PR #$pr_number."
+
+                  else
+                    echo "Failed to merge PR #$pr_number. It might not meet branch protection requirements (e.g., reviews, passing checks)."
+                    gh pr comment "$pr_number" --body "Automated merge failed: Missing approvals or failed status checks."
+                  fi
+              else
+                  echo "PR #$pr_number is not eligible for merge based on date check."
+              fi
+          done # End of PR loop
