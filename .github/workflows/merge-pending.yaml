@@ -21,7 +21,7 @@ jobs:
 
       - name: Setup GitHub CLI
         run: |
-          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          echo "${{ secrets.ADMIN_TOKEN }}" | gh auth login --with-token
           gh config set prompt-enabled false
 
       - name: Get current date for comparison
