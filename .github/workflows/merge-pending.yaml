@@ -91,39 +91,17 @@ jobs:
 
               if [ "$PR_READY_TO_MERGE" == "true" ]; then
                 echo "Attempting to merge PR #$pr_number..."
-                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch 2>&1 || true)
+                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch --auto -t "Closing #{$pr_number}" 2>&1 || true)
                 MERGE_STATUS=$?
 
                 echo $MERGE_OUTPUT
 
-                if [ $MERGE_STATUS -eq 0 ]; then
+                if [ echo "$MERGE_OUTPUT" | grep -q "Merged pull request #$pr_number" ]; then
                   echo "Successfully merged PR #$pr_number."
                 else
                   echo "Failed to merge PR #$pr_number. Error details:"
                   echo "$MERGE_OUTPUT"
 
-                  FAILURE_REASONS="" # Initialize an empty string to collect reasons
-
-                  if echo "$MERGE_OUTPUT" | grep -q "required status checks"; then
-                    FAILURE_REASONS+="* Required status checks are not passing."$'\n'
-                  fi
-                  if echo "$MERGE_OUTPUT" | grep -q "required reviews"; then
-                    FAILURE_REASONS+="* Required pull request reviews are missing."$'\n'
-                  fi
-                  if echo "$MERGE_OUTPUT" | grep -q "behind main"; then
-                    FAILURE_REASONS+="* The branch is out of date with the base branch (main)."$'\n'
-                  fi
-                  if echo "$MERGE_OUTPUT" | grep -q "conflicts"; then
-                    FAILURE_REASONS+="* There are merge conflicts."$'\n'
-                  fi
-                  if echo "$MERGE_OUTPUT" | grep -q "draft"; then
-                    FAILURE_REASONS+="* The pull request is a draft and cannot be merged."$'\n'
-                  fi
-
-                  if [ -z "$FAILURE_REASONS" ]; then
-                    FAILURE_REASONS="* An unknown branch protection rule or other issue prevented the merge. Please refer to the full error output below for more details."$'\n'
-                    FAILURE_REASONS+="```\n$MERGE_OUTPUT\n```"$'\n'
-                  fi
                   # Read the template file
                   TEMPLATE_PATH=".github/reply_templates/merge_errors.txt"
                   if [ ! -f "$TEMPLATE_PATH" ]; then
@@ -131,10 +109,8 @@ jobs:
                       # Fallback to a hardcoded generic message if template is missing
                       COMMENT_BODY="Hi there,\n\nUnfortunately, the automated merge for this Pull Request (#$pr_number) failed. Please check the workflow logs for details.\n\n_This comment was automatically generated._"
                   else
-                      # Use sed to replace the placeholder with collected failure reasons
-                      # Need to escape newlines in FAILURE_REASONS for sed 's' command if it becomes multiline
                       # For safety, we'll use a delimiter other than / (like @) and escape any @ in the variable
-                      ESCAPED_FAILURE_REASONS=$(echo "$FAILURE_REASONS" | sed -e 's/[]\/$*.^[]/\\&/g' | sed -e ':a;N;$!ba;s/\n/\\n/g')
+                      ESCAPED_FAILURE_REASONS=$(echo "$$MERGE_OUTPUT" | sed -e 's/[]\/$*.^[]/\\&/g' | sed -e ':a;N;$!ba;s/\n/\\n/g')
                       
                       COMMENT_BODY=$(sed "s|<<FAILURE_REASONS>>|$ESCAPED_FAILURE_REASONS|g" "$TEMPLATE_PATH")
                   fi
