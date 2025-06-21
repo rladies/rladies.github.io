@@ -1,6 +1,7 @@
 ---
 title: "Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team"
-author: "R-Ladies Global Leadership Team"
+author:
+  -name: "R-Ladies Global Leadership Team"
 type: blog
 date: "2019-12-18"
 description: "Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team"
@@ -11,7 +12,7 @@ categories:
 output: html_document
 slug: "gdq-departure"
 aliases:
-  - '/news/2019-12-18-gdq-departure'
+  - "/news/2019-12-18-gdq-departure"
 ---
 
 R-Ladies started out as a meetup group in San Francisco, when Gabriela de Queiroz founded the first chapter and organised the first event in 2012. Following this example, three further groups started out over the next three years. Shortly after the useR! conference in 2016, where Gabriela and other organisers met in person, the R-Ladies Global organisation was co-founded by several active community members.

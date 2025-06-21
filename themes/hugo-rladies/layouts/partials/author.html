@@ -1,0 +1,16 @@
+
+<ul class="list-group">
+    {{ range . }}
+        <li class="list-group-item border-0">
+            {{ with .url }}
+                <a href="{{.}}" target="_blank" rel="noopener noreferrer">
+            {{ end }}
+
+            {{ .name }}
+
+            {{ with .url }}
+                </a>
+            {{ end }}
+        </li>
+    {{ end }}
+</ul>

@@ -3,15 +3,21 @@ title: "Organizer tips for inviting speakers"
 description: |
   Considerations for conference and event organizers, to facilitate the participation of invited speakers.
 author:
-  - Maëlle Salmon
-  - Hannah Frick
-  - Shannon Pileggi
-  - Yanina Bellini Saibene
+  - name: Maëlle Salmon
+    url: https://masalmon.eu/
+  - name: Hannah Frick
+  - name: Shannon Pileggi
+  - name: Yanina Bellini Saibene
+editorial:
+  - name: Athanasia Mo Mowinckel
+    url: https://drmowinckels.io/
 date: "2025-06-15"
 image: mic.jpg
 slug: invited-speakers
 categories:
   - R-Ladies
+tags:
+  - conference
 editor:
   markdown:
     wrap: sentence
@@ -30,13 +36,14 @@ Here are several examples of how how that plays out in practice.
 
 ## Invite them clearly, in advance
 
-What are you inviting the person for exactly? 
+What are you inviting the person for exactly?
 Your initial contact should state it explicitly, introducing the event in one or a few sentences and providing a link to the next or, if needed, past editions.
 
-Example questions your invitation should answer: 
+Example questions your invitation should answer:
+
 - How long is to the total speaker session? What is the expectation for time speaking versus time for question and answer?
-- Do you have a topic in mind or does the speaker have free reign? 
-- Will it be online or in person? 
+- Do you have a topic in mind or does the speaker have free reign?
+- Will it be online or in person?
 - Is there a fixed date for the event or is it flexible? If it is flexible, provide information around target days / days of the week / time and time zone.
 - Will travel and accommodation be covered? Do state the budget.
 - Will you pay for it or will it be by reimbursement? Give details of the process. Ideally, be prepared to either do the bookings on behalf of the speaker to prevent their having to advance funds, or to let the speaker do the bookings, based on their preferences and constraints. See also the post section about logistics!
@@ -48,19 +55,19 @@ If someone recommended the speaker to you, only state it if you have the consent
 
 Even if you made an effort to invite someone from a underrepresented group (and yes you should make an effort to have diversity in your speaker panel, we’re in the XXIst century)… do not tell this person.
 
-Send the invitation in advance, especially if the event requires travelling, but even if not. 
-Be mindful of timelines, challenges, and costs with [procuring travel visas](https://yabellini.netlify.app/blog/2023-05-06-visa/). 
+Send the invitation in advance, especially if the event requires travelling, but even if not.
+Be mindful of timelines, challenges, and costs with [procuring travel visas](https://yabellini.netlify.app/blog/2023-05-06-visa/).
 Does the speaker have sufficient notice, and can organizers provide the required documentation?
 
-Do not list the person on a public draft schedule, or a Google Doc you share with all invited people, before you’ve heard from them. 
+Do not list the person on a public draft schedule, or a Google Doc you share with all invited people, before you’ve heard from them.
 Keep your hopes private!
 
 ## Communicate regularly
 
-When the person answers, do not delay your own answer. 
+When the person answers, do not delay your own answer.
 Be enthusiastic if they said yes, and understanding if not!
 
-You can communicate to indicate you don’t know about some things yet but that you’re working on them. 
+You can communicate to indicate you don’t know about some things yet but that you’re working on them.
 It is much better to answer about uncertainty, rather than not to answer.
 
 ## Respect your guest
@@ -70,17 +77,18 @@ Do not create or edit those without their explicit approval.
 Confirm bios prior to announcing the speaker on your event's website and on social media.
 Once this information is publicly available on a website or otherwise, send it to the speaker.
 
-If the guest has to adapt, or cancel, their participation in your event due to health, safety or other concerns, just accept this. 
-Do not push them to participate in a certain way disregarding their safety. 
+If the guest has to adapt, or cancel, their participation in your event due to health, safety or other concerns, just accept this.
+Do not push them to participate in a certain way disregarding their safety.
 It is very unlikely the person is faking their concern or health issue.
 
-Ask about your guest’s needs, for instance but not limited to: room and venue accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc. 
+Ask about your guest’s needs, for instance but not limited to: room and venue accessibility, childcare, lactation/breastfeeding space, food allergies/preferences, room for their family in the hotel room, etc.
 Even better, have public information about how these things are handled at your event, as other participants will have similar problems!
 
-If you want to record, ask for the speaker's consent ahead of time and tell them what you want to do with the recording. 
+If you want to record, ask for the speaker's consent ahead of time and tell them what you want to do with the recording.
 Do not share the speaker's material without their consent.
 
 Clarify the speaking logistics with the speaker. Examples include:
+
 - In what kind of room will they speak?
 - Will they have access to a clicker?
 - What are the power characteristics?
@@ -92,28 +100,28 @@ Clarify the speaking logistics with the speaker. Examples include:
 
 ## Be mindful of travel logistics!
 
-If you want a speaker to feature on your schedule, covering their travel and accommodation (T&A) is the number one way to help. 
+If you want a speaker to feature on your schedule, covering their travel and accommodation (T&A) is the number one way to help.
 If you can't cover T&A, then… you can't afford having the speaker (unless you reach a special agreement with the speaker, whose employer might cover T&A!).
 
-Travel planning is a key piece of an in-person event. 
-Be mindful of your guest’s preferences and constraints regarding the booking process: do they prefer to book themselves and be reimbursed? 
-Does advancing money actually mean they pay taxes on the reimbursement? 
-Will they fly or travel on trains or use their car? 
+Travel planning is a key piece of an in-person event.
+Be mindful of your guest’s preferences and constraints regarding the booking process: do they prefer to book themselves and be reimbursed?
+Does advancing money actually mean they pay taxes on the reimbursement?
+Will they fly or travel on trains or use their car?
 Your speaker would rather focus on on preparing content rather than figuring out how not to lose money.
 
-Get to know your guest and trust that they know the ins and outs of travel logistics better than you do. 
-Ask if they need to arrive a day earlier or leave a day later to take it into account at the T&A. 
-Trips of many hours plus time differences are tiring for many people. 
-Your speaker will be better if they sleep in a bed and not on a plane and will surely give a better talk if they are rested. 
-Take into account that some people live far away from major airports or train stations and probably need transportation between airports or airports/train-bus stations to get to your event. 
+Get to know your guest and trust that they know the ins and outs of travel logistics better than you do.
+Ask if they need to arrive a day earlier or leave a day later to take it into account at the T&A.
+Trips of many hours plus time differences are tiring for many people.
+Your speaker will be better if they sleep in a bed and not on a plane and will surely give a better talk if they are rested.
+Take into account that some people live far away from major airports or train stations and probably need transportation between airports or airports/train-bus stations to get to your event.
 Take those cost into account.
 
 If you pay for their hotel but they need to put a credit card on file for incidentals, do let them know ahead of time - and also how much. If the hotel puts a hold on that amount, ask if they can advance that and don't assume.
 
 ## On site
 
-Offer support but don’t overdo it either. 
-Do they need tourism tips? Do they know how to get around? 
+Offer support but don’t overdo it either.
+Do they need tourism tips? Do they know how to get around?
 Again, if the information might be useful for any event participant, put it on the event website.
 
 Don’t assume alcohol is equal to entertainment for everybody,

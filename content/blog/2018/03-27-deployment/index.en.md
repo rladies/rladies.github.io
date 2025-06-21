@@ -1,6 +1,7 @@
 ---
 title: "2. Behind the scenes of R-Ladies IWD2018 Twitter action!"
-author: "R-Ladies"
+author:
+  -text: "R-Ladies"
 date: "2018-03-27"
 description: "Part 2: Deployment and Bot Wrangling!"
 tags:
@@ -11,7 +12,7 @@ categories:
   - R-Ladies
 slug: "deployment"
 aliases:
-  - '/blog/2018-03-27-deployment'
+  - "/blog/2018-03-27-deployment"
 ---
 
 ### As told by Kelly O'Briant

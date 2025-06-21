@@ -1,6 +1,9 @@
 ---
 title: "vacaciones <- crecer(RedRLadies)"
-author: "Paloma, Mine, Laura"
+author:
+  - name: Paloma
+  - name: Mine
+  - name: Laura
 date: "2019-02-16"
 description: "Extendiendo la red de R-Ladies después de unas vacaciones"
 tags: 

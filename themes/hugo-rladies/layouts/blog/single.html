@@ -1,45 +1,72 @@
 
+{{ define "title" }}
+<header class="entry-header">
+  <div class="entry-meta">
+    <span class="posted-on">
+      {{if isset .Params "date"}}
+        <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+          {{- .Date.Format "January 2, 2006" -}}
+        </time>
+      {{end}}
+    </span>
+  </div>
+  <h1 class="section-title">{{ .Title }}</h1>
+  <div class="container">
+    <div class="row gx-5 align-items-center">
+      {{ with .Params.image }}
+        <div class="col-12 col-md-4">
+          <img src="{{ . }}" alt="{{ $.Title }}" class="img-fluid">
+        </div>
+      {{ end }}
+
+      <div class="col">
+        <div class="row gx-5">
+          {{ with .Params.author }}
+            <div id="authors" class="col-12 col-md-6">
+              <h5 class="fw-bold my-3">
+                {{ i18n "authors" }}
+              </h5>
+              {{ partial "author.html" . }}
+            </div>
+          {{ end }}
+          <div class="col-12 col-md-6">
+            {{ with .Params.editorial }}
+            <h5 id="editor" class="fw-bold my-3">
+              {{ i18n "editor" }}
+            </h5>
+            {{ partial "author.html" . }}
+            {{ end }}
+            {{ with .Params.tags -}}
+            <div class="post-tags">
+              <h5 id="tags" class="fw-bold my-3">
+                {{ i18n "tags"}}
+              </h5>
+              {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+              <a href="{{ .Permalink }}">{{ $name }}</a>
+              {{ end -}}
+              {{ end }}
+            </div>
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{ end }}
+
 {{ define "main"}}
     <div class="entry-content">
       <p>{{ .Content }}</p>
     </div>
 
-    {{ with .Params.tags -}}
-    
-      <div class="post-tags my-2">
-        {{ i18n "tags"}}:
-        {{ range . }}
-        {{- $name := . -}}
-        {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
-        <a href="{{ .Permalink }}">{{ $name }}</a>
-        {{ end -}}
-        {{ end }}
-      </div>
-    {{- end }}
-
-    <!-- Author Info -->
-     <div class="my-2">
-       {{ $type := (printf "%T" .Params.author) }}
-      
-      {{ if eq $type "string" }}
-         {{ i18n "author" }}: {{ .Params.author | markdownify }}
-      {{ else }}
-        {{ with .Params.author }}
-          {{ i18n "authors" }}: 
-          {{ range . }}
-            <li>{{. | markdownify }}</li>
-          {{ end }}
-        {{end}}
-      {{ end }}
-
-    </div>
-
-    <div class="my-2">
-      <p class="text-muted">
+    <p class="text-muted">
       {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}.
-      </p>
-    </div>
-      <!-- Post Pagination -->
+    </p>
+
+    <!-- Post Pagination -->
     <div class="row">
         <div class="col-md-6 text-align-left">
           {{ with .NextInSection }}

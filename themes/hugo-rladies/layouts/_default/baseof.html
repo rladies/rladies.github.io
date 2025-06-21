@@ -26,16 +26,9 @@
          	  
             {{ block "title" . }}
               <header class="entry-header">
-                 <div class="entry-meta">
-                   <span class="posted-on">
-                      {{if isset .Params "date"}}
-                        <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
-                           {{- .Date.Format "January 2, 2006" -}}
-                        </time>
-                      {{end}}
-                   </span>
-                 </div>
-                <h1 class="section-title">{{ .Title }}</h1>
+                <h1 class="section-title">
+                  {{ .Title }}
+                </h1>
               </header>
             {{ end }}
             

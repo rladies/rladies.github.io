@@ -1,6 +1,7 @@
 ---
 title: "R-Ladies is rebranding to R-Ladies+"
-author: "Leadership Team"
+author:
+  -name: "Global Leadership Team"
 type: blog
 date: "2025-03-14"
 image: rladiesplus.png
@@ -10,7 +11,7 @@ categories:
   - R-Ladies
 slug: "announcement"
 aliases:
-  - '/news/2025-03-14_rebranding-announcement'
+  - "/news/2025-03-14_rebranding-announcement"
 ---
 
 ![Muted rainbow background with R-Ladies+ in white large font and Welcomes You underneath in white font with pink background.](rladiesplus.png)

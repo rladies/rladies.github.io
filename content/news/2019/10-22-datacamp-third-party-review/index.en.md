@@ -1,6 +1,7 @@
 ---
 title: "R-Ladies Global's response to the DataCamp Assessment Report"
-author: "R-Ladies Global Leadership Team"
+author:
+  -name: "R-Ladies Global Leadership Team"
 date: "2019-10-22"
 description: "R-Ladies Global's response to the 3rd-party review of DataCamp"
 tags:
@@ -10,7 +11,7 @@ categories:
 output: html_document
 slug: "datacamp-third-party-review"
 aliases:
-  - '/news/2019-10-22-datacamp-third-party-review'
+  - "/news/2019-10-22-datacamp-third-party-review"
 ---
 
 DataCamp's CEO Jonathan Cornelissen sexually assaulted an employee by making ["uninvited physical contact"](https://www.datacamp.com/community/blog/note-to-our-community) in October 2017. This became public in April 2019, after which we released a statement on our [blog](https://blog.rladies.org/post/statement-about-datacamp/). For a comprehensive account of events, please see this article by [Davey Alba for BuzzFeed News](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup) published in May 2019. DataCamp commissioned a third-party review which has now been [released](https://assets.datacamp.com/working-ideal-independent-third-party-review-of-datacamp.pdf). This blogpost is to add some clarification around references to R-Ladies made in that report.

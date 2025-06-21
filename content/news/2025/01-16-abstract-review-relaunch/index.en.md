@@ -1,6 +1,7 @@
 ---
 title: "We're Relaunching the R-Ladies Abstract Review System!"
-author: "Abstract Review Team"
+author:
+  - name: "Abstract Review Team"
 type: blog
 date: "2025-01-16"
 image: img/letstalk.jpg
@@ -11,7 +12,7 @@ categories:
 summary: Supporting Aspiring Speakers in the R Community!
 slug: "abstract-review-relaunch"
 aliases:
-  - '/news/2025-01-16-abstract-review-relaunch'
+  - "/news/2025-01-16-abstract-review-relaunch"
 ---
 
 We know how challenging it can be to take that first step into public speaking and submit an abstract for a conference.

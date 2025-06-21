@@ -1,6 +1,7 @@
 ---
 title: "Global Leadership Team Transition"
-author: "Global Leadership Team"
+author:
+  -name: "Global Leadership Team"
 type: blog
 date: "2022-11-18"
 description: "Erin LeDell, Claudia Vitolo, and Hannah Frick step down from the Global Leadership Team."
@@ -10,7 +11,7 @@ categories:
   - R-Ladies
 slug: "global-leadership-team-transition"
 aliases:
-  - '/news/2022-11-18-global-leadership-team-transition'
+  - "/news/2022-11-18-global-leadership-team-transition"
 ---
 
 R-Ladies first began as a meet-up in 2012, and became a global organization in 2016.

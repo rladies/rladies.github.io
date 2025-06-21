@@ -1,6 +1,7 @@
 ---
 title: "Volunteer as an R-Ladies Abstract Reviewer!"
-author: "Abstract Review Team"
+author:
+  - name: "Abstract Review Team"
 type: blog
 date: "2025-01-03"
 image: img/typing.jpg
@@ -11,7 +12,7 @@ categories:
 summary: Volunteer as an R-Ladies Abstract Reviewer to support diversity in tech!
 slug: "abstract-review"
 aliases:
-  - '/news/2025-01-03-abstract-review'
+  - "/news/2025-01-03-abstract-review"
 ---
 
 Are you passionate about supporting diversity in tech, data science, and academia? Want to help aspiring speakers craft compelling abstracts for conferences? Volunteer to be a reviewer for the R-Ladies Abstract Review System and make a difference in creating a more inclusive and representative speaker lineup at key industry and academic events!

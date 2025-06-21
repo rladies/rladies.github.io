@@ -1,6 +1,7 @@
 ---
 title: "#VidasNegrasImportam: Uma declaração conjunta de Forwards e R-Ladies"
-author: "R-Ladies Global Leadership Team"
+author:
+  -name: "R-Ladies Global Leadership Team"
 type: blog
 date: "2020-06-06"
 description: "#VidasNegrasImportam: Uma declaração conjunta de Forwards e R-Ladies"
@@ -11,7 +12,7 @@ categories:
 output: html_document
 slug: "blm"
 aliases:
-  - '/news/2020-06-06-blm'
+  - "/news/2020-06-06-blm"
 ---
 
 Como organizações comprometidas em ampliar a diversidade e a inclusão em nossa comunidade, apoiamos o movimento #BlackLivesMatter ou #VidasNegrasImportam e nos unimos a quem exige justiça frente a opressão sistêmica. O racismo generalizado afeta negativamente a participação das pessoas negras na sociedade. Os eventos atuais nos EUA ecoam o que aconteceu e continua acontecendo com pessoas que fazem parte de minorias em todo o mundo. Estamos agregando recursos e adotando ações deliberadas para amplificar as vozes de pessoas negras, indígenas e de outros grupos não-brancos da comunidade R, agora e no futuro.

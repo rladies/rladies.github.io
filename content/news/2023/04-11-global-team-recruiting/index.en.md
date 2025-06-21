@@ -1,6 +1,7 @@
 ---
 title: "Global Team Recruiting"
-author: "Global Leadership Team"
+author:
+  -name: "Global Leadership Team"
 type: blog
 date: "2023-04-11"
 description: ""
@@ -10,7 +11,7 @@ categories:
   - R-Ladies
 slug: "global-team-recruiting"
 aliases:
-  - '/news/2023-04-11-global-team-recruiting'
+  - "/news/2023-04-11-global-team-recruiting"
 ---
 
 ![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg)

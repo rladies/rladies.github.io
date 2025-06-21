@@ -1,6 +1,7 @@
 ---
 title: "Reduced Service Mode for R-Ladies Global"
-author: "R-Ladies Global Leadership Team"
+author:
+  -name: "R-Ladies Global Leadership Team"
 type: blog
 date: "2020-11-23"
 description: "Reduced Service Mode for R-Ladies Global"
@@ -10,7 +11,7 @@ categories:
   - R-Ladies
 slug: "reduced-service-note"
 aliases:
-  - '/news/2020-11-23-reduced-service-note'
+  - "/news/2020-11-23-reduced-service-note"
 ---
 
 This year has been and continues to be a challenging year for many, if not all, of us.

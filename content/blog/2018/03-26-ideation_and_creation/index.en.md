@@ -1,6 +1,7 @@
 ---
 title: "1. Behind the scenes of R-Ladies IWD2018 Twitter action!"
-author: "R-Ladies"
+author:
+  -text: "R-Ladies"
 date: "2018-03-26"
 description: "Part 1: Ideation and Creation!"
 tags:
@@ -11,7 +12,7 @@ categories:
   - R-Ladies
 slug: "ideation_and_creation"
 aliases:
-  - '/blog/2018-03-26-ideation_and_creation'
+  - "/blog/2018-03-26-ideation_and_creation"
 ---
 
 ### As told by Maëlle Salmon with notes from Bea Hernández

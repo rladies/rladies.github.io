@@ -1,6 +1,7 @@
 ---
 title: R-Ladies Global and R-Ladies Chicago Reception at Posit Conf
-author: "Global Leadership Team"
+author:
+  -name: "Global Leadership Team"
 date: "2023-10-09"
 tags:
   - community
@@ -11,7 +12,7 @@ editor_options:
     wrap: 72
 slug: "positconf-chicago-meetup"
 aliases:
-  - '/news/2023-10-09-positconf-chicago-meetup'
+  - "/news/2023-10-09-positconf-chicago-meetup"
 ---
 
 ![](posit-conf.jpg)

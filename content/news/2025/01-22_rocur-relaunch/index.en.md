@@ -1,6 +1,7 @@
 ---
 title: "We're Launching the R-Ladies Rotating Curation Account on Bluesky!"
-author: "Rotating Curation Team"
+author:
+  - name: "Rotating Curation Team"
 type: blog
 date: "2025-01-24"
 image: img/rladies-bluesky.jpg
@@ -11,7 +12,7 @@ categories:
 summary: We're looking for curators for the We Are R-Ladies Bluesky account!
 slug: "relaunch"
 aliases:
-  - '/news/2025-01-22_rocur-relaunch'
+  - "/news/2025-01-22_rocur-relaunch"
 ---
 
 ![Screenshot of We Are R-Ladies on Bluesky](img/rladies-bluesky.jpg)

@@ -1,13 +1,14 @@
 ---
 title: "History"
-author: "R-Ladies"
+author:
+  -text: R-Ladies
 date: 2018-02-24
 type: post
 categories: ["R-Ladies"]
 tags: ["history"]
 slug: "history"
 aliases:
-  - '/blog/2018-02-24-history'
+  - "/blog/2018-02-24-history"
 ---
 
 R-Ladies was founded by [Gabriela de Queiroz](https://rladies.org/united-states-rladies/name/gabriela-de-queiroz/). She wanted to do something to give back to the R learning community after going to several meetups and learning a lot for free. The first meetup took place in San Francisco, California (United States) on October 1, 2012. <!-- I think it would be great here to talk a bit about what an R-ladies meetup initially involved eg mentoring, training, guest speakers?  -->
