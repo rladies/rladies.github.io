@@ -1,0 +1,17 @@
+[
+  {
+    "urlname": "rladies-galvarino",
+    "status": "prospective",
+    "country": "Chile",
+    "state.region": "Araucania",
+    "city": "Galvarino",
+    "social_media": {
+      "meetup": "rladies-galvarino",
+      "email": "galvarino@rladies.org"
+    },
+    "organizers": {
+      "current": ["Maitte Millaray Mariángel Salgado"],
+      "former": []
+    }
+  }
+]
