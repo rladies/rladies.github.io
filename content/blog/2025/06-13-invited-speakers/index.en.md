@@ -12,7 +12,8 @@ editorial:
   - name: Athanasia Mo Mowinckel
     url: https://drmowinckels.io/
 date: "2025-06-15"
-image: mic.jpg
+image:
+  path: mic.jpg
 slug: invited-speakers
 categories:
   - R-Ladies

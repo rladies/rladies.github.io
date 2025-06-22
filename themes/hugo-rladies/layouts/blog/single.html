@@ -15,7 +15,7 @@
     <div class="row gx-5 align-items-center">
       {{ with .Params.image }}
         <div class="col-12 col-md-4">
-          <img src="{{ . }}" alt="{{ $.Title }}" class="img-fluid">
+          <img src="{{ .path }}" alt="{{ .alt | default $.Title }}" class="img-fluid">
         </div>
       {{ end }}
 

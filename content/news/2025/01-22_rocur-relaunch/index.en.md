@@ -4,7 +4,8 @@ author:
   - name: "Rotating Curation Team"
 type: blog
 date: "2025-01-24"
-image: img/rladies-bluesky.jpg
+image:
+  path: img/rladies-bluesky.jpg
 tags:
   - rocur
 categories:

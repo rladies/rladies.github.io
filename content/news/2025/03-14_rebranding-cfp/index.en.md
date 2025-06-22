@@ -4,7 +4,8 @@ author:
   - name: "Global Leadership Team"
 type: blog
 date: "2025-03-14"
-image: cfp.png
+image:
+  path: cfp.png
 tags:
   - rebrand
 categories:

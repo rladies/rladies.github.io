@@ -8,7 +8,8 @@ date: "2025-02-08"
 categories:
   - R-Ladies
   - Bioconductor
-image: "rladies-bioc.png"
+image:
+  path: "rladies-bioc.png"
 editor:
   markdown:
     wrap: sentence

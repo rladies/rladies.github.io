@@ -4,7 +4,8 @@ author:
   - name: "Global Leadership Team"
 type: blog
 date: "2025-03-14"
-image: rladiesplus.png
+image:
+  path: rladiesplus.png
 tags:
   - rebrand
 categories:

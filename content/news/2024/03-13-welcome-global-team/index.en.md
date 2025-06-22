@@ -5,7 +5,8 @@ author:
 type: blog
 date: "2024-03-13"
 output: html_document
-image: img/global_team.png
+image:
+  path: img/global_team.png
 tags:
   - community
 categories:

@@ -4,7 +4,8 @@ author:
   - name: "Abstract Review Team"
 type: blog
 date: "2025-01-03"
-image: img/typing.jpg
+image:
+  path: img/typing.jpg
 tags:
   - community
 categories:
