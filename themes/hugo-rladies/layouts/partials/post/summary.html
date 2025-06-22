@@ -27,7 +27,7 @@
           {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
         <div class="col-md-4 col-sm-12">
-          <img src={{ $data.Get "img" }} alt="{{ .alt | default $.Title }}" >
+          <img src={{ $data.Get "img" }} alt="{{ .Params.image.alt | default $.Title }}" >
         </div>
       {{ end }}
 
