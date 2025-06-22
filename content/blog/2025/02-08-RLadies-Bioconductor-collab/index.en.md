@@ -3,18 +3,19 @@ title: "New R-Ladies–Bioconductor collaboration!"
 description: |
   Announcing a new collaboration between R-Ladies and Bioconductor
 author:
-  - Janani Ravi
+  - name: Janani Ravi
 date: "2025-02-08"
 categories:
   - R-Ladies
   - Bioconductor
-image: "rladies-bioc.png"
+image:
+  path: "rladies-bioc.png"
 editor:
   markdown:
     wrap: sentence
 slug: "RLadies-Bioconductor-collab"
 aliases:
-  - '/blog/2025-02-08-RLadies-Bioconductor-collab'
+  - "/blog/2025-02-08-RLadies-Bioconductor-collab"
 ---
 
 ![](rladies-bioc.png)

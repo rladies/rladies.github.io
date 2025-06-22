@@ -1,9 +1,16 @@
 ---
 title: ""
-author: 
-  - Global Leadership Team, markdown supported
+author:
+  - name: Global Leadership Team, markdown supported
+    url: ""
+editorial:
+  - name: ""
+    url: ""
 date: ""
-tags: 
+image:
+  path: ""
+  alt: ""
+tags:
   - global
 categories:
   - r-ladies

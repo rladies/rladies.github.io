@@ -1,6 +1,9 @@
 ---
 title: " Receta para un video de fin de año"
-author: "Yanina Bellini Saibene, Alejandra Bellini y Laura Acion"
+author:
+  - name: Yanina Bellini Saibene
+  - name: Alejandra Bellini
+  - name: Laura Acion
 date: "2020-01-27"
 description: ""
 tags:

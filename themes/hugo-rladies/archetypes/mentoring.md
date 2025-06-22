@@ -4,6 +4,8 @@ date:
 mentee:
 mentor:
 image:
+  path: ""
+  alt: ""
 article: /blog/somewhere # relevant blogpost
 summary: |
 ---

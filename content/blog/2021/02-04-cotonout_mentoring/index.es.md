@@ -1,7 +1,8 @@
 ---
 title: "El programa de mentorías de R-Ladies: la historia de  R-Ladies Cotonou"
 author:
-  - "[Nadejda Sero](https://twitter.com/sbnadejda), organizador en [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
+  - name: Nadejda Sero
+    url: https://twitter.com/sbnadejda)
 date: "2021-02-04"
 description: "Programa de mentorías de R-Ladies"
 tags:
@@ -11,7 +12,7 @@ categories:
   - R-Ladies
 slug: "cotonout_mentoring"
 aliases:
-  - '/blog/2021-02-04-cotonout_mentoring'
+  - "/blog/2021-02-04-cotonout_mentoring"
 ---
 
 _Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <christin@rladies.org>._

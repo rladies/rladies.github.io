@@ -1,6 +1,7 @@
 ---
 title: "R-Ladies Infrastructure for Online Meetups"
-author: "R-Ladies Global Leadership Team"
+author:
+  - name: R-Ladies Global Leadership Team
 date: "2020-04-24"
 description: "R-Ladies Infrastructure for Online Meetups"
 tags:
@@ -15,7 +16,7 @@ output:
     keep_md: yes
 slug: "online-meetups"
 aliases:
-  - '/blog/2020-04-24-online-meetups'
+  - "/blog/2020-04-24-online-meetups"
 ---
 
 Our chapters have cancelled in-person meetups due to the corona virus pandemic. However, we want our members to be able to stay connected and still share their latest R-related discoveries and journeys. To support our chapter organisers in moving their events online, we decided to provide them with video conferencing infrastructure.

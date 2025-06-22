@@ -1,7 +1,8 @@
 ---
 title: "Le programme de mentorat de R-Ladies : le voyage de R-Ladies Cotonou"
 author:
-  - "[Nadejda Sero](https://twitter.com/sbnadejda), organisatrice à [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)"
+  - name: Nadejda Sero
+    url: https://twitter.com/sbnadejda)
 date: "2021-02-04"
 description: "Le programme de mentorat de R-Ladies"
 tags:
@@ -12,7 +13,7 @@ categories:
 output: html_document
 slug: "cotonout_mentoring"
 aliases:
-  - '/blog/2021-02-04-cotonout_mentoring'
+  - "/blog/2021-02-04-cotonout_mentoring"
 ---
 
 _Nous sommes très heureux de vous fournir cet article de blog dans différentes langues: Anglais, Français et Espagnol. Si vous souhaitez en savoir plus sur la manière de contribuer au blog de R-Ladies en général ou souhaitez faire de recommendations, veuillez nous contacter par e-mail à <christin@rladies.org>._

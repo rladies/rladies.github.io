@@ -1,6 +1,7 @@
 ---
 title: "Curating for @WeAreRLadies on Twitter"
-author: "Shannon Pileggi"
+author:
+  - name: Shannon Pileggi
 date: "2021-09-23"
 description: "From creating content to cultivating connections."
 tags:
@@ -12,7 +13,7 @@ categories:
   - R-Ladies
 slug: "curating-for-wearerladies-on-twitter"
 aliases:
-  - '/blog/2021-09-23-curating-for-wearerladies-on-twitter'
+  - "/blog/2021-09-23-curating-for-wearerladies-on-twitter"
 ---
 
 <script src="{{< blogdown/postref >}}index.en_files/twitter-widget/widgets.js"></script>

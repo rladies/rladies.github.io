@@ -21,13 +21,13 @@
           {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
         
-        {{ with .Resources.Get .Params.image }}
+        {{ with .Resources.Get .Params.image.path }}
           {{ $img := . }}
           {{ $img := $img.Fill "400x400" }}
           {{ $data.Set "img" $img.RelPermalink }}
         {{ end }}
         <div class="col-md-4 col-sm-12">
-          <img src={{$data.Get "img"}}>
+          <img src={{ $data.Get "img" }} alt="{{ .Params.image.alt | default $.Title }}" >
         </div>
       {{ end }}
 

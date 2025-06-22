@@ -1,6 +1,7 @@
 ---
 title: New R-Ladies Website
-author: Athanasia M. Mowinckel
+author:
+  - name: Athanasia M. Mowinckel
 type: blog
 date: "2023-02-22"
 tags:
@@ -8,6 +9,7 @@ tags:
 categories:
   - R-Ladies
 ---
+
 ---
 
 There were some key issues we wanted to resolve with our webpage, that we could not easily maintain with the Wordpress site we had going:
@@ -99,7 +101,9 @@ I look forward to the continued development, and we will be announcing the need 
 
 slug: "new-r-ladies-website"
 aliases:
-  - '/news/2023-02-22-new-r-ladies-website'
+
+- '/news/2023-02-22-new-r-ladies-website'
+
 ---
 
 We are thrilled to announce the release of our new R-Ladies website!
@@ -112,4 +116,3 @@ The R-Ladies Leadership and Global Team want to express our sincere gratitude to
 
 Her technical expertise has been instrumental in bringing this project to fruition. She's put a lot of care into creating a professional and beautiful interface, but also in creating sustainable update workflows for humans and machines. The new website is a significant improvement over the previous one, and we are sure it will enhance our ability to connect with and serve our community of R-Ladies worldwide.
 Thanks a ton, Mo!
-

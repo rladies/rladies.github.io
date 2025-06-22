@@ -1,6 +1,7 @@
 ---
 title: "Mastodon: Meet the R-Ladies!"
-author: "Daniela Vázquez"
+author:
+  - name: "Daniela Vázquez"
 type: blog
 date: "2023-11-10"
 output: html_document
@@ -11,7 +12,7 @@ categories:
 summary: R-Ladies are on mastodon's Hackyderm server! Follow us at [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)!
 slug: "mastodon-meet-the-r-ladies"
 aliases:
-  - '/news/2023-11-10-mastodon-meet-the-r-ladies'
+  - "/news/2023-11-10-mastodon-meet-the-r-ladies"
 ---
 
 # TL; DR

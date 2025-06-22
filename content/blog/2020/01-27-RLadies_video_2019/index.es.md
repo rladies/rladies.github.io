@@ -1,6 +1,9 @@
 ---
 title: " Receta para un video de fin de año"
-author: "Yanina Bellini Saibene, Alejandra Bellini y Laura Acion"
+author:
+  - name: Yanina Bellini Saibene
+  - name: Alejandra Bellini
+  - name: Laura Acion
 date: "2020-01-27"
 description: ""
 tags:
@@ -11,7 +14,7 @@ categories:
 always_allow_html: yes
 slug: "RLadies_video_2019"
 aliases:
-  - '/blog/2020-01-27-RLadies_video_2019'
+  - "/blog/2020-01-27-RLadies_video_2019"
 ---
 
 Para cerrar el 2019 desde R-Ladies hicimos un video, si aún no lo viste, aquí está:
