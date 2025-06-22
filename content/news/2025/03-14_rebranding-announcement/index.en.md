@@ -1,7 +1,7 @@
 ---
 title: "R-Ladies is rebranding to R-Ladies+"
 author:
-  -name: "Global Leadership Team"
+  - name: "Global Leadership Team"
 type: blog
 date: "2025-03-14"
 image: rladiesplus.png

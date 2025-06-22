@@ -1,7 +1,7 @@
 ---
 title: "History"
 author:
-  -text: R-Ladies
+  - name: R-Ladies
 date: 2018-02-24
 type: post
 categories: ["R-Ladies"]

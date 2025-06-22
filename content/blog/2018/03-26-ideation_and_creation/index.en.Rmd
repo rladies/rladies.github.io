@@ -1,7 +1,7 @@
 ---
 title: "1. Behind the scenes of R-Ladies IWD2018 Twitter action!"
 author: 
-  -text: "R-Ladies"
+  - name: "R-Ladies"
 date: '2018-03-26'
 description: 'Part 1: Ideation and Creation!'
 tags:

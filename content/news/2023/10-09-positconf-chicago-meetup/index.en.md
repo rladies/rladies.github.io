@@ -1,7 +1,7 @@
 ---
 title: R-Ladies Global and R-Ladies Chicago Reception at Posit Conf
 author:
-  -name: "Global Leadership Team"
+  - name: "Global Leadership Team"
 date: "2023-10-09"
 tags:
   - community

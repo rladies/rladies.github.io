@@ -1,7 +1,7 @@
 ---
 title: "Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team"
 author:
-  -name: "R-Ladies Global Leadership Team"
+  - name: "R-Ladies Global Leadership Team"
 type: blog
 date: "2019-12-18"
 description: "Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team"

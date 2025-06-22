@@ -2,7 +2,7 @@
 title: '3. Behind the scenes of R-Ladies IWD2018 Twitter action!'
 description: "Part 3: The Grand Conclusion!"
 author: 
-  -text: R-Ladies
+  - name: R-Ladies
 date: '2018-03-28'
 slug: conclusion
 categories:

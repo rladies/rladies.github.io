@@ -1,7 +1,7 @@
 ---
 title: "R-Ladies Global's response to the DataCamp Assessment Report"
 author:
-  -name: "R-Ladies Global Leadership Team"
+  - name: "R-Ladies Global Leadership Team"
 date: "2019-10-22"
 description: "R-Ladies Global's response to the 3rd-party review of DataCamp"
 tags:

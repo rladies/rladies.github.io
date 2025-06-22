@@ -31,10 +31,10 @@
           {{ end }}
           <div class="col-12 col-md-6">
             {{ with .Params.editorial }}
-            <h5 id="editor" class="fw-bold my-3">
-              {{ i18n "editor" }}
-            </h5>
-            {{ partial "author.html" . }}
+              <h5 id="editor" class="fw-bold my-3">
+                {{ i18n "editor" }}
+              </h5>
+              {{ partial "author.html" . }}
             {{ end }}
             {{ with .Params.tags -}}
             <div class="post-tags">
