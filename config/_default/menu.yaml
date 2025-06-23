@@ -41,21 +41,25 @@ main:
     url: /activities/events/
     weight: 1
     parent: activities
+  - identifier: chapters
+    url: /chapters/
+    weight: 2
+    parent: activities
   - identifier: mentoring
     url: /activities/mentoring/
-    weight: 2
+    weight: 3
     parent: activities
   - identifier: coordinated
     url: /activities/gt-coordinated/
-    weight: 3
+    weight: 4
     parent: activities
   - identifier: rladies-blogs
     url: /activities/rladies-blogs
-    weight: 4
+    weight: 5
     parent: activities
   - identifier: press
     url: /press
-    weight: 5
+    weight: 6
     parent: activities
     
   - identifier: blog

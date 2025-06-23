@@ -1,0 +1,80 @@
+  
+<div id="chartdiv"></div>
+
+<!-- amcharts --> 
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+  am4core.ready(function() {
+    
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    // Create map instance
+    var chart = am4core.create("chartdiv", am4maps.MapChart);
+    
+    // Set map definition
+    chart.geodata = am4geodata_worldLow;
+    
+    // Set projection
+    chart.projection = new am4maps.projections.Miller();
+    
+    // Create map polygon series
+    var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+    
+    // Exclude Antartica
+    polygonSeries.exclude = ["AQ"];
+    
+    // Make map load polygon (like country names) data from GeoJSON
+    polygonSeries.useGeodata = true;
+    
+    // Configure series
+    var polygonTemplate = polygonSeries.mapPolygons.template;
+    polygonTemplate.tooltipText = "{name}";
+    polygonTemplate.polygon.fillOpacity = 0.6;
+    
+    // Create hover state and set alternative fill color
+    var hs = polygonTemplate.states.create("hover");
+    hs.properties.fill = am4core.color("#88398a");
+    
+    // Add image series
+    var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+    imageSeries.mapImages.template.propertyFields.longitude = "longitude";
+    imageSeries.mapImages.template.propertyFields.latitude = "latitude";
+    imageSeries.mapImages.template.tooltipHTML = "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}<br>{socials}";
+    imageSeries.mapImages.template.propertyFields.url = "url";
+
+    imageSeries.tooltip.background.fillOpacity = 0.7;
+    imageSeries.tooltip.background.fill = am4core.color("#fff");
+    imageSeries.tooltip.label.interactionsEnabled = true;
+    imageSeries.tooltip.keepTargetHover = true;
+    
+    var circle = imageSeries.mapImages.template.createChild(am4core.Circle);
+    circle.radius = 4;
+    circle.propertyFields.fill = "color"
+    circle.nonScaling = "true"; 
+    
+    var colorSet = new am4core.ColorSet();
+    
+    imageSeries.data = [ 
+    {{ range where . "members" "gt" 0 }}
+      {
+        "name": "{{ .name }}",
+        "members": "{{ .members }}",
+        "socials": {{ with .social_media }}{{ partial "social_media.html" . }}{{ end }},
+        "latitude": {{ .lat }},
+        "longitude": {{ .lon }},
+        "color": "#88398acc"
+      },
+    {{ end }}
+    ];
+  }); // end am4core.ready()
+</script>
+
+  
