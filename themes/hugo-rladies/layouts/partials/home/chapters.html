@@ -5,8 +5,7 @@
     <h2 class="section-title"><span>{{ .Title | title }}</span></h2>
     <small class="text-muted text-center">{{ .Content }}</small>
 
-    {{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
-    {{ partial "map.html" $chapters }}
+    {{ partial "map.html" . }}
 
   </div>
 

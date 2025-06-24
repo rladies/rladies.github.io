@@ -1,14 +1,13 @@
 {{ define "main" }}
 
 {{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 0 }}
-{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+{{ $chapters := .Pages }}
 
 <div class="container row justify-content-center section topspace">
   
-    {{ partial "map.html" $chapters }}
+    {{ partial "map.html" . }}
 
-
-    <div class="entry-content">
+    <div>
         {{ .Content }}
     </div>
 
@@ -26,16 +25,18 @@
           {{ range $countries }}
             <tr>
               <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country | title }} </td>
-                  {{ range where $chapters "country" .country }}
-              <td id="{{ urlize .name }}" class="text-left"> <a href="{{ $.Site.BaseURL }}/chapters#{{ urlize .name }}">{{ .name | title }}</a> </td>
+                {{ range where $chapters ".Params.country" .country }}
+                    <td class="text-left"> 
+                        <a href="{{ .Permalink }}">{{ .Title | title }}</a> 
+                    </td>
                 
-                <td class="text-right"> 
-                  {{ with .social_media }}
-                      {{ partial "social_media.html" (dict "data" . "relme" true) }}
-                  {{ end }}
-                </td>
-                  </tr>
-                  {{ end }}  
+                    <td class="text-right"> 
+                    {{ with .Params.social_media }}
+                        {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                    {{ end }}
+                    </td>
+                </tr>
+                {{ end }}  
             </tr>
           {{ end }}
         </tbody>

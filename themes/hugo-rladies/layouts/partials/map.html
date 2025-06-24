@@ -1,4 +1,4 @@
-  
+
 <div id="chartdiv"></div>
 
 <!-- amcharts --> 
@@ -62,8 +62,10 @@
     
     var colorSet = new am4core.ColorSet();
     
+    {{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+    
     imageSeries.data = [ 
-    {{ range where . "members" "gt" 0 }}
+    {{ range where $chapters "members" "gt" 0 }}
       {
         "name": "{{ .name }}",
         "members": "{{ .members }}",

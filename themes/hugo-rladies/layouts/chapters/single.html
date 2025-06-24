@@ -1,6 +1,145 @@
 
 {{ define "main" }}
-<div class="entry-content">
-	{{ .Content }}
-</div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <dl class="row mb-0">
+                {{ with .Params.status }}
+                    <dt class="col-sm-4">Status</dt>
+                    <dd class="col-sm-8">
+                    <span class="badge {{ if eq . "active" }}bg-success {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
+                    </dd>
+                {{ end }}
+
+                <dt class="col-sm-4">Location</dt>
+                <dd class="col-sm-8">
+                {{ with .Params.city }}{{ . }}, {{ end }}
+                {{ with .Params.state_region }}
+                    {{ . }}, 
+                {{ end }}
+                {{ with .Params.country }}
+                    {{ . }}
+                {{ end }}
+                </dd>
+
+                {{ with .Params.social_media }}
+                    <dt class="col-sm-4">Connect with this chapter</dt>
+                    <dd class="col-sm-8">
+                        {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                    </dd>
+                {{ end }}
+
+            </dl>
+        </div>
+    </div>
+
+
+
+    {{ with .Params.organizers }}
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="card-title h4 mb-3">Organizers</h2>
+                {{ with .current }}
+                    <ul class="list-group list-group-flush mb-3">
+                    {{ range . }}
+                        <li class="list-group-item">{{ . }}</li>
+                    {{ end }}
+                    </ul>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+
+    {{ $chapterGroupUrlname := .Params.urlname }}
+    {{ $allEvents := site.Data.meetup.events }}
+    {{ $currentDate := now }}
+
+    {{ $upcomingEvents := slice }}
+    {{ $formerEvents := slice }}
+
+    {{ range $event := $allEvents }}
+      {{ if eq $event.group_urlname $chapterGroupUrlname }}
+        {{ $eventStart := time.AsTime $event.start }}
+        {{ if $eventStart.After $currentDate }}
+          {{ $upcomingEvents = $upcomingEvents | append $event }}
+        {{ else }}
+          {{ $formerEvents = $formerEvents | append $event }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ $upcomingEvents = sort $upcomingEvents "start" }}
+    {{ $formerEvents = sort $formerEvents "start" "desc" }}
+
+    {{ if or $upcomingEvents $formerEvents }}
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h2 class="card-title h4 mb-3">Chapter Events</h2>
+
+          {{ if gt (len $upcomingEvents) 0 }}
+            {{ $nextEvent := index $upcomingEvents 0 }}
+            <h3 class="h5 text-primary mb-3">Next Upcoming Event:</h3>
+            <div class="card text-center mb-4 border-primary shadow">
+              <div class="card-header bg-primary text-white h4">{{ $nextEvent.title }}</div>
+              <div class="card-body">
+                <p class="card-text lead">
+                  <i class="bi bi-calendar-event me-2"></i>{{ dateFormat "Monday, January 2, 2006 at 3:04 PM" (time.AsTime $nextEvent.start) }}
+                </p>
+                {{ if $nextEvent.location }}
+                  <p class="card-text text-muted">
+                    <i class="bi bi-geo-alt-fill me-2"></i>{{ $nextEvent.location }}
+                  </p>
+                {{ end }}
+              </div>
+            </div>
+
+            {{ $upcomingEvents = after 1 $upcomingEvents }}
+          {{ end }}
+
+          {{/* Other Upcoming Events */}}
+          {{ if gt (len $upcomingEvents) 0 }}
+            <h3 class="h5 mt-4 mb-3">Other Upcoming Events:</h3>
+            <ul class="list-group list-group-flush mb-4">
+              {{ range $event := $upcomingEvents }}
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div>
+                    <h4 class="h6 mb-1">{{ $event.title }}</h4>
+                    <small class="text-muted">
+                      <i class="bi bi-calendar me-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.start) }}
+                      {{ if $event.location }}<br><i class="bi bi-geo-alt me-1"></i>{{ $event.location }}{{ end }}
+                    </small>
+                  </div>
+                  {{ with $event.id }}
+                    <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-primary ms-3">Details <i class="bi bi-box-arrow-up-right"></i></a>
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+
+          {{/* Former Events */}}
+          {{ if gt (len $formerEvents) 0 }}
+            <h3 class="h5 mt-4 mb-3">Former</h3>
+            <ul class="list-group list-group-flush">
+              {{ range $event := $formerEvents }}
+                <li class="list-group-item d-flex justify-content-between align-items-start text-muted">
+                  <div>
+                    <h4 class="h6 mb-1">{{ $event.title }}</h4>
+                    <small>
+                      <i class="bi bi-calendar-x me-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.start) }}
+                      {{ if $event.location }}<br><i class="bi bi-geo-alt me-1"></i>{{ $event.location }}{{ end }}
+                    </small>
+                  </div>
+                  {{ with $event.id }}
+                    <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary ms-3">Details <i class="bi bi-box-arrow-up-right"></i></a>
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+
+        </div>
+      </div>
+    {{ end }}
+    
 {{ end }}
