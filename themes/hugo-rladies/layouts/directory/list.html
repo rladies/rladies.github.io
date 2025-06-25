@@ -1,22 +1,22 @@
 
 {{ define "main" }}
 <!-- Selects -->
-{{ $directory := ( .Scratch.Get "directory" ) }}
+{{ $directory := .Pages }}
 {{ $ints := slice }}
 {{ $langs := slice }}
 {{ $loc := slice }}
 {{ $countries := slice }}
 
 {{ range $directory }}
-  {{ with .interests }}
+  {{ with .Params.interests }}
       {{ $ints = $ints | append  . }}
     {{ end }}
     
-    {{ with .languages }}
+    {{ with .Params.languages }}
       {{ $langs = $langs | append  . }}
     {{ end }}
     
-    {{ with .location }}
+    {{ with .Params.location }}
       {{ $tmp := newScratch }}
       {{ with .country }}
         {{ $tmp.Set "loc" . }}
