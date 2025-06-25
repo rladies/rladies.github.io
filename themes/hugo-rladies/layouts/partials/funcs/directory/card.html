@@ -1,21 +1,21 @@
 {{ $dir := newScratch }}
 {{ $dir.Set "shuffle" slice }}
-{{ $dir.Set "title" .data.name }} 
+{{ $dir.Set "title" .data.Title }} 
 {{ $dir.Add "title" "<span><small>"}}
-{{ with .data.social_media }}
+{{ with .data.Params.social_media }}
   {{ $some := partial "social_media.html" (dict "data" . ) }}
   {{ $dir.Add "title" $some }} 
 {{ end }}
 {{ $dir.Add "title" "</small></span>"}}
 
 {{ $dir.Set "subtitle" (printf "<p class=\"text-hide directory-id\">%s</p>" .name) }} 
-{{ with .data.work.title }} 
+{{ with .data.Params.work.title }} 
   {{ $dir.Add "subtitle" . }} 
 {{ end }}
 
-{{ $grav := md5 ( .data.name | printf "%s-%s" .name ) }}
+{{ $grav := md5 ( .data.Title | printf "%s-%s" .name ) }}
 {{ $dir.Set "img" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" $grav )}}
-{{ with (resources.GetMatch .data.photo.url ) }}
+{{ with (resources.GetMatch .data.Params.photo.url ) }}
   {{ $image :=  . }}
   {{ $image := $image.Fill "300x300" }}
   {{ $dir.Set "img" $image.RelPermalink }}
@@ -23,15 +23,15 @@
 
 {{ $shuffle := dict }}
 
-{{ with .data.interests }}
+{{ with .data.Params.interests }}
   {{ $shuffle = merge $shuffle (dict "interests" . ) }}
 {{ end }}
 
-{{ with .data.languages }}
+{{ with .data.Params.languages }}
   {{ $shuffle = merge $shuffle (dict "languages" . ) }}
 {{ end }}
 
-{{ with .data.location }}
+{{ with .data.Params.location }}
   {{ $tmp := newScratch }}
   {{ with .country }}
     {{ $tmp.Set "loc" . }}
@@ -53,4 +53,4 @@
 {{ $title := ($dir.Get "title" ) }}
 {{ $foot := (partial "funcs/directory/foot.html" .data ) }}
 
-{{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" .size  "img" ($dir.Get "img") "category" .data.honorific "descr" $descr "foot" $foot "footcol" 2 "id" .name  "shuffle" $shuffle ) }}
+{{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" .size  "img" ($dir.Get "img") "category" .data.Params.honorific "descr" $descr "foot" $foot "footcol" 2 "url" .data.Permalink  "shuffle" $shuffle ) }}
