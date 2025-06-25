@@ -65,9 +65,14 @@
           <h2 class="h4 card-title mb-3">Work & Affiliation</h2>
           <p class="mb-4">
             {{ with .title }}{{ . }}, {{ end }}
+            {{ if .url }}
+              <a href="{{ .url }}" target="_blank" rel="noopener">
+            {{ end }}
             {{ with .organisation }}{{ . }}, {{ end }}
             {{ with .department }}{{ . }},{{ end }}
-            {{ with .url }}<li class="list-group-item"><a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></li>{{ end }}
+            {{ if .url }}
+              </a>
+            {{ end }}
           </ul>
         {{ end }}
 
