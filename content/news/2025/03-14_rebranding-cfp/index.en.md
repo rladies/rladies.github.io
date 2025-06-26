@@ -52,7 +52,11 @@ We envision this involves:
 
 - Visual imagery of diverse gender minorities for the website or slides
 
+<<<<<<< HEAD:content/news/2025-03-14_rebranding-cfp/index.en.md
+- Certificates \& letterhead
+=======
 - Certificates & letterhead
+>>>>>>> main:content/news/2025/03-14_rebranding-cfp/index.en.md
 
 - Social media post templates (BlueSky, Mastodon, LinkedIn, Instagram)
 
@@ -62,11 +66,19 @@ Along with instructions for use and guidelines for chapters on how to adapt logo
 
 ## Timeline
 
+<<<<<<< HEAD:content/news/2025-03-14_rebranding-cfp/index.en.md
+| Item                         | Date                   | 
+| ---------------------------- | ---------------------- |
+| Proposal Submission Deadline | April 15, 2025         | 
+| Internal review of proposals | April 16 - May 7, 2025 | 
+| Project kickoff              | by June 1, 2025        | 
+=======
 | Item                         | Date                   |
 | ---------------------------- | ---------------------- |
 | Proposal Submission Deadline | April 15, 2025         |
 | Internal review of proposals | April 16 - May 7, 2025 |
 | Project kickoff              | by June 1, 2025        |
+>>>>>>> main:content/news/2025/03-14_rebranding-cfp/index.en.md
 
 ## Budget
 
@@ -90,6 +102,8 @@ The following will also count positively to any application
 
 Please submit your proposal via the [R-Ladies Call For Proposal - Rebranding form](https://airtable.com/apphrsts5IruOEGJo/pagmZISNXBiAfDfpC/form).
 
-If you have questions regarding the submission or RFP itself, please send an email to [leadership\@rladies.org](mailto:leadership@rladies.org) with "CFP: rebranding" in the subject field.
+If you have questions regarding the submission or RFP itself, please send an email to [leadership@rladies.org](mailto:leadership@rladies.org) with "CFP: rebranding" in the subject field.
 
-Thank you!💜
+Thank you!
+
+

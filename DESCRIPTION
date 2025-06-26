@@ -36,3 +36,8 @@ Config/renv/profiles/airtable/dependencies:
     here,
     tidyr,
     airtabler
+Config/renv/profiles/translate/dependencies: 
+    aeolus,
+    babeldown,
+    here
+
