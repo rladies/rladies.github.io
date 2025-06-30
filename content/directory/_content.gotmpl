@@ -1,0 +1,35 @@
+{{ range $key, $dirArray := site.Data.directory }}
+
+  {{ $pageContent := "" }}
+
+  {{ $imageURLScratch := newScratch }}
+
+  {{ $localPhotoFound := false }}
+  {{ with $dirArray.photo }}
+    {{ with .url }}
+      {{ $imgResource := resources.GetMatch . }}
+      {{ if $imgResource }}
+        {{ $processedImage := $imgResource.Fill "300x300" }}
+        {{ $imageURLScratch.Set "img" $processedImage.Permalink }}
+        {{ $localPhotoFound = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if not $localPhotoFound }}
+    {{ $gravatarHash := md5 $dirArray.name }}
+    {{ $imageURLScratch.Set "img" (printf "https://www.gravatar.com/avatar/%s?s=300&d=identicon" $gravatarHash) }}
+  {{ end }}
+
+  {{ $speakerParams := $dirArray | merge (dict "image" ($imageURLScratch.Get "img")) }}
+
+  {{ $page := dict
+    "content" (dict "mediaType" "text/markdown" "value" $pageContent)
+    "kind" "page"
+    "path" $key
+    "title" $dirArray.name
+    "params" $speakerParams 
+  }}
+
+  {{ $.AddPage $page }}
+{{ end }}
