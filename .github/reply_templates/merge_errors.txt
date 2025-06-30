@@ -1,0 +1,9 @@
+:triangular_flag_on_post: Merge failed :triangular_flag_on_post:
+
+Unfortunately, the automated merge for this Pull Request failed for the following reason(s):
+
+<<FAILURE_REASONS>>
+
+Please check the branch protection rules for \`main\` and ensure all requirements are met.
+
+_This comment was automatically generated._
