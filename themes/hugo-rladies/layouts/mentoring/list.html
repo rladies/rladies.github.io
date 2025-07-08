@@ -25,7 +25,7 @@
         {{ end }}
         
         {{ $data.Set "img" "" }}
-        {{ with .Resources.GetMatch .Params.image }}
+        {{ with .Resources.GetMatch .Params.image.path }}
           {{ $img := . }}
           {{ $img := $img.Fit "400x800" }}
           {{ $data.Set "img" $img.RelPermalink }}

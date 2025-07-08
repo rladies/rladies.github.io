@@ -1,6 +1,12 @@
 ---
 title: "Acción de Twitter para el IWD 2019"
-author: "Yanina Bellini, Patricia Loto y Divya Seernani; con notas de Roxana Noelia Villafañe y Gabriela De Queiroz"
+author:
+  - name: Yanina Bellini
+  - name: Patricia Loto
+  - name: Divya Seernani
+editor:
+  - name: Roxana Noelia Villafane
+  - name: Gabriela De Queiroz
 date: "2019-03-25"
 description: "Explicando el proyecto de twitter para el IWD 2019"
 tags:
@@ -12,7 +18,7 @@ categories:
 output: html_document
 slug: "blog_iwdtwitter_2019"
 aliases:
-  - '/blog/2019-03-25-blog_iwdtwitter_2019'
+  - "/blog/2019-03-25-blog_iwdtwitter_2019"
 ---
 
 Como cada 8 de marzo, una vez más se celebra el _Día Internacional de la Mujer (IWD/8M)_. Aunque dicha fecha tiene distintas formas de celebración, mantiene un punto en común: la lucha por la igualdad de género. El año pasado, en 2018, un grupo de entusiastas R-Ladies tuvo la idea de visibilizar a las grandes mujeres que forman parte del directorio de R-Ladies, mediante tweets posteados durante todo el 8 de marzo. Por lo que, en Febrero de este año, 2019, Yanina propuso continuar esta gran iniciativa, pero en esta oportunidad twittear sobre cada uno de los capítulos de R-Ladies.

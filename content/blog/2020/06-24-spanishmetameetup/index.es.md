@@ -1,6 +1,11 @@
 ---
 title: "Cómo hacer una reunión virtual inolvidable (sin morir en el intento)"
-author: "Laura Ación, Yanina Bellini Saibene, Paola Corrales, Patricia Loto y Paloma Rojas"
+author:
+  - name: Laura Ación
+  - name: Yanina Bellini Saibene
+  - name: Paola Corrales
+  - name: Patricia Loto
+  - name: Paloma Rojas"
 date: "2020-06-24"
 description: ""
 tags:
@@ -10,7 +15,7 @@ categories:
   - R-Ladies
 slug: "spanishmetameetup"
 aliases:
-  - '/blog/2020-06-24-spanishmetameetup'
+  - "/blog/2020-06-24-spanishmetameetup"
 ---
 
 ### Versión corta
