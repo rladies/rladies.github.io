@@ -15,6 +15,7 @@ hugo.linux
 .Rhistory
 .Rapp.history
 .history
+.Renviron
 
 # Session Data files
 .RData

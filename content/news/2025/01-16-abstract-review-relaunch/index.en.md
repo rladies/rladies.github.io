@@ -16,7 +16,7 @@ aliases:
 
 We know how challenging it can be to take that first step into public speaking and submit an abstract for a conference.
 
-That's why we're thrilled to announce the **relaunch of the R-Ladies Abstract Review System**! 🎉
+That's why we're thrilled to announce the **relaunch of the R-Ladies Abstract Review System**!
 
 Our system connects aspiring speakers with reviewers who provide feedback and guidance, helping them refine their abstracts and scholarship applications.
 
@@ -50,4 +50,7 @@ It's that easy!
 
 ## We Need Reviewers, Too!
 
-Do you have experience with public speaking, abstract writing, or reviewing? Consider joining our amazing team of reviewers! Volunteering is a flexible, rewarding way to support our mission and give back to the community. Sign up [here](https://airtable.com/appJadVolZxoDGSIK/pag4bpfeGIATQFefk/form).
+Do you have experience with public speaking, abstract writing, or reviewing?
+Consider joining our amazing team of reviewers!
+Volunteering is a flexible, rewarding way to support our mission and give back to the community.
+Sign up [here](https://airtable.com/appJadVolZxoDGSIK/pag4bpfeGIATQFefk/form).

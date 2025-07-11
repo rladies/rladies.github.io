@@ -8,7 +8,27 @@ tags:
 categories:
   - R-Ladies
 ---
+<<<<<<< HEAD:content/news/2023-02-22-new-r-ladies-website/index.en.md
+
+We are thrilled to announce the release of our new R-Ladies website!
+
+It's been a long journey, with many people involved, and we are happy to be able to finally share with you this new site and some new content.
+
+<!--more-->
+
+The R-Ladies Leadership and Global Team want to express our sincere gratitude to Mo for her incredible work developing the new R-Ladies website.
+Mo dedicated many hours of hard and invisible work to accomplish this important milestone.
+
+Her technical expertise has been instrumental in bringing this project to fruition.
+She's put a lot of care into creating a professional and beautiful interface, but also in creating sustainable update workflows for humans and machines.
+The new website is a significant improvement over the previous one, and we are sure it will enhance our ability to connect with and serve our community of R-Ladies worldwide.
+
+Thanks a ton, Mo!
+
+***
+=======
 ---
+>>>>>>> main:content/news/2023/02-22-new-r-ladies-website/index.en.md
 
 There were some key issues we wanted to resolve with our webpage, that we could not easily maintain with the Wordpress site we had going:
 
@@ -37,9 +57,10 @@ Then Covid hit, and we all [felt the stress of that period](https://www.rladies.
 Development went slow, and things dragged out.
 Thankfully, the Leadership contacted me and asked if I needed help to get the last pieces in place, and that we could set aside a little budget to hire help for the javascript pieces I was struggling with.
 
-We [announced](https://rladies.org/news/2022-03-28-request-for-proposal-javascript-development/) the need, and hired [Ben Ubah](https://github.com/benubah) to help me get the last crucial pieces in place. Finally, we were nearing completion!
+We [announced](https://rladies.org/news/2022-03-28-request-for-proposal-javascript-development/) the need, and hired [Ben Ubah](https://github.com/benubah)to help me get the last crucial pieces in place.
+Finally, we were nearing completion!
 
-## Release & new features!
+## Release \& new features!
 
 We have now released the new website and are thrilled about how it works so far!
 The theme is well suited to us, and the content is much easier to deal with now that we can collaborate through GitHub.
@@ -52,7 +73,7 @@ It's also made it possible to integrate the website with certain other automatic
 
 And more!
 
-## Future work & call for community help
+## Future work \& call for community help
 
 There are still some things we are working on in the background, that we hope will improve the experience of our website, and also fulfil obligations we have promised previously.
 We have a [website wiki](https://github.com/rladies/rladies.github.io/wiki) with more information about the setup of the website, and how people can contribute to the site.
@@ -97,6 +118,10 @@ It has been an amazing journey for me to work on this website.
 I've learned so much, and I am thrilled to finally see it go "live".
 I look forward to the continued development, and we will be announcing the need for new website team members in not too long, to help me with the translation efforts, in revitalising the blog and in taking over the general maintenance of the new website.
 
+<<<<<<< HEAD:content/news/2023-02-22-new-r-ladies-website/index.en.md
+![](rladies.jpg)
+
+=======
 slug: "new-r-ladies-website"
 aliases:
   - '/news/2023-02-22-new-r-ladies-website'
@@ -112,4 +137,5 @@ The R-Ladies Leadership and Global Team want to express our sincere gratitude to
 
 Her technical expertise has been instrumental in bringing this project to fruition. She's put a lot of care into creating a professional and beautiful interface, but also in creating sustainable update workflows for humans and machines. The new website is a significant improvement over the previous one, and we are sure it will enhance our ability to connect with and serve our community of R-Ladies worldwide.
 Thanks a ton, Mo!
+>>>>>>> main:content/news/2023/02-22-new-r-ladies-website/index.en.md
 

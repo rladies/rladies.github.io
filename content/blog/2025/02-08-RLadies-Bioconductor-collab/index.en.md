@@ -40,7 +40,11 @@ Here are a few concrete ways in which we want to get the ball rolling:
 - Jointly host events about bioinformatics/computational biology with local R-Ladies Chapters, benefiting both parties.
 - Promote R-Ladies local watch parties of live-casted or pre-recorded events and professional networking events for Bioconductor conferences (using content from BioC: BioC North America, BioCAsia, EuroBioC).
 - Highlight Bioconductor speakers at R + computational biology R-Ladies events across chapters; similarly, highlight R-Ladies, who are interested in computational biology and developing Bioconductor packages, at BioC events.
+<<<<<<< HEAD:content/blog/2025-02-08-RLadies-Bioconductor-collab/index.en.md
+- Have a new idea for collaboration between R-Ladies and Bioconductor that you don't see here? Please reach out to us!
+=======
 - Have a new idea for collaboration between R-Ladies and Bioconductor that you don’t see here? Please reach out to us!
+>>>>>>> main:content/blog/2025/02-08-RLadies-Bioconductor-collab/index.en.md
 
 **Get Involved**
 
@@ -55,3 +59,5 @@ We recently kicked off this journey with local networking in R-Ladies chapters w
 
 We're looking forward to building something great together.
 Let us know what you think, share your ideas, or just say hi!
+
+
