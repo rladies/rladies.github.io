@@ -1515,6 +1515,22 @@
     "timezone": "America/Toronto"
   },
   {
+    "urlname": "rladies-galvarino",
+    "status": "prospective",
+    "country": "Chile",
+    "state.region": "Araucanía",
+    "social_media": {
+      "meetup": "rladies-galvarino",
+      "email": "galvarino@rladies.org"
+    },
+    "organizers": {
+      "current": ["Maitte Millaray Mariángel Salgado"],
+      "former": []
+    },
+    "name": "R-Ladies Galvarino",
+    "city": "Galvarino"
+  },
+  {
     "urlname": "rladies-concepcion",
     "status": "active",
     "country": "Chile",
