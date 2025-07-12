@@ -11,7 +11,7 @@
 
 {{ $data.Add "foot" "<br><br>" }}
 
-{{ with .location }}
+{{ with .Params.location }}
     {{ $data.Add "foot" "<i class=\"fa-solid fa-location-dot\" aria-hidden=\"true\"></i> "}}
     {{ with .city }} 
       {{ $data.Add "foot" "<span class=\"city\">" }} 
