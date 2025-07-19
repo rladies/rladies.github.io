@@ -1,7 +1,25 @@
-{{ define "head" }}
-    <meta http-equiv="refresh" content="0;URL={{ .Params.redirect }}" />  
-{{ end }}
-
 {{ define "main" }}
-   If you are not redirected, please follow <a href="{{ .Params.redirect }}">this link</a>.
+    <p class="lead mb-4">You are being redirected to the R-Ladies Airtable form.</p>
+    <p>If you are not redirected automatically, please click the link below:</p>
+    <a id="redirectLink">Click here to proceed</a>
+
+    <script>
+        // Get the base redirect URL from Hugo's .Params.redirect
+        const baseRedirectUrl = "{{ .Params.redirect }}";
+
+        // Get the current URL's query string (e.g., "?prefill_Name=Athanasia&other=value")
+        const queryString = window.location.search;
+
+        // Construct the final URL by appending the query string
+        const finalRedirectUrl = baseRedirectUrl + queryString;
+
+        // Set the href of the fallback link
+        document.getElementById('redirectLink').href = finalRedirectUrl;
+
+        // Perform the redirect after a short delay (e.g., 500ms)
+        // This gives the user a moment to see the "redirecting" message
+        setTimeout(() => {
+            window.location.replace(finalRedirectUrl);
+        }, 500); // Redirect after 0.5 seconds
+    </script>
 {{ end }}
