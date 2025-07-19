@@ -868,3 +868,35 @@ tr.fc-list-event {
   transform: uppercase;
 }
 
+
+.blockquote {
+    padding: 60px 80px 40px;
+    position: relative;
+}
+.blockquote p {
+    font-size: 35px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.blockquote:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 0;
+  
+  content:"\f10d";
+  font-size: 200px;
+  color: transparentize($primary, 0.9);
+}
+
+.blockquote::after {
+    content: "";
+    top: 20px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    border-bottom: 3px solid $primary;
+    height: 3px;
+    width: 200px;
+}
+
