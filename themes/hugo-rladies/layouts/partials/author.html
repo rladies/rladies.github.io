@@ -1,9 +1,8 @@
-
-<ul class="list-group">
+<div> 
     {{ range . }}
-        <li class="list-group-item border-0">
+        <div class="mb-1"> 
             {{ with .url }}
-                <a href="{{.}}" target="_blank" rel="noopener noreferrer">
+                <a href="{{.}}" target="_blank" rel="noopener noreferrer"> 
             {{ end }}
 
             {{ .name }}
@@ -11,6 +10,6 @@
             {{ with .url }}
                 </a>
             {{ end }}
-        </li>
+        </div>
     {{ end }}
-</ul>
+</div>
