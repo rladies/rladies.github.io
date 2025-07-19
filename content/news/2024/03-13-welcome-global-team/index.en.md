@@ -1,10 +1,12 @@
 ---
 title: "Welcome to the Global Team"
-author: "Leadership Team"
+author:
+  - name: "Global Leadership Team"
 type: blog
 date: "2024-03-13"
 output: html_document
-image: img/global_team.png
+image:
+  path: img/global_team.png
 tags:
   - community
 categories:
@@ -12,7 +14,7 @@ categories:
 summary: R-Ladies Global Team has 15 new members!
 slug: "welcome-global-team"
 aliases:
-  - '/news/2024-03-13-welcome-global-team'
+  - "/news/2024-03-13-welcome-global-team"
 ---
 
 ![Thumbnail photos of 15 new global team members cropped in circle images outlined in purple.](img/global_team.png)
