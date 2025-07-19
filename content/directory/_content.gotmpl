@@ -21,7 +21,7 @@
     {{ $imageURLScratch.Set "img" (printf "https://www.gravatar.com/avatar/%s?s=300&d=identicon" $gravatarHash) }}
   {{ end }}
 
-  {{ $speakerParams := $dirArray | merge (dict "image" ($imageURLScratch.Get "img")) }}
+  {{ $speakerParams := $dirArray | merge (dict "image" ($imageURLScratch.Get "img") "directory_id" $key) }}
 
   {{ $page := dict
     "content" (dict "mediaType" "text/markdown" "value" $pageContent)
