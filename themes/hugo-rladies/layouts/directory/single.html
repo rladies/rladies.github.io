@@ -54,6 +54,10 @@
             </div>
           {{ end }}
 
+            <div class="col-12 mt-4 text-center text-muted small">
+              <p>Last updated: {{ .Params.last_updated | default "unknown" }}</p>
+              <p>If this is your entry, you can update or delete it by filling out <a href="/form/directory-update?prefill_directory_id={{ .Params.directory_id | urlquery }}&prefill_request_type=update">this form</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -129,6 +133,7 @@
         </div>
         <hr class="my-4">
     {{ end }}
+
 
   </div>
 </div>
