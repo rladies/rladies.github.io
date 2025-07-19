@@ -870,22 +870,21 @@ tr.fc-list-event {
 
 
 .blockquote {
-    padding: 60px 80px 40px;
-    position: relative;
+  padding: 10px;
+  position: relative;
 }
+
 .blockquote p {
-    font-size: 35px;
-    font-weight: 700px;
-    text-align: center;
+  font-size: 25px;
+  font-weight: 700px;
 }
 
 .blockquote:before {
+  content:"\f10d";
   position: absolute;
   font-family: 'FontAwesome';
-  top: 0;
-  
-  content:"\f10d";
-  font-size: 200px;
+  top: -20px;
+  font-size: 100px;
   color: transparentize($primary, 0.9);
 }
 
@@ -893,10 +892,8 @@ tr.fc-list-event {
     content: "";
     top: 20px;
     left: 50%;
-    margin-left: -100px;
+    margin-left: 5%;
     position: absolute;
     border-bottom: 3px solid $primary;
-    height: 3px;
-    width: 200px;
 }
 

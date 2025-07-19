@@ -1,6 +1,6 @@
-<figure class="mb-4">
-  <blockquote class="blockquote text-center " {{ with .Attributes.cite }}cite="{{ . }}"{{ end }}> 
-    {{ .Text }}
+<figure class="my-6">
+  <blockquote class="blockquote" {{ with .Attributes.cite }}cite="{{ . }}"{{ end }}> 
+    <i>{{ .Text }}</i>
   </blockquote>
   {{ with .Attributes.caption }}
     <figcaption class="blockquote-footer"> 
