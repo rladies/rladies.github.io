@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 0 }}
+{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+
+<div class="container row justify-content-center section topspace">
+  
+    {{ partial "map.html" $chapters }}
+
+
+    <div class="entry-content">
+        {{ .Content }}
+    </div>
+
+  <div class="row justify-content-center">
+    <div id="chapter-table" class="col-auto m-2">
+      <table class="table table-hover table-responsive chp-table">
+        <thead>
+          <tr>
+            <th class="text-right b-rladies b-rladies-r"> {{ i18n "country"  | markdownify | title }} </th>
+            <th class="text-left"> {{ i18n "city" | markdownify | title }} </th>
+            <th class="text-right"> {{ i18n "social_media" | markdownify }} </th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $countries }}
+            <tr>
+              <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country | title }} </td>
+                  {{ range where $chapters "country" .country }}
+              <td id="{{ urlize .name }}" class="text-left"> <a href="{{ $.Site.BaseURL }}/chapters#{{ urlize .name }}">{{ .name | title }}</a> </td>
+                
+                <td class="text-right"> 
+                  {{ with .social_media }}
+                      {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                  {{ end }}
+                </td>
+                  </tr>
+                  {{ end }}  
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{{ end }}
