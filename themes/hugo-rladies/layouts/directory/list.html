@@ -139,16 +139,17 @@
     // Function to apply filters
     function applyFilters() {
       // Get selected values from multiselects || Default to empty array if no values selected
-      const interests = $('#filter-interests').val() || []; 
+      const interests = $('#filter-interests').val() || [];
       const languages = $('#filter-languages').val() || [];
       const locations = $('#filter-location').val() || [];
-        
+
       // Use Shuffle.js filter method
       shuffleInstance.filter(item => {
-        const itemInterests = JSON.parse(item.getAttribute('data-interests'));
-        const itemLanguages = JSON.parse(item.getAttribute('data-languages'));
-        const itemLocations = JSON.parse(item.getAttribute('data-location'));
-    
+        // Parse attributes and default to empty array if null
+        const itemInterests = JSON.parse(item.getAttribute('data-interests')) || [];
+        const itemLanguages = JSON.parse(item.getAttribute('data-languages')) || [];
+        const itemLocations = JSON.parse(item.getAttribute('data-location')) || [];
+
         // Check if item passes the selected filters
         return (
           (interests.length === 0 || interests.some(i => itemInterests.includes(i))) &&
