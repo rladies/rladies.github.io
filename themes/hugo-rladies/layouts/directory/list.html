@@ -102,7 +102,7 @@
 
     <div class="container expand-grid" id="directory-cards">
         <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width shuffle-wrapper" id="directory-grid">
-          {{ range $name := .Pages }}
+          {{ range $name := $directory | shuffle }}
               {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}
           {{ end }}
       </ul>
