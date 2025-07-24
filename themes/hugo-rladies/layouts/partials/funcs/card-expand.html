@@ -21,9 +21,7 @@
     {{ end }}
       {{ with .url }}<a href="{{.}}" target="_blank">{{end}}
       <h4 class="card-expand-title">
-          {{ with .id }} <a href="#{{ . }}" class="name">{{ end }} 
-            {{ .title | safeHTML }}
-          {{ with .id }} </a> {{ end }}
+        {{ .title | safeHTML }}
       </h4>
     {{ with .url }}</a>{{end}}
     {{ with .subtitle }}
