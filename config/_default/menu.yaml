@@ -30,6 +30,10 @@ main:
     url: /coc/
     weight: 6
     parent: about-us
+  - identifier: supporters
+    url: about-us/supporters/
+    weight: 7
+    parent: about-us
 
   - identifier: directory
     url: /directory/

@@ -1,0 +1,21 @@
+
+
+{{ define "main" }}
+
+{{ with .Site.GetPage "section" "sponsors" }}
+  <div id="{{ .Title }}" class="row section topspace">
+  <h2 class="section-title"><span>{{.Title}}</span></h2>
+  <div class="container" id="{{.Title}}-cards">
+    <div class="card border-0">
+      {{ range .Pages }}
+        <div class="card card-service mx-auto m-1 p-4 border-0">
+          <a href="{{ .Params.source }}" title="{{.Title}}">
+            <img class="card-img-top obj-fit-contain" {{ range first 1 (.Resources.ByType "image") }}src="{{ .RelPermalink }}"{{ end }} alt="{{ .Title }}">
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}
+
+{{ end }}
