@@ -43,6 +43,11 @@ home_feed: 'Latest posts'
 home_featured: 'Featured R-Ladies'
 home_activity: 'Our activities'
 
+# Supporters ----
+supporters_reports: 'Funder Reports'
+supporters_sponsors: 'Sponsors'
+supporters_donors: 'Donors'
+
 # Globals ----
 country: 'Country'
 countries: 'Countries'

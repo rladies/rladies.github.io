@@ -1,6 +1,6 @@
 ---
-title: "Sponsors"
-type: "sponsors"
+title: "Donors"
+type: "donors"
 weight: 99
 home: true
 ---

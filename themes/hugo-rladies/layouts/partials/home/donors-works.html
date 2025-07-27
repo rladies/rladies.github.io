@@ -16,17 +16,15 @@
 {{ end }}
 
 
-
-{{ $donors := where .Site.RegularPages "Section" "donors" }}
+{{ $directory := where .Site.RegularPages "Section" "directory" }}
 
 <div class="container expand-grid section topspace" id="feed">
-  <h2 class="section-title"><span>{{ i18n "supported_donors" }}</span></h2>
+  <h2 class="section-title"><span>{{ i18n "home_featured" }}</span></h2>
   <ul class="justify-content-center full-width row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9">
-    {{ range $name := first 2 $donors | shuffle }}
-      {{ partial "home/donors.html" (dict "data" . "name" $name "size" "large") }}
+    {{ range $name := first 3 $directory | shuffle }}
+      {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}
     {{ end }}
   </ul>
 </div>
-
 
 
