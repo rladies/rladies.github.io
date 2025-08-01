@@ -1,8 +1,8 @@
 ---
 title: "Tips for Submitting a Video Abstract to Posit Conf"
 author:
-  - Nic Crane
-  - Sayantika Banik
+  - name: Nic Crane
+  - name: Sayantika Banik
 date: "2025-02-06"
 categories:
   - R-Ladies
@@ -11,7 +11,7 @@ tags:
   - Video
 slug: "submit_posit_conf"
 aliases:
-  - '/blog/2025-02-03-submit_posit_conf'
+  - "/blog/2025-02-03-submit_posit_conf"
 ---
 
 Thinking about submitting a talk for **Posit Conf 2025** but feeling nervous about recording a video abstract? You are not alone! It can feel intimidating at first, but the good news is it is just **one minute** and all about showcasing your idea effectively.
