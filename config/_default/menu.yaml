@@ -26,9 +26,13 @@ main:
     url: /news/
     weight: 5
     parent: about-us
+  - identifier: sponsors
+    url: /about-us/sponsors/
+    weight: 6
+    parent: about-us
   - identifier: coc
     url: /coc/
-    weight: 6
+    weight: 7
     parent: about-us
 
   - identifier: directory
