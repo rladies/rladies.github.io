@@ -1,5 +1,4 @@
 {{ .Scratch.Set "rblogs"     $.Site.Data.rblogs  }}
-{{ .Scratch.Set "directory"  $.Site.Data.directory  }}
 {{ .Scratch.Set "mentoring"  $.Site.Data.mentoring }}
 {{ .Scratch.Set "globalteam" $.Site.Data.global_team }}
 
@@ -7,11 +6,6 @@
 Create an array that we can use to shuffle
 the data entries on every build.
 -->
-{{ $.Scratch.Set "dic" (slice) }}
-{{ range $name, $_ := ( .Scratch.Get "directory" ) }}
-    {{ $.Scratch.Add "dic" $name }}
-{{ end }}
-
 {{ $.Scratch.Set "ment" (slice) }}
 {{ range $name, $_ := ( .Scratch.Get "mentoring" ) }}
     {{ $.Scratch.Add "ment" $name }}

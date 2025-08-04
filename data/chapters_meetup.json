@@ -543,7 +543,7 @@
       "email": "vienna@rladies.org"
     },
     "organizers": {
-      "current": ["Laura Vana"],
+      "current": ["Laura Vana", "Jenny Fan"],
       "former": []
     },
     "name": "R-Ladies Vienna",
@@ -1515,6 +1515,22 @@
     "timezone": "America/Toronto"
   },
   {
+    "urlname": "rladies-galvarino",
+    "status": "prospective",
+    "country": "Chile",
+    "state.region": "Araucanía",
+    "social_media": {
+      "meetup": "rladies-galvarino",
+      "email": "galvarino@rladies.org"
+    },
+    "organizers": {
+      "current": ["Maitte Millaray Mariángel Salgado"],
+      "former": []
+    },
+    "name": "R-Ladies Galvarino",
+    "city": "Galvarino"
+  },
+  {
     "urlname": "rladies-concepcion",
     "status": "active",
     "country": "Chile",
@@ -1590,10 +1606,10 @@
     "country": "Chile",
     "social_media": {
       "meetup": "rladies-temuco",
-      "email": ""
+      "email": "temuco@rladies.org"
     },
     "organizers": {
-      "current": ["Macarena Soledad Valenzuela Beltrán"],
+      "current": ["Macarena Soledad Valenzuela Beltrán", "Camila Guzmán Olivos", "Noemí Cárcamo Mansilla", "Danae Huilcán", "Martina Recabarren", "Daniela Briones", "Tirza Soto Rocha", "Maitte Mariángel Salgado"],
       "former": []
     },
     "name": "R-Ladies Temuco",
