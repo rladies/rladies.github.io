@@ -25,7 +25,7 @@ To encourage R-Ladies to submit proposals and improve chances of having work or 
 
 <br>
 
-{{% button "/form/abtract-volunteer "Become a reviewer" %}}
+{{% button "/form/abtract-volunteer" "Become a reviewer" %}}
 
 <center>
 Estimated time commitment = 1 review per year
@@ -46,6 +46,8 @@ Every week, a different R-Lady takes over our Bluesky account to talk about the 
 Check out [@weare.rladies.org](https://bsky.app/profile/weare.rladies.org) every Monday for a new curator!    
 
 {{% button "/form/rocur-signup" "Sign up to be a curator!" %}}
+
+{{% button "/form/rocur-nomination" "Nominate a curator!" %}}
 
 
 ## International Womens Day Campaigns
