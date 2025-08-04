@@ -1,6 +1,7 @@
 ---
 title: "R-Ladies Infrastructure for Online Meetups"
-author: "R-Ladies Global Leadership Team"
+author:
+  - name: R-Ladies Global Leadership Team
 date: "2020-04-24"
 description: "R-Ladies Infrastructure for Online Meetups"
 tags: 

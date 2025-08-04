@@ -1,6 +1,12 @@
 ---
 title: "IWD 2019 Twitter Action"
-author: "As told by Yanina Bellini, Patricia Loto and Divya Seernani; with notes from Roxana Noelia Villafane and Gabriela De Queiroz"
+author:
+  - name: Yanina Bellini
+  - name: Patricia Loto
+  - name: Divya Seernani
+editor:
+  - name: Roxana Noelia Villafane
+  - name: Gabriela De Queiroz
 date: "2019-03-25"
 description: "Explaining IWD 2019 Twitter project"
 tags:
@@ -12,7 +18,7 @@ categories:
 output: html_document
 slug: "blog_iwdtwitter_2019"
 aliases:
-  - '/blog/2019-03-25-blog_iwdtwitter_2019'
+  - "/blog/2019-03-25-blog_iwdtwitter_2019"
 ---
 
 Every year on March 8th, the world celebrates International Women's Day (IWD). Although this date has different ways of celebration, it has one point in common - the fight for gender equality. The [previous year](http://blog.rladies.org/post/ideation_and_creation/), in 2018, an enthusiast R-Ladies' group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018. In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.

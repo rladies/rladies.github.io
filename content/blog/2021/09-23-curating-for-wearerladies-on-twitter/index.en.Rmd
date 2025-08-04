@@ -1,6 +1,7 @@
 ---
 title: "Curating for @WeAreRLadies on Twitter"
-author: "Shannon Pileggi"
+author: 
+  - name: Shannon Pileggi
 date: "2021-09-23"
 description: "From creating content to cultivating connections."
 tags: 
@@ -51,7 +52,9 @@ You may be hesitant to sign up as a curator due to imposter syndrome - I certain
 
 
 ```{r}
-tweetrmd::include_tweet("https://twitter.com/WeAreRLadies/status/1361660625718571010")
+tweetrmd::include_tweet(
+  "https://twitter.com/WeAreRLadies/status/1361660625718571010"
+)
 ```
 
 Every R user, new or experienced, has a valuable perspective to share. I was particularly  impressed when [Danielle Brantley](https://twitter.com/daniebrant){target="_blank"} excellently curated in September 2020, after being an R user for one year! To help alleviate 
@@ -64,17 +67,26 @@ My personal strategy for combating imposter syndrome is to prepare. For my curat
 Here is my personal timeline to leading up to curation.
 
 ```{r}
-timeline <- read_csv(here::here("content", "post", folder, "data", "rladies_timeline.csv")) %>% 
+timeline <- read_csv(here::here(
+  "content",
+  "post",
+  folder,
+  "data",
+  "rladies_timeline.csv"
+)) %>%
   mutate(
     even_odd = (id %% 2) == 0,
     label = glue::glue("*{time_frame} before*<br>{str_wrap(action, 10)}")
-    )
+  )
 ```
 
 
 ```{r}
-timeline %>% 
-  dplyr::select(`Time before curation` = time_frame, `Action taken` = action) %>% 
+timeline %>%
+  dplyr::select(
+    `Time before curation` = time_frame,
+    `Action taken` = action
+  ) %>%
   knitr::kable()
 ```
 
@@ -177,23 +189,45 @@ questions to inspire content.
 Reminiscing about my days teaching in large lectures halls with students actively participating in polling questions through clickers, I planned three polls for the week. Polls on twitter are open for 24 hours and allow up to four response options. The approach was to launch the poll, collect responses, and then discuss. Here are the three polls that I launched during my curation, with follow up discussion:
 
 ```{r}
-polls <- read_csv(here::here("content", "post", folder, "data", "rladies_polls.csv")) %>% 
+polls <- read_csv(here::here(
+  "content",
+  "post",
+  folder,
+  "data",
+  "rladies_polls.csv"
+)) %>%
   mutate(
-    day = factor(day, levels = c("Monday", "Tuesday", "Wednesday", "Thursday",
-                             "Friday", "Saturday")),
+    day = factor(
+      day,
+      levels = c(
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      )
+    ),
     poll_label = glue::glue("Poll #{poll}") %>% fct_reorder(poll),
-    tweet_label = glue::glue("Tweet #{step}") %>% fct_reorder(step) %>% fct_rev(),
+    tweet_label = glue::glue("Tweet #{step}") %>%
+      fct_reorder(step) %>%
+      fct_rev(),
     step = factor(step) %>% fct_rev() %>% fct_drop(),
     content = str_wrap(content, 12),
     content_label = glue::glue("{type}:\n{content}"),
     content_click = sprintf("window.open(\"%s%s\")", url, ""),
-    content_url = 
-       str_c("<a href='", content, "' target='_blank'>", url, "</a>"),
+    content_url = str_c(
+      "<a href='",
+      content,
+      "' target='_blank'>",
+      url,
+      "</a>"
+    ),
     # html embedding using tweetrmd package
     embed2 = purrr::map(url, include_tweet),
-    embed3 = purrr::map(embed2, ~ .x[[2]])#,
+    embed3 = purrr::map(embed2, ~ .x[[2]]) #,
     #img_source = glue::glue('<img src="{full_path}tweet1.png">')
-    ) 
+  )
 ```
 
 
@@ -212,11 +246,17 @@ poll_colors <- c(
 
 
 ```{r}
-p <- polls %>% 
+p <- polls %>%
   # embed is html copied and pasted from twitter ---
   # embed3 comes from tweetrmd package, looks same as embed ----
   # img_source is image taken from tweetrmd, couldn't get this to work ----
-  ggplot(aes(x = 1, y = tweet_label, fill = poll_label, tooltip = embed3, onclick = content_click)) +
+  ggplot(aes(
+    x = 1,
+    y = tweet_label,
+    fill = poll_label,
+    tooltip = embed3,
+    onclick = content_click
+  )) +
   facet_wrap(. ~ day, ncol = 6, drop = F) +
   geom_tile_interactive(color = "white") +
   geom_text(aes(label = content_label), size = 2.5) +
@@ -242,15 +282,16 @@ p <- polls %>%
     axis.title.x = element_blank(),
     #axis.text.y = element_blank(),
     axis.title.y = element_blank(),
-    )
+  )
 ```
 
 
 ```{r, fig.cap="Three polls and their follow-up discussion; hover over tiles to view tweets and click on tiles to go to links on Twitter.", fig.alt="Visual presentation of polls with tiles; days of the week across x-axis, tweet number across y-axis."}
-girafe(ggobj = p,
-       #opts_tooltip(use_fill = TRUE)
-       #opts_tooltip(css = tooltip_css, use_fill = TRUE)
-       )
+girafe(
+  ggobj = p,
+  #opts_tooltip(use_fill = TRUE)
+  #opts_tooltip(css = tooltip_css, use_fill = TRUE)
+)
 ```
 
 

@@ -1,0 +1,15 @@
+<div> 
+    {{ range . }}
+        <div class="mb-1"> 
+            {{ with .url }}
+                <a href="{{.}}" target="_blank" rel="noopener noreferrer"> 
+            {{ end }}
+
+            {{ .name }}
+
+            {{ with .url }}
+                </a>
+            {{ end }}
+        </div>
+    {{ end }}
+</div>
