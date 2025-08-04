@@ -1,6 +1,9 @@
 ---
 title: "vacaciones <- crecer(RedRLadies)"
-author: "Paloma, Mine, Laura"
+author:
+  - name: Paloma
+  - name: Mine
+  - name: Laura
 date: "2019-02-16"
 description: "Extendiendo la red de R-Ladies después de unas vacaciones"
 tags:
@@ -11,7 +14,7 @@ categories:
 output: html_document
 slug: "vacation_grow_rladiesnetwork"
 aliases:
-  - '/blog/2018-10-27-vacation_grow_rladiesnetwork'
+  - "/blog/2018-10-27-vacation_grow_rladiesnetwork"
 ---
 
 _Nos gustaría contarles cómo unas vacaciones llevaron al crecimiento de la comunidad R-Ladies en América del Sur. La historia involucra múltiples países y encuentros en el momento adecuado de la vida._
