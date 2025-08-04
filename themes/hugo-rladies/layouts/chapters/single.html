@@ -1,80 +1,121 @@
 
 {{ define "main" }}
 
+  <div class="card shadow-sm mb-4">
+      <div class="card-body">
+          <dl class="row mb-0">
+              {{ with .Params.status }}
+                  <dt class="col-sm-4">Status</dt>
+                  <dd class="col-sm-8">
+                  <span class="badge {{ if eq . "active" }}bg-rladies {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
+                  </dd>
+              {{ end }}
+
+              <dt class="col-sm-4">Location</dt>
+              <dd class="col-sm-8">
+              {{ with .Params.city }}{{ . }}, {{ end }}
+              {{ with .Params.state_region }}
+                  {{ . }}, 
+              {{ end }}
+              {{ with .Params.country }}
+                  {{ . }}
+              {{ end }}
+              </dd>
+
+              {{ with .Params.social_media }}
+                  <dt class="col-sm-4">Connect with this chapter</dt>
+                  <dd class="col-sm-8">
+                      {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                  </dd>
+              {{ end }}
+
+          </dl>
+      </div>
+  </div>
+
+  {{ with .Params.organizers }}
     <div class="card shadow-sm mb-4">
-        <div class="card-body">
-            <dl class="row mb-0">
-                {{ with .Params.status }}
-                    <dt class="col-sm-4">Status</dt>
-                    <dd class="col-sm-8">
-                    <span class="badge {{ if eq . "active" }}bg-success {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
-                    </dd>
+      <div class="card-body">
+        <h2 class="card-title h4 mb-3">Organizers</h2>
+
+        <ul class="nav nav-tabs" id="organizerTabs" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link active" id="current-tab" data-toggle="tab" data-target="#current-organizers" role="tab">Current</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="former-tab" data-toggle="tab" data-target="#former-organizers" role="tab">Former</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="organizerTabsContent">
+          <div class="tab-pane fade show active" id="current-organizers" role="tabpanel" aria-labelledby="current-tab">
+            {{ with .current }}
+              <ul class="list-group list-group-flush mb-3">
+                {{ range . }}
+                  <li class="list-group-item">{{ . }}</li>
                 {{ end }}
+              </ul>
+            {{ end }}
+          </div>
 
-                <dt class="col-sm-4">Location</dt>
-                <dd class="col-sm-8">
-                {{ with .Params.city }}{{ . }}, {{ end }}
-                {{ with .Params.state_region }}
-                    {{ . }}, 
+          {{ with .former }}
+            <div class="tab-pane fade" id="former-organizers" role="tabpanel" aria-labelledby="former-tab">
+              <ul class="list-group list-group-flush mb-3">
+                {{ range . }}
+                  <li class="list-group-item">{{ . }}</li>
                 {{ end }}
-                {{ with .Params.country }}
-                    {{ . }}
-                {{ end }}
-                </dd>
-
-                {{ with .Params.social_media }}
-                    <dt class="col-sm-4">Connect with this chapter</dt>
-                    <dd class="col-sm-8">
-                        {{ partial "social_media.html" (dict "data" . "relme" true) }}
-                    </dd>
-                {{ end }}
-
-            </dl>
-        </div>
-    </div>
-
-
-
-    {{ with .Params.organizers }}
-        <div class="card shadow-sm mb-4">
-            <div class="card-body">
-                <h2 class="card-title h4 mb-3">Organizers</h2>
-                {{ with .current }}
-                    <ul class="list-group list-group-flush mb-3">
-                    {{ range . }}
-                        <li class="list-group-item">{{ . }}</li>
-                    {{ end }}
-                    </ul>
-                {{ end }}
+              </ul>
             </div>
+          {{ end }}
         </div>
+      </div>
+    </div>
+  {{ end }}
+
+{{ $chapterGroupUrlname := .Params.urlname }}
+{{ $allEvents := site.Data.meetup.events }}
+{{ $currentDate := now }}
+
+{{ $upcomingEvents := slice }}
+{{ $formerEvents := slice }}
+
+{{ range $event := $allEvents }}
+  {{ if eq $event.group_urlname $chapterGroupUrlname }}
+    {{ $eventStart := time.AsTime $event.start }}
+    {{ if $eventStart.After $currentDate }}
+      {{ $upcomingEvents = $upcomingEvents | append $event }}
+    {{ else }}
+      {{ $formerEvents = $formerEvents | append $event }}
     {{ end }}
+  {{ end }}
+{{ end }}
 
-    {{ $chapterGroupUrlname := .Params.urlname }}
-    {{ $allEvents := site.Data.meetup.events }}
-    {{ $currentDate := now }}
+{{ $upcomingEvents = sort $upcomingEvents "start" }}
+{{ $formerEvents = sort $formerEvents "start" "desc" }}
 
-    {{ $upcomingEvents := slice }}
-    {{ $formerEvents := slice }}
+{{ if or $upcomingEvents $formerEvents }}
+  <div class="card shadow-sm mb-4">
+    <div class="card-body">
+      <h2 class="card-title h4 mb-3">Chapter Events</h2>
 
-    {{ range $event := $allEvents }}
-      {{ if eq $event.group_urlname $chapterGroupUrlname }}
-        {{ $eventStart := time.AsTime $event.start }}
-        {{ if $eventStart.After $currentDate }}
-          {{ $upcomingEvents = $upcomingEvents | append $event }}
-        {{ else }}
-          {{ $formerEvents = $formerEvents | append $event }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="upcoming-tab" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="true">
+            Upcoming ({{ len $upcomingEvents }})
+          </a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="former-tab" data-toggle="tab" href="#former" role="tab" aria-controls="former" aria-selected="false">
+            Former ({{ len $formerEvents }})
+          </a>
+        </li>
+      </ul>
 
-    {{ $upcomingEvents = sort $upcomingEvents "start" }}
-    {{ $formerEvents = sort $formerEvents "start" "desc" }}
-
-    {{ if or $upcomingEvents $formerEvents }}
-      <div class="card shadow-sm mb-4">
-        <div class="card-body">
-          <h2 class="card-title h4 mb-3">Chapter Events</h2>
+      <!-- Tab panes -->
+      <div class="tab-content pt-3">
+        <!-- Upcoming Events Tab -->
+        <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
 
           {{ if gt (len $upcomingEvents) 0 }}
             {{ $nextEvent := index $upcomingEvents 0 }}
@@ -96,7 +137,6 @@
             {{ $upcomingEvents = after 1 $upcomingEvents }}
           {{ end }}
 
-          {{/* Other Upcoming Events */}}
           {{ if gt (len $upcomingEvents) 0 }}
             <h3 class="h5 mt-4 mb-3">Other Upcoming Events:</h3>
             <ul class="list-group list-group-flush mb-4">
@@ -115,11 +155,15 @@
                 </li>
               {{ end }}
             </ul>
+          {{ else if eq (len $upcomingEvents) 0 }}
+            <p class="text-muted">No upcoming events.</p>
           {{ end }}
 
-          {{/* Former Events */}}
+        </div>
+
+        <!-- Former Events Tab -->
+        <div class="tab-pane fade" id="former" role="tabpanel" aria-labelledby="former-tab">
           {{ if gt (len $formerEvents) 0 }}
-            <h3 class="h5 mt-4 mb-3">Former</h3>
             <ul class="list-group list-group-flush">
               {{ range $event := $formerEvents }}
                 <li class="list-group-item d-flex justify-content-between align-items-start text-muted">
@@ -136,10 +180,13 @@
                 </li>
               {{ end }}
             </ul>
+          {{ else }}
+            <p class="text-muted">No events, yet.</p>
           {{ end }}
-
         </div>
       </div>
-    {{ end }}
-    
+    </div>
+  </div>
+{{ end }}
+
 {{ end }}

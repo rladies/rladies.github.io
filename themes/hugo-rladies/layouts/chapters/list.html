@@ -22,22 +22,25 @@
           </tr>
         </thead>
         <tbody>
-          {{ range $countries }}
-            <tr>
-              <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country | title }} </td>
-                {{ range where $chapters ".Params.country" .country }}
-                    <td class="text-left"> 
-                        <a href="{{ .Permalink }}">{{ .Title | title }}</a> 
-                    </td>
-                
-                    <td class="text-right"> 
-                    {{ with .Params.social_media }}
-                        {{ partial "social_media.html" (dict "data" . "relme" true) }}
-                    {{ end }}
-                    </td>
-                </tr>
-                {{ end }}  
-            </tr>
+          {{ range $country := $countries }}
+            {{ $countryChapters := where $chapters ".Params.country" $country.country }}
+            {{ range $i, $chapter := $countryChapters }}
+              <tr>
+                {{ if eq $i 0 }}
+                  <td class="text-right text-bold b-rladies-r" rowspan="{{ len $countryChapters }}"> 
+                    {{ $country.country | title }} 
+                  </td>
+                {{ end }}
+                <td class="text-left"> 
+                  <a href="{{ $chapter.Permalink }}">{{ $chapter.Title | title }}</a> 
+                </td>
+                <td class="text-right">
+                  {{ with $chapter.Params.social_media }}
+                    {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                  {{ end }}
+                </td>
+              </tr>
+            {{ end }}
           {{ end }}
         </tbody>
       </table>
