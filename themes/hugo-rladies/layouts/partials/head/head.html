@@ -5,15 +5,18 @@
 <!-- Icons -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-<!-- Fullcalendar css-->  
-<link rel="stylesheet" href="{{ "css/fullcalendar.min.css" | relURL }}" />
+{{ $css := slice
+    (resources.Get "css/fullcalendar.min.css")
+    (resources.Get "css/bootstrap-multiselect.min.css")
+    (resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS)
+  | resources.Concat "css/bundle.min.css"
+  | minify
+  | fingerprint
+}}
 
-<!-- Multiselect bootstrap css-->  
-<link rel="stylesheet" href="{{ "css/bootstrap-multiselect.min.css" | relURL }}" />
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" media="screen">
 
-<!-- website css -->
-{{ $styles := resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
 
 <!-- site data -->
 {{ partial "head/data.html" . }}
