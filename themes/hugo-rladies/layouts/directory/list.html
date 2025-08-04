@@ -81,22 +81,25 @@
                       
       <div class="input-group">
         <div class="input-group-prepend" for="filter-location">
-          <label class="input-group-text" style="min-width:120px;" >Location</label>
+          <label class="input-group-text" style="min-width:120px;">Location</label>
         </div>
         <select class="custom-select" id="filter-location" multiple data-group="location">
-          {{ range $countries }}
-            {{ $c := . }}
-            <optgroup label="{{$c}}" class="{{$c}}">
-            {{ range $loc }}
-              {{ $l := findRE (printf "^%s" $c) . }}
-              {{ if gt (len $l) 0 }}
-                <option value="{{ . | htmlUnescape | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
+          {{ range $continent, $countryList := site.Data.continents }}
+            <optgroup label="{{ $continent }}">
+              {{ range $country := $countryList }}
+                {{ $c := $country }}
+                {{ range $loc }}
+                  {{ $l := findRE (printf "^%s" $c) . }}
+                  {{ if gt (len $l) 0 }}
+                    <option value="{{ . | htmlUnescape | urlize }}">{{ replaceRE (printf "%s, " $c) "" . }}</option>
+                  {{ end }}
+                {{ end }}
               {{ end }}
-            {{ end }}
             </optgroup>
           {{ end }}
         </select>
       </div>
+
               
     </div>
 
