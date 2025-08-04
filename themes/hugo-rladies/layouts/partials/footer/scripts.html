@@ -1,25 +1,23 @@
 <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
 
-<!-- jQuery -->
-<script type="text/javascript" src="{{ "js/jquery.min.js" | relURL }}"></script>
-
-<!-- bootstrap js -->
-<script type="text/javascript" src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
-
-<!-- bootstrap multiselect js -->
-<script type="text/javascript" src="{{ "js/bootstrap-multiselect.min.js" | relURL }}"></script>
-
-<!-- shuffle js -->
-<script type="text/javascript" src="{{ "js/shuffle.min.js" | relURL }}"></script>
+{{ $js := slice
+    (resources.Get "js/jquery.min.js")
+    (resources.Get "js/bootstrap.bundle.min.js")
+    (resources.Get "js/bootstrap-multiselect.min.js")
+    (resources.Get "js/shuffle.min.js")
+    (resources.Get "js/counter.js")
+    (resources.Get "js/card-expand.js")
+    | resources.Concat "js/bundle.js"
+    | minify
+    | fingerprint
+}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 
 <script>
-  $('.card-expand').hover(function() {
-    $(this).find('.card-expand-animate').stop().animate({
-        height: "toggle",
-        opacity: "toggle"
-      }, 300);
-    });
+document.querySelectorAll('[data-bs-toggle="tab"]').forEach(el => {
+  el.addEventListener('click', e => {
+    console.log("Tab clicked:", e.target);
+  });
+});
+
 </script>
-
-<script type="text/javascript" src="{{ "js/counter.js" | relURL }}"></script>
-
