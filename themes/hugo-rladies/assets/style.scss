@@ -50,6 +50,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+.bg-rladies {
+  background: lighten($primary, 40%);
+}
+
 .text-white{
   color: $white;
   
