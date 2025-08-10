@@ -30,7 +30,7 @@ In this post we provide a list of tips, drawing on both our good and bad experie
 
 As a common thread let's share this quote of [Brene Brown](https://brenebrown.com/articles/2018/10/15/clear-is-kind-unclear-is-unkind/):
 
-> _"Clear Is Kind. Unclear Is Unkind."_
+> Clear Is Kind. Unclear Is Unkind.
 
 A good way of being clear is to provide information in advance and check in on preferences rather than assuming things.
 Here are several examples of how how that plays out in practice.
