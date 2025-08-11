@@ -36,3 +36,5 @@ Config/renv/profiles/airtable/dependencies:
     here,
     tidyr,
     airtabler
+Remotes:
+    bergant/airtabler
