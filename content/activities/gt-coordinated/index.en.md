@@ -15,7 +15,7 @@ The Community Slack is intended for people that identify as a woman or gender mi
 It is a friendly and welcoming community, where you can share information, learn new things and connect with other R-Ladies.
 The Community Slack is intended to be a harassment-free experience for everyone and the [Code of Conduct](coc/) is enforced to make sure everyone can enjoy the space.
 
-{{% button "http://rladies-community-slack.herokuapp.com" "Join the community slack!" %}}
+{{% button "/form/community-slack" "Join the community slack!" %}}
 
 ## Abstract Review
 R-Ladies Global has a system for review and feedback of conference abstracts and funding opportunities for both R-related and domain-specific conferences. 
