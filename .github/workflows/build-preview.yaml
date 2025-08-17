@@ -94,7 +94,7 @@ jobs:
           else
             mv entries/json data/directory
             if [ -d "entries/img" ]; then
-              mv entries/img assets/directory/img
+              mv entries/img assets/directory/
             fi
           fi
 
