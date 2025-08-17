@@ -14,20 +14,20 @@ options(
   blogdown.subdir = "blog",
   blogdown.title_case = TRUE,
   blogdown.hugo.version = readLines(".hugoversion"),
-  
+
   renv.config.sandbox.enabled = FALSE,
   renv.config.auto.snapshot = FALSE
 )
 
-if(interactive()){
+if (interactive()) {
   cat(
     "",
     "This project uses different renv profiles for different operations",
     "You should be on the default profile if you are contributing a blogpost",
-    " - `renv::activate('json')` enables profile with packages for json validation",
-    " - `renv::activate('production')` enables profile with packages needed to build the website",
-    " - `renv::activate('dev')` enables profile with all packages working locally on the website",
+    " - `renv::activate(profile='json')` enables profile with packages for json validation",
+    " - `renv::activate(profile='production')` enables profile with packages needed to build the website",
+    " - `renv::activate(profile='dev')` enables profile with all packages working locally on the website",
     "",
-    sep="\n"
+    sep = "\n"
   )
 }
