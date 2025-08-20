@@ -90,11 +90,11 @@ jobs:
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
             cp -r tmpd/dir/data/json data/directory
-            cp -r tmpd/dir/data/img/* assets/directory/img
+            cp -r tmpd/dir/data/img/* assets/directory
           else
-            mv entries/json data/directory
+            cp -r entries/json data/directory
             if [ -d "entries/img" ]; then
-              mv entries/img/* assets/directory/img
+              cp -r entries/img/* assets/directory/
             fi
           fi
 
