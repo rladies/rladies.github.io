@@ -1,12 +1,3 @@
-{{ define "head" }}
-  <script type="text/javascript" src="{{ "js/fullcalendar.min.js" | relURL }}"></script>
-  <script type="text/javascript" src="{{ "js/jquery.min.js" | relURL }}"></script>
-  <script type="text/javascript" src="{{ "js/moment.min.js" | relURL }}"></script>
-  <script type="text/javascript" src="{{ "js/moment-with-locales.min.js" | relURL }}" ></script>
-  <script type="text/javascript" src="{{ "js/moment-timezone-with-data.js" | relURL }}" ></script>
-  <script type="text/javascript" src="{{ "js/popper.min.js" | relURL }}" ></script>
-  <script type="text/javascript" src="{{ "js/tooltip.min.js" | relURL }}" ></script>
-{{ end }}
 
 {{ define "main" }} 
   <div class="entry-content">{{ .Content }}</div>
@@ -42,7 +33,19 @@
 {{ end }}
 
 {{ define "footer" }}
-<script type="text/javascript">
+  {{ $js := slice
+      (resources.Get "js/fullcalendar.min.js")
+      (resources.Get "js/moment.min.js")
+      (resources.Get "js/moment-with-locales.min.js")
+      (resources.Get "js/moment-timezone-with-data.js")
+      (resources.Get "js/tooltip.min.js")
+      | resources.Concat "js/events-bundle.js"
+      | minify
+      | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+
+  <script>
   document.addEventListener("DOMContentLoaded", function () {
     var timeZoneSelectorEl = document.getElementById("time-zone-selector");
     timeZone = document.getElementById("time-zone-selector").value;
@@ -144,5 +147,5 @@
       $('.fc-toolbar-title').addClass('entry-title');
   };
   
-</script>
+  </script>
 {{ end }}
