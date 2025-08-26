@@ -15,37 +15,39 @@ The Community Slack is intended for people that identify as a woman or gender mi
 It is a friendly and welcoming community, where you can share information, learn new things and connect with other R-Ladies.
 The Community Slack is intended to be a harassment-free experience for everyone and the [Code of Conduct](coc/) is enforced to make sure everyone can enjoy the space.
 
-{{% button "http://rladies-community-slack.herokuapp.com" "Join the community slack!" %}}
+{{% button "/form/community-slack" "Join the community slack!" %}}
 
 ## Abstract Review
 R-Ladies Global has a system for review and feedback of conference abstracts and funding opportunities for both R-related and domain-specific conferences. 
 To encourage R-Ladies to submit proposals and improve chances of having work or applications selected, 80 international reviewers provide constructive feedback on areas including topics and pitch, phrasing, and subject matter. 
 
-{{% button "https://docs.google.com/forms/d/e/1FAIpQLSck8FBjNWjziI8pPIoCBlf5J4oQ_6pzeUdbQ1HjYfJ2bNDwDw/viewform?usp=send_form" "Submit a proposal/abstract for review" %}}
+{{% button "/form/abstract-request" "Submit a proposal/abstract for review" %}}
 
 <br>
 
-{{% button "https://docs.google.com/forms/d/e/1FAIpQLSdj44iOqfg6cyhRH57YjQuI-OjbksDmY5LHfsqGSXZrhOONTw/viewform" "Become a reviewer" %}}
+{{% button "/form/abtract-volunteer" "Become a reviewer" %}}
 
 <center>
 Estimated time commitment = 1 review per year
 </center>
 
-## Rotating Twitter Curator (rocur)
-The **[R-Ladies RoCur (Rotating Curation)](https://twitter.com/WeAreRLadies)** is a twitter handle that will feature an awesome R-Lady each week. This account is run by R-Ladies Global.      
+## R-Ladies Rotating Curator (rocur)
+The **[R-Ladies RoCur (Rotating Curation)](https://bsky.app/profile/weare.rladies.org)** is a Bluesky handle that will feature an awesome R-Lady each week. This account is run by R-Ladies Global.      
   
 **Objectives**  
   
-1. To encourage and maintain Twitter engagement within the R-Ladies community.    
+1. To encourage and maintain Bluesky engagement within the R-Ladies community.    
 2. To spotlight female and minority genders (including but not limited to cis/trans women, trans men, non-binary, genderqueer, agender) and their great work in R.   
   
 **How It Works**  
   
-Every week, a different R-Lady takes over our twitter account to talk about the work they do in R. Featured curators come from a diversity of professions and have a range of experiences in R, from novice to expert.  
+Every week, a different R-Lady takes over our Bluesky account to talk about the work they do in R. Featured curators come from a diversity of professions and have a range of experiences in R, from novice to expert.  
 
-Check out [@WeAreRLadies](https://twitter.com/WeAreRLadies) every Monday for a new curator!    
+Check out [@weare.rladies.org](https://bsky.app/profile/weare.rladies.org) every Monday for a new curator!    
 
-{{% button "https://goo.gl/forms/bQ7mHQDXrNHXEZCl2" "Sign up to be a curator!" %}}
+{{% button "/form/rocur-signup" "Sign up to be a curator!" %}}
+
+{{% button "/form/rocur-nomination" "Nominate a curator!" %}}
 
 
 ## International Womens Day Campaigns

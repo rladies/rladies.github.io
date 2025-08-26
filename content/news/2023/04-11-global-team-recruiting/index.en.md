@@ -1,6 +1,7 @@
 ---
 title: "Global Team Recruiting"
-author: "Global Leadership Team"
+author:
+  - name: "Global Leadership Team"
 type: blog
 date: "2023-04-11"
 description: ""
@@ -10,7 +11,7 @@ categories:
   - R-Ladies
 slug: "global-team-recruiting"
 aliases:
-  - '/news/2023-04-11-global-team-recruiting'
+  - "/news/2023-04-11-global-team-recruiting"
 ---
 
 ![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg)
@@ -21,7 +22,7 @@ Alt text: Image of arms and hands of women wearing colorful sweaters in a circle
 # TL; DR
 
 The R-Ladies Global Team is recruiting new members!
-Please fill [this form](https://docs.google.com/forms/d/1OZB6eVrsocvRyqD-ec5ui69SfXuOR8AZ_L-33B2d5yM/edit?pli=1) to submit yourself for consideration.
+Please fill [this form](/about-us/global-team/vacancies/) to submit yourself for consideration.
 
 # Background
 

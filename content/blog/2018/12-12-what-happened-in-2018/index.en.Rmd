@@ -1,7 +1,8 @@
 ---
 title: "What happened in 2018?"
 description: "Retrospective"
-author: R-Ladies
+author:
+  - name: R-Ladies
 date: '2018-12-12'
 categories:
   - R-Ladies

@@ -1,4 +1,7 @@
 {
   "name": "Reshama Shaikh",
-  "role": ["Website"]
+  "role": ["Website"],
+  "img": {
+    "url": "reshama-shaikh.jpeg"
+  }
 }
