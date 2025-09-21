@@ -1,26 +1,22 @@
 name: "Build and deploy non-production"
 
 on:
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
     inputs:
       directory:
-        description: 'Directory reference'
+        description: "Directory reference"
         required: true
-        default: 'main'
+        default: "main"
       blogs:
-        description: 'Blogs reference'
+        description: "Blogs reference"
         required: true
-        default: 'main'
+        default: "main"
       triggering_issue:
-        description: 'Triggering PR'
+        description: "Triggering PR"
         required: false
       triggering_repo:
-        description: 'Triggering repo'
+        description: "Triggering repo"
         required: false
-
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.inputs.directory }}
@@ -34,9 +30,9 @@ env:
   rid: ${{ github.event.number || github.run_id }}
   hugobd: public
   on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
-      
+
 jobs:
-  build: 
+  build:
     name: Build site
     runs-on: ubuntu-latest
     steps:
@@ -44,7 +40,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
-          
+
       - name: Set env parameters
         run: |
           ver=$(cat .hugoversion)
@@ -52,23 +48,24 @@ jobs:
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-r${{ env.rid}}" >> $GITHUB_ENV
+          echo "blogsref=main" >> $GITHUB_ENV
+          echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
-            echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
-          else
-            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-            echo "blogsref=main" >> $GITHUB_ENV
           fi
-          
+          if [ ${{ env.blogs }} != "main" ]; then
+            echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
+          fi
+
       - name: Install cURL Headers
         run: |
           sudo apt-get update
           sudo apt-get install libcurl4-openssl-dev
-        
+
       - name: Site data - Clean folders
         if: ${{ env.on_fork != 'true' }}
         run: rm -r data/directory data/rblogs
-        
+
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v4
         if: ${{ (env.on_fork != 'true') && env.directory == 'main' }}
@@ -76,7 +73,7 @@ jobs:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
           path: tmpd/dir
-          
+
       - name: Site data - DIRECTORY - Download artifact
         uses: dawidd6/action-download-artifact@v6
         if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
@@ -86,7 +83,7 @@ jobs:
           run_id: ${{ env.directory }}
           repo: rladies/directory
           path: entries/
-          
+
       - name: Site data - DIRECTORY - Move
         if: ${{ env.on_fork != 'true' }}
         run: |
@@ -95,12 +92,12 @@ jobs:
             cp -r tmpd/dir/data/json data/directory
             cp -r tmpd/dir/data/img/* assets/directory
           else
-            mv entries/json data/directory
+            cp -r entries/json data/directory
             if [ -d "entries/img" ]; then
-              mv entries/img/* assets/directory
+              cp -r entries/img/* assets/directory/
             fi
           fi
-    
+
       - name: Site data - Get blogs list
         if: ${{ env.on_fork != 'true' }}
         uses: actions/checkout@v4
@@ -109,7 +106,7 @@ jobs:
           ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
           ref: ${{ env.blogsref }}
           path: tmpd/rblogs
-          
+
       - name: Site data - Meetup
         if: ${{ env.on_fork != 'true' }}
         uses: actions/checkout@v4
@@ -130,15 +127,14 @@ jobs:
         with:
           hugo-version: ${{ env.hugovr }}
           extended: true
-          
+
       - name: Build
         run: |
           hugo  \
             -e development \
             -d ${{ env.hugobd }} \
             -b https://${{ env.netalias }}--rladies-dev.netlify.app/
-          
-          
+
       - name: Deploy Preview
         if: ${{ env.on_fork != 'true' }}
         env:
@@ -149,7 +145,7 @@ jobs:
           netlify deploy \
             --alias=${{ env.netalias }} \
             --dir=${{ env.hugobd }}
-            
+
       - uses: actions/github-script@v7
         name: "Notify about build failure"
         if: ${{ failure() && env.on_fork != 'true' }}
@@ -161,8 +157,8 @@ jobs:
               owner: 'rladies',
               repo: '${{ env.repo_name }}',
               body: 'Test build failed :sob: [Check out the build logs](https://github.com/rladies/rladies.github.io/actions/runs/${{ github.run_id }}).' 
-            }) 
-            
+            })
+
       - uses: actions/github-script@v7
         name: "Notify about build preview"
         if: ${{ env.on_fork != 'true' }}
@@ -174,7 +170,4 @@ jobs:
               owner: 'rladies',
               repo: '${{ env.repo_name }}',
               body: ':tada: The preview is built! [Check it out :eyes:](https://${{ env.netalias }}--rladies-dev.netlify.app)'
-            })  
-
-
-
+            })

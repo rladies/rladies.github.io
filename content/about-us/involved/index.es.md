@@ -10,8 +10,8 @@ title: "Involucrate"
 
 * Apoye a sus secciones locales con espacio para eventos y fondos para alimentos y bebidas.
 * Apoye a sus oradores R-Ladies locales invitándolas a hablar, sin excusas para proporciones desiguales de oradores en conferencias.
-* Usa el [R-Ladies directory](/directory).  
-* Únete al [R-Ladies directory](/directory) .  
+* Usa el [R-Ladies directory](directory/).  
+* Únete al [R-Ladies directory](/directory/) .  
 * Anime a las mujeres codificadoras a ser parte de R-Ladies.
 * Comparte código (R-Ladies Global Github).  
 * Inspira y apoya a otras.

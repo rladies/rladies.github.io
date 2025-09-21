@@ -5,6 +5,7 @@
 $body-bg:    #fff;
 $primary:    #88398a;
 $secondary:  #a7a9ac;
+$third: #d621cd;
 $table-hover-bg: rgba($primary, .2);
 $font-family-monospace:  'rladies code', monospace;
 $font-family-base:       'rladies body', sans-serif;
@@ -307,6 +308,11 @@ pre.chroma {
   font-size: 2.25rem;
 }
 
+.entry-content a {
+  // color: $third;
+  //font-weight: bold;
+  text-decoration: underline;
+}
 
 .read-more {
   text-align: right;
@@ -860,5 +866,34 @@ tr.fc-list-event {
   font-size: 20px;
   bottom: -90px !important;
   transform: uppercase;
+}
+
+
+.blockquote {
+  padding: 10px;
+  position: relative;
+}
+
+.blockquote p {
+  font-size: 25px;
+  font-weight: 700px;
+}
+
+.blockquote:before {
+  content:"\f10d";
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: -20px;
+  font-size: 100px;
+  color: transparentize($primary, 0.9);
+}
+
+.blockquote::after {
+    content: "";
+    top: 20px;
+    left: 50%;
+    margin-left: 5%;
+    position: absolute;
+    border-bottom: 3px solid $primary;
 }
 

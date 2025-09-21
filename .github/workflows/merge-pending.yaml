@@ -1,0 +1,124 @@
+name: Auto-Merge Labeled PRs with Date Check
+
+on:
+  workflow_dispatch: # Allows manual trigger
+  schedule:
+    # Runs daily at 10:58 AM UTC (adjust for your timezone, cron is UTC)
+    - cron: "58 10 * * *"
+
+# Minimum permissions required for this workflow
+permissions:
+  pull-requests: write
+  contents: write
+  repository-projects: read
+
+jobs:
+  find_and_merge_prs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub CLI
+        run: |
+          echo "${{ secrets.ADMIN_TOKEN }}" | gh auth login --with-token
+          gh config set prompt-enabled false
+
+      - name: Get current date for comparison
+        id: get_date
+        run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Find and Process PRs with "pending" label
+        run: |
+          PR_NUMBERS=$(gh pr list --label "pending" --state "open" --json number,title,isDraft -q '.[] | select(.isDraft == false) | .number')
+
+          if [ -z "$PR_NUMBERS" ]; then
+            echo "No non-draft PRs with 'pending' label found. Exiting."
+            exit 0
+          fi
+
+          echo "Found PRs with 'pending' label: $PR_NUMBERS"
+
+          for pr_number in $PR_NUMBERS; do
+              echo "--- Checking PR #$pr_number ---"
+
+              INDEX_FILES_CHANGED=$(gh pr view "$pr_number" --json files -q '.files[].path' | grep -E '^content/.*/index(\.[a-zA-Z]+)?\.md$' || true)
+              
+              if [ -z "$INDEX_FILES_CHANGED" ]; then
+                echo "PR #$pr_number does not modify any content/index.md file. Skipping."
+                continue
+              fi
+
+              echo "PR #$pr_number modifies the following content/index.md files:"
+              echo "$INDEX_FILES_CHANGED"
+
+              PR_READY_TO_MERGE="false"
+
+              for file in $INDEX_FILES_CHANGED; do
+                echo "  - Checking file"
+                BRANCH_NAME=$(gh pr view "$pr_number" --json headRefName -q .headRefName)
+                
+                if [ -z "$BRANCH_NAME" ]; then
+                  echo "  - Could not determine head branch name for PR #$pr_number. Skipping file."
+                  continue
+                fi
+
+                API_URL="repos/$GITHUB_REPOSITORY/contents/$file?ref=$BRANCH_NAME"
+                FILE_CONTENT_RAW=$(gh api "$API_URL" --jq '.content' || true)
+                
+                if [ -z "$FILE_CONTENT_RAW" ]; then
+                    echo "  - ERROR: Failed to fetch content for file from branch '$BRANCH_NAME'. This likely means the branch does not exist or the file is not on that branch."
+                    continue
+                fi
+
+                FILE_CONTENT=$(echo "$FILE_CONTENT_RAW" | base64 --decode || true)
+
+                YAML_DATE=$(echo "$FILE_CONTENT" | sed -n '/^---$/,/^---$/p' | grep -E '^date:' | head -1 | awk '{print $2}' | sed -e "s/'//g" -e "s/\"//g" -e "s/\\[//g" -e "s/\\]//g" -e "s/,//g")
+
+                if [ -z "$YAML_DATE" ]; then
+                    echo "  - No 'date:' found in front matter or unable to parse. Skipping date check for this file."
+                    continue
+                fi
+
+                if [ "$YAML_DATE" == "$CURRENT_DATE" ]; then
+                  echo "  - Date matches today's date. This PR is a candidate for merge."
+                  PR_READY_TO_MERGE="true"
+                  break
+                else
+                  echo "  - Date in file ('$YAML_DATE') does not match today's date ('$CURRENT_DATE')."
+                fi
+              done
+
+              if [ "$PR_READY_TO_MERGE" == "true" ]; then
+                echo "Attempting to merge PR #$pr_number..."
+                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch --auto" 2>&1 || true)
+                MERGE_STATUS=$?
+
+                echo $MERGE_OUTPUT
+
+                if echo "$MERGE_OUTPUT" | grep -q "Merged pull request"; then
+                  echo "Successfully merged PR #$pr_number."
+                else
+                  echo "Failed to merge PR #$pr_number. Error details:"
+                  echo "$MERGE_OUTPUT"
+
+                  # Read the template file
+                  TEMPLATE_PATH=".github/reply_templates/merge_errors.txt"
+                  if [ ! -f "$TEMPLATE_PATH" ]; then
+                      echo "ERROR: Merge error template file not found at $TEMPLATE_PATH. Skipping comment."
+                      # Fallback to a hardcoded generic message if template is missing
+                      COMMENT_BODY="Hi there,\n\nUnfortunately, the automated merge for this Pull Request (#$pr_number) failed. Please check the workflow logs for details.\n\n_This comment was automatically generated._"
+                  else
+                      # For safety, we'll use a delimiter other than / (like @) and escape any @ in the variable
+                      ESCAPED_FAILURE_REASONS=$(echo "$MERGE_OUTPUT" | sed -e 's/[]\/$*.^[]/\\&/g' | sed -e ':a;N;$!ba;s/\n/\\n/g')
+                      
+                      COMMENT_BODY=$(sed "s|<<FAILURE_REASONS>>|$ESCAPED_FAILURE_REASONS|g" "$TEMPLATE_PATH")
+                  fi
+                  
+                  gh pr comment "$pr_number" --body "$COMMENT_BODY"
+                  echo "Commented on PR #$pr_number about the merge failure."
+                fi
+              else
+                echo "PR #$pr_number is not eligible for merge based on date check."
+              fi
+            done

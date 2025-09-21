@@ -17,7 +17,7 @@
   "activities": {
     "r_groups": {
       "R-Ladies Oslo": "https://www.meetup.com/rladies-oslo/",
-      "R-Ladies global": ""
+      "R-Ladies global": "https://rladies.org"
       },
     "r_packages": {
       "ggseg": "https://ggseg.github.io/ggseg/",

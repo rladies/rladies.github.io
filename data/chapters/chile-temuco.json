@@ -1,0 +1,16 @@
+[
+  {
+    "urlname": "rladies-temuco",
+    "status": "active",
+    "country": "Chile",
+    "city": "Temuco",
+    "social_media": {
+      "meetup": "rladies-temuco",
+      "email": "temuco@rladies.org"
+    },
+    "organizers": {
+      "current": ["Macarena Soledad Valenzuela Beltrán", "Camila Guzmán Olivos", "Noemí Cárcamo Mansilla", "Danae Huilcán", "Martina Recabarren", "Daniela Briones", "Tirza Soto Rocha", "Maitte Mariángel Salgado"],
+      "former": []
+    }
+  }
+]

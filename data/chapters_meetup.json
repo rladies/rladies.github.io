@@ -48,11 +48,12 @@
       "facebook": "RladiesBA",
       "instagram": "rladiesba",
       "youtube": "UCztAJhENVqsqv0cvyxs4sgg",
-      "github": "rladies/meetup-presentations_buenosaires"
+      "github": "rladies/meetup-presentations_buenosaires",
+      "website": "https://rladiesba.netlify.app/"
     },
     "organizers": {
-      "current": ["Paola Corrales", "Florencia D'Andrea", "Monica Alonso", "Priscilla Minotti", "Jimena Saucedo", "Maria Nanton", "Andrea Gomez", "Jesica Formoso", "Virginia Garc<ed>a Alonso"],
-      "former": []
+      "current": ["Maria Nanton", "Jesica Formoso", "Virginia Garc<ed>a Alonso", "Betsabé Cohen"],
+      "former": ["Laura Acion", "Paola Corrales", "Florencia D'Andrea", "Monica Alonso", "Priscilla Minotti", "Jimena Saucedo", "Verónica Rojo", "Andrea Gomez Vargas", "Daniela Vázquez", "Karina Bartolomé", "L. Paloma Rojas-Saunero", "Natsumi Shokida", "Paola Prieto"]
     },
     "name": "R-Ladies Buenos Aires",
     "id": "21760043",
@@ -542,7 +543,7 @@
       "email": "vienna@rladies.org"
     },
     "organizers": {
-      "current": ["Laura Vana"],
+      "current": ["Laura Vana", "Jenny Fan"],
       "former": []
     },
     "name": "R-Ladies Vienna",
@@ -1514,6 +1515,22 @@
     "timezone": "America/Toronto"
   },
   {
+    "urlname": "rladies-galvarino",
+    "status": "prospective",
+    "country": "Chile",
+    "state.region": "Araucanía",
+    "social_media": {
+      "meetup": "rladies-galvarino",
+      "email": "galvarino@rladies.org"
+    },
+    "organizers": {
+      "current": ["Maitte Millaray Mariángel Salgado"],
+      "former": []
+    },
+    "name": "R-Ladies Galvarino",
+    "city": "Galvarino"
+  },
+  {
     "urlname": "rladies-concepcion",
     "status": "active",
     "country": "Chile",
@@ -1582,6 +1599,21 @@
     "lat": -35.42,
     "lon": -71.66,
     "timezone": "America/Santiago"
+  },
+  {
+    "urlname": "rladies-temuco",
+    "status": "active",
+    "country": "Chile",
+    "social_media": {
+      "meetup": "rladies-temuco",
+      "email": "temuco@rladies.org"
+    },
+    "organizers": {
+      "current": ["Macarena Soledad Valenzuela Beltrán", "Camila Guzmán Olivos", "Noemí Cárcamo Mansilla", "Danae Huilcán", "Martina Recabarren", "Daniela Briones", "Tirza Soto Rocha", "Maitte Mariángel Salgado"],
+      "former": []
+    },
+    "name": "R-Ladies Temuco",
+    "city": "Temuco"
   },
   {
     "urlname": "rladies-valparaiso",

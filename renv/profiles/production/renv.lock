@@ -1,7 +1,15 @@
 {
   "R": {
-    "Version": "4.3.2",
+    "Version": "4.5.1",
     "Repositories": [
+      {
+        "Name": "ggseg",
+        "URL": "https://ggseg.r-universe.dev"
+      },
+      {
+        "Name": "lcbc",
+        "URL": "https://lcbc-uio.r-universe.dev"
+      },
       {
         "Name": "CRAN",
         "URL": "https://cloud.r-project.org"
@@ -13,38 +21,146 @@
       "Package": "here",
       "Version": "1.0.1",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "rprojroot"
+      "Title": "A Simpler Way to Find Your Files",
+      "Date": "2020-12-13",
+      "Authors@R": "c(person(given = \"Kirill\", family = \"M\\u00fcller\", role = c(\"aut\", \"cre\"), email = \"krlmlr+r@mailbox.org\", comment = c(ORCID = \"0000-0002-1416-3412\")), person(given = \"Jennifer\", family = \"Bryan\", role = \"ctb\", email = \"jenny@rstudio.com\", comment = c(ORCID = \"0000-0002-6983-2759\")))",
+      "Description": "Constructs paths to your project's files. Declare the relative path of a file within your project with 'i_am()'. Use the 'here()' function as a drop-in replacement for 'file.path()', it will always locate the files relative to your project root.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://here.r-lib.org/, https://github.com/r-lib/here",
+      "BugReports": "https://github.com/r-lib/here/issues",
+      "Imports": [
+        "rprojroot (>= 2.0.2)"
       ],
-      "Hash": "24b224366f9c2e7534d2344d10d59211"
+      "Suggests": [
+        "conflicted",
+        "covr",
+        "fs",
+        "knitr",
+        "palmerpenguins",
+        "plyr",
+        "readr",
+        "rlang",
+        "rmarkdown",
+        "testthat",
+        "uuid",
+        "withr"
+      ],
+      "VignetteBuilder": "knitr",
+      "Encoding": "UTF-8",
+      "LazyData": "true",
+      "RoxygenNote": "7.1.1.9000",
+      "Config/testthat/edition": "3",
+      "NeedsCompilation": "no",
+      "Author": "Kirill Müller [aut, cre] (<https://orcid.org/0000-0002-1416-3412>), Jennifer Bryan [ctb] (<https://orcid.org/0000-0002-6983-2759>)",
+      "Maintainer": "Kirill Müller <krlmlr+r@mailbox.org>",
+      "Repository": "CRAN"
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.1",
+      "Version": "1.1.5",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
+      "Type": "Package",
+      "Title": "Project Environments",
+      "Authors@R": "c( person(\"Kevin\", \"Ushey\", role = c(\"aut\", \"cre\"), email = \"kevin@rstudio.com\", comment = c(ORCID = \"0000-0003-2880-7407\")), person(\"Hadley\", \"Wickham\", role = c(\"aut\"), email = \"hadley@rstudio.com\", comment = c(ORCID = \"0000-0003-4757-117X\")), person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")) )",
+      "Description": "A dependency management toolkit for R. Using 'renv', you can create and manage project-local R libraries, save the state of these libraries to a 'lockfile', and later restore your library as required. Together, these tools can help make your projects more isolated, portable, and reproducible.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://rstudio.github.io/renv/, https://github.com/rstudio/renv",
+      "BugReports": "https://github.com/rstudio/renv/issues",
+      "Imports": [
         "utils"
       ],
-      "Hash": "6523639dd021b32c3199a41cbe6db340"
+      "Suggests": [
+        "BiocManager",
+        "cli",
+        "compiler",
+        "covr",
+        "cpp11",
+        "devtools",
+        "generics",
+        "gitcreds",
+        "jsonlite",
+        "jsonvalidate",
+        "knitr",
+        "miniUI",
+        "modules",
+        "packrat",
+        "pak",
+        "R6",
+        "remotes",
+        "reticulate",
+        "rmarkdown",
+        "rstudioapi",
+        "shiny",
+        "testthat",
+        "uuid",
+        "waldo",
+        "yaml",
+        "webfakes"
+      ],
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2",
+      "VignetteBuilder": "knitr",
+      "Config/Needs/website": "tidyverse/tidytemplate",
+      "Config/testthat/edition": "3",
+      "Config/testthat/parallel": "true",
+      "Config/testthat/start-first": "bioconductor,python,install,restore,snapshot,retrieve,remotes",
+      "NeedsCompilation": "no",
+      "Author": "Kevin Ushey [aut, cre] (ORCID: <https://orcid.org/0000-0003-2880-7407>), Hadley Wickham [aut] (ORCID: <https://orcid.org/0000-0003-4757-117X>), Posit Software, PBC [cph, fnd]",
+      "Maintainer": "Kevin Ushey <kevin@rstudio.com>",
+      "Repository": "CRAN"
     },
     "rprojroot": {
       "Package": "rprojroot",
-      "Version": "2.0.4",
+      "Version": "2.1.0",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Requirements": [
-        "R"
+      "Title": "Finding Files in Project Subdirectories",
+      "Authors@R": "person(given = \"Kirill\", family = \"M\\u00fcller\", role = c(\"aut\", \"cre\"), email = \"kirill@cynkra.com\", comment = c(ORCID = \"0000-0002-1416-3412\"))",
+      "Description": "Robust, reliable and flexible paths to files below a project root. The 'root' of a project is defined as a directory that matches a certain criterion, e.g., it contains a certain regular file.",
+      "License": "MIT + file LICENSE",
+      "URL": "https://rprojroot.r-lib.org/, https://github.com/r-lib/rprojroot",
+      "BugReports": "https://github.com/r-lib/rprojroot/issues",
+      "Depends": [
+        "R (>= 3.0.0)"
       ],
-      "Hash": "4c8415e0ec1e29f3f4f6fc108bef0144"
+      "Suggests": [
+        "covr",
+        "knitr",
+        "lifecycle",
+        "rlang",
+        "rmarkdown",
+        "testthat (>= 3.2.0)",
+        "withr"
+      ],
+      "VignetteBuilder": "knitr",
+      "Config/testthat/edition": "3",
+      "Encoding": "UTF-8",
+      "RoxygenNote": "7.3.2.9000",
+      "Config/autostyle/scope": "line_breaks",
+      "Config/autostyle/strict": "true",
+      "Config/Needs/website": "tidyverse/tidytemplate",
+      "NeedsCompilation": "no",
+      "Author": "Kirill Müller [aut, cre] (ORCID: <https://orcid.org/0000-0002-1416-3412>)",
+      "Maintainer": "Kirill Müller <kirill@cynkra.com>",
+      "Repository": "CRAN"
     },
     "yaml": {
       "Package": "yaml",
-      "Version": "2.3.8",
+      "Version": "2.3.10",
       "Source": "Repository",
-      "Repository": "CRAN",
-      "Hash": "29240487a071f535f5e5d5a323b7afbd"
+      "Type": "Package",
+      "Title": "Methods to Convert R Data to YAML and Back",
+      "Date": "2024-07-22",
+      "Suggests": [
+        "RUnit"
+      ],
+      "Author": "Shawn P Garbett [aut], Jeremy Stephens [aut, cre], Kirill Simonov [aut], Yihui Xie [ctb], Zhuoer Dong [ctb], Hadley Wickham [ctb], Jeffrey Horner [ctb], reikoch [ctb], Will Beasley [ctb], Brendan O'Connor [ctb], Gregory R. Warnes [ctb], Michael Quinn [ctb], Zhian N. Kamvar [ctb], Charlie Gao [ctb]",
+      "Maintainer": "Shawn Garbett <shawn.garbett@vumc.org>",
+      "License": "BSD_3_clause + file LICENSE",
+      "Description": "Implements the 'libyaml' 'YAML' 1.1 parser and emitter (<https://pyyaml.org/wiki/LibYAML>) for R.",
+      "URL": "https://github.com/vubiostat/r-yaml/",
+      "BugReports": "https://github.com/vubiostat/r-yaml/issues",
+      "NeedsCompilation": "yes",
+      "Repository": "CRAN"
     }
   }
 }

@@ -1,0 +1,8 @@
+<figure class="figure">
+    <img class="figure-img img-fluid rounded" 
+         src="{{ .Destination | safeURL }}" 
+         alt="{{ .Text }}">
+    <figcaption class="figure-caption">
+        {{ .Title | default .Text }}
+    </figcaption>
+</figure>
