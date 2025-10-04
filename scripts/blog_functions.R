@@ -55,4 +55,4 @@ download_images <- function(image_urls, folder_path) {
   if (is.null(image_urls) || is.na(image_urls) || length(image_urls) == 0 || image_urls == "") {
     return(NULL)
   }
-  
+}
