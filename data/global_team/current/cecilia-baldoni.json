@@ -1,4 +1,7 @@
 {
   "name": "Cecilia Baldoni",
-  "role": ["Blog administration"]
+  "role": ["Blog administration"],
+  "img": {
+    "url": "cecilia-baldoni.jpeg"
+  }
 }

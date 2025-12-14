@@ -2076,6 +2076,21 @@
     "city": "Grenoble"
   },
   {
+    "urlname": "rladies-limoges",
+    "status": "active",
+    "country": "France",
+    "social_media": {
+      "meetup": "rladies-limoges",
+      "email": "limoges@rladies.org"
+    },
+    "organizers": {
+      "current": ["Maelle Amand", "Dina Araujo"],
+      "former": []
+    },
+    "name": "R-Ladies Limoges",
+    "city": "Limoges"
+  },
+  {
     "urlname": "rladies-lyon",
     "status": "active",
     "country": "France",
