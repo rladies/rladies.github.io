@@ -15,7 +15,7 @@
 
 {{ $grav := md5 ( .data.Title | printf "%s-%s" .name ) }}
 {{ $dir.Set "img" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" $grav )}}
-{{ with (resources.GetMatch .data.Params.photo.url ) }}
+{{ with (resources.GetMatch (printf "*%s" .data.Params.photo.url) ) }}
   {{ $image :=  . }}
   {{ $image := $image.Fill "300x300" }}
   {{ $dir.Set "img" $image.RelPermalink }}
