@@ -4500,6 +4500,16 @@
     "city": "Uppsala",
   },
   {
+    "status": "prospective",
+    "country": "Switzerland",
+    "organizers": {
+      "current": ["Monika Avila"],
+      "former": []
+    },
+    "name": "R-Ladies Geneva",
+    "city": "Geneva",
+  },
+  {
     "urlname": "rladies-lausanne",
     "status": "retired on 12-02-2022",
     "country": "Switzerland",
