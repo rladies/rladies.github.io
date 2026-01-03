@@ -1,0 +1,29 @@
+{
+    "name": "hugo-rladies-theme-js",
+    "private": true,
+    "version": "0.1.0",
+    "scripts": {
+        "sync:assets": "node ./scripts/copy_static_to_assets.js",
+        "build:calendar": "npx esbuild assets/js/calendar.entry.js --bundle --minify --sourcemap --outfile=assets/js/calendar.bundle.min.js",
+        "watch:calendar": "npx esbuild assets/js/calendar.entry.js --bundle --minify --sourcemap --outfile=assets/js/calendar.bundle.min.js --watch",
+        "update:libs": "npm update",
+        "prepare": "npm run sync:assets"
+    },
+    "devDependencies": {
+        "esbuild": "^0.27.2"
+    },
+    "dependencies": {
+        "@fullcalendar/core": "^6.1.8",
+        "@fullcalendar/daygrid": "^6.1.8",
+        "@fullcalendar/interaction": "^6.1.8",
+        "@fullcalendar/list": "^6.1.8",
+        "@fullcalendar/timegrid": "^6.1.8",
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "^5.3.8",
+        "bootstrap-multiselect": "^2.0.0",
+        "jquery": "^3.7.0",
+        "moment": "^2.29.4",
+        "moment-timezone": "^0.5.43",
+        "shufflejs": "^5.2.3"
+    }
+}
