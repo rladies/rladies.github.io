@@ -1,17 +1,19 @@
-[
-  {
-    "urlname": "rladies-milagro",
-    "status": "active",
-    "country": "Ecuador",
-    "city": "Milagro",
-    "social_media": {
-      "meetup": "rladies-milagro",
-      "twitter": "Rladies_Milagro",
-      "email": "milagro@rladies.org"
-    },
-    "organizers": {
-      "current": ["Mercedes Gisela Soledispa Lucas", "Jhanelly Chalá", "Naomy Vera"],
-      "former": [] 
-    }
+{
+  "urlname": "rladies-milagro",
+  "status": "active",
+  "country": "Ecuador",
+  "city": "Milagro",
+  "social_media": {
+    "meetup": "rladies-milagro",
+    "twitter": "Rladies_Milagro",
+    "email": "milagro@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Mercedes Gisela Soledispa Lucas",
+      "Jhanelly Chalá",
+      "Naomy Vera"
+    ],
+    "former": []
   }
-]
+}

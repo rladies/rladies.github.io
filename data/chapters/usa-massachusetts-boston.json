@@ -1,20 +1,24 @@
-[
-  {
-    "urlname": "rladies-boston",
-    "status": "active",
-    "country": "USA",
-    "state.region": "Massachusetts",
-    "city": "Boston",
-    "social_media": {
-      "meetup": "rladies-boston",
-      "twitter": "RLadiesBoston",
-      "email": "boston@rladies.org",
-      "github": "rladies/meetup-presentations_boston",
-      "website": "https://rladies.github.io/Boston/"
-    },
-    "organizers": {
-      "current": ["Marianna Foos", "Maria Elena Morales", "Diana Garcia Cortes"],
-      "former": ["Phoebe Wong"]
-    }
+{
+  "urlname": "rladies-boston",
+  "status": "active",
+  "country": "USA",
+  "state.region": "Massachusetts",
+  "city": "Boston",
+  "social_media": {
+    "meetup": "rladies-boston",
+    "twitter": "RLadiesBoston",
+    "email": "boston@rladies.org",
+    "github": "rladies/meetup-presentations_boston",
+    "website": "https://rladies.github.io/Boston/"
+  },
+  "organizers": {
+    "current": [
+      "Marianna Foos",
+      "Maria Elena Morales",
+      "Diana Garcia Cortes"
+    ],
+    "former": [
+      "Phoebe Wong"
+    ]
   }
-]
+}

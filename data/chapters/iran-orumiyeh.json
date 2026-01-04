@@ -1,16 +1,16 @@
-[
-  {
-    "urlname": "rladies-urmia",
-    "name": "R-Ladies Orumiyeh",
-    "status": "active",
-    "country": "Iran",
-    "city": "Orumiyeh",
-    "social_media": {
-      "meetup": "rladies-orumiyeh"
-    },
-    "organizers": {
-      "current": ["Nasrin Fathollahzadeh Attar"],
-      "former": []
-    }
+{
+  "urlname": "rladies-urmia",
+  "name": "R-Ladies Orumiyeh",
+  "status": "active",
+  "country": "Iran",
+  "city": "Orumiyeh",
+  "social_media": {
+    "meetup": "rladies-orumiyeh"
+  },
+  "organizers": {
+    "current": [
+      "Nasrin Fathollahzadeh Attar"
+    ],
+    "former": []
   }
-]
+}

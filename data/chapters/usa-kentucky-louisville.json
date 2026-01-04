@@ -1,19 +1,20 @@
-[
-  {
-    "urlname": "rladies-louisville-ky",
-    "status": "active",
-    "country": "USA",
-    "state.region": "Kentucky",
-    "city": "Louisville",
-    "social_media": {
-      "meetup": "rladies-louisville-ky",
-      "twitter": "RLadiesLouville",
-      "email": "louisville@rladies.org",
-      "github": "rladies/meetup-presentation_louisville"
-    },
-    "organizers": {
-      "current": ["Ann Holmes", "Lauren Girouard-Hallam"],
-      "former": []
-    }
+{
+  "urlname": "rladies-louisville-ky",
+  "status": "active",
+  "country": "USA",
+  "state.region": "Kentucky",
+  "city": "Louisville",
+  "social_media": {
+    "meetup": "rladies-louisville-ky",
+    "twitter": "RLadiesLouville",
+    "email": "louisville@rladies.org",
+    "github": "rladies/meetup-presentation_louisville"
+  },
+  "organizers": {
+    "current": [
+      "Ann Holmes",
+      "Lauren Girouard-Hallam"
+    ],
+    "former": []
   }
-]
+}

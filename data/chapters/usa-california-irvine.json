@@ -1,20 +1,23 @@
-[
-  {
-    "urlname": "rladies-irvine",
-    "status": "active",
-    "country": "USA",
-    "state.region": "California",
-    "city": "Irvine",
-    "social_media": {
-      "meetup": "rladies-irvine",
-      "twitter": "RLadiesIrvine",
-      "email": "irvine@rladies.org",
-      "github": "rladies/meetup-presentations_irvine",
-      "website": "http://www.rladiesirvine.org/"
-    },
-    "organizers": {
-      "current": ["Alyssa Columbus", "Madeline Bauer"],
-      "former": ["Linda Palmer"]
-    }
+{
+  "urlname": "rladies-irvine",
+  "status": "active",
+  "country": "USA",
+  "state.region": "California",
+  "city": "Irvine",
+  "social_media": {
+    "meetup": "rladies-irvine",
+    "twitter": "RLadiesIrvine",
+    "email": "irvine@rladies.org",
+    "github": "rladies/meetup-presentations_irvine",
+    "website": "http://www.rladiesirvine.org/"
+  },
+  "organizers": {
+    "current": [
+      "Alyssa Columbus",
+      "Madeline Bauer"
+    ],
+    "former": [
+      "Linda Palmer"
+    ]
   }
-]
+}

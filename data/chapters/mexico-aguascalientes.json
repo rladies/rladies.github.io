@@ -1,16 +1,17 @@
-[
-  {
-    "urlname": "rladies-aguascalientes",
-    "status": "active",
-    "country": "Mexico",
-    "city": "Aguascalientes",
-    "social_media": {
-      "meetup": "rladies-aguascalientes",
-      "email": "aguascalientes@rladies.org"
-    },
-    "organizers": {
-      "current": ["Regina Isabel Medina", "Yadira Peralta"],
-      "former": []
-    }
+{
+  "urlname": "rladies-aguascalientes",
+  "status": "active",
+  "country": "Mexico",
+  "city": "Aguascalientes",
+  "social_media": {
+    "meetup": "rladies-aguascalientes",
+    "email": "aguascalientes@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Regina Isabel Medina",
+      "Yadira Peralta"
+    ],
+    "former": []
   }
-]
+}

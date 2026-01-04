@@ -1,18 +1,19 @@
-[
-  {
-    "urlname": "rladies-helsinki",
-    "status": "active",
-    "country": "Finland",
-    "city": "Helsinki",
-    "social_media": {
-      "meetup": "rladies-helsinki",
-      "twitter": "RLadiesHelsinki",
-      "email": "helsinki@rladies.org",
-      "github": "rladies/meetup-presentations_helsinki"
-    },
-    "organizers": {
-      "current": ["Suvi Vasama", "Eija-Leena Koponen"],
-      "former": []
-    }
+{
+  "urlname": "rladies-helsinki",
+  "status": "active",
+  "country": "Finland",
+  "city": "Helsinki",
+  "social_media": {
+    "meetup": "rladies-helsinki",
+    "twitter": "RLadiesHelsinki",
+    "email": "helsinki@rladies.org",
+    "github": "rladies/meetup-presentations_helsinki"
+  },
+  "organizers": {
+    "current": [
+      "Suvi Vasama",
+      "Eija-Leena Koponen"
+    ],
+    "former": []
   }
-]
+}

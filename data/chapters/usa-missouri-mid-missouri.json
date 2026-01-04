@@ -1,17 +1,20 @@
-[
-  {
-    "urlname": "rladies-mid-mo",
-    "status": "active",
-    "country": "USA",
-    "state.region": "Missouri",
-    "city": "Mid-Missouri",
-    "social_media": {
-      "meetup": "rladies-mid-mo",
-      "email": "mid-missouri@rladies.org"
-    },
-    "organizers": {
-      "current": ["Hope Snyder", "Linda A. Landon"],
-      "former": ["Krista Galyen"]
-    }
+{
+  "urlname": "rladies-mid-mo",
+  "status": "active",
+  "country": "USA",
+  "state.region": "Missouri",
+  "city": "Mid-Missouri",
+  "social_media": {
+    "meetup": "rladies-mid-mo",
+    "email": "mid-missouri@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Hope Snyder",
+      "Linda A. Landon"
+    ],
+    "former": [
+      "Krista Galyen"
+    ]
   }
-]
+}
