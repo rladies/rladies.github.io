@@ -1,2 +1,6 @@
 baseURL: "."
 
+caches:
+  getResource:
+    dir: ":resourceDir/_cache"
+    maxAge: "1m"
