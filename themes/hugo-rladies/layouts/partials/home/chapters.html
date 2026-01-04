@@ -1,7 +1,7 @@
-{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 0 }}
-{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+{{ $countries := $.Scratch.Get "chpt_countries" }}
+{{ $chapters  := $.Scratch.Get "chpt_active" }}
 
-  {{ with .Site.GetPage "section" "chapters" }}
+{{ with .Site.GetPage "section" "chapters" }}
 
 <div class="container row justify-content-center section topspace">
   <h2 class="section-title"><span>{{ .Title | title }}</span></h2>
@@ -20,10 +20,11 @@
         </tr>
       </thead>
       <tbody>
-        {{ range $countries }}
+        {{ range $k, $c := $countries }}
           <tr>
-            <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country | title }} </td>
-                {{ range where $chapters "country" .country }}
+            <td class="text-right text-bold b-rladies-r" rowspan = "{{ $c.count }}"> {{ $c.name | title }} </td>
+
+                {{ range where $chapters "country" $c.name }}
             <td class="text-left"> <a href="http://meetup.com/{{ .social_media.meetup }}">{{ .name | title }}</a> </td>
               
               <td class="text-right"> 
@@ -107,11 +108,11 @@
     var colorSet = new am4core.ColorSet();
     
     imageSeries.data = [ 
-    {{ range where $chapters "members" "gt" 0 }}
+    {{ range $chapters }}
       {
         "name": "{{ .name }}",
         "members": "{{ .members }}",
-        "socials": {{ with .social_media }}{{ partial "social_media.html" . }}{{ end }},
+        {{ with .social_media }}"socials": {{ partial "social_media.html" . }},{{ end }}
         "latitude": {{ .lat }},
         "longitude": {{ .lon }},
         "color": "#88398acc"
