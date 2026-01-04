@@ -1,11 +1,11 @@
 {
-  "urlname": "rladies-newyork",
+  "urlname": "rladiesnyc",
   "status": "active",
   "country": "USA",
   "state.region": "New York",
   "city": "New York City",
   "social_media": {
-    "meetup": "rladies-newyork",
+    "meetup": "rladiesnyc",
     "twitter": "RLadiesNYC",
     "email": "nyc@rladies.org",
     "github": "rladies/meetup-presentations_newyork",
