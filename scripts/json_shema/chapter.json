@@ -42,7 +42,6 @@
     }
   },
   "required": [
-    "urlname",
     "status",
     "country",
     "city",
