@@ -16,6 +16,7 @@
     "country_acronym": "AL",
     "state": "",
     "city": "Tiranë",
+    "members": 173,
     "lat": 41.33,
     "lon": 19.82,
     "timezone": "Europe/Tirane"
@@ -37,6 +38,7 @@
     "country_acronym": "DZ",
     "state": "",
     "city": "al-Jaza´ir",
+    "members": 775,
     "lat": 36.77,
     "lon": 3.04,
     "timezone": "Africa/Algiers"
@@ -65,6 +67,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Buenos Aires",
+    "members": 1966,
     "lat": -34.61,
     "lon": -58.37,
     "timezone": "America/Argentina/Buenos_Aires"
@@ -84,7 +87,7 @@
       "former": []
     },
     "name": "R-Ladies La Plata",
-    "city": "La Plata",
+    "city": "La Plata"
   },
   {
     "urlname": "rladies-resistencia-corrientes",
@@ -106,6 +109,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Corrientes",
+    "members": 210,
     "lat": -27.49,
     "lon": -58.81,
     "timezone": "America/Argentina/Cordoba"
@@ -132,6 +136,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Córdoba",
+    "members": 32,
     "lat": -31.4,
     "lon": -64.19,
     "timezone": "America/Argentina/Cordoba"
@@ -154,6 +159,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Jujuy",
+    "members": 186,
     "lat": -24.19,
     "lon": -65.3,
     "timezone": "America/Argentina/Jujuy"
@@ -177,6 +183,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "General Pico",
+    "members": 62,
     "lat": -35.66,
     "lon": -63.77,
     "timezone": "America/Argentina/Cordoba"
@@ -202,6 +209,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Santa Rosa",
+    "members": 185,
     "lat": -36.62,
     "lon": -64.3,
     "timezone": "America/Argentina/Cordoba"
@@ -227,6 +235,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Mendoza",
+    "members": 346,
     "lat": -32.89,
     "lon": -68.83,
     "timezone": "America/Argentina/Mendoza"
@@ -252,6 +261,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "San Carlos de Bariloche",
+    "members": 590,
     "lat": -41.14,
     "lon": -71.32,
     "timezone": "America/Argentina/Cordoba"
@@ -279,6 +289,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Santa Fe",
+    "members": 223,
     "lat": -31.6,
     "lon": -60.69,
     "timezone": "America/Argentina/Cordoba"
@@ -303,6 +314,7 @@
     "country_acronym": "AR",
     "state": "",
     "city": "Ushuaia",
+    "members": 34,
     "lat": -54.79,
     "lon": -68.31,
     "timezone": "America/Argentina/Buenos_Aires"
@@ -326,6 +338,7 @@
     "country_acronym": "AU",
     "state": "",
     "city": "Adelaide",
+    "members": 339,
     "lat": -34.93,
     "lon": 138.6,
     "timezone": "Australia/Adelaide"
@@ -338,7 +351,7 @@
       "former": []
     },
     "name": "R-Ladies Cairns",
-    "city": "Cairns",
+    "city": "Cairns"
   },
   {
     "urlname": "rladies-canberra",
@@ -358,6 +371,7 @@
     "country_acronym": "AU",
     "state": "",
     "city": "Canberra",
+    "members": 232,
     "lat": -35.31,
     "lon": 149.13,
     "timezone": "Australia/Sydney"
@@ -383,6 +397,7 @@
     "country_acronym": "AU",
     "state": "",
     "city": "Melbourne",
+    "members": 2720,
     "lat": -37.81,
     "lon": 144.96,
     "timezone": "Australia/Melbourne"
@@ -404,6 +419,7 @@
     "country_acronym": "AU",
     "state": "",
     "city": "Darwin",
+    "members": 28,
     "lat": -12.46,
     "lon": 130.84,
     "timezone": "Australia/Darwin"
@@ -426,6 +442,7 @@
     "country_acronym": "AU",
     "state": "",
     "city": "Perth",
+    "members": 276,
     "lat": -31.96,
     "lon": 115.84,
     "timezone": "Australia/Perth"
@@ -451,6 +468,7 @@
     "country_acronym": "AU",
     "state": "",
     "city": "Brisbane",
+    "members": 894,
     "lat": -27.46,
     "lon": 153.02,
     "timezone": "Australia/Brisbane"
@@ -475,6 +493,7 @@
     "country_acronym": "AU",
     "state": "",
     "city": "Sydney",
+    "members": 1100,
     "lat": -33.87,
     "lon": 151.21,
     "timezone": "Australia/Sydney"
@@ -487,7 +506,7 @@
       "former": []
     },
     "name": "R-Ladies Townsville",
-    "city": "Townsville",
+    "city": "Townsville"
   },
   {
     "urlname": "rladies-linz",
@@ -504,7 +523,7 @@
       "former": []
     },
     "name": "R-Ladies Linz",
-    "city": "Linz",
+    "city": "Linz"
   },
   {
     "urlname": "rladies-salzburg",
@@ -523,6 +542,7 @@
     "country_acronym": "AT",
     "state": "",
     "city": "Salzburg",
+    "members": 106,
     "lat": 47.81,
     "lon": 13.04,
     "timezone": "Europe/Vienna"
@@ -545,6 +565,7 @@
     "country_acronym": "AT",
     "state": "",
     "city": "Vienna",
+    "members": 542,
     "lat": 48.22,
     "lon": 16.37,
     "timezone": "Europe/Vienna"
@@ -557,7 +578,7 @@
       "former": []
     },
     "name": "R-Ladies Muharraq",
-    "city": "Muharraq",
+    "city": "Muharraq"
   },
   {
     "urlname": "rladies-brussels",
@@ -578,6 +599,7 @@
     "country_acronym": "BE",
     "state": "",
     "city": "Brussels",
+    "members": 240,
     "lat": 50.83,
     "lon": 4.33,
     "timezone": "Europe/Brussels"
@@ -597,7 +619,7 @@
       "former": []
     },
     "name": "R-Ladies Leuven",
-    "city": "Leuven",
+    "city": "Leuven"
   },
   {
     "urlname": "rladies-cotonou",
@@ -617,6 +639,7 @@
     "country_acronym": "BJ",
     "state": "",
     "city": "Cotonou",
+    "members": 44,
     "lat": 6.36,
     "lon": 2.44,
     "timezone": "Africa/Lagos"
@@ -633,7 +656,7 @@
       "former": []
     },
     "name": "R-Ladies Cochabamba",
-    "city": "Cochabamba",
+    "city": "Cochabamba"
   },
   {
     "urlname": "rladies-la-paz",
@@ -650,7 +673,7 @@
       "former": []
     },
     "name": "R-Ladies La Paz",
-    "city": "La Paz",
+    "city": "La Paz"
   },
   {
     "status": "prospective",
@@ -660,7 +683,7 @@
       "former": []
     },
     "name": "R-Ladies Santa Cruz",
-    "city": "Santa Cruz",
+    "city": "Santa Cruz"
   },
   {
     "urlname": "rladies-gaborone",
@@ -687,6 +710,7 @@
     "country_acronym": "BW",
     "state": "",
     "city": "Gaborone",
+    "members": 1133,
     "lat": -24.65,
     "lon": 25.91,
     "timezone": "Africa/Maputo"
@@ -700,7 +724,7 @@
       "former": []
     },
     "name": "R-Ladies Manaus",
-    "city": "Manaus",
+    "city": "Manaus"
   },
   {
     "urlname": "rladies-salvador",
@@ -721,6 +745,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Salvador",
+    "members": 362,
     "lat": -12.97,
     "lon": -38.5,
     "timezone": "America/Bahia"
@@ -741,6 +766,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Brasília",
+    "members": 108,
     "lat": -15.78,
     "lon": -47.91,
     "timezone": "America/Sao_Paulo"
@@ -763,6 +789,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Fortaleza",
+    "members": 118,
     "lat": -3.78,
     "lon": -38.59,
     "timezone": "America/Fortaleza"
@@ -786,6 +813,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Vitória",
+    "members": 334,
     "lat": -20.31,
     "lon": -40.31,
     "timezone": "America/Sao_Paulo"
@@ -808,6 +836,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Goiania",
+    "members": 629,
     "lat": -16.72,
     "lon": -49.26,
     "timezone": "America/Sao_Paulo"
@@ -836,6 +865,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Belo Horizonte",
+    "members": 970,
     "lat": -19.92,
     "lon": -43.94,
     "timezone": "America/Sao_Paulo"
@@ -858,6 +888,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Lavras",
+    "members": 115,
     "lat": -21.25,
     "lon": -45.01,
     "timezone": "America/Sao_Paulo"
@@ -871,7 +902,7 @@
       "former": []
     },
     "name": "R-Ladies Campina Grande",
-    "city": "Campina Grande",
+    "city": "Campina Grande"
   },
   {
     "urlname": "rladies-curitiba",
@@ -892,6 +923,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Curitiba",
+    "members": 102,
     "lat": -25.42,
     "lon": -49.29,
     "timezone": "America/Sao_Paulo"
@@ -915,6 +947,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Recife",
+    "members": 161,
     "lat": -8.08,
     "lon": -34.92,
     "timezone": "America/Recife"
@@ -928,7 +961,7 @@
       "former": []
     },
     "name": "R-Ladies Teresina",
-    "city": "Teresina",
+    "city": "Teresina"
   },
   {
     "urlname": "rladies-niteroi",
@@ -948,6 +981,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Niterói",
+    "members": 1281,
     "lat": -22.9,
     "lon": -43.13,
     "timezone": "America/Sao_Paulo"
@@ -974,6 +1008,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Rio de Janeiro",
+    "members": 645,
     "lat": -22.91,
     "lon": -43.2,
     "timezone": "America/Sao_Paulo"
@@ -999,6 +1034,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Natal",
+    "members": 450,
     "lat": -5.8,
     "lon": -35.22,
     "timezone": "America/Fortaleza"
@@ -1023,6 +1059,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Porto Alegre",
+    "members": 400,
     "lat": -30.04,
     "lon": -51.22,
     "timezone": "America/Sao_Paulo"
@@ -1046,6 +1083,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Florianópolis",
+    "members": 639,
     "lat": -27.6,
     "lon": -48.54,
     "timezone": "America/Sao_Paulo"
@@ -1059,7 +1097,7 @@
       "former": []
     },
     "name": "R-Ladies Lages",
-    "city": "Lages",
+    "city": "Lages"
   },
   {
     "urlname": "rladies-sao-mateus",
@@ -1077,6 +1115,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "São Mateus",
+    "members": 25,
     "lat": -18.73,
     "lon": -39.86,
     "timezone": "America/Sao_Paulo"
@@ -1095,7 +1134,7 @@
       "former": []
     },
     "name": "R-Ladies Americana",
-    "city": "Americana",
+    "city": "Americana"
   },
   {
     "status": "prospective",
@@ -1106,7 +1145,7 @@
       "former": []
     },
     "name": "R-Ladies Piracicaba",
-    "city": "Piracicaba",
+    "city": "Piracicaba"
   },
   {
     "urlname": "rladies-ribeirao-preto",
@@ -1126,6 +1165,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Ribeirão Preto",
+    "members": 628,
     "lat": -21.17,
     "lon": -47.8,
     "timezone": "America/Sao_Paulo"
@@ -1139,7 +1179,7 @@
       "former": []
     },
     "name": "R-Ladies S<e3>o Carlos",
-    "city": "S<e3>o Carlos",
+    "city": "S<e3>o Carlos"
   },
   {
     "status": "prospective",
@@ -1150,7 +1190,7 @@
       "former": []
     },
     "name": "R-Ladies S<e3>o Jos<e9> dos Campos",
-    "city": "S<e3>o Jos<e9> dos Campos",
+    "city": "S<e3>o Jos<e9> dos Campos"
   },
   {
     "urlname": "rladies-sao-paulo",
@@ -1175,6 +1215,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "São Paulo",
+    "members": 1818,
     "lat": -23.53,
     "lon": -46.63,
     "timezone": "America/Sao_Paulo"
@@ -1188,7 +1229,7 @@
       "former": []
     },
     "name": "R-Ladies Palmas",
-    "city": "Palmas",
+    "city": "Palmas"
   },
   {
     "status": "prospective",
@@ -1198,7 +1239,7 @@
       "former": []
     },
     "name": "R-Ladies Sofia",
-    "city": "Sofia",
+    "city": "Sofia"
   },
   {
     "urlname": "rladies-yaounde",
@@ -1217,6 +1258,7 @@
     "country_acronym": "CM",
     "state": "",
     "city": "Yaoundé",
+    "members": 136,
     "lat": 3.87,
     "lon": 11.52,
     "timezone": "Africa/Lagos"
@@ -1238,6 +1280,7 @@
     "country_acronym": "CA",
     "state": "AB",
     "city": "Calgary",
+    "members": 233,
     "lat": 51.04,
     "lon": -114.06,
     "timezone": "America/Edmonton"
@@ -1254,7 +1297,7 @@
       "former": []
     },
     "name": "R-Ladies Edmonton",
-    "city": "Edmonton",
+    "city": "Edmonton"
   },
   {
     "urlname": "rladies-vancouver",
@@ -1276,6 +1319,7 @@
     "country_acronym": "CA",
     "state": "BC",
     "city": "Vancouver",
+    "members": 813,
     "lat": 49.28,
     "lon": -123.04,
     "timezone": "America/Vancouver"
@@ -1296,7 +1340,7 @@
       "former": []
     },
     "name": "R-Ladies Victoria",
-    "city": "Victoria",
+    "city": "Victoria"
   },
   {
     "status": "prospective",
@@ -1307,7 +1351,7 @@
       "former": []
     },
     "name": "R-Ladies Winnipeg",
-    "city": "Winnipeg",
+    "city": "Winnipeg"
   },
   {
     "urlname": "rladies-halifax",
@@ -1326,6 +1370,7 @@
     "country_acronym": "CA",
     "state": "NS",
     "city": "Halifax",
+    "members": 137,
     "lat": 44.64,
     "lon": -63.57,
     "timezone": "America/Halifax"
@@ -1347,6 +1392,7 @@
     "country_acronym": "CA",
     "state": "ON",
     "city": "Kingston",
+    "members": 57,
     "lat": 44.22,
     "lon": -76.51,
     "timezone": "America/Toronto"
@@ -1372,6 +1418,7 @@
     "country_acronym": "CA",
     "state": "ON",
     "city": "London",
+    "members": 511,
     "lat": 43.01,
     "lon": -81.18,
     "timezone": "America/Toronto"
@@ -1394,6 +1441,7 @@
     "country_acronym": "CA",
     "state": "ON",
     "city": "Ottawa",
+    "members": 1111,
     "lat": 45.45,
     "lon": -75.69,
     "timezone": "America/Toronto"
@@ -1419,6 +1467,7 @@
     "country_acronym": "CA",
     "state": "ON",
     "city": "Toronto",
+    "members": 765,
     "lat": 43.74,
     "lon": -79.36,
     "timezone": "America/Toronto"
@@ -1438,7 +1487,7 @@
       "former": []
     },
     "name": "R-Ladies Waterloo",
-    "city": "Waterloo",
+    "city": "Waterloo"
   },
   {
     "urlname": "rladies-montreal",
@@ -1460,6 +1509,7 @@
     "country_acronym": "CA",
     "state": "QC",
     "city": "Montréal",
+    "members": 679,
     "lat": 45.5,
     "lon": -73.57,
     "timezone": "America/Toronto"
@@ -1478,7 +1528,7 @@
       "former": []
     },
     "name": "R-Ladies Galvarino",
-    "city": "Galvarino",
+    "city": "Galvarino"
   },
   {
     "urlname": "rladies-concepcion",
@@ -1497,6 +1547,7 @@
     "country_acronym": "CL",
     "state": "",
     "city": "Concepción",
+    "members": 745,
     "lat": -36.83,
     "lon": -73.05,
     "timezone": "America/Santiago"
@@ -1522,6 +1573,7 @@
     "country_acronym": "CL",
     "state": "",
     "city": "Santiago",
+    "members": 2967,
     "lat": -33.46,
     "lon": -70.64,
     "timezone": "America/Santiago"
@@ -1543,6 +1595,7 @@
     "country_acronym": "CL",
     "state": "",
     "city": "Talca",
+    "members": 206,
     "lat": -35.42,
     "lon": -71.66,
     "timezone": "America/Santiago"
@@ -1564,6 +1617,7 @@
     "country_acronym": "CL",
     "state": "",
     "city": "Temuco",
+    "members": 90,
     "lat": -38.73,
     "lon": -72.58,
     "timezone": "America/Santiago"
@@ -1588,6 +1642,7 @@
     "country_acronym": "CL",
     "state": "",
     "city": "Valparaíso",
+    "members": 619,
     "lat": -33.04,
     "lon": -71.64,
     "timezone": "America/Santiago"
@@ -1609,6 +1664,7 @@
     "country_acronym": "CN",
     "state": "",
     "city": "Beijing",
+    "members": 68,
     "lat": 39.93,
     "lon": 116.4,
     "timezone": "Asia/Shanghai"
@@ -1634,6 +1690,7 @@
     "country_acronym": "CO",
     "state": "",
     "city": "Barranquilla",
+    "members": 636,
     "lat": 11,
     "lon": -74.82,
     "timezone": "America/Bogota"
@@ -1656,6 +1713,7 @@
     "country_acronym": "CO",
     "state": "",
     "city": "Bogotá",
+    "members": 342,
     "lat": 4.63,
     "lon": -74.09,
     "timezone": "America/Bogota"
@@ -1668,7 +1726,7 @@
       "former": []
     },
     "name": "R-Ladies Bucaramanga",
-    "city": "Bucaramanga",
+    "city": "Bucaramanga"
   },
   {
     "status": "prospective",
@@ -1678,7 +1736,7 @@
       "former": []
     },
     "name": "R-Ladies Cali",
-    "city": "Cali",
+    "city": "Cali"
   },
   {
     "status": "prospective",
@@ -1688,7 +1746,7 @@
       "former": []
     },
     "name": "R-Ladies Manizales",
-    "city": "Manizales",
+    "city": "Manizales"
   },
   {
     "urlname": "rladies-medellin",
@@ -1708,6 +1766,7 @@
     "country_acronym": "CO",
     "state": "",
     "city": "Medellín",
+    "members": 1170,
     "lat": 6.25,
     "lon": -75.59,
     "timezone": "America/Bogota"
@@ -1732,6 +1791,7 @@
     "country_acronym": "CR",
     "state": "",
     "city": "San Jose",
+    "members": 714,
     "lat": 9.93,
     "lon": -84.08,
     "timezone": "America/Costa_Rica"
@@ -1747,7 +1807,7 @@
       "former": []
     },
     "name": "R-Ladies Zagreb",
-    "city": "Zagreb",
+    "city": "Zagreb"
   },
   {
     "status": "prospective",
@@ -1760,7 +1820,7 @@
       "former": []
     },
     "name": "R-Ladies Aarhus",
-    "city": "Aarhus",
+    "city": "Aarhus"
   },
   {
     "urlname": "rladies-copenhagen",
@@ -1780,6 +1840,7 @@
     "country_acronym": "DK",
     "state": "",
     "city": "Copenhagen",
+    "members": 468,
     "lat": 55.68,
     "lon": 12.57,
     "timezone": "Europe/Copenhagen"
@@ -1800,6 +1861,7 @@
     "country_acronym": "DO",
     "state": "",
     "city": "Santo Domingo",
+    "members": 215,
     "lat": 18.48,
     "lon": -69.91,
     "timezone": "America/Santo_Domingo"
@@ -1823,6 +1885,7 @@
     "country_acronym": "EC",
     "state": "",
     "city": "Guayaquil",
+    "members": 1135,
     "lat": -2.21,
     "lon": -79.9,
     "timezone": "America/Guayaquil"
@@ -1845,6 +1908,7 @@
     "country_acronym": "EC",
     "state": "",
     "city": "Milagro",
+    "members": 490,
     "lat": -2.18,
     "lon": -79.6,
     "timezone": "America/Guayaquil"
@@ -1868,6 +1932,7 @@
     "country_acronym": "EC",
     "state": "",
     "city": "Puerto Ayora",
+    "members": 471,
     "lat": -0.74,
     "lon": -90.32,
     "timezone": "Pacific/Galapagos"
@@ -1892,6 +1957,7 @@
     "country_acronym": "EC",
     "state": "",
     "city": "Quito",
+    "members": 996,
     "lat": -0.19,
     "lon": -78.5,
     "timezone": "America/Guayaquil"
@@ -1912,6 +1978,7 @@
     "country_acronym": "EG",
     "state": "",
     "city": "Cairo",
+    "members": 11,
     "lat": 30.06,
     "lon": 31.25,
     "timezone": "Africa/Cairo"
@@ -1924,7 +1991,7 @@
       "former": []
     },
     "name": "R-Ladies Tallinn",
-    "city": "Tallinn",
+    "city": "Tallinn"
   },
   {
     "urlname": "rladies-addis-ababa",
@@ -1945,6 +2012,7 @@
     "country_acronym": "ET",
     "state": "",
     "city": "Addis Abeba",
+    "members": 917,
     "lat": 9.03,
     "lon": 38.74,
     "timezone": "Africa/Nairobi"
@@ -1957,7 +2025,7 @@
       "former": []
     },
     "name": "R-Ladies Wolkite",
-    "city": "Wolkite",
+    "city": "Wolkite"
   },
   {
     "urlname": "rladies-helsinki",
@@ -1978,6 +2046,7 @@
     "country_acronym": "FI",
     "state": "",
     "city": "Helsinki",
+    "members": 508,
     "lat": 60.17,
     "lon": 24.94,
     "timezone": "Europe/Helsinki"
@@ -1998,6 +2067,7 @@
     "country_acronym": "FR",
     "state": "",
     "city": "Bordeaux",
+    "members": 39,
     "lat": 44.84,
     "lon": -0.58,
     "timezone": "Europe/Paris"
@@ -2010,7 +2080,7 @@
       "former": []
     },
     "name": "R-Ladies Grenoble",
-    "city": "Grenoble",
+    "city": "Grenoble"
   },
   {
     "urlname": "rladies-limoges",
@@ -2029,6 +2099,7 @@
     "country_acronym": "FR",
     "state": "",
     "city": "Limoges",
+    "members": 97,
     "lat": 45.83,
     "lon": 1.25,
     "timezone": "Europe/Paris"
@@ -2052,6 +2123,7 @@
     "country_acronym": "FR",
     "state": "",
     "city": "Lyon",
+    "members": 86,
     "lat": 45.76,
     "lon": 4.83,
     "timezone": "Europe/Paris"
@@ -2075,6 +2147,7 @@
     "country_acronym": "FR",
     "state": "",
     "city": "Montpellier",
+    "members": 154,
     "lat": 43.61,
     "lon": 3.87,
     "timezone": "Europe/Paris"
@@ -2103,6 +2176,7 @@
     "country_acronym": "FR",
     "state": "",
     "city": "Paris",
+    "members": 1202,
     "lat": 48.86,
     "lon": 2.34,
     "timezone": "Europe/Paris"
@@ -2126,6 +2200,7 @@
     "country_acronym": "FR",
     "state": "",
     "city": "Strasbourg",
+    "members": 84,
     "lat": 48.58,
     "lon": 7.75,
     "timezone": "Europe/Paris"
@@ -2150,6 +2225,7 @@
     "country_acronym": "GE",
     "state": "",
     "city": "Tbilisi",
+    "members": 447,
     "lat": 41.72,
     "lon": 44.79,
     "timezone": "Asia/Tbilisi"
@@ -2175,6 +2251,7 @@
     "country_acronym": "DE",
     "state": "",
     "city": "Berlin",
+    "members": 707,
     "lat": 52.52,
     "lon": 13.38,
     "timezone": "Europe/Berlin"
@@ -2199,6 +2276,7 @@
     "country_acronym": "DE",
     "state": "",
     "city": "Cologne",
+    "members": 376,
     "lat": 50.94,
     "lon": 6.96,
     "timezone": "Europe/Berlin"
@@ -2222,6 +2300,7 @@
     "country_acronym": "DE",
     "state": "",
     "city": "Freiburg",
+    "members": 1051,
     "lat": 47.99,
     "lon": 7.85,
     "timezone": "Europe/Berlin"
@@ -2246,6 +2325,7 @@
     "country_acronym": "DE",
     "state": "",
     "city": "Göttingen",
+    "members": 93,
     "lat": 51.53,
     "lon": 9.92,
     "timezone": "Europe/Berlin"
@@ -2258,7 +2338,7 @@
       "former": []
     },
     "name": "R-Ladies Heidelberg",
-    "city": "Heidelberg",
+    "city": "Heidelberg"
   },
   {
     "urlname": "rladies-frankfurt",
@@ -2280,6 +2360,7 @@
     "country_acronym": "DE",
     "state": "",
     "city": "Frankfurt",
+    "members": 102,
     "lat": 50.12,
     "lon": 8.68,
     "timezone": "Europe/Berlin"
@@ -2292,7 +2373,7 @@
       "former": []
     },
     "name": "R-Ladies Leipzig",
-    "city": "Leipzig",
+    "city": "Leipzig"
   },
   {
     "status": "active",
@@ -2302,7 +2383,7 @@
       "former": []
     },
     "name": "R-Ladies Marburg",
-    "city": "Marburg",
+    "city": "Marburg"
   },
   {
     "urlname": "rladies-munich",
@@ -2320,7 +2401,7 @@
       "former": []
     },
     "name": "R-Ladies Munich",
-    "city": "Munich",
+    "city": "Munich"
   },
   {
     "status": "prospective",
@@ -2330,7 +2411,7 @@
       "former": []
     },
     "name": "R-Ladies M<fc>nster",
-    "city": "M<fc>nster",
+    "city": "M<fc>nster"
   },
   {
     "status": "prospective",
@@ -2340,7 +2421,7 @@
       "former": []
     },
     "name": "R-Ladies Stuttgart",
-    "city": "Stuttgart",
+    "city": "Stuttgart"
   },
   {
     "urlname": "rladies-accra",
@@ -2358,6 +2439,7 @@
     "country_acronym": "GH",
     "state": "",
     "city": "Accra",
+    "members": 46,
     "lat": 5.56,
     "lon": -0.2,
     "timezone": "Africa/Accra"
@@ -2378,6 +2460,7 @@
     "country_acronym": "GH",
     "state": "",
     "city": "Cape Coast",
+    "members": 122,
     "lat": 5.11,
     "lon": -1.25,
     "timezone": "Africa/Accra"
@@ -2399,6 +2482,7 @@
     "country_acronym": "GH",
     "state": "",
     "city": "Kumasi",
+    "members": 375,
     "lat": 6.69,
     "lon": -1.63,
     "timezone": "Africa/Accra"
@@ -2419,6 +2503,7 @@
     "country_acronym": "GR",
     "state": "",
     "city": "Athens",
+    "members": 36,
     "lat": 37.98,
     "lon": 23.73,
     "timezone": "Europe/Athens"
@@ -2439,6 +2524,7 @@
     "country_acronym": "GR",
     "state": "",
     "city": "Thessaloníki",
+    "members": 69,
     "lat": 40.64,
     "lon": 22.94,
     "timezone": "Europe/Athens"
@@ -2456,7 +2542,7 @@
       "former": []
     },
     "name": "R-Ladies Hong Kong",
-    "city": "Hong Kong",
+    "city": "Hong Kong"
   },
   {
     "urlname": "rladies-budapest",
@@ -2478,6 +2564,7 @@
     "country_acronym": "HU",
     "state": "",
     "city": "Budapest",
+    "members": 885,
     "lat": 47.51,
     "lon": 19.08,
     "timezone": "Europe/Budapest"
@@ -2502,6 +2589,7 @@
     "country_acronym": "IN",
     "state": "",
     "city": "Delhi",
+    "members": 450,
     "lat": 28.67,
     "lon": 77.21,
     "timezone": "Asia/Kolkata"
@@ -2514,7 +2602,7 @@
       "former": []
     },
     "name": "R-Ladies Hyderabad",
-    "city": "Hyderabad",
+    "city": "Hyderabad"
   },
   {
     "status": "prospective",
@@ -2525,7 +2613,7 @@
       "former": []
     },
     "name": "R-Ladies B G Nagar",
-    "city": "B G Nagar",
+    "city": "B G Nagar"
   },
   {
     "urlname": "rladies-bangalore",
@@ -2545,6 +2633,7 @@
     "country_acronym": "IN",
     "state": "",
     "city": "Bangalore",
+    "members": 391,
     "lat": 12.97,
     "lon": 77.56,
     "timezone": "Asia/Kolkata"
@@ -2567,6 +2656,7 @@
     "country_acronym": "IN",
     "state": "",
     "city": "Mumbai",
+    "members": 143,
     "lat": 18.96,
     "lon": 72.82,
     "timezone": "Asia/Kolkata"
@@ -2591,6 +2681,7 @@
     "country_acronym": "IN",
     "state": "",
     "city": "Pune",
+    "members": 158,
     "lat": 18.53,
     "lon": 73.84,
     "timezone": "Asia/Kolkata"
@@ -2615,6 +2706,7 @@
     "country_acronym": "IN",
     "state": "",
     "city": "Chennai",
+    "members": 710,
     "lat": 13.09,
     "lon": 80.27,
     "timezone": "Asia/Kolkata"
@@ -2634,7 +2726,7 @@
       "former": []
     },
     "name": "R-Ladies Tiruchirappalli",
-    "city": "Tiruchirappalli",
+    "city": "Tiruchirappalli"
   },
   {
     "status": "prospective",
@@ -2645,7 +2737,7 @@
       "former": []
     },
     "name": "R-Ladies Hyderabad",
-    "city": "Hyderabad",
+    "city": "Hyderabad"
   },
   {
     "status": "prospective",
@@ -2656,7 +2748,7 @@
       "former": []
     },
     "name": "R-Ladies Kolkata",
-    "city": "Kolkata",
+    "city": "Kolkata"
   },
   {
     "urlname": "rladies-banda-aceh",
@@ -2675,6 +2767,7 @@
     "country_acronym": "ID",
     "state": "",
     "city": "Banda Aceh",
+    "members": 140,
     "lat": 5.55,
     "lon": 95.32,
     "timezone": "Asia/Jakarta"
@@ -2687,7 +2780,7 @@
       "former": []
     },
     "name": "R-Ladies Bandung",
-    "city": "Bandung",
+    "city": "Bandung"
   },
   {
     "urlname": "rladies-bogor",
@@ -2706,6 +2799,7 @@
     "country_acronym": "ID",
     "state": "",
     "city": "Bogor",
+    "members": 356,
     "lat": -6.58,
     "lon": 106.79,
     "timezone": "Asia/Jakarta"
@@ -2728,6 +2822,7 @@
     "country_acronym": "ID",
     "state": "",
     "city": "Jakarta",
+    "members": 611,
     "lat": -6.18,
     "lon": 106.83,
     "timezone": "Asia/Jakarta"
@@ -2744,7 +2839,7 @@
       "former": []
     },
     "name": "R-Ladies Orumiyeh",
-    "city": "Orumiyeh",
+    "city": "Orumiyeh"
   },
   {
     "urlname": "rladies-dublin",
@@ -2765,6 +2860,7 @@
     "country_acronym": "IE",
     "state": "",
     "city": "Dublin",
+    "members": 855,
     "lat": 53.33,
     "lon": -6.25,
     "timezone": "Europe/Dublin"
@@ -2777,7 +2873,7 @@
       "former": []
     },
     "name": "R-Ladies Tel Aviv",
-    "city": "Tel Aviv",
+    "city": "Tel Aviv"
   },
   {
     "urlname": "rladies-bari",
@@ -2799,6 +2895,7 @@
     "country_acronym": "IT",
     "state": "BA",
     "city": "Bari",
+    "members": 185,
     "lat": 41.13,
     "lon": 16.87,
     "timezone": "Europe/Rome"
@@ -2811,7 +2908,7 @@
       "former": []
     },
     "name": "R-Ladies Bolzano",
-    "city": "Bolzano",
+    "city": "Bolzano"
   },
   {
     "urlname": "rladies-milan",
@@ -2832,6 +2929,7 @@
     "country_acronym": "IT",
     "state": "MI",
     "city": "Milano",
+    "members": 1337,
     "lat": 45.46,
     "lon": 9.19,
     "timezone": "Europe/Rome"
@@ -2844,7 +2942,7 @@
       "former": []
     },
     "name": "R-Ladies Palermo",
-    "city": "Palermo",
+    "city": "Palermo"
   },
   {
     "status": "prospective",
@@ -2854,7 +2952,7 @@
       "former": []
     },
     "name": "R-Ladies Pisa",
-    "city": "Pisa",
+    "city": "Pisa"
   },
   {
     "urlname": "rladies-rome",
@@ -2878,6 +2976,7 @@
     "country_acronym": "IT",
     "state": "RM",
     "city": "Roma",
+    "members": 2435,
     "lat": 41.9,
     "lon": 12.48,
     "timezone": "Europe/Rome"
@@ -2890,7 +2989,7 @@
       "former": []
     },
     "name": "R-Ladies Trento",
-    "city": "Trento",
+    "city": "Trento"
   },
   {
     "status": "prospective",
@@ -2900,7 +2999,7 @@
       "former": []
     },
     "name": "R-Ladies Trieste",
-    "city": "Trieste",
+    "city": "Trieste"
   },
   {
     "status": "prospective",
@@ -2910,7 +3009,7 @@
       "former": []
     },
     "name": "R-Ladies Okinawa",
-    "city": "Okinawa",
+    "city": "Okinawa"
   },
   {
     "status": "prospective",
@@ -2920,7 +3019,7 @@
       "former": []
     },
     "name": "R-Ladies Kisumu City",
-    "city": "Kisumu City",
+    "city": "Kisumu City"
   },
   {
     "urlname": "rladies-nairobi",
@@ -2941,6 +3040,7 @@
     "country_acronym": "KE",
     "state": "",
     "city": "Nairobi",
+    "members": 1846,
     "lat": -1.29,
     "lon": 36.82,
     "timezone": "Africa/Nairobi"
@@ -2953,7 +3053,7 @@
       "former": []
     },
     "name": "R-Ladies Nakuru",
-    "city": "Nakuru",
+    "city": "Nakuru"
   },
   {
     "status": "active",
@@ -2963,7 +3063,7 @@
       "former": []
     },
     "name": "R-Ladies Bishkek",
-    "city": "Bishkek",
+    "city": "Bishkek"
   },
   {
     "status": "prospective",
@@ -2977,7 +3077,7 @@
       "former": []
     },
     "name": "R-Ladies Beirut",
-    "city": "Beirut",
+    "city": "Beirut"
   },
   {
     "status": "prospective",
@@ -2987,7 +3087,7 @@
       "former": []
     },
     "name": "R-Ladies Luxembourg",
-    "city": "Luxembourg",
+    "city": "Luxembourg"
   },
   {
     "status": "prospective",
@@ -2997,7 +3097,7 @@
       "former": []
     },
     "name": "R-Ladies Blantyre",
-    "city": "Blantyre",
+    "city": "Blantyre"
   },
   {
     "status": "prospective",
@@ -3007,7 +3107,7 @@
       "former": []
     },
     "name": "R-Ladies Kuala Lumpur",
-    "city": "Kuala Lumpur",
+    "city": "Kuala Lumpur"
   },
   {
     "urlname": "rladies-aguascalientes",
@@ -3026,6 +3126,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Aguascalientes",
+    "members": 396,
     "lat": 21.88,
     "lon": -102.3,
     "timezone": "America/Mexico_City"
@@ -3038,7 +3139,7 @@
       "former": []
     },
     "name": "R-Ladies Campeche",
-    "city": "Campeche",
+    "city": "Campeche"
   },
   {
     "urlname": "rladies-tuxtla-gutierrez",
@@ -3053,7 +3154,7 @@
       "former": []
     },
     "name": "R-Ladies tuxtla-gutierrez",
-    "city": "tuxtla-gutierrez",
+    "city": "tuxtla-gutierrez"
   },
   {
     "status": "prospective",
@@ -3063,7 +3164,7 @@
       "former": []
     },
     "name": "R-Ladies Chiapas",
-    "city": "Chiapas",
+    "city": "Chiapas"
   },
   {
     "status": "prospective",
@@ -3073,7 +3174,7 @@
       "former": []
     },
     "name": "R-Ladies Chihuahua",
-    "city": "Chihuahua",
+    "city": "Chihuahua"
   },
   {
     "urlname": "rladies-ciudad-obregon",
@@ -3091,6 +3192,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Ciudad Obregón",
+    "members": 10,
     "lat": 27.49,
     "lon": -109.94,
     "timezone": "America/Hermosillo"
@@ -3104,7 +3206,7 @@
       "former": []
     },
     "name": "R-Ladies Colima",
-    "city": "Colima",
+    "city": "Colima"
   },
   {
     "urlname": "rladies-cuernavaca",
@@ -3124,6 +3226,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Cuernavaca",
+    "members": 1555,
     "lat": 18.92,
     "lon": -99.25,
     "timezone": "America/Mexico_City"
@@ -3145,6 +3248,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Guadalajara",
+    "members": 1695,
     "lat": 20.67,
     "lon": -103.35,
     "timezone": "America/Mexico_City"
@@ -3166,6 +3270,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Guanajuato",
+    "members": 41,
     "lat": 21.02,
     "lon": -101.28,
     "timezone": "America/Mexico_City"
@@ -3191,6 +3296,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "México City",
+    "members": 2943,
     "lat": 19.43,
     "lon": -99.14,
     "timezone": "America/Mexico_City"
@@ -3212,6 +3318,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Monterrey",
+    "members": 414,
     "lat": 25.67,
     "lon": -100.32,
     "timezone": "America/Monterrey"
@@ -3232,6 +3339,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Morelia",
+    "members": 319,
     "lat": 19.72,
     "lon": -101.18,
     "timezone": "America/Mexico_City"
@@ -3244,7 +3352,7 @@
       "former": []
     },
     "name": "R-Ladies Nezahualcoyotl",
-    "city": "Nezahualcoyotl",
+    "city": "Nezahualcoyotl"
   },
   {
     "urlname": "rladies-pachuca",
@@ -3264,6 +3372,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Pachuca",
+    "members": 41,
     "lat": 20.12,
     "lon": -98.76,
     "timezone": "America/Mexico_City"
@@ -3286,6 +3395,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Puebla",
+    "members": 2535,
     "lat": 19.05,
     "lon": -98.22,
     "timezone": "America/Mexico_City"
@@ -3311,6 +3421,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Querétaro",
+    "members": 1255,
     "lat": 20.59,
     "lon": -100.4,
     "timezone": "America/Mexico_City"
@@ -3331,6 +3442,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "San Cristóbal de las Casas",
+    "members": 130,
     "lat": 16.75,
     "lon": -92.63,
     "timezone": "America/Mexico_City"
@@ -3352,6 +3464,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Tepic",
+    "members": 26,
     "lat": 21.5,
     "lon": -104.89,
     "timezone": "America/Mazatlan"
@@ -3375,6 +3488,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Tijuana",
+    "members": 76,
     "lat": 32.53,
     "lon": -117.02,
     "timezone": "America/Tijuana"
@@ -3395,6 +3509,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Villahermosa",
+    "members": 227,
     "lat": 17.98,
     "lon": -92.92,
     "timezone": "America/Mexico_City"
@@ -3417,6 +3532,7 @@
     "country_acronym": "MX",
     "state": "",
     "city": "Xalapa",
+    "members": 677,
     "lat": 19.53,
     "lon": -96.92,
     "timezone": "America/Mexico_City"
@@ -3436,7 +3552,7 @@
       "former": []
     },
     "name": "R-Ladies Herceg Novi",
-    "city": "Herceg Novi",
+    "city": "Herceg Novi"
   },
   {
     "urlname": "rladies-podgorica",
@@ -3455,6 +3571,7 @@
     "country_acronym": "ME",
     "state": "",
     "city": "Podgorica",
+    "members": 81,
     "lat": 42.47,
     "lon": 19.28,
     "timezone": "Europe/Belgrade"
@@ -3477,6 +3594,7 @@
     "country_acronym": "MA",
     "state": "",
     "city": "Rabat",
+    "members": 572,
     "lat": 34.02,
     "lon": -6.83,
     "timezone": "Africa/Casablanca"
@@ -3499,6 +3617,7 @@
     "country_acronym": "NP",
     "state": "",
     "city": "Kathmandu",
+    "members": 117,
     "lat": 27.71,
     "lon": 85.31,
     "timezone": "Asia/Kathmandu"
@@ -3511,7 +3630,7 @@
       "former": []
     },
     "name": "R-Ladies Almere",
-    "city": "Almere",
+    "city": "Almere"
   },
   {
     "urlname": "rladies-amsterdam",
@@ -3532,6 +3651,7 @@
     "country_acronym": "NL",
     "state": "",
     "city": "Amsterdam",
+    "members": 1439,
     "lat": 52.37,
     "lon": 4.89,
     "timezone": "Europe/Amsterdam"
@@ -3553,6 +3673,7 @@
     "country_acronym": "NL",
     "state": "",
     "city": "Den Bosch",
+    "members": 195,
     "lat": 51.7,
     "lon": 5.3,
     "timezone": "Europe/Amsterdam"
@@ -3565,7 +3686,7 @@
       "former": []
     },
     "name": "R-Ladies Groningen",
-    "city": "Groningen",
+    "city": "Groningen"
   },
   {
     "status": "prospective",
@@ -3575,7 +3696,7 @@
       "former": []
     },
     "name": "R-Ladies Heerenveen",
-    "city": "Heerenveen",
+    "city": "Heerenveen"
   },
   {
     "status": "prospective",
@@ -3585,7 +3706,7 @@
       "former": []
     },
     "name": "R-Ladies Leiden",
-    "city": "Leiden",
+    "city": "Leiden"
   },
   {
     "urlname": "rladies-nijmegen",
@@ -3605,6 +3726,7 @@
     "country_acronym": "NL",
     "state": "",
     "city": "Nijmegen",
+    "members": 367,
     "lat": 51.84,
     "lon": 5.85,
     "timezone": "Europe/Amsterdam"
@@ -3629,6 +3751,7 @@
     "country_acronym": "NL",
     "state": "",
     "city": "Rotterdam",
+    "members": 517,
     "lat": 51.93,
     "lon": 4.48,
     "timezone": "Europe/Amsterdam"
@@ -3641,7 +3764,7 @@
       "former": []
     },
     "name": "R-Ladies Twente",
-    "city": "Twente",
+    "city": "Twente"
   },
   {
     "urlname": "rladies-utrecht",
@@ -3661,6 +3784,7 @@
     "country_acronym": "NL",
     "state": "",
     "city": "Utrecht",
+    "members": 378,
     "lat": 52.1,
     "lon": 5.11,
     "timezone": "Europe/Amsterdam"
@@ -3679,7 +3803,7 @@
       "former": []
     },
     "name": "R-Ladies Wageningen",
-    "city": "Wageningen",
+    "city": "Wageningen"
   },
   {
     "urlname": "rladies-auckland",
@@ -3700,6 +3824,7 @@
     "country_acronym": "NZ",
     "state": "",
     "city": "Auckland",
+    "members": 776,
     "lat": -36.85,
     "lon": 174.76,
     "timezone": "Pacific/Auckland"
@@ -3721,6 +3846,7 @@
     "country_acronym": "NZ",
     "state": "",
     "city": "Christchurch",
+    "members": 95,
     "lat": -43.53,
     "lon": 172.64,
     "timezone": "Pacific/Auckland"
@@ -3742,6 +3868,7 @@
     "country_acronym": "NZ",
     "state": "",
     "city": "Nelson",
+    "members": 26,
     "lat": -41.29,
     "lon": 173.24,
     "timezone": "Pacific/Auckland"
@@ -3762,6 +3889,7 @@
     "country_acronym": "NZ",
     "state": "",
     "city": "Wellington",
+    "members": 62,
     "lat": -41.28,
     "lon": 174.78,
     "timezone": "Pacific/Auckland"
@@ -3784,6 +3912,7 @@
     "country_acronym": "NG",
     "state": "",
     "city": "Abuja",
+    "members": 2213,
     "lat": 9.18,
     "lon": 7.17,
     "timezone": "Africa/Lagos"
@@ -3796,7 +3925,7 @@
       "former": []
     },
     "name": "R-Ladies Ilorin",
-    "city": "Ilorin",
+    "city": "Ilorin"
   },
   {
     "urlname": "rladies-lagos",
@@ -3815,6 +3944,7 @@
     "country_acronym": "NG",
     "state": "",
     "city": "Lagos",
+    "members": 901,
     "lat": 6.45,
     "lon": 3.47,
     "timezone": "Africa/Lagos"
@@ -3827,7 +3957,7 @@
       "former": []
     },
     "name": "R-Ladies Port Harcourt",
-    "city": "Port Harcourt",
+    "city": "Port Harcourt"
   },
   {
     "urlname": "rladies-bergen",
@@ -3847,6 +3977,7 @@
     "country_acronym": "NO",
     "state": "",
     "city": "Bergen",
+    "members": 394,
     "lat": 60.38,
     "lon": 5.34,
     "timezone": "Europe/Oslo"
@@ -3870,6 +4001,7 @@
     "country_acronym": "NO",
     "state": "",
     "city": "Oslo",
+    "members": 579,
     "lat": 59.91,
     "lon": 10.75,
     "timezone": "Europe/Oslo"
@@ -3886,7 +4018,7 @@
       "former": ["Emma Sofie Skarstein", "Susan Anyosa"]
     },
     "name": "R-Ladies Trondheim",
-    "city": "Trondheim",
+    "city": "Trondheim"
   },
   {
     "urlname": "rladies-masqat",
@@ -3901,7 +4033,7 @@
       "former": ["Iman Al Hasani"]
     },
     "name": "R-Ladies Masqat",
-    "city": "Masqat",
+    "city": "Masqat"
   },
   {
     "status": "prospective",
@@ -3911,7 +4043,7 @@
       "former": []
     },
     "name": "R-Ladies Lahore",
-    "city": "Lahore",
+    "city": "Lahore"
   },
   {
     "urlname": "rladies-asuncion",
@@ -3931,6 +4063,7 @@
     "country_acronym": "PY",
     "state": "",
     "city": "Asunción",
+    "members": 131,
     "lat": -25.3,
     "lon": -57.63,
     "timezone": "America/Asuncion"
@@ -3952,6 +4085,7 @@
     "country_acronym": "PE",
     "state": "",
     "city": "Cusco",
+    "members": 122,
     "lat": -13.52,
     "lon": -71.99,
     "timezone": "America/Lima"
@@ -3977,6 +4111,7 @@
     "country_acronym": "PE",
     "state": "",
     "city": "Lima",
+    "members": 2301,
     "lat": -12.07,
     "lon": -77.05,
     "timezone": "America/Lima"
@@ -3989,7 +4124,7 @@
       "former": []
     },
     "name": "R-Ladies Manila",
-    "city": "Manila",
+    "city": "Manila"
   },
   {
     "status": "prospective",
@@ -3999,7 +4134,7 @@
       "former": []
     },
     "name": "R-Ladies Lodz",
-    "city": "Lodz",
+    "city": "Lodz"
   },
   {
     "urlname": "spotkania-entuzjastow-r-warsaw-r-users-group-meetup",
@@ -4016,7 +4151,7 @@
       "former": []
     },
     "name": "R-Ladies Warsaw",
-    "city": "Warsaw",
+    "city": "Warsaw"
   },
   {
     "urlname": "rladies-lisboa",
@@ -4034,7 +4169,7 @@
       "former": []
     },
     "name": "R-Ladies Lisbon",
-    "city": "Lisbon",
+    "city": "Lisbon"
   },
   {
     "urlname": "rladies-bucharest",
@@ -4058,6 +4193,7 @@
     "country_acronym": "RO",
     "state": "",
     "city": "Bucharest",
+    "members": 268,
     "lat": 44.44,
     "lon": 26.1,
     "timezone": "Europe/Bucharest"
@@ -4070,7 +4206,7 @@
       "former": []
     },
     "name": "R-Ladies St. Petersburg",
-    "city": "St. Petersburg",
+    "city": "St. Petersburg"
   },
   {
     "status": "prospective",
@@ -4080,7 +4216,7 @@
       "former": []
     },
     "name": "R-Ladies Alkhobar",
-    "city": "Alkhobar",
+    "city": "Alkhobar"
   },
   {
     "urlname": "rladies-dammam",
@@ -4102,6 +4238,7 @@
     "country_acronym": "SA",
     "state": "",
     "city": "Dammam",
+    "members": 693,
     "lat": 26.42,
     "lon": 50.09,
     "timezone": "Asia/Riyadh"
@@ -4118,7 +4255,7 @@
       "former": []
     },
     "name": "R-Ladies Jeddah",
-    "city": "Jeddah",
+    "city": "Jeddah"
   },
   {
     "status": "prospective",
@@ -4128,7 +4265,7 @@
       "former": []
     },
     "name": "R-Ladies Riyadh",
-    "city": "Riyadh",
+    "city": "Riyadh"
   },
   {
     "urlname": "rladies-belgrade",
@@ -4148,6 +4285,7 @@
     "country_acronym": "RS",
     "state": "",
     "city": "Belgrade",
+    "members": 511,
     "lat": 44.83,
     "lon": 20.5,
     "timezone": "Europe/Belgrade"
@@ -4169,6 +4307,7 @@
     "country_acronym": "RS",
     "state": "",
     "city": "Niš",
+    "members": 37,
     "lat": 43.33,
     "lon": 21.9,
     "timezone": "Europe/Belgrade"
@@ -4191,6 +4330,7 @@
     "country_acronym": "RS",
     "state": "",
     "city": "Novi Sad",
+    "members": 160,
     "lat": 45.25,
     "lon": 19.85,
     "timezone": "Europe/Belgrade"
@@ -4208,7 +4348,7 @@
       "former": []
     },
     "name": "R-Ladies Singapore",
-    "city": "Singapore",
+    "city": "Singapore"
   },
   {
     "urlname": "rladies-ljubljana",
@@ -4226,6 +4366,7 @@
     "country_acronym": "SI",
     "state": "",
     "city": "Ljubljana",
+    "members": 177,
     "lat": 46.06,
     "lon": 14.51,
     "timezone": "Europe/Belgrade"
@@ -4238,7 +4379,7 @@
       "former": []
     },
     "name": "R-Ladies Mogadishu",
-    "city": "Mogadishu",
+    "city": "Mogadishu"
   },
   {
     "urlname": "rladies-cape-town",
@@ -4259,6 +4400,7 @@
     "country_acronym": "ZA",
     "state": "",
     "city": "Cape Town",
+    "members": 720,
     "lat": -33.93,
     "lon": 18.46,
     "timezone": "Africa/Johannesburg"
@@ -4271,7 +4413,7 @@
       "former": []
     },
     "name": "R-Ladies Durban",
-    "city": "Durban",
+    "city": "Durban"
   },
   {
     "urlname": "rladies-johannesburg",
@@ -4292,6 +4434,7 @@
     "country_acronym": "ZA",
     "state": "",
     "city": "Johannesburg",
+    "members": 1121,
     "lat": -26.19,
     "lon": 28.04,
     "timezone": "Africa/Johannesburg"
@@ -4316,6 +4459,7 @@
     "country_acronym": "ES",
     "state": "",
     "city": "Barcelona",
+    "members": 754,
     "lat": 41.4,
     "lon": 2.17,
     "timezone": "Europe/Madrid"
@@ -4338,6 +4482,7 @@
     "country_acronym": "ES",
     "state": "",
     "city": "Bilbao",
+    "members": 285,
     "lat": 43.25,
     "lon": -2.93,
     "timezone": "Europe/Madrid"
@@ -4361,6 +4506,7 @@
     "country_acronym": "ES",
     "state": "",
     "city": "Madrid",
+    "members": 1885,
     "lat": 40.42,
     "lon": -3.71,
     "timezone": "Europe/Madrid"
@@ -4373,7 +4519,7 @@
       "former": []
     },
     "name": "R-Ladies Salamanca",
-    "city": "Salamanca",
+    "city": "Salamanca"
   },
   {
     "status": "prospective",
@@ -4383,7 +4529,7 @@
       "former": []
     },
     "name": "R-Ladies Sevilla",
-    "city": "Sevilla",
+    "city": "Sevilla"
   },
   {
     "urlname": "rladies-valencia",
@@ -4399,7 +4545,7 @@
       "former": []
     },
     "name": "R-Ladies Valencia",
-    "city": "Valencia",
+    "city": "Valencia"
   },
   {
     "urlname": "rladies-colombo",
@@ -4420,6 +4566,7 @@
     "country_acronym": "LK",
     "state": "",
     "city": "Colombo",
+    "members": 534,
     "lat": 6.93,
     "lon": 79.85,
     "timezone": "Asia/Colombo"
@@ -4441,6 +4588,7 @@
     "country_acronym": "SD",
     "state": "",
     "city": "al-Khartum",
+    "members": 115,
     "lat": 15.58,
     "lon": 32.52,
     "timezone": "Africa/Khartoum"
@@ -4462,6 +4610,7 @@
     "country_acronym": "SE",
     "state": "",
     "city": "Göteborg",
+    "members": 173,
     "lat": 57.72,
     "lon": 12.01,
     "timezone": "Europe/Stockholm"
@@ -4485,6 +4634,7 @@
     "country_acronym": "SE",
     "state": "",
     "city": "Stockholm",
+    "members": 400,
     "lat": 59.33,
     "lon": 18.07,
     "timezone": "Europe/Stockholm"
@@ -4497,7 +4647,7 @@
       "former": []
     },
     "name": "R-Ladies Uppsala",
-    "city": "Uppsala",
+    "city": "Uppsala"
   },
   {
     "status": "prospective",
@@ -4507,7 +4657,7 @@
       "former": []
     },
     "name": "R-Ladies Geneva",
-    "city": "Geneva",
+    "city": "Geneva"
   },
   {
     "urlname": "rladies-lausanne",
@@ -4530,6 +4680,7 @@
     "country_acronym": "CH",
     "state": "",
     "city": "Lausanne",
+    "members": 338,
     "lat": 46.52,
     "lon": 6.62,
     "timezone": "Europe/Zurich"
@@ -4551,6 +4702,7 @@
     "country_acronym": "CH",
     "state": "",
     "city": "Zürich",
+    "members": 380,
     "lat": 47.38,
     "lon": 8.54,
     "timezone": "Europe/Zurich"
@@ -4570,7 +4722,7 @@
       "former": []
     },
     "name": "R-Ladies Taipei",
-    "city": "Taipei",
+    "city": "Taipei"
   },
   {
     "urlname": "rladies-tunis",
@@ -4589,6 +4741,7 @@
     "country_acronym": "TN",
     "state": "",
     "city": "Tunis",
+    "members": 1057,
     "lat": 36.84,
     "lon": 10.22,
     "timezone": "Africa/Tunis"
@@ -4606,7 +4759,7 @@
       "former": ["Mubina İpek"]
     },
     "name": "R-Ladies Ankara",
-    "city": "Ankara",
+    "city": "Ankara"
   },
   {
     "urlname": "rladies-eskisehir",
@@ -4623,7 +4776,7 @@
       "former": []
     },
     "name": "R-Ladies Eskisehir",
-    "city": "Eskisehir",
+    "city": "Eskisehir"
   },
   {
     "urlname": "rladies-istanbul",
@@ -4640,7 +4793,7 @@
       "former": []
     },
     "name": "R-Ladies Istanbul",
-    "city": "Istanbul",
+    "city": "Istanbul"
   },
   {
     "urlname": "rladies-izmir",
@@ -4656,7 +4809,7 @@
       "former": ["Necla Kayaalp", "Sezer Bozkus Kahyaoglu"]
     },
     "name": "R-Ladies Izmir",
-    "city": "Izmir",
+    "city": "Izmir"
   },
   {
     "status": "prospective",
@@ -4666,7 +4819,7 @@
       "former": []
     },
     "name": "R-Ladies Karab<fc>k",
-    "city": "Karab<fc>k",
+    "city": "Karab<fc>k"
   },
   {
     "status": "prospective",
@@ -4676,7 +4829,7 @@
       "former": []
     },
     "name": "R-Ladies Mersin",
-    "city": "Mersin",
+    "city": "Mersin"
   },
   {
     "status": "prospective",
@@ -4690,7 +4843,7 @@
       "former": []
     },
     "name": "R-Ladies Kampala",
-    "city": "Kampala",
+    "city": "Kampala"
   },
   {
     "urlname": "rladies-kyiv",
@@ -4709,6 +4862,7 @@
     "country_acronym": "UA",
     "state": "",
     "city": "Kyiv",
+    "members": 342,
     "lat": 50.44,
     "lon": 30.52,
     "timezone": "Europe/Kiev"
@@ -4730,6 +4884,7 @@
     "country_acronym": "UA",
     "state": "",
     "city": "L'viv",
+    "members": 59,
     "lat": 49.84,
     "lon": 24.03,
     "timezone": "Europe/Kiev"
@@ -4742,7 +4897,7 @@
       "former": []
     },
     "name": "R-Ladies Dubai",
-    "city": "Dubai",
+    "city": "Dubai"
   },
   {
     "urlname": "rladies-cambridge",
@@ -4759,7 +4914,7 @@
       "former": []
     },
     "name": "R-Ladies Cambridge",
-    "city": "Cambridge",
+    "city": "Cambridge"
   },
   {
     "urlname": "rladies-coventry",
@@ -4774,7 +4929,7 @@
       "former": []
     },
     "name": "R-Ladies Coventry",
-    "city": "Coventry",
+    "city": "Coventry"
   },
   {
     "urlname": "rladies-edinburgh",
@@ -4790,7 +4945,7 @@
       "former": []
     },
     "name": "R-Ladies Edinburgh",
-    "city": "Edinburgh",
+    "city": "Edinburgh"
   },
   {
     "urlname": "rladies-exeter",
@@ -4805,7 +4960,7 @@
       "former": []
     },
     "name": "R-Ladies Exeter",
-    "city": "Exeter",
+    "city": "Exeter"
   },
   {
     "urlname": "rladies-glasgow",
@@ -4820,7 +4975,7 @@
       "former": []
     },
     "name": "R-Ladies Glasgow",
-    "city": "Glasgow",
+    "city": "Glasgow"
   },
   {
     "urlname": "rladies-lancaster",
@@ -4837,7 +4992,7 @@
       "former": ["Rhian Davies"]
     },
     "name": "R-Ladies Lancaster",
-    "city": "Lancaster",
+    "city": "Lancaster"
   },
   {
     "urlname": "rladies-liverpool",
@@ -4853,7 +5008,7 @@
       "former": []
     },
     "name": "R-Ladies Liverpool",
-    "city": "Liverpool",
+    "city": "Liverpool"
   },
   {
     "urlname": "rladies-london",
@@ -4871,7 +5026,7 @@
       "former": ["Hannah Frick"]
     },
     "name": "R-Ladies London",
-    "city": "London",
+    "city": "London"
   },
   {
     "urlname": "rladies-loughborough",
@@ -4888,7 +5043,7 @@
       "former": []
     },
     "name": "R-Ladies Loughborough",
-    "city": "Loughborough",
+    "city": "Loughborough"
   },
   {
     "urlname": "rladies-manchester",
@@ -4905,7 +5060,7 @@
       "former": []
     },
     "name": "R-Ladies Manchester",
-    "city": "Manchester",
+    "city": "Manchester"
   },
   {
     "urlname": "rladies-newcastle",
@@ -4920,7 +5075,7 @@
       "former": []
     },
     "name": "R-Ladies Newcastle",
-    "city": "Newcastle",
+    "city": "Newcastle"
   },
   {
     "urlname": "rladies-oxford",
@@ -4935,7 +5090,7 @@
       "former": []
     },
     "name": "R-Ladies Oxford",
-    "city": "Oxford",
+    "city": "Oxford"
   },
   {
     "urlname": "rladies-reading",
@@ -4949,7 +5104,7 @@
       "former": []
     },
     "name": "R-Ladies Reading",
-    "city": "Reading",
+    "city": "Reading"
   },
   {
     "status": "active",
@@ -4959,7 +5114,7 @@
       "former": []
     },
     "name": "R-Ladies Sheffield",
-    "city": "Sheffield",
+    "city": "Sheffield"
   },
   {
     "status": "prospective",
@@ -4969,7 +5124,7 @@
       "former": []
     },
     "name": "R-Ladies St. Andrews",
-    "city": "St. Andrews",
+    "city": "St. Andrews"
   },
   {
     "status": "prospective",
@@ -4979,7 +5134,7 @@
       "former": []
     },
     "name": "R-Ladies Wigan",
-    "city": "Wigan",
+    "city": "Wigan"
   },
   {
     "urlname": "rladies-montevideo",
@@ -5001,6 +5156,7 @@
     "country_acronym": "UY",
     "state": "",
     "city": "Montevideo",
+    "members": 529,
     "lat": -34.87,
     "lon": -56.17,
     "timezone": "America/Montevideo"
@@ -5018,7 +5174,7 @@
       "former": []
     },
     "name": "R-Ladies Montgomery",
-    "city": "Montgomery",
+    "city": "Montgomery"
   },
   {
     "urlname": "rladies-tucson-az",
@@ -5035,7 +5191,7 @@
       "former": ["Adriana Picoral"]
     },
     "name": "R-Ladies Tucson",
-    "city": "Tucson",
+    "city": "Tucson"
   },
   {
     "urlname": "rladies-fayetteville",
@@ -5051,7 +5207,7 @@
       "former": []
     },
     "name": "R-Ladies Fayetteville",
-    "city": "Fayetteville",
+    "city": "Fayetteville"
   },
   {
     "status": "prospective",
@@ -5062,7 +5218,7 @@
       "former": []
     },
     "name": "R-Ladies Little Rock",
-    "city": "Little Rock",
+    "city": "Little Rock"
   },
   {
     "status": "prospective",
@@ -5073,7 +5229,7 @@
       "former": []
     },
     "name": "R-Ladies Arcata",
-    "city": "Arcata",
+    "city": "Arcata"
   },
   {
     "status": "prospective",
@@ -5084,7 +5240,7 @@
       "former": []
     },
     "name": "R-Ladies Bakersfield",
-    "city": "Bakersfield",
+    "city": "Bakersfield"
   },
   {
     "status": "prospective",
@@ -5098,7 +5254,7 @@
       "former": []
     },
     "name": "R-Ladies Davis",
-    "city": "Davis",
+    "city": "Davis"
   },
   {
     "urlname": "rladies-irvine",
@@ -5117,7 +5273,7 @@
       "former": ["Linda Palmer"]
     },
     "name": "R-Ladies Irvine",
-    "city": "Irvine",
+    "city": "Irvine"
   },
   {
     "urlname": "rladies-la",
@@ -5135,7 +5291,7 @@
       "former": ["Amanda Tilot", "Katie Leap"]
     },
     "name": "R-Ladies Los Angeles",
-    "city": "Los Angeles",
+    "city": "Los Angeles"
   },
   {
     "status": "prospective",
@@ -5146,7 +5302,7 @@
       "former": []
     },
     "name": "R-Ladies Merced",
-    "city": "Merced",
+    "city": "Merced"
   },
   {
     "urlname": "rladies-pasadena",
@@ -5162,7 +5318,7 @@
       "former": ["Zhi Yang"]
     },
     "name": "R-Ladies Pasadena",
-    "city": "Pasadena",
+    "city": "Pasadena"
   },
   {
     "urlname": "rladies-riverside",
@@ -5180,7 +5336,7 @@
       "former": []
     },
     "name": "R-Ladies Riverside",
-    "city": "Riverside",
+    "city": "Riverside"
   },
   {
     "urlname": "rladies-san-diego",
@@ -5199,7 +5355,7 @@
       "former": []
     },
     "name": "R-Ladies San Diego",
-    "city": "San Diego",
+    "city": "San Diego"
   },
   {
     "urlname": "rladies-san-francisco",
@@ -5218,7 +5374,7 @@
       "former": []
     },
     "name": "R-Ladies San Francisco",
-    "city": "San Francisco",
+    "city": "San Francisco"
   },
   {
     "urlname": "rladies-santa-barbara",
@@ -5236,7 +5392,7 @@
       "former": []
     },
     "name": "R-Ladies Santa Barbara",
-    "city": "Santa Barbara",
+    "city": "Santa Barbara"
   },
   {
     "status": "prospective",
@@ -5247,7 +5403,7 @@
       "former": []
     },
     "name": "R-Ladies Santa Cruz",
-    "city": "Santa Cruz",
+    "city": "Santa Cruz"
   },
   {
     "urlname": "rladies-aurora",
@@ -5262,7 +5418,7 @@
       "former": []
     },
     "name": "R-Ladies colorado",
-    "city": "colorado",
+    "city": "colorado"
   },
   {
     "urlname": "rladies-boulder",
@@ -5280,7 +5436,7 @@
       "former": ["Leigh Alexander"]
     },
     "name": "R-Ladies Boulder",
-    "city": "Boulder",
+    "city": "Boulder"
   },
   {
     "urlname": "rladies-denver",
@@ -5295,7 +5451,7 @@
       "former": []
     },
     "name": "R-Ladies Denver",
-    "city": "Denver",
+    "city": "Denver"
   },
   {
     "urlname": "rladies-fort-collins",
@@ -5311,7 +5467,7 @@
       "former": []
     },
     "name": "R-Ladies Fort Collins",
-    "city": "Fort Collins",
+    "city": "Fort Collins"
   },
   {
     "urlname": "rladies-connecticut",
@@ -5328,7 +5484,7 @@
       "former": []
     },
     "name": "R-Ladies Hartford",
-    "city": "Hartford",
+    "city": "Hartford"
   },
   {
     "status": "prospective",
@@ -5339,7 +5495,7 @@
       "former": []
     },
     "name": "R-Ladies New Haven",
-    "city": "New Haven",
+    "city": "New Haven"
   },
   {
     "urlname": "rladies-fort-pierce",
@@ -5354,7 +5510,7 @@
       "former": []
     },
     "name": "R-Ladies Fort Pierce",
-    "city": "Fort Pierce",
+    "city": "Fort Pierce"
   },
   {
     "urlname": "rladies-gainesville",
@@ -5371,7 +5527,7 @@
       "former": []
     },
     "name": "R-Ladies Gainesville",
-    "city": "Gainesville",
+    "city": "Gainesville"
   },
   {
     "status": "prospective",
@@ -5382,7 +5538,7 @@
       "former": []
     },
     "name": "R-Ladies Jacksonville",
-    "city": "Jacksonville",
+    "city": "Jacksonville"
   },
   {
     "urlname": "rladies-miami",
@@ -5400,7 +5556,7 @@
       "former": []
     },
     "name": "R-Ladies Miami",
-    "city": "Miami",
+    "city": "Miami"
   },
   {
     "urlname": "rladies-orlando",
@@ -5418,7 +5574,7 @@
       "former": []
     },
     "name": "R-Ladies Orlando",
-    "city": "Orlando",
+    "city": "Orlando"
   },
   {
     "urlname": "rladies-sarasota",
@@ -5436,7 +5592,7 @@
       "former": []
     },
     "name": "R-Ladies Sarasota",
-    "city": "Sarasota",
+    "city": "Sarasota"
   },
   {
     "urlname": "rladies-tallahassee",
@@ -5453,7 +5609,7 @@
       "former": []
     },
     "name": "R-Ladies Tallahassee",
-    "city": "Tallahassee",
+    "city": "Tallahassee"
   },
   {
     "urlname": "rladies-tampa",
@@ -5471,7 +5627,7 @@
       "former": []
     },
     "name": "R-Ladies Tampa",
-    "city": "Tampa",
+    "city": "Tampa"
   },
   {
     "urlname": "rladies-athens-ga",
@@ -5487,7 +5643,7 @@
       "former": []
     },
     "name": "R-Ladies Athens",
-    "city": "Athens",
+    "city": "Athens"
   },
   {
     "urlname": "rladies-atlanta",
@@ -5504,7 +5660,7 @@
       "former": []
     },
     "name": "R-Ladies Atlanta",
-    "city": "Atlanta",
+    "city": "Atlanta"
   },
   {
     "urlname": "rladies-honolulu",
@@ -5519,7 +5675,7 @@
       "former": ["Emily E. Conklin"]
     },
     "name": "R-Ladies Honolulu",
-    "city": "Honolulu",
+    "city": "Honolulu"
   },
   {
     "status": "prospective",
@@ -5530,7 +5686,7 @@
       "former": []
     },
     "name": "R-Ladies Moscow",
-    "city": "Moscow",
+    "city": "Moscow"
   },
   {
     "status": "prospective",
@@ -5541,7 +5697,7 @@
       "former": []
     },
     "name": "R-Ladies Champaign",
-    "city": "Champaign",
+    "city": "Champaign"
   },
   {
     "urlname": "rladies-chicago",
@@ -5559,7 +5715,7 @@
       "former": []
     },
     "name": "R-Ladies Chicago",
-    "city": "Chicago",
+    "city": "Chicago"
   },
   {
     "status": "prospective",
@@ -5570,7 +5726,7 @@
       "former": []
     },
     "name": "R-Ladies Bloomington",
-    "city": "Bloomington",
+    "city": "Bloomington"
   },
   {
     "status": "prospective",
@@ -5581,7 +5737,7 @@
       "former": []
     },
     "name": "R-Ladies South Bend",
-    "city": "South Bend",
+    "city": "South Bend"
   },
   {
     "urlname": "rladies-west-lafayette",
@@ -5596,7 +5752,7 @@
       "former": []
     },
     "name": "R-Ladies West Lafayette",
-    "city": "West Lafayette",
+    "city": "West Lafayette"
   },
   {
     "urlname": "rladies-ames",
@@ -5614,7 +5770,7 @@
       "former": []
     },
     "name": "R-Ladies Ames",
-    "city": "Ames",
+    "city": "Ames"
   },
   {
     "status": "prospective",
@@ -5625,7 +5781,7 @@
       "former": []
     },
     "name": "R-Ladies Cedar Rapids",
-    "city": "Cedar Rapids",
+    "city": "Cedar Rapids"
   },
   {
     "urlname": "rladies-des-moines",
@@ -5641,7 +5797,7 @@
       "former": []
     },
     "name": "R-Ladies Des Moines",
-    "city": "Des Moines",
+    "city": "Des Moines"
   },
   {
     "urlname": "rladies-iowa-city",
@@ -5657,7 +5813,7 @@
       "former": []
     },
     "name": "R-Ladies Iowa City",
-    "city": "Iowa City",
+    "city": "Iowa City"
   },
   {
     "status": "prospective",
@@ -5668,7 +5824,7 @@
       "former": []
     },
     "name": "R-Ladies Lexington",
-    "city": "Lexington",
+    "city": "Lexington"
   },
   {
     "urlname": "rladies-louisville-ky",
@@ -5686,7 +5842,7 @@
       "former": []
     },
     "name": "R-Ladies Louisville",
-    "city": "Louisville",
+    "city": "Louisville"
   },
   {
     "urlname": "rladies-new-orleans",
@@ -5701,7 +5857,7 @@
       "former": []
     },
     "name": "R-Ladies New Orleans",
-    "city": "New Orleans",
+    "city": "New Orleans"
   },
   {
     "urlname": "rladies-portland-maine",
@@ -5719,7 +5875,7 @@
       "former": []
     },
     "name": "R-Ladies Portland",
-    "city": "Portland",
+    "city": "Portland"
   },
   {
     "urlname": "rladies-baltimore",
@@ -5737,7 +5893,7 @@
       "former": []
     },
     "name": "R-Ladies Baltimore",
-    "city": "Baltimore",
+    "city": "Baltimore"
   },
   {
     "status": "prospective",
@@ -5748,7 +5904,7 @@
       "former": []
     },
     "name": "R-Ladies Cambridge",
-    "city": "Cambridge",
+    "city": "Cambridge"
   },
   {
     "urlname": "rladies-lexington-park",
@@ -5765,7 +5921,7 @@
       "former": ["Linden McBride"]
     },
     "name": "R-Ladies Lexington Park",
-    "city": "Lexington Park",
+    "city": "Lexington Park"
   },
   {
     "urlname": "rladies-boston",
@@ -5784,7 +5940,7 @@
       "former": ["Phoebe Wong"]
     },
     "name": "R-Ladies Boston",
-    "city": "Boston",
+    "city": "Boston"
   },
   {
     "status": "prospective",
@@ -5795,7 +5951,7 @@
       "former": []
     },
     "name": "R-Ladies Northampton",
-    "city": "Northampton",
+    "city": "Northampton"
   },
   {
     "status": "prospective",
@@ -5809,7 +5965,7 @@
       "former": []
     },
     "name": "R-Ladies Waltham",
-    "city": "Waltham",
+    "city": "Waltham"
   },
   {
     "status": "prospective",
@@ -5820,7 +5976,7 @@
       "former": []
     },
     "name": "R-Ladies Wellesley",
-    "city": "Wellesley",
+    "city": "Wellesley"
   },
   {
     "urlname": "rladies-east-lansing",
@@ -5841,7 +5997,7 @@
       "former": []
     },
     "name": "R-Ladies East Lansing",
-    "city": "East Lansing",
+    "city": "East Lansing"
   },
   {
     "urlname": "rladies-tc",
@@ -5858,7 +6014,7 @@
       "former": []
     },
     "name": "R-Ladies Minneapolis-Saint Paul",
-    "city": "Minneapolis-Saint Paul",
+    "city": "Minneapolis-Saint Paul"
   },
   {
     "status": "prospective",
@@ -5869,7 +6025,7 @@
       "former": []
     },
     "name": "R-Ladies Ocean Springs",
-    "city": "Ocean Springs",
+    "city": "Ocean Springs"
   },
   {
     "status": "active",
@@ -5880,7 +6036,7 @@
       "former": []
     },
     "name": "R-Ladies Oxford",
-    "city": "Oxford",
+    "city": "Oxford"
   },
   {
     "status": "prospective",
@@ -5891,7 +6047,7 @@
       "former": []
     },
     "name": "R-Ladies Hattiesburg",
-    "city": "Hattiesburg",
+    "city": "Hattiesburg"
   },
   {
     "urlname": "rladies-kansas-city",
@@ -5908,7 +6064,7 @@
       "former": []
     },
     "name": "R-Ladies Kansas City",
-    "city": "Kansas City",
+    "city": "Kansas City"
   },
   {
     "urlname": "rladies-mid-mo",
@@ -5924,7 +6080,7 @@
       "former": ["Krista Galyen"]
     },
     "name": "R-Ladies Mid-Missouri",
-    "city": "Mid-Missouri",
+    "city": "Mid-Missouri"
   },
   {
     "urlname": "rladies-springfield",
@@ -5940,7 +6096,7 @@
       "former": []
     },
     "name": "R-Ladies Springfield",
-    "city": "Springfield",
+    "city": "Springfield"
   },
   {
     "urlname": "rladies-st-louis",
@@ -5957,7 +6113,7 @@
       "former": []
     },
     "name": "R-Ladies St.Louis",
-    "city": "St.Louis",
+    "city": "St.Louis"
   },
   {
     "status": "prospective",
@@ -5968,7 +6124,7 @@
       "former": []
     },
     "name": "R-Ladies Bozeman",
-    "city": "Bozeman",
+    "city": "Bozeman"
   },
   {
     "status": "prospective",
@@ -5979,7 +6135,7 @@
       "former": []
     },
     "name": "R-Ladies Lincoln",
-    "city": "Lincoln",
+    "city": "Lincoln"
   },
   {
     "status": "prospective",
@@ -5990,7 +6146,7 @@
       "former": []
     },
     "name": "R-Ladies Las Vegas",
-    "city": "Las Vegas",
+    "city": "Las Vegas"
   },
   {
     "urlname": "rladies-highland-park",
@@ -6006,7 +6162,7 @@
       "former": []
     },
     "name": "R-Ladies Highland Park",
-    "city": "Highland Park",
+    "city": "Highland Park"
   },
   {
     "status": "prospective",
@@ -6017,7 +6173,7 @@
       "former": []
     },
     "name": "R-Ladies Albuquerque",
-    "city": "Albuquerque",
+    "city": "Albuquerque"
   },
   {
     "status": "prospective",
@@ -6028,7 +6184,7 @@
       "former": []
     },
     "name": "R-Ladies Albany",
-    "city": "Albany",
+    "city": "Albany"
   },
   {
     "urlname": "rladies-buffalo",
@@ -6045,7 +6201,7 @@
       "former": []
     },
     "name": "R-Ladies Buffalo",
-    "city": "Buffalo",
+    "city": "Buffalo"
   },
   {
     "status": "prospective",
@@ -6056,7 +6212,7 @@
       "former": []
     },
     "name": "R-Ladies Ithaca",
-    "city": "Ithaca",
+    "city": "Ithaca"
   },
   {
     "urlname": "rladies-newyork",
@@ -6075,7 +6231,7 @@
       "former": []
     },
     "name": "R-Ladies New York City",
-    "city": "New York City",
+    "city": "New York City"
   },
   {
     "status": "prospective",
@@ -6086,7 +6242,7 @@
       "former": []
     },
     "name": "R-Ladies Rochester",
-    "city": "Rochester",
+    "city": "Rochester"
   },
   {
     "urlname": "rladies-syracuse",
@@ -6102,7 +6258,7 @@
       "former": []
     },
     "name": "R-Ladies Syracuse",
-    "city": "Syracuse",
+    "city": "Syracuse"
   },
   {
     "status": "prospective",
@@ -6113,7 +6269,7 @@
       "former": []
     },
     "name": "R-Ladies Charlotte",
-    "city": "Charlotte",
+    "city": "Charlotte"
   },
   {
     "urlname": "rladies-rtp",
@@ -6131,7 +6287,7 @@
       "former": []
     },
     "name": "R-Ladies RTP (Research Triangle Park)",
-    "city": "RTP (Research Triangle Park)",
+    "city": "RTP (Research Triangle Park)"
   },
   {
     "urlname": "rladies-cincinnati",
@@ -6148,7 +6304,7 @@
       "former": []
     },
     "name": "R-Ladies Cincinnati",
-    "city": "Cincinnati",
+    "city": "Cincinnati"
   },
   {
     "status": "prospective",
@@ -6159,7 +6315,7 @@
       "former": []
     },
     "name": "R-Ladies Cleveland",
-    "city": "Cleveland",
+    "city": "Cleveland"
   },
   {
     "urlname": "rladies-columbus",
@@ -6177,7 +6333,7 @@
       "former": []
     },
     "name": "R-Ladies Columbus",
-    "city": "Columbus",
+    "city": "Columbus"
   },
   {
     "urlname": "rladies-oxford-ohio",
@@ -6193,7 +6349,7 @@
       "former": []
     },
     "name": "R-Ladies Oxford",
-    "city": "Oxford",
+    "city": "Oxford"
   },
   {
     "urlname": "rladies-stillwater",
@@ -6209,7 +6365,7 @@
       "former": []
     },
     "name": "R-Ladies Stillwater",
-    "city": "Stillwater",
+    "city": "Stillwater"
   },
   {
     "urlname": "rladies-pdx",
@@ -6227,7 +6383,7 @@
       "former": ["Beth Duckles"]
     },
     "name": "R-Ladies Portland",
-    "city": "Portland",
+    "city": "Portland"
   },
   {
     "status": "prospective",
@@ -6238,7 +6394,7 @@
       "former": []
     },
     "name": "R-Ladies Harrisburg",
-    "city": "Harrisburg",
+    "city": "Harrisburg"
   },
   {
     "urlname": "rladies-philly",
@@ -6257,7 +6413,7 @@
       "former": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"]
     },
     "name": "R-Ladies Philadelphia",
-    "city": "Philadelphia",
+    "city": "Philadelphia"
   },
   {
     "status": "prospective",
@@ -6271,7 +6427,7 @@
       "former": []
     },
     "name": "R-Ladies Pittsburgh",
-    "city": "Pittsburgh",
+    "city": "Pittsburgh"
   },
   {
     "status": "prospective",
@@ -6282,7 +6438,7 @@
       "former": []
     },
     "name": "R-Ladies State College",
-    "city": "State College",
+    "city": "State College"
   },
   {
     "status": "prospective",
@@ -6293,7 +6449,7 @@
       "former": []
     },
     "name": "R-Ladies Providence",
-    "city": "Providence",
+    "city": "Providence"
   },
   {
     "urlname": "rladies-memphis",
@@ -6310,7 +6466,7 @@
       "former": []
     },
     "name": "R-Ladies Memphis",
-    "city": "Memphis",
+    "city": "Memphis"
   },
   {
     "urlname": "rladies-nashville",
@@ -6328,7 +6484,7 @@
       "former": []
     },
     "name": "R-Ladies Nashville",
-    "city": "Nashville",
+    "city": "Nashville"
   },
   {
     "urlname": "rladies-austin",
@@ -6346,7 +6502,7 @@
       "former": ["Victoria Valencia", "Caitlin Hudon"]
     },
     "name": "R-Ladies Austin",
-    "city": "Austin",
+    "city": "Austin"
   },
   {
     "urlname": "rladies-dallas",
@@ -6363,7 +6519,7 @@
       "former": []
     },
     "name": "R-Ladies Dallas",
-    "city": "Dallas",
+    "city": "Dallas"
   },
   {
     "urlname": "rladies-el-paso",
@@ -6382,7 +6538,7 @@
       "former": ["Marguerite Mauritz"]
     },
     "name": "R-Ladies El Paso",
-    "city": "El Paso",
+    "city": "El Paso"
   },
   {
     "urlname": "rladies-houston",
@@ -6399,7 +6555,7 @@
       "former": ["Erin Hodgess", "Jennifer Cai", "Tulasi NARAYANAN Aayer"]
     },
     "name": "R-Ladies Houston",
-    "city": "Houston",
+    "city": "Houston"
   },
   {
     "status": "prospective",
@@ -6413,7 +6569,7 @@
       "former": []
     },
     "name": "R-Ladies San Antonio",
-    "city": "San Antonio",
+    "city": "San Antonio"
   },
   {
     "status": "prospective",
@@ -6424,7 +6580,7 @@
       "former": []
     },
     "name": "R-Ladies Charlotte Amalie",
-    "city": "Charlotte Amalie",
+    "city": "Charlotte Amalie"
   },
   {
     "status": "prospective",
@@ -6438,7 +6594,7 @@
       "former": []
     },
     "name": "R-Ladies Provo",
-    "city": "Provo",
+    "city": "Provo"
   },
   {
     "urlname": "rladies-charlottesville",
@@ -6456,7 +6612,7 @@
       "former": []
     },
     "name": "R-Ladies Charlottesville",
-    "city": "Charlottesville",
+    "city": "Charlottesville"
   },
   {
     "status": "prospective",
@@ -6467,7 +6623,7 @@
       "former": []
     },
     "name": "R-Ladies Richmond",
-    "city": "Richmond",
+    "city": "Richmond"
   },
   {
     "status": "prospective",
@@ -6478,7 +6634,7 @@
       "former": []
     },
     "name": "R-Ladies Woodbridge",
-    "city": "Woodbridge",
+    "city": "Woodbridge"
   },
   {
     "urlname": "rladies-dc",
@@ -6497,7 +6653,7 @@
       "former": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"]
     },
     "name": "R-Ladies D.C.",
-    "city": "D.C.",
+    "city": "D.C."
   },
   {
     "urlname": "rladies-seattle",
@@ -6517,7 +6673,7 @@
       "former": []
     },
     "name": "R-Ladies Seattle",
-    "city": "Seattle",
+    "city": "Seattle"
   },
   {
     "status": "prospective",
@@ -6528,7 +6684,7 @@
       "former": []
     },
     "name": "R-Ladies Tacoma",
-    "city": "Tacoma",
+    "city": "Tacoma"
   },
   {
     "status": "prospective",
@@ -6539,7 +6695,7 @@
       "former": []
     },
     "name": "R-Ladies Madison",
-    "city": "Madison",
+    "city": "Madison"
   },
   {
     "urlname": "rladies-laramie",
@@ -6555,7 +6711,7 @@
       "former": []
     },
     "name": "R-Ladies Laramie",
-    "city": "Laramie",
+    "city": "Laramie"
   },
   {
     "status": "active",
@@ -6565,7 +6721,7 @@
       "former": []
     },
     "name": "R-Ladies Caracas",
-    "city": "Caracas",
+    "city": "Caracas"
   },
   {
     "urlname": "rladies-ha-noi",
@@ -6579,7 +6735,7 @@
       "former": []
     },
     "name": "R-Ladies Ha Noi",
-    "city": "Ha Noi",
+    "city": "Ha Noi"
   },
   {
     "status": "prospective",
@@ -6589,7 +6745,7 @@
       "former": []
     },
     "name": "R-Ladies Lithuania",
-    "city": "Lithuania",
+    "city": "Lithuania"
   },
   {
     "urlname": "rladies-remote",
@@ -6606,7 +6762,7 @@
       "former": ["Azadeh Gishani", "Katie Lee", "Leo Preu"]
     },
     "name": "R-Ladies Remote",
-    "city": "Remote",
+    "city": "Remote"
   },
   {
     "status": "prospective",
@@ -6616,6 +6772,6 @@
       "former": []
     },
     "name": "R-Ladies Lusaka",
-    "city": "Lusaka",
+    "city": "Lusaka"
   }
 ]
