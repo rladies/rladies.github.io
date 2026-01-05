@@ -1,0 +1,10 @@
+<figure class="my-6">
+  <blockquote class="blockquote" {{ with .Attributes.cite }}cite="{{ . }}"{{ end }}> 
+    <i>{{ .Text }}</i>
+  </blockquote>
+  {{ with .Attributes.caption }}
+    <figcaption class="blockquote-footer"> 
+      {{ . | safeHTML }}
+    </figcaption>
+  {{ end }}
+</figure>

@@ -8,11 +8,20 @@
       "email": "tirana@rladies.org"
     },
     "organizers": {
-      "current": ["Eralda Gjika", "Agresa Qosja"],
+      "current": [
+        "Eralda Gjika",
+        "Agresa Qosja"
+      ],
       "former": []
     },
-    "name": "R-Ladies Tirana",
-    "city": "Tirana"
+    "id": "37792883",
+    "name": "R-Ladies Tiranë",
+    "country_acronym": "AL",
+    "state": "",
+    "city": "Tiranë",
+    "lat": 41.33,
+    "lon": 19.82,
+    "timezone": "Europe/Tirane"
   },
   {
     "urlname": "rladies-algiers",
@@ -23,11 +32,15 @@
       "email": "algiers@rladies.org"
     },
     "organizers": {
-      "current": ["Kamila Benadrouche", "Lounas Fairouz", "Zibani Fazia"],
+      "current": [
+        "Kamila Benadrouche",
+        "Lounas Fairouz",
+        "Zibani Fazia"
+      ],
       "former": []
     },
-    "name": "R-Ladies al-Jaza´ir",
     "id": "33683539",
+    "name": "R-Ladies al-Jaza´ir",
     "country_acronym": "DZ",
     "state": "",
     "city": "al-Jaza´ir",
@@ -52,15 +65,33 @@
       "website": "https://rladiesba.netlify.app/"
     },
     "organizers": {
-      "current": ["Maria Nanton", "Jesica Formoso", "Virginia Garc<ed>a Alonso", "Betsabé Cohen"],
-      "former": ["Laura Acion", "Paola Corrales", "Florencia D'Andrea", "Monica Alonso", "Priscilla Minotti", "Jimena Saucedo", "Verónica Rojo", "Andrea Gomez Vargas", "Daniela Vázquez", "Karina Bartolomé", "L. Paloma Rojas-Saunero", "Natsumi Shokida", "Paola Prieto"]
+      "current": [
+        "Maria Nanton",
+        "Jesica Formoso",
+        "Virginia García Alonso",
+        "Betsabé Cohen"
+      ],
+      "former": [
+        "Laura Acion",
+        "Paola Corrales",
+        "Florencia D'Andrea",
+        "Monica Alonso",
+        "Priscilla Minotti",
+        "Jimena Saucedo",
+        "Verónica Rojo",
+        "Andrea Gomez Vargas",
+        "Daniela Vázquez",
+        "Karina Bartolomé",
+        "L. Paloma Rojas-Saunero",
+        "Natsumi Shokida",
+        "Paola Prieto"
+      ]
     },
-    "name": "R-Ladies Buenos Aires",
     "id": "21760043",
+    "name": "R-Ladies Buenos Aires",
     "country_acronym": "AR",
     "state": "",
     "city": "Buenos Aires",
-    "members": 1575,
     "lat": -34.61,
     "lon": -58.37,
     "timezone": "America/Argentina/Buenos_Aires"
@@ -76,11 +107,15 @@
       "email": "laplata@rladies.org"
     },
     "organizers": {
-      "current": ["Sol Represa", "Myrian Aguilar", "Daniela Esquivel"],
+      "current": [
+        "Sol Represa",
+        "Myrian Aguilar",
+        "Daniela Esquivel"
+      ],
       "former": []
     },
     "name": "R-Ladies La Plata",
-    "city": "La Plata"
+    "city": "La Plata",
   },
   {
     "urlname": "rladies-resistencia-corrientes",
@@ -94,15 +129,17 @@
       "facebook": "R-Ladies-Rcia-Ctes"
     },
     "organizers": {
-      "current": ["Patricia Loto", "Roxana Noelia Villafa<f1>e"],
+      "current": [
+        "Patricia Loto",
+        "Roxana Noelia Villafañe"
+      ],
       "former": []
     },
-    "name": "R-Ladies Corrientes",
     "id": "28753666",
+    "name": "R-Ladies Corrientes",
     "country_acronym": "AR",
     "state": "",
     "city": "Corrientes",
-    "members": 206,
     "lat": -27.49,
     "lon": -58.81,
     "timezone": "America/Argentina/Cordoba"
@@ -121,15 +158,18 @@
       "slack": "rladies-cordoba.slack.com"
     },
     "organizers": {
-      "current": ["Juliana Benitez", "Fernanda Garc<ed>a", "Marina Compagnuci"],
+      "current": [
+        "Juliana Benitez",
+        "Fernanda García",
+        "Marina Compagnuci"
+      ],
       "former": []
     },
-    "name": "R-Ladies Córdoba",
     "id": "33717527",
+    "name": "R-Ladies Córdoba",
     "country_acronym": "AR",
     "state": "",
     "city": "Córdoba",
-    "members": 32,
     "lat": -31.4,
     "lon": -64.19,
     "timezone": "America/Argentina/Cordoba"
@@ -144,15 +184,16 @@
       "email": "jujuy@rladies.org"
     },
     "organizers": {
-      "current": ["Laura Pereyra"],
+      "current": [
+        "Laura Pereyra"
+      ],
       "former": []
     },
-    "name": "R-Ladies Jujuy",
     "id": "34516330",
+    "name": "R-Ladies Jujuy",
     "country_acronym": "AR",
     "state": "",
     "city": "Jujuy",
-    "members": 158,
     "lat": -24.19,
     "lon": -65.3,
     "timezone": "America/Argentina/Jujuy"
@@ -168,15 +209,16 @@
       "email": "generalpico@rladies.org"
     },
     "organizers": {
-      "current": ["Marysol Gatti"],
+      "current": [
+        "Marysol Gatti"
+      ],
       "former": []
     },
-    "name": "R-Ladies General Pico",
     "id": "33554403",
+    "name": "R-Ladies General Pico",
     "country_acronym": "AR",
     "state": "",
     "city": "General Pico",
-    "members": 63,
     "lat": -35.66,
     "lon": -63.77,
     "timezone": "America/Argentina/Cordoba"
@@ -194,15 +236,17 @@
       "github": "rladies/meetup-presentations_santarosa"
     },
     "organizers": {
-      "current": ["Yanina Bellini Saibene", "Marina Cock"],
+      "current": [
+        "Yanina Bellini Saibene",
+        "Marina Cock"
+      ],
       "former": []
     },
-    "name": "R-Ladies Santa Rosa",
     "id": "23174619",
+    "name": "R-Ladies Santa Rosa",
     "country_acronym": "AR",
     "state": "",
     "city": "Santa Rosa",
-    "members": 146,
     "lat": -36.62,
     "lon": -64.3,
     "timezone": "America/Argentina/Cordoba"
@@ -220,15 +264,18 @@
       "github": "rladies/meetup-presentations_mendoza"
     },
     "organizers": {
-      "current": ["Ana Laura Diedrichs", "Jan Strappa", "Brenda Canizo"],
+      "current": [
+        "Ana Laura Diedrichs",
+        "Jan Strappa",
+        "Brenda Canizo"
+      ],
       "former": []
     },
-    "name": "R-Ladies Mendoza",
     "id": "27651345",
+    "name": "R-Ladies Mendoza",
     "country_acronym": "AR",
     "state": "",
     "city": "Mendoza",
-    "members": 320,
     "lat": -32.89,
     "lon": -68.83,
     "timezone": "America/Argentina/Mendoza"
@@ -246,11 +293,19 @@
       "slack": "rladies-brc.slack.com"
     },
     "organizers": {
-      "current": ["Lina Moreno Az<f3>car", "Sofía Ruiz", "Paula Fergnani"],
+      "current": [
+        "Lina Moreno Azócar",
+        "Sofía Ruiz",
+        "Paula Fergnani",
+        "Claudia Alejandra Huaylla",
+        "Valeria Leticia Martin-Albarracin",
+        "Gimena Vilardo",
+        "Maria Laura Suarez"
+      ],
       "former": []
     },
-    "name": "R-Ladies San Carlos de Bariloche",
     "id": "28441250",
+    "name": "R-Ladies San Carlos de Bariloche",
     "country_acronym": "AR",
     "state": "",
     "city": "San Carlos de Bariloche",
@@ -274,15 +329,20 @@
       "github": "rladies/meetup-presentations_santafe"
     },
     "organizers": {
-      "current": ["Melina Vidoni", "Liza Dosso", "Andrea Bergesio", "Mariel Lovatto", "Cecilia Rom<e1>n Miyasato"],
+      "current": [
+        "Melina Vidoni",
+        "Liza Dosso",
+        "Andrea Bergesio",
+        "Mariel Lovatto",
+        "Cecilia Román Miyasato"
+      ],
       "former": []
     },
-    "name": "R-Ladies Santa Fe",
     "id": "28424845",
+    "name": "R-Ladies Santa Fe",
     "country_acronym": "AR",
     "state": "",
     "city": "Santa Fe",
-    "members": 226,
     "lat": -31.6,
     "lon": -60.69,
     "timezone": "America/Argentina/Cordoba"
@@ -299,15 +359,17 @@
       "github": "rladies/meetup-presentations_ushuaia"
     },
     "organizers": {
-      "current": ["Luc<ed>a Rodr<ed>guez Planes", "Sami Dodino"],
+      "current": [
+        "Lucía Rodríguez Planes",
+        "Sami Dodino"
+      ],
       "former": []
     },
-    "name": "R-Ladies Ushuaia",
     "id": "33725126",
+    "name": "R-Ladies Ushuaia",
     "country_acronym": "AR",
     "state": "",
     "city": "Ushuaia",
-    "members": 31,
     "lat": -54.79,
     "lon": -68.31,
     "timezone": "America/Argentina/Buenos_Aires"
@@ -323,15 +385,20 @@
       "github": "rladies/meetup-presentations_adelaide"
     },
     "organizers": {
-      "current": ["Marija Dmitrijeva", "Helen Dockrell", "Rachel Searston", "Melaine Smith", "Brittany Child"],
+      "current": [
+        "Marija Dmitrijeva",
+        "Helen Dockrell",
+        "Rachel Searston",
+        "Melaine Smith",
+        "Brittany Child"
+      ],
       "former": []
     },
-    "name": "R-Ladies Adelaide",
     "id": "22202405",
+    "name": "R-Ladies Adelaide",
     "country_acronym": "AU",
     "state": "",
     "city": "Adelaide",
-    "members": 324,
     "lat": -34.93,
     "lon": 138.6,
     "timezone": "Australia/Adelaide"
@@ -340,7 +407,9 @@
     "status": "prospective",
     "country": "Australia",
     "organizers": {
-      "current": ["Martha Cooper"],
+      "current": [
+        "Martha Cooper"
+      ],
       "former": []
     },
     "name": "R-Ladies Cairns",
@@ -356,11 +425,17 @@
       "email": "canberra@rladies.org"
     },
     "organizers": {
-      "current": ["Emi Tanaka", "Alice Richardson", "Petra Kuhnert", "Pauline O'Shaughnessy", "Jiali Wang"],
+      "current": [
+        "Emi Tanaka",
+        "Alice Richardson",
+        "Petra Kuhnert",
+        "Pauline O'Shaughnessy",
+        "Jiali Wang"
+      ],
       "former": []
     },
-    "name": "R-Ladies Canberra",
     "id": "30680825",
+    "name": "R-Ladies Canberra",
     "country_acronym": "AU",
     "state": "",
     "city": "Canberra",
@@ -382,11 +457,19 @@
       "bluesky": "rladiesmelb.bsky.social"
     },
     "organizers": {
-      "current": ["Anna Quaglieri", "Sepideh Foroutan", "Alex Garnham", "Marie Trussart", "Lucy Liu", "Adele Barugahare", "Nikki Rubinson"],
+      "current": [
+        "Anna Quaglieri",
+        "Sepideh Foroutan",
+        "Alex Garnham",
+        "Marie Trussart",
+        "Lucy Liu",
+        "Adele Barugahare",
+        "Nikki Rubinson"
+      ],
       "former": []
     },
-    "name": "R-Ladies Melbourne",
     "id": "20378903",
+    "name": "R-Ladies Melbourne",
     "country_acronym": "AU",
     "state": "",
     "city": "Melbourne",
@@ -404,15 +487,16 @@
       "meetup": "rladies-darwin"
     },
     "organizers": {
-      "current": ["Petra Kuhnert"],
+      "current": [
+        "Petra Kuhnert"
+      ],
       "former": []
     },
-    "name": "R-Ladies Darwin",
     "id": "34931654",
+    "name": "R-Ladies Darwin",
     "country_acronym": "AU",
     "state": "",
     "city": "Darwin",
-    "members": 24,
     "lat": -12.46,
     "lon": 130.84,
     "timezone": "Australia/Darwin"
@@ -427,15 +511,20 @@
       "email": "perth@rladies.org"
     },
     "organizers": {
-      "current": ["Alyce Russell", "Nicola Armstrong", "Rebecca Lange"],
-      "former": ["Sarita Bennett"]
+      "current": [
+        "Alyce Russell",
+        "Nicola Armstrong",
+        "Rebecca Lange"
+      ],
+      "former": [
+        "Sarita Bennett"
+      ]
     },
-    "name": "R-Ladies Perth",
     "id": "30375344",
+    "name": "R-Ladies Perth",
     "country_acronym": "AU",
     "state": "",
     "city": "Perth",
-    "members": 265,
     "lat": -31.96,
     "lon": 115.84,
     "timezone": "Australia/Perth"
@@ -453,11 +542,13 @@
       "slack": "r-ladiesbrisbane.slack.com"
     },
     "organizers": {
-      "current": ["Paula Andrea Martinez"],
+      "current": [
+        "Paula Andrea Martinez"
+      ],
       "former": []
     },
-    "name": "R-Ladies Brisbane",
     "id": "28448818",
+    "name": "R-Ladies Brisbane",
     "country_acronym": "AU",
     "state": "",
     "city": "Brisbane",
@@ -478,15 +569,18 @@
       "website": "https://rladiessydney.org/"
     },
     "organizers": {
-      "current": ["Giorgia Mori"],
-      "former": ["Jenny Richmond"]
+      "current": [
+        "Giorgia Mori"
+      ],
+      "former": [
+        "Jenny Richmond"
+      ]
     },
-    "name": "R-Ladies Sydney",
     "id": "28436046",
+    "name": "R-Ladies Sydney",
     "country_acronym": "AU",
     "state": "",
     "city": "Sydney",
-    "members": 912,
     "lat": -33.87,
     "lon": 151.21,
     "timezone": "Australia/Sydney"
@@ -495,7 +589,9 @@
     "status": "prospective",
     "country": "Australia",
     "organizers": {
-      "current": ["Legana Fingerhut"],
+      "current": [
+        "Legana Fingerhut"
+      ],
       "former": []
     },
     "name": "R-Ladies Townsville",
@@ -512,7 +608,9 @@
       "github": "rladies/meetup-presentations_linz"
     },
     "organizers": {
-      "current": ["Lucia Gjeltema"],
+      "current": [
+        "Lucia Gjeltema"
+      ],
       "former": []
     },
     "name": "R-Ladies Linz",
@@ -527,11 +625,19 @@
       "email": "salzburg@rladies.org"
     },
     "organizers": {
-      "current": ["Ekaterina Akimova"],
+      "current": [
+        "Ekaterina Akimova"
+      ],
       "former": []
     },
-    "name": "R-Ladies salzburg",
-    "city": "salzburg"
+    "id": "37445857",
+    "name": "R-Ladies Salzburg",
+    "country_acronym": "AT",
+    "state": "",
+    "city": "Salzburg",
+    "lat": 47.81,
+    "lon": 13.04,
+    "timezone": "Europe/Vienna"
   },
   {
     "urlname": "rladies-vienna",
@@ -543,15 +649,17 @@
       "email": "vienna@rladies.org"
     },
     "organizers": {
-      "current": ["Laura Vana", "Jenny Fan"],
+      "current": [
+        "Laura Vana",
+        "Jenny Fan"
+      ],
       "former": []
     },
-    "name": "R-Ladies Vienna",
     "id": "29851462",
+    "name": "R-Ladies Vienna",
     "country_acronym": "AT",
     "state": "",
     "city": "Vienna",
-    "members": 380,
     "lat": 48.22,
     "lon": 16.37,
     "timezone": "Europe/Vienna"
@@ -560,7 +668,9 @@
     "status": "prospective",
     "country": "Bahrain",
     "organizers": {
-      "current": ["Fatima Alaradi"],
+      "current": [
+        "Fatima Alaradi"
+      ],
       "former": []
     },
     "name": "R-Ladies Muharraq",
@@ -577,15 +687,17 @@
       "github": "rladies/meetup-presentations_brussels"
     },
     "organizers": {
-      "current": ["Suzan Baert", "Huong Nguyen"],
+      "current": [
+        "Suzan Baert",
+        "Huong Nguyen"
+      ],
       "former": []
     },
-    "name": "R-Ladies Brussels",
     "id": "25492745",
+    "name": "R-Ladies Brussels",
     "country_acronym": "BE",
     "state": "",
     "city": "Brussels",
-    "members": 236,
     "lat": 50.83,
     "lon": 4.33,
     "timezone": "Europe/Brussels"
@@ -601,7 +713,10 @@
       "github": "rladies/meetup-presentations_leuven"
     },
     "organizers": {
-      "current": ["Theresa Elise Wege", "Veronica Llorens"],
+      "current": [
+        "Theresa Elise Wege",
+        "Veronica Llorens"
+      ],
       "former": []
     },
     "name": "R-Ladies Leuven",
@@ -618,14 +733,16 @@
     },
     "organizers": {
       "current": [],
-      "former": ["Nadejda Sero", "Benedicta Essuon"]
+      "former": [
+        "Nadejda Sero",
+        "Benedicta Essuon"
+      ]
     },
-    "name": "R-Ladies Cotonou",
     "id": "27986524",
+    "name": "R-Ladies Cotonou",
     "country_acronym": "BJ",
     "state": "",
     "city": "Cotonou",
-    "members": 41,
     "lat": 6.36,
     "lon": 2.44,
     "timezone": "Africa/Lagos"
@@ -638,13 +755,12 @@
       "meetup": "rladies-cochabamba"
     },
     "organizers": {
-      "current": ["Abigail Geronimo Jimenez"],
+      "current": [
+        "Abigail Geronimo Jimenez"
+      ],
       "former": []
     },
     "name": "R-Ladies Cochabamba",
-    "id": "33825315",
-    "country_acronym": "BO",
-    "state": "",
     "city": "Cochabamba",
     "members": 17,
     "lat": -17.38,
@@ -662,24 +778,23 @@
       "facebook": "rladieslapaz"
     },
     "organizers": {
-      "current": ["Nathaly Alarcon", "Orietha Castillo", "Ruth Chirinos"],
+      "current": [
+        "Nathaly Alarcon",
+        "Orietha Castillo",
+        "Ruth Chirinos"
+      ],
       "former": []
     },
     "name": "R-Ladies La Paz",
-    "id": "30375244",
-    "country_acronym": "BO",
-    "state": "",
     "city": "La Paz",
-    "members": 345,
-    "lat": -16.5,
-    "lon": -68.15,
-    "timezone": "America/La_Paz"
   },
   {
     "status": "prospective",
     "country": "Bolivia",
     "organizers": {
-      "current": ["Vanesa Bejarano Alegre"],
+      "current": [
+        "Vanesa Bejarano Alegre"
+      ],
       "former": []
     },
     "name": "R-Ladies Santa Cruz",
@@ -702,11 +817,13 @@
       "mastodon": "@R_Ladies_Gaborone@fosstodon.org"
     },
     "organizers": {
-      "current": ["Simisani Ndaba"],
+      "current": [
+        "Simisani Ndaba"
+      ],
       "former": []
     },
-    "name": "R-Ladies Gaborone",
     "id": "35897820",
+    "name": "R-Ladies Gaborone",
     "country_acronym": "BW",
     "state": "",
     "city": "Gaborone",
@@ -720,7 +837,18 @@
     "country": "Brazil",
     "state.region": "Amazonas",
     "organizers": {
-      "current": ["Themis Le<e3>o", "Amazoneida Pinheiro", "Camila Pinheiro", "M<e1>rcia Brand<e3>o", "Jocely Lopes", "Paula dos Santos", "Emilly Malveira", "Hanna Oliveira", "Yanna de Freitas", "Ewila Costa"],
+      "current": [
+        "Themis Leão",
+        "Amazoneida Pinheiro",
+        "Camila Pinheiro",
+        "Márcia Brandão",
+        "Jocely Lopes",
+        "Paula dos Santos",
+        "Emilly Malveira",
+        "Hanna Oliveira",
+        "Yanna de Freitas",
+        "Ewila Costa"
+      ],
       "former": []
     },
     "name": "R-Ladies Manaus",
@@ -737,15 +865,17 @@
       "email": "salvador@rladies.org"
     },
     "organizers": {
-      "current": ["Karla Patricia Santos Oliveira Rodriguez Esquerre", "J<fa>lia Carolina"],
+      "current": [
+        "Karla Patricia Santos Oliveira Rodriguez Esquerre",
+        "Júlia Carolina"
+      ],
       "former": []
     },
-    "name": "R-Ladies Salvador",
     "id": "29332380",
+    "name": "R-Ladies Salvador",
     "country_acronym": "BR",
     "state": "",
     "city": "Salvador",
-    "members": 267,
     "lat": -12.97,
     "lon": -38.5,
     "timezone": "America/Bahia"
@@ -758,11 +888,13 @@
       "meetup": "rladies-brasilia"
     },
     "organizers": {
-      "current": ["Juliana Silva de Deus"],
+      "current": [
+        "Juliana Silva de Deus"
+      ],
       "former": []
     },
-    "name": "R-Ladies Brasília",
     "id": "34931648",
+    "name": "R-Ladies Brasília",
     "country_acronym": "BR",
     "state": "",
     "city": "Brasília",
@@ -775,21 +907,22 @@
     "urlname": "rladies-fortaleza",
     "status": "active",
     "country": "Brazil",
-    "state.region": "Cear<e1>",
+    "state.region": "Ceará",
     "social_media": {
       "meetup": "rladies-fortaleza",
       "email": "fortaleza@rladies.org"
     },
     "organizers": {
-      "current": ["Ta<ed>s Maria Nunes Carvalho"],
+      "current": [
+        "Taís Maria Nunes Carvalho"
+      ],
       "former": []
     },
-    "name": "R-Ladies Fortaleza",
     "id": "33810889",
+    "name": "R-Ladies Fortaleza",
     "country_acronym": "BR",
     "state": "",
     "city": "Fortaleza",
-    "members": 113,
     "lat": -3.78,
     "lon": -38.59,
     "timezone": "America/Fortaleza"
@@ -798,18 +931,21 @@
     "urlname": "rladies-vitoria",
     "status": "active",
     "country": "Brazil",
-    "state.region": "Esp<ed>rito Santo",
+    "state.region": "Espírito Santo",
     "social_media": {
       "meetup": "rladies-vitoria",
       "email": "vitoria@rladies.org",
       "github": "rladies/meetup-presentations_vitoria"
     },
     "organizers": {
-      "current": ["Ornella Scardua", "Agatha Rodrigues"],
+      "current": [
+        "Ornella Scardua",
+        "Agatha Rodrigues"
+      ],
       "former": []
     },
-    "name": "R-Ladies Vitória",
     "id": "32826513",
+    "name": "R-Ladies Vitória",
     "country_acronym": "BR",
     "state": "",
     "city": "Vitória",
@@ -822,17 +958,19 @@
     "urlname": "rladies-goiania",
     "status": "active",
     "country": "Brazil",
-    "state.region": "Goi<e1>s",
+    "state.region": "Goiás",
     "social_media": {
       "meetup": "rladies-goiania",
       "email": "goiania@rladies.org"
     },
     "organizers": {
-      "current": ["Fernanda Kelly"],
+      "current": [
+        "Fernanda Kelly"
+      ],
       "former": []
     },
-    "name": "R-Ladies Goiania",
     "id": "31829495",
+    "name": "R-Ladies Goiania",
     "country_acronym": "BR",
     "state": "",
     "city": "Goiania",
@@ -857,11 +995,16 @@
       "website": "http://rladiesbh.com.br/"
     },
     "organizers": {
-      "current": ["Layla Comparin", "Larissa Sayuri", "Numi<e1> Gomes", "Ana Carolina Dias"],
+      "current": [
+        "Layla Comparin",
+        "Larissa Sayuri",
+        "Numiá Gomes",
+        "Ana Carolina Dias"
+      ],
       "former": []
     },
-    "name": "R-Ladies Belo Horizonte",
     "id": "28226484",
+    "name": "R-Ladies Belo Horizonte",
     "country_acronym": "BR",
     "state": "",
     "city": "Belo Horizonte",
@@ -880,11 +1023,16 @@
       "email": "lavras@rladies.org"
     },
     "organizers": {
-      "current": ["Izabela Oliveira", "Paula Santos"],
-      "former": ["Kelly P de Lima"]
+      "current": [
+        "Izabela Oliveira",
+        "Paula Santos"
+      ],
+      "former": [
+        "Kelly P de Lima"
+      ]
     },
-    "name": "R-Ladies Lavras",
     "id": "31653398",
+    "name": "R-Ladies Lavras",
     "country_acronym": "BR",
     "state": "",
     "city": "Lavras",
@@ -898,7 +1046,10 @@
     "country": "Brazil",
     "state.region": "Paraiba",
     "organizers": {
-      "current": ["Hadrizia Santos", "Dandara Sousa"],
+      "current": [
+        "Hadrizia Santos",
+        "Dandara Sousa"
+      ],
       "former": []
     },
     "name": "R-Ladies Campina Grande",
@@ -915,15 +1066,18 @@
       "github": "rladies/meetup-presentations_curitiba"
     },
     "organizers": {
-      "current": ["Suellen Teixeira Zavadzki de Pauli", "Jhenifer Caetano", "Bruna Wundervald"],
+      "current": [
+        "Suellen Teixeira Zavadzki de Pauli",
+        "Jhenifer Caetano",
+        "Bruna Wundervald"
+      ],
       "former": []
     },
-    "name": "R-Ladies Curitiba",
     "id": "33825235",
+    "name": "R-Ladies Curitiba",
     "country_acronym": "BR",
     "state": "",
     "city": "Curitiba",
-    "members": 77,
     "lat": -25.42,
     "lon": -49.29,
     "timezone": "America/Sao_Paulo"
@@ -939,11 +1093,22 @@
       "github": "rladies/meetup-presentations_recife"
     },
     "organizers": {
-      "current": ["Larissa Lima", "Nath<e1>lia Demetrio Vasconcelos Moura", "Edneide Ramalho", "Anny Kerollayny", "Bruna Gregory Palm", "Cristine Rauber Oliveira", "Anabeth Petry Rad<fc>nz", "Ranah Duarte Costa", "Luana Rodrigues", "Heloisa de Melo Rodrigues"],
+      "current": [
+        "Larissa Lima",
+        "Nathália Demetrio Vasconcelos Moura",
+        "Edneide Ramalho",
+        "Anny Kerollayny",
+        "Bruna Gregory Palm",
+        "Cristine Rauber Oliveira",
+        "Anabeth Petry Radünz",
+        "Ranah Duarte Costa",
+        "Luana Rodrigues",
+        "Heloisa de Melo Rodrigues"
+      ],
       "former": []
     },
-    "name": "R-Ladies Recife",
     "id": "32713369",
+    "name": "R-Ladies Recife",
     "country_acronym": "BR",
     "state": "",
     "city": "Recife",
@@ -957,7 +1122,9 @@
     "country": "Brazil",
     "state.region": "Piaui",
     "organizers": {
-      "current": ["Rita de C<e1>ssia de Lima Idalino"],
+      "current": [
+        "Rita de Cássia de Lima Idalino"
+      ],
       "former": []
     },
     "name": "R-Ladies Teresina",
@@ -973,15 +1140,19 @@
       "email": "niteroi@rladies.org"
     },
     "organizers": {
-      "current": ["Noelle Camello", "Luciane Alcoforado", "Julia Hellen Franco Ferreira"],
+      "current": [
+        "Noelle Camello",
+        "Luciane Alcoforado",
+        "Julia Hellen Franco Ferreira",
+        "Jessica Kubrusly"
+      ],
       "former": []
     },
-    "name": "R-Ladies Niterói",
     "id": "28706674",
+    "name": "R-Ladies Niterói",
     "country_acronym": "BR",
     "state": "",
     "city": "Niterói",
-    "members": 764,
     "lat": -22.9,
     "lon": -43.13,
     "timezone": "America/Sao_Paulo"
@@ -1000,15 +1171,20 @@
       "github": "rladies/meetup-presentations_rio"
     },
     "organizers": {
-      "current": ["Beatriz Pinna", "Clemencia Mora", "Priscila Hohberg", "Sara Mortara", "Noele Ribeiro"],
+      "current": [
+        "Beatriz Pinna",
+        "Clemencia Mora",
+        "Priscila Hohberg",
+        "Sara Mortara",
+        "Noele Ribeiro"
+      ],
       "former": []
     },
-    "name": "R-Ladies Rio de Janeiro",
     "id": "22664282",
+    "name": "R-Ladies Rio de Janeiro",
     "country_acronym": "BR",
     "state": "",
     "city": "Rio de Janeiro",
-    "members": 638,
     "lat": -22.91,
     "lon": -43.2,
     "timezone": "America/Sao_Paulo"
@@ -1026,15 +1202,17 @@
       "github": "rladies/meetup-presentations_natal"
     },
     "organizers": {
-      "current": ["Milagros Villavicencio", "Lumi Mevi"],
+      "current": [
+        "Milagros Villavicencio",
+        "Lumi Mevi"
+      ],
       "former": []
     },
-    "name": "R-Ladies Natal",
     "id": "33801315",
+    "name": "R-Ladies Natal",
     "country_acronym": "BR",
     "state": "",
     "city": "Natal",
-    "members": 422,
     "lat": -5.8,
     "lon": -35.22,
     "timezone": "America/Fortaleza"
@@ -1051,11 +1229,13 @@
       "facebook": "RLadiesPortoAlegre"
     },
     "organizers": {
-      "current": ["Iara Passos"],
+      "current": [
+        "Iara Passos"
+      ],
       "former": []
     },
-    "name": "R-Ladies Porto Alegre",
     "id": "26434176",
+    "name": "R-Ladies Porto Alegre",
     "country_acronym": "BR",
     "state": "",
     "city": "Porto Alegre",
@@ -1075,15 +1255,18 @@
       "email": "florianopolis@rladies.org"
     },
     "organizers": {
-      "current": ["Tamires Martins"],
-      "former": ["Camila Thais Weber"]
+      "current": [
+        "Tamires Martins"
+      ],
+      "former": [
+        "Camila Thais Weber"
+      ]
     },
-    "name": "R-Ladies Florianópolis",
     "id": "31577218",
+    "name": "R-Ladies Florianópolis",
     "country_acronym": "BR",
     "state": "",
     "city": "Florianópolis",
-    "members": 462,
     "lat": -27.6,
     "lon": -48.54,
     "timezone": "America/Sao_Paulo"
@@ -1093,11 +1276,13 @@
     "country": "Brazil",
     "state.region": "Santa Catarina",
     "organizers": {
-      "current": ["Simone Silmara Werner"],
+      "current": [
+        "Simone Silmara Werner"
+      ],
       "former": []
     },
     "name": "R-Ladies Lages",
-    "city": "Lages"
+    "city": "Lages",
   },
   {
     "urlname": "rladies-sao-mateus",
@@ -1107,15 +1292,17 @@
       "meetup": "rladies-sao-mateus"
     },
     "organizers": {
-      "current": ["Daniela Cassol", "Liz Nascimento"],
+      "current": [
+        "Daniela Cassol",
+        "Liz Nascimento"
+      ],
       "former": []
     },
-    "name": "R-Ladies São Mateus",
     "id": "34931513",
+    "name": "R-Ladies São Mateus",
     "country_acronym": "BR",
     "state": "",
     "city": "São Mateus",
-    "members": 12,
     "lat": -18.73,
     "lon": -39.86,
     "timezone": "America/Sao_Paulo"
@@ -1124,13 +1311,15 @@
     "urlname": "rladies-americana",
     "status": "retired on 29-09-2019",
     "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
+    "state.region": "São Paulo",
     "social_media": {
       "meetup": "rladies-americana",
       "twitter": "RLadiesAME"
     },
     "organizers": {
-      "current": ["Mariana Mendes"],
+      "current": [
+        "Mariana Mendes"
+      ],
       "former": []
     },
     "name": "R-Ladies Americana",
@@ -1139,29 +1328,33 @@
   {
     "status": "prospective",
     "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
+    "state.region": "São Paulo",
     "organizers": {
-      "current": ["Cristiane Hayumi Taniguti"],
+      "current": [
+        "Cristiane Hayumi Taniguti"
+      ],
       "former": []
     },
     "name": "R-Ladies Piracicaba",
-    "city": "Piracicaba"
+    "city": "Piracicaba",
   },
   {
     "urlname": "rladies-ribeirao-preto",
     "status": "active",
     "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
+    "state.region": "São Paulo",
     "social_media": {
       "meetup": "rladies-ribeirao-preto",
       "email": "ribeirao-preto@rladies.org"
     },
     "organizers": {
-      "current": ["Francesca Belem Lopes Palmeira"],
+      "current": [
+        "Francesca Belem Lopes Palmeira"
+      ],
       "former": []
     },
-    "name": "R-Ladies Ribeirão Preto",
     "id": "33504173",
+    "name": "R-Ladies Ribeirão Preto",
     "country_acronym": "BR",
     "state": "",
     "city": "Ribeirão Preto",
@@ -1173,30 +1366,35 @@
   {
     "status": "prospective",
     "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
+    "state.region": "São Paulo",
     "organizers": {
-      "current": ["Mayara Formenton", "Marina de Souza Paiva"],
+      "current": [
+        "Mayara Formenton",
+        "Marina de Souza Paiva"
+      ],
       "former": []
     },
-    "name": "R-Ladies S<e3>o Carlos",
-    "city": "S<e3>o Carlos"
+    "name": "R-Ladies São Carlos",
+    "city": "São Carlos",
   },
   {
     "status": "prospective",
     "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
+    "state.region": "São Paulo",
     "organizers": {
-      "current": ["Let<ed>cia Silva"],
+      "current": [
+        "Letícia Silva"
+      ],
       "former": []
     },
-    "name": "R-Ladies S<e3>o Jos<e9> dos Campos",
-    "city": "S<e3>o Jos<e9> dos Campos"
+    "name": "R-Ladies São José dos Campos",
+    "city": "São José dos Campos"
   },
   {
     "urlname": "rladies-sao-paulo",
     "status": "active",
     "country": "Brazil",
-    "state.region": "S<e3>o Paulo",
+    "state.region": "São Paulo",
     "social_media": {
       "meetup": "rladies-sao-paulo",
       "email": "certificados.rladiessp@gmail.com",
@@ -1207,11 +1405,25 @@
       "website": "https://rladies-sp.org/"
     },
     "organizers": {
-      "current": ["Hayd<e9>e Svab", "Beatriz Milz", "Tatyane Paz Dominguez", "Luana Antunes Alexandre", "Bruna Garbes", "Nath<e1>lia Demetrio", "Jade Mar<e9>", "Ana Carolina Moreno", "Fernanda Fiel Peres", "Geovana Lopes"],
-      "former": ["Bruna Wundervald", "Alissa Munerato"]
+      "current": [
+        "Haydée Svab",
+        "Beatriz Milz",
+        "Tatyane Paz Dominguez",
+        "Luana Antunes Alexandre",
+        "Bruna Garbes",
+        "Nathália Demetrio",
+        "Jade Maré",
+        "Ana Carolina Moreno",
+        "Fernanda Fiel Peres",
+        "Geovana Lopes"
+      ],
+      "former": [
+        "Bruna Wundervald",
+        "Alissa Munerato"
+      ]
     },
-    "name": "R-Ladies São Paulo",
     "id": "27456719",
+    "name": "R-Ladies São Paulo",
     "country_acronym": "BR",
     "state": "",
     "city": "São Paulo",
@@ -1225,7 +1437,9 @@
     "country": "Brazil",
     "state.region": "Tocantins",
     "organizers": {
-      "current": ["Katiuscia Martos"],
+      "current": [
+        "Katiuscia Martos"
+      ],
       "former": []
     },
     "name": "R-Ladies Palmas",
@@ -1235,7 +1449,9 @@
     "status": "prospective",
     "country": "Bulgaria",
     "organizers": {
-      "current": ["Mimi Lazarova"],
+      "current": [
+        "Mimi Lazarova"
+      ],
       "former": []
     },
     "name": "R-Ladies Sofia",
@@ -1250,15 +1466,16 @@
       "email": "yaounde@rladies.org"
     },
     "organizers": {
-      "current": ["Marie Therese Feujio"],
+      "current": [
+        "Marie Therese Feujio"
+      ],
       "former": []
     },
-    "name": "R-Ladies Yaoundé",
     "id": "33166554",
+    "name": "R-Ladies Yaoundé",
     "country_acronym": "CM",
     "state": "",
     "city": "Yaoundé",
-    "members": 79,
     "lat": 3.87,
     "lon": 11.52,
     "timezone": "Africa/Lagos"
@@ -1272,15 +1489,17 @@
       "meetup": "rladies-calgary"
     },
     "organizers": {
-      "current": ["Marta Vidal Garc<ed>a", "Soane Mota dos Santos"],
+      "current": [
+        "Marta Vidal García",
+        "Soane Mota dos Santos"
+      ],
       "former": []
     },
-    "name": "R-Ladies Calgary, AB",
     "id": "32763890",
+    "name": "R-Ladies Calgary, AB",
     "country_acronym": "CA",
     "state": "AB",
     "city": "Calgary",
-    "members": 207,
     "lat": 51.04,
     "lon": -114.06,
     "timezone": "America/Edmonton"
@@ -1293,7 +1512,9 @@
       "email": "edmonton@rladies.org"
     },
     "organizers": {
-      "current": ["Sarah Sheldon"],
+      "current": [
+        "Sarah Sheldon"
+      ],
       "former": []
     },
     "name": "R-Ladies Edmonton",
@@ -1311,15 +1532,22 @@
       "github": "rladies/meetup-presentations_vancouver"
     },
     "organizers": {
-      "current": ["Anna Posacka", "Marion Shadbol", "Nazli <d6>z<fc>m Kafaee", "Ra<ef>ssa Philibert", "Jasmine Lai", "Lucia Darrow", "Lisa Cao"],
+      "current": [
+        "Anna Posacka",
+        "Marion Shadbol",
+        "Nazli Özüm Kafaee",
+        "Raïssa Philibert",
+        "Jasmine Lai",
+        "Lucia Darrow",
+        "Lisa Cao"
+      ],
       "former": []
     },
-    "name": "R-Ladies Vancouver, BC",
     "id": "26169684",
+    "name": "R-Ladies Vancouver, BC",
     "country_acronym": "CA",
     "state": "BC",
     "city": "Vancouver",
-    "members": 666,
     "lat": 49.28,
     "lon": -123.04,
     "timezone": "America/Vancouver"
@@ -1336,7 +1564,9 @@
       "github": "rladies/RLadiesVicBC"
     },
     "organizers": {
-      "current": ["Lisa McEwen"],
+      "current": [
+        "Lisa McEwen"
+      ],
       "former": []
     },
     "name": "R-Ladies Victoria",
@@ -1347,7 +1577,9 @@
     "country": "Canada",
     "state.region": "Manitoba",
     "organizers": {
-      "current": ["Sarah Mutch"],
+      "current": [
+        "Sarah Mutch"
+      ],
       "former": []
     },
     "name": "R-Ladies Winnipeg",
@@ -1362,15 +1594,16 @@
       "meetup": "rladies-halifax"
     },
     "organizers": {
-      "current": ["Emily O'Grady"],
+      "current": [
+        "Emily O'Grady"
+      ],
       "former": []
     },
-    "name": "R-Ladies Halifax, NS",
     "id": "36506375",
+    "name": "R-Ladies Halifax, NS",
     "country_acronym": "CA",
     "state": "NS",
     "city": "Halifax",
-    "members": 20,
     "lat": 44.64,
     "lon": -63.57,
     "timezone": "America/Halifax"
@@ -1384,15 +1617,16 @@
       "meetup": "rladies-kingston"
     },
     "organizers": {
-      "current": ["Nerissa Mulligan"],
+      "current": [
+        "Nerissa Mulligan"
+      ],
       "former": []
     },
-    "name": "R-Ladies Kingston, ON",
     "id": "34931554",
+    "name": "R-Ladies Kingston, ON",
     "country_acronym": "CA",
     "state": "ON",
     "city": "Kingston",
-    "members": 19,
     "lat": 44.22,
     "lon": -76.51,
     "timezone": "America/Toronto"
@@ -1410,15 +1644,18 @@
       "github": "rladies/meetup-presentations_london_ontario"
     },
     "organizers": {
-      "current": ["Daryn Cushnie-Sparrow", "Caitlin Coughler", "Olivia Daub"],
+      "current": [
+        "Daryn Cushnie-Sparrow",
+        "Caitlin Coughler",
+        "Olivia Daub"
+      ],
       "former": []
     },
-    "name": "R-Ladies London, ON",
     "id": "21965959",
+    "name": "R-Ladies London, ON",
     "country_acronym": "CA",
     "state": "ON",
     "city": "London",
-    "members": 469,
     "lat": 43.01,
     "lon": -81.18,
     "timezone": "America/Toronto"
@@ -1433,11 +1670,17 @@
       "email": "ottawa@rladies.org"
     },
     "organizers": {
-      "current": ["Melissa Van Bussel", "Alexandra McSween"],
-      "former": ["Michelle Fairbrother", "Stephanie Houle"]
+      "current": [
+        "Melissa Van Bussel",
+        "Alexandra McSween"
+      ],
+      "former": [
+        "Michelle Fairbrother",
+        "Stephanie Houle"
+      ]
     },
-    "name": "R-Ladies Ottawa, ON",
     "id": "30655714",
+    "name": "R-Ladies Ottawa, ON",
     "country_acronym": "CA",
     "state": "ON",
     "city": "Ottawa",
@@ -1459,11 +1702,16 @@
       "slack": "rladiestoronto.slack.com"
     },
     "organizers": {
-      "current": ["Monica Alexander", "Nicole Radziwill"],
-      "former": ["Sharla Gelfand"]
+      "current": [
+        "Monica Alexander",
+        "Nicole Radziwill"
+      ],
+      "former": [
+        "Sharla Gelfand"
+      ]
     },
-    "name": "R-Ladies Toronto, ON",
     "id": "29862217",
+    "name": "R-Ladies Toronto, ON",
     "country_acronym": "CA",
     "state": "ON",
     "city": "Toronto",
@@ -1483,7 +1731,9 @@
       "email": "waterloo@rladies.org"
     },
     "organizers": {
-      "current": ["Lauren Yee"],
+      "current": [
+        "Lauren Yee"
+      ],
       "former": []
     },
     "name": "R-Ladies Waterloo",
@@ -1493,7 +1743,7 @@
     "urlname": "rladies-montreal",
     "status": "active",
     "country": "Canada",
-    "state.region": "Qu<e9>bec",
+    "state.region": "Québec",
     "social_media": {
       "meetup": "rladies-montreal",
       "twitter": "RLadiesMTL",
@@ -1501,11 +1751,14 @@
       "github": "rladies/meetup-presentations_montreal"
     },
     "organizers": {
-      "current": ["Corinne Riddell", "Kathryn Morrison"],
+      "current": [
+        "Corinne Riddell",
+        "Kathryn Morrison"
+      ],
       "former": []
     },
-    "name": "R-Ladies Montréal, QC",
     "id": "25925303",
+    "name": "R-Ladies Montréal, QC",
     "country_acronym": "CA",
     "state": "QC",
     "city": "Montréal",
@@ -1524,7 +1777,9 @@
       "email": "galvarino@rladies.org"
     },
     "organizers": {
-      "current": ["Maitte Millaray Mariángel Salgado"],
+      "current": [
+        "Maitte Millaray Mariángel Salgado"
+      ],
       "former": []
     },
     "name": "R-Ladies Galvarino",
@@ -1539,11 +1794,16 @@
       "email": "concepcion@rladies.org"
     },
     "organizers": {
-      "current": ["Natalia Elizabeth Riquelme Sanhueza", "Camila Molina"],
-      "former": ["Macarena Valenzuela Beltr<e1>n"]
+      "current": [
+        "Natalia Elizabeth Riquelme Sanhueza",
+        "Camila Molina"
+      ],
+      "former": [
+        "Macarena Valenzuela Beltrán"
+      ]
     },
-    "name": "R-Ladies Concepción",
     "id": "31653468",
+    "name": "R-Ladies Concepción",
     "country_acronym": "CL",
     "state": "",
     "city": "Concepción",
@@ -1565,11 +1825,17 @@
       "mastodon": "@RLadiesSantiago@lile.cl"
     },
     "organizers": {
-      "current": ["Riva Quiroga", "Stephanie Orellana", "Sara Acevedo"],
-      "former": ["Gabriela Sandoval"]
+      "current": [
+        "Riva Quiroga",
+        "Stephanie Orellana",
+        "Sara Acevedo"
+      ],
+      "former": [
+        "Gabriela Sandoval"
+      ]
     },
-    "name": "R-Ladies Santiago",
     "id": "25039094",
+    "name": "R-Ladies Santiago",
     "country_acronym": "CL",
     "state": "",
     "city": "Santiago",
@@ -1587,15 +1853,16 @@
       "email": "talca@rladies.org"
     },
     "organizers": {
-      "current": ["Alejandra Andrea Tapia Silva"],
+      "current": [
+        "Alejandra Andrea Tapia Silva"
+      ],
       "former": []
     },
-    "name": "R-Ladies Talca",
     "id": "33717562",
+    "name": "R-Ladies Talca",
     "country_acronym": "CL",
     "state": "",
     "city": "Talca",
-    "members": 182,
     "lat": -35.42,
     "lon": -71.66,
     "timezone": "America/Santiago"
@@ -1609,17 +1876,32 @@
       "email": "temuco@rladies.org"
     },
     "organizers": {
-      "current": ["Macarena Soledad Valenzuela Beltrán", "Camila Guzmán Olivos", "Noemí Cárcamo Mansilla", "Danae Huilcán", "Martina Recabarren", "Daniela Briones", "Tirza Soto Rocha", "Maitte Mariángel Salgado"],
+      "current": [
+        "Macarena Soledad Valenzuela Beltrán",
+        "Camila Guzmán Olivos",
+        "Noemí Cárcamo Mansilla",
+        "Danae Huilcán",
+        "Martina Recabarren",
+        "Daniela Briones",
+        "Tirza Soto Rocha",
+        "Maitte Mariángel Salgado"
+      ],
       "former": []
     },
+    "id": "37710653",
     "name": "R-Ladies Temuco",
-    "city": "Temuco"
+    "country_acronym": "CL",
+    "state": "",
+    "city": "Temuco",
+    "lat": -38.73,
+    "lon": -72.58,
+    "timezone": "America/Santiago"
   },
   {
     "urlname": "rladies-valparaiso",
     "status": "active",
     "country": "Chile",
-    "state.region": "Valpara<ed>so",
+    "state.region": "Valparaíso",
     "social_media": {
       "meetup": "rladies-valparaiso",
       "twitter": "RLadiesValpo",
@@ -1627,11 +1909,14 @@
       "mastodon": "@RLadiesValpo@lile.cl"
     },
     "organizers": {
-      "current": ["Riva Quiroga", "Tatiana Canales"],
+      "current": [
+        "Riva Quiroga",
+        "Tatiana Canales"
+      ],
       "former": []
     },
-    "name": "R-Ladies Valparaíso",
     "id": "28530966",
+    "name": "R-Ladies Valparaíso",
     "country_acronym": "CL",
     "state": "",
     "city": "Valparaíso",
@@ -1649,15 +1934,22 @@
       "email": "beijing@rladies.org"
     },
     "organizers": {
-      "current": ["Xu Sabrina", "Zuqun WANG", "Hannah Rose Kirk", "Clara WANG", "Xiaolin LIU", "Yujie GUO", "Angelle LIU"],
+      "current": [
+        "Xu Sabrina",
+        "Zuqun WANG",
+        "Hannah Rose Kirk",
+        "Clara WANG",
+        "Xiaolin LIU",
+        "Yujie GUO",
+        "Angelle LIU"
+      ],
       "former": []
     },
-    "name": "R-Ladies Beijing",
     "id": "33007355",
+    "name": "R-Ladies Beijing",
     "country_acronym": "CN",
     "state": "",
     "city": "Beijing",
-    "members": 55,
     "lat": 39.93,
     "lon": 116.4,
     "timezone": "Asia/Shanghai"
@@ -1675,11 +1967,17 @@
       "github": "rladies/meetup-presentations_barranquilla"
     },
     "organizers": {
-      "current": ["Mary Rivero", "Isabel V<e1>zquez", "Viviana Fl<f3>rez", "Danisse Carrascal", "Mar<ed>a Arrieta."],
+      "current": [
+        "Mary Rivero",
+        "Isabel Vázquez",
+        "Viviana Flórez",
+        "Danisse Carrascal",
+        "María Arrieta."
+      ],
       "former": []
     },
-    "name": "R-Ladies Barranquilla",
     "id": "33683503",
+    "name": "R-Ladies Barranquilla",
     "country_acronym": "CO",
     "state": "",
     "city": "Barranquilla",
@@ -1698,15 +1996,16 @@
       "email": "bogota@rladies.org"
     },
     "organizers": {
-      "current": ["Ver<f3>nica Toro"],
+      "current": [
+        "Verónica Toro"
+      ],
       "former": []
     },
-    "name": "R-Ladies Bogotá",
     "id": "26017877",
+    "name": "R-Ladies Bogotá",
     "country_acronym": "CO",
     "state": "",
     "city": "Bogotá",
-    "members": 324,
     "lat": 4.63,
     "lon": -74.09,
     "timezone": "America/Bogota"
@@ -1715,7 +2014,9 @@
     "status": "prospective",
     "country": "Colombia",
     "organizers": {
-      "current": ["Viviana Romero Alarcon"],
+      "current": [
+        "Viviana Romero Alarcon"
+      ],
       "former": []
     },
     "name": "R-Ladies Bucaramanga",
@@ -1725,7 +2026,9 @@
     "status": "prospective",
     "country": "Colombia",
     "organizers": {
-      "current": ["Isabel Cristina Garcia Arboleda"],
+      "current": [
+        "Isabel Cristina Garcia Arboleda"
+      ],
       "former": []
     },
     "name": "R-Ladies Cali",
@@ -1735,7 +2038,9 @@
     "status": "prospective",
     "country": "Colombia",
     "organizers": {
-      "current": ["Beatriz Mira"],
+      "current": [
+        "Beatriz Mira"
+      ],
       "former": []
     },
     "name": "R-Ladies Manizales",
@@ -1751,11 +2056,17 @@
       "email": "medellin@rladies.org"
     },
     "organizers": {
-      "current": ["Angie Correa", "Valentina Clavijo", "Sara Garc<e9>s", "Olga <da>suga", "Carmen Pati<f1>o"],
+      "current": [
+        "Angie Correa",
+        "Valentina Clavijo",
+        "Sara Garcés",
+        "Olga Úsuga",
+        "Carmen Patiño"
+      ],
       "former": []
     },
-    "name": "R-Ladies Medellín",
     "id": "32823667",
+    "name": "R-Ladies Medellín",
     "country_acronym": "CO",
     "state": "",
     "city": "Medellín",
@@ -1776,11 +2087,19 @@
       "github": "rladies/meetup-presentations_sanjose"
     },
     "organizers": {
-      "current": ["Marcela Alfaro-C<f3>rdoba", "Fabiola Salazar", "Jimena Ruiz", "Andrea Vargas", "Daniely Hern<e1>ndez", "Mar<ed>a Paula Mesen", "Paula Rodr<ed>guez"],
+      "current": [
+        "Marcela Alfaro-Córdoba",
+        "Fabiola Salazar",
+        "Jimena Ruiz",
+        "Andrea Vargas",
+        "Daniely Hernández",
+        "María Paula Mesen",
+        "Paula Rodríguez"
+      ],
       "former": []
     },
-    "name": "R-Ladies San Jose",
     "id": "26203679",
+    "name": "R-Ladies San Jose",
     "country_acronym": "CR",
     "state": "",
     "city": "San Jose",
@@ -1796,7 +2115,12 @@
       "meetup": "rladies-zagreb"
     },
     "organizers": {
-      "current": ["Dora Popovic", "Lana Bojanic", "Ana Jankovic", "Maja Kuzman"],
+      "current": [
+        "Dora Popovic",
+        "Lana Bojanic",
+        "Ana Jankovic",
+        "Maja Kuzman"
+      ],
       "former": []
     },
     "name": "R-Ladies Zagreb",
@@ -1809,11 +2133,15 @@
       "email": "aarhus@rladies.org"
     },
     "organizers": {
-      "current": ["Bel<e9>n Jim<e9>nez", "Sara Tomiolo", "Elena Dudukina"],
+      "current": [
+        "Belén Jiménez",
+        "Sara Tomiolo",
+        "Elena Dudukina"
+      ],
       "former": []
     },
     "name": "R-Ladies Aarhus",
-    "city": "Aarhus"
+    "city": "Aarhus",
   },
   {
     "urlname": "rladies-copenhagen",
@@ -1825,11 +2153,14 @@
       "email": "copenhagen@rladies.org"
     },
     "organizers": {
-      "current": ["Kristina Gregorio", "Diana Lucatero"],
+      "current": [
+        "Kristina Gregorio",
+        "Diana Lucatero"
+      ],
       "former": []
     },
-    "name": "R-Ladies Copenhagen",
     "id": "26653718",
+    "name": "R-Ladies Copenhagen",
     "country_acronym": "DK",
     "state": "",
     "city": "Copenhagen",
@@ -1846,11 +2177,14 @@
       "meetup": "rladies-santo-domingo"
     },
     "organizers": {
-      "current": ["Lissette Rodriguez", "Chigeira De La Rosa"],
+      "current": [
+        "Lissette Rodriguez",
+        "Chigeira De La Rosa"
+      ],
       "former": []
     },
-    "name": "R-Ladies Santo Domingo",
     "id": "35897540",
+    "name": "R-Ladies Santo Domingo",
     "country_acronym": "DO",
     "state": "",
     "city": "Santo Domingo",
@@ -1870,11 +2204,15 @@
       "github": "rladies/meetup-presentations_guayaquil"
     },
     "organizers": {
-      "current": ["Zulemma Bazurto", "Diana Minda", "Linda Cabrera Orellana"],
+      "current": [
+        "Zulemma Bazurto",
+        "Diana Minda",
+        "Linda Cabrera Orellana"
+      ],
       "former": []
     },
-    "name": "R-Ladies Guayaquil",
     "id": "28062692",
+    "name": "R-Ladies Guayaquil",
     "country_acronym": "EC",
     "state": "",
     "city": "Guayaquil",
@@ -1893,11 +2231,15 @@
       "email": "milagro@rladies.org"
     },
     "organizers": {
-      "current": ["Mercedes Gisela Soledispa Lucas", "Jhanelly Chalá", "Naomy Vera"],
+      "current": [
+        "Mercedes Gisela Soledispa Lucas",
+        "Jhanelly Chalá",
+        "Naomy Vera"
+      ],
       "former": []
     },
-    "name": "R-Ladies Milagro",
     "id": "35058835",
+    "name": "R-Ladies Milagro",
     "country_acronym": "EC",
     "state": "",
     "city": "Milagro",
@@ -1917,15 +2259,16 @@
       "github": "rladies/meetup-presentations_galapagos-islands"
     },
     "organizers": {
-      "current": ["Denisse Fierro Arcos"],
+      "current": [
+        "Denisse Fierro Arcos"
+      ],
       "former": []
     },
-    "name": "R-Ladies Puerto Ayora",
     "id": "33194871",
+    "name": "R-Ladies Puerto Ayora",
     "country_acronym": "EC",
     "state": "",
     "city": "Puerto Ayora",
-    "members": 469,
     "lat": -0.74,
     "lon": -90.32,
     "timezone": "Pacific/Galapagos"
@@ -1942,11 +2285,15 @@
       "slack": "https://rladies-quito.slack.com/"
     },
     "organizers": {
-      "current": ["Elena Chicaiza", "Carolina Ca<f1>izares", "Rosi Bola<f1>os"],
+      "current": [
+        "Elena Chicaiza",
+        "Carolina Cañizares",
+        "Rosi Bolaños"
+      ],
       "former": []
     },
-    "name": "R-Ladies Quito",
     "id": "25039212",
+    "name": "R-Ladies Quito",
     "country_acronym": "EC",
     "state": "",
     "city": "Quito",
@@ -1963,15 +2310,16 @@
       "meetup": "rladies-cairo"
     },
     "organizers": {
-      "current": ["Amany Salem"],
+      "current": [
+        "Amany Salem"
+      ],
       "former": []
     },
-    "name": "R-Ladies Cairo",
     "id": "36506244",
+    "name": "R-Ladies Cairo",
     "country_acronym": "EG",
     "state": "",
     "city": "Cairo",
-    "members": 7,
     "lat": 30.06,
     "lon": 31.25,
     "timezone": "Africa/Cairo"
@@ -1980,7 +2328,9 @@
     "status": "prospective",
     "country": "Estonia",
     "organizers": {
-      "current": ["Merilin Paas"],
+      "current": [
+        "Merilin Paas"
+      ],
       "former": []
     },
     "name": "R-Ladies Tallinn",
@@ -1997,11 +2347,13 @@
       "website": "https://r-ladies-addis.github.io/rladies-addis/"
     },
     "organizers": {
-      "current": ["Margareth Gfrerer"],
+      "current": [
+        "Margareth Gfrerer"
+      ],
       "former": []
     },
-    "name": "R-Ladies Addis Abeba",
     "id": "27902133",
+    "name": "R-Ladies Addis Abeba",
     "country_acronym": "ET",
     "state": "",
     "city": "Addis Abeba",
@@ -2014,11 +2366,13 @@
     "status": "prospective",
     "country": "Ethiopia",
     "organizers": {
-      "current": ["Mekdes Dessie Assena"],
+      "current": [
+        "Mekdes Dessie Assena"
+      ],
       "former": []
     },
     "name": "R-Ladies Wolkite",
-    "city": "Wolkite"
+    "city": "Wolkite",
   },
   {
     "urlname": "rladies-helsinki",
@@ -2031,11 +2385,14 @@
       "github": "rladies/meetup-presentations_helsinki"
     },
     "organizers": {
-      "current": ["Suvi Vasama", "Eija-Leena Koponen"],
+      "current": [
+        "Suvi Vasama",
+        "Eija-Leena Koponen"
+      ],
       "former": []
     },
-    "name": "R-Ladies Helsinki",
     "id": "29734242",
+    "name": "R-Ladies Helsinki",
     "country_acronym": "FI",
     "state": "",
     "city": "Helsinki",
@@ -2052,15 +2409,18 @@
       "meetup": "rladies-bordeaux"
     },
     "organizers": {
-      "current": ["Natalija Plasonja", "H<e9>l<e8>ne Labarre", "Sandra Aka"],
+      "current": [
+        "Natalija Plasonja",
+        "Hélène Labarre",
+        "Sandra Aka"
+      ],
       "former": []
     },
-    "name": "R-Ladies Bordeaux",
     "id": "35897766",
+    "name": "R-Ladies Bordeaux",
     "country_acronym": "FR",
     "state": "",
     "city": "Bordeaux",
-    "members": 15,
     "lat": 44.84,
     "lon": -0.58,
     "timezone": "Europe/Paris"
@@ -2069,11 +2429,37 @@
     "status": "prospective",
     "country": "France",
     "organizers": {
-      "current": ["Paulina Jedynak"],
+      "current": [
+        "Paulina Jedynak"
+      ],
       "former": []
     },
     "name": "R-Ladies Grenoble",
     "city": "Grenoble"
+  },
+  {
+    "urlname": "rladies-limoges",
+    "status": "active",
+    "country": "France",
+    "social_media": {
+      "meetup": "rladies-limoges",
+      "email": "limoges@rladies.org"
+    },
+    "organizers": {
+      "current": [
+        "Maelle Amand",
+        "Dina Araujo"
+      ],
+      "former": []
+    },
+    "id": "37870339",
+    "name": "R-Ladies Limoges",
+    "country_acronym": "FR",
+    "state": "",
+    "city": "Limoges",
+    "lat": 45.83,
+    "lon": 1.25,
+    "timezone": "Europe/Paris"
   },
   {
     "urlname": "rladies-lyon",
@@ -2086,15 +2472,20 @@
       "github": "rladies/meetup-presentations_lyon"
     },
     "organizers": {
-      "current": ["Shama Virani", "Hannah Lennon", "Citadel Cabasag", "Nada Assi", "Florence Guida"],
+      "current": [
+        "Shama Virani",
+        "Hannah Lennon",
+        "Citadel Cabasag",
+        "Nada Assi",
+        "Florence Guida"
+      ],
       "former": []
     },
-    "name": "R-Ladies Lyon",
     "id": "30421186",
+    "name": "R-Ladies Lyon",
     "country_acronym": "FR",
     "state": "",
     "city": "Lyon",
-    "members": 83,
     "lat": 45.76,
     "lon": 4.83,
     "timezone": "Europe/Paris"
@@ -2110,15 +2501,18 @@
       "github": "rladies/r-ladies-montpellier"
     },
     "organizers": {
-      "current": ["C<e9>cile Sauder", "Criscely Luj<e1>n", "Faustine Bousquet"],
+      "current": [
+        "Cécile Sauder",
+        "Criscely Luján",
+        "Faustine Bousquet"
+      ],
       "former": []
     },
-    "name": "R-Ladies Montpellier",
     "id": "30339934",
+    "name": "R-Ladies Montpellier",
     "country_acronym": "FR",
     "state": "",
     "city": "Montpellier",
-    "members": 149,
     "lat": 43.61,
     "lon": 3.87,
     "timezone": "Europe/Paris"
@@ -2139,11 +2533,19 @@
       "mastodon": "https://mastodon.social/@rladies_paris"
     },
     "organizers": {
-      "current": ["Mouna Belaid", "Chaima Boughanmi"],
-      "former": ["Diane Beldame", "Christina Bergmann", "Sarah Hosking", "Stéphanie Terrasse"]
+      "current": [
+        "Mouna Belaid",
+        "Chaima Boughanmi"
+      ],
+      "former": [
+        "Diane Beldame",
+        "Christina Bergmann",
+        "Sarah Hosking",
+        "Stéphanie Terrasse"
+      ]
     },
-    "name": "R-Ladies Paris",
     "id": "20443056",
+    "name": "R-Ladies Paris",
     "country_acronym": "FR",
     "state": "",
     "city": "Paris",
@@ -2163,15 +2565,16 @@
       "github": "rladies/meetup-presentations_strasbourg"
     },
     "organizers": {
-      "current": ["Rita Giordano"],
+      "current": [
+        "Rita Giordano"
+      ],
       "former": []
     },
-    "name": "R-Ladies Strasbourg",
     "id": "26068732",
+    "name": "R-Ladies Strasbourg",
     "country_acronym": "FR",
     "state": "",
     "city": "Strasbourg",
-    "members": 81,
     "lat": 48.58,
     "lon": 7.75,
     "timezone": "Europe/Paris"
@@ -2188,15 +2591,18 @@
       "github": "rladies/meetup-presentations_tbilisi"
     },
     "organizers": {
-      "current": ["Liili Abuladze", "Tamuna Margievi", "Mariam Asatiani"],
+      "current": [
+        "Liili Abuladze",
+        "Tamuna Margievi",
+        "Mariam Asatiani"
+      ],
       "former": []
     },
-    "name": "R-Ladies Tbilisi",
     "id": "21313292",
+    "name": "R-Ladies Tbilisi",
     "country_acronym": "GE",
     "state": "",
     "city": "Tbilisi",
-    "members": 382,
     "lat": 41.72,
     "lon": 44.79,
     "timezone": "Asia/Tbilisi"
@@ -2214,11 +2620,15 @@
       "slack": "https://rstats-germany.slack.com/"
     },
     "organizers": {
-      "current": ["Christin Zasada", "Noa Tamir", "Hannah Tillmann"],
+      "current": [
+        "Christin Zasada",
+        "Noa Tamir",
+        "Hannah Tillmann"
+      ],
       "former": []
     },
-    "name": "R-Ladies Berlin",
     "id": "20977178",
+    "name": "R-Ladies Berlin",
     "country_acronym": "DE",
     "state": "",
     "city": "Berlin",
@@ -2239,11 +2649,19 @@
       "bluesky": "rladies-cologne.bsky.social"
     },
     "organizers": {
-      "current": ["Sara Schiesberg", "Gabe Winter", "Lívia Oliveira"],
-      "former": ["Luciana Imbiriba", "Paulina Nemcova", "Cosima Meyer"]
+      "current": [
+        "Sara Schiesberg",
+        "Gabe Winter",
+        "Lívia Oliveira"
+      ],
+      "former": [
+        "Luciana Imbiriba",
+        "Paulina Nemcova",
+        "Cosima Meyer"
+      ]
     },
-    "name": "R-Ladies Cologne",
     "id": "35897809",
+    "name": "R-Ladies Cologne",
     "country_acronym": "DE",
     "state": "",
     "city": "Cologne",
@@ -2263,11 +2681,17 @@
       "github": "rladies/meetup-presentations_freiburg"
     },
     "organizers": {
-      "current": ["Elisa Schneider", "Kyla McConnell", "Julia M<fc>ller"],
-      "former": ["Divya Seernani"]
+      "current": [
+        "Elisa Schneider",
+        "Kyla McConnell",
+        "Julia Müller"
+      ],
+      "former": [
+        "Divya Seernani"
+      ]
     },
-    "name": "R-Ladies Freiburg",
     "id": "30994180",
+    "name": "R-Ladies Freiburg",
     "country_acronym": "DE",
     "state": "",
     "city": "Freiburg",
@@ -2288,11 +2712,15 @@
       "slack": "https://r-ladiesgttingen.slack.com"
     },
     "organizers": {
-      "current": ["Annika Ziereis", "Neele Engelmann", "Laura Julava"],
+      "current": [
+        "Annika Ziereis",
+        "Neele Engelmann",
+        "Laura Julava"
+      ],
       "former": []
     },
-    "name": "R-Ladies Göttingen",
     "id": "34955861",
+    "name": "R-Ladies Göttingen",
     "country_acronym": "DE",
     "state": "",
     "city": "Göttingen",
@@ -2305,11 +2733,13 @@
     "status": "prospective",
     "country": "Germany",
     "organizers": {
-      "current": ["Anna Stepanova"],
+      "current": [
+        "Anna Stepanova"
+      ],
       "former": []
     },
     "name": "R-Ladies Heidelberg",
-    "city": "Heidelberg"
+    "city": "Heidelberg",
   },
   {
     "urlname": "rladies-frankfurt",
@@ -2323,15 +2753,19 @@
       "github": "rladies/meetup-presentations_frankfurt"
     },
     "organizers": {
-      "current": ["Sandra Pintor", "Myriam Traub", "Lara Vivian", "Natalie Filmann"],
+      "current": [
+        "Sandra Pintor",
+        "Myriam Traub",
+        "Lara Vivian",
+        "Natalie Filmann"
+      ],
       "former": []
     },
-    "name": "R-Ladies Frankfurt",
     "id": "31264536",
+    "name": "R-Ladies Frankfurt",
     "country_acronym": "DE",
     "state": "",
     "city": "Frankfurt",
-    "members": 107,
     "lat": 50.12,
     "lon": 8.68,
     "timezone": "Europe/Berlin"
@@ -2340,7 +2774,9 @@
     "status": "prospective",
     "country": "Germany",
     "organizers": {
-      "current": ["Deisy Gysi"],
+      "current": [
+        "Deisy Gysi"
+      ],
       "former": []
     },
     "name": "R-Ladies Leipzig",
@@ -2350,7 +2786,10 @@
     "status": "active",
     "country": "Germany",
     "organizers": {
-      "current": ["Lara Orphal", "Violetta Biermann"],
+      "current": [
+        "Lara Orphal",
+        "Violetta Biermann"
+      ],
       "former": []
     },
     "name": "R-Ladies Marburg",
@@ -2368,7 +2807,12 @@
       "github": "rladies/meetup-presentations_munich"
     },
     "organizers": {
-      "current": ["Daloha Rodriguez-Molina", "Pamela Raquel Matias Garcia", "Dan Huang", "Choi Wai Maggie Chak"],
+      "current": [
+        "Daloha Rodriguez-Molina",
+        "Pamela Raquel Matias Garcia",
+        "Dan Huang",
+        "Choi Wai Maggie Chak"
+      ],
       "former": []
     },
     "name": "R-Ladies Munich",
@@ -2378,17 +2822,22 @@
     "status": "prospective",
     "country": "Germany",
     "organizers": {
-      "current": ["Iris Morgenstern", "Thi Sam To"],
+      "current": [
+        "Iris Morgenstern",
+        "Thi Sam To"
+      ],
       "former": []
     },
-    "name": "R-Ladies M<fc>nster",
-    "city": "M<fc>nster"
+    "name": "R-Ladies Münster",
+    "city": "Münster"
   },
   {
     "status": "prospective",
     "country": "Germany",
     "organizers": {
-      "current": ["Paula Gonzalez"],
+      "current": [
+        "Paula Gonzalez"
+      ],
       "former": []
     },
     "name": "R-Ladies Stuttgart",
@@ -2402,15 +2851,16 @@
       "meetup": "rladies-accra"
     },
     "organizers": {
-      "current": ["Benedicta Essuon Akaribo"],
+      "current": [
+        "Benedicta Essuon Akaribo"
+      ],
       "former": []
     },
-    "name": "R-Ladies Accra",
     "id": "36506211",
+    "name": "R-Ladies Accra",
     "country_acronym": "GH",
     "state": "",
     "city": "Accra",
-    "members": 29,
     "lat": 5.56,
     "lon": -0.2,
     "timezone": "Africa/Accra"
@@ -2423,11 +2873,19 @@
       "meetup": "rladies-cape-coast"
     },
     "organizers": {
-      "current": ["Lois Keh"],
+      "current": [
+        "Lois Keh"
+      ],
       "former": []
     },
+    "id": "37734448",
     "name": "R-Ladies Cape Coast",
-    "city": "Cape Coast"
+    "country_acronym": "GH",
+    "state": "",
+    "city": "Cape Coast",
+    "lat": 5.11,
+    "lon": -1.25,
+    "timezone": "Africa/Accra"
   },
   {
     "urlname": "rladies-kumasi",
@@ -2438,11 +2896,19 @@
       "email": "kumasi@rladies.org"
     },
     "organizers": {
-      "current": ["Jane Esi Monkah"],
+      "current": [
+        "Jane Esi Monkah"
+      ],
       "former": []
     },
+    "id": "37262916",
     "name": "R-Ladies Kumasi",
-    "city": "Kumasi"
+    "country_acronym": "GH",
+    "state": "",
+    "city": "Kumasi",
+    "lat": 6.69,
+    "lon": -1.63,
+    "timezone": "Africa/Accra"
   },
   {
     "urlname": "rladies-athens-gr",
@@ -2452,11 +2918,13 @@
       "meetup": "rladies-athens-gr"
     },
     "organizers": {
-      "current": ["Evangelia Balatsou"],
+      "current": [
+        "Evangelia Balatsou"
+      ],
       "former": []
     },
-    "name": "R-Ladies Athens",
     "id": "34931588",
+    "name": "R-Ladies Athens",
     "country_acronym": "GR",
     "state": "",
     "city": "Athens",
@@ -2473,15 +2941,16 @@
       "meetup": "rladies-thessaloniki"
     },
     "organizers": {
-      "current": ["Danjela Lura"],
+      "current": [
+        "Danjela Lura"
+      ],
       "former": []
     },
-    "name": "R-Ladies Thessaloníki",
     "id": "34931629",
+    "name": "R-Ladies Thessaloníki",
     "country_acronym": "GR",
     "state": "",
     "city": "Thessaloníki",
-    "members": 34,
     "lat": 40.64,
     "lon": 22.94,
     "timezone": "Europe/Athens"
@@ -2495,7 +2964,9 @@
       "email": "hongkong@rladies.org"
     },
     "organizers": {
-      "current": ["Gabriela Mour<e3>o"],
+      "current": [
+        "Gabriela Mourão"
+      ],
       "former": []
     },
     "name": "R-Ladies Hong Kong",
@@ -2513,11 +2984,18 @@
       "github": "rladies/meetup-presentations_budapest"
     },
     "organizers": {
-      "current": ["<c1>gnes Sal<e1>nki", "Eszter Windhager-Pokol", "Zsuzsanna Szab<f3>", "Rita Klein", "Berta B<f6>jte", "Gerda Luk<e1>csn<e9> Szab<f3>"],
+      "current": [
+        "Ágnes Salánki",
+        "Eszter Windhager-Pokol",
+        "Zsuzsanna Szabó",
+        "Rita Klein",
+        "Berta Böjte",
+        "Gerda Lukácsné Szabó"
+      ],
       "former": []
     },
-    "name": "R-Ladies Budapest",
     "id": "22066895",
+    "name": "R-Ladies Budapest",
     "country_acronym": "HU",
     "state": "",
     "city": "Budapest",
@@ -2538,11 +3016,16 @@
       "facebook": "RLadies-Delhi-111066293606859"
     },
     "organizers": {
-      "current": ["Kritika Verma"],
-      "former": ["Anukriti Gupta", "Riya Gupta"]
+      "current": [
+        "Kritika Verma"
+      ],
+      "former": [
+        "Anukriti Gupta",
+        "Riya Gupta"
+      ]
     },
-    "name": "R-Ladies Delhi",
     "id": "32705558",
+    "name": "R-Ladies Delhi",
     "country_acronym": "IN",
     "state": "",
     "city": "Delhi",
@@ -2555,7 +3038,9 @@
     "status": "prospective",
     "country": "India",
     "organizers": {
-      "current": ["Swetha Jegannathan"],
+      "current": [
+        "Swetha Jegannathan"
+      ],
       "former": []
     },
     "name": "R-Ladies Hyderabad",
@@ -2566,7 +3051,9 @@
     "country": "India",
     "state.region": "Karnataka",
     "organizers": {
-      "current": ["Divya Gowda"],
+      "current": [
+        "Divya Gowda"
+      ],
       "former": []
     },
     "name": "R-Ladies B G Nagar",
@@ -2582,11 +3069,23 @@
       "email": "bangalore@rladies.org"
     },
     "organizers": {
-      "current": ["Adithi Upadhya", "Aparna Bindu", "Muthumari S", "Diksha Chawla", "Pragati Parikh", "Smruthi R", "Shefali Lokesh", "Radha Subramanian", "Dincy Mariyam"],
-      "former": ["Saumya Singh"]
+      "current": [
+        "Adithi Upadhya",
+        "Aparna Bindu",
+        "Muthumari S",
+        "Diksha Chawla",
+        "Pragati Parikh",
+        "Smruthi R",
+        "Shefali Lokesh",
+        "Radha Subramanian",
+        "Dincy Mariyam"
+      ],
+      "former": [
+        "Saumya Singh"
+      ]
     },
-    "name": "R-Ladies Bangalore",
     "id": "34086060",
+    "name": "R-Ladies Bangalore",
     "country_acronym": "IN",
     "state": "",
     "city": "Bangalore",
@@ -2605,11 +3104,14 @@
       "email": "mumbai@rladies.org"
     },
     "organizers": {
-      "current": ["Heena Bhagat", "Manasi Mahadik"],
+      "current": [
+        "Heena Bhagat",
+        "Manasi Mahadik"
+      ],
       "former": []
     },
-    "name": "R-Ladies Mumbai",
     "id": "33041359",
+    "name": "R-Ladies Mumbai",
     "country_acronym": "IN",
     "state": "",
     "city": "Mumbai",
@@ -2630,15 +3132,17 @@
       "github": "rladies/meetup-presentations_pune"
     },
     "organizers": {
-      "current": ["Disha Patil", "Saranjeet Kaur"],
+      "current": [
+        "Disha Patil",
+        "Saranjeet Kaur"
+      ],
       "former": []
     },
-    "name": "R-Ladies Pune",
     "id": "32826541",
+    "name": "R-Ladies Pune",
     "country_acronym": "IN",
     "state": "",
     "city": "Pune",
-    "members": 163,
     "lat": 18.53,
     "lon": 73.84,
     "timezone": "Asia/Kolkata"
@@ -2655,11 +3159,13 @@
       "github": "rladies/meetup-presentations_chennai"
     },
     "organizers": {
-      "current": ["Praveena Mathews"],
+      "current": [
+        "Praveena Mathews"
+      ],
       "former": []
     },
-    "name": "R-Ladies Chennai",
     "id": "26276685",
+    "name": "R-Ladies Chennai",
     "country_acronym": "IN",
     "state": "",
     "city": "Chennai",
@@ -2679,7 +3185,9 @@
       "email": "trichy@rladies.org"
     },
     "organizers": {
-      "current": ["Janani Selvaraj"],
+      "current": [
+        "Janani Selvaraj"
+      ],
       "former": []
     },
     "name": "R-Ladies Tiruchirappalli",
@@ -2690,7 +3198,10 @@
     "country": "India",
     "state.region": "Telangana",
     "organizers": {
-      "current": ["Varnitha Kurli Reddy", "Radhika Garimella"],
+      "current": [
+        "Varnitha Kurli Reddy",
+        "Radhika Garimella"
+      ],
       "former": []
     },
     "name": "R-Ladies Hyderabad",
@@ -2701,7 +3212,9 @@
     "country": "India",
     "state.region": "West Bengal",
     "organizers": {
-      "current": ["A. Mani"],
+      "current": [
+        "A. Mani"
+      ],
       "former": []
     },
     "name": "R-Ladies Kolkata",
@@ -2716,15 +3229,16 @@
       "email": "bandaaceh@rladies.org"
     },
     "organizers": {
-      "current": ["Salsabila Mahdi"],
+      "current": [
+        "Salsabila Mahdi"
+      ],
       "former": []
     },
-    "name": "R-Ladies Banda Aceh",
     "id": "33880224",
+    "name": "R-Ladies Banda Aceh",
     "country_acronym": "ID",
     "state": "",
     "city": "Banda Aceh",
-    "members": 83,
     "lat": 5.55,
     "lon": 95.32,
     "timezone": "Asia/Jakarta"
@@ -2733,7 +3247,9 @@
     "status": "prospective",
     "country": "Indonesia",
     "organizers": {
-      "current": ["Novi Tri Astutiningsih"],
+      "current": [
+        "Novi Tri Astutiningsih"
+      ],
       "former": []
     },
     "name": "R-Ladies Bandung",
@@ -2748,11 +3264,15 @@
       "email": "bogor@rladies.org"
     },
     "organizers": {
-      "current": ["Sabhrina Aninta", "Sheherazade", "Ulfah Mardhiah"],
+      "current": [
+        "Sabhrina Aninta",
+        "Sheherazade",
+        "Ulfah Mardhiah"
+      ],
       "former": []
     },
-    "name": "R-Ladies Bogor",
     "id": "31577107",
+    "name": "R-Ladies Bogor",
     "country_acronym": "ID",
     "state": "",
     "city": "Bogor",
@@ -2771,15 +3291,16 @@
       "github": "rladies/meetup-presentations_jakarta"
     },
     "organizers": {
-      "current": ["Erika Siregar"],
+      "current": [
+        "Erika Siregar"
+      ],
       "former": []
     },
-    "name": "R-Ladies Jakarta",
     "id": "32327430",
+    "name": "R-Ladies Jakarta",
     "country_acronym": "ID",
     "state": "",
     "city": "Jakarta",
-    "members": 581,
     "lat": -6.18,
     "lon": 106.83,
     "timezone": "Asia/Jakarta"
@@ -2792,18 +3313,13 @@
       "meetup": "rladies-orumiyeh"
     },
     "organizers": {
-      "current": ["Nasrin Fathollahzadeh Attar"],
+      "current": [
+        "Nasrin Fathollahzadeh Attar"
+      ],
       "former": []
     },
     "name": "R-Ladies Orumiyeh",
-    "id": "35897727",
-    "country_acronym": "IR",
-    "state": "",
-    "city": "Orumiyeh",
-    "members": 307,
-    "lat": 37.53,
-    "lon": 45,
-    "timezone": "Asia/Tehran"
+    "city": "Orumiyeh"
   },
   {
     "urlname": "rladies-dublin",
@@ -2817,14 +3333,15 @@
     },
     "organizers": {
       "current": [],
-      "former": ["Jo Niec"]
+      "former": [
+        "Jo Niec"
+      ]
     },
-    "name": "R-Ladies Dublin",
     "id": "21149852",
+    "name": "R-Ladies Dublin",
     "country_acronym": "IE",
     "state": "",
     "city": "Dublin",
-    "members": 846,
     "lat": 53.33,
     "lon": -6.25,
     "timezone": "Europe/Dublin"
@@ -2833,7 +3350,9 @@
     "status": "prospective",
     "country": "Israel",
     "organizers": {
-      "current": ["Ayala Allon"],
+      "current": [
+        "Ayala Allon"
+      ],
       "former": []
     },
     "name": "R-Ladies Tel Aviv",
@@ -2851,15 +3370,17 @@
       "github": "rladies/meetup-presentations_bari"
     },
     "organizers": {
-      "current": ["Giovanna de Vincenzo", "Francesca Lamontanara"],
+      "current": [
+        "Giovanna de Vincenzo",
+        "Francesca Lamontanara"
+      ],
       "former": []
     },
-    "name": "R-Ladies Bari, BA",
     "id": "28519562",
+    "name": "R-Ladies Bari, BA",
     "country_acronym": "IT",
     "state": "BA",
     "city": "Bari",
-    "members": 183,
     "lat": 41.13,
     "lon": 16.87,
     "timezone": "Europe/Rome"
@@ -2868,7 +3389,9 @@
     "status": "prospective",
     "country": "Italy",
     "organizers": {
-      "current": ["Damia Noce"],
+      "current": [
+        "Damia Noce"
+      ],
       "former": []
     },
     "name": "R-Ladies Bolzano",
@@ -2885,11 +3408,13 @@
       "github": "rladies/meetup-presentations_milan"
     },
     "organizers": {
-      "current": ["Parvaneh Shafiei"],
+      "current": [
+        "Parvaneh Shafiei"
+      ],
       "former": []
     },
-    "name": "R-Ladies Milano, MI",
     "id": "24752511",
+    "name": "R-Ladies Milano, MI",
     "country_acronym": "IT",
     "state": "MI",
     "city": "Milano",
@@ -2902,7 +3427,9 @@
     "status": "prospective",
     "country": "Italy",
     "organizers": {
-      "current": ["Micaela Arcaio"],
+      "current": [
+        "Micaela Arcaio"
+      ],
       "former": []
     },
     "name": "R-Ladies Palermo",
@@ -2912,7 +3439,9 @@
     "status": "prospective",
     "country": "Italy",
     "organizers": {
-      "current": ["Nicoletta Simi"],
+      "current": [
+        "Nicoletta Simi"
+      ],
       "former": []
     },
     "name": "R-Ladies Pisa",
@@ -2932,11 +3461,19 @@
       "bluesky": "rladiesrome.bsky.social"
     },
     "organizers": {
-      "current": ["Federica Gazzelloni", "Silvana Acosta", "Rafaela Ribeiro Lucas"],
-      "former": ["Nina Deliu", "Katie Wood", "Francesca Picone"]
+      "current": [
+        "Federica Gazzelloni",
+        "Silvana Acosta",
+        "Rafaela Ribeiro Lucas"
+      ],
+      "former": [
+        "Nina Deliu",
+        "Katie Wood",
+        "Francesca Picone"
+      ]
     },
-    "name": "R-Ladies Roma, RM",
     "id": "36128420",
+    "name": "R-Ladies Roma, RM",
     "country_acronym": "IT",
     "state": "RM",
     "city": "Roma",
@@ -2949,7 +3486,9 @@
     "status": "prospective",
     "country": "Italy",
     "organizers": {
-      "current": ["Teresa Del Bianco"],
+      "current": [
+        "Teresa Del Bianco"
+      ],
       "former": []
     },
     "name": "R-Ladies Trento",
@@ -2959,7 +3498,9 @@
     "status": "prospective",
     "country": "Italy",
     "organizers": {
-      "current": ["Jana Hasen<e4>cker"],
+      "current": [
+        "Jana Hasenäcker"
+      ],
       "former": []
     },
     "name": "R-Ladies Trieste",
@@ -2969,7 +3510,9 @@
     "status": "prospective",
     "country": "Japan",
     "organizers": {
-      "current": ["Margaret Mars Brisbin"],
+      "current": [
+        "Margaret Mars Brisbin"
+      ],
       "former": []
     },
     "name": "R-Ladies Okinawa",
@@ -2979,7 +3522,9 @@
     "status": "prospective",
     "country": "Kenya",
     "organizers": {
-      "current": ["Frida Oyucho"],
+      "current": [
+        "Frida Oyucho"
+      ],
       "former": []
     },
     "name": "R-Ladies Kisumu City",
@@ -2996,11 +3541,19 @@
       "linkedin": "r-ladies-nairobi-2572841b3"
     },
     "organizers": {
-      "current": ["Lucy Njoki Njuki", "Happiness Ndanu", "Agnes Ndirangu"],
-      "former": ["Maggie Wanjiru", "Faith Musili", "Shelmith Kariuki"]
+      "current": [
+        "Lucy Njoki Njuki",
+        "Happiness Ndanu",
+        "Agnes Ndirangu"
+      ],
+      "former": [
+        "Maggie Wanjiru",
+        "Faith Musili",
+        "Shelmith Kariuki"
+      ]
     },
-    "name": "R-Ladies Nairobi",
     "id": "33827845",
+    "name": "R-Ladies Nairobi",
     "country_acronym": "KE",
     "state": "",
     "city": "Nairobi",
@@ -3013,7 +3566,9 @@
     "status": "prospective",
     "country": "Kenya",
     "organizers": {
-      "current": ["Immaculate Kathomi"],
+      "current": [
+        "Immaculate Kathomi"
+      ],
       "former": []
     },
     "name": "R-Ladies Nakuru",
@@ -3023,7 +3578,9 @@
     "status": "active",
     "country": "Kyrgyzstan",
     "organizers": {
-      "current": ["Razia Abdieva"],
+      "current": [
+        "Razia Abdieva"
+      ],
       "former": []
     },
     "name": "R-Ladies Bishkek",
@@ -3037,7 +3594,9 @@
       "email": "beirut@rladies.org"
     },
     "organizers": {
-      "current": ["Sondos Atwi"],
+      "current": [
+        "Sondos Atwi"
+      ],
       "former": []
     },
     "name": "R-Ladies Beirut",
@@ -3047,7 +3606,10 @@
     "status": "prospective",
     "country": "Luxembourg",
     "organizers": {
-      "current": ["Claudia Albanese", "Irma Karabegovic"],
+      "current": [
+        "Claudia Albanese",
+        "Irma Karabegovic"
+      ],
       "former": []
     },
     "name": "R-Ladies Luxembourg",
@@ -3057,7 +3619,9 @@
     "status": "prospective",
     "country": "Malawi",
     "organizers": {
-      "current": ["Angeziwa Chirambo"],
+      "current": [
+        "Angeziwa Chirambo"
+      ],
       "former": []
     },
     "name": "R-Ladies Blantyre",
@@ -3067,7 +3631,9 @@
     "status": "prospective",
     "country": "Malaysia",
     "organizers": {
-      "current": ["Anuradha Yerukola"],
+      "current": [
+        "Anuradha Yerukola"
+      ],
       "former": []
     },
     "name": "R-Ladies Kuala Lumpur",
@@ -3082,15 +3648,17 @@
       "email": "aguascalientes@rladies.org"
     },
     "organizers": {
-      "current": ["Regina Isabel Medina", "Yadira Peralta"],
+      "current": [
+        "Regina Isabel Medina",
+        "Yadira Peralta"
+      ],
       "former": []
     },
-    "name": "R-Ladies Aguascalientes",
     "id": "33409736",
+    "name": "R-Ladies Aguascalientes",
     "country_acronym": "MX",
     "state": "",
     "city": "Aguascalientes",
-    "members": 345,
     "lat": 21.88,
     "lon": -102.3,
     "timezone": "America/Mexico_City"
@@ -3099,7 +3667,9 @@
     "status": "prospective",
     "country": "Mexico",
     "organizers": {
-      "current": ["Cecilia Escalante"],
+      "current": [
+        "Cecilia Escalante"
+      ],
       "former": []
     },
     "name": "R-Ladies Campeche",
@@ -3114,7 +3684,10 @@
       "email": "tuxtla@rladies.org"
     },
     "organizers": {
-      "current": ["comma separated", "Amin Siman Israel"],
+      "current": [
+        "comma separated",
+        "Amin Siman Israel"
+      ],
       "former": []
     },
     "name": "R-Ladies tuxtla-gutierrez",
@@ -3124,7 +3697,12 @@
     "status": "prospective",
     "country": "Mexico",
     "organizers": {
-      "current": ["Cristina Alex", "Anah<ed> Canedo", "Mirna V<e1>zquez Rosas Landa", "Cristina Dominguez Mendoza"],
+      "current": [
+        "Cristina Alex",
+        "Anahí Canedo",
+        "Mirna Vázquez Rosas Landa",
+        "Cristina Dominguez Mendoza"
+      ],
       "former": []
     },
     "name": "R-Ladies Chiapas",
@@ -3134,7 +3712,9 @@
     "status": "prospective",
     "country": "Mexico",
     "organizers": {
-      "current": ["Denisse Chacon"],
+      "current": [
+        "Denisse Chacon"
+      ],
       "former": []
     },
     "name": "R-Ladies Chihuahua",
@@ -3148,15 +3728,16 @@
       "meetup": "rladies-ciudad-obregon"
     },
     "organizers": {
-      "current": ["Rub<ed> Navarro"],
+      "current": [
+        "Rubí Navarro"
+      ],
       "former": []
     },
-    "name": "R-Ladies Ciudad Obregón",
     "id": "36155463",
+    "name": "R-Ladies Ciudad Obregón",
     "country_acronym": "MX",
     "state": "",
     "city": "Ciudad Obregón",
-    "members": 3,
     "lat": 27.49,
     "lon": -109.94,
     "timezone": "America/Hermosillo"
@@ -3166,7 +3747,9 @@
     "country": "Mexico",
     "state.region": "Colima",
     "organizers": {
-      "current": ["SALDA<d1>A ZEPEDA DAYNA PRISCILA"],
+      "current": [
+        "SALDAÑA ZEPEDA DAYNA PRISCILA"
+      ],
       "former": []
     },
     "name": "R-Ladies Colima",
@@ -3182,11 +3765,17 @@
       "email": "cuernavaca@rladies.org"
     },
     "organizers": {
-      "current": ["Joselyn Chavez", "Ver<f3>nica Jim<e9>nez Jacinto", "Leticia Vega Alvarado", "Elizabeth Ernestina Godoy Lozano", "Aurora Labastida"],
+      "current": [
+        "Joselyn Chavez",
+        "Verónica Jiménez Jacinto",
+        "Leticia Vega Alvarado",
+        "Elizabeth Ernestina Godoy Lozano",
+        "Aurora Labastida"
+      ],
       "former": []
     },
-    "name": "R-Ladies Cuernavaca",
     "id": "32604355",
+    "name": "R-Ladies Cuernavaca",
     "country_acronym": "MX",
     "state": "",
     "city": "Cuernavaca",
@@ -3204,11 +3793,15 @@
       "email": "guadalajara@rladies.org"
     },
     "organizers": {
-      "current": ["Nancy Manzo", "Paola Manzo", "Agostina Porto"],
+      "current": [
+        "Nancy Manzo",
+        "Paola Manzo",
+        "Agostina Porto"
+      ],
       "former": []
     },
-    "name": "R-Ladies Guadalajara",
     "id": "34099620",
+    "name": "R-Ladies Guadalajara",
     "country_acronym": "MX",
     "state": "",
     "city": "Guadalajara",
@@ -3226,11 +3819,19 @@
       "email": "guanajuato@rladies.org"
     },
     "organizers": {
-      "current": ["Lavinia Lav<ed>n L<f3>pez"],
+      "current": [
+        "Lavinia Lavín López"
+      ],
       "former": []
     },
+    "id": "37702775",
     "name": "R-Ladies Guanajuato",
-    "city": "Guanajuato"
+    "country_acronym": "MX",
+    "state": "",
+    "city": "Guanajuato",
+    "lat": 21.02,
+    "lon": -101.28,
+    "timezone": "America/Mexico_City"
   },
   {
     "urlname": "rladies-cdmx",
@@ -3245,11 +3846,16 @@
       "slack": "rladiescdmx.slack.com"
     },
     "organizers": {
-      "current": ["Silvia Eunice Guti<e9>rrez de la Torre", "Maria Ortiz", "Mariana Carmona", "Mariana Godina"],
+      "current": [
+        "Silvia Eunice Gutiérrez de la Torre",
+        "Maria Ortiz",
+        "Mariana Carmona",
+        "Mariana Godina"
+      ],
       "former": []
     },
-    "name": "R-Ladies México City",
     "id": "24820200",
+    "name": "R-Ladies México City",
     "country_acronym": "MX",
     "state": "",
     "city": "México City",
@@ -3267,11 +3873,14 @@
       "email": "monterrey@rladies.org"
     },
     "organizers": {
-      "current": ["Juana Martinez", "Verenice Amante"],
+      "current": [
+        "Juana Martinez",
+        "Verenice Amante"
+      ],
       "former": []
     },
-    "name": "R-Ladies Monterrey",
     "id": "33194964",
+    "name": "R-Ladies Monterrey",
     "country_acronym": "MX",
     "state": "",
     "city": "Monterrey",
@@ -3288,11 +3897,15 @@
       "meetup": "rladies-morelia"
     },
     "organizers": {
-      "current": ["Nelly Selem", "Irais Avila Eulogio", "Thomai Tsiftsi"],
+      "current": [
+        "Nelly Selem",
+        "Irais Avila Eulogio",
+        "Thomai Tsiftsi"
+      ],
       "former": []
     },
-    "name": "R-Ladies Morelia",
     "id": "36155475",
+    "name": "R-Ladies Morelia",
     "country_acronym": "MX",
     "state": "",
     "city": "Morelia",
@@ -3305,7 +3918,11 @@
     "status": "prospective",
     "country": "Mexico",
     "organizers": {
-      "current": ["Irene Lopez", "Elisa M<e1>rquez Zavala", "Citlali Gil Aguillon"],
+      "current": [
+        "Irene Lopez",
+        "Elisa Márquez Zavala",
+        "Citlali Gil Aguillon"
+      ],
       "former": []
     },
     "name": "R-Ladies Nezahualcoyotl",
@@ -3321,15 +3938,16 @@
       "email": "pachuca@rladies.org"
     },
     "organizers": {
-      "current": ["Yesenia Jasso Arreola"],
+      "current": [
+        "Yesenia Jasso Arreola"
+      ],
       "former": []
     },
-    "name": "R-Ladies Pachuca",
     "id": "32767673",
+    "name": "R-Ladies Pachuca",
     "country_acronym": "MX",
     "state": "",
     "city": "Pachuca",
-    "members": 22,
     "lat": 20.12,
     "lon": -98.76,
     "timezone": "America/Mexico_City"
@@ -3344,15 +3962,17 @@
       "github": "rladies/meetup-presentations_puebla"
     },
     "organizers": {
-      "current": ["Averi Giudicessi", "Naiki Olivas Gaspar"],
+      "current": [
+        "Averi Giudicessi",
+        "Naiki Olivas Gaspar"
+      ],
       "former": []
     },
-    "name": "R-Ladies Puebla",
     "id": "32426344",
+    "name": "R-Ladies Puebla",
     "country_acronym": "MX",
     "state": "",
     "city": "Puebla",
-    "members": 2422,
     "lat": 19.05,
     "lon": -98.22,
     "timezone": "America/Mexico_City"
@@ -3370,15 +3990,18 @@
       "slack": "r-ladiesqro.slack.com"
     },
     "organizers": {
-      "current": ["Driselda Patricia S<e1>nchez Aguirre", "Ana Betty Villase<f1>or", "Azalea Reyes Aguilar"],
+      "current": [
+        "Driselda Patricia Sánchez Aguirre",
+        "Ana Betty Villaseñor",
+        "Azalea Reyes Aguilar"
+      ],
       "former": []
     },
-    "name": "R-Ladies Querétaro",
     "id": "31514006",
+    "name": "R-Ladies Querétaro",
     "country_acronym": "MX",
     "state": "",
     "city": "Querétaro",
-    "members": 916,
     "lat": 20.59,
     "lon": -100.4,
     "timezone": "America/Mexico_City"
@@ -3391,11 +4014,13 @@
       "meetup": "rladies-san-cristobal-de-las-casas"
     },
     "organizers": {
-      "current": ["Anahi Canedo"],
+      "current": [
+        "Anahi Canedo"
+      ],
       "former": []
     },
-    "name": "R-Ladies San Cristóbal de las Casas",
     "id": "36506636",
+    "name": "R-Ladies San Cristóbal de las Casas",
     "country_acronym": "MX",
     "state": "",
     "city": "San Cristóbal de las Casas",
@@ -3413,11 +4038,22 @@
       "email": "tepic@rladies.org"
     },
     "organizers": {
-      "current": ["Zulia Fernandina Nieves L<f3>pez", "Fabiola Ay<f3>n", "Angelica Nallelhy", "Aida Gabriela Mora"],
+      "current": [
+        "Zulia Fernandina Nieves López",
+        "Fabiola Ayón",
+        "Angelica Nallelhy",
+        "Aida Gabriela Mora"
+      ],
       "former": []
     },
+    "id": "37702769",
     "name": "R-Ladies Tepic",
-    "city": "Tepic"
+    "country_acronym": "MX",
+    "state": "",
+    "city": "Tepic",
+    "lat": 21.5,
+    "lon": -104.89,
+    "timezone": "America/Mazatlan"
   },
   {
     "urlname": "rladies-tijuana",
@@ -3430,11 +4066,13 @@
       "instagram": "rladiestijuana"
     },
     "organizers": {
-      "current": ["Karen Nohemi Morales Galindo"],
+      "current": [
+        "Karen Nohemi Morales Galindo"
+      ],
       "former": []
     },
-    "name": "R-Ladies Tijuana",
     "id": "34142165",
+    "name": "R-Ladies Tijuana",
     "country_acronym": "MX",
     "state": "",
     "city": "Tijuana",
@@ -3451,11 +4089,13 @@
       "meetup": "rladies-villahermosa"
     },
     "organizers": {
-      "current": ["Jessica Daniela Oca<f1>a Falc<f3>n"],
+      "current": [
+        "Jessica Daniela Ocaña Falcón"
+      ],
       "former": []
     },
-    "name": "R-Ladies Villahermosa",
     "id": "35897779",
+    "name": "R-Ladies Villahermosa",
     "country_acronym": "MX",
     "state": "",
     "city": "Villahermosa",
@@ -3474,11 +4114,13 @@
       "email": "xalapa@rladies.org"
     },
     "organizers": {
-      "current": ["Marcela Dolores Guerra Osorno"],
+      "current": [
+        "Marcela Dolores Guerra Osorno"
+      ],
       "former": []
     },
-    "name": "R-Ladies Xalapa",
     "id": "29397372",
+    "name": "R-Ladies Xalapa",
     "country_acronym": "MX",
     "state": "",
     "city": "Xalapa",
@@ -3498,11 +4140,13 @@
       "github": "rladies/meetup-presentations_montenegro"
     },
     "organizers": {
-      "current": ["Ivana Kecojevic"],
+      "current": [
+        "Ivana Kecojevic"
+      ],
       "former": []
     },
     "name": "R-Ladies Herceg Novi",
-    "city": "Herceg Novi"
+    "city": "Herceg Novi",
   },
   {
     "urlname": "rladies-podgorica",
@@ -3513,15 +4157,16 @@
       "email": "podgorica@rladies.org"
     },
     "organizers": {
-      "current": ["Elma Dervic"],
+      "current": [
+        "Elma Dervic"
+      ],
       "former": []
     },
-    "name": "R-Ladies Podgorica",
     "id": "32783356",
+    "name": "R-Ladies Podgorica",
     "country_acronym": "ME",
     "state": "",
     "city": "Podgorica",
-    "members": 34,
     "lat": 42.47,
     "lon": 19.28,
     "timezone": "Europe/Belgrade"
@@ -3536,11 +4181,13 @@
       "email": "rabat@rladies.org"
     },
     "organizers": {
-      "current": ["Abir Alaoui"],
+      "current": [
+        "Abir Alaoui"
+      ],
       "former": []
     },
-    "name": "R-Ladies Rabat",
     "id": "36221061",
+    "name": "R-Ladies Rabat",
     "country_acronym": "MA",
     "state": "",
     "city": "Rabat",
@@ -3559,15 +4206,17 @@
       "email": "kathmandu@rladies.org"
     },
     "organizers": {
-      "current": ["Prakriti Dhungana", "Anupama Bishwokarma"],
+      "current": [
+        "Prakriti Dhungana",
+        "Anupama Bishwokarma"
+      ],
       "former": []
     },
-    "name": "R-Ladies Kathmandu",
     "id": "30017254",
+    "name": "R-Ladies Kathmandu",
     "country_acronym": "NP",
     "state": "",
     "city": "Kathmandu",
-    "members": 87,
     "lat": 27.71,
     "lon": 85.31,
     "timezone": "Asia/Kathmandu"
@@ -3576,7 +4225,9 @@
     "status": "prospective",
     "country": "Netherlands",
     "organizers": {
-      "current": ["Victoria Lopez"],
+      "current": [
+        "Victoria Lopez"
+      ],
       "former": []
     },
     "name": "R-Ladies Almere",
@@ -3593,11 +4244,19 @@
       "bluesky": "rladiesamsterdam.bsky.social"
     },
     "organizers": {
-      "current": ["Kylie Ainslie", "Josefina Bernardo"],
-      "former": ["Tess Korthout", "Janine Khuc", "Iris de Vries", "Asli Kucukosmanoglu"]
+      "current": [
+        "Kylie Ainslie",
+        "Josefina Bernardo"
+      ],
+      "former": [
+        "Tess Korthout",
+        "Janine Khuc",
+        "Iris de Vries",
+        "Asli Kucukosmanoglu"
+      ]
     },
-    "name": "R-Ladies Amsterdam",
     "id": "27443387",
+    "name": "R-Ladies Amsterdam",
     "country_acronym": "NL",
     "state": "",
     "city": "Amsterdam",
@@ -3615,11 +4274,14 @@
       "email": "denbosch@rladies.org"
     },
     "organizers": {
-      "current": ["Veerle van Son", "Luana Gomes Sousa"],
+      "current": [
+        "Veerle van Son",
+        "Luana Gomes Sousa"
+      ],
       "former": []
     },
-    "name": "R-Ladies Den Bosch",
     "id": "31457077",
+    "name": "R-Ladies Den Bosch",
     "country_acronym": "NL",
     "state": "",
     "city": "Den Bosch",
@@ -3632,7 +4294,9 @@
     "status": "prospective",
     "country": "Netherlands",
     "organizers": {
-      "current": ["Suzanne Dekker"],
+      "current": [
+        "Suzanne Dekker"
+      ],
       "former": []
     },
     "name": "R-Ladies Groningen",
@@ -3642,7 +4306,9 @@
     "status": "prospective",
     "country": "Netherlands",
     "organizers": {
-      "current": ["Margo Pacula"],
+      "current": [
+        "Margo Pacula"
+      ],
       "former": []
     },
     "name": "R-Ladies Heerenveen",
@@ -3652,7 +4318,9 @@
     "status": "prospective",
     "country": "Netherlands",
     "organizers": {
-      "current": ["Vera Arntzen"],
+      "current": [
+        "Vera Arntzen"
+      ],
       "former": []
     },
     "name": "R-Ladies Leiden",
@@ -3668,15 +4336,20 @@
       "email": "nijmegen@rladies.org"
     },
     "organizers": {
-      "current": ["Sara Iacozza", "Eirini Zormpa"],
-      "former": ["Anne Mickan", "Laura Giglio"]
+      "current": [
+        "Sara Iacozza",
+        "Eirini Zormpa"
+      ],
+      "former": [
+        "Anne Mickan",
+        "Laura Giglio"
+      ]
     },
-    "name": "R-Ladies Nijmegen",
     "id": "28393787",
+    "name": "R-Ladies Nijmegen",
     "country_acronym": "NL",
     "state": "",
     "city": "Nijmegen",
-    "members": 348,
     "lat": 51.84,
     "lon": 5.85,
     "timezone": "Europe/Amsterdam"
@@ -3693,15 +4366,19 @@
       "github": "rladies/meetup-presentations_rotterdam"
     },
     "organizers": {
-      "current": ["Paloma Rojas", "Elena He", "Yalda Mohammadian", "Madalina Naghi"],
+      "current": [
+        "Paloma Rojas",
+        "Elena He",
+        "Yalda Mohammadian",
+        "Madalina Naghi"
+      ],
       "former": []
     },
-    "name": "R-Ladies Rotterdam",
     "id": "26792997",
+    "name": "R-Ladies Rotterdam",
     "country_acronym": "NL",
     "state": "",
     "city": "Rotterdam",
-    "members": 503,
     "lat": 51.93,
     "lon": 4.48,
     "timezone": "Europe/Amsterdam"
@@ -3710,7 +4387,9 @@
     "status": "prospective",
     "country": "Netherlands",
     "organizers": {
-      "current": ["Karin Groothuis-Oudshoorn"],
+      "current": [
+        "Karin Groothuis-Oudshoorn"
+      ],
       "former": []
     },
     "name": "R-Ladies Twente",
@@ -3726,11 +4405,14 @@
       "github": "rladies/meetup-presentations_utrecht"
     },
     "organizers": {
-      "current": ["Annelies Kers", "Dewi Koning"],
+      "current": [
+        "Annelies Kers",
+        "Dewi Koning"
+      ],
       "former": []
     },
-    "name": "R-Ladies Utrecht",
     "id": "32144791",
+    "name": "R-Ladies Utrecht",
     "country_acronym": "NL",
     "state": "",
     "city": "Utrecht",
@@ -3749,7 +4431,9 @@
       "email": "wageningen@rladies.org"
     },
     "organizers": {
-      "current": ["Veronika Laine"],
+      "current": [
+        "Veronika Laine"
+      ],
       "former": []
     },
     "name": "R-Ladies Wageningen",
@@ -3766,15 +4450,20 @@
       "github": "rladies/meetup-presentations_auckland"
     },
     "organizers": {
-      "current": ["Anna Fergusson"],
-      "former": ["Kim Fitter", "Anjali Gupta", "Isabel Johnson"]
+      "current": [
+        "Anna Fergusson"
+      ],
+      "former": [
+        "Kim Fitter",
+        "Anjali Gupta",
+        "Isabel Johnson"
+      ]
     },
-    "name": "R-Ladies Auckland",
     "id": "26653882",
+    "name": "R-Ladies Auckland",
     "country_acronym": "NZ",
     "state": "",
     "city": "Auckland",
-    "members": 799,
     "lat": -36.85,
     "lon": 174.76,
     "timezone": "Pacific/Auckland"
@@ -3788,15 +4477,16 @@
       "email": "chch@rladies.org"
     },
     "organizers": {
-      "current": ["Vica Papp"],
+      "current": [
+        "Vica Papp"
+      ],
       "former": []
     },
-    "name": "R-Ladies Christchurch",
     "id": "31807417",
+    "name": "R-Ladies Christchurch",
     "country_acronym": "NZ",
     "state": "",
     "city": "Christchurch",
-    "members": 90,
     "lat": -43.53,
     "lon": 172.64,
     "timezone": "Pacific/Auckland"
@@ -3810,15 +4500,16 @@
       "email": "nelson@rladies.org"
     },
     "organizers": {
-      "current": ["Dana Briscoe"],
+      "current": [
+        "Dana Briscoe"
+      ],
       "former": []
     },
-    "name": "R-Ladies Nelson",
     "id": "31457211",
+    "name": "R-Ladies Nelson",
     "country_acronym": "NZ",
     "state": "",
     "city": "Nelson",
-    "members": 23,
     "lat": -41.29,
     "lon": 173.24,
     "timezone": "Pacific/Auckland"
@@ -3831,15 +4522,17 @@
       "meetup": "rladies-wellington"
     },
     "organizers": {
-      "current": ["Silvina Pugliese", "Ravi Shrividya"],
+      "current": [
+        "Silvina Pugliese",
+        "Ravi Shrividya"
+      ],
       "former": []
     },
-    "name": "R-Ladies Wellington",
     "id": "36506465",
+    "name": "R-Ladies Wellington",
     "country_acronym": "NZ",
     "state": "",
     "city": "Wellington",
-    "members": 13,
     "lat": -41.28,
     "lon": 174.78,
     "timezone": "Pacific/Auckland"
@@ -3854,11 +4547,13 @@
       "github": "rladies/meetup-presentations_abuja"
     },
     "organizers": {
-      "current": ["Bilikisu Wunmi Aderinto"],
+      "current": [
+        "Bilikisu Wunmi Aderinto"
+      ],
       "former": []
     },
-    "name": "R-Ladies Abuja",
     "id": "33291403",
+    "name": "R-Ladies Abuja",
     "country_acronym": "NG",
     "state": "",
     "city": "Abuja",
@@ -3871,7 +4566,9 @@
     "status": "prospective",
     "country": "Nigeria",
     "organizers": {
-      "current": ["Waliyat Olaide Oloyede"],
+      "current": [
+        "Waliyat Olaide Oloyede"
+      ],
       "former": []
     },
     "name": "R-Ladies Ilorin",
@@ -3886,11 +4583,13 @@
       "email": "lagos@rladies.org"
     },
     "organizers": {
-      "current": ["Alimi Eyitayo"],
+      "current": [
+        "Alimi Eyitayo"
+      ],
       "former": []
     },
-    "name": "R-Ladies Lagos",
     "id": "32612004",
+    "name": "R-Ladies Lagos",
     "country_acronym": "NG",
     "state": "",
     "city": "Lagos",
@@ -3903,7 +4602,9 @@
     "status": "prospective",
     "country": "Nigeria",
     "organizers": {
-      "current": ["Fortune Awala"],
+      "current": [
+        "Fortune Awala"
+      ],
       "former": []
     },
     "name": "R-Ladies Port Harcourt",
@@ -3919,11 +4620,18 @@
       "github": "rladies/meetup-presentations_bergen"
     },
     "organizers": {
-      "current": ["Jonelle Dickow Villar", "Seehee Rim", "Astrid Lunde", "Ellisif Nygaard"],
-      "former": ["Julia Romanowska"]
+      "current": [
+        "Jonelle Dickow Villar",
+        "Seehee Rim",
+        "Astrid Lunde",
+        "Ellisif Nygaard"
+      ],
+      "former": [
+        "Julia Romanowska"
+      ]
     },
-    "name": "R-Ladies Bergen",
     "id": "32946570",
+    "name": "R-Ladies Bergen",
     "country_acronym": "NO",
     "state": "",
     "city": "Bergen",
@@ -3943,11 +4651,18 @@
       "github": "rladies/meetup-presentations_oslo"
     },
     "organizers": {
-      "current": ["Athanasia Monika Mowinckel", "Lene Norderhaug Drosdal", "Aurora Voje"],
-      "former": ["Anne Claire Fouilloux", "Isabelle Valette"]
+      "current": [
+        "Athanasia Monika Mowinckel",
+        "Lene Norderhaug Drosdal",
+        "Aurora Voje"
+      ],
+      "former": [
+        "Anne Claire Fouilloux",
+        "Isabelle Valette"
+      ]
     },
-    "name": "R-Ladies Oslo",
     "id": "27651457",
+    "name": "R-Ladies Oslo",
     "country_acronym": "NO",
     "state": "",
     "city": "Oslo",
@@ -3964,8 +4679,13 @@
       "email": "trondheim@rladies.org"
     },
     "organizers": {
-      "current": ["Brooke Wolford"],
-      "former": ["Emma Sofie Skarstein", "Susan Anyosa"]
+      "current": [
+        "Brooke Wolford"
+      ],
+      "former": [
+        "Emma Sofie Skarstein",
+        "Susan Anyosa"
+      ]
     },
     "name": "R-Ladies Trondheim",
     "city": "Trondheim"
@@ -3979,8 +4699,12 @@
       "email": "masqat@rladies.org"
     },
     "organizers": {
-      "current": ["Noora Said"],
-      "former": ["Iman Al Hasani"]
+      "current": [
+        "Noora Said"
+      ],
+      "former": [
+        "Iman Al Hasani"
+      ]
     },
     "name": "R-Ladies Muscat",
     "id": "32964072",
@@ -3996,7 +4720,9 @@
     "status": "prospective",
     "country": "Pakistan",
     "organizers": {
-      "current": ["Mareeha Kamran"],
+      "current": [
+        "Mareeha Kamran"
+      ],
       "former": []
     },
     "name": "R-Ladies Lahore",
@@ -4012,11 +4738,14 @@
       "email": "asuncion@rladies.org"
     },
     "organizers": {
-      "current": ["Ivonne Aristizabal", "Flavia Sacco"],
+      "current": [
+        "Ivonne Aristizabal",
+        "Flavia Sacco"
+      ],
       "former": []
     },
-    "name": "R-Ladies Asunción",
     "id": "33917745",
+    "name": "R-Ladies Asunción",
     "country_acronym": "PY",
     "state": "",
     "city": "Asunción",
@@ -4034,11 +4763,15 @@
       "email": "cusco@rladies.org"
     },
     "organizers": {
-      "current": ["Karen Madeleine Marocho", "Joice K. Chavez", "Camila J. Vargas"],
+      "current": [
+        "Karen Madeleine Marocho",
+        "Joice K. Chavez",
+        "Camila J. Vargas"
+      ],
       "former": []
     },
-    "name": "R-Ladies Cusco",
     "id": "33704099",
+    "name": "R-Ladies Cusco",
     "country_acronym": "PE",
     "state": "",
     "city": "Cusco",
@@ -4060,15 +4793,21 @@
       "slack": "r-ladieslima.slack.com"
     },
     "organizers": {
-      "current": ["Ivonne Renter<ed>a", "Vilma Romero", "Evelyn Gutierrez", "Yuriko Sosa", "Sherly Tarazona", "Luisa Quispe"],
+      "current": [
+        "Ivonne Rentería",
+        "Vilma Romero",
+        "Evelyn Gutierrez",
+        "Yuriko Sosa",
+        "Sherly Tarazona",
+        "Luisa Quispe"
+      ],
       "former": []
     },
-    "name": "R-Ladies Lima",
     "id": "27269070",
+    "name": "R-Ladies Lima",
     "country_acronym": "PE",
     "state": "",
     "city": "Lima",
-    "members": 1945,
     "lat": -12.07,
     "lon": -77.05,
     "timezone": "America/Lima"
@@ -4077,7 +4816,9 @@
     "status": "prospective",
     "country": "Philippines",
     "organizers": {
-      "current": ["Ma. Regina Justina E. Estuar"],
+      "current": [
+        "Ma. Regina Justina E. Estuar"
+      ],
       "former": []
     },
     "name": "R-Ladies Manila",
@@ -4087,7 +4828,9 @@
     "status": "prospective",
     "country": "Poland",
     "organizers": {
-      "current": ["Lidia Lipi_ska"],
+      "current": [
+        "Lidia Lipi_ska"
+      ],
       "former": []
     },
     "name": "R-Ladies Lodz",
@@ -4104,7 +4847,13 @@
       "github": "rladies/meetup-presentations_warsaw"
     },
     "organizers": {
-      "current": ["Olga Mierzwa-Sulima", "Natalia Potocka", "Alicja Gosiewska", "Anna Kozak", "Katarzyna Woznica"],
+      "current": [
+        "Olga Mierzwa-Sulima",
+        "Natalia Potocka",
+        "Alicja Gosiewska",
+        "Anna Kozak",
+        "Katarzyna Woznica"
+      ],
       "former": []
     },
     "name": "R-Ladies Warsaw",
@@ -4122,7 +4871,10 @@
       "github": "rladies/meetup-presentations_lisbon"
     },
     "organizers": {
-      "current": ["Andreia Carlos", "Carolina Frias"],
+      "current": [
+        "Andreia Carlos",
+        "Carolina Frias"
+      ],
       "former": []
     },
     "name": "R-Ladies Lisbon",
@@ -4142,15 +4894,18 @@
       "slack": "https://rladiesbucharest.slack.com"
     },
     "organizers": {
-      "current": ["Ines Teaca", "Simona Gradinaru", "Ana-Maria Niculescu"],
+      "current": [
+        "Ines Teaca",
+        "Simona Gradinaru",
+        "Ana-Maria Niculescu"
+      ],
       "former": []
     },
-    "name": "R-Ladies Bucharest",
     "id": "31859491",
+    "name": "R-Ladies Bucharest",
     "country_acronym": "RO",
     "state": "",
     "city": "Bucharest",
-    "members": 278,
     "lat": 44.44,
     "lon": 26.1,
     "timezone": "Europe/Bucharest"
@@ -4159,7 +4914,9 @@
     "status": "prospective",
     "country": "Russia",
     "organizers": {
-      "current": ["Alina Bakhitova"],
+      "current": [
+        "Alina Bakhitova"
+      ],
       "former": []
     },
     "name": "R-Ladies St. Petersburg",
@@ -4169,7 +4926,9 @@
     "status": "prospective",
     "country": "Saudi Arabia",
     "organizers": {
-      "current": ["Sarah Alduayj"],
+      "current": [
+        "Sarah Alduayj"
+      ],
       "former": []
     },
     "name": "R-Ladies Alkhobar",
@@ -4187,11 +4946,13 @@
       "github": "rladies/RLadies-Saudi"
     },
     "organizers": {
-      "current": ["Batool Almarzouq"],
+      "current": [
+        "Batool Almarzouq"
+      ],
       "former": []
     },
-    "name": "R-Ladies Dammam",
     "id": "34516206",
+    "name": "R-Ladies Dammam",
     "country_acronym": "SA",
     "state": "",
     "city": "Dammam",
@@ -4208,7 +4969,9 @@
       "meetup": "rladies-jeddah"
     },
     "organizers": {
-      "current": ["Khadeejah Alaslani"],
+      "current": [
+        "Khadeejah Alaslani"
+      ],
       "former": []
     },
     "name": "R-Ladies Jeddah",
@@ -4218,7 +4981,9 @@
     "status": "prospective",
     "country": "Saudi Arabia",
     "organizers": {
-      "current": ["Faten Alamri"],
+      "current": [
+        "Faten Alamri"
+      ],
       "former": []
     },
     "name": "R-Ladies Riyadh",
@@ -4234,11 +4999,15 @@
       "email": "belgrade@rladies.org"
     },
     "organizers": {
-      "current": ["Nadica Miljkovic", "Vesna Oro", "Tatjana Kecojevic"],
+      "current": [
+        "Nadica Miljkovic",
+        "Vesna Oro",
+        "Tatjana Kecojevic"
+      ],
       "former": []
     },
-    "name": "R-Ladies Belgrade",
     "id": "25935651",
+    "name": "R-Ladies Belgrade",
     "country_acronym": "RS",
     "state": "",
     "city": "Belgrade",
@@ -4256,11 +5025,14 @@
       "email": "nis@rladies.org"
     },
     "organizers": {
-      "current": ["Marija Veljkovic", "Andjela Todorovic"],
+      "current": [
+        "Marija Veljkovic",
+        "Andjela Todorovic"
+      ],
       "former": []
     },
-    "name": "R-Ladies Niš",
     "id": "33409584",
+    "name": "R-Ladies Niš",
     "country_acronym": "RS",
     "state": "",
     "city": "Niš",
@@ -4279,15 +5051,21 @@
       "github": "rladies/meetup-presentations_novi-sad"
     },
     "organizers": {
-      "current": ["Katica Ristic", "Tatjana Kecojevic", "Olivera Grljevic", "Maja Pokusevski", "Ranka Medenica Todorovic", "Milena Kresoja"],
+      "current": [
+        "Katica Ristic",
+        "Tatjana Kecojevic",
+        "Olivera Grljevic",
+        "Maja Pokusevski",
+        "Ranka Medenica Todorovic",
+        "Milena Kresoja"
+      ],
       "former": []
     },
-    "name": "R-Ladies Novi Sad",
     "id": "32012873",
+    "name": "R-Ladies Novi Sad",
     "country_acronym": "RS",
     "state": "",
     "city": "Novi Sad",
-    "members": 145,
     "lat": 45.25,
     "lon": 19.85,
     "timezone": "Europe/Belgrade"
@@ -4301,7 +5079,9 @@
       "email": "singapore@rladies.org"
     },
     "organizers": {
-      "current": ["Liang Tian"],
+      "current": [
+        "Liang Tian"
+      ],
       "former": []
     },
     "name": "R-Ladies Singapore",
@@ -4315,11 +5095,14 @@
       "meetup": "rladies-ljubljana"
     },
     "organizers": {
-      "current": ["Tanja <U+008E>lender", "Ur<U+009A>a Miklavcic"],
+      "current": [
+        "Tanja <U+008E>lender",
+        "Ur<U+009A>a Miklavcic"
+      ],
       "former": []
     },
-    "name": "R-Ladies Ljubljana",
     "id": "36618082",
+    "name": "R-Ladies Ljubljana",
     "country_acronym": "SI",
     "state": "",
     "city": "Ljubljana",
@@ -4332,7 +5115,9 @@
     "status": "prospective",
     "country": "Somalia",
     "organizers": {
-      "current": ["Munira Omar"],
+      "current": [
+        "Munira Omar"
+      ],
       "former": []
     },
     "name": "R-Ladies Mogadishu",
@@ -4349,11 +5134,15 @@
       "github": "rladies/meetup-presentations_capetown"
     },
     "organizers": {
-      "current": ["Theoni Photopoulou"],
-      "former": ["Megan Rogers"]
+      "current": [
+        "Theoni Photopoulou"
+      ],
+      "former": [
+        "Megan Rogers"
+      ]
     },
-    "name": "R-Ladies Cape Town",
     "id": "22790744",
+    "name": "R-Ladies Cape Town",
     "country_acronym": "ZA",
     "state": "",
     "city": "Cape Town",
@@ -4366,7 +5155,10 @@
     "status": "prospective",
     "country": "South Africa",
     "organizers": {
-      "current": ["Nitya Manjari Dasi", "Deveshnie Mudaly"],
+      "current": [
+        "Nitya Manjari Dasi",
+        "Deveshnie Mudaly"
+      ],
       "former": []
     },
     "name": "R-Ladies Durban",
@@ -4383,11 +5175,14 @@
       "github": "rladies/meetup-presentations_jozi"
     },
     "organizers": {
-      "current": ["Vebashini Naidoo", "Retha Langa"],
+      "current": [
+        "Vebashini Naidoo",
+        "Retha Langa"
+      ],
       "former": []
     },
-    "name": "R-Ladies Johannesburg",
     "id": "27651490",
+    "name": "R-Ladies Johannesburg",
     "country_acronym": "ZA",
     "state": "",
     "city": "Johannesburg",
@@ -4408,11 +5203,16 @@
       "github": "rladies/meetup-presentations_barcelona"
     },
     "organizers": {
-      "current": ["Ania Alay", "Mireia Ramos", "Natalia Vilor", "Sarah Bonnin"],
+      "current": [
+        "Ania Alay",
+        "Mireia Ramos",
+        "Natalia Vilor",
+        "Sarah Bonnin"
+      ],
       "former": []
     },
-    "name": "R-Ladies Barcelona",
     "id": "20851840",
+    "name": "R-Ladies Barcelona",
     "country_acronym": "ES",
     "state": "",
     "city": "Barcelona",
@@ -4431,11 +5231,19 @@
       "email": "bilbao@rladies.org"
     },
     "organizers": {
-      "current": ["Diana Marcela Perez Valencia", "Lore Zumeta Olaskoaga", "Maria Xose Rodriguez Alvarez", "Amaia Abanda Elustondo", "Leire Citores Martinez", "Amaia Iparragirre", "Ainhoa Ochoa"],
+      "current": [
+        "Diana Marcela Perez Valencia",
+        "Lore Zumeta Olaskoaga",
+        "Maria Xose Rodriguez Alvarez",
+        "Amaia Abanda Elustondo",
+        "Leire Citores Martinez",
+        "Amaia Iparragirre",
+        "Ainhoa Ochoa"
+      ],
       "former": []
     },
-    "name": "R-Ladies Bilbao",
     "id": "31264653",
+    "name": "R-Ladies Bilbao",
     "country_acronym": "ES",
     "state": "",
     "city": "Bilbao",
@@ -4455,15 +5263,19 @@
       "github": "rladies/meetup-presentations_madrid"
     },
     "organizers": {
-      "current": ["Bea Hern<e1>ndez", "In<e9>s Huertas", "Leticia Mart<ed>n-Fuertes", "Elen Irazabal"],
+      "current": [
+        "Bea Hernández",
+        "Inés Huertas",
+        "Leticia Martín-Fuertes",
+        "Elen Irazabal"
+      ],
       "former": []
     },
-    "name": "R-Ladies Madrid",
     "id": "20381623",
+    "name": "R-Ladies Madrid",
     "country_acronym": "ES",
     "state": "",
     "city": "Madrid",
-    "members": 1887,
     "lat": 40.42,
     "lon": -3.71,
     "timezone": "Europe/Madrid"
@@ -4472,7 +5284,9 @@
     "status": "prospective",
     "country": "Spain",
     "organizers": {
-      "current": ["Ana Nieto Librero"],
+      "current": [
+        "Ana Nieto Librero"
+      ],
       "former": []
     },
     "name": "R-Ladies Salamanca",
@@ -4482,7 +5296,10 @@
     "status": "prospective",
     "country": "Spain",
     "organizers": {
-      "current": ["Ana Magdalena Vargas Martinez", "Eva F. Caceres"],
+      "current": [
+        "Ana Magdalena Vargas Martinez",
+        "Eva F. Caceres"
+      ],
       "former": []
     },
     "name": "R-Ladies Sevilla",
@@ -4498,7 +5315,9 @@
       "email": "valencia@rladies.org"
     },
     "organizers": {
-      "current": ["Lidia Contreras"],
+      "current": [
+        "Lidia Contreras"
+      ],
       "former": []
     },
     "name": "R-Ladies Valencia",
@@ -4515,11 +5334,14 @@
       "website": "https://rladiescolombo.netlify.com/"
     },
     "organizers": {
-      "current": ["Dilini Talagala", "Thiyanga Talagala"],
+      "current": [
+        "Dilini Talagala",
+        "Thiyanga Talagala"
+      ],
       "former": []
     },
-    "name": "R-Ladies Colombo",
     "id": "33106550",
+    "name": "R-Ladies Colombo",
     "country_acronym": "LK",
     "state": "",
     "city": "Colombo",
@@ -4537,15 +5359,18 @@
       "email": "al-khartum@rladies.org"
     },
     "organizers": {
-      "current": ["Sarah Abdelaziz", "Rana Ahmed", "Israa Abobaker"],
+      "current": [
+        "Sarah Abdelaziz",
+        "Rana Ahmed",
+        "Israa Abobaker"
+      ],
       "former": []
     },
-    "name": "R-Ladies al-Khartum",
     "id": "33041212",
+    "name": "R-Ladies al-Khartum",
     "country_acronym": "SD",
     "state": "",
     "city": "al-Khartum",
-    "members": 72,
     "lat": 15.58,
     "lon": 32.52,
     "timezone": "Africa/Khartoum"
@@ -4559,11 +5384,14 @@
       "email": "goteborg@rladies.org"
     },
     "organizers": {
-      "current": ["Erica Metheney", "Natalia Alvarado"],
+      "current": [
+        "Erica Metheney",
+        "Natalia Alvarado"
+      ],
       "former": []
     },
-    "name": "R-Ladies Göteborg",
     "id": "33041322",
+    "name": "R-Ladies Göteborg",
     "country_acronym": "SE",
     "state": "",
     "city": "Göteborg",
@@ -4583,11 +5411,20 @@
       "github": "rladies/meetup-presentations_stockholm"
     },
     "organizers": {
-      "current": ["Elisabeth Dahlqwist", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm"],
-      "former": ["Nina Lindell", "Ashley Thompson"]
+      "current": [
+        "Elisabeth Dahlqwist",
+        "Maya Alsheh Ali",
+        "Aminata Ndiaye",
+        "Ana Turk",
+        "Nissa Ferm"
+      ],
+      "former": [
+        "Nina Lindell",
+        "Ashley Thompson"
+      ]
     },
-    "name": "R-Ladies Stockholm",
     "id": "29540437",
+    "name": "R-Ladies Stockholm",
     "country_acronym": "SE",
     "state": "",
     "city": "Stockholm",
@@ -4600,11 +5437,26 @@
     "status": "prospective",
     "country": "Sweden",
     "organizers": {
-      "current": ["Sarah Trochemowitz", "Cecilia Natalie Strom"],
+      "current": [
+        "Sarah Trochemowitz",
+        "Cecilia Natalie Strom"
+      ],
       "former": []
     },
     "name": "R-Ladies Uppsala",
     "city": "Uppsala"
+  },
+  {
+    "status": "prospective",
+    "country": "Switzerland",
+    "organizers": {
+      "current": [
+        "Monika Avila"
+      ],
+      "former": []
+    },
+    "name": "R-Ladies Geneva",
+    "city": "Geneva"
   },
   {
     "urlname": "rladies-lausanne",
@@ -4619,11 +5471,14 @@
       "website": "https://rladieslausanne.github.io/"
     },
     "organizers": {
-      "current": ["Ninon Mounier", "Liza Darrous"],
+      "current": [
+        "Ninon Mounier",
+        "Liza Darrous"
+      ],
       "former": []
     },
-    "name": "R-Ladies Lausanne",
     "id": "26765765",
+    "name": "R-Ladies Lausanne",
     "country_acronym": "CH",
     "state": "",
     "city": "Lausanne",
@@ -4641,11 +5496,15 @@
       "email": "zurich@rladies.org"
     },
     "organizers": {
-      "current": ["Lisa-Christina Winter", "Luisa Barbanti", "Seraphina Kissling"],
+      "current": [
+        "Lisa-Christina Winter",
+        "Luisa Barbanti",
+        "Seraphina Kissling"
+      ],
       "former": []
     },
-    "name": "R-Ladies Zürich",
     "id": "35897482",
+    "name": "R-Ladies Zürich",
     "country_acronym": "CH",
     "state": "",
     "city": "Zürich",
@@ -4665,13 +5524,14 @@
       "github": "rladies/meetup-presentations_taipei"
     },
     "organizers": {
-      "current": ["Juyin Tang", "Chiayi Yen", "Ning Chen"],
+      "current": [
+        "Juyin Tang",
+        "Chiayi Yen",
+        "Ning Chen"
+      ],
       "former": []
     },
     "name": "R-Ladies Taipei",
-    "id": "20871369",
-    "country_acronym": "TW",
-    "state": "",
     "city": "Taipei",
     "members": 2103,
     "lat": 25.02,
@@ -4687,11 +5547,16 @@
       "email": "tunis@rladies.org"
     },
     "organizers": {
-      "current": ["Haifa Ben Messaoud"],
-      "former": ["Hédia Tnani", "Mouna Belaid"]
+      "current": [
+        "Haifa Ben Messaoud"
+      ],
+      "former": [
+        "Hédia Tnani",
+        "Mouna Belaid"
+      ]
     },
-    "name": "R-Ladies Tunis",
     "id": "33719616",
+    "name": "R-Ladies Tunis",
     "country_acronym": "TN",
     "state": "",
     "city": "Tunis",
@@ -4709,18 +5574,15 @@
       "email": "ankara@rladies.org"
     },
     "organizers": {
-      "current": ["Fulya Gökalp"],
-      "former": ["Mubina İpek"]
+      "current": [
+        "Fulya Gökalp"
+      ],
+      "former": [
+        "Mubina İpek"
+      ]
     },
     "name": "R-Ladies Ankara",
-    "id": "32299165",
-    "country_acronym": "TR",
-    "state": "",
-    "city": "Ankara",
-    "members": 644,
-    "lat": 39.93,
-    "lon": 32.85,
-    "timezone": "Europe/Istanbul"
+    "city": "Ankara"
   },
   {
     "urlname": "rladies-eskisehir",
@@ -4733,18 +5595,13 @@
       "github": "rladies/meetup-presentations_eskisehir"
     },
     "organizers": {
-      "current": ["Bet<fc>l KAN KILIN<c7>"],
+      "current": [
+        "Betül KAN KILIN<c7>"
+      ],
       "former": []
     },
     "name": "R-Ladies Eskisehir",
-    "id": "33007398",
-    "country_acronym": "TR",
-    "state": "",
-    "city": "Eskisehir",
-    "members": 228,
-    "lat": 39.79,
-    "lon": 30.52,
-    "timezone": "Europe/Istanbul"
+    "city": "Eskisehir"
   },
   {
     "urlname": "rladies-istanbul",
@@ -4757,13 +5614,12 @@
       "github": "rladies/meetup-presentations_istanbul"
     },
     "organizers": {
-      "current": ["Hazel Kavili"],
+      "current": [
+        "Hazel Kavili"
+      ],
       "former": []
     },
     "name": "R-Ladies Istanbul",
-    "id": "20394109",
-    "country_acronym": "TR",
-    "state": "",
     "city": "Istanbul",
     "members": 1944,
     "lat": 41.01,
@@ -4780,13 +5636,15 @@
       "email": "izmir@rladies.org"
     },
     "organizers": {
-      "current": ["Jane Pruszkowski"],
-      "former": ["Necla Kayaalp", "Sezer Bozkus Kahyaoglu"]
+      "current": [
+        "Jane Pruszkowski"
+      ],
+      "former": [
+        "Necla Kayaalp",
+        "Sezer Bozkus Kahyaoglu"
+      ]
     },
     "name": "R-Ladies Izmir",
-    "id": "34787581",
-    "country_acronym": "TR",
-    "state": "",
     "city": "Izmir",
     "members": 140,
     "lat": 38.43,
@@ -4797,17 +5655,21 @@
     "status": "prospective",
     "country": "Turkey",
     "organizers": {
-      "current": ["Cansu Uzunsimsek"],
+      "current": [
+        "Cansu Uzunsimsek"
+      ],
       "former": []
     },
-    "name": "R-Ladies Karab<fc>k",
-    "city": "Karab<fc>k"
+    "name": "R-Ladies Karabük",
+    "city": "Karabük"
   },
   {
     "status": "prospective",
     "country": "Turkey",
     "organizers": {
-      "current": ["Gizem Akkus"],
+      "current": [
+        "Gizem Akkus"
+      ],
       "former": []
     },
     "name": "R-Ladies Mersin",
@@ -4821,7 +5683,10 @@
       "email": "kampala@rladies.org"
     },
     "organizers": {
-      "current": ["Aine Lorna Maria", "Shakirah Nakalungi"],
+      "current": [
+        "Aine Lorna Maria",
+        "Shakirah Nakalungi"
+      ],
       "former": []
     },
     "name": "R-Ladies Kampala",
@@ -4836,15 +5701,17 @@
       "email": "kyiv@rladies.org"
     },
     "organizers": {
-      "current": ["Iaroslava Mizai", "Tamara Koliada"],
+      "current": [
+        "Iaroslava Mizai",
+        "Tamara Koliada"
+      ],
       "former": []
     },
-    "name": "R-Ladies Kyiv",
     "id": "31174585",
+    "name": "R-Ladies Kyiv",
     "country_acronym": "UA",
     "state": "",
     "city": "Kyiv",
-    "members": 307,
     "lat": 50.44,
     "lon": 30.52,
     "timezone": "Europe/Kiev"
@@ -4858,15 +5725,16 @@
       "email": "lviv@rladies.org"
     },
     "organizers": {
-      "current": ["Mariia Koliada"],
+      "current": [
+        "Mariia Koliada"
+      ],
       "former": []
     },
-    "name": "R-Ladies L'viv",
     "id": "32702177",
+    "name": "R-Ladies L'viv",
     "country_acronym": "UA",
     "state": "",
     "city": "L'viv",
-    "members": 47,
     "lat": 49.84,
     "lon": 24.03,
     "timezone": "Europe/Kiev"
@@ -4875,11 +5743,13 @@
     "status": "prospective",
     "country": "United Arab Emirates",
     "organizers": {
-      "current": ["Lakshmi Krishnamurthy"],
+      "current": [
+        "Lakshmi Krishnamurthy"
+      ],
       "former": []
     },
     "name": "R-Ladies Dubai",
-    "city": "Dubai"
+    "city": "Dubai",
   },
   {
     "urlname": "rladies-cambridge",
@@ -4892,13 +5762,12 @@
       "website": "http://rladies.org.uk/"
     },
     "organizers": {
-      "current": ["Alexia Cardona"],
+      "current": [
+        "Alexia Cardona"
+      ],
       "former": []
     },
-    "name": "R-Ladies Cambridge, C3",
-    "id": "26556368",
-    "country_acronym": "GB",
-    "state": "C3",
+    "name": "R-Ladies Cambridge",
     "city": "Cambridge",
     "members": 316,
     "lat": 52.2,
@@ -4914,13 +5783,13 @@
       "email": "coventry@rladies.org"
     },
     "organizers": {
-      "current": ["Marion Coumel", "Sophie Hardy"],
+      "current": [
+        "Marion Coumel",
+        "Sophie Hardy"
+      ],
       "former": []
     },
-    "name": "R-Ladies Coventry, 43",
-    "id": "33409671",
-    "country_acronym": "GB",
-    "state": "43",
+    "name": "R-Ladies Coventry",
     "city": "Coventry",
     "members": 578,
     "lat": 52.42,
@@ -4937,18 +5806,14 @@
       "email": "edinburgh@rladies.org"
     },
     "organizers": {
-      "current": ["Karim Rivera", "Alicia Forsberg"],
+      "current": [
+        "Karim Rivera",
+        "Alicia Forsberg"
+      ],
       "former": []
     },
-    "name": "R-Ladies Edinburgh, U8",
-    "id": "29370129",
-    "country_acronym": "GB",
-    "state": "U8",
+    "name": "R-Ladies Edinburgh",
     "city": "Edinburgh",
-    "members": 660,
-    "lat": 55.95,
-    "lon": -3.22,
-    "timezone": "Europe/London"
   },
   {
     "urlname": "rladies-exeter",
@@ -4959,7 +5824,9 @@
       "email": "exeter@rladies.org"
     },
     "organizers": {
-      "current": ["Raluca Popp"],
+      "current": [
+        "Raluca Popp"
+      ],
       "former": []
     },
     "name": "R-Ladies Exeter",
@@ -4974,13 +5841,12 @@
       "email": "glasgow@rladies.org"
     },
     "organizers": {
-      "current": ["Kate Pyper"],
+      "current": [
+        "Kate Pyper"
+      ],
       "former": []
     },
-    "name": "R-Ladies Glasgow, V2",
-    "id": "33880125",
-    "country_acronym": "GB",
-    "state": "V2",
+    "name": "R-Ladies Glasgow",
     "city": "Glasgow",
     "members": 144,
     "lat": 55.86,
@@ -4998,18 +5864,15 @@
       "github": "rladies/meetup-presentations_lancaster"
     },
     "organizers": {
-      "current": ["Nicola Rennie"],
-      "former": ["Rhian Davies"]
+      "current": [
+        "Nicola Rennie"
+      ],
+      "former": [
+        "Rhian Davies"
+      ]
     },
-    "name": "R-Ladies Lancaster, H2",
-    "id": "29783351",
-    "country_acronym": "GB",
-    "state": "H2",
+    "name": "R-Ladies Lancaster",
     "city": "Lancaster",
-    "members": 139,
-    "lat": 54.05,
-    "lon": -2.8,
-    "timezone": "Europe/London"
   },
   {
     "urlname": "rladies-liverpool",
@@ -5021,11 +5884,13 @@
       "email": "liverpool@rladies.org"
     },
     "organizers": {
-      "current": ["Diana Iserazo"],
+      "current": [
+        "Diana Iserazo"
+      ],
       "former": []
     },
     "name": "R-Ladies Liverpool",
-    "city": "Liverpool"
+    "city": "Liverpool",
   },
   {
     "urlname": "rladies-london",
@@ -5039,13 +5904,18 @@
       "github": "rladies/meetup-presentations_london"
     },
     "organizers": {
-      "current": ["Claudia Vitolo", "Grace Meyer", "Kasia Kulma", "Agnes Salanki", "Emma Vestesson"],
-      "former": ["Hannah Frick"]
+      "current": [
+        "Claudia Vitolo",
+        "Grace Meyer",
+        "Kasia Kulma",
+        "Agnes Salanki",
+        "Emma Vestesson"
+      ],
+      "former": [
+        "Hannah Frick"
+      ]
     },
-    "name": "R-Ladies London, 17",
-    "id": "19474893",
-    "country_acronym": "GB",
-    "state": "17",
+    "name": "R-Ladies London",
     "city": "London",
     "members": 1590,
     "lat": 51.52,
@@ -5063,7 +5933,11 @@
       "github": "rladies/meetup-presentations_loughborough"
     },
     "organizers": {
-      "current": ["Theresa Elise Wege", "Kerry Rosenthal", "Steph Farley"],
+      "current": [
+        "Theresa Elise Wege",
+        "Kerry Rosenthal",
+        "Steph Farley"
+      ],
       "former": []
     },
     "name": "R-Ladies Loughborough",
@@ -5080,13 +5954,13 @@
       "github": "rladies/RLadiesManchester"
     },
     "organizers": {
-      "current": ["Ellen Talbot", "Bethan Blakeley"],
+      "current": [
+        "Ellen Talbot",
+        "Bethan Blakeley"
+      ],
       "former": []
     },
-    "name": "R-Ladies Manchester, 18",
-    "id": "21314716",
-    "country_acronym": "GB",
-    "state": "18",
+    "name": "R-Ladies Manchester",
     "city": "Manchester",
     "members": 509,
     "lat": 53.47,
@@ -5102,18 +5976,18 @@
       "email": "newcastle@rladies.org"
     },
     "organizers": {
-      "current": ["Jessica Ward", "Friederike Bolam", "Louise Mair", "Danielle Turton", "Lauren Ackerman", "Aoife O'Neill"],
+      "current": [
+        "Jessica Ward",
+        "Friederike Bolam",
+        "Louise Mair",
+        "Danielle Turton",
+        "Lauren Ackerman",
+        "Aoife O'Neill"
+      ],
       "former": []
     },
-    "name": "R-Ladies Newcastle Upon Tyne, 41",
-    "id": "31264590",
-    "country_acronym": "GB",
-    "state": "41",
-    "city": "Newcastle Upon Tyne",
-    "members": 271,
-    "lat": 55,
-    "lon": -1.6,
-    "timezone": "Europe/London"
+    "name": "R-Ladies Newcastle",
+    "city": "Newcastle",
   },
   {
     "urlname": "rladies-oxford",
@@ -5124,13 +5998,15 @@
       "email": "oxford@rladies.org"
     },
     "organizers": {
-      "current": ["Punam Amratia", "Kasia Kedzierska", "Fran Reynolds", "Varshita Sher"],
+      "current": [
+        "Punam Amratia",
+        "Kasia Kedzierska",
+        "Fran Reynolds",
+        "Varshita Sher"
+      ],
       "former": []
     },
-    "name": "R-Ladies Oxford, K2",
-    "id": "33194933",
-    "country_acronym": "GB",
-    "state": "K2",
+    "name": "R-Ladies Oxford",
     "city": "Oxford",
     "members": 44,
     "lat": 51.76,
@@ -5145,13 +6021,12 @@
       "meetup": "rladies-reading"
     },
     "organizers": {
-      "current": ["Emmanuelle Nunes"],
+      "current": [
+        "Emmanuelle Nunes"
+      ],
       "former": []
     },
-    "name": "R-Ladies Reading, 03",
-    "id": "35897302",
-    "country_acronym": "GB",
-    "state": "03",
+    "name": "R-Ladies Reading",
     "city": "Reading",
     "members": 30,
     "lat": 51.44,
@@ -5162,7 +6037,11 @@
     "status": "active",
     "country": "United Kingdom",
     "organizers": {
-      "current": ["Grace Accad", "Sophie Lee", "Harriet Patrick"],
+      "current": [
+        "Grace Accad",
+        "Sophie Lee",
+        "Harriet Patrick"
+      ],
       "former": []
     },
     "name": "R-Ladies Sheffield",
@@ -5172,7 +6051,9 @@
     "status": "prospective",
     "country": "United Kingdom",
     "organizers": {
-      "current": ["Chia Liu"],
+      "current": [
+        "Chia Liu"
+      ],
       "former": []
     },
     "name": "R-Ladies St. Andrews",
@@ -5182,7 +6063,9 @@
     "status": "prospective",
     "country": "United Kingdom",
     "organizers": {
-      "current": ["Kate Moody"],
+      "current": [
+        "Kate Moody"
+      ],
       "former": []
     },
     "name": "R-Ladies Wigan",
@@ -5200,15 +6083,19 @@
       "github": "rladies/meetup-presentations_montevideo"
     },
     "organizers": {
-      "current": ["Daniela V<e1>zquez", "Natalia da Silva", "Mar<ed>a In<e9>s Fariello", "Paula Pereda"],
+      "current": [
+        "Daniela Vázquez",
+        "Natalia da Silva",
+        "María Inés Fariello",
+        "Paula Pereda"
+      ],
       "former": []
     },
-    "name": "R-Ladies Montevideo",
     "id": "24222373",
+    "name": "R-Ladies Montevideo",
     "country_acronym": "UY",
     "state": "",
     "city": "Montevideo",
-    "members": 487,
     "lat": -34.87,
     "lon": -56.17,
     "timezone": "America/Montevideo"
@@ -5222,7 +6109,9 @@
       "meetup": "rladies-montgomery"
     },
     "organizers": {
-      "current": ["Rachel Ramirez"],
+      "current": [
+        "Rachel Ramirez"
+      ],
       "former": []
     },
     "name": "R-Ladies Montgomery",
@@ -5239,8 +6128,12 @@
       "email": "tuscon@rladies.org"
     },
     "organizers": {
-      "current": ["Amy Margaret Banka"],
-      "former": ["Adriana Picoral"]
+      "current": [
+        "Amy Margaret Banka"
+      ],
+      "former": [
+        "Adriana Picoral"
+      ]
     },
     "name": "R-Ladies Tucson",
     "city": "Tucson"
@@ -5255,25 +6148,22 @@
       "email": "fayetteville@rladies.org"
     },
     "organizers": {
-      "current": ["Morgan Middlebrooks"],
+      "current": [
+        "Morgan Middlebrooks"
+      ],
       "former": []
     },
-    "name": "R-Ladies Fayetteville, AR",
-    "id": "32478325",
-    "country_acronym": "US",
-    "state": "AR",
-    "city": "Fayetteville",
-    "members": 149,
-    "lat": 36.05,
-    "lon": -94.14,
-    "timezone": "America/Chicago"
+    "name": "R-Ladies Fayetteville",
+    "city": "Fayetteville"
   },
   {
     "status": "prospective",
     "country": "USA",
     "state.region": "Arkansas",
     "organizers": {
-      "current": ["Kristi Toblesky"],
+      "current": [
+        "Kristi Toblesky"
+      ],
       "former": []
     },
     "name": "R-Ladies Little Rock",
@@ -5284,7 +6174,9 @@
     "country": "USA",
     "state.region": "California",
     "organizers": {
-      "current": ["Shannon Boyle"],
+      "current": [
+        "Shannon Boyle"
+      ],
       "former": []
     },
     "name": "R-Ladies Arcata",
@@ -5295,7 +6187,9 @@
     "country": "USA",
     "state.region": "California",
     "organizers": {
-      "current": ["Manali Gadre"],
+      "current": [
+        "Manali Gadre"
+      ],
       "former": []
     },
     "name": "R-Ladies Bakersfield",
@@ -5309,7 +6203,10 @@
       "github": "rladies/meetup-presentations_newcastle"
     },
     "organizers": {
-      "current": ["Meghan Klasic", "Michaela C Debolt"],
+      "current": [
+        "Meghan Klasic",
+        "Michaela C Debolt"
+      ],
       "former": []
     },
     "name": "R-Ladies Davis",
@@ -5328,13 +6225,15 @@
       "website": "http://www.rladiesirvine.org/"
     },
     "organizers": {
-      "current": ["Alyssa Columbus", "Madeline Bauer"],
-      "former": ["Linda Palmer"]
+      "current": [
+        "Alyssa Columbus",
+        "Madeline Bauer"
+      ],
+      "former": [
+        "Linda Palmer"
+      ]
     },
-    "name": "R-Ladies Irvine, CA",
-    "id": "27819387",
-    "country_acronym": "US",
-    "state": "CA",
+    "name": "R-Ladies Irvine",
     "city": "Irvine",
     "members": 635,
     "lat": 33.65,
@@ -5354,12 +6253,12 @@
     },
     "organizers": {
       "current": [],
-      "former": ["Amanda Tilot", "Katie Leap"]
+      "former": [
+        "Amanda Tilot",
+        "Katie Leap"
+      ]
     },
-    "name": "R-Ladies Los Angeles, CA",
-    "id": "20382018",
-    "country_acronym": "US",
-    "state": "CA",
+    "name": "R-Ladies Los Angeles",
     "city": "Los Angeles",
     "members": 635,
     "lat": 34.07,
@@ -5371,7 +6270,9 @@
     "country": "USA",
     "state.region": "California",
     "organizers": {
-      "current": ["Andrea S<e1>nchez-Tapia"],
+      "current": [
+        "Andrea Sánchez-Tapia"
+      ],
       "former": []
     },
     "name": "R-Ladies Merced",
@@ -5387,18 +6288,16 @@
       "email": "pasadena@rladies.org"
     },
     "organizers": {
-      "current": ["Gail Peretsman-Clement", "Donna Wrublewski"],
-      "former": ["Zhi Yang"]
+      "current": [
+        "Gail Peretsman-Clement",
+        "Donna Wrublewski"
+      ],
+      "former": [
+        "Zhi Yang"
+      ]
     },
-    "name": "R-Ladies Pasadena, CA",
-    "id": "28280039",
-    "country_acronym": "US",
-    "state": "CA",
-    "city": "Pasadena",
-    "members": 107,
-    "lat": 34.15,
-    "lon": -118.14,
-    "timezone": "America/Los_Angeles"
+    "name": "R-Ladies Pasadena",
+    "city": "Pasadena"
   },
   {
     "urlname": "rladies-riverside",
@@ -5412,18 +6311,15 @@
       "github": "rladies/meetup-presentations_riverside"
     },
     "organizers": {
-      "current": ["Teresa Bohner", "Marilia Gaiarsa", "Daniela Cassol"],
+      "current": [
+        "Teresa Bohner",
+        "Marilia Gaiarsa",
+        "Daniela Cassol"
+      ],
       "former": []
     },
-    "name": "R-Ladies Riverside, CA",
-    "id": "32522592",
-    "country_acronym": "US",
-    "state": "CA",
-    "city": "Riverside",
-    "members": 485,
-    "lat": 33.99,
-    "lon": -117.37,
-    "timezone": "America/Los_Angeles"
+    "name": "R-Ladies Riverside",
+    "city": "Riverside"
   },
   {
     "urlname": "rladies-san-diego",
@@ -5438,18 +6334,15 @@
       "github": "rladies/meetup-presentations_sandiego"
     },
     "organizers": {
-      "current": ["Juliana Capitanio", "Viola Glenn", "Elke Patton"],
+      "current": [
+        "Juliana Capitanio",
+        "Viola Glenn",
+        "Elke Patton"
+      ],
       "former": []
     },
-    "name": "R-Ladies San Diego, CA",
-    "id": "24506595",
-    "country_acronym": "US",
-    "state": "CA",
-    "city": "San Diego",
-    "members": 669,
-    "lat": 32.75,
-    "lon": -117.17,
-    "timezone": "America/Los_Angeles"
+    "name": "R-Ladies San Diego",
+    "city": "San Diego"
   },
   {
     "urlname": "rladies-san-francisco",
@@ -5464,13 +6357,14 @@
       "github": "rladies/meetup-presentations_sanfrancisco"
     },
     "organizers": {
-      "current": ["Gabriela de Queiroz", "Erin LeDell", "Ciera Martinez"],
+      "current": [
+        "Gabriela de Queiroz",
+        "Erin LeDell",
+        "Ciera Martinez"
+      ],
       "former": []
     },
-    "name": "R-Ladies San Francisco, CA",
-    "id": "5190472",
-    "country_acronym": "US",
-    "state": "CA",
+    "name": "R-Ladies San Francisco",
     "city": "San Francisco",
     "members": 1706,
     "lat": 37.79,
@@ -5489,13 +6383,17 @@
       "github": "rladies/meetup-presentations_santabarbara"
     },
     "organizers": {
-      "current": ["Julia Stewart Lowndes", "Allison Horst", "Jamie Afflerbach", "Juliette Verstaen", "Sam Csik", "An Bui"],
+      "current": [
+        "Julia Stewart Lowndes",
+        "Allison Horst",
+        "Jamie Afflerbach",
+        "Juliette Verstaen",
+        "Sam Csik",
+        "An Bui"
+      ],
       "former": []
     },
-    "name": "R-Ladies Santa Barbara, CA",
-    "id": "27283931",
-    "country_acronym": "US",
-    "state": "CA",
+    "name": "R-Ladies Santa Barbara",
     "city": "Santa Barbara",
     "members": 588,
     "lat": 34.42,
@@ -5507,7 +6405,9 @@
     "country": "USA",
     "state.region": "California",
     "organizers": {
-      "current": ["Kate Kelsey"],
+      "current": [
+        "Kate Kelsey"
+      ],
       "former": []
     },
     "name": "R-Ladies Santa Cruz",
@@ -5522,7 +6422,9 @@
       "email": "aurora@rladies.org"
     },
     "organizers": {
-      "current": ["Janani Ravi"],
+      "current": [
+        "Janani Ravi"
+      ],
       "former": []
     },
     "name": "R-Ladies colorado",
@@ -5540,13 +6442,16 @@
       "github": "rladies/meetup-presentations_boulder"
     },
     "organizers": {
-      "current": ["Lisa Moller", "Courtney Van Den Elzen", "Marta Jankowska"],
-      "former": ["Leigh Alexander"]
+      "current": [
+        "Lisa Moller",
+        "Courtney Van Den Elzen",
+        "Marta Jankowska"
+      ],
+      "former": [
+        "Leigh Alexander"
+      ]
     },
-    "name": "R-Ladies Boulder, CO",
-    "id": "28789217",
-    "country_acronym": "US",
-    "state": "CO",
+    "name": "R-Ladies Boulder",
     "city": "Boulder",
     "members": 277,
     "lat": 40.05,
@@ -5562,18 +6467,15 @@
       "meetup": "rladies-denver"
     },
     "organizers": {
-      "current": ["Erin Hodgess", "Evangeline Reynolds", "Meghan Sposato"],
+      "current": [
+        "Erin Hodgess",
+        "Evangeline Reynolds",
+        "Meghan Sposato"
+      ],
       "former": []
     },
-    "name": "R-Ladies Denver, CO",
-    "id": "32308998",
-    "country_acronym": "US",
-    "state": "CO",
-    "city": "Denver",
-    "members": 145,
-    "lat": 39.7,
-    "lon": -105.08,
-    "timezone": "America/Denver"
+    "name": "R-Ladies Denver",
+    "city": "Denver"
   },
   {
     "urlname": "rladies-fort-collins",
@@ -5585,7 +6487,10 @@
       "email": "fortcollins@rladies.org"
     },
     "organizers": {
-      "current": ["Caitlin Mothes", "Katie Willi"],
+      "current": [
+        "Caitlin Mothes",
+        "Katie Willi"
+      ],
       "former": []
     },
     "name": "R-Ladies Fort Collins",
@@ -5602,7 +6507,10 @@
       "email": "hartford@rladies.org"
     },
     "organizers": {
-      "current": ["Erica Holdridge", "Jasmine Dumas"],
+      "current": [
+        "Erica Holdridge",
+        "Jasmine Dumas"
+      ],
       "former": []
     },
     "name": "R-Ladies Hartford",
@@ -5613,11 +6521,15 @@
     "country": "USA",
     "state.region": "Connecticut",
     "organizers": {
-      "current": ["Karinne Tennenbaum", "Josephine Ankrah", "Xinran Wang"],
+      "current": [
+        "Karinne Tennenbaum",
+        "Josephine Ankrah",
+        "Xinran Wang"
+      ],
       "former": []
     },
     "name": "R-Ladies New Haven",
-    "city": "New Haven"
+    "city": "New Haven",
   },
   {
     "urlname": "rladies-fort-pierce",
@@ -5628,18 +6540,13 @@
       "meetup": "rladies-fort-pierce"
     },
     "organizers": {
-      "current": ["Jessica Glanz"],
+      "current": [
+        "Jessica Glanz"
+      ],
       "former": []
     },
-    "name": "R-Ladies Fort Pierce, FL",
-    "id": "36506535",
-    "country_acronym": "US",
-    "state": "FL",
+    "name": "R-Ladies Fort Pierce",
     "city": "Fort Pierce",
-    "members": 5,
-    "lat": 27.42,
-    "lon": -80.45,
-    "timezone": "America/New_York"
   },
   {
     "urlname": "rladies-gainesville",
@@ -5652,13 +6559,14 @@
       "email": "gainesville@rladies.org"
     },
     "organizers": {
-      "current": ["Geraldine Klarenberg", "Javiera Rudolph", "Kristen Sauby"],
+      "current": [
+        "Geraldine Klarenberg",
+        "Javiera Rudolph",
+        "Kristen Sauby"
+      ],
       "former": []
     },
-    "name": "R-Ladies Gainesville, FL",
-    "id": "29096058",
-    "country_acronym": "US",
-    "state": "FL",
+    "name": "R-Ladies Gainesville",
     "city": "Gainesville",
     "members": 494,
     "lat": 29.65,
@@ -5670,7 +6578,9 @@
     "country": "USA",
     "state.region": "Florida",
     "organizers": {
-      "current": ["Camille Knepper"],
+      "current": [
+        "Camille Knepper"
+      ],
       "former": []
     },
     "name": "R-Ladies Jacksonville",
@@ -5688,13 +6598,14 @@
       "github": "rladies/meetup-presentations_miami"
     },
     "organizers": {
-      "current": ["Laura Gabrysiak G<f3>mez", "Catalina Arango", "Layla Bouzoubaa"],
+      "current": [
+        "Laura Gabrysiak Gómez",
+        "Catalina Arango",
+        "Layla Bouzoubaa"
+      ],
       "former": []
     },
-    "name": "R-Ladies Miami, FL",
-    "id": "24259185",
-    "country_acronym": "US",
-    "state": "FL",
+    "name": "R-Ladies Miami",
     "city": "Miami",
     "members": 1293,
     "lat": 25.78,
@@ -5713,18 +6624,14 @@
       "github": "rladies/meetup-presentations_orlando"
     },
     "organizers": {
-      "current": ["Kathy Joshi", "Vanessa Eaton"],
+      "current": [
+        "Kathy Joshi",
+        "Vanessa Eaton"
+      ],
       "former": []
     },
-    "name": "R-Ladies Orlando, FL",
-    "id": "24292488",
-    "country_acronym": "US",
-    "state": "FL",
-    "city": "Orlando",
-    "members": 334,
-    "lat": 28.54,
-    "lon": -81.37,
-    "timezone": "America/New_York"
+    "name": "R-Ladies Orlando",
+    "city": "Orlando"
   },
   {
     "urlname": "rladies-sarasota",
@@ -5738,7 +6645,9 @@
       "github": "rladies/meetup-presentations_sarasota"
     },
     "organizers": {
-      "current": ["Fanny Chow"],
+      "current": [
+        "Fanny Chow"
+      ],
       "former": []
     },
     "name": "R-Ladies Sarasota",
@@ -5755,7 +6664,10 @@
       "email": "tallahassee@rladies.org"
     },
     "organizers": {
-      "current": ["Abimbola Sanusi", "Beck"],
+      "current": [
+        "Abimbola Sanusi",
+        "Beck"
+      ],
       "former": []
     },
     "name": "R-Ladies Tallahassee",
@@ -5773,13 +6685,15 @@
       "github": "rladies/meetup-presentations_tampa"
     },
     "organizers": {
-      "current": ["Gina Griffin", "Saarah Kison", "Nik Ford", "Heidi Bissell"],
+      "current": [
+        "Gina Griffin",
+        "Saarah Kison",
+        "Nik Ford",
+        "Heidi Bissell"
+      ],
       "former": []
     },
-    "name": "R-Ladies Tampa, FL",
-    "id": "27797804",
-    "country_acronym": "US",
-    "state": "FL",
+    "name": "R-Ladies Tampa",
     "city": "Tampa",
     "members": 316,
     "lat": 27.98,
@@ -5796,18 +6710,13 @@
       "github": "rladies/meetup-presentations_athens-ga"
     },
     "organizers": {
-      "current": ["Camila Livio Emidio"],
+      "current": [
+        "Camila Livio Emidio"
+      ],
       "former": []
     },
-    "name": "R-Ladies Athens, GA",
-    "id": "32702266",
-    "country_acronym": "US",
-    "state": "GA",
-    "city": "Athens",
-    "members": 85,
-    "lat": 33.97,
-    "lon": -83.36,
-    "timezone": "America/New_York"
+    "name": "R-Ladies Athens",
+    "city": "Athens"
   },
   {
     "urlname": "rladies-atlanta",
@@ -5820,13 +6729,14 @@
       "email": "atlanta@rladies.org"
     },
     "organizers": {
-      "current": ["Melinda Higgins", "Emilie Seena", "Patricia Castro"],
+      "current": [
+        "Melinda Higgins",
+        "Emilie Seena",
+        "Patricia Castro"
+      ],
       "former": []
     },
-    "name": "R-Ladies Atlanta, GA",
-    "id": "26871250",
-    "country_acronym": "US",
-    "state": "GA",
+    "name": "R-Ladies Atlanta",
     "city": "Atlanta",
     "members": 311,
     "lat": 33.86,
@@ -5842,25 +6752,26 @@
       "meetup": "rladies-honolulu"
     },
     "organizers": {
-      "current": ["Madeline Berger", "Juliette Verstaen", "Jayslen Serrano"],
-      "former": ["Emily E. Conklin"]
+      "current": [
+        "Madeline Berger",
+        "Juliette Verstaen",
+        "Jayslen Serrano"
+      ],
+      "former": [
+        "Emily E. Conklin"
+      ]
     },
-    "name": "R-Ladies Honolulu, HI",
-    "id": "36221103",
-    "country_acronym": "US",
-    "state": "HI",
-    "city": "Honolulu",
-    "members": 32,
-    "lat": 21.33,
-    "lon": -157.83,
-    "timezone": "Pacific/Honolulu"
+    "name": "R-Ladies Honolulu",
+    "city": "Honolulu"
   },
   {
     "status": "prospective",
     "country": "USA",
     "state.region": "Idaho",
     "organizers": {
-      "current": ["Adrienne Marshall"],
+      "current": [
+        "Adrienne Marshall"
+      ],
       "former": []
     },
     "name": "R-Ladies Moscow",
@@ -5871,7 +6782,9 @@
     "country": "USA",
     "state.region": "Illinois",
     "organizers": {
-      "current": ["Marisa Ashley Smith"],
+      "current": [
+        "Marisa Ashley Smith"
+      ],
       "former": []
     },
     "name": "R-Ladies Champaign",
@@ -5889,13 +6802,20 @@
       "github": "rladies/meetup-presentations_chicago"
     },
     "organizers": {
-      "current": ["Angela Li", "Katherine Simeon", "Amy Yang", "Anne Corinne-Carroll", "Ola Giwa", "Caroline Williams", "Sushmita Gopalan", "Scarlett Winters", "Aarthi Vemuri"],
+      "current": [
+        "Angela Li",
+        "Katherine Simeon",
+        "Amy Yang",
+        "Anne Corinne-Carroll",
+        "Ola Giwa",
+        "Caroline Williams",
+        "Sushmita Gopalan",
+        "Scarlett Winters",
+        "Aarthi Vemuri"
+      ],
       "former": []
     },
-    "name": "R-Ladies Chicago, IL",
-    "id": "24848073",
-    "country_acronym": "US",
-    "state": "IL",
+    "name": "R-Ladies Chicago",
     "city": "Chicago",
     "members": 1349,
     "lat": 41.88,
@@ -5907,7 +6827,9 @@
     "country": "USA",
     "state.region": "Indiana",
     "organizers": {
-      "current": ["Ana Isabel Bento"],
+      "current": [
+        "Ana Isabel Bento"
+      ],
       "former": []
     },
     "name": "R-Ladies Bloomington",
@@ -5918,7 +6840,10 @@
     "country": "USA",
     "state.region": "Indiana",
     "organizers": {
-      "current": ["Myrthe Faber", "Kelsey M. Reese"],
+      "current": [
+        "Myrthe Faber",
+        "Kelsey M. Reese"
+      ],
       "former": []
     },
     "name": "R-Ladies South Bend",
@@ -5933,18 +6858,15 @@
       "meetup": "rladies-west-lafayette"
     },
     "organizers": {
-      "current": ["Bee Redfield", "Naomi Popkin", "Jackie Getson"],
+      "current": [
+        "Bee Redfield",
+        "Naomi Popkin",
+        "Jackie Getson"
+      ],
       "former": []
     },
-    "name": "R-Ladies West Lafayette, IN",
-    "id": "35897790",
-    "country_acronym": "US",
-    "state": "IN",
-    "city": "West Lafayette",
-    "members": 10,
-    "lat": 40.5,
-    "lon": -86.97,
-    "timezone": "America/New_York"
+    "name": "R-Ladies West Lafayette",
+    "city": "West Lafayette"
   },
   {
     "urlname": "rladies-ames",
@@ -5958,25 +6880,23 @@
       "github": "rladies/rladies-ames"
     },
     "organizers": {
-      "current": ["Anabelle Laurent", "Stephanie Reinders"],
+      "current": [
+        "Anabelle Laurent",
+        "Stephanie Reinders"
+      ],
       "former": []
     },
-    "name": "R-Ladies Ames, IA",
-    "id": "21280054",
-    "country_acronym": "US",
-    "state": "IA",
-    "city": "Ames",
-    "members": 271,
-    "lat": 42.03,
-    "lon": -93.64,
-    "timezone": "America/Chicago"
+    "name": "R-Ladies Ames",
+    "city": "Ames"
   },
   {
     "status": "prospective",
     "country": "USA",
     "state.region": "Iowa",
     "organizers": {
-      "current": ["Laura Thomas"],
+      "current": [
+        "Laura Thomas"
+      ],
       "former": []
     },
     "name": "R-Ladies Cedar Rapids",
@@ -5992,18 +6912,13 @@
       "email": "desmoines@rladies.org"
     },
     "organizers": {
-      "current": ["Amanda Rae"],
+      "current": [
+        "Amanda Rae"
+      ],
       "former": []
     },
-    "name": "R-Ladies Des Moines, IA",
-    "id": "29929892",
-    "country_acronym": "US",
-    "state": "IA",
-    "city": "Des Moines",
-    "members": 30,
-    "lat": 41.6,
-    "lon": -93.63,
-    "timezone": "America/Chicago"
+    "name": "R-Ladies Des Moines",
+    "city": "Des Moines"
   },
   {
     "urlname": "rladies-iowa-city",
@@ -6015,13 +6930,14 @@
       "email": "iowacity@rladies.org"
     },
     "organizers": {
-      "current": ["Marie Ozanne", "Anna Reisetter", "Alexandra Curtis"],
+      "current": [
+        "Marie Ozanne",
+        "Anna Reisetter",
+        "Alexandra Curtis"
+      ],
       "former": []
     },
-    "name": "R-Ladies Iowa City, IA",
-    "id": "29865126",
-    "country_acronym": "US",
-    "state": "IA",
+    "name": "R-Ladies Iowa City",
     "city": "Iowa City",
     "members": 129,
     "lat": 41.66,
@@ -6033,7 +6949,9 @@
     "country": "USA",
     "state.region": "Kentucky",
     "organizers": {
-      "current": ["Rebecca Jones"],
+      "current": [
+        "Rebecca Jones"
+      ],
       "former": []
     },
     "name": "R-Ladies Lexington",
@@ -6051,18 +6969,14 @@
       "github": "rladies/meetup-presentation_louisville"
     },
     "organizers": {
-      "current": ["Ann Holmes", "Lauren Girouard-Hallam"],
+      "current": [
+        "Ann Holmes",
+        "Lauren Girouard-Hallam"
+      ],
       "former": []
     },
-    "name": "R-Ladies Louisville, KY",
-    "id": "36506652",
-    "country_acronym": "US",
-    "state": "KY",
-    "city": "Louisville",
-    "members": 11,
-    "lat": 38.25,
-    "lon": -85.78,
-    "timezone": "America/New_York"
+    "name": "R-Ladies Louisville",
+    "city": "Louisville"
   },
   {
     "urlname": "rladies-new-orleans",
@@ -6073,18 +6987,14 @@
       "meetup": "rladies-new-orleans"
     },
     "organizers": {
-      "current": ["Erin Cuyler", "Danielle Oberdier"],
+      "current": [
+        "Erin Cuyler",
+        "Danielle Oberdier"
+      ],
       "former": []
     },
-    "name": "R-Ladies New Orleans, LA",
-    "id": "33061717",
-    "country_acronym": "US",
-    "state": "LA",
-    "city": "New Orleans",
-    "members": 87,
-    "lat": 29.96,
-    "lon": -90.08,
-    "timezone": "America/Chicago"
+    "name": "R-Ladies New Orleans",
+    "city": "New Orleans"
   },
   {
     "urlname": "rladies-portland-maine",
@@ -6098,7 +7008,9 @@
       "github": "rladies/meetup-presentations_portland"
     },
     "organizers": {
-      "current": ["Jennifer Fleck"],
+      "current": [
+        "Jennifer Fleck"
+      ],
       "former": []
     },
     "name": "R-Ladies Portland",
@@ -6116,13 +7028,14 @@
       "github": "rladies/meetup-presentations_baltimore"
     },
     "organizers": {
-      "current": ["Stephanie Hicks", "Margaret Taub", "Rachel Sparklin"],
+      "current": [
+        "Stephanie Hicks",
+        "Margaret Taub",
+        "Rachel Sparklin"
+      ],
       "former": []
     },
-    "name": "R-Ladies Baltimore, MD",
-    "id": "27651413",
-    "country_acronym": "US",
-    "state": "MD",
+    "name": "R-Ladies Baltimore",
     "city": "Baltimore",
     "members": 1168,
     "lat": 39.29,
@@ -6134,7 +7047,9 @@
     "country": "USA",
     "state.region": "Maryland",
     "organizers": {
-      "current": ["Lisa Ziegler"],
+      "current": [
+        "Lisa Ziegler"
+      ],
       "former": []
     },
     "name": "R-Ladies Cambridge",
@@ -6151,18 +7066,16 @@
       "email": "lexingtonpark@rladies.org"
     },
     "organizers": {
-      "current": ["Caitlin Eger", "Cassie Gurbisz"],
-      "former": ["Linden McBride"]
+      "current": [
+        "Caitlin Eger",
+        "Cassie Gurbisz"
+      ],
+      "former": [
+        "Linden McBride"
+      ]
     },
-    "name": "R-Ladies Lexington Park, MD",
-    "id": "32611075",
-    "country_acronym": "US",
-    "state": "MD",
-    "city": "Lexington Park",
-    "members": 39,
-    "lat": 38.27,
-    "lon": -76.46,
-    "timezone": "America/New_York"
+    "name": "R-Ladies Lexington Park",
+    "city": "Lexington Park"
   },
   {
     "urlname": "rladies-boston",
@@ -6177,13 +7090,16 @@
       "website": "https://rladies.github.io/Boston/"
     },
     "organizers": {
-      "current": ["Marianna Foos", "Maria Elena Morales", "Diana Garcia Cortes"],
-      "former": ["Phoebe Wong"]
+      "current": [
+        "Marianna Foos",
+        "Maria Elena Morales",
+        "Diana Garcia Cortes"
+      ],
+      "former": [
+        "Phoebe Wong"
+      ]
     },
-    "name": "R-Ladies Boston, MA",
-    "id": "20433637",
-    "country_acronym": "US",
-    "state": "MA",
+    "name": "R-Ladies Boston",
     "city": "Boston",
     "members": 964,
     "lat": 42.36,
@@ -6195,7 +7111,9 @@
     "country": "USA",
     "state.region": "Massachusetts",
     "organizers": {
-      "current": ["Paige Patrick"],
+      "current": [
+        "Paige Patrick"
+      ],
       "former": []
     },
     "name": "R-Ladies Northampton",
@@ -6209,7 +7127,12 @@
       "email": "waltham@rladies.org"
     },
     "organizers": {
-      "current": ["Ines Patop", "Claire Pontbriand", "Margarita Corral", "Jasmine Quynh Le"],
+      "current": [
+        "Ines Patop",
+        "Claire Pontbriand",
+        "Margarita Corral",
+        "Jasmine Quynh Le"
+      ],
       "former": []
     },
     "name": "R-Ladies Waltham",
@@ -6220,7 +7143,9 @@
     "country": "USA",
     "state.region": "Massachusetts",
     "organizers": {
-      "current": ["Ally Kim"],
+      "current": [
+        "Ally Kim"
+      ],
       "former": []
     },
     "name": "R-Ladies Wellesley",
@@ -6241,18 +7166,15 @@
       "slack": "https://rladies-eastlansing.slack.com"
     },
     "organizers": {
-      "current": ["Janani Ravi", "Kayla Johnson", "Stephanie Hickey"],
+      "current": [
+        "Janani Ravi",
+        "Kayla Johnson",
+        "Stephanie Hickey"
+      ],
       "former": []
     },
-    "name": "R-Ladies East Lansing, MI",
-    "id": "26829576",
-    "country_acronym": "US",
-    "state": "MI",
-    "city": "East Lansing",
-    "members": 864,
-    "lat": 42.65,
-    "lon": -84.49,
-    "timezone": "America/New_York"
+    "name": "R-Ladies East Lansing",
+    "city": "East Lansing"
   },
   {
     "urlname": "rladies-tc",
@@ -6265,7 +7187,10 @@
       "email": "minneapolis-saintpaul@rladies.org"
     },
     "organizers": {
-      "current": ["Christina Knudson", "Kierstin Catlett"],
+      "current": [
+        "Christina Knudson",
+        "Kierstin Catlett"
+      ],
       "former": []
     },
     "name": "R-Ladies Minneapolis, MN",
@@ -6283,18 +7208,22 @@
     "country": "USA",
     "state.region": "Missisippi",
     "organizers": {
-      "current": ["Megumi Oshima"],
+      "current": [
+        "Megumi Oshima"
+      ],
       "former": []
     },
     "name": "R-Ladies Ocean Springs",
-    "city": "Ocean Springs"
+    "city": "Ocean Springs",
   },
   {
     "status": "active",
     "country": "USA",
     "state.region": "Missisippi",
     "organizers": {
-      "current": ["Mariana Strawn"],
+      "current": [
+        "Mariana Strawn"
+      ],
       "former": []
     },
     "name": "R-Ladies Oxford",
@@ -6305,7 +7234,9 @@
     "country": "USA",
     "state.region": "Mississippi",
     "organizers": {
-      "current": ["Joy Smithson"],
+      "current": [
+        "Joy Smithson"
+      ],
       "former": []
     },
     "name": "R-Ladies Hattiesburg",
@@ -6322,13 +7253,14 @@
       "github": "rladies/meetup-presentations_kansas-city"
     },
     "organizers": {
-      "current": ["Boryana Koseva", "Anna Pechenina", "Gabriela Cipriano"],
+      "current": [
+        "Boryana Koseva",
+        "Anna Pechenina",
+        "Gabriela Cipriano"
+      ],
       "former": []
     },
-    "name": "R-Ladies Kansas City, MO",
-    "id": "32426227",
-    "country_acronym": "US",
-    "state": "MO",
+    "name": "R-Ladies Kansas City",
     "city": "Kansas City",
     "members": 66,
     "lat": 39.1,
@@ -6345,8 +7277,13 @@
       "email": "mid-missouri@rladies.org"
     },
     "organizers": {
-      "current": ["Hope Snyder", "Linda A. Landon"],
-      "former": ["Krista Galyen"]
+      "current": [
+        "Hope Snyder",
+        "Linda A. Landon"
+      ],
+      "former": [
+        "Krista Galyen"
+      ]
     },
     "name": "R-Ladies Columbia, MO",
     "id": "33107363",
@@ -6368,7 +7305,9 @@
       "email": "springfieldmo@rladies.org"
     },
     "organizers": {
-      "current": ["Amber Gillenwaters"],
+      "current": [
+        "Amber Gillenwaters"
+      ],
       "former": []
     },
     "name": "R-Ladies Springfield",
@@ -6385,7 +7324,9 @@
       "github": "rladies/meetup-presentations_stlouis"
     },
     "organizers": {
-      "current": ["Jenine Harris"],
+      "current": [
+        "Jenine Harris"
+      ],
       "former": []
     },
     "name": "R-Ladies Saint Louis, MO",
@@ -6403,7 +7344,9 @@
     "country": "USA",
     "state.region": "Montana",
     "organizers": {
-      "current": ["Allison Theobold"],
+      "current": [
+        "Allison Theobold"
+      ],
       "former": []
     },
     "name": "R-Ladies Bozeman",
@@ -6414,7 +7357,12 @@
     "country": "USA",
     "state.region": "Nebraska",
     "organizers": {
-      "current": ["Gabriella Palomo", "Lyndsie Wszola", "Alexis Saltzman", "Elise Thayer"],
+      "current": [
+        "Gabriella Palomo",
+        "Lyndsie Wszola",
+        "Alexis Saltzman",
+        "Elise Thayer"
+      ],
       "former": []
     },
     "name": "R-Ladies Lincoln",
@@ -6425,7 +7373,9 @@
     "country": "USA",
     "state.region": "Nevada",
     "organizers": {
-      "current": ["Maya Jaffe"],
+      "current": [
+        "Maya Jaffe"
+      ],
       "former": []
     },
     "name": "R-Ladies Las Vegas",
@@ -6441,25 +7391,23 @@
       "email": "highlandpark@rladies.org"
     },
     "organizers": {
-      "current": ["Michelle Stuart", "Laura Fernandez Arroyo"],
+      "current": [
+        "Michelle Stuart",
+        "Laura Fernandez Arroyo"
+      ],
       "former": []
     },
-    "name": "R-Ladies Highland Park, NJ",
-    "id": "31858594",
-    "country_acronym": "US",
-    "state": "NJ",
-    "city": "Highland Park",
-    "members": 81,
-    "lat": 40.5,
-    "lon": -74.43,
-    "timezone": "America/New_York"
+    "name": "R-Ladies Highland Park",
+    "city": "Highland Park"
   },
   {
     "status": "prospective",
     "country": "USA",
     "state.region": "New Mexico",
     "organizers": {
-      "current": ["Nicole Thompson"],
+      "current": [
+        "Nicole Thompson"
+      ],
       "former": []
     },
     "name": "R-Ladies Albuquerque",
@@ -6470,7 +7418,9 @@
     "country": "USA",
     "state.region": "New York",
     "organizers": {
-      "current": ["Rebecca Cowan"],
+      "current": [
+        "Rebecca Cowan"
+      ],
       "former": []
     },
     "name": "R-Ladies Albany",
@@ -6487,25 +7437,23 @@
       "email": "buffalo@rladies.org"
     },
     "organizers": {
-      "current": ["Lori Shepherd", "Meghan Harris"],
+      "current": [
+        "Lori Shepherd",
+        "Meghan Harris"
+      ],
       "former": []
     },
-    "name": "R-Ladies Buffalo, NY",
-    "id": "24100709",
-    "country_acronym": "US",
-    "state": "NY",
-    "city": "Buffalo",
-    "members": 39,
-    "lat": 42.9,
-    "lon": -78.88,
-    "timezone": "America/New_York"
+    "name": "R-Ladies Buffalo",
+    "city": "Buffalo"
   },
   {
     "status": "prospective",
     "country": "USA",
     "state.region": "New York",
     "organizers": {
-      "current": ["Dena Jane Clink"],
+      "current": [
+        "Dena Jane Clink"
+      ],
       "former": []
     },
     "name": "R-Ladies Ithaca",
@@ -6524,7 +7472,16 @@
       "website": "http://www.rladiesnyc.org/"
     },
     "organizers": {
-      "current": ["Dorota Rizik", "Soumya Kalra", "Jacqueline Buros", "Clara Wang", "Jordan Amann", "Dana Trembley", "Anni Liu", "Nicole Burke"],
+      "current": [
+        "Dorota Rizik",
+        "Soumya Kalra",
+        "Jacqueline Buros",
+        "Clara Wang",
+        "Jordan Amann",
+        "Dana Trembley",
+        "Anni Liu",
+        "Nicole Burke"
+      ],
       "former": []
     },
     "name": "R-Ladies New York, NY",
@@ -6542,7 +7499,9 @@
     "country": "USA",
     "state.region": "New York",
     "organizers": {
-      "current": ["Monica Javidnia"],
+      "current": [
+        "Monica Javidnia"
+      ],
       "former": []
     },
     "name": "R-Ladies Rochester",
@@ -6558,13 +7517,16 @@
       "email": "syracuse@rladies.org"
     },
     "organizers": {
-      "current": ["Heather Kropp", "Anna Talucci", "Angeline Protacio", "Anisha BharathSingh", "Emily Halford"],
+      "current": [
+        "Heather Kropp",
+        "Anna Talucci",
+        "Angeline Protacio",
+        "Anisha BharathSingh",
+        "Emily Halford"
+      ],
       "former": []
     },
-    "name": "R-Ladies Syracuse, NY",
-    "id": "33061635",
-    "country_acronym": "US",
-    "state": "NY",
+    "name": "R-Ladies Syracuse",
     "city": "Syracuse",
     "members": 17,
     "lat": 43.04,
@@ -6576,7 +7538,10 @@
     "country": "USA",
     "state.region": "North Carolina",
     "organizers": {
-      "current": ["Sheenu Abraham", "Jessica Dunn"],
+      "current": [
+        "Sheenu Abraham",
+        "Jessica Dunn"
+      ],
       "former": []
     },
     "name": "R-Ladies Charlotte",
@@ -6594,7 +7559,10 @@
       "github": "rladies/meetup-presentations_rtp"
     },
     "organizers": {
-      "current": ["Sheila Saia", "Elaine McVey"],
+      "current": [
+        "Sheila Saia",
+        "Elaine McVey"
+      ],
       "former": []
     },
     "name": "R-Ladies Durham, NC",
@@ -6618,7 +7586,9 @@
       "email": "cincinnati@rladies.org"
     },
     "organizers": {
-      "current": ["Renata Gerecke"],
+      "current": [
+        "Renata Gerecke"
+      ],
       "former": []
     },
     "name": "R-Ladies Cincinnati",
@@ -6629,7 +7599,10 @@
     "country": "USA",
     "state.region": "Ohio",
     "organizers": {
-      "current": ["Shreya Louis", "Megan Sheehan"],
+      "current": [
+        "Shreya Louis",
+        "Megan Sheehan"
+      ],
       "former": []
     },
     "name": "R-Ladies Cleveland",
@@ -6647,13 +7620,14 @@
       "github": "rladies/meetup-presentations_columbus"
     },
     "organizers": {
-      "current": ["Ezgi Karaesmen", "Katie Sasso", "Genelle Denzin"],
+      "current": [
+        "Ezgi Karaesmen",
+        "Katie Sasso",
+        "Genelle Denzin"
+      ],
       "former": []
     },
-    "name": "R-Ladies Columbus, OH",
-    "id": "20600376",
-    "country_acronym": "US",
-    "state": "OH",
+    "name": "R-Ladies Columbus",
     "city": "Columbus",
     "members": 948,
     "lat": 40.01,
@@ -6670,18 +7644,14 @@
       "email": "oxford-ohio@rladies.org"
     },
     "organizers": {
-      "current": ["Sandy Steiger", "Skyler Perry"],
+      "current": [
+        "Sandy Steiger",
+        "Skyler Perry"
+      ],
       "former": []
     },
-    "name": "R-Ladies Oxford, OH",
-    "id": "33041271",
-    "country_acronym": "US",
-    "state": "OH",
-    "city": "Oxford",
-    "members": 62,
-    "lat": 39.49,
-    "lon": -84.74,
-    "timezone": "America/New_York"
+    "name": "R-Ladies Oxford",
+    "city": "Oxford"
   },
   {
     "urlname": "rladies-stillwater",
@@ -6693,13 +7663,13 @@
       "email": "stillwater@rladies.org"
     },
     "organizers": {
-      "current": ["Kay Bjornen", "Danielle Kirsch"],
+      "current": [
+        "Kay Bjornen",
+        "Danielle Kirsch"
+      ],
       "former": []
     },
-    "name": "R-Ladies Stillwater, OK",
-    "id": "36506185",
-    "country_acronym": "US",
-    "state": "OK",
+    "name": "R-Ladies Stillwater",
     "city": "Stillwater",
     "members": 32,
     "lat": 36.11,
@@ -6718,13 +7688,16 @@
       "github": "rladies/meetup-presentations_portland"
     },
     "organizers": {
-      "current": ["Augustina Ragwitz", "Deeksha Thati", "Alison Presmanes Hill"],
-      "former": ["Beth Duckles"]
+      "current": [
+        "Augustina Ragwitz",
+        "Deeksha Thati",
+        "Alison Presmanes Hill"
+      ],
+      "former": [
+        "Beth Duckles"
+      ]
     },
-    "name": "R-Ladies Portland, OR",
-    "id": "25057217",
-    "country_acronym": "US",
-    "state": "OR",
+    "name": "R-Ladies Portland",
     "city": "Portland",
     "members": 261,
     "lat": 45.5,
@@ -6736,7 +7709,9 @@
     "country": "USA",
     "state.region": "Pennsylvania",
     "organizers": {
-      "current": ["Erin Feaser"],
+      "current": [
+        "Erin Feaser"
+      ],
       "former": []
     },
     "name": "R-Ladies Harrisburg",
@@ -6755,13 +7730,22 @@
       "website": "http://www.rladiesphilly.org/"
     },
     "organizers": {
-      "current": ["Jenny Luong", "Shannon Pileggi"],
-      "former": ["Darien Aunapu", "Michelle Chiu", "Darina Chudnovskaya", "Karla Fettich", "Jessie Pluto", "Jesika Saucedo", "Chun Su", "Alice Walsh"]
+      "current": [
+        "Jenny Luong",
+        "Shannon Pileggi"
+      ],
+      "former": [
+        "Darien Aunapu",
+        "Michelle Chiu",
+        "Darina Chudnovskaya",
+        "Karla Fettich",
+        "Jessie Pluto",
+        "Jesika Saucedo",
+        "Chun Su",
+        "Alice Walsh"
+      ]
     },
-    "name": "R-Ladies Philadelphia, PA",
-    "id": "26229746",
-    "country_acronym": "US",
-    "state": "PA",
+    "name": "R-Ladies Philadelphia",
     "city": "Philadelphia",
     "members": 2036,
     "lat": 40.12,
@@ -6776,7 +7760,10 @@
       "email": "pittsburgh@rladies.org"
     },
     "organizers": {
-      "current": ["Jane Kong", "Elan Parsons"],
+      "current": [
+        "Jane Kong",
+        "Elan Parsons"
+      ],
       "former": []
     },
     "name": "R-Ladies Pittsburgh",
@@ -6787,7 +7774,9 @@
     "country": "USA",
     "state.region": "Pennsylvania",
     "organizers": {
-      "current": ["Elizabeth Eisenhauer"],
+      "current": [
+        "Elizabeth Eisenhauer"
+      ],
       "former": []
     },
     "name": "R-Ladies State College",
@@ -6798,7 +7787,9 @@
     "country": "USA",
     "state.region": "Rhode Island",
     "organizers": {
-      "current": ["Sarah Eltinge"],
+      "current": [
+        "Sarah Eltinge"
+      ],
       "former": []
     },
     "name": "R-Ladies Providence",
@@ -6815,7 +7806,9 @@
       "email": "memphis@rladies.org"
     },
     "organizers": {
-      "current": ["Scarlett Evans"],
+      "current": [
+        "Scarlett Evans"
+      ],
       "former": []
     },
     "name": "R-Ladies Memphis",
@@ -6833,13 +7826,13 @@
       "github": "rladies/rladies-nashville"
     },
     "organizers": {
-      "current": ["Lucy D'Agostino McGowan", "Mary van Valkenburg"],
+      "current": [
+        "Lucy D'Agostino McGowan",
+        "Mary van Valkenburg"
+      ],
       "former": []
     },
-    "name": "R-Ladies Nashville, TN",
-    "id": "20493986",
-    "country_acronym": "US",
-    "state": "TN",
+    "name": "R-Ladies Nashville",
     "city": "Nashville",
     "members": 529,
     "lat": 36.17,
@@ -6858,13 +7851,15 @@
       "github": "rladies/meetup-presentations_austin"
     },
     "organizers": {
-      "current": ["Phanikumar Tata"],
-      "former": ["Victoria Valencia", "Caitlin Hudon"]
+      "current": [
+        "Phanikumar Tata"
+      ],
+      "former": [
+        "Victoria Valencia",
+        "Caitlin Hudon"
+      ]
     },
-    "name": "R-Ladies Austin, TX",
-    "id": "22180445",
-    "country_acronym": "US",
-    "state": "TX",
+    "name": "R-Ladies Austin",
     "city": "Austin",
     "members": 656,
     "lat": 30.22,
@@ -6882,13 +7877,12 @@
       "email": "dallas@rladies.org"
     },
     "organizers": {
-      "current": ["Sydeaka Watson"],
+      "current": [
+        "Sydeaka Watson"
+      ],
       "former": []
     },
-    "name": "R-Ladies Dallas, TX",
-    "id": "27724373",
-    "country_acronym": "US",
-    "state": "TX",
+    "name": "R-Ladies Dallas",
     "city": "Dallas",
     "members": 763,
     "lat": 32.79,
@@ -6908,13 +7902,14 @@
       "slack": "r-ladies-el-paso.slack.com"
     },
     "organizers": {
-      "current": ["Grace Smith Vidaurre"],
-      "former": ["Marguerite Mauritz"]
+      "current": [
+        "Grace Smith Vidaurre"
+      ],
+      "former": [
+        "Marguerite Mauritz"
+      ]
     },
-    "name": "R-Ladies El Paso, TX",
-    "id": "31679846",
-    "country_acronym": "US",
-    "state": "TX",
+    "name": "R-Ladies El Paso",
     "city": "El Paso",
     "members": 75,
     "lat": 31.76,
@@ -6932,13 +7927,16 @@
       "email": "houston@rladies.org"
     },
     "organizers": {
-      "current": ["Jasmine N. Baker"],
-      "former": ["Erin Hodgess", "Jennifer Cai", "Tulasi NARAYANAN Aayer"]
+      "current": [
+        "Jasmine N. Baker"
+      ],
+      "former": [
+        "Erin Hodgess",
+        "Jennifer Cai",
+        "Tulasi NARAYANAN Aayer"
+      ]
     },
-    "name": "R-Ladies Houston, TX",
-    "id": "30666379",
-    "country_acronym": "US",
-    "state": "TX",
+    "name": "R-Ladies Houston",
     "city": "Houston",
     "members": 124,
     "lat": 29.72,
@@ -6953,7 +7951,9 @@
       "email": "sanantonio@rladies.org"
     },
     "organizers": {
-      "current": ["Emily Stone"],
+      "current": [
+        "Emily Stone"
+      ],
       "former": []
     },
     "name": "R-Ladies San Antonio",
@@ -6964,7 +7964,9 @@
     "country": "USA",
     "state.region": "U.S. Virgin Islands",
     "organizers": {
-      "current": ["Lavida Rogers"],
+      "current": [
+        "Lavida Rogers"
+      ],
       "former": []
     },
     "name": "R-Ladies Charlotte Amalie",
@@ -6978,7 +7980,10 @@
       "email": "provo@rladies.org"
     },
     "organizers": {
-      "current": ["Megdalynn Fisher", "Katie Olson"],
+      "current": [
+        "Megdalynn Fisher",
+        "Katie Olson"
+      ],
       "former": []
     },
     "name": "R-Ladies Provo",
@@ -6996,25 +8001,22 @@
       "github": "rladies/meetup-presentations_charlottesville"
     },
     "organizers": {
-      "current": ["Samantha Toet"],
+      "current": [
+        "Samantha Toet"
+      ],
       "former": []
     },
-    "name": "R-Ladies Charlottesville, VA",
-    "id": "26004745",
-    "country_acronym": "US",
-    "state": "VA",
+    "name": "R-Ladies Charlottesville",
     "city": "Charlottesville",
-    "members": 427,
-    "lat": 38,
-    "lon": -78.46,
-    "timezone": "America/New_York"
   },
   {
     "status": "prospective",
     "country": "USA",
     "state.region": "Virginia",
     "organizers": {
-      "current": ["Erin Britton"],
+      "current": [
+        "Erin Britton"
+      ],
       "former": []
     },
     "name": "R-Ladies Richmond",
@@ -7025,7 +8027,9 @@
     "country": "USA",
     "state.region": "Virginia",
     "organizers": {
-      "current": ["Rida Naseem"],
+      "current": [
+        "Rida Naseem"
+      ],
       "former": []
     },
     "name": "R-Ladies Woodbridge",
@@ -7044,8 +8048,18 @@
       "github": "rladies/meetup-presentations_dc"
     },
     "organizers": {
-      "current": ["Arati Krishnamoorthy", "Parker Dority"],
-      "former": ["gwynn sturdevant", "Sam Tyner", "Simina Boca", "Kelly Obriant", "Pri Oberoi", "Federica Gazzelloni"]
+      "current": [
+        "Arati Krishnamoorthy",
+        "Parker Dority"
+      ],
+      "former": [
+        "gwynn sturdevant",
+        "Sam Tyner",
+        "Simina Boca",
+        "Kelly Obriant",
+        "Pri Oberoi",
+        "Federica Gazzelloni"
+      ]
     },
     "name": "R-Ladies Washington, DC",
     "id": "21510971",
@@ -7071,13 +8085,14 @@
       "slack": "https://rladies-sea.slack.com/"
     },
     "organizers": {
-      "current": ["Chaya Eastwood Jones", "Monica Gerber", "Isabella Vel<e1>squez"],
+      "current": [
+        "Chaya Eastwood Jones",
+        "Monica Gerber",
+        "Isabella Velásquez"
+      ],
       "former": []
     },
-    "name": "R-Ladies Seattle, WA",
-    "id": "26537030",
-    "country_acronym": "US",
-    "state": "WA",
+    "name": "R-Ladies Seattle",
     "city": "Seattle",
     "members": 1171,
     "lat": 47.61,
@@ -7089,7 +8104,9 @@
     "country": "USA",
     "state.region": "Washington",
     "organizers": {
-      "current": ["Alexandra Gore"],
+      "current": [
+        "Alexandra Gore"
+      ],
       "former": []
     },
     "name": "R-Ladies Tacoma",
@@ -7100,7 +8117,10 @@
     "country": "USA",
     "state.region": "Wisconsin",
     "organizers": {
-      "current": ["Nichole Webster", "Eshara Mondal"],
+      "current": [
+        "Nichole Webster",
+        "Eshara Mondal"
+      ],
       "former": []
     },
     "name": "R-Ladies Madison",
@@ -7116,7 +8136,10 @@
       "email": "laramie@rladies.org"
     },
     "organizers": {
-      "current": ["Heather N. Abernathy", "Molly Caldwell"],
+      "current": [
+        "Heather N. Abernathy",
+        "Molly Caldwell"
+      ],
       "former": []
     },
     "name": "R-Ladies Laramie",
@@ -7126,7 +8149,11 @@
     "status": "active",
     "country": "Venezuela",
     "organizers": {
-      "current": ["Beatriz Valdez", "Maria Helena Rivero", "Jeselys Hern<e1>ndez"],
+      "current": [
+        "Beatriz Valdez",
+        "Maria Helena Rivero",
+        "Jeselys Hernández"
+      ],
       "former": []
     },
     "name": "R-Ladies Caracas",
@@ -7140,24 +8167,21 @@
       "meetup": "rladies-ha-noi"
     },
     "organizers": {
-      "current": ["Linh Dieu"],
+      "current": [
+        "Linh Dieu"
+      ],
       "former": []
     },
     "name": "R-Ladies Ha Noi",
-    "id": "33361775",
-    "country_acronym": "VN",
-    "state": "",
-    "city": "Ha Noi",
-    "members": 77,
-    "lat": 21.03,
-    "lon": 105.84,
-    "timezone": "Asia/Ho_Chi_Minh"
+    "city": "Ha Noi"
   },
   {
     "status": "prospective",
     "country": "Vilnius",
     "organizers": {
-      "current": ["Paulius Alaburda"],
+      "current": [
+        "Paulius Alaburda"
+      ],
       "former": []
     },
     "name": "R-Ladies Lithuania",
@@ -7174,8 +8198,15 @@
       "slack": "https://rladies-remote.slack.com"
     },
     "organizers": {
-      "current": ["Heather Turner", "Njoki Njuki"],
-      "former": ["Azadeh Gishani", "Katie Lee", "Leo Preu"]
+      "current": [
+        "Heather Turner",
+        "Njoki Njuki"
+      ],
+      "former": [
+        "Azadeh Gishani",
+        "Katie Lee",
+        "Leo Preu"
+      ]
     },
     "name": "R-Ladies San Francisco, CA",
     "id": "28887085",
@@ -7191,7 +8222,9 @@
     "status": "prospective",
     "country": "Zambia",
     "organizers": {
-      "current": ["Hannah Kibrom"],
+      "current": [
+        "Hannah Kibrom"
+      ],
       "former": []
     },
     "name": "R-Ladies Lusaka",

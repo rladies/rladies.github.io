@@ -142,7 +142,9 @@ tojson <- function(x) {
 write_data <- function(table, folder) {
   table$img <- sapply(1:nrow(table), function(x) {
     y <- as.list(table[x, ])
-    if (length(y$img[[1]]$type) == 0) return(NA)
+    if (length(y$img[[1]]$type) == 0) {
+      return(NA)
+    }
     filename <- sprintf(
       "%s/%s.%s",
       here::here("content/about-us/global-team/img"),
@@ -231,7 +233,7 @@ if (ncol(alum) > 0) {
       end = `End Date`
     )
 
-  write_jsons(
+  write_data(
     alum,
     here::here("data", "global_team", "alumni")
   )

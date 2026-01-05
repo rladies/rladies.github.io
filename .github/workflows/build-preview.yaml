@@ -48,12 +48,13 @@ jobs:
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-r${{ env.rid}}" >> $GITHUB_ENV
+          echo "blogsref=main" >> $GITHUB_ENV
+          echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
+          fi
+          if [ ${{ env.blogs }} != "main" ]; then
             echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
-          else
-            echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-            echo "blogsref=main" >> $GITHUB_ENV
           fi
 
       - name: Install cURL Headers
@@ -91,9 +92,9 @@ jobs:
             cp -r tmpd/dir/data/json data/directory
             cp -r tmpd/dir/data/img/* assets/directory
           else
-            mv entries/json data/directory
+            cp -r entries/json data/directory
             if [ -d "entries/img" ]; then
-              mv entries/img/* assets/directory
+              cp -r entries/img/* assets/directory/
             fi
           fi
 

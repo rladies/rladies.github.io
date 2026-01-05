@@ -2,60 +2,56 @@
 
 {{ if eq .type "twitter" }}
   {{ $data.Set "string" "https://twitter.com/%s" }}
-  {{ $data.Set "fa" "fab fa-twitter" }}
-  
+  {{ $data.Set "fa" "fa-brands fa-twitter" }}
+
 {{ else if eq .type "github" }}
   {{ $data.Set "string" "https://github.com/%s" }}
-  {{ $data.Set "fa" "fab fa-github" }}
+  {{ $data.Set "fa" "fa-brands fa-github" }}
 
 {{ else if eq .type "instagram" }}
   {{ $data.Set "string" "https://instagram.com/%s" }}
-  {{ $data.Set "fa" "fab fa-instagram" }}
+  {{ $data.Set "fa" "fa-brands fa-instagram" }}
 
 {{ else if eq .type "youtube" }}
   {{ $data.Set "string" "https://youtube.com/%s" }}
-  {{ $data.Set "fa" "fab fa-youtube" }}
+  {{ $data.Set "fa" "fa-brands fa-youtube" }}
 
 {{ else if eq .type "tiktok" }}
   {{ $data.Set "string" "https://tiktok.com/%s" }}
-  {{ $data.Set "fa" "fab fa-tiktok" }}
+  {{ $data.Set "fa" "fa-brands fa-tiktok" }}
 
 {{ else if eq .type "periscope" }}
   {{ $data.Set "string" "https://www.periscope.tv/%s" }}
-  {{ $data.Set "fa" "fab fa-periscope" }}
+  {{ $data.Set "fa" "fa-brands fa-periscope" }}
 
 {{ else if eq .type "researchgate" }}
   {{ $data.Set "string" "https://www.researchgate.net/profile/%s" }}
-  {{ $data.Set "fa" "fab fa-researchgate" }}
+  {{ $data.Set "fa" "fa-brands fa-researchgate" }}
 
 {{ else if eq .type "linkedin" }}
   {{ $data.Set "string" "https://www.linkedin.com/in/%s" }}
-  {{ $data.Set "fa" "fab fa-linkedin" }}
+  {{ $data.Set "fa" "fa-brands fa-linkedin" }}
 
 {{ else if eq .type "facebook" }}
   {{ $data.Set "string" "https://www.facebook.com/%s" }}
-  {{ $data.Set "fa" "fab fa-facebook" }}
-
-{{ else if eq .type "linkedin" }}
-  {{ $data.Set "string" "https://www.facebook.com/%s" }}
-  {{ $data.Set "fa" "fab fa-facebook" }}
+  {{ $data.Set "fa" "fa-brands fa-facebook" }}
 
 {{ else if eq .type "orcid" }}
   {{ $data.Set "string" "https://orcid.org/%s" }}
-  {{ $data.Set "fa" "fab fa-orcid" }}
+  {{ $data.Set "fa" "fa-brands fa-orcid" }}
 
 {{ else if eq .type "meetup" }}
   {{ $data.Set "string" "https://www.meetup.com/%s" }}
-  {{ $data.Set "fa" "fab fa-meetup" }}
-  
+  {{ $data.Set "fa" "fa-brands fa-meetup" }}
+
 {{ else if eq .type "email" }}
   {{ $data.Set "string" "mailto:%s" }}
   {{ $data.Set "fa" "fa-solid fa-envelope" }}
 
 {{ else if eq .type "mastodon" }}
   {{ $data.Set "string" "%s" }}
-  {{ $data.Set "fa" "fab fa-mastodon" }}
-  
+  {{ $data.Set "fa" "fa-brands fa-mastodon" }}
+
 {{ else if eq .type "slack" }}
   {{ $data.Set "string" "%s" }}
   {{ $data.Set "fa" "fa-brands fa-slack" }}
@@ -66,7 +62,7 @@
 
 {{ else }}
   {{ $data.Set "string" "%s" }}
-  {{ $data.Set "fa" "fa fa-globe" }}
+  {{ $data.Set "fa" "fa-solid fa-globe" }}
 {{ end }}
 
 {{ $data.Set "url" (printf ($data.Get "string") .handle) }}
