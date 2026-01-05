@@ -56,7 +56,19 @@
 {{ end }}
 
 {{ define "footer" }}
-<script type="text/javascript">
+  {{ $js := slice
+      (resources.Get "js/fullcalendar.min.js")
+      (resources.Get "js/moment.min.js")
+      (resources.Get "js/moment-with-locales.min.js")
+      (resources.Get "js/moment-timezone-with-data.js")
+      (resources.Get "js/tooltip.min.js")
+      | resources.Concat "js/events-bundle.js"
+      | minify
+      | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+
+  <script>
   document.addEventListener("DOMContentLoaded", function () {
     var timeZoneSelectorEl = document.getElementById("time-zone-selector");
     var loadingEl = document.getElementById("loading");
