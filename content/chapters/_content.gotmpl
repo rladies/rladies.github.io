@@ -4,7 +4,7 @@
   {{ $page := dict
     "content" (dict "mediaType" "text/markdown" "value" "")
     "kind" "page"
-    "path" (printf "%s" $chapterObj.urlname)
+    "path" (printf "%s" $chapterObj.file)
     "title" (printf "%s" $chapterObj.name)
     "params" $chapterObj 
   }}
