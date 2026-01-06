@@ -1,0 +1,15 @@
+[
+  {
+    "urlname": "rladies-corvallis",
+    "status": "active",
+    "country": "USA",
+    "state.region": "Oregon",
+    "city": "Portland",
+    "social_media": {
+      "meetup": "rladies-corvallis"
+    },
+    "organizers": {
+      "current": ["Erin Howard"]
+    }
+  }
+]
