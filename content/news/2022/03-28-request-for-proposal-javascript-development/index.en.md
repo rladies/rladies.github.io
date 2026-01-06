@@ -4,8 +4,6 @@ author:
   - name: Athanasia M. Mowinckel
 type: blog
 date: '2022-03-28'
-categories: []
-tags: []
 lastmod: '2022-03-28T08:41:18+02:00'
 keywords: []
 description: ''

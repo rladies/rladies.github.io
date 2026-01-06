@@ -1,13 +1,13 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Massachusetts",
-    "city": "Northampton",
-    "social_media": {},
-    "organizers": {
-      "current": ["Paige Patrick"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "Massachusetts",
+  "city": "Northampton",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Paige Patrick"
+    ],
+    "former": []
   }
-]
+}

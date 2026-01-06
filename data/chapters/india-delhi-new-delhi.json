@@ -1,19 +1,22 @@
-[
-  {
-    "urlname": "rladies-new-delhi",
-    "status": "active",
-    "country": "India",
-    "state.region": "Delhi",
-    "city": "New Delhi",
-    "social_media": {
-      "meetup": "rladies-new-delhi",
-      "twitter": "newdelhirladies",
-      "email": "newdelhi@rladies.org",
-      "facebook": "RLadies-Delhi-111066293606859"
-    },
-    "organizers": {
-      "current": ["Kritika Verma"],
-      "former": ["Anukriti Gupta", "Riya Gupta"]
-    }
+{
+  "urlname": "rladies-new-delhi",
+  "status": "active",
+  "country": "India",
+  "state.region": "Delhi",
+  "city": "New Delhi",
+  "social_media": {
+    "meetup": "rladies-new-delhi",
+    "twitter": "newdelhirladies",
+    "email": "newdelhi@rladies.org",
+    "facebook": "RLadies-Delhi-111066293606859"
+  },
+  "organizers": {
+    "current": [
+      "Kritika Verma"
+    ],
+    "former": [
+      "Anukriti Gupta",
+      "Riya Gupta"
+    ]
   }
-]
+}

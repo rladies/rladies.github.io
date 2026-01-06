@@ -1,16 +1,20 @@
-[
-  {
-    "urlname": "rladies-honolulu",
-    "status": "active",
-    "country": "USA",
-    "state.region": "Hawaii",
-    "city": "Honolulu",
-    "social_media": {
-      "meetup": "rladies-honolulu"
-    },
-    "organizers": {
-      "current": ["Madeline Berger", "Juliette Verstaen", "Jayslen Serrano"],
-      "former": ["Emily E. Conklin"]
-    }
+{
+  "urlname": "rladies-honolulu",
+  "status": "active",
+  "country": "USA",
+  "state.region": "Hawaii",
+  "city": "Honolulu",
+  "social_media": {
+    "meetup": "rladies-honolulu"
+  },
+  "organizers": {
+    "current": [
+      "Madeline Berger",
+      "Juliette Verstaen",
+      "Jayslen Serrano"
+    ],
+    "former": [
+      "Emily E. Conklin"
+    ]
   }
-]
+}

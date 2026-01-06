@@ -1,12 +1,13 @@
-[
-  {
-    "status": "prospective",
-    "country": "Sweden",
-    "city": "Uppsala",
-    "social_media": {},
-    "organizers": {
-      "current": ["Sarah Trochemowitz", "Cecilia Natalie Strom"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Sweden",
+  "city": "Uppsala",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Sarah Trochemowitz",
+      "Cecilia Natalie Strom"
+    ],
+    "former": []
   }
-]
+}
