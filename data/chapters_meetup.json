@@ -38,7 +38,7 @@
     "country_acronym": "DZ",
     "state": "",
     "city": "al-Jaza´ir",
-    "members": 775,
+    "members": 777,
     "lat": 36.77,
     "lon": 3.04,
     "timezone": "Africa/Algiers"
@@ -888,7 +888,7 @@
     "country_acronym": "BR",
     "state": "",
     "city": "Lavras",
-    "members": 115,
+    "members": 114,
     "lat": -21.25,
     "lon": -45.01,
     "timezone": "America/Sao_Paulo"
@@ -2012,7 +2012,7 @@
     "country_acronym": "ET",
     "state": "",
     "city": "Addis Abeba",
-    "members": 917,
+    "members": 918,
     "lat": 9.03,
     "lon": 38.74,
     "timezone": "Africa/Nairobi"
@@ -3944,7 +3944,7 @@
     "country_acronym": "NG",
     "state": "",
     "city": "Lagos",
-    "members": 901,
+    "members": 902,
     "lat": 6.45,
     "lon": 3.47,
     "timezone": "Africa/Lagos"
@@ -4238,7 +4238,7 @@
     "country_acronym": "SA",
     "state": "",
     "city": "Dammam",
-    "members": 693,
+    "members": 694,
     "lat": 26.42,
     "lon": 50.09,
     "timezone": "Asia/Riyadh"
@@ -4482,7 +4482,7 @@
     "country_acronym": "ES",
     "state": "",
     "city": "Bilbao",
-    "members": 285,
+    "members": 286,
     "lat": 43.25,
     "lon": -2.93,
     "timezone": "Europe/Madrid"
