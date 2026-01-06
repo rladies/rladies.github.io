@@ -1,16 +1,18 @@
-[
-  {
-    "urlname": "rladies-ankara",
-    "status": "active",
-    "country": "Turkey",
-    "city": "Ankara",
-    "social_media": {
-      "meetup": "rladies-ankara",
-      "email": "ankara@rladies.org"
-    },
-    "organizers": {
-      "current": ["Fulya Gökalp"],
-      "former": ["Mubina İpek"]
-    }
+{
+  "urlname": "rladies-ankara",
+  "status": "active",
+  "country": "Turkey",
+  "city": "Ankara",
+  "social_media": {
+    "meetup": "rladies-ankara",
+    "email": "ankara@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Fulya Gökalp"
+    ],
+    "former": [
+      "Mubina İpek"
+    ]
   }
-]
+}

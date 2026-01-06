@@ -1,15 +1,16 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Utah",
-    "city": "Provo",
-    "social_media": {
-      "email": "provo@rladies.org"
-    },
-    "organizers": {
-      "current": ["Megdalynn Fisher", "Katie Olson"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "Utah",
+  "city": "Provo",
+  "social_media": {
+    "email": "provo@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Megdalynn Fisher",
+      "Katie Olson"
+    ],
+    "former": []
   }
-]
+}

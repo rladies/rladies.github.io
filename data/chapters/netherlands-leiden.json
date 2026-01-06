@@ -1,12 +1,12 @@
-[
-  {
-    "status": "prospective",
-    "country": "Netherlands",
-    "city": "Leiden",
-    "social_media": {},
-    "organizers": {
-      "current": ["Vera Arntzen"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Netherlands",
+  "city": "Leiden",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Vera Arntzen"
+    ],
+    "former": []
   }
-]
+}

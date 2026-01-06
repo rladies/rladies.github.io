@@ -1,17 +1,18 @@
-[
-  {
-    "urlname": "rladies-cotonou",
-    "status": "retired on 25-11-2024",
-    "country": "Benin",
-    "city": "Cotonou",
-    "social_media": {
-      "meetup": "rladies-cotonou",
-      "twitter": "RLadiesCtn",
-      "email": "cotonou@rladies.org"
-    },
-    "organizers": {
-      "current": [],
-      "former": ["Nadejda Sero", "Benedicta Essuon"]
-    }
+{
+  "urlname": "rladies-cotonou",
+  "status": "retired on 25-11-2024",
+  "country": "Benin",
+  "city": "Cotonou",
+  "social_media": {
+    "meetup": "rladies-cotonou",
+    "twitter": "RLadiesCtn",
+    "email": "cotonou@rladies.org"
+  },
+  "organizers": {
+    "current": [],
+    "former": [
+      "Nadejda Sero",
+      "Benedicta Essuon"
+    ]
   }
-]
+}

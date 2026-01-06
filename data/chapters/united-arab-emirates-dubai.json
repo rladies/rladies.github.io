@@ -1,12 +1,12 @@
-[
-  {
-    "status": "prospective",
-    "country": "United Arab Emirates",
-    "city": "Dubai",
-    "social_media": {},
-    "organizers": {
-      "current": ["Lakshmi Krishnamurthy"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "United Arab Emirates",
+  "city": "Dubai",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Lakshmi Krishnamurthy"
+    ],
+    "former": []
   }
-]
+}

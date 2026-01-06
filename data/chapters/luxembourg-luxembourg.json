@@ -1,12 +1,13 @@
-[
-  {
-    "status": "prospective",
-    "country": "Luxembourg",
-    "city": "Luxembourg",
-    "social_media": {},
-    "organizers": {
-      "current": ["Claudia Albanese", "Irma Karabegovic"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Luxembourg",
+  "city": "Luxembourg",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Claudia Albanese",
+      "Irma Karabegovic"
+    ],
+    "former": []
   }
-]
+}

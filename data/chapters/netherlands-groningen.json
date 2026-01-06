@@ -1,12 +1,12 @@
-[
-  {
-    "status": "prospective",
-    "country": "Netherlands",
-    "city": "Groningen",
-    "social_media": {},
-    "organizers": {
-      "current": ["Suzanne Dekker"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Netherlands",
+  "city": "Groningen",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Suzanne Dekker"
+    ],
+    "former": []
   }
-]
+}

@@ -1,13 +1,15 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Connecticut",
-    "city": "New Haven",
-    "social_media": {},
-    "organizers": {
-      "current": ["Karinne Tennenbaum", "Josephine Ankrah", "Xinran Wang"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "Connecticut",
+  "city": "New Haven",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Karinne Tennenbaum",
+      "Josephine Ankrah",
+      "Xinran Wang"
+    ],
+    "former": []
   }
-]
+}

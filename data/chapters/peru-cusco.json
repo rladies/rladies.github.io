@@ -1,16 +1,18 @@
-[
-  {
-    "urlname": "rladies-cusco",
-    "status": "active",
-    "country": "Peru",
-    "city": "Cusco",
-    "social_media": {
-      "meetup": "rladies-cusco",
-      "email": "cusco@rladies.org"
-    },
-    "organizers": {
-      "current": ["Karen Madeleine Marocho", "Joice K. Chavez", "Camila J. Vargas"],
-      "former": []
-    }
+{
+  "urlname": "rladies-cusco",
+  "status": "active",
+  "country": "Peru",
+  "city": "Cusco",
+  "social_media": {
+    "meetup": "rladies-cusco",
+    "email": "cusco@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Karen Madeleine Marocho",
+      "Joice K. Chavez",
+      "Camila J. Vargas"
+    ],
+    "former": []
   }
-]
+}

@@ -1,13 +1,13 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "city": "Merced",
-    "social_media": {},
-    "organizers": {
-      "current": ["Andrea S<e1>nchez-Tapia"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "California",
+  "city": "Merced",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Andrea S<e1>nchez-Tapia"
+    ],
+    "former": []
   }
-]
+}

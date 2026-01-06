@@ -1,4 +1,4 @@
-{{ $events := where .Site.Data.meetup.events "type" "PAST" }}
+{{ $events := where ($.Scratch.Get "events") "status" "past" }}
 
 <!-- Start Counter Section -->
 <div id="counters" class="row justify-content-center section topspace">
@@ -8,17 +8,17 @@
   		<div class="icon-box">
   			<h3>{{ i18n "countries" | markdownify }}</h3>
   			<i class="fa-solid fa-globe"></i>
-  			<p class="count" data-count="{{  .Site.Data.chapter_stats.countries }}">0</p>
+  			<p class="count" data-count="{{ $.Scratch.Get "chpt_countries" | len  }}">0</p>
   		</div>
 		</div>
 	</div>
-  	
+
 	<div class="col-sm-5 col-md-4 text-center fadeInUp" data-wow-duration="500ms">
   	<div class="block">
   		<div class="icon-box">
 			<h3>{{ i18n "chapters" | markdownify }}</h3>
 			  <i class="fa-solid fa-map-location-dot"></i>
-  			<p class="count" data-count="{{ .Site.Data.chapter_stats.chapters }}">0</p>
+  			<p class="count" data-count="{{ $.Scratch.Get "chpt_active" | len }}">0</p>
   		</div>
 		</div>
 	</div>

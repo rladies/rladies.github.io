@@ -1,19 +1,20 @@
-[
-  {
-    "urlname": "rladies-resistencia-corrientes",
-    "status": "active",
-    "country": "Argentina",
-    "state.region": "Chaco-Corrientes",
-    "city": "Resistencia-Corrientes",
-    "social_media": {
-      "meetup": "rladies-resistencia-corrientes",
-      "twitter": "RLadies_rciacte",
-      "email": "rciactes@rladies.org",
-      "facebook": "R-Ladies-Rcia-Ctes"
-    },
-    "organizers": {
-      "current": ["Patricia Loto", "Roxana Noelia Villafa<f1>e"],
-      "former": []
-    }
+{
+  "urlname": "rladies-resistencia-corrientes",
+  "status": "active",
+  "country": "Argentina",
+  "state.region": "Chaco-Corrientes",
+  "city": "Resistencia-Corrientes",
+  "social_media": {
+    "meetup": "rladies-resistencia-corrientes",
+    "twitter": "RLadies_rciacte",
+    "email": "rciactes@rladies.org",
+    "facebook": "R-Ladies-Rcia-Ctes"
+  },
+  "organizers": {
+    "current": [
+      "Patricia Loto",
+      "Roxana Noelia Villafa<f1>e"
+    ],
+    "former": []
   }
-]
+}

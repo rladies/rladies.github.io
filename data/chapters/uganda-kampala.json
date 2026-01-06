@@ -1,15 +1,16 @@
-[
-  {
-    "status": "prospective",
-    "country": "Uganda",
-    "city": "Kampala",
-    "social_media": {
-      "twitter": "Rladieskampala",
-      "email": "kampala@rladies.org"
-    },
-    "organizers": {
-      "current": ["Aine Lorna Maria", "Shakirah Nakalungi"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Uganda",
+  "city": "Kampala",
+  "social_media": {
+    "twitter": "Rladieskampala",
+    "email": "kampala@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Aine Lorna Maria",
+      "Shakirah Nakalungi"
+    ],
+    "former": []
   }
-]
+}

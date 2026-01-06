@@ -1,16 +1,21 @@
-[
-  {
-    "urlname": "rladies-newcastle",
-    "status": "active",
-    "country": "United Kingdom",
-    "city": "Newcastle",
-    "social_media": {
-      "meetup": "rladies-newcastle",
-      "email": "newcastle@rladies.org"
-    },
-    "organizers": {
-      "current": ["Jessica Ward", "Friederike Bolam", "Louise Mair", "Danielle Turton", "Lauren Ackerman", "Aoife O'Neill"],
-      "former": []
-    }
+{
+  "urlname": "rladies-newcastle",
+  "status": "active",
+  "country": "United Kingdom",
+  "city": "Newcastle",
+  "social_media": {
+    "meetup": "rladies-newcastle",
+    "email": "newcastle@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Jessica Ward",
+      "Friederike Bolam",
+      "Louise Mair",
+      "Danielle Turton",
+      "Lauren Ackerman",
+      "Aoife O'Neill"
+    ],
+    "former": []
   }
-]
+}

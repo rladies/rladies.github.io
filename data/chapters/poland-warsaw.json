@@ -1,18 +1,22 @@
-[
-  {
-    "urlname": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
-    "status": "active",
-    "country": "Poland",
-    "city": "Warsaw",
-    "social_media": {
-      "meetup": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
-      "email": "warsaw@rladies.org",
-      "facebook": "RLadiesWarsaw",
-      "github": "rladies/meetup-presentations_warsaw"
-    },
-    "organizers": {
-      "current": ["Olga Mierzwa-Sulima", "Natalia Potocka", "Alicja Gosiewska", "Anna Kozak", "Katarzyna Woznica"],
-      "former": []
-    }
+{
+  "urlname": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
+  "status": "active",
+  "country": "Poland",
+  "city": "Warsaw",
+  "social_media": {
+    "meetup": "Spotkania-Entuzjastow-R-Warsaw-R-Users-Group-Meetup",
+    "email": "warsaw@rladies.org",
+    "facebook": "RLadiesWarsaw",
+    "github": "rladies/meetup-presentations_warsaw"
+  },
+  "organizers": {
+    "current": [
+      "Olga Mierzwa-Sulima",
+      "Natalia Potocka",
+      "Alicja Gosiewska",
+      "Anna Kozak",
+      "Katarzyna Woznica"
+    ],
+    "former": []
   }
-]
+}

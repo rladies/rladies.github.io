@@ -1,36 +1,98 @@
-{{ .Scratch.Set "rblogs"     $.Site.Data.rblogs  }}
-{{ .Scratch.Set "mentoring"  $.Site.Data.mentoring }}
-{{ .Scratch.Set "globalteam" $.Site.Data.global_team }}
 
 <!-- 
 Create an array that we can use to shuffle
 the data entries on every build.
 -->
 {{ $.Scratch.Set "ment" (slice) }}
-{{ range $name, $_ := ( .Scratch.Get "mentoring" ) }}
-    {{ $.Scratch.Add "ment" $name }}
+{{ range $name, $_ := $.Site.Data.mentoring }}
+  {{ $.Scratch.Add "ment" $name }}
 {{ end }}
 
 {{ $.Scratch.Set "gt" (slice) }}
-{{ range $name, $_ := ( .Scratch.Get "globalteam" ) }}
-    {{ $.Scratch.Add "gt" $name }}
+{{ range $name, $_ := $.Site.Data.global_team }}
+  {{ $.Scratch.Add "gt" $name }}
 {{ end }}
 
 {{ $.Scratch.Set "rb" (slice) }}
-{{ range $name, $_ := ( .Scratch.Get "rblogs" ) }}
-    {{ $.Scratch.Add "rb" $name }}
+{{ range $name, $_ := $.Site.Data.rblogs }}
+  {{ $.Scratch.Add "rb" $name }}
 {{ end }}
 
 
 <!-- Chapter data -->
-{{ $.Scratch.Set "chpt_actives" (slice "") }}
-{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
-{{ $.Scratch.Set "n" (len $chapters) }}
-{{ range $chapters }}
-  {{ $.Scratch.Add "chpt_actives" (slice .country) }}
+{{/* Fetch chapter data from meetup_archive JSON file */}}
+{{ $chapters_meetup := slice}}
+{{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/chapters.json" }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $chapters_meetup = .Value | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get remote resource %q" $url }}
 {{ end }}
 
-{{ $.Scratch.Set "chpt_countries" slice }}
-{{ range ($.Scratch.Get "chpt_actives" | uniq ) }}
-  {{ $.Scratch.Add "chpt_countries" (dict "country" . "n" (where $chapters "country" . | len) )  }}
+<!-- range over all countries -->
+{{ $countries := slice }}
+{{ $.Scratch.Set "chpt_active" (slice) }}
+
+{{ range $index, $chapter := $.Site.Data.chapters }}
+  {{ $chapterMap := $chapter }}
+  {{ if in (printf "%T" $chapterMap) "[]interface" }}
+    {{ $chapterMap = index $chapterMap 0 }}
+  {{ end }}
+
+  {{/* access status safely via index (works for map[string]interface{}) */}}
+  {{ if eq (index $chapterMap "status") "active" }}
+
+    {{/* find matching remote entry (where returns a slice) */}}
+    {{ $matches := where $chapters_meetup "urlname" (index $chapterMap "urlname") }}
+    {{ if gt (len $matches) 0 }}
+      {{ $mtp := index $matches 0 }}
+      
+      {{ $chapterMap = merge $chapterMap (dict 
+        "name" (index $mtp "name")
+        "meetup_id" (index $mtp "id")
+        "lat" (index $mtp "lat")
+        "lon" (index $mtp "lon")
+        "members" (index $mtp "members")
+        "timezone" (index $mtp "timezone")
+      ) }}
+
+      {{ with (index $chapterMap "country") }}
+        {{ $countries = $countries | append  . }}
+      {{ end }}
+    {{ else }}
+      {{ warnf "Chapter %q not found in remote meetup data" $index }}
+    {{ end }}
+
+    {{ $.Scratch.Add "chpt_active" $chapterMap }}
+  {{ end }}
+
+{{ end }}
+{{ $countries = $countries | uniq | sort }}
+{{ $chapters_active := $.Scratch.Get "chpt_active" }}
+
+<!-- range again to create count chapters per country -->
+{{ .Scratch.Set "chpt_countries" (slice) }}
+{{ range $countries }}
+  {{ $count := where $chapters_active "country" . | len }}
+  {{ $.Scratch.Add "chpt_countries" (dict "name" . "count" $count) }}
+{{ end }}
+
+
+
+
+<!-- Events -->
+{{/* Fetch events data from meetup_archive JSON file and store in Scratch */}}
+{{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/events.json" }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $.Scratch.Set "events" (.Value | transform.Unmarshal) }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get remote resource %q" $url }}
 {{ end }}

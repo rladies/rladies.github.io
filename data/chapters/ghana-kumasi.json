@@ -1,15 +1,15 @@
-[
-  {
-    "urlname": "rladies-kumasi",
-    "status": "active",
-    "country": "Ghana",
-    "city": "Kumasi",
-    "social_media": {
-      "meetup": "rladies-kumasi",
-      "email": "kumasi@rladies.org"
-    },
-    "organizers": {
-      "current": ["Jane Esi Monkah"]
-    }
+{
+  "urlname": "rladies-kumasi",
+  "status": "active",
+  "country": "Ghana",
+  "city": "Kumasi",
+  "social_media": {
+    "meetup": "rladies-kumasi",
+    "email": "kumasi@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Jane Esi Monkah"
+    ]
   }
-]
+}

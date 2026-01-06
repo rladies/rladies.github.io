@@ -1,18 +1,19 @@
-[
-  {
-    "urlname": "rladies-buffalo",
-    "status": "active",
-    "country": "USA",
-    "state.region": "New York",
-    "city": "Buffalo",
-    "social_media": {
-      "meetup": "rladies-buffalo",
-      "twitter": "RLadiesBuff",
-      "email": "buffalo@rladies.org"
-    },
-    "organizers": {
-      "current": ["Lori Shepherd", "Meghan Harris"],
-      "former": []
-    }
+{
+  "urlname": "rladies-buffalo",
+  "status": "active",
+  "country": "USA",
+  "state.region": "New York",
+  "city": "Buffalo",
+  "social_media": {
+    "meetup": "rladies-buffalo",
+    "twitter": "RLadiesBuff",
+    "email": "buffalo@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Lori Shepherd",
+      "Meghan Harris"
+    ],
+    "former": []
   }
-]
+}

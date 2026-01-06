@@ -1,17 +1,18 @@
-[
-  {
-    "urlname": "rladies-vienna",
-    "status": "active",
-    "country": "Austria",
-    "city": "Vienna",
-    "social_media": {
-      "meetup": "rladies-vienna",
-      "twitter": "RLadiesVienna",
-      "email": "vienna@rladies.org"
-    },
-    "organizers": {
-      "current": ["Laura Vana", "Jenny Fan"],
-      "former": []
-    }
+{
+  "urlname": "rladies-vienna",
+  "status": "active",
+  "country": "Austria",
+  "city": "Vienna",
+  "social_media": {
+    "meetup": "rladies-vienna",
+    "twitter": "RLadiesVienna",
+    "email": "vienna@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Laura Vana",
+      "Jenny Fan"
+    ],
+    "former": []
   }
-]
+}

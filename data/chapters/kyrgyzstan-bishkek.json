@@ -1,12 +1,12 @@
-[
-  {
-    "status": "active",
-    "country": "Kyrgyzstan",
-    "city": "Bishkek",
-    "social_media": {},
-    "organizers": {
-      "current": ["Razia Abdieva"],
-      "former": []
-    }
+{
+  "status": "active",
+  "country": "Kyrgyzstan",
+  "city": "Bishkek",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Razia Abdieva"
+    ],
+    "former": []
   }
-]
+}

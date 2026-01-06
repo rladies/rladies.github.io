@@ -1,13 +1,14 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Indiana",
-    "city": "South Bend",
-    "social_media": {},
-    "organizers": {
-      "current": ["Myrthe Faber", "Kelsey M. Reese"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "Indiana",
+  "city": "South Bend",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Myrthe Faber",
+      "Kelsey M. Reese"
+    ],
+    "former": []
   }
-]
+}

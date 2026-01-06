@@ -1,18 +1,20 @@
-[
-  {
-    "urlname": "rladies-montpellier",
-    "status": "active",
-    "country": "France",
-    "city": "Montpellier",
-    "social_media": {
-      "meetup": "rladies-montpellier",
-      "twitter": "RLadiesMontpel",
-      "email": "montpellier@rladies.org",
-      "github": "rladies/r-ladies-montpellier"
-    },
-    "organizers": {
-      "current": ["C<e9>cile Sauder", "Criscely Luj<e1>n", "Faustine Bousquet"],
-      "former": []
-    }
+{
+  "urlname": "rladies-montpellier",
+  "status": "active",
+  "country": "France",
+  "city": "Montpellier",
+  "social_media": {
+    "meetup": "rladies-montpellier",
+    "twitter": "RLadiesMontpel",
+    "email": "montpellier@rladies.org",
+    "github": "rladies/r-ladies-montpellier"
+  },
+  "organizers": {
+    "current": [
+      "C<e9>cile Sauder",
+      "Criscely Luj<e1>n",
+      "Faustine Bousquet"
+    ],
+    "former": []
   }
-]
+}

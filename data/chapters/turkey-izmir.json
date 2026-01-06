@@ -1,17 +1,20 @@
-[
-  {
-    "urlname": "rladies-izmir",
-    "status": "active",
-    "country": "Turkey",
-    "city": "Izmir",
-    "social_media": {
-      "meetup": "rladies-izmir",
-      "twitter": "RLadiesIzmir",
-      "email": "izmir@rladies.org"
-    },
-    "organizers": {
-      "current": ["Jane Pruszkowski"],
-      "former": ["Necla Kayaalp", "Sezer Bozkus Kahyaoglu"]
-    }
+{
+  "urlname": "rladies-izmir",
+  "status": "active",
+  "country": "Turkey",
+  "city": "Izmir",
+  "social_media": {
+    "meetup": "rladies-izmir",
+    "twitter": "RLadiesIzmir",
+    "email": "izmir@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Jane Pruszkowski"
+    ],
+    "former": [
+      "Necla Kayaalp",
+      "Sezer Bozkus Kahyaoglu"
+    ]
   }
-]
+}

@@ -1,16 +1,17 @@
-[
-  {
-    "urlname": "rladies-nis",
-    "status": "active",
-    "country": "Serbia",
-    "city": "Nis",
-    "social_media": {
-      "meetup": "rladies-nis",
-      "email": "nis@rladies.org"
-    },
-    "organizers": {
-      "current": ["Marija Veljkovic", "Andjela Todorovic"],
-      "former": []
-    }
+{
+  "urlname": "rladies-nis",
+  "status": "active",
+  "country": "Serbia",
+  "city": "Nis",
+  "social_media": {
+    "meetup": "rladies-nis",
+    "email": "nis@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Marija Veljkovic",
+      "Andjela Todorovic"
+    ],
+    "former": []
   }
-]
+}

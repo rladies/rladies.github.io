@@ -1,18 +1,23 @@
-[
-  {
-    "urlname": "rladies-oslo",
-    "status": "active",
-    "country": "Norway",
-    "city": "Oslo",
-    "social_media": {
-      "meetup": "rladies-oslo",
-      "twitter": "RLadies_Oslo",
-      "email": "oslo@rladies.org",
-      "github": "rladies/meetup-presentations_oslo"
-    },
-    "organizers": {
-      "current": ["Athanasia Monika Mowinckel", "Lene Norderhaug Drosdal", "Aurora Voje"],
-      "former": ["Anne Claire Fouilloux", "Isabelle Valette"]
-    }
+{
+  "urlname": "rladies-oslo",
+  "status": "active",
+  "country": "Norway",
+  "city": "Oslo",
+  "social_media": {
+    "meetup": "rladies-oslo",
+    "twitter": "RLadies_Oslo",
+    "email": "oslo@rladies.org",
+    "github": "rladies/meetup-presentations_oslo"
+  },
+  "organizers": {
+    "current": [
+      "Athanasia Monika Mowinckel",
+      "Lene Norderhaug Drosdal",
+      "Aurora Voje"
+    ],
+    "former": [
+      "Anne Claire Fouilloux",
+      "Isabelle Valette"
+    ]
   }
-]
+}

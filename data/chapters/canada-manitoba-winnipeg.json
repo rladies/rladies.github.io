@@ -1,13 +1,13 @@
-[
-  {
-    "status": "prospective",
-    "country": "Canada",
-    "state.region": "Manitoba",
-    "city": "Winnipeg",
-    "social_media": {},
-    "organizers": {
-      "current": ["Sarah Mutch"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Canada",
+  "state.region": "Manitoba",
+  "city": "Winnipeg",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Sarah Mutch"
+    ],
+    "former": []
   }
-]
+}

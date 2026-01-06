@@ -1,13 +1,13 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "city": "Santa Cruz",
-    "social_media": {},
-    "organizers": {
-      "current": ["Kate Kelsey"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "California",
+  "city": "Santa Cruz",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Kate Kelsey"
+    ],
+    "former": []
   }
-]
+}

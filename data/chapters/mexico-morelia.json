@@ -1,15 +1,17 @@
-[
-  {
-    "urlname": "rladies-morelia",
-    "status": "active",
-    "country": "Mexico",
-    "city": "Morelia",
-    "social_media": {
-      "meetup": "rladies-morelia"
-    },
-    "organizers": {
-      "current": ["Nelly Selem", "Irais Avila Eulogio", "Thomai Tsiftsi"],
-      "former": []
-    }
+{
+  "urlname": "rladies-morelia",
+  "status": "active",
+  "country": "Mexico",
+  "city": "Morelia",
+  "social_media": {
+    "meetup": "rladies-morelia"
+  },
+  "organizers": {
+    "current": [
+      "Nelly Selem",
+      "Irais Avila Eulogio",
+      "Thomai Tsiftsi"
+    ],
+    "former": []
   }
-]
+}

@@ -1,18 +1,18 @@
-[
-  {
-    "urlname": "rladies-tijuana",
-    "status": "active",
-    "country": "Mexico",
-    "city": "Tijuana",
-    "social_media": {
-      "meetup": "rladies-tijuana",
-      "twitter": "RladiesT",
-      "email": "tijuana@rladies.org",
-      "instagram": "rladiestijuana"
-    },
-    "organizers": {
-      "current": ["Karen Nohemi Morales Galindo"],
-      "former": []
-    }
+{
+  "urlname": "rladies-tijuana",
+  "status": "active",
+  "country": "Mexico",
+  "city": "Tijuana",
+  "social_media": {
+    "meetup": "rladies-tijuana",
+    "twitter": "RladiesT",
+    "email": "tijuana@rladies.org",
+    "instagram": "rladiestijuana"
+  },
+  "organizers": {
+    "current": [
+      "Karen Nohemi Morales Galindo"
+    ],
+    "former": []
   }
-]
+}

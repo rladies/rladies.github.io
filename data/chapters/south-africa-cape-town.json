@@ -1,18 +1,20 @@
-[
-  {
-    "urlname": "rladies-cape-town",
-    "status": "active",
-    "country": "South Africa",
-    "city": "Cape Town",
-    "social_media": {
-      "meetup": "rladies-cape-town",
-      "twitter": "RLadiesCapeTown",
-      "email": "capetown@rladies.org",
-      "github": "rladies/meetup-presentations_capetown"
-    },
-    "organizers": {
-      "current": ["Theoni Photopoulou"],
-      "former": ["Megan Rogers"]
-    }
+{
+  "urlname": "rladies-cape-town",
+  "status": "active",
+  "country": "South Africa",
+  "city": "Cape Town",
+  "social_media": {
+    "meetup": "rladies-cape-town",
+    "twitter": "RLadiesCapeTown",
+    "email": "capetown@rladies.org",
+    "github": "rladies/meetup-presentations_capetown"
+  },
+  "organizers": {
+    "current": [
+      "Theoni Photopoulou"
+    ],
+    "former": [
+      "Megan Rogers"
+    ]
   }
-]
+}

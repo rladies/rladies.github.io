@@ -1,13 +1,16 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "Nebraska",
-    "city": "Lincoln",
-    "social_media": {},
-    "organizers": {
-      "current": ["Gabriella Palomo", "Lyndsie Wszola", "Alexis Saltzman", "Elise Thayer"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "Nebraska",
+  "city": "Lincoln",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Gabriella Palomo",
+      "Lyndsie Wszola",
+      "Alexis Saltzman",
+      "Elise Thayer"
+    ],
+    "former": []
   }
-]
+}

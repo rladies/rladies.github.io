@@ -1,17 +1,22 @@
-[
-  {
-    "urlname": "rladies-novi-sad",
-    "status": "active",
-    "country": "Serbia",
-    "city": "Novi Sad",
-    "social_media": {
-      "meetup": "rladies-novi-sad",
-      "email": "novisad@rladies.org",
-      "github": "rladies/meetup-presentations_novi-sad"
-    },
-    "organizers": {
-      "current": ["Katica Ristic", "Tatjana Kecojevic", "Olivera Grljevic", "Maja Pokusevski", "Ranka Medenica Todorovic", "Milena Kresoja"],
-      "former": []
-    }
+{
+  "urlname": "rladies-novi-sad",
+  "status": "active",
+  "country": "Serbia",
+  "city": "Novi Sad",
+  "social_media": {
+    "meetup": "rladies-novi-sad",
+    "email": "novisad@rladies.org",
+    "github": "rladies/meetup-presentations_novi-sad"
+  },
+  "organizers": {
+    "current": [
+      "Katica Ristic",
+      "Tatjana Kecojevic",
+      "Olivera Grljevic",
+      "Maja Pokusevski",
+      "Ranka Medenica Todorovic",
+      "Milena Kresoja"
+    ],
+    "former": []
   }
-]
+}

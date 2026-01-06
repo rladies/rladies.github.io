@@ -1,21 +1,27 @@
-[
-  {
-    "urlname": "rladies-rome",
-    "status": "active",
-    "country": "Italy",
-    "city": "Rome",
-    "social_media": {
-      "meetup": "rladies-rome",
-      "email": "rome@rladies.org",
-      "twitter": "rladiesrome",
-      "youtube": "@rladiesrome",
-      "github": "rladies/meetup-presentations_rome",
-      "linkedin": "company/r-ladies-rome/",
-      "bluesky": "rladiesrome.bsky.social"
-    },
-    "organizers": {
-      "current": ["Federica Gazzelloni", "Silvana Acosta", "Rafaela Ribeiro Lucas"],
-      "former": ["Nina Deliu","Katie Wood","Francesca Picone"]
-    }
+{
+  "urlname": "rladies-rome",
+  "status": "active",
+  "country": "Italy",
+  "city": "Rome",
+  "social_media": {
+    "meetup": "rladies-rome",
+    "email": "rome@rladies.org",
+    "twitter": "rladiesrome",
+    "youtube": "@rladiesrome",
+    "github": "rladies/meetup-presentations_rome",
+    "linkedin": "company/r-ladies-rome/",
+    "bluesky": "rladiesrome.bsky.social"
+  },
+  "organizers": {
+    "current": [
+      "Federica Gazzelloni",
+      "Silvana Acosta",
+      "Rafaela Ribeiro Lucas"
+    ],
+    "former": [
+      "Nina Deliu",
+      "Katie Wood",
+      "Francesca Picone"
+    ]
   }
-]
+}

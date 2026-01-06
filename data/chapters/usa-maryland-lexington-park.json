@@ -1,18 +1,21 @@
-[
-  {
-    "urlname": "rladies-lexington-park",
-    "status": "active",
-    "country": "USA",
-    "state.region": "Maryland",
-    "city": "Lexington Park",
-    "social_media": {
-      "meetup": "rladies-lexington-park",
-      "twitter": "RLadiesLexPark",
-      "email": "lexingtonpark@rladies.org"
-    },
-    "organizers": {
-      "current": ["Caitlin Eger", "Cassie Gurbisz"],
-      "former": ["Linden McBride"]
-    }
+{
+  "urlname": "rladies-lexington-park",
+  "status": "active",
+  "country": "USA",
+  "state.region": "Maryland",
+  "city": "Lexington Park",
+  "social_media": {
+    "meetup": "rladies-lexington-park",
+    "twitter": "RLadiesLexPark",
+    "email": "lexingtonpark@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Caitlin Eger",
+      "Cassie Gurbisz"
+    ],
+    "former": [
+      "Linden McBride"
+    ]
   }
-]
+}
