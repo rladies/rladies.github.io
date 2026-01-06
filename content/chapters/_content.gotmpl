@@ -1,21 +1,12 @@
 
-{{ range $key, $chapterDataArray := site.Data.chapters }}
-  {{ $chapterObj := "" }}
-
-  {{ if (and (reflect.IsSlice $chapterDataArray) (gt (len $chapterDataArray) 0)) }}
-    {{ $chapterObj = index $chapterDataArray 0 }}
-  {{ else }}
-    {{ errorf "Chapter data for key '%s' in data/chapters/ is not a non-empty array. Please check its JSON structure." $key }}
-  {{ end }}
-
-
+{{ $chapters := (partial "funcs/merge_chapters" .) | transform.Unmarshal }}
+{{ range $key, $chapterObj := $chapters }}
   {{ $page := dict
     "content" (dict "mediaType" "text/markdown" "value" "")
     "kind" "page"
     "path" (printf "%s" $chapterObj.urlname)
-    "title" (printf "R-Ladies %s" $chapterObj.city)
+    "title" (printf "%s" $chapterObj.name)
     "params" $chapterObj 
   }}
-
   {{ $.AddPage $page }}
 {{ end }}
