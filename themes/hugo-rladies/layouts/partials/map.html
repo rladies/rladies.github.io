@@ -62,16 +62,16 @@
     
     var colorSet = new am4core.ColorSet();
     
-    {{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+    {{ $chapters := $.Scratch.Get "chpt_active" }}
     
     imageSeries.data = [ 
-    {{ range where $chapters "members" "gt" 0 }}
+    {{ range $idx, $c := $chapters }}
       {
-        "name": "{{ .name }}",
-        "members": "{{ .members }}",
-        "socials": {{ with .social_media }}{{ partial "social_media.html" . }}{{ end }},
-        "latitude": {{ .lat }},
-        "longitude": {{ .lon }},
+        "name": "{{ $c.name }}",
+        "members": "{{ $c.members }}",
+        {{ with $c.social_media }}"socials": {{ partial "social_media.html" . }},{{ end }}
+        "latitude": {{ $c.lat }},
+        "longitude": {{ $c.lon }},
         "color": "#88398acc"
       },
     {{ end }}

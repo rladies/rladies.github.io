@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 0 }}
+{{ $countries := $.Scratch.Get "chpt_countries" }}
 {{ $chapters := .Pages }}
 
 <div class="container row justify-content-center section topspace">
@@ -22,13 +22,13 @@
           </tr>
         </thead>
         <tbody>
-          {{ range $country := $countries }}
-            {{ $countryChapters := where $chapters ".Params.country" $country.country }}
+          {{ range $idx, $country := $countries }}
+            {{ $countryChapters := where $chapters ".Params.country" $country.name }}
             {{ range $i, $chapter := $countryChapters }}
               <tr>
                 {{ if eq $i 0 }}
                   <td class="text-right text-bold b-rladies-r" rowspan="{{ len $countryChapters }}"> 
-                    {{ $country.country | title }} 
+                    {{ $country.name | title }} 
                   </td>
                 {{ end }}
                 <td class="text-left"> 

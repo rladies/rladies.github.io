@@ -1,36 +1,80 @@
 
 {{ define "main" }}
 
+{{ $chapterGroupUrlname := .Params.urlname }}
+{{ $allEvents := $.Scratch.Get "events" }}
+{{ $currentDate := now }}
+
+{{ $upcomingEvents := slice }}
+{{ $formerEvents := slice }}
+
+{{ range $event := $allEvents }}
+  {{ if eq $event.group_urlname $chapterGroupUrlname }}
+    {{ $eventStart := time.AsTime $event.datetime }}
+    {{ if $eventStart.After $currentDate }}
+      {{ $upcomingEvents = $upcomingEvents | append $event }}
+    {{ else }}
+      {{ $formerEvents = $formerEvents | append $event }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $upcomingEvents = sort $upcomingEvents "datetime" }}
+{{ $formerEvents = sort $formerEvents "datetime" "desc" }}
+
+<!-- Set status as inactive if no meetups within 6 months and no upcoming events -->
+{{ $status := .Params.status }}
+{{ $sixMonthsAgo := $currentDate.AddDate 0 -6 0 }}
+{{ if and (eq $status "active") (eq (len $upcomingEvents) 0) }}
+  {{ $lastEvent := index $formerEvents 0 }}
+  {{ if $lastEvent }}
+    {{ $lastEventDate := time.AsTime $lastEvent.datetime }}
+    {{ if $lastEventDate.Before $sixMonthsAgo }}
+      {{ warnf "Setting chapter %s status to inactive due to inactivity" $chapterGroupUrlname }}
+      {{ $status = "inactive" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
   <div class="card shadow-sm mb-4">
-      <div class="card-body">
-          <dl class="row mb-0">
-              {{ with .Params.status }}
-                  <dt class="col-sm-4">Status</dt>
-                  <dd class="col-sm-8">
-                  <span class="badge {{ if eq . "active" }}bg-rladies {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
-                  </dd>
-              {{ end }}
-
-              <dt class="col-sm-4">Location</dt>
-              <dd class="col-sm-8">
-              {{ with .Params.city }}{{ . }}, {{ end }}
-              {{ with .Params.state_region }}
-                  {{ . }}, 
-              {{ end }}
-              {{ with .Params.country }}
-                  {{ . }}
-              {{ end }}
-              </dd>
-
-              {{ with .Params.social_media }}
-                  <dt class="col-sm-4">Connect with this chapter</dt>
-                  <dd class="col-sm-8">
-                      {{ partial "social_media.html" (dict "data" . "relme" true) }}
-                  </dd>
-              {{ end }}
-
-          </dl>
+    <div class="row">
+      <!-- Try to find an image in assets/images/chapters named after the url -->
+      {{ $imgPattern := printf "chapters/%s.*" .Params.file }}
+      {{ $img := resources.GetMatch $imgPattern }}
+      {{ with $img }}
+      <div class="col-md-4 m-2">
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="img-fluid rounded-start w-100 h-auto">
       </div>
+      {{ end }}
+      <div class="col mt-4">
+        <dl class="row mb-0">
+            {{ with $status }}
+                <dt class="col-sm-4">Status</dt>
+                <dd class="col-sm-8">
+                <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
+                </dd>
+            {{ end }}
+
+            <dt class="col-sm-4">Location</dt>
+            <dd class="col-sm-8">
+            {{ with .Params.city }}{{ . | humanize }}, {{ end }}
+            {{ with .Params.state_region }}
+                {{ . | humanize }}, 
+            {{ end }}
+            {{ with .Params.country }}
+                {{ . | humanize }}
+            {{ end }}
+            </dd>
+
+            {{ with .Params.social_media }}
+                <dt class="col-sm-4">Connect with this chapter</dt>
+                <dd class="col-sm-8">
+                    {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                </dd>
+            {{ end }}
+
+        </dl>
+      </div>
+    </div>
   </div>
 
   {{ with .Params.organizers }}
@@ -72,27 +116,6 @@
     </div>
   {{ end }}
 
-{{ $chapterGroupUrlname := .Params.urlname }}
-{{ $allEvents := site.Data.meetup.events }}
-{{ $currentDate := now }}
-
-{{ $upcomingEvents := slice }}
-{{ $formerEvents := slice }}
-
-{{ range $event := $allEvents }}
-  {{ if eq $event.group_urlname $chapterGroupUrlname }}
-    {{ $eventStart := time.AsTime $event.start }}
-    {{ if $eventStart.After $currentDate }}
-      {{ $upcomingEvents = $upcomingEvents | append $event }}
-    {{ else }}
-      {{ $formerEvents = $formerEvents | append $event }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-
-{{ $upcomingEvents = sort $upcomingEvents "start" }}
-{{ $formerEvents = sort $formerEvents "start" "desc" }}
-
 {{ if or $upcomingEvents $formerEvents }}
   <div class="card shadow-sm mb-4">
     <div class="card-body">
@@ -124,7 +147,7 @@
               <div class="card-header bg-primary text-white h4">{{ $nextEvent.title }}</div>
               <div class="card-body">
                 <p class="card-text lead">
-                  <i class="bi bi-calendar-event me-2"></i>{{ dateFormat "Monday, January 2, 2006 at 3:04 PM" (time.AsTime $nextEvent.start) }}
+                  <i class="bi bi-calendar-event me-2"></i>{{ dateFormat "Monday, January 2, 2006 at 3:04 PM" (time.AsTime $nextEvent.datetime) }}
                 </p>
                 {{ if $nextEvent.location }}
                   <p class="card-text text-muted">
@@ -145,7 +168,7 @@
                   <div>
                     <h4 class="h6 mb-1">{{ $event.title }}</h4>
                     <small class="text-muted">
-                      <i class="bi bi-calendar me-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.start) }}
+                      <i class="bi bi-calendar me-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.datetime) }}
                       {{ if $event.location }}<br><i class="bi bi-geo-alt me-1"></i>{{ $event.location }}{{ end }}
                     </small>
                   </div>
@@ -168,15 +191,20 @@
               {{ range $event := $formerEvents }}
                 <li class="list-group-item d-flex justify-content-between align-items-start text-muted">
                   <div>
-                    <h4 class="h6 mb-1">{{ $event.title }}</h4>
+                    <h4 class="h6 mb-1">
+                    {{ with $event.id }}
+                      <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}" target="_blank" rel="noopener">
+                    {{ end }}
+                    {{ $event.title }}
+                    {{ with $event.id }}
+                      <a>
+                    {{ end }}
+                    </h4>
                     <small>
-                      <i class="bi bi-calendar-x me-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.start) }}
+                      <i class="bi bi-calendar-x me-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.datetime) }}
                       {{ if $event.location }}<br><i class="bi bi-geo-alt me-1"></i>{{ $event.location }}{{ end }}
                     </small>
                   </div>
-                  {{ with $event.id }}
-                    <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary ms-3">Details <i class="bi bi-box-arrow-up-right"></i></a>
-                  {{ end }}
                 </li>
               {{ end }}
             </ul>
