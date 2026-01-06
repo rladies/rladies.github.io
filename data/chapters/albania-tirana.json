@@ -1,15 +1,16 @@
-[
-  {
-    "urlname": "rladies-tirane",
-    "status": "active",
-    "country": "Albania",
-    "city": "Tirana",
-    "social_media": {
-      "meetup": "rladies-tirane",
-      "email": "tirana@rladies.org"
-    },
-    "organizers": {
-      "current": ["Eralda Gjika", "Agresa Qosja"]
-    }
+{
+  "urlname": "rladies-tirane",
+  "status": "active",
+  "country": "Albania",
+  "city": "Tirana",
+  "social_media": {
+    "meetup": "rladies-tirane",
+    "email": "tirana@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Eralda Gjika",
+      "Agresa Qosja"
+    ]
   }
-]
+}

@@ -1,20 +1,21 @@
-[
-  {
-    "urlname": "rladies-natal",
-    "status": "active",
-    "country": "Brazil",
-    "state.region": "Rio Grande do Norte",
-    "city": "Natal",
-    "social_media": {
-      "meetup": "rladies-natal",
-      "twitter": "RladiesNatal",
-      "email": "natal@rladies.org",
-      "facebook": "R-ladies-Natal-1601745646525923",
-      "github": "rladies/meetup-presentations_natal"
-    },
-    "organizers": {
-      "current": ["Milagros Villavicencio", "Lumi Mevi"],
-      "former": []
-    }
+{
+  "urlname": "rladies-natal",
+  "status": "active",
+  "country": "Brazil",
+  "state.region": "Rio Grande do Norte",
+  "city": "Natal",
+  "social_media": {
+    "meetup": "rladies-natal",
+    "twitter": "RladiesNatal",
+    "email": "natal@rladies.org",
+    "facebook": "R-ladies-Natal-1601745646525923",
+    "github": "rladies/meetup-presentations_natal"
+  },
+  "organizers": {
+    "current": [
+      "Milagros Villavicencio",
+      "Lumi Mevi"
+    ],
+    "former": []
   }
-]
+}

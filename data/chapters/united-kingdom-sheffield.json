@@ -1,11 +1,13 @@
-[
-  {
-    "status": "active",
-    "country": "United Kingdom",
-    "city": "Sheffield",
-    "social_media": {},
-    "organizers": {
-      "current": ["Grace Accad", "Sophie Lee", "Harriet Patrick"]
-    }
+{
+  "status": "active",
+  "country": "United Kingdom",
+  "city": "Sheffield",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Grace Accad",
+      "Sophie Lee",
+      "Harriet Patrick"
+    ]
   }
-]
+}

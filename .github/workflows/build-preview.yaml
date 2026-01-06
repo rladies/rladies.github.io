@@ -107,19 +107,10 @@ jobs:
           ref: ${{ env.blogsref }}
           path: tmpd/rblogs
 
-      - name: Site data - Meetup
-        if: ${{ env.on_fork != 'true' }}
-        uses: actions/checkout@v4
-        with:
-          repository: rladies/meetup_archive
-          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
-          path: tmpd/mtp
-
       - name: Site data - clean cloned repos
         if: ${{ env.on_fork != 'true' }}
         run: |
           cp -r tmpd/rblogs/blogs data/rblogs
-          cp -r tmpd/mtp/data/* data/meetup/
           rm -rf tmpd
 
       - name: Setup Hugo
