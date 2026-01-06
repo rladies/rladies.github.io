@@ -1,16 +1,17 @@
-[
-  {
-    "urlname": "rladies-kyiv",
-    "status": "active",
-    "country": "Ukraine",
-    "city": "Kyiv",
-    "social_media": {
-      "meetup": "rladies-kyiv",
-      "email": "kyiv@rladies.org"
-    },
-    "organizers": {
-      "current": ["Iaroslava Mizai", "Tamara Koliada"],
-      "former": []
-    }
+{
+  "urlname": "rladies-kyiv",
+  "status": "active",
+  "country": "Ukraine",
+  "city": "Kyiv",
+  "social_media": {
+    "meetup": "rladies-kyiv",
+    "email": "kyiv@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Iaroslava Mizai",
+      "Tamara Koliada"
+    ],
+    "former": []
   }
-]
+}

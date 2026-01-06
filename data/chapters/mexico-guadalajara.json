@@ -1,16 +1,18 @@
-[
-  {
-    "urlname": "rladies-guadalajara",
-    "status": "active",
-    "country": "Mexico",
-    "city": "Guadalajara",
-    "social_media": {
-      "meetup": "rladies-guadalajara",
-      "email": "guadalajara@rladies.org"
-    },
-    "organizers": {
-      "current": ["Nancy Manzo", "Paola Manzo", "Agostina Porto"],
-      "former": []
-    }
+{
+  "urlname": "rladies-guadalajara",
+  "status": "active",
+  "country": "Mexico",
+  "city": "Guadalajara",
+  "social_media": {
+    "meetup": "rladies-guadalajara",
+    "email": "guadalajara@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Nancy Manzo",
+      "Paola Manzo",
+      "Agostina Porto"
+    ],
+    "former": []
   }
-]
+}

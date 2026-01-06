@@ -1,12 +1,12 @@
-[
-  {
-    "status": "prospective",
-    "country": "Poland",
-    "city": "Lodz",
-    "social_media": {},
-    "organizers": {
-      "current": ["Lidia Lipi_ska"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Poland",
+  "city": "Lodz",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Lidia Lipi_ska"
+    ],
+    "former": []
   }
-]
+}

@@ -1,15 +1,16 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "California",
-    "city": "Davis",
-    "social_media": {
-      "github": "rladies/meetup-presentations_newcastle"
-    },
-    "organizers": {
-      "current": ["Meghan Klasic", "Michaela C Debolt"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "California",
+  "city": "Davis",
+  "social_media": {
+    "github": "rladies/meetup-presentations_newcastle"
+  },
+  "organizers": {
+    "current": [
+      "Meghan Klasic",
+      "Michaela C Debolt"
+    ],
+    "former": []
   }
-]
+}

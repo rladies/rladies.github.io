@@ -2,15 +2,15 @@
 @import "bootstrap/functions";
 
 // Your variable overrides
-$body-bg:    #fff;
-$primary:    #88398a;
-$secondary:  #a7a9ac;
+$body-bg: #fff;
+$primary: #88398a;
+$secondary: #a7a9ac;
 $third: #d621cd;
 $table-hover-bg: rgba($primary, .2);
-$font-family-monospace:  'rladies code', monospace;
-$font-family-base:       'rladies body', sans-serif;
+$font-family-monospace: 'rladies code', monospace;
+$font-family-base: 'rladies body', sans-serif;
 $font-family-sans-serif: 'rladies header', sans-serif;
-$dropdown-link-hover-bg:  rgba($primary, .2);
+$dropdown-link-hover-bg: rgba($primary, .2);
 
 @import "bootstrap/bootstrap";
 @import "_syntax";
@@ -18,49 +18,71 @@ $dropdown-link-hover-bg:  rgba($primary, .2);
 
 @font-face {
   font-family: 'rladies header';
-  src: url('fonts/open-sans-condensed-v15/font.eot'); /* IE9 Compat Modes */
-  src: url('fonts/open-sans-condensed-v15/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/open-sans-condensed-v15/font.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-condensed-v15/font.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/open-sans-condensed-v15/font.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/open-sans-condensed-v15/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/open-sans-condensed-v15/font.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/open-sans-condensed-v15/font.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/open-sans-condensed-v15/font.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('fonts/open-sans-condensed-v15/font.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('fonts/open-sans-condensed-v15/font.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/open-sans-condensed-v15/font.svg#svgFontName') format('svg');
+  /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'rladies body';
-  src: url('fonts/open-sans-v26/font.eot'); /* IE9 Compat Modes */
-  src: url('fonts/open-sans-v26/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/open-sans-v26/font.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/open-sans-v26/font.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/open-sans-v26/font.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/open-sans-v26/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/open-sans-v26/font.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/open-sans-v26/font.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/open-sans-v26/font.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('fonts/open-sans-v26/font.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('fonts/open-sans-v26/font.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/open-sans-v26/font.svg#svgFontName') format('svg');
+  /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'rladies code';
-  src: url('fonts/inconsolata-v21/font.eot'); /* IE9 Compat Modes */
-  src: url('fonts/inconsolata-v21/font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/inconsolata-v21/font.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/inconsolata-v21/font.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/inconsolata-v21/font.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('fonts/inconsolata-v21/font.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/inconsolata-v21/font.eot');
+  /* IE9 Compat Modes */
+  src: url('fonts/inconsolata-v21/font.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/inconsolata-v21/font.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('fonts/inconsolata-v21/font.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('fonts/inconsolata-v21/font.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/inconsolata-v21/font.svg#svgFontName') format('svg');
+  /* Legacy iOS */
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-.text-white{
+.bg-rladies {
+  background: lighten($primary, 40%);
+}
+
+.text-white {
   color: $white;
-  
+
   i {
     color: $white;
   }
-  
+
   a {
     color: $white;
   }
-  
+
   :hover {
     color: lighten($primary, 30%);
   }
@@ -75,20 +97,52 @@ html {
   position: absolute;
   font-size: 48px;
   color: $primary;
-  bottom: 10px; 
-  left: 0; 
+  bottom: 10px;
+  left: 0;
   right: 0;
 }
 
+/* Back-to-top specific styles: use a dedicated wrapper and class so
+   we only change positioning for the page-level back-to-top chevron
+   and preserve the absolute positioning used in the hero. */
+.back-to-top-wrap {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.back-to-top {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-to-top .chevron {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  display: inline-block;
+  margin: 0;
+}
+
+.back-to-top:focus,
+.back-to-top:hover {
+  outline: none;
+}
+
+.back-to-top:hover .chevron {
+  transform: translateY(-3px);
+  transition: transform .15s ease-in-out;
+}
+
 .full-width {
-   width: 100vw;
-   left: 50%;
-   margin-left: -50vw;
-   padding-left: .2rem;
-   position: relative;
-   align-content: center;
-   
-   ul{
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  padding-left: .2rem;
+  position: relative;
+  align-content: center;
+
+  ul {
     width: 100%;
     align-items: flex-start;
   }
@@ -96,16 +150,16 @@ html {
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-.full-width {
-   width: 1200px;
-   margin-left: -600px;
+  .full-width {
+    width: 1200px;
+    margin-left: -600px;
   }
 }
 
 .post {
   width: 100%;
 
-  img{
+  img {
     max-width: 100%;
     max-height: 100%;
   }
@@ -116,19 +170,19 @@ html {
 }
 
 .date {
-   width: 66%; 
-   margin: 0 auto;
-   position: relative;
-   text-align: center; 
-   border-bottom: 1px solid $secondary; 
-   line-height: 0.1em;
-   color: darken($secondary, 15%);
-   font-size: $font-size-base;
-} 
+  width: 66%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid $secondary;
+  line-height: 0.1em;
+  color: darken($secondary, 15%);
+  font-size: $font-size-base;
+}
 
-.date span { 
+.date span {
   background: $white;
-  padding:0 10px; 
+  padding: 0 10px;
 }
 
 // footer
@@ -136,52 +190,53 @@ html {
   background: $primary;
   color: $white;
   font-size: $font-size-sm;
-  
-  a, .widget-title {
+
+  a,
+  .widget-title {
     color: lighten($primary, 50%);
   }
-  
+
   .widget {
     padding: 1.5em;
   }
-  
+
   .widget-title {
     padding-top: 5px;
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
     text-transform: uppercase;
   }
-  
+
   a:hover {
     color: lighten($primary, 40%);
   }
 }
 
 .chp-table {
-  width: auto !important; 
+  width: auto !important;
   margin-left: auto;
   margin-right: auto;
 }
 
 $border-rladies: 1px solid $primary;
 
-.b-rladies{
+.b-rladies {
   border: $border-rladies;
 }
 
-.b-rladies-r{
+.b-rladies-r {
   border-right: $border-rladies;
 }
 
-.b-rladies-l{
+.b-rladies-l {
   border-left: $border-rladies;
 }
 
-.b-rladies-b{
+.b-rladies-b {
   border-bottom: $border-rladies;
 }
 
-.b-rladies-t{
+.b-rladies-t {
   border-top: $border-rladies;
 }
 
@@ -190,7 +245,7 @@ $border-rladies: 1px solid $primary;
   background: darken($primary, 12%);
   color: lighten($primary, 35%);
   font-size: 12px;
-  
+
   a {
     color: lighten($primary, 45%);
   }
@@ -201,7 +256,7 @@ $border-rladies: 1px solid $primary;
 /*  untranslated  */
 /******************/
 
-.not-translated{
+.not-translated {
   background-color: rgba($primary, .3);
   font-size: $font-size-base;
   text-align: center;
@@ -233,8 +288,8 @@ pre.chroma {
 /* custom styles  */
 /******************/
 
-.section-title, 
-.entry-title { 
+.section-title,
+.entry-title {
   display: block;
   width: 100%;
   overflow: hidden;
@@ -243,7 +298,6 @@ pre.chroma {
   letter-spacing: 1px;
   color: darken($secondary, 30%);
   font-family: $font-family-sans-serif
-
 }
 
 .section-title {
@@ -290,7 +344,7 @@ pre.chroma {
   font-weight: normal;
   margin: 0 0 15px 0;
 }
- 
+
 .entry-content {
   margin: 0 0 60px 0;
 }
@@ -322,14 +376,14 @@ pre.chroma {
 /******************/
 /* code highlight */
 /******************/
-pre { 
-  font-family: $font-family-monospace; 
-  width: 100%; 
+pre {
+  font-family: $font-family-monospace;
+  width: 100%;
   padding: 1em;
 }
 
 .highlight {
- width: 100%; 
+  width: 100%;
 }
 
 
@@ -337,6 +391,7 @@ pre {
 /* parallax Hero  */
 /******************/
 .paral {
+  position: relative;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -348,32 +403,41 @@ pre {
     line-height: 60px;
   }
 
-  .logo img{
+  .logo img {
     position: absolute;
     display: block;
     left: 0;
     right: 0;
     top: 4vh;
 
-    margin: auto; 
+    margin: auto;
     height: 100px;
     width: 100px;
     border-radius: 20px;
     opacity: 1;
   }
+
+  /* Center the hero chevron reliably: pin its left to 50% and translate
+     half its width back. This avoids relying on left:0/right:0 which can
+     be affected by inline/anchor layout. */
+  .chevron {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
 }
 
-.home { 
+.home {
   height: 100vh;
-  
+
   .paral {
     background-attachment: none;
   }
-  
+
   .chevron {
     color: rgba(lighten($primary, 40%), .6);
   }
-  
+
   .logo img {
     bottom: 0;
     top: 0;
@@ -418,12 +482,13 @@ pre {
 }
 
 
-.page-item, .page-link {
-  border: none; 
+.page-item,
+.page-link {
+  border: none;
 }
 
-.expand-grid{
-  ul{
+.expand-grid {
+  ul {
     list-style-type: none;
   }
 }
@@ -436,7 +501,7 @@ pre {
 .card-small {
   height: 270px;
   min-width: 150px;
-  
+
   .card-expand-content {
     padding: 10px;
   }
@@ -445,7 +510,7 @@ pre {
 .card-medium {
   height: 370px;
   min-width: 200px;
-  
+
   .card-expand-content {
     padding: 20px;
   }
@@ -454,6 +519,7 @@ pre {
 .card-large {
   height: 470px;
   min-width: 250px;
+
   .card-expand-content {
     padding: 30px;
   }
@@ -475,35 +541,35 @@ pre {
   margin: 1rem;
   margin-bottom: 10px;
   font-size: 14px;
-  
-    blockquote:before {
-     content: "\f10d";
-     font-family: FontAwesome;
-     color: $primary;
-     margin-right: 4px
-    }
-  
-  blockquote:after {
-     content: "\f10e";
-     font-family: FontAwesome;
-     color: $primary;
-     margin-left: 4px
+
+  blockquote:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    color: $primary;
+    margin-right: 4px
   }
 
- img {
+  blockquote:after {
+    content: "\f10e";
+    font-family: FontAwesome;
+    color: $primary;
+    margin-left: 4px
+  }
+
+  img {
     display: block;
     width: auto;
     height: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 7px;
-    
+
   }
-  
+
   h4 {
     font-size: 20px;
   }
-  
+
   h5 {
     font-size: 16px;
   }
@@ -512,7 +578,7 @@ pre {
 .card-expand-title {
   color: $secondary;
   text-transform: capitalize;
-  
+
   a {
     color: darken($secondary, 20%);
   }
@@ -523,13 +589,13 @@ pre {
   -webkit-box-shadow: $box-shadow;
   -moz-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
-  
+
   .card-expand-img {
     opacity: .8;
   }
 }
 
-.card-expand-img{
+.card-expand-img {
   height: 100%;
   overflow: hidden;
 }
@@ -542,9 +608,7 @@ pre {
   padding-bottom: 0.8rem;
 }
 
-.card-expand-content
-.card-expand-hover 
-.card-expand-description {
+.card-expand-content .card-expand-hover .card-expand-description {
   display: block !important;
   height: auto !important;
   opacity: 1 !important;
@@ -563,7 +627,7 @@ pre {
   color: $white;
   font-size: 14px;
   text-transform: capitalize;
-  
+
   a {
     text-transform: capitalize;
     color: $white;
@@ -597,12 +661,13 @@ pre {
   text-transform: uppercase;
 }
 
-.card-expand-foot{
+.card-expand-foot {
   margin-top: 0.5rem;
   margin-bottom: -10px;
   font-size: 11px;
   color: $secondary;
-   a {
+
+  a {
     text-decoration: none;
   }
 }
@@ -631,15 +696,16 @@ pre {
 /* fullcalendar   */
 /******************/
 .fc .fc-toolbar-title {
-	font-size: 1.6em !important; 
+  font-size: 1.6em !important;
 }
+
 .fc .fc-list-event-dot {
-  border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
+  border: calc(var(--fc-list-event-dot-width, 10px)/ 2) solid var(--fc-event-border-color, $primary);
   background-color: $primary;
 }
 
 .fc-daygrid-event-dot {
-  border: calc(var(--fc-list-event-dot-width,10px)/ 2) solid var(--fc-event-border-color,$primary);
+  border: calc(var(--fc-list-event-dot-width, 10px)/ 2) solid var(--fc-event-border-color, $primary);
   background-color: $primary;
 }
 
@@ -654,33 +720,36 @@ pre {
 .fc-h-event {
   border: 0px;
 }
+
 .fc-v-event {
   border: 0px;
 }
 
 .fc-dayGridMonth-view .fc-day-today,
 .fc-timeGridWeek-view .fc-day-today {
-    background: lighten($primary, 55%) !important;
-    border: none !important;
-} 
+  background: lighten($primary, 55%) !important;
+  border: none !important;
+}
 
-.fc-timeGridDay-view .fc-day-today{
-    background: none !important;
-    border: none !important;
-} 
+.fc-timeGridDay-view .fc-day-today {
+  background: none !important;
+  border: none !important;
+}
 
 #loading {
   display: none;
 }
 
-.fc-event-time, .fc-event-title {
+.fc-event-time,
+.fc-event-title {
   font-size: 12px;
   padding: 0 1px;
   white-space: wrap;
 }
 
 tr.fc-list-event {
-  color: #555658;;
+  color: #555658;
+  ;
 }
 
 .tzo {
@@ -689,7 +758,7 @@ tr.fc-list-event {
 
 .tooltip {
   opacity: 1;
-  height: auto; 
+  height: auto;
   overflow-y: hidden;
 }
 
@@ -708,9 +777,10 @@ tr.fc-list-event {
   color: black;
   width: auto;
   border-radius: 3px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
+
 .style5 .tooltip {
   background: #1E252B;
   color: #FFFFFF;
@@ -719,6 +789,7 @@ tr.fc-list-event {
   font-size: .8rem;
   padding: .5em 1em;
 }
+
 .popper .popper__arrow,
 .tooltip .tooltip-arrow {
   width: 0;
@@ -732,13 +803,16 @@ tr.fc-list-event {
 .popper .popper__arrow {
   border-color: $primary;
 }
+
 .style5 .tooltip .tooltip-arrow {
   border-color: $gray-700;
 }
+
 .popper[x-placement^="top"],
 .tooltip[x-placement^="top"] {
   margin-bottom: 5px;
 }
+
 .popper[x-placement^="top"] .popper__arrow,
 .tooltip[x-placement^="top"] .tooltip-arrow {
   border-width: 5px 5px 0 5px;
@@ -750,10 +824,12 @@ tr.fc-list-event {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .popper[x-placement^="bottom"],
 .tooltip[x-placement^="bottom"] {
   margin-top: 5px;
 }
+
 .tooltip[x-placement^="bottom"] .tooltip-arrow,
 .popper[x-placement^="bottom"] .popper__arrow {
   border-width: 0 5px 5px 5px;
@@ -765,10 +841,12 @@ tr.fc-list-event {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .tooltip[x-placement^="right"],
 .popper[x-placement^="right"] {
   margin-left: 5px;
 }
+
 .popper[x-placement^="right"] .popper__arrow,
 .tooltip[x-placement^="right"] .tooltip-arrow {
   border-width: 5px 5px 5px 0;
@@ -780,10 +858,12 @@ tr.fc-list-event {
   margin-left: 0;
   margin-right: 0;
 }
+
 .popper[x-placement^="left"],
 .tooltip[x-placement^="left"] {
   margin-right: 5px;
 }
+
 .popper[x-placement^="left"] .popper__arrow,
 .tooltip[x-placement^="left"] .tooltip-arrow {
   border-width: 5px 0 5px 5px;
@@ -797,12 +877,12 @@ tr.fc-list-event {
 }
 
 .page-arrow {
-  font-size:20px;
-  line-height:1;
-  font-weight:bold;
-  cursor:pointer;
-  background:$table-hover-bg;
-  padding:5px 10px;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+  cursor: pointer;
+  background: $table-hover-bg;
+  padding: 5px 10px;
 }
 
 
@@ -810,7 +890,7 @@ tr.fc-list-event {
   Item counter section
 ==================================================================*/
 
-.block .icon-box i{
+.block .icon-box i {
   color: #fff;
   font-size: 50px;
 }
@@ -880,7 +960,7 @@ tr.fc-list-event {
 }
 
 .blockquote:before {
-  content:"\f10d";
+  content: "\f10d";
   position: absolute;
   font-family: 'FontAwesome';
   top: -20px;
@@ -889,11 +969,10 @@ tr.fc-list-event {
 }
 
 .blockquote::after {
-    content: "";
-    top: 20px;
-    left: 50%;
-    margin-left: 5%;
-    position: absolute;
-    border-bottom: 3px solid $primary;
+  content: "";
+  top: 20px;
+  left: 50%;
+  margin-left: 5%;
+  position: absolute;
+  border-bottom: 3px solid $primary;
 }
-

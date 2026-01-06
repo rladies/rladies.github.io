@@ -1,16 +1,17 @@
-[
-  {
-    "urlname": "rladies-den-bosch",
-    "status": "active",
-    "country": "Netherlands",
-    "city": "Den Bosch",
-    "social_media": {
-      "meetup": "rladies-den-bosch",
-      "email": "denbosch@rladies.org"
-    },
-    "organizers": {
-      "current": ["Veerle van Son", "Luana Gomes Sousa"],
-      "former": []
-    }
+{
+  "urlname": "rladies-den-bosch",
+  "status": "active",
+  "country": "Netherlands",
+  "city": "Den Bosch",
+  "social_media": {
+    "meetup": "rladies-den-bosch",
+    "email": "denbosch@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Veerle van Son",
+      "Luana Gomes Sousa"
+    ],
+    "former": []
   }
-]
+}

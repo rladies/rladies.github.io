@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+{{ $countries := $.Scratch.Get "chpt_countries" }}
+{{ $chapters := .Pages }}
+
+<div class="container row justify-content-center section topspace">
+  
+    {{ partial "map.html" . }}
+
+    <div>
+        {{ .Content }}
+    </div>
+
+  <div class="row justify-content-center">
+    <div id="chapter-table" class="col-auto m-2">
+      <table class="table table-hover table-responsive chp-table">
+        <thead>
+          <tr>
+            <th class="text-right b-rladies b-rladies-r"> {{ i18n "country"  | markdownify | title }} </th>
+            <th class="text-left"> {{ i18n "city" | markdownify | title }} </th>
+            <th class="text-right"> {{ i18n "social_media" | markdownify }} </th>
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $idx, $country := $countries }}
+            {{ $countryChapters := where $chapters ".Params.country" $country.name }}
+            {{ range $i, $chapter := $countryChapters }}
+              <tr>
+                {{ if eq $i 0 }}
+                  <td class="text-right text-bold b-rladies-r" rowspan="{{ len $countryChapters }}"> 
+                    {{ $country.name | title }} 
+                  </td>
+                {{ end }}
+                <td class="text-left"> 
+                  <a href="{{ $chapter.Permalink }}">{{ $chapter.Title | title }}</a> 
+                </td>
+                <td class="text-right">
+                  {{ with $chapter.Params.social_media }}
+                    {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                  {{ end }}
+                </td>
+              </tr>
+            {{ end }}
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{{ end }}
