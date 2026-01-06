@@ -1,0 +1,12 @@
+
+{{ $chapters := (partial "funcs/merge_chapters" .) | transform.Unmarshal }}
+{{ range $key, $chapterObj := $chapters }}
+  {{ $page := dict
+    "content" (dict "mediaType" "text/markdown" "value" "")
+    "kind" "page"
+    "path" (printf "%s" $chapterObj.urlname)
+    "title" (printf "%s" $chapterObj.name)
+    "params" $chapterObj 
+  }}
+  {{ $.AddPage $page }}
+{{ end }}
