@@ -1,0 +1,167 @@
+{{ $id := .id | default "chaptermap" }}
+{{ $height := .height | default "400px" }}
+{{ $data := .data }}
+{{ $zoom := .zoom }}
+{{ $countries := .countries }}
+
+{{ $js := resources.Get "js/vendor/amcharts.bundle.min.js"
+    | minify
+    | fingerprint
+}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+
+<div id="{{ $id }}" style="width: 100%; height: {{ $height }};"></div>
+
+<!-- if data is empty -->
+{{ if not $data }}
+  {{ $points := slice }}
+  {{ range ($.Scratch.Get "chpt_active") }}
+    {{ $points = $points | append (dict
+      "name" .name
+      "members" .members
+      "latitude" .lat
+      "longitude" .lon
+    )}}
+  {{ end }}
+  {{ $data = (dict
+    "points" $points
+    "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
+    "radius" 4
+    "color" "#88398acc"
+  ) }}
+{{ end }}
+
+<script>
+if (typeof am5 === 'undefined') {
+  console.error('am5 not loaded');
+} else {
+  am5.ready(function() {
+    var root = am5.Root.new("{{ $id }}");
+    
+    root.setThemes([am5themes_Animated.new(root)]);
+    
+    var chart = root.container.children.push(
+      am5map.MapChart.new(root, {
+        projection: am5map.geoMercator()
+      })
+    );
+    
+    var polygonSeries = chart.series.push(
+      am5map.MapPolygonSeries.new(root, {
+        geoJSON: am5geodata_worldLow
+      })
+    );
+    
+    polygonSeries.mapPolygons.template.setAll({
+      tooltipText: "{name}",
+      fill: am5.color(0xcccccc),
+      strokeWidth: 0.5
+    });
+    
+    polygonSeries.mapPolygons.template.states.create("hover", {
+      fill: am5.color(0x88398a),
+      fillOpacity: 1
+    });
+
+    {{ if $countries }}
+      var countryData = {{ $countries | jsonify }};
+      console.log('Country data:', countryData);
+      var countryMap = {};
+      (typeof countryData === 'string' ? JSON.parse(countryData) : countryData).forEach(function(country) {
+        var isoCode = country.iso;
+        if (isoCode && isoCode !== null) {
+          countryMap[isoCode.toUpperCase()] = country.count;
+        }
+      });
+
+      polygonSeries.events.on("datavalidated", function() {
+        polygonSeries.mapPolygons.each(function(polygon) {
+          var id = polygon.dataItem.get("id");
+          if (countryMap[id]) {
+            console.log('Coloring country:', id);
+            polygon.setAll({
+              fill: am5.color(0x88398a),
+              fillOpacity: 0.5,
+              tooltipText: "{name}\n" + countryMap[id] + " chapter" + (countryMap[id] > 1 ? "s" : "")
+            });
+          }
+        });
+      });
+      {{ end }}
+    
+    var pointSeries = chart.series.push(
+      am5map.MapPointSeries.new(root, {})
+    );
+    
+    pointSeries.bullets.push(function() {
+      var circle = am5.Circle.new(root, {
+        radius: {{ $data.radius | default 7 }},
+        fill: am5.color(0x88398a),
+        stroke: am5.color(0xffffff),
+        strokeWidth: 1,
+        cursorOverStyle: "pointer",
+        {{ if $data.tooltip }}
+        tooltipHTML: `{{ $data.tooltip }}`
+        {{ else }}
+        tooltipText: "{name}"
+        {{ end }}
+      });
+      
+      circle.set("tooltip", am5.Tooltip.new(root, {}));
+      
+      return am5.Bullet.new(root, {
+        sprite: circle
+      });
+    });
+    
+    var rawData = {{ $data.points | jsonify }};
+    var pointsData = (typeof rawData === 'string' ? JSON.parse(rawData) : rawData).map(function(point) {
+      return {
+        geometry: { 
+          type: "Point", 
+          coordinates: [point.longitude, point.latitude] 
+        },
+        name: point.name,
+        members: point.members
+      };
+    });
+    
+    pointSeries.data.setAll(pointsData);
+    
+    {{ if $zoom }}
+    {{ if $zoom.iso }}
+    polygonSeries.events.on("datavalidated", function() {
+      var country = polygonSeries.getDataItemById("{{ $zoom.iso }}");
+      if (country) {
+        country.get("mapPolygon").setAll({
+          fill: am5.color(0x88398a),
+          fillOpacity: 0.3
+        });
+      }
+    });
+    {{ end }}
+    
+    setTimeout(function() {
+      chart.animate({
+        key: "rotationX",
+        to: -{{ $zoom.lon }},
+        duration: 1500,
+        easing: am5.ease.out(am5.ease.cubic)
+      });
+      chart.animate({
+        key: "rotationY",
+        to: -{{ $zoom.lat }},
+        duration: 1500,
+        easing: am5.ease.out(am5.ease.cubic)
+      });
+      chart.animate({
+        key: "zoomLevel",
+        to: {{ $zoom.level | default 4 }},
+        duration: 1500,
+        easing: am5.ease.out(am5.ease.cubic)
+      });
+    }, 100);
+    {{ end }}
+  });
+}
+</script>

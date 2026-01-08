@@ -2,59 +2,18 @@
      dynamically load individual vendor scripts so the site still works for
      users who haven't run the bundler. -->
 
-{{/* Prefer a fingerprinted asset generated from assets/js/vendor.bundle.js (Hugo Pipes). If
-    the generated resource does not exist (e.g., not built), fall back to loading the
-    static bundle at /js/vendor.bundle.js and then the individual files. */}}
-{{ $vendor := (resources.Get "js/vendor.bundle.js") }}
-{{ if $vendor }}
-  {{ $vendor = $vendor | resources.Minify | resources.Fingerprint }}
-  <script type="text/javascript" src="{{ $vendor.Permalink }}"></script>
-{{ else }}
-  <script type="text/javascript" src="{{ "js/vendor.bundle.js" | relURL }}"></script>
-{{ end }}
+{{ $js := slice
+    (resources.Get "js/vendor/jquery.min.js")
+    (resources.Get "js/vendor/bootstrap.bundle.min.js")
+    (resources.Get "js/vendor/amcharts.bundle.min.js")
+    (resources.Get "js/vendor/choices.min.js")
+    (resources.Get "js/vendor/shuffle.min.js")
+    (resources.Get "js/counter.js")
+    (resources.Get "js/card-expand.js")
+    | resources.Concat "rladies-bundle.js"
+    | minify
+    | fingerprint
+}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 
-<script>
-  (function () {
-    // If the bundle sets this flag, we assume vendor libs are already present.
-    if (window.__RLADIES_VENDOR_BUNDLE) {
-      return;
-    }
-
-    // Otherwise dynamically inject the individual script files in order.
-    var libs = [
-      '{{ "js/jquery.min.js" | relURL }}',
-      '{{ "js/bootstrap.bundle.min.js" | relURL }}',
-      '{{ "js/bootstrap-multiselect.min.js" | relURL }}',
-      '{{ "js/shuffle.min.js" | relURL }}'
-    ];
-
-    libs.forEach(function (src) {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.src = src;
-      document.body.appendChild(s);
-    });
-
-    // small inline behaviour script that depends on jQuery — defer until jQuery loads
-    var readyScript = function () {
-      if (window.jQuery) {
-        $('.card-expand').hover(function() {
-          $(this).find('.card-expand-animate').stop().animate({
-            height: "toggle",
-            opacity: "toggle"
-          }, 300);
-        });
-      } else {
-        setTimeout(readyScript, 50);
-      }
-    };
-    readyScript();
-
-    // load small local script last
-    var counter = document.createElement('script');
-    counter.type = 'text/javascript';
-    counter.src = '{{ "js/counter.js" | relURL }}';
-    document.body.appendChild(counter);
-  })();
-</script>
 

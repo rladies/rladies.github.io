@@ -1,6 +1,6 @@
 {{ if .IsTranslated }}
   <center>
-    <button class="btn bg-transparent" data-toggle="collapse" data-target="#post-translations-{{ .Permalink | relURL | anchorize }}">
+    <button class="btn bg-transparent" data-bs-toggle="collapse" data-bs-target="#post-translations-{{ .Permalink | relURL | anchorize }}">
     <i class="fas fa-atlas fa-2x primary"></i>
   </buttton>
     <div id="post-translations-{{ .Permalink | relURL | anchorize }}" class="collapse">

@@ -1,57 +1,83 @@
 {{ define "head" }}
-  <script type="text/javascript" src="{{ "js/fullcalendar.min.js" | relURL }}"></script>
-  <script type="text/javascript" src="{{ "js/jquery.min.js" | relURL }}"></script>
-  <script type="text/javascript" src="{{ "js/moment.min.js" | relURL }}"></script>
-  <script type="text/javascript" src="{{ "js/moment-with-locales.min.js" | relURL }}" ></script>
-  <script type="text/javascript" src="{{ "js/moment-timezone-with-data.js" | relURL }}" ></script>
-  <script type="text/javascript" src="{{ "js/popper.min.js" | relURL }}" ></script>
-  <script type="text/javascript" src="{{ "js/tooltip.min.js" | relURL }}" ></script>
+  {{ $js := slice
+      (resources.Get "js/vendor/fullcalendar.bundle.min.js")
+      | resources.Concat "js/events-bundle.js"
+      | minify
+      | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end }}
 
-{{ define "main" }} 
-  <div class="entry-content">{{ .Content }}</div>
-  {{ range .Site.Data.meetup.events_updated  }}
-  <center>
-    <div class="row">
-      <div class="col-12 border border-primary rounded bg-primary text-white ">
-        <h2 class="entry-title p-2 w-100 text-white">Succesfully run events</h2>
-        <h4 class="my-2">{{ .n_events_past }}</h4>
-      </div>
-    </div>
-    {{ end }}
-  </center>
-  <div class="row my-4 w-100 align-items-center justify-content-between">
-      <div class="col-6 col-md-4">
-        <label for="time-zone-selector" class="col-form-label">Timezone</label>
-      </div>
-      <div class="col-12 col-md-8">
-        <select id="time-zone-selector" class="form-select w-100" aria-label="Timezone">
-          <option value="utc">Universal Time Coordinated (UTC)</option>
-        </select>
-      </div>
-    <div  class="float-right">
-      <span id="loading">loading...</span>
-    </div>
-    <div style="clear: both"></div>
-  </div>
+{{ define "main" }}
+<div class="entry-content">{{ .Content }}</div>
+
+{{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
+{{ $updated := "" }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $updated = .Value | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get remote resource %q" $url }}
+{{ end }}
+<center>
   <div class="row">
-    <div id="calendar" class="col-12">
+    <div class="col-12 border border-primary rounded bg-primary text-white ">
+      <h2 class="entry-title p-2 w-100 text-white">Successfully run events</h2>
+      <h4 class="my-2">{{ $updated.n_events_past }}</h4>
     </div>
   </div>
-  <small class="text-muted"></small>
+</center>
+<div class="row my-4 w-100 align-items-center justify-content-between">
+  <div class="col-6 col-md-4">
+    <label for="time-zone-selector" class="col-form-label">Timezone</label>
+  </div>
+  <div class="col-12 col-md-8">
+    <select id="time-zone-selector" class="form-select w-100" aria-label="Timezone">
+      <option value="utc">Universal Time Coordinated (UTC)</option>
+    </select>
+  </div>
+  <div class="float-right">
+    <span id="loading">loading...</span>
+  </div>
+  <div style="clear: both"></div>
+</div>
+<div class="row">
+  <div id="calendar" class="col-12">
+  </div>
+</div>
+<small class="text-muted"></small>
 {{ end }}
 
 {{ define "footer" }}
-<script type="text/javascript">
+  {{ $js := slice
+      (resources.Get "js/vendor/fullcalendar.bundle.min.js")
+      | resources.Concat "js/events-bundle.js"
+      | minify
+      | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+
+  <script>
   document.addEventListener("DOMContentLoaded", function () {
     var timeZoneSelectorEl = document.getElementById("time-zone-selector");
-    timeZone = document.getElementById("time-zone-selector").value;
     var loadingEl = document.getElementById("loading");
     var calendarEl = document.getElementById("calendar");
-	var events = {{ $.Site.Data.meetup.events }}
-	var timezone_list = {{ $.Site.Data.timezones }}
+    var events = {{ $.Scratch.Get "events" }};
+    var timezone_list = {{ $.Site.Data.timezones }};
 
-	timezone_list.forEach(function(timeZone) {
+    // Add local timezone option first
+    var localTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var localOption = document.createElement("option");
+    localOption.id = "local";
+    localOption.value = localTz;
+    localOption.innerText = `Local Time Zone (${localTz})`;
+    timeZoneSelectorEl.appendChild(localOption);
+
+    // Add all other timezones
+    timezone_list.forEach(function (timeZone) {
       var optionEl;
 
       if (timeZone !== 'UTC') { // UTC is already in the list
@@ -61,20 +87,25 @@
         timeZoneSelectorEl.appendChild(optionEl);
       }
     });
-      function getRladiesEvents(data) {
-        let updatedTime = [];
-        $.each(data, function (k, v) {
-          v.start = moment.tz(v.start, timeZone).format();
-          v.end = moment.tz(v.end, timeZone).format();
-          updatedTime[k] = v;
-        });
-        return updatedTime;
-      }
+
+    // Set local timezone as selected
+    document.getElementById("local").selected = true;
+
+    function getRladiesEvents(data, targetTz) {
+      let updatedTime = [];
+      $.each(data, function (index, ev) {
+        let start = moment.utc(ev.datetime_utc).tz(targetTz);
+        ev.start = start.format();
+        ev.end = start.clone().add(ev.duration, 'seconds').format();
+        updatedTime[index] = ev;
+      });
+      return updatedTime;
+    }
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
-  	themeSystem: 'bootstrap',
-  	schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
-	  headerToolbar: {
+      themeSystem: 'bootstrap',
+      schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+      headerToolbar: {
         left: "prev,next",
         center: "title",
         right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
@@ -100,8 +131,8 @@
         });
       },
 
-      events: getRladiesEvents(events),
-      timeZone: timeZone,
+      events: getRladiesEvents(events, localTz),
+      timeZone: 'local', // Start with local timezone
 
       loading: function (bool) {
         if (bool) {
@@ -110,39 +141,28 @@
           loadingEl.style.display = "none"; // hide
         }
       },
-	  
-	  eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false}
+
+      eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false }
     });
 
     calendar.render();
 
-    // when the timezone selector changes, dynamically change the calendar option
+    // On change
     timeZoneSelectorEl.addEventListener("change", function () {
-      timeZone = document.getElementById("time-zone-selector").value;
-
-      var eventSource = [];
-      eventSource = calendar.getEventSources();
-      $.each(eventSource, function (key, value) {
-        value.remove();
-      });
-      calendar.addEventSource(getRladiesEvents(events));
-      calendar.refetchEvents();
+      var newTimeZone = this.value;
+      var eventSources = calendar.getEventSources();
+      eventSources.forEach(source => source.remove());
+      calendar.addEventSource(getRladiesEvents(events, newTimeZone));
+      calendar.render();
     });
+
   });
 
-  var x = document.getElementById("time-zone-selector");
-  var option = document.createElement("option");
-  option.id = "local";
-  option.value = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  option.innerText = "Local Time Zone";
-  x.add(option, x[0]);
-  document.getElementById("local").selected = true;
-  
   // add the responsive classes after page initialization
   window.onload = function () {
-      $('.fc-toolbar.fc-header-toolbar').addClass('row col-xlg-12');
-      $('.fc-toolbar-title').addClass('entry-title');
+    $('.fc-toolbar.fc-header-toolbar').addClass('row col-xlg-12');
+    $('.fc-toolbar-title').addClass('entry-title');
   };
-  
+
 </script>
 {{ end }}

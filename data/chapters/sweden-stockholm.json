@@ -1,18 +1,25 @@
-[
-  {
-    "urlname": "rladies-stockholm",
-    "status": "active",
-    "country": "Sweden",
-    "city": "Stockholm",
-    "social_media": {
-      "meetup": "rladies-stockholm",
-      "twitter": "RLadiesSthlm",
-      "email": "stockholm@rladies.org",
-      "github": "rladies/meetup-presentations_stockholm"
-    },
-    "organizers": {
-      "current": ["Elisabeth Dahlqwist", "Maya Alsheh Ali", "Aminata Ndiaye", "Ana Turk", "Nissa Ferm"],
-      "former": ["Nina Lindell", "Ashley Thompson"]
-    }
+{
+  "urlname": "rladies-stockholm",
+  "status": "active",
+  "country": "Sweden",
+  "city": "Stockholm",
+  "social_media": {
+    "meetup": "rladies-stockholm",
+    "twitter": "RLadiesSthlm",
+    "email": "stockholm@rladies.org",
+    "github": "rladies/meetup-presentations_stockholm"
+  },
+  "organizers": {
+    "current": [
+      "Elisabeth Dahlqwist",
+      "Maya Alsheh Ali",
+      "Aminata Ndiaye",
+      "Ana Turk",
+      "Nissa Ferm"
+    ],
+    "former": [
+      "Nina Lindell",
+      "Ashley Thompson"
+    ]
   }
-]
+}

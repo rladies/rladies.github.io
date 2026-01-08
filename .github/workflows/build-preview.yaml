@@ -90,11 +90,11 @@ jobs:
           rm -rf data/directory/* assets/directory/*
           if [ "${{ env.directory }}" = "main" ]; then
             cp -r tmpd/dir/data/json data/directory
-            cp -r tmpd/dir/data/img assets/directory
+            cp -r tmpd/dir/data/img/* assets/directory
           else
-            mv entries/json data/directory
+            cp -r entries/json data/directory
             if [ -d "entries/img" ]; then
-              mv entries/img assets/directory/
+              cp -r entries/img/* assets/directory/
             fi
           fi
 
@@ -107,19 +107,10 @@ jobs:
           ref: ${{ env.blogsref }}
           path: tmpd/rblogs
 
-      - name: Site data - Meetup
-        if: ${{ env.on_fork != 'true' }}
-        uses: actions/checkout@v4
-        with:
-          repository: rladies/meetup_archive
-          ssh-key: ${{ secrets.MEETUP_ARCHIVE_KEY}}
-          path: tmpd/mtp
-
       - name: Site data - clean cloned repos
         if: ${{ env.on_fork != 'true' }}
         run: |
           cp -r tmpd/rblogs/blogs data/rblogs
-          cp -r tmpd/mtp/data/* data/meetup/
           rm -rf tmpd
 
       - name: Setup Hugo

@@ -1,38 +1,36 @@
-<nav class="navbar navbar-expand-sm sticky-top border-bottom m-1 p-1">
+<nav class="navbar navbar-expand-sm sticky-top border-bottom m-1 p-1 bg-white bg-opacity-75">
 
-  <div class="nav-brand order-md-1 d-sm-none position-relative">
-    <img src="{{ .Site.BaseURL }}/images/logo-wide.png" height="30px">
-  </div>
-  
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon">
-      <i class="fas fa-bars hamburger mt-2"></i> 
-      </span>
-  </button>
+  <div class="container-fluid justify-content-center">
+    <div class="nav-brand order-md-1 d-sm-none position-relative">
+      <img src="{{ .Site.BaseURL }}/images/logo-wide.png" height="30px">
+    </div>
+    
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse navbar-inner" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-        {{ range .Site.Menus.main }} 
-            {{ if .HasChildren }}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{ or (T .Identifier) .Name | safeHTML }} <span class="caret"></span>
-                    </a>
-                   <div class="dropdown-menu">
-                        {{ range .Children }}
-                            <a class="dropdown-item" href="{{ .URL | relLangURL }}"> {{ or (T .Identifier) .Name | safeHTML }} </a>
-                        {{ end }}
-                    </div>
-                </li>
-            {{ else }}
-                <li class="nav-item">
-                    <a class="nav-link" href="{{  .URL | relLangURL }}">{{ or (T .Identifier) .Name | safeHTML }}</a>
-                </li>
-            {{ end }} 
-        {{ end }}
-    </ul>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse navbar-inner" id="collapsibleNavbar">
+      <ul class="navbar-nav mx-auto">
+          {{ range .Site.Menus.main }} 
+              {{ if .HasChildren }}
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ or (T .Identifier) .Name | safeHTML }} <span class="caret"></span>
+                      </a>
+                     <div class="dropdown-menu">
+                          {{ range .Children }}
+                              <a class="dropdown-item" href="{{ .URL | relLangURL }}"> {{ or (T .Identifier) .Name | safeHTML }} </a>
+                          {{ end }}
+                      </div>
+                  </li>
+              {{ else }}
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{  .URL | relLangURL }}">{{ or (T .Identifier) .Name | safeHTML }}</a>
+                  </li>
+              {{ end }} 
+          {{ end }}
+      </ul>
+    </div>
   </div>
 </nav>
-
