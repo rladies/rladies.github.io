@@ -1,0 +1,285 @@
+// Override for condensed headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-title {
+    font-stretch: condensed;
+    font-weight: 300;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-rladies {
+    background: lighten($primary, 40%);
+}
+
+.text-white {
+    color: $white;
+
+    i {
+        color: $white;
+    }
+
+    a {
+        color: $white;
+    }
+
+    :hover {
+        color: lighten($primary, 30%);
+    }
+}
+
+#main {
+    padding: 4em;
+    padding-top: 2em;
+}
+
+.full-width {
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    padding-left: .2rem;
+    position: relative;
+    align-content: center;
+
+    ul {
+        width: 100%;
+        align-items: flex-start;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .full-width {
+        width: 1200px;
+        margin-left: -600px;
+    }
+}
+
+.post {
+    width: 100%;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.primary {
+    color: $primary;
+}
+
+.date {
+    width: 66%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    border-bottom: 1px solid $secondary;
+    line-height: 0.1em;
+    color: darken($secondary, 15%);
+    font-size: $font-size-base;
+}
+
+.date span {
+    background: $white;
+    padding: 0 10px;
+}
+
+// footer
+#footer {
+    background: $primary;
+    color: $white;
+    font-size: $font-size-sm;
+
+    a,
+    .widget-title {
+        color: lighten($primary, 50%);
+    }
+
+    .widget {
+        padding: 1.5em;
+    }
+
+    .widget-title {
+        padding-top: 5px;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        color: lighten($primary, 40%);
+    }
+}
+
+.chp-table {
+    width: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+$border-rladies: 1px solid $primary;
+
+.b-rladies {
+    border: $border-rladies;
+}
+
+.b-rladies-r {
+    border-right: $border-rladies;
+}
+
+.b-rladies-l {
+    border-left: $border-rladies;
+}
+
+.b-rladies-b {
+    border-bottom: $border-rladies;
+}
+
+.b-rladies-t {
+    border-top: $border-rladies;
+}
+
+#underfooter {
+    padding-top: 5px;
+    background: darken($primary, 12%);
+    color: lighten($primary, 35%);
+    font-size: 12px;
+
+    a {
+        color: lighten($primary, 45%);
+    }
+
+}
+
+/******************/
+/*  untranslated  */
+/******************/
+
+.not-translated {
+    background-color: rgba($primary, .3);
+    font-size: $font-size-base;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+
+
+/******************/
+/* custom styles  */
+/******************/
+
+.section-title,
+.entry-title {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: darken($secondary, 30%);
+    font-family: $font-family-sans-serif
+}
+
+.section-title {
+    font-size: 2.75rem;
+    text-transform: uppercase;
+}
+
+.section-title span,
+.entry-title span {
+    color: $gray-700;
+    display: inline-block;
+    position: relative;
+}
+
+.section-title span:before,
+.entry-title span:before,
+.section-title span:after,
+.entry-title span:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: .53em;
+    width: 400%;
+    border-bottom: 1px solid darken($secondary, 20%);
+    border-top: 1px solid darken($secondary, 20%);
+}
+
+.section-title span:before,
+.entry-title span:before {
+    right: 100%;
+    margin-right: 45px;
+}
+
+.section-title span:after,
+.entry-title span:after {
+    left: 100%;
+    margin-left: 45px;
+}
+
+.entry-header .entry-meta {
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+
+.entry-content {
+    margin: 0 0 60px 0;
+}
+
+.entry-content h2 {
+    line-height: 1.2;
+    font-size: 30px;
+    font-size: 1.875rem;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.entry-title {
+    color: $primary;
+    font-size: 2.25rem;
+}
+
+.entry-content a {
+    // color: $third;
+    //font-weight: bold;
+    text-decoration: underline;
+}
+
+.read-more {
+    text-align: right;
+}
+
+/******************/
+/*   object-fit   */
+/******************/
+
+.obj-fit-fill {
+    object-fit: fill;
+}
+
+.obj-fit-cover {
+    object-fit: cover;
+}
+
+.obj-fit-contain {
+    object-fit: contain;
+}
+
+.obj-fit-sd {
+    object-fit: scale-down;
+}
+
+.obj-fit-none {
+    object-fit: none;
+}

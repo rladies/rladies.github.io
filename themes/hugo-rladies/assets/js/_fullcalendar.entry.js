@@ -1,8 +1,21 @@
-import '@fullcalendar/core';
-import '@fullcalendar/daygrid';
-import '@fullcalendar/timegrid';
-import '@fullcalendar/list';
-import '@fullcalendar/interaction';
-import 'moment';
+import { Calendar } from '@fullcalendar/core';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import listPlugin from '@fullcalendar/list';
+import interactionPlugin from '@fullcalendar/interaction';
+import momentTimezonePlugin from '@fullcalendar/moment-timezone';
+import moment from 'moment';
 import 'moment-timezone';
-import 'tooltip.js';
+import { Tooltip } from 'bootstrap';
+
+// Make available globally
+window.FullCalendar = { Calendar };
+window.FullCalendar.plugins = {
+    dayGrid: dayGridPlugin,
+    timeGrid: timeGridPlugin,
+    list: listPlugin,
+    interaction: interactionPlugin,
+    momentTimezone: momentTimezonePlugin
+};
+window.moment = moment;
+window.Tooltip = Tooltip;

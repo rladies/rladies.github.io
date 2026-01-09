@@ -1,0 +1,40 @@
+.chevron {
+    position: absolute;
+    font-size: 48px;
+    color: $primary;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+/* Back-to-top specific styles: use a dedicated wrapper and class so
+   we only change positioning for the page-level back-to-top chevron
+   and preserve the absolute positioning used in the hero. */
+.back-to-top-wrap {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.back-to-top {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.back-to-top .chevron {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    display: inline-block;
+    margin: 0;
+}
+
+.back-to-top:focus,
+.back-to-top:hover {
+    outline: none;
+}
+
+.back-to-top:hover .chevron {
+    transform: translateY(-3px);
+    transition: transform .15s ease-in-out;
+}
