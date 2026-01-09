@@ -29,7 +29,6 @@
   <!-- Filters -->
   <div class="row justify-content-center mb-4">
     <div class="col-md-6">
-      <label for="country-filter" class="form-label">Filter by Country:</label>
       <select id="country-filter" class="form-select" multiple>
         {{ range $countries }}
           <option value="{{ .name }}">{{ .name | title }} ({{ .count }})</option>
@@ -37,7 +36,6 @@
       </select>
     </div>
     <div class="col-md-4">
-      <label for="search-filter" class="form-label">Search Chapters:</label>
       <input type="text" id="search-filter" class="form-control" placeholder="Search by city...">
     </div>
   </div>

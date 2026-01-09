@@ -49,7 +49,7 @@
     ) -}}
   {{- else -}}
     {{ if $verbose -}}
-      {{- warnf "No meetup match for chapter %s" (index $chapterMap "urlname") -}}
+      {{- warnf "No meetup match for chapter %s" $index -}}
     {{ end }}
     {{- $chapterMap = merge $chapterMap (dict
       "name" (printf "R-Ladies %s" (index $chapterMap "city"))

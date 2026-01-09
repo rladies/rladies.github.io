@@ -7,23 +7,23 @@
     <h2 class="section-title"><span>{{ .Title | title }}</span></h2>
     <small class="text-muted text-center">{{ .Content }}</small>
 
-    {{ $points := slice }}
-    {{ range  $chapters }}
-      {{ $points = $points | append (dict
-        "name" .name
-        "members" .members
-        "latitude" .lat
-        "longitude" .lon
-      )}}
-    {{ end }}
-    {{ $data := (dict
-      "points" $points
-      "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
-      "radius" 4
-      "color" "#88398acc"
-    ) }}
-    
-      {{ partial "map.html" (dict "id" "chapter_map" "height" "500px" "data" $data) }}
+      {{ $points := slice }}
+      {{ range  $chapters }}
+        {{ $points = $points | append (dict
+          "name" .Title
+          "members" .Params.members
+          "latitude" .Params.lat
+          "longitude" .Params.lon
+        )}}
+      {{ end }}
+      {{ $data := (dict
+        "points" $points
+        "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
+        "radius" 4
+        "color" "#88398acc"
+      ) }}
+      
+      {{ partial "map.html" (dict "id" "chapter_map" "height" "500px" "data" $data "countries" $countries) }}
 
     <div id="chapter-table" class="collapse col-auto m-2">
       <table class="table table-hover table-responsive chp-table">

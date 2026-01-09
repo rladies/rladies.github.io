@@ -38,7 +38,6 @@
 {{ $langs := $langs | uniq | sort }}
 {{ $loc := $loc | uniq | sort }}
 {{ $countries := $countries | uniq | sort }}
-<!-- -->
 
   <div class="entry-content">
 		{{ .Content }}
@@ -55,44 +54,49 @@
   	</div>
   </div>
   <div class="flex-container" id="directory-content">
-    <div id="selection">
+    <div id="selection" class="row row-cols-1 row-cols-lg-3 justify-content-center g-3">
       
-      <div class="input-group w-100">
-        <select class="form-select" id="filter-interests" multiple data-group="interests">
-          {{ range $ints }}
-            <option value="{{. | urlize }}" >{{.}}</option>
-          {{ end }}
-        </select>
+      <div class="col">
+        <div class="input-group">
+          <select class="form-select" id="filter-interests" multiple data-group="interests">
+            {{ range $ints }}
+              <option value="{{. | urlize }}" >{{.}}</option>
+            {{ end }}
+          </select>
+        </div>
       </div>
               
-      <div class="input-group">
-        <select class="form-select" id="filter-languages" multiple data-group="languages">
-          {{ range $langs }}
-              <option value="{{. | urlize }}" >{{.}}</option>
-          {{ end }}
-        </select>
+      <div class="col">
+        <div class="input-group">
+          <select class="form-select" id="filter-languages" multiple data-group="languages">
+            {{ range $langs }}
+                <option value="{{. | urlize }}" >{{.}}</option>
+            {{ end }}
+          </select>
+        </div>
       </div>
                       
-      <div class="input-group">
-        <select class="form-select" id="filter-location" multiple data-group="location">
-          {{ range $countries }}
-            {{ $c := . }}
-            <optgroup label="{{$c}}" class="{{$c}}">
-            {{ range $loc }}
-              {{ $l := findRE (printf "^%s" $c) . }}
-              {{ if gt (len $l) 0 }}
-                <option value="{{ . | htmlUnescape | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
+      <div class="col">
+        <div class="input-group">
+          <select class="form-select" id="filter-location" multiple data-group="location">
+            {{ range $countries }}
+              {{ $c := . }}
+              <optgroup label="{{$c}}" class="{{$c}}">
+              {{ range $loc }}
+                {{ $l := findRE (printf "^%s" $c) . }}
+                {{ if gt (len $l) 0 }}
+                  <option value="{{ . | htmlUnescape | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
+                {{ end }}
               {{ end }}
+              </optgroup>
             {{ end }}
-            </optgroup>
-          {{ end }}
-        </select>
+          </select>
+        </div>
       </div>
-              
     </div>
 
     <div class="container expand-grid" id="directory-cards">
-        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width shuffle-wrapper" id="directory-grid">
+      <ul class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 full-width shuffle-wrapper" id="directory-grid">
           {{ range $name := $directory | shuffle }}
               {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}
           {{ end }}
