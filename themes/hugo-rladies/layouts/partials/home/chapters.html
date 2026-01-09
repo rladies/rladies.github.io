@@ -10,10 +10,10 @@
       {{ $points := slice }}
       {{ range  $chapters }}
         {{ $points = $points | append (dict
-          "name" .Title
-          "members" .Params.members
-          "latitude" .Params.lat
-          "longitude" .Params.lon
+          "name" .name
+          "members" .members
+          "latitude" .lat
+          "longitude" .lon
         )}}
       {{ end }}
       {{ $data := (dict
