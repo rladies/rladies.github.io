@@ -27,7 +27,7 @@
     "points" $points
     "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
     "radius" 4
-    "color" "#88398acc"
+    "color" "#88398a"
   ) }}
 {{ end }}
 
@@ -81,7 +81,7 @@ if (typeof am5 === 'undefined') {
             console.log('Coloring country:', id);
             polygon.setAll({
               fill: am5.color(0x88398a),
-              fillOpacity: 0.5,
+              fillOpacity: 0.4,
               tooltipText: "{name}\n" + countryMap[id] + " chapter" + (countryMap[id] > 1 ? "s" : "")
             });
           }
