@@ -53,4 +53,4 @@
 {{ $title := ($dir.Get "title" ) }}
 {{ $foot := (partial "funcs/directory/foot.html" .data ) }}
 
-{{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "size" .size  "img" ($dir.Get "img") "category" .data.Params.honorific "descr" $descr "foot" $foot "footcol" 2 "url" .data.Permalink  "shuffle" $shuffle ) }}
+{{ partial "funcs/card-expand.html" (dict "title" $title "subtitle" $subtitle "img" ($dir.Get "img") "category" .data.Params.honorific "descr" $descr "foot" $foot "footcol" 2 "url" .data.Permalink  "shuffle" $shuffle ) }}

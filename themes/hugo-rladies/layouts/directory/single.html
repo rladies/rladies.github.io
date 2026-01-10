@@ -6,7 +6,7 @@
       <div class="card shadow-sm mb-4 text-center">
         <div class="card-body">
           {{ if .Params.image }}
-              <img src="{{ .Params.image }}" class="img-fluid mb-3 border border-3 border-light shadow-sm" alt="{{ .Params.name }}" style="object-fit: cover;">
+              <img src="{{ .Params.image }}" class="img-fluid mb-3 border border-3 border-light shadow-sm object-fit-cover" alt="{{ .Params.name }}">
               {{ with .Params.photo.credit }}
                 <p class="card-text text-muted small">Photo credit: {{ . }}</p>
               {{ end }}
@@ -76,7 +76,7 @@
             {{ if .url }}
               </a>
             {{ end }}
-          </ul>
+          </p>
         {{ end }}
 
           {{ with .Params.interests }}

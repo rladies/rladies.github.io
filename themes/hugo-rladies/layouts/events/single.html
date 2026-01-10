@@ -23,24 +23,23 @@
   </div>
 </div>
 <div class="row my-4 w-100 align-items-center justify-content-between">
-<div class="card border-0 shadow-sm mb-4">
-  <div class="card-body">
-    <div class="row align-items-center">
-      <div class="col-md-3">
-        <label for="time-zone-selector" class="form-label mb-md-0">View events in:</label>
-      </div>
-      <div class="col-md-9">
-        <select id="time-zone-selector" class="form-select" aria-label="Timezone">
-          <option value="utc">Universal Time Coordinated (UTC)</option>
-        </select>
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <label for="time-zone-selector" class="form-label mb-md-0">View events in:</label>
+        </div>
+        <div class="col-md-9">
+          <select id="time-zone-selector" class="form-select" aria-label="Timezone">
+            <option value="utc">Universal Time Coordinated (UTC)</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  <div class="float-right">
-    <span id="loading">loading...</span>
+  <div class="text-end">
+    <span id="loading">Loading events...</span>
   </div>
-  <div style="clear: both"></div>
 </div>
 <div class="row">
   <div id="calendar" class="col-12">
@@ -106,7 +105,7 @@
         FullCalendar.plugins.interaction,
         FullCalendar.plugins.momentTimezone
       ],
-      themeSystem: 'bootstrap5', // Changed from 'bootstrap'
+      themeSystem: 'bootstrap5',
       headerToolbar: {
         left: "prev,next",
         center: "title",
@@ -135,21 +134,30 @@
           (ev.link ? '<a href="' + ev.link + '" target="_blank" class="btn btn-sm btn-primary">Event Page</a>' : '') +
           '<button type="button" class="btn btn-sm btn-secondary tooltip-close-btn">Close</button>' +
           '</div></div>';
-        
-        var tooltip = new Tooltip(info.el, {
-          title: tooltipContent,
-          placement: "bottom",
-          trigger: "click",
-          container: "body",
-          html: true,
-          sanitize: false
-        });
-        
-        info.el.addEventListener('shown.bs.tooltip', function() {
-          document.querySelector('.tooltip-close-btn').addEventListener('click', function() {
-            tooltip.hide();
+        // Create a Bootstrap Tooltip (click-trigger) and handle the Close button.
+        // Wrap in try/catch to avoid uncaught errors stopping other scripts (nav toggles).
+        try {
+          var tooltip = new Tooltip(info.el, {
+            title: tooltipContent,
+            placement: 'bottom',
+            trigger: 'click',
+            container: 'body',
+            html: true,
+            sanitize: false
           });
-        });
+
+          info.el.addEventListener('shown.bs.tooltip', function() {
+            var closeBtn = document.querySelector('.tooltip-close-btn');
+            if (closeBtn) {
+              closeBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                try { tooltip.hide(); } catch (err) { /* ignore */ }
+              });
+            }
+          });
+        } catch (err) {
+          console.warn('Tooltip creation failed:', err);
+        }
       },
 
       events: getRladiesEvents(events),

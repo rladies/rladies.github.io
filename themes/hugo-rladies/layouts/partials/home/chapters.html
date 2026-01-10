@@ -26,23 +26,23 @@
       {{ partial "map.html" (dict "id" "chapter_map" "height" "500px" "data" $data "countries" $countries) }}
 
     <div id="chapter-table" class="collapse col-auto m-2">
-      <table class="table table-hover table-responsive chp-table">
+      <table class="table table-hover table-responsive w-auto mx-auto">
       <thead>
         <tr>
-          <th class="text-right b-rladies b-rladies-r"> {{ i18n "country"  | markdownify | title }} </th>
-          <th class="text-left"> {{ i18n "city" | markdownify | title }} </th>
-          <th class="text-right"> {{ i18n "social_media" | markdownify }} </th>
+          <th class="text-end border-primary border-end"> {{ i18n "country"  | markdownify | title }} </th>
+          <th class="text-start"> {{ i18n "city" | markdownify | title }} </th>
+          <th class="text-end"> {{ i18n "social_media" | markdownify }} </th>
         </tr>
       </thead>
       <tbody>
         {{ range $k, $c := $countries }}
           <tr>
-            <td class="text-right text-bold b-rladies-r" rowspan = "{{ $c.count }}"> {{ $c.name | title }} </td>
+            <td class="text-end fw-bold border-primary border-end align-top" rowspan = "{{ $c.count }}"> {{ $c.name | title }} </td>
 
                 {{ range where $chapters "country" $c.name }}
-            <td class="text-left"> <a href="http://meetup.com/{{ .social_media.meetup }}">{{ .name | title }}</a> </td>
+            <td class="text-start"> <a href="http://meetup.com/{{ .social_media.meetup }}">{{ .name | title }}</a> </td>
               
-              <td class="text-right"> 
+              <td class="text-end"> 
                 {{ with .social_media }}
                     {{ partial "social_media.html" (dict "data" . "relme" true) }}
                 {{ end }}
@@ -59,4 +59,3 @@
  </div>
 
  {{ end }}
- 

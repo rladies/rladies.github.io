@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="container-lg py-5">
+
+  {{ .Content }}
+
+  <div class="row">
+    <div class="col-12">
+      {{ range .Pages }}
+        <div class="mb-5">
+          {{ partial "post/summary.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ if gt .Paginator.TotalPages 1 }}
+    <nav aria-label="Page navigation" class="mt-5">
+      <ul class="pagination justify-content-center">
+        {{ if .Paginator.HasPrev }}
+          <li class="page-item">
+            <a class="page-link" href="{{ .Paginator.Prev.URL }}">
+              <span>&laquo; Previous</span>
+            </a>
+          </li>
+        {{ end }}
+
+        {{ $currentPage := .Paginator.PageNumber }}
+        {{ $totalPages := .Paginator.TotalPages }}
+        
+        {{ range .Paginator.Pagers }}
+          {{ $pageNum := .PageNumber }}
+          {{ if or (le $pageNum 2) (ge $pageNum (sub $totalPages 1)) (and (ge $pageNum (sub $currentPage 1)) (le $pageNum (add $currentPage 1))) }}
+            <li class="page-item {{ if eq . $.Paginator }}active{{ end }}">
+              <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+            </li>
+          {{ else if or (eq $pageNum 3) (eq $pageNum (sub $totalPages 2)) }}
+            <li class="page-item disabled">
+              <span class="page-link">...</span>
+            </li>
+          {{ end }}
+        {{ end }}
+
+        {{ if .Paginator.HasNext }}
+          <li class="page-item">
+            <a class="page-link" href="{{ .Paginator.Next.URL }}">
+              <span>Next &raquo;</span>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  {{ end }}
+</div>
+{{ end }}

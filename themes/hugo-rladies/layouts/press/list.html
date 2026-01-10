@@ -1,0 +1,94 @@
+{{ define "main" }}
+<div class="container-lg py-5">
+  <div class="entry-content mb-5">
+    {{ .Content }}
+  </div>
+
+  {{ $years := slice }}
+  {{ range .Pages }}
+    {{ $years = $years | append .Date.Year }}
+  {{ end }}
+  {{ $years = $years | uniq | sort | collections.Reverse }}
+
+  <!-- Filter Section -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
+      <div class="row align-items-center">
+        <div class="col-md-2">
+          <label for="filter-press" class="form-label mb-md-0 fw-semibold">
+            <i class="far fa-calendar-alt me-2"></i>Filter by Year
+          </label>
+        </div>
+        <div class="col-md-10">
+          <select class="form-select" id="filter-press" multiple>
+            {{ range $years }}
+              <option value="{{ . | urlize }}">{{ . }}</option>
+            {{ end }}
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Press Items -->
+  <div class="press-list">
+    {{ range .Pages }}
+      <article class="press-item" data-year="{{ .Date.Year | urlize }}">
+        <div class="row align-items-start g-3">
+          <div class="col-md-3 col-lg-2">
+            <time datetime="{{ .Date.Format .Site.Params.DateForm }}" class="press-date">
+              {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+            </time>
+          </div>
+          <div class="col-md-9 col-lg-10">
+            <h3 class="press-title">
+              <a href="{{ .Params.source }}" rel="bookmark" lang="{{ .Params.language }}" target="_blank">
+                {{ .Title }}
+                <i class="fas fa-external-link-alt ms-1"></i>
+              </a>
+            </h3>
+            {{ with .Resources.Match "*pdf" }}
+              {{ range . }}
+                <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-secondary mt-2" target="_blank">
+                  <i class="far fa-file-pdf me-1"></i>Download PDF
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Choices.js for year filter
+    const yearFilter = new Choices('#filter-press', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: 'All years',
+      searchPlaceholderValue: 'Search years...'
+    });
+
+    // Filter press items
+    const pressItems = document.querySelectorAll('.press-item');
+    
+    document.getElementById('filter-press').addEventListener('change', function() {
+      const selectedYears = yearFilter.getValue(true);
+      
+      pressItems.forEach(item => {
+        const itemYear = item.getAttribute('data-year');
+        
+        if (selectedYears.length === 0 || selectedYears.includes(itemYear)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+{{ end }}

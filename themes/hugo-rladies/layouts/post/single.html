@@ -15,7 +15,7 @@
 
     <div class="container-fluid p-0 mb-4"> 
       {{ with .Params.image }}
-        <img src="{{ .path }}" alt="{{ .alt | default $.Title }}" class="img-fluid w-100" style="max-height: 300px; object-fit: cover;">
+        <img src="{{ .path }}" alt="{{ .alt | default $.Title }}" class="img-fluid w-100 object-fit-cover" style="max-height: 300px;">
       {{ end }}
     </div>
 
@@ -47,8 +47,8 @@
       {{ end }}
 
       {{ with .Params.tags -}}
-        <div id="tags" class= "col post-tags">
-          <h5  class="fw-bold mt-3">
+        <div id="tags" class="col post-tags">
+          <h5 class="fw-bold mt-3">
             {{ i18n "tags"}}
           </h5>
           <div class="ms-0"> 
@@ -78,7 +78,7 @@
 
     <!-- Post Pagination -->
     <div class="row">
-        <div class="col-md-6 text-align-left">
+        <div class="col-md-6 text-start">
           {{ with .NextInSection }}
             <a class="prev" href="{{ .RelPermalink }}">
               <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
@@ -89,7 +89,7 @@
           {{- end }}
         </div>
 
-        <div class="col-md-6 text-align-righ">
+        <div class="col-md-6 text-end">
           {{ with .PrevInSection }}
             <a class="next" href="{{ .RelPermalink }}">
               <b><span class="prev-text nav-mobile">{{ i18n "next" }}</span></b>

@@ -14,6 +14,115 @@ html {
     scroll-behavior: smooth;
 }
 
+// Footer link styling
+#footer {
+    a {
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    .social-icon {
+        display: inline-block;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+
+        &:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+    }
+
+    // Ensure Code of Conduct link is visible
+    .small a,
+    p a {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+#underfooter {
+    a {
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 1 !important;
+            text-decoration: underline;
+        }
+    }
+}
+
+// Breakout Containers - Wider than parent
+.breakout {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.breakout-padding {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+// Custom Wide Container Utilities (for standard use)
+.container-wide {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container-extra-wide {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container-full {
+    width: 100%;
+    max-width: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 .bg-rladies {
     background: lighten($primary, 40%);
 }
@@ -31,42 +140,6 @@ html {
 
     :hover {
         color: lighten($primary, 30%);
-    }
-}
-
-#main {
-    padding: 4em;
-    padding-top: 2em;
-}
-
-.full-width {
-    width: 100vw;
-    left: 50%;
-    margin-left: -50vw;
-    padding-left: .2rem;
-    position: relative;
-    align-content: center;
-
-    ul {
-        width: 100%;
-        align-items: flex-start;
-    }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    .full-width {
-        width: 1200px;
-        margin-left: -600px;
-    }
-}
-
-.post {
-    width: 100%;
-
-    img {
-        max-width: 100%;
-        max-height: 100%;
     }
 }
 
@@ -101,10 +174,6 @@ html {
         color: lighten($primary, 50%);
     }
 
-    .widget {
-        padding: 1.5em;
-    }
-
     .widget-title {
         padding-top: 5px;
         font-size: $font-size-base;
@@ -115,34 +184,6 @@ html {
     a:hover {
         color: lighten($primary, 40%);
     }
-}
-
-.chp-table {
-    width: auto !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-$border-rladies: 1px solid $primary;
-
-.b-rladies {
-    border: $border-rladies;
-}
-
-.b-rladies-r {
-    border-right: $border-rladies;
-}
-
-.b-rladies-l {
-    border-left: $border-rladies;
-}
-
-.b-rladies-b {
-    border-bottom: $border-rladies;
-}
-
-.b-rladies-t {
-    border-top: $border-rladies;
 }
 
 #underfooter {
@@ -156,21 +197,6 @@ $border-rladies: 1px solid $primary;
     }
 
 }
-
-/******************/
-/*  untranslated  */
-/******************/
-
-.not-translated {
-    background-color: rgba($primary, .3);
-    font-size: $font-size-base;
-    text-align: center;
-    padding: 1.5em;
-    margin-bottom: 1em;
-    border-radius: 10px;
-}
-
-
 
 /******************/
 /* custom styles  */
@@ -254,32 +280,4 @@ $border-rladies: 1px solid $primary;
     // color: $third;
     //font-weight: bold;
     text-decoration: underline;
-}
-
-.read-more {
-    text-align: right;
-}
-
-/******************/
-/*   object-fit   */
-/******************/
-
-.obj-fit-fill {
-    object-fit: fill;
-}
-
-.obj-fit-cover {
-    object-fit: cover;
-}
-
-.obj-fit-contain {
-    object-fit: contain;
-}
-
-.obj-fit-sd {
-    object-fit: scale-down;
-}
-
-.obj-fit-none {
-    object-fit: none;
 }

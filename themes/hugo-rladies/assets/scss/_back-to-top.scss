@@ -7,34 +7,24 @@
     right: 0;
 }
 
-/* Back-to-top specific styles: use a dedicated wrapper and class so
-   we only change positioning for the page-level back-to-top chevron
-   and preserve the absolute positioning used in the hero. */
-.back-to-top-wrap {
-    text-align: center;
-    margin: 1rem 0;
-}
-
+/* Back-to-top specific styles: the chevron in the back-to-top link
+   needs different positioning than the hero chevron */
 .back-to-top {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.back-to-top .chevron {
     position: relative;
-    bottom: auto;
-    left: auto;
-    right: auto;
-    display: inline-block;
-    margin: 0;
-}
 
-.back-to-top:focus,
-.back-to-top:hover {
-    outline: none;
-}
+    .chevron {
+        position: static;
+        display: inline-block;
+        margin: 0;
+    }
 
-.back-to-top:hover .chevron {
-    transform: translateY(-3px);
-    transition: transform .15s ease-in-out;
+    &:focus,
+    &:hover {
+        outline: none;
+
+        .chevron {
+            transform: translateY(-3px);
+            transition: transform .15s ease-in-out;
+        }
+    }
 }

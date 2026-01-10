@@ -4,7 +4,6 @@
     right: 0;
 }
 
-
 .page-item,
 .page-link {
     border: none;
@@ -13,9 +12,18 @@
 .expand-grid {
     ul {
         list-style-type: none;
+        padding: 0;
+    }
+
+    // Make feed cards fill grid cells equally
+    &#feed .card-expand,
+    &#feed_featured .card-expand {
+        height: 100%;
+        min-height: 400px;
     }
 }
 
+// Card size variants (for directory and other grids)
 .card-service {
     height: 150px;
     width: 150px;
@@ -23,79 +31,84 @@
 
 .card-small {
     height: 270px;
-    min-width: 150px;
-
-    .card-expand-content {
-        padding: 10px;
-    }
 }
 
 .card-medium {
     height: 370px;
-    min-width: 200px;
-
-    .card-expand-content {
-        padding: 20px;
-    }
 }
 
 .card-large {
     height: 470px;
-    min-width: 250px;
-
-    .card-expand-content {
-        padding: 30px;
-    }
 }
 
 .card-wide {
     height: 370px;
-    min-width: 250px;
-
-    .card-expand-content {
-        padding: 10px;
-    }
 }
 
+// Main card styling
 .card-expand {
     position: relative;
-    box-shadow: $box-shadow-sm;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
     background: $white;
     margin: 1rem;
     margin-bottom: 10px;
-    font-size: 14px;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     blockquote:before {
         content: "\f10d";
         font-family: FontAwesome;
         color: $primary;
-        margin-right: 4px
+        margin-right: 4px;
     }
 
     blockquote:after {
         content: "\f10e";
         font-family: FontAwesome;
         color: $primary;
-        margin-left: 4px
+        margin-left: 4px;
     }
 
     img {
         display: block;
-        width: auto;
-        height: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 7px;
-
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center top;
+        transition: transform 0.3s ease;
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 1.25rem;
+        font-weight: 600;
     }
 
     h5 {
-        font-size: 16px;
+        font-size: 1rem;
+        font-weight: 500;
     }
+}
+
+.card-expand-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-expand-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.98) 30%);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+    transition: background 0.3s ease, bottom 0.3s ease;
+    z-index: 3;
 }
 
 .card-expand-title {
@@ -104,37 +117,43 @@
 
     a {
         color: darken($secondary, 20%);
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $primary;
+        }
     }
 }
 
-.card-expand:hover,
-.card-expand-hover {
-    -webkit-box-shadow: $box-shadow;
-    -moz-box-shadow: $box-shadow;
-    box-shadow: $box-shadow;
-
-    .card-expand-img {
-        opacity: .8;
-    }
-}
-
-.card-expand-img {
-    height: 100%;
+// Hide detailed content by default
+.card-expand-description {
+    max-height: 0;
+    opacity: 0;
     overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
 }
 
-.card-expand-content {
-    position: absolute;
-    bottom: 0;
-    background: transparentize($white, .1);
-    width: 100%;
-    padding-bottom: 0.8rem;
-}
+// Expand on hover
+.card-expand:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+    z-index: 10;
 
-.card-expand-content .card-expand-hover .card-expand-description {
-    display: block !important;
-    height: auto !important;
-    opacity: 1 !important;
+    .card-expand-img img {
+        transform: scale(1.05);
+    }
+
+    .card-expand-content {
+        background: rgba(255, 255, 255, 0.98);
+        bottom: 0;
+    }
+
+    .card-expand-description {
+        max-height: 500px;
+        opacity: 1;
+        margin-bottom: 0.75rem;
+    }
 }
 
 .card-expand-animate {
@@ -143,54 +162,70 @@
 
 .card-expand-category {
     position: absolute;
-    top: -30px;
-    left: 0;
-    background: transparentize($primary, .15);
-    padding: 10px 15px;
+    top: -1rem;
+    right: 0.75rem;
+    background: rgba($primary, 0.95);
+    padding: 0.35rem 0.75rem;
     color: $white;
-    font-size: 14px;
-    text-transform: capitalize;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    letter-spacing: 0.05em;
 
     a {
-        text-transform: capitalize;
+        text-transform: uppercase;
         color: $white;
+        text-decoration: none;
     }
-}
-
-.card-expand-title {
-    margin: 0;
-    padding: 0 0 10px;
-    color: darken($secondary, 30%);
-    font-size: 26px;
 }
 
 .card-expand-subtitle {
     margin: 0;
-    padding: 0 0 20px;
+    padding: 0 0 0.75rem;
     color: $primary;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.card-expand-description {
-    font-size: 14px;
-    color: darken($secondary, 30%);
-    line-height: 1.2em;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .card-expand-up-title {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 1.125rem;
+    font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .card-expand-foot {
-    margin-top: 0.5rem;
-    margin-bottom: -10px;
-    font-size: 11px;
-    color: $secondary;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.75rem;
+    color: lighten($secondary, 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     a {
         text-decoration: none;
+        color: $primary;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 767px) {
+
+    .card-small,
+    .card-medium,
+    .card-large,
+    .card-wide {
+        min-width: 100%;
+        margin: 0.5rem 0;
     }
 }

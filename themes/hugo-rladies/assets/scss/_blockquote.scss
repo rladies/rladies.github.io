@@ -1,0 +1,36 @@
+blockquote {
+    position: relative;
+    margin: 2rem 0;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    background: transparentize($primary, .9);
+    border-left: 4px solid $primary;
+    border-radius: 0.5rem;
+    font-style: italic;
+    color: darken($secondary, 20%);
+
+    p {
+        margin: 0;
+        line-height: 1.6;
+    }
+
+    &:before {
+        content: none; // Remove FontAwesome quotes
+    }
+
+    &:after {
+        content: none; // Remove FontAwesome quotes
+    }
+
+    cite {
+        display: block;
+        margin-top: 1rem;
+        font-style: normal;
+        font-size: 0.875rem;
+        color: darken($secondary, 10%);
+        font-weight: 600;
+
+        &:before {
+            content: "— ";
+        }
+    }
+}

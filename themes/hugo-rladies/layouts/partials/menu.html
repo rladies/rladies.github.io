@@ -2,11 +2,11 @@
 
   <div class="container-fluid">
     <div class="nav-brand order-md-1 d-sm-none position-relative">
-      <img src="{{ .Site.BaseURL }}/images/logo-wide.png" height="30px">
+      <img src="{{ .Site.BaseURL }}/images/logo-wide.png" height="30" alt="{{ .Site.Title }}">
     </div>
     
     <!-- Toggler/collapsibe Button -->
-    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -16,7 +16,7 @@
           {{ range .Site.Menus.main }} 
               {{ if .HasChildren }}
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">{{ or (T .Identifier) .Name | safeHTML }} <span class="caret"></span>
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ or (T .Identifier) .Name | safeHTML }} <span class="caret"></span>
                       </a>
                      <div class="dropdown-menu">
                           {{ range .Children }}
