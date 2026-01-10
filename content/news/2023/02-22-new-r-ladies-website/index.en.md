@@ -10,7 +10,6 @@ categories:
   - R-Ladies
 ---
 
----
 
 There were some key issues we wanted to resolve with our webpage, that we could not easily maintain with the Wordpress site we had going:
 
@@ -19,6 +18,8 @@ There were some key issues we wanted to resolve with our webpage, that we could 
 - Integrate the blog into the website: The blog was a Blogdown site maintained through Github and Netlify
 - Easier long-term maintenance and collaboration: Wordpress would require making a user for every person that wanted to contribute to the site
   - Changing to something hosted on GitHub would mean easier community help and collaboration
+
+<!--more--> 
 
 ## History
 
@@ -98,21 +99,3 @@ If there are pages you feel should exist, [please do let us know](https://github
 It has been an amazing journey for me to work on this website.
 I've learned so much, and I am thrilled to finally see it go "live".
 I look forward to the continued development, and we will be announcing the need for new website team members in not too long, to help me with the translation efforts, in revitalising the blog and in taking over the general maintenance of the new website.
-
-slug: "new-r-ladies-website"
-aliases:
-
-- '/news/2023-02-22-new-r-ladies-website'
-
----
-
-We are thrilled to announce the release of our new R-Ladies website!
-
-It's been a long journey, with many people involved, and we are happy to be able to finally share with you this new site and some new content.
-
-<!--more-->
-
-The R-Ladies Leadership and Global Team want to express our sincere gratitude to Mo for her incredible work developing the new R-Ladies website. Mo dedicated many hours of hard and invisible work to accomplish this important milestone.
-
-Her technical expertise has been instrumental in bringing this project to fruition. She's put a lot of care into creating a professional and beautiful interface, but also in creating sustainable update workflows for humans and machines. The new website is a significant improvement over the previous one, and we are sure it will enhance our ability to connect with and serve our community of R-Ladies worldwide.
-Thanks a ton, Mo!

@@ -1,6 +1,5 @@
 ---
 title: "In the press"
-type: "services"
 weight: 3
 home: true
 ---

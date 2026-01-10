@@ -1,6 +1,6 @@
 ---
 title: "News from the Global Team"
-layout: blog
-type: blog
+layout: post
+type: post
 weight: 1
 ---

@@ -15,7 +15,7 @@ aliases:
   - "/blog/2021-02-04-cotonout_mentoring"
 ---
 
-_Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <christin@rladies.org>._
+_Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <blog@rladies.org>._
 
 ## ¿Cómo comenzo todo?🤔
 

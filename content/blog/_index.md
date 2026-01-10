@@ -1,5 +1,5 @@
 ---
 title: "Blog posts"
-layout: blog
-type: blog
+layout: post
+type: post
 ---
