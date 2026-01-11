@@ -22,6 +22,7 @@
     </div>
   </div>
 </div>
+
 <div class="row my-4 w-100 align-items-center justify-content-between">
   <div class="card border-0 shadow-sm mb-4">
     <div class="card-body">
@@ -46,6 +47,21 @@
   </div>
 </div>
 <small class="text-muted"></small>
+
+<!-- Subscribe to Events -->
+<div class="row my-4">
+  <div class="col-12 text-center">
+    <div class="btn-group" role="group" aria-label="Subscribe to events">
+      <a href="{{ .RelPermalink }}/index.xml" class="btn btn-outline-primary">
+        <i class="fas fa-rss me-2"></i>RSS Feed
+      </a>
+      <a href="{{ .RelPermalink }}/calendar.ics" class="btn btn-outline-primary">
+        <i class="fas fa-calendar-alt me-2"></i>iCal Feed
+      </a>
+    </div>
+    <p class="small text-muted mt-2">Subscribe to stay updated on upcoming R-Ladies events</p>
+  </div>
+</div>
 {{ end }}
 
 {{ define "footer" }}
