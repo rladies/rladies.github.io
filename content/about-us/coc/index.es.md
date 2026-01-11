@@ -1,5 +1,7 @@
 ---
 title: Código de Conducta
+aliases:
+  - /es/coc/
 ---
 
 

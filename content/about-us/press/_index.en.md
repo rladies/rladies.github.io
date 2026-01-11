@@ -2,6 +2,8 @@
 title: "In the press"
 weight: 3
 home: true
+aliases:
+  - /press/
 ---
 
 On this page you can see some of the mentions or interviews with R-Ladies in the press. 

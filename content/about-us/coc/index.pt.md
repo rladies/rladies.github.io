@@ -1,8 +1,8 @@
 ---
 title: Código de Conduta
+aliases:
+  - /pt/coc/
 ---
-
-
 
 R-Ladies tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes.
 
