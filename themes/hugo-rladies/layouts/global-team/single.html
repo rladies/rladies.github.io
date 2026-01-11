@@ -21,26 +21,28 @@
 {{ end }}
 
 <!-- Leadership Team -->
-<div class="container expand-grid" id="leadership-team">
-  <h1 class="section-title">{{ i18n "leadership" }}</h1>
-  <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 w-100 list-unstyled">
-    {{ range $current_keys | shuffle }}
-      {{ $d := index $gt_current . }}
-      {{ if in $d.role "Leadership" }}
-        {{ $image := "" }}
-        {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
-          {{ $image = (.Fill "200x200").RelPermalink }}
-        {{ end }}
-        
-        {{ $foot := "" }}
-        {{ with $d.img.credit }}
-          {{ $foot = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
-        {{ end }}
+<div class="breakout">
+  <div class="container-wide expand-grid" id="leadership-team">
+    <h1 class="section-title">{{ i18n "leadership" }}</h1>
+    <ul class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 list-unstyled">
+      {{ range $current_keys | shuffle }}
+        {{ $d := index $gt_current . }}
+        {{ if in $d.role "Leadership" }}
+          {{ $image := "" }}
+          {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
+            {{ $image = (.Fill "200x200").RelPermalink }}
+          {{ end }}
+          
+          {{ $foot := "" }}
+          {{ with $d.img.credit }}
+            {{ $foot = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
+          {{ end }}
 
-        {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" $foot) }}
+          {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" $foot) }}
+        {{ end }}
       {{ end }}
-    {{ end }}
-  </ul>
+    </ul>
+  </div>
 </div>
 
 <!-- Roles Table -->
@@ -83,23 +85,25 @@
   </table>
 
   <!-- Current Team Cards -->
-  <div class="container expand-grid">
-    <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 w-100 list-unstyled">
-      {{ range $current_keys | shuffle }}
-        {{ $d := index $gt_current . }}
-        {{ $image := "" }}
-        {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
-          {{ $image = (.Fill "200x200").RelPermalink }}
-        {{ end }}
-        
-        {{ $credit := "" }}
-        {{ with $d.img.credit }}
-          {{ $credit = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
-        {{ end }}
+  <div class="breakout">
+    <div class="container-wide expand-grid">
+      <ul class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 list-unstyled">
+        {{ range $current_keys | shuffle }}
+          {{ $d := index $gt_current . }}
+          {{ $image := "" }}
+          {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
+            {{ $image = (.Fill "200x200").RelPermalink }}
+          {{ end }}
+          
+          {{ $credit := "" }}
+          {{ with $d.img.credit }}
+            {{ $credit = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
+          {{ end }}
 
-        {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" (delimit $d.role ", ") "size" "small" "descr" $credit) }}
-      {{ end }}
-    </ul>
+          {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" (delimit $d.role ", ") "size" "small" "descr" $credit) }}
+        {{ end }}
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -109,19 +113,21 @@
 <div class="my-5">
   <h1 class="section-title">{{ i18n "alumni" }}</h1>
   <p>{{ i18n "alumni-text" }}</p>
-  <div class="container expand-grid">
-    <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 w-100 list-unstyled">
-      {{ range $alumni_keys | shuffle }}
-        {{ $d := index $gt_alumni . }}
-        {{ $image := "" }}
-        {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
-          {{ $image = (.Fill "200x200").RelPermalink }}
+  <div class="breakout">
+    <div class="container-wide expand-grid alumni-grid">
+      <ul class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 list-unstyled">
+        {{ range $alumni_keys | shuffle }}
+          {{ $d := index $gt_alumni . }}
+          {{ $image := "" }}
+          {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
+            {{ $image = (.Fill "200x200").RelPermalink }}
+          {{ end }}
+          
+          {{ $dates := printf "%s &#8212 %s" $d.start $d.end }}
+          {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $dates "size" "small" "foot" (delimit $d.role ", ")) }}
         {{ end }}
-        
-        {{ $dates := printf "%s &#8212 %s" $d.start $d.end }}
-        {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $dates "size" "small" "foot" (delimit $d.role ", ")) }}
-      {{ end }}
-    </ul>
+      </ul>
+    </div>
   </div>
 </div>
 {{ end }}

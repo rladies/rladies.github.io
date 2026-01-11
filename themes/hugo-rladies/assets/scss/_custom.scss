@@ -14,6 +14,18 @@ html {
     scroll-behavior: smooth;
 }
 
+// Alumni greyscale images
+.alumni-grid {
+    .card-expand-img img {
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+
+    .card-expand:hover .card-expand-img img {
+        filter: grayscale(0%);
+    }
+}
+
 // Footer link styling
 #footer {
     a {
