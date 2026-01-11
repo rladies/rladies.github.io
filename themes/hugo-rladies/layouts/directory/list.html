@@ -1,4 +1,3 @@
-
 {{ define "main" }}
 <!-- Selects -->
 {{ $directory := .Pages }}
@@ -38,119 +37,145 @@
 {{ $langs := $langs | uniq | sort }}
 {{ $loc := $loc | uniq | sort }}
 {{ $countries := $countries | uniq | sort }}
-<!-- -->
 
-  <div class="entry-content">
-		{{ .Content }}
-	</div>
-  <div id="counters" class="row justify-content-center section topspace">
-  	<div class="col-sm-5 col-md-4 text-center fadeInUp" data-wow-duration="500ms">
-    	<div class="block">
-    		<div class="icon-box">
-    			<h3>{{ i18n "counter_entries" | markdownify }}</h3>
-    			<i class="fa-solid fa-user"></i>
-    			<p class="count" data-count="{{ $directory | len }}">0</p>
-    		</div>
-  		</div>
-  	</div>
+<!-- Hero Section -->
+<div class="row mb-5">
+  <div class="col-lg-10 mx-auto text-center">
+    <div class="entry-content mb-4">
+      {{ .Content }}
+    </div>
   </div>
-  <div class="flex-container" id="directory-content">
-    <div id="selection">
-      
-      <div class="input-group w-100">
-        <div class="input-group-prepend" for="filter-interests">
-          <label class="input-group-text" style="min-width:120px;" >Interests</label>
+</div>
+
+<!-- Stats Card -->
+<div class="row mb-5">
+  <div class="col-md-4 mx-auto">
+    <div class="card border-0 shadow-sm text-center">
+      <div class="card-body py-4">
+        <i class="fa-solid fa-users fa-3x text-primary mb-3"></i>
+        <h2 class="display-4 fw-bold text-primary mb-0">{{ $directory | len }}</h2>
+        <p class="text-muted mb-0">{{ i18n "counter_entries" | markdownify }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Filters -->
+<div class="row g-3 mb-5">
+  <div class="col-md-4">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <div class="d-flex align-items-center mb-2">
+          <i class="fa-solid fa-tag text-primary me-2"></i>
+          <label for="filter-interests" class="form-label mb-0 fw-semibold">Interests</label>
         </div>
-        <select class="custom-select" id="filter-interests" multiple data-group="interests">
+        <select class="form-select" id="filter-interests" multiple data-group="interests">
           {{ range $ints }}
-            <option value="{{. | urlize }}" >{{.}}</option>
+            <option value="{{. | urlize }}">{{.}}</option>
           {{ end }}
         </select>
       </div>
-              
-      <div class="input-group">
-        <div class="input-group-prepend" for="filter-languages">
-          <label class="input-group-text" style="min-width:120px;" >Languages</label>
+    </div>
+  </div>
+            
+  <div class="col-md-4">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <div class="d-flex align-items-center mb-2">
+          <i class="fa-solid fa-language text-primary me-2"></i>
+          <label for="filter-languages" class="form-label mb-0 fw-semibold">Languages</label>
         </div>
-        <select class="custom-select" id="filter-languages" multiple data-group="languages">
+        <select class="form-select" id="filter-languages" multiple data-group="languages">
           {{ range $langs }}
-              <option value="{{. | urlize }}" >{{.}}</option>
+            <option value="{{. | urlize }}">{{.}}</option>
           {{ end }}
         </select>
       </div>
-                      
-      <div class="input-group">
-        <div class="input-group-prepend" for="filter-location">
-          <label class="input-group-text" style="min-width:120px;" >Location</label>
+    </div>
+  </div>
+                    
+  <div class="col-md-4">
+    <div class="card h-100 border-0 shadow-sm">
+      <div class="card-body">
+        <div class="d-flex align-items-center mb-2">
+          <i class="fa-solid fa-map-marker-alt text-primary me-2"></i>
+          <label for="filter-location" class="form-label mb-0 fw-semibold">Location</label>
         </div>
-        <select class="custom-select" id="filter-location" multiple data-group="location">
+        <select class="form-select" id="filter-location" multiple data-group="location">
           {{ range $countries }}
             {{ $c := . }}
             <optgroup label="{{$c}}" class="{{$c}}">
             {{ range $loc }}
               {{ $l := findRE (printf "^%s" $c) . }}
               {{ if gt (len $l) 0 }}
-                <option value="{{ . | htmlUnescape | urlize }}" >{{ replaceRE (printf "%s, " $c) "" . }}</option>
+                <option value="{{ . | htmlUnescape | urlize }}">{{ replaceRE (printf "%s, " $c) "" . }}</option>
               {{ end }}
             {{ end }}
             </optgroup>
           {{ end }}
         </select>
       </div>
-              
-    </div>
-
-    <div class="container expand-grid" id="directory-cards">
-        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width shuffle-wrapper" id="directory-grid">
-          {{ range $name := $directory | shuffle }}
-              {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}
-          {{ end }}
-      </ul>
     </div>
   </div>
+</div>
+
+<!-- Directory Cards -->
+ <div class="breakout">
+  <div class="container-wide p-0 px-3">
+    <ul class="row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 shuffle-wrapper w-100 list-unstyled" id="directory-grid">
+      {{ range $name := $directory | shuffle }}
+        {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
 {{ end }}
 
-{{ define  "footer" }}
+{{ define "footer" }}
 <script type="text/javascript">
-  
-  $(document).ready(function() {
-    $('[id^="filter-"]').multiselect({
-      includeSelectAllOption: true,
-      maxHeight: 300,
-      enableFiltering: true,
-      enableClickableOptGroups: true,
-      enableCollapsibleOptGroups: true
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Choices.js
+    const interestsChoice = new Choices('#filter-interests', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: 'Filter by interests',
+      searchPlaceholderValue: 'Search interests...'
     });
-    $('.form-check-input').attr('name', 'shuffle-filter');
     
-    // Attach event listeners to the multiselect change event
-    $('[id^="filter-"]').on('change', applyFilters);
-
-    // Select the container for shuffle items
-    const shuffleContainer = document.getElementById('directory-grid');
+    const languagesChoice = new Choices('#filter-languages', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: 'Filter by languages',
+      searchPlaceholderValue: 'Search languages...'
+    });
+    
+    const locationChoice = new Choices('#filter-location', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: 'Filter by location',
+      searchPlaceholderValue: 'Search location...'
+    });
 
     // Initialize Shuffle.js
+    const shuffleContainer = document.getElementById('directory-grid');
     const shuffleInstance = new Shuffle(shuffleContainer, {
       itemSelector: '.shuffle-item',
       buffer: 1,
       isCentered: true
     });
 
-    // Function to apply filters
+    // Apply filters
     function applyFilters() {
-      // Get selected values from multiselects || Default to empty array if no values selected
-      const interests = $('#filter-interests').val() || [];
-      const languages = $('#filter-languages').val() || [];
-      const locations = $('#filter-location').val() || [];
+      const interests = interestsChoice.getValue(true);
+      const languages = languagesChoice.getValue(true);
+      const locations = locationChoice.getValue(true);
 
-      // Use Shuffle.js filter method
       shuffleInstance.filter(item => {
-        // Parse attributes and default to empty array if null
         const itemInterests = JSON.parse(item.getAttribute('data-interests')) || [];
         const itemLanguages = JSON.parse(item.getAttribute('data-languages')) || [];
         const itemLocations = JSON.parse(item.getAttribute('data-location')) || [];
 
-        // Check if item passes the selected filters
         return (
           (interests.length === 0 || interests.some(i => itemInterests.includes(i))) &&
           (languages.length === 0 || languages.some(l => itemLanguages.includes(l))) &&
@@ -158,6 +183,11 @@
         );
       });
     }
+
+    // Attach listeners
+    document.querySelectorAll('[id^="filter-"]').forEach(select => {
+      select.addEventListener('change', applyFilters);
+    });
   });
 </script>
 {{ end }}

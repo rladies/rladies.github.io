@@ -1,0 +1,64 @@
+// Breakout Containers - Wider than parent
+.breakout {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.breakout-padding {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+// Custom Wide Container Utilities (for standard use)
+.container-wide {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container-extra-wide {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container-full {
+    width: 100%;
+    max-width: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

@@ -1,10 +1,12 @@
-<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<!-- Attempt to load a single vendor bundle (if present). If not present,
+     dynamically load individual vendor scripts so the site still works for
+     users who haven't run the bundler. -->
 
 {{ $js := slice
-    (resources.Get "js/jquery.min.js")
-    (resources.Get "js/bootstrap.bundle.min.js")
-    (resources.Get "js/bootstrap-multiselect.min.js")
-    (resources.Get "js/shuffle.min.js")
+    (resources.Get "js/vendor/jquery.min.js")
+    (resources.Get "js/vendor/bootstrap.bundle.min.js")
+    (resources.Get "js/vendor/choices.min.js")
+    (resources.Get "js/vendor/shuffle.min.js")
     (resources.Get "js/counter.js")
     (resources.Get "js/card-expand.js")
     | resources.Concat "rladies-bundle.js"

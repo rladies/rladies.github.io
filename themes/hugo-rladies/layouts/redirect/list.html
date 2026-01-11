@@ -1,11 +1,10 @@
 {{ define "main" }}
-
-	<ul>
+	<ul class="list-unstyled">
   {{ range .RegularPages.ByTitle }}
     <li class="p-2">
     	{{ .Title }}
 	      <span>
-			<a  href="{{ .RelPermalink }}" rel="bookmark" alt="{{ .Params.redirect }}">{{ .Permalink }}</a>
+			<a href="{{ .RelPermalink }}" rel="bookmark" alt="{{ .Params.redirect }}">{{ .Permalink }}</a>
   		  </span>
     </li>
   {{ end }}

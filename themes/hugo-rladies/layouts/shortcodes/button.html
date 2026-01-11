@@ -1,11 +1,10 @@
 
 {{ if .IsNamedParams }}
-  <center>
-  <a href="{{ .Get "url" }}" target="_blank"><button type="button" class="btn btn-primary">{{ .Get "text" }}</button></a>
-  </center>
+  <div class="text-center">
+    <a href="{{ .Get "url" }}" target="_blank" class="btn btn-primary">{{ .Get "text" }}</a>
+  </div>
 {{ else }}
-  <center>
-  <a href="{{ .Get 0 }}" target="_blank"><button type="button" class="btn btn-primary">{{ .Get 1 }}</button></a>
-  </center>
+  <div class="text-center">
+    <a href="{{ .Get 0 }}" target="_blank" class="btn btn-primary">{{ .Get 1 }}</a>
+  </div>
 {{ end }}
-

@@ -1,0 +1,14 @@
+#chartdiv {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  margin-bottom: 3em;
+}
+
+#chartdiv .fab {
+  color: $white;
+}
+
+#chartdiv .fab:hover {
+  color: lighten($primary, 20%);
+}

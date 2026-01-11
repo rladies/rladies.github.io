@@ -1,0 +1,55 @@
+.paral {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+
+    a {
+        font-size: 24px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .logo img {
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 4vh;
+
+        margin: auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 20px;
+        opacity: 1;
+    }
+
+    /* Center the hero chevron reliably: pin its left to 50% and translate
+     half its width back. This avoids relying on left:0/right:0 which can
+     be affected by inline/anchor layout. */
+    .chevron {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+}
+
+.home {
+    height: 100vh;
+
+    .paral {
+        background-attachment: none;
+    }
+
+    .chevron {
+        color: rgba(lighten($primary, 40%), .6);
+    }
+
+    .logo img {
+        bottom: 0;
+        top: 0;
+        height: 200px;
+        width: 200px;
+    }
+}

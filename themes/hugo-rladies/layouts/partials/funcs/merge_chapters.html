@@ -44,11 +44,12 @@
       "lon" (index $mtp "lon")
       "members" (index $mtp "members")
       "timezone" (index $mtp "timezone")
+      "country_iso" (index $mtp "country_acronym" | upper)
       "file" (path.BaseName $index)
     ) -}}
   {{- else -}}
     {{ if $verbose -}}
-      {{- warnf "No meetup match for chapter %s" (index $chapterMap "urlname") -}}
+      {{- warnf "No meetup match for chapter %s" $index -}}
     {{ end }}
     {{- $chapterMap = merge $chapterMap (dict
       "name" (printf "R-Ladies %s" (index $chapterMap "city"))

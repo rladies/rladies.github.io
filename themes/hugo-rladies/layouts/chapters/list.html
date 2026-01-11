@@ -4,12 +4,41 @@
 {{ $chapters := .Pages }}
 
 <div class="container row justify-content-center section topspace">
+  {{ $points := slice }}
+  {{ range  $chapters }}
+    {{ $points = $points | append (dict
+      "name" .Title
+      "members" .Params.members
+      "latitude" .Params.lat
+      "longitude" .Params.lon
+    )}}
+  {{ end }}
+  {{ $data := (dict
+    "points" $points
+    "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
+    "radius" 4
+    "color" "#88398acc"
+  ) }}
   
-    {{ partial "map.html" . }}
+  {{ partial "map.html" (dict "id" "chapter_map" "height" "500px" "data" $data "countries" $countries) }}
 
-    <div>
-        {{ .Content }}
+  <div>
+    {{ .Content }}
+  </div>
+
+  <!-- Filters -->
+  <div class="row justify-content-center mb-4">
+    <div class="col-md-6">
+      <select id="country-filter" class="form-select" multiple>
+        {{ range $countries }}
+          <option value="{{ .name }}">{{ .name | title }} ({{ .count }})</option>
+        {{ end }}
+      </select>
     </div>
+    <div class="col-md-4">
+      <input type="text" id="search-filter" class="form-control" placeholder="Search by city...">
+    </div>
+  </div>
 
   <div class="row justify-content-center">
     <div id="chapter-table" class="col-auto m-2">
@@ -21,13 +50,13 @@
             <th class="text-right"> {{ i18n "social_media" | markdownify }} </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="chapter-list">
           {{ range $idx, $country := $countries }}
             {{ $countryChapters := where $chapters ".Params.country" $country.name }}
             {{ range $i, $chapter := $countryChapters }}
-              <tr>
+              <tr data-country="{{ $country.name }}" data-city="{{ $chapter.Title | lower }}" class="chapter-row">
                 {{ if eq $i 0 }}
-                  <td class="text-right text-bold b-rladies-r" rowspan="{{ len $countryChapters }}"> 
+                  <td class="text-right text-bold b-rladies-r country-cell" rowspan="{{ len $countryChapters }}"> 
                     {{ $country.name | title }} 
                   </td>
                 {{ end }}
@@ -47,5 +76,73 @@
     </div>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Choices.js for country filter
+  const countryFilter = new Choices('#country-filter', {
+    removeItemButton: true,
+    searchEnabled: true,
+    placeholder: true,
+    placeholderValue: 'Select countries...'
+  });
+
+  const searchInput = document.getElementById('search-filter');
+  const rows = document.querySelectorAll('.chapter-row');
+
+  function filterTable() {
+    const selectedCountries = countryFilter.getValue(true);
+    const searchTerm = searchInput.value.toLowerCase();
+
+    rows.forEach(row => {
+      const country = row.dataset.country;
+      const city = row.dataset.city;
+      
+      const countryMatch = selectedCountries.length === 0 || selectedCountries.includes(country);
+      const searchMatch = searchTerm === '' || city.includes(searchTerm);
+      
+      if (countryMatch && searchMatch) {
+        row.style.display = '';
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    // Handle rowspan visibility for country cells
+    updateRowspans();
+  }
+
+  function updateRowspans() {
+    const countries = {};
+    rows.forEach(row => {
+      if (row.style.display !== 'none') {
+        const country = row.dataset.country;
+        if (!countries[country]) {
+          countries[country] = [];
+        }
+        countries[country].push(row);
+      }
+    });
+
+    // Reset all country cells
+    document.querySelectorAll('.country-cell').forEach(cell => {
+      cell.style.display = 'none';
+    });
+
+    // Show and update rowspan for visible groups
+    Object.values(countries).forEach(countryRows => {
+      const firstRow = countryRows[0];
+      const cell = firstRow.querySelector('.country-cell');
+      if (cell) {
+        cell.style.display = '';
+        cell.setAttribute('rowspan', countryRows.length);
+      }
+    });
+  }
+
+  countryFilter.passedElement.element.addEventListener('change', filterTable);
+  searchInput.addEventListener('input', filterTable);
+});
+</script>
 
 {{ end }}

@@ -1,19 +1,20 @@
 {{ if .IsTranslated }}
-  <center>
-    <button class="btn bg-transparent" data-toggle="collapse" data-target="#post-translations-{{ .Permalink | relURL | anchorize }}">
-    <i class="fas fa-atlas fa-2x primary"></i>
-  </buttton>
-    <div id="post-translations-{{ .Permalink | relURL | anchorize }}" class="collapse">
+  <span class="post-translations">
+    <button class="btn btn-sm btn-link text-decoration-none p-0" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#post-translations-{{ .Permalink | relURL | anchorize }}" 
+            aria-expanded="false">
+      <i class="fas fa-language me-1"></i>Translations
+    </button>
+    
+    <div id="post-translations-{{ .Permalink | relURL | anchorize }}" class="collapse mt-2">
       {{ range .Translations }}
-        {{ $trans := .Params.translated | default true}}
+        {{ $trans := .Params.translated | default true }}
         {{ if $trans }}
-          <div>
-            <a lang="{{.Lang}}" href="{{ .Permalink }}">
-              {{ index .Site.Data.read_in_lang .Lang }}
-            </a>
-          </div>
+          <a lang="{{ .Lang }}" href="{{ .Permalink }}" class="badge bg-secondary text-decoration-none me-1">
+            {{ index .Site.Data.read_in_lang .Lang }}
+          </a>
         {{ end }}
       {{ end }}
     </div>
-  </center>
+  </span>
 {{ end }}

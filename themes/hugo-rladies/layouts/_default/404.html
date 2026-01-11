@@ -1,0 +1,60 @@
+{{ define "title" }}
+    <h2 class="section-title">{{ i18n "404_title" . }}</h2>
+{{ end }}
+
+{{ define "main" }}
+    <div class="row justify-content-center align-items-center" style="min-height:45vh;">
+        <div class="col-md-8 text-center">
+            <style>
+                /* Small, local styles for a playful touch */
+                .rl-404-emoji { font-size: 6rem; line-height: 1; display: inline-block; }
+                .rl-404-bounce { animation: rl-bounce 1.6s ease-in-out infinite; }
+                @keyframes rl-bounce { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(-10px);} }
+            </style>
+
+            <div class="mb-4">
+                <!-- Inline SVG female robot (simple, original) -->
+                <svg class="rl-404-emoji rl-404-bounce" role="img" aria-label="{{ i18n "404_emoji_label" . | default "female robot" }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="120" height="120" focusable="false">
+                    <title>{{ i18n "404_emoji_label" . | default "female robot" }}</title>
+                    <!-- head -->
+                    <rect x="40" y="40" width="120" height="100" rx="18" ry="18" fill="#E9ECEF" stroke="#6C757D" stroke-width="4" />
+                    <!-- antenna -->
+                    <line x1="100" y1="20" x2="100" y2="40" stroke="#6C757D" stroke-width="4" stroke-linecap="round" />
+                    <circle cx="100" cy="16" r="8" fill="#88398a" stroke="#6C757D" stroke-width="2" />
+                    <!-- eyes -->
+                    <circle cx="70" cy="80" r="10" fill="#343A40" />
+                    <circle cx="130" cy="80" r="10" fill="#343A40" />
+                    <!-- eyelashes for a feminine touch -->
+                    <line x1="62" y1="68" x2="58" y2="62" stroke="#343A40" stroke-width="2" stroke-linecap="round" />
+                    <line x1="66" y1="68" x2="62" y2="62" stroke="#343A40" stroke-width="2" stroke-linecap="round" />
+                    <!-- right-eye lashes (mirrored) -->
+                    <line x1="138" y1="68" x2="142" y2="62" stroke="#343A40" stroke-width="2" stroke-linecap="round" />
+                    <line x1="134" y1="68" x2="138" y2="62" stroke="#343A40" stroke-width="2" stroke-linecap="round" />
+                    <!-- smile -->
+                    <path d="M70 100 Q100 120 130 100" stroke="#343A40" stroke-width="4" fill="none" stroke-linecap="round" />
+                    <!-- neck/connector -->
+                    <rect x="88" y="140" width="24" height="12" rx="4" fill="#6C757D" />
+                </svg>
+            </div>
+
+            <p class="lead text-muted mb-4">{{ i18n "404_description" . | markdownify }}</p>
+
+            <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="{{ "/" | relLangURL }}" class="btn btn-primary btn-lg" aria-label="Home">{{ i18n "home" . | default "Home" }}</a>
+                <a href="{{ "/activities/" | relLangURL }}" class="btn btn-outline-secondary btn-lg" aria-label="Activities">{{ i18n "activities" . | default "Activities" }}</a>
+            </div>
+
+            <p class="text-muted small mb-2">{{ i18n "404_suggestions" . | default "Try one of these pages:" }}</p>
+
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="{{ "/blog/" | relLangURL }}">{{ i18n "blog" . | default "Blog" }}</a></li>
+                <li class="list-inline-item">·</li>
+                <li class="list-inline-item"><a href="{{ "/chapters/" | relLangURL }}">{{ i18n "chapters" . | default "Chapters" }}</a></li>
+                <li class="list-inline-item">·</li>
+                <li class="list-inline-item"><a href="{{ "/directory/" | relLangURL }}">{{ i18n "directory" . | default "Directory" }}</a></li>
+            </ul>
+
+            <p class="mt-4 text-muted small">{{ i18n "404_tip" . | default "If you keep seeing this, please check the URL or contact the site administrators." }}</p>
+        </div>
+    </div>
+{{ end }}
