@@ -30,7 +30,6 @@
   {{ if $lastEvent }}
     {{ $lastEventDate := time.AsTime $lastEvent.datetime }}
     {{ if $lastEventDate.Before $sixMonthsAgo }}
-      {{ warnf "Setting chapter %s status to inactive due to inactivity" $chapterGroupUrlname }}
       {{ $status = "inactive" }}
     {{ end }}
   {{ end }}
