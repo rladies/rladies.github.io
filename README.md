@@ -11,26 +11,6 @@ The site is built with [hugo](https://gohugo.io/) and [netlify](www.netlify.com)
 
 Information about the site internals and setup can be found in the [R-Ladies Organisational Guide](https://guide.rladies.org/website/)
 
-## Contribute to the site development
-
-There are many types of contributions we are happy to receive, for instance:
-
-- [Blog guest entry](https://guide.rladies.org/website/blog/)
-- [Add a site language](https://guide.rladies.org/website/language-new/)
-- [Add a Press appearances](https://guide.rladies.org/website/press/)
-- [Adding a chapter](https://guide.rladies.org/website/chapter/)
-- [Retiring former chapter organizers](https://guide.rladies.org/website/organizers/)
-- [Adding Mentoring program entries](https://guide.rladies.org/website/mentoring/)
-- [Adding/changing a pretty URL to an R-Ladies form](https://guide.rladies.org/website/redirects/)
-- [Bug reports](https://github.com/rladies/rladies.github.io/issues/new)
-- Responding to and/or fixing [issues](https://github.com/rladies/rladies.github.io/issues)
-
-If you want to contribute to the site, the best option is to branch the repo if you have access.
-PRs from branches will render previews, while PRs from forks will not.
-If you do not have access to branch the repo, fork and PR when ready, and tag @rladies/website for review.
-
-[Learn more about working with a local git copy of the website](https://guide.rladies.org/website/fork-clone-pr/)
-
 ### Reports of bugs
 
 Please report any bugs or issues on the page on [github issues](https://github.com/rladies/rladies.github.io/issues).
