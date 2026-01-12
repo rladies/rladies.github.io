@@ -77,7 +77,7 @@
     var loadingEl = document.getElementById("loading");
     var calendarEl = document.getElementById("calendar");
     var events = {{ $.Scratch.Get "events" }};
-    var timezone_list = {{ $.Site.Data.timezones }};
+    var timezone_list = Intl.supportedValuesOf('timeZone');
 
     // Add local timezone option first
     var localTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -98,7 +98,6 @@
         timeZoneSelectorEl.appendChild(optionEl);
       }
     });
-
     // Set local timezone as selected
     document.getElementById("local").selected = true;
 
