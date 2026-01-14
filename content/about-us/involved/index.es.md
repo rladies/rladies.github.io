@@ -20,3 +20,5 @@ title: "Involucrate"
 * Blog.  
 * Tuitea, Retuitea y sigue @RLadiesGlobal y las cuentas de sección de R-Ladies .  
 * Y si eres una R-Lady y quieres comenzar un capítulo cerca de ti, ponte en contacto a través de info [at] rladies [dot] org.
+
+Consulta los issues abiertos etiquetados con [help wanted](#github-issues).
