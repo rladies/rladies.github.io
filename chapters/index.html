@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=author content="Athanasia Monika Mowinckel"><meta property="og:title" content="Chapters - R-Ladies Global"><meta property="og:type" content="website"><meta property="og:description" content="R-Ladies is a world-wide organization to promote gender diversity in the R community"><meta property="og:url" content="https://rladies.org/chapters/"><meta property="og:site_name" content="R-Ladies Global"><meta property="og:image" content="images/logo.png"><html lang=en xml:lang=en xmlns=http://www.w3.org/1999/xhtml><title>Chapters</title>
 <link rel="shortcut icon" href=/images/favicon.png><link rel=stylesheet href=/rladies-bundle.min.min.8b035731dddf7839cae9101e52e17d55a5195d90bc7588209a55db5c44500df8.css integrity="sha256-iwNXMd3feDnK6RAeUuF9VaUZXZC8dYggmlXbXERQDfg=" media=screen><script defer data-domain=rladies.org src=https://plausible.io/js/script.js></script></head><body><div class="jumbotron paral m-0" style="background-image:linear-gradient(to bottom,rgba(0,0,0,.6) 0%,rgba(0,0,0,.6) 100%),url(/images/user2017.jpg)" id=hero><a rel=alternate href=/ hreflang=en lang=en><div class=logo><img src=/images/logo.png></div></a></div><nav class="navbar navbar-expand-sm sticky-top border-bottom m-1 p-1"><div class="nav-brand order-md-1 d-sm-none position-relative"><img src=https://rladies.org//images/logo-wide.png height=30px></div><button class=navbar-toggler type=button data-toggle=collapse data-target=#collapsibleNavbar>
-<span class=navbar-toggler-icon><i class="fas fa-bars hamburger mt-2"></i></span></button><div class="collapse navbar-collapse navbar-inner" id=collapsibleNavbar><ul class=navbar-nav><li class=nav-item><a class=nav-link href=/>Home</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle=dropdown>About <span class=caret></span></a><div class=dropdown-menu><a class=dropdown-item href=/about-us/mission/>Mission </a><a class=dropdown-item href=/about-us/involved/>Get involved </a><a class=dropdown-item href=/about-us/global-team/>Global Team </a><a class=dropdown-item href=/about-us/history/>History </a><a class=dropdown-item href=/news/>News </a><a class=dropdown-item href=/coc/>Code of Conduct</a></div></li><li class=nav-item><a class=nav-link href=/directory/>Directory</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle=dropdown>Activities <span class=caret></span></a><div class=dropdown-menu><a class=dropdown-item href=/activities/events/>Events </a><a class=dropdown-item href=/chapters/>Chapters </a><a class=dropdown-item href=/activities/mentoring/>Mentoring Program </a><a class=dropdown-item href=/activities/gt-coordinated/>Coordinated by the Global Team </a><a class=dropdown-item href=/activities/rladies-blogs>Blogs by R-Ladies </a><a class=dropdown-item href=/press>In the press</a></div></li><li class=nav-item><a class=nav-link href=/blog>Blog</a></li></ul></div></nav><main id=main class=container><div class=row><div class="col-lg-10 col-lg-offset-1 col-xs-12" style='margin:0 auto'><article class=post><header class=entry-header><h1 class=section-title>Chapters</h1></header><div class="container row justify-content-center section topspace"><div id=chartdiv></div><script src=https://cdn.amcharts.com/lib/4/core.js></script><script src=https://cdn.amcharts.com/lib/4/maps.js></script><script src=https://cdn.amcharts.com/lib/4/geodata/worldLow.js></script><script src=https://cdn.amcharts.com/lib/4/themes/animated.js></script><script>am4core.ready(function(){am4core.useTheme(am4themes_animated);var e,n,s,o,i,a,t=am4core.create("chartdiv",am4maps.MapChart);t.geodata=am4geodata_worldLow,t.projection=new am4maps.projections.Miller,n=t.series.push(new am4maps.MapPolygonSeries),n.exclude=["AQ"],n.useGeodata=!0,s=n.mapPolygons.template,s.tooltipText="{name}",s.polygon.fillOpacity=.6,i=s.states.create("hover"),i.properties.fill=am4core.color("#88398a"),e=t.series.push(new am4maps.MapImageSeries),e.mapImages.template.propertyFields.longitude="longitude",e.mapImages.template.propertyFields.latitude="latitude",e.mapImages.template.tooltipHTML="<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}<br>{socials}",e.mapImages.template.propertyFields.url="url",e.tooltip.background.fillOpacity=.7,e.tooltip.background.fill=am4core.color("#fff"),e.tooltip.label.interactionsEnabled=!0,e.tooltip.keepTargetHover=!0,o=e.mapImages.template.createChild(am4core.Circle),o.radius=4,o.propertyFields.fill="color",o.nonScaling="true",a=new am4core.ColorSet,e.data=[{name:"R Ladies Tirane",members:"194",socials:`
+<span class=navbar-toggler-icon><i class="fas fa-bars hamburger mt-2"></i></span></button><div class="collapse navbar-collapse navbar-inner" id=collapsibleNavbar><ul class=navbar-nav><li class=nav-item><a class=nav-link href=/>Home</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle=dropdown>About <span class=caret></span></a><div class=dropdown-menu><a class=dropdown-item href=/about-us/mission/>Mission </a><a class=dropdown-item href=/about-us/involved/>Get involved </a><a class=dropdown-item href=/about-us/global-team/>Global Team </a><a class=dropdown-item href=/about-us/history/>History </a><a class=dropdown-item href=/news/>News </a><a class=dropdown-item href=/coc/>Code of Conduct</a></div></li><li class=nav-item><a class=nav-link href=/directory/>Directory</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle=dropdown>Activities <span class=caret></span></a><div class=dropdown-menu><a class=dropdown-item href=/activities/events/>Events </a><a class=dropdown-item href=/chapters/>Chapters </a><a class=dropdown-item href=/activities/mentoring/>Mentoring Program </a><a class=dropdown-item href=/activities/gt-coordinated/>Coordinated by the Global Team </a><a class=dropdown-item href=/activities/rladies-blogs>Blogs by R-Ladies </a><a class=dropdown-item href=/press>In the press</a></div></li><li class=nav-item><a class=nav-link href=/blog>Blog</a></li></ul></div></nav><main id=main class=container><div class=row><div class="col-lg-10 col-lg-offset-1 col-xs-12" style='margin:0 auto'><article class=post><header class=entry-header><h1 class=section-title>Chapters</h1></header><div class="container row justify-content-center section topspace"><div id=chartdiv></div><script src=https://cdn.amcharts.com/lib/4/core.js></script><script src=https://cdn.amcharts.com/lib/4/maps.js></script><script src=https://cdn.amcharts.com/lib/4/geodata/worldLow.js></script><script src=https://cdn.amcharts.com/lib/4/themes/animated.js></script><script>am4core.ready(function(){am4core.useTheme(am4themes_animated);var e,n,s,o,i,a,t=am4core.create("chartdiv",am4maps.MapChart);t.geodata=am4geodata_worldLow,t.projection=new am4maps.projections.Miller,n=t.series.push(new am4maps.MapPolygonSeries),n.exclude=["AQ"],n.useGeodata=!0,s=n.mapPolygons.template,s.tooltipText="{name}",s.polygon.fillOpacity=.6,i=s.states.create("hover"),i.properties.fill=am4core.color("#88398a"),e=t.series.push(new am4maps.MapImageSeries),e.mapImages.template.propertyFields.longitude="longitude",e.mapImages.template.propertyFields.latitude="latitude",e.mapImages.template.tooltipHTML="<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}<br>{socials}",e.mapImages.template.propertyFields.url="url",e.tooltip.background.fillOpacity=.7,e.tooltip.background.fill=am4core.color("#fff"),e.tooltip.label.interactionsEnabled=!0,e.tooltip.keepTargetHover=!0,o=e.mapImages.template.createChild(am4core.Circle),o.radius=4,o.propertyFields.fill="color",o.nonScaling="true",a=new am4core.ColorSet,e.data=[{name:"R Ladies Tirane",members:"196",socials:`
 
 
 
@@ -378,7 +378,7 @@
 
 
 
-`,latitude:50.83,longitude:4.33,color:"#88398acc"},{name:"R-Ladies Cochabamba",members:"58",socials:`
+`,latitude:50.83,longitude:4.33,color:"#88398acc"},{name:"R-Ladies Cochabamba",members:"60",socials:`
 
 
 
@@ -504,7 +504,7 @@
 
 
 
-`,latitude:-20.31,longitude:-40.31,color:"#88398acc"},{name:"R-Ladies Goiânia",members:"633",socials:`
+`,latitude:-20.31,longitude:-40.31,color:"#88398acc"},{name:"R-Ladies Goiânia",members:"634",socials:`
 
 
 
@@ -954,7 +954,7 @@
 
 
 
-`,latitude:-38.73,longitude:-72.58,color:"#88398acc"},{name:"R-Ladies Valparaíso",members:"623",socials:`
+`,latitude:-38.73,longitude:-72.58,color:"#88398acc"},{name:"R-Ladies Valparaíso",members:"624",socials:`
 
 
 
@@ -1314,7 +1314,7 @@
 
 
 
-`,latitude:43.61,longitude:3.87,color:"#88398acc"},{name:"R-Ladies Paris",members:"1201",socials:`
+`,latitude:43.61,longitude:3.87,color:"#88398acc"},{name:"R-Ladies Paris",members:"1202",socials:`
 
 
 
@@ -1692,7 +1692,7 @@
 
 
 
-`,latitude:-6.58,longitude:106.79,color:"#88398acc"},{name:"R-Ladies Jakarta",members:"611",socials:`
+`,latitude:-6.58,longitude:106.79,color:"#88398acc"},{name:"R-Ladies Jakarta",members:"612",socials:`
 
 
 
@@ -1854,7 +1854,7 @@
 
 
 
-`,latitude:27.49,longitude:-109.94,color:"#88398acc"},{name:"R-Ladies Cuernavaca",members:"1557",socials:`
+`,latitude:27.49,longitude:-109.94,color:"#88398acc"},{name:"R-Ladies Cuernavaca",members:"1558",socials:`
 
 
 
@@ -1962,7 +1962,7 @@
 
 
 
-`,latitude:19.72,longitude:-101.18,color:"#88398acc"},{name:"R-Ladies Pachuca",members:"42",socials:`
+`,latitude:19.72,longitude:-101.18,color:"#88398acc"},{name:"R-Ladies Pachuca",members:"43",socials:`
 
 
 
@@ -2322,7 +2322,7 @@
 
 
 
-`,latitude:-41.28,longitude:174.78,color:"#88398acc"},{name:"R-Ladies Abuja",members:"2225",socials:`
+`,latitude:-41.28,longitude:174.78,color:"#88398acc"},{name:"R-Ladies Abuja",members:"2226",socials:`
 
 
 
@@ -2376,7 +2376,7 @@
 
 
 
-`,latitude:60.38,longitude:5.34,color:"#88398acc"},{name:"R-Ladies Oslo",members:"579",socials:`
+`,latitude:60.38,longitude:5.34,color:"#88398acc"},{name:"R-Ladies Oslo",members:"578",socials:`
 
 
 
@@ -2754,7 +2754,7 @@
 
 
 
-`,latitude:6.93,longitude:79.85,color:"#88398acc"},{name:"R-Ladies Al-Khartum",members:"116",socials:`
+`,latitude:6.93,longitude:79.85,color:"#88398acc"},{name:"R-Ladies Al-Khartum",members:"117",socials:`
 
 
 
@@ -3294,7 +3294,7 @@
 
 
 
-`,latitude:32.75,longitude:-117.17,color:"#88398acc"},{name:"R-Ladies San Francisco",members:"1724",socials:`
+`,latitude:32.75,longitude:-117.17,color:"#88398acc"},{name:"R-Ladies San Francisco",members:"1723",socials:`
 
 
 
@@ -3996,7 +3996,7 @@
 
 
 
-`,latitude:30.22,longitude:-97.75,color:"#88398acc"},{name:"R-Ladies Dallas",members:"757",socials:`
+`,latitude:30.22,longitude:-97.75,color:"#88398acc"},{name:"R-Ladies Dallas",members:"756",socials:`
 
 
 
@@ -4140,7 +4140,7 @@
 
 
 
-`,latitude:21.03,longitude:105.84,color:"#88398acc"},{name:"R-Ladies Remote",members:"689",socials:`
+`,latitude:21.03,longitude:105.84,color:"#88398acc"},{name:"R-Ladies Remote",members:"691",socials:`
 
 
 
