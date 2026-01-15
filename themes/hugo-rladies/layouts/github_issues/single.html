@@ -1,0 +1,26 @@
+{{ define "main" }}
+    <div class="entry-content">
+    {{ .Content }}
+    </div>
+
+    <div id="github-issues" class="my-5">
+        <h3>GitHub issues with "help wanted"</h3>
+        <div id="loading" class="text-center my-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading issues...</span>
+            </div>
+        </div>
+
+        <div id="error" class="alert alert-danger d-none" role="alert"></div>
+
+        <div id="issues-container" class="d-none">
+        <p class="text-muted mb-4">Found <span id="issue-count">0</span> open issues</p>
+        <div id="issues-list" class="row g-4"></div>
+        </div>
+    </div>
+{{ end }}
+
+{{ define "footer" }}
+    {{ $js := resources.Get "js/gh_helpwanted.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}

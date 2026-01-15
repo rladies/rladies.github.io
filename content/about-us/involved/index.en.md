@@ -1,5 +1,6 @@
 ---
 title: "Get Involved with R-Ladies: Individuals and Organizations"
+type: "github_issues"
 ---
 
 <center>
@@ -35,7 +36,9 @@ Here are ways you can contribute your skills and time as an individual:
 - **Become a Chapter Organizer:** Volunteer with your local chapter to help organize events and activities, or consider starting your own chapter (for more information, read our [Organizer Guide](https://guide.rladies.org/organization/) and reach out via [chapters@rladies.org](mailto:chapters@rladies.org)).
 -**Curate for WeAreRLadies:** Generate awareness of R-Ladies' expertise and applications of R by curating for [@weare.rladies.org](https://bsky.app/profile/weare.rladies.org) on Bluesky (see the [Rocur Guide](https://guide.rladies.org/rocur/about/) for more information).
 - **Join the Global Team:** Help shape the direction of the R-Ladies organization by joining the [global team](https://rladies.org/about-us/global-team/) and contribute to creating a diverse and inclusive space.
-- **Contribute to Our Open Source Projects:** Help improve our online presence and resources by creating issues or submitting pull requests (PRs) on [GitHub](https://github.com/rladies) for our [website](https://github.com/rladies/rladies.github.io) and [guide](https://github.com/rladies/rladiesguide) when you identify areas for improvement.
+- **Contribute to Our Open Source Projects:** Help improve our online presence and resources by creating issues or submitting pull requests (PRs) on [GitHub](https://github.com/rladies) for our [website](https://github.com/rladies/rladies.github.io) and [guide](https://github.com/rladies/rladiesguide) when you identify areas for improvement. 
+Take a look at open issues tagged with [help wanted](#github-issues).
+
 - **Support Our Infrastructure:** Help us maintain our behind-the-scenes operations by making a personal donation via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E). Every contribution is greatly appreciated!
 
 ## For Organizations and Companies
