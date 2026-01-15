@@ -44,33 +44,35 @@
         <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="img-fluid rounded-start w-100 h-auto">
       </div>
       {{ end }}
-      <div class="col mt-4">
-        <dl class="row mb-0">
-            {{ with $status }}
-                <dt class="col-sm-4">Status</dt>
-                <dd class="col-sm-8">
-                <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
-                </dd>
-            {{ end }}
+      <div class="col my-4">
+        <dl class="row m-2">
+          {{ with $status }}
+              <dd class="col-sm-8">
+              <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
+              </dd>
+          {{ end }}
 
-            <dt class="col-sm-4">Location</dt>
-            <dd class="col-sm-8">
-            {{ with .Params.city }}{{ . | humanize }}, {{ end }}
-            {{ with .Params.state_region }}
-                {{ . | humanize }}, 
-            {{ end }}
-            {{ with .Params.country }}
-                {{ . | humanize }}
-            {{ end }}
-            </dd>
+          <dd class="col-sm-8">
+          {{ with .Params.city }}{{ . | humanize }}, {{ end }}
+          {{ with .Params.state_region }}
+              {{ . | humanize }}, 
+          {{ end }}
+          {{ with .Params.country }}
+              {{ . | humanize }}
+          {{ end }}
+          </dd>
 
-            {{ with .Params.social_media }}
-                <dt class="col-sm-4">Connect with this chapter</dt>
-                <dd class="col-sm-8">
-                    {{ partial "social_media.html" (dict "data" . "relme" true) }}
-                </dd>
-            {{ end }}
+          {{ with .Params.social_media }}
+              <dd class="col-sm-8">
+                  {{ partial "social_media.html" (dict "data" . "relme" true) }}
+              </dd>
+          {{ end }}
 
+          <dd class="col-sm-8">
+            <a href="https://www.meetup.com/{{ .Params.urlname }}" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+              Join chapter <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </dd>
         </dl>
       </div>
     </div>
