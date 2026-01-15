@@ -1,0 +1,203 @@
+{{ define "main" }}
+<div class="entry-content">{{ .Content }}</div>
+
+{{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
+{{ $updated := "" }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $updated = .Value | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get remote resource %q" $url }}
+{{ end }}
+<div class="row mb-5">
+  <div class="col-md-6 col-lg-4 mx-auto">
+    <div class="card border-0 shadow-sm text-center">
+      <div class="card-body py-4">
+        <h2 class="h5 text-muted mb-2">Successfully run events</h2>
+        <p class="display-4 fw-bold text-primary mb-0">{{ $updated.n_events_past }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row my-4 w-100 align-items-center justify-content-between">
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
+      <div class="row align-items-center">
+        <div class="col-md-3">
+          <label for="time-zone-selector" class="form-label mb-md-0">View events in:</label>
+        </div>
+        <div class="col-md-9">
+          <select id="time-zone-selector" class="form-select" aria-label="Timezone">
+            <option value="utc">Universal Time Coordinated (UTC)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-end">
+    <span id="loading">Loading events...</span>
+  </div>
+</div>
+<div class="row">
+  <div id="calendar" class="col-12">
+  </div>
+</div>
+<small class="text-muted"></small>
+
+<!-- Subscribe to Events -->
+<div class="row my-4">
+  <div class="col-12 text-center">
+    <div class="btn-group" role="group" aria-label="Subscribe to events">
+      <a href="{{ .RelPermalink }}/index.xml" class="btn btn-outline-primary">
+        <i class="fas fa-rss me-2"></i>RSS Feed
+      </a>
+      <a href="{{ .RelPermalink }}/calendar.ics" class="btn btn-outline-primary">
+        <i class="fas fa-calendar-alt me-2"></i>iCal Feed
+      </a>
+    </div>
+    <p class="small text-muted mt-2">Subscribe to stay updated on upcoming R-Ladies events</p>
+  </div>
+</div>
+{{ end }}
+
+{{ define "footer" }}
+  {{ $js := resources.Get "js/vendor/fullcalendar.bundle.min.js"
+      | minify
+      | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var timeZoneSelectorEl = document.getElementById("time-zone-selector");
+    var loadingEl = document.getElementById("loading");
+    var calendarEl = document.getElementById("calendar");
+    var events = {{ $.Scratch.Get "events" }};
+    var timezone_list = Intl.supportedValuesOf('timeZone');
+
+    // Add local timezone option first
+    var localTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var localOption = document.createElement("option");
+    localOption.id = "local";
+    localOption.value = localTz;
+    localOption.innerText = `Local Time Zone (${localTz})`;
+    timeZoneSelectorEl.appendChild(localOption);
+
+    // Add all other timezones
+    timezone_list.forEach(function (timeZone) {
+      var optionEl;
+
+      if (timeZone !== 'UTC') { // UTC is already in the list
+        optionEl = document.createElement('option');
+        optionEl.value = timeZone;
+        optionEl.innerText = timeZone;
+        timeZoneSelectorEl.appendChild(optionEl);
+      }
+    });
+    // Set local timezone as selected
+    document.getElementById("local").selected = true;
+
+    function getRladiesEvents(data) {
+      let updatedTime = [];
+      $.each(data, function (index, ev) {
+        // Keep events in UTC format
+        ev.start = ev.datetime_utc;
+        ev.end = moment.utc(ev.datetime_utc).add(ev.duration, 'seconds').format();
+        updatedTime[index] = ev;
+      });
+      return updatedTime;
+    }
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [
+        FullCalendar.plugins.dayGrid,
+        FullCalendar.plugins.timeGrid,
+        FullCalendar.plugins.list,
+        FullCalendar.plugins.interaction,
+        FullCalendar.plugins.momentTimezone
+      ],
+      themeSystem: 'bootstrap5',
+      headerToolbar: {
+        left: "prev,next",
+        center: "title",
+        right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+      },
+      initialDate: moment().format("YYYY-MM-DD"),
+      titleFormat: {
+        // will produce something like "Tuesday, September 18, 2018"
+        month: "long",
+        year: "numeric",
+        day: "numeric",
+      },
+      initialView: "listWeek",
+      height: "auto",
+      dayMaxEvents: true, // allow "more" link when too many events
+
+      eventDidMount: function (info) {
+        var ev = info.event.extendedProps;
+        
+        var tooltipContent = '<div style="max-width: 300px; font-size: 0.875rem;">' +
+          '<strong>' + info.event.title + '</strong><br>' +
+          '<small>' + moment(info.event.start).format('MMMM D, YYYY [at] HH:mm') + '</small>' +
+          (ev.venue_name ? '<br>' + ev.venue_name : '') +
+          (ev.going ? '<br><i class="fa fa-users"></i> ' + ev.going + ' attending' : '') +
+          '<div style="display: flex; gap: 0.5rem; margin-top: 0.75rem; justify-content: center;">' +
+          (ev.link ? '<a href="' + ev.link + '" target="_blank" class="btn btn-sm btn-primary">Event Page</a>' : '') +
+          '<button type="button" class="btn btn-sm btn-secondary tooltip-close-btn">Close</button>' +
+          '</div></div>';
+        // Create a Bootstrap Tooltip (click-trigger) and handle the Close button.
+        // Wrap in try/catch to avoid uncaught errors stopping other scripts (nav toggles).
+        try {
+          var tooltip = new Tooltip(info.el, {
+            title: tooltipContent,
+            placement: 'bottom',
+            trigger: 'click',
+            container: 'body',
+            html: true,
+            sanitize: false
+          });
+
+          info.el.addEventListener('shown.bs.tooltip', function() {
+            var closeBtn = document.querySelector('.tooltip-close-btn');
+            if (closeBtn) {
+              closeBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                try { tooltip.hide(); } catch (err) { /* ignore */ }
+              });
+            }
+          });
+        } catch (err) {
+          console.warn('Tooltip creation failed:', err);
+        }
+      },
+
+      events: getRladiesEvents(events),
+      timeZone: localTz, // Start with local timezone
+
+      loading: function (bool) {
+        if (bool) {
+          loadingEl.style.display = "inline";
+          loadingEl.textContent = "Loading events...";
+        } else {
+          loadingEl.style.display = "none";
+        }
+      },
+
+      eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false }
+    });
+
+    calendar.render();
+
+    // On timezone change
+    timeZoneSelectorEl.addEventListener("change", function () {
+      var newTimeZone = this.value;
+      calendar.setOption('timeZone', newTimeZone);
+    });
+
+  });
+</script>
+{{ end }}

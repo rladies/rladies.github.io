@@ -1,0 +1,145 @@
+// R-Ladies brand colors
+$primary-dark: darken($primary, 10%);
+$primary-darker: darken($primary, 20%);
+
+// Override FullCalendar CSS variables
+.fc {
+    --fc-event-bg-color: #{$primary};
+    --fc-event-border-color: #{$primary};
+    --fc-button-bg-color: #{$primary};
+    --fc-button-border-color: #{$primary};
+    --fc-button-hover-bg-color: #{$primary-dark};
+    --fc-button-hover-border-color: #{$primary-dark};
+    --fc-button-active-bg-color: #{$primary-darker};
+    --fc-button-active-border-color: #{$primary-darker};
+    --fc-border-color: #e0e0e0;
+
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: none;
+}
+
+// Modern button styling - less boxy
+.fc .fc-button-primary {
+    background-color: $primary;
+    border-color: $primary;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba($primary, 0.2);
+
+    &:hover {
+        background-color: $primary-dark;
+        border-color: $primary-dark;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba($primary, 0.3);
+    }
+
+    &:not(:disabled):active,
+    &:not(:disabled).fc-button-active {
+        background-color: $primary-darker;
+        border-color: $primary-darker;
+        transform: translateY(0);
+        box-shadow: 0 1px 2px rgba($primary, 0.3);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 0.2rem rgba($primary, 0.25);
+    }
+}
+
+// Toolbar styling
+.fc .fc-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: linear-gradient(to bottom, #fafafa, #ffffff);
+    border-bottom: 1px solid #e0e0e0;
+
+    .fc-toolbar-chunk {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex: 0 1 auto;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1.5rem !important;
+        font-weight: 400;
+        color: #333;
+    }
+}
+
+// Event styling
+.fc-event {
+    border-radius: 0.25rem;
+    border: none;
+    padding: 2px 4px;
+}
+
+.fc-daygrid-event-dot {
+    border-color: $primary !important;
+    background-color: $primary;
+}
+
+.fc-event-time,
+.fc-event-title {
+    font-size: 0.875rem;
+    padding: 0 2px;
+}
+
+// Today highlight
+.fc-day-today {
+    background: lighten($primary, 55%) !important;
+}
+
+// Loading indicator
+#loading {
+    color: $primary;
+    font-style: italic;
+    font-size: 0.875rem;
+}
+
+// Tooltip styling
+.tooltip {
+    opacity: 1;
+}
+
+.tooltip-inner {
+    max-width: 320px;
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
+    padding: 1rem;
+}
+
+.tooltip-arrow::before {
+    border-bottom-color: #fff !important;
+    border-top-color: #fff !important;
+}
+
+// Responsive header - stack on mobile
+@media (max-width: 767px) {
+    .fc .fc-toolbar {
+        justify-content: center;
+
+        .fc-toolbar-chunk {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            flex: 1 1 100%;
+        }
+
+        .fc-toolbar-title {
+            font-size: 1.25rem !important;
+        }
+    }
+}

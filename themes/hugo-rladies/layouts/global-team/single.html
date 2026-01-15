@@ -1,155 +1,133 @@
-
-
 {{ define "main" }}
+{{ $global_team := $.Site.Data.global_team }}
+{{ $gt_current := $global_team.current }}
+{{ $gt_alumni := $global_team.alumni }}
 
 <div class="entry-content">
-	{{ .Content }}
+  {{ .Content }}
 </div>
 
-  {{ $gt := $.Site.Data.global_team }}
-    <!-- create maps of names for gt_roles, because we cannot 'where' over maps of maps -->
-  {{ $.Scratch.Set "gt_roles" (slice) }}
-  {{ range $gt.current }}  
-    {{ $.Scratch.Add "gt_roles" .role }}
-  {{ end }}
-  {{ $.Scratch.Set "gt_roles" ($.Scratch.Get "gt_roles" | uniq | sort) }}
-  
-  {{ $.Scratch.Set "leadership" (slice) }}
+{{ $path := $.Site.GetPage "section" "global-team" }}
 
-  <!-- Create maps of members in various roles -->
-  {{ range  $r_index, $r_name := ($.Scratch.Get "gt_roles" ) }}
-    {{ $.Scratch.Set $r_name (slice) }}
-    {{ range $idx, $value :=  $gt.current }}
-      {{ $sect := intersect $value.role (slice $r_name) }}
-      {{ if eq (len $sect) 1 }}
-        {{ $.Scratch.Add $r_name .name }}
-        {{ if eq $r_name "Leadership" }}
-          {{ $.Scratch.Add "leadership" $idx }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }} 
-  
-  <!-- to enable shuffle of the grid -->
-  {{ $.Scratch.Set "gtc" (slice) }}
-  {{ range $name, $_ := $gt.current }}
-      {{ $.Scratch.Add "gtc" $name }}
-  {{ end }} 
-  
-  {{ $path := $.Site.GetPage "section" "global-team" }}
+<!-- Build shuffleable slices -->
+{{ $current_keys := slice }}
+{{ range $key, $_ := $gt_current }}
+  {{ $current_keys = $current_keys | append $key }}
+{{ end }}
 
-  <p>{{ .Content }}</p>
-  
-  <div class="container expand-grid" id="leadership-team">
+{{ $alumni_keys := slice }}
+{{ range $key, $_ := $gt_alumni }}
+  {{ $alumni_keys = $alumni_keys | append $key }}
+{{ end }}
+
+<!-- Leadership Team -->
+<div class="breakout">
+  <div class="container-wide expand-grid" id="leadership-team">
     <h1 class="section-title">{{ i18n "leadership" }}</h1>
-    <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team">
-
-      {{ range $name := $.Scratch.Get "leadership" | shuffle }}
-        {{ $d := index $gt.current $name }}
-        {{ $img := ( printf "about-us/global-team/img/%s" $d.img.url ) }}
-        {{ $.Scratch.Set "img" "" }}
-        {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
-          {{ $image := . }}
-          {{ $image := $image.Fill "200x200" }}
-          {{ $.Scratch.Set "img" $image.RelPermalink }}
-        {{ end }}
-        {{ $image := $.Scratch.Get "img" }}
-        
-        {{ $data := newScratch }}
-        {{ $data.Set "foot" "" }}
-        {{ with $d.img.credit }}
-            {{ $data.Set "foot" "<p class=\"card-text text-muted\"><small>" }}
-            {{ $data.Add "foot" (printf "Photo credit: %s" . ) }}
-            {{ $data.Add "foot" "</small></p>" }}
-        {{ end }}
-
-        {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" ($data.Get "foot")) }}
-      {{ end }}
-      </ul>
-  </div>
-
-  <h1 class="section-title">{{ i18n "global-team" }}</h1>
-  <div class="my-5">
-    <table class="table table-sm ">
-      <thead>
-        <tr>
-          <th class="text-right b-rladies-r"> role </th>
-          <th class="text-left"> name </th>
-        </tr>
-      </thead>
-      <tbody>
-
-        {{ range ($.Scratch.Get "gt_roles" ) | shuffle }}
-          <tr class="mt-4">
-            <td class="text-right b-rladies-r" rowspan="{{ ($.Scratch.Get .) | len }}"> 
-              {{ . }} 
-            </td>
-            {{ $cur_role_names := ($.Scratch.Get .) }}
-            {{ range $cur_role_names | shuffle }}
-              <td class="text-left" style="vertical-align: top !important;"> 
-                {{ . }} 
-              </td> 
-           </tr>
-           {{ end }}
-        {{ end }}
-      </tbody>
-    </table>
-    
-    <div class="container expand-grid" id="global-team">
-       <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team">
-          {{ range $name := $.Scratch.Get "gtc" | shuffle }}
-            {{ $d := index $gt.current $name }}
-            {{ $descr := delimit $d.role ", " }}
-            {{ $img := ( printf "about-us/global-team/img/%s" $d.img.url ) }}
-            {{ $.Scratch.Set "img" "" }}
-            {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
-              {{ $image := . }}
-              {{ $image := $image.Fill "200x200" }}
-              {{ $.Scratch.Set "img" $image.RelPermalink }}
-            {{ end }}
-            {{ $image := $.Scratch.Get "img" }}
-            
-            {{ $data := newScratch }}
-            {{ $data.Set "foot" "" }}
-            {{ with $d.img.credit }}
-                {{ $data.Set "foot" "<p class=\"card-text text-muted\"><small>" }}
-                {{ $data.Add "foot" (printf "Photo credit: %s" . ) }}
-                {{ $data.Add "foot" "</small></p>" }}
-            {{ end }}
-
-            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" $descr "size" "small" "descr" ($data.Get "foot")) }}
+    <ul class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 list-unstyled">
+      {{ range $current_keys | shuffle }}
+        {{ $d := index $gt_current . }}
+        {{ if in $d.role "Leadership" }}
+          {{ $image := "" }}
+          {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
+            {{ $image = (.Fill "200x200").RelPermalink }}
           {{ end }}
+          
+          {{ $foot := "" }}
+          {{ with $d.img.credit }}
+            {{ $foot = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
+          {{ end }}
+
+          {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" $foot) }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
+<!-- Roles Table -->
+<h1 class="section-title">{{ i18n "global-team" }}</h1>
+<div class="my-5">
+  <table class="table table-sm w-auto mx-auto">
+    <thead>
+      <tr>
+        <th class="text-end border-primary border-end">role</th>
+        <th class="text-start">name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ $roles := slice }}
+      {{ range $gt_current }}
+        {{ range .role }}
+          {{ $roles = $roles | append . }}
+        {{ end }}
+      {{ end }}
+      {{ $roles = $roles | uniq | sort }}
+      
+      {{ range $roles | shuffle }}
+        {{ $role := . }}
+        {{ $members := slice }}
+        {{ range $gt_current }}
+          {{ if in .role $role }}
+            {{ $members = $members | append .name }}
+          {{ end }}
+        {{ end }}
+        
+        <tr>
+          <td class="text-end border-primary border-end align-top" rowspan="{{ len $members }}">{{ $role }}</td>
+          {{ range $idx, $name := $members | shuffle }}
+            {{ if gt $idx 0 }}<tr>{{ end }}
+            <td class="text-start align-top">{{ $name }}</td>
+          </tr>
+          {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+
+  <!-- Current Team Cards -->
+  <div class="breakout">
+    <div class="container-wide expand-grid">
+      <ul class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 list-unstyled">
+        {{ range $current_keys | shuffle }}
+          {{ $d := index $gt_current . }}
+          {{ $image := "" }}
+          {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
+            {{ $image = (.Fill "200x200").RelPermalink }}
+          {{ end }}
+          
+          {{ $credit := "" }}
+          {{ with $d.img.credit }}
+            {{ $credit = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
+          {{ end }}
+
+          {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" (delimit $d.role ", ") "size" "small" "descr" $credit) }}
+        {{ end }}
       </ul>
     </div>
   </div>
-  <hr>
-  <div class="my-5">
-    <h1 class="section-title">{{ i18n "alumni" }}</h1>
-    <p>{{ i18n "alumni-text" }}</p>
-    <div class="container expand-grid">
-        <ul class="justify-content-center row row-xl-2 row-lg-3 row-md-4 row-sm-6 row-9 full-width" id="global-team-alumni">
-        <!-- shuffle the grid -->
-        {{ $.Scratch.Set "gta" (slice) }}
-        {{ range $name, $_ := $gt.alumni }}
-            {{ $.Scratch.Add "gta" $name }}
-        {{ end }} 
-        
-        {{ range $name := $.Scratch.Get "gta" | shuffle }}
-            {{ $d := index $gt.alumni $name }}
-            {{ $descr := delimit $d.role ", " }}
-            {{ $.Scratch.Set "img" "" }}
-            {{ with $path.Resources.GetMatch ( printf "img/%s*" $name ) }}
-              {{ $image := . }}
-              {{ $image := $image.Fill "200x200" }}
-              {{ $.Scratch.Set "img" $image.RelPermalink }}
-            {{ end }}
-            {{ $image := $.Scratch.Get "img" }}
-            
-            {{ $foot := (printf "%s &#8212 %s" $d.start $d.end)}}
-            {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $foot "size" "small" "foot" $descr) }}
-        {{ end }}
+</div>
 
-      </div>
+<hr>
+
+<!-- Alumni -->
+<div class="my-5">
+  <h1 class="section-title">{{ i18n "alumni" }}</h1>
+  <p>{{ i18n "alumni-text" }}</p>
+  <div class="breakout">
+    <div class="container-wide expand-grid alumni-grid">
+      <ul class="justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 list-unstyled">
+        {{ range $alumni_keys | shuffle }}
+          {{ $d := index $gt_alumni . }}
+          {{ $image := "" }}
+          {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
+            {{ $image = (.Fill "200x200").RelPermalink }}
+          {{ end }}
+          
+          {{ $dates := printf "%s &#8212 %s" $d.start $d.end }}
+          {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $dates "size" "small" "foot" (delimit $d.role ", ")) }}
+        {{ end }}
+      </ul>
     </div>
   </div>
+</div>
 {{ end }}

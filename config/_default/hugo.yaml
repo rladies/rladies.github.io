@@ -15,8 +15,8 @@ minify:
 buildFuture: true
 buildDrafts: true
 
-ignoreLogs: 
-  - 'warning-goldmark-raw-html'
+ignoreLogs:
+  - "warning-goldmark-raw-html"
 
 ignoreFiles:
   - "\\.Rmd$"
@@ -29,7 +29,20 @@ ignoreFiles:
   - "README"
   - "README_img/"
 
+# Add this to config/_default/config.yaml
+
+outputFormats:
+  Calendar:
+    mediaType: text/calendar
+    baseName: calendar
+    isPlainText: true
+    protocol: webcal://
+
 outputs:
-  home = ["HTML", "RSS", "JSON"]
-
-
+  home:
+    - HTML
+  section:
+    - HTML
+  page:
+    - HTML
+    - RSS

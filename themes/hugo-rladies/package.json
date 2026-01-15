@@ -1,0 +1,45 @@
+{
+    "name": "hugo-rladies-theme-js",
+    "private": true,
+    "version": "0.1.0",
+    "config": {
+        "fonts": "inconsolata open-sans"
+    },
+    "scripts": {
+        "clean": "rm -rf assets/js/vendor assets/scss/vendor static/webfonts",
+        "setup": "mkdir -p assets/js/vendor assets/scss/vendor static/webfonts",
+        "build": "npm run clean && npm run setup && npm run build:fullcalendar && npm run build:amcharts && npm run sync:bootstrap && npm run sync:fontawesome && npm run sync:jquery && npm run sync:choices && npm run sync:shuffle && npm run sync:fonts",
+        "build:fullcalendar": "npx esbuild assets/js/_fullcalendar.entry.js --bundle --minify --sourcemap --outfile=assets/js/vendor/fullcalendar.bundle.min.js",
+        "build:amcharts": "npx esbuild assets/js/_amcharts.entry.js --bundle --minify --sourcemap --outfile=assets/js/vendor/amcharts.bundle.min.js",
+        "sync:bootstrap": "cp node_modules/bootstrap/dist/js/bootstrap.bundle.min.js* assets/js/vendor/ 2>/dev/null || true && cp -r node_modules/bootstrap/scss assets/scss/vendor/bootstrap",
+        "sync:fontawesome": "rm -rf static/webfonts/fontawesome && mkdir -p static/webfonts/fontawesome && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/webfonts/fontawesome/ && cp -r node_modules/@fortawesome/fontawesome-free/scss assets/scss/vendor/fontawesome",
+        "sync:choices": "cp node_modules/choices.js/public/assets/scripts/choices.min.js* assets/js/vendor/ 2>/dev/null || true && cp -r node_modules/choices.js/public/assets/styles/choices.min.css assets/scss/vendor/",
+        "sync:jquery": "cp node_modules/jquery/dist/jquery.min.js* assets/js/vendor/ 2>/dev/null || true",
+        "sync:shuffle": "cp node_modules/shufflejs/dist/shuffle.min.js* assets/js/vendor/ 2>/dev/null || true",
+        "sync:fonts": "statdir=static/webfonts/google-fonts/ && mkdir -p $statdir && for font in $npm_package_config_fonts; do mkdir -p $statdir/$font && cp node_modules/@fontsource-variable/$font/files/$font-latin-*-normal.woff2 $statdir/$font/ 2>/dev/null || true ; done",
+        "update": "npm update && npm run build",
+        "postinstall": "npm run build"
+    },
+    "devDependencies": {
+        "esbuild": "^0.27.2"
+    },
+    "dependencies": {
+        "@amcharts/amcharts5": "^5.15.1",
+        "@amcharts/amcharts5-geodata": "^5.1.5",
+        "@fontsource-variable/inconsolata": "^5.1.1",
+        "@fontsource-variable/open-sans": "^5.1.0",
+        "@fortawesome/fontawesome-free": "^6.7.2",
+        "@fullcalendar/core": "^6.1.8",
+        "@fullcalendar/daygrid": "^6.1.8",
+        "@fullcalendar/interaction": "^6.1.8",
+        "@fullcalendar/list": "^6.1.8",
+        "@fullcalendar/moment-timezone": "^6.1.20",
+        "@fullcalendar/timegrid": "^6.1.8",
+        "bootstrap": "^5.3.8",
+        "choices.js": "^11.1.0",
+        "jquery": "^3.7.0",
+        "moment": "^2.29.4",
+        "moment-timezone": "^0.5.43",
+        "shufflejs": "^6.1.2"
+    }
+}

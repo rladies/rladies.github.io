@@ -1,0 +1,31 @@
+{{ define "fastsearch" }} <!-- empty to remove --> {{ end }}
+
+{{ define "title" }} <!-- empty to remove --> {{ end }}
+
+{{ define "translation"}} <!-- empty to remove --> {{ end }}
+
+{{ define "head" }}
+  {{ $js := slice
+      (resources.Get "js/vendor/amcharts.bundle.min.js")
+      | resources.Concat "amcharts-rladies.js"
+      | minify
+      | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ end }}
+
+
+{{ define "main"}}
+
+  {{ partial "home/counters.html" . }}
+
+  {{ partial "home/directory.html" . }}
+  
+  {{ partial "home/chapters.html" . }}
+
+  {{ partial "home/feed.html" . }}
+  
+  {{ partial "home/sponsors.html" . }}
+  
+{{ end }}
+

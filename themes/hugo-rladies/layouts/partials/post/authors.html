@@ -1,0 +1,15 @@
+<div class="post-authors-list">
+  <i class="far fa-user me-1"></i>
+  {{ range $index, $author := .author }}
+    {{ if $index }}, {{ end }}
+    {{ if reflect.IsMap $author }}
+      {{ if $author.url }}
+        <a href="{{ $author.url }}" target="_blank">{{ $author.name }}</a>
+      {{ else }}
+        {{ $author.name }}
+      {{ end }}
+    {{ else }}
+      {{ $author }}
+    {{ end }}
+  {{ end }}
+</div>

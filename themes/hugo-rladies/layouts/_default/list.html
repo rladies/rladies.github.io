@@ -1,9 +1,56 @@
-
 {{ define "main" }}
-  {{ range .Paginator.Pages }}
-    {{ partial "post/summary.html" .}}
+  
+  {{ .Content }}
+
+  <div class="row">
+    {{ range .Pages }}
+      <div class="col-12 mb-4">
+        <article class="card">
+          <div class="card-body">
+            <h2 class="card-title h4">
+              <a href="{{ .RelPermalink }}" class="text-decoration-none">{{ .Title }}</a>
+            </h2>
+            
+            {{ with .Date }}
+              <p class="text-muted small mb-2">
+                <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
+              </p>
+            {{ end }}
+            
+            {{ with .Summary }}
+              <p class="card-text">{{ .}}</p>
+            {{ end }}
+            
+            <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline-primary">
+              Read more <i class="fas fa-arrow-right ms-1"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    {{ end }}
+  </div>
+
+  {{ if gt .Paginator.TotalPages 1 }}
+    <nav aria-label="Page navigation" class="mt-5">
+      <ul class="pagination justify-content-center">
+        {{ if .Paginator.HasPrev }}
+          <li class="page-item">
+            <a class="page-link" href="{{ .Paginator.Prev.URL }}">&laquo;</a>
+          </li>
+        {{ end }}
+
+        {{ range .Paginator.Pagers }}
+          <li class="page-item {{ if eq . $.Paginator }}active{{ end }}">
+            <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+          </li>
+        {{ end }}
+
+        {{ if .Paginator.HasNext }}
+          <li class="page-item">
+            <a class="page-link" href="{{ .Paginator.Next.URL }}">&raquo;</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
   {{ end }}
-	<ul class="pagination d-flex justify-content-center">
-    {{ template "_internal/pagination.html" . }}
-	</ul>
 {{ end }}
