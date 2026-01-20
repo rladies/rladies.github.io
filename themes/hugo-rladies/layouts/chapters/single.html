@@ -45,35 +45,35 @@
       </div>
       {{ end }}
       <div class="col my-4">
-        <dl class="row m-2">
+        <div class="m-2">
           {{ with $status }}
-              <dd class="col-sm-8">
+              <p class="mb-2">
               <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
-              </dd>
+              </p>
           {{ end }}
 
-          <dd class="col-sm-8">
+          <p class="mb-2">
           {{ with .Params.city }}{{ . | humanize }}, {{ end }}
           {{ with .Params.state_region }}
-              {{ . | humanize }}, 
+              {{ . | humanize }},
           {{ end }}
           {{ with .Params.country }}
               {{ . | humanize }}
           {{ end }}
-          </dd>
+          </p>
 
           {{ with .Params.social_media }}
-              <dd class="col-sm-8">
+              <p class="mb-2">
                   {{ partial "social_media.html" (dict "data" . "relme" true) }}
-              </dd>
+              </p>
           {{ end }}
 
-          <dd class="col-sm-8">
-            <a href="https://www.meetup.com/{{ .Params.urlname }}" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+          <p class="mb-0">
+            <a href="https://www.meetup.com/{{ .Params.urlname }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
               Join chapter <i class="bi bi-box-arrow-up-right"></i>
             </a>
-          </dd>
-        </dl>
+          </p>
+        </div>
       </div>
     </div>
   </div>
