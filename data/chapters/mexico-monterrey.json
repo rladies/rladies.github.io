@@ -1,16 +1,17 @@
-[
-  {
-    "urlname": "rladies-monterrey",
-    "status": "active",
-    "country": "Mexico",
-    "city": "Monterrey",
-    "social_media": {
-      "meetup": "rladies-monterrey",
-      "email": "monterrey@rladies.org"
-    },
-    "organizers": {
-      "current": ["Juana Martinez", "Verenice Amante"],
-      "former": []
-    }
+{
+  "urlname": "rladies-monterrey",
+  "status": "active",
+  "country": "Mexico",
+  "city": "Monterrey",
+  "social_media": {
+    "meetup": "rladies-monterrey",
+    "email": "monterrey@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Juana Martinez",
+      "Verenice Amante"
+    ],
+    "former": []
   }
-]
+}

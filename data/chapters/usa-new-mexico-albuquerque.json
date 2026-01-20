@@ -1,13 +1,13 @@
-[
-  {
-    "status": "prospective",
-    "country": "USA",
-    "state.region": "New Mexico",
-    "city": "Albuquerque",
-    "social_media": {},
-    "organizers": {
-      "current": ["Nicole Thompson"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "USA",
+  "state.region": "New Mexico",
+  "city": "Albuquerque",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Nicole Thompson"
+    ],
+    "former": []
   }
-]
+}

@@ -1,23 +1,40 @@
-[
-  {
-    "urlname": "rladies-buenos-aires",
-    "status": "active",
-    "country": "Argentina",
-    "state.region": "Buenos Aires",
-    "city": "Buenos Aires",
-    "social_media": {
-      "meetup": "rladies-buenos-aires",
-      "twitter": "RLadiesBA",
-      "email": "buenosaires@rladies.org",
-      "facebook": "RladiesBA",
-      "instagram": "rladiesba",
-      "youtube": "UCztAJhENVqsqv0cvyxs4sgg",
-      "github": "rladies/meetup-presentations_buenosaires",
-      "website": "https://rladiesba.netlify.app/"
-    },
-    "organizers": {
-      "current": ["Maria Nanton", "Jesica Formoso", "Virginia Garc<ed>a Alonso", "Betsabé Cohen"],
-      "former": ["Laura Acion", "Paola Corrales", "Florencia D'Andrea", "Monica Alonso", "Priscilla Minotti", "Jimena Saucedo", "Verónica Rojo", "Andrea Gomez Vargas", "Daniela Vázquez","Karina Bartolomé","L. Paloma Rojas-Saunero", "Natsumi Shokida", "Paola Prieto"]
-    }
+{
+  "urlname": "rladies-buenos-aires",
+  "status": "active",
+  "country": "Argentina",
+  "state.region": "Buenos Aires",
+  "city": "Buenos Aires",
+  "social_media": {
+    "meetup": "rladies-buenos-aires",
+    "twitter": "RLadiesBA",
+    "email": "buenosaires@rladies.org",
+    "facebook": "RladiesBA",
+    "instagram": "rladiesba",
+    "youtube": "UCztAJhENVqsqv0cvyxs4sgg",
+    "github": "rladies/meetup-presentations_buenosaires",
+    "website": "https://rladiesba.netlify.app/"
+  },
+  "organizers": {
+    "current": [
+      "Maria Nanton",
+      "Jesica Formoso",
+      "Virginia García Alonso",
+      "Betsabé Cohen"
+    ],
+    "former": [
+      "Laura Acion",
+      "Paola Corrales",
+      "Florencia D'Andrea",
+      "Monica Alonso",
+      "Priscilla Minotti",
+      "Jimena Saucedo",
+      "Verónica Rojo",
+      "Andrea Gomez Vargas",
+      "Daniela Vázquez",
+      "Karina Bartolomé",
+      "L. Paloma Rojas-Saunero",
+      "Natsumi Shokida",
+      "Paola Prieto"
+    ]
   }
-]
+}

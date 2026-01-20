@@ -1,12 +1,12 @@
-[
-  {
-    "status": "prospective",
-    "country": "Vilnius",
-    "city": "Lithuania",
-    "social_media": {},
-    "organizers": {
-      "current": ["Paulius Alaburda"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Vilnius",
+  "city": "Lithuania",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Paulius Alaburda"
+    ],
+    "former": []
   }
-]
+}

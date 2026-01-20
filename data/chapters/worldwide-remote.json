@@ -1,18 +1,24 @@
-[
-  {
-    "urlname": "rladies-remote",
-    "status": "active",
-    "country": "Worldwide",
-    "city": "Remote",
-    "social_media": {
-      "meetup": "rladies-remote",
-      "twitter": "rladiesremote",
-      "email": "remote@rladies.org",
-      "slack": "https://rladies-remote.slack.com"
-    },
-    "organizers": {
-      "current": ["Heather Turner", "Njoki Njuki"],
-      "former": ["Azadeh Gishani", "Katie Lee", "Leo Preu"]
-    }
+{
+  "urlname": "rladies-remote",
+  "status": "active",
+  "country": "Worldwide",
+  "city": "Remote",
+  "social_media": {
+    "meetup": "rladies-remote",
+    "bluesky": "https://bsky.app/profile/rladiesremote.bsky.social",
+    "mastodon": "https://hachyderm.io/@RLadiesRemote",
+    "email": "remote@rladies.org",
+    "slack": "https://twitter.us18.list-manage.com/subscribe?u=2ea47051e532678beaba00ee9&id=0d53e23281"
+  },
+  "organizers": {
+    "current": [
+      "Heather Turner",
+      "Njoki Njuki"
+    ],
+    "former": [
+      "Azadeh Gishani",
+      "Katie Lee",
+      "Leo Preu"
+    ]
   }
-]
+}

@@ -1,14 +1,13 @@
-{{ $countries := where ($.Scratch.Get "chpt_countries") "n" "gt" 0 }}
-{{ $chapters := where .Site.Data.chapters_meetup "status" "active" }}
+{{ $countries := $.Scratch.Get "chpt_countries" }}
+{{ $chapters  := $.Scratch.Get "chpt_active" }}
 
-  {{ with .Site.GetPage "section" "chapters" }}
+{{ with .Site.GetPage "section" "chapters" }}
 
-<div class="container row justify-content-center section topspace">
-  <h2 class="section-title"><span>{{ .Title | title }}</span></h2>
-  <small class="text-muted text-center">{{ .Content }}</small>
-  <button type="button" class="btn btn-primary p-2 m-2 center" data-toggle="collapse" data-target="#chapter-table">{{ .Params.button }}</button>
-  
-  <div class="row justify-content-center">
+  <div class="container row justify-content-center section topspace">
+    <h2 class="section-title"><span>{{ .Title | title }}</span></h2>
+    <small class="text-muted text-center">{{ .Content }}</small>
+
+    {{ partial "map.html" . }}
 
     <div id="chapter-table" class="collapse col-auto m-2">
       <table class="table table-hover table-responsive chp-table">
@@ -20,10 +19,11 @@
         </tr>
       </thead>
       <tbody>
-        {{ range $countries }}
+        {{ range $k, $c := $countries }}
           <tr>
-            <td class="text-right text-bold b-rladies-r" rowspan = "{{ .n }}"> {{ .country | title }} </td>
-                {{ range where $chapters "country" .country }}
+            <td class="text-right text-bold b-rladies-r" rowspan = "{{ $c.count }}"> {{ $c.name | title }} </td>
+
+                {{ range where $chapters "country" $c.name }}
             <td class="text-left"> <a href="http://meetup.com/{{ .social_media.meetup }}">{{ .name | title }}</a> </td>
               
               <td class="text-right"> 
@@ -39,7 +39,6 @@
     </table>
        </div>
   </div>
-  <div id="chartdiv"></div>
 
  </div>
 
@@ -107,11 +106,11 @@
     var colorSet = new am4core.ColorSet();
     
     imageSeries.data = [ 
-    {{ range where $chapters "members" "gt" 0 }}
+    {{ range $chapters }}
       {
         "name": "{{ .name }}",
         "members": "{{ .members }}",
-        "socials": {{ with .social_media }}{{ partial "social_media.html" . }}{{ end }},
+        {{ with .social_media }}"socials": {{ partial "social_media.html" . }},{{ end }}
         "latitude": {{ .lat }},
         "longitude": {{ .lon }},
         "color": "#88398acc"

@@ -1,19 +1,29 @@
-[
-  {
-    "urlname": "rladies-santa-barbara",
-    "status": "active",
-    "country": "USA",
-    "state.region": "California",
-    "city": "Santa Barbara",
-    "social_media": {
-      "meetup": "rladies-santa-barbara",
-      "twitter": "RLadiesSB",
-      "email": "santabarbara@rladies.org",
-      "github": "rladies/meetup-presentations_santabarbara"
-    },
-    "organizers": {
-      "current": ["Julia Stewart Lowndes", "Allison Horst", "Jamie Afflerbach", "Juliette Verstaen", "Sam Csik", "An Bui"],
-      "former": []
-    }
+{
+  "urlname": "rladies-santa-barbara",
+  "status": "active",
+  "country": "USA",
+  "state.region": "California",
+  "city": "Santa Barbara",
+  "social_media": {
+    "meetup": "rladies-santa-barbara",
+    "bluesky": "rladiessb.bsky.social",
+    "email": "santabarbara@rladies.org",
+    "github": "rladies/meetup-presentations_santabarbara",
+    "youtube": "@RLadiesSantaBarbara"
+  },
+  "organizers": {
+    "current": [
+      "Danielle Ferraro",
+      "Sam Shanny-Csik",
+      "Camila Vargas Poulsen",
+      "Colleen McCamy"
+    ],
+    "former": [
+      "Julia Stewart Lowndes",
+      "Allison Horst",
+      "Jamie Afflerbach",
+      "Juliette Verstaen",
+      "An Bui"
+    ]
   }
-]
+}

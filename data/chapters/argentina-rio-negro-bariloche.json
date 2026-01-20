@@ -1,20 +1,26 @@
-[
-  {
-    "urlname": "rladies-bariloche",
-    "status": "active",
-    "country": "Argentina",
-    "state.region": "Río Negro",
-    "city": "Bariloche",
-    "social_media": {
-      "meetup": "rladies-bariloche",
-      "twitter": "RLadiesBRC",
-      "email": "bariloche@rladies.org",
-      "facebook": "rladies.bariloche",
-      "slack": "rladies-brc.slack.com"
-    },
-    "organizers": {
-      "current": ["Lina Moreno Az<f3>car", "Sofía Ruiz", "Paula Fergnani"],
-      "former": []
-    }
+{
+  "urlname": "rladies-bariloche",
+  "status": "active",
+  "country": "Argentina",
+  "state.region": "Río Negro",
+  "city": "Bariloche",
+  "social_media": {
+    "meetup": "rladies-bariloche",
+    "twitter": "RLadiesBRC",
+    "email": "bariloche@rladies.org",
+    "facebook": "rladies.bariloche",
+    "slack": "rladies-brc.slack.com"
+  },
+  "organizers": {
+    "current": [
+      "Lina Moreno Az<f3>car",
+      "Sofía Ruiz",
+      "Paula Fergnani",
+      "Claudia Alejandra Huaylla",
+      "Valeria Leticia Martin-Albarracin",
+      "Gimena Vilardo",
+      "Maria Laura Suarez"
+    ],
+    "former": []
   }
-]
+}

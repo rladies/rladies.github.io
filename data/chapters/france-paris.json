@@ -1,23 +1,29 @@
-[
-  {
-    "urlname": "rladies-paris",
-    "status": "active",
-    "country": "France",
-    "city": "Paris",
-    "social_media": {
-      "meetup": "rladies-paris",
-      "twitter": "RLadiesParis",
-      "email": "paris@rladies.org",
-      "facebook": "RLadiesParis",
-      "instagram": "rladiesparis",
-      "linkedin": "r-ladies-paris",
-      "youtube": "@rladiesparis",
-      "github": "R-Ladies-Paris",
-      "mastodon": "https://mastodon.social/@rladies_paris"
-    },
-    "organizers": {
-      "current": ["Mouna Belaid", "Chaima Boughanmi"],
-      "former": ["Diane Beldame", "Christina Bergmann", "Sarah Hosking", "Stéphanie Terrasse"]
-    }
+{
+  "urlname": "rladies-paris",
+  "status": "active",
+  "country": "France",
+  "city": "Paris",
+  "social_media": {
+    "meetup": "rladies-paris",
+    "twitter": "RLadiesParis",
+    "email": "paris@rladies.org",
+    "facebook": "RLadiesParis",
+    "instagram": "rladiesparis",
+    "linkedin": "r-ladies-paris",
+    "youtube": "@rladiesparis",
+    "github": "R-Ladies-Paris",
+    "mastodon": "https://mastodon.social/@rladies_paris"
+  },
+  "organizers": {
+    "current": [
+      "Mouna Belaid",
+      "Chaima Boughanmi"
+    ],
+    "former": [
+      "Diane Beldame",
+      "Christina Bergmann",
+      "Sarah Hosking",
+      "Stéphanie Terrasse"
+    ]
   }
-]
+}

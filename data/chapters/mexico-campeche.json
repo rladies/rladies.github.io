@@ -1,12 +1,12 @@
-[
-  {
-    "status": "prospective",
-    "country": "Mexico",
-    "city": "Campeche",
-    "social_media": {},
-    "organizers": {
-      "current": ["Cecilia Escalante"],
-      "former": []
-    }
+{
+  "status": "prospective",
+  "country": "Mexico",
+  "city": "Campeche",
+  "social_media": {},
+  "organizers": {
+    "current": [
+      "Cecilia Escalante"
+    ],
+    "former": []
   }
-]
+}

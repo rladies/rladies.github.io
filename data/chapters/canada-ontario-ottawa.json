@@ -1,17 +1,21 @@
-[
-  {
-    "urlname": "rladies-ottawa",
-    "status": "active",
-    "country": "Canada",
-    "state.region": "Ontario",
-    "city": "Ottawa",
-    "social_media": {
-      "meetup": "rladies-ottawa",
-      "email": "ottawa@rladies.org"
-    },
-    "organizers": {
-      "current": ["Melissa Van Bussel", "Alexandra McSween"],
-      "former": ["Michelle Fairbrother", "Stephanie Houle"]
-    }
+{
+  "urlname": "rladies-ottawa",
+  "status": "active",
+  "country": "Canada",
+  "state.region": "Ontario",
+  "city": "Ottawa",
+  "social_media": {
+    "meetup": "rladies-ottawa",
+    "email": "ottawa@rladies.org"
+  },
+  "organizers": {
+    "current": [
+      "Melissa Van Bussel",
+      "Alexandra McSween"
+    ],
+    "former": [
+      "Michelle Fairbrother",
+      "Stephanie Houle"
+    ]
   }
-]
+}

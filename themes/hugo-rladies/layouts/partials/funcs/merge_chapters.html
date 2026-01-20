@@ -1,0 +1,62 @@
+<!-- Merge local chapter data with remote meetup_archive data
+  - Fetches remote meetup_archive chapters.json
+  - Merges selected fields into local .Site.Data.chapters entries
+  - Outputs the merged slice as JSON (caller should transform.Unmarshal it)
+
+  Usage (caller):
+   $merged := (partial "funcs/merge_chapters" .) | transform.Unmarshal
+-->
+
+{{- $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/chapters.json" -}}
+{{- $chapters_meetup := slice -}}
+
+{{- $type := printf "%T" . | findRE "pagesfromdata" -}}
+{{ $verbose := true }}
+{{- if in $type "pagesfromdata" -}}
+  {{ $verbose = false -}}
+{{- end -}}
+
+
+{{- with try (resources.GetRemote $url) -}}
+  {{- with .Err -}}
+    {{- errorf "%s" . -}}
+  {{- else -}}
+    {{- $chapters_meetup = .Value | transform.Unmarshal -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "Unable to get remote resource %q" $url -}}
+{{- end -}}
+
+{{- $merged := slice -}}
+{{- range $index, $chapter := $.Site.Data.chapters -}}
+  {{- $chapterMap := $chapter -}}
+  {{- if in (printf "%T" $chapterMap) "[]interface" -}}
+    {{- $chapterMap = index $chapterMap 0 -}}
+  {{- end -}}
+
+  {{- $matches := where $chapters_meetup "urlname" (index $chapterMap "urlname") -}}
+  {{- if gt (len $matches) 0 -}}
+    {{- $mtp := index $matches 0 -}}
+    {{- $chapterMap = merge $chapterMap (dict
+      "name" (index $mtp "name")
+      "meetup_id" (index $mtp "id")
+      "lat" (index $mtp "lat")
+      "lon" (index $mtp "lon")
+      "members" (index $mtp "members")
+      "timezone" (index $mtp "timezone")
+      "file" (path.BaseName $index)
+    ) -}}
+  {{- else -}}
+    {{ if $verbose -}}
+      {{- warnf "No meetup match for chapter %s" (index $chapterMap "urlname") -}}
+    {{ end }}
+    {{- $chapterMap = merge $chapterMap (dict
+      "name" (printf "R-Ladies %s" (index $chapterMap "city"))
+      "file" (path.BaseName $index)
+    ) -}}
+  {{- end -}}
+
+  {{- $merged = $merged | append $chapterMap -}}
+{{- end -}}
+
+{{- $merged | jsonify -}}

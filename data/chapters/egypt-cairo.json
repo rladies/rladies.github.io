@@ -1,15 +1,15 @@
-[
-  {
-    "urlname": "rladies-cairo",
-    "status": "active",
-    "country": "Egypt",
-    "city": "Cairo",
-    "social_media": {
-      "meetup": "rladies-cairo"
-    },
-    "organizers": {
-      "current": ["Amany Salem"],
-      "former": []
-    }
+{
+  "urlname": "rladies-cairo",
+  "status": "active",
+  "country": "Egypt",
+  "city": "Cairo",
+  "social_media": {
+    "meetup": "rladies-cairo"
+  },
+  "organizers": {
+    "current": [
+      "Amany Salem"
+    ],
+    "former": []
   }
-]
+}
