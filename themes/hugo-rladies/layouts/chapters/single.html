@@ -68,11 +68,13 @@
               </p>
           {{ end }}
 
+          {{ with .Params.urlname }}
           <p class="mb-0">
-            <a href="https://www.meetup.com/{{ .Params.urlname }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+            <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
               Join chapter <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </p>
+          {{ end }}
         </div>
       </div>
     </div>
