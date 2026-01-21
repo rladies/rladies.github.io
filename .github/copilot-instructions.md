@@ -1,5 +1,7 @@
 # R-Ladies Website - AI Coding Instructions
 
+**Accessibility is a high priority.** All changes must maintain or improve WCAG compliance.
+
 ## Architecture Overview
 
 Hugo static site with Bootstrap 5 theme, data-driven from multiple sources:
@@ -57,9 +59,14 @@ File naming: `country-city.json` (lowercase, hyphenated)
 - Grid: `row row-cols-1 row-cols-md-3` for responsive columns
 
 ### Accessibility
+- Use semantic HTML elements (`<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`)
 - Definition lists (`<dl>`) require `<dt>`/`<dd>` pairs - use `<div>` with `<p>` if no labels
 - External links: `target="_blank" rel="noopener noreferrer"`
-- Icons need `aria-hidden="true"` or accessible labels
+- Icons need `aria-hidden="true"` when decorative, or accessible labels when meaningful
+- Images require descriptive `alt` text
+- Interactive elements need visible focus states
+- Color alone must not convey information (use text/icons too)
+- Form inputs need associated `<label>` elements
 
 ## Multilingual Content
 
