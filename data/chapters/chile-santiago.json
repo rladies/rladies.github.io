@@ -9,13 +9,15 @@
     "twitter": "RLadiesSantiago",
     "email": "santiago@rladies.org",
     "github": "rladies/rladieschile",
-    "mastodon": "@RLadiesSantiago@lile.cl"
+    "mastodon": "@RLadiesSantiago@lile.cl",
+    "linkedin": "company/rladies-santiago"
   },
   "organizers": {
     "current": [
       "Riva Quiroga",
       "Stephanie Orellana",
-      "Sara Acevedo"
+      "Sara Acevedo",
+      "Alejandra Tapia"
     ],
     "former": [
       "Gabriela Sandoval"
