@@ -71,7 +71,8 @@ Translation strings in `i18n/{lang}.yaml`. Missing translations auto-generated b
 
 GitHub Actions workflow:
 1. R scripts process Airtable data
-2. Clone external repos (directory, meetup_archive, awesome-rladies-blogs)
+2. Clone external repos (`directory`, `awesome-rladies-blogs`) for additional data
+   - `meetup_archive` data is fetched at Hugo build time via remote resources (see `funcs/merge_chapters.html` using `resources.GetRemote`) and is not cloned
 3. Hugo build with environment config
 4. Deploy to GitHub Pages (production) or Netlify (preview)
 
