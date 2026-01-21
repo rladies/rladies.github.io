@@ -120,6 +120,6 @@ Previews triggered via workflow_dispatch with artifact ID. Check:
 
 ## Style Guide
 
-- R-Ladies purple: `#88398a` (defined in `assets/style.scss` as `$primary`)
+- R-Ladies purple: `#88398a` (defined in `themes/hugo-rladies/assets/style.scss` as `$primary`)
 - Fonts: Open Sans (body), Inconsolata (code)
 - Icons: Bootstrap Icons (`bi bi-*`) and FontAwesome (`fa fa-*`)
