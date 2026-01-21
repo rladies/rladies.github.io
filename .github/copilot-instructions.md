@@ -42,7 +42,7 @@ scripts/             # R scripts for Airtable/data processing
 File naming: `country-city.json` (lowercase, hyphenated)
 
 ### Data Merging
-`layouts/partials/head/data.html` loads all data at build time. Chapter data merges with remote meetup_archive via `funcs/merge_chapters.html` partial to add lat/lon, members, timezone.
+`themes/hugo-rladies/layouts/partials/head/data.html` loads all data at build time. Chapter data merges with remote meetup_archive via `funcs/merge_chapters.html` partial to add lat/lon, members, timezone.
 
 ## Template Conventions
 
