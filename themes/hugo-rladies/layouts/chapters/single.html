@@ -44,39 +44,36 @@
         <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="card-img-top">
       </div>
       {{ end }}
-    </div>
-
-    <!-- Info Column -->
-    <div class="col">
-      <div class="card shadow-sm">
-        <div class="card-body">          
-          <dl class="row mb-0">
-            {{ with $status }}
-            <dt class="col-sm-5">Status</dt>
-            <dd class="col-sm-7">
+      <div class="col my-4">
+        <div class="m-2">
+          {{ with $status }}
+              <p class="mb-2">
               <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
-            </dd>
-            {{ end }}
+              </p>
+          {{ end }}
 
-            <dt class="col-sm-5">Location</dt>
-            <dd class="col-sm-7">
-              {{ with .Params.city }}{{ . | humanize }}, {{ end }}
-              {{ with .Params.state_region }}{{ . | humanize }}, {{ end }}
-              {{ with .Params.country }}{{ . | humanize }}{{ end }}
-            </dd>
+          <p class="mb-2">
+          {{ with .Params.city }}{{ . | humanize }}, {{ end }}
+          {{ with .Params.state_region }}
+              {{ . | humanize }},
+          {{ end }}
+          {{ with .Params.country }}
+              {{ . | humanize }}
+          {{ end }}
+          </p>
 
-            {{ with .Params.members }}
-            <dt class="col-sm-5">Members</dt>
-            <dd class="col-sm-7">{{ . }}</dd>
-            {{ end }}
-
-            {{ with .Params.social_media }}
-            <dt class="col-sm-5">Connect</dt>
-            <dd class="col-sm-7">
-              {{ partial "social_media.html" (dict "data" . "relme" true) }}
-            </dd>
-            {{ end }}
-          </dl>
+          {{ with .Params.social_media }}
+              <p class="mb-2">
+                  {{ partial "social_media.html" (dict "data" . "relme" true) }}
+              </p>
+          {{ end }}
+          {{ with .Params.urlname }}
+            <p class="mb-0">
+              <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                Join chapter <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </p>
+          {{ end 
         </div>
       </div>
     </div>
