@@ -1,6 +1,6 @@
 main:
   - identifier: events
-    url: /activities/events/
+    url: /events/
     weight: 1
 
   - identifier: chapters
