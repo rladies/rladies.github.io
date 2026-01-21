@@ -6,16 +6,22 @@
   "social_media": {
     "meetup": "rladies-cuernavaca",
     "twitter": "RLadiesCuerna",
-    "email": "cuernavaca@rladies.org"
+    "email": "cuernavaca@rladies.org",
+    "facebook": "rladies.cuernavaca",
+    "youtube": "@rladiescuernavaca3056",
+    "github": "RLadiesCuerna"
   },
   "organizers": {
     "current": [
-      "Joselyn Chavez",
-      "Ver<f3>nica Jim<e9>nez Jacinto",
-      "Leticia Vega Alvarado",
       "Elizabeth Ernestina Godoy Lozano",
-      "Aurora Labastida"
+      "Verónica Jiménez Jacinto",
+      "Leticia Vega Alvarado",
+      "Karla Leslie Matías Valdes"
+      
     ],
-    "former": []
+    "former": [
+      "Joselyn Chavez",
+      "Aurora Labastida"
+    ]
   }
 }
