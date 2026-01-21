@@ -1,10 +1,10 @@
 {{ $data := newScratch }}
 
 {{ $data.Set "foot" "<i class=\"fa fa-calendar\" aria-hidden=\"true\"></i> "}}
-{{ if isset . "last_updated" }}
-  {{ $data.Add "foot" "<span class=\"update\">" }} 
-  {{ $data.Add "foot" .last_updated }} 
-  {{ $data.Add "foot" "</span>" }} 
+{{ with .Params.last_updated }}
+  {{ $data.Add "foot" "<span class=\"update\">" }}
+  {{ $data.Add "foot" . }}
+  {{ $data.Add "foot" "</span>" }}
 {{ else }}
   {{ $data.Add "foot" "unknown" }}
 {{ end }}
