@@ -1,0 +1,30 @@
+.chevron {
+    position: absolute;
+    font-size: 48px;
+    color: $primary;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+/* Back-to-top specific styles: the chevron in the back-to-top link
+   needs different positioning than the hero chevron */
+.back-to-top {
+    position: relative;
+
+    .chevron {
+        position: static;
+        display: inline-block;
+        margin: 0;
+    }
+
+    &:focus,
+    &:hover {
+        outline: none;
+
+        .chevron {
+            transform: translateY(-3px);
+            transition: transform .15s ease-in-out;
+        }
+    }
+}

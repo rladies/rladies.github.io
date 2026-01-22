@@ -1,4 +1,14 @@
-{{ $events := where ($.Scratch.Get "events") "status" "past" }}
+{{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
+{{ $updated := "" }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $updated = .Value | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get remote resource %q" $url }}
+{{ end }}
 
 <!-- Start Counter Section -->
 <div id="counters" class="row justify-content-center section topspace">
@@ -28,7 +38,7 @@
   		<div class="icon-box">
 			  <h3>{{ i18n "events" | markdownify }}</h3>
 			  <i class="fa-solid fa-calendar-days"></i>
-  			<p class="count" data-count="{{ $events | len }}">0</p>
+  			<p class="count" data-count="{{ $updated.n_events_past }}">0</p>
   		</div>
   	</div>
   </div>	

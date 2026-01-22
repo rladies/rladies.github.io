@@ -1,0 +1,231 @@
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.page-item,
+.page-link {
+    border: none;
+}
+
+.expand-grid {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    // Make feed cards fill grid cells equally
+    &#feed .card-expand,
+    &#feed_featured .card-expand {
+        height: 100%;
+        min-height: 400px;
+    }
+}
+
+// Card size variants (for directory and other grids)
+.card-service {
+    height: 150px;
+    width: 150px;
+}
+
+.card-small {
+    height: 270px;
+}
+
+.card-medium {
+    height: 370px;
+}
+
+.card-large {
+    height: 470px;
+}
+
+.card-wide {
+    height: 370px;
+}
+
+// Main card styling
+.card-expand {
+    position: relative;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    background: $white;
+    margin: 1rem;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    blockquote:before {
+        content: "\f10d";
+        font-family: FontAwesome;
+        color: $primary;
+        margin-right: 4px;
+    }
+
+    blockquote:after {
+        content: "\f10e";
+        font-family: FontAwesome;
+        color: $primary;
+        margin-left: 4px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center top;
+        transition: transform 0.3s ease;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.card-expand-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card-expand-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.98) 30%);
+    backdrop-filter: blur(2px);
+    padding: 1rem;
+    transition: background 0.3s ease, bottom 0.3s ease;
+    z-index: 3;
+}
+
+.card-expand-title {
+    color: $secondary;
+    text-transform: capitalize;
+
+    a {
+        color: darken($secondary, 20%);
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+// Hide detailed content by default
+.card-expand-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
+}
+
+// Expand on hover
+.card-expand:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+    z-index: 10;
+
+    .card-expand-img img {
+        transform: scale(1.05);
+    }
+
+    .card-expand-content {
+        background: rgba(255, 255, 255, 0.98);
+        bottom: 0;
+    }
+
+    .card-expand-description {
+        max-height: 500px;
+        opacity: 1;
+        margin-bottom: 0.75rem;
+    }
+}
+
+.card-expand-animate {
+    display: none;
+}
+
+.card-expand-category {
+    position: absolute;
+    top: -1rem;
+    right: 0.75rem;
+    background: rgba($primary, 0.95);
+    padding: 0.35rem 0.75rem;
+    color: $white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    z-index: 2;
+    letter-spacing: 0.05em;
+
+    a {
+        text-transform: uppercase;
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.card-expand-subtitle {
+    margin: 0;
+    padding: 0 0 0.75rem;
+    color: $primary;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card-expand-up-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.card-expand-foot {
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 0.75rem;
+    color: lighten($secondary, 10%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $primary;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 767px) {
+
+    .card-small,
+    .card-medium,
+    .card-large,
+    .card-wide {
+        min-width: 100%;
+        margin: 0.5rem 0;
+    }
+}

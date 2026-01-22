@@ -1,0 +1,21 @@
+pre {
+    border-radius: 10px;
+    border: 1px solid $primary;
+    background-color: rgba($primary, .3);
+}
+
+pre.chroma {
+    background-color: rgba($primary, .1);
+    border: 1px solid $primary;
+    border-radius: 10px;
+}
+
+pre {
+    font-family: $font-family-monospace;
+    width: 100%;
+    padding: 1em;
+}
+
+.highlight {
+    width: 100%;
+}

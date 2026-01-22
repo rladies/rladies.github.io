@@ -7,8 +7,8 @@ if (containerEl) {
     buffer: 1,
     isCentered: true
   });
-  jQuery('.custom-select').on('change', function (evt) {
-    var i = $('.custom-select option:selected').map(function(a, item){return item.value;});
+  jQuery('.form-select').on('change', function (evt) {
+    var i = $('.form-select option:selected').map(function(a, item){return item.value;});
     myShuffle.filter(i.get());
   });
 }

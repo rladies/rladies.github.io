@@ -1,0 +1,3 @@
+node_modules/
+# If you prefer not to commit the built bundle, uncomment the next line
+# static/js/vendor.bundle.js
