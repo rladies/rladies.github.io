@@ -40,8 +40,7 @@
               {{ end }}
             {{ end }}
             
-            {{ block "main" . }}
-            {{ end }}
+            {{ block "main" . }}{{ end }}
       	  </article><!-- #post-## --> 
       	</div>	
     	</div>
@@ -61,8 +60,7 @@
  
     {{ partial "footer/footer.html" . }}
     {{ partial "footer/scripts.html" . }}
-    {{ block "footer" . }}
-    {{ end }}
+    {{ block "footer" . }}{{ end }}
   </body>
   
 </html>
