@@ -1,7 +1,7 @@
 {{ define "main" }}
   <div class="d-flex justify-content-center align-items-center flex-wrap m-1">
     {{- range $key, $value:= .Data.Terms -}}
-      <button class="btn btn-md list-group-item m-2 b-0">
+      <button class="btn btn-md list-group-item m-2 border-0">
         <a
           href="{{ "" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"
         > {{ $key }}

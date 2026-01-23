@@ -1,0 +1,69 @@
+// Bootstrap and its default variables
+// must come first
+@import "vendor/bootstrap/functions";
+
+// Your variable overrides
+$body-bg: #fff;
+$primary: #88398a;
+$secondary: #888a8cff;
+$third: #2188d6;
+$table-hover-bg: rgba($primary, .2);
+$font-family-monospace: 'Inconsolata Variable', monospace;
+$font-family-base: 'Open Sans Variable', sans-serif;
+$font-family-sans-serif: 'Open Sans Variable', sans-serif;
+$dropdown-link-hover-bg: rgba($primary, .2);
+
+// Spacing (already uses BS5 scale)
+// $spacer: 1rem (default)
+
+// Colors (you have $primary, consider adding)
+$success: #198754;
+$info: $third; // Your existing $third color
+$warning: #ffc107;
+$danger: #dc3545;
+
+// Border radius
+$border-radius: 1rem; // Match your card style
+$border-radius-sm: 0.5rem;
+$border-radius-lg: 1.5rem;
+
+// Shadows (define custom if needed)
+$box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+$box-shadow-lg: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+
+// Variable Google Fonts
+@font-face {
+  font-family: 'Inconsolata Variable';
+  src: url('/webfonts/google-fonts/inconsolata/inconsolata-latin-wght-normal.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Variable';
+  src: url('/webfonts/google-fonts/open-sans/open-sans-latin-wght-normal.woff2') format('woff2');
+  font-weight: 100 900;
+  font-stretch: 75% 100%;
+  font-style: normal;
+}
+
+// Import all scss files
+@import "vendor/bootstrap/bootstrap";
+@import "_custom";
+@import "_syntax";
+@import "_fullcalendar";
+@import "_amcharts";
+@import "_hero";
+@import "_icon-box";
+@import "_card-expand";
+@import "_highlight";
+@import "_back-to-top";
+@import "_post";
+@import "_press";
+@import "_blockquote";
+@import "_breakout";
+
+$fa-font-path: "/webfonts/fontawesome";
+@import "vendor/fontawesome/fontawesome";
+@import "vendor/fontawesome/solid";
+@import "vendor/fontawesome/brands";

@@ -3,17 +3,14 @@
 <link rel="shortcut icon" href="{{ .Site.Params.favicon | relURL }}">
 
 {{ $css := slice
-    (resources.Get "css/fullcalendar.min.css")
-    (resources.Get "css/bootstrap-multiselect.min.css")
-    (resources.Get "css/fontawesome-all.min.css")
-    (resources.Get "style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS)
+    (resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "scss/style.main.scss" . | toCSS)
+    (resources.Get "scss/vendor/choices.min.css")
   | resources.Concat "rladies-bundle.min.css"
   | minify
   | fingerprint
 }}
 
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" media="screen">
-
 
 
 <!-- site data -->

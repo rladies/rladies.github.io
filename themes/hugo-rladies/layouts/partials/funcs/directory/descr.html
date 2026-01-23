@@ -15,13 +15,6 @@
   {{ $data.Add "content" (delimit . ", ") }}
   {{ $data.Add "content" "</p>" }}
 {{ end }}
-              
-{{ with .data.Params.interests }}
-  {{ $data.Add "content" "<p class=\"card-text\">" }}
-  {{ $data.Add "content" "<b><i class=\"fas fa-tag\" style = \"font-size: 15px;\"></i>&nbsp;</b>" }}
-  {{ $data.Add "content" (printf "<span class=\"interests\"> %s </span>" (delimit . ", ") ) }}
-  {{ $data.Add "content" "</p>" }}
-{{ end }}
 
 {{ with .data.Params.photo.credit }}
   {{ $data.Add "content" "<p class=\"card-text text-muted\"><small>" }}

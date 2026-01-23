@@ -1,0 +1,114 @@
+.post-card {
+    background: $white;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+    }
+
+    .post-image {
+        height: 300px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+        }
+    }
+
+    .post-content {
+        padding: 2rem;
+    }
+
+    .post-date {
+        font-size: 0.875rem;
+        color: lighten($secondary, 20%);
+        text-decoration: none;
+
+        i {
+            opacity: 0.7;
+        }
+    }
+
+    .post-translations {
+        font-size: 0.875rem;
+
+        .btn-link {
+            color: darken($primary, 20%);
+            text-decoration: none;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .post-title {
+        font-size: 1.75rem;
+        font-weight: 600;
+        line-height: 1.3;
+        margin-top: 0.5rem;
+
+        a {
+            color: darken($secondary, 20%);
+            text-decoration: none;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    .post-authors-list {
+        font-size: 0.875rem;
+        color: darken($secondary, 10%);
+
+        i {
+            color: $primary;
+        }
+
+        a {
+            color: $primary;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .post-summary {
+        color: darken($secondary, 10%);
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
+}
+
+// Responsive
+@media (max-width: 767px) {
+    .post-card {
+        .post-image {
+            height: 250px;
+        }
+
+        .post-content {
+            padding: 1.5rem;
+        }
+
+        .post-title {
+            font-size: 1.5rem;
+        }
+    }
+}

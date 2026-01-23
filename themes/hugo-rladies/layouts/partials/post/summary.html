@@ -1,38 +1,65 @@
-<article class="post">
-	<header class="entry-header">
-		<div class="entry-meta">
-       <span class="posted-on">
-          {{ partial "dates.html" .}}
-       </span>
-		</div>
-		<h4 class="entry-title">
-		  <a  href="{{ .RelPermalink }}" rel="bookmark">{{ .Title }}</a>
-		</h4>
-	{{ partial "post/i18n.html" . }}
-		 
-	</header>
-	<div class="entry-content">
-	  <div class="row">
-      {{ if .Resources.ByType "image" }}
-        {{ $data := newScratch }} 
-        {{ range first 1 (.Resources.ByType "image") }}
-          {{ $img := . }}
-          {{ $img := $img.Fill "400x400" }}
-          {{ $data.Set "img" $img.RelPermalink }}
+<article class="post-card">
+  <div class="row g-0 align-items-center">
+    {{ $img := "" }}
+    {{ if .Resources.ByType "image" }}
+      {{ range first 1 (.Resources.ByType "image") }}
+        {{ $image := . }}
+        {{ $image = $image.Fill "400x400" }}
+        {{ $img = $image.RelPermalink }}
+      {{ end }}
+      
+      {{ with .Resources.Get .Params.image.path }}
+        {{ $image := . }}
+        {{ $image = $image.Fill "400x400" }}
+        {{ $img = $image.RelPermalink }}
+      {{ end }}
+    {{ end }}
+    
+    {{ if $img }}
+      <div class="col-md-4">
+        <div class="post-image">
+          <a href="{{ .RelPermalink }}">
+            <img src="{{ $img }}" alt="{{ .Params.image.alt | default .Title }}" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="{{ if $img }}col-md-8{{ else }}col-12{{ end }}">
+      <div class="post-content">
+        <div class="post-meta mb-2">
+          {{ partial "dates.html" . }}
+          {{ partial "post/i18n.html" . }}
+        </div>
+        
+        <h2 class="post-title mb-2">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        
+        {{ if .Params.author }}
+          <div class="mb-3">
+            {{ partial "post/authors.html" (dict "author" .Params.author) }}
+          </div>
         {{ end }}
         
-        {{ with .Resources.Get .Params.image.path }}
-          {{ $img := . }}
-          {{ $img := $img.Fill "400x400" }}
-          {{ $data.Set "img" $img.RelPermalink }}
-        {{ end }}
-        <div class="col-md-4 col-sm-12">
-          <img src={{ $data.Get "img" }} alt="{{ .Params.image.alt | default $.Title }}" >
+        <div class="post-summary mb-3">
+          {{ .Summary }}
         </div>
-      {{ end }}
-
-	    <div class = "col">{{ .Summary }}</div>
-	  </div>
-		{{ partial "funcs/read_more.html" .RelPermalink | safeHTML }}
-	</div>
+        
+        {{ if .Params.tags }}
+          <div class="mb-3">
+            {{ range .Params.tags }}
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge bg-primary text-decoration-none me-1">
+                {{ . }}
+              </a>
+            {{ end }}
+          </div>
+        {{ end }}
+        
+        <a href="{{ .RelPermalink }}" class="btn btn-outline-primary btn-sm">
+          Read more <i class="fas fa-arrow-right ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
 </article>
