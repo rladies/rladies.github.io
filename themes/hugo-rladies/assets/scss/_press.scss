@@ -1,0 +1,49 @@
+.press-list {
+    .press-item {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        transition: background-color 0.2s ease;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: rgba($primary, 0.02);
+        }
+
+        .press-date {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #555;
+            text-align: right;
+
+            @media (max-width: 767px) {
+                text-align: left;
+            }
+        }
+
+        .press-title {
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin: 0;
+            line-height: 1.4;
+
+            a {
+                color: #2c2c2c;
+                text-decoration: none;
+                transition: color 0.2s ease;
+
+                &:hover {
+                    color: $primary;
+                }
+
+                .fa-external-link-alt {
+                    font-size: 0.75em;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{{ define "title" }}
+<header class="entry-header">
+
+  <div class="container"> 
+    <div class="entry-meta text-center mb-3"> 
+      <span class="posted-on">
+        {{if isset .Params "date"}}
+          <time class="entry-date published" datetime="{{ .Date.Format .Site.Params.DateForm }}">
+            {{- .Date.Format "January 2, 2006" -}}
+          </time>
+        {{end}}
+      </span>
+    </div>
+    <h1 class="section-title text-center mb-5">{{ .Title }}</h1> 
+
+    <div class="container-fluid p-0 mb-4"> 
+      {{ with .Params.image }}
+        <img src="{{ .path }}" alt="{{ .alt | default $.Title }}" class="img-fluid w-100 object-fit-cover" style="max-height: 300px;">
+      {{ end }}
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 justify-content-around"> 
+      {{ with .Params.author }}
+        <div id="authors" class="col"> 
+          <h5 class="fw-bold mt-3">
+            {{ if gt (len .) 1 }}
+              {{ i18n "authors" }}
+            {{ else }}
+              {{ i18n "author" }}
+            {{ end }}
+          </h5>
+          {{ partial "author.html" . }}
+        </div>
+      {{ end }}
+
+      {{ with .Params.editorial }}
+        <div class="col"> 
+          <h5 id="editor" class="fw-bold mt-3"> 
+            {{ if gt (len .) 1 }}
+              {{ i18n "editors" }}
+            {{ else }}
+              {{ i18n "editor" }}
+            {{ end }}
+          </h5>
+          {{ partial "author.html" . }}
+        </div>
+      {{ end }}
+
+      {{ with .Params.tags -}}
+        <div id="tags" class="col post-tags">
+          <h5 class="fw-bold mt-3">
+            {{ i18n "tags"}}
+          </h5>
+          <div class="ms-0"> 
+            {{ range . }}
+              {{- $name := . -}}
+              {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+              <a href="{{ .Permalink }}" class="badge text-white bg-primary me-1 mb-1 p-2">{{ $name }}</a> 
+              {{ end -}}
+            {{ end }}
+          </div>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</header>
+<hr>
+{{ end }}
+
+{{ define "main"}}
+    <div class="entry-content">
+      <p>{{ .Content }}</p>
+    </div>
+
+    <p class="text-muted">
+      {{ i18n "last_edit"}} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}.
+    </p>
+
+    <!-- Post Pagination -->
+    <div class="row">
+        <div class="col-md-6 text-start">
+          {{ with .NextInSection }}
+            <a class="prev" href="{{ .RelPermalink }}">
+              <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+              <b><span class="prev-text nav-mobile">{{ i18n "prev" }}</span></b>
+              <br>
+              <span class="prev-text nav-default">{{ .Title }}</span>
+            </a>
+          {{- end }}
+        </div>
+
+        <div class="col-md-6 text-end">
+          {{ with .PrevInSection }}
+            <a class="next" href="{{ .RelPermalink }}">
+              <b><span class="prev-text nav-mobile">{{ i18n "next" }}</span></b>
+              <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+              <br>
+              <span class="next-text nav-default">{{ .Title }}</span>
+            </a>
+          {{- end }}
+        </div>
+    </div>
+{{- end }}

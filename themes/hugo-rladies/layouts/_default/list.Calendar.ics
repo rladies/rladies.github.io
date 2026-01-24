@@ -1,0 +1,44 @@
+
+{{- $events := $.Scratch.Get "events" -}}
+{{- $futureEvents := slice -}}
+{{- $now := now.Unix -}}
+
+{{- range $events -}}
+  {{- $eventTime := time .datetime_utc -}}
+  {{- if gt $eventTime.Unix $now -}}
+    {{- $futureEvents = $futureEvents | append . -}}
+  {{- end -}}
+{{- end -}}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//{{ .Site.Title }}//NONSGML Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:{{ .Site.Title }} Events
+X-WR-TIMEZONE:UTC
+X-WR-CALDESC:Upcoming R-Ladies events worldwide
+{{- range first 100 $futureEvents }}
+{{- $eventTime := time .datetime_utc }}
+{{- $endTime := $eventTime.Add (time.ParseDuration (printf "%vs" .duration)) }}BEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:{{ now.Format "20060102T150405Z" }}
+DTSTART:{{ $eventTime.Format "20060102T150405Z" }}
+DTEND:{{ $endTime.Format "20060102T150405Z" }}
+SUMMARY:{{ .title }} - {{ .group_name }}
+{{- with .description }}
+DESCRIPTION:{{ . | plainify | replaceRE "\n" "\\n" }}
+{{- end }}
+{{- with .location }}
+LOCATION:{{ . }}
+{{- end }}
+{{- with .link }}
+URL:{{ . }}
+{{- end }}
+ORGANIZER;CN={{ .group_name }}:mailto:info@rladies.org
+CATEGORIES:R-Ladies,{{ .group_name }}
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+{{- end }}
+END:VCALENDAR
+

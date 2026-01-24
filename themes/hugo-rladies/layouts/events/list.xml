@@ -1,0 +1,60 @@
+
+{{- $events := $.Scratch.Get "events" -}}
+
+{{- $futureEvents := slice -}}
+{{- $now := now.Unix -}}
+
+{{- range $events -}}
+  {{- $eventTime := time .datetime_utc -}}
+  {{- if gt $eventTime.Unix $now -}}
+    {{- $futureEvents = $futureEvents | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink | absURL }}</link>
+    <description>Upcoming R-Ladies events worldwide</description>
+    <generator>Hugo {{ hugo.Version }}</generator>
+    {{ with .Site.LanguageCode }}<language>{{ . }}</language>{{ end }}
+    {{ with .Site.Author.email }}<managingEditor>{{ . }}{{ with $.Site.Author.name }} ({{ . }}){{ end }}</managingEditor>{{ end }}
+    {{ with .Site.Author.email }}<webMaster>{{ . }}{{ with $.Site.Author.name }} ({{ . }}){{ end }}</webMaster>{{ end }}
+    {{ with .Site.Copyright }}<copyright>{{ . }}</copyright>{{ end }}
+    <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    {{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{- with .OutputFormats.Get "RSS" }}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end }}
+    {{- range $futureEvents }}
+    {{- $eventTime := time .datetime_utc }}    
+    <item>
+      <title>{{ .title }} - {{ .group_name }}</title>
+      <link>{{ .link }}</link>
+      <pubDate>{{ $eventTime.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      <guid>{{ .id }}</guid>
+      <description>
+        {{- printf "<![CDATA[" | safeHTML -}}
+        <p><strong>Chapter:</strong> {{ .group_name }}</p>
+        <p><strong>When:</strong> {{ $eventTime.Format "Monday, January 2, 2006 at 3:04 PM MST" }}</p>
+        {{- with .venue_name }}
+        <p><strong>Where:</strong> {{ . }}</p>
+        {{- end }}
+        {{- with .going }}
+        <p><strong>Attendees:</strong> {{ . }} going</p>
+        {{- end }}
+        {{- with .description }}
+        <p>{{ . | plainify | htmlUnescape }}</p>
+        {{- end }}
+        <p><a href="{{ .link }}">View event details</a></p>
+        {{- printf "]]>" | safeHTML -}}
+      </description>
+      {{- with .group_name }}
+      <author>noreply@rladies.org ({{ . }})</author>
+      <category>{{ . }}</category>
+      {{- end }}
+    </item>
+    {{- end }}
+  </channel>
+</rss>

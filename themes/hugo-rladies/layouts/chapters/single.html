@@ -1,4 +1,3 @@
-
 {{ define "main" }}
 
 {{ $chapterGroupUrlname := .Params.urlname }}
@@ -22,7 +21,6 @@
 {{ $upcomingEvents = sort $upcomingEvents "datetime" }}
 {{ $formerEvents = sort $formerEvents "datetime" "desc" }}
 
-<!-- Set status as inactive if no meetups within 6 months and no upcoming events -->
 {{ $status := .Params.status }}
 {{ $sixMonthsAgo := $currentDate.AddDate 0 -6 0 }}
 {{ if and (eq $status "active") (eq (len $upcomingEvents) 0) }}
@@ -34,68 +32,99 @@
     {{ end }}
   {{ end }}
 {{ end }}
-  <div class="card shadow-sm mb-4">
-    <div class="row">
-      <!-- Try to find an image in assets/images/chapters named after the url -->
-      {{ $imgPattern := printf "chapters/%s.*" .Params.file }}
-      {{ $img := resources.GetMatch $imgPattern }}
-      {{ with $img }}
-      <div class="col-md-4 m-2">
-        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="img-fluid rounded-start w-100 h-auto">
+
+<div class="container my-5">
+  <div class="row g-4">
+    {{ $imgPattern := printf "chapters/%s.*" .Params.file }}
+    {{ $img := resources.GetMatch $imgPattern }}
+    {{ with $img }}
+      <!-- Image Column -->
+      <div class="col-md-4 col-lg-6">
+        <div class="card">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="card-img-top">
+        </div>
       </div>
-      {{ end }}
-      <div class="col my-4">
-        <div class="m-2">
-          {{ with $status }}
-              <p class="mb-2">
-              <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
-              </p>
-          {{ end }}
+    {{ end }}
 
-          <p class="mb-2">
-          {{ with .Params.city }}{{ . | humanize }}, {{ end }}
-          {{ with .Params.state_region }}
-              {{ . | humanize }},
-          {{ end }}
-          {{ with .Params.country }}
-              {{ . | humanize }}
-          {{ end }}
-          </p>
+    <div class="col my-4">
+      <div class="m-2">
+        {{ with $status }}
+            <p class="mb-2">
+            <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
+            </p>
+        {{ end }}
 
-          {{ with .Params.social_media }}
-              <p class="mb-2">
-                  {{ partial "social_media.html" (dict "data" . "relme" true) }}
-              </p>
-          {{ end }}
+        <p class="mb-2">
+        {{ with .Params.city }}{{ . | humanize }}, {{ end }}
+        {{ with .Params.state_region }}
+            {{ . | humanize }},
+        {{ end }}
+        {{ with .Params.country }}
+            {{ . | humanize }}
+        {{ end }}
+        </p>
 
-          {{ with .Params.urlname }}
+        {{ with .Params.social_media }}
+            <p class="mb-2">
+                {{ partial "social_media.html" (dict "data" . "relme" true) }}
+            </p>
+        {{ end }}
+        {{ with .Params.urlname }}
           <p class="mb-0">
             <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
               Join chapter <i class="bi bi-box-arrow-up-right"></i>
             </a>
           </p>
-          {{ end }}
-        </div>
+        {{ end }}
       </div>
     </div>
   </div>
 
+
+  <!-- Only add map if has coords and is not Remote chapter -->
+  {{ if (and .Params.lat .Params.lon (ne .Params.city "Remote")) }}
+    <!-- Map Column -->
+    <div class="container my-5">
+      <div class="card shadow-sm">
+        {{ partial "map.html" (dict 
+          "id" "chapter_map" 
+          "height" "300px" 
+          "data" (dict
+            "points" (slice (dict 
+              "name" .Title
+              "members" .Params.members
+              "latitude" .Params.lat 
+              "longitude" .Params.lon
+            ))
+          )
+          "radius" 7
+          "zoom" (dict 
+            "lat" .Params.lat 
+            "lon" .Params.lon 
+            "level" 15
+            "iso" .Params.country_iso
+          )
+          "color" "#88398a"
+        ) }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+
   {{ with .Params.organizers }}
-    <div class="card shadow-sm mb-4">
+    <div class="card shadow-sm mb-4 mt-4">
       <div class="card-body">
         <h2 class="card-title h4 mb-3">Organizers</h2>
-
         <ul class="nav nav-tabs" id="organizerTabs" role="tablist">
           <li class="nav-item">
-            <button class="nav-link active" id="current-tab" data-toggle="tab" data-target="#current-organizers" role="tab">Current</button>
+            <button class="nav-link active" id="current-tab" data-bs-toggle="tab" data-bs-target="#current-organizers" role="tab">Current</button>
           </li>
           <li class="nav-item">
-            <button class="nav-link" id="former-tab" data-toggle="tab" data-target="#former-organizers" role="tab">Former</button>
+            <button class="nav-link" id="former-org-tab" data-bs-toggle="tab" data-bs-target="#former-organizers" role="tab">Former</button>
           </li>
         </ul>
-
         <div class="tab-content" id="organizerTabsContent">
-          <div class="tab-pane fade show active" id="current-organizers" role="tabpanel" aria-labelledby="current-tab">
+          <div class="tab-pane fade show active" id="current-organizers" role="tabpanel">
             {{ with .current }}
               <ul class="list-group list-group-flush mb-3">
                 {{ range . }}
@@ -104,9 +133,8 @@
               </ul>
             {{ end }}
           </div>
-
           {{ with .former }}
-            <div class="tab-pane fade" id="former-organizers" role="tabpanel" aria-labelledby="former-tab">
+            <div class="tab-pane fade" id="former-organizers" role="tabpanel">
               <ul class="list-group list-group-flush mb-3">
                 {{ range . }}
                   <li class="list-group-item">{{ . }}</li>
@@ -123,26 +151,20 @@
   <div class="card shadow-sm mb-4">
     <div class="card-body">
       <h2 class="card-title h4 mb-3">Chapter Events</h2>
-
-      <!-- Nav tabs -->
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation">
-          <a class="nav-link active" id="upcoming-tab" data-toggle="tab" href="#upcoming" role="tab" aria-controls="upcoming" aria-selected="true">
+          <a class="nav-link active" id="upcoming-tab" data-bs-toggle="tab" href="#upcoming" role="tab">
             Upcoming ({{ len $upcomingEvents }})
           </a>
         </li>
         <li class="nav-item" role="presentation">
-          <a class="nav-link" id="former-tab" data-toggle="tab" href="#former" role="tab" aria-controls="former" aria-selected="false">
+          <a class="nav-link" id="former-events-tab" data-bs-toggle="tab" href="#former" role="tab">
             Former ({{ len $formerEvents }})
           </a>
         </li>
       </ul>
-
-      <!-- Tab panes -->
       <div class="tab-content pt-3">
-        <!-- Upcoming Events Tab -->
-        <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
-
+        <div class="tab-pane fade show active" id="upcoming" role="tabpanel">
           {{ if gt (len $upcomingEvents) 0 }}
             {{ $nextEvent := index $upcomingEvents 0 }}
             <h3 class="h5 text-primary mb-3">Next Upcoming Event:</h3>
@@ -159,10 +181,8 @@
                 {{ end }}
               </div>
             </div>
-
             {{ $upcomingEvents = after 1 $upcomingEvents }}
           {{ end }}
-
           {{ if gt (len $upcomingEvents) 0 }}
             <h3 class="h5 mt-4 mb-3">Other Upcoming Events:</h3>
             <ul class="list-group list-group-flush mb-4">
@@ -184,11 +204,8 @@
           {{ else if eq (len $upcomingEvents) 0 }}
             <p class="text-muted">No upcoming events.</p>
           {{ end }}
-
         </div>
-
-        <!-- Former Events Tab -->
-        <div class="tab-pane fade" id="former" role="tabpanel" aria-labelledby="former-tab">
+        <div class="tab-pane fade" id="former" role="tabpanel">
           {{ if gt (len $formerEvents) 0 }}
             <ul class="list-group list-group-flush">
               {{ range $event := $formerEvents }}
@@ -200,7 +217,7 @@
                     {{ end }}
                     {{ $event.title }}
                     {{ with $event.id }}
-                      <a>
+                      </a>
                     {{ end }}
                     </h4>
                     <small>
@@ -219,5 +236,6 @@
     </div>
   </div>
 {{ end }}
+</div>
 
 {{ end }}

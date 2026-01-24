@@ -1,12 +1,12 @@
 <div class="jumbotron paral m-0 {{ if .IsHome }} home {{ end }}" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url({{ .Site.Params.banner | relURL }})" id="hero">
   <a rel="alternate" href="/" hreflang="{{ .Lang }}" lang="{{ .Lang }}">
     <div class="logo">
-      <img src="{{ .Site.Params.avatar | relURL }}">
+      <img src="{{ .Site.Params.avatar | relURL }}" alt="{{ .Site.Title }}">
     </div>
   </a>
   {{ if .IsHome }}
     <a href="#main" aria-label="Scroll to content">
-      <i class="fa fa-chevron-down chevron animated fadeInUp"></i>
+      <i class="fa fa-chevron-down chevron animated fadeInUp" aria-hidden="true"></i>
     </a>
   {{ end }}
 </div>
