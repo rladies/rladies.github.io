@@ -19,9 +19,8 @@ X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming R-Ladies events worldwide
 {{- range first 100 $futureEvents }}
 {{- $eventTime := time .datetime_utc }}
-{{- $endTime := $eventTime.Add (mul .duration 1000000000) }}
-BEGIN:VEVENT
-UID:{{ .id }}@rladies.org
+{{- $endTime := $eventTime.Add (time.ParseDuration (printf "%vs" .duration)) }}BEGIN:VEVENT
+UID:noreply@rladies.org
 DTSTAMP:{{ now.Format "20060102T150405Z" }}
 DTSTART:{{ $eventTime.Format "20060102T150405Z" }}
 DTEND:{{ $endTime.Format "20060102T150405Z" }}
