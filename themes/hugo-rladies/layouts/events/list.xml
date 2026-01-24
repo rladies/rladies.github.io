@@ -28,8 +28,7 @@
     {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{- end }}
     {{- range $futureEvents }}
-    {{- $eventTime := time .datetime_utc }}
-    {{- $endTime := $eventTime.Add (mul .duration 1000000000) }}
+    {{- $eventTime := time .datetime_utc }}    
     <item>
       <title>{{ .title }} - {{ .group_name }}</title>
       <link>{{ .link }}</link>
