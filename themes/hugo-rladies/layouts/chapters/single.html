@@ -35,46 +35,47 @@
 
 <div class="container my-5">
   <div class="row g-4">
-    <!-- Image Column -->
-    <div class="col-lg-4">
-      {{ $imgPattern := printf "chapters/%s.*" .Params.file }}
-      {{ $img := resources.GetMatch $imgPattern }}
-      {{ with $img }}
-      <div class="card shadow-sm">
-        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="card-img-top">
-      </div>
-      {{ end }}
-      <div class="col my-4">
-        <div class="m-2">
-          {{ with $status }}
-              <p class="mb-2">
-              <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
-              </p>
-          {{ end }}
-
-          <p class="mb-2">
-          {{ with .Params.city }}{{ . | humanize }}, {{ end }}
-          {{ with .Params.state_region }}
-              {{ . | humanize }},
-          {{ end }}
-          {{ with .Params.country }}
-              {{ . | humanize }}
-          {{ end }}
-          </p>
-
-          {{ with .Params.social_media }}
-              <p class="mb-2">
-                  {{ partial "social_media.html" (dict "data" . "relme" true) }}
-              </p>
-          {{ end }}
-          {{ with .Params.urlname }}
-            <p class="mb-0">
-              <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                Join chapter <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-            </p>
-          {{ end }}
+    {{ $imgPattern := printf "chapters/%s.*" .Params.file }}
+    {{ $img := resources.GetMatch $imgPattern }}
+    {{ with $img }}
+      <!-- Image Column -->
+      <div class="col-md-4 col-lg-6">
+        <div class="card">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="card-img-top">
         </div>
+      </div>
+    {{ end }}
+
+    <div class="col my-4">
+      <div class="m-2">
+        {{ with $status }}
+            <p class="mb-2">
+            <span class="badge {{ if eq . "active" }}bg-rladies {{ else if eq . "inactive" }} bg-secondary {{ else }} bg-warning {{ end }}">{{ . | humanize }}</span>
+            </p>
+        {{ end }}
+
+        <p class="mb-2">
+        {{ with .Params.city }}{{ . | humanize }}, {{ end }}
+        {{ with .Params.state_region }}
+            {{ . | humanize }},
+        {{ end }}
+        {{ with .Params.country }}
+            {{ . | humanize }}
+        {{ end }}
+        </p>
+
+        {{ with .Params.social_media }}
+            <p class="mb-2">
+                {{ partial "social_media.html" (dict "data" . "relme" true) }}
+            </p>
+        {{ end }}
+        {{ with .Params.urlname }}
+          <p class="mb-0">
+            <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+              Join chapter <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </p>
+        {{ end }}
       </div>
     </div>
   </div>
