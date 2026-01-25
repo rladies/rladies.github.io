@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sun, 25 Jan 2026 01:12:39 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sun, 25 Jan 2026 13:06:23 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -22,7 +22,7 @@
 This is an in-person event and refreshments will be provided, so we appreciate your RSVP.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/312797152/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Outgrowing your laptop with R and Positron - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/312978180/</link><pubDate>Wed, 25 Feb 2026 16:00:00 +0000</pubDate><guid>312978180</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, February 25, 2026 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 12 going</p>
+        <p><strong>Attendees:</strong> 14 going</p>
         <p>Introduction to using R in Positron</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>R shiny workshop - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/312266942/</link><pubDate>Tue, 03 Feb 2026 16:00:00 +0000</pubDate><guid>312266942</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, February 3, 2026 at 4:00 PM UTC</p>
@@ -43,7 +43,7 @@ No se requiere experiencia previa con Copilot, solo curiosidad por nuevas formas
         <p><a href="https://www.meetup.com/rladies-santa-rosa/events/313003756/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Rosa)</author><category>R-Ladies Santa Rosa</category></item><item><title>Git &amp; GitHub: Practical Version Control for Data Work - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/312910723/</link><pubDate>Thu, 29 Jan 2026 18:00:00 +0000</pubDate><guid>312910723</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Thursday, January 29, 2026 at 6:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 90 going</p>
+        <p><strong>Attendees:</strong> 93 going</p>
         <p>Version control is no longer optional for data analysis, research, or collaborative projects.
 In this session, we introduce **Git and GitHub** with a practical, workflow-driven approach.
 
