@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 27 Jan 2026 01:12:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 27 Jan 2026 13:10:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -35,7 +35,34 @@ This is an in-person event and refreshments will be provided, so we appreciate y
         <p><strong>Where:</strong> Central Building 2, NTNU</p>
         <p><strong>Attendees:</strong> 6 going</p>
         <p>We will kick off 2026 with a workshop to learn R Shiny by PhD Candidate Rachel McLeod.</p>
-        <p><a href="https://www.meetup.com/rladies-trondheim/events/312266942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Programando en R con GitHub Copilot - R-Ladies Santa Rosa</title><link>https://www.meetup.com/rladies-santa-rosa/events/313003756/</link><pubDate>Sat, 31 Jan 2026 13:00:00 +0000</pubDate><guid>313003756</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Rosa</p>
+        <p><a href="https://www.meetup.com/rladies-trondheim/events/312266942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>[IN-PERSON] #tidytuesday Work Group (on a Monday) - R-Ladies RTP</title><link>https://www.meetup.com/rladies-rtp/events/313075566/</link><pubDate>Mon, 02 Feb 2026 23:00:00 +0000</pubDate><guid>313075566</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies RTP</p>
+        <p><strong>When:</strong> Monday, February 2, 2026 at 11:00 PM UTC</p>
+        <p><strong>Attendees:</strong> 1 going</p>
+        <p>Join fellow R-Ladies in exploring a #tidytuesday data set! For those craving human connection and some practice flexing your data science skills, this is the event for you! We will hold our event via Zoom, where you can meet other R-ladies, improve your R skills, and build your data science portfolio. This event is for people at all levels of R (beginner through advanced).
+
+At this event, we&#39;ll revisit one of the Tidy Tuesday datasets on The Simpsons (originally from Kaggle). You can read more about it here: https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-02-04/readme.md.
+
+Agenda (all times in ET):
+6:00 - 6:15 pm Meet &amp; Greet
+6:15 - 7:15 pm #tidytuesday
+7:15 - 7:30 pm Discussion
+
+What is #tidytuesday?
+#TidyTuesday is a weekly social data project created by the R4DS online learning community that is focused on using tidyverse packages. A new data set and accompanying article featuring an interesting plot is released on Github every Monday. The goal is to generate a copy of the original plot or create your own original approach!
+
+For more information on #tidytuesday, check out [this blog post](https://bit.ly/2HqEsdt) and [the main repository page](https://github.com/rfordatascience/tidytuesday).
+
+Who is this for?
+New and experienced R users alike! Let&#39;s learn together! All are welcome, including R-Ladies RTP members and R-Ladies from around the world.
+
+What should I bring?
+You&#39;ll need a computer with videoconferencing capabilities and R. Serve yourself a beverage and a snack to fuel your evening!
+
+Where will it take place?
+**Please join us in-person in Duke University, Old Chemistry Building Room 201.** Old Chem is next to Bostock Library. The closest nearby public parking deck is the Bryan Center Parking Garage on Science Drive.
+
+All events are intended for women as leaders, mentors, members, and attendees. We are emphatically queer and trans friendly. Men are welcomed to attend *as guests* and must be accompanied by the R-Lady who invited them. This group was created so those who identify as women have a comfortable place to learn. If you would like to attend and feel excluded, please introduce yourself to an organizer.</p>
+        <p><a href="https://www.meetup.com/rladies-rtp/events/313075566/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies RTP)</author><category>R-Ladies RTP</category></item><item><title>Programando en R con GitHub Copilot - R-Ladies Santa Rosa</title><link>https://www.meetup.com/rladies-santa-rosa/events/313003756/</link><pubDate>Sat, 31 Jan 2026 13:00:00 +0000</pubDate><guid>313003756</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Rosa</p>
         <p><strong>When:</strong> Saturday, January 31, 2026 at 1:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 7 going</p>
