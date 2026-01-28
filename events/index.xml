@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 27 Jan 2026 13:10:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 28 Jan 2026 01:12:37 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -28,7 +28,7 @@ Description is TBD. Topic is making maps in R.</p>
 This is an in-person event and refreshments will be provided, so we appreciate your RSVP.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/312797152/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Outgrowing your laptop with R and Positron - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/312978180/</link><pubDate>Wed, 25 Feb 2026 16:00:00 +0000</pubDate><guid>312978180</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, February 25, 2026 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 15 going</p>
+        <p><strong>Attendees:</strong> 17 going</p>
         <p>Introduction to using R in Positron</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>R shiny workshop - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/312266942/</link><pubDate>Tue, 03 Feb 2026 16:00:00 +0000</pubDate><guid>312266942</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, February 3, 2026 at 4:00 PM UTC</p>
@@ -37,7 +37,7 @@ This is an in-person event and refreshments will be provided, so we appreciate y
         <p>We will kick off 2026 with a workshop to learn R Shiny by PhD Candidate Rachel McLeod.</p>
         <p><a href="https://www.meetup.com/rladies-trondheim/events/312266942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>[IN-PERSON] #tidytuesday Work Group (on a Monday) - R-Ladies RTP</title><link>https://www.meetup.com/rladies-rtp/events/313075566/</link><pubDate>Mon, 02 Feb 2026 23:00:00 +0000</pubDate><guid>313075566</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies RTP</p>
         <p><strong>When:</strong> Monday, February 2, 2026 at 11:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 1 going</p>
+        <p><strong>Attendees:</strong> 2 going</p>
         <p>Join fellow R-Ladies in exploring a #tidytuesday data set! For those craving human connection and some practice flexing your data science skills, this is the event for you! We will hold our event via Zoom, where you can meet other R-ladies, improve your R skills, and build your data science portfolio. This event is for people at all levels of R (beginner through advanced).
 
 At this event, we&#39;ll revisit one of the Tidy Tuesday datasets on The Simpsons (originally from Kaggle). You can read more about it here: https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-02-04/readme.md.
@@ -94,62 +94,10 @@ Bring curiosity and your laptop.</p>
         <p><a href="https://www.meetup.com/rladies-rome/events/312910723/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Analyse Factorielle Multiple: analyses de groupes de variables (quanti et quali) - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/312844640/</link><pubDate>Wed, 28 Jan 2026 11:30:00 +0000</pubDate><guid>312844640</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Wednesday, January 28, 2026 at 11:30 AM UTC</p>
         <p><strong>Where:</strong> Faculté des Lettres &amp; des Sciences Humaines</p>
-        <p><strong>Attendees:</strong> 3 going</p>
+        <p><strong>Attendees:</strong> 2 going</p>
         <p>Nous présentons l’analyse factorielle multiple ou (AFM, Escofier &amp; Pagès 1994) avec le package R [FactoMineR](http://factominer.free.fr/factomethods/analyse-factorielle-multiple.html) (Josse &amp; Husson 2008). Cette approche a pour but de cibler de grandes tendances variationelles au sein d’un jeu de données comprenant plusieurs groupes de variables (ex : **groupe 1** « personnalité », **variable 1** : « timidité », **var. 2** : « résistance au stress », **var. 3** : « sociabilité » …). Les variables peuvent être qualitatives, quantitatives ou les deux. Le nombre de variables par groupe peut varier et l’importance de chaque groupe est pondérée de façon à ce qu’ils aient le même poids.
 Cette approche est utilisée dans les études de comportement alimentaire (Ares et al. 2010), en écologie (Poulard et Léauté 2008), sensorimétrie (Stanimirova et al. 2011), sociolinguistique (Amand 2019) ou pour analyser les résultats de questionnaires d’enquête de satisfaction (Bécue-Bertaut et al. 2008). L’AFM permet, en outre, de hiérarchiser soit les variables, soit les groupes de variables en fonction de leur influence sur la variation générale.
 L’AFM met également en valeur les types de corrélation présents entre les variables.
 Combinée à une classification hiérarchique (Husson 2010), il est possible de construire des groupes d’individus basés sur les schémas variationnels dominants dégagés par l’AFM.
 Des graphiques accompagnent chaque tableau de diagnostique de l’AFM (grandes tendances, co-occurrence, groupes d’individus et individus médians ou atypiques), ce qui facilite l’interprétation.</p>
-        <p><a href="https://www.meetup.com/rladies-limoges/events/312844640/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Limoges)</author><category>R-Ladies Limoges</category></item><item><title>TidyTuesday - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/312625100/</link><pubDate>Tue, 27 Jan 2026 23:00:00 +0000</pubDate><guid>312625100</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
-        <p><strong>When:</strong> Tuesday, January 27, 2026 at 11:00 PM UTC</p>
-        <p><strong>Where:</strong> Bayview Yards</p>
-        <p><strong>Attendees:</strong> 18 going</p>
-        <p>Join R-Ladies Ottawa for a casual evening of programming on Tuesday, January 27th. We&#39;ll be participating in TidyTuesday, a weekly data visualization challenge organized by the *R for Data Science* community.
-
-**What is TidyTuesday?**
-
-Every week, a new dataset is posted online on the [TidyTuesday GitHub repo](https://github.com/rfordatascience/tidytuesday), and folks from around the world create data visualizations using the dataset. It&#39;s an opportunity to put your programming skills into practice using real-world data in a way that&#39;s fun! It&#39;s also a great way for everyone to learn from each other, by sharing their visualizations and code.
-
-**What will the dataset be?**
-
-Even we don&#39;t know that (yet)! We&#39;ll have to wait until the day before the event to know what data we&#39;ll be working with. If you&#39;re interested in seeing some past datasets, take a look at the examples below, or visit the [TidyTuesday GitHub repo](https://github.com/rfordatascience/tidytuesday) to see all of the datasets dating back to 2018.
-
-*Examples from past TidyTuesdays:*
-
-* [Donuts, Data, and D&#39;oh - A Deep Dive into The Simpsons](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-02-04/readme.md)
-* [Pokemon](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-04-01/readme.md)
-* [What have we been watching on Netflix?](https://github.com/rfordatascience/tidytuesday/blob/main/data/2025/2025-07-29/readme.md)
-
-**Do I have to use R?**
-
-No! You can use any programming language or visualization software that you want. In fact, Python users from around the globe participate in &#34;TyDyTuesday&#34; on a weekly basis.
-
-**Who is this event for?**
-
-No previous programming experience is required to participate, and we&#39;ll have experienced programmers in the room who can help you get started (or unstuck), if needed.
-
-...But if you want to get the most out of the event, a good way to prepare is to watch the recording of the [introduction to data visualization workshop](https://rladies-ottawa.github.io/events/2024/intro_to_r.html) we hosted back in 2024. :)
-
-**What should I bring?**
-
-* Please bring a laptop so you can code along. We recommend that you have RStudio or another IDE (such as VS Code or Positron) installed ahead of time, but we can help you get one installed if needed!
-* Come ready to learn, share, and contribute to a safe and welcoming community!
-
-**How will this event work?**
-
-* First few minutes of the event: Introductions, and taking a look at the dataset together as a group.
-* Time to create a data visualization using the language or software of your choice, either on your own or with a (new) friend! Grab a free snack while you&#39;re at it :)
-* Last \~30 minutes of the event: Show and tell session for anyone who would like to share their creation with the group.
-
-**What else do I need to know?**
-
-This event (like all R-Ladies events) is totally FREE to attend.
-
-The event will take place at Bayview Yards, which is located just a few steps away from the Bayview O-Train station. There is also a free parking lot available for those who are driving. You can find us in the &#34;Training Room&#34;, which is on the second floor of the Bayview Yards building.
-
-*This is an in-person event with limited space! Please only RSVP if you are able to attend in-person!*
-
-**\*\*\*Please note that the mission of R-Ladies is to increase gender diversity in the R community. This event is intended to provide a safe space for women and gender minorities. We ask for male allies to be invited by and accompanied by a woman or gender minority.\*\*\***
-
-We’re grateful to be part of the Bayview Meetups initiative and extend our thanks to Bayview Yards for generously providing the venue space.</p>
-        <p><a href="https://www.meetup.com/rladies-ottawa/events/312625100/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-limoges/events/312844640/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Limoges)</author><category>R-Ladies Limoges</category></item></channel></rss>
