@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 30 Jan 2026 01:12:48 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 30 Jan 2026 13:10:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -19,7 +19,27 @@
         <p><strong>Attendees:</strong> 2 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Coffee and Conversation - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/312797152/</link><pubDate>Sat, 28 Feb 2026 16:30:00 +0000</pubDate><guid>312797152</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><pubDate>Wed, 04 Mar 2026 03:00:00 +0000</pubDate><guid>313107321</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><strong>When:</strong> Wednesday, March 4, 2026 at 3:00 AM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 2 going</p>
+        <p>**Workshop Details**
+In this workshop, we will learn how to create webpages using Quarto in RStudio, and host it on GitHub. The example website will be a professional website template ([see my example webpage here](https://grcetmpk.github.io/)), but these skills can also be used to create other webpages ([like this one](https://ubc-stat.github.io/stat545/)).
+
+This workshop was designed for R coders with no prior experience with Quarto. Experience with GitHub is helpful, but not necessary. We will be going through all of the steps slowly.
+
+\*\*\*
+
+1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)
+2. Who is this allowed to attend the event?
+
+Everyone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.
+3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
+
+See you there!
+
+Jasmine, and Melissa</p>
+        <p><a href="https://www.meetup.com/rladies-vancouver/events/313107321/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Coffee and Conversation - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/312797152/</link><pubDate>Sat, 28 Feb 2026 16:30:00 +0000</pubDate><guid>312797152</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Saturday, February 28, 2026 at 4:30 PM UTC</p>
         <p><strong>Where:</strong> Webster Groves Public Library</p>
         <p><strong>Attendees:</strong> 13 going</p>
@@ -30,7 +50,20 @@ This is an in-person event and refreshments will be provided, so we appreciate y
         <p><strong>When:</strong> Wednesday, February 25, 2026 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 20 going</p>
         <p>Introduction to using R in Positron</p>
-        <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>R shiny workshop - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/312266942/</link><pubDate>Tue, 03 Feb 2026 16:00:00 +0000</pubDate><guid>312266942</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+        <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title> From Data to Decisions: Using Digital Twins for Smarter Maintenance - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313125588/</link><pubDate>Mon, 16 Feb 2026 17:00:00 +0000</pubDate><guid>313125588</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><strong>When:</strong> Monday, February 16, 2026 at 5:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 12 going</p>
+        <p>**How do you turn raw sensor data into reliable maintenance decisions when systems operate under constantly changing conditions?**
+
+In this talk, [Priyanka Schnell](https://www.linkedin.com/in/priyanka-schnell/) will share a **real-world case study** from the aerospace industry, showing how data and engineering models can be used to move from traditional, schedule-based maintenance to smarter, condition-based decisions.
+
+The example comes from aircraft wing manufacturing, where robotic drills operate under extremely strict quality requirements. ***&#34;Replacing tools too early wastes resources, while replacing them too late can cause costly damage.&#34;*** Priyanka will explain how combining sensor data (such as power, vibration, and torque) with physical knowledge of the process makes it possible to detect early warning signs of failure.
+
+Using a concept called a ***digital twin***—a live data model that mirrors the real process—the team was able to identify problems hours before failure occurred. This approach improved efficiency, reduced waste, and prevented expensive damage.
+
+To make the ideas concrete, parts of the session will include live exploration of data and models in **Google Colab**, focusing on intuition, **workflow**, and **decision-making** rather than heavy mathematics. The talk is designed to be accessible and will emphasize practical lessons, interpretability, and why combining data science with domain knowledge is key when working in production systems—no prior knowledge of manufacturing or physics required.</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/313125588/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>R shiny workshop - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/312266942/</link><pubDate>Tue, 03 Feb 2026 16:00:00 +0000</pubDate><guid>312266942</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, February 3, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Central Building 2, NTNU</p>
         <p><strong>Attendees:</strong> 6 going</p>
