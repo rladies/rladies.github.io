@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 30 Jan 2026 13:10:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 31 Jan 2026 01:12:45 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -16,7 +16,7 @@
         <p><a href="https://www.meetup.com/rladies-philly/events/312900982/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Save the Date: Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><pubDate>Thu, 09 Apr 2026 23:00:00 +0000</pubDate><guid>313055670</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 2 going</p>
+        <p><strong>Attendees:</strong> 3 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><pubDate>Wed, 04 Mar 2026 03:00:00 +0000</pubDate><guid>313107321</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
@@ -53,7 +53,7 @@ This is an in-person event and refreshments will be provided, so we appreciate y
         <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title> From Data to Decisions: Using Digital Twins for Smarter Maintenance - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313125588/</link><pubDate>Mon, 16 Feb 2026 17:00:00 +0000</pubDate><guid>313125588</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Monday, February 16, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 12 going</p>
+        <p><strong>Attendees:</strong> 24 going</p>
         <p>**How do you turn raw sensor data into reliable maintenance decisions when systems operate under constantly changing conditions?**
 
 In this talk, [Priyanka Schnell](https://www.linkedin.com/in/priyanka-schnell/) will share a **real-world case study** from the aerospace industry, showing how data and engineering models can be used to move from traditional, schedule-based maintenance to smarter, condition-based decisions.
@@ -70,6 +70,7 @@ To make the ideas concrete, parts of the session will include live exploration o
         <p>We will kick off 2026 with a workshop to learn R Shiny by PhD Candidate Rachel McLeod.</p>
         <p><a href="https://www.meetup.com/rladies-trondheim/events/312266942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>[IN-PERSON] #tidytuesday Work Group (on a Monday) - R-Ladies RTP</title><link>https://www.meetup.com/rladies-rtp/events/313075566/</link><pubDate>Mon, 02 Feb 2026 23:00:00 +0000</pubDate><guid>313075566</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies RTP</p>
         <p><strong>When:</strong> Monday, February 2, 2026 at 11:00 PM UTC</p>
+        <p><strong>Where:</strong> Old Chemistry Building Duke University</p>
         <p><strong>Attendees:</strong> 2 going</p>
         <p>Join fellow R-Ladies in exploring a #tidytuesday data set! For those craving human connection and some practice flexing your data science skills, this is the event for you! We will hold our event via Zoom, where you can meet other R-ladies, improve your R skills, and build your data science portfolio. This event is for people at all levels of R (beginner through advanced).
 
@@ -98,7 +99,7 @@ All events are intended for women as leaders, mentors, members, and attendees. W
         <p><a href="https://www.meetup.com/rladies-rtp/events/313075566/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies RTP)</author><category>R-Ladies RTP</category></item><item><title>Programando en R con GitHub Copilot - R-Ladies Santa Rosa</title><link>https://www.meetup.com/rladies-santa-rosa/events/313003756/</link><pubDate>Sat, 31 Jan 2026 13:00:00 +0000</pubDate><guid>313003756</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Rosa</p>
         <p><strong>When:</strong> Saturday, January 31, 2026 at 1:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 8 going</p>
+        <p><strong>Attendees:</strong> 9 going</p>
         <p>R-Ladies Santa Rosa invita a una charla para descubrir cómo **GitHub Copilot puede integrarse en el trabajo diario con R.**
 
 **Yanina Bellini Saibene mostrará aplicaciones prácticas tanto en la interfaz de GitHub como en RStudio,** explorando cómo este asistente ayuda a escribir código y a probar ideas.
