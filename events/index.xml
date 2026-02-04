@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 03 Feb 2026 13:10:36 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 04 Feb 2026 01:13:19 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -53,14 +53,14 @@ This is an in-person event and refreshments will be provided, so we appreciate y
         <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Wrangling Earth System Model Outputs in R for Marine Ecologists - R-Ladies Santa Barbara</title><link>https://www.meetup.com/rladies-santa-barbara/events/312855430/</link><pubDate>Thu, 19 Feb 2026 01:30:00 +0000</pubDate><guid>312855430</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Barbara</p>
         <p><strong>When:</strong> Thursday, February 19, 2026 at 1:30 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 7 going</p>
+        <p><strong>Attendees:</strong> 11 going</p>
         <p>R is undoubtedly the programming language of choice for many marine ecologists. However, navigating the complexities of downloading, processing and wrangling gridded oceanographic data within R can represent a steep learning curve. As the impacts of climate variability and change on our oceans become increasingly evident, the ability to efficiently interact with, and use, Earth System Model (ESM) outputs for our research is more critical than ever. Here, we will walk through core skills needed to be proficient in creating projections of physical variables from ESM outputs, with the goal of using them for marine ecological applications. Specifically, we’ll be creating projections of sea-surface temperature out to 2100, across one climate scenario, for the California Current region.
 
 This event will be held on **Wednesday, February 18 from 5:30 - 7:00 PST** and will be **virtual**! A zoom link and the workshop materials will be provided closer to the event to folks who RSVP. **RSVPs will close at noon the day of the event.**</p>
         <p><a href="https://www.meetup.com/rladies-santa-barbara/events/312855430/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Barbara)</author><category>R-Ladies Santa Barbara</category></item><item><title> From Data to Decisions: Using Digital Twins for Smarter Maintenance - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313125588/</link><pubDate>Mon, 16 Feb 2026 17:00:00 +0000</pubDate><guid>313125588</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Monday, February 16, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 35 going</p>
+        <p><strong>Attendees:</strong> 37 going</p>
         <p>**How do you turn raw sensor data into reliable maintenance decisions when systems operate under constantly changing conditions?**
 
 In this talk, [Priyanka Schnell](https://www.linkedin.com/in/priyanka-schnell/) will share a **real-world case study** from the aerospace industry, showing how data and engineering models can be used to move from traditional, schedule-based maintenance to smarter, condition-based decisions.
@@ -70,9 +70,12 @@ The example comes from aircraft wing manufacturing, where robotic drills operate
 Using a concept called a ***digital twin***—a live data model that mirrors the real process—the team was able to identify problems hours before failure occurred. This approach improved efficiency, reduced waste, and prevented expensive damage.
 
 To make the ideas concrete, parts of the session will include live exploration of data and models in **Google Colab**, focusing on intuition, **workflow**, and **decision-making** rather than heavy mathematics. The talk is designed to be accessible and will emphasize practical lessons, interpretability, and why combining data science with domain knowledge is key when working in production systems—no prior knowledge of manufacturing or physics required.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/313125588/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>R shiny workshop - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/312266942/</link><pubDate>Tue, 03 Feb 2026 16:00:00 +0000</pubDate><guid>312266942</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
-        <p><strong>When:</strong> Tuesday, February 3, 2026 at 4:00 PM UTC</p>
-        <p><strong>Where:</strong> Central Building 2, NTNU</p>
-        <p><strong>Attendees:</strong> 7 going</p>
-        <p>We will kick off 2026 with a workshop to learn R Shiny by PhD Candidate Rachel McLeod.</p>
-        <p><a href="https://www.meetup.com/rladies-trondheim/events/312266942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-rome/events/313125588/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Cross-Posting: One Metric to Fool Yourself - A Cautionary Tale - R-Ladies Irvine</title><link>https://www.meetup.com/rladies-irvine/events/313193626/</link><pubDate>Mon, 09 Feb 2026 21:00:00 +0000</pubDate><guid>313193626</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Irvine</p>
+        <p><strong>When:</strong> Monday, February 9, 2026 at 9:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 2 going</p>
+        <p>When fitting a model, statistical or machine learning, we often want to evaluate its performance. We have a wealth of different methods for all types of scenarios, from classification and regression to survival analysis. While these performance metrics work as intended, we can often get more out of models by carefully combining and using these metrics to capture what we really care about in our models. Optimal performance and minimal bias.
+
+**Register for this event at the R Meetup - Real Data Science USA**
+[https://www.meetup.com/real-data-science-usa-r-meetup/](https://www.meetup.com/real-data-science-usa-r-meetup/)</p>
+        <p><a href="https://www.meetup.com/rladies-irvine/events/313193626/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Irvine)</author><category>R-Ladies Irvine</category></item></channel></rss>
