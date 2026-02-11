@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 10 Feb 2026 17:31:48 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 11 Feb 2026 01:14:14 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Wed, 06 May 2026 22:00:00 +0000</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -16,13 +16,13 @@
         <p><a href="https://www.meetup.com/rladies-philly/events/312900982/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Save the Date: Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><pubDate>Thu, 09 Apr 2026 23:00:00 +0000</pubDate><guid>313055670</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 8 going</p>
+        <p><strong>Attendees:</strong> 9 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><pubDate>Fri, 27 Mar 2026 15:00:00 +0000</pubDate><guid>313222148</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 18 going</p>
+        <p><strong>Attendees:</strong> 24 going</p>
         <p>**Supercharging Your R Workflow with a Native AI Assistant**
 
 It’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.
@@ -69,7 +69,7 @@ This is an in-person event and refreshments will be provided, so we appreciate y
         <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>From Incident to Solution: How IT Functional Support Keeps the Business Running - R Ladies Tirane</title><link>https://www.meetup.com/rladies-tirane/events/313238607/</link><pubDate>Mon, 23 Feb 2026 17:00:00 +0000</pubDate><guid>313238607</guid><description><![CDATA[<p><strong>Chapter:</strong> R Ladies Tirane</p>
         <p><strong>When:</strong> Monday, February 23, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 6 going</p>
+        <p><strong>Attendees:</strong> 7 going</p>
         <p>Open Lecture: **&#34;From Incident to Solution: How IT Functional Support Keeps the Business Running&#34;**
 
 Part of SPARK series
@@ -93,7 +93,7 @@ This event will be held on **Wednesday, February 18 from 5:30 - 7:00 PST** and w
         <p><a href="https://www.meetup.com/rladies-santa-barbara/events/312855430/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Barbara)</author><category>R-Ladies Santa Barbara</category></item><item><title>A gRadual Intro to Shiny - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313201838/</link><pubDate>Tue, 17 Feb 2026 16:00:00 +0000</pubDate><guid>313201838</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
         <p><strong>When:</strong> Tuesday, February 17, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 50 going</p>
+        <p><strong>Attendees:</strong> 51 going</p>
         <p>Curious about Shiny, but not sure where to start? This hands-on workshop is designed to ease you in gradually.
 
 In A gRadual Intro to Shiny, Ted Laderas will walk through the basics of building interactive web applications in R using Shiny, with an emphasis on understanding concepts step by step rather than jumping straight into complex apps. We’ll start from simple ideas and build up carefully, so you can see how each piece fits together.
