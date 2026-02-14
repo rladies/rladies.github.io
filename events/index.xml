@@ -1,18 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 13 Feb 2026 13:11:02 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 14 Feb 2026 01:12:55 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
-        <p>In collaboration with Free Library of Philadelphia</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse workshop - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><guid>https://www.meetup.com/rladies-philly/events/312901048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p>BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R.</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><guid>https://www.meetup.com/rladies-philly/events/312901048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 29, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 1 going</p>
-        <p>TBD</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Career panel - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><guid>https://www.meetup.com/rladies-philly/events/312900982/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p>BYOLaptop to learn data wrangling skills! Join us for a hybrid meeting either in-person or on zoom where participants will login to a virtual R session and learn to use Tidyverse packages and functions.</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><guid>https://www.meetup.com/rladies-philly/events/312900982/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 15, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
-        <p>In collaboration with the Free Library of Philadelphia.</p>
+        <p>Join us for a career panel and networking with established professionals who use R statistical programming language for data analysis in their career.</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312900982/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Save the Date: Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><guid>https://www.meetup.com/rladies-st-louis/events/313055670/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
@@ -22,7 +22,7 @@ Description is TBD. Topic is making maps in R.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 33 going</p>
+        <p><strong>Attendees:</strong> 34 going</p>
         <p>**Supercharging Your R Workflow with a Native AI Assistant**
 
 It’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.
@@ -38,7 +38,7 @@ Advantages of using the gptstudio package:
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><guid>https://www.meetup.com/rladies-vancouver/events/313107321/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Wednesday, March 4, 2026 at 3:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 16 going</p>
+        <p><strong>Attendees:</strong> 17 going</p>
         <p>**Workshop Details**
 In this workshop, we will learn how to create webpages using Quarto in RStudio, and host it on GitHub. The example website will be a professional website template ([see my example webpage here](https://grcetmpk.github.io/)), but these skills can also be used to create other webpages ([like this one](https://ubc-stat.github.io/stat545/)).
 
@@ -93,7 +93,7 @@ This event will be held on **Wednesday, February 18 from 5:30 - 7:00 PST** and w
         <p><a href="https://www.meetup.com/rladies-santa-barbara/events/312855430/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Barbara)</author><category>R-Ladies Santa Barbara</category></item><item><title>A gRadual Intro to Shiny - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313201838/</link><guid>https://www.meetup.com/rladies-remote/events/313201838/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
         <p><strong>When:</strong> Tuesday, February 17, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 55 going</p>
+        <p><strong>Attendees:</strong> 59 going</p>
         <p>Curious about Shiny, but not sure where to start? This hands-on workshop is designed to ease you in gradually.
 
 In A gRadual Intro to Shiny, Ted Laderas will walk through the basics of building interactive web applications in R using Shiny, with an emphasis on understanding concepts step by step rather than jumping straight into complex apps. We’ll start from simple ideas and build up carefully, so you can see how each piece fits together.
