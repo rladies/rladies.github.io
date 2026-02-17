@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Mon, 16 Feb 2026 13:11:22 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 17 Feb 2026 01:13:31 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -22,7 +22,7 @@ Description is TBD. Topic is making maps in R.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 34 going</p>
+        <p><strong>Attendees:</strong> 36 going</p>
         <p>**Supercharging Your R Workflow with a Native AI Assistant**
 
 It’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.
@@ -93,7 +93,7 @@ This event will be held on **Wednesday, February 18 from 5:30 - 7:00 PST** and w
         <p><a href="https://www.meetup.com/rladies-santa-barbara/events/312855430/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Barbara)</author><category>R-Ladies Santa Barbara</category></item><item><title>A gRadual Intro to Shiny - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313201838/</link><guid>https://www.meetup.com/rladies-remote/events/313201838/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
         <p><strong>When:</strong> Tuesday, February 17, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 59 going</p>
+        <p><strong>Attendees:</strong> 62 going</p>
         <p>Curious about Shiny, but not sure where to start? This hands-on workshop is designed to ease you in gradually.
 
 In A gRadual Intro to Shiny, Ted Laderas will walk through the basics of building interactive web applications in R using Shiny, with an emphasis on understanding concepts step by step rather than jumping straight into complex apps. We’ll start from simple ideas and build up carefully, so you can see how each piece fits together.
@@ -113,17 +113,4 @@ You’ll learn:
 No prior Shiny experience is required, but some familiarity with R will be helpful. The session will include live demos, examples, and plenty of time to ask questions.
 
 Come for the code, stay for the “aha!” moments, and leave with a solid foundation for building your own Shiny apps.</p>
-        <p><a href="https://www.meetup.com/rladies-remote/events/313201838/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Remote)</author><category>R-Ladies Remote</category></item><item><title> From Data to Decisions: Using Digital Twins for Smarter Maintenance - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313125588/</link><guid>https://www.meetup.com/rladies-rome/events/313125588/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
-        <p><strong>When:</strong> Monday, February 16, 2026 at 5:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 62 going</p>
-        <p>**How do you turn raw sensor data into reliable maintenance decisions when systems operate under constantly changing conditions?**
-
-In this talk, [Priyanka Schnell](https://www.linkedin.com/in/priyanka-schnell/) will share a **real-world case study** from the aerospace industry, showing how data and engineering models can be used to move from traditional, schedule-based maintenance to smarter, condition-based decisions.
-
-The example comes from aircraft wing manufacturing, where robotic drills operate under extremely strict quality requirements. ***&#34;Replacing tools too early wastes resources, while replacing them too late can cause costly damage.&#34;*** Priyanka will explain how combining sensor data (such as power, vibration, and torque) with physical knowledge of the process makes it possible to detect early warning signs of failure.
-
-Using a concept called a ***digital twin***—a live data model that mirrors the real process—the team was able to identify problems hours before failure occurred. This approach improved efficiency, reduced waste, and prevented expensive damage.
-
-To make the ideas concrete, parts of the session will include live exploration of data and models in **Google Colab**, focusing on intuition, **workflow**, and **decision-making** rather than heavy mathematics. The talk is designed to be accessible and will emphasize practical lessons, interpretability, and why combining data science with domain knowledge is key when working in production systems—no prior knowledge of manufacturing or physics required.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/313125588/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-remote/events/313201838/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Remote)</author><category>R-Ladies Remote</category></item></channel></rss>
