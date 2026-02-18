@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 18 Feb 2026 01:12:53 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 18 Feb 2026 13:10:39 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -8,7 +8,14 @@
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 1 going</p>
         <p>BYOLaptop to learn data wrangling skills! Join us for a hybrid meeting either in-person or on zoom where participants will login to a virtual R session and learn to use Tidyverse packages and functions.</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><guid>https://www.meetup.com/rladies-philly/events/312900982/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><guid>https://www.meetup.com/rladies-trondheim/events/313409386/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+        <p><strong>When:</strong> Tuesday, April 28, 2026 at 3:00 PM UTC</p>
+        <p><strong>Where:</strong> Room ØHM, Øya helsehus</p>
+        <p><strong>Attendees:</strong> 2 going</p>
+        <p>Quarto provides a convenient way to automatically create reports with results and figures generated from R-code. It can play an important role in a reproducible research workflow, and saves time since whenever the results change, the report is automatically up to date. It is a crucial tool in any R-lady&#39;s toolbox! Join us for an introductory tutorial in how to get the most use out of Quarto.
+
+You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
+        <p><a href="https://www.meetup.com/rladies-trondheim/events/313409386/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><guid>https://www.meetup.com/rladies-philly/events/312900982/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 15, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 3 going</p>
@@ -16,7 +23,7 @@
         <p><a href="https://www.meetup.com/rladies-philly/events/312900982/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Save the Date: Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><guid>https://www.meetup.com/rladies-st-louis/events/313055670/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 16 going</p>
+        <p><strong>Attendees:</strong> 17 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
@@ -35,7 +42,20 @@ Advantages of using the gptstudio package:
 ✔️ Supports multiple OpenAI models, including GPT-3.5 and GPT-4
 
 ✔️ Useful for both beginners and experienced users looking to speed up their workflow</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><guid>https://www.meetup.com/rladies-vancouver/events/313107321/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>R-Ladies Corvallis: R Show &amp; Tell - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/313408453/</link><guid>https://www.meetup.com/rladies-corvallis/events/313408453/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
+        <p><strong>When:</strong> Friday, March 13, 2026 at 12:30 AM UTC</p>
+        <p><strong>Where:</strong> Common Fields</p>
+        <p><strong>Attendees:</strong> 3 going</p>
+        <p>**Learn how other R-Ladies in the community are using R!**
+
+At our second meet-up, we&#39;ll be hosting an informal Show &amp; Tell. You can present in the Show &amp; Tell or just come and hang out. For the Show &amp; Tell portion, we&#39;re asking anyone who is interested in sharing to create a single slide highlighting anything related to how they use R. For example, share how you use R in your work, tell us about a cool R project you&#39;ve worked on, or share something you want to learn more about. The current plan is to ask presenters to talk for 5 minutes. *We may adjust the time limit depending on how many volunteers we get.*
+
+**If you are interested in presenting during the Show &amp; Tell, please [fill out this brief form](https://docs.google.com/forms/d/e/1FAIpQLSeQwuwjWZK3vIc6VHP3PIlw4xhXa4Abag3Cs7gh5SYDoz3c5g/viewform?usp=publish-editor).** We will send details and instructions for the informal presentations on March 4. If you would like to present, please fill out the form by **March 3**.
+
+**You do not need to present during the Show &amp; Tell to attend this event**. If you&#39;d rather just listen, hang out, and chat, you are encouraged to still attend!
+
+Food and drink are available for purchase. Please note this event will be held outside. We have a pavilion reserved, but we recommend bundling up just in case it&#39;s cold! This is an open and informal event! Come as you are - any and all R skill level and experience welcome.</p>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/313408453/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><guid>https://www.meetup.com/rladies-vancouver/events/313107321/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Wednesday, March 4, 2026 at 3:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 19 going</p>
@@ -58,7 +78,7 @@ Jasmine, and Melissa</p>
         <p><a href="https://www.meetup.com/rladies-vancouver/events/313107321/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Coffee and Conversation - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/312797152/</link><guid>https://www.meetup.com/rladies-st-louis/events/312797152/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Saturday, February 28, 2026 at 4:30 PM UTC</p>
         <p><strong>Where:</strong> Webster Groves Public Library</p>
-        <p><strong>Attendees:</strong> 17 going</p>
+        <p><strong>Attendees:</strong> 18 going</p>
         <p>Join us for a morning of conversation and networking with fellow women in data. If you’re interested in data careers, looking to hire from underrepresented groups in data, or wanting to brainstorm about a project you’ve been working on, we’d love to see you.
 
 This is an in-person event and refreshments will be provided, so we appreciate your RSVP.</p>
