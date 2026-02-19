@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 19 Feb 2026 01:13:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 19 Feb 2026 13:11:48 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -11,7 +11,7 @@
         <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><guid>https://www.meetup.com/rladies-trondheim/events/313409386/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Room ØHM, Øya helsehus</p>
-        <p><strong>Attendees:</strong> 3 going</p>
+        <p><strong>Attendees:</strong> 4 going</p>
         <p>Quarto provides a convenient way to automatically create reports with results and figures generated from R-code. It can play an important role in a reproducible research workflow, and saves time since whenever the results change, the report is automatically up to date. It is a crucial tool in any R-lady&#39;s toolbox! Join us for an introductory tutorial in how to get the most use out of Quarto.
 
 You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
@@ -103,11 +103,4 @@ IT incidents don’t just affect systems, they impact operations, safety, and bu
 ⏰ Time: 18:00
 📍 Format: Online (Zoom)
 👉 Register on Meetup to receive the Zoom link and all the details.</p>
-        <p><a href="https://www.meetup.com/rladies-tirane/events/313238607/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Tirane)</author><category>R Ladies Tirane</category></item><item><title>Wrangling Earth System Model Outputs in R for Marine Ecologists - R-Ladies Santa Barbara</title><link>https://www.meetup.com/rladies-santa-barbara/events/312855430/</link><guid>https://www.meetup.com/rladies-santa-barbara/events/312855430/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Barbara</p>
-        <p><strong>When:</strong> Thursday, February 19, 2026 at 1:30 AM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 20 going</p>
-        <p>R is undoubtedly the programming language of choice for many marine ecologists. However, navigating the complexities of downloading, processing and wrangling gridded oceanographic data within R can represent a steep learning curve. As the impacts of climate variability and change on our oceans become increasingly evident, the ability to efficiently interact with, and use, Earth System Model (ESM) outputs for our research is more critical than ever. Here, we will walk through core skills needed to be proficient in creating projections of physical variables from ESM outputs, with the goal of using them for marine ecological applications. Specifically, we’ll be creating projections of sea-surface temperature out to 2100, across one climate scenario, for the California Current region.
-
-This event will be held on **Wednesday, February 18 from 5:30 - 7:00 PST** and will be **virtual**! A zoom link and the workshop materials will be provided closer to the event to folks who RSVP. **RSVPs will close at noon the day of the event.**</p>
-        <p><a href="https://www.meetup.com/rladies-santa-barbara/events/312855430/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Barbara)</author><category>R-Ladies Santa Barbara</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-tirane/events/313238607/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Tirane)</author><category>R Ladies Tirane</category></item></channel></rss>
