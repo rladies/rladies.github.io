@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 18 Feb 2026 13:10:39 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 19 Feb 2026 01:13:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -11,7 +11,7 @@
         <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><guid>https://www.meetup.com/rladies-trondheim/events/313409386/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Room ØHM, Øya helsehus</p>
-        <p><strong>Attendees:</strong> 2 going</p>
+        <p><strong>Attendees:</strong> 3 going</p>
         <p>Quarto provides a convenient way to automatically create reports with results and figures generated from R-code. It can play an important role in a reproducible research workflow, and saves time since whenever the results change, the report is automatically up to date. It is a crucial tool in any R-lady&#39;s toolbox! Join us for an introductory tutorial in how to get the most use out of Quarto.
 
 You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
@@ -23,13 +23,13 @@ You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312900982/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Save the Date: Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><guid>https://www.meetup.com/rladies-st-louis/events/313055670/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 17 going</p>
+        <p><strong>Attendees:</strong> 19 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 47 going</p>
+        <p><strong>Attendees:</strong> 50 going</p>
         <p>**Supercharging Your R Workflow with a Native AI Assistant**
 
 It’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.
@@ -45,7 +45,7 @@ Advantages of using the gptstudio package:
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>R-Ladies Corvallis: R Show &amp; Tell - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/313408453/</link><guid>https://www.meetup.com/rladies-corvallis/events/313408453/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
         <p><strong>When:</strong> Friday, March 13, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> Common Fields</p>
-        <p><strong>Attendees:</strong> 3 going</p>
+        <p><strong>Attendees:</strong> 4 going</p>
         <p>**Learn how other R-Ladies in the community are using R!**
 
 At our second meet-up, we&#39;ll be hosting an informal Show &amp; Tell. You can present in the Show &amp; Tell or just come and hang out. For the Show &amp; Tell portion, we&#39;re asking anyone who is interested in sharing to create a single slide highlighting anything related to how they use R. For example, share how you use R in your work, tell us about a cool R project you&#39;ve worked on, or share something you want to learn more about. The current plan is to ask presenters to talk for 5 minutes. *We may adjust the time limit depending on how many volunteers we get.*
@@ -58,7 +58,7 @@ Food and drink are available for purchase. Please note this event will be held o
         <p><a href="https://www.meetup.com/rladies-corvallis/events/313408453/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><guid>https://www.meetup.com/rladies-vancouver/events/313107321/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Wednesday, March 4, 2026 at 3:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 19 going</p>
+        <p><strong>Attendees:</strong> 20 going</p>
         <p>**Workshop Details**
 In this workshop, we will learn how to create webpages using Quarto in RStudio, and host it on GitHub. The example website will be a professional website template ([see my example webpage here](https://grcetmpk.github.io/)), but these skills can also be used to create other webpages ([like this one](https://ubc-stat.github.io/stat545/)).
 
@@ -106,7 +106,7 @@ IT incidents don’t just affect systems, they impact operations, safety, and bu
         <p><a href="https://www.meetup.com/rladies-tirane/events/313238607/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Tirane)</author><category>R Ladies Tirane</category></item><item><title>Wrangling Earth System Model Outputs in R for Marine Ecologists - R-Ladies Santa Barbara</title><link>https://www.meetup.com/rladies-santa-barbara/events/312855430/</link><guid>https://www.meetup.com/rladies-santa-barbara/events/312855430/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Barbara</p>
         <p><strong>When:</strong> Thursday, February 19, 2026 at 1:30 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 18 going</p>
+        <p><strong>Attendees:</strong> 20 going</p>
         <p>R is undoubtedly the programming language of choice for many marine ecologists. However, navigating the complexities of downloading, processing and wrangling gridded oceanographic data within R can represent a steep learning curve. As the impacts of climate variability and change on our oceans become increasingly evident, the ability to efficiently interact with, and use, Earth System Model (ESM) outputs for our research is more critical than ever. Here, we will walk through core skills needed to be proficient in creating projections of physical variables from ESM outputs, with the goal of using them for marine ecological applications. Specifically, we’ll be creating projections of sea-surface temperature out to 2100, across one climate scenario, for the California Current region.
 
 This event will be held on **Wednesday, February 18 from 5:30 - 7:00 PST** and will be **virtual**! A zoom link and the workshop materials will be provided closer to the event to folks who RSVP. **RSVPs will close at noon the day of the event.**</p>
