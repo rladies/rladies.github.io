@@ -10,7 +10,7 @@ slug: iwd
 <style type="text/css">
 .grid {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
   font-size: 1.5vh;
@@ -19,7 +19,7 @@ slug: iwd
 }
 
 .grid-item {
-  flex-grow: 1 0 0; 
+  flex-grow: 1 0 0;
 }
 
 a:hover {
@@ -30,7 +30,7 @@ a:hover {
 
 
 
-R-Ladies Global has coordinated International Women Day actions to encourage more people from gender minorities to participate in the community on Twitter and to promote people in the community. 
+R-Ladies Global has coordinated International Women Day actions to encourage more people from gender minorities to participate in the community on Twitter and to promote people in the community.
 The coordinators of these campaigns have written blog posts about them, which you can find links to below.
 
 ---

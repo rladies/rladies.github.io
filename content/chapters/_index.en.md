@@ -2,4 +2,4 @@
 title: "Chapters"
 ---
 
-If you are interested in starting an R-Ladies meetup group in your city, or would like more information about starting a meetup group, reach out at chapters[at]rladies[dot]org
+To start an RLadies+ chapter in your city or to get more information, reach out at [chapters@rladies.org](mailto:chapters@rladies.org).

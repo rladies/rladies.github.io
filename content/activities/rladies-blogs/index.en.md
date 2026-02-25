@@ -1,10 +1,8 @@
 ---
-title: "Blogs by R-Ladies"
+title: "Blogs by RLadies+"
 type: "rladies-blogs"
 ---
 
-Curated list of awesome blogs by R-Ladies.
-
-The list lives in its own [GitHub Repo](https://github.com/rladies/awesome-rladies-blogs), 
-and you are very welcome to[ add your own](https://github.com/rladies/awesome-rladies-blogs/blob/main/CONTRIBUTING.md)! 
-We even have an awesome [mastodon bot](https://fosstodon.org/@rladies_bot@botsin.space) occasionally posting links to posts from these blogs.
+A curated collection of blogs written by RLadies+ members.
+The list lives in its own [GitHub repository](https://github.com/rladies/awesome-rladies-blogs) — contributions are welcome.
+Follow [@rladies_bot@botsin.space](https://fosstodon.org/@rladies_bot@botsin.space) on Mastodon for occasional links to posts from these blogs.

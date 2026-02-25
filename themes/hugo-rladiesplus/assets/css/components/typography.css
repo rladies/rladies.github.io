@@ -24,8 +24,35 @@
     @apply mb-16;
   }
 
+  .entry-content p {
+    @apply mb-5;
+    line-height: 1.75;
+  }
+
+  .entry-content ul,
+  .entry-content ol {
+    @apply mb-5 pl-6;
+    line-height: 1.75;
+  }
+
+  .entry-content ul {
+    @apply list-disc;
+  }
+
+  .entry-content ol {
+    @apply list-decimal;
+  }
+
+  .entry-content li {
+    @apply mb-1.5;
+  }
+
   .entry-content h2 {
     @apply text-3xl pt-5 mb-5;
+  }
+
+  .entry-content h3 {
+    @apply text-2xl pt-4 mb-4;
   }
 
   .entry-content a {

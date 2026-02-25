@@ -3,14 +3,10 @@ title: "Mentoring program"
 type: "mentoring"
 ---
 
-Never worry, there is always an R-Lady mentor to walk with you!
+Starting or sustaining an RLadies+ chapter involves a lot of moving parts — finding speakers, picking formats, keeping people engaged.
+The mentoring program connects new organisers with experienced ones who have navigated all of this before.
 
-The main objective of the R-Ladies Mentoring Program is to help organisers conduct successful meetups and keep their chapters active.
-
-Organizing an R-Ladies chapter involves a series of tasks that can feel overwhelming to a new organiser.
-However, a number of experienced R-Ladies organisers are willing to mentor new ones and provide some great advice.
-
-For mentors, this is an opportunity to help build the community, learn about the realities of other chapters, gain experience as a mentor, and contributing to R-Ladies' goals.
+Mentors get something out of it too: a window into how chapters around the world actually operate, and the experience of helping someone else find their footing.
 
 {{% button "/form/mentoring-signup/" "Join the program" %}}
 

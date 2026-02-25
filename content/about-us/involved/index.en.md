@@ -1,58 +1,46 @@
 ---
-title: "Get Involved with R-Ladies: Individuals and Organizations"
+title: "Get Involved with RLadies+"
 type: "github_issues"
 ---
 
 <center>
 
-![](img/rladies-help.png)
+![Illustration of diverse RLadies+ members collaborating](img/rladies-help.png "Ways to get involved with RLadies+")
 
 </center>
 
-We warmly welcome contributions from individuals and organizations alike!
-There are numerous ways to support the R-Ladies community, whether you're looking to connect personally or contribute on a larger scale.
-Here's a breakdown of how you can get involved:
+There are many ways to contribute to the RLadies+ community, whether you are here as an individual or representing an organisation.
 
 ## For Individuals
 
-### 🚀 Getting Started
+### Getting started
 
-These are some initial steps you can take to become part of the R-Ladies community:
+- **Update your directory profile.** Make sure your details are current in the [RLadies+ directory](/directory) so others can connect with you.
+- **Join the community Slack.** Engage in discussions, ask questions, and stay informed by joining the [community Slack](https://rladies.org/form/community-slack).
+- **Follow us on social media.** Keep up with news, events, and activities by following us on [Mastodon](https://hachyderm.io/@RLadiesGlobal).
+- **Connect with your local chapter.** Join your regional [RLadies+ chapter](https://www.meetup.com/pro/rladies/) or the remote chapter to connect with people in your area or online.
+- **Attend events.** Upcoming events are listed on our [events page](/activities/events/) and on [Meetup](https://www.meetup.com/pro/rladies/). Past recordings and materials are on our [YouTube channel](https://www.youtube.com/@RLadiesGlobal).
 
-- **Update Your Directory Profile:** Make sure your details are current in the [R-Ladies directory](/directory) so others can connect with you.
-- **Join Our Community Slack:** Engage in discussions, ask questions, and stay informed by joining our [community slack channel](https://rladies.org/form/community-slack).
-- **Follow Us on Social Media:** Keep up with the latest news, events, and activities by following us on [social media](https://hachyderm.io/@RLadiesGlobal).
-- **Connect with Your Local Chapter:** Join your regional [R-Ladies chapter](https://www.meetup.com/pro/rladies/) or the remote chapter to connect with like-minded individuals in your area or online.
-- **Attend Events:** Participate in online and in-person events to learn, network, and engage with the community. Event details are often shared on our Slack channels and social media; upcoming events can also be found on the [events page of our website](/activities/events/) as well as on the [R-Ladies Meetup page](https://www.meetup.com/pro/rladies/?msockid=05f645055feb6d6c3770515d5e726c4b).
-- **Explore Past Event Content:** Our past event recordings and materials are openly accessible on our [YouTube](https://www.youtube.com/@RLadiesGlobal) channel. Feel free to reach out to speakers whose content you appreciate!
+### Making a difference
 
-### ✨ Making a Difference
+- **Propose a talk.** Share your knowledge by proposing a talk for a local meetup, event, or conference.
+- **Write for the blog.** Share insights, tutorials, or experiences on the [website](https://rladies.org/). We are happy to help develop your ideas.
+- **Become a chapter organiser.** Volunteer with your local chapter or start a new one — read the [Organiser Guide](https://guide.rladies.org/organization/) and reach out at [chapters@rladies.org](mailto:chapters@rladies.org).
+- **Curate for WeAreRLadies.** Generate awareness of RLadies+ expertise by curating [@weare.rladies.org](https://bsky.app/profile/weare.rladies.org) on Bluesky (see the [RoCur Guide](https://guide.rladies.org/rocur/about/)).
+- **Join the global team.** Help shape the direction of RLadies+ by joining the [global team](/about-us/global-team/).
+- **Contribute to open source.** Create issues or submit pull requests on [GitHub](https://github.com/rladies) for our [website](https://github.com/rladies/rladies.github.io) and [guide](https://github.com/rladies/rladiesguide). Open issues tagged _help wanted_ are listed below.
+- **Support our infrastructure.** Make a personal donation via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E).
 
-Here are ways you can contribute your skills and time as an individual:
+## For Organisations
 
-- **Propose a Talk:** Share your knowledge and passion by proposing a talk for a local meetup, event, or conference.
-- **Contribute to Our Blog:** Share your insights, tutorials, or experiences by writing a blog post for the [website](https://rladies.org/). We're always happy to help you develop your ideas.
-- **Engage in Community Discussions:** Share your thoughts, answer questions, and contribute to the vibrant discussions within our community.
-- **Become a Chapter Organizer:** Volunteer with your local chapter to help organize events and activities, or consider starting your own chapter (for more information, read our [Organizer Guide](https://guide.rladies.org/organization/) and reach out via [chapters@rladies.org](mailto:chapters@rladies.org)).
--**Curate for WeAreRLadies:** Generate awareness of R-Ladies' expertise and applications of R by curating for [@weare.rladies.org](https://bsky.app/profile/weare.rladies.org) on Bluesky (see the [Rocur Guide](https://guide.rladies.org/rocur/about/) for more information).
-- **Join the Global Team:** Help shape the direction of the R-Ladies organization by joining the [global team](https://rladies.org/about-us/global-team/) and contribute to creating a diverse and inclusive space.
-- **Contribute to Our Open Source Projects:** Help improve our online presence and resources by creating issues or submitting pull requests (PRs) on [GitHub](https://github.com/rladies) for our [website](https://github.com/rladies/rladies.github.io) and [guide](https://github.com/rladies/rladiesguide) when you identify areas for improvement. 
+We value the support of organisations that help us grow and sustain the community.
+
+- **Sponsor a local chapter.** Provide financial or in-kind support — venue space, food, beverages — for local meetups and events. Contact chapter organisers directly to discuss sponsorship.
+- **Host events.** Offer your venue for RLadies+ meetups or workshops. Reach out to your local chapter organisers.
+- **Nominate speakers and workshop leaders.** Encourage employees who use R to volunteer their time and expertise at RLadies+ events.
+- **Make a financial contribution.** Donate to RLadies+ Global via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E) to support infrastructure and global initiatives.
+- **Partner with us.** Explore collaborations on events, workshops, or initiatives aligned with our mission. Contact the global team at [info@rladies.org](mailto:info@rladies.org).
+- **Promote RLadies+ internally.** Share information about RLadies+ with your employees and encourage participation.
+- **Support open source contributions.** Encourage and support your employees in contributing to RLadies+ projects on [GitHub](https://github.com/rladies).
+
 Take a look at open issues tagged with [help wanted](#github-issues).
-
-- **Support Our Infrastructure:** Help us maintain our behind-the-scenes operations by making a personal donation via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E). Every contribution is greatly appreciated!
-
-## For Organizations and Companies
-
-We deeply value the support of organizations that help us grow and sustain our community. Here are ways your company can get involved:
-
-### 🏢 Supporting R-Ladies
-
-- **Sponsor a Local Chapter:** Provide financial or in-kind support (e.g., venue space, food, beverages) for your local R-Ladies chapter's meetups and events. This helps us create welcoming and accessible spaces for our members. Contact your local chapter organizers directly to discuss sponsorship opportunities.
-- **Host Events:** Offer your company's venue for R-Ladies meetups or workshops. This provides a valuable space for our community to gather and learn. Reach out to your local chapter organizers.
-- **Nominate Speakers and Workshop Leaders:** Encourage your employees who are R users to volunteer their time and expertise by leading talks or workshops at R-Ladies events.
-- **Offer Financial Contributions:** Consider making a donation to the R-Ladies Global organization via [PayPal](https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E) to support our infrastructure and global initiatives.
-- **Partner with R-Ladies for Events and Initiatives:** Explore opportunities to collaborate on larger events, workshops, or initiatives that align with R-Ladies' mission of promoting gender diversity in the R community. Contact the global team at [info@rladies.org](mailto:info@rladies.org) to discuss potential partnerships.
-- **Promote R-Ladies within Your Organization:** Encourage your employees to join and participate in R-Ladies events and activities. You can also share information about R-Ladies on your internal communication channels.
-- **Support Open Source Contributions:** Encourage and support your employees in contributing to R-Ladies' open-source projects on GitHub.
-
-By getting involved, both individuals and organizations play a crucial role in strengthening the R-Ladies community and fostering a more inclusive and supportive environment for R users worldwide. We appreciate every contribution, big or small!

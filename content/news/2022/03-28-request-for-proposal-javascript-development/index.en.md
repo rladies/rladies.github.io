@@ -1,6 +1,6 @@
 ---
 title: Request for Proposal - Javascript Development (Contract Work)
-author: 
+author:
   - name: Athanasia M. Mowinckel
 type: blog
 date: '2022-03-28'
@@ -57,7 +57,7 @@ Final decision should be made before the start of July 2022.
 
 ### Project Kickoff
 
-Earliest: July 1<sup>st</sup> 2022  
+Earliest: July 1<sup>st</sup> 2022
 Latest: September 1<sup>st</sup> 2022
 
 The project manager is unavailable in August, but bi-monthly calls with the project manager are expected for the duration of the project period, as well as asynchronous communication through email and GitHub.
@@ -152,7 +152,7 @@ Team bio (only applicable to company contractors)\*\*
   - Estimate of how much time the switch of library will take compared to finding a solution with the currently used one
 - Proposal of expected communication flow between R-Ladies project manager and company team
 
-**Budget**  
+**Budget**
 Proposal cost estimates
 This could be described as hourly rates and estimated number of hours needed
 

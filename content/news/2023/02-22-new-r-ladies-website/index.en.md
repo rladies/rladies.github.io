@@ -19,7 +19,7 @@ There were some key issues we wanted to resolve with our webpage, that we could 
 - Easier long-term maintenance and collaboration: Wordpress would require making a user for every person that wanted to contribute to the site
   - Changing to something hosted on GitHub would mean easier community help and collaboration
 
-<!--more--> 
+<!--more-->
 
 ## History
 
