@@ -7,42 +7,52 @@
       {{ i18n "home_blog_subtitle" | default "News, tutorials, and stories from our community" }}
     </p>
 
+    {{ $posts := slice }}
+
+    {{ with .Site.GetPage "section" "news" }}
+      {{ range first 1 .Pages }}
+        {{ $posts = $posts | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ with .Site.GetPage "section" "blog" }}
+      {{ range first 1 .Pages }}
+        {{ $posts = $posts | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ with .Site.GetPage "section" "press" }}
+      {{ range first 1 .Pages }}
+        {{ $posts = $posts | append . }}
+      {{ end }}
+    {{ end }}
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      {{ $posts := slice }}
+      {{ range $i, $post := $posts }}
+        {{ $isPress := eq $post.Section "press" }}
+        {{ $link := cond $isPress ($post.Params.source | default $post.RelPermalink) $post.RelPermalink }}
+        {{ $target := cond $isPress "_blank" "" }}
 
-      {{ with .Site.GetPage "section" "blog" }}
-        {{ range first 3 .Pages }}
-          {{ $posts = $posts | append . }}
-        {{ end }}
-      {{ end }}
-
-      {{ if lt (len $posts) 3 }}
-        {{ with .Site.GetPage "section" "news" }}
-          {{ range first (sub 3 (len $posts)) .Pages }}
-            {{ $posts = $posts | append . }}
-          {{ end }}
-        {{ end }}
-      {{ end }}
-
-      {{ range $i, $post := first 3 $posts }}
         <article class="card card-hover fade-in-up stagger-{{ add $i 1 }}">
-          {{ $img := "" }}
-          {{ if $post.Resources.ByType "image" }}
-            {{ range first 1 ($post.Resources.ByType "image") }}
-              {{ $image := .Fill "600x340 webp" }}
-              {{ $img = $image.RelPermalink }}
+          {{ if not $isPress }}
+            {{ $img := "" }}
+            {{ if $post.Resources.ByType "image" }}
+              {{ range first 1 ($post.Resources.ByType "image") }}
+                {{ $image := .Fill "600x340 webp" }}
+                {{ $img = $image.RelPermalink }}
+              {{ end }}
+              {{ with $post.Resources.Get $post.Params.image.path }}
+                {{ $image := .Fill "600x340 webp" }}
+                {{ $img = $image.RelPermalink }}
+              {{ end }}
             {{ end }}
-            {{ with $post.Resources.Get $post.Params.image.path }}
-              {{ $image := .Fill "600x340 webp" }}
-              {{ $img = $image.RelPermalink }}
-            {{ end }}
-          {{ end }}
 
-          {{ if $img }}
-            <a href="{{ $post.RelPermalink }}" class="block overflow-hidden">
-              <img src="{{ $img }}" alt="{{ $post.Title }}"
-                   class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
-            </a>
+            {{ if $img }}
+              <a href="{{ $link }}" class="block overflow-hidden">
+                <img src="{{ $img }}" alt="{{ $post.Title }}"
+                     class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+              </a>
+            {{ end }}
           {{ end }}
 
           <div class="card-body">
@@ -55,24 +65,37 @@
               </span>
             </div>
             <h3 class="text-lg font-semibold mb-2">
-              <a href="{{ $post.RelPermalink }}" class="text-dark hover:text-primary transition-colors">
+              <a href="{{ $link }}"{{ with $target }} target="{{ . }}"{{ end }} class="text-dark hover:text-primary transition-colors">
                 {{ $post.Title }}
+                {{ if $isPress }}<i class="fas fa-external-link-alt ml-1 text-xs text-muted"></i>{{ end }}
               </a>
             </h3>
-            <p class="text-sm text-muted line-clamp-2">
-              {{ $post.Summary | plainify | truncate 120 }}
-            </p>
+            {{ if not $isPress }}
+              <p class="text-sm text-muted line-clamp-2">
+                {{ $post.Summary | plainify | truncate 120 }}
+              </p>
+            {{ end }}
           </div>
         </article>
       {{ end }}
     </div>
 
-    {{ with .Site.GetPage "section" "blog" }}
-      <div class="text-center mt-12 fade-in-up">
+    <div class="flex justify-center gap-4 mt-12 fade-in-up">
+      {{ with .Site.GetPage "section" "news" }}
         <a href="{{ .RelPermalink }}" class="btn btn-outline">
-          {{ i18n "home_blog_cta" | default "View All Posts" }} &rarr;
+          {{ i18n "home_news_cta" | default "All News" }} &rarr;
         </a>
-      </div>
-    {{ end }}
+      {{ end }}
+      {{ with .Site.GetPage "section" "blog" }}
+        <a href="{{ .RelPermalink }}" class="btn btn-outline">
+          {{ i18n "home_blog_cta" | default "All Posts" }} &rarr;
+        </a>
+      {{ end }}
+      {{ with .Site.GetPage "section" "press" }}
+        <a href="{{ .RelPermalink }}" class="btn btn-outline">
+          {{ i18n "home_press_cta" | default "All Press" }} &rarr;
+        </a>
+      {{ end }}
+    </div>
   </div>
 </section>

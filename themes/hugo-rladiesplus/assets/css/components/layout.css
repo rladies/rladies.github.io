@@ -39,6 +39,10 @@
     @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5;
   }
 
+  .grid-6 {
+    @apply grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6;
+  }
+
   .breakout {
     width: 100vw;
     position: relative;
@@ -99,5 +103,10 @@
 
   @media (min-width: 1280px) {
     .shuffle-item { width: 20%; }
+  }
+
+  :where(.grid-2, .grid-3, .grid-4, .grid-5, .grid-6) > .shuffle-item {
+    width: auto;
+    padding: 0;
   }
 }

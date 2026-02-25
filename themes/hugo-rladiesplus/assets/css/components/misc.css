@@ -72,6 +72,6 @@
 
   /* Chapter status badge */
   .bg-chapter-active {
-    background: color-mix(in srgb, var(--color-primary) 15%, white);
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-light));
   }
 }

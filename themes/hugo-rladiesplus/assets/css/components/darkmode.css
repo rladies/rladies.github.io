@@ -1,12 +1,20 @@
 @layer components {
   .dark {
+    --color-primary: #bb86f7;
+    --color-primary-light: #d4b9f5;
+    --color-primary-lighter: #e8daf9;
+    --color-primary-dark: #a152f8;
+    --color-primary-darker: #881ef9;
+    --color-accent-blue: #81acf7;
+    --color-accent-blue-75: #b7ccf5;
+    --color-accent-rose: #f6a4c3;
+    --color-accent-rose-75: #f2c9dc;
     --color-surface: #1a1a2e;
     --color-surface-alt: #16213e;
     --color-dark: #ededf4;
     --color-muted: #9ca3af;
-    --color-primary-light: #b565fd;
     --shadow-card: 0 1px 3px rgba(0,0,0,0.3);
-    --shadow-card-hover: 0 10px 25px rgba(136,30,249,0.15), 0 4px 10px rgba(0,0,0,0.2);
+    --shadow-card-hover: 0 10px 25px rgba(187,134,247,0.15), 0 4px 10px rgba(0,0,0,0.2);
     color-scheme: dark;
   }
 
@@ -108,7 +116,7 @@
   }
 
   .dark .hero-subheadline {
-    @apply text-gray-400;
+    @apply text-gray-300;
   }
 
   .dark .hero-inner {
@@ -158,6 +166,14 @@
 
   .dark .stat-card {
     @apply bg-[#1e1e30] border border-white/10;
+  }
+
+  .dark .stat-icon {
+    opacity: 0.7;
+  }
+
+  .dark .stat-card-rose .stat-number {
+    color: var(--color-accent-rose);
   }
 
   /* ── Typography ── */
@@ -293,16 +309,29 @@
   }
 
   /* ── Buttons ── */
+  .dark .btn-primary {
+    background-color: var(--color-primary);
+    @apply text-white hover:bg-primary-dark;
+  }
+
   .dark .btn-light {
     @apply bg-white/10 text-light hover:bg-white/20;
   }
 
   .dark .btn-outline {
-    @apply border-primary-lighter text-primary-lighter hover:bg-primary hover:text-white;
+    @apply border-primary-light text-primary-light hover:bg-primary hover:text-white;
   }
 
   .dark .btn-outline-secondary {
     @apply border-gray-500 text-gray-400 hover:bg-gray-500 hover:text-white;
+  }
+
+  .dark .btn-accent-rose {
+    color: #2f2f30;
+  }
+
+  .dark .btn-accent-blue {
+    @apply text-white;
   }
 
   /* ── Badges ── */
@@ -382,7 +411,7 @@
 
   /* ── Misc ── */
   .dark .sponsor-logo {
-    @apply opacity-50 hover:opacity-90;
+    @apply grayscale-0 opacity-80 hover:opacity-100 brightness-150;
   }
 
   .dark .involved-icon {

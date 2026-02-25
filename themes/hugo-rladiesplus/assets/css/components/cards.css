@@ -60,7 +60,7 @@
 
   .card-expand-title {
     @apply text-base font-semibold mb-1;
-    color: color-mix(in srgb, var(--color-dark) 90%, black);
+    color: var(--color-dark);
   }
 
   .card-expand-title a {
@@ -94,7 +94,7 @@
 
   .card-expand-foot {
     @apply mt-auto pt-3 border-t border-gray-100 text-xs;
-    color: color-mix(in srgb, var(--color-muted), white 10%);
+    color: var(--color-dark-50);
   }
 
   .card-expand-foot a {
@@ -148,7 +148,7 @@
 
   .post-card .post-title a {
     @apply no-underline transition-colors duration-200;
-    color: color-mix(in srgb, var(--color-muted) 80%, black);
+    color: var(--color-dark);
   }
 
   .post-card .post-title a:hover {
@@ -157,7 +157,7 @@
 
   .post-card .post-authors-list {
     @apply text-sm;
-    color: color-mix(in srgb, var(--color-muted) 90%, black);
+    color: var(--color-muted);
   }
 
   .post-card .post-authors-list i {
@@ -170,7 +170,7 @@
 
   .post-card .post-summary {
     @apply text-sm leading-relaxed;
-    color: color-mix(in srgb, var(--color-muted) 90%, black);
+    color: var(--color-muted);
   }
 
   @media (max-width: 767px) {

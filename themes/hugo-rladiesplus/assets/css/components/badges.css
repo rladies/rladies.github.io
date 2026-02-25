@@ -24,7 +24,7 @@
   }
 
   .bg-primary-light {
-    background: color-mix(in srgb, var(--color-primary) 15%, white);
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-light));
   }
 
   .alert {
@@ -32,7 +32,7 @@
   }
 
   .alert-primary {
-    background: color-mix(in srgb, var(--color-primary) 15%, white);
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-light));
     color: var(--color-primary-dark);
   }
 

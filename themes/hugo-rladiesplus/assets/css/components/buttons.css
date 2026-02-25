@@ -25,7 +25,7 @@
   }
 
   .btn-light {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-light text-dark hover:bg-gray-200;
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-light text-dark hover:bg-dark-25;
   }
 
   .btn-accent-rose {

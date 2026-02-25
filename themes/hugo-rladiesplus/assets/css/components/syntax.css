@@ -2,12 +2,12 @@
   pre {
     @apply rounded-md border font-mono w-full p-4;
     border-color: var(--color-primary);
-    background-color: color-mix(in srgb, var(--color-primary) 10%, white);
+    background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-light));
   }
 
   pre.chroma {
     @apply rounded-md border;
-    background-color: color-mix(in srgb, var(--color-primary) 5%, white);
+    background-color: color-mix(in srgb, var(--color-primary) 5%, var(--color-light));
     border-color: var(--color-primary);
   }
 
@@ -16,16 +16,16 @@
   }
 
   .chroma {
-    @apply bg-white p-4;
+    @apply bg-light p-4;
   }
 
   .chroma .err {
-    background-color: color-mix(in srgb, var(--color-primary) 70%, white);
+    background-color: color-mix(in srgb, var(--color-primary) 70%, var(--color-light));
   }
 
   .chroma .lntd { @apply align-top p-0 m-0 border-0; }
   .chroma .lntable { @apply p-0 m-0 border-0 w-auto overflow-auto block; border-spacing: 0; }
-  .chroma .hl { @apply block w-full; background-color: color-mix(in srgb, var(--color-primary) 8%, white); }
+  .chroma .hl { @apply block w-full; background-color: color-mix(in srgb, var(--color-primary) 8%, var(--color-light)); }
   .chroma .lnt { @apply mr-1.5 px-1.5 text-gray-400; }
   .chroma .ln { @apply mr-1.5 px-1.5 text-gray-400; }
 
@@ -63,8 +63,8 @@
   .chroma .se { color: #5cc0a2; }
   .chroma .sh { color: #aa4060; }
   .chroma .si { color: #aa4060; text-decoration: underline; }
-  .chroma .sx { color: color-mix(in srgb, var(--color-primary) 70%, white); }
-  .chroma .sr { color: color-mix(in srgb, var(--color-primary) 70%, white); }
+  .chroma .sx { color: color-mix(in srgb, var(--color-primary) 70%, var(--color-light)); }
+  .chroma .sr { color: color-mix(in srgb, var(--color-primary) 70%, var(--color-light)); }
   .chroma .s1 { color: #aa4060; }
   .chroma .ss { color: #aa4060; }
 
@@ -76,7 +76,7 @@
   .chroma .il { @apply text-gray-500; }
   .chroma .mo { @apply text-gray-500; }
   .chroma .o { @apply text-gray-500; }
-  .chroma .ow { color: color-mix(in srgb, var(--color-primary) 70%, white); }
+  .chroma .ow { color: color-mix(in srgb, var(--color-primary) 70%, var(--color-light)); }
   .chroma .p { @apply text-gray-700; }
 
   .chroma .c { @apply text-gray-500 italic; }

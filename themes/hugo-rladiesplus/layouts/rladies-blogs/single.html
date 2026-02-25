@@ -15,8 +15,8 @@
 </section>
 
 <div class="breakout">
-  <div class="container-wide p-0 px-3">
-    <ul class="shuffle-wrapper w-full list-unstyled" id="rladies-blogs-grid">
+  <div class="container-wide expand-grid">
+    <ul class="justify-center grid-5 list-unstyled">
       {{ range $name := $rb | shuffle }}
         {{ $rb := index $rblogs $name }}
         {{ $data := newScratch }}

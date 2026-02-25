@@ -53,7 +53,7 @@ main:
     weight: 4
     parent: about-us
   - identifier: news
-    url: /about-us/news/
+    url: /news/
     weight: 5
     parent: about-us
   - identifier: coc

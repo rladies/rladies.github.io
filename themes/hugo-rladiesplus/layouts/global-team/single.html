@@ -118,16 +118,16 @@
 
       <div class="breakout">
         <div class="container-wide expand-grid alumni-grid">
-          <ul class="justify-center grid-5 list-unstyled">
+          <ul class="justify-center grid-6 list-unstyled">
             {{ range $alumni_keys | shuffle }}
               {{ $d := index $gt_alumni . }}
               {{ $image := "" }}
               {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
-                {{ $image = (.Fill "200x200").RelPermalink }}
+                {{ $image = (.Fill "150x150").RelPermalink }}
               {{ end }}
 
               {{ $dates := printf "%s &#8212 %s" $d.start $d.end }}
-              {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $dates "size" "small" "foot" (delimit $d.role ", ")) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $dates "size" "service" "foot" (delimit $d.role ", ")) }}
             {{ end }}
           </ul>
         </div>

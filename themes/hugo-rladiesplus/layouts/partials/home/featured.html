@@ -1,0 +1,78 @@
+<section class="site-section-lg bg-surface" id="featured">
+  <div class="site-container">
+    <h2 class="section-title fade-in-up">
+      {{ i18n "home_featured_title" | default "Featured Members" }}
+    </h2>
+    <p class="section-subtitle fade-in-up stagger-1">
+      {{ i18n "home_featured_subtitle" | default "Meet some of the people in our community" }}
+    </p>
+
+    {{ $directory := where .Site.RegularPages "Section" "directory" }}
+    {{ $featured := first 3 ($directory | shuffle) }}
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      {{ range $i, $member := $featured }}
+        <div class="card card-hover text-center fade-in-up stagger-{{ add $i 1 }}">
+          <div class="p-6">
+            {{ $img := $member.Params.image | default "/images/placeholder_user.png" }}
+            <img src="{{ $img }}" alt="{{ $member.Title }}"
+                 class="w-24 h-24 rounded-full object-cover mx-auto mb-4">
+
+            <h3 class="text-lg font-semibold mb-1">{{ $member.Title }}</h3>
+
+            {{ with $member.Params.honorific }}
+              <span class="text-xs font-medium text-primary">{{ . }}</span>
+            {{ end }}
+
+            {{ with $member.Params.work }}
+              <p class="text-sm text-muted mt-2">
+                {{ with .title }}{{ . }}{{ end }}
+                {{ with .organisation }}<br>{{ . }}{{ end }}
+              </p>
+            {{ end }}
+
+            {{ with $member.Params.location }}
+              <p class="text-xs text-muted mt-2">
+                <i class="fa-solid fa-map-marker-alt mr-1"></i>
+                {{ with .city }}{{ . }}, {{ end }}{{ .country }}
+              </p>
+            {{ end }}
+
+            {{ with $member.Params.social_media }}
+              <div class="flex justify-center gap-3 mt-3">
+                {{ with .github }}
+                  <a href="https://github.com/{{ . }}" target="_blank" rel="noopener" class="text-muted hover:text-primary transition-colors" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                {{ end }}
+                {{ with .bluesky }}
+                  <a href="https://bsky.app/profile/{{ . }}" target="_blank" rel="noopener" class="text-muted hover:text-primary transition-colors" aria-label="Bluesky">
+                    <i class="fa-brands fa-bluesky"></i>
+                  </a>
+                {{ end }}
+                {{ with .mastodon }}
+                  <a href="{{ . }}" target="_blank" rel="noopener" class="text-muted hover:text-primary transition-colors" aria-label="Mastodon">
+                    <i class="fa-brands fa-mastodon"></i>
+                  </a>
+                {{ end }}
+                {{ with .linkedin }}
+                  <a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener" class="text-muted hover:text-primary transition-colors" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+    {{ with .Site.GetPage "section" "directory" }}
+      <div class="text-center mt-12 fade-in-up">
+        <a href="{{ .RelPermalink }}" class="btn btn-outline">
+          {{ i18n "home_featured_cta" | default "Browse Directory" }} &rarr;
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</section>

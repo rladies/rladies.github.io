@@ -5,13 +5,27 @@
 /* RLadies+ Brand Theme */
 @theme {
   --color-primary: #881ef9;
-  --color-primary-light: #a64dfc;
-  --color-primary-lighter: #d4b0fd;
+  --color-primary-light: #a152f8;
+  --color-primary-50: #bb86f7;
+  --color-primary-lighter: #d4b9f5;
   --color-primary-dark: #6b0fd4;
   --color-primary-darker: #5009a8;
+
   --color-accent-blue: #146af9;
+  --color-accent-blue-75: #4a8bf8;
+  --color-accent-blue-50: #81acf7;
+  --color-accent-blue-25: #b7ccf5;
+
   --color-accent-rose: #ff5b92;
+  --color-accent-rose-75: #fb80ab;
+  --color-accent-rose-50: #f6a4c3;
+  --color-accent-rose-25: #f2c9dc;
+
   --color-dark: #2f2f30;
+  --color-dark-75: #5f5f61;
+  --color-dark-50: #8e8e92;
+  --color-dark-25: #bebec3;
+
   --color-light: #ededf4;
   --color-muted: #5d5f66;
   --color-surface: #f8f8fc;

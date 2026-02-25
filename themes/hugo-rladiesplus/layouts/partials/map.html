@@ -77,7 +77,7 @@ if (typeof am5 === 'undefined') {
     });
 
     polygonSeries.mapPolygons.template.states.create("hover", {
-      fill: am5.color(0x881ef9),
+      fill: am5.color(isDark ? 0x81acf7 : 0x146af9),
       fillOpacity: 1
     });
 
@@ -109,7 +109,7 @@ if (typeof am5 === 'undefined') {
           var id = polygon.dataItem.get("id");
           if (countryMap[id]) {
             polygon.setAll({
-              fill: am5.color(0x881ef9),
+              fill: am5.color(isDark ? 0xbb86f7 : 0x881ef9),
               fillOpacity: isDark ? 0.5 : 0.4,
               tooltipText: "{name}\n" + countryMap[id] + " chapter" + (countryMap[id] > 1 ? "s" : "")
             });
@@ -125,7 +125,7 @@ if (typeof am5 === 'undefined') {
     pointSeries.bullets.push(function() {
       var circle = am5.Circle.new(root, {
         radius: {{ $data.radius | default 7 }},
-        fill: am5.color(isDark ? 0xa64dfc : 0x881ef9),
+        fill: am5.color(isDark ? 0xd4b9f5 : 0x881ef9),
         stroke: am5.color(isDark ? 0x1a1a2e : 0xffffff),
         strokeWidth: isDark ? 2 : 1,
         cursorOverStyle: "pointer",
@@ -163,7 +163,7 @@ if (typeof am5 === 'undefined') {
       var country = polygonSeries.getDataItemById("{{ $zoom.iso }}");
       if (country) {
         country.get("mapPolygon").setAll({
-          fill: am5.color(0x881ef9),
+          fill: am5.color(isDark ? 0xbb86f7 : 0x881ef9),
           fillOpacity: 0.3
         });
       }
