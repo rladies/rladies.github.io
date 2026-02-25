@@ -311,7 +311,7 @@
 
   /* ── Badges ── */
   .dark .badge-primary {
-    @apply bg-primary-dark;
+    @apply bg-primary-dark text-white;
   }
 
   .dark .badge-secondary {

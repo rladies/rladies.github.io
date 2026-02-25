@@ -39,8 +39,8 @@
       {{ $imgPattern := printf "chapters/%s.*" .Params.file }}
       {{ $img := resources.GetMatch $imgPattern }}
       {{ with $img }}
-        <div class="card rounded-xl overflow-hidden">
-          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="w-full h-auto object-cover max-h-80">
+        <div class="flex items-center justify-center" style="min-height: 20rem;">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="max-w-full max-h-72 object-contain">
         </div>
       {{ end }}
 
