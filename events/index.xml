@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 25 Feb 2026 01:18:08 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 25 Feb 2026 13:11:51 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -8,7 +8,28 @@
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 3 going</p>
         <p>BYOLaptop to learn data wrangling skills! Join us for a hybrid meeting either in-person or on zoom where participants will login to a virtual R session and learn to use Tidyverse packages and functions.</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><guid>https://www.meetup.com/rladies-trondheim/events/313409386/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Data Challenge Solution Showcase - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489859/</link><guid>https://www.meetup.com/rladies-ottawa/events/313489859/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
+        <p><strong>When:</strong> Tuesday, April 28, 2026 at 10:00 PM UTC</p>
+        <p><strong>Where:</strong> Bayview Yards</p>
+        <p><strong>Attendees:</strong> 4 going</p>
+        <p>**IWD Data Challenge 2026**
+For this year&#39;s data challenge, we asked you to explore and analyze data from your communities. Whether that meant digging into datasets about Ottawa, Gatineau, the broader National Capital Region, or another place that feels like home, the goal was to uncover community-focused insights. If you&#39;d like more background on the challenge itself, you can find the full details in the [original event listing](https://www.meetup.com/rladies-ottawa/events/313489942/?utm_medium=referral&amp;utm_campaign=share-btn_savedevents_share_modal&amp;utm_source=link&amp;utm_version=v2&amp;member_id=264488364) or on [our webpage](https://rladies-ottawa.github.io/events/2026/iwd.html).
+
+**Join Us for the Showcase Event**
+We&#39;re excited to celebrate the hard work and creativity of everyone who took part in this year&#39;s challenge. Join us for a fun, casual hybrid event on **Tuesday, April 28th**, where participants will walk us through their submissions. It&#39;s also a great oppotuity to connect with others in the city who are passionate about data, learning, and community!
+
+**Event Details**
+This event is **free to attend**, with limited in-person capacity. Please reserve an in-person spot only if you plan to join us onsite. Bayview Yards is located just a stone&#39;s throw away from the Bayview station. There is also a free parking lot for those who are driving. You can find us in the Training Room, located on the second floor of the building.
+
+**If You&#39;re Presenting**
+Please bring your laptop and charger so you can walk us through your project.
+
+**Community Guidelines**
+Please note that the mission of R-Ladies is to increase gender diversity in the R community. The data challenge and showcase are intended to provide a safe space for women and gender minorities. We ask for male allies to be invited by and accompanied by a woman or gender minority.
+
+**Special Thanks**
+We are grateful to be part of the Bayview Yards Meetup Program and extend our thanks to Bayview Yards for generously providing the venue space.</p>
+        <p><a href="https://www.meetup.com/rladies-ottawa/events/313489859/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><guid>https://www.meetup.com/rladies-trondheim/events/313409386/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Room ØHM, Øya helsehus</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -44,7 +65,7 @@ Advantages of using the gptstudio package:
 ✔️ Useful for both beginners and experienced users looking to speed up their workflow</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title> Level Up Your Data Visualizations with ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/313505524/</link><guid>https://www.meetup.com/rladies-abuja/events/313505524/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, March 25, 2026 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 14 going</p>
+        <p><strong>Attendees:</strong> 16 going</p>
         <p>Join us for a practical, beginner-friendly meetup on **“Level Up Your Data Visualizations with ggplot2”** where we’ll explore how to create clear, compelling, and professional charts in R using **ggplot2**. Whether you’re new to data visualization or looking to improve your plotting skills, this session will cover key principles, useful customization tips, and hands-on examples to help you turn raw data into impactful visual stories.</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>R-Ladies Corvallis: R Show &amp; Tell - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/313408453/</link><guid>https://www.meetup.com/rladies-corvallis/events/313408453/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
         <p><strong>When:</strong> Friday, March 13, 2026 at 12:30 AM UTC</p>
@@ -59,7 +80,41 @@ At our second meet-up, we&#39;ll be hosting an informal Show &amp; Tell. You can
 **You do not need to present during the Show &amp; Tell to attend this event**. If you&#39;d rather just listen, hang out, and chat, you are encouraged to still attend!
 
 Food and drink are available for purchase. Please note this event will be held outside. We have a pavilion reserved, but we recommend bundling up just in case it&#39;s cold! This is an open and informal event! Come as you are - any and all R skill level and experience welcome.</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/313408453/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><guid>https://www.meetup.com/rladies-vancouver/events/313107321/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/313408453/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Co-working: IWD Data Challenge 2026 - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489942/</link><guid>https://www.meetup.com/rladies-ottawa/events/313489942/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
+        <p><strong>When:</strong> Monday, March 9, 2026 at 10:00 PM UTC</p>
+        <p><strong>Where:</strong> Bayview Yards</p>
+        <p><strong>Attendees:</strong> 7 going</p>
+        <p>**‍IWD Data Challenge 2026**
+R‑Ladies Ottawa is excited to host our fourth annual data challenge in celebration of International Women’s Day. This year, we invite you to explore openly available data connected to your community. That could be Ottawa, Gatineau, another part of the National Capital Region, or any place in the world that feels meaningful to you. As a starting point, we encourage you to browse datasets available through [Open Ottawa](https://open.ottawa.ca/). Although the challenge is hosted by R‑Ladies Ottawa, you’re welcome to use any programming language or visualization tool you prefer.
+
+**How to Participate**
+You can participate individually or in teams of up to five people. Submissions are due on **Friday, April 3rd**, and you’re free to choose the format that best showcases your work. It could be a Quarto document, an image, a webpage, a YouTube video, or something else entirely.
+
+**Submission Options**
+
+* **Option 1:** If you&#39;re comfortable with GitHub and Quarto, you can create a pull request on [our repository](https://github.com/RLadies-Ottawa/RLadies-Ottawa.github.io) and add your project under the Submissions section of [this page](https://rladies-ottawa.github.io/events/2026/iwd.html).
+* **Option 2:** If GitHub isn’t your thing, simply email us (ottawa[at]rladies.org) a link to your submission materials and we’ll add it to the website for you.
+
+Once we&#39;ve received your entry, we&#39;ll reach out and ask whether you&#39;d like to present your work at the showcase event. Presenting is completely optional.
+
+**After the Challenge: Showcase Event**
+Once the submission deadline has passed, we’ll host a hybrid showcase event where participants can present their projects and celebrate the creativity of the community!
+
+**Co‑Working Session**
+To help you get started, we’re hosting a casual co‑working evening on **Monday, March 9th** in honour of International Women’s Day. This session offers a collaborative, low‑pressure environment where you can work on your project, ask questions, and get support from others in the community. No previous programming experience is required, and experienced programmers will be available to help you get started or get unstuck.
+
+**Event Details**
+This event is **free to attend** and will be offered in a hybrid format, with limited in-person capacity. If you RSVP for an in-person spot, please do so only if you&#39;re able to attend in person. Bayview Yards is located just a stone&#39;s throw away from the Bayview station. There is also a free parking lot for those who are driving. You can find us in the Training Room, located on the second floor of the building.
+
+**What to Bring**
+Please bring your laptop, charger, and any project ideas you&#39;d like to explore! We also recommend installing an IDE (e.g., RStudio, VS Code) ahead of time, but we&#39;re happy to help you get set up if needed.
+
+**Community Guidelines**
+Please note that the mission of R-Ladies is to increase gender diversity in the R community. The data challenge and co-working session are intended to provide a safe space for women and gender minorities. We ask for male allies to be invited by and accompanied by a woman or gender minority.
+
+**Special Thanks**
+We are grateful to be part of the Bayview Yards Meetup Program and extend our thanks to Bayview Yards for generously providing the venue space.</p>
+        <p><a href="https://www.meetup.com/rladies-ottawa/events/313489942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><guid>https://www.meetup.com/rladies-vancouver/events/313107321/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Wednesday, March 4, 2026 at 3:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 20 going</p>
@@ -86,8 +141,19 @@ Jasmine, and Melissa</p>
         <p>Join us for a morning of conversation and networking with fellow women in data. If you’re interested in data careers, looking to hire from underrepresented groups in data, or wanting to brainstorm about a project you’ve been working on, we’d love to see you.
 
 This is an in-person event and refreshments will be provided, so we appreciate your RSVP.</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/312797152/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Outgrowing your laptop with R and Positron - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/312978180/</link><guid>https://www.meetup.com/rladies-abuja/events/312978180/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/312797152/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>🔬 De tu código a una publicación académica 📝 - R-Ladies CDMX</title><link>https://www.meetup.com/rladies-cdmx/events/313516666/</link><guid>https://www.meetup.com/rladies-cdmx/events/313516666/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies CDMX</p>
+        <p><strong>When:</strong> Thursday, February 26, 2026 at 11:00 PM UTC</p>
+        <p><strong>Where:</strong> Sala Sacristán, Edificio E, Segundo Piso, Facultad de Ciencias Políticas y Sociales</p>
+        <p><strong>Attendees:</strong> 3 going</p>
+        <p>¿Has creado un paquete, script o dataset en GitHub y quieres que sea tan fácil de citar como un artículo científico?
+En este taller práctico aprenderás a:
+
+* **Crear un archivo `CITATION.cff`:** El estándar para decirle al mundo (y a GitHub) cómo citar tu trabajo.
+* **Integrarlo con Zenodo:** El repositorio que conecta con GitHub para asignar un **DOI (Digital Object Identifier)** permanente a cada versión de tu código.
+* **Automatizar el proceso:** Para que cada &#34;release&#34; en GitHub genere automáticamente un nuevo registro citable en Zenodo.
+* ️ **Hacer visible y reconocible tu trabajo académico** en el ecosistema digital.</p>
+        <p><a href="https://www.meetup.com/rladies-cdmx/events/313516666/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies CDMX)</author><category>R-Ladies CDMX</category></item><item><title>Outgrowing your laptop with R and Positron - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/312978180/</link><guid>https://www.meetup.com/rladies-abuja/events/312978180/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, February 25, 2026 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 46 going</p>
+        <p><strong>Attendees:</strong> 47 going</p>
         <p>Introduction to using R in Positron</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/312978180/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item></channel></rss>
