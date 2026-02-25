@@ -281,8 +281,12 @@
 
   /* ── Buttons ── */
   .dark .btn-primary {
-    background-color: var(--color-primary);
-    @apply text-white hover:bg-primary-dark;
+    background-color: var(--color-primary-darker);
+    @apply text-white;
+  }
+
+  .dark .btn-primary:hover {
+    background-color: var(--color-primary-dark);
   }
 
   .dark .btn-light {

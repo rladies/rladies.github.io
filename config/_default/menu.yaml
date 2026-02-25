@@ -57,6 +57,6 @@ main:
     weight: 5
     parent: about-us
   - identifier: coc
-    url: /coc/
+    url: /about-us/coc/
     weight: 6
     parent: about-us

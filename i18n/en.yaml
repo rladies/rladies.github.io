@@ -157,6 +157,7 @@ select_language: 'Select language'
 
 # Language ----
 translations: 'Translations'
+min_read: 'min read'
 missing_translation: |
     We are sorry. This page is missing a
     translation to English.

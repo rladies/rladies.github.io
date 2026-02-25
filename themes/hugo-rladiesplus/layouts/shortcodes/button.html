@@ -1,10 +1,10 @@
 
 {{ if .IsNamedParams }}
-  <div class="text-center">
+  <div class="text-center my-4">
     <a href="{{ .Get "url" }}" target="_blank" class="btn btn-primary">{{ .Get "text" }}</a>
   </div>
 {{ else }}
-  <div class="text-center">
+  <div class="text-center my-4">
     <a href="{{ .Get 0 }}" target="_blank" class="btn btn-primary">{{ .Get 1 }}</a>
   </div>
 {{ end }}
