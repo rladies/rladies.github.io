@@ -17,7 +17,7 @@ events: 'Events'
 mentoring: 'Mentoring Program'
 coordinated: 'Coordinated by the Global Team'
 dashboard: 'Global dashboard'
-rladies-blogs: 'Blogs by R-Ladies'
+rladies-blogs: 'Blogs by RLadies+'
 press: 'In the press'
 blog: 'Blog'
 
@@ -33,14 +33,41 @@ footer_contact_title: 'Contato'
 footer_donate: 'Donate to'
 footer_text_title: 'Código de Conducta'
 footer_text_content: |
-    R-Ladies tem como objetivo proporcionar uma experiência livre de assédio
+    RLadies+ tem como objetivo proporcionar uma experiência livre de assédio
     para todos. Não toleramos nenhuma forma de assédio aos participantes. Leia
     nosso [código de conduta](/pt/coc)
 
+# Hero ----
+hero_headline: 'Promovendo a Diversidade de Gênero na Comunidade R'
+hero_subheadline: 'Uma organização mundial que empodera gêneros sub-representados através de uma rede global colaborativa de líderes, mentores e desenvolvedores de R.'
+hero_cta_chapters: 'Encontre um Capítulo'
+hero_cta_involved: 'Participe'
+
 # Home ----
 home_feed: 'Latest posts'
-home_featured: 'Featured R-Ladies'
+home_featured: 'Featured RLadies+'
 home_activity: 'Our activities'
+home_impact_title: 'Nosso Impacto Global'
+home_impact_subtitle: 'Construindo uma comunidade R inclusiva em todo o mundo'
+home_chapters_title: 'Capítulos'
+home_chapters_cta: 'Ver Todos os Capítulos'
+home_involved_title: 'Participe'
+home_involved_subtitle: 'Existem muitas formas de fazer parte da comunidade RLadies+'
+involved_join_title: 'Junte-se a um Capítulo'
+involved_join_desc: 'Encontre seu capítulo local do RLadies+ e conecte-se com entusiastas de R na sua área.'
+involved_join_cta: 'Encontrar Capítulos'
+involved_talk_title: 'Faça uma Palestra'
+involved_talk_desc: 'Compartilhe seu conhecimento e experiência com a comunidade apresentando em um evento.'
+involved_talk_cta: 'Saiba Mais'
+involved_support_title: 'Apoie-nos'
+involved_support_desc: 'Ajude a sustentar nossa missão através de doações, patrocínios ou voluntariado.'
+involved_support_cta: 'Doar'
+home_blog_title: 'Últimas Publicações'
+home_blog_subtitle: 'Notícias, tutoriais e histórias da nossa comunidade'
+home_blog_cta: 'Ver Todas as Publicações'
+home_sponsors_title: 'Patrocinadores'
+home_sponsors_subtitle: 'Organizações que apoiam nossa missão'
+home_sponsors_cta: 'Seja um Patrocinador'
 
 # Globals ----
 country: 'Country'

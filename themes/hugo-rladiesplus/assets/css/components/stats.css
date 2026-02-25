@@ -1,0 +1,38 @@
+@layer components {
+  .stat-card {
+    @apply text-center p-8 rounded-xl bg-white;
+    box-shadow: var(--shadow-card);
+  }
+
+  .stat-number {
+    @apply text-5xl md:text-6xl font-bold mb-2;
+    color: var(--color-primary);
+  }
+
+  .stat-label {
+    @apply text-sm font-semibold;
+    color: var(--color-muted);
+  }
+
+  .stat-icon {
+    @apply text-2xl mt-3;
+    color: var(--color-primary-light);
+    opacity: 0.4;
+  }
+
+  .stat-card-blue .stat-number {
+    color: var(--color-accent-blue);
+  }
+
+  .stat-card-blue .stat-icon {
+    color: var(--color-accent-blue);
+  }
+
+  .stat-card-rose .stat-number {
+    color: color-mix(in srgb, var(--color-accent-rose) 75%, #2f2f30);
+  }
+
+  .stat-card-rose .stat-icon {
+    color: var(--color-accent-rose);
+  }
+}

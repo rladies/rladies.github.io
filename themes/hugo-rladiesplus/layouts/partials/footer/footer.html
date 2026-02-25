@@ -1,0 +1,108 @@
+<footer class="site-footer py-16">
+  <div class="site-container">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {{ if .Site.Params.footerEnableContact }}
+        <div>
+          <h3 class="widget-title">{{ i18n "footer_contact_title" . | markdownify }}</h3>
+          <div class="mb-6">
+            {{ if .Site.Params.phone }}
+              <p class="mb-1">
+                <i class="fas fa-phone mr-2 text-primary-light"></i>{{ .Site.Params.phone | markdownify }}
+              </p>
+            {{ end }}
+            {{ if .Site.Params.email }}
+              <p class="mb-0">
+                <i class="fas fa-envelope mr-2 text-primary-light"></i>
+                <a href="mailto:{{ .Site.Params.email }}">
+                  {{ .Site.Params.email | markdownify }}
+                </a>
+              </p>
+            {{ end }}
+          </div>
+
+          <h3 class="widget-title">{{ i18n "footer_donate" }} RLadies+</h3>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E"
+             target="_blank"
+             class="btn-light btn-sm inline-flex items-center"
+             rel="noopener">
+            <i class="fab fa-paypal mr-2"></i>
+            Donate via PayPal
+          </a>
+        </div>
+      {{ end }}
+
+      {{ if .Site.Params.footerEnableFollowme }}
+        <div>
+          <h3 class="widget-title">{{ i18n "footer_followme_title" . | markdownify }}</h3>
+          <div class="flex flex-wrap gap-4">
+            {{ range .Site.Params.social }}
+              {{ if .footer }}
+                {{ $some := partial "funcs/social_media.html" (dict "type" .title "handle" .handle) }}
+                <a href="{{ $some.url }}"
+                   target="_blank"
+                   {{ if .relme }}rel="me"{{ end }}
+                   class="text-white/70 text-2xl social-icon hover:text-accent-rose"
+                   aria-label="{{ .title }}">
+                  <i class="{{ $some.fa }}"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ if .Site.Params.footerEnableTextWidget }}
+        <div>
+          <h3 class="widget-title">{{ i18n "footer_text_title" . | markdownify }}</h3>
+          <div class="text-sm text-white/70 leading-relaxed">
+            {{ i18n "footer_text_content" . | markdownify }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ if .Site.Params.footerEnableLangWidget }}
+        <div>
+          <h3 class="widget-title">
+            <i class="fas fa-globe mr-2"></i>{{ i18n "footer_lang_title" . | markdownify }}
+          </h3>
+          {{ if hugo.IsMultilingual }}
+          <select id="select-language"
+                  class="form-select bg-white/10 text-white border-white/20 rounded-lg"
+                  onchange="location = this.value;"
+                  aria-label="Select language">
+            {{ $siteLanguages := site.Languages }}
+            {{ $pageLang := .Page.Lang }}
+            {{ range .Page.AllTranslations }}
+              {{ $translation := . }}
+              {{ range $siteLanguages }}
+                {{ if eq $translation.Lang .Lang }}
+                  <option id="{{ $translation.Language }}"
+                          value="{{ $translation.Permalink }}"
+                          {{ if eq $pageLang .Lang }}selected{{ end }}>
+                    {{ .Params.LanguageName }}
+                  </option>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </select>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</footer>
+
+<footer class="site-underfooter">
+  <div class="site-container">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-2">
+      <small>
+        Copyright &copy; {{ .Site.Params.year | markdownify }}, {{ .Site.Params.name | markdownify }}
+      </small>
+      <small>
+        Design: A. M. Mowinckel |
+        Powered by <a href="https://gohugo.io/" rel="noopener">Hugo</a> &
+        <a href="https://www.netlify.com/" rel="noopener">Netlify</a>
+      </small>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,109 @@
+@layer components {
+  .fc {
+    --fc-event-bg-color: var(--color-primary);
+    --fc-event-border-color: var(--color-primary);
+    --fc-button-bg-color: var(--color-primary);
+    --fc-button-border-color: var(--color-primary);
+    --fc-button-hover-bg-color: var(--color-primary-dark);
+    --fc-button-hover-border-color: var(--color-primary-dark);
+    --fc-button-active-bg-color: var(--color-primary-darker);
+    --fc-button-active-border-color: var(--color-primary-darker);
+    --fc-border-color: #e0e0e0;
+
+    @apply shadow-sm overflow-hidden border-none;
+    border-radius: 0.75rem;
+  }
+
+  .fc .fc-button-primary {
+    @apply rounded-sm px-4 py-2 font-medium transition-all duration-200;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 2px 4px color-mix(in srgb, var(--color-primary) 20%, transparent);
+  }
+
+  .fc .fc-button-primary:hover {
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px color-mix(in srgb, var(--color-primary) 30%, transparent);
+  }
+
+  .fc .fc-button-primary:not(:disabled):active,
+  .fc .fc-button-primary:not(:disabled).fc-button-active {
+    background-color: var(--color-primary-darker);
+    border-color: var(--color-primary-darker);
+    transform: translateY(0);
+  }
+
+  .fc .fc-button-primary:focus {
+    box-shadow: 0 0 0 0.2rem color-mix(in srgb, var(--color-primary) 25%, transparent);
+  }
+
+  .fc .fc-toolbar {
+    @apply flex justify-between items-center flex-wrap gap-3 p-4;
+    background: linear-gradient(to bottom, var(--color-surface), var(--color-light));
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .fc .fc-toolbar .fc-toolbar-chunk {
+    @apply flex items-center gap-2 flex-initial;
+  }
+
+  .fc .fc-toolbar .fc-toolbar-title {
+    @apply text-2xl font-normal;
+    color: var(--color-dark);
+  }
+
+  .fc-event {
+    @apply border-none;
+    border-radius: 0.25rem;
+    padding: 2px 4px;
+  }
+
+  .fc-daygrid-event-dot {
+    border-color: var(--color-primary) !important;
+    background-color: var(--color-primary);
+  }
+
+  .fc-event-time,
+  .fc-event-title {
+    @apply text-sm px-0.5;
+  }
+
+  .fc-day-today {
+    background: color-mix(in srgb, var(--color-primary) 8%, var(--color-light)) !important;
+  }
+
+  #loading {
+    @apply text-primary text-sm;
+  }
+
+  /* Calendar tooltip (replaces Bootstrap tooltip) */
+  .cal-tooltip {
+    @apply absolute z-50 bg-white text-left rounded-sm shadow-lg border border-gray-200 p-4;
+    max-width: 320px;
+    color: var(--color-dark);
+  }
+
+  .cal-tooltip-arrow {
+    @apply absolute w-3 h-3 bg-white border-l border-t border-gray-200 rotate-45;
+    top: -7px;
+    left: 50%;
+    margin-left: -6px;
+  }
+
+  @media (max-width: 767px) {
+    .fc .fc-toolbar {
+      @apply justify-center;
+    }
+
+    .fc .fc-toolbar .fc-toolbar-chunk {
+      @apply w-full justify-center mb-2;
+      flex: 1 1 100%;
+    }
+
+    .fc .fc-toolbar .fc-toolbar-title {
+      @apply text-xl;
+    }
+  }
+}

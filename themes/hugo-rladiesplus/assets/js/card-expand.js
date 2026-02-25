@@ -1,0 +1,2 @@
+/* Card expand hover is handled entirely by CSS transitions.
+   This file is intentionally minimal. */

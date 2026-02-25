@@ -17,7 +17,7 @@ events: 'Eventos'
 mentoring: 'Programa de mentores'
 coordinated: 'Coordinado por el equipo'
 dashboard: 'Panel de Control Global'
-rladies-blogs: 'Blogs de R-Ladies'
+rladies-blogs: 'Blogs de RLadies+'
 press: 'En la prensa'
 blog: 'Blog'
 
@@ -33,14 +33,41 @@ footer_contact_title: 'Contacto'
 footer_donate: 'Donate to'
 footer_text_title: 'Código de Conducta'
 footer_text_content: |
-    R-Ladies se dedica a proporcionar una experiencia libre de acoso para todos.
-    Desde R-Ladies no toleramos el acoso de los participantes en ninguna de las
+    RLadies+ se dedica a proporcionar una experiencia libre de acoso para todos.
+    Desde RLadies+ no toleramos el acoso de los participantes en ninguna de las
     formas posibles. Lea nuestro [código de conducta](/es/coc)
+
+# Hero ----
+hero_headline: 'Promoviendo la Diversidad de Género en la Comunidad R'
+hero_subheadline: 'Una organización mundial que empodera a los géneros subrepresentados a través de una red global colaborativa de líderes, mentores y desarrolladores de R.'
+hero_cta_chapters: 'Encuentra un Capítulo'
+hero_cta_involved: 'Involúcrate'
 
 # Home ----
 home_feed: 'Latest posts'
-home_featured: 'Featured R-Ladies'
+home_featured: 'Featured RLadies+'
 home_activity: 'Our activities'
+home_impact_title: 'Nuestro Impacto Global'
+home_impact_subtitle: 'Construyendo una comunidad R inclusiva en todo el mundo'
+home_chapters_title: 'Capítulos'
+home_chapters_cta: 'Ver Todos los Capítulos'
+home_involved_title: 'Involúcrate'
+home_involved_subtitle: 'Hay muchas formas de ser parte de la comunidad RLadies+'
+involved_join_title: 'Únete a un Capítulo'
+involved_join_desc: 'Encuentra tu capítulo local de RLadies+ y conecta con entusiastas de R en tu área.'
+involved_join_cta: 'Encontrar Capítulos'
+involved_talk_title: 'Da una Charla'
+involved_talk_desc: 'Comparte tu conocimiento y experiencia con la comunidad presentando en un evento.'
+involved_talk_cta: 'Saber Más'
+involved_support_title: 'Apóyanos'
+involved_support_desc: 'Ayuda a sostener nuestra misión a través de donaciones, patrocinios o voluntariado.'
+involved_support_cta: 'Donar'
+home_blog_title: 'Últimas Publicaciones'
+home_blog_subtitle: 'Noticias, tutoriales e historias de nuestra comunidad'
+home_blog_cta: 'Ver Todas las Publicaciones'
+home_sponsors_title: 'Patrocinadores'
+home_sponsors_subtitle: 'Organizaciones que apoyan nuestra misión'
+home_sponsors_cta: 'Ser Patrocinador'
 
 # Globals ----
 country: 'Country'

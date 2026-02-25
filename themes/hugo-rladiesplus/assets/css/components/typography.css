@@ -1,0 +1,100 @@
+@layer components {
+  .section-title {
+    @apply text-4xl md:text-5xl font-medium text-dark text-center mb-4;
+    letter-spacing: -0.02em;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-center max-w-2xl mx-auto mb-12;
+    color: var(--color-muted);
+    font-weight: 300;
+  }
+
+  .entry-title {
+    @apply text-3xl md:text-4xl font-medium text-dark text-center mb-6;
+    letter-spacing: -0.02em;
+  }
+
+  .entry-header .entry-meta {
+    @apply text-center text-sm font-medium mb-4;
+    color: var(--color-muted);
+  }
+
+  .entry-content {
+    @apply mb-16;
+  }
+
+  .entry-content h2 {
+    @apply text-3xl pt-5 mb-5;
+  }
+
+  .entry-content a {
+    @apply underline;
+  }
+
+  .lead {
+    @apply text-lg text-gray-600;
+  }
+
+  .text-muted {
+    @apply text-muted;
+  }
+
+  .date {
+    @apply w-2/3 mx-auto relative text-center text-sm;
+    border-bottom: 1px solid var(--color-muted);
+    line-height: 0.1em;
+    color: color-mix(in srgb, var(--color-muted) 85%, var(--color-dark));
+  }
+
+  .date span {
+    @apply bg-white px-2.5;
+  }
+
+  .toc-nav {
+    @apply text-sm;
+    border-left: 2px solid var(--color-light);
+  }
+
+  .toc-nav ul {
+    @apply list-none pl-0 m-0;
+  }
+
+  .toc-nav li {
+    @apply m-0;
+  }
+
+  .toc-nav a {
+    @apply block py-1.5 pl-4 text-muted no-underline transition-colors;
+    @apply hover:text-primary;
+    margin-left: -2px;
+  }
+
+  .toc-nav ul ul {
+    @apply pl-3;
+  }
+
+  .toc-nav ul ul a {
+    @apply text-xs;
+  }
+
+  blockquote {
+    @apply relative my-8 py-6 pl-8 pr-6 rounded-xl;
+    background: color-mix(in srgb, var(--color-primary) 6%, transparent);
+    border-left: 4px solid var(--color-primary);
+    color: color-mix(in srgb, var(--color-muted) 80%, black);
+  }
+
+  blockquote p {
+    @apply m-0 leading-relaxed;
+  }
+
+  blockquote cite {
+    @apply block mt-4 font-semibold text-sm not-italic;
+    color: color-mix(in srgb, var(--color-muted) 90%, black);
+  }
+
+  blockquote cite::before {
+    content: "— ";
+  }
+}

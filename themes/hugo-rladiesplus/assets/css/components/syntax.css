@@ -1,0 +1,102 @@
+@layer components {
+  pre {
+    @apply rounded-md border font-mono w-full p-4;
+    border-color: var(--color-primary);
+    background-color: color-mix(in srgb, var(--color-primary) 10%, white);
+  }
+
+  pre.chroma {
+    @apply rounded-md border;
+    background-color: color-mix(in srgb, var(--color-primary) 5%, white);
+    border-color: var(--color-primary);
+  }
+
+  .highlight {
+    @apply w-full;
+  }
+
+  .chroma {
+    @apply bg-white p-4;
+  }
+
+  .chroma .err {
+    background-color: color-mix(in srgb, var(--color-primary) 70%, white);
+  }
+
+  .chroma .lntd { @apply align-top p-0 m-0 border-0; }
+  .chroma .lntable { @apply p-0 m-0 border-0 w-auto overflow-auto block; border-spacing: 0; }
+  .chroma .hl { @apply block w-full; background-color: color-mix(in srgb, var(--color-primary) 8%, white); }
+  .chroma .lnt { @apply mr-1.5 px-1.5 text-gray-400; }
+  .chroma .ln { @apply mr-1.5 px-1.5 text-gray-400; }
+
+  .chroma .k { color: #287088; }
+  .chroma .kc { color: #287088; font-style: italic; }
+  .chroma .kd { color: #287088; font-style: italic; }
+  .chroma .kn { color: #287088; }
+  .chroma .kp { color: #287088; }
+  .chroma .kr { color: #287088; }
+  .chroma .kt { color: #287088; font-style: italic; }
+
+  .chroma .na { color: #288870; }
+  .chroma .nb { color: #288870; }
+  .chroma .bp { font-style: italic; }
+  .chroma .nc { color: #0a3050; }
+  .chroma .no { color: #882840; }
+  .chroma .nd { color: #0a3050; }
+  .chroma .ni { color: #5cc0a2; }
+  .chroma .ne { color: var(--color-primary); }
+  .chroma .nf { color: var(--color-primary); }
+  .chroma .fm { color: #882840; }
+  .chroma .nl { color: #0a5030; }
+  .chroma .nn { color: #0a5030; }
+  .chroma .nt { color: #287088; }
+  .chroma .nv { color: #aa4060; }
+  .chroma .vm { color: #882840; }
+
+  .chroma .s { color: #aa4060; }
+  .chroma .sa { @apply text-gray-500; }
+  .chroma .sb { color: #aa4060; }
+  .chroma .sc { color: var(--color-primary); }
+  .chroma .dl { color: #882840; }
+  .chroma .sd { color: #882840; font-style: italic; }
+  .chroma .s2 { color: #aa4060; }
+  .chroma .se { color: #5cc0a2; }
+  .chroma .sh { color: #aa4060; }
+  .chroma .si { color: #aa4060; text-decoration: underline; }
+  .chroma .sx { color: color-mix(in srgb, var(--color-primary) 70%, white); }
+  .chroma .sr { color: color-mix(in srgb, var(--color-primary) 70%, white); }
+  .chroma .s1 { color: #aa4060; }
+  .chroma .ss { color: #aa4060; }
+
+  .chroma .m { @apply text-gray-500; }
+  .chroma .mb { @apply text-gray-500; }
+  .chroma .mf { @apply text-gray-500; }
+  .chroma .mh { @apply text-gray-500; }
+  .chroma .mi { @apply text-gray-500; }
+  .chroma .il { @apply text-gray-500; }
+  .chroma .mo { @apply text-gray-500; }
+  .chroma .o { @apply text-gray-500; }
+  .chroma .ow { color: color-mix(in srgb, var(--color-primary) 70%, white); }
+  .chroma .p { @apply text-gray-700; }
+
+  .chroma .c { @apply text-gray-500 italic; }
+  .chroma .ch { color: #0a3050; font-style: italic; }
+  .chroma .cm { @apply text-gray-500 italic; }
+  .chroma .c1 { @apply text-gray-500 italic; }
+  .chroma .cs { @apply text-gray-500 italic; }
+  .chroma .cp { color: #0a5030; }
+  .chroma .cpf { color: #0a5030; }
+
+  .chroma .gd { color: #601828; }
+  .chroma .ge { font-style: italic; }
+  .chroma .gr { color: #601828; }
+  .chroma .gh { @apply text-gray-500; }
+  .chroma .gi { color: #288870; }
+  .chroma .go { @apply text-gray-500; }
+  .chroma .gp { @apply text-gray-500; }
+  .chroma .gs { font-weight: bold; }
+  .chroma .gu { @apply text-gray-500; }
+  .chroma .gt { color: #287088; }
+  .chroma .gl { text-decoration: underline; }
+  .chroma .w { color: var(--color-primary); }
+}

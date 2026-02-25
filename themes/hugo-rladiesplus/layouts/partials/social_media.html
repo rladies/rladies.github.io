@@ -1,0 +1,31 @@
+{{ $data := newScratch }}
+
+<!--- turn map into slice so we can range with first --->
+{{ $data.Set "key" (slice) }}
+{{ $data.Set "value" (slice) }}
+{{ range $key, $value := .data }}
+    {{ $data.Add "key" $key }}
+    {{ $data.Add "value" $value }}
+{{ end }}
+
+<!--- Set the range --->
+{{ $data.Set "range" ($data.Get "value" | len ) }}
+{{ with .range }}
+  {{ $data.Set "range" . }}
+{{ end }}
+
+<!--- Set the rel --->
+{{ $data.Set "rel" false }}
+{{ with .relme }}
+  {{ $data.Set "rel" true }}
+{{ end }}
+
+{{ range $index, $v := first ($data.Get "range") ($data.Get "value" ) }}
+  {{ $selection := index ($data.Get "key") $index }}
+  {{ $some:= partial "funcs/social_media.html" (dict "type" $selection "handle" $v ) }}
+  <a class="no-underline" title="{{$some.type}}: {{ $some.url}}" href="{{ $some.url }}" target="_blank" {{ if ( $data.Get "rel") }} rel="me" {{ end }} >
+    <i class="{{ $some.fa }}"></i>
+  </a>
+{{ end }}
+
+

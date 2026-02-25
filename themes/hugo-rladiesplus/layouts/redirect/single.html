@@ -1,0 +1,17 @@
+{{ define "main" }}
+    <p class="lead mb-4">You are being redirected to the RLadies+ Airtable form.</p>
+    <p>If you are not redirected automatically, please click the link below:</p>
+    <a id="redirectLink">Click here to proceed</a>
+
+    <script>
+        const baseRedirectUrl = "{{ .Params.redirect }}";
+        const queryString = window.location.search;
+        const finalRedirectUrl = baseRedirectUrl + queryString;
+
+        document.getElementById('redirectLink').href = finalRedirectUrl;
+
+        setTimeout(() => {
+            window.location.replace(finalRedirectUrl);
+        }, 500);
+    </script>
+{{ end }}

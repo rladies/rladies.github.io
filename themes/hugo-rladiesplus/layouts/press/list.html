@@ -1,0 +1,92 @@
+{{ define "main" }}
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto mb-10 entry-content fade-in-up">
+      {{ .Content }}
+    </div>
+
+    {{ $years := slice }}
+    {{ range .Pages }}
+      {{ $years = $years | append .Date.Year }}
+    {{ end }}
+    {{ $years = $years | uniq | sort | collections.Reverse }}
+
+    <div class="card rounded-xl mb-8 fade-in-up">
+      <div class="p-5">
+        <div class="flex flex-col md:flex-row md:items-center gap-3">
+          <label for="filter-press" class="form-label mb-0 font-semibold shrink-0">
+            <i class="far fa-calendar-alt mr-2"></i>Filter by Year
+          </label>
+          <div class="flex-1">
+            <select class="form-select" id="filter-press" multiple>
+              {{ range $years }}
+                <option value="{{ . | urlize }}">{{ . }}</option>
+              {{ end }}
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="press-list space-y-4">
+      {{ range .Pages }}
+        <article class="press-item card rounded-xl fade-in-up" data-year="{{ .Date.Year | urlize }}">
+          <div class="p-5 flex flex-col md:flex-row md:items-start gap-4">
+            <div class="shrink-0 md:w-36">
+              <time datetime="{{ .Date.Format .Site.Params.DateForm }}"
+                    class="text-sm font-medium text-muted">
+                {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+              </time>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-base font-semibold mb-1">
+                <a href="{{ .Params.source }}" rel="bookmark" lang="{{ .Params.language }}" target="_blank"
+                   class="text-dark hover:text-primary transition-colors">
+                  {{ .Title }}
+                  <i class="fas fa-external-link-alt ml-1 text-xs text-muted"></i>
+                </a>
+              </h3>
+              {{ with .Resources.Match "*pdf" }}
+                {{ range . }}
+                  <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline mt-2" target="_blank">
+                    <i class="far fa-file-pdf mr-1"></i>Download PDF
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "footer" }}
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearFilter = new Choices('#filter-press', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: 'All years',
+      searchPlaceholderValue: 'Search years...'
+    });
+
+    const pressItems = document.querySelectorAll('.press-item');
+
+    document.getElementById('filter-press').addEventListener('change', function() {
+      const selectedYears = yearFilter.getValue(true);
+
+      pressItems.forEach(item => {
+        const itemYear = item.getAttribute('data-year');
+
+        if (selectedYears.length === 0 || selectedYears.includes(itemYear)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+{{ end }}

@@ -1,0 +1,419 @@
+@layer components {
+  .dark {
+    --color-surface: #1a1a2e;
+    --color-surface-alt: #16213e;
+    --color-dark: #ededf4;
+    --color-muted: #9ca3af;
+    --color-primary-light: #b565fd;
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-card-hover: 0 10px 25px rgba(136,30,249,0.15), 0 4px 10px rgba(0,0,0,0.2);
+    color-scheme: dark;
+  }
+
+  .dark body {
+    @apply bg-[#121220] text-light;
+  }
+
+  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: var(--color-light);
+  }
+
+  .dark a {
+    color: var(--color-primary-light);
+  }
+
+  .dark a:hover {
+    color: var(--color-primary-lighter);
+  }
+
+  .dark .text-dark {
+    color: var(--color-light);
+  }
+
+  .dark .text-muted {
+    @apply text-gray-400;
+  }
+
+  .dark .bg-white {
+    @apply bg-[#1e1e30];
+  }
+
+  .dark .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .dark .bg-surface-alt {
+    background-color: var(--color-surface-alt);
+  }
+
+  .dark .border-gray-100,
+  .dark .border-gray-200,
+  .dark .border-gray-300 {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dark .bg-gray-100 {
+    @apply bg-white/10;
+  }
+
+  /* ── Nav ── */
+  .dark .site-nav-solid {
+    @apply bg-[#1a1a2e]/95 border-white/10;
+    backdrop-filter: blur(12px);
+  }
+
+  .dark .site-nav-solid .site-nav-link {
+    @apply text-light hover:text-primary-light;
+  }
+
+  .dark .site-nav-transparent .site-nav-link {
+    @apply text-light/80 hover:text-primary-light;
+  }
+
+  .dark .site-nav-transparent .site-nav-mobile-toggle {
+    @apply text-light;
+  }
+
+  .dark .site-nav-mobile {
+    @apply bg-[#1a1a2e] border-white/10;
+  }
+
+  .dark .site-nav-mobile-link {
+    @apply text-light hover:bg-white/10 hover:text-primary-light;
+  }
+
+  .dark .site-nav-mobile-toggle {
+    @apply text-light;
+  }
+
+  .dark .dropdown-menu {
+    @apply bg-[#1e1e30] border-white/10;
+  }
+
+  .dark .dropdown-item {
+    @apply text-light hover:bg-white/10;
+  }
+
+  /* ── Hero ── */
+  .dark .hero-home {
+    background: linear-gradient(135deg, #121220 0%, #1a1a2e 50%, color-mix(in srgb, var(--color-primary) 12%, #1a1a2e) 100%);
+  }
+
+  .dark .hero-home-accent {
+    background: linear-gradient(to bottom, transparent, #121220);
+  }
+
+  .dark .hero-headline {
+    color: var(--color-light);
+  }
+
+  .dark .hero-subheadline {
+    @apply text-gray-400;
+  }
+
+  .dark .hero-inner {
+    background-color: var(--color-surface);
+  }
+
+  .dark .hero-inner-title {
+    color: var(--color-light);
+  }
+
+  /* ── Cards ── */
+  .dark .card {
+    @apply bg-[#1e1e30] border border-white/10;
+  }
+
+  .dark .card-header {
+    @apply border-white/10;
+  }
+
+  .dark .card-title {
+    @apply text-light;
+  }
+
+  .dark .post-card {
+    @apply bg-[#1e1e30] border border-white/10;
+  }
+
+  .dark .post-card .post-title a {
+    @apply text-light;
+  }
+
+  .dark .post-card .post-title a:hover {
+    @apply text-primary-light;
+  }
+
+  .dark .card-expand {
+    @apply bg-[#1e1e30] border border-white/10;
+  }
+
+  .dark .card-expand-title {
+    @apply text-light;
+  }
+
+  .dark .card-expand-foot {
+    @apply border-white/10;
+  }
+
+  .dark .stat-card {
+    @apply bg-[#1e1e30] border border-white/10;
+  }
+
+  /* ── Typography ── */
+  .dark .section-title {
+    @apply text-light;
+  }
+
+  .dark .section-subtitle {
+    @apply text-gray-400;
+  }
+
+  .dark .entry-title {
+    color: var(--color-light);
+  }
+
+  .dark .lead {
+    @apply text-gray-400;
+  }
+
+  .dark .date {
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-gray-400);
+  }
+
+  .dark .date span {
+    @apply bg-[#121220];
+  }
+
+  .dark blockquote {
+    background: color-mix(in srgb, var(--color-primary) 8%, #1e1e30);
+    color: var(--color-light);
+  }
+
+  .dark blockquote cite {
+    @apply text-gray-400;
+  }
+
+  .dark .toc-nav {
+    border-left-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dark .toc-nav a {
+    @apply text-gray-400 hover:text-primary-light;
+  }
+
+  /* ── Tables ── */
+  .dark .table {
+    @apply text-light;
+  }
+
+  .dark .table th {
+    @apply border-white/10 text-light;
+  }
+
+  .dark .table td {
+    @apply border-white/10;
+  }
+
+  .dark .table-hover tbody tr:hover {
+    @apply bg-white/5;
+  }
+
+  .dark .chp-table .country-cell {
+    @apply bg-[#1a1a2e] border-white/10;
+  }
+
+  .dark .chp-table thead th:first-child {
+    @apply border-white/10;
+  }
+
+  .dark .chp-social a {
+    @apply text-gray-400 hover:text-primary-light;
+  }
+
+  /* ── Tabs ── */
+  .dark .tab-list {
+    @apply border-white/10;
+  }
+
+  .dark .tab-button {
+    @apply text-gray-400;
+  }
+
+  .dark .tab-button:hover {
+    @apply text-light border-white/30;
+  }
+
+  .dark .tab-button.active {
+    @apply text-primary-light border-primary-light;
+  }
+
+  /* ── Forms ── */
+  .dark .form-control,
+  .dark .form-select {
+    @apply bg-[#1e1e30] border-white/20 text-light;
+  }
+
+  .dark .form-control::placeholder {
+    @apply text-gray-500;
+  }
+
+  .dark .form-label {
+    @apply text-light;
+  }
+
+  .dark .choices__inner {
+    @apply bg-[#1e1e30] border-white/20;
+  }
+
+  .dark .choices__input {
+    @apply bg-transparent text-light;
+  }
+
+  .dark .choices__list--dropdown {
+    @apply bg-[#1e1e30] border-white/10;
+  }
+
+  .dark .choices__list--dropdown .choices__item--selectable {
+    @apply text-light;
+  }
+
+  .dark .choices__list--dropdown .choices__item--selectable.is-highlighted {
+    @apply bg-white/10;
+  }
+
+  .dark .choices__item--selectable {
+    @apply text-light;
+  }
+
+  .dark .choices[data-type*=select-multiple] .choices__button,
+  .dark .choices[data-type*=text] .choices__button {
+    @apply border-white/20;
+  }
+
+  /* ── Buttons ── */
+  .dark .btn-light {
+    @apply bg-white/10 text-light hover:bg-white/20;
+  }
+
+  .dark .btn-outline {
+    @apply border-primary-lighter text-primary-lighter hover:bg-primary hover:text-white;
+  }
+
+  .dark .btn-outline-secondary {
+    @apply border-gray-500 text-gray-400 hover:bg-gray-500 hover:text-white;
+  }
+
+  /* ── Badges ── */
+  .dark .badge-primary {
+    @apply bg-primary-dark;
+  }
+
+  .dark .badge-secondary {
+    @apply bg-gray-600 text-gray-200;
+  }
+
+  .dark .bg-chapter-active {
+    background: color-mix(in srgb, var(--color-primary) 15%, #1e1e30);
+  }
+
+  /* ── Pagination ── */
+  .dark .page-link {
+    @apply text-light hover:bg-white/10 hover:text-primary-light;
+  }
+
+  .dark .page-item.active .page-link {
+    @apply bg-primary text-white;
+  }
+
+  .dark .page-item.disabled .page-link {
+    @apply text-gray-600;
+  }
+
+  /* ── Calendar (FullCalendar) ── */
+  .dark .fc {
+    --fc-border-color: rgba(255, 255, 255, 0.1);
+    --fc-page-bg-color: #1e1e30;
+    --fc-neutral-bg-color: rgba(255, 255, 255, 0.05);
+    --fc-list-event-hover-bg-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .dark .fc .fc-toolbar {
+    background: linear-gradient(to bottom, #1e1e30, #1a1a2e);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dark .fc .fc-toolbar .fc-toolbar-title {
+    color: var(--color-light);
+  }
+
+  .dark .fc .fc-col-header-cell-cushion,
+  .dark .fc .fc-daygrid-day-number {
+    @apply text-light;
+  }
+
+  .dark .fc-day-today {
+    background: color-mix(in srgb, var(--color-primary) 12%, #1e1e30) !important;
+  }
+
+  .dark .cal-tooltip {
+    @apply bg-[#1e1e30] border-white/10 text-light;
+  }
+
+  .dark .cal-tooltip-arrow {
+    @apply bg-[#1e1e30] border-white/10;
+  }
+
+  /* ── Map ── */
+  .dark [id$="_map"],
+  .dark #chartdiv {
+    @apply bg-[#1a1a2e] rounded-xl;
+  }
+
+  /* ── Footer ── */
+  .dark .site-footer {
+    @apply bg-[#0f0f1a];
+  }
+
+  .dark .site-underfooter {
+    @apply bg-[#0a0a14];
+  }
+
+  /* ── Misc ── */
+  .dark .sponsor-logo {
+    @apply opacity-50 hover:opacity-90;
+  }
+
+  .dark .involved-icon {
+    box-shadow: 0 4px 12px rgba(136, 30, 249, 0.3);
+  }
+
+  .dark .back-to-top-float {
+    @apply bg-primary-dark;
+  }
+
+  .dark hr {
+    @apply border-white/10;
+  }
+
+  .dark .highlight-border {
+    @apply border-primary-light;
+  }
+
+  .dark code:not(pre code) {
+    @apply bg-white/10 text-primary-light;
+  }
+
+  .dark pre {
+    @apply bg-[#0f0f1a] border border-white/10;
+  }
+
+  .dark .alumni-grid .card-expand-img img {
+    @apply grayscale brightness-75;
+  }
+
+  .dark .alumni-grid .card-expand:hover .card-expand-img img {
+    @apply grayscale-0 brightness-100;
+  }
+}

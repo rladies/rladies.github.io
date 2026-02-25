@@ -1,5 +1,5 @@
-title: "R-Ladies Global"
-theme: "hugo-rladies"
+title: "RLadies+ Global"
+theme: "hugo-rladiesplus"
 publishDir: "public"
 
 languageCode: "en"

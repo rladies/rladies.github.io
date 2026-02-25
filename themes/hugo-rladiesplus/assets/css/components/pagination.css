@@ -1,0 +1,23 @@
+@layer components {
+  .pagination {
+    @apply flex items-center gap-2;
+  }
+
+  .page-item {
+    @apply border-none;
+  }
+
+  .page-link {
+    @apply px-4 py-2 text-sm rounded-lg text-dark border-none transition-all;
+    @apply hover:bg-light hover:text-primary hover:-translate-y-0.5;
+  }
+
+  .page-item.active .page-link {
+    @apply bg-primary text-white;
+    box-shadow: 0 2px 8px rgba(136, 30, 249, 0.25);
+  }
+
+  .page-item.disabled .page-link {
+    @apply text-gray-300 cursor-not-allowed hover:translate-y-0;
+  }
+}

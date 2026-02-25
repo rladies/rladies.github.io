@@ -1,0 +1,35 @@
+@layer components {
+  .form-label {
+    @apply block text-sm font-medium text-dark mb-1;
+  }
+
+  .form-control {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md text-sm text-dark bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
+  }
+
+  .form-select {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md text-sm text-dark bg-white transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    padding-right: 2.5rem;
+    appearance: none;
+  }
+
+  .form-check {
+    @apply flex items-center gap-2;
+  }
+
+  .form-check-input {
+    @apply w-4 h-4 accent-primary;
+  }
+
+  .input-group {
+    @apply flex;
+  }
+
+  .input-group .form-control {
+    @apply rounded-none first:rounded-l-md last:rounded-r-md;
+  }
+}

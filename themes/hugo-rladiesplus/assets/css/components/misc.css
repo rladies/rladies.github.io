@@ -1,0 +1,77 @@
+@layer components {
+  /* Floating back-to-top */
+  .back-to-top-float {
+    @apply fixed bottom-6 right-6 w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center z-40 cursor-pointer transition-all duration-200 hover:-translate-y-1;
+    box-shadow: 0 4px 12px rgba(136, 30, 249, 0.3);
+  }
+
+  .back-to-top-float:hover {
+    box-shadow: 0 6px 20px rgba(136, 30, 249, 0.4);
+  }
+
+  /* List utilities */
+  .list-unstyled {
+    @apply list-none p-0;
+  }
+
+  .list-inline {
+    @apply flex flex-wrap gap-2 list-none p-0;
+  }
+
+  /* Visibility */
+  .visually-hidden {
+    @apply sr-only;
+  }
+
+  /* Tab component (Alpine.js powered) */
+  .tab-list {
+    @apply flex border-b border-gray-200 gap-1;
+  }
+
+  .tab-button {
+    @apply px-4 py-2 text-sm font-medium text-muted border-b-2 border-transparent transition-colors cursor-pointer;
+  }
+
+  .tab-button:hover {
+    @apply text-dark border-gray-300;
+  }
+
+  .tab-button.active {
+    @apply text-primary border-primary;
+  }
+
+  .tab-panel {
+    @apply py-4;
+  }
+
+  /* Collapse (Alpine.js powered) */
+  .collapse-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  /* Card expand blockquote icons */
+  .card-expand blockquote::before {
+    content: "\f10d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    @apply text-primary mr-1;
+  }
+
+  .card-expand blockquote::after {
+    content: "\f10e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    @apply text-primary ml-1;
+  }
+
+  /* Highlight utilities */
+  .highlight-border {
+    @apply border-l-4 border-primary pl-4;
+  }
+
+  /* Chapter status badge */
+  .bg-chapter-active {
+    background: color-mix(in srgb, var(--color-primary) 15%, white);
+  }
+}

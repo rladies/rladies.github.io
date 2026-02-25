@@ -1,0 +1,41 @@
+@layer components {
+  .site-footer {
+    @apply bg-dark text-white text-sm;
+  }
+
+  .site-footer a {
+    @apply text-white/70 no-underline transition-colors;
+  }
+
+  .site-footer a:hover {
+    @apply text-white;
+  }
+
+  .site-footer .widget-title {
+    @apply pt-1 text-sm font-semibold mb-4;
+    color: var(--color-primary-light);
+  }
+
+  .site-footer .small a,
+  .site-footer p a {
+    @apply underline hover:no-underline;
+  }
+
+  .site-footer .social-icon {
+    @apply inline-block transition-all duration-200 hover:-translate-y-0.5 hover:text-primary-light;
+  }
+
+  .site-underfooter {
+    @apply py-3 text-xs;
+    background: color-mix(in srgb, var(--color-dark) 85%, black);
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .site-underfooter a {
+    @apply text-white/50 no-underline transition-colors;
+  }
+
+  .site-underfooter a:hover {
+    @apply text-white/80 underline;
+  }
+}

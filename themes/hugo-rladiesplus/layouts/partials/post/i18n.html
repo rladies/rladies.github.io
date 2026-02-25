@@ -1,0 +1,20 @@
+{{ if .IsTranslated }}
+  <span class="post-translations" x-data="{ open: false }">
+    <button class="btn btn-sm btn-link no-underline p-0" type="button"
+            @click="open = !open"
+            :aria-expanded="open">
+      <i class="fas fa-language mr-1"></i>Translations
+    </button>
+
+    <div x-show="open" x-transition x-cloak class="mt-2">
+      {{ range .Translations }}
+        {{ $trans := .Params.translated | default true }}
+        {{ if $trans }}
+          <a lang="{{ .Lang }}" href="{{ .Permalink }}" class="badge badge-info no-underline mr-1">
+            {{ index .Site.Data.read_in_lang .Lang }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </span>
+{{ end }}

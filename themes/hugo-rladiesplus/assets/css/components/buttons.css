@@ -1,0 +1,76 @@
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-primary text-white hover:bg-primary-dark hover:-translate-y-0.5;
+    box-shadow: 0 2px 8px rgba(136, 30, 249, 0.25);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 4px 16px rgba(136, 30, 249, 0.35);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-muted text-white hover:bg-dark;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  .btn-outline-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer border-2 border-muted text-muted hover:bg-muted hover:text-white;
+  }
+
+  .btn-light {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-light text-dark hover:bg-gray-200;
+  }
+
+  .btn-accent-rose {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer hover:-translate-y-0.5;
+    color: #2f2f30;
+    background-color: var(--color-accent-rose);
+    box-shadow: 0 2px 8px rgba(255, 91, 146, 0.25);
+  }
+
+  .btn-accent-rose:hover {
+    box-shadow: 0 4px 16px rgba(255, 91, 146, 0.35);
+  }
+
+  .btn-accent-blue {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer text-white hover:-translate-y-0.5;
+    background-color: var(--color-accent-blue);
+    box-shadow: 0 2px 8px rgba(20, 106, 249, 0.25);
+  }
+
+  .btn-accent-blue:hover {
+    background-color: color-mix(in srgb, var(--color-accent-blue) 85%, black);
+    box-shadow: 0 4px 16px rgba(20, 106, 249, 0.35);
+  }
+
+  .btn-link {
+    @apply inline-flex items-center gap-1 text-primary hover:text-primary-dark font-medium text-sm underline-offset-2 hover:underline;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+
+  .btn-lg {
+    @apply px-6 py-3 text-base;
+  }
+
+  .btn-xl {
+    @apply px-8 py-4 text-base rounded-xl font-semibold;
+  }
+
+  .btn-group {
+    @apply inline-flex rounded-lg shadow-sm;
+  }
+
+  .btn-group .btn {
+    @apply rounded-none first:rounded-l-lg last:rounded-r-lg;
+  }
+}

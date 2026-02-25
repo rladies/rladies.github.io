@@ -1,0 +1,123 @@
+{{ define "title" }}
+<header class="entry-header">
+  <div class="site-container max-w-4xl mx-auto">
+    <div class="text-center mb-6">
+      <div class="flex items-center justify-center gap-3 mb-4">
+        {{ if isset .Params "date" }}
+          <time class="text-sm font-medium text-primary"
+                datetime="{{ .Date.Format .Site.Params.DateForm }}">
+            {{ .Date.Format "January 2, 2006" }}
+          </time>
+        {{ end }}
+      </div>
+
+      <h1 class="text-3xl md:text-4xl font-medium mb-6" style="letter-spacing: -0.02em;">
+        {{ .Title }}
+      </h1>
+    </div>
+
+    {{ with .Params.image }}
+      <div class="rounded-xl overflow-hidden mb-8">
+        <img src="{{ .path }}" alt="{{ .alt | default $.Title }}"
+             class="w-full h-auto object-cover" style="max-height: 400px;">
+      </div>
+    {{ end }}
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 border-t border-b border-gray-200 py-6">
+      {{ with .Params.author }}
+        <div>
+          <h5 class="text-xs font-semibold text-muted mb-2">
+            {{ if gt (len .) 1 }}{{ i18n "authors" }}{{ else }}{{ i18n "author" }}{{ end }}
+          </h5>
+          {{ partial "author.html" . }}
+        </div>
+      {{ end }}
+
+      {{ with .Params.editorial }}
+        <div>
+          <h5 class="text-xs font-semibold text-muted mb-2">
+            {{ if gt (len .) 1 }}{{ i18n "editors" }}{{ else }}{{ i18n "editor" }}{{ end }}
+          </h5>
+          {{ partial "author.html" . }}
+        </div>
+      {{ end }}
+
+      {{ with .Params.tags }}
+        <div>
+          <h5 class="text-xs font-semibold text-muted mb-2">
+            {{ i18n "tags" }}
+          </h5>
+          <div class="flex flex-wrap gap-1">
+            {{ range . }}
+              {{ $name := . }}
+              {{ with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) }}
+                <a href="{{ .Permalink }}" class="badge badge-primary no-underline">{{ $name }}</a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<article class="site-container">
+  {{ $hasToc := gt (len .TableOfContents) 100 }}
+
+  <div class="{{ if $hasToc }}lg:grid lg:grid-cols-[1fr_240px] lg:gap-12 max-w-5xl{{ else }}max-w-3xl{{ end }} mx-auto">
+    <div class="max-w-3xl">
+      <div class="entry-content">
+        {{ .Content }}
+      </div>
+
+      <div class="border-t border-gray-200 pt-4 mt-12">
+        <p class="text-sm text-muted">
+          {{ i18n "last_edit" }} {{ .Lastmod.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Lastmod.Month) }} {{ .Lastmod.Year }}.
+        </p>
+      </div>
+    </div>
+
+    {{ if $hasToc }}
+      <aside class="toc-sidebar hidden lg:block">
+        <div class="sticky top-28">
+          <h4 class="text-xs font-semibold text-muted mb-4">
+            {{ i18n "toc" | default "Table of Contents" }}
+          </h4>
+          <nav class="toc-nav">
+            {{ .TableOfContents }}
+          </nav>
+        </div>
+      </aside>
+    {{ end }}
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8 max-w-3xl mx-auto">
+    <div>
+      {{ with .NextInSection }}
+        <a href="{{ .RelPermalink }}" class="card card-hover p-4 no-underline block group">
+          <span class="text-xs text-muted">
+            <i class="fas fa-arrow-left mr-1"></i> {{ i18n "prev" }}
+          </span>
+          <span class="block text-sm font-medium text-dark group-hover:text-primary mt-1">
+            {{ .Title }}
+          </span>
+        </a>
+      {{ end }}
+    </div>
+    <div class="text-right">
+      {{ with .PrevInSection }}
+        <a href="{{ .RelPermalink }}" class="card card-hover p-4 no-underline block group">
+          <span class="text-xs text-muted">
+            {{ i18n "next" }} <i class="fas fa-arrow-right ml-1"></i>
+          </span>
+          <span class="block text-sm font-medium text-dark group-hover:text-primary mt-1">
+            {{ .Title }}
+          </span>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

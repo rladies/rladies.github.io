@@ -1,0 +1,41 @@
+{{ $countries := $.Scratch.Get "chpt_countries" }}
+{{ $chapters  := $.Scratch.Get "chpt_active" }}
+
+{{ with .Site.GetPage "section" "chapters" }}
+<section class="site-section-lg" id="chapters">
+  <div class="site-container">
+    <h2 class="section-title fade-in-up">
+      {{ i18n "home_chapters_title" | default (.Title | title) }}
+    </h2>
+    <p class="section-subtitle fade-in-up stagger-1">
+      {{ .Content }}
+    </p>
+
+    <div class="card rounded-xl overflow-hidden fade-in-up stagger-2">
+      {{ $points := slice }}
+      {{ range $chapters }}
+        {{ $points = $points | append (dict
+          "name" .name
+          "members" .members
+          "latitude" .lat
+          "longitude" .lon
+        )}}
+      {{ end }}
+      {{ $data := (dict
+        "points" $points
+        "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
+        "radius" 4
+        "color" "#881ef9cc"
+      ) }}
+
+      {{ partial "map.html" (dict "id" "chapter_map" "height" "500px" "data" $data "countries" $countries) }}
+    </div>
+
+    <div class="text-center mt-10 fade-in-up">
+      <a href="{{ .RelPermalink }}" class="btn btn-outline">
+        {{ i18n "home_chapters_cta" | default "Browse All Chapters" }} &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

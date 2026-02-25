@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+  <head>
+    {{ partial "head/meta.html" . }}
+    {{ partial "head/head.html" . }}
+    {{ block "head" .}}{{ end }}
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    {{ partial "menu.html" . }}
+    {{ partial "hero.html" . }}
+
+    {{ block "fastsearch" .}}{{ end }}
+
+    <main id="main" class="flex-1">
+      {{ block "main" . }}
+        <div class="site-container py-12">
+          <div class="max-w-4xl mx-auto">
+            <article>
+              {{ block "title" . }}{{ end }}
+
+              {{ block "translation" .}}
+                {{ if eq .Params.translated false }}
+                  <div class="alert-primary text-center mb-3 rounded-xl">
+                    {{ i18n "missing_translation" }}
+                  </div>
+                {{ end }}
+              {{ end }}
+
+              <div class="entry-content">
+                {{ .Content }}
+              </div>
+            </article>
+          </div>
+        </div>
+      {{ end }}
+    </main>
+
+    {{ block "languages" . }}
+      {{ partial "post/i18n.html" }}
+    {{ end }}
+
+    <!-- Floating back-to-top -->
+    <button class="back-to-top-float"
+            x-data="{ show: false }"
+            @scroll.window="show = (window.scrollY > 600)"
+            x-show="show"
+            x-transition
+            x-cloak
+            @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            aria-label="Back to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    {{ partial "footer/footer.html" . }}
+    {{ partial "footer/scripts.html" . }}
+    {{ block "footer" . }}{{ end }}
+  </body>
+</html>

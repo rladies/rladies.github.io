@@ -1,0 +1,14 @@
+@layer components {
+  #chartdiv {
+    @apply w-full overflow-hidden mb-12;
+    height: 50vh;
+  }
+
+  #chartdiv .fab {
+    @apply text-white;
+  }
+
+  #chartdiv .fab:hover {
+    color: var(--color-primary-light);
+  }
+}

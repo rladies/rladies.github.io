@@ -1,0 +1,25 @@
+
+<title>{{ .Title }}</title>
+<link rel="icon" type="image/svg+xml" href="{{ .Site.Params.favicon | relURL }}">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+
+<!-- Dark mode (load early to prevent flash) -->
+{{ $darkmode := resources.Get "js/darkmode.js" | minify }}
+<script>{{ $darkmode.Content | safeJS }}</script>
+
+{{ $tw := resources.Get "css/main.css" | css.TailwindCSS }}
+{{ $fa := resources.Get "scss/fontawesome.scss" | toCSS }}
+{{ $choices := resources.Get "css/vendor/choices.min.css" }}
+{{ $css := slice $tw $fa $choices
+  | resources.Concat "rladiesplus-bundle.min.css"
+  | minify
+  | fingerprint
+}}
+
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+
+<!-- site data -->
+{{ partial "head/data.html" . }}
+
+<!-- plausible -->
+<script defer data-domain="rladies.org" src="https://plausible.io/js/script.js"></script>
