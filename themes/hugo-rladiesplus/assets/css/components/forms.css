@@ -33,3 +33,34 @@
     @apply rounded-none first:rounded-l-md last:rounded-r-md;
   }
 }
+
+/* Choices.js overrides — must be unlayered to beat vendor CSS */
+.choices__list--multiple .choices__item {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary-dark) !important;
+  color: #fff !important;
+}
+
+.choices__list--multiple .choices__item.is-highlighted {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-darker) !important;
+}
+
+.choices[data-type*=select-multiple] .choices__button,
+.choices[data-type*=text] .choices__button {
+  border-left-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: color-mix(in srgb, var(--color-primary) 10%, white) !important;
+}
+
+.choices__inner {
+  border-radius: 0.5rem !important;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  border-radius: 0 0 0.5rem 0.5rem !important;
+}

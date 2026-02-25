@@ -28,18 +28,18 @@
         {{ end }}
       {{ end }}
 
-      <button @click="toggleTheme()" class="dark-mode-toggle text-current hover:text-primary" aria-label="Toggle dark mode">
+      <button @click="toggleTheme()" class="dark-mode-toggle text-current hover:text-primary" aria-label="{{ i18n "toggle_dark_mode" }}">
         <i class="fa-solid fa-moon dark:hidden"></i>
         <i class="fa-solid fa-sun hidden dark:inline"></i>
       </button>
     </div>
 
     <div class="site-nav-actions md:hidden flex items-center gap-2">
-      <button @click="toggleTheme()" class="dark-mode-toggle text-current hover:text-primary" aria-label="Toggle dark mode">
+      <button @click="toggleTheme()" class="dark-mode-toggle text-current hover:text-primary" aria-label="{{ i18n "toggle_dark_mode" }}">
         <i class="fa-solid fa-moon dark:hidden"></i>
         <i class="fa-solid fa-sun hidden dark:inline"></i>
       </button>
-      <button class="site-nav-mobile-toggle" @click="open = !open" aria-label="Toggle navigation">
+      <button class="site-nav-mobile-toggle" @click="open = !open" aria-label="{{ i18n "toggle_nav" }}">
         <i class="fa fa-bars text-xl" x-show="!open"></i>
         <i class="fa fa-times text-xl" x-show="open" x-cloak></i>
       </button>

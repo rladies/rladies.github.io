@@ -15,7 +15,7 @@
       <div class="p-5">
         <div class="flex flex-col md:flex-row md:items-center gap-3">
           <label for="filter-press" class="form-label mb-0 font-semibold shrink-0">
-            <i class="far fa-calendar-alt mr-2"></i>Filter by Year
+            <i class="far fa-calendar-alt mr-2"></i>{{ i18n "filter_by_year" }}
           </label>
           <div class="flex-1">
             <select class="form-select" id="filter-press" multiple>
@@ -49,7 +49,7 @@
               {{ with .Resources.Match "*pdf" }}
                 {{ range . }}
                   <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline mt-2" target="_blank">
-                    <i class="far fa-file-pdf mr-1"></i>Download PDF
+                    <i class="far fa-file-pdf mr-1"></i>{{ i18n "download_pdf" }}
                   </a>
                 {{ end }}
               {{ end }}
@@ -68,8 +68,8 @@
     const yearFilter = new Choices('#filter-press', {
       removeItemButton: true,
       searchEnabled: true,
-      placeholderValue: 'All years',
-      searchPlaceholderValue: 'Search years...'
+      placeholderValue: '{{ i18n "all_years" }}',
+      searchPlaceholderValue: '{{ i18n "search_years" }}'
     });
 
     const pressItems = document.querySelectorAll('.press-item');

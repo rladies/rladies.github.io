@@ -1,11 +1,10 @@
-404_title:  '404'
+404_title: '404'
 404_description: "Oops! This page doesn't exist!"
-subheader: ''
 
-# menu ----
-home: "Home"
+# Menu (used via T .Identifier in menu.html) ----
+home: 'Home'
 about-us: 'About'
-mission: "Mission"
+mission: 'Mission'
 get-involved: 'Get involved'
 history: 'History'
 news: 'News'
@@ -15,26 +14,9 @@ activities: 'Activities'
 events: 'Events'
 mentoring: 'Mentoring Program'
 coordinated: 'Coordinated by the Global Team'
-dashboard: 'Global dashboard'
 rladies-blogs: 'Blogs by RLadies+'
 press: 'In the press'
 blog: 'Blog'
-
-# counters ----
-counter_archives: '{{.Count}} posts In Total'
-counter_tagcloud: '{{.Count}} Tags In Total'
-counter_categories: '{{.Count}} Categories In Total'
-
-# footer ----
-footer_lang_title: 'Languages'
-footer_followme_title: 'Follow us'
-footer_contact_title: 'Contact'
-footer_donate: 'Donate to'
-footer_text_title: 'Code of Conduct'
-footer_text_content: |
-    RLadies+ is dedicated to providing a harassment-free
-    experience for everyone. We do not tolerate harassment
-    of participants in any form. Read our [Code of Conduct](/coc)
 
 # Hero ----
 hero_headline: 'Promoting Gender Diversity in the R Community'
@@ -42,10 +24,7 @@ hero_subheadline: 'A worldwide organization empowering underrepresented genders 
 hero_cta_chapters: 'Find a Chapter'
 hero_cta_involved: 'Get Involved'
 
-# Home ----
-home_feed: 'Latest posts'
-home_featured: 'Featured RLadies+'
-home_activity: 'Our activities'
+# Home sections ----
 home_impact_title: 'Our Global Impact'
 home_impact_subtitle: 'Building an inclusive R community worldwide'
 home_chapters_title: 'Chapters'
@@ -61,9 +40,14 @@ involved_talk_cta: 'Learn More'
 involved_support_title: 'Support Us'
 involved_support_desc: 'Help sustain our mission through donations, sponsorships, or volunteering your time.'
 involved_support_cta: 'Donate'
+home_featured_title: 'Featured Members'
+home_featured_subtitle: 'Meet some of the people in our community'
+home_featured_cta: 'Browse Directory'
 home_blog_title: 'Latest Posts'
 home_blog_subtitle: 'News, tutorials, and stories from our community'
-home_blog_cta: 'View All Posts'
+home_blog_cta: 'All Posts'
+home_news_cta: 'All News'
+home_press_cta: 'All Press'
 home_sponsors_title: 'Sponsors'
 home_sponsors_subtitle: 'Organizations that support our mission'
 home_sponsors_cta: 'Become a Sponsor'
@@ -71,28 +55,89 @@ home_sponsors_cta: 'Become a Sponsor'
 # Globals ----
 country: 'Country'
 countries: 'Countries'
-chapter: "Chapter"
 chapters: 'Chapters'
-city: "City"
-cities: "Cities"
-event: "Event"
+city: 'City'
+members: 'members'
+social_media: 'Social media'
 
-# About Global Team ----
+# Chapter page ----
+join_chapter: 'Join chapter'
+organizers: 'Organizers'
+tab_current: 'Current'
+tab_former: 'Former'
+tab_upcoming: 'Upcoming'
+next_event: 'Next Event'
+rsvp: 'RSVP'
+details: 'Details'
+no_upcoming_events: 'No upcoming events.'
+no_events_yet: 'No events, yet.'
+search_city: 'Search by city...'
+select_countries: 'Select countries...'
+
+# Directory ----
+counter_entries: 'Members'
+interests: 'Interests'
+languages: 'Languages'
+location: 'Location'
+filter_interests: 'Filter by interests'
+search_interests: 'Search interests...'
+filter_languages: 'Filter by languages'
+search_languages: 'Search languages...'
+filter_location: 'Filter by location'
+search_location: 'Search location...'
+preferred_contact: 'Preferred contact'
+connect: 'Connect'
+last_updated: 'Last updated'
+update_entry: 'If this is your entry, you can update or delete it by filling out'
+update_entry_link: 'this form'
+work_affiliation: 'Work & Affiliation'
+r_user_groups: 'R User Groups'
+r_packages: 'R Packages'
+about: 'About'
+photo_credit: 'Photo credit'
+
+# Press ----
+filter_by_year: 'Filter by Year'
+download_pdf: 'Download PDF'
+all_years: 'All years'
+search_years: 'Search years...'
+
+# Global Team ----
 leadership: 'Leadership'
 global-team: 'Global Team'
+role: 'Role'
+name: 'Name'
 alumni: 'Alumni'
 alumni-text: |
   RLadies+ is extremely thankful for all the hard work
   and dedication of our past members and leaders.
   We would not be where we are today without them.
 
-# Other ----
-social_media: "Social media"
-archive: 'Archive'
-tag: 'Tag: '
+# GitHub issues ----
+gh_help_wanted: 'GitHub issues with "help wanted"'
+gh_found: 'Found'
+gh_open_issues: 'open issues'
+loading: 'Loading...'
+
+# Redirect ----
+redirect_msg: 'You are being redirected to the RLadies+ Airtable form.'
+redirect_fallback: 'If you are not redirected automatically, please click the link below:'
+redirect_click: 'Click here to proceed'
+
+# Footer ----
+footer_lang_title: 'Languages'
+footer_followme_title: 'Follow us'
+footer_contact_title: 'Contact'
+footer_donate: 'Donate to'
+footer_donate_paypal: 'Donate via PayPal'
+footer_text_title: 'Code of Conduct'
+footer_text_content: |
+    RLadies+ is dedicated to providing a harassment-free
+    experience for everyone. We do not tolerate harassment
+    of participants in any form. Read our [Code of Conduct](/coc)
+
+# Post ----
 tags: 'Tags'
-category: 'Category: '
-categories: 'Categories'
 author: 'Author'
 authors: 'Authors'
 editor: 'Editor'
@@ -100,16 +145,18 @@ editors: 'Editors'
 prev: 'Prev'
 next: 'Next'
 toc: 'Table of Contents'
-comments: 'Comments'
 read_more: 'Read more'
-see_details: 'See details'
-
-# git history
 last_edit: 'This post was last edited on'
 last_message: 'with the message'
+
+# Accessibility ----
+back_to_top: 'Back to top'
+toggle_dark_mode: 'Toggle dark mode'
+toggle_nav: 'Toggle navigation'
+select_language: 'Select language'
 
 # Language ----
 translations: 'Translations'
 missing_translation: |
-    We are sorry. This page is missing a 
+    We are sorry. This page is missing a
     translation to English.

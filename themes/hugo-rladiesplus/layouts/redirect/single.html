@@ -1,7 +1,7 @@
 {{ define "main" }}
-    <p class="lead mb-4">You are being redirected to the RLadies+ Airtable form.</p>
-    <p>If you are not redirected automatically, please click the link below:</p>
-    <a id="redirectLink">Click here to proceed</a>
+    <p class="lead mb-4">{{ i18n "redirect_msg" }}</p>
+    <p>{{ i18n "redirect_fallback" }}</p>
+    <a id="redirectLink">{{ i18n "redirect_click" }}</a>
 
     <script>
         const baseRedirectUrl = "{{ .Params.redirect }}";

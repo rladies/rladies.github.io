@@ -54,7 +54,7 @@
           {{ end }}
           {{ with .Params.members }}
             <span class="text-sm text-muted">
-              <i class="fa-solid fa-users mr-1"></i>{{ . }} members
+              <i class="fa-solid fa-users mr-1"></i>{{ . }} {{ i18n "members" }}
             </span>
           {{ end }}
         </div>
@@ -74,7 +74,7 @@
           <div>
             <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer"
                class="btn btn-primary">
-              <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>Join chapter
+              <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{{ i18n "join_chapter" }}
             </a>
           </div>
         {{ end }}
@@ -110,14 +110,14 @@
       <div class="card rounded-xl mb-8 fade-in-up" x-data="{ tab: 'current' }">
         <div class="p-6">
           <h2 class="text-xl font-semibold mb-4">
-            <i class="fa-solid fa-people-group text-accent-rose mr-2"></i>Organizers
+            <i class="fa-solid fa-people-group text-accent-rose mr-2"></i>{{ i18n "organizers" }}
           </h2>
           <div class="tab-list" role="tablist">
             <button class="tab-button" :class="tab === 'current' && 'active'" @click="tab = 'current'" role="tab">
-              Current{{ with .current }} ({{ len . }}){{ end }}
+              {{ i18n "tab_current" }}{{ with .current }} ({{ len . }}){{ end }}
             </button>
             <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab">
-              Former{{ with .former }} ({{ len . }}){{ end }}
+              {{ i18n "tab_former" }}{{ with .former }} ({{ len . }}){{ end }}
             </button>
           </div>
           <div x-show="tab === 'current'" class="tab-panel" role="tabpanel">
@@ -156,14 +156,14 @@
       <div class="card rounded-xl fade-in-up" x-data="{ tab: '{{ if gt (len $upcomingEvents) 0 }}upcoming{{ else }}former{{ end }}' }">
         <div class="p-6">
           <h2 class="text-xl font-semibold mb-4">
-            <i class="fa-solid fa-calendar-days text-accent-blue mr-2"></i>Events
+            <i class="fa-solid fa-calendar-days text-accent-blue mr-2"></i>{{ i18n "events" }}
           </h2>
           <div class="tab-list" role="tablist">
             <button class="tab-button" :class="tab === 'upcoming' && 'active'" @click="tab = 'upcoming'" role="tab">
-              Upcoming ({{ len $upcomingEvents }})
+              {{ i18n "tab_upcoming" }} ({{ len $upcomingEvents }})
             </button>
             <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab">
-              Former ({{ len $formerEvents }})
+              {{ i18n "tab_former" }} ({{ len $formerEvents }})
             </button>
           </div>
 
@@ -173,7 +173,7 @@
               <div class="rounded-xl border-2 border-accent-blue mb-6 overflow-hidden">
                 <div class="bg-accent-blue text-white px-6 py-3 flex items-center gap-2">
                   <i class="fa-solid fa-star"></i>
-                  <span class="font-semibold">Next Event</span>
+                  <span class="font-semibold">{{ i18n "next_event" }}</span>
                 </div>
                 <div class="p-6">
                   <h3 class="text-lg font-semibold mb-3">{{ $nextEvent.title }}</h3>
@@ -191,7 +191,7 @@
                   {{ with $nextEvent.id }}
                     <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}"
                        target="_blank" rel="noopener" class="btn btn-accent-blue btn-sm mt-4">
-                      RSVP <i class="fas fa-arrow-right ml-1"></i>
+                      {{ i18n "rsvp" }} <i class="fas fa-arrow-right ml-1"></i>
                     </a>
                   {{ end }}
                 </div>
@@ -213,14 +213,14 @@
                     {{ with $event.id }}
                       <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}"
                          target="_blank" rel="noopener" class="btn btn-sm btn-outline shrink-0 ml-3">
-                        Details <i class="fas fa-arrow-right ml-1"></i>
+                        {{ i18n "details" }} <i class="fas fa-arrow-right ml-1"></i>
                       </a>
                     {{ end }}
                   </li>
                 {{ end }}
               </ul>
             {{ else if eq (len $upcomingEvents) 0 }}
-              <p class="text-muted py-4">No upcoming events.</p>
+              <p class="text-muted py-4">{{ i18n "no_upcoming_events" }}</p>
             {{ end }}
           </div>
 
@@ -246,7 +246,7 @@
                 {{ end }}
               </ul>
             {{ else }}
-              <p class="text-muted py-4">No events, yet.</p>
+              <p class="text-muted py-4">{{ i18n "no_events_yet" }}</p>
             {{ end }}
           </div>
         </div>

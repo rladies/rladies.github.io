@@ -3,7 +3,7 @@
     <button class="btn btn-sm btn-link no-underline p-0" type="button"
             @click="open = !open"
             :aria-expanded="open">
-      <i class="fas fa-language mr-1"></i>Translations
+      <i class="fas fa-language mr-1"></i>{{ i18n "translations" }}
     </button>
 
     <div x-show="open" x-transition x-cloak class="mt-2">

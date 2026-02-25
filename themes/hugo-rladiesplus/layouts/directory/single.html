@@ -8,7 +8,7 @@
           {{ if .Params.image }}
               <img src="{{ .Params.image }}" class="w-full h-auto mb-3 border border-gray-200 shadow-sm object-cover" alt="{{ .Params.name }}">
               {{ with .Params.photo.credit }}
-                <p class="card-text text-muted text-sm">Photo credit: {{ . }}</p>
+                <p class="card-text text-muted text-sm">{{ i18n "photo_credit" }}: {{ . }}</p>
               {{ end }}
           {{ end }}
 
@@ -43,19 +43,19 @@
           {{ end }}
 
           {{ with .Params.contact_method }}
-            <p class="card-text text-sm text-muted">Preferred contact: {{ delimit . ", " | humanize }}</p>
+            <p class="card-text text-sm text-muted">{{ i18n "preferred_contact" }}: {{ delimit . ", " | humanize }}</p>
           {{ end }}
 
           {{ with .Params.social_media }}
-            <h5 class="text-sm font-semibold mt-4 mb-2">Connect:</h5>
+            <h5 class="text-sm font-semibold mt-4 mb-2">{{ i18n "connect" }}:</h5>
             <div class="mr-1 mb-2">
                 {{ partial "social_media.html" (dict "data" . ) }}
             </div>
           {{ end }}
 
             <div class="mt-4 text-center text-muted text-sm">
-              <p>Last updated: {{ .Params.last_updated | default "unknown" }}</p>
-              <p>If this is your entry, you can update or delete it by filling out <a href="/form/directory-update?prefill_directory_id={{ .Params.directory_id | urlquery }}&prefill_request_type=update">this form</a></p>
+              <p>{{ i18n "last_updated" }}: {{ .Params.last_updated | default "unknown" }}</p>
+              <p>{{ i18n "update_entry" }} <a href="/form/directory-update?prefill_directory_id={{ .Params.directory_id | urlquery }}&prefill_request_type=update">{{ i18n "update_entry_link" }}</a></p>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
       <div class="card shadow-sm mb-4">
         <div class="card-body">
           {{ with .Params.work }}
-          <h2 class="text-lg card-title mb-3">Work & Affiliation</h2>
+          <h2 class="text-lg card-title mb-3">{{ i18n "work_affiliation" }}</h2>
           <p class="mb-4">
             {{ with .title }}{{ . }}, {{ end }}
             {{ if .url }}
@@ -80,7 +80,7 @@
         {{ end }}
 
           {{ with .Params.interests }}
-            <h2 class="text-lg card-title mb-3">Interests</h2>
+            <h2 class="text-lg card-title mb-3">{{ i18n "interests" }}</h2>
             <div class="mb-3">
                 {{ range . }}
                   <span class="badge badge-info mr-1 mb-1 text-white">{{ . }}</span>
@@ -89,9 +89,9 @@
           {{ end }}
 
           {{ with .Params.activities }}
-              <h2 class="text-lg card-title mb-3">Activities</h2>
+              <h2 class="text-lg card-title mb-3">{{ i18n "activities" }}</h2>
               {{ with .r_groups }}
-                <h5 class="text-sm font-semibold">R User Groups:</h5>
+                <h5 class="text-sm font-semibold">{{ i18n "r_user_groups" }}:</h5>
                 <ul class="list-unstyled mb-3">
                   {{ range $groupName, $groupUrl := . }}
                     <li class="py-2 border-b border-gray-200">
@@ -106,7 +106,7 @@
               {{ end }}
 
               {{ with .r_packages }}
-                <h5 class="text-sm font-semibold">R Packages:</h5>
+                <h5 class="text-sm font-semibold">{{ i18n "r_packages" }}:</h5>
                 <ul class="list-unstyled">
                   {{ range $packageName, $packageUrl := . }}
                     <li class="py-2 border-b border-gray-200">
@@ -126,7 +126,7 @@
     </div>
 
     {{ if .Content }}
-        <h2 class="text-lg card-title mb-3">About {{ .Title }}</h2>
+        <h2 class="text-lg card-title mb-3">{{ i18n "about" }} {{ .Title }}</h2>
         <div class="speaker-description">
         {{ .Content }}
         </div>

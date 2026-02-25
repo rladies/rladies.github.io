@@ -279,35 +279,6 @@
     @apply text-light;
   }
 
-  .dark .choices__inner {
-    @apply bg-[#1e1e30] border-white/20;
-  }
-
-  .dark .choices__input {
-    @apply bg-transparent text-light;
-  }
-
-  .dark .choices__list--dropdown {
-    @apply bg-[#1e1e30] border-white/10;
-  }
-
-  .dark .choices__list--dropdown .choices__item--selectable {
-    @apply text-light;
-  }
-
-  .dark .choices__list--dropdown .choices__item--selectable.is-highlighted {
-    @apply bg-white/10;
-  }
-
-  .dark .choices__item--selectable {
-    @apply text-light;
-  }
-
-  .dark .choices[data-type*=select-multiple] .choices__button,
-  .dark .choices[data-type*=text] .choices__button {
-    @apply border-white/20;
-  }
-
   /* ── Buttons ── */
   .dark .btn-primary {
     background-color: var(--color-primary);
@@ -445,4 +416,67 @@
   .dark .alumni-grid .card-expand:hover .card-expand-img img {
     @apply grayscale-0 brightness-100;
   }
+}
+
+/* Dark Choices.js overrides — unlayered to beat vendor CSS */
+.dark .choices__inner {
+  background-color: #1e1e30 !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.dark .choices__input {
+  background-color: transparent !important;
+  color: var(--color-light) !important;
+}
+
+.dark .choices__placeholder {
+  color: #6b7280 !important;
+}
+
+.dark .choices[data-type*=select-one] .choices__input {
+  background-color: #1e1e30 !important;
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--color-light) !important;
+}
+
+.dark .choices__list--dropdown,
+.dark .choices__list[aria-expanded] {
+  background-color: #1e1e30 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .choices__list--dropdown .choices__item,
+.dark .choices__list[aria-expanded] .choices__item {
+  color: var(--color-light) !important;
+}
+
+.dark .choices__list--dropdown .choices__item--selectable.is-highlighted,
+.dark .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: var(--color-light) !important;
+}
+
+.dark .choices__item--selectable {
+  color: var(--color-light) !important;
+}
+
+.dark .choices__list--multiple .choices__item {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary-dark) !important;
+  color: #fff !important;
+}
+
+.dark .choices__list--multiple .choices__item.is-highlighted {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-darker) !important;
+}
+
+.dark .choices[data-type*=select-multiple] .choices__button,
+.dark .choices[data-type*=text] .choices__button {
+  border-left-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.dark .is-open .choices__inner,
+.dark .is-focused .choices__inner {
+  border-color: rgba(136, 30, 249, 0.5) !important;
 }

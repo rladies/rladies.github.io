@@ -58,7 +58,7 @@
         <div class="p-5">
           <div class="flex items-center mb-3">
             <i class="fa-solid fa-tag text-primary mr-2"></i>
-            <label for="filter-interests" class="form-label mb-0 font-semibold">Interests</label>
+            <label for="filter-interests" class="form-label mb-0 font-semibold">{{ i18n "interests" }}</label>
           </div>
           <select class="form-select" id="filter-interests" multiple data-group="interests">
             {{ range $ints }}
@@ -72,7 +72,7 @@
         <div class="p-5">
           <div class="flex items-center mb-3">
             <i class="fa-solid fa-language text-primary mr-2"></i>
-            <label for="filter-languages" class="form-label mb-0 font-semibold">Languages</label>
+            <label for="filter-languages" class="form-label mb-0 font-semibold">{{ i18n "languages" }}</label>
           </div>
           <select class="form-select" id="filter-languages" multiple data-group="languages">
             {{ range $langs }}
@@ -86,7 +86,7 @@
         <div class="p-5">
           <div class="flex items-center mb-3">
             <i class="fa-solid fa-map-marker-alt text-primary mr-2"></i>
-            <label for="filter-location" class="form-label mb-0 font-semibold">Location</label>
+            <label for="filter-location" class="form-label mb-0 font-semibold">{{ i18n "location" }}</label>
           </div>
           <select class="form-select" id="filter-location" multiple data-group="location">
             {{ range $countries }}
@@ -125,22 +125,22 @@
     const interestsChoice = new Choices('#filter-interests', {
       removeItemButton: true,
       searchEnabled: true,
-      placeholderValue: 'Filter by interests',
-      searchPlaceholderValue: 'Search interests...'
+      placeholderValue: '{{ i18n "filter_interests" }}',
+      searchPlaceholderValue: '{{ i18n "search_interests" }}'
     });
 
     const languagesChoice = new Choices('#filter-languages', {
       removeItemButton: true,
       searchEnabled: true,
-      placeholderValue: 'Filter by languages',
-      searchPlaceholderValue: 'Search languages...'
+      placeholderValue: '{{ i18n "filter_languages" }}',
+      searchPlaceholderValue: '{{ i18n "search_languages" }}'
     });
 
     const locationChoice = new Choices('#filter-location', {
       removeItemButton: true,
       searchEnabled: true,
-      placeholderValue: 'Filter by location',
-      searchPlaceholderValue: 'Search location...'
+      placeholderValue: '{{ i18n "filter_location" }}',
+      searchPlaceholderValue: '{{ i18n "search_location" }}'
     });
 
     const shuffleContainer = document.getElementById('directory-grid');

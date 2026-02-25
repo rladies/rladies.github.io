@@ -36,7 +36,7 @@
 
                 {{ $foot := "" }}
                 {{ with $d.img.credit }}
-                  {{ $foot = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
+                  {{ $foot = printf "<p class=\"card-text text-muted\"><small>%s: %s</small></p>" (i18n "photo_credit") . }}
                 {{ end }}
 
                 {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" $foot) }}
@@ -55,8 +55,8 @@
           <table class="table table-sm w-full">
             <thead>
               <tr>
-                <th class="text-right border-primary border-r">role</th>
-                <th class="text-left">name</th>
+                <th class="text-right border-primary border-r">{{ i18n "role" }}</th>
+                <th class="text-left">{{ i18n "name" }}</th>
               </tr>
             </thead>
             <tbody>
@@ -102,7 +102,7 @@
 
               {{ $credit := "" }}
               {{ with $d.img.credit }}
-                {{ $credit = printf "<p class=\"card-text text-muted\"><small>Photo credit: %s</small></p>" . }}
+                {{ $credit = printf "<p class=\"card-text text-muted\"><small>%s: %s</small></p>" (i18n "photo_credit") . }}
               {{ end }}
 
               {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" (delimit $d.role ", ") "size" "small" "descr" $credit) }}

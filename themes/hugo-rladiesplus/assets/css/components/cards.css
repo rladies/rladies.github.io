@@ -1,6 +1,6 @@
 @layer components {
   .card {
-    @apply bg-white rounded-xl overflow-hidden;
+    @apply bg-white rounded-xl;
     box-shadow: var(--shadow-card);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
@@ -42,7 +42,7 @@
   }
 
   .card-expand-img {
-    @apply relative overflow-hidden;
+    @apply relative overflow-hidden shrink-0;
     height: 200px;
   }
 
@@ -95,6 +95,8 @@
   .card-expand-foot {
     @apply mt-auto pt-3 border-t border-gray-100 text-xs;
     color: var(--color-dark-50);
+    max-height: 4.5em;
+    overflow: hidden;
   }
 
   .card-expand-foot a {
