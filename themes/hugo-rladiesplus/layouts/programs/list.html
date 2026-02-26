@@ -7,8 +7,8 @@
   </div>
 </div>
 
-{{ range $i, $prog := .Params.programs }}
-  {{ $imgData := index (where $stockImages "id" $prog.image) 0 }}
+{{ range $i, $page := .Pages.ByWeight }}
+  {{ $imgData := index (where $stockImages "id" $page.Params.image) 0 }}
   <section class="program-row{{ if eq (mod $i 2) 1 }} program-row-reverse bg-surface-alt{{ end }}">
     <div class="program-row-image">
       {{ with resources.Get $imgData.file }}
@@ -21,9 +21,9 @@
       {{ partial "stock-attribution.html" $imgData }}
     </div>
     <div class="program-row-content">
-      <h2 class="program-row-title">{{ $prog.title }}</h2>
-      <div class="program-row-desc">{{ $prog.description | markdownify }}</div>
-      {{ with $prog.ctas }}
+      <h2 class="program-row-title">{{ $page.Title }}</h2>
+      <div class="program-row-desc">{{ $page.Params.description | markdownify }}</div>
+      {{ with $page.Params.ctas }}
         <div class="program-row-ctas">
           {{ range . }}
             <a href="{{ .url }}"

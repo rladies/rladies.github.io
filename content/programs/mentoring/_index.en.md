@@ -1,8 +1,17 @@
 ---
 title: "Mentoring Program"
 type: "mentoring"
+image: "pexels-diverse-workshop-02"
+weight: 70
+description: |
+  The mentoring program connects new chapter organisers with experienced ones who have navigated
+  the challenges of running a chapter before.
 aliases:
   - /activities/mentoring/
+ctas:
+  - label: "Learn more"
+    url: "/programs/mentoring/"
+    style: "primary"
 ---
 
 Starting or sustaining an RLadies+ chapter involves a lot of moving parts — finding speakers, picking formats, keeping people engaged.
