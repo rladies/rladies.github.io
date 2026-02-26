@@ -1,6 +1,8 @@
 ---
 title: "Mentoring Program"
 type: "mentoring"
+aliases:
+  - /activities/mentoring/
 ---
 
 Starting or sustaining an RLadies+ chapter involves a lot of moving parts — finding speakers, picking formats, keeping people engaged.

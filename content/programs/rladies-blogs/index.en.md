@@ -1,6 +1,8 @@
 ---
 title: "Blogs by RLadies+"
 type: "rladies-blogs"
+aliases:
+  - /activities/rladies-blogs/
 ---
 
 A curated collection of blogs written by RLadies+ members.

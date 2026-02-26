@@ -20,7 +20,7 @@ main:
     weight: 2
 
   - identifier: programs
-    url: /activities/programs/
+    url: /programs/
     weight: 3
 
   - identifier: about-us
