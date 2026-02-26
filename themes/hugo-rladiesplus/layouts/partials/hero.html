@@ -21,11 +21,7 @@
         </div>
       </div>
       <div class="hero-image fade-in-up stagger-3">
-        {{ with resources.Get $heroImgData.file }}
-          {{ $img := .Fill "600x554 webp" }}
-          {{ partial "rlogo.html" (dict "image" $img.RelPermalink "alt" $heroImgData.alt "id" "hero-rlogo" "class" "hero-rlogo") }}
-        {{ end }}
-        {{ partial "stock-attribution.html" $heroImgData }}
+        {{ partial "rlogo.html" (dict "video" "/videos/hero.mp4" "alt" "RLadies+" "id" "hero-rlogo" "class" "hero-rlogo") }}
       </div>
     </div>
   </div>
