@@ -1,7 +1,7 @@
 ---
 title: "Mentoring Program"
 type: "mentoring"
-image: "pexels-diverse-workshop-02"
+image: "presenting-colleague-02"
 weight: 70
 description: |
   The mentoring program connects new chapter organisers with experienced ones who have navigated

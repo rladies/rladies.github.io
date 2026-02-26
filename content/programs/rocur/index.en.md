@@ -1,6 +1,6 @@
 ---
 title: "Rotating Curator (RoCur)"
-image: "pexels-diverse-conference-01"
+image: "pexels-businesswomen-walking"
 weight: 30
 description: |
   [RLadies+ RoCur](https://bsky.app/profile/weare.rladies.org) is a rotating Bluesky account that features

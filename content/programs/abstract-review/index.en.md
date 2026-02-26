@@ -1,6 +1,6 @@
 ---
 title: "Abstract Review"
-image: "gender-spectrum-laptop-collab"
+image: "pexels-women-laptops-agreement"
 weight: 20
 description: |
   RLadies+ Global runs a review and feedback programme for conference abstracts and funding applications,

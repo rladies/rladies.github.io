@@ -40,7 +40,7 @@
     </div>
 
     {{ $stockImages := site.Data.stock_images }}
-    {{ $stripIds := slice "pexels-diverse-workshop-03" "pexels-diverse-conference-02" "disabled-outdoor-group-hang" }}
+    {{ $stripIds := slice "gender-spectrum-office-group" "pexels-women-office-meeting" "disabled-outdoor-group-hang" }}
     <div class="impact-photo-strip fade-in-up">
       {{ range $stripIds }}
         {{ with index (where $stockImages "id" .) 0 }}
