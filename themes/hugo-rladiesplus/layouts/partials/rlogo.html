@@ -1,0 +1,20 @@
+{{- $image := .image -}}
+{{- $width := .width | default "100%" -}}
+{{- $class := .class | default "" -}}
+{{- $alt := .alt | default "RLadies+" -}}
+{{- $id := .id | default "rlogo" -}}
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 301.26 277.73" role="img" aria-label="{{ $alt }}"
+     style="width:{{ $width }};height:auto" class="{{ $class }}">
+  <defs>
+    <pattern id="{{ $id }}-pat" patternUnits="userSpaceOnUse" width="301.26" height="277.73">
+      <image href="{{ $image }}" xlink:href="{{ $image }}" width="301.26" height="277.73" preserveAspectRatio="xMidYMid slice"/>
+    </pattern>
+  </defs>
+  <g fill="url(#{{ $id }}-pat)">
+    <path d="M301.26,98.29c0,49.95-37.39,91.27-85.64,97.5v-47.9c22.13-5.63,38.52-25.75,38.52-49.6,0-28.2-22.98-51.18-51.18-51.18h-74.78v15.01h-47.05V.03C109.64.05,181.81-.05,209.33.03c51.24,3.3,91.93,46.2,91.93,98.26Z"/>
+    <path d="M301.26,230.61v47.12h-44.47c-46.08,0-84.82-31.85-95.43-74.78h50.04c8.5,16.4,25.62,27.66,45.38,27.66h44.47Z"/>
+    <path d="M128.19,201.56v76.17h-47.05v-81.11H0v-47.12h76.13c5.38,26.06,26,46.67,52.06,52.06Z"/>
+    <path d="M209.33,149.5v46.93c-3.4.5-64.91.04-68.58.19-31.98-.54-58-25.9-59.61-57.6v-70.59h47.05v81.07h81.14Z"/>
+  </g>
+</svg>

@@ -1,20 +1,31 @@
 {{ if .IsHome }}
+{{ $stockImages := site.Data.stock_images }}
+{{ $heroImgData := index (where $stockImages "id" "pexels-diverse-conference-01") 0 }}
 <section class="hero-home" id="hero">
   <div class="site-container">
     <div class="hero-home-content">
-      <h1 class="hero-headline fade-in-up">
-        {{ i18n "hero_headline" | default "Promoting Gender Diversity in the R Community" }}
-      </h1>
-      <p class="hero-subheadline fade-in-up stagger-1">
-        {{ i18n "hero_subheadline" | default "A worldwide organization empowering underrepresented genders through a collaborative global network of R leaders, mentors, and developers." }}
-      </p>
-      <div class="hero-cta fade-in-up stagger-2">
-        <a href="{{ "chapters/" | relLangURL }}" class="btn btn-primary btn-xl">
-          {{ i18n "hero_cta_chapters" | default "Find a Chapter" }}
-        </a>
-        <a href="{{ "about-us/involved/" | relLangURL }}" class="btn btn-outline btn-xl">
-          {{ i18n "hero_cta_involved" | default "Get Involved" }}
-        </a>
+      <div class="hero-text">
+        <h1 class="hero-headline fade-in-up">
+          {{ i18n "hero_headline" | default "Promoting Gender Diversity in the R Community" }}
+        </h1>
+        <p class="hero-subheadline fade-in-up stagger-1">
+          {{ i18n "hero_subheadline" | default "A worldwide organization empowering underrepresented genders through a collaborative global network of R leaders, mentors, and developers." }}
+        </p>
+        <div class="hero-cta fade-in-up stagger-2">
+          <a href="{{ "chapters/" | relLangURL }}" class="btn btn-primary btn-xl">
+            {{ i18n "hero_cta_chapters" | default "Find a Chapter" }}
+          </a>
+          <a href="{{ "about-us/involved/" | relLangURL }}" class="btn btn-outline btn-xl">
+            {{ i18n "hero_cta_involved" | default "Get Involved" }}
+          </a>
+        </div>
+      </div>
+      <div class="hero-image fade-in-up stagger-3">
+        {{ with resources.Get $heroImgData.file }}
+          {{ $img := .Fill "600x554 webp" }}
+          {{ partial "rlogo.html" (dict "image" $img.RelPermalink "alt" $heroImgData.alt "id" "hero-rlogo" "class" "hero-rlogo") }}
+        {{ end }}
+        {{ partial "stock-attribution.html" $heroImgData }}
       </div>
     </div>
   </div>

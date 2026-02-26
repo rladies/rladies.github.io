@@ -18,8 +18,6 @@ aliases:
   - "/blog/2025-02-08-RLadies-Bioconductor-collab"
 ---
 
-![](rladies-bioc.png)
-
 We are excited to share a new collaboration between R-Ladies and Bioconductor, two global communities committed to building diverse developer communities around the world.
 
 [R-Ladies](http://rladies.org) is a worldwide organization whose mission is to promote gender diversity in the R community.

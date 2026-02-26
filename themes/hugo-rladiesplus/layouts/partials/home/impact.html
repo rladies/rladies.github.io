@@ -38,5 +38,25 @@
         <p class="stat-label">{{ i18n "events" | default "Events" }}</p>
       </div>
     </div>
+
+    {{ $stockImages := site.Data.stock_images }}
+    {{ $stripIds := slice "pexels-diverse-workshop-03" "pexels-diverse-conference-02" "disabled-outdoor-group-hang" }}
+    <div class="impact-photo-strip fade-in-up">
+      {{ range $stripIds }}
+        {{ with index (where $stockImages "id" .) 0 }}
+          {{ $imgData := . }}
+          <figure class="impact-photo-cell">
+            {{ with resources.Get $imgData.file }}
+              {{ $img := .Fill "480x220 webp" }}
+              <img src="{{ $img.RelPermalink }}"
+                   alt="{{ $imgData.alt }}"
+                   width="{{ $img.Width }}" height="{{ $img.Height }}"
+                   loading="lazy">
+            {{ end }}
+            {{ partial "stock-attribution.html" $imgData }}
+          </figure>
+        {{ end }}
+      {{ end }}
+    </div>
   </div>
 </section>

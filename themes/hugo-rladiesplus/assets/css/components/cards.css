@@ -200,6 +200,29 @@
     @apply h-full min-h-[400px];
   }
 
+  /* Involved card image top */
+  .involved-card-img {
+    @apply relative overflow-hidden;
+    height: 180px;
+  }
+
+  .involved-card-img img {
+    @apply block w-full h-full object-cover transition-transform duration-300;
+  }
+
+  .card-hover:hover .involved-card-img img {
+    @apply scale-105;
+  }
+
+  .involved-card-img small {
+    @apply absolute bottom-1 right-2 text-white/80 text-xs;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .involved-card-img small a {
+    @apply text-white/80 underline;
+  }
+
   /* Involved card icon */
   .involved-icon {
     @apply w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center text-2xl text-white;
