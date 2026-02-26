@@ -72,7 +72,6 @@ Used for all interactive UI components:
 
 ### Other JS
 - **counter.js**: Vanilla JS animated counters (requestAnimationFrame)
-- **card-expand.js**: CSS-only hover expansion
 - **FullCalendar**: Standard theme with custom Tailwind CSS styling (no Bootstrap theme)
 - **amCharts 5**: Map visualizations
 - **Choices.js**: Enhanced select inputs
