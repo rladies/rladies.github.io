@@ -16,7 +16,7 @@
   }
 
   .site-nav-solid {
-    @apply bg-white/95 border-b border-gray-200;
+    @apply bg-surface/95 border-b border-gray-200;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
@@ -80,7 +80,7 @@
   }
 
   .site-nav-mobile {
-    @apply md:hidden border-t border-gray-200 bg-white;
+    @apply md:hidden border-t border-gray-200 bg-surface;
   }
 
   .site-nav-mobile-link {
@@ -104,7 +104,7 @@
   }
 
   .dropdown-menu {
-    @apply absolute top-full left-0 mt-2 min-w-48 bg-white rounded-xl border border-gray-100 py-2 z-50;
+    @apply absolute top-full left-0 mt-2 min-w-48 bg-surface rounded-xl border border-gray-100 py-2 z-50;
     box-shadow: var(--shadow-elevated);
   }
 

@@ -1,6 +1,6 @@
 @layer components {
   .stat-card {
-    @apply text-center p-8 rounded-xl bg-white;
+    @apply text-center p-8 rounded-xl bg-surface;
     box-shadow: var(--shadow-card);
   }
 

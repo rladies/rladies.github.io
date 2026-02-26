@@ -1,6 +1,6 @@
 @layer components {
   .card {
-    @apply bg-white rounded-xl;
+    @apply bg-surface rounded-xl;
     box-shadow: var(--shadow-card);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
@@ -32,7 +32,7 @@
 
   /* Expandable card (directory, blogs, mentoring) */
   .card-expand {
-    @apply flex flex-col bg-white rounded-xl overflow-hidden transition-all duration-300;
+    @apply flex flex-col bg-surface rounded-xl overflow-hidden transition-all duration-300;
     box-shadow: var(--shadow-card);
   }
 
@@ -112,7 +112,7 @@
 
   /* Post card */
   .post-card {
-    @apply bg-white rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1;
+    @apply bg-surface rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1;
     box-shadow: var(--shadow-card);
   }
 

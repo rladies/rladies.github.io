@@ -80,13 +80,13 @@
 
   /* Calendar tooltip (replaces Bootstrap tooltip) */
   .cal-tooltip {
-    @apply absolute z-50 bg-white text-left rounded-sm shadow-lg border border-gray-200 p-4;
+    @apply absolute z-50 bg-surface text-left rounded-sm shadow-lg border border-gray-200 p-4;
     max-width: 320px;
     color: var(--color-dark);
   }
 
   .cal-tooltip-arrow {
-    @apply absolute w-3 h-3 bg-white border-l border-t border-gray-200 rotate-45;
+    @apply absolute w-3 h-3 bg-surface border-l border-t border-gray-200 rotate-45;
     top: -7px;
     left: 50%;
     margin-left: -6px;
