@@ -70,19 +70,21 @@
                   class="form-select bg-white/10 text-white border-white/20 rounded-lg"
                   onchange="location = this.value;"
                   aria-label="{{ i18n "select_language" }}">
-            {{ $siteLanguages := site.Languages }}
-            {{ $pageLang := .Page.Lang }}
-            {{ range .Page.AllTranslations }}
-              {{ $translation := . }}
-              {{ range $siteLanguages }}
-                {{ if eq $translation.Lang .Lang }}
-                  <option id="{{ $translation.Language }}"
-                          value="{{ $translation.Permalink }}"
-                          {{ if eq $pageLang .Lang }}selected{{ end }}>
-                    {{ .Params.LanguageName }}
-                  </option>
+            {{ $currentLang := .Page.Lang }}
+            {{ $translations := .Page.AllTranslations }}
+            {{ range site.Sites }}
+              {{ $s := . }}
+              {{ $url := $s.Home.RelPermalink }}
+              {{ range $translations }}
+                {{ if eq .Lang $s.Language.Lang }}
+                  {{ $url = .RelPermalink }}
                 {{ end }}
               {{ end }}
+              <option value="{{ $url }}"
+                      data-lang="{{ $s.Language.Lang }}"
+                      {{ if eq $currentLang $s.Language.Lang }}selected{{ end }}>
+                {{ $s.Language.Params.LanguageName }}
+              </option>
             {{ end }}
           </select>
           {{ end }}

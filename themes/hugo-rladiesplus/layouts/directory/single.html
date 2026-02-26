@@ -55,7 +55,7 @@
 
             <div class="mt-4 text-center text-muted text-sm">
               <p>{{ i18n "last_updated" }}: {{ .Params.last_updated | default "unknown" }}</p>
-              <p>{{ i18n "update_entry" }} <a href="/form/directory-update?prefill_directory_id={{ .Params.directory_id | urlquery }}&prefill_request_type=update">{{ i18n "update_entry_link" }}</a></p>
+              <p>{{ i18n "update_entry" }} <a href="{{ "/form/directory-update" | relLangURL }}?prefill_directory_id={{ .Params.directory_id | urlquery }}&prefill_request_type=update">{{ i18n "update_entry_link" }}</a></p>
           </div>
         </div>
       </div>

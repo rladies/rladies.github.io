@@ -4,9 +4,9 @@
      @scroll.window="scrolled = (window.scrollY > 50)">
   <div class="site-nav-inner">
 
-    <a class="site-nav-brand" href="{{ .Site.BaseURL }}">
-      <img src="{{ .Site.BaseURL }}/images/logo-wide.svg" height="36" alt="{{ .Site.Title }}" class="logo-light">
-      <img src="{{ .Site.BaseURL }}/images/logo-wide-white.svg" height="36" alt="{{ .Site.Title }}" class="logo-dark">
+    <a class="site-nav-brand" href="{{ "/" | relLangURL }}">
+      <img src="{{ "/images/logo-wide.svg" | relURL }}" height="36" alt="{{ .Site.Title }}" class="logo-light">
+      <img src="{{ "/images/logo-wide-white.svg" | relURL }}" height="36" alt="{{ .Site.Title }}" class="logo-dark">
     </a>
 
     <div class="site-nav-links">
