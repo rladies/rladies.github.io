@@ -4,17 +4,15 @@
 # Menu (used via T .Identifier in menu.html) ----
 home: 'Accueil'
 about-us: 'À propos'
-mission: 'Mission'
+find: 'Trouver'
+our-story: 'Notre Histoire'
 get-involved: "S'impliquer"
-history: 'Histoire'
 news: 'Actualités'
 coc: 'Code de Conduite'
-directory: 'Répertoire'
+directory: 'Membres'
 activities: 'Activités'
 events: 'Événements'
-mentoring: 'Programme de Mentorat'
-coordinated: "Coordonné par l'Équipe Mondiale"
-rladies-blogs: 'Blogs de RLadies+'
+programs: 'Programmes & Initiatives'
 press: 'Dans la presse'
 blog: 'Blog'
 

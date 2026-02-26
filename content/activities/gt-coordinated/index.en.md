@@ -1,5 +1,8 @@
 ---
-title: "Coordinated by the Global Team"
+title: "Programs & Initiatives"
+slug: programs
+aliases:
+  - /activities/gt-coordinated/
 ---
 
 Most of the work within RLadies+ happens through the chapter organisers around the world.
@@ -55,3 +58,15 @@ The [RLadies+ Guide](https://guide.rladies.org/) covers everything volunteers ne
 It is the practical reference for anyone doing the work.
 
 {{% button "https://guide.rladies.org/" "Read the guide" %}}
+
+## Mentoring
+
+The mentoring program connects new chapter organisers with experienced ones who have navigated the challenges of running a chapter before.
+
+{{% button "/activities/mentoring/" "Learn more about mentoring" %}}
+
+## Member Blogs
+
+A curated collection of blogs written by RLadies+ members, maintained in a community GitHub repository.
+
+{{% button "/activities/rladies-blogs/" "Browse member blogs" %}}

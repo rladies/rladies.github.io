@@ -1,43 +1,33 @@
 main:
+  - identifier: find
+    url: "#"
+    weight: 1
   - identifier: events
     url: /events/
     weight: 1
-
+    parent: find
   - identifier: chapters
     url: /chapters/
     weight: 2
-
+    parent: find
   - identifier: directory
     url: /directory/
     weight: 3
+    parent: find
 
   - identifier: blog
     url: /blog
-    weight: 4
+    weight: 2
 
-  - identifier: activities
-    weight: 5
-  - identifier: mentoring
-    url: /activities/mentoring/
+  - identifier: programs
+    url: /activities/programs/
     weight: 3
-    parent: activities
-  - identifier: coordinated
-    url: /activities/gt-coordinated/
-    weight: 4
-    parent: activities
-  - identifier: rladies-blogs
-    url: /activities/rladies-blogs
-    weight: 5
-    parent: activities
-  - identifier: press
-    url: /press
-    weight: 6
-    parent: activities
+
   - identifier: about-us
     url: "#"
     weight: 99
-  - identifier: mission
-    url: /about-us/mission/
+  - identifier: our-story
+    url: /about-us/our-story/
     weight: 1
     parent: about-us
   - identifier: get-involved
@@ -48,15 +38,11 @@ main:
     url: /about-us/global-team/
     weight: 3
     parent: about-us
-  - identifier: history
-    url: /about-us/history/
-    weight: 4
-    parent: about-us
   - identifier: news
     url: /news/
-    weight: 5
+    weight: 4
     parent: about-us
-  - identifier: coc
-    url: /about-us/coc/
-    weight: 6
+  - identifier: press
+    url: /press
+    weight: 5
     parent: about-us

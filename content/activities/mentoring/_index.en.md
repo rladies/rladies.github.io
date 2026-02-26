@@ -1,5 +1,5 @@
 ---
-title: "Mentoring program"
+title: "Mentoring Program"
 type: "mentoring"
 ---
 
