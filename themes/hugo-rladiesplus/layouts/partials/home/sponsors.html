@@ -10,11 +10,12 @@
 
     <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 max-w-4xl mx-auto fade-in-up stagger-2">
       {{ range .Pages }}
-        <a href="{{ .Params.source }}" title="{{ .Title }}"
+        {{ $sponsorTitle := .Title }}
+        <a href="{{ .Params.source }}" title="{{ $sponsorTitle }}"
            target="_blank" rel="noopener"
            class="sponsor-logo block p-4">
           {{ range first 1 (.Resources.ByType "image") }}
-            <img src="{{ .RelPermalink }}" alt="{{ $.Title }}"
+            <img src="{{ .RelPermalink }}" alt="{{ $sponsorTitle }}"
                  class="h-12 md:h-16 w-auto object-contain">
           {{ end }}
         </a>

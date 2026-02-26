@@ -4,7 +4,7 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-primary text-white hover:bg-primary-dark hover:-translate-y-0.5;
+    @apply bg-primary text-white hover:bg-primary-dark hover:-translate-y-0.5;
     box-shadow: 0 2px 8px rgba(136, 30, 249, 0.25);
   }
 
@@ -13,23 +13,23 @@
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-muted text-white hover:bg-dark;
+    @apply bg-muted text-white hover:bg-dark;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer border-2 border-primary text-primary hover:bg-primary hover:text-white;
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
   }
 
   .btn-outline-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer border-2 border-muted text-muted hover:bg-muted hover:text-white;
+    @apply border-2 border-muted text-muted hover:bg-muted hover:text-white;
   }
 
   .btn-light {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer bg-light text-dark hover:bg-dark-25;
+    @apply bg-light text-dark hover:bg-dark-25;
   }
 
   .btn-accent-rose {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer hover:-translate-y-0.5;
+    @apply hover:-translate-y-0.5;
     color: #2f2f30;
     background-color: var(--color-accent-rose);
     box-shadow: 0 2px 8px rgba(255, 91, 146, 0.25);
@@ -40,7 +40,7 @@
   }
 
   .btn-accent-blue {
-    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all duration-200 cursor-pointer text-white hover:-translate-y-0.5;
+    @apply text-white hover:-translate-y-0.5;
     background-color: var(--color-accent-blue);
     box-shadow: 0 2px 8px rgba(20, 106, 249, 0.25);
   }

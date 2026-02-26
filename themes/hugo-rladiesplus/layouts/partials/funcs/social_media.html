@@ -1,8 +1,8 @@
 {{ $data := newScratch }}
 
 {{ if eq .type "twitter" }}
-  {{ $data.Set "string" "https://twitter.com/%s" }}
-  {{ $data.Set "fa" "fa-brands fa-twitter" }}
+  {{ $data.Set "string" "https://x.com/%s" }}
+  {{ $data.Set "fa" "fa-brands fa-x-twitter" }}
 
 {{ else if eq .type "github" }}
   {{ $data.Set "string" "https://github.com/%s" }}
@@ -19,10 +19,6 @@
 {{ else if eq .type "tiktok" }}
   {{ $data.Set "string" "https://tiktok.com/%s" }}
   {{ $data.Set "fa" "fa-brands fa-tiktok" }}
-
-{{ else if eq .type "periscope" }}
-  {{ $data.Set "string" "https://www.periscope.tv/%s" }}
-  {{ $data.Set "fa" "fa-brands fa-periscope" }}
 
 {{ else if eq .type "researchgate" }}
   {{ $data.Set "string" "https://www.researchgate.net/profile/%s" }}

@@ -2,6 +2,8 @@
   var elements = document.querySelectorAll('.count');
   if (elements.length === 0) return;
 
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (!entry.isIntersecting) return;
@@ -9,6 +11,12 @@
       observer.unobserve(el);
 
       var countTo = parseInt(el.getAttribute('data-count'), 10);
+
+      if (prefersReducedMotion) {
+        el.textContent = countTo;
+        return;
+      }
+
       var startTime = null;
       var duration = 1000;
 

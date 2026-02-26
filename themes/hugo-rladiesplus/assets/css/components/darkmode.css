@@ -1,4 +1,6 @@
 @layer components {
+
+  /* ── Variable overrides ── */
   .dark {
     --color-primary: #bb86f7;
     --color-primary-light: #d4b9f5;
@@ -22,6 +24,7 @@
     color-scheme: dark;
   }
 
+  /* ── Base elements ── */
   .dark body {
     background-color: var(--color-dark-base);
     @apply text-light;
@@ -39,12 +42,37 @@
     color: var(--color-primary-lighter);
   }
 
-  .dark .text-dark {
+  .dark hr {
+    @apply border-white/10;
+  }
+
+  /* ── Consolidated utility overrides ── */
+  .dark .text-dark,
+  .dark .hero-headline,
+  .dark .hero-inner-title,
+  .dark .card-title,
+  .dark .card-expand-title,
+  .dark .section-title,
+  .dark .entry-title,
+  .dark .form-label {
     color: var(--color-light);
   }
 
-  .dark .text-muted {
+  .dark .text-muted,
+  .dark .section-subtitle,
+  .dark .lead,
+  .dark blockquote cite,
+  .dark .tab-button {
     @apply text-gray-400;
+  }
+
+  .dark .border-gray-100,
+  .dark .border-gray-200,
+  .dark .border-gray-300,
+  .dark .card-header,
+  .dark .card-expand-foot,
+  .dark .tab-list {
+    @apply border-white/10;
   }
 
   .dark .bg-white {
@@ -57,12 +85,6 @@
 
   .dark .bg-surface-alt {
     background-color: var(--color-surface-alt);
-  }
-
-  .dark .border-gray-100,
-  .dark .border-gray-200,
-  .dark .border-gray-300 {
-    border-color: rgba(255, 255, 255, 0.1);
   }
 
   .dark .bg-gray-100 {
@@ -84,7 +106,8 @@
     @apply text-light/80 hover:text-primary-light;
   }
 
-  .dark .site-nav-transparent .site-nav-mobile-toggle {
+  .dark .site-nav-transparent .site-nav-mobile-toggle,
+  .dark .site-nav-mobile-toggle {
     @apply text-light;
   }
 
@@ -95,10 +118,6 @@
 
   .dark .site-nav-mobile-link {
     @apply text-light hover:bg-white/10 hover:text-primary-light;
-  }
-
-  .dark .site-nav-mobile-toggle {
-    @apply text-light;
   }
 
   .dark .dropdown-menu {
@@ -119,10 +138,6 @@
     background: linear-gradient(to bottom, transparent, var(--color-dark-base));
   }
 
-  .dark .hero-headline {
-    color: var(--color-light);
-  }
-
   .dark .hero-subheadline {
     @apply text-gray-300;
   }
@@ -131,25 +146,11 @@
     background-color: var(--color-surface);
   }
 
-  .dark .hero-inner-title {
-    color: var(--color-light);
-  }
-
   /* ── Cards ── */
-  .dark .card {
-    background-color: var(--color-dark-raised);
-    @apply border border-white/10;
-  }
-
-  .dark .card-header {
-    @apply border-white/10;
-  }
-
-  .dark .card-title {
-    @apply text-light;
-  }
-
-  .dark .post-card {
+  .dark .card,
+  .dark .post-card,
+  .dark .card-expand,
+  .dark .stat-card {
     background-color: var(--color-dark-raised);
     @apply border border-white/10;
   }
@@ -162,24 +163,6 @@
     @apply text-primary-light;
   }
 
-  .dark .card-expand {
-    background-color: var(--color-dark-raised);
-    @apply border border-white/10;
-  }
-
-  .dark .card-expand-title {
-    @apply text-light;
-  }
-
-  .dark .card-expand-foot {
-    @apply border-white/10;
-  }
-
-  .dark .stat-card {
-    background-color: var(--color-dark-raised);
-    @apply border border-white/10;
-  }
-
   .dark .stat-icon {
     opacity: 0.7;
   }
@@ -189,22 +172,6 @@
   }
 
   /* ── Typography ── */
-  .dark .section-title {
-    @apply text-light;
-  }
-
-  .dark .section-subtitle {
-    @apply text-gray-400;
-  }
-
-  .dark .entry-title {
-    color: var(--color-light);
-  }
-
-  .dark .lead {
-    @apply text-gray-400;
-  }
-
   .dark .date {
     border-bottom-color: rgba(255, 255, 255, 0.15);
     color: var(--color-muted);
@@ -217,10 +184,6 @@
   .dark blockquote {
     background: color-mix(in srgb, var(--color-primary) 8%, var(--color-dark-raised));
     color: var(--color-light);
-  }
-
-  .dark blockquote cite {
-    @apply text-gray-400;
   }
 
   .dark .toc-nav {
@@ -262,14 +225,6 @@
   }
 
   /* ── Tabs ── */
-  .dark .tab-list {
-    @apply border-white/10;
-  }
-
-  .dark .tab-button {
-    @apply text-gray-400;
-  }
-
   .dark .tab-button:hover {
     @apply text-light border-white/30;
   }
@@ -287,10 +242,6 @@
 
   .dark .form-control::placeholder {
     @apply text-gray-500;
-  }
-
-  .dark .form-label {
-    @apply text-light;
   }
 
   /* ── Buttons ── */
@@ -420,10 +371,6 @@
     @apply bg-primary-dark;
   }
 
-  .dark hr {
-    @apply border-white/10;
-  }
-
   .dark .highlight-border {
     @apply border-primary-light;
   }
@@ -446,7 +393,9 @@
   }
 }
 
-/* Dark Choices.js overrides — unlayered to beat vendor CSS */
+/* Choices.js dark overrides
+   !important required: vendor CSS is unlayered (concatenated after Tailwind
+   output in head.html), so @layer components rules cannot beat its specificity. */
 .dark .choices__inner {
   background-color: var(--color-dark-raised) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
@@ -481,10 +430,6 @@
 .dark .choices__list--dropdown .choices__item--selectable.is-highlighted,
 .dark .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
   background-color: rgba(255, 255, 255, 0.1) !important;
-  color: var(--color-light) !important;
-}
-
-.dark .choices__item--selectable {
   color: var(--color-light) !important;
 }
 

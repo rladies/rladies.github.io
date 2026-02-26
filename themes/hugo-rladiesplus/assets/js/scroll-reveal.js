@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var elements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
   if (elements.length === 0) return;
 
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    elements.forEach(function (el) { el.classList.add('is-visible'); });
+    return;
+  }
+
   document.documentElement.classList.add('js-reveal');
 
   var observer = new IntersectionObserver(function (entries) {

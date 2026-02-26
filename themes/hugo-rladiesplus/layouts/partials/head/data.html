@@ -41,10 +41,10 @@
 {{ $eventsURL := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/events.json" }}
 {{ with try (resources.GetRemote $eventsURL) }}
   {{ with .Err }}
-    {{ warnf "%s" . }}
+    {{ errorf "%s" . }}
   {{ else }}
     {{ $.Store.Set "events" (.Value | transform.Unmarshal) }}
   {{ end }}
 {{ else }}
-  {{ warnf "Unable to get remote resource %q" $eventsURL }}
+  {{ errorf "Unable to get remote resource %q" $eventsURL }}
 {{ end }}
