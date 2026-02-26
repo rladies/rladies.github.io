@@ -25,7 +25,9 @@
     <div class="{{ if $img }}md:w-2/3{{ else }}w-full{{ end }}">
       <div class="p-6">
         <div class="flex items-center gap-3 mb-3">
-          {{ partial "dates.html" . }}
+          <time datetime="{{ .Date.Format .Site.Params.DateForm }}" class="text-sm text-muted">
+            {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+          </time>
           {{ partial "post/i18n.html" . }}
         </div>
 

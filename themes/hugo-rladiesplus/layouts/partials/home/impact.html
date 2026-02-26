@@ -1,13 +1,13 @@
-{{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
-{{ $updated := "" }}
-{{ with try (resources.GetRemote $url) }}
+{{ $updatedURL := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
+{{ $updated := dict }}
+{{ with try (resources.GetRemote $updatedURL) }}
   {{ with .Err }}
-    {{ errorf "%s" . }}
+    {{ warnf "%s" . }}
   {{ else }}
     {{ $updated = .Value | transform.Unmarshal }}
   {{ end }}
 {{ else }}
-  {{ errorf "Unable to get remote resource %q" $url }}
+  {{ warnf "Unable to get remote resource %q" $updatedURL }}
 {{ end }}
 
 <section class="site-section-lg bg-surface" id="impact">
@@ -22,13 +22,13 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
       <div class="stat-card fade-in-up stagger-1">
         <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
-        <p class="stat-number count" data-count="{{ $.Scratch.Get "chpt_countries" | len }}">0</p>
+        <p class="stat-number count" data-count="{{ $.Store.Get "chpt_countries" | len }}">0</p>
         <p class="stat-label">{{ i18n "countries" | default "Countries" }}</p>
       </div>
 
       <div class="stat-card stat-card-blue fade-in-up stagger-2">
         <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-        <p class="stat-number count" data-count="{{ $.Scratch.Get "chpt_active" | len }}">0</p>
+        <p class="stat-number count" data-count="{{ $.Store.Get "chpt_active" | len }}">0</p>
         <p class="stat-label">{{ i18n "chapters" | default "Chapters" }}</p>
       </div>
 

@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $countries := $.Scratch.Get "chpt_countries" }}
+{{ $countries := $.Store.Get "chpt_countries" }}
 {{ $chapters := .Pages }}
 
 <section class="site-section-lg">

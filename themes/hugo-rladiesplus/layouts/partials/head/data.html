@@ -1,10 +1,9 @@
-<!-- Chapter data -->
 {{ $merged := (partial "funcs/merge_chapters" .) | transform.Unmarshal }}
 
 {{ $countries := slice }}
-{{ $.Scratch.Set "chpt_active" (slice) }}
+{{ $chpt_active := slice }}
 
-{{ range $index, $chapterMap := $merged }}
+{{ range $chapterMap := $merged }}
   {{ if in (printf "%T" $chapterMap) "[]interface" }}
     {{ $chapterMap = index $chapterMap 0 }}
   {{ end }}
@@ -14,19 +13,16 @@
   {{ end }}
 
   {{ if eq (index $chapterMap "status") "active" }}
-    {{ $.Scratch.Add "chpt_active" $chapterMap }}
+    {{ $chpt_active = $chpt_active | append $chapterMap }}
   {{ end }}
 {{ end }}
 
 {{ $countries = $countries | uniq | sort }}
-{{ $chapters_active := $.Scratch.Get "chpt_active" }}
 
-<!-- range again to create count chapters per country -->
-{{ .Scratch.Set "chpt_countries" (slice) }}
+{{ $chpt_countries := slice }}
 {{ range $countries }}
-  {{ $arr := where $chapters_active "country" .}}
+  {{ $arr := where $chpt_active "country" . }}
   {{ $count := $arr | len }}
-  <!-- Get ISO code for country -->
   {{ $iso := "" }}
   {{ with index $arr 0 }}
     {{ $iso = .country_iso }}
@@ -34,23 +30,21 @@
   {{ if eq . "USA" }}
     {{ $iso = "US" }}
   {{ end }}
-  <!-- only add countries with chapters, and not remote chapter -->
   {{ if and (gt $count 0) (ne . "Worldwide") }}
-    {{ $.Scratch.Add "chpt_countries" (dict "name" . "count" $count "iso" $iso) }}  
+    {{ $chpt_countries = $chpt_countries | append (dict "name" . "count" $count "iso" $iso) }}
   {{ end }}
-
 {{ end }}
 
+{{ .Store.Set "chpt_active" $chpt_active }}
+{{ .Store.Set "chpt_countries" $chpt_countries }}
 
-<!-- Events -->
-<!-- Fetch events data from meetup_archive JSON file and store in Scratch -->
-{{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/events.json" }}
-{{ with try (resources.GetRemote $url) }}
+{{ $eventsURL := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/events.json" }}
+{{ with try (resources.GetRemote $eventsURL) }}
   {{ with .Err }}
-    {{ errorf "%s" . }}
+    {{ warnf "%s" . }}
   {{ else }}
-    {{ $.Scratch.Set "events" (.Value | transform.Unmarshal) }}
+    {{ $.Store.Set "events" (.Value | transform.Unmarshal) }}
   {{ end }}
 {{ else }}
-  {{ errorf "Unable to get remote resource %q" $url }}
+  {{ warnf "Unable to get remote resource %q" $eventsURL }}
 {{ end }}

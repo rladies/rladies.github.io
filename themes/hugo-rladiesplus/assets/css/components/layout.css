@@ -83,30 +83,26 @@
     overflow: hidden;
   }
 
-  .shuffle-item {
+  .shuffle-wrapper > .shuffle-item {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
   }
 
   @media (min-width: 640px) {
-    .shuffle-item { width: 50%; }
+    .shuffle-wrapper > .shuffle-item { width: 50%; }
   }
 
   @media (min-width: 768px) {
-    .shuffle-item { width: 33.333%; }
+    .shuffle-wrapper > .shuffle-item { width: 33.333%; }
   }
 
   @media (min-width: 1024px) {
-    .shuffle-item { width: 25%; }
+    .shuffle-wrapper > .shuffle-item { width: 25%; }
   }
 
   @media (min-width: 1280px) {
-    .shuffle-item { width: 20%; }
+    .shuffle-wrapper > .shuffle-item { width: 20%; }
   }
 
-  :where(.grid-2, .grid-3, .grid-4, .grid-5, .grid-6) > .shuffle-item {
-    width: auto;
-    padding: 0;
-  }
 }

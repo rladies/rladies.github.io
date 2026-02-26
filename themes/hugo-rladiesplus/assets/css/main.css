@@ -90,6 +90,7 @@
     src: url('/webfonts/google-fonts/inconsolata/inconsolata-latin-wght-normal.woff2') format('woff2');
     font-weight: 100 900;
     font-style: normal;
+    font-display: swap;
   }
 
   html {
@@ -128,10 +129,6 @@
     font-family: var(--font-mono);
   }
 
-  .entry-content em {
-    font-style: normal;
-    font-weight: 700;
-  }
 }
 
 /* Component imports */
@@ -153,5 +150,6 @@
 @import "./components/misc.css";
 @import "./components/animations.css";
 @import "./components/stats.css";
-@import "./components/darkmode.css";
 @import "./components/programs.css";
+@import "./components/involved.css";
+@import "./components/darkmode.css";

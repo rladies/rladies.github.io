@@ -15,11 +15,16 @@
     --color-muted: #9ca3af;
     --shadow-card: 0 1px 3px rgba(0,0,0,0.3);
     --shadow-card-hover: 0 10px 25px rgba(187,134,247,0.15), 0 4px 10px rgba(0,0,0,0.2);
+    --color-dark-base: #121220;
+    --color-dark-raised: #1e1e30;
+    --color-dark-footer: #0f0f1a;
+    --color-dark-underfooter: #0a0a14;
     color-scheme: dark;
   }
 
   .dark body {
-    @apply bg-[#121220] text-light;
+    background-color: var(--color-dark-base);
+    @apply text-light;
   }
 
   .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
@@ -43,7 +48,7 @@
   }
 
   .dark .bg-white {
-    @apply bg-[#1e1e30];
+    background-color: var(--color-dark-raised);
   }
 
   .dark .bg-surface {
@@ -66,7 +71,8 @@
 
   /* ── Nav ── */
   .dark .site-nav-solid {
-    @apply bg-[#1a1a2e]/95 border-white/10;
+    background-color: color-mix(in srgb, var(--color-surface) 95%, transparent);
+    @apply border-white/10;
     backdrop-filter: blur(12px);
   }
 
@@ -83,7 +89,8 @@
   }
 
   .dark .site-nav-mobile {
-    @apply bg-[#1a1a2e] border-white/10;
+    background-color: var(--color-surface);
+    @apply border-white/10;
   }
 
   .dark .site-nav-mobile-link {
@@ -95,7 +102,8 @@
   }
 
   .dark .dropdown-menu {
-    @apply bg-[#1e1e30] border-white/10;
+    background-color: var(--color-dark-raised);
+    @apply border-white/10;
   }
 
   .dark .dropdown-item {
@@ -104,11 +112,11 @@
 
   /* ── Hero ── */
   .dark .hero-home {
-    background: linear-gradient(135deg, #121220 0%, #1a1a2e 50%, color-mix(in srgb, var(--color-primary) 12%, #1a1a2e) 100%);
+    background: linear-gradient(135deg, var(--color-dark-base) 0%, var(--color-surface) 50%, color-mix(in srgb, var(--color-primary) 12%, var(--color-surface)) 100%);
   }
 
   .dark .hero-home-accent {
-    background: linear-gradient(to bottom, transparent, #121220);
+    background: linear-gradient(to bottom, transparent, var(--color-dark-base));
   }
 
   .dark .hero-headline {
@@ -129,7 +137,8 @@
 
   /* ── Cards ── */
   .dark .card {
-    @apply bg-[#1e1e30] border border-white/10;
+    background-color: var(--color-dark-raised);
+    @apply border border-white/10;
   }
 
   .dark .card-header {
@@ -141,7 +150,8 @@
   }
 
   .dark .post-card {
-    @apply bg-[#1e1e30] border border-white/10;
+    background-color: var(--color-dark-raised);
+    @apply border border-white/10;
   }
 
   .dark .post-card .post-title a {
@@ -153,7 +163,8 @@
   }
 
   .dark .card-expand {
-    @apply bg-[#1e1e30] border border-white/10;
+    background-color: var(--color-dark-raised);
+    @apply border border-white/10;
   }
 
   .dark .card-expand-title {
@@ -165,7 +176,8 @@
   }
 
   .dark .stat-card {
-    @apply bg-[#1e1e30] border border-white/10;
+    background-color: var(--color-dark-raised);
+    @apply border border-white/10;
   }
 
   .dark .stat-icon {
@@ -195,15 +207,15 @@
 
   .dark .date {
     border-bottom-color: rgba(255, 255, 255, 0.15);
-    color: var(--color-gray-400);
+    color: var(--color-muted);
   }
 
   .dark .date span {
-    @apply bg-[#121220];
+    background-color: var(--color-dark-base);
   }
 
   .dark blockquote {
-    background: color-mix(in srgb, var(--color-primary) 8%, #1e1e30);
+    background: color-mix(in srgb, var(--color-primary) 8%, var(--color-dark-raised));
     color: var(--color-light);
   }
 
@@ -237,7 +249,8 @@
   }
 
   .dark .chp-table .country-cell {
-    @apply bg-[#1a1a2e] border-white/10;
+    background-color: var(--color-surface);
+    @apply border-white/10;
   }
 
   .dark .chp-table thead th:first-child {
@@ -268,7 +281,8 @@
   /* ── Forms ── */
   .dark .form-control,
   .dark .form-select {
-    @apply bg-[#1e1e30] border-white/20 text-light;
+    background-color: var(--color-dark-raised);
+    @apply border-white/20 text-light;
   }
 
   .dark .form-control::placeholder {
@@ -318,8 +332,14 @@
     @apply bg-gray-600 text-gray-200;
   }
 
+  .dark .badge-info {
+    background-color: rgba(20, 106, 249, 0.25);
+    color: var(--color-accent-blue);
+    border: 1px solid rgba(129, 172, 247, 0.3);
+  }
+
   .dark .bg-chapter-active {
-    background: color-mix(in srgb, var(--color-primary) 15%, #1e1e30);
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-dark-raised));
   }
 
   /* ── Pagination ── */
@@ -338,13 +358,13 @@
   /* ── Calendar (FullCalendar) ── */
   .dark .fc {
     --fc-border-color: rgba(255, 255, 255, 0.1);
-    --fc-page-bg-color: #1e1e30;
+    --fc-page-bg-color: var(--color-dark-raised);
     --fc-neutral-bg-color: rgba(255, 255, 255, 0.05);
     --fc-list-event-hover-bg-color: rgba(255, 255, 255, 0.05);
   }
 
   .dark .fc .fc-toolbar {
-    background: linear-gradient(to bottom, #1e1e30, #1a1a2e);
+    background: linear-gradient(to bottom, var(--color-dark-raised), var(--color-surface));
     border-bottom-color: rgba(255, 255, 255, 0.1);
   }
 
@@ -358,30 +378,33 @@
   }
 
   .dark .fc-day-today {
-    background: color-mix(in srgb, var(--color-primary) 12%, #1e1e30) !important;
+    background: color-mix(in srgb, var(--color-primary) 12%, var(--color-dark-raised)) !important;
   }
 
   .dark .cal-tooltip {
-    @apply bg-[#1e1e30] border-white/10 text-light;
+    background-color: var(--color-dark-raised);
+    @apply border-white/10 text-light;
   }
 
   .dark .cal-tooltip-arrow {
-    @apply bg-[#1e1e30] border-white/10;
+    background-color: var(--color-dark-raised);
+    @apply border-white/10;
   }
 
   /* ── Map ── */
   .dark [id$="_map"],
   .dark #chartdiv {
-    @apply bg-[#1a1a2e] rounded-xl;
+    background-color: var(--color-surface);
+    @apply rounded-xl;
   }
 
   /* ── Footer ── */
   .dark .site-footer {
-    @apply bg-[#0f0f1a];
+    background-color: var(--color-dark-footer);
   }
 
   .dark .site-underfooter {
-    @apply bg-[#0a0a14];
+    background-color: var(--color-dark-underfooter);
   }
 
   /* ── Misc ── */
@@ -410,7 +433,8 @@
   }
 
   .dark pre {
-    @apply bg-[#0f0f1a] border border-white/10;
+    background-color: var(--color-dark-footer);
+    @apply border border-white/10;
   }
 
   .dark .alumni-grid .card-expand-img img {
@@ -424,7 +448,7 @@
 
 /* Dark Choices.js overrides — unlayered to beat vendor CSS */
 .dark .choices__inner {
-  background-color: #1e1e30 !important;
+  background-color: var(--color-dark-raised) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -438,14 +462,14 @@
 }
 
 .dark .choices[data-type*=select-one] .choices__input {
-  background-color: #1e1e30 !important;
+  background-color: var(--color-dark-raised) !important;
   border-bottom-color: rgba(255, 255, 255, 0.1) !important;
   color: var(--color-light) !important;
 }
 
 .dark .choices__list--dropdown,
 .dark .choices__list[aria-expanded] {
-  background-color: #1e1e30 !important;
+  background-color: var(--color-dark-raised) !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
 }
 

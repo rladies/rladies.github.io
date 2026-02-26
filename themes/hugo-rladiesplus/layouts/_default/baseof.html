@@ -16,7 +16,11 @@
       {{ block "main" . }}
         <div class="site-container py-12">
           <div class="max-w-4xl mx-auto">
-            <article>
+            {{ $articleLang := .Lang }}
+            {{ if eq .Params.translated false }}
+              {{ $articleLang = .Params.language | default .Lang }}
+            {{ end }}
+            <article lang="{{ $articleLang }}">
               {{ block "title" . }}{{ end }}
 
               {{ block "translation" .}}
@@ -37,10 +41,10 @@
     </main>
 
     {{ block "languages" . }}
-      {{ partial "post/i18n.html" }}
+      {{ if eq .Type "post" }}{{ partial "post/i18n.html" . }}{{ end }}
     {{ end }}
 
-    <!-- Floating back-to-top -->
+
     <button class="back-to-top-float"
             x-data="{ show: false }"
             @scroll.window="show = (window.scrollY > 600)"

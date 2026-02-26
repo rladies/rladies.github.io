@@ -2,7 +2,6 @@
     (resources.Get "js/vendor/choices.min.js")
     (resources.Get "js/vendor/shuffle.min.js")
     (resources.Get "js/counter.js")
-    (resources.Get "js/card-expand.js")
     (resources.Get "js/scroll-reveal.js")
     | resources.Concat "rladiesplus-bundle.js"
     | minify
@@ -10,6 +9,5 @@
 }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 
-<!-- Alpine.js -->
 {{ $alpine := resources.Get "js/vendor/alpine.min.js" | fingerprint }}
 <script src="{{ $alpine.RelPermalink }}" integrity="{{ $alpine.Data.Integrity }}" defer></script>

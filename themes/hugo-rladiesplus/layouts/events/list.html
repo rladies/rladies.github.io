@@ -6,16 +6,16 @@
       {{ .Content }}
     </div>
 
-    {{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
-    {{ $updated := "" }}
-    {{ with try (resources.GetRemote $url) }}
+    {{ $updatedURL := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
+    {{ $updated := dict }}
+    {{ with try (resources.GetRemote $updatedURL) }}
       {{ with .Err }}
-        {{ errorf "%s" . }}
+        {{ warnf "%s" . }}
       {{ else }}
         {{ $updated = .Value | transform.Unmarshal }}
       {{ end }}
     {{ else }}
-      {{ errorf "Unable to get remote resource %q" $url }}
+      {{ warnf "Unable to get remote resource %q" $updatedURL }}
     {{ end }}
 
     <div class="max-w-sm mx-auto mb-10 fade-in-up">
@@ -75,7 +75,7 @@
     var timeZoneSelectorEl = document.getElementById("time-zone-selector");
     var loadingEl = document.getElementById("loading");
     var calendarEl = document.getElementById("calendar");
-    var events = {{ $.Scratch.Get "events" }};
+    var events = {{ $.Store.Get "events" }};
     var timezone_list = Intl.supportedValuesOf('timeZone');
 
     var localTz = Intl.DateTimeFormat().resolvedOptions().timeZone;

@@ -4,7 +4,7 @@
 {{- $class := .class | default "" -}}
 {{- $alt := .alt | default "RLadies+" -}}
 {{- $id := .id | default "rlogo" -}}
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+<svg xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 301.26 277.73" role="img" aria-label="{{ $alt }}"
      style="width:{{ $width }};height:auto" class="{{ $class }}">
   <defs>
@@ -17,7 +17,7 @@
     </clipPath>
     {{ else }}
     <pattern id="{{ $id }}-pat" patternUnits="userSpaceOnUse" width="301.26" height="277.73">
-      <image href="{{ $image }}" xlink:href="{{ $image }}" width="301.26" height="277.73" preserveAspectRatio="xMidYMid slice"/>
+      <image href="{{ $image }}" width="301.26" height="277.73" preserveAspectRatio="xMidYMid slice"/>
     </pattern>
     {{ end }}
   </defs>
