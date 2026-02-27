@@ -92,6 +92,21 @@
     margin-left: -6px;
   }
 
+  .cal-toggle {
+    @apply bg-gray-100 text-sm cursor-pointer transition-colors;
+    color: var(--color-muted);
+  }
+
+  .cal-toggle:hover {
+    @apply bg-gray-200;
+    color: var(--color-dark);
+  }
+
+  .cal-toggle.active {
+    @apply text-white font-semibold;
+    background-color: var(--color-primary);
+  }
+
   @media (max-width: 767px) {
     .fc .fc-toolbar {
       @apply justify-center;

@@ -13,17 +13,17 @@
 <li class="col shuffle-item" {{ with .id }} id="{{  . | htmlUnescape | urlize }}" {{ end }} {{ range $key, $value := .shuffle }} data-{{ $key }}="[{{range  $index, $tags := $value }}{{if ne $index 0}},{{end}}&quot;{{$tags | urlize}}&quot;{{ end }}]"{{ end }} >
   <div class="card-expand card-{{ $size }}">
     <div class="card-expand-img">
-      <img src="{{ $image }}"/>
+      <img src="{{ $image }}" alt="{{ .title }}"/>
     </div>
     <div class="card-expand-content">
       {{ with .category }}
         <div class="card-expand-category">{{ . | safeHTML }}</div>
       {{ end }}
-      {{ with .url }}<a href="{{.}}" target="_blank">{{end}}
       <h4 class="card-expand-title">
+        {{ with .url }}<a href="{{.}}" target="_blank" rel="noopener">{{end}}
         {{ .title | safeHTML }}
+        {{ with .url }}</a>{{end}}
       </h4>
-      {{ with .url }}</a>{{end}}
       {{ with .subtitle }}
         <h5 class="card-expand-subtitle">
           {{ . | safeHTML }}

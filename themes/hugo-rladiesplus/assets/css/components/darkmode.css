@@ -332,6 +332,21 @@
     background: color-mix(in srgb, var(--color-primary) 12%, var(--color-dark-raised)) !important;
   }
 
+  .dark .cal-toggle {
+    background-color: var(--color-dark-raised);
+    color: var(--color-light);
+    @apply border-white/10;
+  }
+
+  .dark .cal-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .dark .cal-toggle.active {
+    @apply text-white font-semibold;
+    background-color: var(--color-primary);
+  }
+
   .dark .cal-tooltip {
     background-color: var(--color-dark-raised);
     @apply border-white/10 text-light;

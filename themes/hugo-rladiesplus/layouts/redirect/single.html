@@ -1,17 +1,53 @@
 {{ define "main" }}
-    <p class="lead mb-4">{{ i18n "redirect_msg" }}</p>
-    <p>{{ i18n "redirect_fallback" }}</p>
-    <a id="redirectLink">{{ i18n "redirect_click" }}</a>
+<div class="text-center py-16">
+  <div class="mx-auto mb-8">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.26 277.73"
+         role="img" aria-label="RLadies+"
+         style="width:100px;height:auto;display:block;margin:0 auto">
+      <g fill="var(--color-primary)">
+        <path d="M301.26,98.29c0,49.95-37.39,91.27-85.64,97.5v-47.9c22.13-5.63,38.52-25.75,38.52-49.6,0-28.2-22.98-51.18-51.18-51.18h-74.78v15.01h-47.05V.03C109.64.05,181.81-.05,209.33.03c51.24,3.3,91.93,46.2,91.93,98.26Z"/>
+        <path d="M301.26,230.61v47.12h-44.47c-46.08,0-84.82-31.85-95.43-74.78h50.04c8.5,16.4,25.62,27.66,45.38,27.66h44.47Z"/>
+      </g>
+      <g class="redirect-plus" fill="var(--color-primary)">
+        <path d="M128.19,201.56v76.17h-47.05v-81.11H0v-47.12h76.13c5.38,26.06,26,46.67,52.06,52.06Z"/>
+        <path d="M209.33,149.5v46.93c-3.4.5-64.91.04-68.58.19-31.98-.54-58-25.9-59.61-57.6v-70.59h47.05v81.07h81.14Z"/>
+      </g>
+    </svg>
+  </div>
+  <h2 class="text-2xl font-semibold mb-3">{{ .Title }}</h2>
+  <p class="text-lg text-muted mb-2">{{ i18n "redirect_msg" }}</p>
+  <p class="text-sm text-muted mb-6">{{ i18n "redirect_fallback" }}</p>
+  <a id="redirectLink" class="btn btn-primary">
+    {{ i18n "redirect_click" }} <i class="fas fa-arrow-right ml-2"></i>
+  </a>
+</div>
 
-    <script>
-        const baseRedirectUrl = "{{ .Params.redirect }}";
-        const queryString = window.location.search;
-        const finalRedirectUrl = baseRedirectUrl + queryString;
+<style>
+  .redirect-plus {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation: plus-spring 1.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  @keyframes plus-spring {
+    0%   { transform: rotate(0deg); }
+    60%  { transform: rotate(360deg); }
+    72%  { transform: rotate(378deg); }
+    82%  { transform: rotate(354deg); }
+    90%  { transform: rotate(364deg); }
+    96%  { transform: rotate(358deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .redirect-plus { animation: none; }
+  }
+</style>
 
-        document.getElementById('redirectLink').href = finalRedirectUrl;
-
-        setTimeout(() => {
-            window.location.replace(finalRedirectUrl);
-        }, 500);
-    </script>
+<script>
+  var baseRedirectUrl = "{{ .Params.redirect }}";
+  var finalRedirectUrl = baseRedirectUrl + window.location.search;
+  document.getElementById('redirectLink').href = finalRedirectUrl;
+  setTimeout(function () {
+    window.location.replace(finalRedirectUrl);
+  }, 2000);
+</script>
 {{ end }}

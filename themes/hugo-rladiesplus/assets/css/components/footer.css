@@ -17,8 +17,10 @@
   }
 
   .site-footer .small a,
-  .site-footer p a {
-    @apply underline hover:no-underline;
+  .site-footer p a,
+  .site-footer .leading-relaxed a {
+    @apply underline;
+    color: var(--color-primary-light);
   }
 
   .site-footer .social-icon {

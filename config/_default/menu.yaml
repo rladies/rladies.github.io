@@ -15,8 +15,8 @@ main:
     weight: 3
     parent: find
 
-  - identifier: blog
-    url: /blog
+  - identifier: news
+    url: /news/
     weight: 2
 
   - identifier: programs
@@ -37,10 +37,6 @@ main:
   - identifier: global-team
     url: /about-us/global-team/
     weight: 3
-    parent: about-us
-  - identifier: news
-    url: /news/
-    weight: 4
     parent: about-us
   - identifier: press
     url: /press

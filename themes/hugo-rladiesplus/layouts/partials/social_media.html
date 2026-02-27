@@ -23,7 +23,7 @@
 {{ range $index, $v := first ($data.Get "range") ($data.Get "value" ) }}
   {{ $selection := index ($data.Get "key") $index }}
   {{ $some:= partial "funcs/social_media.html" (dict "type" $selection "handle" $v ) }}
-  <a class="no-underline" title="{{$some.type}}: {{ $some.url}}" href="{{ $some.url }}" target="_blank" {{ if ( $data.Get "rel") }} rel="me" {{ end }} >
+  <a class="no-underline" title="{{$some.type}}: {{ $some.url}}" href="{{ $some.url }}" target="_blank" rel="{{ if ( $data.Get "rel") }}me {{ end }}noopener" >
     <i class="{{ $some.fa }}"></i>
   </a>
 {{ end }}

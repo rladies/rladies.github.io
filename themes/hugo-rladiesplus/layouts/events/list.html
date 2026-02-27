@@ -43,6 +43,21 @@
       <span id="loading" class="text-sm text-muted">Loading events...</span>
     </div>
 
+    <div class="flex flex-wrap items-center justify-center gap-4 mb-6 fade-in-up">
+      <div class="inline-flex rounded-lg overflow-hidden border border-gray-200" role="group" aria-label="Period">
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium" data-period="week">Week</button>
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium active" data-period="month">Month</button>
+      </div>
+      <div class="inline-flex rounded-lg overflow-hidden border border-gray-200" role="group" aria-label="Format">
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium active" data-format="list">
+          <i class="fas fa-list mr-1"></i>List
+        </button>
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium" data-format="calendar">
+          <i class="fas fa-calendar mr-1"></i>Calendar
+        </button>
+      </div>
+    </div>
+
     <div class="card rounded-xl overflow-hidden mb-10 fade-in-up">
       <div id="calendar" class="w-full p-4"></div>
     </div>
@@ -127,7 +142,7 @@
       headerToolbar: {
         left: "prev,next",
         center: "title",
-        right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+        right: "",
       },
       initialDate: moment().format("YYYY-MM-DD"),
       titleFormat: {
@@ -135,7 +150,7 @@
         year: "numeric",
         day: "numeric",
       },
-      initialView: "listWeek",
+      initialView: "listMonth",
       height: "auto",
       dayMaxEvents: true,
 
@@ -152,15 +167,45 @@
           tooltip.className = 'fc-custom-tooltip';
           tooltip.style.cssText = 'position:fixed;z-index:9999;background:white;border:1px solid #e5e7eb;border-radius:0.75rem;padding:1.25rem;box-shadow:0 10px 25px rgba(0,0,0,0.1);max-width:320px;font-size:0.875rem;';
 
-          tooltip.innerHTML =
-            '<strong>' + info.event.title + '</strong><br>' +
-            '<small class="text-muted">' + moment(info.event.start).format('MMMM D, YYYY [at] HH:mm') + '</small>' +
-            (ev.venue_name ? '<br>' + ev.venue_name : '') +
-            (ev.going ? '<br><i class="fa fa-users"></i> ' + ev.going + ' attending' : '') +
-            '<div style="display:flex;gap:0.5rem;margin-top:0.75rem;justify-content:center;">' +
-            (ev.link ? '<a href="' + ev.link + '" target="_blank" class="btn btn-sm btn-primary">Event Page</a>' : '') +
-            '<button type="button" class="btn btn-sm btn-outline tooltip-close-btn">Close</button>' +
-            '</div>';
+          var strong = document.createElement('strong');
+          strong.textContent = info.event.title;
+          tooltip.appendChild(strong);
+          tooltip.appendChild(document.createElement('br'));
+
+          var dateEl = document.createElement('small');
+          dateEl.className = 'text-muted';
+          dateEl.textContent = moment(info.event.start).format('MMMM D, YYYY [at] HH:mm');
+          tooltip.appendChild(dateEl);
+
+          if (ev.venue_name) {
+            tooltip.appendChild(document.createElement('br'));
+            tooltip.appendChild(document.createTextNode(ev.venue_name));
+          }
+          if (ev.going) {
+            tooltip.appendChild(document.createElement('br'));
+            var icon = document.createElement('i');
+            icon.className = 'fa fa-users';
+            tooltip.appendChild(icon);
+            tooltip.appendChild(document.createTextNode(' ' + ev.going + ' attending'));
+          }
+
+          var btnDiv = document.createElement('div');
+          btnDiv.style.cssText = 'display:flex;gap:0.5rem;margin-top:0.75rem;justify-content:center;';
+          if (ev.link) {
+            var linkEl = document.createElement('a');
+            linkEl.href = ev.link;
+            linkEl.target = '_blank';
+            linkEl.rel = 'noopener';
+            linkEl.className = 'btn btn-sm btn-primary';
+            linkEl.textContent = 'Event Page';
+            btnDiv.appendChild(linkEl);
+          }
+          var closeBtn = document.createElement('button');
+          closeBtn.type = 'button';
+          closeBtn.className = 'btn btn-sm btn-outline tooltip-close-btn';
+          closeBtn.textContent = 'Close';
+          btnDiv.appendChild(closeBtn);
+          tooltip.appendChild(btnDiv);
 
           document.body.appendChild(tooltip);
           activeTooltip = tooltip;
@@ -202,6 +247,38 @@
     timeZoneSelectorEl.addEventListener("change", function () {
       var newTimeZone = this.value;
       calendar.setOption('timeZone', newTimeZone);
+    });
+
+    var viewMap = {
+      'month-list': 'listMonth',
+      'month-calendar': 'dayGridMonth',
+      'week-list': 'listWeek',
+      'week-calendar': 'timeGridWeek'
+    };
+    var currentPeriod = 'month';
+    var currentFormat = 'list';
+
+    function updateCalendarView() {
+      var key = currentPeriod + '-' + currentFormat;
+      calendar.changeView(viewMap[key]);
+    }
+
+    document.querySelectorAll('[data-period]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-period]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentPeriod = btn.dataset.period;
+        updateCalendarView();
+      });
+    });
+
+    document.querySelectorAll('[data-format]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-format]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentFormat = btn.dataset.format;
+        updateCalendarView();
+      });
     });
 
   });

@@ -40,7 +40,7 @@
                 {{ $some := partial "funcs/social_media.html" (dict "type" .title "handle" .handle) }}
                 <a href="{{ $some.url }}"
                    target="_blank"
-                   {{ if .relme }}rel="me"{{ end }}
+                   rel="{{ if .relme }}me {{ end }}noopener"
                    class="text-white/70 text-2xl social-icon hover:text-accent-rose"
                    aria-label="{{ .title }}">
                   <i class="{{ $some.fa }}"></i>
@@ -68,7 +68,7 @@
           {{ if hugo.IsMultilingual }}
           <select id="select-language"
                   class="form-select bg-white/10 text-white border-white/20 rounded-lg"
-                  onchange="location = this.value;"
+                  x-data @change="location = $el.value"
                   aria-label="{{ i18n "select_language" }}">
             {{ $currentLang := .Page.Lang }}
             {{ $translations := .Page.AllTranslations }}
