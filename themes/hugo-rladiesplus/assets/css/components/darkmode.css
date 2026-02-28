@@ -364,15 +364,6 @@
     @apply rounded-xl;
   }
 
-  /* ── Footer ── */
-  .dark .site-footer {
-    background-color: var(--color-dark-footer);
-  }
-
-  .dark .site-underfooter {
-    background-color: var(--color-dark-underfooter);
-  }
-
   /* ── Misc ── */
   .dark .sponsor-logo {
     @apply grayscale-0 opacity-80 hover:opacity-100 brightness-150;

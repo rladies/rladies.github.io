@@ -7,12 +7,12 @@
           <div class="mb-6">
             {{ if .Site.Params.phone }}
               <p class="mb-1">
-                <i class="fas fa-phone mr-2 text-primary-light"></i>{{ .Site.Params.phone | markdownify }}
+                <i class="fas fa-phone mr-2 footer-icon"></i>{{ .Site.Params.phone | markdownify }}
               </p>
             {{ end }}
             {{ if .Site.Params.email }}
               <p class="mb-0">
-                <i class="fas fa-envelope mr-2 text-primary-light"></i>
+                <i class="fas fa-envelope mr-2 footer-icon"></i>
                 <a href="mailto:{{ .Site.Params.email }}">
                   {{ .Site.Params.email | markdownify }}
                 </a>
@@ -41,7 +41,7 @@
                 <a href="{{ $some.url }}"
                    target="_blank"
                    rel="{{ if .relme }}me {{ end }}noopener"
-                   class="text-white/70 text-2xl social-icon hover:text-accent-rose"
+                   class="text-2xl social-icon"
                    aria-label="{{ .title }}">
                   <i class="{{ $some.fa }}"></i>
                 </a>
@@ -54,7 +54,7 @@
       {{ if .Site.Params.footerEnableTextWidget }}
         <div>
           <h3 class="widget-title">{{ i18n "footer_text_title" . | markdownify }}</h3>
-          <div class="text-sm text-white/70 leading-relaxed">
+          <div class="text-sm leading-relaxed">
             {{ i18n "footer_text_content" . | markdownify }}
           </div>
         </div>
@@ -67,7 +67,7 @@
           </h3>
           {{ if hugo.IsMultilingual }}
           <select id="select-language"
-                  class="form-select bg-white/10 text-white border-white/20 rounded-lg"
+                  class="form-select rounded-lg"
                   x-data @change="location = $el.value"
                   aria-label="{{ i18n "select_language" }}">
             {{ $currentLang := .Page.Lang }}
