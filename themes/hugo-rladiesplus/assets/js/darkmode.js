@@ -16,6 +16,7 @@
     var next = isDark ? 'light' : 'dark';
     localStorage.setItem('theme', next);
     applyTheme(next);
+    window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
   };
 
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
