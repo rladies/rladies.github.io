@@ -9,6 +9,7 @@ banner: images/user2017.jpg
 bannerOverlay: '#881ef9'
 
 favicon: images/favicon.svg
+ogImage: images/og-default.png
 DateForm: 2 January 2006
 showSubheader: false
 
