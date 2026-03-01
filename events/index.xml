@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 28 Feb 2026 13:08:03 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sun, 01 Mar 2026 01:13:23 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -117,7 +117,7 @@ We are grateful to be part of the Bayview Yards Meetup Program and extend our th
         <p><a href="https://www.meetup.com/rladies-ottawa/events/313489942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Análise de Dados Abertos com R – Open Data Day 2026 - R-Ladies São Paulo</title><link>https://www.meetup.com/rladies-sao-paulo/events/313564460/</link><guid>https://www.meetup.com/rladies-sao-paulo/events/313564460/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies São Paulo</p>
         <p><strong>When:</strong> Saturday, March 7, 2026 at 12:30 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 4 going</p>
+        <p><strong>Attendees:</strong> 8 going</p>
         <p>O evento **“Análise de Dados Abertos com R – Open Data Day 2026”**, organizado pela R-Ladies São Paulo, é um meetup online pensado para quem quer colocar a mão na massa com dados abertos usando R.
 
 Com cerca de 3 horas de duração, o encontro vai combinar uma introdução sobre o que são dados abertos, porque eles são importantes e como podem ser usados para gerar análises, com um momento de **live coding em R** (mostrando passo a passo como importar, tratar, explorar e visualizar esses dados).
@@ -143,11 +143,4 @@ Everyone is welcome to join us at our events and to be a part of our mission to 
 See you there!
 
 Jasmine, and Melissa</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/313107321/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Coffee and Conversation - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/312797152/</link><guid>https://www.meetup.com/rladies-st-louis/events/312797152/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
-        <p><strong>When:</strong> Saturday, February 28, 2026 at 4:30 PM UTC</p>
-        <p><strong>Where:</strong> Webster Groves Public Library</p>
-        <p><strong>Attendees:</strong> 22 going</p>
-        <p>Join us for a morning of conversation and networking with fellow women in data. If you’re interested in data careers, looking to hire from underrepresented groups in data, or wanting to brainstorm about a project you’ve been working on, we’d love to see you.
-
-This is an in-person event and refreshments will be provided, so we appreciate your RSVP.</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/312797152/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-vancouver/events/313107321/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>
