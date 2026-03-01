@@ -1,7 +1,7 @@
 @layer components {
   .site-footer {
     @apply text-sm;
-    background-color: #ede5f7;
+    background-color: #ddd0f0;
     color: var(--color-dark);
   }
 
@@ -62,9 +62,8 @@
 
   .site-underfooter {
     @apply py-3 text-xs;
-    background-color: #ddd0f0;
+    background-color: #d0c0e8;
     color: var(--color-dark);
-    opacity: 0.8;
   }
 
   .site-underfooter a {

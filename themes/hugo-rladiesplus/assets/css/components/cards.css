@@ -1,6 +1,6 @@
 @layer components {
   .card {
-    @apply bg-surface rounded-xl;
+    @apply bg-surface rounded-xl overflow-hidden flex flex-col;
     box-shadow: var(--shadow-card);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
@@ -14,10 +14,6 @@
     @apply p-6;
   }
 
-  .card-header {
-    @apply px-6 py-4 border-b border-gray-200;
-  }
-
   .card-title {
     @apply text-lg font-semibold text-dark;
   }
@@ -26,100 +22,74 @@
     @apply text-sm text-muted;
   }
 
-  .card-img-top {
-    @apply w-full object-cover;
-  }
-
-  /* Expandable card (directory, blogs, mentoring) */
-  .card-expand {
-    @apply flex flex-col bg-surface rounded-xl overflow-hidden transition-all duration-300;
-    box-shadow: var(--shadow-card);
-  }
-
-  .card-expand:hover {
-    @apply -translate-y-1;
-    box-shadow: var(--shadow-card-hover);
-  }
-
-  .card-expand-img {
+  /* Card image area */
+  .card-img {
     @apply relative overflow-hidden shrink-0;
-    height: 200px;
+    height: 260px;
+    min-height: 260px;
   }
 
-  .card-expand-img img {
+  .card-img img {
     @apply block w-full h-full object-cover transition-transform duration-300;
   }
 
-  .card-expand:hover .card-expand-img img {
+  .card-hover:hover .card-img img {
     @apply scale-105;
   }
 
-  .card-expand-content {
+  /* Card content area */
+  .card-content {
     @apply relative p-5 flex-1 flex flex-col;
   }
 
-  .card-expand-title {
+  .card-content .card-title {
     @apply text-base font-semibold mb-1;
     color: var(--color-dark);
   }
 
-  .card-expand-title a {
+  .card-content .card-title a {
     @apply no-underline transition-colors duration-200;
     color: inherit;
   }
 
-  .card-expand-title a:hover {
+  .card-content .card-title a:hover {
     @apply text-primary;
   }
 
-  .card-expand-description {
+  .card-desc {
     @apply text-sm mt-2 text-muted;
   }
 
-  .card-expand-category {
+  .card-category {
     @apply absolute top-3 right-3 bg-primary/95 px-2.5 py-1 text-white text-xs font-semibold rounded-lg shadow-md z-[2];
   }
 
-  .card-expand-category a {
+  .card-category a {
     @apply text-white no-underline;
   }
 
-  .card-expand-subtitle {
+  .card-subtitle {
     @apply m-0 pb-2 text-primary text-sm font-medium;
   }
 
-  .card-expand-up-title {
-    @apply text-lg font-semibold;
-  }
-
-  .card-expand-foot {
+  .card-foot {
     @apply mt-auto pt-3 border-t border-gray-100 text-xs;
     color: var(--color-dark-50);
     max-height: 4.5em;
     overflow: hidden;
   }
 
-  .card-expand-foot a {
+  .card-foot a {
     @apply no-underline text-primary hover:opacity-70 transition-opacity;
   }
 
   /* Card size variants (control image height) */
-  .card-service .card-expand-img { height: 100px; }
-  .card-small .card-expand-img { height: 160px; }
-  .card-medium .card-expand-img { height: 200px; }
-  .card-large .card-expand-img { height: 260px; }
-  .card-wide .card-expand-img { height: 200px; }
+  .card-service .card-img { height: 140px; min-height: 140px; }
+  .card-small .card-img { height: 240px; min-height: 240px; }
+  .card-medium .card-img { height: 260px; min-height: 260px; }
+  .card-large .card-img { height: 320px; min-height: 320px; }
 
   /* Post card */
-  .post-card {
-    @apply bg-surface rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1;
-    box-shadow: var(--shadow-card);
-  }
-
-  .post-card:hover {
-    box-shadow: var(--shadow-card-hover);
-  }
-
   .post-card .post-image {
     @apply h-[300px] overflow-hidden;
   }
@@ -182,22 +152,17 @@
   }
 
   /* Alumni grayscale */
-  .alumni-grid .card-expand-img img {
+  .alumni-grid .card-img img {
     @apply grayscale transition-all duration-300;
   }
 
-  .alumni-grid .card-expand:hover .card-expand-img img {
+  .alumni-grid .card-hover:hover .card-img img {
     @apply grayscale-0;
   }
 
-  /* Feed grid */
+  /* Expand grid */
   .expand-grid ul {
     @apply list-none p-0;
-  }
-
-  .expand-grid#feed .card-expand,
-  .expand-grid#feed_featured .card-expand {
-    @apply h-full min-h-[400px];
   }
 
   /* Involved card image top */

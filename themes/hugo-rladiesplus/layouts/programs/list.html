@@ -9,7 +9,7 @@
 
 {{ range $i, $page := .Pages.ByWeight }}
   {{ $imgData := index (where $stockImages "id" $page.Params.image) 0 }}
-  <section class="program-row{{ if eq (mod $i 2) 1 }} program-row-reverse bg-surface-alt{{ end }}">
+  <section class="program-row{{ if eq (mod $i 2) 0 }} bg-surface-alt{{ else }} program-row-reverse{{ end }}">
     <div class="program-row-image">
       {{ with resources.Get $imgData.file }}
         {{ $img := .Fill "800x600 webp" }}

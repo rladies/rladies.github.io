@@ -34,7 +34,7 @@
         {{ end }}
         {{ $descr :=  $data.Get "descr" }}
 
-        {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" ( md5 $rb.url ) ) }}
+        {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=400&d=identicon" ( md5 $rb.url ) ) }}
         {{ with $rb.photo_url }}
           {{ with try (resources.GetRemote .) }}
             {{ with .Err }}
@@ -42,7 +42,7 @@
             {{ else with .Value }}
               {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
                 {{ $img := . }}
-                {{ $img := $img.Fill "300x300" }}
+                {{ $img := $img.Fill "600x600 webp" }}
                 {{ $data.Set "photo" $img.RelPermalink }}
               {{ else }}
                 {{ warnf "Entry %s has a photo url without a supported image type" $name }}

@@ -14,7 +14,7 @@
       {{ range $i, $member := $featured }}
         <div class="card card-hover text-center fade-in-up stagger-{{ add $i 1 }}">
           <div class="p-6">
-            {{ $img := $member.Params.image | default "/images/placeholder_user.png" }}
+            {{ $img := $member.Params.image | default "/images/placeholder_user.svg" }}
             <img src="{{ $img }}" alt="{{ $member.Title }}"
                  class="w-24 h-24 rounded-full object-cover mx-auto mb-4">
 

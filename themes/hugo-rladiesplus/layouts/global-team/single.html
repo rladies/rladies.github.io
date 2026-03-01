@@ -31,7 +31,7 @@
               {{ if in $d.role "Leadership" }}
                 {{ $image := "" }}
                 {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
-                  {{ $image = (.Fill "200x200").RelPermalink }}
+                  {{ $image = (.Fill "600x600 webp").RelPermalink }}
                 {{ end }}
 
                 {{ $foot := "" }}
@@ -97,7 +97,7 @@
               {{ $d := index $gt_current . }}
               {{ $image := "" }}
               {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
-                {{ $image = (.Fill "200x200").RelPermalink }}
+                {{ $image = (.Fill "600x600 webp").RelPermalink }}
               {{ end }}
 
               {{ $credit := "" }}
@@ -123,7 +123,7 @@
               {{ $d := index $gt_alumni . }}
               {{ $image := "" }}
               {{ with $path.Resources.GetMatch (printf "img/%s*" .) }}
-                {{ $image = (.Fill "150x150").RelPermalink }}
+                {{ $image = (.Fill "400x400 webp").RelPermalink }}
               {{ end }}
 
               {{ $dates := printf "%s &#8212 %s" $d.start $d.end }}
