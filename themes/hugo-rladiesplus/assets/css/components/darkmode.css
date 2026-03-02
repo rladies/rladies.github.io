@@ -211,6 +211,22 @@
     @apply bg-white/5;
   }
 
+  .dark .entry-content table {
+    @apply text-light;
+  }
+
+  .dark .entry-content th {
+    @apply border-white/10 text-light;
+  }
+
+  .dark .entry-content td {
+    @apply border-white/5;
+  }
+
+  .dark .entry-content tbody tr:hover {
+    @apply bg-white/5;
+  }
+
   .dark .chp-table .country-cell {
     background-color: var(--color-surface);
     @apply border-white/10;

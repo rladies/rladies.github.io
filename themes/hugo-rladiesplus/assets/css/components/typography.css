@@ -125,4 +125,38 @@
   blockquote cite::before {
     content: "— ";
   }
+
+  .entry-content figure {
+    @apply my-8;
+  }
+
+  .entry-content img {
+    @apply w-full h-auto rounded-xl;
+    box-shadow: var(--shadow-card);
+  }
+
+  .entry-content figcaption {
+    @apply text-sm text-center mt-3 italic;
+    color: var(--color-muted);
+  }
+
+  .entry-content table {
+    @apply w-full text-sm text-left mb-6;
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+
+  .entry-content th {
+    @apply px-4 py-3 font-semibold border-b-2 border-gray-200;
+    color: var(--color-dark);
+  }
+
+  .entry-content td {
+    @apply px-4 py-3 border-b border-gray-100;
+  }
+
+  .entry-content tbody tr:hover {
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  }
 }

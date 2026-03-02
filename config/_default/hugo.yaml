@@ -15,6 +15,11 @@ minify:
 buildFuture: true
 buildDrafts: true
 
+markup:
+  goldmark:
+    renderer:
+      lazyLoadImages: true
+
 ignoreLogs:
   - "warning-goldmark-raw-html"
 
