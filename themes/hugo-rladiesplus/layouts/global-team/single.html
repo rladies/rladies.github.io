@@ -77,8 +77,8 @@
                   {{ end }}
                 {{ end }}
 
-                <tr>
-                  <td class="text-right border-primary border-r align-top" rowspan="{{ len $members }}">{{ $role }}</td>
+                <tr class="border-t border-primary/30">
+                  <td class="text-right border-primary/40 border-r align-top" rowspan="{{ len $members }}">{{ $role }}</td>
                   {{ range $idx, $name := $members | shuffle }}
                     {{ if gt $idx 0 }}<tr>{{ end }}
                     <td class="text-left align-top">{{ $name }}</td>

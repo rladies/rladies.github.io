@@ -204,7 +204,7 @@
   }
 
   .dark .table td {
-    @apply border-white/10;
+    @apply border-white/5;
   }
 
   .dark .table-hover tbody tr:hover {
