@@ -9,9 +9,11 @@
     <div x-show="open" x-transition x-cloak class="mt-2">
       {{ range .Translations }}
         {{ $trans := .Params.translated | default true }}
-        {{ if $trans }}
-          <a lang="{{ .Lang }}" href="{{ .Permalink }}" class="badge badge-info no-underline mr-1">
+        {{ $isAuto := eq (printf "%v" .Params.translated) "auto" }}
+        {{ if and (ne $trans false) (not (and $isAuto hugo.IsProduction)) }}
+          <a lang="{{ .Lang }}" href="{{ .Permalink }}" class="badge {{ if $isAuto }}badge-warning{{ else }}badge-info{{ end }} no-underline mr-1">
             {{ index .Site.Data.read_in_lang .Lang }}
+            {{ if $isAuto }}<i class="fas fa-robot ml-1" aria-hidden="true"></i>{{ end }}
           </a>
         {{ end }}
       {{ end }}

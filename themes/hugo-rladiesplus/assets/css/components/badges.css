@@ -40,6 +40,10 @@
     @apply bg-red-50 text-red-800;
   }
 
+  .alert-warning {
+    @apply bg-amber-50 text-amber-800;
+  }
+
   .spinner {
     @apply inline-block w-6 h-6 border-3 border-primary/30 border-t-primary rounded-full animate-spin;
   }

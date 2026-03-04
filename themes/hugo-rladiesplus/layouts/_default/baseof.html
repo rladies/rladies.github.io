@@ -16,7 +16,8 @@
       {{ block "main" . }}
         <div class="site-container py-12">
           <div class="max-w-4xl mx-auto">
-            {{ $isFallback := or (eq .Params.translated false) (ne .Lang .Site.Language.Lang) }}
+            {{ $isAuto := eq (printf "%v" .Params.translated) "auto" }}
+            {{ $isFallback := and (not $isAuto) (or (eq .Params.translated false) (ne .Lang .Site.Language.Lang)) }}
             {{ $articleLang := .Lang }}
             {{ if $isFallback }}
               {{ $articleLang = .Params.language | default .Lang }}
@@ -25,7 +26,11 @@
               {{ block "title" . }}{{ end }}
 
               {{ block "translation" .}}
-                {{ if or (eq .Params.translated false) (ne .Lang .Site.Language.Lang) }}
+                {{ if $isAuto }}
+                  <div class="alert-warning text-center mb-3 rounded-xl" role="alert">
+                    {{ i18n "auto_translation" | markdownify }}
+                  </div>
+                {{ else if $isFallback }}
                   <div class="alert-primary text-center mb-3 rounded-xl">
                     {{ i18n "missing_translation" }}
                   </div>

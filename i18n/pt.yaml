@@ -158,3 +158,7 @@ translations: 'Traduções'
 missing_translation: |
     Desculpe, esta página ainda não foi traduzida
     para o português.
+auto_translation: |
+    Esta página foi traduzida automaticamente usando
+    [DeepL](https://www.deepl.com)
+    e ainda não foi revisada por uma pessoa.

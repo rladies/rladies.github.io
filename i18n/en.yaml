@@ -163,3 +163,7 @@ min_read: 'min read'
 missing_translation: |
     We are sorry. This page is missing a
     translation to English.
+auto_translation: |
+    This page was auto-translated using
+    [DeepL](https://www.deepl.com)
+    and has not been reviewed by a human yet.
