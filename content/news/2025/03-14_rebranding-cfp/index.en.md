@@ -2,7 +2,6 @@
 title: "Rebranding Call For Proposal"
 author:
   - name: "Global Leadership Team"
-type: blog
 date: "2025-03-14"
 image:
   path: cfp.png
@@ -12,8 +11,6 @@ slug: "cfp"
 aliases:
   - "/news/2025-03-14_rebranding-cfp"
 ---
-
-![Colors fade blue to violet left to right with white box in the middle that says Call for Proposal Rebranding R-Ladies to R-Ladies+; image of laptop adjacent.](cfp.png)
 
 ## TL;DR
 

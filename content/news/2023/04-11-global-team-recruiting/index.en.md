@@ -2,19 +2,19 @@
 title: "Global Team Recruiting"
 author:
   - name: "Global Leadership Team"
-type: blog
 date: "2023-04-11"
 description: ""
 tags:
   - leadership
 categories:
   - community
+image:
+  path: images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg
+  alt: "Arms and hands of women wearing colorful sweaters in a circle with hands piled together."
 slug: "global-team-recruiting"
 aliases:
   - "/news/2023-04-11-global-team-recruiting"
 ---
-
-![hands](images/hannah-busing-Zyx1bK9mqmA-unsplash.jpg)
 
 Photo by [Hannah Busing](https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 Alt text: Image of arms and hands of women wearing colorful sweaters in a circle with hands piled together.

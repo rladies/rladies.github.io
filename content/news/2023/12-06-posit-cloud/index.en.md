@@ -2,18 +2,18 @@
 title: "R-Ladies & Posit Cloud"
 author:
   - name: "Global Leadership Team"
-type: blog
 date: "2023-12-06"
 output: html_document
 categories:
   - partnerships
 summary: R-Ladies now has a Posit Cloud account available for R-Ladies meet-ups.
+image:
+  path: rladies_posit_cloud_hex.PNG
+  alt: "R-Ladies and Posit Cloud logos"
 slug: "posit-cloud"
 aliases:
   - "/news/2023-12-06-posit-cloud"
 ---
-
-![R-Ladies and Posit Cloud logos](rladies_posit_cloud_hex.PNG)
 
 # TL; DR
 

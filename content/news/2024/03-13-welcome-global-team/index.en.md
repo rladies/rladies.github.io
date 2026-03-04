@@ -2,7 +2,6 @@
 title: "Welcome to the Global Team"
 author:
   - name: "Global Leadership Team"
-type: blog
 date: "2024-03-13"
 output: html_document
 image:
@@ -16,8 +15,6 @@ slug: "welcome-global-team"
 aliases:
   - "/news/2024-03-13-welcome-global-team"
 ---
-
-![Thumbnail photos of 15 new global team members cropped in circle images outlined in purple.](img/global_team.png)
 
 <!---
 link to ppt that contains this image on rladies google account

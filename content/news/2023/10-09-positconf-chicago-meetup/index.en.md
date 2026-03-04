@@ -10,12 +10,13 @@ categories:
 editor_options:
   markdown:
     wrap: 72
+image:
+  path: posit-conf.jpg
+  alt: "R-Ladies community members gathered in a room of the Hyatt in Chicago at the conclusion of the Q&A session."
 slug: "positconf-chicago-meetup"
 aliases:
   - "/news/2023-10-09-positconf-chicago-meetup"
 ---
-
-![](posit-conf.jpg)
 
 Photo captured at the conclusion of the Question and Answer session of the reception. Alt text: R-Ladies community members gathered in a room of the Hyatt in Chicago, with rows of individuals standing, kneeling, and sitting.
 

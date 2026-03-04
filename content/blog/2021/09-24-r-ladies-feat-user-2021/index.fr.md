@@ -18,12 +18,13 @@ reward: no
 mathjax: no
 translated: no
 language: fr
+image:
+  path: banner.png
+  alt: "Image promotionnelle pour la rencontre RLadies+ feat. useR! le 28 avril à 20h UTC."
 slug: "r-ladies-feat-user-2021"
 aliases:
   - '/blog/2021-09-24-r-ladies-feat-user-2021'
 ---
-
-![Image promotionnelle pour une rencontre RLadies+ feat. user! le 28 avril à 20h UTC. La rencontre est associée à user! 2021 La Conférence R, qui aura lieu du 5 au 9 juillet 2021. L'événement est organisé par les chapitres RLadies+ de Vitória, Bangalore, East Lansing, Tunis, Guayaquil, Cuenavarca, Santa Rosa & Den Bosch et vise à apporter diverses voix à la conférence user!, invitant les participants à apprendre d'autres RLadies+ sur leurs expériences user!. L'image présente le logo RLadies (un hexagone rose stylisé contenant un "R" blanc et le mot "Ladies" en rose) à gauche et une illustration d'une marmotte souriante portant une écharpe colorée avec le logo "R" sur sa poitrine à droite. L'arrière-plan est d'un bleu uni.](banner.png)
 
 In this post, you will see that we have used the R-Ladies logo with the colors of the rainbow and the trans flags. We have also added a + to the R-Ladies name.
 As symbols and words matter a lot, we wanted to explicitly communicate, with the use of these symbols, the importance of diversity and inclusion to our community. We used them in this useR! to reinforce that we welcome diversity and put an effort into creating collectively a safe and friendly space.

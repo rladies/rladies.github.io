@@ -2,7 +2,6 @@
 title: "We're Launching the R-Ladies Rotating Curation Account on Bluesky!"
 author:
   - name: "Rotating Curation Team"
-type: blog
 date: "2025-01-24"
 image:
   path: img/rladies-bluesky.jpg
@@ -15,8 +14,6 @@ slug: "relaunch"
 aliases:
   - "/news/2025-01-22_rocur-relaunch"
 ---
-
-![Screenshot of We Are R-Ladies on Bluesky](img/rladies-bluesky.jpg)
 
 We are absolutely thrilled to announce the R-Ladies Rotating Curation (RoCur) Bluesky account [bsky.app/profile/weare.rladies.org](https://bsky.app/profile/weare.rladies.org) is now live! Each week, a new member of the R-Ladies community will take over the account to talk about all things R. This will be a fantastic opportunity for individuals who identify as a minority gender in the R community to amplify their voices and connect with others in the greater data science community.
 
