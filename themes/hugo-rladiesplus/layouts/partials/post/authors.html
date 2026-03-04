@@ -2,14 +2,20 @@
   <i class="far fa-user mr-1"></i>
   {{ range $index, $author := .author }}
     {{ if $index }}, {{ end }}
+    {{ $name := "" }}
+    {{ $dirID := "" }}
     {{ if reflect.IsMap $author }}
-      {{ if $author.url }}
-        <a href="{{ $author.url }}" target="_blank" rel="noopener">{{ $author.name }}</a>
-      {{ else }}
-        {{ $author.name }}
+      {{ $name = $author.name }}
+      {{ with $author.directory_id }}
+        {{ $dirID = . }}
       {{ end }}
     {{ else }}
-      {{ $author }}
+      {{ $name = $author }}
+    {{ end }}
+    {{ if $dirID }}
+      <a href="{{ "/directory/" | relLangURL }}{{ $dirID }}/">{{ $name }}</a>
+    {{ else }}
+      <span>{{ $name }}</span>
     {{ end }}
   {{ end }}
 </div>

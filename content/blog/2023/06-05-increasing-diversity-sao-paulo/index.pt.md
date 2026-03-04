@@ -2,7 +2,9 @@
 title: "Ações para ampliar a diversidade na comunidade R-Ladies São Paulo"
 author:
   - name: Beatriz Milz
+    directory_id: "beatriz-milz"
   - name: Haydee Svab
+    directory_id: "haydee-svab"
   - name: Tatyane Paz Dominguez
   - name: Ianni Muliterno
   - name: Ana Paula Rocha

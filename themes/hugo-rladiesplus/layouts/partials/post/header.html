@@ -34,7 +34,7 @@
       {{ range $i, $a := . }}
         {{- if $i }}, {{ end -}}
         {{- if reflect.IsMap $a -}}
-          {{- if $a.url -}}<a href="{{ $a.url }}" class="text-primary no-underline hover:underline" target="_blank" rel="noopener noreferrer">{{ $a.name }}</a>
+          {{- if $a.directory_id -}}<a href="{{ "/directory/" | relLangURL }}{{ $a.directory_id }}/" class="text-primary no-underline hover:underline">{{ $a.name }}</a>
           {{- else -}}{{ $a.name }}{{- end -}}
         {{- else -}}{{ $a }}{{- end -}}
       {{ end }}
@@ -49,7 +49,7 @@
       {{ range $i, $a := . }}
         {{- if $i }}, {{ end -}}
         {{- if reflect.IsMap $a -}}
-          {{- if $a.url -}}<a href="{{ $a.url }}" class="text-primary no-underline hover:underline" target="_blank" rel="noopener noreferrer">{{ $a.name }}</a>
+          {{- if $a.directory_id -}}<a href="{{ "/directory/" | relLangURL }}{{ $a.directory_id }}/" class="text-primary no-underline hover:underline">{{ $a.name }}</a>
           {{- else -}}{{ $a.name }}{{- end -}}
         {{- else -}}{{ $a }}{{- end -}}
       {{ end }}

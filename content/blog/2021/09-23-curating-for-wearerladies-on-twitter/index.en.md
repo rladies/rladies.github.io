@@ -2,6 +2,7 @@
 title: "Curating for @WeAreRLadies on Twitter"
 author:
   - name: Shannon Pileggi
+    directory_id: "shannon-pileggi"
 date: "2021-09-23"
 description: "From creating content to cultivating connections."
 categories:

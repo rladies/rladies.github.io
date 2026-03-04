@@ -135,5 +135,35 @@
 
 
   </div>
+
+  {{ $dirID := .Params.directory_id }}
+  {{ $posts := slice }}
+  {{ range site.RegularPages }}
+    {{ with .Params.author }}
+      {{ range . }}
+        {{ if reflect.IsMap . }}
+          {{ with .directory_id }}
+            {{ if eq . $dirID }}
+              {{ $posts = $posts | append $ }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $posts }}
+    <div class="mt-8">
+      <h2 class="text-xl font-bold mb-6">
+        <i class="fa-solid fa-pen-nib mr-2 text-primary"></i>
+        {{ i18n "posts" | default "Posts" }}
+      </h2>
+      <div class="space-y-6">
+        {{ range $posts.Reverse }}
+          {{ partial "post/summary.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
 </div>
 {{ end }}

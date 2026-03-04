@@ -2,9 +2,12 @@
 title: "Cómo hacer una reunión virtual inolvidable (sin morir en el intento)"
 author:
   - name: Laura Ación
+    directory_id: "laura-acion"
   - name: Yanina Bellini Saibene
+    directory_id: "yanina-bellini-saibene"
   - name: Paola Corrales
   - name: Patricia Loto
+    directory_id: "patricia-andrea-loto"
   - name: Paloma Rojas"
 date: "2020-06-24"
 description: ""

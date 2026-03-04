@@ -2,6 +2,7 @@
 title: "Mastodon: Meet the R-Ladies!"
 author:
   - name: "Daniela Vázquez"
+    directory_id: "daniela-vazquez"
 type: blog
 date: "2023-11-10"
 output: html_document

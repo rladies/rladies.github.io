@@ -2,8 +2,10 @@
 title: " Receta para un video de fin de año"
 author:
   - name: Yanina Bellini Saibene
+    directory_id: "yanina-bellini-saibene"
   - name: Alejandra Bellini
   - name: Laura Acion
+    directory_id: "laura-acion"
 date: "2020-01-27"
 description: ""
 categories:

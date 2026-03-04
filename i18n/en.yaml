@@ -94,6 +94,7 @@ r_user_groups: 'R User Groups'
 r_packages: 'R Packages'
 about: 'About'
 photo_credit: 'Photo credit'
+posts: 'Posts'
 
 # Press ----
 filter_by_year: 'Filter by Year'

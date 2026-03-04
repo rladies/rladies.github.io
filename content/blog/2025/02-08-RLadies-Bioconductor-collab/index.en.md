@@ -4,6 +4,7 @@ description: |
   Announcing a new collaboration between R-Ladies and Bioconductor
 author:
   - name: Janani Ravi
+    directory_id: "janani-ravi"
 date: "2025-02-08"
 categories:
   - partnerships
