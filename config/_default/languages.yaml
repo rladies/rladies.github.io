@@ -60,6 +60,10 @@ fr:
         url: /a-propos/equipe-mondiale/
         weight: 3
         parent: about-us
+      - identifier: faq
+        url: /a-propos/faq/
+        weight: 4
+        parent: about-us
       - identifier: press
         url: /presse
         weight: 5
