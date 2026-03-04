@@ -1,55 +1,64 @@
 ---
 title: Código de Conduta
-aliases:
-  - /pt/coc/
+aliases: /coc/
+slug: c_u_00_f_3_digo_de_conduta
+language: en
+translated: auto
 ---
 
-RLadies+ tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes.
+A RLadies+ está empenhada em proporcionar uma experiência livre de assédio para todo mundo. Não aceitamos assédio aos participantes de nenhuma forma.
 
-Este código de conduta aplica-se a todos os espaços RLadies+, incluindo: meetups, Twitter, Slack, listas de discussão, tanto online como offline. Qualquer pessoa que viole este código de conduta pode ser advertida, punida ou expulsa destes espaços, conforme critérios dos Membros Fundadores.
+Este código de conduta aplica-se a todos os espaços da RLadies+, incluindo encontros, Twitter, Slack, listas de correio, tanto online como offline. Qualquer pessoa que viole este código de conduta pode ser sancionada ou expulsa destes espaços, a critério da Equipa de Liderança Global.
 
-Alguns espaços RLadies+ podem ter regras adicionais em vigor, que serão claramente disponibilizadas aos participantes. Os participantes são responsáveis por conhecer e respeitar estas regras.
+Alguns espaços da RLadies+ podem ter regras adicionais, que serão claramente disponibilizadas aos participantes. Os participantes são responsáveis por conhecer e cumprir essas regras.
 
-Entende-se como assédio:
+O assédio inclui:
 
-* Comentários ofensivos relacionados ao gênero, identidade e expressão de gênero, orientação sexual, deficiência, doença mental, neuro-atipicidade, aparência física, tamanho corporal, idade, raça ou religião.
-* Comentários indesejáveis sobre as escolhas e práticas de estilo de vida, incluindo aquelas relacionadas com alimentos, saúde, parentalidade, drogas e emprego.
-* Mal entendidos deliberados ou uso de nomes preconceituosos rejeitados ou "mortos".
-* Imagens ou comportamentos sexuais gratuitos, ou fora do tópico em espaços inapropriados.
-* Contato físico e contato físico simulado (por exemplo, descrições textuais como " abraço" ou "backrub") sem consentimento ou após um pedido para parar.
-* Ameaças de violência.
-* Incitação à violência contra qualquer indivíduo, incluindo incentivar uma pessoa a cometer suicídio ou praticar auto-agressão.
-* Intimidação deliberada.
-* Perseguição ou invasão de privacidade.
-* Assédio à fotografia ou gravação, incluindo atividades de registro on-line para propósitos de assédio.
-* Interrupção sustentada da discussão.
-* Atenção sexual indesejável.
-* Padrão de contato social inadequado, como solicitar / assumir níveis inadequados de intimidade com os outros.
-* Continuação da comunicação um-a-um após os pedidos de cessação.
-* Deliberar exposição de qualquer aspecto da identidade de uma pessoa sem o seu consentimento, exceto quando necessário para proteger as pessoas vulneráveis de abuso intencional.
-* Publicação de comunicação privada não-assediante.
+- Comentários ofensivos relacionados com género, identidade e expressão de género, orientação sexual, deficiência, doença mental, neuro(a)tipicidade, aparência física, tamanho corporal, idade, raça ou religião.
+- Comentários indesejáveis sobre as escolhas e práticas de estilo de vida de uma pessoa, incluindo aqueles relacionados a alimentação, saúde, parentalidade, drogas e emprego.
+- Erros deliberados de género ou uso de nomes «mortos» ou rejeitados.
+- Imagens ou comportamentos sexuais gratuitos ou fora do tema em espaços onde não são apropriados.
+- Contato físico e contato físico simulado (por exemplo, descrições textuais como "*abraço*" ou "*massagem nas costas*") sem consentimento ou após um pedido para parar.
+- Ameaças de violência.
+- Incitação à violência contra qualquer indivíduo, incluindo encorajar uma pessoa a cometer suicídio ou a praticar automutilação.
+- Intimidação deliberada.
+- Perseguição ou acompanhamento.
+- Fotografar ou gravar de forma assediadora, incluindo registar atividades online com o objetivo de assediar.
+- Interrupção contínua de discussões.
+- Atenção sexual indesejada.
+- Padrão de contacto social inapropriado, como solicitar/presumir níveis inapropriados de intimidade com outras pessoas.
+- Comunicação individual contínua após pedidos para cessar.
+- Divulgação deliberada de qualquer aspeto da identidade de uma pessoa sem o seu consentimento, exceto quando necessário para proteger pessoas vulneráveis de abuso intencional.
+- Publicação de comunicações privadas que não constituem assédio.
 
-RLadies+ prioriza a segurança das pessoas "marginalizadas" em detrimento do conforto das pessoas privilegiadas. Os Membros Fundadores não agirão sobre reclamações relativas a:
+A RLadies+ prioriza a segurança das pessoas marginalizadas em detrimento do conforto das pessoas privilegiadas. A Equipa de Liderança Global não tomará medidas em relação a reclamações sobre:
 
-* "Reversões", incluindo "racismo reverso", "sexismo inverso" e "cisfobia".
-* A comunicação razoável de limites, como "deixe-me sozinho", "vá embora" ou "não estou discutindo isso com você".
-* Comunicado em "tom" antipático.
-* Críticas a comportamentos ou suposições racistas, sexistas, cissexistas ou de qualquer outra forma opressiva.
+- «Reverse» -ismos, incluindo «racismo reverso», «sexismo reverso» e «cisfobia».
+- Comunicação razoável de limites, como "deixe-me em paz", "vá embora" ou "não vou discutir isso com você".
+- Comunicação num «tom» que não consideras agradável.
+- Criticar comportamentos ou suposições racistas, sexistas, cissexistas ou de outra forma opressivos.
+
+No Slack:
+
+- Evite usar nomes de utilizador ou fotos de perfil abertamente sexuais ou ofensivos que possam prejudicar um ambiente amigável, seguro e acolhedor para todos.
+- Não publique texto/capturas de ecrã de nada partilhado no Slack sem o consentimento explícito do autor. Isto inclui capturas de ecrã de mensagens privadas para canais públicos, bem como conversas em canais públicos para qualquer lugar fora do RLadies+ Slack.
 
 ### Denúncias
 
-Se você for assediado por um membro / convidado / participante de / em algum evento RLadies+, ou ainda observe que alguém esteja sob assédio ou tem outras dúvidas, entre em contato com os Membros Fundadores através de reporting [at] rladies [dot] org. As incidências locais serão tratadas juntamente com os organizadores locais. Se a pessoa que está assediando você estiver na equipe, ela não participará da resolução do seu incidente. Responderemos o mais rápido possível.
+Se estás a ser assediada por um membro/convidada/participante do RLadies+, percebes que outra pessoa está a ser assediada ou tens alguma outra preocupação, entra em contacto com a Equipa de Liderança Global através do formulário de denúncia [em] rladies [dot] org. Os incidentes locais serão tratados em conjunto com os organizadores locais. Se a pessoa que está a assediar-te faz parte da equipa, ela se recusará a lidar com o teu incidente. Responderemos o mais rápido possível.
 
-Este código de conduta aplica-se aos espaços de eventos do RLadies+. Mas, se você for assediado por um membro / convidado / participante em eventos do RLadies+ fora de nossos espaços, queremos saber sobre esse fato também. Levamos a sério todas as denúncias de assédio por parte de membros do RLadies+, especialmente os membros fundadores. Isso inclui assédio fora de nossos espaços e assédios ocorridos a qualquer instante. Os membros fundadores se reservam o direito de excluir as pessoas do RLadies+ com base em seu comportamento passado, incluindo comportamento externo aos espaços RLadies+ e comportamento às pessoas externas ao RLadies+.
+Este código de conduta aplica-se aos espaços da RLadies+, mas se estiveres a ser assediado por um membro/convidado/participante da RLadies+ fora dos nossos espaços, ainda assim queremos saber. Levaremos a sério todas as denúncias de assédio feitas de boa-fé por membros da RLadies+, especialmente pela Equipa de Liderança Global. Isso inclui assédio fora dos nossos espaços e assédio que ocorreu em qualquer momento. A Equipa de Liderança Global reserva-se o direito de excluir pessoas da RLadies+ com base no seu comportamento passado, incluindo comportamento fora dos espaços da RLadies+ e comportamento em relação a pessoas que não fazem parte da RLadies+.
 
-A fim de proteger os voluntários de abuso e esgotamento ("burnout"), reservamo-nos o direito de rejeitar qualquer denúncia que acreditamos ter sido feita de má-fé. Denúncias destinadas a silenciar críticas legítimas podem ser excluídas sem resposta.
+Para proteger os voluntários de abusos e esgotamento, a gente se reserva o direito de rejeitar qualquer denúncia que a gente acredite ter sido feita de má-fé. Denúncias com o objetivo de silenciar críticas legítimas podem ser excluídas sem resposta.
 
-Respeitamos os pedidos de confidencialidade com o propósito de proteger as vítimas de abuso. A nosso critério, podemos publicamente nomear uma pessoa sobre quem recebemos queixas de assédio ou advertir privadamente a terceiros sobre os assediadores, se acreditarmos que isso aumentará a segurança dos membros da RLadies+ ou do público em geral. Não nomearemos vítimas de assédio sem seu consentimento afirmativo.
+Respeitaremos os pedidos de confidencialidade com o objetivo de proteger as vítimas de abuso. A nosso critério, podemos divulgar publicamente o nome de uma pessoa sobre a qual recebemos denúncias de assédio ou alertar terceiros em particular sobre ela, se acreditarmos que isso aumentará a segurança dos membros da RLadies+ ou do público em geral. Não divulgaremos o nome das vítimas de assédio sem o seu consentimento expresso.
 
 ### Consequências
 
-Espera-se que o comportamento assediador seja interrompido imediatamente quando pedido.
+Os participantes a quem for pedido que cessem qualquer comportamento de assédio devem cumprir imediatamente.
 
-Se um participante se comporta como assediador, os membros fundadores podem tomar qualquer ação que julgarem apropriada, inclusive banimento do referido participante de todos os espaços do RLadies+ e identificação do participante para outros membros da comunidade RLadies+ ou o público em geral.
+Se um participante se envolver em comportamento de assédio, a Equipa de Liderança Global poderá tomar qualquer medida que considerar apropriada, incluindo a expulsão de todos os espaços da RLadies+ e a identificação do participante como assediador para outros membros da RLadies+ ou para o público em geral.
 
 Esta política está licenciada sob a licença Creative Commons Zero.
+
+

@@ -38,6 +38,8 @@ Config/renv/profiles/airtable/dependencies:
     airtabler
 Config/renv/profiles/translate/dependencies:
     babeldown,
-    here
+    here,
+    httr2,
+    yaml
 Remotes:
     bergant/airtabler

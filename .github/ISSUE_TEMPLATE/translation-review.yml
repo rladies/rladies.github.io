@@ -1,0 +1,51 @@
+name: Translation Review
+description: Claim a translation for human review
+title: "TRANSLATION REVIEW: "
+labels: ["translation", "review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Claim a translation file for review.
+        Find open translation PRs with the `auto-translated` label.
+
+  - type: input
+    id: pr_number
+    attributes:
+      label: Translation PR number
+      description: The PR containing the auto-translation to review.
+      placeholder: "e.g., 420"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      description: Which language translation are you reviewing?
+      options:
+        - "es (Español)"
+        - "pt (Português)"
+        - "fr (Français)"
+        - "en (English)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: content_paths
+    attributes:
+      label: Content paths
+      description: Paths to the content files you are reviewing (one per line).
+      placeholder: |
+        content/blog/2025/06-13-example/index.es.md
+        content/about-us/history/index.es.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional context about the review.
+    validations:
+      required: false

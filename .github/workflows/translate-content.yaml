@@ -1,0 +1,111 @@
+name: "Auto-translate content"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**/index.*.md"
+      - "content/**/_index.*.md"
+
+  workflow_dispatch:
+    inputs:
+      files:
+        description: "Comma-separated list of content files to translate"
+        required: false
+
+concurrency:
+  group: translate-content
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  RENV_PROFILE: "translate"
+  RENV_CONFIG_SANDBOX_ENABLED: FALSE
+  DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+
+jobs:
+  translate:
+    name: Auto-translate changed content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Identify changed content files
+        id: changed
+        run: |
+          if [ -n "${{ github.event.inputs.files }}" ]; then
+            echo "files=${{ github.event.inputs.files }}" >> $GITHUB_OUTPUT
+          else
+            FILES=$(git diff --name-only HEAD~1 HEAD -- 'content/**/index.*.md' 'content/**/_index.*.md' | tr '\n' ',' | sed 's/,$//')
+            echo "files=$FILES" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check if there are files to translate
+        id: check
+        run: |
+          if [ -z "${{ steps.changed.outputs.files }}" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Install system dependencies
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Setup R
+        if: steps.check.outputs.skip == 'false'
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "renv"
+
+      - name: Setup renv
+        if: steps.check.outputs.skip == 'false'
+        uses: r-lib/actions/setup-renv@v2
+
+      - name: Run translation
+        if: steps.check.outputs.skip == 'false'
+        run: |
+          IFS=',' read -ra FILE_ARRAY <<< "${{ steps.changed.outputs.files }}"
+          Rscript scripts/translate_content.R "${FILE_ARRAY[@]}"
+
+      - name: Create translation PR
+        if: steps.check.outputs.skip == 'false'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: auto-translate/${{ github.sha }}
+          delete-branch: true
+          title: "Auto-translate content from ${{ github.sha }}"
+          labels: |
+            translation
+            auto-translated
+          body: |
+            ## Auto-translated content
+
+            Machine translations (DeepL) for content changed in ${{ github.sha }}.
+
+            ### How to review
+
+            1. Open an issue using the **Translation Review** template to claim files
+            2. Check each translated file for accuracy
+            3. Verify Hugo shortcodes and links are intact
+            4. Change `translated: auto` to `translated: yes` in front-matter
+            5. Approve and merge when all files are reviewed
+
+            > Files with `translated: auto` will **not** appear on the production site.
+
+            ### Changed files
+            ${{ steps.changed.outputs.files }}
+          add-paths: |
+            content/**/*.es.md
+            content/**/*.pt.md
+            content/**/*.fr.md

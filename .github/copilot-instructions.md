@@ -148,6 +148,28 @@ The `translated` field has three states:
 - `scripts/translation_status.R` — report translation coverage across all content
 - `scripts/missing_translations.R` — generate placeholder files for missing language variants
 
+### How Frontmatter Translation Works
+
+babeldown's `deepl_translate_hugo()` only translates **top-level string fields** (`title`, `description`, `summary`). It cannot handle nested YAML structures.
+
+For pages with complex nested frontmatter (FAQ, Involved, Mentoring, etc.), `translate_content.R` runs a second pass that recursively walks nested YAML and translates all string values via `deepl_translate_markdown_string()`.
+
+**Nested fields translated**: `faq`, `pillars`, `sections`, `ctas`
+**Keys skipped within nested structures**: `icon`, `url`, `style`, `type`, `layout`, `weight`, `home`, `slug`, `aliases`, `source`, `image`, `outputs`, `cascade`, `date`, `directory_id`, `path`, `alt`
+
+When adding new content types with translatable nested frontmatter, update `NESTED_FIELDS` in `scripts/translate_content.R`. When adding new non-translatable keys within nested structures, update `SKIP_KEYS`.
+
+### Translation Quality: Glossaries and Style
+
+- **Style guide**: `translation/style-guide.md` — defines RLadies+ brand voice for translations (warm, professional, empowering, informal address)
+- **Glossaries**: `translation/glossary-en-{es,pt,fr}.csv` — term mappings synced to DeepL automatically via `deepl_upsert_glossary()` before each translation run
+- **Style rules**: `translation/deepl-styles.yaml` — stores the DeepL style_id (created in DeepL web UI). Applied to nested frontmatter translation via direct API call. Body text via babeldown uses glossary + formality only.
+- **Formality**: DeepL uses `prefer_less` for es, pt, fr (conversational tone matching the brand)
+- **Brand terms**: RLadies+, R, Meetup, Slack, GitHub etc. must never be translated (see glossary)
+- **Inclusive language**: Translations prefer gender-neutral wording; see style guide for per-language strategies
+
+When adding new brand terms, update the glossary CSVs in `translation/` — they are uploaded to DeepL automatically on the next translation run.
+
 ## Build Pipeline
 
 GitHub Actions workflow:

@@ -26,11 +26,13 @@
               {{ block "title" . }}{{ end }}
 
               {{ block "translation" .}}
-                {{ if $isAuto }}
+                {{ $isAuto2 := eq (printf "%v" .Params.translated) "auto" }}
+                {{ $isFallback2 := and (not $isAuto2) (or (eq .Params.translated false) (ne .Lang .Site.Language.Lang)) }}
+                {{ if $isAuto2 }}
                   <div class="alert-warning text-center mb-3 rounded-xl" role="alert">
                     {{ i18n "auto_translation" | markdownify }}
                   </div>
-                {{ else if $isFallback }}
+                {{ else if $isFallback2 }}
                   <div class="alert-primary text-center mb-3 rounded-xl">
                     {{ i18n "missing_translation" }}
                   </div>

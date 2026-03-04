@@ -1,0 +1,9 @@
+{{- $url := .Destination -}}
+{{- with .Page.GetPage .Destination -}}
+  {{- $url = .RelPermalink -}}
+{{- end -}}
+<a href="{{ $url | safeURL }}"
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if strings.HasPrefix .Destination "http" }} rel="noopener" target="_blank"{{ end -}}
+>{{ .Text | safeHTML }}</a>
+{{- /* .PlainText */ -}}
