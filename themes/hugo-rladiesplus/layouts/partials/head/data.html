@@ -19,6 +19,13 @@
 
 {{ $countries = $countries | uniq | sort }}
 
+{{ $continentMap := dict }}
+{{ range $continent, $countryList := site.Data.continents }}
+  {{ range $countryList }}
+    {{ $continentMap = merge $continentMap (dict . $continent) }}
+  {{ end }}
+{{ end }}
+
 {{ $chpt_countries := slice }}
 {{ range $countries }}
   {{ $arr := where $chpt_active "country" . }}
@@ -30,13 +37,15 @@
   {{ if eq . "USA" }}
     {{ $iso = "US" }}
   {{ end }}
+  {{ $continent := index $continentMap . | default "Other" }}
   {{ if and (gt $count 0) (ne . "Worldwide") }}
-    {{ $chpt_countries = $chpt_countries | append (dict "name" . "count" $count "iso" $iso) }}
+    {{ $chpt_countries = $chpt_countries | append (dict "name" . "count" $count "iso" $iso "continent" $continent) }}
   {{ end }}
 {{ end }}
 
 {{ .Store.Set "chpt_active" $chpt_active }}
 {{ .Store.Set "chpt_countries" $chpt_countries }}
+{{ .Store.Set "continent_map" $continentMap }}
 
 {{ $eventsURL := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/events.json" }}
 {{ with try (resources.GetRemote $eventsURL) }}

@@ -5,6 +5,13 @@
 {{ $loc := slice }}
 {{ $countries := slice }}
 
+{{ $continentMap := dict }}
+{{ range $continent, $countryList := site.Data.continents }}
+  {{ range $countryList }}
+    {{ $continentMap = merge $continentMap (dict . $continent) }}
+  {{ end }}
+{{ end }}
+
 {{ range $directory }}
   {{ with .Params.interests }}
       {{ $ints = $ints | append  . }}
@@ -88,17 +95,29 @@
             <i class="fa-solid fa-map-marker-alt text-primary mr-2"></i>
             <label for="filter-location" class="form-label mb-0 font-semibold">{{ i18n "location" }}</label>
           </div>
+          {{ $continents := slice "Africa" "Asia" "Europe" "Latin America" "North America" "Oceania" "Other" }}
           <select class="form-select" id="filter-location" multiple data-group="location">
-            {{ range $countries }}
-              {{ $c := . }}
-              <optgroup label="{{$c}}" class="{{$c}}">
-              {{ range $loc }}
-                {{ $l := findRE (printf "^%s" $c) . }}
-                {{ if gt (len $l) 0 }}
-                  <option value="{{ . | htmlUnescape | urlize }}">{{ replaceRE (printf "%s, " $c) "" . }}</option>
+            {{ range $continent := $continents }}
+              {{ $continentCountries := slice }}
+              {{ range $countries }}
+                {{ $c := index $continentMap . | default "Other" }}
+                {{ if eq $c $continent }}
+                  {{ $continentCountries = $continentCountries | append . }}
                 {{ end }}
               {{ end }}
-              </optgroup>
+              {{ if $continentCountries }}
+                <optgroup label="{{ $continent }}">
+                  {{ range $continentCountries }}
+                    {{ $c := . }}
+                    {{ range $loc }}
+                      {{ $l := findRE (printf "^%s" $c) . }}
+                      {{ if gt (len $l) 0 }}
+                        <option value="{{ . | htmlUnescape | urlize }}">{{ replaceRE (printf "%s, " $c) "" . }}</option>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                </optgroup>
+              {{ end }}
             {{ end }}
           </select>
         </div>

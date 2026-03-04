@@ -35,9 +35,17 @@
       <div class="flex flex-col md:flex-row gap-4 items-end">
         <div class="flex-1">
           <label for="country-filter" class="text-xs font-medium text-muted mb-1.5 block">{{ i18n "country" | markdownify | title }}</label>
+          {{ $continents := slice "Africa" "Asia" "Europe" "Latin America" "North America" "Oceania" "Other" }}
           <select id="country-filter" class="form-select" multiple>
-            {{ range $countries }}
-              <option value="{{ .name }}">{{ .name | title }} ({{ .count }})</option>
+            {{ range $continent := $continents }}
+              {{ $group := where $countries ".continent" $continent }}
+              {{ if $group }}
+                <optgroup label="{{ $continent }}">
+                  {{ range $group }}
+                    <option value="{{ .name }}">{{ .name | title }} ({{ .count }})</option>
+                  {{ end }}
+                </optgroup>
+              {{ end }}
             {{ end }}
           </select>
         </div>
@@ -60,24 +68,35 @@
             </tr>
           </thead>
           <tbody id="chapter-list">
-            {{ range $idx, $country := $countries }}
-              {{ $countryChapters := where $chapters ".Params.country" $country.name }}
-              {{ range $i, $chapter := $countryChapters }}
-                <tr data-country="{{ $country.name }}" data-city="{{ $chapter.Title | lower }}" class="chapter-row">
-                  {{ if eq $i 0 }}
-                    <td class="font-semibold text-dark country-cell" rowspan="{{ len $countryChapters }}">
-                      {{ $country.name | title }}
-                    </td>
-                  {{ end }}
-                  <td>
-                    <a href="{{ $chapter.Permalink }}" class="text-primary no-underline hover:underline font-medium">{{ $chapter.Title | title }}</a>
-                  </td>
-                  <td class="text-right chp-social">
-                    {{ with $chapter.Params.social_media }}
-                      {{ partial "social_media.html" (dict "data" . "relme" true) }}
-                    {{ end }}
+            {{ $continents := slice "Africa" "Asia" "Europe" "Latin America" "North America" "Oceania" "Other" }}
+            {{ range $continent := $continents }}
+              {{ $continentCountries := where $countries ".continent" $continent }}
+              {{ if $continentCountries }}
+                <tr class="continent-header" data-continent="{{ $continent }}">
+                  <td colspan="3" class="bg-light font-bold text-dark py-3 px-4 text-lg">
+                    {{ $continent }}
                   </td>
                 </tr>
+                {{ range $idx, $country := $continentCountries }}
+                  {{ $countryChapters := where $chapters ".Params.country" $country.name }}
+                  {{ range $i, $chapter := $countryChapters }}
+                    <tr data-country="{{ $country.name }}" data-continent="{{ $continent }}" data-city="{{ $chapter.Title | lower }}" class="chapter-row">
+                      {{ if eq $i 0 }}
+                        <td class="font-semibold text-dark country-cell" rowspan="{{ len $countryChapters }}">
+                          {{ $country.name | title }}
+                        </td>
+                      {{ end }}
+                      <td>
+                        <a href="{{ $chapter.Permalink }}" class="text-primary no-underline hover:underline font-medium">{{ $chapter.Title | title }}</a>
+                      </td>
+                      <td class="text-right chp-social">
+                        {{ with $chapter.Params.social_media }}
+                          {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                        {{ end }}
+                      </td>
+                    </tr>
+                  {{ end }}
+                {{ end }}
               {{ end }}
             {{ end }}
           </tbody>
@@ -122,13 +141,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function updateRowspans() {
     const countries = {};
+    const visibleContinents = new Set();
     rows.forEach(row => {
       if (row.style.display !== 'none') {
         const country = row.dataset.country;
+        const continent = row.dataset.continent;
         if (!countries[country]) {
           countries[country] = [];
         }
         countries[country].push(row);
+        visibleContinents.add(continent);
       }
     });
 
@@ -143,6 +165,10 @@ document.addEventListener('DOMContentLoaded', function() {
         cell.style.display = '';
         cell.setAttribute('rowspan', countryRows.length);
       }
+    });
+
+    document.querySelectorAll('.continent-header').forEach(header => {
+      header.style.display = visibleContinents.has(header.dataset.continent) ? '' : 'none';
     });
   }
 
