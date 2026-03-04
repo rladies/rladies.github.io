@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 04 Mar 2026 01:12:46 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 04 Mar 2026 13:10:59 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
-        <p><strong>Attendees:</strong> 2 going</p>
+        <p><strong>Attendees:</strong> 3 going</p>
         <p>BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R. Ama will lead the workshop with support from Shannon!</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><guid>https://www.meetup.com/rladies-philly/events/312901048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 29, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
-        <p><strong>Attendees:</strong> 4 going</p>
+        <p><strong>Attendees:</strong> 5 going</p>
         <p>BYOLaptop to learn data wrangling skills! Join us for a hybrid meeting either in-person or on zoom where participants will login to a virtual R session and learn to use Tidyverse packages and functions.</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Data Challenge Solution Showcase - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489859/</link><guid>https://www.meetup.com/rladies-ottawa/events/313489859/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 10:00 PM UTC</p>
@@ -65,12 +65,27 @@ Advantages of using the gptstudio package:
 ✔️ Useful for both beginners and experienced users looking to speed up their workflow</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title> Level Up Your Data Visualizations with ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/313505524/</link><guid>https://www.meetup.com/rladies-abuja/events/313505524/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, March 25, 2026 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 28 going</p>
+        <p><strong>Attendees:</strong> 29 going</p>
         <p>Join us for a practical, beginner-friendly meetup on **“Level Up Your Data Visualizations with ggplot2”** where we’ll explore how to create clear, compelling, and professional charts in R using **ggplot2**. Whether you’re new to data visualization or looking to improve your plotting skills, this session will cover key principles, useful customization tips, and hands-on examples to help you turn raw data into impactful visual stories.</p>
-        <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>R-Ladies Corvallis: R Show &amp; Tell - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/313408453/</link><guid>https://www.meetup.com/rladies-corvallis/events/313408453/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
+        <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Working Smarter with {dplyr} 1.2.0 – A Practical Session - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313630747/</link><guid>https://www.meetup.com/rladies-rome/events/313630747/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><strong>When:</strong> Wednesday, March 18, 2026 at 5:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 13 going</p>
+        <p>**{dplyr} 1.2.0 is out, and wow, is it a delight!**
+
+**Join us for a tour** of the new tools in {dplyr} 1.2.0 and when you should use them.
+
+We will walk through **WHEN** you should use **ANY** of the new functionality (there are new \`***when_any()***\` and \`***when_all()***\` functions), how to say goodbye to case_match() and what to **REPLACE** it with, and more. You won&#39;t want to \`filter_out()\` this release. **Join us to learn more!**
+
+The tidyverse keeps evolving, and **{dplyr} 1.2.0** brings a set of new tools that make data manipulation even more expressive and flexible.
+
+Whether you regularly work with **R and the tidyverse**, or you’re looking to sharpen your data wrangling skills, this session will help you better understand the design philosophy behind the latest **{dplyr}** release and how to apply it effectively.
+
+Expect a clear walkthrough, practical examples, and time for questions.</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/313630747/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>R-Ladies Corvallis: R Show &amp; Tell - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/313408453/</link><guid>https://www.meetup.com/rladies-corvallis/events/313408453/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
         <p><strong>When:</strong> Friday, March 13, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> Common Fields</p>
-        <p><strong>Attendees:</strong> 8 going</p>
+        <p><strong>Attendees:</strong> 9 going</p>
         <p>**Learn how other R-Ladies in the community are using R!**
 
 At our second meet-up, we&#39;ll be hosting an informal Show &amp; Tell. You can present in the Show &amp; Tell or just come and hang out. For the Show &amp; Tell portion, we&#39;re asking anyone who is interested in sharing to create a single slide highlighting anything related to how they use R. For example, share how you use R in your work, tell us about a cool R project you&#39;ve worked on, or share something you want to learn more about. The current plan is to ask presenters to talk for 5 minutes. *We may adjust the time limit depending on how many volunteers we get.*
@@ -83,7 +98,7 @@ Food and drink are available for purchase. Please note this event will be held o
         <p><a href="https://www.meetup.com/rladies-corvallis/events/313408453/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Co-working: IWD Data Challenge 2026 - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489942/</link><guid>https://www.meetup.com/rladies-ottawa/events/313489942/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Monday, March 9, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Bayview Yards</p>
-        <p><strong>Attendees:</strong> 12 going</p>
+        <p><strong>Attendees:</strong> 13 going</p>
         <p>**‍IWD Data Challenge 2026**
 R‑Ladies Ottawa is excited to host our fourth annual data challenge in celebration of International Women’s Day. This year, we invite you to explore openly available data connected to your community. That could be Ottawa, Gatineau, another part of the National Capital Region, or any place in the world that feels meaningful to you. As a starting point, we encourage you to browse datasets available through [Open Ottawa](https://open.ottawa.ca/). Although the challenge is hosted by R‑Ladies Ottawa, you’re welcome to use any programming language or visualization tool you prefer.
 
@@ -123,24 +138,4 @@ We are grateful to be part of the Bayview Yards Meetup Program and extend our th
 Com cerca de 3 horas de duração, o encontro vai combinar uma introdução sobre o que são dados abertos, porque eles são importantes e como podem ser usados para gerar análises, com um momento de **live coding em R** (mostrando passo a passo como importar, tratar, explorar e visualizar esses dados).
 
 Se você quer entender melhor como transformar dados públicos em análises concretas usando R, esse meetup é para você!</p>
-        <p><a href="https://www.meetup.com/rladies-sao-paulo/events/313564460/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies São Paulo)</author><category>R-Ladies São Paulo</category></item><item><title>Create Custom Webpages with R and Quarto - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/313107321/</link><guid>https://www.meetup.com/rladies-vancouver/events/313107321/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
-        <p><strong>When:</strong> Wednesday, March 4, 2026 at 3:00 AM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 25 going</p>
-        <p>**Workshop Details**
-In this workshop, we will learn how to create webpages using Quarto in RStudio, and host it on GitHub. The example website will be a professional website template ([see my example webpage here](https://grcetmpk.github.io/)), but these skills can also be used to create other webpages ([like this one](https://ubc-stat.github.io/stat545/)).
-
-This workshop was designed for R coders with no prior experience with Quarto. Experience with GitHub is helpful, but not necessary. We will be going through all of the steps slowly.
-
-\*\*\*
-
-1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)
-2. Who is this allowed to attend the event?
-
-Everyone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.
-3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
-
-See you there!
-
-Jasmine, and Melissa</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/313107321/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-sao-paulo/events/313564460/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies São Paulo)</author><category>R-Ladies São Paulo</category></item></channel></rss>
