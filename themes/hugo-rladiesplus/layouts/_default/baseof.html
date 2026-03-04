@@ -25,17 +25,7 @@
             <article lang="{{ $articleLang }}">
               {{ block "title" . }}{{ end }}
 
-              {{ block "translation" .}}
-                {{ if $isAuto }}
-                  <div class="alert-warning text-center mb-3 rounded-xl" role="alert">
-                    {{ i18n "auto_translation" | markdownify }}
-                  </div>
-                {{ else if $isFallback }}
-                  <div class="alert-primary text-center mb-3 rounded-xl">
-                    {{ i18n "missing_translation" }}
-                  </div>
-                {{ end }}
-              {{ end }}
+              {{ partial "translation-banner.html" . }}
 
               <div class="entry-content">
                 {{ .Content }}
