@@ -3,7 +3,6 @@ title: Request for Proposal - Javascript Development (Contract Work)
 author:
   - name: Athanasia M. Mowinckel
     directory_id: "athanasia-mo-mowinckel"
-type: blog
 date: '2022-03-28'
 lastmod: '2022-03-28T08:41:18+02:00'
 keywords: []

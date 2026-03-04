@@ -2,7 +2,6 @@
 title: "Global Leadership Team Transition"
 author:
   - name: "Global Leadership Team"
-type: blog
 date: "2022-11-18"
 description: "Erin LeDell, Claudia Vitolo, and Hannah Frick step down from the Global Leadership Team."
 tags:

@@ -2,7 +2,6 @@
 title: "#BlackLivesMatters : une déclaration commune de Forwards et R-Ladies"
 author:
   - name: "R-Ladies Global Leadership Team"
-type: blog
 date: "2020-06-06"
 description: "#BlackLivesMatters : une déclaration commune de Forwards et R-Ladies"
 tags:

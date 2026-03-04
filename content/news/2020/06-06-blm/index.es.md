@@ -2,7 +2,6 @@
 title: "#VidasNegrasImportan: Una declaración conjunta de Forwards y R-Ladies"
 author:
   - name: "R-Ladies Global Leadership Team"
-type: blog
 date: "2020-06-06"
 description: "#VidasNegrasImportan: Una declaración conjunta de Forwards y R-Ladies"
 tags:

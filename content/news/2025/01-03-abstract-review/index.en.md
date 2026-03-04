@@ -2,7 +2,6 @@
 title: "Volunteer as an R-Ladies Abstract Reviewer!"
 author:
   - name: "Abstract Review Team"
-type: blog
 date: "2025-01-03"
 image:
   path: img/typing.jpg

@@ -2,7 +2,6 @@
 title: "We're Relaunching the R-Ladies Abstract Review System!"
 author:
   - name: "Abstract Review Team"
-type: blog
 date: "2025-01-16"
 image:
   path: img/letstalk.jpg

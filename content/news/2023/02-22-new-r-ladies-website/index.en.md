@@ -3,7 +3,6 @@ title: New R-Ladies Website
 author:
   - name: Athanasia M. Mowinckel
     directory_id: "athanasia-mo-mowinckel"
-type: blog
 date: "2023-02-22"
 tags:
   - infrastructure
