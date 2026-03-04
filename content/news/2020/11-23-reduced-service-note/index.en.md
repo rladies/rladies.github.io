@@ -5,10 +5,8 @@ author:
 type: blog
 date: "2020-11-23"
 description: "Reduced Service Mode for R-Ladies Global"
-tags:
-  - community
 categories:
-  - R-Ladies
+  - community
 slug: "reduced-service-note"
 aliases:
   - "/news/2020-11-23-reduced-service-note"

@@ -16,9 +16,7 @@ image:
   path: mic.jpg
 slug: invited-speakers
 categories:
-  - R-Ladies
-tags:
-  - conference
+  - tutorials
 editor:
   markdown:
     wrap: sentence

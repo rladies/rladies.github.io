@@ -7,9 +7,9 @@ date: "2025-01-16"
 image:
   path: img/letstalk.jpg
 tags:
-  - community
+  - abstract-review
 categories:
-  - R-Ladies
+  - programs
 summary: Supporting Aspiring Speakers in the R Community!
 slug: "abstract-review-relaunch"
 aliases:

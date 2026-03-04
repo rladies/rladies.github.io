@@ -5,10 +5,8 @@ author:
 type: blog
 date: "2023-11-10"
 output: html_document
-tags:
-  - community
 categories:
-  - R-Ladies
+  - community
 summary: R-Ladies are on mastodon's Hackyderm server! Follow us at [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)!
 slug: "mastodon-meet-the-r-ladies"
 aliases:

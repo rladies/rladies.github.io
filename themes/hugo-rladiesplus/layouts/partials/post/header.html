@@ -58,9 +58,12 @@
   {{ end }}
 </div>
 
-{{ with .Params.tags }}
+{{ if or .Params.categories .Params.tags }}
 <div class="flex flex-wrap gap-1.5 mb-8">
-  {{ range . }}
+  {{ range .Params.categories }}
+    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="badge badge-secondary no-underline">{{ . }}</a>
+  {{ end }}
+  {{ range .Params.tags }}
     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge badge-primary no-underline">{{ . }}</a>
   {{ end }}
 </div>

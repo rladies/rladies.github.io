@@ -4,9 +4,9 @@ author:
   - name: "Global Leadership Team"
 date: "2023-10-09"
 tags:
-  - community
+  - conferences
 categories:
-  - R-Ladies
+  - events
 editor_options:
   markdown:
     wrap: 72

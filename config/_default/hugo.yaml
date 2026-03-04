@@ -20,6 +20,10 @@ markup:
     renderer:
       lazyLoadImages: true
 
+taxonomies:
+  category: categories
+  tag: tags
+
 ignoreLogs:
   - "warning-goldmark-raw-html"
 

@@ -16,15 +16,16 @@
       {{ block "main" . }}
         <div class="site-container py-12">
           <div class="max-w-4xl mx-auto">
+            {{ $isFallback := or (eq .Params.translated false) (ne .Lang .Site.Language.Lang) }}
             {{ $articleLang := .Lang }}
-            {{ if eq .Params.translated false }}
+            {{ if $isFallback }}
               {{ $articleLang = .Params.language | default .Lang }}
             {{ end }}
             <article lang="{{ $articleLang }}">
               {{ block "title" . }}{{ end }}
 
               {{ block "translation" .}}
-                {{ if eq .Params.translated false }}
+                {{ if or (eq .Params.translated false) (ne .Lang .Site.Language.Lang) }}
                   <div class="alert-primary text-center mb-3 rounded-xl">
                     {{ i18n "missing_translation" }}
                   </div>

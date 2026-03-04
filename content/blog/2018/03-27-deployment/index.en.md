@@ -4,12 +4,10 @@ author:
   - name: "R-Ladies"
 date: "2018-03-27"
 description: "Part 2: Deployment and Bot Wrangling!"
-tags:
-  - twitter
-  - RStats
 categories:
-  - IWD
-  - R-Ladies
+  - events
+tags:
+  - iwd
 slug: "deployment"
 aliases:
   - "/blog/2018-03-27-deployment"

@@ -6,10 +6,8 @@ type: blog
 date: "2025-03-14"
 image:
   path: rladiesplus.png
-tags:
-  - rebrand
 categories:
-  - R-Ladies
+  - community
 slug: "announcement"
 aliases:
   - "/news/2025-03-14_rebranding-announcement"

@@ -5,10 +5,10 @@ author:
   - name: Sayantika Banik
 date: "2025-02-06"
 categories:
-  - R-Ladies
+  - tutorials
 tags:
-  - Abstract
-  - Video
+  - conferences
+  - abstract-review
 slug: "submit_posit_conf"
 aliases:
   - "/blog/2025-02-03-submit_posit_conf"

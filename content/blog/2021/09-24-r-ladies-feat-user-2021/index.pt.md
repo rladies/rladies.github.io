@@ -3,12 +3,10 @@ title: R-Ladies+ Feat. useR! 2021
 author: ""
 date: "2021-09-24"
 categories:
-  - R-Ladies
+  - events
 tags:
-  - useR
+  - conferences
   - meta-meetup
-  - community
-  - online-meetup
 lastmod: "2021-10-04T20:34:42+02:00"
 keywords: []
 description: ""

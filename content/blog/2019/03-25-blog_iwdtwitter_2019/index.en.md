@@ -9,12 +9,10 @@ editor:
   - name: Gabriela De Queiroz
 date: "2019-03-25"
 description: "Explaining IWD 2019 Twitter project"
-tags:
-  - Twitter
-  - RStats
 categories:
-  - IWD
-  - R-Ladies
+  - events
+tags:
+  - iwd
 output: html_document
 slug: "blog_iwdtwitter_2019"
 aliases:

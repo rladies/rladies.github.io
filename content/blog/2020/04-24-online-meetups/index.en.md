@@ -4,12 +4,10 @@ author:
   - name: R-Ladies Global Leadership Team
 date: "2020-04-24"
 description: "R-Ladies Infrastructure for Online Meetups"
-tags:
-  - community
-  - online-meetups
-  - RStats
 categories:
-  - R-Ladies
+  - tutorials
+tags:
+  - infrastructure
 always_allow_html: yes
 output:
   html_document:

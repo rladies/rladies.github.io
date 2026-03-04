@@ -47,13 +47,18 @@
           {{ .Summary | plainify | truncate 200 }}
         </div>
 
-        {{ if .Params.tags }}
+        {{ if or .Params.categories .Params.tags }}
           <div class="mb-4 flex flex-wrap gap-1">
-            {{ range first 4 .Params.tags }}
-              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge badge-primary no-underline">
+            {{ range .Params.categories }}
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="badge badge-secondary no-underline">
                 {{ . }}
               </a>
             {{ end }}
+            {{ with .Params.tags }}{{ range first 4 . }}
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge badge-primary no-underline">
+                {{ . }}
+              </a>
+            {{ end }}{{ end }}
           </div>
         {{ end }}
 

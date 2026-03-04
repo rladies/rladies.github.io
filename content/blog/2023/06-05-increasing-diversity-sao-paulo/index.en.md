@@ -8,10 +8,10 @@ author:
   - name: Ana Paula Rocha
 date: "2023-10-04"
 categories:
-  - R-Ladies
-tags:
-  - latin america
   - community
+tags:
+  - social-justice
+  - latin-america
 slug: "increasing-diversity-sao-paulo"
 aliases:
   - "/blog/2023-06-05-increasing-diversity-sao-paulo"

@@ -6,9 +6,9 @@ type: blog
 date: "2019-04-08"
 description: "R-Ladies Global's disapproval of DataCamp's handling of sexual assault"
 tags:
-  - community
+  - social-justice
 categories:
-  - R-Ladies
+  - community
 output: html_document
 slug: "statement-about-datacamp"
 aliases:

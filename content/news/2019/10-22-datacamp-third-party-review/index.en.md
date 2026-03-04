@@ -5,9 +5,9 @@ author:
 date: "2019-10-22"
 description: "R-Ladies Global's response to the 3rd-party review of DataCamp"
 tags:
-  - community
+  - social-justice
 categories:
-  - R-Ladies
+  - community
 output: html_document
 slug: "datacamp-third-party-review"
 aliases:

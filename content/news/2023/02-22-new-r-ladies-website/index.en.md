@@ -5,9 +5,9 @@ author:
 type: blog
 date: "2023-02-22"
 tags:
-  - community
+  - infrastructure
 categories:
-  - R-Ladies
+  - community
 ---
 
 

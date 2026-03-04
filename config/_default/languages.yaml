@@ -22,3 +22,45 @@ fr:
     languageName: "Français"
     weight: 4
     description: "RLadies+ is a world-wide organization to promote gender diversity in the R community"
+  menus:
+    main:
+      - identifier: find
+        url: "#"
+        weight: 1
+      - identifier: events
+        url: /evenements/
+        weight: 1
+        parent: find
+      - identifier: chapters
+        url: /chapitres/
+        weight: 2
+        parent: find
+      - identifier: directory
+        url: /membres/
+        weight: 3
+        parent: find
+      - identifier: news
+        url: /actualites/
+        weight: 2
+      - identifier: programs
+        url: /programmes/
+        weight: 3
+      - identifier: about-us
+        url: "#"
+        weight: 99
+      - identifier: our-story
+        url: /a-propos/notre-histoire/
+        weight: 1
+        parent: about-us
+      - identifier: get-involved
+        url: /a-propos/impliquer/
+        weight: 2
+        parent: about-us
+      - identifier: global-team
+        url: /a-propos/equipe-mondiale/
+        weight: 3
+        parent: about-us
+      - identifier: press
+        url: /presse
+        weight: 5
+        parent: about-us

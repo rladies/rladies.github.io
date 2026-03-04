@@ -6,9 +6,9 @@ type: blog
 date: "2023-04-11"
 description: ""
 tags:
-  - global
+  - leadership
 categories:
-  - R-Ladies
+  - community
 slug: "global-team-recruiting"
 aliases:
   - "/news/2023-04-11-global-team-recruiting"

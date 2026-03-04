@@ -8,7 +8,7 @@ description: "#BlackLivesMatter: A joint statement by Forwards and R-Ladies"
 tags:
   - social-justice
 categories:
-  - R-Ladies
+  - community
 output: html_document
 slug: "blm"
 aliases:

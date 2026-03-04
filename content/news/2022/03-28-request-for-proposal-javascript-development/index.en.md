@@ -14,9 +14,9 @@ contentCopyright: no
 reward: no
 mathjax: no
 tags:
-  - community
+  - infrastructure
 categories:
-  - R-Ladies
+  - community
 slug: "request-for-proposal-javascript-development"
 aliases:
   - '/news/2022-03-28-request-for-proposal-javascript-development'

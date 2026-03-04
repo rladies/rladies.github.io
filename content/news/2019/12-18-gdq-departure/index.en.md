@@ -6,9 +6,9 @@ type: blog
 date: "2019-12-18"
 description: "Gabriela de Queiroz steps down from the R-Ladies Global Leadership Team"
 tags:
-  - community
+  - leadership
 categories:
-  - R-Ladies
+  - community
 output: html_document
 slug: "gdq-departure"
 aliases:

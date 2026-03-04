@@ -4,13 +4,10 @@ author:
   - name: Shannon Pileggi
 date: "2021-09-23"
 description: "From creating content to cultivating connections."
-tags:
-  - WeAreRLadies
-  - twitter
-  - rocur
-  - community
 categories:
-  - R-Ladies
+  - programs
+tags:
+  - rocur
 slug: "curating-for-wearerladies-on-twitter"
 aliases:
   - "/blog/2021-09-23-curating-for-wearerladies-on-twitter"

@@ -6,10 +6,8 @@ type: blog
 date: "2025-03-14"
 image:
   path: cfp.png
-tags:
-  - rebrand
 categories:
-  - R-Ladies
+  - community
 slug: "cfp"
 aliases:
   - "/news/2025-03-14_rebranding-cfp"

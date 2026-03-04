@@ -8,11 +8,11 @@ author:
   - name: Paloma Rojas"
 date: "2020-06-24"
 description: ""
-tags:
-  - Community
-  - online-meetups
 categories:
-  - R-Ladies
+  - events
+tags:
+  - meta-meetup
+  - latin-america
 slug: "spanishmetameetup"
 aliases:
   - "/blog/2020-06-24-spanishmetameetup"

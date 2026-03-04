@@ -8,7 +8,7 @@ description: "#VidasNegrasImportan: Una declaración conjunta de Forwards y R-La
 tags:
   - social-justice
 categories:
-  - R-Ladies
+  - community
 slug: "blm"
 aliases:
   - "/news/2020-06-06-blm"

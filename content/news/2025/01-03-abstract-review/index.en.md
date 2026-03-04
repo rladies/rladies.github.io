@@ -7,9 +7,9 @@ date: "2025-01-03"
 image:
   path: img/typing.jpg
 tags:
-  - community
+  - abstract-review
 categories:
-  - R-Ladies
+  - programs
 summary: Volunteer as an R-Ladies Abstract Reviewer to support diversity in tech!
 slug: "abstract-review"
 aliases:

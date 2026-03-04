@@ -6,8 +6,7 @@ author:
   - name: Janani Ravi
 date: "2025-02-08"
 categories:
-  - R-Ladies
-  - Bioconductor
+  - partnerships
 image:
   path: "rladies-bioc.png"
 editor:

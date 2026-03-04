@@ -6,11 +6,10 @@ author:
   - name: Laura
 date: "2019-02-16"
 description: "Extendiendo la red de R-Ladies después de unas vacaciones"
-tags:
-  - vacaciones
-  - America del Sur
 categories:
-  - R-Ladies
+  - community
+tags:
+  - latin-america
 output: html_document
 slug: "vacation_grow_rladiesnetwork"
 aliases:

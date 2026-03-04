@@ -4,8 +4,8 @@ author:
   - name: R-Ladies
 date: 2018-02-24
 type: post
-categories: ["R-Ladies"]
-tags: ["history"]
+categories:
+  - community
 slug: "history"
 aliases:
   - "/blog/2018-02-24-history"

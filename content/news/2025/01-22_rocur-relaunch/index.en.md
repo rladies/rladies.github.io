@@ -9,7 +9,7 @@ image:
 tags:
   - rocur
 categories:
-  - R-Ladies
+  - programs
 summary: We're looking for curators for the We Are R-Ladies Bluesky account!
 slug: "relaunch"
 aliases:

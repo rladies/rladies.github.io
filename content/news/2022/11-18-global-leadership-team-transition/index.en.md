@@ -8,7 +8,7 @@ description: "Erin LeDell, Claudia Vitolo, and Hannah Frick step down from the G
 tags:
   - leadership
 categories:
-  - R-Ladies
+  - community
 slug: "global-leadership-team-transition"
 aliases:
   - "/news/2022-11-18-global-leadership-team-transition"

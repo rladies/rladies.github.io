@@ -6,11 +6,8 @@ author:
   - name: Laura Acion
 date: "2020-01-27"
 description: ""
-tags:
-  - RStats
-  - Video
 categories:
-  - R-Ladies
+  - tutorials
 always_allow_html: yes
 slug: "RLadies_video_2019"
 aliases:

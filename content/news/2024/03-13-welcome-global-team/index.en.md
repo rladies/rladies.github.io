@@ -8,9 +8,9 @@ output: html_document
 image:
   path: img/global_team.png
 tags:
-  - community
+  - leadership
 categories:
-  - R-Ladies
+  - community
 summary: R-Ladies Global Team has 15 new members!
 slug: "welcome-global-team"
 aliases:

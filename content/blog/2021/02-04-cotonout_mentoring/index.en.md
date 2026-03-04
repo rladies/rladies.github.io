@@ -5,11 +5,10 @@ author:
     url: https://twitter.com/sbnadejda)
 date: "2021-02-04"
 description: "R-Ladies Mentoring Program"
-tags:
-  - community
-  - mentoring
 categories:
-  - R-Ladies
+  - programs
+tags:
+  - mentoring
 slug: "cotonout_mentoring"
 aliases:
   - "/blog/2021-02-04-cotonout_mentoring"

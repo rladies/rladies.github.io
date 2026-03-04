@@ -5,10 +5,8 @@ author:
 type: blog
 date: "2023-12-06"
 output: html_document
-tags:
-  - community
 categories:
-  - R-Ladies
+  - partnerships
 summary: R-Ladies now has a Posit Cloud account available for R-Ladies meet-ups.
 slug: "posit-cloud"
 aliases:

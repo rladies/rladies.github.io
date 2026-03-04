@@ -8,7 +8,7 @@ description: "#VidasNegrasImportam: Uma declaração conjunta de Forwards e R-La
 tags:
   - social-justice
 categories:
-  - R-Ladies
+  - community
 output: html_document
 slug: "blm"
 aliases:
