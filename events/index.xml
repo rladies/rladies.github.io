@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 04 Mar 2026 13:10:59 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 05 Mar 2026 01:12:49 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 3 going</p>
@@ -70,7 +70,7 @@ Advantages of using the gptstudio package:
         <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Working Smarter with {dplyr} 1.2.0 – A Practical Session - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313630747/</link><guid>https://www.meetup.com/rladies-rome/events/313630747/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, March 18, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 13 going</p>
+        <p><strong>Attendees:</strong> 33 going</p>
         <p>**{dplyr} 1.2.0 is out, and wow, is it a delight!**
 
 **Join us for a tour** of the new tools in {dplyr} 1.2.0 and when you should use them.
@@ -82,7 +82,16 @@ The tidyverse keeps evolving, and **{dplyr} 1.2.0** brings a set of new tools th
 Whether you regularly work with **R and the tidyverse**, or you’re looking to sharpen your data wrangling skills, this session will help you better understand the design philosophy behind the latest **{dplyr}** release and how to apply it effectively.
 
 Expect a clear walkthrough, practical examples, and time for questions.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/313630747/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>R-Ladies Corvallis: R Show &amp; Tell - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/313408453/</link><guid>https://www.meetup.com/rladies-corvallis/events/313408453/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/313630747/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Data driven decision making for fantasy basketball - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/313639240/</link><guid>https://www.meetup.com/rladies-melbourne/events/313639240/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
+        <p><strong>When:</strong> Wednesday, March 18, 2026 at 6:30 AM UTC</p>
+        <p><strong>Where:</strong> DiUS</p>
+        <p><strong>Attendees:</strong> 6 going</p>
+        <p>Integral to the modern data scientists toolkit is understanding how to turn data into decisions. A core part of this is thinking about the end stage of your analysis pipeline, and how the communication and visualisation of your results will factor into decision making.
+
+But it&#39;s not just enough to deliver a solution. Part of successfully supporting end-user decisions comes from co-design. That means thinking about end user needs and how your end-users will engage with your solution.
+
+This talk explores both of these issues using fantasy basketball statistics. So come along if you have a love of data and data-driven decision making. Also come along if you are fan of sports analytics or forecasting.</p>
+        <p><a href="https://www.meetup.com/rladies-melbourne/events/313639240/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Melbourne)</author><category>R-Ladies Melbourne</category></item><item><title>R-Ladies Corvallis: R Show &amp; Tell - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/313408453/</link><guid>https://www.meetup.com/rladies-corvallis/events/313408453/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
         <p><strong>When:</strong> Friday, March 13, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> Common Fields</p>
         <p><strong>Attendees:</strong> 9 going</p>
@@ -132,7 +141,7 @@ We are grateful to be part of the Bayview Yards Meetup Program and extend our th
         <p><a href="https://www.meetup.com/rladies-ottawa/events/313489942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Análise de Dados Abertos com R – Open Data Day 2026 - R-Ladies São Paulo</title><link>https://www.meetup.com/rladies-sao-paulo/events/313564460/</link><guid>https://www.meetup.com/rladies-sao-paulo/events/313564460/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies São Paulo</p>
         <p><strong>When:</strong> Saturday, March 7, 2026 at 12:30 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 20 going</p>
+        <p><strong>Attendees:</strong> 26 going</p>
         <p>O evento **“Análise de Dados Abertos com R – Open Data Day 2026”**, organizado pela R-Ladies São Paulo, é um meetup online pensado para quem quer colocar a mão na massa com dados abertos usando R.
 
 Com cerca de 3 horas de duração, o encontro vai combinar uma introdução sobre o que são dados abertos, porque eles são importantes e como podem ser usados para gerar análises, com um momento de **live coding em R** (mostrando passo a passo como importar, tratar, explorar e visualizar esses dados).
