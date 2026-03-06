@@ -1,0 +1,258 @@
+{{ define "main" }}
+
+{{ $chapterGroupUrlname := .Params.urlname }}
+{{ $allEvents := $.Store.Get "events" }}
+{{ $currentDate := now }}
+
+{{ $upcomingEvents := slice }}
+{{ $formerEvents := slice }}
+
+{{ range $event := $allEvents }}
+  {{ if eq $event.group_urlname $chapterGroupUrlname }}
+    {{ $eventStart := time.AsTime $event.datetime }}
+    {{ if $eventStart.After $currentDate }}
+      {{ $upcomingEvents = $upcomingEvents | append $event }}
+    {{ else }}
+      {{ $formerEvents = $formerEvents | append $event }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $upcomingEvents = sort $upcomingEvents "datetime" }}
+{{ $formerEvents = sort $formerEvents "datetime" "desc" }}
+
+{{ $status := .Params.status }}
+{{ $sixMonthsAgo := $currentDate.AddDate 0 -6 0 }}
+{{ if and (eq $status "active") (eq (len $upcomingEvents) 0) }}
+  {{ $lastEvent := index $formerEvents 0 }}
+  {{ if $lastEvent }}
+    {{ $lastEventDate := time.AsTime $lastEvent.datetime }}
+    {{ if $lastEventDate.Before $sixMonthsAgo }}
+      {{ $status = "inactive" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<section class="site-section-lg">
+  <div class="site-container max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 fade-in-up">
+      {{ $imgPattern := printf "chapters/%s.*" .Params.file }}
+      {{ $img := resources.GetMatch $imgPattern }}
+      {{ with $img }}
+        <div class="flex items-center justify-center" style="min-height: 20rem;">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="max-w-full max-h-72 object-contain">
+        </div>
+      {{ end }}
+
+      <div class="flex flex-col justify-center gap-5">
+        <div class="flex items-center gap-3 flex-wrap">
+          {{ with $status }}
+            <span class="badge {{ if eq . "active" }}badge-primary{{ else if eq . "inactive" }}badge-secondary{{ else }}badge-warning{{ end }}">
+              <i class="fa-solid {{ if eq . "active" }}fa-circle-check{{ else if eq . "inactive" }}fa-circle-pause{{ else }}fa-circle-question{{ end }} mr-1"></i>
+              {{ . | humanize }}
+            </span>
+          {{ end }}
+          {{ with .Params.members }}
+            <span class="text-sm text-muted">
+              <i class="fa-solid fa-users mr-1"></i>{{ . }} {{ i18n "members" }}
+            </span>
+          {{ end }}
+        </div>
+
+        <p class="text-lg text-muted">
+          <i class="fa-solid fa-location-dot text-primary mr-2"></i>
+          {{ with .Params.city }}{{ . | humanize }}{{ end }}{{ with .Params.state_region }}, {{ . | humanize }}{{ end }}{{ with .Params.country }}, {{ . | humanize }}{{ end }}
+        </p>
+
+        {{ with .Params.social_media }}
+          <div class="flex gap-4 text-xl">
+            {{ partial "social_media.html" (dict "data" . "relme" true) }}
+          </div>
+        {{ end }}
+
+        {{ with .Params.urlname }}
+          <div>
+            <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer"
+               class="btn btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{{ i18n "join_chapter" }}
+            </a>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+    {{ if (and .Params.lat .Params.lon (ne .Params.city "Remote")) }}
+      <div class="card rounded-xl overflow-hidden mb-12 fade-in-up">
+        {{ partial "map.html" (dict
+          "id" "chapter_map"
+          "height" "300px"
+          "data" (dict
+            "points" (slice (dict
+              "name" .Title
+              "members" .Params.members
+              "latitude" .Params.lat
+              "longitude" .Params.lon
+            ))
+          )
+          "radius" 7
+          "zoom" (dict
+            "lat" .Params.lat
+            "lon" .Params.lon
+            "level" 15
+            "iso" .Params.country_iso
+          )
+          "color" "#881ef9"
+        ) }}
+      </div>
+    {{ end }}
+
+    {{ with .Params.organizers }}
+      <div class="card rounded-xl mb-8 fade-in-up" x-data="{ tab: 'current' }">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-4">
+            <i class="fa-solid fa-people-group text-accent-rose mr-2"></i>{{ i18n "organizers" }}
+          </h2>
+          <div class="tab-list" role="tablist">
+            <button class="tab-button" :class="tab === 'current' && 'active'" @click="tab = 'current'" role="tab">
+              {{ i18n "tab_current" }}{{ with .current }} ({{ len . }}){{ end }}
+            </button>
+            <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab">
+              {{ i18n "tab_former" }}{{ with .former }} ({{ len . }}){{ end }}
+            </button>
+          </div>
+          <div x-show="tab === 'current'" class="tab-panel" role="tabpanel">
+            {{ with .current }}
+              <ul class="list-unstyled">
+                {{ range . }}
+                  <li class="py-3 border-b border-gray-100 last:border-0 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center shrink-0">
+                      {{ substr . 0 1 | upper }}
+                    </span>
+                    <span class="font-medium">{{ . }}</span>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+          {{ with .former }}
+            <div x-show="tab === 'former'" class="tab-panel" role="tabpanel" x-cloak>
+              <ul class="list-unstyled">
+                {{ range . }}
+                  <li class="py-3 border-b border-gray-100 last:border-0 flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-full bg-surface-alt text-muted text-xs font-bold flex items-center justify-center shrink-0">
+                      {{ substr . 0 1 | upper }}
+                    </span>
+                    <span class="text-muted">{{ . }}</span>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if or $upcomingEvents $formerEvents }}
+      <div class="card rounded-xl fade-in-up" x-data="{ tab: '{{ if gt (len $upcomingEvents) 0 }}upcoming{{ else }}former{{ end }}' }">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-4">
+            <i class="fa-solid fa-calendar-days text-accent-blue mr-2"></i>{{ i18n "events" }}
+          </h2>
+          <div class="tab-list" role="tablist">
+            <button class="tab-button" :class="tab === 'upcoming' && 'active'" @click="tab = 'upcoming'" role="tab">
+              {{ i18n "tab_upcoming" }} ({{ len $upcomingEvents }})
+            </button>
+            <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab">
+              {{ i18n "tab_former" }} ({{ len $formerEvents }})
+            </button>
+          </div>
+
+          <div x-show="tab === 'upcoming'" class="tab-panel" role="tabpanel">
+            {{ if gt (len $upcomingEvents) 0 }}
+              {{ $nextEvent := index $upcomingEvents 0 }}
+              <div class="rounded-xl border-2 border-accent-blue mb-6 overflow-hidden">
+                <div class="bg-accent-blue text-white px-6 py-3 flex items-center gap-2">
+                  <i class="fa-solid fa-star"></i>
+                  <span class="font-semibold">{{ i18n "next_event" }}</span>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-lg font-semibold mb-3">{{ $nextEvent.title }}</h3>
+                  <div class="flex flex-col sm:flex-row gap-4 text-sm text-muted">
+                    <span>
+                      <i class="fa-regular fa-calendar mr-1 text-accent-blue"></i>
+                      {{ dateFormat "Monday, January 2, 2006 at 3:04 PM" (time.AsTime $nextEvent.datetime) }}
+                    </span>
+                    {{ if $nextEvent.location }}
+                      <span>
+                        <i class="fa-solid fa-location-dot mr-1 text-accent-blue"></i>{{ $nextEvent.location }}
+                      </span>
+                    {{ end }}
+                  </div>
+                  {{ with $nextEvent.id }}
+                    <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}"
+                       target="_blank" rel="noopener" class="btn btn-accent-blue btn-sm mt-4">
+                      {{ i18n "rsvp" }} <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                  {{ end }}
+                </div>
+              </div>
+              {{ $upcomingEvents = after 1 $upcomingEvents }}
+            {{ end }}
+
+            {{ if gt (len $upcomingEvents) 0 }}
+              <ul class="list-unstyled">
+                {{ range $event := $upcomingEvents }}
+                  <li class="py-4 border-b border-gray-100 last:border-0 flex justify-between items-start">
+                    <div>
+                      <h4 class="text-sm font-semibold mb-1">{{ $event.title }}</h4>
+                      <span class="text-sm text-muted">
+                        <i class="fa-regular fa-calendar mr-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.datetime) }}
+                        {{ if $event.location }}<br><i class="fa-solid fa-location-dot mr-1"></i>{{ $event.location }}{{ end }}
+                      </span>
+                    </div>
+                    {{ with $event.id }}
+                      <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}"
+                         target="_blank" rel="noopener" class="btn btn-sm btn-outline shrink-0 ml-3">
+                        {{ i18n "details" }} <i class="fas fa-arrow-right ml-1"></i>
+                      </a>
+                    {{ end }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ else if eq (len $upcomingEvents) 0 }}
+              <p class="text-muted py-4">{{ i18n "no_upcoming_events" }}</p>
+            {{ end }}
+          </div>
+
+          <div x-show="tab === 'former'" class="tab-panel" role="tabpanel" x-cloak>
+            {{ if gt (len $formerEvents) 0 }}
+              <ul class="list-unstyled">
+                {{ range $event := $formerEvents }}
+                  <li class="py-4 border-b border-gray-100 last:border-0 flex justify-between items-start">
+                    <div>
+                      <h4 class="text-sm font-semibold mb-1">
+                        {{ with $event.id }}
+                          <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}" target="_blank" rel="noopener" class="text-dark hover:text-primary no-underline transition-colors">
+                        {{ end }}
+                        {{ $event.title }}
+                        {{ with $event.id }}</a>{{ end }}
+                      </h4>
+                      <span class="text-sm text-muted">
+                        <i class="fa-regular fa-calendar mr-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.datetime) }}
+                        {{ if $event.location }}<br><i class="fa-solid fa-location-dot mr-1"></i>{{ $event.location }}{{ end }}
+                      </span>
+                    </div>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ else }}
+              <p class="text-muted py-4">{{ i18n "no_events_yet" }}</p>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

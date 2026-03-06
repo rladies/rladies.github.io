@@ -2,19 +2,21 @@
 title: "IWD 2019 Twitter Action"
 author:
   - name: Yanina Bellini
+    directory_id: "yanina-bellini-saibene"
   - name: Patricia Loto
+    directory_id: "patricia-andrea-loto"
   - name: Divya Seernani
+    directory_id: "divya-seernani"
 editor:
   - name: Roxana Noelia Villafane
+    directory_id: "roxana-noelia-villafane"
   - name: Gabriela De Queiroz
 date: "2019-03-25"
 description: "Explaining IWD 2019 Twitter project"
-tags:
-  - Twitter
-  - RStats
 categories:
-  - IWD
-  - R-Ladies
+  - events
+tags:
+  - iwd
 output: html_document
 slug: "blog_iwdtwitter_2019"
 aliases:

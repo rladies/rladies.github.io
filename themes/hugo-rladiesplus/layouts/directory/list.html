@@ -1,0 +1,195 @@
+{{ define "main" }}
+{{ $directory := .Pages }}
+{{ $ints := slice }}
+{{ $langs := slice }}
+{{ $loc := slice }}
+{{ $countries := slice }}
+
+{{ $continentMap := dict }}
+{{ range $continent, $countryList := site.Data.continents }}
+  {{ range $countryList }}
+    {{ $continentMap = merge $continentMap (dict . $continent) }}
+  {{ end }}
+{{ end }}
+
+{{ range $directory }}
+  {{ with .Params.interests }}
+      {{ $ints = $ints | append  . }}
+    {{ end }}
+
+    {{ with .Params.languages }}
+      {{ $langs = $langs | append  . }}
+    {{ end }}
+
+    {{ with .Params.location }}
+      {{ $tmp := newScratch }}
+      {{ with .country }}
+        {{ $tmp.Set "loc" . }}
+        {{ $countries = $countries | append  . }}
+      {{ end }}
+
+      {{ with .state }}
+        {{ $tmp.Add "loc" ( . | printf ", %s") }}
+      {{ end }}
+
+      {{ with .city }}
+        {{ $tmp.Add "loc" ( . | printf ", %s") }}
+      {{ end }}
+
+      {{ $loc = $loc | append  ($tmp.Get "loc") }}
+  {{ end }}
+{{ end }}
+{{ $ints := $ints | uniq | sort }}
+{{ $langs := $langs | uniq | sort }}
+{{ $loc := $loc | uniq | sort }}
+{{ $countries := $countries | uniq | sort }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto text-center mb-10">
+      <div class="entry-content fade-in-up">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <div class="max-w-sm mx-auto mb-10 fade-in-up">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+        <p class="stat-number">{{ $directory | len }}</p>
+        <p class="stat-label">{{ i18n "counter_entries" | default "Members" }}</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 fade-in-up relative z-10">
+      <div class="card rounded-xl">
+        <div class="p-5">
+          <div class="flex items-center mb-3">
+            <i class="fa-solid fa-tag text-primary mr-2"></i>
+            <label for="filter-interests" class="form-label mb-0 font-semibold">{{ i18n "interests" }}</label>
+          </div>
+          <select class="form-select" id="filter-interests" multiple data-group="interests">
+            {{ range $ints }}
+              <option value="{{. | urlize }}">{{.}}</option>
+            {{ end }}
+          </select>
+        </div>
+      </div>
+
+      <div class="card rounded-xl">
+        <div class="p-5">
+          <div class="flex items-center mb-3">
+            <i class="fa-solid fa-language text-primary mr-2"></i>
+            <label for="filter-languages" class="form-label mb-0 font-semibold">{{ i18n "languages" }}</label>
+          </div>
+          <select class="form-select" id="filter-languages" multiple data-group="languages">
+            {{ range $langs }}
+              <option value="{{. | urlize }}">{{.}}</option>
+            {{ end }}
+          </select>
+        </div>
+      </div>
+
+      <div class="card rounded-xl">
+        <div class="p-5">
+          <div class="flex items-center mb-3">
+            <i class="fa-solid fa-map-marker-alt text-primary mr-2"></i>
+            <label for="filter-location" class="form-label mb-0 font-semibold">{{ i18n "location" }}</label>
+          </div>
+          {{ $continents := slice "Africa" "Asia" "Europe" "Latin America" "North America" "Oceania" "Other" }}
+          <select class="form-select" id="filter-location" multiple data-group="location">
+            {{ range $continent := $continents }}
+              {{ $continentCountries := slice }}
+              {{ range $countries }}
+                {{ $c := index $continentMap . | default "Other" }}
+                {{ if eq $c $continent }}
+                  {{ $continentCountries = $continentCountries | append . }}
+                {{ end }}
+              {{ end }}
+              {{ if $continentCountries }}
+                <optgroup label="{{ $continent }}">
+                  {{ range $continentCountries }}
+                    {{ $c := . }}
+                    {{ range $loc }}
+                      {{ $l := findRE (printf "^%s" $c) . }}
+                      {{ if gt (len $l) 0 }}
+                        <option value="{{ . | htmlUnescape | urlize }}">{{ replaceRE (printf "%s, " $c) "" . }}</option>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                </optgroup>
+              {{ end }}
+            {{ end }}
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="breakout">
+  <div class="container-wide p-0 px-3">
+    <ul class="shuffle-wrapper w-full list-unstyled" id="directory-grid">
+      {{ range $name := $directory | shuffle }}
+        {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
+{{ end }}
+
+{{ define "footer" }}
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    const interestsChoice = new Choices('#filter-interests', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: '{{ i18n "filter_interests" }}',
+      searchPlaceholderValue: '{{ i18n "search_interests" }}'
+    });
+
+    const languagesChoice = new Choices('#filter-languages', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: '{{ i18n "filter_languages" }}',
+      searchPlaceholderValue: '{{ i18n "search_languages" }}'
+    });
+
+    const locationChoice = new Choices('#filter-location', {
+      removeItemButton: true,
+      searchEnabled: true,
+      placeholderValue: '{{ i18n "filter_location" }}',
+      searchPlaceholderValue: '{{ i18n "search_location" }}'
+    });
+
+    const shuffleContainer = document.getElementById('directory-grid');
+    const shuffleInstance = new Shuffle(shuffleContainer, {
+      itemSelector: '.shuffle-item',
+      buffer: 1,
+      isCentered: true
+    });
+
+    function applyFilters() {
+      const interests = interestsChoice.getValue(true);
+      const languages = languagesChoice.getValue(true);
+      const locations = locationChoice.getValue(true);
+
+      shuffleInstance.filter(item => {
+        const itemInterests = JSON.parse(item.getAttribute('data-interests')) || [];
+        const itemLanguages = JSON.parse(item.getAttribute('data-languages')) || [];
+        const itemLocations = JSON.parse(item.getAttribute('data-location')) || [];
+
+        return (
+          (interests.length === 0 || interests.some(i => itemInterests.includes(i))) &&
+          (languages.length === 0 || languages.some(l => itemLanguages.includes(l))) &&
+          (locations.length === 0 || locations.some(loc => itemLocations.includes(loc)))
+        );
+      });
+    }
+
+    document.querySelectorAll('[id^="filter-"]').forEach(select => {
+      select.addEventListener('change', applyFilters);
+    });
+  });
+</script>
+{{ end }}

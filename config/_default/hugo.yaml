@@ -1,5 +1,5 @@
-title: "R-Ladies Global"
-theme: "hugo-rladies"
+title: "RLadies+ Global"
+theme: "hugo-rladiesplus"
 publishDir: "public"
 
 languageCode: "en"
@@ -14,6 +14,15 @@ minify:
 
 buildFuture: true
 buildDrafts: true
+
+markup:
+  goldmark:
+    renderer:
+      lazyLoadImages: true
+
+taxonomies:
+  category: categories
+  tag: tags
 
 ignoreLogs:
   - "warning-goldmark-raw-html"

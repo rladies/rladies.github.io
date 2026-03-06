@@ -6,11 +6,10 @@ author:
   - name: Laura
 date: "2018-10-27"
 description: "Growing the R-Ladies Network after a Vacation"
-tags:
-  - Vacation
-  - South America
 categories:
-  - R-Ladies
+  - community
+tags:
+  - latin-america
 output: html_document
 slug: "vacation_grow_rladiesnetwork"
 aliases:

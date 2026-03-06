@@ -1,0 +1,62 @@
+@layer components {
+  .hero-home {
+    @apply relative overflow-hidden flex items-center;
+    min-height: 85vh;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(135deg, var(--color-light) 0%, var(--color-surface) 50%, color-mix(in srgb, var(--color-primary) 5%, var(--color-light)) 100%);
+  }
+
+  .hero-home-content {
+    @apply grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto text-center md:text-left;
+  }
+
+  .hero-text {
+    @apply flex flex-col items-center md:items-start;
+  }
+
+  .hero-image {
+    @apply hidden md:flex flex-col items-end gap-2;
+  }
+
+  .hero-photo {
+    @apply w-full rounded-2xl object-cover;
+    aspect-ratio: 4/3;
+    box-shadow: 0 20px 60px rgba(136, 30, 249, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-rlogo {
+    filter: drop-shadow(0 20px 60px rgba(136, 30, 249, 0.2)) drop-shadow(0 8px 24px rgba(0, 0, 0, 0.1));
+  }
+
+  .hero-headline {
+    @apply text-4xl md:text-5xl lg:text-6xl font-medium mb-6;
+    color: var(--color-dark);
+    letter-spacing: -0.03em;
+  }
+
+  .hero-subheadline {
+    @apply text-lg md:text-xl font-light leading-relaxed mb-10 max-w-2xl;
+    color: var(--color-muted);
+  }
+
+  .hero-cta {
+    @apply flex flex-col sm:flex-row gap-4 justify-center md:justify-start;
+  }
+
+  .hero-home-accent {
+    @apply absolute -bottom-px left-0 right-0 pointer-events-none;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, var(--color-light));
+  }
+
+  .hero-inner {
+    @apply pt-28 pb-10;
+    background-color: var(--color-surface);
+  }
+
+  .hero-inner-title {
+    @apply text-3xl md:text-4xl font-medium text-dark text-center;
+    letter-spacing: -0.02em;
+  }
+}

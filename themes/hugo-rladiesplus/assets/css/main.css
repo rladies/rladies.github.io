@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* RLadies+ Brand Theme */
+@theme {
+  --color-primary: #881ef9;
+  --color-primary-light: #a152f8;
+  --color-primary-50: #bb86f7;
+  --color-primary-lighter: #d4b9f5;
+  --color-primary-dark: #6b0fd4;
+  --color-primary-darker: #5009a8;
+
+  --color-accent-blue: #146af9;
+  --color-accent-blue-75: #4a8bf8;
+  --color-accent-blue-50: #81acf7;
+  --color-accent-blue-25: #b7ccf5;
+
+  --color-accent-rose: #ff5b92;
+  --color-accent-rose-75: #fb80ab;
+  --color-accent-rose-50: #f6a4c3;
+  --color-accent-rose-25: #f2c9dc;
+
+  --color-dark: #2f2f30;
+  --color-dark-75: #5f5f61;
+  --color-dark-50: #8e8e92;
+  --color-dark-25: #bebec3;
+
+  --color-light: #ededf4;
+  --color-muted: #5d5f66;
+  --color-surface: #f8f8fc;
+  --color-surface-alt: #ebe3f6;
+
+  --font-sans: 'Poppins', sans-serif;
+  --font-mono: 'Inconsolata Variable', monospace;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-card-hover: 0 10px 25px rgba(136,30,249,0.08), 0 4px 10px rgba(0,0,0,0.06);
+  --shadow-elevated: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+/* Font Faces */
+@layer base {
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/webfonts/google-fonts/poppins/poppins-latin-300-normal.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/webfonts/google-fonts/poppins/poppins-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/webfonts/google-fonts/poppins/poppins-latin-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/webfonts/google-fonts/poppins/poppins-latin-600-normal.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/webfonts/google-fonts/poppins/poppins-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Inconsolata Variable';
+    src: url('/webfonts/google-fonts/inconsolata/inconsolata-latin-wght-normal.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    line-height: 1.6;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+    color: var(--color-dark);
+  }
+
+  h1 { font-weight: 500; letter-spacing: -0.02em; }
+  h2 { font-weight: 600; letter-spacing: -0.01em; }
+  h3, h4, h5, h6 { font-weight: 600; }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--color-primary-dark);
+  }
+
+  pre, code {
+    font-family: var(--font-mono);
+  }
+
+}
+
+/* Component imports */
+@import "./components/layout.css";
+@import "./components/nav.css";
+@import "./components/hero.css";
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/typography.css";
+@import "./components/forms.css";
+@import "./components/tables.css";
+@import "./components/badges.css";
+@import "./components/footer.css";
+@import "./components/calendar.css";
+@import "./components/maps.css";
+@import "./components/syntax.css";
+@import "./components/press.css";
+@import "./components/pagination.css";
+@import "./components/misc.css";
+@import "./components/animations.css";
+@import "./components/stats.css";
+@import "./components/programs.css";
+@import "./components/involved.css";
+@import "./components/darkmode.css";

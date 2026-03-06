@@ -2,16 +2,18 @@
 title: "Actions to increase diversity in the R-Ladies São Paulo community"
 author:
   - name: Beatriz Milz
+    directory_id: "beatriz-milz"
   - name: Haydee Svab
+    directory_id: "haydee-svab"
   - name: Tatyane Paz Dominguez
   - name: Ianni Muliterno
   - name: Ana Paula Rocha
 date: "2023-10-04"
 categories:
-  - R-Ladies
-tags:
-  - latin america
   - community
+tags:
+  - social-justice
+  - latin-america
 slug: "increasing-diversity-sao-paulo"
 aliases:
   - "/blog/2023-06-05-increasing-diversity-sao-paulo"

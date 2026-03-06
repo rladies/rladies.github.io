@@ -1,0 +1,62 @@
+{{ $updatedURL := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
+{{ $updated := dict }}
+{{ with try (resources.GetRemote $updatedURL) }}
+  {{ with .Err }}
+    {{ warnf "%s" . }}
+  {{ else }}
+    {{ $updated = .Value | transform.Unmarshal }}
+  {{ end }}
+{{ else }}
+  {{ warnf "Unable to get remote resource %q" $updatedURL }}
+{{ end }}
+
+<section class="site-section-lg bg-surface" id="impact">
+  <div class="site-container">
+    <h2 class="section-title fade-in-up">
+      {{ i18n "home_impact_title" | default "Our Global Impact" }}
+    </h2>
+    <p class="section-subtitle fade-in-up stagger-1">
+      {{ i18n "home_impact_subtitle" | default "Building an inclusive R community worldwide" }}
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div class="stat-card fade-in-up stagger-1">
+        <div class="stat-icon"><i class="fa-solid fa-globe"></i></div>
+        <p class="stat-number count" data-count="{{ $.Store.Get "chpt_countries" | len }}">0</p>
+        <p class="stat-label">{{ i18n "countries" | default "Countries" }}</p>
+      </div>
+
+      <div class="stat-card stat-card-blue fade-in-up stagger-2">
+        <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <p class="stat-number count" data-count="{{ $.Store.Get "chpt_active" | len }}">0</p>
+        <p class="stat-label">{{ i18n "chapters" | default "Chapters" }}</p>
+      </div>
+
+      <div class="stat-card stat-card-rose fade-in-up stagger-3">
+        <div class="stat-icon"><i class="fa-solid fa-calendar-days"></i></div>
+        <p class="stat-number count" data-count="{{ $updated.n_events_past }}">0</p>
+        <p class="stat-label">{{ i18n "events" | default "Events" }}</p>
+      </div>
+    </div>
+
+    {{ $stockImages := site.Data.stock_images }}
+    {{ $stripIds := slice "gender-spectrum-office-group" "pexels-women-office-meeting" "disabled-outdoor-group-hang" }}
+    <div class="impact-photo-strip fade-in-up">
+      {{ range $stripIds }}
+        {{ with index (where $stockImages "id" .) 0 }}
+          {{ $imgData := . }}
+          <figure class="impact-photo-cell">
+            {{ with resources.Get $imgData.file }}
+              {{ $img := .Fill "480x220 webp" }}
+              <img src="{{ $img.RelPermalink }}"
+                   alt="{{ $imgData.alt }}"
+                   width="{{ $img.Width }}" height="{{ $img.Height }}"
+                   loading="lazy">
+            {{ end }}
+            {{ partial "stock-attribution.html" $imgData }}
+          </figure>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

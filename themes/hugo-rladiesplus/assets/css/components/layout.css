@@ -1,0 +1,108 @@
+@layer components {
+  .site-container {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .site-section {
+    @apply py-12 md:py-16;
+  }
+
+  .site-section-lg {
+    @apply py-16 md:py-24;
+  }
+
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .bg-surface-alt {
+    background-color: var(--color-surface-alt);
+  }
+
+  .grid-auto {
+    @apply grid gap-6;
+  }
+
+  .grid-2 {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2;
+  }
+
+  .grid-3 {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .grid-4 {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+  }
+
+  .grid-5 {
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5;
+  }
+
+  .grid-6 {
+    @apply grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6;
+  }
+
+  .breakout {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .breakout-padding {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    @apply px-8 max-md:px-4;
+  }
+
+  .container-wide {
+    @apply mx-auto px-8 max-md:px-4;
+    max-width: 1600px;
+  }
+
+  .container-extra-wide {
+    @apply mx-auto px-8 max-md:px-4;
+    max-width: 1800px;
+  }
+
+  .container-full {
+    @apply w-full px-8 max-md:px-4;
+    max-width: none;
+  }
+
+  .shuffle-wrapper {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shuffle-wrapper > .shuffle-item {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 640px) {
+    .shuffle-wrapper > .shuffle-item { width: 50%; }
+  }
+
+  @media (min-width: 768px) {
+    .shuffle-wrapper > .shuffle-item { width: 33.333%; }
+  }
+
+  @media (min-width: 1024px) {
+    .shuffle-wrapper > .shuffle-item { width: 25%; }
+  }
+
+  @media (min-width: 1280px) {
+    .shuffle-wrapper > .shuffle-item { width: 20%; }
+  }
+
+}

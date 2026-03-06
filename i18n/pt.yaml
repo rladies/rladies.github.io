@@ -1,81 +1,164 @@
 404_title: '404'
 404_description: 'Ops! Esta página não existe!'
-subheader: ''
 
-# menu ----
-home: "Home"
-about-us: 'About'
-mission: "Mission"
-get-involved: 'Get involved'
-global-team: 'Meet the global team'
-history: 'History'
-news: 'News'
-coc: 'Code de Conduite'
-directory: 'Directory'
-activities: 'Activities'
-events: 'Events'
-mentoring: 'Mentoring Program'
-coordinated: 'Coordinated by the Global Team'
-dashboard: 'Global dashboard'
-rladies-blogs: 'Blogs by R-Ladies'
-press: 'In the press'
+# Menu (used via T .Identifier in menu.html) ----
+home: 'Início'
+about-us: 'Sobre'
+find: 'Encontrar'
+our-story: 'Nossa História'
+get-involved: 'Participe'
+news: 'Notícias'
+coc: 'Código de Conduta'
+directory: 'Membros'
+activities: 'Atividades'
+events: 'Eventos'
+programs: 'Programas & Iniciativas'
+press: 'Na imprensa'
 blog: 'Blog'
 
-# counters ----
-counter_archives: '{{.Count}} Posts em Total'
-counter_tagcloud: '{{.Count}} Tags em Total'
-counter_categories: '{{.Count}} Categorias em Total'
+# Hero ----
+hero_headline: 'Promovendo a Diversidade de Gênero na Comunidade R'
+hero_subheadline: 'Uma organização mundial que empodera gêneros sub-representados através de uma rede global colaborativa de líderes, mentores e desenvolvedores de R.'
+hero_cta_chapters: 'Encontre um Capítulo'
+hero_cta_involved: 'Participe'
 
-# footer ----
-footer_lang_title: 'Línguas'
-footer_followme_title: 'Siga-me'
+# Home sections ----
+home_impact_title: 'Nosso Impacto Global'
+home_impact_subtitle: 'Construindo uma comunidade R inclusiva em todo o mundo'
+home_chapters_title: 'Capítulos'
+home_chapters_cta: 'Ver Todos os Capítulos'
+home_involved_title: 'Participe'
+home_involved_subtitle: 'Existem muitas formas de fazer parte da comunidade RLadies+'
+involved_join_title: 'Junte-se a um Capítulo'
+involved_join_desc: 'Encontre seu capítulo local do RLadies+ e conecte-se com entusiastas de R na sua área.'
+involved_join_cta: 'Encontrar Capítulos'
+involved_talk_title: 'Faça uma Palestra'
+involved_talk_desc: 'Compartilhe seu conhecimento e experiência com a comunidade apresentando em um evento.'
+involved_talk_cta: 'Saiba Mais'
+involved_support_title: 'Apoie-nos'
+involved_support_desc: 'Ajude a sustentar nossa missão através de doações, patrocínios ou voluntariado.'
+involved_support_cta: 'Doar'
+home_featured_title: 'Membros em Destaque'
+home_featured_subtitle: 'Conheça algumas pessoas da nossa comunidade'
+home_featured_cta: 'Explorar Diretório'
+home_blog_title: 'Últimas Publicações'
+home_blog_subtitle: 'Notícias, tutoriais e histórias da nossa comunidade'
+home_blog_cta: 'Ver Todas as Publicações'
+home_news_cta: 'Todas as Notícias'
+home_press_cta: 'Toda a Imprensa'
+home_sponsors_title: 'Patrocinadores'
+home_sponsors_subtitle: 'Organizações que apoiam nossa missão'
+home_sponsors_cta: 'Seja um Patrocinador'
+
+# Globals ----
+country: 'País'
+countries: 'Países'
+chapters: 'Capítulos'
+city: 'Cidade'
+members: 'membros'
+social_media: 'Redes sociais'
+
+# Chapter page ----
+join_chapter: 'Junte-se ao capítulo'
+organizers: 'Organizadores'
+tab_current: 'Atuais'
+tab_former: 'Anteriores'
+tab_upcoming: 'Próximos'
+next_event: 'Próximo Evento'
+rsvp: 'RSVP'
+details: 'Detalhes'
+no_upcoming_events: 'Nenhum evento próximo.'
+no_events_yet: 'Nenhum evento ainda.'
+search_city: 'Buscar por cidade...'
+select_countries: 'Selecionar países...'
+
+# Directory ----
+counter_entries: 'Membros'
+interests: 'Interesses'
+languages: 'Idiomas'
+location: 'Localização'
+filter_interests: 'Filtrar por interesses'
+search_interests: 'Buscar interesses...'
+filter_languages: 'Filtrar por idiomas'
+search_languages: 'Buscar idiomas...'
+filter_location: 'Filtrar por localização'
+search_location: 'Buscar localização...'
+preferred_contact: 'Contato preferido'
+connect: 'Conectar'
+last_updated: 'Última atualização'
+update_entry: 'Se esta é sua entrada, você pode atualizá-la ou excluí-la preenchendo'
+update_entry_link: 'este formulário'
+work_affiliation: 'Trabalho e Afiliação'
+r_user_groups: 'Grupos de Usuários de R'
+r_packages: 'Pacotes de R'
+about: 'Sobre'
+photo_credit: 'Crédito da foto'
+
+# Press ----
+filter_by_year: 'Filtrar por Ano'
+download_pdf: 'Baixar PDF'
+all_years: 'Todos os anos'
+search_years: 'Buscar anos...'
+
+# Global Team ----
+leadership: 'Liderança'
+global-team: 'Equipe Global'
+role: 'Função'
+name: 'Nome'
+alumni: 'Alumni'
+alumni-text: |
+  RLadies+ é extremamente grato por todo o trabalho árduo
+  e dedicação de nossos membros e líderes anteriores.
+  Não estaríamos onde estamos hoje sem eles.
+
+# GitHub issues ----
+gh_help_wanted: 'Issues do GitHub com "help wanted"'
+gh_found: 'Encontrados'
+gh_open_issues: 'issues abertos'
+loading: 'Carregando...'
+
+# Redirect ----
+redirect_msg: 'Você está sendo redirecionado para o formulário Airtable do RLadies+.'
+redirect_fallback: 'Se você não for redirecionado automaticamente, clique no link abaixo:'
+redirect_click: 'Clique aqui para continuar'
+
+# Footer ----
+footer_lang_title: 'Idiomas'
+footer_followme_title: 'Siga-nos'
 footer_contact_title: 'Contato'
-footer_donate: 'Donate to'
-footer_text_title: 'Código de Conducta'
+footer_donate: 'Doar para'
+footer_donate_paypal: 'Doar via PayPal'
+footer_text_title: 'Código de Conduta'
 footer_text_content: |
-    R-Ladies tem como objetivo proporcionar uma experiência livre de assédio
+    RLadies+ tem como objetivo proporcionar uma experiência livre de assédio
     para todos. Não toleramos nenhuma forma de assédio aos participantes. Leia
     nosso [código de conduta](/pt/coc)
 
-# Home ----
-home_feed: 'Latest posts'
-home_featured: 'Featured R-Ladies'
-home_activity: 'Our activities'
-
-# Globals ----
-country: 'Country'
-countries: 'Countries'
-chapter: "Chapter"
-chapters: 'Chapters'
-city: "City"
-cities: "Cities"
-event: "Event"
-
-# Other ----
-social_media: "Social media"
-archive: 'Archivo'
-tag: 'Tag: '
+# Post ----
 tags: 'Tags'
-category: 'Categoria: '
-categories: 'Categorias'
 author: 'Autor'
-authors: 'Authors'
+authors: 'Autores'
 editor: 'Editor'
-editors: 'Editors'
-prev: 'Prévio'
+editors: 'Editores'
+prev: 'Anterior'
 next: 'Seguinte'
-toc: 'Contéudo'
-comments: 'Comments'
+toc: 'Conteúdo'
 read_more: 'Ler mais'
-see_details: 'Veja detalhes'
+last_edit: 'Esta publicação foi editada pela última vez em'
+last_message: 'com a mensagem'
 
-# git history
-last_edit: 'This post was last edited on'
-last_message: 'with the message'
+# Accessibility ----
+back_to_top: 'Voltar ao topo'
+toggle_dark_mode: 'Alternar modo escuro'
+toggle_nav: 'Abrir navegação'
+select_language: 'Selecionar idioma'
 
 # Language ----
 translations: 'Traduções'
 missing_translation: |
-    Desculpe, esta página ainda não foi traduzida 
+    Desculpe, esta página ainda não foi traduzida
     para o português.
-   
+auto_translation: |
+    Esta página foi traduzida automaticamente usando
+    [DeepL](https://www.deepl.com)
+    e ainda não foi revisada por uma pessoa.

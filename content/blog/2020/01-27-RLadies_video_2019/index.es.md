@@ -2,15 +2,14 @@
 title: " Receta para un video de fin de año"
 author:
   - name: Yanina Bellini Saibene
+    directory_id: "yanina-bellini-saibene"
   - name: Alejandra Bellini
   - name: Laura Acion
+    directory_id: "laura-acion"
 date: "2020-01-27"
 description: ""
-tags:
-  - RStats
-  - Video
 categories:
-  - R-Ladies
+  - tutorials
 always_allow_html: yes
 slug: "RLadies_video_2019"
 aliases:

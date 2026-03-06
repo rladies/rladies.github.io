@@ -1,0 +1,209 @@
+@layer components {
+  .card {
+    @apply bg-surface rounded-xl overflow-hidden flex flex-col;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-hover:hover {
+    @apply -translate-y-1;
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .card-body {
+    @apply p-6;
+  }
+
+  .card-title {
+    @apply text-lg font-semibold text-dark;
+  }
+
+  .card-text {
+    @apply text-sm text-muted;
+  }
+
+  /* Card image area */
+  .card-img {
+    @apply relative overflow-hidden shrink-0;
+    height: 260px;
+    min-height: 260px;
+  }
+
+  .card-img img {
+    @apply block w-full h-full object-cover transition-transform duration-300;
+  }
+
+  .card-hover:hover .card-img img {
+    @apply scale-105;
+  }
+
+  /* Card content area */
+  .card-content {
+    @apply relative p-5 flex-1 flex flex-col;
+  }
+
+  .card-content .card-title {
+    @apply text-base font-semibold mb-1;
+    color: var(--color-dark);
+  }
+
+  .card-content .card-title a {
+    @apply no-underline transition-colors duration-200;
+    color: inherit;
+  }
+
+  .card-content .card-title a:hover {
+    @apply text-primary;
+  }
+
+  .card-desc {
+    @apply text-sm mt-2 text-muted;
+  }
+
+  .card-category {
+    @apply absolute top-3 right-3 bg-primary/95 px-2.5 py-1 text-white text-xs font-semibold rounded-lg shadow-md z-[2];
+  }
+
+  .card-category a {
+    @apply text-white no-underline;
+  }
+
+  .card-subtitle {
+    @apply m-0 pb-2 text-primary text-sm font-medium;
+  }
+
+  .card-foot {
+    @apply mt-auto pt-3 border-t border-gray-100 text-xs;
+    color: var(--color-dark-50);
+    max-height: 4.5em;
+    overflow: hidden;
+  }
+
+  .card-foot a {
+    @apply no-underline text-primary hover:opacity-70 transition-opacity;
+  }
+
+  /* Card size variants (control image height) */
+  .card-service .card-img { height: 140px; min-height: 140px; }
+  .card-small .card-img { height: 240px; min-height: 240px; }
+  .card-medium .card-img { height: 260px; min-height: 260px; }
+  .card-large .card-img { height: 320px; min-height: 320px; }
+
+  /* Post card */
+  .post-card .post-image {
+    @apply h-[300px] overflow-hidden;
+  }
+
+  .post-card .post-image img {
+    @apply w-full h-full object-contain transition-transform duration-300;
+  }
+
+  .post-card .post-image:hover img {
+    @apply scale-105;
+  }
+
+  .post-card .post-content {
+    @apply p-8;
+  }
+
+  .post-card .post-date {
+    @apply text-sm text-muted no-underline;
+  }
+
+  .post-card .post-date i {
+    @apply opacity-70;
+  }
+
+  .post-card .post-title {
+    @apply text-2xl font-semibold mt-2;
+  }
+
+  .post-card .post-title a {
+    @apply no-underline transition-colors duration-200;
+    color: var(--color-dark);
+  }
+
+  .post-card .post-title a:hover {
+    @apply text-primary;
+  }
+
+  .post-card .post-authors-list {
+    @apply text-sm;
+    color: var(--color-muted);
+  }
+
+  .post-card .post-authors-list i {
+    @apply text-primary;
+  }
+
+  .post-card .post-authors-list a {
+    @apply text-primary no-underline hover:underline;
+  }
+
+  .post-card .post-summary {
+    @apply text-sm leading-relaxed;
+    color: var(--color-muted);
+  }
+
+  @media (max-width: 767px) {
+    .post-card .post-image { @apply h-[250px]; }
+    .post-card .post-content { @apply p-6; }
+    .post-card .post-title { @apply text-xl; }
+  }
+
+  /* Alumni grayscale */
+  .alumni-grid .card-img img {
+    @apply grayscale transition-all duration-300;
+  }
+
+  .alumni-grid .card-hover:hover .card-img img {
+    @apply grayscale-0;
+  }
+
+  /* Expand grid */
+  .expand-grid ul {
+    @apply list-none p-0;
+  }
+
+  /* Involved card image top */
+  .involved-card-img {
+    @apply relative overflow-hidden;
+    height: 180px;
+  }
+
+  .involved-card-img img {
+    @apply block w-full h-full object-cover transition-transform duration-300;
+  }
+
+  .card-hover:hover .involved-card-img img {
+    @apply scale-105;
+  }
+
+  .involved-card-img small {
+    @apply absolute bottom-1 right-2 text-white/80 text-xs;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .involved-card-img small a {
+    @apply text-white/80 underline;
+  }
+
+  /* Involved card icon */
+  .involved-icon {
+    @apply w-16 h-16 mx-auto mb-6 rounded-2xl flex items-center justify-center text-2xl text-white;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-rose));
+  }
+
+  .involved-icon-blue {
+    background: linear-gradient(135deg, var(--color-accent-blue), var(--color-primary));
+  }
+
+  .involved-icon-rose {
+    background: linear-gradient(135deg, var(--color-accent-rose), var(--color-primary));
+  }
+
+  /* Sponsor logo */
+  .sponsor-logo {
+    @apply grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100;
+  }
+}

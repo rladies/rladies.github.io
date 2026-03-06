@@ -4,10 +4,10 @@ description: |
   Announcing a new collaboration between R-Ladies and Bioconductor
 author:
   - name: Janani Ravi
+    directory_id: "janani-ravi"
 date: "2025-02-08"
 categories:
-  - R-Ladies
-  - Bioconductor
+  - partnerships
 image:
   path: "rladies-bioc.png"
 editor:
@@ -17,8 +17,6 @@ slug: "RLadies-Bioconductor-collab"
 aliases:
   - "/blog/2025-02-08-RLadies-Bioconductor-collab"
 ---
-
-![](rladies-bioc.png)
 
 We are excited to share a new collaboration between R-Ladies and Bioconductor, two global communities committed to building diverse developer communities around the world.
 

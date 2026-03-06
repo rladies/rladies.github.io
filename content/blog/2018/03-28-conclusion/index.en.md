@@ -5,10 +5,9 @@ author:
   - name: R-Ladies
 date: "2018-03-28"
 categories:
-  - IWD
-  - R-Ladies
+  - events
 tags:
-  - Twitter
+  - iwd
 slug: "conclusion"
 aliases:
   - "/blog/2018-03-28-conclusion"

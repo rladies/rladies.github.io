@@ -3,23 +3,68 @@ en:
   params:
     languageName: "English"
     weight: 1
-    description: "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+    description: "RLadies+ is a world-wide organization to promote gender diversity in the R community"
 
 es:
   params:
     languageName: "Español"
     weight: 2
-    description: "R-Ladies es una organización mundial para promover la diversidad de género en la comunidad R"
+    description: "RLadies+ es una organización mundial para promover la diversidad de género en la comunidad R"
 
 pt:
   params:
     languageName: "Português"
     weight: 3
-    description: "R-Ladies is a world-wide organization to promote gender diversity in the R community"
+    description: "RLadies+ is a world-wide organization to promote gender diversity in the R community"
 
 fr:
   params:
     languageName: "Français"
     weight: 4
-    description: "R-Ladies is a world-wide organization to promote gender diversity in the R community"
-
+    description: "RLadies+ is a world-wide organization to promote gender diversity in the R community"
+  menus:
+    main:
+      - identifier: find
+        url: "#"
+        weight: 1
+      - identifier: events
+        url: /evenements/
+        weight: 1
+        parent: find
+      - identifier: chapters
+        url: /chapitres/
+        weight: 2
+        parent: find
+      - identifier: directory
+        url: /membres/
+        weight: 3
+        parent: find
+      - identifier: news
+        url: /actualites/
+        weight: 2
+      - identifier: programs
+        url: /programmes/
+        weight: 3
+      - identifier: about-us
+        url: "#"
+        weight: 99
+      - identifier: our-story
+        url: /a-propos/notre-histoire/
+        weight: 1
+        parent: about-us
+      - identifier: get-involved
+        url: /a-propos/impliquer/
+        weight: 2
+        parent: about-us
+      - identifier: global-team
+        url: /a-propos/equipe-mondiale/
+        weight: 3
+        parent: about-us
+      - identifier: faq
+        url: /a-propos/faq/
+        weight: 4
+        parent: about-us
+      - identifier: press
+        url: /presse
+        weight: 5
+        parent: about-us

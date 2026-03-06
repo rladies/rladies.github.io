@@ -36,5 +36,8 @@ Config/renv/profiles/airtable/dependencies:
     here,
     tidyr,
     airtabler
+Config/renv/profiles/translate/dependencies:
+    babeldown,
+    here
 Remotes:
     bergant/airtabler

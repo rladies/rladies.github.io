@@ -1,0 +1,44 @@
+{{ $image := .img | default "/images/placeholder_user.svg" }}
+{{ $image := $image | absURL  }}
+{{ $size := .size | default "medium" }}
+{{ $footcol := .footcol | default 1 }}
+
+{{ $tags := slice }}
+{{ range $index, $item := . }}
+    {{ $replaced := replaceRE "[[:punct:]]" "," ($item | jsonify | urlize) }}
+    {{ $split := split $replaced "," }}
+    {{ $tags = $tags | append $split }}
+{{ end }}
+
+<li class="col shuffle-item" {{ with .id }} id="{{  . | htmlUnescape | urlize }}" {{ end }} {{ range $key, $value := .shuffle }} data-{{ $key }}="[{{range  $index, $tags := $value }}{{if ne $index 0}},{{end}}&quot;{{$tags | urlize}}&quot;{{ end }}]"{{ end }} >
+  <div class="card card-hover card-{{ $size }}">
+    <div class="card-img">
+      <img src="{{ $image }}" alt="{{ .title }}"/>
+    </div>
+    <div class="card-content">
+      {{ with .category }}
+        <div class="card-category">{{ . | safeHTML }}</div>
+      {{ end }}
+      <h4 class="card-title">
+        {{ with .url }}<a href="{{.}}" target="_blank" rel="noopener">{{end}}
+        {{ .title | safeHTML }}
+        {{ with .url }}</a>{{end}}
+      </h4>
+      {{ with .subtitle }}
+        <h5 class="card-subtitle">
+          {{ . | safeHTML }}
+        </h5>
+      {{ end }}
+      {{ with .descr }}
+        <div class="card-desc">
+          {{ . | safeHTML }}
+        </div>
+      {{ end }}
+      {{ with .foot }}
+        <div class="card-foot" style="column-count: {{$footcol}};">
+          <span>{{ . | safeHTML }}</span>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</li>

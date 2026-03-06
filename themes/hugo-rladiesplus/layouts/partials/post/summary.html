@@ -1,0 +1,71 @@
+<article class="post-card card card-hover fade-in-up">
+  <div class="flex flex-col md:flex-row">
+    {{ $img := "" }}
+    {{ if .Resources.ByType "image" }}
+      {{ range first 1 (.Resources.ByType "image") }}
+        {{ $image := .Fill "400x300 webp" }}
+        {{ $img = $image.RelPermalink }}
+      {{ end }}
+
+      {{ with .Resources.Get .Params.image.path }}
+        {{ $image := .Fill "400x300 webp" }}
+        {{ $img = $image.RelPermalink }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $img }}
+      <div class="md:w-1/3 shrink-0">
+        <a href="{{ .RelPermalink }}" class="block h-full">
+          <img src="{{ $img }}" alt="{{ .Params.image.alt | default .Title }}"
+               class="w-full h-full object-cover">
+        </a>
+      </div>
+    {{ end }}
+
+    <div class="{{ if $img }}md:w-2/3{{ else }}w-full{{ end }}">
+      <div class="p-6">
+        <div class="flex items-center gap-3 mb-3">
+          <time datetime="{{ .Date.Format .Site.Params.DateForm }}" class="text-sm text-muted">
+            {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+          </time>
+          {{ partial "post/i18n.html" . }}
+        </div>
+
+        <h2 class="text-xl font-semibold mb-2">
+          <a href="{{ .RelPermalink }}" class="text-dark hover:text-primary transition-colors no-underline">
+            {{ .Title }}
+          </a>
+        </h2>
+
+        {{ if .Params.author }}
+          <div class="mb-3">
+            {{ partial "post/authors.html" (dict "author" .Params.author) }}
+          </div>
+        {{ end }}
+
+        <div class="text-muted text-sm mb-4 line-clamp-3">
+          {{ .Summary | plainify | truncate 200 }}
+        </div>
+
+        {{ if or .Params.categories .Params.tags }}
+          <div class="mb-4 flex flex-wrap gap-1">
+            {{ range .Params.categories }}
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="badge badge-secondary no-underline">
+                {{ . }}
+              </a>
+            {{ end }}
+            {{ with .Params.tags }}{{ range first 4 . }}
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge badge-primary no-underline">
+                {{ . }}
+              </a>
+            {{ end }}{{ end }}
+          </div>
+        {{ end }}
+
+        <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm">
+          {{ i18n "read_more" | default "Read more" }} <i class="fas fa-arrow-right ml-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

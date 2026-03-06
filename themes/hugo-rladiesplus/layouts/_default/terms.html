@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="flex justify-center items-center flex-wrap m-1">
+    {{- range $key, $value:= .Data.Terms -}}
+      <button class="btn m-2 border-0">
+        <a
+          href="{{ "" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"
+        > {{ $key }}
+          <span class="absolute top-0 left-full -translate-x-1/2 -translate-y-1/2 badge rounded-full bg-primary text-white">
+            {{ $value.Count }}
+          </span>
+        </a>
+      </button>
+    {{- end -}}
+  </div>
+{{ end }}

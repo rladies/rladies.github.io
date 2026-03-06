@@ -1,0 +1,69 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{ $desc := or .Description .Site.Params.description }}
+{{ $title := .Title | markdownify | plainify }}
+{{ $siteTitle := .Site.Title | markdownify | plainify }}
+{{ $fullTitle := cond (eq $title $siteTitle) $title (printf "%s - %s" $title $siteTitle) }}
+
+<title>{{ $fullTitle }}</title>
+<meta name="description" content="{{ $desc }}">
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+{{/* Resolve OG image: page image > page resources > site default */}}
+{{ $ogImage := "" }}
+{{ $ogWidth := "" }}
+{{ $ogHeight := "" }}
+{{ with .Params.image }}
+  {{ $imgPath := "" }}
+  {{ if reflect.IsMap . }}
+    {{ $imgPath = .path }}
+  {{ else }}
+    {{ $imgPath = . }}
+  {{ end }}
+  {{ with $imgPath }}
+    {{ with $.Resources.Get . }}
+      {{ $img := .Fill "1200x630" }}
+      {{ $ogImage = $img.Permalink }}
+      {{ $ogWidth = "1200" }}
+      {{ $ogHeight = "630" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if not $ogImage }}
+  {{ with .Resources.ByType "image" }}
+    {{ $first := index . 0 }}
+    {{ $ogImage = $first.Permalink }}
+  {{ end }}
+{{ end }}
+{{ if not $ogImage }}
+  {{ with resources.Get .Site.Params.ogImage }}
+    {{ $ogImage = .Permalink }}
+    {{ $ogWidth = "1200" }}
+    {{ $ogHeight = "630" }}
+  {{ end }}
+{{ end }}
+
+{{/* Open Graph */}}
+<meta property="og:title" content="{{ $fullTitle }}">
+<meta property="og:type" content="{{ cond (eq .Section "blog" | or (eq .Section "news")) "article" "website" }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:locale" content="{{ .Lang | default "en" }}">
+{{ with $ogImage }}<meta property="og:image" content="{{ . }}">{{ end }}
+{{ with $ogWidth }}<meta property="og:image:width" content="{{ . }}">{{ end }}
+{{ with $ogHeight }}<meta property="og:image:height" content="{{ . }}">{{ end }}
+
+{{ if eq .Section "blog" | or (eq .Section "news") }}
+  {{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+  {{ with .Lastmod }}<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
+  {{ range .Params.authors }}<meta property="article:author" content="{{ .name }}">{{ end }}
+  {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
+{{ end }}
+
+{{/* Twitter Card */}}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $fullTitle }}">
+<meta name="twitter:description" content="{{ $desc }}">
+{{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}

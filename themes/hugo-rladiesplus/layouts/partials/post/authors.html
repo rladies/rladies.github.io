@@ -1,0 +1,21 @@
+<div class="post-authors-list">
+  <i class="far fa-user mr-1"></i>
+  {{ range $index, $author := .author }}
+    {{ if $index }}, {{ end }}
+    {{ $name := "" }}
+    {{ $dirID := "" }}
+    {{ if reflect.IsMap $author }}
+      {{ $name = $author.name }}
+      {{ with $author.directory_id }}
+        {{ $dirID = . }}
+      {{ end }}
+    {{ else }}
+      {{ $name = $author }}
+    {{ end }}
+    {{ if $dirID }}
+      <a href="{{ "/directory/" | relLangURL }}{{ $dirID }}/">{{ $name }}</a>
+    {{ else }}
+      <span>{{ $name }}</span>
+    {{ end }}
+  {{ end }}
+</div>

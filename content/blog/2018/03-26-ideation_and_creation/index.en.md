@@ -4,12 +4,10 @@ author:
   - name: "R-Ladies"
 date: "2018-03-26"
 description: "Part 1: Ideation and Creation!"
-tags:
-  - Twitter
-  - RStats
 categories:
-  - IWD
-  - R-Ladies
+  - events
+tags:
+  - iwd
 slug: "ideation_and_creation"
 aliases:
   - "/blog/2018-03-26-ideation_and_creation"

@@ -1,0 +1,35 @@
+@layer components {
+  .press-list .press-item {
+    @apply py-6 border-b border-gray-200 transition-colors duration-200;
+  }
+
+  .press-list .press-item:last-child {
+    @apply border-b-0;
+  }
+
+  .press-list .press-item:hover {
+    background-color: color-mix(in srgb, var(--color-primary) 2%, transparent);
+  }
+
+  .press-list .press-date {
+    @apply block text-sm font-semibold text-right max-md:text-left;
+    color: var(--color-muted);
+  }
+
+  .press-list .press-title {
+    @apply text-lg font-medium m-0;
+  }
+
+  .press-list .press-title a {
+    @apply no-underline transition-colors duration-200;
+    color: var(--color-dark);
+  }
+
+  .press-list .press-title a:hover {
+    @apply text-primary;
+  }
+
+  .press-list .press-title a .fa-external-link-alt {
+    @apply text-xs opacity-60;
+  }
+}

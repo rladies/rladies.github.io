@@ -1,0 +1,141 @@
+@layer components {
+  .site-footer {
+    @apply text-sm;
+    background-color: #ddd0f0;
+    color: var(--color-dark);
+  }
+
+  .site-footer a {
+    color: var(--color-primary-dark);
+    @apply no-underline transition-colors;
+  }
+
+  .site-footer a:hover {
+    color: var(--color-primary-darker);
+  }
+
+  .site-footer .widget-title {
+    @apply pt-1 text-sm font-semibold mb-4;
+    color: var(--color-dark);
+  }
+
+  .site-footer .small a,
+  .site-footer p a,
+  .site-footer .leading-relaxed a {
+    @apply underline;
+    color: var(--color-primary-darker);
+  }
+
+  .site-footer .social-icon {
+    @apply inline-block transition-all duration-200;
+    color: var(--color-dark);
+  }
+
+  .site-footer .social-icon:hover {
+    @apply -translate-y-0.5;
+    color: var(--color-primary-dark);
+  }
+
+  .site-footer .footer-icon {
+    color: var(--color-primary-dark);
+  }
+
+  .site-footer .form-select {
+    background-color: white;
+    border-color: var(--color-primary-lighter);
+    color: var(--color-dark);
+  }
+
+  .site-footer .form-select option {
+    @apply bg-white;
+    color: var(--color-dark);
+  }
+
+  .site-footer .btn-light {
+    @apply text-white;
+    background-color: var(--color-primary);
+  }
+
+  .site-footer .btn-light:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  .site-underfooter {
+    @apply py-3 text-xs;
+    background-color: #d0c0e8;
+    color: var(--color-dark);
+  }
+
+  .site-underfooter a {
+    color: var(--color-primary-dark);
+    @apply no-underline transition-colors;
+  }
+
+  .site-underfooter a:hover {
+    color: var(--color-primary-darker);
+    @apply underline;
+  }
+
+  /* Dark mode: revert footer to dark background */
+  .dark .site-footer {
+    background-color: var(--color-dark-footer);
+    @apply text-white;
+  }
+
+  .dark .site-footer a {
+    @apply text-white/70;
+  }
+
+  .dark .site-footer a:hover {
+    @apply text-white;
+  }
+
+  .dark .site-footer .widget-title {
+    color: #d4b9f5;
+  }
+
+  .dark .site-footer .small a,
+  .dark .site-footer p a,
+  .dark .site-footer .leading-relaxed a {
+    color: #d4b9f5;
+  }
+
+  .dark .site-footer .social-icon {
+    @apply text-white/70;
+  }
+
+  .dark .site-footer .social-icon:hover {
+    color: #d4b9f5;
+  }
+
+  .dark .site-footer .footer-icon {
+    color: #d4b9f5;
+  }
+
+  .dark .site-footer .form-select {
+    @apply bg-white/10 border-white/20 text-white;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  }
+
+  .dark .site-footer .form-select option {
+    @apply bg-dark text-white;
+  }
+
+  .dark .site-footer .btn-light {
+    @apply bg-white/10 text-white hover:bg-white/20;
+  }
+
+  .dark .site-underfooter {
+    background-color: var(--color-dark-underfooter);
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+  }
+
+  .dark .site-underfooter a {
+    @apply text-white/50;
+  }
+
+  .dark .site-underfooter a:hover {
+    @apply text-white/80;
+  }
+}

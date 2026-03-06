@@ -1,0 +1,113 @@
+<footer class="site-footer py-16">
+  <div class="site-container">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {{ if .Site.Params.footerEnableContact }}
+        <div>
+          <h3 class="widget-title">{{ i18n "footer_contact_title" . | markdownify }}</h3>
+          <div class="mb-6">
+            {{ if .Site.Params.phone }}
+              <p class="mb-1">
+                <i class="fas fa-phone mr-2 footer-icon"></i>{{ .Site.Params.phone | markdownify }}
+              </p>
+            {{ end }}
+            {{ if .Site.Params.email }}
+              <p class="mb-0">
+                <i class="fas fa-envelope mr-2 footer-icon"></i>
+                <a href="mailto:{{ .Site.Params.email }}">
+                  {{ .Site.Params.email | markdownify }}
+                </a>
+              </p>
+            {{ end }}
+          </div>
+
+          <h3 class="widget-title">{{ i18n "footer_donate" }} RLadies+</h3>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E"
+             target="_blank"
+             class="btn btn-light btn-sm"
+             rel="noopener">
+            <i class="fab fa-paypal mr-2"></i>
+            {{ i18n "footer_donate_paypal" }}
+          </a>
+        </div>
+      {{ end }}
+
+      {{ if .Site.Params.footerEnableFollowme }}
+        <div>
+          <h3 class="widget-title">{{ i18n "footer_followme_title" . | markdownify }}</h3>
+          <div class="flex flex-wrap gap-4">
+            {{ range .Site.Params.social }}
+              {{ if .footer }}
+                {{ $some := partial "funcs/social_media.html" (dict "type" .title "handle" .handle) }}
+                <a href="{{ $some.url }}"
+                   target="_blank"
+                   rel="{{ if .relme }}me {{ end }}noopener"
+                   class="text-2xl social-icon"
+                   aria-label="{{ .title }}">
+                  <i class="{{ $some.fa }}"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ if .Site.Params.footerEnableTextWidget }}
+        <div>
+          <h3 class="widget-title">{{ i18n "footer_text_title" . | markdownify }}</h3>
+          <div class="text-sm leading-relaxed">
+            {{ i18n "footer_text_content" . | markdownify }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ if .Site.Params.footerEnableLangWidget }}
+        <div>
+          <h3 class="widget-title">
+            <i class="fas fa-globe mr-2"></i>{{ i18n "footer_lang_title" . | markdownify }}
+          </h3>
+          {{ if hugo.IsMultilingual }}
+          <select id="select-language"
+                  class="form-select rounded-lg"
+                  x-data @change="location = $el.value"
+                  aria-label="{{ i18n "select_language" }}">
+            {{ $currentLang := .Page.Lang }}
+            {{ $translations := .Page.AllTranslations }}
+            {{ range site.Sites }}
+              {{ $s := . }}
+              {{ $url := $s.Home.RelPermalink }}
+              {{ range $translations }}
+                {{ if eq .Lang $s.Language.Lang }}
+                  {{ $url = .RelPermalink }}
+                {{ end }}
+              {{ end }}
+              <option value="{{ $url }}"
+                      data-lang="{{ $s.Language.Lang }}"
+                      {{ if eq $currentLang $s.Language.Lang }}selected{{ end }}>
+                {{ $s.Language.Params.LanguageName }}
+              </option>
+            {{ end }}
+          </select>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</footer>
+
+<footer class="site-underfooter">
+  <div class="site-container">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-2">
+      <small>
+        Web design: A. M. Mowinckel |
+        Powered by <a href="https://gohugo.io/" rel="noopener">Hugo</a> &
+        <a href="https://www.netlify.com/" rel="noopener">Netlify</a>
+      </small>
+      <small>
+        &copy; {{ .Site.Params.year | markdownify }}, {{ .Site.Params.name | markdownify }}
+      </small>
+      <small>
+        Rebranding by <a href="https://www.sciencegraphicdesign.com/" rel="noopener">Science Graphic Design</a>
+      </small>
+    </div>
+  </div>
+</footer>

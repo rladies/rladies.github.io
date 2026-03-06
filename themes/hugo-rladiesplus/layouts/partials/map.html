@@ -1,0 +1,50 @@
+{{ $id := .id | default "chaptermap" }}
+{{ $height := .height | default "400px" }}
+{{ $data := .data }}
+{{ $zoom := .zoom }}
+{{ $countries := .countries }}
+
+{{ $js := resources.Get "js/vendor/amcharts.bundle.min.js"
+    | minify
+    | fingerprint
+}}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+
+<div id="{{ $id }}" style="width: 100%; height: {{ $height }};"
+     data-map-config="{{ $id }}-config"></div>
+
+{{ if not $data }}
+  {{ $points := slice }}
+  {{ range ($.Store.Get "chpt_active") }}
+    {{ $points = $points | append (dict
+      "name" .name
+      "members" .members
+      "latitude" .lat
+      "longitude" .lon
+    )}}
+  {{ end }}
+  {{ $data = (dict
+    "points" $points
+    "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
+    "radius" 4
+    "color" "#881ef9"
+  ) }}
+{{ end }}
+
+{{ $config := dict
+  "id" $id
+  "points" $data.points
+  "tooltip" ($data.tooltip | default "")
+  "radius" ($data.radius | default 7)
+}}
+{{ with $countries }}
+  {{ $config = merge $config (dict "countries" .) }}
+{{ end }}
+{{ with $zoom }}
+  {{ $config = merge $config (dict "zoom" .) }}
+{{ end }}
+
+<script type="application/json" id="{{ $id }}-config">{{ $config | jsonify | safeJS }}</script>
+
+{{ $mapJs := resources.Get "js/map-init.js" | minify | fingerprint }}
+<script src="{{ $mapJs.RelPermalink }}" integrity="{{ $mapJs.Data.Integrity }}" crossorigin="anonymous"></script>

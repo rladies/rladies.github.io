@@ -2,13 +2,15 @@
 title: "Tips for Submitting a Video Abstract to Posit Conf"
 author:
   - name: Nic Crane
+    directory_id: "nic-crane"
   - name: Sayantika Banik
+    directory_id: "sayantika-banik"
 date: "2025-02-06"
 categories:
-  - R-Ladies
+  - tutorials
 tags:
-  - Abstract
-  - Video
+  - conferences
+  - abstract-review
 slug: "submit_posit_conf"
 aliases:
   - "/blog/2025-02-03-submit_posit_conf"

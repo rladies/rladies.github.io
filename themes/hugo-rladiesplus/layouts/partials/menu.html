@@ -1,0 +1,63 @@
+<nav class="site-nav"
+     :class="scrolled ? 'site-nav-solid' : '{{ if .IsHome }}site-nav-transparent{{ else }}site-nav-solid{{ end }}'"
+     x-data="{ open: false, scrolled: false }"
+     @scroll.window="scrolled = (window.scrollY > 50)">
+  <div class="site-nav-inner">
+
+    <a class="site-nav-brand" href="{{ "/" | relLangURL }}">
+      <img src="{{ "/images/logo-wide.svg" | relURL }}" height="36" alt="{{ .Site.Title }}" class="logo-light">
+      <img src="{{ "/images/logo-wide-white.svg" | relURL }}" height="36" alt="{{ .Site.Title }}" class="logo-dark">
+    </a>
+
+    <div class="site-nav-links">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <div class="dropdown" x-data="{ dropOpen: false }" @mouseenter="dropOpen = true" @mouseleave="dropOpen = false">
+            <button class="site-nav-link dropdown-toggle" @click="dropOpen = !dropOpen">
+              {{ or (T .Identifier) .Name | safeHTML }}
+              <i class="fa fa-chevron-down text-xs ml-1 transition-transform" :class="dropOpen && 'rotate-180'"></i>
+            </button>
+            <div class="dropdown-menu" x-show="dropOpen" x-transition x-cloak>
+              {{ range .Children }}
+                <a class="dropdown-item" href="{{ .URL | relLangURL }}">{{ or (T .Identifier) .Name | safeHTML }}</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ else }}
+          <a class="site-nav-link" href="{{ .URL | relLangURL }}">{{ or (T .Identifier) .Name | safeHTML }}</a>
+        {{ end }}
+      {{ end }}
+
+      {{ partial "dark-mode-toggle.html" . }}
+    </div>
+
+    <div class="site-nav-actions md:hidden flex items-center gap-2">
+      {{ partial "dark-mode-toggle.html" . }}
+      <button class="site-nav-mobile-toggle" @click="open = !open" aria-label="{{ i18n "toggle_nav" }}">
+        <i class="fa fa-bars text-xl" x-show="!open"></i>
+        <i class="fa fa-times text-xl" x-show="open" x-cloak></i>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="site-nav-mobile" x-show="open" x-transition x-cloak>
+    {{ range .Site.Menus.main }}
+      {{ if .HasChildren }}
+        <div x-data="{ subOpen: false }">
+          <button class="site-nav-mobile-link w-full text-left flex justify-between items-center" @click="subOpen = !subOpen">
+            {{ or (T .Identifier) .Name | safeHTML }}
+            <i class="fa fa-chevron-down text-xs transition-transform" :class="subOpen && 'rotate-180'"></i>
+          </button>
+          <div x-show="subOpen" x-transition x-cloak class="bg-surface">
+            {{ range .Children }}
+              <a class="site-nav-mobile-link pl-8" href="{{ .URL | relLangURL }}">{{ or (T .Identifier) .Name | safeHTML }}</a>
+            {{ end }}
+          </div>
+        </div>
+      {{ else }}
+        <a class="site-nav-mobile-link" href="{{ .URL | relLangURL }}">{{ or (T .Identifier) .Name | safeHTML }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+</nav>
