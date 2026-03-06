@@ -1,0 +1,34 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "R-Ladies Global",
+  "alternateName": ["RLadies Global", "RLadies+ Global"],
+  "url": "https://rladies.org",
+  "logo": "{{ "images/logo.png" | absURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "foundingDate": "2012",
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ROR",
+      "value": "https://ror.org/05wpb1k41"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Wikidata",
+      "value": "Q71297539"
+    }
+  ],
+  "sameAs": [
+    "https://www.wikidata.org/wiki/Q71297539",
+    "https://github.com/rladies",
+    "https://www.linkedin.com/company/rladies",
+    "https://bsky.app/profile/rladies.org",
+    "https://hachyderm.io/@RLadiesGlobal",
+    "https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng"
+  ]
+}
+</script>
+{{ end }}
