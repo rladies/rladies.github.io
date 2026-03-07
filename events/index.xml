@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 06 Mar 2026 13:11:11 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 07 Mar 2026 01:12:59 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 3 going</p>
@@ -70,7 +70,7 @@ Advantages of using the gptstudio package:
         <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Working Smarter with {dplyr} 1.2.0 – A Practical Session - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313630747/</link><guid>https://www.meetup.com/rladies-rome/events/313630747/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, March 18, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 42 going</p>
+        <p><strong>Attendees:</strong> 44 going</p>
         <p>**{dplyr} 1.2.0 is out, and wow, is it a delight!**
 
 **Join us for a tour** of the new tools in {dplyr} 1.2.0 and when you should use them.
@@ -107,7 +107,7 @@ Food and drink are available for purchase. Please note this event will be held o
         <p><a href="https://www.meetup.com/rladies-corvallis/events/313408453/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Co-working: IWD Data Challenge 2026 - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489942/</link><guid>https://www.meetup.com/rladies-ottawa/events/313489942/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Monday, March 9, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Bayview Yards</p>
-        <p><strong>Attendees:</strong> 13 going</p>
+        <p><strong>Attendees:</strong> 15 going</p>
         <p>**‍IWD Data Challenge 2026**
 R‑Ladies Ottawa is excited to host our fourth annual data challenge in celebration of International Women’s Day. This year, we invite you to explore openly available data connected to your community. That could be Ottawa, Gatineau, another part of the National Capital Region, or any place in the world that feels meaningful to you. As a starting point, we encourage you to browse datasets available through [Open Ottawa](https://open.ottawa.ca/). Although the challenge is hosted by R‑Ladies Ottawa, you’re welcome to use any programming language or visualization tool you prefer.
 
@@ -141,7 +141,7 @@ We are grateful to be part of the Bayview Yards Meetup Program and extend our th
         <p><a href="https://www.meetup.com/rladies-ottawa/events/313489942/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Análise de Dados Abertos com R – Open Data Day 2026 - R-Ladies São Paulo</title><link>https://www.meetup.com/rladies-sao-paulo/events/313564460/</link><guid>https://www.meetup.com/rladies-sao-paulo/events/313564460/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies São Paulo</p>
         <p><strong>When:</strong> Saturday, March 7, 2026 at 12:30 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 27 going</p>
+        <p><strong>Attendees:</strong> 28 going</p>
         <p>O evento **“Análise de Dados Abertos com R – Open Data Day 2026”**, organizado pela R-Ladies São Paulo, é um meetup online pensado para quem quer colocar a mão na massa com dados abertos usando R.
 
 Com cerca de 3 horas de duração, o encontro vai combinar uma introdução sobre o que são dados abertos, porque eles são importantes e como podem ser usados para gerar análises, com um momento de **live coding em R** (mostrando passo a passo como importar, tratar, explorar e visualizar esses dados).
