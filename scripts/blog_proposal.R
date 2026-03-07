@@ -67,6 +67,8 @@ slug: {slug}
   return(nrow(proposals_to_draft))
 }
 
+base_id <- Sys.getenv("AIRTABLE_BASE_ID")
+process_proposals(base_id)
 
 # After successfully creating the markdown file:
 # Update the Airtable record to:

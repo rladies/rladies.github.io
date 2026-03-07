@@ -47,12 +47,39 @@ escape_yaml <- function(text) {
   return(text)
 }
 
-# Download images from URLs and save to folder
-# Returns vector of local filenames
+# Download images from Airtable attachment field and save to folder
+# Returns vector of local filenames (or empty vector if none)
 download_images <- function(image_urls, folder_path) {
   
-  # Handle NULL or empty input
-  if (is.null(image_urls) || is.na(image_urls) || length(image_urls) == 0 || image_urls == "") {
-    return(NULL)
+  # Handle NULL, NA, empty, or non-list input
+  if (is.null(image_urls) || length(image_urls) == 0) return(character(0))
+  
+  # Airtable returns attachments as a list of lists, each with $url and $filename
+  # Coerce to list if it somehow comes in as a single item
+  if (!is.list(image_urls)) return(character(0))
+  
+  downloaded <- c()
+  
+  for (attachment in image_urls) {
+    tryCatch({
+      url      <- attachment$url
+      filename <- attachment$filename
+      
+      if (is.null(url) || is.null(filename)) next
+      
+      local_path <- file.path(folder_path, filename)
+      response   <- httr::GET(url, httr::write_disk(local_path, overwrite = TRUE))
+      
+      if (httr::status_code(response) == 200) {
+        downloaded <- c(downloaded, filename)
+        message("  ↓ Downloaded: ", filename)
+      } else {
+        warning("  ✗ Failed to download: ", filename, " (HTTP ", httr::status_code(response), ")")
+      }
+    }, error = function(e) {
+      warning("  ✗ Error downloading image: ", e$message)
+    })
   }
+  
+  return(downloaded)
 }

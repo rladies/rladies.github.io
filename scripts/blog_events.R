@@ -13,7 +13,7 @@ process_events <- function(base_id) {
   events_data <- base$`Event Reports`$select()
   
   # Filter ready-to-draft events
-  events_to_draft <- filter_ready_to_draft(events_data, title_col = "title")
+  events_to_draft <- filter_ready_to_draft(events_data, title_col = "Title")
   
   if (nrow(events_to_draft) == 0) {
     message("No new event reports to draft.")
@@ -63,26 +63,27 @@ process_events <- function(base_id) {
       ---
       '
       )
-      # standardised blogpost
       
       post_body <- glue(
-      'On {report$Date}, {report$Chapter} hosted the event "{report$Title}". 
-      The session was led by {report$Speakers} and was attended by {report$Participants} participants.
-      
-      ## Event Summary
-      
-      Here are the key topics that were covered:
-      
-      {report$Summary}
-      
-      ## Attendee Feedback
-      
-      > {report$`Quotes or Reactions (optional)`}
-      
-      ## Resources
-      
-      A big thank you to the speakers and everyone who attended!'
-      )
+        'On {report$Date}, {report$Chapter} hosted the event "{report$Title}".
+        The session was led by {report$Speakers} and was attended by {report$Participants} participants.
+        
+        ## Event Summary
+        
+        {report$Summary}
+        
+        ## Attendee Feedback
+        
+        > {report$`Quotes or Reactions (optional)`}
+        
+        ## Resources
+        
+        {report$Resources}
+        
+        A big thank you to the speakers and everyone who attended!
+        
+        {image_markdown}'
+        )
       
       # Write file
       content <- paste0(front_matter, post_body)
@@ -96,6 +97,9 @@ process_events <- function(base_id) {
   
   return(nrow(events_to_draft))
 }
+
+base_id <- Sys.getenv("AIRTABLE_BASE_ID")
+process_events(base_id)
 
 # After successfully creating the markdown file:
 # Update the Airtable record to:
