@@ -1,5 +1,5 @@
 
-{{- $events := $.Scratch.Get "events" -}}
+{{- $events := $.Store.Get "events" -}}
 {{- $futureEvents := slice -}}
 {{- $now := now.Unix -}}
 
