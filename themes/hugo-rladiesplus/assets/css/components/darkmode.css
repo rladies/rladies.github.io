@@ -406,6 +406,10 @@
     @apply border border-white/10;
   }
 
+  .dark .page-image-contain .cls-1 {
+    fill: var(--color-primary-light);
+  }
+
   .dark .alumni-grid .card-expand-img img {
     @apply grayscale brightness-75;
   }

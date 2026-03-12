@@ -72,11 +72,11 @@
 
   /* Impact photo strip */
   .impact-photo-strip {
-    @apply grid grid-cols-3 gap-3 max-w-4xl mx-auto mt-10 rounded-2xl overflow-hidden;
+    @apply grid grid-cols-2 md:grid-cols-3 gap-3 max-w-5xl mx-auto mt-10 rounded-2xl overflow-hidden;
   }
 
   .impact-photo-cell {
-    @apply overflow-hidden relative m-0;
+    @apply overflow-hidden relative m-0 cursor-pointer;
   }
 
   .impact-photo-cell img {
@@ -97,6 +97,64 @@
 
   .impact-photo-cell small a {
     @apply text-white/80 underline;
+  }
+
+  /* Inline page image (SVG/PNG) inside program-row */
+  .page-image-contain {
+    @apply w-full h-full flex items-center justify-center p-6;
+  }
+
+  .page-image-contain svg {
+    @apply max-w-full max-h-full;
+    width: auto;
+    height: auto;
+  }
+
+  /* Lightbox */
+  .lightbox-overlay {
+    @apply fixed inset-0 z-50 flex items-center justify-center;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+  }
+
+  .lightbox-close {
+    @apply absolute top-4 right-4 text-white text-4xl leading-none cursor-pointer z-10;
+    font-family: sans-serif;
+    background: none;
+    border: none;
+  }
+
+  .lightbox-close:hover {
+    @apply text-gray-300;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    @apply absolute top-1/2 -translate-y-1/2 text-white/70 text-2xl w-12 h-12 flex items-center justify-center rounded-full cursor-pointer z-10 transition-colors;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+  }
+
+  .lightbox-prev:hover,
+  .lightbox-next:hover {
+    @apply text-white;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .lightbox-prev { @apply left-4; }
+  .lightbox-next { @apply right-4; }
+
+  .lightbox-figure {
+    @apply flex flex-col items-center max-w-5xl mx-16;
+  }
+
+  .lightbox-img {
+    @apply max-h-[80vh] max-w-full rounded-lg;
+    object-fit: contain;
+  }
+
+  .lightbox-caption {
+    @apply mt-3 text-white/90 text-sm text-center;
   }
 
   /* Chapter status badge */

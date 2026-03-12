@@ -1,0 +1,85 @@
+{{ define "main" }}
+{{ $params := .Params }}
+{{ $stockImages := site.Data.stock_images }}
+
+<section class="site-section bg-surface-alt">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto text-center mb-12 fade-in-up">
+      {{ with $params.description }}
+        <p class="text-lg text-muted leading-relaxed">{{ . }}</p>
+      {{ end }}
+    </div>
+
+    <div class="grid-3 fade-in-up">
+      {{ range $params.pillars }}
+      <div class="involved-pillar">
+        <div class="involved-icon"><i class="fa-solid {{ .icon }}"></i></div>
+        <h2 class="involved-pillar-title">{{ .title }}</h2>
+        <p class="involved-pillar-desc">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ range $i, $s := .Pages.ByWeight }}
+  {{ $imgData := index (where $stockImages "id" $s.Params.image) 0 }}
+  <section class="program-row{{ if eq (mod $i 2) 1 }} program-row-reverse bg-surface-alt{{ end }}">
+    <div class="program-row-image">
+      {{ with resources.Get $imgData.file }}
+        {{ $img := .Fill "800x600 webp" }}
+        <img src="{{ $img.RelPermalink }}"
+             alt="{{ $imgData.alt }}"
+             width="{{ $img.Width }}" height="{{ $img.Height }}"
+             loading="lazy">
+      {{ end }}
+      {{ partial "stock-attribution.html" $imgData }}
+    </div>
+    <div class="involved-row-content">
+      <h2 class="program-row-title">{{ $s.Title }}</h2>
+      {{ with $s.Params.description }}
+        <p class="text-muted mb-6 leading-relaxed">{{ . }}</p>
+      {{ end }}
+      {{ with $s.Params.subsections }}
+        {{ range . }}
+          <h3 class="involved-subsection-title">{{ .title }}</h3>
+          <ul class="involved-list">
+            {{ range .items }}<li>{{ . | markdownify }}</li>{{ end }}
+            {{ if .github_issues_note }}<li>Open issues tagged <a href="#github-issues" class="text-primary hover:underline font-medium">help wanted</a> are listed below.</li>{{ end }}
+          </ul>
+        {{ end }}
+      {{ else }}
+        <ul class="involved-list">
+          {{ range $s.Params.items }}<li>{{ . | markdownify }}</li>{{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+<section class="site-section border-t border-gray-200 fade-in-up">
+  <div class="site-container">
+    <div id="github-issues">
+      <h3 class="text-xl font-semibold mb-6">{{ i18n "gh_help_wanted" }}</h3>
+      <div id="loading" class="text-center my-12">
+        <div class="animate-spin inline-block w-8 h-8 border-4 border-primary border-t-transparent rounded-full" role="status">
+          <span class="visually-hidden">{{ i18n "loading" }}</span>
+        </div>
+      </div>
+
+      <div id="error" class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg hidden" role="alert"></div>
+
+      <div id="issues-container" class="hidden">
+        <p class="text-muted mb-4">{{ i18n "gh_found" }} <span id="issue-count">0</span> {{ i18n "gh_open_issues" }}</p>
+        <div id="issues-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "footer" }}
+    {{ $js := resources.Get "js/gh_helpwanted.js" | minify | fingerprint }}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}

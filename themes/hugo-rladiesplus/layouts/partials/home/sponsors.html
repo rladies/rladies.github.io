@@ -1,23 +1,20 @@
-{{ with .Site.GetPage "section" "sponsors" }}
+{{ with site.Data.sponsors }}
 <section class="site-section-lg bg-surface" id="sponsors">
   <div class="site-container">
     <h2 class="section-title fade-in-up">
-      {{ i18n "home_sponsors_title" | default .Title }}
+      {{ i18n "home_sponsors_title" | default "Sponsors" }}
     </h2>
     <p class="section-subtitle fade-in-up stagger-1">
       {{ i18n "home_sponsors_subtitle" | default "Organizations that support our mission" }}
     </p>
 
     <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 max-w-4xl mx-auto fade-in-up stagger-2">
-      {{ range .Pages }}
-        {{ $sponsorTitle := .Title }}
-        <a href="{{ .Params.source }}" title="{{ $sponsorTitle }}"
+      {{ range . }}
+        <a href="{{ .url }}" title="{{ .name }}"
            target="_blank" rel="noopener"
            class="sponsor-logo block p-4">
-          {{ range first 1 (.Resources.ByType "image") }}
-            <img src="{{ .RelPermalink }}" alt="{{ $sponsorTitle }}"
-                 class="h-12 md:h-16 w-auto object-contain">
-          {{ end }}
+          <img src="{{ .logo }}" alt="{{ .name }}"
+               class="h-12 md:h-16 w-auto object-contain">
         </a>
       {{ end }}
     </div>
