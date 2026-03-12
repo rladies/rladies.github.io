@@ -1,5 +1,5 @@
-{{ $countries := $.Scratch.Get "chpt_countries" }}
-{{ $chapters  := $.Scratch.Get "chpt_active" }}
+{{ $countries := $.Store.Get "chpt_countries" }}
+{{ $chapters  := $.Store.Get "chpt_active" }}
 
 {{ with .Site.GetPage "section" "chapters" }}
 

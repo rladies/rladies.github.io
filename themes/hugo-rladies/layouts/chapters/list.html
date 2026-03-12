@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $countries := $.Scratch.Get "chpt_countries" }}
+{{ $countries := $.Store.Get "chpt_countries" }}
 {{ $chapters := .Pages }}
 
 <div class="container row justify-content-center section topspace">
