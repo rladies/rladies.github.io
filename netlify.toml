@@ -1,15 +1,13 @@
-[build]
-publish = "/public"
-command = "hugo -d public"
+# Hugo version is managed in .hugoversion (single source of truth).
+# Production builds are handled by GitHub Actions (see .github/workflows/).
+# Netlify handles deploy previews and serves headers.
 
-[context.production.environment]
-  HUGO_VERSION = "0.152.2"
+[build]
+  publish = "/public"
+  command = "export HUGO_VERSION=$(cat .hugoversion) && hugo -d public"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
-
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.152.2"
+  command = "export HUGO_VERSION=$(cat .hugoversion) && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL -d public"
 
 [[headers]]
   for = "/*.css"

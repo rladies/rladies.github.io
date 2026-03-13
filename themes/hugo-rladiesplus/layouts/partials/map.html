@@ -8,7 +8,7 @@
     | minify
     | fingerprint
 }}
-<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 
 <div id="{{ $id }}" style="width: 100%; height: {{ $height }};"
      data-map-config="{{ $id }}-config"></div>
@@ -47,4 +47,4 @@
 <script type="application/json" id="{{ $id }}-config">{{ $config | jsonify | safeJS }}</script>
 
 {{ $mapJs := resources.Get "js/map-init.js" | minify | fingerprint }}
-<script src="{{ $mapJs.RelPermalink }}" integrity="{{ $mapJs.Data.Integrity }}" crossorigin="anonymous"></script>
+<script src="{{ $mapJs.RelPermalink }}" integrity="{{ $mapJs.Data.Integrity }}" crossorigin="anonymous" defer></script>

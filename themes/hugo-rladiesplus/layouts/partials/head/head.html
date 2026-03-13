@@ -6,6 +6,11 @@
 {{ $darkmode := resources.Get "js/darkmode.js" | minify }}
 <script>{{ $darkmode.Content | safeJS }}</script>
 
+<!-- Preload critical fonts to reduce layout shifts -->
+<link rel="preload" href="{{ "/webfonts/google-fonts/poppins/poppins-latin-400-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "/webfonts/google-fonts/poppins/poppins-latin-600-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "/webfonts/fontawesome/fa-solid-900.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+
 {{ $tw := resources.Get "css/main.css" | css.TailwindCSS }}
 {{ $fa := resources.Get "scss/fontawesome.scss" | toCSS }}
 {{ $choices := resources.Get "css/vendor/choices.min.css" }}
@@ -24,4 +29,5 @@
 {{ partial "head/jsonld.html" . }}
 
 <!-- plausible -->
+<link rel="dns-prefetch" href="https://plausible.io">
 <script defer data-domain="rladies.org" src="https://plausible.io/js/script.js"></script>
