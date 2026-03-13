@@ -16,7 +16,8 @@
   }
 
   .site-nav-solid {
-    @apply bg-surface/95 border-b border-gray-200;
+    @apply bg-surface/95 border-b;
+    border-color: var(--color-border);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
   }
@@ -80,7 +81,8 @@
   }
 
   .site-nav-mobile {
-    @apply md:hidden border-t border-gray-200 bg-surface;
+    @apply md:hidden border-t bg-surface;
+    border-color: var(--color-border);
   }
 
   .site-nav-mobile-link {
@@ -104,12 +106,15 @@
   }
 
   .dropdown-menu {
-    @apply absolute top-full left-0 mt-2 min-w-48 bg-surface rounded-xl border border-gray-100 py-2 z-50;
+    @apply absolute top-full left-0 mt-2 min-w-48 rounded-xl border py-2 z-50;
+    background-color: var(--color-raised);
+    border-color: var(--color-border);
     box-shadow: var(--shadow-elevated);
   }
 
   .dropdown-item {
-    @apply block px-4 py-2.5 text-sm text-dark hover:bg-surface hover:text-primary transition-colors;
+    @apply block px-4 py-2.5 text-sm text-dark hover:text-primary transition-colors;
+    &:hover { background-color: color-mix(in srgb, var(--color-border) 30%, transparent); }
   }
 
   .dropdown-item.active {

@@ -27,9 +27,12 @@
   --color-dark-25: #bebec3;
 
   --color-light: #ededf4;
+  --color-bg: #ededf4;
   --color-muted: #5d5f66;
   --color-surface: #f8f8fc;
   --color-surface-alt: #ebe3f6;
+  --color-surface-footer: #ddd0f0;
+  --color-surface-underfooter: #d0c0e8;
 
   --font-sans: 'Poppins', sans-serif;
   --font-mono: 'Inconsolata Variable', monospace;
@@ -37,6 +40,10 @@
   --radius-sm: 0.5rem;
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
+
+  --color-border: #e5e7eb;
+  --color-border-strong: #d1d5db;
+  --color-raised: #ffffff;
 
   --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
   --shadow-card-hover: 0 10px 25px rgba(136,30,249,0.08), 0 4px 10px rgba(0,0,0,0.06);
@@ -98,7 +105,7 @@
   html {
     scroll-behavior: smooth;
     color: var(--color-dark);
-    background-color: var(--color-light);
+    background-color: var(--color-bg);
     line-height: 1.6;
   }
 
@@ -109,11 +116,11 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.5;
+    line-height: 1.3;
     color: var(--color-dark);
   }
 
-  h1 { font-weight: 500; letter-spacing: -0.02em; }
+  h1 { font-weight: 500; letter-spacing: -0.02em; line-height: 1.2; }
   h2 { font-weight: 600; letter-spacing: -0.01em; }
   h3, h4, h5, h6 { font-weight: 600; }
 
@@ -125,6 +132,10 @@
 
   a:hover {
     color: var(--color-primary-dark);
+  }
+
+  hr {
+    border-color: var(--color-border);
   }
 
   pre, code {

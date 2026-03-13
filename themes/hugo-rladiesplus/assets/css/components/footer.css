@@ -1,7 +1,7 @@
 @layer components {
   .site-footer {
     @apply text-sm;
-    background-color: #ddd0f0;
+    background-color: var(--color-surface-footer);
     color: var(--color-dark);
   }
 
@@ -41,13 +41,13 @@
   }
 
   .site-footer .form-select {
-    background-color: white;
+    background-color: var(--color-raised);
     border-color: var(--color-primary-lighter);
     color: var(--color-dark);
   }
 
   .site-footer .form-select option {
-    @apply bg-white;
+    background-color: var(--color-raised);
     color: var(--color-dark);
   }
 
@@ -62,7 +62,7 @@
 
   .site-underfooter {
     @apply py-3 text-xs;
-    background-color: #d0c0e8;
+    background-color: var(--color-surface-underfooter);
     color: var(--color-dark);
   }
 
@@ -76,49 +76,16 @@
     @apply underline;
   }
 
-  /* Dark mode: revert footer to dark background */
-  .dark .site-footer {
-    background-color: var(--color-dark-footer);
-    @apply text-white;
-  }
-
-  .dark .site-footer a {
-    @apply text-white/70;
-  }
-
-  .dark .site-footer a:hover {
-    @apply text-white;
-  }
-
-  .dark .site-footer .widget-title {
-    color: #d4b9f5;
-  }
-
-  .dark .site-footer .small a,
-  .dark .site-footer p a,
-  .dark .site-footer .leading-relaxed a {
-    color: #d4b9f5;
-  }
-
-  .dark .site-footer .social-icon {
-    @apply text-white/70;
-  }
-
-  .dark .site-footer .social-icon:hover {
-    color: #d4b9f5;
-  }
-
-  .dark .site-footer .footer-icon {
-    color: #d4b9f5;
-  }
-
+  /* Dark mode — backgrounds swap via variable, but footer uses
+     light-on-dark text which differs from the standard dark-mode swap */
   .dark .site-footer .form-select {
-    @apply bg-white/10 border-white/20 text-white;
+    @apply bg-white/10 text-white;
+    border-color: var(--color-border-strong);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   }
 
   .dark .site-footer .form-select option {
-    @apply bg-dark text-white;
+    background-color: var(--color-raised);
   }
 
   .dark .site-footer .btn-light {
@@ -126,9 +93,7 @@
   }
 
   .dark .site-underfooter {
-    background-color: var(--color-dark-underfooter);
     color: rgba(255, 255, 255, 0.5);
-    opacity: 1;
   }
 
   .dark .site-underfooter a {

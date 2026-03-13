@@ -1,6 +1,7 @@
 @layer components {
   .press-list .press-item {
-    @apply py-6 border-b border-gray-200 transition-colors duration-200;
+    @apply py-6 border-b transition-colors duration-200;
+    border-color: var(--color-border);
   }
 
   .press-list .press-item:last-child {

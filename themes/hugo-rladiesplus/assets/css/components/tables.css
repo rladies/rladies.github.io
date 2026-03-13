@@ -5,11 +5,13 @@
   }
 
   .table th {
-    @apply px-4 py-3 font-semibold text-dark border-b-2 border-gray-200;
+    @apply px-4 py-3 font-semibold text-dark border-b-2;
+    border-color: var(--color-border-strong);
   }
 
   .table td {
-    @apply px-4 py-3 border-b border-gray-100;
+    @apply px-4 py-3 border-b;
+    border-color: var(--color-border);
   }
 
   .table-hover tbody tr:hover {
@@ -26,11 +28,13 @@
   }
 
   .chp-table .country-cell {
-    @apply border-r border-gray-200 bg-surface pr-6 align-top;
+    @apply border-r bg-surface pr-6 align-top;
+    border-color: var(--color-border);
   }
 
   .chp-table thead th:first-child {
-    @apply border-r border-gray-200;
+    @apply border-r;
+    border-color: var(--color-border);
   }
 
   .chp-social a {

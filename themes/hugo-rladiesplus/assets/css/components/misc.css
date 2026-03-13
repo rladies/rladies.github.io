@@ -25,7 +25,8 @@
 
   /* Tab component (Alpine.js powered) */
   .tab-list {
-    @apply flex border-b border-gray-200 gap-1;
+    @apply flex border-b gap-1;
+    border-color: var(--color-border);
   }
 
   .tab-button {
@@ -33,7 +34,8 @@
   }
 
   .tab-button:hover {
-    @apply text-dark border-gray-300;
+    @apply text-dark;
+    border-color: var(--color-border-strong);
   }
 
   .tab-button.active {

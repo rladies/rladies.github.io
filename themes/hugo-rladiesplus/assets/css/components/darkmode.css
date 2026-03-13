@@ -1,6 +1,8 @@
 @layer components {
 
-  /* ── Variable overrides ── */
+  /* ── Variable overrides ──
+     Most components reference these variables directly, so swapping them
+     here eliminates the need for per-component dark-mode selectors. */
   .dark {
     --color-primary: #bb86f7;
     --color-primary-light: #d4b9f5;
@@ -11,158 +13,32 @@
     --color-accent-blue-75: #b7ccf5;
     --color-accent-rose: #f6a4c3;
     --color-accent-rose-75: #f2c9dc;
+    --color-bg: #121220;
     --color-surface: #1a1a2e;
     --color-surface-alt: #16213e;
+    --color-surface-footer: #0f0f1a;
+    --color-surface-underfooter: #0a0a14;
     --color-dark: #ededf4;
     --color-muted: #9ca3af;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-border-strong: rgba(255, 255, 255, 0.2);
+    --color-raised: #1e1e30;
     --shadow-card: 0 1px 3px rgba(0,0,0,0.3);
     --shadow-card-hover: 0 10px 25px rgba(187,134,247,0.15), 0 4px 10px rgba(0,0,0,0.2);
-    --color-dark-base: #121220;
-    --color-dark-raised: #1e1e30;
-    --color-dark-footer: #0f0f1a;
-    --color-dark-underfooter: #0a0a14;
     color-scheme: dark;
   }
 
-  /* ── Base elements ── */
-  .dark body {
-    background-color: var(--color-dark-base);
-    @apply text-light;
-  }
-
-  .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-    color: var(--color-light);
-  }
-
-  .dark a {
-    color: var(--color-primary-light);
-  }
-
-  .dark a:hover {
-    color: var(--color-primary-lighter);
-  }
-
-  .dark hr {
-    @apply border-white/10;
-  }
-
-  /* ── Consolidated utility overrides ── */
-  .dark .text-dark,
-  .dark .hero-headline,
-  .dark .hero-inner-title,
-  .dark .card-title,
-  .dark .card-expand-title,
-  .dark .section-title,
-  .dark .entry-title,
-  .dark .form-label {
-    color: var(--color-light);
-  }
-
-  .dark .text-muted,
-  .dark .section-subtitle,
-  .dark .lead,
-  .dark blockquote cite,
-  .dark .tab-button {
-    @apply text-gray-400;
-  }
-
-  .dark .border-gray-100,
-  .dark .border-gray-200,
-  .dark .border-gray-300,
-  .dark .card-header,
-  .dark .card-expand-foot,
-  .dark .tab-list {
-    @apply border-white/10;
-  }
-
-  .dark .bg-white {
-    background-color: var(--color-dark-raised);
-  }
-
-  .dark .bg-surface {
-    background-color: var(--color-surface);
-  }
-
-  .dark .bg-surface-alt {
-    background-color: var(--color-surface-alt);
-  }
-
+  /* ── Tailwind utility overrides (these don't use our custom properties) ── */
   .dark .bg-gray-100 {
     @apply bg-white/10;
   }
 
-  /* ── Nav ── */
-  .dark .site-nav-solid {
-    background-color: color-mix(in srgb, var(--color-surface) 95%, transparent);
-    @apply border-white/10;
-    backdrop-filter: blur(12px);
-  }
-
-  .dark .site-nav-solid .site-nav-link {
-    @apply text-light hover:text-primary-light;
-  }
-
-  .dark .site-nav-transparent .site-nav-link {
-    @apply text-light/80 hover:text-primary-light;
-  }
-
-  .dark .site-nav-transparent .site-nav-mobile-toggle,
-  .dark .site-nav-mobile-toggle {
-    @apply text-light;
-  }
-
-  .dark .site-nav-mobile {
-    background-color: var(--color-surface);
-    @apply border-white/10;
-  }
-
-  .dark .site-nav-mobile-link {
-    @apply text-light hover:bg-white/10 hover:text-primary-light;
-  }
-
-  .dark .dropdown-menu {
-    background-color: var(--color-dark-raised);
-    @apply border-white/10;
-  }
-
-  .dark .dropdown-item {
-    @apply text-light hover:bg-white/10;
-  }
-
   /* ── Hero ── */
-  .dark .hero-home {
-    background: linear-gradient(135deg, var(--color-dark-base) 0%, var(--color-surface) 50%, color-mix(in srgb, var(--color-primary) 12%, var(--color-surface)) 100%);
-  }
-
-  .dark .hero-home-accent {
-    background: linear-gradient(to bottom, transparent, var(--color-dark-base));
-  }
-
   .dark .hero-subheadline {
     @apply text-gray-300;
   }
 
-  .dark .hero-inner {
-    background-color: var(--color-surface);
-  }
-
   /* ── Cards ── */
-  .dark .card,
-  .dark .post-card,
-  .dark .card-expand,
-  .dark .stat-card {
-    background-color: var(--color-dark-raised);
-    @apply border border-white/10;
-  }
-
-  .dark .post-card .post-title a {
-    @apply text-light;
-  }
-
-  .dark .post-card .post-title a:hover {
-    @apply text-primary-light;
-  }
-
   .dark .stat-icon {
     opacity: 0.7;
   }
@@ -172,90 +48,17 @@
   }
 
   /* ── Typography ── */
-  .dark .date {
-    border-bottom-color: rgba(255, 255, 255, 0.15);
-    color: var(--color-muted);
-  }
-
-  .dark .date span {
-    background-color: var(--color-dark-base);
-  }
-
   .dark blockquote {
-    background: color-mix(in srgb, var(--color-primary) 8%, var(--color-dark-raised));
-    color: var(--color-light);
-  }
-
-  .dark .toc-nav {
-    border-left-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .dark .toc-nav a {
-    @apply text-gray-400 hover:text-primary-light;
+    background: color-mix(in srgb, var(--color-primary) 8%, var(--color-raised));
   }
 
   /* ── Tables ── */
-  .dark .table {
-    @apply text-light;
-  }
-
-  .dark .table th {
-    @apply border-white/10 text-light;
-  }
-
-  .dark .table td {
-    @apply border-white/5;
-  }
-
-  .dark .table-hover tbody tr:hover {
-    @apply bg-white/5;
-  }
-
-  .dark .entry-content table {
-    @apply text-light;
-  }
-
-  .dark .entry-content th {
-    @apply border-white/10 text-light;
-  }
-
-  .dark .entry-content td {
-    @apply border-white/5;
-  }
-
+  .dark .table-hover tbody tr:hover,
   .dark .entry-content tbody tr:hover {
     @apply bg-white/5;
   }
 
-  .dark .chp-table .country-cell {
-    background-color: var(--color-surface);
-    @apply border-white/10;
-  }
-
-  .dark .chp-table thead th:first-child {
-    @apply border-white/10;
-  }
-
-  .dark .chp-social a {
-    @apply text-gray-400 hover:text-primary-light;
-  }
-
-  /* ── Tabs ── */
-  .dark .tab-button:hover {
-    @apply text-light border-white/30;
-  }
-
-  .dark .tab-button.active {
-    @apply text-primary-light border-primary-light;
-  }
-
   /* ── Forms ── */
-  .dark .form-control,
-  .dark .form-select {
-    background-color: var(--color-dark-raised);
-    @apply border-white/20 text-light;
-  }
-
   .dark .form-control::placeholder {
     @apply text-gray-500;
   }
@@ -274,20 +77,8 @@
     @apply bg-white/10 text-light hover:bg-white/20;
   }
 
-  .dark .btn-outline {
-    @apply border-primary-light text-primary-light hover:bg-primary hover:text-white;
-  }
-
-  .dark .btn-outline-secondary {
-    @apply border-gray-500 text-gray-400 hover:bg-gray-500 hover:text-white;
-  }
-
   .dark .btn-accent-rose {
     color: #2f2f30;
-  }
-
-  .dark .btn-accent-blue {
-    @apply text-white;
   }
 
   /* ── Badges ── */
@@ -306,52 +97,32 @@
   }
 
   .dark .bg-chapter-active {
-    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-dark-raised));
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-raised));
   }
 
   /* ── Pagination ── */
-  .dark .page-link {
-    @apply text-light hover:bg-white/10 hover:text-primary-light;
-  }
-
-  .dark .page-item.active .page-link {
-    @apply bg-primary text-white;
-  }
-
   .dark .page-item.disabled .page-link {
     @apply text-gray-600;
   }
 
   /* ── Calendar (FullCalendar) ── */
   .dark .fc {
-    --fc-border-color: rgba(255, 255, 255, 0.1);
-    --fc-page-bg-color: var(--color-dark-raised);
+    --fc-border-color: var(--color-border);
+    --fc-page-bg-color: var(--color-raised);
     --fc-neutral-bg-color: rgba(255, 255, 255, 0.05);
     --fc-list-event-hover-bg-color: rgba(255, 255, 255, 0.05);
   }
 
   .dark .fc .fc-toolbar {
-    background: linear-gradient(to bottom, var(--color-dark-raised), var(--color-surface));
-    border-bottom-color: rgba(255, 255, 255, 0.1);
-  }
-
-  .dark .fc .fc-toolbar .fc-toolbar-title {
-    color: var(--color-light);
-  }
-
-  .dark .fc .fc-col-header-cell-cushion,
-  .dark .fc .fc-daygrid-day-number {
-    @apply text-light;
+    background: linear-gradient(to bottom, var(--color-raised), var(--color-surface));
   }
 
   .dark .fc-day-today {
-    background: color-mix(in srgb, var(--color-primary) 12%, var(--color-dark-raised)) !important;
+    background: color-mix(in srgb, var(--color-primary) 12%, var(--color-raised)) !important;
   }
 
   .dark .cal-toggle {
-    background-color: var(--color-dark-raised);
-    color: var(--color-light);
-    @apply border-white/10;
+    background-color: var(--color-raised);
   }
 
   .dark .cal-toggle:hover {
@@ -361,16 +132,6 @@
   .dark .cal-toggle.active {
     @apply text-white font-semibold;
     background-color: var(--color-primary);
-  }
-
-  .dark .cal-tooltip {
-    background-color: var(--color-dark-raised);
-    @apply border-white/10 text-light;
-  }
-
-  .dark .cal-tooltip-arrow {
-    background-color: var(--color-dark-raised);
-    @apply border-white/10;
   }
 
   /* ── Map ── */
@@ -389,21 +150,13 @@
     box-shadow: 0 4px 12px rgba(136, 30, 249, 0.3);
   }
 
-  .dark .back-to-top-float {
-    @apply bg-primary-dark;
-  }
-
-  .dark .highlight-border {
-    @apply border-primary-light;
-  }
-
   .dark code:not(pre code) {
     @apply bg-white/10 text-primary-light;
   }
 
   .dark pre {
-    background-color: var(--color-dark-footer);
-    @apply border border-white/10;
+    background-color: var(--color-surface-footer);
+    border: 1px solid var(--color-border);
   }
 
   .dark .page-image-contain .cls-1 {
@@ -423,13 +176,13 @@
    !important required: vendor CSS is unlayered (concatenated after Tailwind
    output in head.html), so @layer components rules cannot beat its specificity. */
 .dark .choices__inner {
-  background-color: var(--color-dark-raised) !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: var(--color-raised) !important;
+  border-color: var(--color-border-strong) !important;
 }
 
 .dark .choices__input {
   background-color: transparent !important;
-  color: var(--color-light) !important;
+  color: var(--color-dark) !important;
 }
 
 .dark .choices__placeholder {
@@ -437,26 +190,25 @@
 }
 
 .dark .choices[data-type*=select-one] .choices__input {
-  background-color: var(--color-dark-raised) !important;
-  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
-  color: var(--color-light) !important;
+  background-color: var(--color-raised) !important;
+  border-bottom-color: var(--color-border) !important;
+  color: var(--color-dark) !important;
 }
 
 .dark .choices__list--dropdown,
 .dark .choices__list[aria-expanded] {
-  background-color: var(--color-dark-raised) !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
+  background-color: var(--color-raised) !important;
+  border-color: var(--color-border) !important;
 }
 
 .dark .choices__list--dropdown .choices__item,
 .dark .choices__list[aria-expanded] .choices__item {
-  color: var(--color-light) !important;
+  color: var(--color-dark) !important;
 }
 
 .dark .choices__list--dropdown .choices__item--selectable.is-highlighted,
 .dark .choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
   background-color: rgba(255, 255, 255, 0.1) !important;
-  color: var(--color-light) !important;
 }
 
 .dark .choices__list--multiple .choices__item {

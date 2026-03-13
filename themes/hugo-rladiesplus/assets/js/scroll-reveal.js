@@ -21,7 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
   elements.forEach(function (el) {
     var rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight && rect.bottom > 0) {
-      el.classList.add('is-visible');
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          el.classList.add('is-visible');
+        });
+      });
     } else {
       observer.observe(el);
     }

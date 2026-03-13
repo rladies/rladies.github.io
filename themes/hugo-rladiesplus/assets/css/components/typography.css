@@ -2,6 +2,7 @@
   .section-title {
     @apply text-4xl md:text-5xl font-medium text-dark text-center mb-4;
     letter-spacing: -0.02em;
+    line-height: 1.15;
   }
 
   .section-subtitle {
@@ -65,7 +66,7 @@
   }
 
   .text-muted {
-    @apply text-muted;
+    color: var(--color-muted);
   }
 
   .date {
@@ -76,12 +77,13 @@
   }
 
   .date span {
-    @apply bg-light px-2.5;
+    @apply px-2.5;
+    background-color: var(--color-bg);
   }
 
   .toc-nav {
     @apply text-sm;
-    border-left: 2px solid var(--color-light);
+    border-left: 2px solid var(--color-border);
   }
 
   .toc-nav ul {
@@ -148,12 +150,14 @@
   }
 
   .entry-content th {
-    @apply px-4 py-3 font-semibold border-b-2 border-gray-200;
+    @apply px-4 py-3 font-semibold border-b-2;
+    border-color: var(--color-border-strong);
     color: var(--color-dark);
   }
 
   .entry-content td {
-    @apply px-4 py-3 border-b border-gray-100;
+    @apply px-4 py-3 border-b;
+    border-color: var(--color-border);
   }
 
   .entry-content tbody tr:hover {
