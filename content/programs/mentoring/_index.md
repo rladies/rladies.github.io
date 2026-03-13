@@ -9,7 +9,7 @@ description: |
 aliases:
   - /activities/mentoring/
 ctas:
-  - label: "Learn more"
+  - label: "More about the Mentoring Program"
     url: "/programs/mentoring/"
     style: "primary"
 ---

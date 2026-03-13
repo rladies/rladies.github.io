@@ -63,9 +63,8 @@
           </div>
         {{ end }}
 
-        <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm"
-           aria-label="{{ i18n "read_more" | default "Read more" }}: {{ .Title }}">
-          {{ i18n "read_more" | default "Read more" }} <i class="fas fa-arrow-right ml-1"></i>
+        <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm">
+          {{ i18n "read_more" | default "Read more" }}<span class="sr-only">: {{ .Title }}</span> <i class="fas fa-arrow-right ml-1"></i>
         </a>
       </div>
     </div>

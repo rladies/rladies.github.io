@@ -28,9 +28,8 @@
               <p class="text-sm text-muted mb-4">{{ . | plainify | truncate 150 }}</p>
             {{ end }}
 
-            <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline"
-               aria-label="{{ i18n "read_more" | default "Read more" }}: {{ .Title }}">
-              {{ i18n "read_more" | default "Read more" }} <i class="fas fa-arrow-right ml-1"></i>
+            <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline">
+              {{ i18n "read_more" | default "Read more" }}<span class="sr-only">: {{ .Title }}</span> <i class="fas fa-arrow-right ml-1"></i>
             </a>
           </div>
         </article>
