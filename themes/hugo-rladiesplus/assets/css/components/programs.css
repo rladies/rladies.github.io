@@ -50,6 +50,11 @@
   @apply text-muted mb-6 leading-relaxed;
 }
 
+.program-row-desc a {
+  @apply underline;
+  text-underline-offset: 2px;
+}
+
 .program-row-desc p {
   @apply mb-3;
 }

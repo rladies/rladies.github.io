@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {{ if .Site.Params.footerEnableContact }}
         <div>
-          <h3 class="widget-title">{{ i18n "footer_contact_title" . | markdownify }}</h3>
+          <h2 class="widget-title">{{ i18n "footer_contact_title" . | markdownify }}</h2>
           <div class="mb-6">
             {{ if .Site.Params.phone }}
               <p class="mb-1">
@@ -20,7 +20,7 @@
             {{ end }}
           </div>
 
-          <h3 class="widget-title">{{ i18n "footer_donate" }} RLadies+</h3>
+          <h2 class="widget-title">{{ i18n "footer_donate" }} RLadies+</h2>
           <a href="https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E"
              target="_blank"
              class="btn btn-light btn-sm"
@@ -33,7 +33,7 @@
 
       {{ if .Site.Params.footerEnableFollowme }}
         <div>
-          <h3 class="widget-title">{{ i18n "footer_followme_title" . | markdownify }}</h3>
+          <h2 class="widget-title">{{ i18n "footer_followme_title" . | markdownify }}</h2>
           <div class="flex flex-wrap gap-4">
             {{ range .Site.Params.social }}
               {{ if .footer }}
@@ -53,7 +53,7 @@
 
       {{ if .Site.Params.footerEnableTextWidget }}
         <div>
-          <h3 class="widget-title">{{ i18n "footer_text_title" . | markdownify }}</h3>
+          <h2 class="widget-title">{{ i18n "footer_text_title" . | markdownify }}</h2>
           <div class="text-sm leading-relaxed">
             {{ i18n "footer_text_content" . | markdownify }}
           </div>
@@ -62,9 +62,9 @@
 
       {{ if .Site.Params.footerEnableLangWidget }}
         <div>
-          <h3 class="widget-title">
+          <h2 class="widget-title">
             <i class="fas fa-globe mr-2"></i>{{ i18n "footer_lang_title" . | markdownify }}
-          </h3>
+          </h2>
           {{ if hugo.IsMultilingual }}
           <select id="select-language"
                   class="form-select rounded-lg"

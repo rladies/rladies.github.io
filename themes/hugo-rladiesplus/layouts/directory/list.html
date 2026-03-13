@@ -61,7 +61,7 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 fade-in-up relative z-10">
-      <div class="card rounded-xl">
+      <div class="card card-overflow rounded-xl">
         <div class="p-5">
           <div class="flex items-center mb-3">
             <i class="fa-solid fa-tag text-primary mr-2"></i>
@@ -75,7 +75,7 @@
         </div>
       </div>
 
-      <div class="card rounded-xl">
+      <div class="card card-overflow rounded-xl">
         <div class="p-5">
           <div class="flex items-center mb-3">
             <i class="fa-solid fa-language text-primary mr-2"></i>
@@ -89,7 +89,7 @@
         </div>
       </div>
 
-      <div class="card rounded-xl">
+      <div class="card card-overflow rounded-xl">
         <div class="p-5">
           <div class="flex items-center mb-3">
             <i class="fa-solid fa-map-marker-alt text-primary mr-2"></i>
@@ -128,6 +128,7 @@
 
 <div class="breakout">
   <div class="container-wide p-0 px-3">
+    <h2 class="sr-only">{{ i18n "directory_members" | default "Members" }}</h2>
     <ul class="shuffle-wrapper w-full list-unstyled" id="directory-grid">
       {{ range $name := $directory | shuffle }}
         {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}

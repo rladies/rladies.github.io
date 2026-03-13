@@ -68,16 +68,42 @@
 
   .site-underfooter a {
     color: var(--color-primary-dark);
-    @apply no-underline transition-colors;
+    @apply underline transition-colors;
+    text-underline-offset: 2px;
   }
 
   .site-underfooter a:hover {
     color: var(--color-primary-darker);
-    @apply underline;
   }
 
   /* Dark mode — backgrounds swap via variable, but footer uses
      light-on-dark text which differs from the standard dark-mode swap */
+  .dark .site-footer a {
+    color: #b68df5;
+  }
+
+  .dark .site-footer a:hover {
+    color: var(--color-primary-lighter);
+  }
+
+  .dark .site-footer .small a,
+  .dark .site-footer p a,
+  .dark .site-footer .leading-relaxed a {
+    color: #b68df5;
+  }
+
+  .dark .site-footer .social-icon {
+    color: var(--color-light);
+  }
+
+  .dark .site-footer .social-icon:hover {
+    color: #b68df5;
+  }
+
+  .dark .site-footer .footer-icon {
+    color: #b68df5;
+  }
+
   .dark .site-footer .form-select {
     @apply bg-white/10 text-white;
     border-color: var(--color-border-strong);
@@ -97,10 +123,10 @@
   }
 
   .dark .site-underfooter a {
-    @apply text-white/50;
+    color: #b68df5;
   }
 
   .dark .site-underfooter a:hover {
-    @apply text-white/80;
+    color: var(--color-light);
   }
 }

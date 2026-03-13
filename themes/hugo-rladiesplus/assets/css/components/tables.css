@@ -27,6 +27,10 @@
     @apply overflow-x-auto;
   }
 
+  .continent-cell {
+    background-color: var(--color-surface-alt);
+  }
+
   .chp-table .country-cell {
     @apply border-r bg-surface pr-6 align-top;
     border-color: var(--color-border);
@@ -38,7 +42,9 @@
   }
 
   .chp-social a {
-    @apply text-muted hover:text-primary transition-colors text-base ml-2;
+    @apply text-muted hover:text-primary transition-colors text-base ml-2 inline-flex items-center justify-center;
+    min-width: 24px;
+    min-height: 24px;
   }
 
   .chp-social a:first-child {

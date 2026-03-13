@@ -31,7 +31,7 @@
       </div>
     {{ end }}
 
-    <div class="card rounded-xl p-5 mb-8 fade-in-up relative z-10">
+    <div class="card card-overflow rounded-xl p-5 mb-8 fade-in-up relative z-10">
       <div class="flex flex-col md:flex-row gap-4 items-end">
         <div class="flex-1">
           <label for="country-filter" class="text-xs font-medium text-muted mb-1.5 block">{{ i18n "country" | markdownify | title }}</label>
@@ -73,7 +73,7 @@
               {{ $continentCountries := where $countries ".continent" $continent }}
               {{ if $continentCountries }}
                 <tr class="continent-header" data-continent="{{ $continent }}">
-                  <td colspan="3" class="bg-light font-bold text-dark py-3 px-4 text-lg">
+                  <td colspan="3" class="continent-cell font-bold text-dark py-3 px-4 text-lg">
                     {{ $continent }}
                   </td>
                 </tr>

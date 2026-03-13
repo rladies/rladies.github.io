@@ -8,7 +8,7 @@
     --fc-button-hover-border-color: var(--color-primary-dark);
     --fc-button-active-bg-color: var(--color-primary-darker);
     --fc-button-active-border-color: var(--color-primary-darker);
-    --fc-border-color: #e0e0e0;
+    --fc-border-color: var(--color-border);
 
     @apply shadow-sm overflow-hidden border-none;
     border-radius: 0.75rem;
@@ -71,7 +71,7 @@
   }
 
   .fc-day-today {
-    background: color-mix(in srgb, var(--color-primary) 8%, var(--color-light)) !important;
+    background: color-mix(in srgb, var(--color-primary) 8%, var(--color-bg)) !important;
   }
 
   #loading {
@@ -106,7 +106,7 @@
 
   .cal-toggle.active {
     @apply text-white font-semibold;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-darker);
   }
 
   @media (max-width: 767px) {

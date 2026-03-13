@@ -11,6 +11,11 @@
     font-weight: 300;
   }
 
+  .section-subtitle a {
+    @apply underline;
+    text-underline-offset: 2px;
+  }
+
   .entry-title {
     @apply text-3xl md:text-4xl font-medium text-dark text-center mb-6;
     letter-spacing: -0.02em;

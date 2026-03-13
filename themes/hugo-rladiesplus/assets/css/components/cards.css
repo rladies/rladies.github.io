@@ -7,6 +7,10 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
 
+  .card-overflow {
+    overflow: visible;
+  }
+
   .card-hover:hover {
     @apply -translate-y-1;
     box-shadow: var(--shadow-card-hover);
@@ -58,12 +62,19 @@
     @apply text-primary;
   }
 
+  .card-content .card-title small a {
+    @apply inline-flex items-center justify-center;
+    min-width: 24px;
+    min-height: 24px;
+  }
+
   .card-desc {
     @apply text-sm mt-2 text-muted;
   }
 
   .card-category {
-    @apply absolute top-3 right-3 bg-primary/95 px-2.5 py-1 text-white text-xs font-semibold rounded-lg shadow-md z-[2];
+    @apply absolute top-3 right-3 px-2.5 py-1 text-white text-xs font-semibold rounded-lg shadow-md z-[2];
+    background-color: var(--color-primary-darker);
   }
 
   .card-category a {
@@ -83,7 +94,9 @@
   }
 
   .card-foot a {
-    @apply no-underline text-primary hover:opacity-70 transition-opacity;
+    @apply no-underline text-primary hover:opacity-70 transition-opacity inline-flex items-center justify-center;
+    min-width: 24px;
+    min-height: 24px;
   }
 
   /* Card size variants (control image height) */

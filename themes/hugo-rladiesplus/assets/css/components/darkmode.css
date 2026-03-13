@@ -47,6 +47,10 @@
     color: var(--color-accent-rose);
   }
 
+  .dark .card-category {
+    background-color: #6b0fd4;
+  }
+
   /* ── Typography ── */
   .dark blockquote {
     background: color-mix(in srgb, var(--color-primary) 8%, var(--color-raised));
@@ -83,7 +87,8 @@
 
   /* ── Badges ── */
   .dark .badge-primary {
-    @apply bg-primary-dark text-white;
+    @apply text-white;
+    background-color: #6b0fd4;
   }
 
   .dark .badge-secondary {
@@ -131,7 +136,7 @@
 
   .dark .cal-toggle.active {
     @apply text-white font-semibold;
-    background-color: var(--color-primary);
+    background-color: #6b0fd4;
   }
 
   /* ── Map ── */

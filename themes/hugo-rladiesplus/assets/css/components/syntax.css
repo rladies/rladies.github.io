@@ -2,12 +2,12 @@
   pre {
     @apply rounded-md border font-mono w-full p-4;
     border-color: var(--color-primary);
-    background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-light));
+    background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-bg));
   }
 
   pre.chroma {
     @apply rounded-md border;
-    background-color: color-mix(in srgb, var(--color-primary) 5%, var(--color-light));
+    background-color: color-mix(in srgb, var(--color-primary) 5%, var(--color-bg));
     border-color: var(--color-primary);
   }
 
@@ -16,16 +16,17 @@
   }
 
   .chroma {
-    @apply bg-light p-4;
+    @apply p-4;
+    background-color: var(--color-bg);
   }
 
   .chroma .err {
-    background-color: color-mix(in srgb, var(--color-primary) 70%, var(--color-light));
+    background-color: color-mix(in srgb, var(--color-primary) 70%, var(--color-bg));
   }
 
   .chroma .lntd { @apply align-top p-0 m-0 border-0; }
   .chroma .lntable { @apply p-0 m-0 border-0 w-auto overflow-auto block; border-spacing: 0; }
-  .chroma .hl { @apply block w-full; background-color: color-mix(in srgb, var(--color-primary) 8%, var(--color-light)); }
+  .chroma .hl { @apply block w-full; background-color: color-mix(in srgb, var(--color-primary) 8%, var(--color-bg)); }
   .chroma .lnt { @apply mr-1.5 px-1.5 text-gray-400; }
   .chroma .ln { @apply mr-1.5 px-1.5 text-gray-400; }
 

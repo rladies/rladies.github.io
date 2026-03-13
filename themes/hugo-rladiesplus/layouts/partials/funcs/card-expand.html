@@ -19,15 +19,15 @@
       {{ with .category }}
         <div class="card-category">{{ . | safeHTML }}</div>
       {{ end }}
-      <h4 class="card-title">
+      <h3 class="card-title">
         {{ with .url }}<a href="{{.}}" target="_blank" rel="noopener">{{end}}
         {{ .title | safeHTML }}
         {{ with .url }}</a>{{end}}
-      </h4>
+      </h3>
       {{ with .subtitle }}
-        <h5 class="card-subtitle">
+        <h4 class="card-subtitle">
           {{ . | safeHTML }}
-        </h5>
+        </h4>
       {{ end }}
       {{ with .descr }}
         <div class="card-desc">

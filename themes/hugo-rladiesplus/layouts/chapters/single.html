@@ -204,7 +204,7 @@
                 {{ range $event := $upcomingEvents }}
                   <li class="py-4 border-b border-gray-100 last:border-0 flex justify-between items-start">
                     <div>
-                      <h4 class="text-sm font-semibold mb-1">{{ $event.title }}</h4>
+                      <h3 class="text-sm font-semibold mb-1">{{ $event.title }}</h3>
                       <span class="text-sm text-muted">
                         <i class="fa-regular fa-calendar mr-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.datetime) }}
                         {{ if $event.location }}<br><i class="fa-solid fa-location-dot mr-1"></i>{{ $event.location }}{{ end }}
@@ -230,13 +230,13 @@
                 {{ range $event := $formerEvents }}
                   <li class="py-4 border-b border-gray-100 last:border-0 flex justify-between items-start">
                     <div>
-                      <h4 class="text-sm font-semibold mb-1">
+                      <h3 class="text-sm font-semibold mb-1">
                         {{ with $event.id }}
                           <a href="https://www.meetup.com/{{ $chapterGroupUrlname }}/events/{{ . }}" target="_blank" rel="noopener" class="text-dark hover:text-primary no-underline transition-colors">
                         {{ end }}
                         {{ $event.title }}
                         {{ with $event.id }}</a>{{ end }}
-                      </h4>
+                      </h3>
                       <span class="text-sm text-muted">
                         <i class="fa-regular fa-calendar mr-1"></i>{{ dateFormat "Jan 2, 2006" (time.AsTime $event.datetime) }}
                         {{ if $event.location }}<br><i class="fa-solid fa-location-dot mr-1"></i>{{ $event.location }}{{ end }}

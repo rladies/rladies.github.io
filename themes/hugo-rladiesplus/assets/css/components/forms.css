@@ -67,4 +67,5 @@
 .choices__list--dropdown,
 .choices__list[aria-expanded] {
   border-radius: 0 0 0.5rem 0.5rem !important;
+  z-index: 20 !important;
 }

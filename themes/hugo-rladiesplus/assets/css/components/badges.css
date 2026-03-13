@@ -16,7 +16,7 @@
   }
 
   .badge-warning {
-    @apply bg-amber-500 text-white;
+    @apply bg-amber-700 text-white;
   }
 
   .badge-light {
@@ -24,7 +24,7 @@
   }
 
   .bg-primary-light {
-    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-light));
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-bg));
   }
 
   .alert {
@@ -32,7 +32,7 @@
   }
 
   .alert-primary {
-    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-light));
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-bg));
     color: var(--color-primary-dark);
   }
 
