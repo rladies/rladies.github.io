@@ -50,6 +50,7 @@
             {{ if $img }}
               <a href="{{ $link }}" class="block overflow-hidden">
                 <img src="{{ $img }}" alt="{{ $post.Title }}"
+                     width="600" height="192" loading="lazy"
                      class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
               </a>
             {{ end }}

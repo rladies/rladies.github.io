@@ -86,4 +86,12 @@
   .js-reveal .hero-image.fade-in-up.is-visible {
     transform: translateY(0) scale(1);
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .js-reveal .hero-image.fade-in-up {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
 }

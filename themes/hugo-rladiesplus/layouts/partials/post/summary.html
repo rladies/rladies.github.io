@@ -17,6 +17,7 @@
       <div class="md:w-1/3 shrink-0">
         <a href="{{ .RelPermalink }}" class="block h-full">
           <img src="{{ $img }}" alt="{{ .Params.image.alt | default .Title }}"
+               width="400" height="250" loading="lazy"
                class="w-full h-full object-cover">
         </a>
       </div>
@@ -62,7 +63,8 @@
           </div>
         {{ end }}
 
-        <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm">
+        <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm"
+           aria-label="{{ i18n "read_more" | default "Read more" }}: {{ .Title }}">
           {{ i18n "read_more" | default "Read more" }} <i class="fas fa-arrow-right ml-1"></i>
         </a>
       </div>

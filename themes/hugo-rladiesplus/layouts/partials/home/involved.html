@@ -55,7 +55,8 @@
           <p class="text-muted text-sm mb-6">
             {{ i18n "involved_talk_desc" | default "Share your knowledge and experience with the community by presenting at an event." }}
           </p>
-          <a href="{{ "about-us/involved/" | relLangURL }}" class="btn btn-outline btn-sm">
+          <a href="{{ "about-us/involved/" | relLangURL }}" class="btn btn-outline btn-sm"
+             aria-label="{{ i18n "involved_talk_aria" | default "Learn more about giving a talk" }}">
             {{ i18n "involved_talk_cta" | default "Learn More" }}
           </a>
         </div>
