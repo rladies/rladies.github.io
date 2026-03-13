@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 13 Mar 2026 01:12:47 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 13 Mar 2026 13:10:19 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 4 going</p>
@@ -63,9 +63,26 @@ Advantages of using the gptstudio package:
 ✔️ Supports multiple OpenAI models, including GPT-3.5 and GPT-4
 
 ✔️ Useful for both beginners and experienced users looking to speed up their workflow</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title> Level Up Your Data Visualizations with ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/313505524/</link><guid>https://www.meetup.com/rladies-abuja/events/313505524/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Análisis de datos que visibilizan las exigencias y luchas de las mujeres - R-Ladies Guadalajara</title><link>https://www.meetup.com/rladies-guadalajara/events/313763997/</link><guid>https://www.meetup.com/rladies-guadalajara/events/313763997/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Guadalajara</p>
+        <p><strong>When:</strong> Thursday, March 26, 2026 at 1:00 AM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 14 going</p>
+        <p>¿Te has preguntado qué datos existen actualmente sobre la violencia contra las mujeres? ¿Hay evidencia de estas exigencias? ¿Quiénes producen y miden estos datos, y por qué? ¿Qué registros se generan y cuáles son sus limitaciones? ¿Qué papel pueden tener los datos para visibilizar las luchas y demandas de las mujeres?
+
+En este taller teórico-práctico exploraremos los principales indicadores sobre violencia contra niñas, adolescentes y mujeres. Analizaremos qué dicen las cifras, cómo interpretar tendencias y cuáles son los alcances y límites de los datos disponibles. Además, reflexionaremos sobre cómo comunicar esta información para dimensionar las violencias y colocarlas en la conversación pública.
+
+25 marzo 2026
+19:00 HRS (CDMX)
+Vía meet
+
+Cupo limitado
+
+***R-Ladies Guadalajara promueve espacios seguros y respetuosos. Este evento se rige por nuestro código de conducta, que busca garantizar una participación libre de violencias, discriminación o acoso.***
+
+###</p>
+        <p><a href="https://www.meetup.com/rladies-guadalajara/events/313763997/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Guadalajara)</author><category>R-Ladies Guadalajara</category></item><item><title> Level Up Your Data Visualizations with ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/313505524/</link><guid>https://www.meetup.com/rladies-abuja/events/313505524/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, March 25, 2026 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 32 going</p>
+        <p><strong>Attendees:</strong> 33 going</p>
         <p>Join us for a practical, beginner-friendly meetup on **“Level Up Your Data Visualizations with ggplot2”** where we’ll explore how to create clear, compelling, and professional charts in R using **ggplot2**. Whether you’re new to data visualization or looking to improve your plotting skills, this session will cover key principles, useful customization tips, and hands-on examples to help you turn raw data into impactful visual stories.</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Working Smarter with {dplyr} 1.2.0 – A Practical Session - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313630747/</link><guid>https://www.meetup.com/rladies-rome/events/313630747/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, March 18, 2026 at 5:00 PM UTC</p>
@@ -85,7 +102,7 @@ Expect a clear walkthrough, practical examples, and time for questions.</p>
         <p><a href="https://www.meetup.com/rladies-rome/events/313630747/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Data driven decision making for fantasy basketball - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/313639240/</link><guid>https://www.meetup.com/rladies-melbourne/events/313639240/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
         <p><strong>When:</strong> Wednesday, March 18, 2026 at 6:30 AM UTC</p>
         <p><strong>Where:</strong> DiUS</p>
-        <p><strong>Attendees:</strong> 26 going</p>
+        <p><strong>Attendees:</strong> 27 going</p>
         <p>Integral to the modern data scientists toolkit is understanding how to turn data into decisions. A core part of this is thinking about the end stage of your analysis pipeline, and how the communication and visualisation of your results will factor into decision making.
 
 But it&#39;s not just enough to deliver a solution. Part of successfully supporting end-user decisions comes from co-design. That means thinking about end user needs and how your end-users will engage with your solution.
