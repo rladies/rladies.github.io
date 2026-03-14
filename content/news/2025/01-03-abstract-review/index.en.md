@@ -2,6 +2,7 @@
 title: "Volunteer as an R-Ladies Abstract Reviewer!"
 author:
   - name: "Abstract Review Team"
+description: "Sign up to volunteer as a reviewer for the R-Ladies Abstract Review System and help aspiring speakers craft compelling conference abstracts."
 date: "2025-01-03"
 image:
   path: img/typing.jpg

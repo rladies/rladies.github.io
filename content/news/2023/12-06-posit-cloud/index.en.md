@@ -2,6 +2,7 @@
 title: "R-Ladies & Posit Cloud"
 author:
   - name: "Global Leadership Team"
+description: "R-Ladies partners with Posit to offer a free Posit Cloud account for meetups and workshops."
 date: "2023-12-06"
 output: html_document
 categories:

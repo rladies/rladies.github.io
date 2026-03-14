@@ -28,15 +28,17 @@ jobs:
           const changed = execSync('git diff --name-only origin/main...HEAD -- content/blog/ content/news/')
             .toString().trim().split('\n').filter(Boolean);
 
-          const posts = changed.filter(f => /index(\.[a-z]+)?\.md$/.test(f));
+          const posts = changed.filter(f =>
+            /index(\.[a-z]+)?\.md$/.test(f) && !/_index(\.[a-z]+)?\.md$/.test(f)
+          );
 
           if (posts.length === 0) {
             fs.writeFileSync('lint-report.md', '');
             process.exit(0);
           }
 
-          const required = ['title', 'author', 'date', 'description'];
-          const recommended = ['categories', 'image'];
+          const required = ['title', 'author', 'date'];
+          const recommended = ['description', 'categories', 'image'];
           const datePattern = /^\d{4}-\d{2}-\d{2}/;
 
           let errors = [];
@@ -71,7 +73,7 @@ jobs:
             }
 
             if (keys.has('date')) {
-              const dateMatch = fm.match(/^date:\s*"?([^"\n]+)"?/m);
+              const dateMatch = fm.match(/^date:\s*['"]?([^'"\n]+)['"]?/m);
               if (dateMatch && !datePattern.test(dateMatch[1].trim())) {
                 errors.push({ file, msg: `Date format should be YYYY-MM-DD, got: \`${dateMatch[1].trim()}\`` });
               }

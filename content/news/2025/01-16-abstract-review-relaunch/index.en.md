@@ -2,6 +2,7 @@
 title: "We're Relaunching the R-Ladies Abstract Review System!"
 author:
   - name: "Abstract Review Team"
+description: "The R-Ladies Abstract Review System is back, connecting aspiring speakers with reviewers for conference abstracts."
 date: "2025-01-16"
 image:
   path: img/letstalk.jpg

@@ -2,6 +2,7 @@
 title: "We're Launching the R-Ladies Rotating Curation Account on Bluesky!"
 author:
   - name: "Rotating Curation Team"
+description: "R-Ladies launches a Rotating Curation account on Bluesky, inviting community members to curate weekly posts about R and data science."
 date: "2025-01-24"
 image:
   path: img/rladies-bluesky.jpg

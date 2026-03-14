@@ -8,6 +8,7 @@ author:
   - name: Tatyane Paz Dominguez
   - name: Ianni Muliterno
   - name: Ana Paula Rocha
+description: "Como a R-Ladies São Paulo amplia a diversidade por meio de ações afirmativas, espaço para crianças e auxílio transporte."
 date: "2023-10-04"
 categories:
   - community

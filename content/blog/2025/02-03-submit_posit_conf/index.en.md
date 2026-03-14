@@ -5,6 +5,7 @@ author:
     directory_id: "nic-crane"
   - name: Sayantika Banik
     directory_id: "sayantika-banik"
+description: "Practical advice from past speakers on recording a one-minute video abstract for Posit Conf 2025, including tech recommendations and structuring tips."
 date: "2025-02-06"
 categories:
   - tutorials

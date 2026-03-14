@@ -8,6 +8,7 @@ author:
   - name: Tatyane Paz Dominguez
   - name: Ianni Muliterno
   - name: Ana Paula Rocha
+description: "How R-Ladies São Paulo is tackling intersectional diversity through affirmative actions, childcare spaces, transportation aid, and community surveys."
 date: "2023-10-04"
 categories:
   - community

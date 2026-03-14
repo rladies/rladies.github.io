@@ -2,6 +2,7 @@
 title: "History"
 author:
   - name: R-Ladies
+description: "The story of how R-Ladies was founded in San Francisco in 2012 and grew into a global organization after useR! 2016."
 date: 2018-02-24
 type: post
 categories:

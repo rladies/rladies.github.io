@@ -2,6 +2,7 @@
 title: "Welcome to the Global Team"
 author:
   - name: "Global Leadership Team"
+description: "R-Ladies Global Team welcomes 15 new volunteer members across roles including translation, mentoring, website, and community support."
 date: "2024-03-13"
 output: html_document
 image:
@@ -32,21 +33,21 @@ support us with their time and effort to champion our [mission](https://rladies.
 
 |                                     |                           |                    |
 | ----------------------------------- | ------------------------- | ------------------ |
-| ![](img/glenda_mendieta.jpg)        | Glenda Mendieta           | Translation        |
-| ![](img/nicola_rennie.jpg)          | Nicola Rennie             | Campaigns          |
-| ![](img/sara_acevedo.jpg)           | Sara Acevedo              | Code of Conduct    |
-| ![](img/hebah_bukhari.jpg)          | Hebah Bukhari             | Community Slack    |
-| ![](img/priyanka_gagneja.jpg)       | Priyanka Gagneja          | Community Slack    |
-| ![](img/renata_hirota.png)          | Renata Hirota             | Blog               |
-| ![](img/virginia_garcia_alonso.jpg) | Virginia A. García Alonso | Mentoring          |
-| ![](img/nic_crane.jpg)              | Nic Crane                 | Meetup Pro         |
-| ![](img/alyssa_columbus.png)        | Alyssa Columbus           | Chapter Onboarding |
-| ![](img/luana_atunes.png)           | Luana Atunes              | Abstract Review    |
-| ![](img/sayantika_banik.png)        | Sayantika Banik           | Abstract Review    |
-| ![](img/cosima_meyer.png)           | Cosima Meyer              | Website            |
-| ![](img/andrea_gomez_vargas.png)    | Andrea Gómez Vargas       | Website            |
-| ![](img/leena_el_seed.jpg)          | Leena El Seed             | Conference Liaison |
-| ![](img/daniela_vazquez.png)        | Daniela Vázquez           | Social Media       |
+| ![Photo of Glenda Mendieta](img/glenda_mendieta.jpg)        | Glenda Mendieta           | Translation        |
+| ![Photo of Nicola Rennie](img/nicola_rennie.jpg)          | Nicola Rennie             | Campaigns          |
+| ![Photo of Sara Acevedo](img/sara_acevedo.jpg)           | Sara Acevedo              | Code of Conduct    |
+| ![Photo of Hebah Bukhari](img/hebah_bukhari.jpg)          | Hebah Bukhari             | Community Slack    |
+| ![Photo of Priyanka Gagneja](img/priyanka_gagneja.jpg)       | Priyanka Gagneja          | Community Slack    |
+| ![Photo of Renata Hirota](img/renata_hirota.png)          | Renata Hirota             | Blog               |
+| ![Photo of Virginia A. García Alonso](img/virginia_garcia_alonso.jpg) | Virginia A. García Alonso | Mentoring          |
+| ![Photo of Nic Crane](img/nic_crane.jpg)              | Nic Crane                 | Meetup Pro         |
+| ![Photo of Alyssa Columbus](img/alyssa_columbus.png)        | Alyssa Columbus           | Chapter Onboarding |
+| ![Photo of Luana Atunes](img/luana_atunes.png)           | Luana Atunes              | Abstract Review    |
+| ![Photo of Sayantika Banik](img/sayantika_banik.png)        | Sayantika Banik           | Abstract Review    |
+| ![Photo of Cosima Meyer](img/cosima_meyer.png)           | Cosima Meyer              | Website            |
+| ![Photo of Andrea Gómez Vargas](img/andrea_gomez_vargas.png)    | Andrea Gómez Vargas       | Website            |
+| ![Photo of Leena El Seed](img/leena_el_seed.jpg)          | Leena El Seed             | Conference Liaison |
+| ![Photo of Daniela Vázquez](img/daniela_vazquez.png)        | Daniela Vázquez           | Social Media       |
 
 # Onboarding needs
 

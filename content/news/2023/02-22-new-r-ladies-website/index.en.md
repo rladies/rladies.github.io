@@ -3,6 +3,7 @@ title: New R-Ladies Website
 author:
   - name: Athanasia M. Mowinckel
     directory_id: "athanasia-mo-mowinckel"
+description: "Announcing the new R-Ladies website with a faster directory, multilingual support, events calendar, and GitHub collaboration."
 date: "2023-02-22"
 tags:
   - infrastructure

@@ -3,6 +3,7 @@ title: "Mastodon: Meet the R-Ladies!"
 author:
   - name: "Daniela Vázquez"
     directory_id: "daniela-vazquez"
+description: "R-Ladies Global moves from Twitter/X to Mastodon on the Hachyderm server, embracing a platform better aligned with our values of inclusivity and community."
 date: "2023-11-10"
 output: html_document
 categories:

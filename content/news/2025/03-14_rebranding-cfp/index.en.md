@@ -2,6 +2,7 @@
 title: "Rebranding Call For Proposal"
 author:
   - name: "Global Leadership Team"
+description: "R-Ladies is seeking proposals from graphic designers to create a new visual identity and brand book for the R-Ladies+ rebrand."
 date: "2025-03-14"
 image:
   path: cfp.png

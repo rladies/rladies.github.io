@@ -2,6 +2,7 @@
 title: "R-Ladies is rebranding to R-Ladies+"
 author:
   - name: "Global Leadership Team"
+description: "R-Ladies is rebranding to R-Ladies+ to better represent all underrepresented genders in the R community."
 date: "2025-03-14"
 image:
   path: rladiesplus.png
