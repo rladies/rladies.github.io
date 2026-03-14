@@ -1,7 +1,8 @@
 document.querySelectorAll('[data-map-config]').forEach(function (el) {
+  var d3map = window.__d3map;
   var configEl = document.getElementById(el.getAttribute('data-map-config'));
-  if (!configEl || typeof am5 === 'undefined') {
-    if (typeof am5 === 'undefined') console.error('am5 not loaded');
+  if (!configEl || !d3map) {
+    if (!d3map) console.error('d3map not loaded');
     return;
   }
 
@@ -11,235 +12,250 @@ document.querySelectorAll('[data-map-config]').forEach(function (el) {
   var countries = config.countries;
   var tooltip = config.tooltip;
   var radius = config.radius || 7;
-  var zoom = config.zoom;
+  var initialZoom = config.zoom;
 
   function themeColors(dark) {
     return {
-      bg: dark ? 0x1a1a2e : 0xffffff,
-      countryFill: dark ? 0x2a2a42 : 0xcccccc,
-      countryStroke: dark ? 0x3a3a55 : 0xffffff,
-      countryHover: dark ? 0x81acf7 : 0x146af9,
-      tooltipBg: dark ? 0x1e1e30 : 0xffffff,
-      tooltipStroke: dark ? 0x3a3a55 : 0xcccccc,
-      tooltipLabel: dark ? 0xededf4 : 0x333333,
-      highlight: dark ? 0xbb86f7 : 0xc084fc,
+      bg: dark ? '#1a1a2e' : '#ffffff',
+      countryFill: dark ? '#2a2a42' : '#cccccc',
+      countryStroke: dark ? '#3a3a55' : '#ffffff',
+      countryHover: dark ? '#81acf7' : '#146af9',
+      highlightHover: dark ? '#d4b9f5' : '#a855f7',
+      tooltipBg: dark ? '#1e1e30' : '#ffffff',
+      tooltipStroke: dark ? '#3a3a55' : '#cccccc',
+      tooltipLabel: dark ? '#ededf4' : '#333333',
+      highlight: dark ? '#bb86f7' : '#c084fc',
       highlightOpacity: dark ? 0.5 : 0.4,
-      pointFill: dark ? 0xd4b9f5 : 0x881ef9,
-      pointStroke: dark ? 0x1a1a2e : 0xffffff,
+      pointFill: dark ? '#d4b9f5' : '#881ef9',
+      pointStroke: dark ? '#1a1a2e' : '#ffffff',
       pointStrokeWidth: dark ? 2 : 1
     };
   }
 
-  am5.ready(function () {
-    var isDark = document.documentElement.classList.contains('dark');
-    var colors = themeColors(isDark);
-    var root = am5.Root.new(mapId);
+  var container = document.getElementById(mapId);
+  if (!container) return;
+  container.style.position = 'relative';
+  container.style.overflow = 'hidden';
 
-    root.setThemes([am5themes_Animated.new(root)]);
+  var worldData = d3map.feature(d3map.world, d3map.world.objects.countries);
 
-    var bgRect = am5.Rectangle.new(root, {
-      fill: am5.color(colors.bg),
-      fillOpacity: 1
+  var countryMap = {};
+  if (countries && countries.length > 0) {
+    countries.forEach(function (c) {
+      if (c.iso) {
+        var numId = d3map.alpha2ToNumeric[c.iso.toUpperCase()];
+        if (numId) countryMap[numId] = c;
+      }
     });
-    root.container.set("background", bgRect);
+  }
 
-    var chart = root.container.children.push(
-      am5map.MapChart.new(root, {
-        projection: am5map.geoEqualEarth()
-      })
-    );
+  var zoomNumId = null;
+  if (initialZoom && initialZoom.iso) {
+    zoomNumId = d3map.alpha2ToNumeric[initialZoom.iso.toUpperCase()] || null;
+  }
 
-    var bgSeries = chart.series.push(
-      am5map.MapPolygonSeries.new(root, {
-        geoJSON: { type: "Sphere" }
-      })
-    );
-    bgSeries.mapPolygons.template.setAll({
-      fill: am5.color(colors.bg),
-      stroke: am5.color(colors.bg),
-      strokeWidth: 0
-    });
+  var W = 960, H = 500;
+  var isDark = document.documentElement.classList.contains('dark');
+  var colors = themeColors(isDark);
 
-    var polygonSeries = chart.series.push(
-      am5map.MapPolygonSeries.new(root, {
-        geoJSON: am5geodata_worldLow
-      })
-    );
+  var projection = d3map.geoEqualEarth().fitSize([W, H], { type: 'Sphere' });
+  var pathGen = d3map.geoPath(projection);
 
-    polygonSeries.mapPolygons.template.setAll({
-      tooltipText: "{name}",
-      fill: am5.color(colors.countryFill),
-      stroke: am5.color(colors.countryStroke),
-      strokeWidth: 0.5
-    });
+  function isHighlighted(d) {
+    return countryMap[d.id] || (zoomNumId && d.id === zoomNumId);
+  }
 
-    polygonSeries.mapPolygons.template.states.create("hover", {
-      fill: am5.color(colors.countryHover),
-      fillOpacity: 1
-    });
+  function countryFill(d, c) {
+    if (isHighlighted(d)) return c.highlight;
+    return c.countryFill;
+  }
 
-    var am5Tooltip = am5.Tooltip.new(root, {
-      getFillFromSprite: false,
-      getLabelFillFromSprite: false
-    });
-    am5Tooltip.get("background").setAll({
-      fill: am5.color(colors.tooltipBg),
-      stroke: am5.color(colors.tooltipStroke),
-      strokeWidth: 1
-    });
-    am5Tooltip.label.setAll({
-      fill: am5.color(colors.tooltipLabel)
-    });
+  function countryOpacity(d, c) {
+    if (zoomNumId && d.id === zoomNumId) return 0.3;
+    if (countryMap[d.id]) return c.highlightOpacity;
+    return 1;
+  }
 
-    var countryMap = {};
-    if (countries && countries.length > 0) {
-      countries.forEach(function (country) {
-        var isoCode = country.iso;
-        if (isoCode && isoCode !== null) {
-          countryMap[isoCode.toUpperCase()] = country.count;
-        }
-      });
+  var svg = d3map.select(container)
+    .append('svg')
+    .attr('viewBox', '0 0 ' + W + ' ' + H)
+    .attr('preserveAspectRatio', 'xMidYMid meet')
+    .style('width', '100%')
+    .style('height', '100%')
+    .style('display', 'block')
+    .style('cursor', 'grab');
 
-      polygonSeries.events.on("datavalidated", function () {
-        polygonSeries.mapPolygons.each(function (polygon) {
-          var id = polygon.dataItem.get("id");
-          if (countryMap[id]) {
-            polygon.setAll({
-              fill: am5.color(colors.highlight),
-              fillOpacity: colors.highlightOpacity,
-              tooltipText: "{name}\n" + countryMap[id] + " chapter" + (countryMap[id] > 1 ? "s" : "")
-            });
-          }
-        });
-      });
-    }
+  var bgRect = svg.append('rect')
+    .attr('width', W)
+    .attr('height', H)
+    .attr('fill', colors.bg);
 
-    var pointSeries = chart.series.push(
-      am5map.MapPointSeries.new(root, {})
-    );
+  var g = svg.append('g');
 
-    pointSeries.bullets.push(function () {
-      var circleOpts = {
-        radius: radius,
-        fill: am5.color(colors.pointFill),
-        stroke: am5.color(colors.pointStroke),
-        strokeWidth: colors.pointStrokeWidth,
-        cursorOverStyle: "pointer"
-      };
-      if (tooltip) {
-        circleOpts.tooltipHTML = tooltip;
+  var countryPaths = g.selectAll('path')
+    .data(worldData.features.filter(function (f) { return f.id !== '010'; }))
+    .enter()
+    .append('path')
+    .attr('d', pathGen)
+    .attr('fill', function (d) { return countryFill(d, colors); })
+    .attr('fill-opacity', function (d) { return countryOpacity(d, colors); })
+    .attr('stroke', colors.countryStroke)
+    .attr('stroke-width', 0.5)
+    .style('cursor', 'pointer')
+    .style('transition', 'fill 0.15s, fill-opacity 0.15s')
+    .on('mouseenter', function (event, d) {
+      if (isHighlighted(d)) {
+        d3map.select(this).attr('fill', colors.highlightHover).attr('fill-opacity', 0.8);
       } else {
-        circleOpts.tooltipText = "{name}";
+        d3map.select(this).attr('fill', colors.countryHover).attr('fill-opacity', 1);
       }
-      var circle = am5.Circle.new(root, circleOpts);
-      circle.set("tooltip", am5Tooltip);
-      return am5.Bullet.new(root, { sprite: circle });
+      var text = d.properties.name;
+      if (countryMap[d.id]) {
+        var c = countryMap[d.id];
+        text = d.properties.name + '\n' + c.count + ' chapter' + (c.count > 1 ? 's' : '');
+      }
+      showTooltip(event, text);
+    })
+    .on('mousemove', function (event) {
+      moveTooltip(event);
+    })
+    .on('mouseleave', function (event, d) {
+      d3map.select(this)
+        .attr('fill', countryFill(d, colors))
+        .attr('fill-opacity', countryOpacity(d, colors));
+      hideTooltip();
     });
 
-    var pointsData = points.map(function (point) {
-      return {
-        geometry: {
-          type: "Point",
-          coordinates: [point.longitude, point.latitude]
-        },
-        name: point.name,
-        members: point.members
-      };
-    });
+  var pointData = (points || []).map(function (p) {
+    return {
+      coords: projection([p.longitude, p.latitude]),
+      name: p.name,
+      members: p.members
+    };
+  }).filter(function (p) { return p.coords; });
 
-    pointSeries.data.setAll(pointsData);
-
-    if (zoom) {
-      if (zoom.iso) {
-        polygonSeries.events.on("datavalidated", function () {
-          var country = polygonSeries.getDataItemById(zoom.iso);
-          if (country) {
-            country.get("mapPolygon").setAll({
-              fill: am5.color(colors.highlight),
-              fillOpacity: 0.3
-            });
-          }
+  var pointCircles = g.selectAll('circle')
+    .data(pointData)
+    .enter()
+    .append('circle')
+    .attr('cx', function (d) { return d.coords[0]; })
+    .attr('cy', function (d) { return d.coords[1]; })
+    .attr('r', radius)
+    .attr('fill', colors.pointFill)
+    .attr('stroke', colors.pointStroke)
+    .attr('stroke-width', colors.pointStrokeWidth)
+    .style('cursor', 'pointer')
+    .on('mouseenter', function (event, d) {
+      var text;
+      if (tooltip) {
+        text = tooltip.replace(/\{(\w+)\}/g, function (_, key) {
+          return d[key] !== undefined ? d[key] : '';
         });
+      } else {
+        text = d.name;
       }
-
-      setTimeout(function () {
-        chart.animate({ key: "rotationX", to: -zoom.lon, duration: 1500, easing: am5.ease.out(am5.ease.cubic) });
-        chart.animate({ key: "rotationY", to: -zoom.lat, duration: 1500, easing: am5.ease.out(am5.ease.cubic) });
-        chart.animate({ key: "zoomLevel", to: zoom.level || 4, duration: 1500, easing: am5.ease.out(am5.ease.cubic) });
-      }, 100);
-    }
-
-    window.addEventListener('themechange', function (e) {
-      var c = themeColors(e.detail.theme === 'dark');
-
-      bgRect.set("fill", am5.color(c.bg));
-
-      bgSeries.mapPolygons.template.setAll({
-        fill: am5.color(c.bg),
-        stroke: am5.color(c.bg)
-      });
-
-      polygonSeries.mapPolygons.template.setAll({
-        fill: am5.color(c.countryFill),
-        stroke: am5.color(c.countryStroke)
-      });
-      polygonSeries.mapPolygons.template.states.create("hover", {
-        fill: am5.color(c.countryHover),
-        fillOpacity: 1
-      });
-
-      polygonSeries.mapPolygons.each(function (polygon) {
-        var id = polygon.dataItem.get("id");
-        if (countryMap[id]) {
-          polygon.setAll({
-            fill: am5.color(c.highlight),
-            fillOpacity: c.highlightOpacity
-          });
-        } else {
-          polygon.setAll({
-            fill: am5.color(c.countryFill),
-            stroke: am5.color(c.countryStroke)
-          });
-        }
-      });
-
-      if (zoom && zoom.iso) {
-        var country = polygonSeries.getDataItemById(zoom.iso);
-        if (country) {
-          country.get("mapPolygon").setAll({
-            fill: am5.color(c.highlight),
-            fillOpacity: 0.3
-          });
-        }
-      }
-
-      am5Tooltip.get("background").setAll({
-        fill: am5.color(c.tooltipBg),
-        stroke: am5.color(c.tooltipStroke)
-      });
-      am5Tooltip.label.setAll({
-        fill: am5.color(c.tooltipLabel)
-      });
-
-      pointSeries.bullets.clear();
-      pointSeries.bullets.push(function () {
-        var circleOpts = {
-          radius: radius,
-          fill: am5.color(c.pointFill),
-          stroke: am5.color(c.pointStroke),
-          strokeWidth: c.pointStrokeWidth,
-          cursorOverStyle: "pointer"
-        };
-        if (tooltip) {
-          circleOpts.tooltipHTML = tooltip;
-        } else {
-          circleOpts.tooltipText = "{name}";
-        }
-        var circle = am5.Circle.new(root, circleOpts);
-        circle.set("tooltip", am5Tooltip);
-        return am5.Bullet.new(root, { sprite: circle });
-      });
-      pointSeries.data.setAll(pointsData);
+      showTooltip(event, text);
+    })
+    .on('mousemove', function (event) {
+      moveTooltip(event);
+    })
+    .on('mouseleave', function () {
+      hideTooltip();
     });
+
+  var tooltipDiv = d3map.select(container)
+    .append('div')
+    .style('position', 'absolute')
+    .style('pointer-events', 'none')
+    .style('padding', '6px 10px')
+    .style('border-radius', '6px')
+    .style('font-size', '13px')
+    .style('line-height', '1.4')
+    .style('white-space', 'pre-line')
+    .style('opacity', 0)
+    .style('transition', 'opacity 0.15s')
+    .style('z-index', 10);
+
+  applyTooltipColors(colors);
+
+  function applyTooltipColors(c) {
+    tooltipDiv
+      .style('background', c.tooltipBg)
+      .style('border', '1px solid ' + c.tooltipStroke)
+      .style('color', c.tooltipLabel)
+      .style('box-shadow', '0 2px 8px rgba(0,0,0,0.15)');
+  }
+
+  function showTooltip(event, content) {
+    tooltipDiv.html(content).style('opacity', 1);
+    moveTooltip(event);
+  }
+
+  function moveTooltip(event) {
+    var rect = container.getBoundingClientRect();
+    var x = event.clientX - rect.left + 12;
+    var y = event.clientY - rect.top - 10;
+    if (x + 160 > rect.width) x = x - 170;
+    if (y < 0) y = 10;
+    tooltipDiv.style('left', x + 'px').style('top', y + 'px');
+  }
+
+  function hideTooltip() {
+    tooltipDiv.style('opacity', 0);
+  }
+
+  var currentScale = 1;
+
+  var zoomBehavior = d3map.zoom()
+    .scaleExtent([1, 20])
+    .on('start', function (event) {
+      if (event.sourceEvent) svg.style('cursor', 'grabbing');
+    })
+    .on('zoom', function (event) {
+      g.attr('transform', event.transform);
+      currentScale = event.transform.k;
+      g.selectAll('circle')
+        .attr('r', radius / currentScale)
+        .attr('stroke-width', colors.pointStrokeWidth / currentScale);
+      g.selectAll('path').attr('stroke-width', 0.5 / currentScale);
+    })
+    .on('end', function (event) {
+      if (event.sourceEvent) svg.style('cursor', 'grab');
+    });
+
+  svg.call(zoomBehavior);
+  svg.on('dblclick.zoom', null);
+
+  if (initialZoom) {
+    var zoomScale = initialZoom.level || 4;
+    var center = projection([initialZoom.lon, initialZoom.lat]);
+    if (center) {
+      var t = d3map.zoomIdentity
+        .translate(W / 2 - center[0] * zoomScale, H / 2 - center[1] * zoomScale)
+        .scale(zoomScale);
+
+      svg.call(zoomBehavior.transform, d3map.zoomIdentity);
+      svg.transition()
+        .duration(1500)
+        .call(zoomBehavior.transform, t);
+    }
+  }
+
+  window.addEventListener('themechange', function (e) {
+    var c = themeColors(e.detail.theme === 'dark');
+    bgRect.attr('fill', c.bg);
+
+    countryPaths
+      .attr('fill', function (d) { return countryFill(d, c); })
+      .attr('fill-opacity', function (d) { return countryOpacity(d, c); })
+      .attr('stroke', c.countryStroke);
+
+    pointCircles
+      .attr('fill', c.pointFill)
+      .attr('stroke', c.pointStroke)
+      .attr('stroke-width', c.pointStrokeWidth / currentScale);
+
+    applyTooltipColors(c);
+    colors = c;
   });
 });

@@ -5,9 +5,10 @@
     "scripts": {
         "clean": "rm -rf assets/js/vendor assets/css/vendor assets/scss/vendor static/webfonts",
         "setup": "mkdir -p assets/js/vendor assets/css/vendor assets/scss/vendor static/webfonts",
-        "build": "npm run clean && npm run setup && npm run build:fullcalendar && npm run build:amcharts && npm run sync:fontawesome && npm run sync:choices && npm run sync:shuffle && npm run sync:alpine && npm run sync:fonts",
+        "build": "npm run clean && npm run setup && npm run build:css && npm run build:fullcalendar && npm run build:d3map && npm run sync:fontawesome && npm run sync:choices && npm run sync:shuffle && npm run sync:alpine && npm run sync:fonts",
+        "build:css": "npx @tailwindcss/cli -i assets/css/main.css -o assets/css/vendor/tailwind.css --minify",
         "build:fullcalendar": "npx esbuild assets/js/_fullcalendar.entry.js --bundle --minify --sourcemap --outfile=assets/js/vendor/fullcalendar.bundle.min.js",
-        "build:amcharts": "npx esbuild assets/js/_amcharts.entry.js --bundle --minify --sourcemap --outfile=assets/js/vendor/amcharts.bundle.min.js",
+        "build:d3map": "npx esbuild assets/js/_d3map.entry.js --bundle --minify --sourcemap --outfile=assets/js/vendor/d3map.bundle.min.js --loader:.json=json",
         "sync:fontawesome": "rm -rf static/webfonts/fontawesome && mkdir -p static/webfonts/fontawesome && cp node_modules/@fortawesome/fontawesome-free/webfonts/*.woff2 static/webfonts/fontawesome/ && cp -r node_modules/@fortawesome/fontawesome-free/scss assets/scss/vendor/fontawesome",
         "sync:choices": "cp node_modules/choices.js/public/assets/scripts/choices.min.js* assets/js/vendor/ 2>/dev/null || true && cp node_modules/choices.js/public/assets/styles/choices.min.css assets/css/vendor/ 2>/dev/null || true",
         "sync:shuffle": "cp node_modules/shufflejs/dist/shuffle.min.js* assets/js/vendor/ 2>/dev/null || true",
@@ -20,8 +21,6 @@
         "esbuild": "^0.27.2"
     },
     "dependencies": {
-        "@amcharts/amcharts5": "^5.15.1",
-        "@amcharts/amcharts5-geodata": "^5.1.5",
         "@fontsource-variable/inconsolata": "^5.1.1",
         "@fontsource/poppins": "^5.1.0",
         "@fortawesome/fontawesome-free": "^6.7.2",
@@ -31,12 +30,19 @@
         "@fullcalendar/list": "^6.1.8",
         "@fullcalendar/moment-timezone": "^6.1.20",
         "@fullcalendar/timegrid": "^6.1.8",
+        "@tailwindcss/cli": "^4.1.0",
         "alpinejs": "^3.14.0",
         "choices.js": "^11.1.0",
+        "d3-geo": "^3.1.1",
+        "d3-selection": "^3.0.0",
+        "d3-transition": "^3.0.1",
+        "d3-zoom": "^3.0.0",
+        "iso-3166-1": "^2.1.1",
         "moment": "^2.29.4",
         "moment-timezone": "^0.5.43",
         "shufflejs": "^6.1.2",
         "tailwindcss": "^4.1.0",
-        "@tailwindcss/cli": "^4.1.0"
+        "topojson-client": "^3.1.0",
+        "world-atlas": "^2.0.2"
     }
 }

@@ -11,7 +11,7 @@
 <link rel="preload" href="{{ "/webfonts/google-fonts/poppins/poppins-latin-600-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ "/webfonts/fontawesome/fa-solid-900.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 
-{{ $tw := resources.Get "css/main.css" | css.TailwindCSS }}
+{{ $tw := resources.Get "css/vendor/tailwind.css" }}
 {{ $fa := resources.Get "scss/fontawesome.scss" | toCSS }}
 {{ $choices := resources.Get "css/vendor/choices.min.css" }}
 {{ $css := slice $tw $fa $choices

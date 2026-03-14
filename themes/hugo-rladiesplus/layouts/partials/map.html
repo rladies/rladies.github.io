@@ -4,7 +4,7 @@
 {{ $zoom := .zoom }}
 {{ $countries := .countries }}
 
-{{ $js := resources.Get "js/vendor/amcharts.bundle.min.js"
+{{ $js := resources.Get "js/vendor/d3map.bundle.min.js"
     | minify
     | fingerprint
 }}
