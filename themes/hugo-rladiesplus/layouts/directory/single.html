@@ -137,14 +137,25 @@
   </div>
 
   {{ $dirID := .Params.directory_id }}
-  {{ $posts := slice }}
+  {{ $authored := slice }}
+  {{ $edited := slice }}
+  {{ $translated := slice }}
   {{ range site.RegularPages }}
-    {{ with .Params.author }}
-      {{ range . }}
-        {{ if reflect.IsMap . }}
-          {{ with .directory_id }}
-            {{ if eq . $dirID }}
-              {{ $posts = $posts | append $ }}
+    {{ $page := . }}
+    {{ range $role := slice "author" "editorial" "translator" }}
+      {{ with index $page.Params $role }}
+        {{ range . }}
+          {{ if reflect.IsMap . }}
+            {{ with .directory_id }}
+              {{ if eq . $dirID }}
+                {{ if eq $role "author" }}
+                  {{ $authored = $authored | append $page }}
+                {{ else if eq $role "editorial" }}
+                  {{ $edited = $edited | append $page }}
+                {{ else }}
+                  {{ $translated = $translated | append $page }}
+                {{ end }}
+              {{ end }}
             {{ end }}
           {{ end }}
         {{ end }}
@@ -152,14 +163,42 @@
     {{ end }}
   {{ end }}
 
-  {{ if $posts }}
+  {{ if $authored }}
     <div class="mt-8">
       <h2 class="text-xl font-bold mb-6">
         <i class="fa-solid fa-pen-nib mr-2 text-primary"></i>
         {{ i18n "posts" | default "Posts" }}
       </h2>
       <div class="space-y-6">
-        {{ range $posts.Reverse }}
+        {{ range $authored.Reverse }}
+          {{ partial "post/summary.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $edited }}
+    <div class="mt-8">
+      <h2 class="text-xl font-bold mb-6">
+        <i class="fa-solid fa-pen-nib mr-2 text-primary"></i>
+        {{ i18n "edited_posts" | default "Edited" }}
+      </h2>
+      <div class="space-y-6">
+        {{ range $edited.Reverse }}
+          {{ partial "post/summary.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $translated }}
+    <div class="mt-8">
+      <h2 class="text-xl font-bold mb-6">
+        <i class="fa-solid fa-language mr-2 text-primary"></i>
+        {{ i18n "translated_posts" | default "Translated" }}
+      </h2>
+      <div class="space-y-6">
+        {{ range $translated.Reverse }}
           {{ partial "post/summary.html" . }}
         {{ end }}
       </div>

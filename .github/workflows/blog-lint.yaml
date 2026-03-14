@@ -1,0 +1,160 @@
+name: "Blog post lint"
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "content/blog/**/index*.md"
+      - "content/news/**/index*.md"
+
+jobs:
+  lint:
+    name: Frontmatter check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate frontmatter
+        id: check
+        run: |
+          cat > lint.js << 'SCRIPT'
+          const fs = require('fs');
+          const { execSync } = require('child_process');
+
+          const changed = execSync('git diff --name-only origin/main...HEAD -- content/blog/ content/news/')
+            .toString().trim().split('\n').filter(Boolean);
+
+          const posts = changed.filter(f => /index(\.[a-z]+)?\.md$/.test(f));
+
+          if (posts.length === 0) {
+            fs.writeFileSync('lint-report.md', '');
+            process.exit(0);
+          }
+
+          const required = ['title', 'author', 'date', 'description'];
+          const recommended = ['categories', 'image'];
+          const datePattern = /^\d{4}-\d{2}-\d{2}/;
+
+          let errors = [];
+          let warnings = [];
+
+          for (const file of posts) {
+            if (!fs.existsSync(file)) continue;
+            const content = fs.readFileSync(file, 'utf8');
+            const fmMatch = content.match(/^---\n([\s\S]*?)\n---/);
+            if (!fmMatch) {
+              errors.push({ file, msg: 'No YAML frontmatter found' });
+              continue;
+            }
+
+            const fm = fmMatch[1];
+            const keys = new Set();
+            for (const line of fm.split('\n')) {
+              const m = line.match(/^([a-z_-]+):/);
+              if (m) keys.add(m[1]);
+            }
+
+            for (const key of required) {
+              if (!keys.has(key)) {
+                errors.push({ file, msg: `Missing required field: \`${key}\`` });
+              }
+            }
+
+            for (const key of recommended) {
+              if (!keys.has(key)) {
+                warnings.push({ file, msg: `Missing recommended field: \`${key}\`` });
+              }
+            }
+
+            if (keys.has('date')) {
+              const dateMatch = fm.match(/^date:\s*"?([^"\n]+)"?/m);
+              if (dateMatch && !datePattern.test(dateMatch[1].trim())) {
+                errors.push({ file, msg: `Date format should be YYYY-MM-DD, got: \`${dateMatch[1].trim()}\`` });
+              }
+            }
+
+            if (keys.has('author')) {
+              const authorMatch = fm.match(/^author:\s*(.+)/m);
+              if (authorMatch && !fm.includes('- name:')) {
+                warnings.push({ file, msg: 'Author should use structured format: `- name: "..."` with optional `directory_id`' });
+              }
+            }
+
+            // Check for images without alt text in body
+            const body = content.split('---').slice(2).join('---');
+            const imgNoAlt = body.match(/!\[\]\(/g);
+            if (imgNoAlt) {
+              errors.push({ file, msg: `${imgNoAlt.length} image(s) missing alt text: \`![](..)\`` });
+            }
+          }
+
+          let md = '';
+          if (errors.length === 0 && warnings.length === 0) {
+            md = ':white_check_mark: All blog post frontmatter looks good.\n';
+          } else {
+            if (errors.length > 0) {
+              md += '### Errors\n\n';
+              for (const { file, msg } of errors) {
+                md += `- \`${file}\`: ${msg}\n`;
+              }
+            }
+            if (warnings.length > 0) {
+              md += '\n### Suggestions\n\n';
+              for (const { file, msg } of warnings) {
+                md += `- \`${file}\`: ${msg}\n`;
+              }
+            }
+          }
+
+          fs.writeFileSync('lint-report.md', md);
+          fs.writeFileSync('has-errors.txt', errors.length > 0 ? 'true' : 'false');
+          SCRIPT
+
+          node lint.js
+
+      - name: Post lint comment
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('lint-report.md', 'utf8');
+            if (!report) return;
+
+            const md = '## Blog Post Lint\n\n' + report;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## Blog Post Lint';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = md + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      - name: Fail on errors
+        run: |
+          if [ -f has-errors.txt ] && [ "$(cat has-errors.txt)" = "true" ]; then
+            echo "::error::Blog post frontmatter has errors — see PR comment."
+            exit 1
+          fi
