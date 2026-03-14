@@ -7,6 +7,7 @@ date: "2024-03-13"
 output: html_document
 image:
   path: img/global_team.png
+  alt: "R-Ladies Global Team group photo"
 tags:
   - leadership
 categories:

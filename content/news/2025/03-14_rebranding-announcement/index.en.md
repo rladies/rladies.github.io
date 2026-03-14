@@ -6,6 +6,7 @@ description: "R-Ladies is rebranding to R-Ladies+ to better represent all underr
 date: "2025-03-14"
 image:
   path: rladiesplus.png
+  alt: "R-Ladies+ logo"
 categories:
   - community
 slug: "announcement"

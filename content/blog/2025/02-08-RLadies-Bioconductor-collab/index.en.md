@@ -10,6 +10,7 @@ categories:
   - partnerships
 image:
   path: "rladies-bioc.png"
+  alt: "R-Ladies and Bioconductor logos side by side"
 editor:
   markdown:
     wrap: sentence

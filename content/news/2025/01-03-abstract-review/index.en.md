@@ -6,6 +6,7 @@ description: "Sign up to volunteer as a reviewer for the R-Ladies Abstract Revie
 date: "2025-01-03"
 image:
   path: img/typing.jpg
+  alt: "Hands typing on a laptop keyboard"
 tags:
   - abstract-review
 categories:

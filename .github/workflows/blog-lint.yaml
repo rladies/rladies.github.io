@@ -86,6 +86,10 @@ jobs:
               }
             }
 
+            if (keys.has('image') && fm.includes('path:') && !fm.includes('alt:')) {
+              warnings.push({ file, msg: 'Image missing `alt:` in `image:` block' });
+            }
+
             // Check for images without alt text in body
             const body = content.split('---').slice(2).join('---');
             const imgNoAlt = body.match(/!\[\]\(/g);

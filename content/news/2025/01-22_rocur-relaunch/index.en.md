@@ -6,6 +6,7 @@ description: "R-Ladies launches a Rotating Curation account on Bluesky, inviting
 date: "2025-01-24"
 image:
   path: img/rladies-bluesky.jpg
+  alt: "R-Ladies and Bluesky logos"
 tags:
   - rocur
 categories:

@@ -6,6 +6,7 @@ description: "The R-Ladies Abstract Review System is back, connecting aspiring s
 date: "2025-01-16"
 image:
   path: img/letstalk.jpg
+  alt: "Two people having a conversation at a table"
 tags:
   - abstract-review
 categories:

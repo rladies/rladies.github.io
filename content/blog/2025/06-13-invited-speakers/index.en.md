@@ -18,6 +18,7 @@ editorial:
 date: "2025-06-15"
 image:
   path: mic.jpg
+  alt: "Microphone on a stand in front of an audience"
 slug: invited-speakers
 categories:
   - tutorials

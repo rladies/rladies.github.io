@@ -6,6 +6,7 @@ description: "R-Ladies is seeking proposals from graphic designers to create a n
 date: "2025-03-14"
 image:
   path: cfp.png
+  alt: "R-Ladies+ rebranding call for proposals banner"
 categories:
   - community
 slug: "cfp"
