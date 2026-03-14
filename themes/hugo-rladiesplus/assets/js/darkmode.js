@@ -1,6 +1,6 @@
 (function () {
   function getTheme() {
-    var stored = localStorage.getItem('theme');
+    const stored = localStorage.getItem('theme');
     if (stored) return stored;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   }
@@ -12,8 +12,8 @@
   applyTheme(getTheme());
 
   window.toggleTheme = function () {
-    var isDark = document.documentElement.classList.contains('dark');
-    var next = isDark ? 'light' : 'dark';
+    const isDark = document.documentElement.classList.contains('dark');
+    const next = isDark ? 'light' : 'dark';
     localStorage.setItem('theme', next);
     applyTheme(next);
     window.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));

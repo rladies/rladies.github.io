@@ -67,3 +67,11 @@
 <meta name="twitter:title" content="{{ $fullTitle }}">
 <meta name="twitter:description" content="{{ $desc }}">
 {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+
+{{/* Hreflang alternate links for multilingual SEO */}}
+{{ if hugo.IsMultilingual }}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{ end }}

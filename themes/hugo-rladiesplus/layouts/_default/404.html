@@ -36,14 +36,14 @@
 </section>
 <script>
 (function () {
-  var path = window.location.pathname;
-  var lang = 'en';
-  var known = ['fr', 'es', 'pt'];
-  for (var i = 0; i < known.length; i++) {
-    if (path.indexOf('/' + known[i] + '/') === 0) { lang = known[i]; break; }
+  const path = window.location.pathname;
+  let lang = 'en';
+  const known = ['fr', 'es', 'pt'];
+  for (const k of known) {
+    if (path.startsWith('/' + k + '/')) { lang = k; break; }
   }
 
-  var s = {
+  const s = {
     en: { desc: "Oops! This page doesn't exist!", home: 'Home',    events: 'Events',     blog: 'Blog', chapters: 'Chapters',  directory: 'Members'  },
     fr: { desc: "Oops! Cette page n'existe pas!", home: 'Accueil', events: 'Événements', blog: 'Blog', chapters: 'Chapitres', directory: 'Membres'  },
     es: { desc: '¡Ups! ¡Esta página no existe!',  home: 'Inicio',  events: 'Eventos',    blog: 'Blog', chapters: 'Capítulos', directory: 'Miembros' },

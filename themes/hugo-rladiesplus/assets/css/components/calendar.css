@@ -80,7 +80,7 @@
 
   /* Calendar tooltip (replaces Bootstrap tooltip) */
   .cal-tooltip {
-    @apply absolute z-50 bg-surface text-left rounded-sm shadow-lg border p-4;
+    @apply absolute z-50 bg-surface text-left rounded-xl shadow-lg border p-5 text-sm;
     border-color: var(--color-border);
     max-width: 320px;
     color: var(--color-dark);

@@ -37,7 +37,7 @@
         <div class="flex-1">
           <label for="country-filter" class="text-xs font-medium text-muted mb-1.5 block">{{ i18n "country" | markdownify | title }}</label>
           {{ $continents := slice "Africa" "Asia" "Europe" "Latin America" "North America" "Oceania" "Other" }}
-          <select id="country-filter" class="form-select" multiple>
+          <select id="country-filter" class="form-select" multiple data-placeholder="{{ i18n "select_countries" }}">
             {{ range $continent := $continents }}
               {{ $group := where $countries ".continent" $continent }}
               {{ if $group }}
@@ -107,76 +107,8 @@
   </div>
 </section>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const countryFilter = new Choices('#country-filter', {
-    removeItemButton: true,
-    searchEnabled: true,
-    placeholder: true,
-    placeholderValue: '{{ i18n "select_countries" }}'
-  });
-
-  const searchInput = document.getElementById('search-filter');
-  const rows = document.querySelectorAll('.chapter-row');
-
-  function filterTable() {
-    const selectedCountries = countryFilter.getValue(true);
-    const searchTerm = searchInput.value.toLowerCase();
-
-    rows.forEach(row => {
-      const country = row.dataset.country;
-      const city = row.dataset.city;
-
-      const countryMatch = selectedCountries.length === 0 || selectedCountries.includes(country);
-      const searchMatch = searchTerm === '' || city.includes(searchTerm);
-
-      if (countryMatch && searchMatch) {
-        row.style.display = '';
-      } else {
-        row.style.display = 'none';
-      }
-    });
-
-    updateRowspans();
-  }
-
-  function updateRowspans() {
-    const countries = {};
-    const visibleContinents = new Set();
-    rows.forEach(row => {
-      if (row.style.display !== 'none') {
-        const country = row.dataset.country;
-        const continent = row.dataset.continent;
-        if (!countries[country]) {
-          countries[country] = [];
-        }
-        countries[country].push(row);
-        visibleContinents.add(continent);
-      }
-    });
-
-    document.querySelectorAll('.country-cell').forEach(cell => {
-      cell.style.display = 'none';
-    });
-
-    Object.values(countries).forEach(countryRows => {
-      const firstRow = countryRows[0];
-      const cell = firstRow.querySelector('.country-cell');
-      if (cell) {
-        cell.style.display = '';
-        cell.setAttribute('rowspan', countryRows.length);
-      }
-    });
-
-    document.querySelectorAll('.continent-header').forEach(header => {
-      header.style.display = visibleContinents.has(header.dataset.continent) ? '' : 'none';
-    });
-  }
-
-  countryFilter.passedElement.element.addEventListener('change', filterTable);
-  searchInput.addEventListener('input', filterTable);
-});
-</script>
+{{ $chapterFilter := resources.Get "js/chapter-filter.js" | minify | fingerprint }}
+<script src="{{ $chapterFilter.RelPermalink }}" integrity="{{ $chapterFilter.Data.Integrity }}" defer></script>
 
 {{ end }}
 

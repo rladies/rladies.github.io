@@ -103,7 +103,7 @@
         <a href="https://www.netlify.com/" rel="noopener">Netlify</a>
       </small>
       <small>
-        &copy; {{ .Site.Params.year | markdownify }}, {{ .Site.Params.name | markdownify }}
+        &copy; {{ .Site.Params.year }}&ndash;{{ now.Format "2006" }}, {{ .Site.Params.name | markdownify }}
       </small>
       <small>
         Rebranding by <a href="https://www.sciencegraphicdesign.com/" rel="noopener">Science Graphic Design</a>

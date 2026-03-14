@@ -15,13 +15,13 @@ pt:
   params:
     languageName: "Português"
     weight: 3
-    description: "RLadies+ is a world-wide organization to promote gender diversity in the R community"
+    description: "RLadies+ é uma organização mundial para promover a diversidade de gênero na comunidade R"
 
 fr:
   params:
     languageName: "Français"
     weight: 4
-    description: "RLadies+ is a world-wide organization to promote gender diversity in the R community"
+    description: "RLadies+ est une organisation mondiale pour promouvoir la diversité de genre dans la communauté R"
   menus:
     main:
       - identifier: find
