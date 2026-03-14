@@ -13,6 +13,7 @@ directory: 'Membres'
 activities: 'Activités'
 events: 'Événements'
 programs: 'Programmes & Initiatives'
+faq: 'FAQ'
 press: 'Dans la presse'
 blog: 'Blog'
 
@@ -93,6 +94,7 @@ r_user_groups: "Groupes d'Utilisateurs R"
 r_packages: 'Packages R'
 about: 'À propos'
 photo_credit: 'Crédit photo'
+posts: 'Articles'
 
 # Press ----
 filter_by_year: 'Filtrer par Année'
@@ -159,6 +161,7 @@ select_language: 'Sélectionner la langue'
 
 # Language ----
 translations: 'Traductions'
+min_read: 'min de lecture'
 missing_translation: |
     Nous sommes désolé·e·s, cette page
     n'a pas été traduite en français.
