@@ -33,6 +33,11 @@
     @apply bg-white/10;
   }
 
+  .dark .border-gray-100,
+  .dark .border-gray-200 {
+    border-color: var(--color-border);
+  }
+
   /* ── Hero ── */
   .dark .hero-subheadline {
     @apply text-gray-300;
@@ -64,7 +69,7 @@
 
   /* ── Forms ── */
   .dark .form-control::placeholder {
-    @apply text-gray-500;
+    @apply text-gray-400;
   }
 
   /* ── Buttons ── */
@@ -82,7 +87,7 @@
   }
 
   .dark .btn-accent-rose {
-    color: #2f2f30;
+    color: #1a1a2e;
   }
 
   /* ── Badges ── */
@@ -107,7 +112,7 @@
 
   /* ── Pagination ── */
   .dark .page-item.disabled .page-link {
-    @apply text-gray-600;
+    @apply text-gray-500;
   }
 
   /* ── Calendar (FullCalendar) ── */
@@ -191,7 +196,7 @@
 }
 
 .dark .choices__placeholder {
-  color: #6b7280 !important;
+  color: #9ca3af !important;
 }
 
 .dark .choices[data-type*=select-one] .choices__input {
