@@ -1,4 +1,4 @@
-name: "Lighthouse audit"
+name: "Site quality checks"
 
 on:
   pull_request:
@@ -10,8 +10,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  audit:
-    name: Lighthouse
+  build:
+    name: Build site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -49,6 +49,29 @@ jobs:
       - name: Build
         run: hugo -e production -d public
 
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: public/
+          retention-days: 1
+
+  lighthouse:
+    name: Lighthouse
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: public/
+
       - name: Detect pages to audit
         id: pages
         run: |
@@ -57,9 +80,11 @@ jobs:
           CHANGED_URLS=""
           CONTENT_CHANGES=$(git diff --name-only origin/main...HEAD -- content/ | head -20)
           for f in $CONTENT_CHANGES; do
-            # content/about-us/_index.md -> /about-us/
-            # content/blog/2024-01-01-post/index.md -> /blog/2024-01-01-post/
-            url=$(echo "$f" | sed 's|^content/||' | sed 's|/_index\.md$|/|' | sed 's|/index\.md$|/|' | sed 's|\.md$|/|')
+            url=$(echo "$f" \
+              | sed 's|^content/||' \
+              | sed 's|/_index\(\.[a-z]*\)\?\.md$|/|' \
+              | sed 's|/index\(\.[a-z]*\)\?\.md$|/|' \
+              | sed 's|\(\.[a-z]*\)\?\.md$|/|')
             url="/${url}"
             CHANGED_URLS="$CHANGED_URLS $url"
           done
@@ -73,18 +98,13 @@ jobs:
             CHANGED_URLS="$KEY_PAGES"
           fi
 
-          # Deduplicate and validate (only keep pages that exist in build output)
           URLS=""
           SEEN=""
           for url in $CHANGED_URLS; do
-            # Normalize double slashes
             url=$(echo "$url" | sed 's|//*|/|g')
-            # Skip if already seen
             echo "$SEEN" | grep -qF "$url" && continue
             SEEN="$SEEN $url"
-            # Check the built file exists
-            check_path="public${url}index.html"
-            if [ -f "$check_path" ]; then
+            if [ -f "public${url}index.html" ]; then
               URLS="$URLS $url"
             fi
           done
@@ -93,7 +113,7 @@ jobs:
           echo "Auditing pages:$URLS"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli
+        run: npm install -g @lhci/cli serve
 
       - name: Run Lighthouse on PR build
         run: |
@@ -171,8 +191,7 @@ jobs:
           }
 
           function emoji(pr, prod) {
-            if (pr === null) return '';
-            if (prod === null) return '';
+            if (pr === null || prod === null) return '';
             const diff = pr - prod;
             if (diff >= 5) return ' :green_circle:';
             if (diff <= -5) return ' :red_circle:';
@@ -233,7 +252,7 @@ jobs:
 
           node compare.js
 
-      - name: Post PR comment
+      - name: Post Lighthouse comment
         uses: actions/github-script@v7
         with:
           script: |
@@ -244,8 +263,9 @@ jobs:
               repo: context.repo.repo,
               issue_number: context.issue.number,
             });
+            const marker = '## Lighthouse Audit';
             const existing = comments.find(c =>
-              c.user.type === 'Bot' && c.body.includes('## Lighthouse Audit')
+              c.user.type === 'Bot' && c.body.includes(marker)
             );
             const body = report + '\n\n*Updated: ' + new Date().toISOString() + '*';
             if (existing) {
@@ -270,3 +290,191 @@ jobs:
             echo "::error::Images are missing alt text — see PR comment for details."
             exit 1
           fi
+
+  links:
+    name: Broken links
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: public/
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --base public
+            --no-progress
+            --exclude-path public/pt
+            --exclude-path public/fr
+            --exclude-path public/es
+            --exclude 'localhost'
+            --exclude '127\.0\.0\.1'
+            --exclude 'example\.com'
+            --exclude 'meetup\.com'
+            --exclude 'linkedin\.com'
+            --exclude 'twitter\.com'
+            --exclude 'x\.com'
+            --timeout 30
+            --max-retries 2
+            --accept 200,403,429
+            'public/**/*.html'
+          fail: false
+          output: lychee-report.md
+
+      - name: Post link check comment
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          script: |
+            const fs = require('fs');
+            let report = '## Broken Link Check\n\n';
+            if (fs.existsSync('lychee-report.md')) {
+              const raw = fs.readFileSync('lychee-report.md', 'utf8');
+              const lines = raw.split('\n');
+              const errors = lines.filter(l => l.includes('[ERR]') || l.includes('[TIMEOUT]'));
+              if (errors.length === 0) {
+                report += ':white_check_mark: No broken links found.\n';
+              } else {
+                report += `Found **${errors.length}** broken link(s):\n\n`;
+                report += '| Status | URL | Source |\n|--------|-----|--------|\n';
+                for (const line of errors.slice(0, 30)) {
+                  report += `| ${line.trim()} |\n`;
+                }
+                if (errors.length > 30) {
+                  report += `\n*...and ${errors.length - 30} more. See workflow logs for full report.*\n`;
+                }
+              }
+            } else {
+              report += ':warning: Link check did not produce a report.\n';
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## Broken Link Check';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = report + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+  bundle-size:
+    name: Bundle size
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: public/
+
+      - name: Measure asset sizes
+        id: sizes
+        run: |
+          cat > measure.js << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+
+          function findFiles(dir, ext) {
+            const results = [];
+            if (!fs.existsSync(dir)) return results;
+            for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+              const full = path.join(dir, entry.name);
+              if (entry.isDirectory()) results.push(...findFiles(full, ext));
+              else if (entry.name.endsWith(ext)) results.push(full);
+            }
+            return results;
+          }
+
+          function formatSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            const kb = bytes / 1024;
+            if (kb < 1024) return kb.toFixed(1) + ' KB';
+            return (kb / 1024).toFixed(2) + ' MB';
+          }
+
+          const cssFiles = findFiles('public', '.css');
+          const jsFiles = findFiles('public', '.js');
+
+          let rows = [];
+          let totalCSS = 0;
+          let totalJS = 0;
+
+          for (const f of cssFiles.sort()) {
+            const size = fs.statSync(f).size;
+            totalCSS += size;
+            const name = f.replace('public/', '');
+            rows.push(`| \`${name}\` | CSS | ${formatSize(size)} |`);
+          }
+          for (const f of jsFiles.sort()) {
+            const size = fs.statSync(f).size;
+            totalJS += size;
+            const name = f.replace('public/', '');
+            rows.push(`| \`${name}\` | JS | ${formatSize(size)} |`);
+          }
+
+          let md = '## Bundle Size Report\n\n';
+          md += `**Total CSS:** ${formatSize(totalCSS)} · **Total JS:** ${formatSize(totalJS)} · `;
+          md += `**Combined:** ${formatSize(totalCSS + totalJS)}\n\n`;
+          md += '<details>\n<summary>Asset breakdown</summary>\n\n';
+          md += '| File | Type | Size |\n|------|------|------|\n';
+          md += rows.join('\n') + '\n\n';
+          md += '</details>\n';
+
+          fs.writeFileSync('bundle-report.md', md);
+          SCRIPT
+
+          node measure.js
+
+      - name: Post bundle size comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('bundle-report.md', 'utf8');
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## Bundle Size Report';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = report + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
