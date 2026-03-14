@@ -13,6 +13,9 @@ jobs:
   build:
     name: Build site
     runs-on: ubuntu-latest
+    env:
+      RENV_PROFILE: "production"
+      RENV_CONFIG_SANDBOX_ENABLED: FALSE
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
