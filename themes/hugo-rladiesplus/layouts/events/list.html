@@ -113,13 +113,21 @@
     document.getElementById("local").selected = true;
 
     function getRladiesEvents(data) {
-      let updatedTime = [];
+      var updatedTime = [];
       data.forEach(function(ev, index) {
-        ev.start = ev.datetime_utc;
-        ev.end = moment.utc(ev.datetime_utc).add(ev.duration, 'seconds').format();
+        var startDate = new Date(ev.datetime_utc);
+        ev.start = startDate.toISOString();
+        ev.end = new Date(startDate.getTime() + ev.duration * 1000).toISOString();
         updatedTime[index] = ev;
       });
       return updatedTime;
+    }
+
+    function formatEventDate(date) {
+      return new Intl.DateTimeFormat('en', {
+        month: 'long', day: 'numeric', year: 'numeric',
+        hour: '2-digit', minute: '2-digit', hour12: false
+      }).format(date);
     }
 
     var activeTooltip = null;
@@ -131,20 +139,25 @@
       }
     }
 
+    var today = new Date();
+    var initialDate = today.getFullYear() + '-' +
+      String(today.getMonth() + 1).padStart(2, '0') + '-' +
+      String(today.getDate()).padStart(2, '0');
+
     var calendar = new FullCalendar.Calendar(calendarEl, {
       plugins: [
         FullCalendar.plugins.dayGrid,
         FullCalendar.plugins.timeGrid,
         FullCalendar.plugins.list,
         FullCalendar.plugins.interaction,
-        FullCalendar.plugins.momentTimezone
+        FullCalendar.plugins.intlTimezone
       ],
       headerToolbar: {
         left: "prev,next",
         center: "title",
         right: "",
       },
-      initialDate: moment().format("YYYY-MM-DD"),
+      initialDate: initialDate,
       titleFormat: {
         month: "long",
         year: "numeric",
@@ -174,7 +187,7 @@
 
           var dateEl = document.createElement('small');
           dateEl.className = 'text-muted';
-          dateEl.textContent = moment(info.event.start).format('MMMM D, YYYY [at] HH:mm');
+          dateEl.textContent = formatEventDate(info.event.start);
           tooltip.appendChild(dateEl);
 
           if (ev.venue_name) {
