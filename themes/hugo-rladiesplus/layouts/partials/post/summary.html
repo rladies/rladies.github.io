@@ -1,13 +1,19 @@
+{{ $page := . }}
+{{ $index := -1 }}
+{{ if isset . "entry" }}
+  {{ $page = .entry }}
+  {{ $index = .position }}
+{{ end }}
 <article class="post-card card card-hover fade-in-up">
   <div class="flex flex-col md:flex-row">
     {{ $img := "" }}
-    {{ if .Resources.ByType "image" }}
-      {{ range first 1 (.Resources.ByType "image") }}
+    {{ if $page.Resources.ByType "image" }}
+      {{ range first 1 ($page.Resources.ByType "image") }}
         {{ $image := .Fill "400x300 webp" }}
         {{ $img = $image.RelPermalink }}
       {{ end }}
 
-      {{ with .Resources.Get .Params.image.path }}
+      {{ with $page.Resources.Get $page.Params.image.path }}
         {{ $image := .Fill "400x300 webp" }}
         {{ $img = $image.RelPermalink }}
       {{ end }}
@@ -15,9 +21,10 @@
 
     {{ if $img }}
       <div class="md:w-1/3 shrink-0">
-        <a href="{{ .RelPermalink }}" class="block h-full">
-          <img src="{{ $img }}" alt="{{ .Params.image.alt | default .Title }}"
-               width="400" height="300" loading="lazy"
+        <a href="{{ $page.RelPermalink }}" class="block h-full">
+          <img src="{{ $img }}" alt="{{ $page.Params.image.alt | default $page.Title }}"
+               width="400" height="300"
+               {{ if eq $index 0 }}fetchpriority="high"{{ else }}loading="lazy"{{ end }}
                class="w-full h-full object-cover">
         </a>
       </div>
@@ -26,36 +33,36 @@
     <div class="{{ if $img }}md:w-2/3{{ else }}w-full{{ end }}">
       <div class="p-6">
         <div class="flex items-center gap-3 mb-3">
-          <time datetime="{{ .Date.Format .Site.Params.DateForm }}" class="text-sm text-muted">
-            {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+          <time datetime="{{ $page.Date.Format $page.Site.Params.DateForm }}" class="text-sm text-muted">
+            {{ $page.Date.Day }} {{ index $page.Site.Data.months $page.Lang (printf "%d" $page.Date.Month) }} {{ $page.Date.Year }}
           </time>
-          {{ partial "post/i18n.html" . }}
+          {{ partial "post/i18n.html" $page }}
         </div>
 
         <h2 class="text-xl font-semibold mb-2">
-          <a href="{{ .RelPermalink }}" class="text-dark hover:text-primary transition-colors no-underline">
-            {{ .Title }}
+          <a href="{{ $page.RelPermalink }}" class="text-dark hover:text-primary transition-colors no-underline">
+            {{ $page.Title }}
           </a>
         </h2>
 
-        {{ if .Params.author }}
+        {{ if $page.Params.author }}
           <div class="mb-3">
-            {{ partial "post/authors.html" (dict "author" .Params.author) }}
+            {{ partial "post/authors.html" (dict "author" $page.Params.author) }}
           </div>
         {{ end }}
 
         <div class="text-muted text-sm mb-4 line-clamp-3">
-          {{ .Summary | plainify | truncate 200 }}
+          {{ $page.Summary | plainify | truncate 200 }}
         </div>
 
-        {{ if or .Params.categories .Params.tags }}
+        {{ if or $page.Params.categories $page.Params.tags }}
           <div class="mb-4 flex flex-wrap gap-1">
-            {{ range .Params.categories }}
+            {{ range $page.Params.categories }}
               <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="badge badge-secondary no-underline">
                 {{ . }}
               </a>
             {{ end }}
-            {{ with .Params.tags }}{{ range first 4 . }}
+            {{ with $page.Params.tags }}{{ range first 4 . }}
               <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge badge-primary no-underline">
                 {{ . }}
               </a>
@@ -63,8 +70,8 @@
           </div>
         {{ end }}
 
-        <a href="{{ .RelPermalink }}" class="btn btn-outline btn-sm">
-          {{ i18n "read_more" | default "Read more" }}<span class="sr-only">: {{ .Title }}</span> <i class="fas fa-arrow-right ml-1"></i>
+        <a href="{{ $page.RelPermalink }}" class="btn btn-outline btn-sm">
+          {{ i18n "read_more" | default "Read more" }}<span class="sr-only">: {{ $page.Title }}</span> <i class="fas fa-arrow-right ml-1"></i>
         </a>
       </div>
     </div>

@@ -8,8 +8,8 @@
     {{ end }}
 
     <div class="max-w-4xl mx-auto space-y-8">
-      {{ range .Paginator.Pages }}
-        {{ partial "post/summary.html" . }}
+      {{ range $i, $p := .Paginator.Pages }}
+        {{ partial "post/summary.html" (dict "entry" $p "position" $i) }}
       {{ end }}
     </div>
 
