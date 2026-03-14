@@ -1,10 +1,7 @@
 document.querySelectorAll('[data-map-config]').forEach(function (el) {
   var d3map = window.__d3map;
   var configEl = document.getElementById(el.getAttribute('data-map-config'));
-  if (!configEl || !d3map) {
-    if (!d3map) console.error('d3map not loaded');
-    return;
-  }
+  if (!configEl || !d3map) return;
 
   var config = JSON.parse(configEl.textContent);
   var mapId = config.id;
