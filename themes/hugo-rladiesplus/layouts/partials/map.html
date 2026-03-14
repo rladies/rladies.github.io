@@ -11,7 +11,8 @@
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 
 <div id="{{ $id }}" style="width: 100%; height: {{ $height }};"
-     data-map-config="{{ $id }}-config"></div>
+     data-map-config="{{ $id }}-config"
+     role="img" aria-label="{{ i18n "map_label" | default "Interactive map showing R-Ladies chapter locations" }}"></div>
 
 {{ if not $data }}
   {{ $points := slice }}

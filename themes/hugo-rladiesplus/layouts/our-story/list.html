@@ -30,6 +30,7 @@
         {{ else }}
           <img src="/images/our-story/{{ $imgPath }}"
                alt="{{ $s.Params.image_alt }}"
+               width="800" height="600"
                style="object-fit:{{ if strings.HasSuffix $imgPath ".png" }}contain;padding:1rem{{ else }}cover{{ end }}"
                loading="lazy">
         {{ end }}
@@ -78,7 +79,9 @@
         <figure class="impact-photo-cell"
                 @click="open({{ $i }})"
                 role="button" tabindex="0"
-                @keydown.enter="$el.click()">
+                aria-label="{{ .alt }} — click to enlarge"
+                @keydown.enter="$el.click()"
+                @keydown.space.prevent="$el.click()">
           <img src="/images/our-story/{{ .src }}"
                alt="{{ .alt }}"
                loading="lazy">

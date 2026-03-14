@@ -41,10 +41,10 @@
             {{ range .Params.items }}
               <div class="card rounded-xl" x-data="{ open: false }">
                 <button class="w-full text-left p-5 flex items-center justify-between gap-4 font-medium text-dark hover:text-primary transition-colors"
-                        @click="open = !open">
+                        @click="open = !open" :aria-expanded="open">
                   <span>{{ .q }}</span>
                   <i class="fa-solid fa-chevron-down text-xs shrink-0 transition-transform"
-                     :class="open && 'rotate-180'"></i>
+                     aria-hidden="true" :class="open && 'rotate-180'"></i>
                 </button>
                 <div x-show="open" x-transition x-cloak>
                   <div class="px-5 pb-5 text-muted entry-content">

@@ -113,14 +113,14 @@
             <i class="fa-solid fa-people-group text-accent-rose mr-2"></i>{{ i18n "organizers" }}
           </h2>
           <div class="tab-list" role="tablist">
-            <button class="tab-button" :class="tab === 'current' && 'active'" @click="tab = 'current'" role="tab">
+            <button class="tab-button" :class="tab === 'current' && 'active'" @click="tab = 'current'" role="tab" :aria-selected="tab === 'current'" aria-controls="org-current">
               {{ i18n "tab_current" }}{{ with .current }} ({{ len . }}){{ end }}
             </button>
-            <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab">
+            <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab" :aria-selected="tab === 'former'" aria-controls="org-former">
               {{ i18n "tab_former" }}{{ with .former }} ({{ len . }}){{ end }}
             </button>
           </div>
-          <div x-show="tab === 'current'" class="tab-panel" role="tabpanel">
+          <div x-show="tab === 'current'" class="tab-panel" role="tabpanel" id="org-current">
             {{ with .current }}
               <ul class="list-unstyled">
                 {{ range . }}
@@ -135,7 +135,7 @@
             {{ end }}
           </div>
           {{ with .former }}
-            <div x-show="tab === 'former'" class="tab-panel" role="tabpanel" x-cloak>
+            <div x-show="tab === 'former'" class="tab-panel" role="tabpanel" id="org-former" x-cloak>
               <ul class="list-unstyled">
                 {{ range . }}
                   <li class="py-3 border-b border-gray-100 last:border-0 flex items-center gap-3">
@@ -159,15 +159,15 @@
             <i class="fa-solid fa-calendar-days text-accent-blue mr-2"></i>{{ i18n "events" }}
           </h2>
           <div class="tab-list" role="tablist">
-            <button class="tab-button" :class="tab === 'upcoming' && 'active'" @click="tab = 'upcoming'" role="tab">
+            <button class="tab-button" :class="tab === 'upcoming' && 'active'" @click="tab = 'upcoming'" role="tab" :aria-selected="tab === 'upcoming'" aria-controls="evt-upcoming">
               {{ i18n "tab_upcoming" }} ({{ len $upcomingEvents }})
             </button>
-            <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab">
+            <button class="tab-button" :class="tab === 'former' && 'active'" @click="tab = 'former'" role="tab" :aria-selected="tab === 'former'" aria-controls="evt-former">
               {{ i18n "tab_former" }} ({{ len $formerEvents }})
             </button>
           </div>
 
-          <div x-show="tab === 'upcoming'" class="tab-panel" role="tabpanel">
+          <div x-show="tab === 'upcoming'" class="tab-panel" role="tabpanel" id="evt-upcoming">
             {{ if gt (len $upcomingEvents) 0 }}
               {{ $nextEvent := index $upcomingEvents 0 }}
               <div class="rounded-xl border-2 border-accent-blue mb-6 overflow-hidden">
@@ -224,7 +224,7 @@
             {{ end }}
           </div>
 
-          <div x-show="tab === 'former'" class="tab-panel" role="tabpanel" x-cloak>
+          <div x-show="tab === 'former'" class="tab-panel" role="tabpanel" id="evt-former" x-cloak>
             {{ if gt (len $formerEvents) 0 }}
               <ul class="list-unstyled">
                 {{ range $event := $formerEvents }}

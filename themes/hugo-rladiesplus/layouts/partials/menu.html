@@ -12,14 +12,14 @@
     <div class="site-nav-links">
       {{ range .Site.Menus.main }}
         {{ if .HasChildren }}
-          <div class="dropdown" x-data="{ dropOpen: false }" @mouseenter="dropOpen = true" @mouseleave="dropOpen = false">
-            <button class="site-nav-link dropdown-toggle" @click="dropOpen = !dropOpen">
+          <div class="dropdown" x-data="{ dropOpen: false }" @mouseenter="dropOpen = true" @mouseleave="dropOpen = false" @keydown.escape="dropOpen = false">
+            <button class="site-nav-link dropdown-toggle" @click="dropOpen = !dropOpen" aria-haspopup="true" :aria-expanded="dropOpen">
               {{ or (T .Identifier) .Name | safeHTML }}
-              <i class="fa fa-chevron-down text-xs ml-1 transition-transform" :class="dropOpen && 'rotate-180'"></i>
+              <i class="fa fa-chevron-down text-xs ml-1 transition-transform" aria-hidden="true" :class="dropOpen && 'rotate-180'"></i>
             </button>
-            <div class="dropdown-menu" x-show="dropOpen" x-transition x-cloak>
+            <div class="dropdown-menu" x-show="dropOpen" x-transition x-cloak role="menu">
               {{ range .Children }}
-                <a class="dropdown-item" href="{{ .URL | relLangURL }}">{{ or (T .Identifier) .Name | safeHTML }}</a>
+                <a class="dropdown-item" href="{{ .URL | relLangURL }}" role="menuitem">{{ or (T .Identifier) .Name | safeHTML }}</a>
               {{ end }}
             </div>
           </div>
@@ -33,7 +33,7 @@
 
     <div class="site-nav-actions md:hidden flex items-center gap-2">
       {{ partial "dark-mode-toggle.html" . }}
-      <button class="site-nav-mobile-toggle" @click="open = !open" aria-label="{{ i18n "toggle_nav" }}">
+      <button class="site-nav-mobile-toggle" @click="open = !open" aria-label="{{ i18n "toggle_nav" }}" :aria-expanded="open">
         <i class="fa fa-bars text-xl" x-show="!open"></i>
         <i class="fa fa-times text-xl" x-show="open" x-cloak></i>
       </button>
@@ -45,9 +45,9 @@
     {{ range .Site.Menus.main }}
       {{ if .HasChildren }}
         <div x-data="{ subOpen: false }">
-          <button class="site-nav-mobile-link w-full text-left flex justify-between items-center" @click="subOpen = !subOpen">
+          <button class="site-nav-mobile-link w-full text-left flex justify-between items-center" @click="subOpen = !subOpen" :aria-expanded="subOpen">
             {{ or (T .Identifier) .Name | safeHTML }}
-            <i class="fa fa-chevron-down text-xs transition-transform" :class="subOpen && 'rotate-180'"></i>
+            <i class="fa fa-chevron-down text-xs transition-transform" aria-hidden="true" :class="subOpen && 'rotate-180'"></i>
           </button>
           <div x-show="subOpen" x-transition x-cloak class="bg-surface">
             {{ range .Children }}

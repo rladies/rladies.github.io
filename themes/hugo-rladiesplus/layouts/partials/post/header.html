@@ -7,7 +7,7 @@
 
 {{ if $img }}
 <figure class="rounded-xl overflow-hidden mb-8 -mx-0">
-  <img src="{{ $img }}" alt="{{ $imgAlt }}" class="w-full object-cover" style="max-height: 480px;">
+  <img src="{{ $img }}" alt="{{ $imgAlt }}" class="w-full object-cover" style="max-height: 480px;" width="1200" height="630">
   {{ if .Params.image.alt }}
   <figcaption class="text-xs text-center text-muted mt-2 px-2">{{ .Params.image.alt }}</figcaption>
   {{ end }}
