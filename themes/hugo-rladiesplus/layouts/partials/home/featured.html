@@ -8,6 +8,9 @@
     </p>
 
     {{ $directory := where .Site.RegularPages "Section" "directory" }}
+    {{ if eq (len $directory) 0 }}
+      {{ $directory = where (index .Site.Sites 0).RegularPages "Section" "directory" }}
+    {{ end }}
     {{ $featured := first 3 ($directory | shuffle) }}
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
