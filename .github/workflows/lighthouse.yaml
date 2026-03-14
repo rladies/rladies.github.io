@@ -1,0 +1,272 @@
+name: "Lighthouse audit"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set env parameters
+        run: |
+          ver=$(cat .hugoversion)
+          echo "hugovr=$ver" >> $GITHUB_ENV
+
+      - name: Install cURL Headers
+        run: |
+          sudo apt-get update
+          sudo apt-get install libcurl4-openssl-dev
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "renv"
+
+      - name: Setup renv
+        uses: r-lib/actions/setup-renv@v2
+
+      - name: Populate untranslated pages
+        run: Rscript scripts/missing_translations.R
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.hugovr }}
+          extended: true
+
+      - name: Build
+        run: hugo -e production -d public
+
+      - name: Detect pages to audit
+        id: pages
+        run: |
+          KEY_PAGES="/ /events/ /chapters/ /about-us/ /blog/ /directory/"
+
+          CHANGED_URLS=""
+          CONTENT_CHANGES=$(git diff --name-only origin/main...HEAD -- content/ | head -20)
+          for f in $CONTENT_CHANGES; do
+            # content/about-us/_index.md -> /about-us/
+            # content/blog/2024-01-01-post/index.md -> /blog/2024-01-01-post/
+            url=$(echo "$f" | sed 's|^content/||' | sed 's|/_index\.md$|/|' | sed 's|/index\.md$|/|' | sed 's|\.md$|/|')
+            url="/${url}"
+            CHANGED_URLS="$CHANGED_URLS $url"
+          done
+
+          LAYOUT_CHANGES=$(git diff --name-only origin/main...HEAD -- themes/ assets/ config/ | head -5)
+          if [ -n "$LAYOUT_CHANGES" ]; then
+            CHANGED_URLS="$CHANGED_URLS $KEY_PAGES"
+          fi
+
+          if [ -z "$CHANGED_URLS" ]; then
+            CHANGED_URLS="$KEY_PAGES"
+          fi
+
+          # Deduplicate and validate (only keep pages that exist in build output)
+          URLS=""
+          SEEN=""
+          for url in $CHANGED_URLS; do
+            # Normalize double slashes
+            url=$(echo "$url" | sed 's|//*|/|g')
+            # Skip if already seen
+            echo "$SEEN" | grep -qF "$url" && continue
+            SEEN="$SEEN $url"
+            # Check the built file exists
+            check_path="public${url}index.html"
+            if [ -f "$check_path" ]; then
+              URLS="$URLS $url"
+            fi
+          done
+
+          echo "urls=$URLS" >> $GITHUB_OUTPUT
+          echo "Auditing pages:$URLS"
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli
+
+      - name: Run Lighthouse on PR build
+        run: |
+          npx serve -l 9222 public &
+          sleep 2
+
+          mkdir -p .lighthouseci/pr
+          for url in ${{ steps.pages.outputs.urls }}; do
+            slug=$(echo "$url" | sed 's|/|_|g' | sed 's|^_||' | sed 's|_$||')
+            [ -z "$slug" ] && slug="home"
+            lhci collect \
+              --url="http://localhost:9222${url}" \
+              --settings.onlyCategories='["performance","accessibility","seo"]' \
+              --settings.output=json \
+              --settings.outputPath=".lighthouseci/pr/${slug}.json" \
+              -n 1 || true
+          done
+
+          kill %1 2>/dev/null || true
+
+      - name: Run Lighthouse on production
+        run: |
+          mkdir -p .lighthouseci/prod
+          for url in ${{ steps.pages.outputs.urls }}; do
+            slug=$(echo "$url" | sed 's|/|_|g' | sed 's|^_||' | sed 's|_$||')
+            [ -z "$slug" ] && slug="home"
+            lhci collect \
+              --url="https://rladies.org${url}" \
+              --settings.onlyCategories='["performance","accessibility","seo"]' \
+              --settings.output=json \
+              --settings.outputPath=".lighthouseci/prod/${slug}.json" \
+              -n 1 || true
+          done
+
+      - name: Generate comparison report
+        id: report
+        run: |
+          cat > compare.js << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+
+          const prDir = '.lighthouseci/pr';
+          const prodDir = '.lighthouseci/prod';
+
+          const prFiles = fs.existsSync(prDir)
+            ? fs.readdirSync(prDir).filter(f => f.endsWith('.json'))
+            : [];
+
+          if (prFiles.length === 0) {
+            fs.writeFileSync('report.md', '> No Lighthouse results collected.\n');
+            process.exit(0);
+          }
+
+          function readScores(filePath) {
+            try {
+              const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              const cats = data.categories || {};
+              return {
+                performance: cats.performance ? Math.round(cats.performance.score * 100) : null,
+                accessibility: cats.accessibility ? Math.round(cats.accessibility.score * 100) : null,
+                seo: cats.seo ? Math.round(cats.seo.score * 100) : null,
+              };
+            } catch { return { performance: null, accessibility: null, seo: null }; }
+          }
+
+          function readImageAltFailures(filePath) {
+            try {
+              const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              const audit = data.audits && data.audits['image-alt'];
+              if (!audit || audit.score === 1 || audit.score === null) return [];
+              return (audit.details?.items || []).map(i =>
+                i.node?.snippet || i.node?.selector || 'unknown element'
+              );
+            } catch { return []; }
+          }
+
+          function emoji(pr, prod) {
+            if (pr === null) return '';
+            if (prod === null) return '';
+            const diff = pr - prod;
+            if (diff >= 5) return ' :green_circle:';
+            if (diff <= -5) return ' :red_circle:';
+            return '';
+          }
+
+          function fmt(pr, prod) {
+            if (pr === null) return 'n/a';
+            if (prod === null) return `**${pr}** (new)`;
+            const diff = pr - prod;
+            const sign = diff > 0 ? '+' : '';
+            return `**${pr}** (${sign}${diff})${emoji(pr, prod)}`;
+          }
+
+          let rows = [];
+          let altFailures = [];
+
+          for (const file of prFiles) {
+            const slug = path.basename(file, '.json');
+            const page = slug === 'home' ? '/' : '/' + slug.replace(/_/g, '/') + '/';
+            const pr = readScores(path.join(prDir, file));
+            const prodFile = path.join(prodDir, file);
+            const prod = fs.existsSync(prodFile)
+              ? readScores(prodFile)
+              : { performance: null, accessibility: null, seo: null };
+
+            rows.push(
+              `| \`${page}\` | ${fmt(pr.performance, prod.performance)} | ${fmt(pr.accessibility, prod.accessibility)} | ${fmt(pr.seo, prod.seo)} |`
+            );
+
+            const failures = readImageAltFailures(path.join(prDir, file));
+            if (failures.length > 0) {
+              altFailures.push({ page, failures });
+            }
+          }
+
+          let md = '## Lighthouse Audit\n\n';
+          md += '| Page | Performance | Accessibility | SEO |\n';
+          md += '|------|------------|---------------|-----|\n';
+          md += rows.join('\n') + '\n\n';
+          md += '> Scores compared against [rladies.org](https://rladies.org) production. ';
+          md += ':green_circle: = improved 5+ pts, :red_circle: = dropped 5+ pts.\n';
+
+          if (altFailures.length > 0) {
+            md += '\n### :x: Images missing alt text\n\n';
+            for (const { page, failures } of altFailures) {
+              md += `**\`${page}\`**\n`;
+              for (const f of failures) {
+                md += `- \`${f}\`\n`;
+              }
+            }
+            md += '\nThis check will fail until all images have alt text.\n';
+          }
+
+          fs.writeFileSync('report.md', md);
+          fs.writeFileSync('has-alt-failures.txt', altFailures.length > 0 ? 'true' : 'false');
+          SCRIPT
+
+          node compare.js
+
+      - name: Post PR comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.md', 'utf8');
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes('## Lighthouse Audit')
+            );
+            const body = report + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      - name: Fail if images missing alt text
+        run: |
+          if [ "$(cat has-alt-failures.txt)" = "true" ]; then
+            echo "::error::Images are missing alt text — see PR comment for details."
+            exit 1
+          fi
