@@ -6,7 +6,7 @@
       <div class="card shadow-sm mb-4 text-center">
         <div class="card-body">
           {{ if .Params.image }}
-              <img src="{{ .Params.image }}" class="w-full h-auto mb-3 border border-gray-200 shadow-sm object-cover" alt="{{ .Params.name }}">
+              <img src="{{ .Params.image }}" width="400" height="400" class="w-full h-auto mb-3 border border-gray-200 shadow-sm object-cover" alt="{{ .Params.name }}">
               {{ with .Params.photo.credit }}
                 <p class="card-text text-muted text-sm">{{ i18n "photo_credit" }}: {{ . }}</p>
               {{ end }}

@@ -40,7 +40,7 @@
       {{ $img := resources.GetMatch $imgPattern }}
       {{ with $img }}
         <div class="flex items-center justify-center" style="min-height: 20rem;">
-          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="max-w-full max-h-72 object-contain">
+          <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" width="{{ .Width }}" height="{{ .Height }}" class="max-w-full max-h-72 object-contain">
         </div>
       {{ end }}
 

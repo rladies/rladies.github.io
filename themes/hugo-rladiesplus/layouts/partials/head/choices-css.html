@@ -1,0 +1,2 @@
+{{ $choices := resources.Get "css/vendor/choices.min.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $choices.RelPermalink }}" integrity="{{ $choices.Data.Integrity }}">

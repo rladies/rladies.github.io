@@ -1,3 +1,4 @@
+{{ define "head" }}{{ partial "head/choices-css.html" . }}{{ end }}
 {{ define "main" }}
 {{ $directory := .Pages }}
 {{ $ints := slice }}
@@ -140,6 +141,8 @@
 {{ end }}
 
 {{ define "footer" }}
+{{ partial "footer/choices-js.html" . }}
+{{ partial "footer/shuffle-js.html" . }}
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     const interestsChoice = new Choices('#filter-interests', {

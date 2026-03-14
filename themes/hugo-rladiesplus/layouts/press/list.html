@@ -1,3 +1,4 @@
+{{ define "head" }}{{ partial "head/choices-css.html" . }}{{ end }}
 {{ define "main" }}
 <section class="site-section-lg">
   <div class="site-container">
@@ -63,6 +64,7 @@
 {{ end }}
 
 {{ define "footer" }}
+{{ partial "footer/choices-js.html" . }}
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', function() {
     const yearFilter = new Choices('#filter-press', {
