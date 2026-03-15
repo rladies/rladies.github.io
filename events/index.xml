@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 14 Mar 2026 13:09:45 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sun, 15 Mar 2026 01:13:49 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -50,7 +50,7 @@ Description is TBD. Topic is making maps in R.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 55 going</p>
+        <p><strong>Attendees:</strong> 56 going</p>
         <p>**Supercharging Your R Workflow with a Native AI Assistant**
 
 It’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.
@@ -66,7 +66,7 @@ Advantages of using the gptstudio package:
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Análisis de datos que visibilizan las exigencias y luchas de las mujeres - R-Ladies Guadalajara</title><link>https://www.meetup.com/rladies-guadalajara/events/313763997/</link><guid>https://www.meetup.com/rladies-guadalajara/events/313763997/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Guadalajara</p>
         <p><strong>When:</strong> Thursday, March 26, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 19 going</p>
+        <p><strong>Attendees:</strong> 20 going</p>
         <p>¿Te has preguntado qué datos existen actualmente sobre la violencia contra las mujeres? ¿Hay evidencia de estas exigencias? ¿Quiénes producen y miden estos datos, y por qué? ¿Qué registros se generan y cuáles son sus limitaciones? ¿Qué papel pueden tener los datos para visibilizar las luchas y demandas de las mujeres?
 
 En este taller teórico-práctico exploraremos los principales indicadores sobre violencia contra niñas, adolescentes y mujeres. Analizaremos qué dicen las cifras, cómo interpretar tendencias y cuáles son los alcances y límites de los datos disponibles. Además, reflexionaremos sobre cómo comunicar esta información para dimensionar las violencias y colocarlas en la conversación pública.
@@ -83,7 +83,7 @@ Cupo limitado
         <p><a href="https://www.meetup.com/rladies-guadalajara/events/313763997/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Guadalajara)</author><category>R-Ladies Guadalajara</category></item><item><title>Instalación de paquetes en R sin morir en el intento - R-Ladies Cuernavaca</title><link>https://www.meetup.com/rladies-cuernavaca/events/313771730/</link><guid>https://www.meetup.com/rladies-cuernavaca/events/313771730/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Cuernavaca</p>
         <p><strong>When:</strong> Wednesday, March 25, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 10 going</p>
+        <p><strong>Attendees:</strong> 16 going</p>
         <p>En este meetup daremos un vistazo general al proceso para instalar R y RStudio en diferentes sistemas operativos, asi como también la instalación de algunos paquetes a través de repositorios CRAN, Bioconductor, Github,Conda y paquetes locales. Revisaremos los posibles problemas que nos podremos encontrar al realizar estas instalaciones.
 
 # Requerimientos de software
@@ -97,7 +97,7 @@ Cupo limitado
         <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Working Smarter with {dplyr} 1.2.0 – A Practical Session - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313630747/</link><guid>https://www.meetup.com/rladies-rome/events/313630747/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, March 18, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 67 going</p>
+        <p><strong>Attendees:</strong> 68 going</p>
         <p>**{dplyr} 1.2.0 is out, and wow, is it a delight!**
 
 **Join us for a tour** of the new tools in {dplyr} 1.2.0 and when you should use them.
