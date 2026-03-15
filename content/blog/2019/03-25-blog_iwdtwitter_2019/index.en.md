@@ -21,9 +21,12 @@ output: html_document
 slug: "blog_iwdtwitter_2019"
 aliases:
   - "/blog/2019-03-25-blog_iwdtwitter_2019"
+image:
+  path: ExistingChapters.jpg
+  alt: "Map showing existing R-Ladies chapters for IWD 2019"
 ---
 
-Every year on March 8th, the world celebrates International Women's Day (IWD). Although this date has different ways of celebration, it has one point in common - the fight for gender equality. The [previous year](http://blog.rladies.org/post/ideation_and_creation/), in 2018, an enthusiast R-Ladies' group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018. In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.
+Every year on March 8th, the world celebrates International Women's Day (IWD). Although this date has different ways of celebration, it has one point in common - the fight for gender equality. The [previous year](/blog/2018-03-26-ideation_and_creation/), in 2018, an enthusiast R-Ladies' group took the initiative for a massive project to tweet about all the profiles registered in the R-ladies directory, throughout 8th March 2018. In February this year, the year 2019, Yanina proposed to follow their lead and tweet about all the R-Ladies Chapters, throughout 8th March 2019.
 
 Yanina's call for volunteers was responded to instantly. In a matter of days, we had a team of brilliant, knowledgeable R-Ladies consisting of [Yanina](https://twitter.com/yabellini), [Gabriela](https://twitter.com/gdequeiroz), [Patricia](https://twitter.com/patriloto), [Roxana](https://twitter.com/data_datum), and [Divya](https://twitter.com/DSeernani). Yanina took the wheel of this fantastic project, making a list of tasks to be done and everyone stepped up to volunteer for what they could do. Yanina proposed using the IWD twitter account from 2018, continuing what they had built then, but focusing on increasing visibility for chapters this year. R-Ladies chapters are the foundation of R-Ladies because this is where the community gathers, teaches and learns; where experiences are exchanged in every part of the world. The chapters sustain and magnify the community. It was logical to use these to celebrate IWD2019, and everyone was immediately on board.
 
@@ -53,7 +56,7 @@ First of all, an animate team with a shared aim can work efficiently and harmoni
 ## The R Action!
 
 We are R-Ladies! So, using R was obviously an integral part of the whole project. We provide the scripts we used in the box below, along with some useful links to that helped guide behind the scenes of Twitter.
-The most important link was [the R-Ladies Blog](http://blog.rladies.org/post/ideation_and_creation/) explaining IWD 2018 Twitter Action.
+The most important link was [the R-Ladies Blog](/blog/2018-03-26-ideation_and_creation/) explaining IWD 2018 Twitter Action.
 Learn how to use Magick [here](https://ropensci.org/blog/2016/08/23/z-magick-release/) and [here](https://ropensci.org/tutorials/magick_tutorial/).
 A [blog](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) explaining how to make Maps.
 Text Processing (including non-English charectors) is explained [here](https://www.gastonsanchez.com/r4strings/stringr-basics.html) and [here](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).

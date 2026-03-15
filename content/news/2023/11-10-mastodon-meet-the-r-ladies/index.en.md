@@ -12,6 +12,9 @@ summary: R-Ladies are on mastodon's Hackyderm server! Follow us at [hachyderm.io
 slug: "mastodon-meet-the-r-ladies"
 aliases:
   - "/news/2023-11-10-mastodon-meet-the-r-ladies"
+image:
+  path: elephant_ui_working.png
+  alt: "Mastodon elephant mascot in R-Ladies purple"
 ---
 
 # TL; DR

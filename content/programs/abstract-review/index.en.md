@@ -14,6 +14,6 @@ ctas:
     url: "/form/abstract-request"
     style: "primary"
   - label: "Become a reviewer"
-    url: "/form/abtract-volunteer"
+    url: "/form/abstract-volunteer"
     style: "outline"
 ---

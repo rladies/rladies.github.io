@@ -10,6 +10,9 @@ categories:
 slug: "history"
 aliases:
   - "/blog/2018-02-24-history"
+image:
+  path: R-Ladies.png
+  alt: "R-Ladies group photo at useR 2017 conference"
 ---
 
 R-Ladies was founded by [Gabriela de Queiroz](https://rladies.org/united-states-rladies/name/gabriela-de-queiroz/). She wanted to do something to give back to the R learning community after going to several meetups and learning a lot for free. The first meetup took place in San Francisco, California (United States) on October 1, 2012. <!-- I think it would be great here to talk a bit about what an R-ladies meetup initially involved eg mentoring, training, guest speakers?  -->
@@ -22,6 +25,6 @@ R-Ladies Global was born at useR 2016 and the grant was susequently awarded in S
 
 <!-- I'd love to say something here about R-ladies impact now. ie our events serve all R users from absolute beginners to experienced users. Some of the most respected R-users in both industry and academia are involved in R-ladies eg ... Some examples of some events that we have had or more obscure places R ladies are being formed, etc?-->
 
-Thanks to our amazing organisers and R-Ladies who helped build and maintain our official website ([rladies.org](https://rladies.org/)), engage with the larger community via social media - ([\@RLadiesGlobal](https://twitter.com/rladiesglobal?lang=en)) and help each-other every day in millions of different ways.
+Thanks to our amazing organisers and R-Ladies who helped build and maintain our official website ([rladies.org](/)), engage with the larger community via social media - ([\@RLadiesGlobal](https://twitter.com/rladiesglobal?lang=en)) and help each-other every day in millions of different ways.
 
 ![R-Ladies in 2017 useR](R-Ladies.png)

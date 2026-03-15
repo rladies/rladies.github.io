@@ -12,6 +12,9 @@ tags:
 slug: "cotonout_mentoring"
 aliases:
   - "/blog/2021-02-04-cotonout_mentoring"
+image:
+  path: rladies_cotonou_fig02.jpg
+  alt: "R-Ladies Cotonou mentoring program participants"
 ---
 
 _We are very happy to provide you this blog article in different languages, English, French and Spanish. If you would like to know more about how to contribute to the R-Ladies Blog in general or would like to recommend anything, please reach out to us with an e-mail at <blog@rladies.org>._

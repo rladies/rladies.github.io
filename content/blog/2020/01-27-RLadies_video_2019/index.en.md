@@ -14,6 +14,9 @@ always_allow_html: yes
 slug: "RLadies_video_2019"
 aliases:
   - "/blog/2020-01-27-RLadies_video_2019"
+image:
+  path: corazon.png
+  alt: "R-Ladies purple heart graphic from the 2019 year-end video"
 ---
 
 To close the awesome R-Ladies 2019 year we made a video, if you haven't seen it yet, here it is:
@@ -161,7 +164,7 @@ p <- p +
 
 ### Scene two: 100% volunteer work
 
-The objective is also to present _the number of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication media, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of volunteer work to achieve all these results. The [R-Ladies Global Team](https://rladies.org/about-us/team/) provided us with the numbers referred to the [R-Ladies directory](https://rladies.org/directory/) and from the [review network](tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use the `rtweet` package with the following code:
+The objective is also to present _the number of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication media, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of volunteer work to achieve all these results. The [R-Ladies Global Team](/about-us/global-team/) provided us with the numbers referred to the [R-Ladies directory](/directory/) and from the [review network](tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use the `rtweet` package with the following code:
 
 ```
 # We load the necessary packages
@@ -231,4 +234,4 @@ The final video was sent to the Global team for dissemination through social net
 
 Authors: Yanina Bellini Saibene, Alejandra Bellini y Laura Acion
 
-[Spanish version](/post/rladies_video_2019/index.es.html)
+[Versión en español](/es/blog/rladies_video_2019/)

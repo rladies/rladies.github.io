@@ -25,10 +25,10 @@ https://docs.google.com/presentation/d/1ZnCmaO_gBSKSbtx_1tTicQSxnTJZaYGc/edit#sl
 
 # Overview
 
-In 2023 we [announced openings](https://rladies.org/news/2023-04-11-global-team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts and facilitate the growth of the R-Ladies community.
+In 2023 we [announced openings](/news/2023-04-11-global-team-recruiting/) for roles on the R-Ladies Global Team that support organizational efforts and facilitate the growth of the R-Ladies community.
 We are delighted to welcome 15 new members to the R-Ladies Global Team.
 R-Ladies is 100% volunteer-driven, and we are very grateful to those who
-support us with their time and effort to champion our [mission](https://rladies.org/about-us/mission/).
+support us with their time and effort to champion our [mission](/about-us/mission/).
 
 # New members
 

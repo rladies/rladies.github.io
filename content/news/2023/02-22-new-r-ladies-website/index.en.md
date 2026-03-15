@@ -9,6 +9,9 @@ tags:
   - infrastructure
 categories:
   - community
+image:
+  path: rladies.jpg
+  alt: "Screenshot of the new R-Ladies website"
 ---
 
 
@@ -27,7 +30,7 @@ There were some key issues we wanted to resolve with our webpage, that we could 
 The work already started in 2019, with Bea Hernandez, Daloha Rodríguez-Molina and Maëlle Salmon.
 The initial work was in making a [blogdown](https://bookdown.org/yihui/blogdown/) website, which utilises [Hugo](https://gohugo.io/) and R markdown integration.
 It was a natural place to start porting our Wordpress site into something more common to use in our community.
-Additionally, the Wordpress site was requiring more and more maintenance, and in particular our [R-Ladies directory](https://www.rladies.org/directory/) was so slow we were getting reports of people not using it because the loading time of the page was so long!
+Additionally, the Wordpress site was requiring more and more maintenance, and in particular our [R-Ladies directory](/directory/) was so slow we were getting reports of people not using it because the loading time of the page was so long!
 
 In 2020, I (Athanasia Mowinckel) was on-boarded to the website team, initially to maintain the Wordpress site while the new Hugo site was being built.
 After just a little while, I also started working on the blogdown site.
@@ -37,11 +40,11 @@ At that point, it was due to some Hugo features not existing in Blogdown (yet) t
 These were settings for multi-lingual websites we really wanted to take advantage of.
 At this point, I realised I was heavily invested in getting all the Hugo backbone working for R-Ladies, and that would mean creating our own custom theme, rather than something pre-made.
 
-Then Covid hit, and we all [felt the stress of that period](https://www.rladies.org/news/2020-11-23-reduced-service-note/).
+Then Covid hit, and we all [felt the stress of that period](/news/2020-11-23-reduced-service-note/).
 Development went slow, and things dragged out.
 Thankfully, the Leadership contacted me and asked if I needed help to get the last pieces in place, and that we could set aside a little budget to hire help for the javascript pieces I was struggling with.
 
-We [announced](https://rladies.org/news/2022-03-28-request-for-proposal-javascript-development/) the need, and hired [Ben Ubah](https://github.com/benubah) to help me get the last crucial pieces in place. Finally, we were nearing completion!
+We [announced](/news/2022-03-28-request-for-proposal-javascript-development/) the need, and hired [Ben Ubah](https://github.com/benubah) to help me get the last crucial pieces in place. Finally, we were nearing completion!
 
 ## Release & new features!
 
@@ -49,10 +52,10 @@ We have now released the new website and are thrilled about how it works so far!
 The theme is well suited to us, and the content is much easier to deal with now that we can collaborate through GitHub.
 It's also made it possible to integrate the website with certain other automatic pipelines, which enables us to have a couple of new features to the website from before!
 
-- [Events page](https://www.rladies.org/activities/events/) with a calendar of R-Ladies events: These are fetched daily from meetup through their API
-- [Directory page](https://www.rladies.org/directory/) which is actually fast!: Updated and maintained in another private repository with Airtable integration
-- [Blog](https://www.rladies.org/blog/) where we welcome contributing posts and cross-posts: We'd love to see the blog revived and used by our community to show their skills and fun things they are doing with R!
-- [News page](https://www.rladies.org/news/) where the R-Ladies Global team can announce important notices about the global governance of our community
+- [Events page](/events/) with a calendar of R-Ladies events: These are fetched daily from meetup through their API
+- [Directory page](/directory/) which is actually fast!: Updated and maintained in another private repository with Airtable integration
+- [Blog](/blog/) where we welcome contributing posts and cross-posts: We'd love to see the blog revived and used by our community to show their skills and fun things they are doing with R!
+- [News page](/news/) where the R-Ladies Global team can announce important notices about the global governance of our community
 
 And more!
 
@@ -90,7 +93,7 @@ We are working on making better search and filtering functions for the directory
 ### Adding new pages
 
 There are quite some pages we are eager to start work on, so we can provide the best information available to our community and Funders.
-We promised certain resources in our [BML](https://rladies.org/news/2020-06-06-blm/) statement, and we are keenly aware that we have yet to fulfil this.
+We promised certain resources in our [BML](/news/2020-06-06-blm/) statement, and we are keenly aware that we have yet to fulfil this.
 Also, we know that our funders regularly want summaries of our activities, and we want to make a page dedicated to this type of information.
 
 If there are pages you feel should exist, [please do let us know](https://github.com/rladies/rladies.github.io/issues) and we will consider your proposals.

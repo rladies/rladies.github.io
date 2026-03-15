@@ -16,7 +16,7 @@ aliases:
 
 ## Background
 
-The [mission of R-Ladies](https://rladies.org/about-us/mission/) is to promote gender diversity in the R community.
+The [mission of R-Ladies](/about-us/mission/) is to promote gender diversity in the R community.
 The organization aims to support all underrepresented genders, including but not limited to cis/trans women, trans men, non-binary, genderqueer, and agender individuals.
 The organization received feedback that not all underrepresented genders identify with the name "R-Ladies".
 In April of 2024, we, the R-Ladies Global Leadership Team, opened the [“Re-branding from R-Ladies to R-Ladies+” GitHub issue](https://github.com/rladies/community/issues/10) to address the organization’s need to be more explicit about our mission to serve underrepresented gender minorities beyond cis women while preserving the established identity of our organization and also recognizing global variation in the ability to safely do so.
@@ -63,7 +63,7 @@ While changing from R-Ladies to R-Ladies+ does require administrative work from 
 
 ## Next steps
 
-The global organization will work to develop a new branding package, including a new logo, slide templates, and other imagery, by soliciting the services of a graphic designer ([see Call For Proposal](https://rladies.org/news/rebranding-cfp/)).
+The global organization will work to develop a new branding package, including a new logo, slide templates, and other imagery, by soliciting the services of a graphic designer ([see Call For Proposal](/news/rebranding-cfp/)).
 This rebranding effort intends to signal that R-Ladies+ is an organization inclusive of all gender minorities beyond cis women while preserving its established identity and global recognition.
 This material will also provide all chapter organizers with elements to communicate R-Ladies+ mission and values clearly and align with the global organization, saving them time and effort that can be used in the management of their chapters.
 

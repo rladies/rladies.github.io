@@ -15,7 +15,7 @@ aliases:
 
 ### As told by Maëlle Salmon with notes from Bea Hernández
 
-On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [\@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! In this blog post, we'll explain how we designed and completed our Twitter action.
+On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](/directory/) via [\@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! In this blog post, we'll explain how we designed and completed our Twitter action.
 
 ## An idea sown on IWD2017!
 
@@ -179,4 +179,4 @@ All images were prepared before tweeting, so that they were ready a bit before I
 
 ## Next Up: Part 2
 
-Continue Reading Part 2: [Deployment and Bot Wrangling](/post/deployment/)!
+Continue Reading Part 2: [Deployment and Bot Wrangling](/blog/2018-03-27-deployment/)!

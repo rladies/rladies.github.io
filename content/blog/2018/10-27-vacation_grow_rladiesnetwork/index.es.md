@@ -14,6 +14,9 @@ output: html_document
 slug: "vacation_grow_rladiesnetwork"
 aliases:
   - "/blog/2018-10-27-vacation_grow_rladiesnetwork"
+image:
+  path: laura_paloma.jpg
+  alt: "Laura y Paloma extendiendo la red R-Ladies en Sudamerica"
 ---
 
 _Nos gustaría contarles cómo unas vacaciones llevaron al crecimiento de la comunidad R-Ladies en América del Sur. La historia involucra múltiples países y encuentros en el momento adecuado de la vida._
@@ -55,4 +58,4 @@ Es difícil creer que todo esto comenzó con unas vacaciones de Mine en Sudamér
 
 Autoras: "Paloma, Mine, Laura"
 
-[English version](https://blog.rladies.org/post/vacation_grow_rladiesnetwork/)
+[English version](/blog/vacation_grow_rladiesnetwork/)

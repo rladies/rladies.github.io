@@ -14,6 +14,9 @@ always_allow_html: yes
 slug: "RLadies_video_2019"
 aliases:
   - "/blog/2020-01-27-RLadies_video_2019"
+image:
+  path: corazon.png
+  alt: "Corazon morado de R-Ladies del video de fin de ano 2019"
 ---
 
 Para cerrar el 2019 desde R-Ladies hicimos un video, si aún no lo viste, aquí está:
@@ -150,7 +153,7 @@ p <- p +
 
 ### Segunda escena: 100% trabajo voluntario
 
-El objetivo es presentar también _cifras de otras iniciativas de R-Ladies_ además de los capítulos y eventos, por lo que enfocamos en nuestros _medios de comunicación, nuestro directorio de personas expertas, nuestra red de revisión y la generación de material educativo_ para nuestros meetups, conferencias, eventos con otras organizaciones,etc. Resaltando el esfuerzo de un trabajo voluntario para conseguir todos estos resultados. El equipo de [R-Ladies Global](https://rladies.org/about-us/team/) me facilitó las cantidades referidas al [directorio de R-Ladies](https://rladies.org/directory/) y de la [red de revisión](tinyurl.com/rladiesrevs). Para la calcular la cantidad de seguidores de nuestras cuentas de twitter, utilizamos R y el paquete `rtweet` con el siguiente código:
+El objetivo es presentar también _cifras de otras iniciativas de R-Ladies_ además de los capítulos y eventos, por lo que enfocamos en nuestros _medios de comunicación, nuestro directorio de personas expertas, nuestra red de revisión y la generación de material educativo_ para nuestros meetups, conferencias, eventos con otras organizaciones,etc. Resaltando el esfuerzo de un trabajo voluntario para conseguir todos estos resultados. El equipo de [R-Ladies Global](/about-us/global-team/) me facilitó las cantidades referidas al [directorio de R-Ladies](/directory/) y de la [red de revisión](tinyurl.com/rladiesrevs). Para la calcular la cantidad de seguidores de nuestras cuentas de twitter, utilizamos R y el paquete `rtweet` con el siguiente código:
 
 ```
 #Cargo los paquetes necesarios
@@ -220,4 +223,4 @@ La exportación posterior del video se pasó al equipo Global para su difusión 
 
 Autoras: "Yanina Bellini Saibene, Alejandra Bellini y Laura Acion"
 
-[English version](/post/rladies_video_2019/index.en.html)
+[English version](/blog/rladies_video_2019/)

@@ -21,6 +21,9 @@ output: html_document
 slug: "blog_iwdtwitter_2019"
 aliases:
   - "/blog/2019-03-25-blog_iwdtwitter_2019"
+image:
+  path: ExistingChapters.jpg
+  alt: "Mapa de capitulos existentes de R-Ladies para el IWD 2019"
 ---
 
 Como cada 8 de marzo, una vez más se celebra el _Día Internacional de la Mujer (IWD/8M)_. Aunque dicha fecha tiene distintas formas de celebración, mantiene un punto en común: la lucha por la igualdad de género. El año pasado, en 2018, un grupo de entusiastas R-Ladies tuvo la idea de visibilizar a las grandes mujeres que forman parte del directorio de R-Ladies, mediante tweets posteados durante todo el 8 de marzo. Por lo que, en Febrero de este año, 2019, Yanina propuso continuar esta gran iniciativa, pero en esta oportunidad twittear sobre cada uno de los capítulos de R-Ladies.
@@ -60,7 +63,7 @@ En primer lugar, que un equipo animado con un objetivo compartido puede trabajar
 
 Somos R-Ladies, por esta razón el uso de R fue obviamente una parte integral de todo el proyecto. Los scripts usados son provistos a continuación, junto con algunos enlaces útiles que ayudaron a guiarnos en el detrás de escena de Twitter.
 
-El enlace más importante fue el [Blog de R-Ladies que explica la Acción de Twitter de IWD 2018](http://blog.rladies.org/post/ideation_and_creation/). Aprende a usar Magick [aquí](https://ropensci.org/blog/2016/08/23/z-magick-release/) y [aquí](https://ropensci.org/tutorials/magick_tutorial/). Un [blog](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) que explica cómo hacer mapas. El procesamiento de texto (incluidos caracteres de otros idiomas diferentes al Inglés) se explica [aquí](https://www.gastonsanchez.com/r4strings/stringr-basics.html) y [aquí](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).
+El enlace más importante fue el [Blog de R-Ladies que explica la Acción de Twitter de IWD 2018](/blog/2018-03-26-ideation_and_creation/). Aprende a usar Magick [aquí](https://ropensci.org/blog/2016/08/23/z-magick-release/) y [aquí](https://ropensci.org/tutorials/magick_tutorial/). Un [blog](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) que explica cómo hacer mapas. El procesamiento de texto (incluidos caracteres de otros idiomas diferentes al Inglés) se explica [aquí](https://www.gastonsanchez.com/r4strings/stringr-basics.html) y [aquí](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).
 
 ##¿Cómo fueron creadas las imágenes?
 La lista de los capítulos actuales contenía la información del país, ciudad, nombre, organizadores, estado (activo o no) y las formas de contacto (correo, sitio web, meetup y redes sociales) de todos los capítulos de R-ladies.

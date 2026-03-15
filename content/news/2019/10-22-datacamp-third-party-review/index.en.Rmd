@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-DataCamp's CEO Jonathan Cornelissen sexually assaulted an employee by making ["uninvited physical contact"](https://www.datacamp.com/community/blog/note-to-our-community) in October 2017. This became public in April 2019, after which we released a statement on our [blog](https://blog.rladies.org/post/statement-about-datacamp/). For a comprehensive account of events, please see this article by [Davey Alba for BuzzFeed News](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup) published in May 2019. DataCamp commissioned a third-party review which has now been [released](https://assets.datacamp.com/working-ideal-independent-third-party-review-of-datacamp.pdf). This blogpost is to add some clarification around references to R-Ladies made in that report.
+DataCamp's CEO Jonathan Cornelissen sexually assaulted an employee by making ["uninvited physical contact"](https://www.datacamp.com/community/blog/note-to-our-community) in October 2017. This became public in April 2019, after which we released a statement on our [blog](/news/statement-about-datacamp/). For a comprehensive account of events, please see this article by [Davey Alba for BuzzFeed News](https://www.buzzfeednews.com/article/daveyalba/datacamp-sexual-harassment-metoo-tech-startup) published in May 2019. DataCamp commissioned a third-party review which has now been [released](https://assets.datacamp.com/working-ideal-independent-third-party-review-of-datacamp.pdf). This blogpost is to add some clarification around references to R-Ladies made in that report.
 
 As in our previous blogpost on DataCamp, views expressed here are the views of the R-Ladies Global Team signing at the end of this post and do not represent the R-Ladies community at large, but the R-Ladies Global organisation.
 
@@ -40,7 +40,7 @@ After initial conversations with R-Ladies Global, a DataCamp employee started se
 
 After halting the conversations about the scholarship program, R-Ladies Global shared with its organisers that there would be no collaboration with DataCamp on an organisational level due to a verified incident of sexual misconduct and DataCamp's response to it. R-Ladies Global explicitly stated that this applied to their roles as organisers only and that members were to make their own decisions about their personal association with DataCamp.
 
-The [public blog post by R-Ladies Global](https://blog.rladies.org/post/statement-about-datacamp/) condemning DataCamp's handling of sexual assault was posted *after* DataCamp's [public admission of the assault ("uninvited physical contact")](https://www.datacamp.com/community/blog/note-to-our-community) and included options for anyone wanting to express disapproval of DataCamp's actions and response. This part was even updated to explicitly state that it was up to the community members to decide what they want or can do, given their personal situation.
+The [public blog post by R-Ladies Global](/news/statement-about-datacamp/) condemning DataCamp's handling of sexual assault was posted *after* DataCamp's [public admission of the assault ("uninvited physical contact")](https://www.datacamp.com/community/blog/note-to-our-community) and included options for anyone wanting to express disapproval of DataCamp's actions and response. This part was even updated to explicitly state that it was up to the community members to decide what they want or can do, given their personal situation.
 
 
 ## The report singles out R-Ladies Global, omitting similar responses from other organisations and companies
@@ -58,5 +58,5 @@ Being an organization that promotes gender diversity in the R Community, first a
 
 Let’s keep working on a safe community for everyone!
 
-– The R-Ladies Global Leadership Team (Claudia Vitolo, Erin LeDell, Hannah Frick, and Laura Ación) with Athanasia M. Mowinckel, Christin Zasada, Maëlle Salmon, and Yanina Bellini (members of the [R-Ladies Global Team](https://rladies.org/about-us/team/))
+– The R-Ladies Global Leadership Team (Claudia Vitolo, Erin LeDell, Hannah Frick, and Laura Ación) with Athanasia M. Mowinckel, Christin Zasada, Maëlle Salmon, and Yanina Bellini (members of the [R-Ladies Global Team](/about-us/global-team/))
 

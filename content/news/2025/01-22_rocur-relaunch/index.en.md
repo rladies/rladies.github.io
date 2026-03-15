@@ -39,4 +39,4 @@ _Do you know someone who would be a great curator?_ Perhaps a colleague, someone
 
 ## Got Questions?
 
-You can visit the [R-Ladies RoCur Guide](https://guide.rladies.org/rocur/about/) to learn more about the initiative. If you have any questions, feel free to reach out to the RoCur admins at [weare\@rladies.org](mailto:weare@rladies.org) or send a message on the **#rocur** channel on the [R-Ladies Community Slack](https://rladies.org/form/community-slack/).
+You can visit the [R-Ladies RoCur Guide](https://guide.rladies.org/rocur/about/) to learn more about the initiative. If you have any questions, feel free to reach out to the RoCur admins at [weare\@rladies.org](mailto:weare@rladies.org) or send a message on the **#rocur** channel on the [R-Ladies Community Slack](/form/community-slack/).
