@@ -2,19 +2,21 @@
 title: "Recipe for a year-end video"
 author:
   - name: Yanina Bellini Saibene
+    directory_id: "yanina-bellini-saibene"
   - name: Alejandra Bellini
   - name: Laura Acion
+    directory_id: "laura-acion"
 date: "2020-01-27"
 description: ""
-tags:
-  - RStats
-  - Video
 categories:
-  - R-Ladies
+  - tutorials
 always_allow_html: yes
 slug: "RLadies_video_2019"
 aliases:
   - "/blog/2020-01-27-RLadies_video_2019"
+image:
+  path: corazon.png
+  alt: "R-Ladies purple heart graphic from the 2019 year-end video"
 ---
 
 To close the awesome R-Ladies 2019 year we made a video, if you haven't seen it yet, here it is:
@@ -118,7 +120,7 @@ _"R-Ladies 2019 in numbers: More than 60,000 members from 50 countries around th
 
 To illustrate this part of the message, the world map with the location of all the chapters is a powerful image, one we have already used in other campaigns. We really liked the [map](https://github.com/rladiescolombo/R-Ladies_world_map) that [R-Ladies Colombo](https://rladiescolombo.netlify.com/) made to present their chapter, so we took their base map to assemble the map on the video. We updated the information to 12/27/2019 and made sure that all the chapters had Latitude and Longitude to be mapped.
 
-![](MapaVideo.png)
+![World map showing R-Ladies chapter locations marked with purple dots](MapaVideo.png)
 
 This is the complete code to do it:
 
@@ -162,7 +164,7 @@ p <- p +
 
 ### Scene two: 100% volunteer work
 
-The objective is also to present _the number of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication media, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of volunteer work to achieve all these results. The [R-Ladies Global Team](https://rladies.org/about-us/team/) provided us with the numbers referred to the [R-Ladies directory](https://rladies.org/directory/) and from the [review network](tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use the `rtweet` package with the following code:
+The objective is also to present _the number of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication media, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of volunteer work to achieve all these results. The [R-Ladies Global Team](/about-us/global-team/) provided us with the numbers referred to the [R-Ladies directory](/directory/) and from the [review network](tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use the `rtweet` package with the following code:
 
 ```
 # We load the necessary packages
@@ -198,7 +200,7 @@ rladies %>%
 
 The image selected for this part of the video was taken in LatinR 2019. We were preparing for the R-Ladies group photo and, without realizing it, we formed a heart!! (which was captured by [TuQmano´s](https://twitter.com/TuQmano) eye and camera). The image represents the growth of R-Ladies, also beyond North-America and Europe, and the code that moves us to work as a team for the well-being of R-Ladies and the community in general.
 
-![](corazon.png)
+![R-Ladies group at LatinR 2019 forming a heart shape](corazon.png)
 
 The final text of the scene was:
 
@@ -212,7 +214,7 @@ The text for this scene is:
 
 _Happy New Year to all R-Ladies and allies! More information at rladies dot org_
 
-![](placafinal.png)
+![R-Ladies logo with website address for the video closing scene](placafinal.png)
 
 ### Language
 
@@ -232,4 +234,4 @@ The final video was sent to the Global team for dissemination through social net
 
 Authors: Yanina Bellini Saibene, Alejandra Bellini y Laura Acion
 
-[Spanish version](/post/rladies_video_2019/index.es.html)
+[Versión en español](/es/blog/rladies_video_2019/)

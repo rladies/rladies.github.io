@@ -1,0 +1,117 @@
+{{ define "head" }}{{ partial "head/choices-css.html" . }}{{ end }}
+{{ define "main" }}
+
+{{ $countries := $.Store.Get "chpt_countries" }}
+{{ $chapters := .Pages }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="card rounded-xl overflow-hidden mb-10 fade-in-up">
+      {{ $points := slice }}
+      {{ range $chapters }}
+        {{ $points = $points | append (dict
+          "name" .Title
+          "members" .Params.members
+          "latitude" .Params.lat
+          "longitude" .Params.lon
+        )}}
+      {{ end }}
+      {{ $data := (dict
+        "points" $points
+        "tooltip" "<b>{name}</b><br><i class='fa fa-users'></i>&emsp;{members}"
+        "radius" 4
+        "color" "#881ef9cc"
+      ) }}
+
+      {{ partial "map.html" (dict "id" "chapter_map" "height" "500px" "data" $data "countries" $countries) }}
+    </div>
+
+    {{ with .Content }}
+      <div class="max-w-3xl mx-auto text-center mb-10 entry-content fade-in-up">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <div class="card card-overflow rounded-xl p-5 mb-8 fade-in-up relative z-10">
+      <div class="flex flex-col md:flex-row gap-4 items-end">
+        <div class="flex-1">
+          <label for="country-filter" class="text-xs font-medium text-muted mb-1.5 block">{{ i18n "country" | markdownify | title }}</label>
+          {{ $continents := slice "Africa" "Asia" "Europe" "Latin America" "North America" "Oceania" "Other" }}
+          <select id="country-filter" class="form-select" multiple data-placeholder="{{ i18n "select_countries" }}">
+            {{ range $continent := $continents }}
+              {{ $group := where $countries ".continent" $continent }}
+              {{ if $group }}
+                <optgroup label="{{ $continent }}">
+                  {{ range $group }}
+                    <option value="{{ .name }}">{{ .name | title }} ({{ .count }})</option>
+                  {{ end }}
+                </optgroup>
+              {{ end }}
+            {{ end }}
+          </select>
+        </div>
+        <div class="md:w-1/3">
+          <label for="search-filter" class="text-xs font-medium text-muted mb-1.5 block">{{ i18n "city" | markdownify | title }}</label>
+          <input type="text" id="search-filter" class="form-control"
+                 placeholder="{{ i18n "search_city" | default "Search by city..." }}">
+        </div>
+      </div>
+    </div>
+
+    <div class="card rounded-xl overflow-hidden fade-in-up">
+      <div class="overflow-x-auto">
+        <table class="table table-hover w-full chp-table">
+          <thead>
+            <tr>
+              <th>{{ i18n "country" | markdownify | title }}</th>
+              <th>{{ i18n "city" | markdownify | title }}</th>
+              <th class="text-right">{{ i18n "social_media" | markdownify }}</th>
+            </tr>
+          </thead>
+          <tbody id="chapter-list">
+            {{ $continents := slice "Africa" "Asia" "Europe" "Latin America" "North America" "Oceania" "Other" }}
+            {{ range $continent := $continents }}
+              {{ $continentCountries := where $countries ".continent" $continent }}
+              {{ if $continentCountries }}
+                <tr class="continent-header" data-continent="{{ $continent }}">
+                  <td colspan="3" class="continent-cell font-bold text-dark py-3 px-4 text-lg">
+                    {{ $continent }}
+                  </td>
+                </tr>
+                {{ range $idx, $country := $continentCountries }}
+                  {{ $countryChapters := where $chapters ".Params.country" $country.name }}
+                  {{ range $i, $chapter := $countryChapters }}
+                    <tr data-country="{{ $country.name }}" data-continent="{{ $continent }}" data-city="{{ $chapter.Title | lower }}" class="chapter-row">
+                      {{ if eq $i 0 }}
+                        <td class="font-semibold text-dark country-cell" rowspan="{{ len $countryChapters }}">
+                          {{ $country.name | title }}
+                        </td>
+                      {{ end }}
+                      <td>
+                        <a href="{{ $chapter.Permalink }}" class="text-primary no-underline hover:underline font-medium">{{ $chapter.Title | title }}</a>
+                      </td>
+                      <td class="text-right chp-social">
+                        {{ with $chapter.Params.social_media }}
+                          {{ partial "social_media.html" (dict "data" . "relme" true) }}
+                        {{ end }}
+                      </td>
+                    </tr>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ $chapterFilter := resources.Get "js/chapter-filter.js" | minify | fingerprint }}
+<script src="{{ $chapterFilter.RelPermalink }}" integrity="{{ $chapterFilter.Data.Integrity }}" defer></script>
+
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "footer/choices-js.html" . }}
+{{ end }}

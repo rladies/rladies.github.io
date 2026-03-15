@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="flex justify-center items-center flex-wrap gap-3 p-4">
+    {{- range $key, $value:= .Data.Terms -}}
+      <a href="{{ "" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}"
+         class="btn btn-outline relative">
+        {{ $key }}
+        <span class="absolute -top-2 -right-2 badge badge-primary rounded-full text-xs pointer-events-none">
+          {{ $value.Count }}
+        </span>
+      </a>
+    {{- end -}}
+  </div>
+{{ end }}

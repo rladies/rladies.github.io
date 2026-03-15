@@ -1,0 +1,71 @@
+@layer components {
+  .form-label {
+    @apply block text-sm font-medium text-dark mb-1;
+  }
+
+  .form-control {
+    @apply w-full px-3 py-2 border rounded-md text-sm text-dark transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
+    background-color: var(--color-raised);
+    border-color: var(--color-border-strong);
+  }
+
+  .form-select {
+    @apply w-full px-3 py-2 border rounded-md text-sm text-dark transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
+    background-color: var(--color-raised);
+    border-color: var(--color-border-strong);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    padding-right: 2.5rem;
+    appearance: none;
+  }
+
+  .form-check {
+    @apply flex items-center gap-2;
+  }
+
+  .form-check-input {
+    @apply w-4 h-4 accent-primary;
+  }
+
+  .input-group {
+    @apply flex;
+  }
+
+  .input-group .form-control {
+    @apply rounded-none first:rounded-l-md last:rounded-r-md;
+  }
+}
+
+/* Choices.js overrides — must be unlayered to beat vendor CSS */
+.choices__list--multiple .choices__item {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary-dark) !important;
+  color: #fff !important;
+}
+
+.choices__list--multiple .choices__item.is-highlighted {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-darker) !important;
+}
+
+.choices[data-type*=select-multiple] .choices__button,
+.choices[data-type*=text] .choices__button {
+  border-left-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted,
+.choices__list[aria-expanded] .choices__item--selectable.is-highlighted {
+  background-color: color-mix(in srgb, var(--color-primary) 10%, var(--color-surface)) !important;
+}
+
+.choices__inner {
+  border-radius: 0.5rem !important;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  border-radius: 0 0 0.5rem 0.5rem !important;
+  z-index: 20 !important;
+}

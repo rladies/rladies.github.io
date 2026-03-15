@@ -1,0 +1,6 @@
+{{ if .attribution_required -}}
+<small class="text-xs text-muted">
+  Photo: <a href="{{ .attribution_link }}" target="_blank" rel="noopener noreferrer"
+    class="text-muted hover:text-primary underline">{{ .attribution_text }}</a>
+</small>
+{{- end }}

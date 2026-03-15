@@ -1,0 +1,121 @@
+{{ define "main" }}
+{{ $params := .Params }}
+{{ $stockImages := site.Data.stock_images }}
+
+<section class="site-section-lg bg-surface-alt">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto text-center fade-in-up">
+      {{ with $params.mission }}
+        <p class="lead text-xl font-semibold mb-4">{{ . | markdownify }}</p>
+      {{ end }}
+      {{ with $params.mission_detail }}
+        <p class="text-muted leading-relaxed mb-4">{{ . | markdownify }}</p>
+      {{ end }}
+      {{ with $params.mission_action }}
+        <p class="text-muted leading-relaxed">{{ . | markdownify }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ range $i, $s := .Pages.ByWeight }}
+  <section class="program-row{{ if eq (mod $i 2) 1 }} program-row-reverse bg-surface-alt{{ end }}">
+    <div class="program-row-image">
+      {{ if $s.Params.page_image }}
+        {{ $imgPath := $s.Params.page_image }}
+        {{ if strings.HasSuffix $imgPath ".svg" }}
+          <div class="page-image-contain" role="img" aria-label="{{ $s.Params.image_alt }}">
+            {{ readFile (printf "static/images/our-story/%s" $imgPath) | safeHTML }}
+          </div>
+        {{ else }}
+          <img src="/images/our-story/{{ $imgPath }}"
+               alt="{{ $s.Params.image_alt }}"
+               width="800" height="600"
+               style="object-fit:{{ if strings.HasSuffix $imgPath ".png" }}contain;padding:1rem{{ else }}cover{{ end }}"
+               loading="lazy">
+        {{ end }}
+        {{ with $s.Params.image_credit }}
+          <small>Photo: {{ . }}</small>
+        {{ end }}
+      {{ else }}
+        {{ $imgData := index (where $stockImages "id" $s.Params.image) 0 }}
+        {{ with resources.Get $imgData.file }}
+          {{ $img := .Fill "800x600 webp" }}
+          <img src="{{ $img.RelPermalink }}"
+               alt="{{ $imgData.alt }}"
+               width="{{ $img.Width }}" height="{{ $img.Height }}"
+               loading="lazy">
+        {{ end }}
+        {{ partial "stock-attribution.html" $imgData }}
+      {{ end }}
+    </div>
+    <div class="program-row-content">
+      <h2 class="program-row-title">{{ $s.Title }}</h2>
+      <div class="entry-content">
+        {{ $s.Content }}
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ with $params.photos }}
+<section class="site-section fade-in-up"
+         x-data="{
+           lightbox: false,
+           idx: 0,
+           photos: [
+             {{ range $i, $p := . }}
+               { src: '/images/our-story/{{ .src }}', alt: `{{ .alt }}`, caption: `{{ .caption }}` }{{ if ne $i (sub (len $params.photos) 1) }},{{ end }}
+             {{ end }}
+           ],
+           open(i) { this.idx = i; this.lightbox = true },
+           prev() { this.idx = (this.idx - 1 + this.photos.length) % this.photos.length },
+           next() { this.idx = (this.idx + 1) % this.photos.length }
+         }">
+  <div class="site-container">
+    <h2 class="section-title text-center mb-2">Our Community</h2>
+    <div class="impact-photo-strip">
+      {{ range $i, $p := . }}
+        <figure class="impact-photo-cell"
+                @click="open({{ $i }})"
+                role="button" tabindex="0"
+                aria-label="{{ .alt }} — click to enlarge"
+                @keydown.enter="$el.click()"
+                @keydown.space.prevent="$el.click()">
+          <img src="/images/our-story/{{ .src }}"
+               alt="{{ .alt }}"
+               loading="lazy">
+        </figure>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="lightbox-overlay"
+       x-show="lightbox"
+       x-transition:enter="transition ease-out duration-200"
+       x-transition:enter-start="opacity-0"
+       x-transition:enter-end="opacity-100"
+       x-transition:leave="transition ease-in duration-150"
+       x-transition:leave-start="opacity-100"
+       x-transition:leave-end="opacity-0"
+       @click.self="lightbox=false"
+       @keydown.escape.window="lightbox=false"
+       @keydown.left.window="if(lightbox) prev()"
+       @keydown.right.window="if(lightbox) next()"
+       x-cloak>
+    <button class="lightbox-close" @click="lightbox=false" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-prev" @click="prev()" aria-label="Previous photo">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <figure class="lightbox-figure">
+      <img :src="photos[idx].src" :alt="photos[idx].alt" class="lightbox-img">
+      <figcaption class="lightbox-caption" x-show="photos[idx].caption" x-text="photos[idx].caption"></figcaption>
+    </figure>
+    <button class="lightbox-next" @click="next()" aria-label="Next photo">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

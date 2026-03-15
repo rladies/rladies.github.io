@@ -1,12 +1,52 @@
-[build]
-publish = "/public"
-command = "hugo -d public"
+# Hugo version: keep HUGO_VERSION here in sync with .hugoversion.
+# Netlify requires it as an env var to install Hugo before the build runs.
+# Production builds are handled by GitHub Actions (see .github/workflows/).
+# Netlify handles deploy previews and serves headers.
 
-[context.production.environment]
-  HUGO_VERSION = "0.152.2"
+[build]
+  publish = "/public"
+  command = "hugo -d public"
+
+[build.environment]
+  HUGO_VERSION = "0.157.0"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL -d public"
 
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.152.2"
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/webfonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=300, stale-while-revalidate=3600"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

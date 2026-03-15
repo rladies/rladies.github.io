@@ -1,0 +1,50 @@
+@layer components {
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-primary text-white;
+  }
+
+  .badge-secondary {
+    @apply bg-muted text-white;
+  }
+
+  .badge-info {
+    @apply bg-accent-blue text-white;
+  }
+
+  .badge-warning {
+    @apply bg-amber-700 text-white;
+  }
+
+  .badge-light {
+    @apply bg-light text-dark;
+  }
+
+  .bg-primary-light {
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-bg));
+  }
+
+  .alert {
+    @apply p-4 rounded-md text-sm mb-4;
+  }
+
+  .alert-primary {
+    background: color-mix(in srgb, var(--color-primary) 15%, var(--color-bg));
+    color: var(--color-primary-dark);
+  }
+
+  .alert-danger {
+    @apply bg-red-50 text-red-800;
+  }
+
+  .alert-warning {
+    @apply bg-amber-50 text-amber-800;
+  }
+
+  .spinner {
+    @apply inline-block w-6 h-6 border-3 border-primary/30 border-t-primary rounded-full animate-spin;
+  }
+}

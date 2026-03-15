@@ -5,14 +5,16 @@ author:
     url: https://twitter.com/sbnadejda)
 date: "2021-02-04"
 description: "Programa de mentorías de R-Ladies"
-tags:
-  - comunidad
-  - mentorias
 categories:
-  - R-Ladies
+  - programs
+tags:
+  - mentoring
 slug: "cotonout_mentoring"
 aliases:
   - "/blog/2021-02-04-cotonout_mentoring"
+image:
+  path: rladies_cotonou_fig02.jpg
+  alt: "Participantes del programa de mentorias de R-Ladies Cotonou"
 ---
 
 _Estamos felices de traerles este artículo en diferentes idiomas, Inglés, Francés y Español. Si deseas saber más sobre cómo contribuir al Blog de R-Ladies en general o tienes algún mensaje para el equipo, por favor contacta a <blog@rladies.org>._

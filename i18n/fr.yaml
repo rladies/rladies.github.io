@@ -1,80 +1,171 @@
 404_title: '404'
 404_description: "Oops! Cette page n'existe pas!"
-subheader: ''
 
-# menu ----
-home: "Home"
-about-us: 'About'
-mission: "Mission"
-get-involved: 'Get involved'
-global-team: 'Meet the global team'
-history: 'History'
-news: 'News'
+# Menu (used via T .Identifier in menu.html) ----
+home: 'Accueil'
+about-us: 'À propos'
+find: 'Trouver'
+our-story: 'Notre Histoire'
+get-involved: "S'impliquer"
+news: 'Actualités'
 coc: 'Code de Conduite'
-directory: 'Directory'
-activities: 'Activities'
-events: 'Events'
-mentoring: 'Mentoring Program'
-coordinated: 'Coordinated by the Global Team'
-dashboard: 'Global dashboard'
-rladies-blogs: 'Blogs by R-Ladies'
+directory: 'Membres'
+activities: 'Activités'
+events: 'Événements'
+programs: 'Programmes & Initiatives'
+faq: 'FAQ'
 press: 'Dans la presse'
 blog: 'Blog'
 
-# counters ----
-counter_archives: '{{.Count}} articles au total'
-counter_tagcloud: '{{.Count}} Tags au total'
-counter_categories: '{{.Count}} Catégories au total'
+# Hero ----
+hero_headline: 'Promouvoir la Diversité de Genre dans la Communauté R'
+hero_subheadline: 'Une organisation mondiale qui autonomise les genres sous-représentés à travers un réseau mondial collaboratif de leaders, mentors et développeurs R.'
+hero_cta_chapters: 'Trouver un Chapitre'
+hero_cta_involved: "S'impliquer"
 
-# footer ----
-footer_lang_title: 'Langage'
-footer_followme_title: 'Follow us'
-footer_contact_title: 'Contact'
-footer_donate: 'Donate'
-footer_text_title: 'Code of Conduct'
-footer_text_content: |
-    R-Ladies is dedicated to providing a harassment-free experience for
-    everyone. We do not tolerate harassment of participants in any form. Read
-    our [Code of Conduct](/fr/coc)
-
-# Home ----
-home_feed: 'Latest posts'
-home_featured: 'Featured R-Ladies'
-home_activity: 'Our activities'
+# Home sections ----
+home_impact_title: 'Notre Impact Mondial'
+home_impact_subtitle: 'Construire une communauté R inclusive dans le monde entier'
+home_chapters_title: 'Chapitres'
+home_chapters_cta: 'Parcourir Tous les Chapitres'
+home_involved_title: "S'impliquer"
+home_involved_subtitle: 'Il existe de nombreuses façons de faire partie de la communauté RLadies+'
+involved_join_title: 'Rejoindre un Chapitre'
+involved_join_desc: 'Trouvez votre chapitre local RLadies+ et connectez-vous avec des passionnés de R dans votre région.'
+involved_join_cta: 'Trouver des Chapitres'
+involved_talk_title: 'Donner une Présentation'
+involved_talk_desc: "Partagez vos connaissances et votre expérience avec la communauté en présentant lors d'un événement."
+involved_talk_cta: 'Participez'
+involved_support_title: 'Nous Soutenir'
+involved_support_desc: 'Aidez à soutenir notre mission par des dons, des parrainages ou du bénévolat.'
+involved_support_cta: 'Faire un Don'
+home_featured_title: 'Membres en Vedette'
+home_featured_subtitle: 'Découvrez quelques personnes de notre communauté'
+home_featured_cta: 'Parcourir le Répertoire'
+home_blog_title: 'Derniers Articles'
+home_blog_subtitle: 'Nouvelles, tutoriels et histoires de notre communauté'
+home_blog_cta: 'Voir Tous les Articles'
+home_news_cta: 'Toutes les Actualités'
+home_press_cta: 'Toute la Presse'
+home_sponsors_title: 'Sponsors'
+home_sponsors_subtitle: 'Organisations qui soutiennent notre mission'
+home_sponsors_cta: 'Devenir Sponsor'
 
 # Globals ----
-country: 'Country'
-countries: 'Countries'
-chapter: "Chapter"
-chapters: 'Chapters'
-city: "City"
-cities: "Cities"
-event: "Event"
+country: 'Pays'
+countries: 'Pays'
+chapters: 'Chapitres'
+city: 'Ville'
+members: 'membres'
+social_media: 'Réseaux sociaux'
 
-# Other ----
-social_media: "Social media"
-archive: 'Archive'
-tag: 'Tag: '
+# Chapter page ----
+join_chapter: 'Rejoindre le chapitre'
+organizers: 'Organisateurs'
+tab_current: 'Actuels'
+tab_former: 'Anciens'
+tab_upcoming: 'À venir'
+next_event: 'Prochain Événement'
+rsvp: 'RSVP'
+details: 'Détails'
+no_upcoming_events: "Aucun événement à venir."
+no_events_yet: "Pas encore d'événements."
+search_city: 'Rechercher par ville...'
+select_countries: 'Sélectionner des pays...'
+
+# Directory ----
+counter_entries: 'Membres'
+interests: 'Intérêts'
+languages: 'Langues'
+location: 'Localisation'
+filter_interests: 'Filtrer par intérêts'
+search_interests: 'Rechercher des intérêts...'
+filter_languages: 'Filtrer par langues'
+search_languages: 'Rechercher des langues...'
+filter_location: 'Filtrer par localisation'
+search_location: 'Rechercher une localisation...'
+preferred_contact: 'Contact préféré'
+connect: 'Connecter'
+last_updated: 'Dernière mise à jour'
+update_entry: 'Si ceci est votre entrée, vous pouvez la mettre à jour ou la supprimer en remplissant'
+update_entry_link: 'ce formulaire'
+work_affiliation: 'Travail et Affiliation'
+r_user_groups: "Groupes d'Utilisateurs R"
+r_packages: 'Packages R'
+about: 'À propos'
+photo_credit: 'Crédit photo'
+posts: 'Articles'
+
+# Press ----
+filter_by_year: 'Filtrer par Année'
+download_pdf: 'Télécharger le PDF'
+all_years: 'Toutes les années'
+search_years: 'Rechercher des années...'
+
+# Global Team ----
+leadership: 'Direction'
+global-team: 'Équipe Mondiale'
+role: 'Rôle'
+name: 'Nom'
+alumni: 'Alumni'
+alumni-text: |
+  RLadies+ est extrêmement reconnaissant pour tout le travail
+  acharné et le dévouement de nos anciens membres et leaders.
+  Nous ne serions pas où nous en sommes aujourd'hui sans eux.
+
+# GitHub issues ----
+gh_help_wanted: 'Issues GitHub avec "help wanted"'
+gh_found: 'Trouvés'
+gh_open_issues: 'issues ouvertes'
+loading: 'Chargement...'
+
+# Redirect ----
+redirect_msg: "Vous êtes redirigé vers le formulaire Airtable de RLadies+."
+redirect_fallback: "Si vous n'êtes pas redirigé automatiquement, cliquez sur le lien ci-dessous :"
+redirect_click: 'Cliquez ici pour continuer'
+
+# Footer ----
+footer_lang_title: 'Langues'
+footer_followme_title: 'Suivez-nous'
+footer_contact_title: 'Contact'
+footer_donate: 'Faire un don à'
+footer_donate_paypal: 'Faire un don via PayPal'
+footer_text_title: 'Code de Conduite'
+footer_text_content: |
+    RLadies+ se consacre à offrir une expérience sans harcèlement
+    pour tous. Nous ne tolérons aucune forme de harcèlement des
+    participants. Lisez notre [Code de Conduite](/fr/coc)
+
+# Post ----
 tags: 'Tags'
-category: 'Catégory: '
-categories: 'Catégories'
 author: 'Auteur'
-authors: 'Authors'
-editor: 'Editor'
-editors: 'Editors'
-prev: 'Prec'
+authors: 'Auteurs'
+editor: 'Éditeur'
+editors: 'Éditeurs'
+translator: 'Traducteur'
+translators: 'Traducteurs'
+edited_posts: 'Édité'
+translated_posts: 'Traduit'
+prev: 'Préc'
 next: 'Suiv'
 toc: 'Sommaire'
-comments: 'Comments'
 read_more: 'Lire la suite'
-see_details: 'See details'
+last_edit: 'Cet article a été modifié pour la dernière fois le'
+last_message: 'avec le message'
 
-# git history
-last_edit: 'This post was last edited on'
-last_message: 'with the message'
+# Accessibility ----
+back_to_top: 'Retour en haut'
+toggle_dark_mode: 'Basculer le mode sombre'
+toggle_nav: 'Ouvrir la navigation'
+select_language: 'Sélectionner la langue'
 
 # Language ----
-translations: 'Translations'
+translations: 'Traductions'
+min_read: 'min de lecture'
 missing_translation: |
-    Nous sommes désolé·e·s, cette page 
-    n''a pas été traduite en français.'
+    Nous sommes désolé·e·s, cette page
+    n'a pas été traduite en français.
+auto_translation: |
+    Cette page a été traduite automatiquement avec
+    [DeepL](https://www.deepl.com)
+    et n'a pas encore été relue par une personne.

@@ -91,7 +91,7 @@ jobs:
 
               if [ "$PR_READY_TO_MERGE" == "true" ]; then
                 echo "Attempting to merge PR #$pr_number..."
-                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch --auto" 2>&1 || true)
+                MERGE_OUTPUT=$(gh pr merge "$pr_number" --squash --delete-branch --auto 2>&1 || true)
                 MERGE_STATUS=$?
 
                 echo $MERGE_OUTPUT

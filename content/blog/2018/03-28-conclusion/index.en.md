@@ -5,10 +5,9 @@ author:
   - name: R-Ladies
 date: "2018-03-28"
 categories:
-  - IWD
-  - R-Ladies
+  - events
 tags:
-  - Twitter
+  - iwd
 slug: "conclusion"
 aliases:
   - "/blog/2018-03-28-conclusion"
@@ -16,7 +15,7 @@ aliases:
 
 ### As told by Page and Sheila
 
-On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](http://rladies.org/directory/) via [@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! To round out our three-part blog series of the IWD Directory campaign, we'll discuss topics related to privacy law, contact information collection and the future of our R-Ladies directory project. You can also read the [Part 1](https://blog.rladies.org/post/ideation_and_creation/) and [Part 2](https://blog.rladies.org/post/deployment/).
+On March the 8th, International Women's Day, we ran a continuous feed of awesome R-Ladies profiles from [our directory](/directory/) via [@rladies_iwd2018](https://twitter.com/rladies_iwd2018). It was a blast! And a lot of team work too! To round out our three-part blog series of the IWD Directory campaign, we'll discuss topics related to privacy law, contact information collection and the future of our R-Ladies directory project. You can also read the [Part 1](/blog/2018-03-26-ideation_and_creation/) and [Part 2](/blog/2018-03-27-deployment/).
 
 ## The conundrum of contact information
 

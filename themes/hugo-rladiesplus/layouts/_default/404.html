@@ -1,0 +1,61 @@
+{{ define "main" }}
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="max-w-lg mx-auto text-center fade-in-up">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.26 277.73"
+           role="img" aria-label="RLadies+"
+           style="width:120px;height:auto;display:block;margin:0 auto;opacity:0.35">
+        <g fill="var(--color-primary-lighter)">
+          <path d="M301.26,98.29c0,49.95-37.39,91.27-85.64,97.5v-47.9c22.13-5.63,38.52-25.75,38.52-49.6,0-28.2-22.98-51.18-51.18-51.18h-74.78v15.01h-47.05V.03C109.64.05,181.81-.05,209.33.03c51.24,3.3,91.93,46.2,91.93,98.26Z"/>
+          <path d="M301.26,230.61v47.12h-44.47c-46.08,0-84.82-31.85-95.43-74.78h50.04c8.5,16.4,25.62,27.66,45.38,27.66h44.47Z"/>
+          <path d="M128.19,201.56v76.17h-47.05v-81.11H0v-47.12h76.13c5.38,26.06,26,46.67,52.06,52.06Z"/>
+          <path d="M209.33,149.5v46.93c-3.4.5-64.91.04-68.58.19-31.98-.54-58-25.9-59.61-57.6v-70.59h47.05v81.07h81.14Z"/>
+        </g>
+      </svg>
+
+      <p class="lead mt-6 mb-8" id="404-desc"></p>
+
+      <div class="flex justify-center gap-3 mb-8">
+        <a href="/" id="404-home" class="btn btn-primary btn-lg">
+          <i class="fas fa-home mr-2"></i><span id="404-home-text"></span>
+        </a>
+        <a href="/events/" id="404-events" class="btn btn-outline btn-lg">
+          <i class="fas fa-calendar mr-2"></i><span id="404-events-text"></span>
+        </a>
+      </div>
+
+      <div class="flex justify-center items-center gap-4 text-sm">
+        <a href="/blog/" id="404-blog" class="text-primary hover:underline"><span id="404-blog-text"></span></a>
+        <a href="/chapters/" id="404-chapters" class="text-primary hover:underline"><span id="404-chapters-text"></span></a>
+        <a href="/directory/" id="404-directory" class="text-primary hover:underline"><span id="404-directory-text"></span></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<script>
+(function () {
+  const path = window.location.pathname;
+  let lang = 'en';
+  const known = ['fr', 'es', 'pt'];
+  for (const k of known) {
+    if (path.startsWith('/' + k + '/')) { lang = k; break; }
+  }
+
+  const s = {
+    en: { desc: "Oops! This page doesn't exist!", home: 'Home',    events: 'Events',     blog: 'Blog', chapters: 'Chapters',  directory: 'Members'  },
+    fr: { desc: "Oops! Cette page n'existe pas!", home: 'Accueil', events: 'Événements', blog: 'Blog', chapters: 'Chapitres', directory: 'Membres'  },
+    es: { desc: '¡Ups! ¡Esta página no existe!',  home: 'Inicio',  events: 'Eventos',    blog: 'Blog', chapters: 'Capítulos', directory: 'Miembros' },
+    pt: { desc: 'Ops! Esta página não existe!',   home: 'Início',  events: 'Eventos',    blog: 'Blog', chapters: 'Capítulos', directory: 'Membros'  }
+  }[lang];
+
+  document.getElementById('404-desc').textContent           = s.desc;
+  document.getElementById('404-home-text').textContent      = s.home;
+  document.getElementById('404-events-text').textContent    = s.events;
+  document.getElementById('404-blog-text').textContent      = s.blog;
+  document.getElementById('404-chapters-text').textContent  = s.chapters;
+  document.getElementById('404-directory-text').textContent = s.directory;
+}());
+</script>
+{{ end }}

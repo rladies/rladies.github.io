@@ -1,0 +1,91 @@
+{{ $stockImages := site.Data.stock_images }}
+{{ $joinImg    := index (where $stockImages "id" "pexels-women-meeting-1") 0 }}
+{{ $talkImg    := index (where $stockImages "id" "pexels-microphone-speaker") 0 }}
+{{ $supportImg := index (where $stockImages "id" "gender-spectrum-party") 0 }}
+
+<section class="site-section-lg bg-surface" id="involved">
+  <div class="site-container">
+    <h2 class="section-title fade-in-up">
+      {{ i18n "home_involved_title" | default "Get Involved" }}
+    </h2>
+    <p class="section-subtitle fade-in-up stagger-1">
+      {{ i18n "home_involved_subtitle" | default "There are many ways to be part of the RLadies+ community" }}
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div class="card card-hover overflow-hidden fade-in-up stagger-1">
+        {{ with resources.Get $joinImg.file }}
+          <div class="involved-card-img">
+            <img src="{{ (.Fill "600x360 webp").RelPermalink }}"
+                 alt="{{ $joinImg.alt }}"
+                 width="600" height="360" loading="lazy">
+          </div>
+        {{ end }}
+        <div class="text-center p-8">
+          <div class="involved-icon involved-icon-blue mx-auto mb-6">
+            <i class="fa-solid fa-users text-2xl text-white"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">
+            {{ i18n "involved_join_title" | default "Join a Chapter" }}
+          </h3>
+          <p class="text-muted text-sm mb-6">
+            {{ i18n "involved_join_desc" | default "Find your local RLadies+ chapter and connect with R enthusiasts in your area." }}
+          </p>
+          <a href="{{ "chapters/" | relLangURL }}" class="btn btn-outline btn-sm">
+            {{ i18n "involved_join_cta" | default "Find Chapters" }}
+          </a>
+        </div>
+      </div>
+
+      <div class="card card-hover overflow-hidden fade-in-up stagger-2">
+        {{ with resources.Get $talkImg.file }}
+          <div class="involved-card-img">
+            <img src="{{ (.Fill "600x360 webp").RelPermalink }}"
+                 alt="{{ $talkImg.alt }}"
+                 width="600" height="360" loading="lazy">
+          </div>
+        {{ end }}
+        <div class="text-center p-8">
+          <div class="involved-icon mx-auto mb-6">
+            <i class="fa-solid fa-microphone text-2xl text-white"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">
+            {{ i18n "involved_talk_title" | default "Give a Talk" }}
+          </h3>
+          <p class="text-muted text-sm mb-6">
+            {{ i18n "involved_talk_desc" | default "Share your knowledge and experience with the community by presenting at an event." }}
+          </p>
+          <a href="{{ "about-us/involved/" | relLangURL }}" class="btn btn-outline btn-sm">
+            {{ i18n "involved_talk_cta" | default "Get Involved" }}
+          </a>
+        </div>
+      </div>
+
+      <div class="card card-hover overflow-hidden fade-in-up stagger-3">
+        {{ with resources.Get $supportImg.file }}
+          <div class="involved-card-img">
+            <img src="{{ (.Fill "600x360 webp").RelPermalink }}"
+                 alt="{{ $supportImg.alt }}"
+                 width="600" height="360" loading="lazy">
+            {{ partial "stock-attribution.html" $supportImg }}
+          </div>
+        {{ end }}
+        <div class="text-center p-8">
+          <div class="involved-icon involved-icon-rose mx-auto mb-6">
+            <i class="fa-solid fa-hand-holding-heart text-2xl text-white"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">
+            {{ i18n "involved_support_title" | default "Support Us" }}
+          </h3>
+          <p class="text-muted text-sm mb-6">
+            {{ i18n "involved_support_desc" | default "Help sustain our mission through donations, sponsorships, or volunteering your time." }}
+          </p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=VB4EK67MJ373E"
+             target="_blank" rel="noopener" class="btn btn-accent-rose btn-sm">
+            {{ i18n "involved_support_cta" | default "Donate" }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

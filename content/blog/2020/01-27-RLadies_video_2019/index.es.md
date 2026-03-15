@@ -2,19 +2,21 @@
 title: " Receta para un video de fin de año"
 author:
   - name: Yanina Bellini Saibene
+    directory_id: "yanina-bellini-saibene"
   - name: Alejandra Bellini
   - name: Laura Acion
+    directory_id: "laura-acion"
 date: "2020-01-27"
 description: ""
-tags:
-  - RStats
-  - Video
 categories:
-  - R-Ladies
+  - tutorials
 always_allow_html: yes
 slug: "RLadies_video_2019"
 aliases:
   - "/blog/2020-01-27-RLadies_video_2019"
+image:
+  path: corazon.png
+  alt: "Corazon morado de R-Ladies del video de fin de ano 2019"
 ---
 
 Para cerrar el 2019 desde R-Ladies hicimos un video, si aún no lo viste, aquí está:
@@ -107,7 +109,7 @@ _"R-Ladies 2019 en números: Más de 60.000 integrantes de 50 países de todo el
 
 Para ilustrar esta parte del mensaje, el mapa del mundo con la localización de todos los capítulos es una imagen poderosa y que ya hemos utilizado en otras campañas. Me gustó mucho el [mapa](https://github.com/rladiescolombo/R-Ladies_world_map) que hicieron las [R-Ladies Colombo](https://rladiescolombo.netlify.com/) para presentar su capítulo asi que tomé de base su mapa para armar el del video, actualizando la información al 27/12/2019 y asegurandome que todos los capítulos cuenten con Latitud y Longitud para que sean mapeados.
 
-![](MapaVideo.png)
+![Mapa mundial mostrando la ubicación de los capítulos de R-Ladies con puntos púrpura](MapaVideo.png)
 
 Este es el código completo para hacerlo:
 
@@ -151,7 +153,7 @@ p <- p +
 
 ### Segunda escena: 100% trabajo voluntario
 
-El objetivo es presentar también _cifras de otras iniciativas de R-Ladies_ además de los capítulos y eventos, por lo que enfocamos en nuestros _medios de comunicación, nuestro directorio de personas expertas, nuestra red de revisión y la generación de material educativo_ para nuestros meetups, conferencias, eventos con otras organizaciones,etc. Resaltando el esfuerzo de un trabajo voluntario para conseguir todos estos resultados. El equipo de [R-Ladies Global](https://rladies.org/about-us/team/) me facilitó las cantidades referidas al [directorio de R-Ladies](https://rladies.org/directory/) y de la [red de revisión](tinyurl.com/rladiesrevs). Para la calcular la cantidad de seguidores de nuestras cuentas de twitter, utilizamos R y el paquete `rtweet` con el siguiente código:
+El objetivo es presentar también _cifras de otras iniciativas de R-Ladies_ además de los capítulos y eventos, por lo que enfocamos en nuestros _medios de comunicación, nuestro directorio de personas expertas, nuestra red de revisión y la generación de material educativo_ para nuestros meetups, conferencias, eventos con otras organizaciones,etc. Resaltando el esfuerzo de un trabajo voluntario para conseguir todos estos resultados. El equipo de [R-Ladies Global](/about-us/global-team/) me facilitó las cantidades referidas al [directorio de R-Ladies](/directory/) y de la [red de revisión](tinyurl.com/rladiesrevs). Para la calcular la cantidad de seguidores de nuestras cuentas de twitter, utilizamos R y el paquete `rtweet` con el siguiente código:
 
 ```
 #Cargo los paquetes necesarios
@@ -187,7 +189,7 @@ rladies %>%
 
 La imágen seleccionada para acompañar esta parte fue tomada en LatinR 2019: ¡¡ estabamos preparandonos para la foto grupal de R-Ladies y sin darnos cuenta formamos un corazón !! (que fue capturado por el ojo y la cámara de [TuQmano](https://twitter.com/TuQmano)). La imagen representa el crecimiento de R-Ladies en otras regiones del mundo más allá del norte y el código que nos mueve a trabajar en equipo por el bienestar de R-Ladies y de la comunidad en general.
 
-![](corazon.png)
+![Grupo de R-Ladies en LatinR 2019 formando un corazón](corazon.png)
 
 El texto de la escena quedó armado de la siguiente manera:
 
@@ -201,7 +203,7 @@ El texto que acompaña la escena quedó así:
 
 _¡Feliz año nuevo a todas las R-Ladies y aliados! Más información en rladies punto org_
 
-![](placafinal.png)
+![Logo de R-Ladies con dirección web para la escena final del video](placafinal.png)
 
 ### Idioma
 
@@ -221,4 +223,4 @@ La exportación posterior del video se pasó al equipo Global para su difusión 
 
 Autoras: "Yanina Bellini Saibene, Alejandra Bellini y Laura Acion"
 
-[English version](/post/rladies_video_2019/index.en.html)
+[English version](/blog/rladies_video_2019/)

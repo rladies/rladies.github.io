@@ -2,17 +2,20 @@
 title: "Cómo hacer una reunión virtual inolvidable (sin morir en el intento)"
 author:
   - name: Laura Ación
+    directory_id: "laura-acion"
   - name: Yanina Bellini Saibene
+    directory_id: "yanina-bellini-saibene"
   - name: Paola Corrales
   - name: Patricia Loto
+    directory_id: "patricia-andrea-loto"
   - name: Paloma Rojas"
 date: "2020-06-24"
 description: ""
-tags:
-  - Community
-  - online-meetups
 categories:
-  - R-Ladies
+  - events
+tags:
+  - meta-meetup
+  - latin-america
 slug: "spanishmetameetup"
 aliases:
   - "/blog/2020-06-24-spanishmetameetup"
@@ -33,7 +36,7 @@ Inscríbete vía meetup.com en el capítulo de R-Ladies hispanohablante más cer
 
 R-Ladies lleva adelante muchas actividades e iniciativas, pero su corazón son los capítulos alrededor del mundo donde la comunidad se reúne para aprender, enseñar y acompañarse. Desde la aparición del COVID19, los eventos presenciales fueron suspendidos, pero la magia de R-Ladies no se detiene y hace posible los encuentros virtuales.
 
-Iniciada la pandemia, el equipo de R-Ladies Global generó la infraestructura necesaria para que todos nuestros capítulos puedan realizar eventos virtuales (más información [en este post](https://blog.rladies.org/post/online-meetups)) y poder difundirlos [desde YouTube](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng). Este es un paso necesario, pero no suficiente ya que muchas personas no tienen suficiente experiencia en la organización de eventos virtuales, en el dictado de clases y talleres online, o en la realización de videoconferencias. Por eso el segundo paso desde el equipo de R-Ladies Global es facilitar la formación en estos temas.
+Iniciada la pandemia, el equipo de R-Ladies Global generó la infraestructura necesaria para que todos nuestros capítulos puedan realizar eventos virtuales (más información [en este post](/blog/online-meetups/)) y poder difundirlos [desde YouTube](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng). Este es un paso necesario, pero no suficiente ya que muchas personas no tienen suficiente experiencia en la organización de eventos virtuales, en el dictado de clases y talleres online, o en la realización de videoconferencias. Por eso el segundo paso desde el equipo de R-Ladies Global es facilitar la formación en estos temas.
 
 Por todo lo anterior, organizamos **“Cómo hacer una reunión virtual inolvidable (sin morir en el intento)”**. En este webinario mostraremos algunos trucos y herramientas para que cualquier evento virtual interactivo (por ejemplo, clase, taller o panel online) sea un éxito sin estrés adicional al hacerlo. Si organizas meetups de R-Ladies, encontrarás dónde y cómo acceder a la infraestructura que te permitirá organizar meetups online para tu capítulo. Si no organizas meetups de R-Ladies, también encontrarás material útil para todo tipo de evento online que organices o del que participes.
 

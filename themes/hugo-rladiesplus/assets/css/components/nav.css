@@ -1,0 +1,123 @@
+@layer components {
+  .site-nav {
+    @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+  }
+
+  .site-nav-transparent {
+    @apply bg-transparent border-b border-transparent;
+  }
+
+  .site-nav-transparent .site-nav-link {
+    @apply text-dark/80 hover:text-primary;
+  }
+
+  .site-nav-transparent .site-nav-mobile-toggle {
+    @apply text-dark;
+  }
+
+  .site-nav-solid {
+    @apply bg-surface/95 border-b;
+    border-color: var(--color-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .site-nav-solid .site-nav-link {
+    @apply text-dark hover:text-primary;
+  }
+
+  .site-nav-inner {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3;
+  }
+
+  .site-nav-brand {
+    @apply flex items-center;
+  }
+
+  .site-nav-brand img {
+    @apply h-9;
+  }
+
+  .site-nav-brand .logo-dark {
+    @apply hidden;
+  }
+
+  .dark .site-nav-brand .logo-light {
+    @apply hidden;
+  }
+
+  .dark .site-nav-brand .logo-dark {
+    @apply block;
+  }
+
+  .site-nav-links {
+    @apply hidden md:flex items-center gap-6;
+  }
+
+  .site-nav-link {
+    @apply text-sm font-medium transition-colors relative;
+  }
+
+  .site-nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300;
+    background: linear-gradient(90deg, var(--color-accent-rose), var(--color-primary));
+  }
+
+  .site-nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .site-nav-link.active {
+    @apply text-primary;
+  }
+
+  .site-nav-link.active::after {
+    @apply w-full;
+  }
+
+  .site-nav-mobile-toggle {
+    @apply md:hidden p-2 text-dark hover:text-primary transition-colors;
+  }
+
+  .site-nav-mobile {
+    @apply md:hidden border-t bg-surface;
+    border-color: var(--color-border);
+  }
+
+  .site-nav-mobile-link {
+    @apply block px-4 py-3 text-sm font-medium text-dark hover:bg-surface hover:text-primary transition-colors;
+  }
+
+  .site-nav-actions {
+    @apply flex items-center gap-3;
+  }
+
+  .dark-mode-toggle {
+    @apply p-2 rounded-lg transition-colors cursor-pointer;
+  }
+
+  .dropdown {
+    @apply relative;
+  }
+
+  .dropdown-toggle {
+    @apply flex items-center gap-1;
+  }
+
+  .dropdown-menu {
+    @apply absolute top-full left-0 mt-2 min-w-48 rounded-xl border py-2 z-50;
+    background-color: var(--color-raised);
+    border-color: var(--color-border);
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .dropdown-item {
+    @apply block px-4 py-2.5 text-sm text-dark hover:text-primary transition-colors;
+    &:hover { background-color: color-mix(in srgb, var(--color-border) 30%, transparent); }
+  }
+
+  .dropdown-item.active {
+    @apply text-primary bg-primary/5;
+  }
+}

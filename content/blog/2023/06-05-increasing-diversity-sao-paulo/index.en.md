@@ -2,24 +2,30 @@
 title: "Actions to increase diversity in the R-Ladies São Paulo community"
 author:
   - name: Beatriz Milz
+    directory_id: "beatriz-milz"
   - name: Haydee Svab
+    directory_id: "haydee-svab"
   - name: Tatyane Paz Dominguez
   - name: Ianni Muliterno
   - name: Ana Paula Rocha
+description: "How R-Ladies São Paulo is tackling intersectional diversity through affirmative actions, childcare spaces, transportation aid, and community surveys."
 date: "2023-10-04"
 categories:
-  - R-Ladies
-tags:
-  - latin america
   - community
+tags:
+  - social-justice
+  - latin-america
 slug: "increasing-diversity-sao-paulo"
 aliases:
   - "/blog/2023-06-05-increasing-diversity-sao-paulo"
+image:
+  path: team-1.jpg
+  alt: "R-Ladies Sao Paulo team members at a community event"
 ---
 
 ## Introduction
 
-The [R-Ladies](https://www.rladies.org/) is a global organization that promotes gender diversity in the R community. [R-Ladies São Paulo](https://www.rladies-sp.org/) is proudly a chapter of R-Ladies Global, promoting gender diversity in the R community in São Paulo, Brazil.
+The [R-Ladies](/) is a global organization that promotes gender diversity in the R community. [R-Ladies São Paulo](https://www.rladies-sp.org/) is proudly a chapter of R-Ladies Global, promoting gender diversity in the R community in São Paulo, Brazil.
 
 In this post, our goal is to discuss diversity issues in the R-Ladies São Paulo community and the **actions that are being taken to increase diversity**.
 
@@ -79,9 +85,9 @@ Regarding gender diversity, we can see a scenario of the predominance of women (
 
 Regarding racial diversity in the community in 2020, it is important to highlight that 73.3% of the respondents identified themselves as White, despite the fact that this group represents about half of the population in this region of Brazil. This means that there is an underrepresentation of Black people in the R-Ladies São Paulo community, and we need to take serious actions for ethnic-racial inclusion.
 
-It is also important to mention the [text written by the R-Ladies Global and R Forwards team about #BlackLivesMatter in 2020](https://www.rladies.org/news/2020-06-06-blm/). In this text, that was [translated into Portuguese by the R-Ladies São Paulo and that is on the community's blog](https://rladies-sp.org/posts/2020-06-rladies-global-blm/), R-Ladies Global committed to improving the way the organization supports Black, Indigenous, and other non-white groups:
+It is also important to mention the [text written by the R-Ladies Global and R Forwards team about #BlackLivesMatter in 2020](/news/2020-06-06-blm/). In this text, that was [translated into Portuguese by the R-Ladies São Paulo and that is on the community's blog](https://rladies-sp.org/posts/2020-06-rladies-global-blm/), R-Ladies Global committed to improving the way the organization supports Black, Indigenous, and other non-white groups:
 
-> _"While the R-Ladies mission is focused on improving gender diversity within the R community, we also recognize both the struggle that Black people face, and the compound effect of intersectionality when a member identifies with multiple underrepresented groups. \[...\] We commit to making our community spaces places of not only safety for all our members, but of active work towards equity and justice."_ Source: [R-Ladies Global Blog](https://www.rladies.org/news/2020-06-06-blm/).
+> _"While the R-Ladies mission is focused on improving gender diversity within the R community, we also recognize both the struggle that Black people face, and the compound effect of intersectionality when a member identifies with multiple underrepresented groups. \[...\] We commit to making our community spaces places of not only safety for all our members, but of active work towards equity and justice."_ Source: [R-Ladies Global Blog](/news/2020-06-06-blm/).
 
 In the questionnaire, we left an open question so that people could make suggestions to increase ethnic-racial diversity in the community, and below are some suggestions received:
 

@@ -1,0 +1,208 @@
+{{ define "main" }}
+<div class="site-container my-12">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+
+    <div>
+      <div class="card shadow-sm mb-4 text-center">
+        <div class="card-body">
+          {{ if .Params.image }}
+              <img src="{{ .Params.image }}" width="400" height="400" class="w-full h-auto mb-3 border border-gray-200 shadow-sm object-cover" alt="{{ .Params.name }}">
+              {{ with .Params.photo.credit }}
+                <p class="card-text text-muted text-sm">{{ i18n "photo_credit" }}: {{ . }}</p>
+              {{ end }}
+          {{ end }}
+
+          <h1 class="text-lg card-title mb-1">{{ with .Params.honorific }}<small class="text-muted">{{ . }}</small>{{ end }}</h1>
+
+          {{ if or .Params.location.city .Params.location.country }}
+            <p class="card-text text-muted mb-2">
+              <i class="bi bi-geo-alt-fill mr-1"></i>
+              {{ with .Params.location.city }}
+                {{ . }},
+              {{ end }}
+              {{ with .Params.location.country }}
+                {{ . }}
+              {{ end }}
+            </p>
+          {{ end }}
+
+          {{ with .Params.categories }}
+            <div class="mb-2">
+              {{ range . }}
+                <span class="badge badge-primary mr-1 mb-1 text-white">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+
+          {{ with .Params.languages }}
+            <div class="mb-3">
+              {{ range . }}
+                <span class="badge badge-warning mr-1 mb-1">{{ . }}</span>
+              {{ end }}
+            </div>
+          {{ end }}
+
+          {{ with .Params.contact_method }}
+            <p class="card-text text-sm text-muted">{{ i18n "preferred_contact" }}: {{ delimit . ", " | humanize }}</p>
+          {{ end }}
+
+          {{ with .Params.social_media }}
+            <h5 class="text-sm font-semibold mt-4 mb-2">{{ i18n "connect" }}:</h5>
+            <div class="mr-1 mb-2">
+                {{ partial "social_media.html" (dict "data" . ) }}
+            </div>
+          {{ end }}
+
+            <div class="mt-4 text-center text-muted text-sm">
+              <p>{{ i18n "last_updated" }}: {{ .Params.last_updated | default "unknown" }}</p>
+              <p>{{ i18n "update_entry" }} <a href="{{ "/form/directory-update" | relLangURL }}?prefill_directory_id={{ .Params.directory_id | urlquery }}&prefill_request_type=update">{{ i18n "update_entry_link" }}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-2">
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          {{ with .Params.work }}
+          <h2 class="text-lg card-title mb-3">{{ i18n "work_affiliation" }}</h2>
+          <p class="mb-4">
+            {{ with .title }}{{ . }}, {{ end }}
+            {{ if .url }}
+              <a href="{{ .url }}" target="_blank" rel="noopener">
+            {{ end }}
+            {{ with .organisation }}{{ . }}, {{ end }}
+            {{ with .department }}{{ . }},{{ end }}
+            {{ if .url }}
+              </a>
+            {{ end }}
+          </p>
+        {{ end }}
+
+          {{ with .Params.interests }}
+            <h2 class="text-lg card-title mb-3">{{ i18n "interests" }}</h2>
+            <div class="mb-3">
+                {{ range . }}
+                  <span class="badge badge-info mr-1 mb-1 text-white">{{ . }}</span>
+                {{ end }}
+              </div>
+          {{ end }}
+
+          {{ with .Params.activities }}
+              <h2 class="text-lg card-title mb-3">{{ i18n "activities" }}</h2>
+              {{ with .r_groups }}
+                <h5 class="text-sm font-semibold">{{ i18n "r_user_groups" }}:</h5>
+                <ul class="list-unstyled mb-3">
+                  {{ range $groupName, $groupUrl := . }}
+                    <li class="py-2 border-b border-gray-200">
+                      {{ if $groupUrl }}
+                        <a href="{{ $groupUrl }}" target="_blank" rel="noopener">{{ $groupName }} <i class="bi bi-box-arrow-up-right"></i></a>
+                      {{ else }}
+                        {{ $groupName }}
+                      {{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+              {{ end }}
+
+              {{ with .r_packages }}
+                <h5 class="text-sm font-semibold">{{ i18n "r_packages" }}:</h5>
+                <ul class="list-unstyled">
+                  {{ range $packageName, $packageUrl := . }}
+                    <li class="py-2 border-b border-gray-200">
+                      {{ if $packageUrl }}
+                        <a href="{{ $packageUrl }}" target="_blank" rel="noopener">{{ $packageName }} <i class="bi bi-box-arrow-up-right"></i></a>
+                      {{ else }}
+                        {{ $packageName }}
+                      {{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+            {{ end }}
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+
+    {{ if .Content }}
+        <h2 class="text-lg card-title mb-3">{{ i18n "about" }} {{ .Title }}</h2>
+        <div class="speaker-description">
+        {{ .Content }}
+        </div>
+        <hr class="my-4">
+    {{ end }}
+
+
+  </div>
+
+  {{ $dirID := .Params.directory_id }}
+  {{ $authored := slice }}
+  {{ $edited := slice }}
+  {{ $translated := slice }}
+  {{ range site.RegularPages }}
+    {{ $page := . }}
+    {{ range $role := slice "author" "editorial" "translator" }}
+      {{ with index $page.Params $role }}
+        {{ range . }}
+          {{ if reflect.IsMap . }}
+            {{ with .directory_id }}
+              {{ if eq . $dirID }}
+                {{ if eq $role "author" }}
+                  {{ $authored = $authored | append $page }}
+                {{ else if eq $role "editorial" }}
+                  {{ $edited = $edited | append $page }}
+                {{ else }}
+                  {{ $translated = $translated | append $page }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $authored }}
+    <div class="mt-8">
+      <h2 class="text-xl font-bold mb-6">
+        <i class="fa-solid fa-pen-nib mr-2 text-primary"></i>
+        {{ i18n "posts" | default "Posts" }}
+      </h2>
+      <div class="space-y-6">
+        {{ range $authored.Reverse }}
+          {{ partial "post/summary.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $edited }}
+    <div class="mt-8">
+      <h2 class="text-xl font-bold mb-6">
+        <i class="fa-solid fa-pen-nib mr-2 text-primary"></i>
+        {{ i18n "edited_posts" | default "Edited" }}
+      </h2>
+      <div class="space-y-6">
+        {{ range $edited.Reverse }}
+          {{ partial "post/summary.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{ if $translated }}
+    <div class="mt-8">
+      <h2 class="text-xl font-bold mb-6">
+        <i class="fa-solid fa-language mr-2 text-primary"></i>
+        {{ i18n "translated_posts" | default "Translated" }}
+      </h2>
+      <div class="space-y-6">
+        {{ range $translated.Reverse }}
+          {{ partial "post/summary.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,85 @@
+{{- $img := "" -}}
+{{- $imgAlt := .Params.image.alt | default .Title -}}
+{{- with .Resources.Get .Params.image.path -}}
+  {{- $processed := .Fill "1200x630 webp" -}}
+  {{- $img = $processed.RelPermalink -}}
+{{- end -}}
+
+{{ if $img }}
+<figure class="rounded-xl overflow-hidden mb-8 -mx-0">
+  <img src="{{ $img }}" alt="{{ $imgAlt }}" class="w-full object-cover" style="max-height: 480px;" width="1200" height="630">
+  {{ if .Params.image.alt }}
+  <figcaption class="text-xs text-center text-muted mt-2 px-2">{{ .Params.image.alt }}</figcaption>
+  {{ end }}
+</figure>
+{{ end }}
+
+<div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted mb-4 pb-4 border-b border-gray-100">
+  <span class="flex items-center gap-1.5">
+    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+    <time datetime="{{ .Date.Format .Site.Params.DateForm }}">
+      {{ .Date.Day }} {{ index .Site.Data.months .Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+    </time>
+  </span>
+
+  <span class="flex items-center gap-1.5">
+    <i class="far fa-clock" aria-hidden="true"></i>
+    {{ .ReadingTime }} {{ i18n "min_read" | default "min read" }}
+  </span>
+
+  {{ with .Params.author }}
+  <span class="flex items-center gap-1.5">
+    <i class="far fa-user" aria-hidden="true"></i>
+    <span>
+      {{ range $i, $a := . }}
+        {{- if $i }}, {{ end -}}
+        {{- if reflect.IsMap $a -}}
+          {{- if $a.directory_id -}}<a href="{{ "/directory/" | relLangURL }}{{ $a.directory_id }}/" class="text-primary no-underline hover:underline">{{ $a.name }}</a>
+          {{- else -}}{{ $a.name }}{{- end -}}
+        {{- else -}}{{ $a }}{{- end -}}
+      {{ end }}
+    </span>
+  </span>
+  {{ end }}
+
+  {{ with .Params.editorial }}
+  <span class="flex items-center gap-1.5">
+    <i class="fas fa-pen-nib" aria-hidden="true"></i>
+    <span>
+      {{ range $i, $a := . }}
+        {{- if $i }}, {{ end -}}
+        {{- if reflect.IsMap $a -}}
+          {{- if $a.directory_id -}}<a href="{{ "/directory/" | relLangURL }}{{ $a.directory_id }}/" class="text-primary no-underline hover:underline">{{ $a.name }}</a>
+          {{- else -}}{{ $a.name }}{{- end -}}
+        {{- else -}}{{ $a }}{{- end -}}
+      {{ end }}
+    </span>
+  </span>
+  {{ end }}
+
+  {{ with .Params.translator }}
+  <span class="flex items-center gap-1.5">
+    <i class="fas fa-language" aria-hidden="true"></i>
+    <span>
+      {{ range $i, $a := . }}
+        {{- if $i }}, {{ end -}}
+        {{- if reflect.IsMap $a -}}
+          {{- if $a.directory_id -}}<a href="{{ "/directory/" | relLangURL }}{{ $a.directory_id }}/" class="text-primary no-underline hover:underline">{{ $a.name }}</a>
+          {{- else -}}{{ $a.name }}{{- end -}}
+        {{- else -}}{{ $a }}{{- end -}}
+      {{ end }}
+    </span>
+  </span>
+  {{ end }}
+</div>
+
+{{ if or .Params.categories .Params.tags }}
+<div class="flex flex-wrap gap-1.5 mb-8">
+  {{ range .Params.categories }}
+    <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="badge badge-secondary no-underline">{{ . }}</a>
+  {{ end }}
+  {{ range .Params.tags }}
+    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="badge badge-primary no-underline">{{ . }}</a>
+  {{ end }}
+</div>
+{{ end }}

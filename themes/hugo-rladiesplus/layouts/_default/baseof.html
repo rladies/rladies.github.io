@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" class="">
+  <head>
+    {{ partial "head/meta.html" . }}
+    {{ partial "head/head.html" . }}
+    {{ block "head" .}}{{ end }}
+  </head>
+
+  <body class="min-h-screen flex flex-col">
+    <a href="#main" class="skip-link">{{ i18n "skip_to_content" | default "Skip to main content" }}</a>
+    {{ partial "menu.html" . }}
+    {{ partial "hero.html" . }}
+
+    {{ block "fastsearch" .}}{{ end }}
+
+    <main id="main" class="flex-1">
+      {{ block "main" . }}
+        <div class="site-container py-12">
+          <div class="max-w-4xl mx-auto">
+            {{ $isAuto := eq (printf "%v" .Params.translated) "auto" }}
+            {{ $isFallback := and (not $isAuto) (or (eq .Params.translated false) (ne .Lang .Site.Language.Lang)) }}
+            {{ $articleLang := .Lang }}
+            {{ if $isFallback }}
+              {{ $articleLang = .Params.language | default .Lang }}
+            {{ end }}
+            <article lang="{{ $articleLang }}">
+              {{ block "title" . }}{{ end }}
+
+              {{ partial "translation-banner.html" . }}
+
+              <div class="entry-content">
+                {{ .Content }}
+              </div>
+            </article>
+          </div>
+        </div>
+      {{ end }}
+    </main>
+
+    {{ block "languages" . }}
+      {{ if eq .Type "post" }}{{ partial "post/i18n.html" . }}{{ end }}
+    {{ end }}
+
+
+    <button class="back-to-top-float"
+            x-data="{ show: false }"
+            @scroll.window="show = (window.scrollY > 600)"
+            x-show="show"
+            x-transition
+            x-cloak
+            @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            aria-label="{{ i18n "back_to_top" }}">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    {{ partial "footer/footer.html" . }}
+    {{ partial "footer/scripts.html" . }}
+    {{ block "footer" . }}{{ end }}
+  </body>
+</html>

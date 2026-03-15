@@ -1,0 +1,69 @@
+{{ define "main" }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    {{ with .Content }}
+      <div class="max-w-3xl mx-auto mb-12 entry-content">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      {{ range .Pages }}
+        <article class="card card-hover fade-in-up">
+          <div class="card-body">
+            <h2 class="text-lg font-semibold mb-2">
+              <a href="{{ .RelPermalink }}" class="text-dark hover:text-primary transition-colors no-underline">
+                {{ .Title }}
+              </a>
+            </h2>
+
+            {{ with .Date }}
+              <p class="text-sm text-muted mb-3">
+                <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>
+              </p>
+            {{ end }}
+
+            {{ with .Summary }}
+              <p class="text-sm text-muted mb-4">{{ . | plainify | truncate 150 }}</p>
+            {{ end }}
+
+            <a href="{{ .RelPermalink }}" class="btn btn-sm btn-outline">
+              {{ i18n "read_more" | default "Read more" }}<span class="sr-only">: {{ .Title }}</span> <i class="fas fa-arrow-right ml-1"></i>
+            </a>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+
+    {{ if gt .Paginator.TotalPages 1 }}
+      <nav aria-label="Page navigation" class="mt-16">
+        <ul class="pagination justify-center">
+          {{ if .Paginator.HasPrev }}
+            <li class="page-item">
+              <a class="page-link" href="{{ .Paginator.Prev.URL }}" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+            </li>
+          {{ end }}
+
+          {{ range .Paginator.Pagers }}
+            <li class="page-item {{ if eq . $.Paginator }}active{{ end }}">
+              <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+            </li>
+          {{ end }}
+
+          {{ if .Paginator.HasNext }}
+            <li class="page-item">
+              <a class="page-link" href="{{ .Paginator.Next.URL }}" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    {{ end }}
+  </div>
+</section>
+
+{{ end }}

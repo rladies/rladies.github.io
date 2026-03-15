@@ -1,4 +1,4 @@
-
+{{ $.EnableAllLanguages }}
 {{ $chapters := (partial "funcs/merge_chapters" .) | transform.Unmarshal }}
 {{ range $key, $chapterObj := $chapters }}
   {{ $page := dict
