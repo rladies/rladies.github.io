@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 19 Mar 2026 14:15:32 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 20 Mar 2026 01:13:17 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -32,7 +32,7 @@ We are grateful to be part of the Bayview Yards Meetup Program and extend our th
         <p><a href="https://www.meetup.com/rladies-ottawa/events/313489859/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><guid>https://www.meetup.com/rladies-trondheim/events/313409386/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Room ØHM, Øya helsehus</p>
-        <p><strong>Attendees:</strong> 6 going</p>
+        <p><strong>Attendees:</strong> 7 going</p>
         <p>Quarto provides a convenient way to automatically create reports with results and figures generated from R-code. It can play an important role in a reproducible research workflow, and saves time since whenever the results change, the report is automatically up to date. It is a crucial tool in any R-lady&#39;s toolbox! Join us for an introductory tutorial in how to get the most use out of Quarto.
 
 You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
@@ -47,7 +47,28 @@ You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
         <p><strong>Attendees:</strong> 24 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title> Industry Talks Through AI / AI Through Her Lens - R Ladies Tirane</title><link>https://www.meetup.com/rladies-tirane/events/313856954/</link><guid>https://www.meetup.com/rladies-tirane/events/313856954/</guid><description><![CDATA[<p><strong>Chapter:</strong> R Ladies Tirane</p>
+        <p><strong>When:</strong> Friday, March 27, 2026 at 5:30 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 4 going</p>
+        <p>🚀 **Industry Talks Through AI \| AI Through Her Lens**
+🤝 In collaboration with **AI Hub Albania**
+
+**R-Ladies Tirana** is excited to host a special edition dedicated to **Women in Technology and AI**, bringing together a dynamic community of professionals, researchers, and future innovators.
+
+🎤 **Open Lectures**
+• *AI Literacy in Modern STEM* \- Joana Bala
+• *The Mirror and The Machine* \- Alba Halilaj
+
+This edition highlights how women are actively shaping AI and driving real-world impact across industries.
+
+👥 **Who should attend?**
+• Women in tech, data, and AI
+• Students and early-career professionals
+• Anyone interested in AI, innovation, and impact
+
+📍 AI Hub Albania, Tirana / Online</p>
+        <p><a href="https://www.meetup.com/rladies-tirane/events/313856954/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Tirane)</author><category>R Ladies Tirane</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 57 going</p>
@@ -66,7 +87,7 @@ Advantages of using the gptstudio package:
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Análisis de datos que visibilizan las exigencias y luchas de las mujeres - R-Ladies Guadalajara</title><link>https://www.meetup.com/rladies-guadalajara/events/313763997/</link><guid>https://www.meetup.com/rladies-guadalajara/events/313763997/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Guadalajara</p>
         <p><strong>When:</strong> Thursday, March 26, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 66 going</p>
+        <p><strong>Attendees:</strong> 71 going</p>
         <p>¿Te has preguntado qué datos existen actualmente sobre la violencia contra las mujeres? ¿Hay evidencia de estas exigencias? ¿Quiénes producen y miden estos datos, y por qué? ¿Qué registros se generan y cuáles son sus limitaciones? ¿Qué papel pueden tener los datos para visibilizar las luchas y demandas de las mujeres?
 
 En este taller teórico-práctico exploraremos los principales indicadores sobre violencia contra niñas, adolescentes y mujeres. Analizaremos qué dicen las cifras, cómo interpretar tendencias y cuáles son los alcances y límites de los datos disponibles. Además, reflexionaremos sobre cómo comunicar esta información para dimensionar las violencias y colocarlas en la conversación pública.
@@ -92,6 +113,6 @@ Cupo limitado
 * Descarga el paquete de RStudio segun tu sistema operativo desde: https://posit.co/downloads/</p>
         <p><a href="https://www.meetup.com/rladies-cuernavaca/events/313771730/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Cuernavaca)</author><category>R-Ladies Cuernavaca</category></item><item><title> Level Up Your Data Visualizations with ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/313505524/</link><guid>https://www.meetup.com/rladies-abuja/events/313505524/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, March 25, 2026 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 39 going</p>
+        <p><strong>Attendees:</strong> 41 going</p>
         <p>Join us for a practical, beginner-friendly meetup on **“Level Up Your Data Visualizations with ggplot2”** where we’ll explore how to create clear, compelling, and professional charts in R using **ggplot2**. Whether you’re new to data visualization or looking to improve your plotting skills, this session will cover key principles, useful customization tips, and hands-on examples to help you turn raw data into impactful visual stories.</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/313505524/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item></channel></rss>
