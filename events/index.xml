@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 21 Mar 2026 01:12:53 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 21 Mar 2026 13:10:11 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -36,7 +36,33 @@ We are grateful to be part of the Bayview Yards Meetup Program and extend our th
         <p>Quarto provides a convenient way to automatically create reports with results and figures generated from R-code. It can play an important role in a reproducible research workflow, and saves time since whenever the results change, the report is automatically up to date. It is a crucial tool in any R-lady&#39;s toolbox! Join us for an introductory tutorial in how to get the most use out of Quarto.
 
 You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
-        <p><a href="https://www.meetup.com/rladies-trondheim/events/313409386/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><guid>https://www.meetup.com/rladies-philly/events/312900982/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p><a href="https://www.meetup.com/rladies-trondheim/events/313409386/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Lean about n-grams model and NLP - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313880594/</link><guid>https://www.meetup.com/rladies-rome/events/313880594/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><strong>When:</strong> Thursday, April 23, 2026 at 5:00 PM UTC</p>
+        <p><strong>Attendees:</strong> 1 going</p>
+        <p>Artificial Intelligence often feels like a black box, but many of its core ideas come from simple and elegant statistical concepts. In this session, we will step back from the hype and explore the foundations of AI through Natural Language Processing (NLP) and n-gram language models, using R as our working environment.
+
+This talk will focus on understanding how machines learn from text, starting from basic tokenization and moving toward probabilistic models that were among the earliest building blocks of modern AI. Rather than focusing on large models, we will look at the statistical roots that still underpin many current approaches.
+
+During the session we will explore:
+• what Natural Language Processing is and why it matters
+• how text can be transformed into structured data
+• how n-grams help model language patterns
+• how probability drives language prediction
+• how these ideas connect to modern AI systems
+• practical examples using R
+
+The goal of this session is to provide a clear conceptual understanding together with practical demonstrations, helping participants see how classical statistical thinking connects to current AI developments.
+
+Who should attend
+• R users interested in text analysis
+• Data scientists and statisticians curious about NLP
+• Students and researchers working with text data
+• Anyone wanting to understand the statistical foundations of AI
+
+No prior experience in NLP is required. A basic familiarity with R will be helpful, but the session will focus on concepts and intuition as much as on code.
+
+Join us for a practical and accessible introduction to the statistical roots of AI and how they still shape the tools we use today.</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><guid>https://www.meetup.com/rladies-philly/events/312900982/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 15, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 7 going</p>
