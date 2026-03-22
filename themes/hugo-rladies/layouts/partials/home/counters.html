@@ -18,7 +18,7 @@
   		<div class="icon-box">
   			<h3>{{ i18n "countries" | markdownify }}</h3>
   			<i class="fa-solid fa-globe"></i>
-  			<p class="count" data-count="{{ $.Scratch.Get "chpt_countries" | len  }}">0</p>
+  			<p class="count" data-count="{{ $.Store.Get "chpt_countries" | len  }}">0</p>
   		</div>
 		</div>
 	</div>
@@ -28,7 +28,7 @@
   		<div class="icon-box">
 			<h3>{{ i18n "chapters" | markdownify }}</h3>
 			  <i class="fa-solid fa-map-location-dot"></i>
-  			<p class="count" data-count="{{ $.Scratch.Get "chpt_active" | len }}">0</p>
+  			<p class="count" data-count="{{ $.Store.Get "chpt_active" | len }}">0</p>
   		</div>
 		</div>
 	</div>
