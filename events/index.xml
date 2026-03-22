@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sun, 22 Mar 2026 01:13:22 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><guid>https://www.meetup.com/rladies-philly/events/312901066/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sun, 22 Mar 2026 10:27:32 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 5 going</p>
         <p>BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R. Ama will lead the workshop with support from Shannon!</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><guid>https://www.meetup.com/rladies-philly/events/312901048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><pubDate>Thu, 15 Jan 2026 14:32:01 -0500</pubDate><guid>312901048</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 29, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 6 going</p>
         <p>BYOLaptop to learn data wrangling skills! Join us for a hybrid meeting either in-person or on zoom where participants will login to a virtual R session and learn to use Tidyverse packages and functions.</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Data Challenge Solution Showcase - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489859/</link><guid>https://www.meetup.com/rladies-ottawa/events/313489859/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Data Challenge Solution Showcase - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489859/</link><pubDate>Mon, 23 Feb 2026 08:10:12 -0500</pubDate><guid>313489859</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Bayview Yards</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -29,14 +29,14 @@ Please note that the mission of R-Ladies is to increase gender diversity in the 
 
 **Special Thanks**
 We are grateful to be part of the Bayview Yards Meetup Program and extend our thanks to Bayview Yards for generously providing the venue space.</p>
-        <p><a href="https://www.meetup.com/rladies-ottawa/events/313489859/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><guid>https://www.meetup.com/rladies-trondheim/events/313409386/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+        <p><a href="https://www.meetup.com/rladies-ottawa/events/313489859/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Ottawa)</author><category>R-Ladies Ottawa</category></item><item><title>Writing reports and articles with R in Quarto - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/313409386/</link><pubDate>Wed, 18 Feb 2026 02:18:54 -0500</pubDate><guid>313409386</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Room ØHM, Øya helsehus</p>
         <p><strong>Attendees:</strong> 7 going</p>
         <p>Quarto provides a convenient way to automatically create reports with results and figures generated from R-code. It can play an important role in a reproducible research workflow, and saves time since whenever the results change, the report is automatically up to date. It is a crucial tool in any R-lady&#39;s toolbox! Join us for an introductory tutorial in how to get the most use out of Quarto.
 
 You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
-        <p><a href="https://www.meetup.com/rladies-trondheim/events/313409386/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>The roots of AI: Natural Language Processing &amp; N-gram models - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313880594/</link><guid>https://www.meetup.com/rladies-rome/events/313880594/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><a href="https://www.meetup.com/rladies-trondheim/events/313409386/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>The roots of AI: Natural Language Processing &amp; N-gram models - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313880594/</link><pubDate>Sat, 21 Mar 2026 07:10:11 -0400</pubDate><guid>313880594</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Thursday, April 23, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 3 going</p>
@@ -91,18 +91,18 @@ L’obiettivo della sessione è fornire una comprensione concettuale chiara insi
 Non è richiesta esperienza precedente in NLP. Una conoscenza di base di R può essere utile, ma la sessione si concentrerà tanto sui concetti e sull’intuizione quanto sul codice.
 
 Unisciti a noi per un’introduzione pratica e accessibile alle radici statistiche dell’AI e a come queste continuano a influenzare gli strumenti che utilizziamo oggi.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><guid>https://www.meetup.com/rladies-philly/events/312900982/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><pubDate>Thu, 15 Jan 2026 14:26:48 -0500</pubDate><guid>312900982</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 15, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 7 going</p>
         <p>Join us for a career panel and networking with established professionals who use R statistical programming language for data analysis in their career.</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312900982/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Save the Date: Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><guid>https://www.meetup.com/rladies-st-louis/events/313055670/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312900982/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Save the Date: Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><pubDate>Sun, 25 Jan 2026 18:01:22 -0500</pubDate><guid>313055670</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 24 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title> Industry Talks Through AI / AI Through Her Lens - R Ladies Tirane</title><link>https://www.meetup.com/rladies-tirane/events/313856954/</link><guid>https://www.meetup.com/rladies-tirane/events/313856954/</guid><description><![CDATA[<p><strong>Chapter:</strong> R Ladies Tirane</p>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title> Industry Talks Through AI / AI Through Her Lens - R Ladies Tirane</title><link>https://www.meetup.com/rladies-tirane/events/313856954/</link><pubDate>Thu, 19 Mar 2026 16:47:47 -0400</pubDate><guid>313856954</guid><description><![CDATA[<p><strong>Chapter:</strong> R Ladies Tirane</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 5:30 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 4 going</p>
@@ -123,7 +123,7 @@ This edition highlights how women are actively shaping AI and driving real-world
 • Anyone interested in AI, innovation, and impact
 
 📍 AI Hub Albania, Tirana / Online</p>
-        <p><a href="https://www.meetup.com/rladies-tirane/events/313856954/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Tirane)</author><category>R Ladies Tirane</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><guid>https://www.meetup.com/rladies-st-louis/events/313222148/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
+        <p><a href="https://www.meetup.com/rladies-tirane/events/313856954/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Tirane)</author><category>R Ladies Tirane</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313222148/</link><pubDate>Thu, 05 Feb 2026 10:58:01 -0500</pubDate><guid>313222148</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Friday, March 27, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 57 going</p>
@@ -139,7 +139,7 @@ Advantages of using the gptstudio package:
 ✔️ Supports multiple OpenAI models, including GPT-3.5 and GPT-4
 
 ✔️ Useful for both beginners and experienced users looking to speed up their workflow</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Análisis de datos que visibilizan las exigencias y luchas de las mujeres - R-Ladies Guadalajara</title><link>https://www.meetup.com/rladies-guadalajara/events/313763997/</link><guid>https://www.meetup.com/rladies-guadalajara/events/313763997/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Guadalajara</p>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/313222148/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Análisis de datos que visibilizan las exigencias y luchas de las mujeres - R-Ladies Guadalajara</title><link>https://www.meetup.com/rladies-guadalajara/events/313763997/</link><pubDate>Thu, 12 Mar 2026 21:02:41 -0400</pubDate><guid>313763997</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Guadalajara</p>
         <p><strong>When:</strong> Thursday, March 26, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 79 going</p>
@@ -156,7 +156,7 @@ Cupo limitado
 ***R-Ladies Guadalajara promueve espacios seguros y respetuosos. Este evento se rige por nuestro código de conducta, que busca garantizar una participación libre de violencias, discriminación o acoso.***
 
 ###</p>
-        <p><a href="https://www.meetup.com/rladies-guadalajara/events/313763997/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Guadalajara)</author><category>R-Ladies Guadalajara</category></item><item><title>Instalación de paquetes en R sin morir en el intento - R-Ladies Cuernavaca</title><link>https://www.meetup.com/rladies-cuernavaca/events/313771730/</link><guid>https://www.meetup.com/rladies-cuernavaca/events/313771730/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Cuernavaca</p>
+        <p><a href="https://www.meetup.com/rladies-guadalajara/events/313763997/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Guadalajara)</author><category>R-Ladies Guadalajara</category></item><item><title>Instalación de paquetes en R sin morir en el intento - R-Ladies Cuernavaca</title><link>https://www.meetup.com/rladies-cuernavaca/events/313771730/</link><pubDate>Fri, 13 Mar 2026 18:10:16 -0400</pubDate><guid>313771730</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Cuernavaca</p>
         <p><strong>When:</strong> Wednesday, March 25, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 25 going</p>
@@ -166,7 +166,7 @@ Cupo limitado
 
 * Descarga el paquete de R segun tu sistema operativo desde: https://cran.itam.mx/
 * Descarga el paquete de RStudio segun tu sistema operativo desde: https://posit.co/downloads/</p>
-        <p><a href="https://www.meetup.com/rladies-cuernavaca/events/313771730/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Cuernavaca)</author><category>R-Ladies Cuernavaca</category></item><item><title> Level Up Your Data Visualizations with ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/313505524/</link><guid>https://www.meetup.com/rladies-abuja/events/313505524/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-cuernavaca/events/313771730/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Cuernavaca)</author><category>R-Ladies Cuernavaca</category></item><item><title> Level Up Your Data Visualizations with ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/313505524/</link><pubDate>Tue, 24 Feb 2026 08:39:14 -0500</pubDate><guid>313505524</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, March 25, 2026 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 47 going</p>
         <p>Join us for a practical, beginner-friendly meetup on **“Level Up Your Data Visualizations with ggplot2”** where we’ll explore how to create clear, compelling, and professional charts in R using **ggplot2**. Whether you’re new to data visualization or looking to improve your plotting skills, this session will cover key principles, useful customization tips, and hands-on examples to help you turn raw data into impactful visual stories.</p>
