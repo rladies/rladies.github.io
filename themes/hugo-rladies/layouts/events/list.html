@@ -76,7 +76,7 @@
     var timeZoneSelectorEl = document.getElementById("time-zone-selector");
     var loadingEl = document.getElementById("loading");
     var calendarEl = document.getElementById("calendar");
-    var events = {{ $.Scratch.Get "events" }};
+    var events = {{ $.Store.Get "events" }};
     var timezone_list = Intl.supportedValuesOf('timeZone');
 
     // Add local timezone option first

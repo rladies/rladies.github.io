@@ -2,7 +2,7 @@
 {{ $merged := (partial "funcs/merge_chapters" .) | transform.Unmarshal }}
 
 {{ $countries := slice }}
-{{ $.Scratch.Set "chpt_active" (slice) }}
+{{ $.Store.Set "chpt_active" (slice) }}
 
 {{ range $index, $chapterMap := $merged }}
   {{ if in (printf "%T" $chapterMap) "[]interface" }}
@@ -14,15 +14,15 @@
   {{ end }}
 
   {{ if eq (index $chapterMap "status") "active" }}
-    {{ $.Scratch.Add "chpt_active" $chapterMap }}
+    {{ $.Store.Add "chpt_active" $chapterMap }}
   {{ end }}
 {{ end }}
 
 {{ $countries = $countries | uniq | sort }}
-{{ $chapters_active := $.Scratch.Get "chpt_active" }}
+{{ $chapters_active := $.Store.Get "chpt_active" }}
 
 <!-- range again to create count chapters per country -->
-{{ .Scratch.Set "chpt_countries" (slice) }}
+{{ .Store.Set "chpt_countries" (slice) }}
 {{ range $countries }}
   {{ $arr := where $chapters_active "country" .}}
   {{ $count := $arr | len }}
@@ -36,20 +36,20 @@
   {{ end }}
   <!-- only add countries with chapters, and not remote chapter -->
   {{ if and (gt $count 0) (ne . "Worldwide") }}
-    {{ $.Scratch.Add "chpt_countries" (dict "name" . "count" $count "iso" $iso) }}  
+    {{ $.Store.Add "chpt_countries" (dict "name" . "count" $count "iso" $iso) }}  
   {{ end }}
 
 {{ end }}
 
 
 <!-- Events -->
-<!-- Fetch events data from meetup_archive JSON file and store in Scratch -->
+<!-- Fetch events data from meetup_archive JSON file -->
 {{ $url := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/events.json" }}
 {{ with try (resources.GetRemote $url) }}
   {{ with .Err }}
     {{ errorf "%s" . }}
   {{ else }}
-    {{ $.Scratch.Set "events" (.Value | transform.Unmarshal) }}
+    {{ $.Store.Set "events" (.Value | transform.Unmarshal) }}
   {{ end }}
 {{ else }}
   {{ errorf "Unable to get remote resource %q" $url }}

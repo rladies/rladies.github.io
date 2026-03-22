@@ -15,7 +15,7 @@
 <!-- if data is empty -->
 {{ if not $data }}
   {{ $points := slice }}
-  {{ range ($.Scratch.Get "chpt_active") }}
+  {{ range ($.Store.Get "chpt_active") }}
     {{ $points = $points | append (dict
       "name" .name
       "members" .members

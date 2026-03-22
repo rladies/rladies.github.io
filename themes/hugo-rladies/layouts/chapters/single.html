@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $chapterGroupUrlname := .Params.urlname }}
-{{ $allEvents := $.Scratch.Get "events" }}
+{{ $allEvents := $.Store.Get "events" }}
 {{ $currentDate := now }}
 
 {{ $upcomingEvents := slice }}
