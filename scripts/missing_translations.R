@@ -27,22 +27,30 @@ for(k in dirs){
   orig_cont <- readLines(orig_file)
   orig_lang <- sapply(sprintf("\\.%s\\.", site_lang), grepl, x = orig_file)
   orig_lang <- site_lang[orig_lang]
-  
+  if(length(orig_lang) == 0) orig_lang <- site_lang[1]
+  has_lang_suffix <- grepl(sprintf("[.]%s[.]", orig_lang), orig_file)
+
   idx <- grep("---", orig_cont)[2]
   yaml <- orig_cont[1:idx]
-  yaml <- c(yaml[1:(length(yaml)-1)], 
-            "translated: no", 
+  yaml <- c(yaml[1:(length(yaml)-1)],
+            "translated: no",
             yaml[length(yaml)])
-  yaml <- c(yaml[1:(length(yaml)-1)], 
-            paste("language:", orig_lang), 
-            yaml[length(yaml)])
+  if(!any(grepl("^language:", yaml))){
+    yaml <- c(yaml[1:(length(yaml)-1)],
+              paste("language:", orig_lang),
+              yaml[length(yaml)])
+  }
   
   for(lang in names(j)){
-    new_file <- gsub(sprintf("[.]%s[.]", orig_lang), 
-                     sprintf(".%s.", lang), 
-                     orig_file)
-    yaml2 <- gsub(sprintf("language: %s", orig_lang), 
-                  sprintf("language: %s", lang), 
+    if(has_lang_suffix){
+      new_file <- gsub(sprintf("[.]%s[.]", orig_lang),
+                       sprintf(".%s.", lang),
+                       orig_file)
+    } else {
+      new_file <- gsub("[.]md$", sprintf(".%s.md", lang), orig_file)
+    }
+    yaml2 <- gsub('language:.*$',
+                  sprintf("language: %s", lang),
                   yaml)
     new_cont <- c(yaml2, orig_cont[-1:-idx], "")
     cat(new_file, "'\n")
