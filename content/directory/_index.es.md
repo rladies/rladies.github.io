@@ -1,10 +1,8 @@
 ---
-title: "Directory"
+title: "Directorio"
 type: "directory"
 ---
 
-**We would love more R-Ladies to appear in our Directory!** 
-Please fill out [our form](/form/directory-update)! 
-It only takes a few minutes, and soon your profile will be online.
-
-If you want to **update** your profile, fill out the same form and choose the "Update directory entry" option. 
+Añádete al directorio de RLadies+ — solo toma unos minutos y tu perfil será visible para la comunidad.
+[Rellena el formulario](/form/directory-update) para añadir una nueva entrada o actualizar una existente.
+Para actualizar un perfil existente, elige la opción "Update directory entry" en el formulario.
