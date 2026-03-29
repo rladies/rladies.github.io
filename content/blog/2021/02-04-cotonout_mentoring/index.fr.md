@@ -5,18 +5,20 @@ author:
     url: https://twitter.com/sbnadejda)
 date: "2021-02-04"
 description: "Le programme de mentorat de R-Ladies"
-tags:
-  - communauté
-  - mentorat
 categories:
-  - R-Ladies
+  - programs
+tags:
+  - mentoring
 output: html_document
+translator:
+  - name: Nadejda Sero
 slug: "cotonout_mentoring"
 aliases:
   - "/blog/2021-02-04-cotonout_mentoring"
+image:
+  path: rladies_cotonou_fig02.jpg
+  alt: "Participantes du programme de mentorat R-Ladies Cotonou"
 ---
-
-_Nous sommes très heureux de vous fournir cet article de blog dans différentes langues: Anglais, Français et Espagnol. Si vous souhaitez en savoir plus sur la manière de contribuer au blog de R-Ladies en général ou souhaitez faire de recommendations, veuillez nous contacter par e-mail à <blog@rladies.org>._
 
 ## Comment tout a commencé… ? 🤔
 
@@ -73,5 +75,4 @@ Aujourd’hui, R-Ladies Cotonou est en bonne santé, surtout grâce au programme
 
 > **_Ne vous inquiétez pas, il y a toujours un mentor de R-Ladies pour vous accompagner !_**
 
-_Auteur: [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn).
-Traduction en Espagnol: Florencia D’Andrea, Relecture: Mine Dogucu and Divya Sernaami, Blog: Christin Zasada_
+_Auteur: [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)._

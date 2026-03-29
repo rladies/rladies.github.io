@@ -6,15 +6,17 @@ author:
   - name: Laura
 date: "2018-10-27"
 description: "Growing the R-Ladies Network after a Vacation"
-tags:
-  - Vacation
-  - South America
 categories:
-  - R-Ladies
+  - community
+tags:
+  - latin-america
 output: html_document
 slug: "vacation_grow_rladiesnetwork"
 aliases:
   - "/blog/2018-10-27-vacation_grow_rladiesnetwork"
+image:
+  path: laura_paloma.jpg
+  alt: "Laura and Paloma meeting to grow R-Ladies in South America"
 ---
 
 _We would like to tell you how one vacation lead to growth of R Ladies community in South America. The story involves multiple countries and crossing paths at the right time in life._

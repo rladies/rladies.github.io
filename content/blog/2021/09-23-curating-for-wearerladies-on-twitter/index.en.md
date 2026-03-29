@@ -2,15 +2,16 @@
 title: "Curating for @WeAreRLadies on Twitter"
 author:
   - name: Shannon Pileggi
+    directory_id: "shannon-pileggi"
 date: "2021-09-23"
 description: "From creating content to cultivating connections."
-tags:
-  - WeAreRLadies
-  - twitter
-  - rocur
-  - community
 categories:
-  - R-Ladies
+  - programs
+tags:
+  - rocur
+crosspost:
+  community: "Piping Hot Data"
+  url: "https://www.pipinghotdata.com/posts/2021-09-23-curating-for-wearerladies-on-twitter/"
 slug: "curating-for-wearerladies-on-twitter"
 aliases:
   - "/blog/2021-09-23-curating-for-wearerladies-on-twitter"
@@ -32,8 +33,6 @@ Figure 1: Photo by Arno Smit on Unsplash (https://unsplash.com/photos/iI72r3gSwW
 </p>
 
 </div>
-
-_This post was originally published on Shannon Pileggi’s <a href="https://www.pipinghotdata.com/posts/2021-09-23-curating-for-wearerladies-on-twitter/" target="_blank">personal blog</a>._
 
 # TL; DR
 

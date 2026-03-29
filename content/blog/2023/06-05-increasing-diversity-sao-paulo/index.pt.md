@@ -2,24 +2,30 @@
 title: "Ações para ampliar a diversidade na comunidade R-Ladies São Paulo"
 author:
   - name: Beatriz Milz
+    directory_id: "beatriz-milz"
   - name: Haydee Svab
+    directory_id: "haydee-svab"
   - name: Tatyane Paz Dominguez
   - name: Ianni Muliterno
   - name: Ana Paula Rocha
+description: "Como a R-Ladies São Paulo amplia a diversidade por meio de ações afirmativas, espaço para crianças e auxílio transporte."
 date: "2023-10-04"
 categories:
-  - R-Ladies
-tags:
-  - latin america
   - community
+tags:
+  - social-justice
+  - latin-america
 slug: "increasing-diversity-sao-paulo"
 aliases:
   - "/blog/2023-06-05-increasing-diversity-sao-paulo"
+image:
+  path: team-1.jpg
+  alt: "Membros da equipe R-Ladies Sao Paulo em um evento comunitario"
 ---
 
 ## Introdução
 
-A [R-Ladies](https://www.rladies.org/) é uma organização global cuja missão é promover a diversidade de gênero na comunidade R. A [R-Ladies São Paulo](https://www.rladies-sp.org/), orgulhosamente, é um capítulo da R-Ladies Global, promovendo a diversidade de gênero na comunidade de R em São Paulo, no Brasil.
+A [R-Ladies](/) é uma organização global cuja missão é promover a diversidade de gênero na comunidade R. A [R-Ladies São Paulo](https://www.rladies-sp.org/), orgulhosamente, é um capítulo da R-Ladies Global, promovendo a diversidade de gênero na comunidade de R em São Paulo, no Brasil.
 
 Neste post, o nosso objetivo é discutir questões de diversidade atualmente na comunidade R-Ladies São Paulo, e as **ações que têm sido feitas para ampliar a diversidade**.
 
@@ -82,9 +88,9 @@ Em relação à diversidade de gênero, as respostas obtidas no questionário ap
 
 Em relação à diversidade racial na comunidade em 2020, é importante destacar que 73,3% das pessoas se auto-declaravam brancas, apesar da população branca nessa região do Brasil representar cerca de metade da população. Ou seja, temos uma sub-representação de pessoas negras na comunidade R-Ladies São Paulo e necessitamos agir com seriedade para promover inclusão étnico-racial.
 
-É importante também citar o texto escrito pela equipe da [R-Ladies Global e a R Forwards sobre o #VidasNegrasImportam](https://www.rladies.org/news/2020-06-06-blm/), em 2020. Na ocasião, o texto foi [traduzido para português pela comunidade R-Ladies São Paulo e está disponível no blog da comunidade](https://rladies-sp.org/posts/2020-06-rladies-global-blm/). Neste texto, a R-Ladies Global se comprometeu a melhorar a forma como a organização apoia pessoas negras, indígenas e de outros grupos não-brancos:
+É importante também citar o texto escrito pela equipe da [R-Ladies Global e a R Forwards sobre o #VidasNegrasImportam](/news/2020-06-06-blm/), em 2020. Na ocasião, o texto foi [traduzido para português pela comunidade R-Ladies São Paulo e está disponível no blog da comunidade](https://rladies-sp.org/posts/2020-06-rladies-global-blm/). Neste texto, a R-Ladies Global se comprometeu a melhorar a forma como a organização apoia pessoas negras, indígenas e de outros grupos não-brancos:
 
-> _"Como a missão da R-Ladies é focada em melhorar a diversidade de gênero na comunidade R, também reconhecemos a luta que as pessoas negras enfrentam e o efeito composto interseccional quando uma pessoa integrante se identifica com vários grupos sub-representados. [...] Nos comprometemos a tornar os espaços da nossa comunidade lugares que ofereçam não apenas segurança para todas as pessoas que a integram, mas também um trabalho ativo em prol da equidade e da justiça."_ Fonte: [R-Ladies Global Blog](https://www.rladies.org/news/2020-06-06-blm/).
+> _"Como a missão da R-Ladies é focada em melhorar a diversidade de gênero na comunidade R, também reconhecemos a luta que as pessoas negras enfrentam e o efeito composto interseccional quando uma pessoa integrante se identifica com vários grupos sub-representados. [...] Nos comprometemos a tornar os espaços da nossa comunidade lugares que ofereçam não apenas segurança para todas as pessoas que a integram, mas também um trabalho ativo em prol da equidade e da justiça."_ Fonte: [R-Ladies Global Blog](/news/2020-06-06-blm/).
 
 No questionário, deixamos uma pergunta em formato aberto para que as pessoas pudessem oferecer sugestões para ampliar a diversidade étnico-racial na comunidade, e abaixo estão algumas sugestões oferecidas:
 

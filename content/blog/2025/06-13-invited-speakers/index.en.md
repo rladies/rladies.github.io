@@ -5,20 +5,23 @@ description: |
 author:
   - name: Maëlle Salmon
     url: https://masalmon.eu/
+    directory_id: "maelle-salmon"
   - name: Hannah Frick
+    directory_id: "hannah-frick"
   - name: Shannon Pileggi
+    directory_id: "shannon-pileggi"
   - name: Yanina Bellini Saibene
+    directory_id: "yanina-bellini-saibene"
 editorial:
   - name: Athanasia Mo Mowinckel
-    url: https://drmowinckels.io/
+    directory_id: "athanasia-mo-mowinckel"
 date: "2025-06-15"
 image:
   path: mic.jpg
+  alt: "Microphone on a stand in front of an audience"
 slug: invited-speakers
 categories:
-  - R-Ladies
-tags:
-  - conference
+  - tutorials
 editor:
   markdown:
     wrap: sentence
