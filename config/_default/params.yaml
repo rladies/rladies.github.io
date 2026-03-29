@@ -1,13 +1,16 @@
-name: R-Ladies Global
+name: RLadies+ Global
+author: RLadies+ Global
 email: 'info[at]rladies[dot]org'
-avatar: images/logo.png
+ror: 'https://ror.org/05wpb1k41'
+avatar: images/logo.svg
 avatarclass: rounded
 year: 2013
 
 banner: images/user2017.jpg
-bannerOverlay: '#88398a'
+bannerOverlay: '#881ef9'
 
-favicon: images/favicon.png
+favicon: images/favicon.svg
+ogImage: images/og-default.png
 DateForm: 2 January 2006
 showSubheader: false
 

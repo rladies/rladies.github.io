@@ -1,6 +1,7 @@
 baseURL: "."
+buildDrafts: true
 
 caches:
   getResource:
     dir: ":resourceDir/_cache"
-    maxAge: "1m"
+    maxAge: "1h"
