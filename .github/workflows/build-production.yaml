@@ -40,7 +40,7 @@ jobs:
         with:
           r-version: "renv"
 
-      - name: Serup renv
+      - name: Setup renv
         uses: r-lib/actions/setup-renv@v2
 
       - name: Populate untranslated pages

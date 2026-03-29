@@ -37,4 +37,61 @@ jobs:
         uses: r-lib/actions/setup-renv@v2
       
       - name: Validate jsons
-        run: Rscript scripts/validate_jsons.R
+        id: validate
+        run: |
+          output=$(Rscript scripts/validate_jsons.R 2>&1) && status=0 || status=1
+          echo "$output"
+          if [ $status -eq 0 ]; then
+            echo "result=pass" >> $GITHUB_OUTPUT
+          else
+            EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+            echo "errors<<$EOF" >> $GITHUB_OUTPUT
+            echo "$output" >> $GITHUB_OUTPUT
+            echo "$EOF" >> $GITHUB_OUTPUT
+            echo "result=fail" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Post validation comment
+        if: always() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const result = '${{ steps.validate.outputs.result }}';
+            const errors = `${{ steps.validate.outputs.errors }}`;
+            let md = '## JSON Validation\n\n';
+            if (result === 'pass') {
+              md += ':white_check_mark: All JSON files are valid.\n';
+            } else {
+              md += ':x: JSON validation failed:\n\n';
+              md += '```\n' + errors.trim() + '\n```\n';
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## JSON Validation';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = md + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      - name: Fail on errors
+        if: steps.validate.outputs.result == 'fail'
+        run: exit 1

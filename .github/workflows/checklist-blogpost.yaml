@@ -12,11 +12,10 @@ jobs:
     steps:
       # Generate a checklist and post it as a comment
       - name: Post checklist to PR
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
-            const checklist = `
-            Thank you for submitting a blogpost to R-Ladies!
+            const checklist = `Thank you for submitting a blogpost to R-Ladies!
             We appreciate all contributions to help create an active community.
 
             If this is your first time contributing, the [website wiki](https://github.com/rladies/rladies.github.io/wiki) might be a good place to learn more about our website setup and expectations.
@@ -27,10 +26,10 @@ jobs:
             - [ ] Ensure the title is appropriate for publication.
             - [ ] Ensure all links are working and point to correct destinations.
             - [ ] Ensure internal cross-references (if any) are correct.
-            - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also committed and up to date.
+            - [ ] If the main document is a \`qmd\` or \`rmd\` make sure the knitted accompanying \`md\` document is also committed and up to date.
             - [ ] Ensure no sensitive or confidential information is included.
             - [ ] Check grammar and spelling.
-            - [ ] Ensure that all images have alt text `![alt goes here](image.png)`.
+            - [ ] Ensure that all images have alt text \`![alt goes here](image.png)\`.
 
             ### Review ready
             - [ ] Remove draft mode for the PR, reviewers will be automatically assigned.
@@ -39,8 +38,8 @@ jobs:
             - [ ] Verify the title is appropriate for publication.
             - [ ] Verify all links are working and point to correct destinations.
             - [ ] Verify internal cross-references (if any) are correct.
-            - [ ] Verify that all images have alt text `![alt goes here](image.png)`.
-            - [ ] If the main document is a `qmd` or `rmd` make sure the knitted accompanying `md` document is also committed and up to date.
+            - [ ] Verify that all images have alt text \`![alt goes here](image.png)\`.
+            - [ ] If the main document is a \`qmd\` or \`rmd\` make sure the knitted accompanying \`md\` document is also committed and up to date.
 
             ### Once all checks are done
             - [ ] Set a date for publication.
@@ -48,12 +47,9 @@ jobs:
               - Publication of the post will happen automatically on that day.
             `;
 
-            const { context, github } = require("@actions/github");
-            const issue_number = context.payload.pull_request.number;
-
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: issue_number,
+              issue_number: context.issue.number,
               body: checklist
             });

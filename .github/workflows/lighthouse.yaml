@@ -1,0 +1,483 @@
+name: "Site quality checks"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    env:
+      RENV_PROFILE: "production"
+      RENV_CONFIG_SANDBOX_ENABLED: FALSE
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set env parameters
+        run: |
+          ver=$(cat .hugoversion)
+          echo "hugovr=$ver" >> $GITHUB_ENV
+
+      - name: Install cURL Headers
+        run: |
+          sudo apt-get update
+          sudo apt-get install libcurl4-openssl-dev
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "renv"
+
+      - name: Setup renv
+        uses: r-lib/actions/setup-renv@v2
+
+      - name: Populate untranslated pages
+        run: Rscript scripts/missing_translations.R
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.hugovr }}
+          extended: true
+
+      - name: Build
+        run: hugo -e production -d public
+
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: public/
+          retention-days: 1
+
+  lighthouse:
+    name: Lighthouse
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: public/
+
+      - name: Detect pages to audit
+        id: pages
+        run: |
+          KEY_PAGES="/ /events/ /chapters/ /about-us/ /blog/ /directory/"
+
+          CHANGED_URLS=""
+          CONTENT_CHANGES=$(git diff --name-only origin/main...HEAD -- content/ | head -20)
+          for f in $CONTENT_CHANGES; do
+            url=$(echo "$f" \
+              | sed 's|^content/||' \
+              | sed 's|/_index\(\.[a-z]*\)\?\.md$|/|' \
+              | sed 's|/index\(\.[a-z]*\)\?\.md$|/|' \
+              | sed 's|\(\.[a-z]*\)\?\.md$|/|')
+            url="/${url}"
+            CHANGED_URLS="$CHANGED_URLS $url"
+          done
+
+          LAYOUT_CHANGES=$(git diff --name-only origin/main...HEAD -- themes/ assets/ config/ | head -5)
+          if [ -n "$LAYOUT_CHANGES" ]; then
+            CHANGED_URLS="$CHANGED_URLS $KEY_PAGES"
+          fi
+
+          if [ -z "$CHANGED_URLS" ]; then
+            CHANGED_URLS="$KEY_PAGES"
+          fi
+
+          URLS=""
+          SEEN=""
+          for url in $CHANGED_URLS; do
+            url=$(echo "$url" | sed 's|//*|/|g')
+            echo "$SEEN" | grep -qF "$url" && continue
+            SEEN="$SEEN $url"
+            if [ -f "public${url}index.html" ]; then
+              URLS="$URLS $url"
+            fi
+          done
+
+          echo "urls=$URLS" >> $GITHUB_OUTPUT
+          echo "Auditing pages:$URLS"
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli serve
+
+      - name: Run Lighthouse on PR build
+        run: |
+          npx serve -l 9222 public &
+          sleep 2
+
+          mkdir -p .lighthouseci/pr
+          for url in ${{ steps.pages.outputs.urls }}; do
+            slug=$(echo "$url" | sed 's|/|_|g' | sed 's|^_||' | sed 's|_$||')
+            [ -z "$slug" ] && slug="home"
+            lhci collect \
+              --url="http://localhost:9222${url}" \
+              --settings.onlyCategories='["performance","accessibility","seo"]' \
+              --settings.output=json \
+              --settings.outputPath=".lighthouseci/pr/${slug}.json" \
+              -n 1 || true
+          done
+
+          kill %1 2>/dev/null || true
+
+      - name: Run Lighthouse on production
+        run: |
+          mkdir -p .lighthouseci/prod
+          for url in ${{ steps.pages.outputs.urls }}; do
+            slug=$(echo "$url" | sed 's|/|_|g' | sed 's|^_||' | sed 's|_$||')
+            [ -z "$slug" ] && slug="home"
+            lhci collect \
+              --url="https://rladies.org${url}" \
+              --settings.onlyCategories='["performance","accessibility","seo"]' \
+              --settings.output=json \
+              --settings.outputPath=".lighthouseci/prod/${slug}.json" \
+              -n 1 || true
+          done
+
+      - name: Generate comparison report
+        id: report
+        run: |
+          cat > compare.js << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+
+          const prDir = '.lighthouseci/pr';
+          const prodDir = '.lighthouseci/prod';
+
+          const prFiles = fs.existsSync(prDir)
+            ? fs.readdirSync(prDir).filter(f => f.endsWith('.json'))
+            : [];
+
+          if (prFiles.length === 0) {
+            fs.writeFileSync('report.md', '> No Lighthouse results collected.\n');
+            process.exit(0);
+          }
+
+          function readScores(filePath) {
+            try {
+              const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              const cats = data.categories || {};
+              return {
+                performance: cats.performance ? Math.round(cats.performance.score * 100) : null,
+                accessibility: cats.accessibility ? Math.round(cats.accessibility.score * 100) : null,
+                seo: cats.seo ? Math.round(cats.seo.score * 100) : null,
+              };
+            } catch { return { performance: null, accessibility: null, seo: null }; }
+          }
+
+          function readImageAltFailures(filePath) {
+            try {
+              const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+              const audit = data.audits && data.audits['image-alt'];
+              if (!audit || audit.score === 1 || audit.score === null) return [];
+              return (audit.details?.items || []).map(i =>
+                i.node?.snippet || i.node?.selector || 'unknown element'
+              );
+            } catch { return []; }
+          }
+
+          function emoji(pr, prod) {
+            if (pr === null || prod === null) return '';
+            const diff = pr - prod;
+            if (diff >= 5) return ' :green_circle:';
+            if (diff <= -5) return ' :red_circle:';
+            return '';
+          }
+
+          function fmt(pr, prod) {
+            if (pr === null) return 'n/a';
+            if (prod === null) return `**${pr}** (new)`;
+            const diff = pr - prod;
+            const sign = diff > 0 ? '+' : '';
+            return `**${pr}** (${sign}${diff})${emoji(pr, prod)}`;
+          }
+
+          let rows = [];
+          let altFailures = [];
+
+          for (const file of prFiles) {
+            const slug = path.basename(file, '.json');
+            const page = slug === 'home' ? '/' : '/' + slug.replace(/_/g, '/') + '/';
+            const pr = readScores(path.join(prDir, file));
+            const prodFile = path.join(prodDir, file);
+            const prod = fs.existsSync(prodFile)
+              ? readScores(prodFile)
+              : { performance: null, accessibility: null, seo: null };
+
+            rows.push(
+              `| \`${page}\` | ${fmt(pr.performance, prod.performance)} | ${fmt(pr.accessibility, prod.accessibility)} | ${fmt(pr.seo, prod.seo)} |`
+            );
+
+            const failures = readImageAltFailures(path.join(prDir, file));
+            if (failures.length > 0) {
+              altFailures.push({ page, failures });
+            }
+          }
+
+          let md = '## Lighthouse Audit\n\n';
+          md += '| Page | Performance | Accessibility | SEO |\n';
+          md += '|------|------------|---------------|-----|\n';
+          md += rows.join('\n') + '\n\n';
+          md += '> Scores compared against [rladies.org](https://rladies.org) production. ';
+          md += ':green_circle: = improved 5+ pts, :red_circle: = dropped 5+ pts.\n';
+
+          if (altFailures.length > 0) {
+            md += '\n### :x: Images missing alt text\n\n';
+            for (const { page, failures } of altFailures) {
+              md += `**\`${page}\`**\n`;
+              for (const f of failures) {
+                md += `- \`${f}\`\n`;
+              }
+            }
+            md += '\nThis check will fail until all images have alt text.\n';
+          }
+
+          fs.writeFileSync('report.md', md);
+          fs.writeFileSync('has-alt-failures.txt', altFailures.length > 0 ? 'true' : 'false');
+          SCRIPT
+
+          node compare.js
+
+      - name: Post Lighthouse comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('report.md', 'utf8');
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## Lighthouse Audit';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = report + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+      - name: Fail if images missing alt text
+        run: |
+          if [ "$(cat has-alt-failures.txt)" = "true" ]; then
+            echo "::error::Images are missing alt text — see PR comment for details."
+            exit 1
+          fi
+
+  links:
+    name: Broken links
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: public/
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --base public
+            --no-progress
+            --exclude-path public/pt
+            --exclude-path public/fr
+            --exclude-path public/es
+            --exclude 'localhost'
+            --exclude '127\.0\.0\.1'
+            --exclude 'example\.com'
+            --exclude 'meetup\.com'
+            --exclude 'linkedin\.com'
+            --exclude 'twitter\.com'
+            --exclude 'x\.com'
+            --timeout 30
+            --max-retries 2
+            --accept 200,403,429
+            'public/**/*.html'
+          fail: false
+          output: lychee-report.md
+
+      - name: Post link check comment
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          script: |
+            const fs = require('fs');
+            let report = '## Broken Link Check\n\n';
+            if (fs.existsSync('lychee-report.md')) {
+              const raw = fs.readFileSync('lychee-report.md', 'utf8');
+              const lines = raw.split('\n');
+              const errors = lines.filter(l => l.includes('[ERR]') || l.includes('[TIMEOUT]'));
+              if (errors.length === 0) {
+                report += ':white_check_mark: No broken links found.\n';
+              } else {
+                report += `Found **${errors.length}** broken link(s):\n\n`;
+                report += '| Status | URL | Source |\n|--------|-----|--------|\n';
+                for (const line of errors.slice(0, 30)) {
+                  report += `| ${line.trim()} |\n`;
+                }
+                if (errors.length > 30) {
+                  report += `\n*...and ${errors.length - 30} more. See workflow logs for full report.*\n`;
+                }
+              }
+            } else {
+              report += ':warning: Link check did not produce a report.\n';
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## Broken Link Check';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = report + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }
+
+  bundle-size:
+    name: Bundle size
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v4
+        with:
+          name: site-build
+          path: public/
+
+      - name: Measure asset sizes
+        id: sizes
+        run: |
+          cat > measure.js << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+
+          function findFiles(dir, ext) {
+            const results = [];
+            if (!fs.existsSync(dir)) return results;
+            for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+              const full = path.join(dir, entry.name);
+              if (entry.isDirectory()) results.push(...findFiles(full, ext));
+              else if (entry.name.endsWith(ext)) results.push(full);
+            }
+            return results;
+          }
+
+          function formatSize(bytes) {
+            if (bytes < 1024) return bytes + ' B';
+            const kb = bytes / 1024;
+            if (kb < 1024) return kb.toFixed(1) + ' KB';
+            return (kb / 1024).toFixed(2) + ' MB';
+          }
+
+          const cssFiles = findFiles('public', '.css');
+          const jsFiles = findFiles('public', '.js');
+
+          let rows = [];
+          let totalCSS = 0;
+          let totalJS = 0;
+
+          for (const f of cssFiles.sort()) {
+            const size = fs.statSync(f).size;
+            totalCSS += size;
+            const name = f.replace('public/', '');
+            rows.push(`| \`${name}\` | CSS | ${formatSize(size)} |`);
+          }
+          for (const f of jsFiles.sort()) {
+            const size = fs.statSync(f).size;
+            totalJS += size;
+            const name = f.replace('public/', '');
+            rows.push(`| \`${name}\` | JS | ${formatSize(size)} |`);
+          }
+
+          let md = '## Bundle Size Report\n\n';
+          md += `**Total CSS:** ${formatSize(totalCSS)} · **Total JS:** ${formatSize(totalJS)} · `;
+          md += `**Combined:** ${formatSize(totalCSS + totalJS)}\n\n`;
+          md += '<details>\n<summary>Asset breakdown</summary>\n\n';
+          md += '| File | Type | Size |\n|------|------|------|\n';
+          md += rows.join('\n') + '\n\n';
+          md += '</details>\n';
+
+          fs.writeFileSync('bundle-report.md', md);
+          SCRIPT
+
+          node measure.js
+
+      - name: Post bundle size comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('bundle-report.md', 'utf8');
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## Bundle Size Report';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = report + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }

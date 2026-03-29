@@ -1,0 +1,207 @@
+name: "i18n completeness"
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'content/**'
+      - 'i18n/**'
+
+jobs:
+  check:
+    name: Translation coverage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check i18n string coverage
+        id: strings
+        run: |
+          cat > check-i18n.js << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+
+          const i18nDir = 'i18n';
+          const files = fs.readdirSync(i18nDir).filter(f => f.endsWith('.yaml'));
+          const baseLang = 'en';
+
+          function parseKeys(filePath) {
+            const content = fs.readFileSync(filePath, 'utf8');
+            const keys = new Set();
+            for (const line of content.split('\n')) {
+              const match = line.match(/^([a-z0-9_-]+):/i);
+              if (match) keys.add(match[1]);
+            }
+            return keys;
+          }
+
+          const baseKeys = parseKeys(path.join(i18nDir, `${baseLang}.yaml`));
+          const issues = [];
+
+          for (const file of files) {
+            const lang = path.basename(file, '.yaml');
+            if (lang === baseLang) continue;
+            const langKeys = parseKeys(path.join(i18nDir, file));
+            const missing = [...baseKeys].filter(k => !langKeys.has(k));
+            const extra = [...langKeys].filter(k => !baseKeys.has(k));
+            if (missing.length > 0) {
+              issues.push({ lang, type: 'missing', keys: missing });
+            }
+            if (extra.length > 0) {
+              issues.push({ lang, type: 'extra', keys: extra });
+            }
+          }
+
+          return issues;
+          SCRIPT
+
+          cat > check-content.sh << 'BASH'
+          #!/bin/bash
+          LANGS="en es pt fr"
+          BASE_LANG="en"
+
+          # Only check content dirs changed in this PR
+          CHANGED_DIRS=$(git diff --name-only origin/main...HEAD -- content/ \
+            | xargs -I{} dirname {} \
+            | sort -u \
+            | sed 's|\.[a-z]*\.md$||' \
+            | sort -u)
+
+          MISSING=""
+          for dir in $CHANGED_DIRS; do
+            [ ! -d "$dir" ] && continue
+            for lang in $LANGS; do
+              if [ "$lang" = "$BASE_LANG" ]; then
+                # Check for _index.md or index.md
+                found=false
+                for f in "$dir"/_index.md "$dir"/_index.en.md "$dir"/index.md "$dir"/index.en.md; do
+                  [ -f "$f" ] && found=true && break
+                done
+              else
+                found=false
+                for f in "$dir"/_index.${lang}.md "$dir"/index.${lang}.md; do
+                  [ -f "$f" ] && found=true && break
+                done
+              fi
+              if [ "$found" = "false" ]; then
+                MISSING="$MISSING\n$dir ($lang)"
+              fi
+            done
+          done
+
+          if [ -n "$MISSING" ]; then
+            echo "missing_content=true" >> $GITHUB_OUTPUT
+            echo -e "$MISSING" > missing-content.txt
+          else
+            echo "missing_content=false" >> $GITHUB_OUTPUT
+          fi
+          BASH
+          chmod +x check-content.sh
+          ./check-content.sh
+
+      - name: Check i18n strings
+        id: i18n
+        run: |
+          cat > check-strings.js << 'SCRIPT'
+          const fs = require('fs');
+          const path = require('path');
+
+          const i18nDir = 'i18n';
+          const baseLang = 'en';
+
+          function parseKeys(filePath) {
+            const content = fs.readFileSync(filePath, 'utf8');
+            const keys = new Set();
+            for (const line of content.split('\n')) {
+              const match = line.match(/^([a-z0-9_-]+):/i);
+              if (match) keys.add(match[1]);
+            }
+            return keys;
+          }
+
+          const baseFile = path.join(i18nDir, `${baseLang}.yaml`);
+          if (!fs.existsSync(baseFile)) process.exit(0);
+
+          const baseKeys = parseKeys(baseFile);
+          const langs = fs.readdirSync(i18nDir)
+            .filter(f => f.endsWith('.yaml'))
+            .map(f => path.basename(f, '.yaml'))
+            .filter(l => l !== baseLang);
+
+          let md = '';
+          let hasMissing = false;
+
+          for (const lang of langs) {
+            const langKeys = parseKeys(path.join(i18nDir, `${lang}.yaml`));
+            const missing = [...baseKeys].filter(k => !langKeys.has(k));
+            if (missing.length > 0) {
+              hasMissing = true;
+              md += `**${lang}** is missing ${missing.length} key(s): ${missing.map(k => '`' + k + '`').join(', ')}\n`;
+            }
+          }
+
+          fs.writeFileSync('i18n-strings.md', md || '');
+          fs.writeFileSync('has-i18n-issues.txt', hasMissing ? 'true' : 'false');
+          SCRIPT
+
+          node check-strings.js
+
+      - name: Post i18n comment
+        uses: actions/github-script@v7
+        if: always()
+        with:
+          script: |
+            const fs = require('fs');
+            let md = '## i18n Coverage\n\n';
+
+            const stringReport = fs.existsSync('i18n-strings.md')
+              ? fs.readFileSync('i18n-strings.md', 'utf8') : '';
+            const contentMissing = fs.existsSync('missing-content.txt')
+              ? fs.readFileSync('missing-content.txt', 'utf8').trim() : '';
+
+            if (!stringReport && !contentMissing) {
+              md += ':white_check_mark: All translations are up to date.\n';
+            } else {
+              if (stringReport) {
+                md += '### i18n strings\n\n' + stringReport + '\n';
+              }
+              if (contentMissing) {
+                md += '### Content pages missing translations\n\n';
+                md += 'These changed content directories are missing translations:\n\n';
+                for (const line of contentMissing.split('\n').filter(Boolean)) {
+                  md += `- \`${line.trim()}\`\n`;
+                }
+                md += '\n> The `missing_translations.R` script creates placeholder files at build time,\n';
+                md += '> but proper translations are recommended.\n';
+              }
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const marker = '## i18n Coverage';
+            const existing = comments.find(c =>
+              c.user.type === 'Bot' && c.body.includes(marker)
+            );
+            const body = md + '\n\n*Updated: ' + new Date().toISOString() + '*';
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body,
+              });
+            }

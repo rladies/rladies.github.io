@@ -1,10 +1,10 @@
-# R-Ladies Website - AI Coding Instructions
+# RLadies+ Website - AI Coding Instructions
 
 **Accessibility is a high priority.** All changes must maintain or improve WCAG compliance.
 
 ## Architecture Overview
 
-Hugo static site with Bootstrap 5 theme, data-driven from multiple sources:
+Hugo static site with Tailwind CSS 4.1+ theme, data-driven from multiple sources:
 - **Local data**: `data/chapters/`, `data/directory/`, `data/global_team/`, `data/rblogs/`
 - **Remote data**: Fetched at build from `rladies/meetup_archive` (events, chapter metadata)
 - **Content**: Multilingual (en/es/pt/fr) in `content/` with `_index.{lang}.md` pattern
@@ -12,9 +12,10 @@ Hugo static site with Bootstrap 5 theme, data-driven from multiple sources:
 ## Key Commands
 
 ```bash
-hugo server -D                    # Local dev with drafts
-hugo --environment production     # Production build
-npm install --prefix themes/hugo-rladies  # Install theme dependencies
+hugo server -D                              # Local dev with drafts
+hugo --environment production               # Production build
+npm install --prefix themes/hugo-rladiesplus  # Install theme dependencies
+npm run build --prefix themes/hugo-rladiesplus  # Build/sync vendor assets
 ```
 
 ## Directory Structure
@@ -24,9 +25,59 @@ config/_default/     # Hugo config (hugo.yaml, params.yaml, menu.yaml, languages
 content/             # Markdown content (multilingual)
 data/chapters/       # Chapter JSON files (urlname, status, organizers, social_media)
 data/directory/      # Directory member JSON files
-themes/hugo-rladies/ # Theme with Bootstrap 5, amCharts, FullCalendar
+themes/hugo-rladiesplus/ # Theme with Tailwind CSS 4.1+, Alpine.js, amCharts, FullCalendar
 scripts/             # R scripts for Airtable/data processing
 ```
+
+## CSS Architecture
+
+### Tailwind CSS 4.1+ with @apply
+- Entry point: `themes/hugo-rladiesplus/assets/css/main.css`
+- Uses CSS-first configuration with `@theme` directive for brand tokens
+- Semantic component classes via `@apply` in `assets/css/components/*.css`
+- Hugo processes CSS via native `css.TailwindCSS` function
+- FontAwesome compiled separately via `assets/scss/fontawesome.scss` → Hugo `toCSS`
+- All CSS concatenated and fingerprinted in `layouts/partials/head/head.html`
+
+### Brand Colors
+| Token | Hex | Usage |
+|-------|-----|-------|
+| `--color-primary` | `#881ef9` | Headings, buttons, links, interactive elements |
+| `--color-primary-light` | `#a64dfc` | Hover states, lighter accents |
+| `--color-primary-dark` | `#6b0fd4` | Active states, darker accents |
+| `--color-accent-blue` | `#146af9` | Secondary accent |
+| `--color-accent-rose` | `#ff5b92` | Tertiary accent |
+| `--color-dark` | `#2f2f30` | Body text (Bastille Black) |
+| `--color-light` | `#ededf4` | Light backgrounds (Lavender White) |
+
+### Fonts
+- **Body**: Poppins (self-hosted, weights 300-700)
+- **Code**: Inconsolata Variable (self-hosted)
+- Font files in `static/webfonts/google-fonts/`
+
+### Component Files
+Semantic CSS classes live in `assets/css/components/`:
+`layout.css`, `nav.css`, `hero.css`, `buttons.css`, `cards.css`, `typography.css`,
+`forms.css`, `tables.css`, `badges.css`, `footer.css`, `calendar.css`, `maps.css`,
+`syntax.css`, `press.css`, `pagination.css`, `misc.css`
+
+## JavaScript
+
+### Alpine.js
+Used for all interactive UI components:
+- Navbar mobile toggle: `x-data="{ open: false }"`
+- Dropdown menus: `x-data="{ dropOpen: false }"`
+- Tab panels: `x-data="{ tab: 'current' }"`
+- Collapse/expand: `x-show`, `x-transition`, `x-cloak`
+
+### Other JS
+- **counter.js**: Vanilla JS animated counters (requestAnimationFrame)
+- **FullCalendar**: Standard theme with custom Tailwind CSS styling (no Bootstrap theme)
+- **amCharts 5**: Map visualizations
+- **Choices.js**: Enhanced select inputs
+- **Shuffle.js**: Filterable grid layouts
+
+No jQuery dependency. No Bootstrap JS.
 
 ## Data Patterns
 
@@ -44,7 +95,7 @@ scripts/             # R scripts for Airtable/data processing
 File naming: `country-city.json` (lowercase, hyphenated)
 
 ### Data Merging
-`themes/hugo-rladies/layouts/partials/head/data.html` loads all data at build time. Chapter data merges with remote meetup_archive via `funcs/merge_chapters.html` partial to add lat/lon, members, timezone.
+`themes/hugo-rladiesplus/layouts/partials/head/data.html` loads all data at build time. Chapter data merges with remote meetup_archive via `funcs/merge_chapters.html` partial to add lat/lon, members, timezone.
 
 ## Template Conventions
 
@@ -53,10 +104,12 @@ File naming: `country-city.json` (lowercase, hyphenated)
 - Access page params via `.Params`, not directly on page object
 - `isset` only works on maps (`.Params`), not page objects
 
-### Bootstrap 5 Patterns
-- Use semantic classes: `row`, `col-*`, `card`, `btn`, `badge`, `nav`
-- Spacing: `m-*`, `p-*`, `mb-*` utilities
-- Grid: `row row-cols-1 row-cols-md-3` for responsive columns
+### Tailwind + @apply Patterns
+- Use semantic component classes (`.card`, `.btn-primary`, `.site-container`) over raw utilities
+- Layout: `.site-container`, `.site-section`, `.grid-2` through `.grid-5`
+- Cards: `.card`, `.card-body`, `.card-title`, `.card-img-top`
+- Buttons: `.btn`, `.btn-primary`, `.btn-outline`, `.btn-sm`, `.btn-lg`
+- Add new component classes in `assets/css/components/` using `@apply`
 
 ### Accessibility
 - Use semantic HTML elements (`<nav>`, `<main>`, `<article>`, `<section>`, `<aside>`)
@@ -67,12 +120,33 @@ File naming: `country-city.json` (lowercase, hyphenated)
 - Interactive elements need visible focus states
 - Color alone must not convey information (use text/icons too)
 - Form inputs need associated `<label>` elements
+- Use `#2f2f30` (Bastille Black) for body text — `#881ef9` only for large/interactive elements
 
 ## Multilingual Content
 
 Files use language suffix: `_index.en.md`, `_index.es.md`, `_index.pt.md`, `_index.fr.md`
 
 Translation strings in `i18n/{lang}.yaml`. Missing translations auto-generated by `scripts/missing_translations.R` with `translated: no` front-matter.
+
+### Translation Status Front-matter
+
+The `translated` field has three states:
+- `translated: yes` — human-verified, shown in production
+- `translated: auto` — machine-translated (DeepL), shown only in dev/preview
+- `translated: no` — placeholder, not translated
+
+### Translation Workflow
+
+1. When content changes on `main`, the `translate-content.yaml` Action auto-translates via babeldown/DeepL
+2. A PR is created with `translated: auto` files
+3. Translators claim files via GitHub Issues (Translation Review template)
+4. Reviewers change `translated: auto` to `translated: yes` in front-matter
+5. Reviewed translations merge to `main` and appear in production
+
+### Translation Scripts
+- `scripts/translate_content.R` — auto-translate content files using babeldown/DeepL (uses `translate` renv profile)
+- `scripts/translation_status.R` — report translation coverage across all content
+- `scripts/missing_translations.R` — generate placeholder files for missing language variants
 
 ## Build Pipeline
 
@@ -89,10 +163,13 @@ GitHub Actions workflow:
 Create `data/chapters/country-city.json` with required fields (urlname, status, country, city)
 
 ### Modifying layouts
-Theme layouts in `themes/hugo-rladies/layouts/`. Override by placing file in root `layouts/` with same path.
+Theme layouts in `themes/hugo-rladiesplus/layouts/`. Override by placing file in root `layouts/` with same path.
 
 ### Adding home page sections
-Edit `themes/hugo-rladies/layouts/index.html` and create partial in `layouts/partials/home/`
+Edit `themes/hugo-rladiesplus/layouts/index.html` and create partial in `layouts/partials/home/`
+
+### Adding a CSS component
+Create or edit a file in `themes/hugo-rladiesplus/assets/css/components/` using `@apply`, then import it in `assets/css/main.css`.
 
 ## Reviewing New Content
 
@@ -128,6 +205,6 @@ Previews triggered via workflow_dispatch with artifact ID. Check:
 
 ## Style Guide
 
-- R-Ladies purple: `#88398a` (defined in `themes/hugo-rladies/assets/style.scss` as `$primary`)
-- Fonts: Open Sans (body), Inconsolata (code)
-- Icons: Bootstrap Icons (`bi bi-*`) and FontAwesome (`fa fa-*`)
+- RLadies+ primary: `#881ef9` (defined in `themes/hugo-rladiesplus/assets/css/main.css` as `--color-primary`)
+- Fonts: Poppins (body), Inconsolata (code)
+- Icons: FontAwesome 6 (`fa-solid fa-*`, `fa-brands fa-*`)
