@@ -1,0 +1,132 @@
+@layer components {
+  .site-footer {
+    @apply text-sm;
+    background-color: var(--color-surface-footer);
+    color: var(--color-dark);
+  }
+
+  .site-footer a {
+    color: var(--color-primary-dark);
+    @apply no-underline transition-colors;
+  }
+
+  .site-footer a:hover {
+    color: var(--color-primary-darker);
+  }
+
+  .site-footer .widget-title {
+    @apply pt-1 text-sm font-semibold mb-4;
+    color: var(--color-dark);
+  }
+
+  .site-footer .small a,
+  .site-footer p a,
+  .site-footer .leading-relaxed a {
+    @apply underline;
+    color: var(--color-primary-darker);
+  }
+
+  .site-footer .social-icon {
+    @apply inline-block transition-all duration-200;
+    color: var(--color-dark);
+  }
+
+  .site-footer .social-icon:hover {
+    @apply -translate-y-0.5;
+    color: var(--color-primary-dark);
+  }
+
+  .site-footer .footer-icon {
+    color: var(--color-primary-dark);
+  }
+
+  .site-footer .form-select {
+    background-color: var(--color-raised);
+    border-color: var(--color-primary-lighter);
+    color: var(--color-dark);
+  }
+
+  .site-footer .form-select option {
+    background-color: var(--color-raised);
+    color: var(--color-dark);
+  }
+
+  .site-footer .btn-light {
+    @apply text-white;
+    background-color: var(--color-primary);
+  }
+
+  .site-footer .btn-light:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  .site-underfooter {
+    @apply py-3 text-xs;
+    background-color: var(--color-surface-underfooter);
+    color: var(--color-dark);
+  }
+
+  .site-underfooter a {
+    color: var(--color-primary-dark);
+    @apply underline transition-colors;
+    text-underline-offset: 2px;
+  }
+
+  .site-underfooter a:hover {
+    color: var(--color-primary-darker);
+  }
+
+  /* Dark mode — backgrounds swap via variable, but footer uses
+     light-on-dark text which differs from the standard dark-mode swap */
+  .dark .site-footer a {
+    color: #b68df5;
+  }
+
+  .dark .site-footer a:hover {
+    color: var(--color-primary-lighter);
+  }
+
+  .dark .site-footer .small a,
+  .dark .site-footer p a,
+  .dark .site-footer .leading-relaxed a {
+    color: #b68df5;
+  }
+
+  .dark .site-footer .social-icon {
+    color: var(--color-light);
+  }
+
+  .dark .site-footer .social-icon:hover {
+    color: #b68df5;
+  }
+
+  .dark .site-footer .footer-icon {
+    color: #b68df5;
+  }
+
+  .dark .site-footer .form-select {
+    @apply bg-white/10 text-white;
+    border-color: var(--color-border-strong);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  }
+
+  .dark .site-footer .form-select option {
+    background-color: var(--color-raised);
+  }
+
+  .dark .site-footer .btn-light {
+    @apply bg-white/10 text-white hover:bg-white/20;
+  }
+
+  .dark .site-underfooter {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .dark .site-underfooter a {
+    color: #b68df5;
+  }
+
+  .dark .site-underfooter a:hover {
+    color: var(--color-light);
+  }
+}

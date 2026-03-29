@@ -1,0 +1,34 @@
+
+<link rel="icon" type="image/svg+xml" href="{{ .Site.Params.favicon | relURL }}">
+<link rel="icon" type="image/png" href="{{ "/images/favicon.png" | relURL }}">
+
+<!-- Dark mode (load early to prevent flash) -->
+{{ $darkmode := resources.Get "js/darkmode.js" | minify }}
+<script>{{ $darkmode.Content | safeJS }}</script>
+
+<!-- Preload critical fonts to reduce layout shifts -->
+<link rel="preload" href="{{ "/webfonts/google-fonts/poppins/poppins-latin-400-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "/webfonts/google-fonts/poppins/poppins-latin-600-normal.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ "/webfonts/fontawesome/fa-solid-900.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
+
+{{ $tw := resources.Get "css/vendor/tailwind.css" }}
+{{ $css := slice $tw
+  | resources.Concat "rladiesplus-bundle.min.css"
+  | minify
+  | fingerprint
+}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+
+{{ $fa := resources.Get "scss/fontawesome.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $fa.RelPermalink }}" integrity="{{ $fa.Data.Integrity }}" media="print" onload="this.media='screen'">
+<noscript><link rel="stylesheet" href="{{ $fa.RelPermalink }}"></noscript>
+
+<!-- site data -->
+{{ partial "head/data.html" . }}
+
+<!-- structured data -->
+{{ partial "head/jsonld.html" . }}
+
+<!-- plausible -->
+<link rel="preconnect" href="https://plausible.io" crossorigin>
+<script defer data-domain="rladies.org" src="https://plausible.io/js/script.js"></script>

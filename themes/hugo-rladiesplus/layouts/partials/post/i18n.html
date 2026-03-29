@@ -1,0 +1,22 @@
+{{ if .IsTranslated }}
+  <span class="post-translations" x-data="{ open: false }">
+    <button class="btn btn-sm btn-link no-underline p-0" type="button"
+            @click="open = !open"
+            :aria-expanded="open">
+      <i class="fas fa-language mr-1"></i>{{ i18n "translations" }}
+    </button>
+
+    <div x-show="open" x-transition x-cloak class="mt-2">
+      {{ range .Translations }}
+        {{ $trans := .Params.translated | default true }}
+        {{ $isAuto := eq (printf "%v" .Params.translated) "auto" }}
+        {{ if and (ne $trans false) (not (and $isAuto hugo.IsProduction)) }}
+          <a lang="{{ .Lang }}" href="{{ .Permalink }}" class="badge {{ if $isAuto }}badge-warning{{ else }}badge-info{{ end }} no-underline mr-1">
+            {{ index .Site.Data.read_in_lang .Lang }}
+            {{ if $isAuto }}<i class="fas fa-robot ml-1" aria-hidden="true"></i>{{ end }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </span>
+{{ end }}

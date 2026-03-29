@@ -1,0 +1,171 @@
+@layer components {
+  .section-title {
+    @apply text-4xl md:text-5xl font-medium text-dark text-center mb-4;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-center max-w-2xl mx-auto mb-12;
+    color: var(--color-muted);
+    font-weight: 300;
+  }
+
+  .section-subtitle a {
+    @apply underline;
+    text-underline-offset: 2px;
+  }
+
+  .entry-title {
+    @apply text-3xl md:text-4xl font-medium text-dark text-center mb-6;
+    letter-spacing: -0.02em;
+  }
+
+  .entry-header .entry-meta {
+    @apply text-center text-sm font-medium mb-4;
+    color: var(--color-muted);
+  }
+
+  .entry-content {
+    @apply mb-16;
+  }
+
+  .entry-content p {
+    @apply mb-5;
+    line-height: 1.75;
+  }
+
+  .entry-content ul,
+  .entry-content ol {
+    @apply mb-5 pl-6;
+    line-height: 1.75;
+  }
+
+  .entry-content ul {
+    @apply list-disc;
+  }
+
+  .entry-content ol {
+    @apply list-decimal;
+  }
+
+  .entry-content li {
+    @apply mb-1.5;
+  }
+
+  .entry-content h2 {
+    @apply text-3xl pt-5 mb-5;
+  }
+
+  .entry-content h3 {
+    @apply text-2xl pt-4 mb-4;
+  }
+
+  .entry-content a {
+    @apply underline;
+  }
+
+  .lead {
+    @apply text-lg;
+    color: var(--color-muted);
+  }
+
+  .text-muted {
+    color: var(--color-muted);
+  }
+
+  .date {
+    @apply w-2/3 mx-auto relative text-center text-sm;
+    border-bottom: 1px solid var(--color-muted);
+    line-height: 0.1em;
+    color: color-mix(in srgb, var(--color-muted) 85%, var(--color-dark));
+  }
+
+  .date span {
+    @apply px-2.5;
+    background-color: var(--color-bg);
+  }
+
+  .toc-nav {
+    @apply text-sm;
+    border-left: 2px solid var(--color-border);
+  }
+
+  .toc-nav ul {
+    @apply list-none pl-0 m-0;
+  }
+
+  .toc-nav li {
+    @apply m-0;
+  }
+
+  .toc-nav a {
+    @apply block py-1.5 pl-4 text-muted no-underline transition-colors;
+    @apply hover:text-primary;
+    margin-left: -2px;
+  }
+
+  .toc-nav ul ul {
+    @apply pl-3;
+  }
+
+  .toc-nav ul ul a {
+    @apply text-xs;
+  }
+
+  blockquote {
+    @apply relative my-8 py-6 pl-8 pr-6 rounded-xl;
+    background: color-mix(in srgb, var(--color-primary) 6%, transparent);
+    border-left: 4px solid var(--color-primary);
+    color: var(--color-dark);
+  }
+
+  blockquote p {
+    @apply m-0 leading-relaxed;
+  }
+
+  blockquote cite {
+    @apply block mt-4 font-semibold text-sm not-italic;
+    color: var(--color-muted);
+  }
+
+  blockquote cite::before {
+    content: "— ";
+  }
+
+  .entry-content figure {
+    @apply my-8;
+  }
+
+  .entry-content img {
+    @apply w-full h-auto rounded-xl;
+    box-shadow: var(--shadow-card);
+  }
+
+  .entry-content figcaption {
+    @apply text-sm text-center mt-3 italic;
+    color: var(--color-muted);
+  }
+
+  .entry-content table {
+    @apply w-full text-sm text-left mb-6;
+    display: block;
+    overflow-x: auto;
+    border-collapse: collapse;
+  }
+
+  .entry-content th {
+    @apply px-4 py-3 font-semibold border-b-2;
+    border-color: var(--color-border-strong);
+    color: var(--color-dark);
+  }
+
+  .entry-content td {
+    @apply px-4 py-3 border-b;
+    border-color: var(--color-border);
+  }
+
+  .entry-content tbody tr:hover {
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  }
+}

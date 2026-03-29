@@ -1,0 +1,57 @@
+/* Get Involved page */
+
+@layer components {
+  .involved-pillar {
+    @apply rounded-2xl p-8 text-center transition-shadow duration-200;
+    background-color: var(--color-surface);
+    box-shadow: var(--shadow-card);
+    border-top: 4px solid var(--color-primary);
+  }
+
+  .involved-pillar:hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  .involved-pillar-title {
+    @apply text-xl font-semibold mt-5 mb-3;
+  }
+
+  .involved-pillar-desc {
+    @apply text-sm leading-relaxed;
+    color: var(--color-muted);
+  }
+
+  .involved-row-content {
+    @apply flex flex-col justify-start px-8 py-10 md:px-16 md:py-14;
+    flex: 1;
+  }
+
+  .involved-subsection-title {
+    @apply text-lg font-semibold mt-6 mb-3;
+    color: var(--color-primary);
+  }
+
+  .involved-list {
+    @apply space-y-3 list-none p-0;
+    color: var(--color-muted);
+  }
+
+  .involved-list li {
+    @apply relative pl-6;
+  }
+
+  .involved-list li::before {
+    content: '';
+    @apply absolute left-0 top-[0.6em] w-2 h-2 rounded-full;
+    background-color: var(--color-primary);
+  }
+
+  .involved-list li p {
+    @apply inline m-0;
+  }
+
+  .involved-list strong {
+    @apply font-semibold;
+    color: var(--color-dark);
+  }
+}

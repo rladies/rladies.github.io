@@ -1,0 +1,2 @@
+{{ $shuffle := resources.Get "js/vendor/shuffle.min.js" | minify | fingerprint }}
+<script src="{{ $shuffle.RelPermalink }}" integrity="{{ $shuffle.Data.Integrity }}" crossorigin="anonymous" defer></script>

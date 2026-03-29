@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{ $stockImages := site.Data.stock_images }}
+
+<div class="site-container py-12">
+  <div class="max-w-3xl mx-auto entry-content">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ range $i, $page := .Pages.ByWeight }}
+  {{ $imgData := index (where $stockImages "id" $page.Params.image) 0 }}
+  <section class="program-row{{ if eq (mod $i 2) 0 }} bg-surface-alt{{ else }} program-row-reverse{{ end }}">
+    <div class="program-row-image">
+      {{ with resources.Get $imgData.file }}
+        {{ $img := .Fill "800x600 webp" }}
+        <img src="{{ $img.RelPermalink }}"
+             alt="{{ $imgData.alt }}"
+             width="{{ $img.Width }}" height="{{ $img.Height }}"
+             loading="lazy">
+      {{ end }}
+      {{ partial "stock-attribution.html" $imgData }}
+    </div>
+    <div class="program-row-content">
+      <h2 class="program-row-title">{{ $page.Title }}</h2>
+      <div class="program-row-desc">{{ $page.Params.description | markdownify }}</div>
+      {{ with $page.Params.ctas }}
+        <div class="program-row-ctas">
+          {{ range . }}
+            <a href="{{ .url }}"
+               class="btn {{ if eq .style "primary" }}btn-primary{{ else }}btn-outline{{ end }}"
+               {{ if hasPrefix .url "http" }}target="_blank" rel="noopener noreferrer"{{ end }}>
+              {{ .label }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+
+{{ end }}

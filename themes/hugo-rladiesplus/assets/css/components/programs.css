@@ -1,0 +1,68 @@
+/* Programs & Initiatives alternating row layout */
+
+.program-row {
+  @apply flex flex-col md:flex-row items-stretch;
+}
+
+.program-row-reverse {
+  @apply md:flex-row-reverse;
+}
+
+.program-row-image {
+  @apply relative overflow-hidden flex-shrink-0;
+  height: 260px;
+}
+
+@media (min-width: 768px) {
+  .program-row-image {
+    width: 45%;
+    height: auto;
+    min-height: 380px;
+  }
+
+  .program-row-content {
+    flex: 1;
+  }
+}
+
+.program-row-image img {
+  @apply w-full h-full object-cover transition-transform duration-500;
+}
+
+.program-row:hover .program-row-image img {
+  @apply scale-105;
+}
+
+.program-row-image > small {
+  @apply absolute bottom-2 right-3 text-white/80 text-xs;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.program-row-content {
+  @apply flex flex-col justify-center px-8 py-10 md:px-16 md:py-14;
+}
+
+.program-row-title {
+  @apply text-2xl md:text-3xl font-semibold mb-4;
+}
+
+.program-row-desc {
+  @apply text-muted mb-6 leading-relaxed;
+}
+
+.program-row-desc a {
+  @apply underline;
+  text-underline-offset: 2px;
+}
+
+.program-row-desc p {
+  @apply mb-3;
+}
+
+.program-row-desc p:last-child {
+  @apply mb-0;
+}
+
+.program-row-ctas {
+  @apply flex flex-wrap gap-3;
+}

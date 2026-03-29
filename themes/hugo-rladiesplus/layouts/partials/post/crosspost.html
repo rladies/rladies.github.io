@@ -1,0 +1,21 @@
+{{ with .Params.crosspost }}
+{{- $items := slice -}}
+{{- if reflect.IsSlice . -}}
+  {{- $items = . -}}
+{{- else -}}
+  {{- $items = slice . -}}
+{{- end -}}
+<div class="alert alert-primary flex items-center gap-2 mb-8">
+  <i class="fas fa-retweet" aria-hidden="true"></i>
+  <span>
+    {{ i18n "crosspost_notice" }}
+    {{- range $i, $cp := $items -}}
+      {{- if $i -}}
+        {{- if eq (sub (len $items) 1) $i }} &amp; {{ else }}, {{ end -}}
+      {{- end -}}
+      {{ " " }}{{- if $cp.url -}}<a href="{{ $cp.url }}" class="font-semibold underline hover:no-underline" target="_blank" rel="noopener">{{ $cp.community }}</a>
+      {{- else -}}{{ $cp.community }}{{- end -}}
+    {{- end -}}.
+  </span>
+</div>
+{{ end }}

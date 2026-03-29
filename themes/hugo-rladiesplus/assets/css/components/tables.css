@@ -1,0 +1,53 @@
+@layer components {
+  .table {
+    @apply w-full text-sm text-left;
+    border-collapse: collapse;
+  }
+
+  .table th {
+    @apply px-4 py-3 font-semibold text-dark border-b-2;
+    border-color: var(--color-border-strong);
+  }
+
+  .table td {
+    @apply px-4 py-3 border-b;
+    border-color: var(--color-border);
+  }
+
+  .table-hover tbody tr:hover {
+    background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+  }
+
+  .table-sm th,
+  .table-sm td {
+    @apply px-2 py-1.5;
+  }
+
+  .table-responsive {
+    @apply overflow-x-auto;
+  }
+
+  .continent-cell {
+    background-color: var(--color-surface-alt);
+  }
+
+  .chp-table .country-cell {
+    @apply border-r bg-surface pr-6 align-top;
+    border-color: var(--color-border);
+  }
+
+  .chp-table thead th:first-child {
+    @apply border-r;
+    border-color: var(--color-border);
+  }
+
+  .chp-social a {
+    @apply text-muted hover:text-primary transition-colors text-base ml-2 inline-flex items-center justify-center;
+    min-width: 24px;
+    min-height: 24px;
+  }
+
+  .chp-social a:first-child {
+    @apply ml-0;
+  }
+}

@@ -1,0 +1,19 @@
+<script>
+var containerEl = document.querySelector('.shuffle-wrapper');
+if (containerEl) {
+  var Shuffle = window.Shuffle;
+  var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+    itemSelector: '.shuffle-item',
+    buffer: 1,
+    isCentered: true
+  });
+  document.querySelectorAll('.form-select').forEach(function (el) {
+    el.addEventListener('change', function () {
+      var selected = Array.from(document.querySelectorAll('.form-select'))
+        .map(function (sel) { return sel.value; })
+        .filter(function (v) { return v !== ''; });
+      myShuffle.filter(selected);
+    });
+  });
+}
+</script>

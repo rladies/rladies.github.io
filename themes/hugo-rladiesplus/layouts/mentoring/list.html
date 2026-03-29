@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+  {{ $ment := (slice) }}
+  {{ range $name, $_ := $.Site.Data.mentoring }}
+    {{ $ment = $ment | append $name }}
+  {{ end }}
+
+  {{ $data := newScratch }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto mb-12 entry-content fade-in-up">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<div class="breakout">
+  <div class="container-wide expand-grid" id="mentoring-list">
+    <ul class="shuffle-wrapper w-full list-unstyled" id="mentoring-grid">
+      {{ range .Pages }}
+
+        {{ $data.Set "content" "" }}
+        {{ with .Summary }}
+          {{ $data.Set "content" "<blockquote>" }}
+          {{ $data.Add "content" . }}
+          {{ $data.Add "content" "</blockquote>" }}
+        {{ end }}
+
+        {{ with .Params.article }}
+          {{ $data.Add "content" (partial "funcs/read_more.html" . ) }}
+        {{ end }}
+
+        {{ with .Params.mentee }}
+          {{ $data.Set "foot" (printf "<p>Mentee: %s</p>" . ) }}
+        {{ end }}
+        {{ with .Params.mentor }}
+          {{ $data.Add "foot" (printf "<p>Mentor: %s</p>" . ) }}
+        {{ end }}
+
+        {{ $data.Set "img" "" }}
+        {{ with .Resources.GetMatch .Params.image.path }}
+          {{ $img := . }}
+          {{ $img := $img.Fit "400x800" }}
+          {{ $data.Set "img" $img.RelPermalink }}
+        {{ end }}
+
+        {{ partial "funcs/card-expand.html" (dict "title" .Title "img" ($data.Get "img") "size" "large" "url" .Params.article "descr" .Summary "anim" false "foot" ( $data.Get "foot") "footcol" 2 )}}
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
