@@ -100,8 +100,23 @@ TODO: Add link to the video of the Science Graphic Design presentation once avai
 The new branding is available across several platforms and tools:
 
 - [Branding materials repository](https://github.com/rladies/branding-materials)
+- [Templates on Google Drive](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB?usp=sharing)
+
+### R-packages and templates
+
+Additionally, we have set-up some repositories and R-package to help implement RLadies+ branding in your R-work.
+In a series of witch-themed libraries.
+
+**Why witch-themed**?
+Throughout history, "witches" were often women of knowledge and wisdom who lived outside the norms of their societies — healers, herbalists, midwives, scholars.
+They were intellectual, strong-willed, and frequently persecuted not for any wrongdoing, but for refusing to conform.
+
+A coven, then, was more than folklore — it was a support network.
+A space where those who didn't fit gathered strength from one another.
+
+That resonates with what RLadies+ is: a global coven of people in tech who've been told, in ways big and small, that they don't belong.
+We chose witch-themed names for our tooling as a small act of reclaiming — turning a label once used to silence into one that empowers.
+
 - [Glamour — Quarto extension](https://github.com/rladies/glamour)
 - [Spellbind — R package with brand colours](https://rladies.org/spellbind/) ([source](https://github.com/rladies/spellbind))
 - [Cloak — pkgdown theme](https://github.com/rladies/cloak)
-- [Templates on Google Drive](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB?usp=sharing)
-- [Canva - missing link!]()
