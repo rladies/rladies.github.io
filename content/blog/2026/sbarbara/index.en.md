@@ -26,7 +26,7 @@ author:
 editorial:
   - name: Cecilia Baldoni
     url: https://cecibaldoni.github.io/
-date: "2026-03-30"
+date: "2026-04-01"
 image:
   path: blog_fig_who_are_we.png
   text: Picture with R-Ladies Santa Barbara members
@@ -69,7 +69,7 @@ Some quotes:
 
 > "I ran some R code again after not looking at it for \<2 years and encountered multiple tidyverse deprecation warnings...Not even 2 years!\...If I were to keep working on that project in earnest, I would want to be using the latest/greatest tidyverse, so updating my code would be required regardless."
 
-![A tweet from Hadlwy Wickham saying "Happy reinstalling-all-your-R-packages day to all thos who celebrate! #rstats"](blog_fig_hadley_kelly_tweet.png)
+# ![A tweet from Hadley Wickham saying "Happy reinstalling-all-your-R-packages day to all those who celebrate! #rstats"](blog_fig_hadley_kelly_tweet.png)
 
 Even R-celebs struggle with these challenges!
 
@@ -89,6 +89,7 @@ Collectively, our self-identified R experience ranges from novice to proficient.
 
 Our recommendations emerge from this collective mix of experience and perspectives.
 While we don't claim to represent all R users or all use cases, we aimed 
+
 to surface common challenges and practical considerations shared across our communities.
 By convening under R-Ladies Santa Barbara, we grounded this work in the values of inclusivity and community-driven knowledge building.
 
