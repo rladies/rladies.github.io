@@ -126,7 +126,6 @@ Collectively, our self-identified R experience ranges from novice to proficient.
 
 Our recommendations emerge from this collective mix of experience and perspectives.
 While we don't claim to represent all R users or all use cases, we aimed 
-
 to surface common challenges and practical considerations shared across our communities.
 By convening under R-Ladies Santa Barbara, we grounded this work in the values of inclusivity and community-driven knowledge building.
 
