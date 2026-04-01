@@ -29,6 +29,7 @@ editorial:
 date: "2026-03-30"
 image:
   path: blog_fig_who_are_we.png
+  text: Picture with R-Ladies Santa Barbara members
 slug: santabarbara-stayrelevant
 categories:
   - R-Ladies
@@ -40,45 +41,7 @@ editor:
     wrap: sentence
 ---
 
-# **#stayrelevant: How Santa Barbara R-Ladies keep up with changes in the R ecosystem**
-
-**Authors:** R-Ladies Santa Barbara Chapter! 
-
--   [Danielle Ferraro](https://bsky.app/profile/dferraro.bsky.social)\*+
-
--   Colleen McCamy\*+
-
--   [Sam Shanny-Csik](https://samanthacsik.github.io/)\*+
-
--   Camila Vargas Poulsen\*+
-
--   Annie Adams+
-
--   Elise Gonzales+
-
--   [Olivia Ross+](https://bsky.app/profile/olross.bsky.social)
-
--   An Bui
-
--   Carly Caswell
-
--   Kristina Fauss
-
--   Flora Hamilton
-
--   [Rachel King](https://www.linkedin.com/in/kingra00/)
-
--   Kat Le
-
--   Tracy Lyon
-
--   Mary Megrant
-
--   Ryan Munnikhuis
-
--   *denotes the R-Ladies Santa Barbara co-organizing team, +indicates contributors to the writing and editing of this blog post. All others participated in the R-Ladies Santa Barbara Meetup discussion that inspired the content of this post.*
-
-## **We've all been there --**
+## We've all been there --
 
 Have you ever returned to an old R project only to realize that your code no longer runs?
 Perhaps your code still runs, but now you're getting a bunch of "Warning: this function is deprecated," messages in your console.
@@ -116,7 +79,7 @@ There's no one-size-fits-all approach for all R users -- what works will look di
 We hope these ideas help you find an approach that works for you! 
  
 
-## **Who are we?**
+## Who are we?
 
 ![Picture with R-Ladies Santa Barbara members](blog_fig_who_are_we.png) R-Ladies Santa Barbara members at our November 2025 meetup!
 
@@ -130,7 +93,7 @@ While we don't claim to represent all R users or all use cases, we aimed 
 to surface common challenges and practical considerations shared across our communities.
 By convening under R-Ladies Santa Barbara, we grounded this work in the values of inclusivity and community-driven knowledge building.
 
-## **Our process**
+## Our process
 
 In fall 2025, R-Ladies Santa Barbara brought together participants for a [facilitated discussion](https://www.meetup.com/rladies-santa-barbara/events/311739680/?eventOrigin=group_upcoming_events) on how to **#stayrelevant**.
 We began our meeting by outlining our motivation for the discussion, and then divided the 16 participants (including R-Ladies Santa Barbara co-organizers) into three ~equal-sized groups.
@@ -161,7 +124,7 @@ Once all rotations were complete, each group used ChatGPT to generate a summary 
 Following the event, the R-Ladies Santa Barbara co-organizers worked together to organize the raw discussion points into key takeaways.
 We shared an outline with event participants, who collectively helped to write and edit the final version of this blog post.
 
-## **What do we mean by #stayrelevant?**
+## What do we mean by #stayrelevant?
 
 Staying relevant in music may look like curating a playlist of new artists, or staying relevant in fashion may look like trying out a new style of jeans.
 But what does it mean to #stayrelevant in R programming?
@@ -174,9 +137,9 @@ Even if nothing in your code changes, staying relevant could also mean staying i
 
 Inspired by [PLOS' Ten Simple Rules-style article](https://collections.plos.org/collection/ten-simple-rules/) format, we've summarized our discussions into six overarching considerations to help us #stayrelevant.
 
-## **Six simple considerations to #stayrelevant**
+## Six simple considerations to #stayrelevant
 
-1.  **Who you're working with matters**
+### 1.  Who you're working with matters
 
 Working alone may afford you the flexibility to experiment with new packages, tools or refactoring approaches.
 However, staying relevant doesn't always happen in a vacuum, and the people you work with (collaborators, colleagues, clients, students, future you) can shape when and how it makes sense to update your approaches.
@@ -194,7 +157,7 @@ In practice, how you choose to keep your R projects updated will be shaped by bo
 > New to {renv}?
 > Check out these [three great talks](https://github.com/shannonpileggi/practical-renv?tab=readme-ov-file#related-talks) from posit::conf(2025), which offer a practical introduction and tips for successfully maintaining {renv}-backed projects (thanks, [Shannon Pileggi](https://github.com/shannonpileggi), for sharing these with us!)
 
-1.  **Update frequently and during natural project pauses**
+### 2.  Update frequently and during natural project pauses
 
 Regardless of our jobs, industries, or coding comfort level, it may be best to avoid major software updates right before project deadlines to reduce the chance of breaking changes.
 However, potential headaches could be avoided entirely by routinely updating your software so that you're not forced to make updates right at the "buzzer" when something is due.
@@ -206,7 +169,7 @@ Identifying these natural pauses within your current workflows can give you a cl
 
 > **TRY THIS:** Put a routine reminder in your calendar to update your R version or R packages at whichever cadence works best for you - weekly, monthly, quarterly, etc.
 
-1.  **Embrace the alerts, errors, and warnings**
+### 3.  Embrace the alerts, errors, and warnings
 
 R evolves rapidly, but luckily, it often provides helpful information when something in your project is out of date.
 By closely reviewing the alerts, warnings, or error messages generated by your code or coding environment (such as RStudio), you can often identify the path forward to updating your project. 
@@ -227,7 +190,7 @@ Check out our very own Sam Shanny-Csik's talk, [Teach Me How to Google](https://
 
 > **TRY THIS**: If your project absolutely requires an older version of R, you can install multiple versions and swap around as needed using a tool like [rig](https://github.com/r-lib/rig) or taking advantage of this built-in capability of Positron. 
 
-1.  **Consider the status/stage of tools before adopting**
+### 4.  Consider the status/stage of tools before adopting
 
 Another way to #stayrelevant is to be thoughtful about a tool's stage of development before adopting it.
 Tools can mean new packages, functions, frameworks, IDEs, etc.
@@ -250,7 +213,7 @@ In the end, staying relevant can look like choosing tools that balance innovatio
 
 > **TRY THIS**: Scan community forums (e.g. [Stack Overflow](https://stackoverflow.com/questions/tagged/r)), GitHub Issues, and release notes (e.g. check out {ggplot2} [issues](https://github.com/tidyverse/ggplot2/issues) and [release notes](https://github.com/tidyverse/ggplot2/releases)!) to see whether others are using the tool and whether its maintainers are actively responding.
 
-1.  **Curate a small set of reliable learning sources (that you'll actually look at)**
+### 5.  Curate a small set of reliable learning sources (that you'll actually look at)
 
 It's impossible to stay up to date on every new package, shortcut, tip, or trick in the R ecosystem.
 But you can create your own little sphere of updates by compiling a small set of resources that you check ~weekly (okay, maybe monthly, or whatever cadence works for you).
@@ -277,7 +240,7 @@ Here are some of R-Ladies SB's favorite learning resources that you might want t
 > **TRY THIS**: Leverage existing information streams that you already enjoy!
 > For example, you don't need to join Bluesky if an email newsletter better aligns with your current practices.
 
-1.  **Enter the group chat!**
+### 6.  Enter the group chat!
 
 Building a data science community is a great way to #stayrelevant.
 It provides opportunities to learn about new packages and evolving workflows, while also sharing your own experiences back to the community.
@@ -289,13 +252,51 @@ You can start by chatting code with your colleagues and friends and expand to ot
 
 > **TRY THIS:** Join your local [R-Ladies chapter](https://rladies.org/chapters/), or [start your own](https://guide.rladies.org/organization/intro/get-started/)! 
 
-## **To wrap it all up --**
+## To wrap it all up --
 
 How you #stayrelevant is less about integrating every new tool or approach, and more about cultivating habits that help you to adapt when needed.
 It's not going to look the same for everyone, or even for every project.
 But by keeping an eye on changes and sharing what you learn with others, you can build workflows that evolve along with the R ecosystem.
 
-## **AI Disclosure**
+## AI Disclosure
 
 This blog post was written and edited by members of R-Ladies Santa Barbara.
 Generative AI tools (e.g. ChatGPT) were used to assist with organizing and synthesizing discussion notes and occasionally to help refine the clarity of our writing.
+
+## Contributions
+
+**Authors:** R-Ladies Santa Barbara Chapter! 
+
+-   [Danielle Ferraro](https://bsky.app/profile/dferraro.bsky.social)\*+
+
+-   Colleen McCamy\*+
+
+-   [Sam Shanny-Csik](https://samanthacsik.github.io/)\*+
+
+-   Camila Vargas Poulsen\*+
+
+-   Annie Adams+
+
+-   Elise Gonzales+
+
+-   [Olivia Ross+](https://bsky.app/profile/olross.bsky.social)
+
+-   An Bui
+
+-   Carly Caswell
+
+-   Kristina Fauss
+
+-   Flora Hamilton
+
+-   [Rachel King](https://www.linkedin.com/in/kingra00/)
+
+-   Kat Le
+
+-   Tracy Lyon
+
+-   Mary Megrant
+
+-   Ryan Munnikhuis
+
+-   * denotes the R-Ladies Santa Barbara co-organizing team, + indicates contributors to the writing and editing of this blog post. All others participated in the R-Ladies Santa Barbara Meetup discussion that inspired the content of this post.
