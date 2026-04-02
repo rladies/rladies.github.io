@@ -29,7 +29,9 @@ A [R-Ladies](/) é uma organização global cuja missão é promover a diversida
 
 Neste post, o nosso objetivo é discutir questões de diversidade atualmente na comunidade R-Ladies São Paulo, e as **ações que têm sido feitas para ampliar a diversidade**.
 
-> Este post foi escrito em abril de 2023. Desde então, **R-Ladies São Paulo recebeu um auxílio do [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, o que permitiu à comunidade ampliar as ações para aumentar a diversidade.
+{{< callout type="note" title="Atualização" >}}
+Este post foi escrito em abril de 2023. Desde então, **R-Ladies São Paulo recebeu um auxílio do [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, o que permitiu à comunidade ampliar as ações para aumentar a diversidade.
+{{< /callout >}}
 
 ![Picture of participants in a recent event.](logo2.jpeg)
 
@@ -182,7 +184,9 @@ Dada a natureza do grupo R-Ladies, é um quesito importante prover um acolhiment
 
 Para permitir que pessoas com pouca condição financeira tenham acesso e aproveitamento dos eventos, uma ação importante é o oferecimento de auxílio transporte e alimentação. O auxílio alimentação é oferecido em eventos presenciais que duram um dia inteiro. O auxílio transporte é oferecido em todos os eventos presenciais. Um ponto em destaque é que muitas pessoas que solicitam auxílio transporte são de cidades do interior (fora da Região Metropolitana de São Paulo), o que mostra o potencial de criação de novos capítulos da R-Ladies nessas cidades.
 
-> **R-Ladies São Paulo recebeu um auxílio da [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, o que permitiu à comunidade oferecer auxílio financeiro nos eventos.
+{{< callout type="info" >}}
+**R-Ladies São Paulo recebeu um auxílio da [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, o que permitiu à comunidade oferecer auxílio financeiro nos eventos.
+{{< /callout >}}
 
 ### **Trabalho em duplas**
 

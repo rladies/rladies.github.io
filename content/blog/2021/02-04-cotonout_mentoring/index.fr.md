@@ -73,6 +73,8 @@ J’ai beaucoup appris de ce programme de mentorat et je crois que je partage le
 
 Aujourd’hui, R-Ladies Cotonou est en bonne santé, surtout grâce au programme de mentorat ! Je le recommande à tout groupe local de R-Ladies qui a besoin d’aide pour mettre en place et organiser des rencontres, recruter des membres ou tout autre élément nécessaire à la vie du groupe.
 
-> **_Ne vous inquiétez pas, il y a toujours un mentor de R-Ladies pour vous accompagner !_**
+{{< callout type="tip" >}}
+_Ne vous inquiétez pas, il y a toujours un mentor de R-Ladies pour vous accompagner !_
+{{< /callout >}}
 
 _Auteur: [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)._

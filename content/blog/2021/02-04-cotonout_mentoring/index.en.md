@@ -70,6 +70,8 @@ I have learned a lot from this mentorship program and I believe I am spreading t
 
 Today, R-Ladies Cotonou is in good health, mostly because of the mentorship program! I recommend it to any chapter that needs help to set up, organize meetups, recruit members or anything else required for the chapter’s life.
 
-> **_Never worry, there is always an R-Ladies mentor to walk with you!_**
+{{< callout type="tip" >}}
+_Never worry, there is always an R-Ladies mentor to walk with you!_
+{{< /callout >}}
 
 _Author: [Nadejda Sero](https://twitter.com/sbnadejda), organizer of [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)._

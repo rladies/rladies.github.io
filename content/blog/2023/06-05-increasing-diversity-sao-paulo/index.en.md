@@ -29,7 +29,9 @@ The [R-Ladies](/) is a global organization that promotes gender diversity in the
 
 In this post, our goal is to discuss diversity issues in the R-Ladies São Paulo community and the **actions that are being taken to increase diversity**.
 
-> This post was written in April/2023. Since that time, **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to expand the actions to increase diversity.
+{{< callout type="note" title="Update" >}}
+This post was written in April/2023. Since that time, **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to expand the actions to increase diversity.
+{{< /callout >}}
 
 ![Picture of participants in a recent event.](logo2.jpeg)
 
@@ -177,7 +179,9 @@ Given the nature of the R-Ladies community, it is important to provide a minimum
 
 To allow people with limited financial means to have access to and benefit from the events, an important action is providing transportation and meal assistance. Meal assistance is offered at in-person events that last a whole day. Transportation assistance is offered at all in-person events. A notable point is that many people who request transportation assistance are from cities outside the Metropolitan Region of São Paulo, which shows the potential for creating new R-Ladies chapters in these cities.
 
-> **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to offer financial assistance at the events.
+{{< callout type="info" >}}
+**R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to offer financial assistance at the events.
+{{< /callout >}}
 
 ### **Working in pairs**
 

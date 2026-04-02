@@ -73,6 +73,8 @@ He aprendido mucho del programa y estoy difundiendo algunas de ideas que obtuve 
 
 ¡Hoy R-Ladies Cotonou goza de buena salud gracias al programa de mentorías! Se lo recomiendo a cualquier capítulo que necesite ayuda para organizar reuniones, encontrar nuevos miembros o cualquier otra cosa necesaria para la vida del capítulo.
 
-> **_¡No te preocupes, siempre habrá una R-Lady que camine contigo!_**
+{{< callout type="tip" >}}
+_¡No te preocupes, siempre habrá una R-Lady que camine contigo!_
+{{< /callout >}}
 
 _Autora: [Nadejda Sero](https://twitter.com/sbnadejda), organizadora de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)._
