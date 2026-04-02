@@ -34,7 +34,7 @@ R-Ladies+ from Vitória, East Lansing, Den Bosch, Cuernavaca, Guayaquil, Bangalo
 
 ## Where?
 
-![World map indicating the countries (in purple) where each co-host chapter are located: East Lansing (USA), Cuernavaca (MEX), Guayaquil (ECU), Vitória (BRA), Santa Rosa (ARG), Den Bosch (NLD), Tunis (TUN), Bangalore (IND).](chapters_map.png)
+![World map with eight countries highlighted in purple: USA, Mexico, Ecuador, Brazil, Argentina, Netherlands, Tunisia, and India](chapters_map.png "The eight co-hosting chapters spanned five continents")
 
 ## What?
 
@@ -52,7 +52,7 @@ In the end, our message is simple and radical, and in the words of Jonelle Villa
 
 > My message for the people attending the useR! 2021 virtual conference: Diversity is our super-power! I have no doubt that the next cake to be prepared for the next R-Consortium anniversary will have plates and forks for all.
 
-![Hex-image of all panelists and co-organizers. First row from left to right: Yanina Bellini (Santa Rosa/useR!), Ornella Scardua (Vitória), Jonelle Villar (Bergen), Joselyn Chávez (Cuernavaca/useR!), Zulemma Bazurto (Guayaquil), Martine Jansen (Den Bosch). Second row from left to right: Janani Ravi (East Lansing/useR!), Beatriz Milz (São Paulo/useR), Adithi Upadhya (Bangalore/useR!), Haifa Ben Messaoud (Tunis/useR!), Sara Mortara (Rio de Janeiro/useR!), Andrea Sánchez-Tapia (Rio de Janeiro/useR!)](people.png)
+![Hexagonal portrait collage of twelve panelists and co-organizers arranged in two rows](people.png "Panelists and co-organizers of the R-Ladies+ feat. useR! 2021 meetup")
 
 See you soon at useR!
 ¡Hasta luego!

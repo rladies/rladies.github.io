@@ -33,7 +33,7 @@ Neste post, o nosso objetivo é discutir questões de diversidade atualmente na 
 Este post foi escrito em abril de 2023. Desde então, **R-Ladies São Paulo recebeu um auxílio do [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, o que permitiu à comunidade ampliar as ações para aumentar a diversidade.
 {{< /callout >}}
 
-![Picture of participants in a recent event.](logo2.jpeg)
+![Grupo de participantes da R-Ladies São Paulo sorrindo juntas em um evento comunitário](logo2.jpeg "Participantes de um encontro da R-Ladies São Paulo")
 
 Para isso, dois pontos são importantes de serem discutidos: o conceito de interseccionalidade e questões relacionadas ao contexto brasileiro.
 
@@ -57,14 +57,13 @@ Por questões históricas, o Brasil apresenta uma composição racial diferente 
 
 Apesar de representarem cerca de metade da população da região, a população negra foi marginalizada, e segue sub-representada em espaços de poder, como na política, no ensino superior, em posições de liderança nas empresas entre outros.
 
-![Infográfico pelo IBGE, mostrando as porcentagens da população por cor/raça no Brasil.](ibge-pt.png)
-Fonte: [IBGE - PNAD Contínua, 2021](https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/18319-cor-ou-raca.html).
+![Infográfico mostrando as porcentagens da população brasileira por cor/raça: 43,0% Branca, 47,0% Parda, 9,1% Preta e 0,8% outras categorias](ibge-pt.png "População por cor/raça no Brasil. Fonte: IBGE, PNAD Contínua, 2021")
 
 Outra constatação relevante para entender o contexto brasileiro e os resultados apresentados neste texto é a informação de que o Brasil é um país violento com pessoas LGBTQIA+ e principalmente pessoas trans.
 
 Os resultados do [estudo de Monitoramento de Assassinatos Trans (TMM) em 2022](https://transrespect.org/en/trans-murder-monitoring/tmm-resources/) podem ser vistos no mapa abaixo: o Brasil é o país com os maiores valores absolutos de assassinatos de pessoas transgêneras desde o início da série histórica obtida pelo TMM.
 
-![Mapa mundial com resultados do Monitoramento de Assassinatos Trans em 2022: o Brasil é o país com o maior número de assassinatos, seguido pelo México.](tmm2022.png) Fonte: [Trans Murder Monitoring (TMM) - 2022](https://transrespect.org/en/map/trans-murder-monitoring/?submap=tmm_2022)
+![Mapa mundial com resultados do Monitoramento de Assassinatos Trans em 2022: o Brasil é o país com o maior número de assassinatos, seguido pelo México](tmm2022.png "Resultados do Trans Murder Monitoring, 2022. Fonte: transrespect.org")
 
 O tópico de trabalho e renda também é particularmente delicado para a população trans. Segundo o mapeamento de pessoas trans no município de São Paulo realizado em 2020[^2], aproximadamente metade das pessoas entrevistadas saiu de casa entre 16 e 20 anos e destes, 30% por conta de brigas e 17% por conta de expulsão. Essa saída precoce impacta o acesso dessa população aos meios de gerar renda, considerando que 57% dos entrevistados não possui formação técnica ou específica e 42% não estava realizando nenhuma atividade remunerada no período da entrevista.
 
@@ -80,13 +79,13 @@ Abaixo, destacamos alguns pontos levantados ao analisar as respostas do question
 
 ### Diversidade de gênero
 
-![Gráfico de barras onde o eixo X mostra a porcentagem de respondentes da pesquisa, e o eixo Y representa o gênero. Cerca de 93% das pessoas respondentes disseram que são mulheres cis ou transgênero; cerca de 3% disseram que são homens cis ou transgênero; e cerca de 3% disseram que são pessoas não-binárias.](2020-gender-pt.png)
+![Gráfico de barras por gênero: cerca de 93% mulheres cis ou trans, 3% homens cis ou trans, 3% pessoas não-binárias](2020-gender-pt.png "Distribuição de gênero na comunidade R-Ladies São Paulo, pesquisa 2020")
 
 Em relação à diversidade de gênero, as respostas obtidas no questionário apontam a predominância de mulheres (cis ou trans). Um problema identificado posteriormente na estruturação do questionário é: as perguntas não permitiam identificar quantas pessoas trans faziam parte da comunidade. Portanto, não temos dados sobre quantas pessoas trans participavam da comunidade. Essa pergunta deverá ser incorporada em um questionário futuro.
 
 ### Diversidade racial
 
-![Gráfico de barras onde o eixo X mostra a porcentagem de respondentes da pesquisa, e o eixo Y representa a cor/raça. Cerca de 73% das pessoas respondentes disseram que são brancas; cerca de 14% disseram que são pardas; cerca de 9% disseram que são pretas; e cerca de 4% disseram que são amarelas.](2020-race-pt.png)
+![Gráfico de barras por cor/raça: cerca de 73% brancas, 14% pardas, 9% pretas, 4% amarelas](2020-race-pt.png "Composição racial da R-Ladies São Paulo, pesquisa 2020 — pessoas brancas são sobre-representadas em relação à população regional")
 
 Em relação à diversidade racial na comunidade em 2020, é importante destacar que 73,3% das pessoas se auto-declaravam brancas, apesar da população branca nessa região do Brasil representar cerca de metade da população. Ou seja, temos uma sub-representação de pessoas negras na comunidade R-Ladies São Paulo e necessitamos agir com seriedade para promover inclusão étnico-racial.
 
@@ -114,7 +113,7 @@ No questionário, deixamos uma pergunta em formato aberto para que as pessoas pu
 
 ### Inclusão de mães/pais/pessoas cuidadoras
 
-![Gráfico de barras onde o eixo X mostra a porcentagem de respondentes da pesquisa, e o eixo Y representa se a pessoa é mãe/pai/responsável. Cerca de 87% das pessoas respondentes disseram SIM e 13% disseram NÃO.](2020-kids-pt.png)
+![Gráfico de barras mostrando que 87% não são mães/pais/cuidadores e 13% são](2020-kids-pt.png "Mães, pais e pessoas cuidadoras na comunidade, pesquisa 2020")
 
 Em 2020, 13% das pessoas respondentes apontaram que possuem filhos. Para incluir mais pessoas com filhos, algumas sugestões oferecidas por meio do questionário foram:
 
@@ -126,7 +125,7 @@ Em 2020, 13% das pessoas respondentes apontaram que possuem filhos. Para incluir
 
 ### Inclusão de pessoas LGBTQIA+
 
-![Gráfico de barras onde o eixo X mostra a porcentagem de respondentes da pesquisa, e o eixo Y representa se a pessoa faz parte da comunidade LGBTQIA+. Cerca de 70% dos respondentes disseram NÃO e 30% disseram SIM.](2020-LGBTQIA-pt.png)
+![Gráfico de barras mostrando que 30% se identificam como LGBTQIA+ e 70% não](2020-LGBTQIA-pt.png "Representação LGBTQIA+ na comunidade, pesquisa 2020")
 
 Em 2020, 30% das pessoas respondentes apontaram que fazem parte da comunidade LGBTQIA+. Apesar de não existirem dados sobre a porcentagem da população brasileira que faz parte da comunidade LGBTQIA+, os resultados desse questionário apontam que a comunidade está no caminho certo em termos de inclusão da população LGBTQIA+.
 
@@ -136,7 +135,7 @@ Dentre as sugestões oferecidas pela comunidade no formulário, com o objetivo d
 
 O mapa a seguir apresenta a Região Metropolitana de São Paulo (o maior polígono), e o município de São Paulo (separado por regiões). A maioria das pessoas que participam do evento são das regiões Oeste e Sul da cidade. Para ampliar a participação de pessoas das regiões Leste e Norte, é interessante realizar eventos nessas regiões.
 
-![Mapa da cidade de São Paulo: a maior parte dos respondentes disse que é das regiões Sul e Oeste da cidade.](2020-map-pt.png)
+![Mapa da cidade de São Paulo dividido por região, com pontos concentrados nas áreas Sul e Oeste](2020-map-pt.png "Distribuição geográfica das respondentes em São Paulo — maioria das regiões Sul e Oeste")
 
 ## Ações realizadas para aumentar a diversidade
 
@@ -148,7 +147,7 @@ Para isso, algumas ações têm sido realizadas e serão brevemente comentadas a
 
 - [Evento: Oficina de Introdução ao R](https://rladies-sp.org/posts/2023-01-evento-oficina-intro-R/)
 
-![Foto de participantes em eventos recentes.](logo.png)
+![Participantes da R-Ladies São Paulo trabalhando juntas em laptops durante um evento comunitário](logo.png "Um evento recente da R-Ladies São Paulo com política de ações afirmativas")
 
 ### **Política de ações afirmativas**
 
@@ -170,7 +169,7 @@ Com o apoio financeiro de outras organizações, buscamos contratar uma professo
 
 As organizadoras da R-Ladies também levam brinquedos, desenhos, canetinhas, jogos e tatuagens temporárias para entreter e divertir as crianças.
 
-![Fotos do espaço Gugudadados em eventos recentes.](gugudadados.png)
+![Crianças desenhando e brincando em uma sala preparada com brinquedos, canetinhas e atividades](gugudadados.png "O espaço GuGuDaDados nos eventos da R-Ladies São Paulo")
 
 ### **Café colaborativo**
 
@@ -210,8 +209,9 @@ Baseado no questionário de 2020 e na experiência da comunidade ao longo do tem
 Existem várias pessoas envolvidas na organização atualmente na comunidade R-Ladies São Paulo. É importante citar que estão envolvidas pessoas pertencentes a diferentes grupos minoritários (como mulheres negras, mães, pessoas trans, pessoas não-binárias, pessoas LGBTQIA+, pessoas neurodivergentes e pessoas com mais de 40 anos), e isso é necessário para oferecer diferentes visões e experiências.
 Além disso, cabe destacar que a participação da organização é feita de forma voluntária.Portanto, aqui listamos e agradecemos as pessoas que atualmente participam das diversas etapas de organização da comunidade:
 
-![Fotos das pessoas do time de co-organização.](team-1.jpg)
-![Fotos das pessoas do time de co-organização.](team-2.jpg)
+![Fotos de seis co-organizadoras da R-Ladies São Paulo](team-1.jpg "Equipe de organização da R-Ladies São Paulo, parte 1")
+
+![Fotos de seis co-organizadoras da R-Ladies São Paulo](team-2.jpg "Equipe de organização da R-Ladies São Paulo, parte 2")
 
 - [Ana Carolina Moreno](https://www.linkedin.com/in/anacarolinamoreno/)
 

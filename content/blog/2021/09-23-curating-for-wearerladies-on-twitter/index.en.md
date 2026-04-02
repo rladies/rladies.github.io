@@ -27,10 +27,8 @@ aliases:
 
 <div class="figure">
 
-<img src="img/arno-smit-iI72r3gSwWY-unsplash.jpg" alt="Image of open door to porch with inviting sitting chair, surrounded by plants." width="1936" />
-<p class="caption">
-Figure 1: Photo by Arno Smit on Unsplash (https://unsplash.com/photos/iI72r3gSwWY)
-</p>
+<img src="img/arno-smit-iI72r3gSwWY-unsplash.jpg" alt="Open door leading to a porch with an inviting sitting chair, surrounded by plants" width="1936" />
+<figcaption>Photo by Arno Smit on Unsplash</figcaption>
 
 </div>
 
@@ -103,10 +101,8 @@ I developed two visual layouts using the Google slide <a href="https://docs.goog
 
 <div class="figure">
 
-<img src="img/compare_blogdown_distill.svg" alt="R-Ladies style includes purple accents and R logo; slide shows tabular layout comparing distill to blogdown on attributes of learning curve, dependencies, supporting tools, customization, and layout."  />
-<p class="caption">
-Figure 2: Comparison of blogdown vs distill styled using R-Ladies Google slide template.
-</p>
+<img src="img/compare_blogdown_distill.svg" alt="Slide with R-Ladies purple accents comparing distill and blogdown across learning curve, dependencies, supporting tools, customization, and layout" />
+<figcaption>Blogdown vs distill comparison styled with the R-Ladies Google slide template</figcaption>
 
 </div>
 
@@ -114,10 +110,8 @@ I also created five R-Ladies styled code gifs with xaringan and flipbookr - meth
 
 <div class="figure">
 
-<img src="img/demo-walrus-flipbook-quality.gif" alt="Code-gif uses R-Ladies purple for slide title and code highlighting; gif shows usage of walrus operator."  />
-<p class="caption">
-Figure 3: Example R-Ladies styled code gif.
-</p>
+<img src="img/demo-walrus-flipbook-quality.gif" alt="Animated code gif with R-Ladies purple styling demonstrating the walrus operator" />
+<figcaption>R-Ladies styled code gif built with xaringan and flipbookr</figcaption>
 
 </div>
 

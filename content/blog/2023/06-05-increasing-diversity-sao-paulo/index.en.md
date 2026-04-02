@@ -33,7 +33,7 @@ In this post, our goal is to discuss diversity issues in the R-Ladies São Paulo
 This post was written in April/2023. Since that time, **R-Ladies São Paulo received a grant from [R Consortium](https://www.r-consortium.org/all-projects/call-for-proposals#Rstats)**, which allowed the community to expand the actions to increase diversity.
 {{< /callout >}}
 
-![Picture of participants in a recent event.](logo2.jpeg)
+![Group of R-Ladies São Paulo participants smiling together at a community event](logo2.jpeg "R-Ladies São Paulo meetup participants")
 
 To do so, two points are important to be discussed: what is intersectionality, and the Brazilian context.
 
@@ -57,11 +57,11 @@ For historical reasons, Brazil is a country that presents different racial compo
 
 Despite representing about half of the region's population, the Black population has been marginalized. They are still underrepresented in spaces of power, such as politics, higher education, decision-making positions in companies, etc.
 
-![Infographic by the Brazilian Institute of Geography and Statistics, translated by the authors, showing the percentages of the population by color/race in Brazil.](ibge.png) Source: [IBGE - Continuous National Household Sample Survey, 2021](https://educa.ibge.gov.br/jovens/conheca-o-brasil/populacao/18319-cor-ou-raca.html).
+![Infographic showing the percentages of the Brazilian population by color/race: 43.0% White, 47.0% Brown, 9.1% Black, and 0.8% other categories](ibge.png "Population by color/race in Brazil. Source: IBGE, Continuous National Household Sample Survey, 2021")
 
 Another relevant issue to understand the Brazilian context and the results presented here is the high level of violence with LGBTQIA+ groups, especially transgender people. The results of the [Trans Murder Monitoring (TMM) study in 2022](https://transrespect.org/en/trans-murder-monitoring/tmm-resources/) can be seen in the map below: Brazil is the country with the highest absolute values of murders of transgender people since the beginning of the historical series obtained by the TMM.
 
-![World map with results from the Trans Murder Monitoring in 2022: Brazil is the country with the highest number of murders, followed by México.](tmm2022.png) Source: [Trans Murder Monitoring (TMM) - 2022](https://transrespect.org/en/map/trans-murder-monitoring/?submap=tmm_2022)
+![World map with results from the Trans Murder Monitoring in 2022: Brazil is the country with the highest number of murders, followed by México](tmm2022.png "Trans Murder Monitoring results, 2022. Source: transrespect.org")
 
 The topic of work and financial income is also particularly sensitive for the trans population. According to the mapping of transgender people, in the city of São Paulo[^2] in 2020, approximately half of the people interviewed left home between the ages of 16 and 20, and of these, 30% were due to fights, and 17% were expelled from home. This early exit of their homes impacts trans population access to labor and income: 57% of the interviewees do not have any technical or specific training and 42% were not carrying out any paid activity during the interview period.
 
@@ -77,13 +77,13 @@ Below, we will highlight some points raised by the questionnaire responses, addr
 
 ### Gender diversity
 
-![Bar chart where the X axis shows the percentage of respondents of the survey, and the Y axis represents the gender. Around 93% of the respondents said that they are a cis or transgender woman; around 3% said they are a cis or transgender men; and around 3% said that they are non-binary.](2020-gender.png)
+![Bar chart of survey respondents by gender: approximately 93% cis or trans women, 3% cis or trans men, 3% non-binary](2020-gender.png "Gender distribution among R-Ladies São Paulo community members, 2020 survey")
 
 Regarding gender diversity, we can see a scenario of the predominance of women (cis or trans) in the community. A problem identified later was that the questions as they were made did not allow us to identify how many trans people were part of the community. Therefore, we do not have disaggregated data on transgender people in the community, and this specific question should be incorporated into future surveys.
 
 ### Racial Diversity
 
-![Bar chart where the X axis shows the percentage of respondents of the survey, and the Y axis represents the color/race. Around 73% of the respondents said that they are White; around 14% said they are Brown (black with light skin); around 9% said that they are Black, and around 4% saind they are Yellow (asian descendants).](2020-race.png)
+![Bar chart of survey respondents by color/race: approximately 73% White, 14% Brown, 9% Black, 4% Yellow (Asian descendants)](2020-race.png "Racial composition of R-Ladies São Paulo, 2020 survey — White members are overrepresented relative to the regional population")
 
 Regarding racial diversity in the community in 2020, it is important to highlight that 73.3% of the respondents identified themselves as White, despite the fact that this group represents about half of the population in this region of Brazil. This means that there is an underrepresentation of Black people in the R-Ladies São Paulo community, and we need to take serious actions for ethnic-racial inclusion.
 
@@ -111,7 +111,7 @@ In the questionnaire, we left an open question so that people could make suggest
 
 ### Inclusion of mothers/fathers/caregivers
 
-![Bar chart where the X axis shows the percentage of respondents of the survey, and the Y axis represents if the person is a mother/father/caregiver. Around 87% of the respondents said YES and 13% said NO.](2020-kids.png)
+![Bar chart showing 87% of respondents are not parents/caregivers and 13% are](2020-kids.png "Parents and caregivers in the community, 2020 survey")
 
 In 2020, 13% of the respondents had children. Similar to what was done with race, an open question was left and some of the suggestions received for including more people with children were:
 
@@ -123,7 +123,7 @@ In 2020, 13% of the respondents had children. Similar to what was done with race
 
 ### Inclusion of LGBTQIA+
 
-![Bar chart where the X axis shows the percentage of respondents of the survey, and the Y axis represents if the person is part of the LGBTQIA+ community. Around 70% of the respondents said NO and 30% said YES.](2020-LGBTQIA.png)
+![Bar chart showing 30% of respondents identify as LGBTQIA+ and 70% do not](2020-LGBTQIA.png "LGBTQIA+ representation in the community, 2020 survey")
 
 In 2020, 30% of respondents were part of the LGBTQIA+ community. Although there are no data on the percentage of the Brazilian population that is part of the LGBTQIA+ community, the results of this survey indicate that the community is on the right path regarding LGBTQIA+ population inclusion.
 
@@ -133,7 +133,7 @@ Among the suggestions offered by the community to increase the participation of 
 
 The following map shows the Metropolitan Region of São Paulo (the largest polygon), and the City of São Paulo (divided by regions). Most of the people who participate in the event are from the West and South regions of the city. To increase the participation of people from the East and North regions of the city, it is interesting to hold events there.
 
-![Map of the City of Sao Paulo: most part of the respondents said they are from the South and West part of the city.](2020-map.png)
+![Map of the City of São Paulo divided by region, with dots concentrated in the South and West areas](2020-map.png "Geographic distribution of respondents across São Paulo — most are from the South and West")
 
 ## Actions taken to increase diversity
 
@@ -145,7 +145,7 @@ In order to achieve that, some actions have been taken and will be briefly comme
 
 - [Event: Introduction to R Workshop](https://rladies-sp.org/posts/2023-01-evento-oficina-intro-R/)
 
-![Picture of participants in a recent event.](logo.png)
+![R-Ladies São Paulo participants working together at laptops during a community event](logo.png "A recent R-Ladies São Paulo event with affirmative action quotas in place")
 
 ### **Affirmative actions**
 
@@ -165,7 +165,7 @@ GuGuDaDados (free translation GuguDadata) is a collaborative and experimental sp
 
 With financial support from other organizations, we hired a primary school teacher to promote recreational activities with the children in the GuGuDaDadosthroughout the activity. The organizers of R-Ladies also take toys, drawings, markers, games and temporary tattoos to entertain and amuse the children.
 
-![Pictures of the Gugudadados space in recent events.](gugudadados.png)
+![Children drawing and playing in a room set up with toys, markers, and activities](gugudadados.png "The GuGuDaDados childcare space at R-Ladies São Paulo events")
 
 ### **Potluck: Collaborative Coffee**
 
@@ -203,7 +203,9 @@ Based on the survey answers and the community experience over time, these are so
 
 There are several people currently involved in the organization of the R-Ladies São Paulo community. It is important to mention that the community organizers belong to different minority groups (such as Black women, mothers, trans people, non-binary people, LGBTQIA+, neurodivergent people, and people over 40 years), and this is important to offer different perspectives and experiences. Furthermore, it is important to highlight that the participation in the organization is voluntary. Therefore, we list and thank the people who are involved in the various stages of organizing the community:
 
-![Pictures of the members of the co-organizing team.](team-1.jpg) ![Pictures of the members of the co-organizing team.](team-2.jpg)
+![Portrait photos of six R-Ladies São Paulo co-organizers](team-1.jpg "The R-Ladies São Paulo organizing team, part 1")
+
+![Portrait photos of six R-Ladies São Paulo co-organizers](team-2.jpg "The R-Ladies São Paulo organizing team, part 2")
 
 - [Ana Carolina Moreno](https://www.linkedin.com/in/anacarolinamoreno/)
 

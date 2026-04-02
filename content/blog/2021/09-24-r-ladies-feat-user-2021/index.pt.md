@@ -36,7 +36,7 @@ R-Ladies+ from Vitória, East Lansing, Den Bosch, Cuernavaca, Guayaquil, Bangalo
 
 ## Where?
 
-![World map indicating the countries (in purple) where each co-host chapter are located: East Lansing (USA), Cuernavaca (MEX), Guayaquil (ECU), Vitória (BRA), Santa Rosa (ARG), Den Bosch (NLD), Tunis (TUN), Bangalore (IND).](chapters_map.png)
+![World map with eight countries highlighted in purple: USA, Mexico, Ecuador, Brazil, Argentina, Netherlands, Tunisia, and India](chapters_map.png "The eight co-hosting chapters spanned five continents")
 
 ## What?
 

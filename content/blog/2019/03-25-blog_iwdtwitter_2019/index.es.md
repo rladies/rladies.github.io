@@ -72,7 +72,7 @@ El enlace más importante fue el [Blog de R-Ladies que explica la Acción de Twi
 La lista de los capítulos actuales contenía la información del país, ciudad, nombre, organizadores, estado (activo o no) y las formas de contacto (correo, sitio web, meetup y redes sociales) de todos los capítulos de R-ladies.
 Esta lista se convirtió en nuestra fuente de datos primarios. También usamos una conjunto de datos de ciudades geolocalizadas para hacer los mapas. Nuestro objetivo era lograr una imágen con los siguientes componentes:
 
-![Ejemplo de imagen de tweet para el capítulo R-Ladies Santa Rosa con información de contacto, organizadoras y mapa mundial](Chapter_SantaRosa.png)
+![Imagen de tweet del capítulo R-Ladies Santa Rosa mostrando información de contacto, organizadoras y mapa mundial con la ubicación resaltada en púrpura](Chapter_SantaRosa.png "Ejemplo de tarjeta de tweet generada para un capítulo existente")
 
 ```r
 library(readxl)
@@ -311,7 +311,7 @@ for (i in 1:nrow(CCRL)) { #Para todos los capítulos
 
 For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:
 
-![Ejemplo de imagen de tweet para un nuevo capítulo R-Ladies en formación con mapa mundial y código QR](Chapter_Concepción.png)
+![Imagen de tweet para un nuevo capítulo R-Ladies mostrando nombres de organizadoras, mapa mundial con la ubicación resaltada y código QR](Chapter_Concepción.png "Ejemplo de tarjeta de tweet para un capítulo en formación")
 
 ```r
 #Capítulos sin datos

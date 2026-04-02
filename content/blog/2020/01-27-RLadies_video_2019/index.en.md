@@ -120,7 +120,7 @@ _"R-Ladies 2019 in numbers: More than 60,000 members from 50 countries around th
 
 To illustrate this part of the message, the world map with the location of all the chapters is a powerful image, one we have already used in other campaigns. We really liked the [map](https://github.com/rladiescolombo/R-Ladies_world_map) that [R-Ladies Colombo](https://rladiescolombo.netlify.com/) made to present their chapter, so we took their base map to assemble the map on the video. We updated the information to 12/27/2019 and made sure that all the chapters had Latitude and Longitude to be mapped.
 
-![World map showing R-Ladies chapter locations marked with purple dots](MapaVideo.png)
+![World map with all R-Ladies chapter locations marked as purple dots](MapaVideo.png "Chapter locations as of December 2019, used in scene one of the video")
 
 This is the complete code to do it:
 
@@ -200,7 +200,7 @@ rladies %>%
 
 The image selected for this part of the video was taken in LatinR 2019. We were preparing for the R-Ladies group photo and, without realizing it, we formed a heart!! (which was captured by [TuQmano´s](https://twitter.com/TuQmano) eye and camera). The image represents the growth of R-Ladies, also beyond North-America and Europe, and the code that moves us to work as a team for the well-being of R-Ladies and the community in general.
 
-![R-Ladies group at LatinR 2019 forming a heart shape](corazon.png)
+![R-Ladies members at LatinR 2019 standing together in a formation that accidentally creates a heart shape](corazon.png "The spontaneous heart at LatinR 2019, used in scene two of the video")
 
 The final text of the scene was:
 
@@ -214,7 +214,7 @@ The text for this scene is:
 
 _Happy New Year to all R-Ladies and allies! More information at rladies dot org_
 
-![R-Ladies logo with website address for the video closing scene](placafinal.png)
+![R-Ladies logo with the text rladies.org on a purple background](placafinal.png "Closing card from the year-end video")
 
 ### Language
 
