@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Mon, 06 Apr 2026 01:14:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Mon, 06 Apr 2026 13:11:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 9 going</p>
@@ -11,7 +11,7 @@
         <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Data Challenge Solution Showcase - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489859/</link><pubDate>Mon, 23 Feb 2026 08:10:12 -0500</pubDate><guid>313489859</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Bayview Yards</p>
-        <p><strong>Attendees:</strong> 10 going</p>
+        <p><strong>Attendees:</strong> 11 going</p>
         <p>**IWD Data Challenge 2026**
 For this year&#39;s data challenge, we asked you to explore and analyze data from your communities. Whether that meant digging into datasets about Ottawa, Gatineau, the broader National Capital Region, or another place that feels like home, the goal was to uncover community-focused insights. If you&#39;d like more background on the challenge itself, you can find the full details in the [original event listing](https://www.meetup.com/rladies-ottawa/events/313489942/?utm_medium=referral&amp;utm_campaign=share-btn_savedevents_share_modal&amp;utm_source=link&amp;utm_version=v2&amp;member_id=264488364) or on [our webpage](https://rladies-ottawa.github.io/events/2026/iwd.html). Note that the submission deadline for this year&#39;s data challenge has been extended to April 17th, 2026.
 
@@ -94,7 +94,7 @@ Unisciti a noi per un’introduzione pratica e accessibile alle radici statistic
         <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Working Smarter in R: Tips, Tricks &amp; Real-World Lessons - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313908392/</link><pubDate>Mon, 23 Mar 2026 07:31:10 -0400</pubDate><guid>313908392</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
         <p><strong>When:</strong> Wednesday, April 22, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 85 going</p>
+        <p><strong>Attendees:</strong> 87 going</p>
         <p>Join us at R-Ladies Remote for an engaging panel discussion on how to *work smarter in R*.
 
 Whether you&#39;re an early-career user or an experienced practitioner, this session brings together a diverse group of R users to share practical insights from their real-world experience. We’ll explore workflows, tools, lessons learned, and small changes that can make a big difference in your day-to-day work.
@@ -145,4 +145,20 @@ Please RSVP so we know how many seats to save!</p>
         <p><strong>Attendees:</strong> 33 going</p>
         <p>This will be a virtual event.
 Description is TBD. Topic is making maps in R.</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Di Cook Award Seminar Watch Party - R-Ladies+ Melbourne &amp; SSA-VIC - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/313938056/</link><pubDate>Wed, 25 Mar 2026 00:16:30 -0400</pubDate><guid>313938056</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
+        <p><strong>When:</strong> Wednesday, April 8, 2026 at 8:30 AM UTC</p>
+        <p><strong>Where:</strong> Monash City Campus</p>
+        <p><strong>Attendees:</strong> 6 going</p>
+        <p>We have joined forces with the Statistical Society of Australia to broadcast their &#34;Di Cook Award Seminar&#34;.
+
+**When:** Wednesday 8th of April, 6:30-8:15pm
+**Where:** 750 Collins St, Room 853, Level 8 (Studio Room)
+**What:** Free food &amp; drinks while watching the Di Cook Award Seminar!
+
+The [Statistical Computing and Visualisation](https://www.statsoc.org.au/Statistical-Computing-and-Visualisation-Section) section of the Statistical Society of Australia proudly presents the Di Cook Award webinar, promoting open-source statistical software development. This event will showcase outstanding work submitted to the [2025 Di Cook Award](https://statsocaus.github.io/dicook-award/).
+The award winner will present their winning project in a 30-minute talk, highlighting the motivation, methods, and key insights behind their work. Two highly commended applicants will also share their submissions, each delivering a
+15-minute presentation that outlines the ideas, approaches, and contributions of their projects.
+Together, these talks will provide an engaging overview of innovative software development represented in this year’s award submissions, offering attendees the opportunity to learn from and discuss exemplary work in the field.
+
+For more information about the award and the event, see the [SSA website](https://www.statsoc.org.au/event-6618285).</p>
+        <p><a href="https://www.meetup.com/rladies-melbourne/events/313938056/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Melbourne)</author><category>R-Ladies Melbourne</category></item></channel></rss>
