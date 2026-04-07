@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 07 Apr 2026 01:13:09 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 07 Apr 2026 13:12:26 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 9 going</p>
@@ -94,7 +94,7 @@ Unisciti a noi per un’introduzione pratica e accessibile alle radici statistic
         <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Working Smarter in R: Tips, Tricks &amp; Real-World Lessons - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313908392/</link><pubDate>Mon, 23 Mar 2026 07:31:10 -0400</pubDate><guid>313908392</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
         <p><strong>When:</strong> Wednesday, April 22, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 87 going</p>
+        <p><strong>Attendees:</strong> 88 going</p>
         <p>Join us at R-Ladies Remote for an engaging panel discussion on how to *work smarter in R*.
 
 Whether you&#39;re an early-career user or an experienced practitioner, this session brings together a diverse group of R users to share practical insights from their real-world experience. We’ll explore workflows, tools, lessons learned, and small changes that can make a big difference in your day-to-day work.
@@ -142,14 +142,14 @@ Please RSVP so we know how many seats to save!</p>
         <p><a href="https://www.meetup.com/rladies-fort-collins/events/314111820/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Fort Collins)</author><category>R Ladies Fort Collins</category></item><item><title>Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><pubDate>Sun, 25 Jan 2026 18:01:22 -0500</pubDate><guid>313055670</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 36 going</p>
+        <p><strong>Attendees:</strong> 39 going</p>
         <p>This workshop will teach you how to create maps in R using real-world geospatial data. We&#39;ll start with the fundamentals, helping users understanding the simple features data model and the {sf} package. Next, we&#39;ll move on to practical skills like accessing geospatial data through R packages like {rnaturalearth}, {tigris}, {tidycensus}, importing raw data files, and geocoding addresses with {tidygeocoder}. Finally, we&#39;ll put those skills to use by making choropleth maps with {ggplot2}.
 
 This is a virtual event.</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/313055670/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Di Cook Award Seminar Watch Party - R-Ladies+ Melbourne &amp; SSA-VIC - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/313938056/</link><pubDate>Wed, 25 Mar 2026 00:16:30 -0400</pubDate><guid>313938056</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
         <p><strong>When:</strong> Wednesday, April 8, 2026 at 8:30 AM UTC</p>
         <p><strong>Where:</strong> Monash City Campus</p>
-        <p><strong>Attendees:</strong> 6 going</p>
+        <p><strong>Attendees:</strong> 10 going</p>
         <p>We have joined forces with the Statistical Society of Australia to broadcast their &#34;Di Cook Award Seminar&#34;.
 
 **When:** Wednesday 8th of April, 6:30-8:15pm
