@@ -26,7 +26,7 @@ author:
 editorial:
   - name: Cecilia Baldoni
     url: https://cecibaldoni.github.io/
-date: "2026-04-01"
+date: "2026-04-08"
 image:
   path: blog_fig_who_are_we.png
   text: Picture with R-Ladies Santa Barbara members
