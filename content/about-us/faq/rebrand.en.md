@@ -46,7 +46,7 @@ items:
 
   - q: "What about my chapter's social media handles?"
     a: |
-      Update your **display name** to include the `+`. Changing the actual handle (e.g. @RLadiesBerlin) is optional — we know platforms make this difficult and you may lose followers. If you can change it easily, great; if not, the display name is what matters most.
+      Update your **display name** to include the `+`. Changing the actual handle (e.g. @RLadiesBerlin) is optional. We are aware the many platforms don’t support characters like ‘+’ in usernames, and changing it can cause past mentions or links to your account to stop working. If you can change it easily, great; if not, the display name is what matters most.
 
   - q: "What if adopting the + is not safe for my chapter?"
     a: |
