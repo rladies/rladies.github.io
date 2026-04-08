@@ -80,7 +80,6 @@ We've provided a full branding package — logos, templates, social media assets
 
 **Safety comes first.**
 We recognize that chapters in countries where LGBTQ+ rights are criminalized may not be able to fully adopt the new branding for safety reasons.
-That's okay.
 Local organizers know their context best, and we trust them to make the right call for their community. 
 Those chapters are encouraged to reach out to the Leadership Team to discuss how to move forward.
 
