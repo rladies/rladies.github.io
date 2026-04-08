@@ -11,7 +11,7 @@ slug: "rebrand-launch"
 
 ## Motivation
 
-RLadies+ has always existed to support minority genders in the R community — cis and trans women, trans men, non-binary, genderqueer, and agender folks, and more.
+R-Ladies has always existed to support minority genders in the R community — cis and trans women, trans men, non-binary, genderqueer, and agender folks, and more.
 That's been our mission since the beginning.
 But the name "R-Ladies" didn't say that clearly enough.
 
