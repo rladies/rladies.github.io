@@ -48,7 +48,7 @@ items:
     a: |
       Update your **display name** to include the `+`. Changing the actual handle (e.g. @RLadiesBerlin) is optional. We are aware the many platforms don’t support characters like ‘+’ in usernames, and changing it can cause past mentions or links to your account to stop working. If you can change it easily, great; if not, the display name is what matters most.
 
-  - q: "What if adopting the + is not safe for my chapter?"
+  - q: "What if adopting the new branding is not safe for my chapter?"
     a: |
       Safety comes first, always. Chapters in countries where LGBTQ+ rights are criminalized or under threat are **not expected** to adopt the new branding if doing so would put community members at risk. Local organizers know their context best, and the Global Leadership Team fully supports that judgment. You can continue using the previous branding.
 
