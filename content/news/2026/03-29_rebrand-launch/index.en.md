@@ -19,13 +19,13 @@ We heard from community members that the name made them feel unseen.
 People the organization was explicitly built to serve didn't feel like the name included them.
 And when your branding sends a different signal than your mission, that's a problem worth fixing.
 
+In March of 2025, we [announced the rebranding from R-Ladies to RLadies+](https://rladies.org/about-us/news/2025/announcement/). 
 The + in RLadies+ makes the implicit explicit.
 It says: you belong here.
 Not as an afterthought, not as a footnote in a Code of Conduct — right there in the name.
 
 We also want to be honest about the broader context.
 In a political climate where DEI initiatives and trans rights are under active attack, we believe it's more important than ever — not less — to be clear about who we are and who we serve.
-Our mission is bigger than any political moment, and our name should reflect that.
 
 ## Process: how the community shaped this decision
 
