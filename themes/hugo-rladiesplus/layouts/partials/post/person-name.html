@@ -1,0 +1,26 @@
+{{- $person := .person -}}
+{{- $contribMap := .contributions -}}
+{{- $superscripts := dict
+  "a" "ᵃ" "b" "ᵇ" "c" "ᶜ" "d" "ᵈ" "e" "ᵉ" "f" "ᶠ" "g" "ᵍ"
+  "h" "ʰ" "i" "ⁱ" "j" "ʲ" "k" "ᵏ" "l" "ˡ" "m" "ᵐ" "n" "ⁿ"
+  "o" "ᵒ" "p" "ᵖ" "r" "ʳ" "s" "ˢ" "t" "ᵗ" "u" "ᵘ"
+  "v" "ᵛ" "w" "ʷ" "x" "ˣ" "y" "ʸ" "z" "ᶻ" -}}
+
+{{- if reflect.IsMap $person -}}
+  {{- if $person.directory_id -}}
+    <a href="{{ "/directory/" | relLangURL }}{{ $person.directory_id }}/" class="text-primary no-underline hover:underline">{{ $person.name }}</a>
+  {{- else if $person.url -}}
+    <a href="{{ $person.url }}" class="text-primary no-underline hover:underline" rel="noopener noreferrer" target="_blank">{{ $person.name }}</a>
+  {{- else -}}
+    {{- $person.name -}}
+  {{- end -}}
+  {{- if and $person.contributions $contribMap -}}
+    <span class="contribution-superscripts" aria-label="contributions: {{ delimit $person.contributions ", " }}">
+      {{- range $person.contributions -}}
+        {{- with index $superscripts (printf "%v" .) -}}{{ . }}{{- end -}}
+      {{- end -}}
+    </span>
+  {{- end -}}
+{{- else -}}
+  {{- $person -}}
+{{- end -}}

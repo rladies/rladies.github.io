@@ -50,7 +50,7 @@ Avec plus de confiance, je suis retournée à l’organisation de R-Ladies Coton
 Notre premier meetup (rencontre) officiel a eu lieu en Juillet 2019 ! Les diapositives étaient attrayantes et détaillées (pleines d’émojis aussi) et la pâtisserie partagée était délicieuse. En gros, j’ai présenté R-Ladies (mission, objectifs, système, ressources…) à nos membres. Nous avons eu une bonne discussion spécifiquement sur la vie de notre groupe local. Voir l’enthousiasme et la motivation des membres présents à planifier les prochains rendez-vous m’a fait pleurer. (J’ai célébré avec mon mentor avec beaucoup d’émojis heureux et festifs). Quelques photos peuvent être trouvées [ici](https://twitter.com/RLadiesCtn/status/1155935587188166657) !
 
 <figure>
-<img src="rladies_cotonou_fig02.jpg" width="600" alt="Les membres joyeux de R-Ladies Cotonou partageant des pâtisseries. Cette photo a été prise lors du premier meetup officiel où les membres ont appris tout ce qui est utile sur R-Ladies et surtout sur R-Ladies Cotonou." /><figcaption aria-hidden="true"><em>Les membres joyeux de R-Ladies Cotonou partageant des pâtisseries. Cette photo a été prise lors du premier meetup officiel où les membres ont appris tout ce qui est utile sur R-Ladies et surtout sur R-Ladies Cotonou.</em></figcaption>
+<img src="rladies_cotonou_fig02.jpg" width="600" alt="Membres de R-Ladies Cotonou rassemblées autour d'une table avec des pâtisseries" /><figcaption>Le premier meetup officiel — les membres ont découvert R-Ladies et le chapitre Cotonou autour de pâtisseries</figcaption>
 </figure>
 
 Le programme de mentorat de R-Ladies a été gratifiant pour mon groupe. Avec l’aide de mon mentor, j’ai pu trouver des solutions à long terme au problème d’Internet. Nous utilisons des e-mails et WhatsApp pour partager les documents et outils issus de nos rencontres et entrer en contact avec nos membres. Ces méthodes sont moins chères et les membres sont à l’aise avec ces moyens de communication. Cependant, nous encourageons toujours l’utilisation de Twitter et de Meetup.
@@ -64,7 +64,7 @@ Avant la deuxième rencontre, R-Ladies Cotonou a reçu du financement de niveau 
 La deuxième rencontre s’est bien déroulée [(quelques photos ici)](https://twitter.com/RLadiesCtn/status/1227670069305651201). Pour encourager et motiver les potentielles présentatrices, j’ai demandé à la fin du tutoriel à la présentatrice, [Ruth Ouangbey](https://twitter.com/ruthouangbey2), de partager son expérience depuis le choix de son sujet jusqu’à la présentation ! Elle a partagé cela avec joie et des volontaires pour la prochaine rencontre se sont immédiatement manifestées. Pour agrémenter un peu, nous avons ajouté un événement supplémentaire surprise qui était un court entretien par [Shériftah Mama Chabi](https://twitter.com/masherycha1) sur le thème _Ladies in Science (Les femmes en Science)_. Elle a présenté la situation des femmes dans les sciences, discuté de l’égalité des genres et des défis rencontrés par les femmes scientifiques, et a terminé sa présentation en donnant un répertoire de liens utiles vers des opportunités et du financement.
 
 <figure>
-<img src="rladies_cotonou_fig03.jpg" width="500" alt="La deuxième conférencière, Ruth Ouangbey, nous présente une revue des méthodes les plus pratiques pour l’importation et l’exportation des données. Les membres suivent et prennent des notes." /><figcaption aria-hidden="true">La deuxième conférencière, Ruth Ouangbey, nous présente une revue des méthodes les plus pratiques pour l’importation et l’exportation des données. Les membres suivent et prennent des notes.</figcaption>
+<img src="rladies_cotonou_fig03.jpg" width="500" alt="Ruth Ouangbey présentant devant la salle tandis que les membres suivent et prennent des notes" /><figcaption>Ruth Ouangbey lors du deuxième meetup sur l’importation et l’exportation de données</figcaption>
 </figure>
 
 J’ai beaucoup appris de ce programme de mentorat et je crois que je partage les idées en donnant l’exemple dans le groupe. Je pense aussi que même si je devais me retirer de mon rôle d’organisatrice, le groupe serait en bonne santé et entre de bonnes mains. Je suis profondément et sincèrement reconnaissante envers Florencia, mon mentor qui s’est vraiment investie dans ce mentorat de par sa disponibilité tout au long du programme et de par son écoute très attentive à chacune de mes préoccupations. Merci à l’équipe globale de R-Ladies d’avoir créé ce programme et de m’avoir proposé d’en faire partie ! 💜
@@ -73,6 +73,8 @@ J’ai beaucoup appris de ce programme de mentorat et je crois que je partage le
 
 Aujourd’hui, R-Ladies Cotonou est en bonne santé, surtout grâce au programme de mentorat ! Je le recommande à tout groupe local de R-Ladies qui a besoin d’aide pour mettre en place et organiser des rencontres, recruter des membres ou tout autre élément nécessaire à la vie du groupe.
 
-> **_Ne vous inquiétez pas, il y a toujours un mentor de R-Ladies pour vous accompagner !_**
+{{< callout type="tip" >}}
+_Ne vous inquiétez pas, il y a toujours un mentor de R-Ladies pour vous accompagner !_
+{{< /callout >}}
 
 _Auteur: [Nadejda Sero](https://twitter.com/sbnadejda), organisatrice de [R-Ladies Cotonou](https://twitter.com/RLadiesCtn)._

@@ -112,7 +112,7 @@ _"R-Ladies 2019 en números: Más de 60.000 integrantes de 50 países de todo el
 
 Para ilustrar esta parte del mensaje, el mapa del mundo con la localización de todos los capítulos es una imagen poderosa y que ya hemos utilizado en otras campañas. Me gustó mucho el [mapa](https://github.com/rladiescolombo/R-Ladies_world_map) que hicieron las [R-Ladies Colombo](https://rladiescolombo.netlify.com/) para presentar su capítulo asi que tomé de base su mapa para armar el del video, actualizando la información al 27/12/2019 y asegurandome que todos los capítulos cuenten con Latitud y Longitud para que sean mapeados.
 
-![Mapa mundial mostrando la ubicación de los capítulos de R-Ladies con puntos púrpura](MapaVideo.png)
+![Mapa mundial mostrando la ubicación de los capítulos de R-Ladies con puntos púrpura](MapaVideo.png "Ubicación de los capítulos a diciembre de 2019, usada en la primera escena del video")
 
 Este es el código completo para hacerlo:
 
@@ -192,7 +192,7 @@ rladies %>%
 
 La imágen seleccionada para acompañar esta parte fue tomada en LatinR 2019: ¡¡ estabamos preparandonos para la foto grupal de R-Ladies y sin darnos cuenta formamos un corazón !! (que fue capturado por el ojo y la cámara de [TuQmano](https://twitter.com/TuQmano)). La imagen representa el crecimiento de R-Ladies en otras regiones del mundo más allá del norte y el código que nos mueve a trabajar en equipo por el bienestar de R-Ladies y de la comunidad en general.
 
-![Grupo de R-Ladies en LatinR 2019 formando un corazón](corazon.png)
+![Grupo de R-Ladies en LatinR 2019 formando un corazón](corazon.png "El corazón espontáneo en LatinR 2019, usado en la segunda escena del video")
 
 El texto de la escena quedó armado de la siguiente manera:
 
@@ -206,7 +206,7 @@ El texto que acompaña la escena quedó así:
 
 _¡Feliz año nuevo a todas las R-Ladies y aliados! Más información en rladies punto org_
 
-![Logo de R-Ladies con dirección web para la escena final del video](placafinal.png)
+![Logo de R-Ladies con dirección web para la escena final del video](placafinal.png "Tarjeta de cierre del video de fin de año")
 
 ### Idioma
 

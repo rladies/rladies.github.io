@@ -65,7 +65,7 @@ Text Processing (including non-English charectors) is explained [here](https://w
 
 The Current Chapter list contains the information of the country, city, name, organisers, status and all forms of contact (mail, web, meetup, social networks) of all chapters of R-Ladies. It became our primary data source. We also used a list of cities geolocated for made the maps. Our goal was to achieve an image with the following components:
 
-![Example tweet image for an existing R-Ladies chapter showing contact info, organizers, and world map location](ExistingChapters.jpg)
+![Tweet image for R-Ladies Santa Rosa showing chapter contact info, organizer names, and a world map with the chapter location highlighted in purple](ExistingChapters.jpg "Example tweet card generated for an existing chapter")
 
 ```r
 library(readxl)
@@ -295,7 +295,7 @@ for (i in 1:nrow(CCRL)) { #Line for all the chapters
 
 For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:
 
-![Example tweet image for a new R-Ladies chapter in formation with world map and QR code](NewChapterPrototype.png)
+![Tweet image for a new R-Ladies chapter showing organizer names, a world map with the location highlighted, and a QR code linking to rladies.org](NewChapterPrototype.png "Example tweet card for a chapter still in formation")
 
 ```r
 #Chapters without data

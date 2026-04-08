@@ -27,7 +27,7 @@ Today, we want to share an important update concerning our communication strateg
 
 As R-Ladies' commitment to building an inclusive and friendly community remains unwavering, we believe it is time to embrace the change that serves this commitment and enhances our community's experience. Following many of our community members, we are excited to share that we have joined Mastodon on the [Hachyderm server](https://hachyderm.io/about), a platform that we believe aligns more closely with our values. Mastodon provides us with an opportunity to create a space focused on meaningful interactions, inclusivity, and community building. We hope to make Mastodon an integral part of our communication strategy moving forward. If you are interested in learning more about how to interact on Mastodon, see this [guide to Mastodon](https://github.com/joyeusenoelle/GuideToMastodon).
 
-![Mastodon elephant in R-Ladies purple](elephant_ui_working.png)
+![Mastodon elephant mascot recolored in R-Ladies purple](elephant_ui_working.png "R-Ladies Global is now on Mastodon's Hachyderm server")
 
 # Some considerations
 

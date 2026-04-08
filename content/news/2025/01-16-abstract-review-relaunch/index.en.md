@@ -23,8 +23,7 @@ That's why we're thrilled to announce the **relaunch of the R-Ladies Abstract Re
 
 Our system connects aspiring speakers with reviewers who provide feedback and guidance, helping them refine their abstracts and scholarship applications.
 
-![Person stood with micrphone in front of screen showing words "let's talk"](img/letstalk.jpg)
-**Caption:** Photo from Wikimedia Technical Conference 2019 by [Darenwelsh](#) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Taken on 12 November 2019.
+![Person standing with a microphone in front of a screen showing the words "let's talk"](img/letstalk.jpg "Photo from Wikimedia Technical Conference 2019 by Darenwelsh, CC BY-SA 4.0")
 
 ## What Does the Abstract Review System Do?
 

@@ -87,7 +87,7 @@ all_events %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-![Bar chart showing the number of parallel R-Ladies meetup events per month](index.en_files/figure-html/parallel_per_month_vis-1.png)<!-- -->
+![Bar chart showing the count of simultaneous R-Ladies meetup events per month from 2017 to early 2020, with peaks around mid-2019](index.en_files/figure-html/parallel_per_month_vis-1.png "Parallel R-Ladies events per month — scheduling conflicts were rare enough to start with a single virtual room")
 
 So parallel R-Ladies events are not uncommon but now the question is: how many events are happening at the same time?
 

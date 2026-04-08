@@ -27,4 +27,4 @@ R-Ladies Global was born at useR 2016 and the grant was susequently awarded in S
 
 Thanks to our amazing organisers and R-Ladies who helped build and maintain our official website ([rladies.org](/)), engage with the larger community via social media - ([\@RLadiesGlobal](https://twitter.com/rladiesglobal?lang=en)) and help each-other every day in millions of different ways.
 
-![R-Ladies in 2017 useR](R-Ladies.png)
+![Large group of R-Ladies members posing together at the useR! 2017 conference](R-Ladies.png "R-Ladies at useR! 2017 — from four chapters in 2016 to a global network")

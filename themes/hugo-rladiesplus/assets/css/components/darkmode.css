@@ -61,6 +61,15 @@
     background: color-mix(in srgb, var(--color-primary) 8%, var(--color-raised));
   }
 
+  /* ── Callouts ── */
+  .dark .callout {
+    background: color-mix(in srgb, var(--callout-color, var(--color-primary)) 10%, var(--color-raised));
+  }
+
+  .dark .callout-danger {
+    --callout-danger-color: #f87171;
+  }
+
   /* ── Tables ── */
   .dark .table-hover tbody tr:hover,
   .dark .entry-content tbody tr:hover {

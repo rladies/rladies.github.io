@@ -168,4 +168,15 @@
   .entry-content tbody tr:hover {
     background: color-mix(in srgb, var(--color-primary) 8%, transparent);
   }
+
+  .contributions-legend {
+    @apply flex flex-wrap items-center gap-y-1 text-xs text-muted mt-2 pb-3;
+    line-height: 1.4;
+  }
+
+  .contribution-superscripts {
+    @apply text-primary font-semibold;
+    font-size: 0.95em;
+    letter-spacing: 0.04em;
+  }
 }

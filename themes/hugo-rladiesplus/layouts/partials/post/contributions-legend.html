@@ -1,0 +1,19 @@
+{{- $contribMap := .contributions -}}
+{{- $superscripts := dict
+  "a" "ᵃ" "b" "ᵇ" "c" "ᶜ" "d" "ᵈ" "e" "ᵉ" "f" "ᶠ" "g" "ᵍ"
+  "h" "ʰ" "i" "ⁱ" "j" "ʲ" "k" "ᵏ" "l" "ˡ" "m" "ᵐ" "n" "ⁿ"
+  "o" "ᵒ" "p" "ᵖ" "r" "ʳ" "s" "ˢ" "t" "ᵗ" "u" "ᵘ"
+  "v" "ᵛ" "w" "ʷ" "x" "ˣ" "y" "ʸ" "z" "ᶻ" -}}
+{{- if $contribMap -}}
+  {{- $keys := slice -}}
+  {{- range $k, $v := $contribMap -}}
+    {{- $keys = $keys | append $k -}}
+  {{- end -}}
+  {{- $keys = sort $keys -}}
+<div class="contributions-legend" role="note" aria-label="Contribution legend">
+  {{- range $i, $k := $keys -}}
+    {{- if $i }} <span class="mx-1.5 text-muted/40">·</span> {{ end -}}
+    <span><span class="contribution-superscripts">{{ index $superscripts $k }}</span>&nbsp;{{ index $contribMap $k }}</span>
+  {{- end -}}
+</div>
+{{- end -}}
