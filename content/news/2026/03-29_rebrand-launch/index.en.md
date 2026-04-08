@@ -79,7 +79,7 @@ Chapter organizers are encouraged to adopt the new name and visual identity when
 We've provided a full branding package — logos, templates, social media assets — so the transition doesn't mean extra design work for volunteers.
 
 **Safety comes first.**
-We recognize that chapters in countries where LGBTQ+ rights are criminalized may not be able to safely adopt the new branding.
+We recognize that chapters in countries where LGBTQ+ rights are criminalized may not be able to fully adopt the new branding for safety reasons.
 That's okay.
 Local organizers know their context best, and we trust them to make the right call for their community.
 
