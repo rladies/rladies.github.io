@@ -7,7 +7,7 @@ weight: 6
 items:
   - q: "Why did R-Ladies rebrand to RLadies+?"
     a: |
-      Our community told us that the name "R-Ladies" didn't reflect everyone we serve. RLadies+ has always supported all minority genders — cis and trans women, trans men, non-binary, genderqueer, and agender individuals — but the old name made some of those people feel unseen. The `+` makes the implicit explicit. Read the full story in our [rebrand announcement](/news/rebrand-launch/).
+      Our community told us that the name "R-Ladies" didn't reflect everyone we serve. RLadies+ has always supported all underrepresented genders — cis and trans women, trans men, non-binary, genderqueer, and agender individuals — but the old name made some of those people feel unseen. The `+` makes the implicit explicit. Read the full story in our [rebrand announcement](/news/rebrand-launch/).
 
   - q: "How do I write the name?"
     a: |
