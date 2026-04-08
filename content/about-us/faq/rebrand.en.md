@@ -58,7 +58,7 @@ items:
 
   - q: "Does the rebrand affect donations or nonprofit status?"
     a: |
-      No. RLadies+ is a 501(c)(3) nonprofit registered as R-Ladies Global. The legal nonprofit name remains R-Ladies Global for now — we are exploring what it takes to update it. This does not affect your chapter, donations, or tax-deductible status.
+      No. RLadies+ is a 501(c)(3) nonprofit registered as R-Ladies. The legal nonprofit name remains R-Ladies for now — we are exploring what it takes to update it. This does not affect your chapter, donations, or tax-deductible status.
 
   - q: "Where can I get the new logos and templates?"
     a: |
