@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 09 Apr 2026 01:13:27 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 09 Apr 2026 13:13:25 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 10 going</p>
@@ -92,9 +92,9 @@ Non è richiesta esperienza precedente in NLP. Una conoscenza di base di R può 
 
 Unisciti a noi per un’introduzione pratica e accessibile alle radici statistiche dell’AI e a come queste continuano a influenzare gli strumenti che utilizziamo oggi.</p>
         <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Working Smarter in R: Tips, Tricks &amp; Real-World Lessons - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313908392/</link><pubDate>Mon, 23 Mar 2026 07:31:10 -0400</pubDate><guid>313908392</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
-        <p><strong>When:</strong> Wednesday, April 22, 2026 at 5:00 PM UTC</p>
+        <p><strong>When:</strong> Wednesday, April 22, 2026 at 6:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 97 going</p>
+        <p><strong>Attendees:</strong> 98 going</p>
         <p>Join us at R-Ladies Remote for an engaging panel discussion on how to *work smarter in R*.
 
 Whether you&#39;re an early-career user or an experienced practitioner, this session brings together a diverse group of R users to share practical insights from their real-world experience. We’ll explore workflows, tools, lessons learned, and small changes that can make a big difference in your day-to-day work.
@@ -112,7 +112,7 @@ This will be a relaxed, conversational panel - not formal talks - with guiding q
         <p><a href="https://www.meetup.com/rladies-remote/events/313908392/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Remote)</author><category>R-Ladies Remote</category></item><item><title>Using LLMs from R: Gemini API, RAG Workflows &amp; RStudio - R-Ladies Sydney</title><link>https://www.meetup.com/rladies-sydney/events/313890140/</link><pubDate>Sat, 21 Mar 2026 22:06:25 -0400</pubDate><guid>313890140</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Sydney</p>
         <p><strong>When:</strong> Monday, April 20, 2026 at 5:00 AM UTC</p>
         <p><strong>Where:</strong> Google</p>
-        <p><strong>Attendees:</strong> 9 going</p>
+        <p><strong>Attendees:</strong> 10 going</p>
         <p>Join us for a hands-on workshop designed specifically for researchers and students using R that want to leverage AI in their workflows. This workshop will cover the fundamentals of introducing Large Language Model queries into your analysis pipelines.
 Expect an intensive session as we work through provided **R Scripts** to demonstrate typical AI workflows. Participants will gain a practical understanding of:
 
@@ -126,7 +126,9 @@ Requirements:
 1. A Google account to use Colab with R [https://colab.research.google.com/](https://colab.research.google.com/) (or you can use RStudio locally).
 2. An API key from [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey) to use web based models.
 3. A Kaggle account (you can use your Google credentials) to download AI models [https://www.kaggle.com/](https://www.kaggle.com/)
-4. **Familiarity with R is recommended** \- but we will walk through the details\.</p>
+4. **Familiarity with R is recommended** \- but we will walk through the details\.
+
+We encourage you to arrive 10-15 mins early on the day of the event to ensure minimal delays due to the environment setup.</p>
         <p><a href="https://www.meetup.com/rladies-sydney/events/313890140/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Sydney)</author><category>R-Ladies Sydney</category></item><item><title>Career panel and networking - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312900982/</link><pubDate>Thu, 15 Jan 2026 14:26:48 -0500</pubDate><guid>312900982</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 15, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
@@ -142,7 +144,7 @@ Requirements:
         <p><a href="https://www.meetup.com/rladies-fort-collins/events/314111820/">View event details</a></p>]]></description><author>noreply@rladies.org (R Ladies Fort Collins)</author><category>R Ladies Fort Collins</category></item><item><title>Maps in R - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/313055670/</link><pubDate>Sun, 25 Jan 2026 18:01:22 -0500</pubDate><guid>313055670</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, April 9, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 89 going</p>
+        <p><strong>Attendees:</strong> 96 going</p>
         <p>This workshop will teach you how to create maps in R using real-world geospatial data. We&#39;ll start with the fundamentals, helping users understanding the simple features data model and the {sf} package. Next, we&#39;ll move on to practical skills like accessing geospatial data through R packages like {rnaturalearth}, {tigris}, {tidycensus}, importing raw data files, and geocoding addresses with {tidygeocoder}. Finally, we&#39;ll put those skills to use by making choropleth maps with {ggplot2}.
 
 Find materials for the workshop here: https://github.com/rfortherestofus/mapping-workshop-rladies-stl
