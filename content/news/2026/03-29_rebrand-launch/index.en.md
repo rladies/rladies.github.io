@@ -17,16 +17,17 @@ But we heard from community members that the name made them feel unseen and not 
 
 We listened and started working to fix that problem. We can't accomplish our mission if the people the organization was explicitly built to serve don't feel like they belong. 
 
-In March of 2025, we [announced the rebranding from R-Ladies to RLadies+](https://rladies.org/about-us/news/2025/announcement/). 
-The + in RLadies+ is a small change to the name that allows us to maintain the well-known brand we built over 10 years of RLadies Global's existence, while making the implicit explicit. 
 
-In a worldwide context where DEI initiatives and trans rights are under active attack, we believe it's more important than ever to be clear about who we are and who we serve.
 
 ## Process: how the community shaped this decision
 
 This wasn't a top-down decision.
 We took our time, and we brought the community into the conversation at every stage.
+In March of 2025, we [announced the rebranding from R-Ladies to RLadies+](https://rladies.org/about-us/news/2025/announcement/). 
 
+The + in RLadies+ is a small change to the name that allows us to maintain the well-known brand we built over 10 years of RLadies Global's existence, while making the implicit explicit. 
+
+In a worldwide context where DEI initiatives and trans rights are under active attack, we believe it's more important than ever to be clear about who we are and who we serve.
 ### The discussion (April–November 2024)
 
 In April 2024, the Global Leadership Team opened a [public discussion on GitHub](https://github.com/rladies/community/issues/10), inviting everyone to weigh in on a proposed rebrand from R-Ladies to R-Ladies+.
