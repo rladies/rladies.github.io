@@ -40,25 +40,23 @@ The Leadership Team considered two paths: RLadies+ or a complete name change.
 
 We landed on RLadies+ for several practical reasons:
 
-- **No consensus on an alternative.** Many proposed names didn't translate well across languages — and as a global organization with 200+ chapters in 60+ countries, a name needs to work everywhere.
+- **No consensus on an alternative.** Many proposed names didn't translate well across languages. As a global organization with 200+ chapters in 60+ countries, a name needs to work everywhere.
 - **Recognition matters.** R-Ladies has been building community and name recognition for over a decade. A complete rebrand risked fragmenting that identity, especially with today's fractured social media landscape.
 - **We're volunteer-run.** A full name change across 200+ chapters, each with their own web presence and local infrastructure, would require resources we simply don't have.
 - **The + does real work.** It signals broader inclusivity while keeping the identity our chapters and members have built together.
 
-The decision was unanimous among the Leadership Team, and was [announced in March 2025](/news/announcement/).
+The decision was unanimous on the Board of Directors meeting, and was [announced in March 2025](/news/announcement/).
 
 ### The design process (2025–2026)
 
-Once the decision was made, the next question was: what should RLadies+ look like?
+Once we made the decision, the next step was to start the process of creating the visual identity of RLadies+
 We put out a [Call for Proposals](/news/cfp/) and commissioned [Science Graphic Design](https://www.sciencegraphicdesign.com/) to develop a full visual identity — logo, brand manual, templates, and imagery.
 
-But we didn't hand this off and wait for a finished product.
-We actively sought feedback throughout the design process.
-We set up a feedback form and reached out to chapter organizers and community members who had engaged in the GitHub discussion.
+The design process began, and we actively sought feedback throughout. 
+We set up a feedback form and reached out to all our chapters, chapter organizers, and community members who had engaged in the GitHub discussion.
 We also directly contacted community members with diverse gender expressions to make sure the new branding felt right to the people it's meant to represent.
 
-That feedback shaped the final result.
-The new visual identity isn't just something that was designed for the community — it was designed with the community.
+That feedback shaped the final result: a new visual identity designed with the community for the community.
 
 ## What does this mean on a day-to-day basis?
 
@@ -69,9 +67,9 @@ You'll see RLadies+ across our website, social media, slide templates, event gra
 The new visual identity is designed to signal inclusivity more clearly than before.
 
 **Chapters move at their own pace.**
-We're a decentralized organization, and we respect that.
+We're a volunteer and decentralized organization, and we respect and understand that.
 Chapter organizers are encouraged to adopt the new name and visual identity when they're ready, with end of 2026 as the target.
-We've provided a full branding package — logos, templates, social media assets — so the transition doesn't mean extra design work for volunteers.
+We've provided a [full branding package](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB) — logos, templates, social media assets, manuals — so the transition doesn't mean extra design work.
 
 **Safety comes first.**
 We recognize that chapters in countries where LGBTQ+ rights are criminalized may not be able to fully adopt the new branding for safety reasons.
@@ -82,7 +80,7 @@ Those chapters are encouraged to reach out to the Leadership Team to discuss how
 The mentoring program, Rotating Curation on Bluesky, abstract review, community Slack, blog — all of it continues as before, now under the RLadies+ banner.
 
 **The mission hasn't changed — the name just caught up.**
-We still do what we've always done: encourage, inspire, and empower people of minority genders in the R community.
+We still do what we've always done: encourage, inspire, and empower people of underrepresented genders in the R community.
 The + doesn't change our direction.
 It makes our direction visible.
 
@@ -99,18 +97,17 @@ The new branding is available across several platforms and tools:
 
 ### R-packages and templates
 
-Additionally, we have set-up some repositories and R-package to help implement RLadies+ branding in your R-work.
-In a series of witch-themed libraries.
+Additionally, we have setup a series of witch-themed repositories and R packages to help implement RLadies+ branding with R. 
 
 **Why witch-themed**?
 Throughout history, "witches" were often women of knowledge and wisdom who lived outside the norms of their societies — healers, herbalists, midwives, scholars.
 They were intellectual, strong-willed, and frequently persecuted not for any wrongdoing, but for refusing to conform.
 
-A coven, then, was more than folklore — it was a support network.
+A coven was a support network.
 A space where those who didn't fit gathered strength from one another.
 
-That resonates with what RLadies+ is: a global coven of people in tech who've been told, in ways big and small, that they don't belong.
-We chose witch-themed names for our tooling as a small act of reclaiming — turning a label once used to silence into one that empowers.
+That resonates with what RLadies+ is: a global community and support network of people in tech where those who didn’t always fit are learning, growing, and drawing strength from one another.
+ 
 
 - [Glamour — Quarto extension](https://github.com/rladies/glamour)
 - [Spellbind — R package with brand colours](https://rladies.org/spellbind/) ([source](https://github.com/rladies/spellbind))
