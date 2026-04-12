@@ -13,13 +13,13 @@ items:
     a: |
       The official name is **RLadies+** — one word, capital R, capital L, with a `+` at the end. Avoid "R-Ladies+", "R Ladies Plus", or "RLadies Plus" — always use **RLadies+** with the `+` symbol. For your chapter, it's **RLadies+ [City]**, e.g. RLadies+ Berlin.
 
-  - q: "How do I pronounce it?"
+  - q: "How do I pronounce it (in English)?"
     a: |
       "R Ladies plus" — three words, just as it reads.
 
   - q: "Does the + mean new people are welcome that weren't before?"
     a: |
-      No. The mission has not changed — RLadies+ has always been for all minority genders. The `+` makes that commitment visible in the name rather than only in the Code of Conduct and mission statement. No group is newly included or excluded.
+      No. The mission has not changed — RLadies+ has always been for all underrepresented genders. The `+` makes that commitment visible in the name. No group is newly included or excluded.
 
   - q: "What do I call myself as a member?"
     a: |
@@ -31,7 +31,7 @@ items:
 
       - **Meetup / event platform** — update your group name and logo
       - **Social media accounts** — update display name and profile image (you don't need to change your handle if the platform makes that difficult)
-      - **Slide decks and event banners** — switch to the new templates from the [branding materials](https://github.com/rladies/branding-materials) or [Google Drive templates](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB?usp=sharing)
+      - **Slide decks and event banners** — switch to the new templates from the [branding materials](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB)
       - **Website or landing page** — swap in the new logo and update the name
 
       See the [RLadies+ Guide](https://guide.rladies.org/branding) branding section for detailed instructions.
@@ -62,5 +62,5 @@ items:
 
   - q: "Where can I get the new logos and templates?"
     a: |
-      Everything is available in the [branding materials repository](https://github.com/rladies/branding-materials) and on [Google Drive](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB?usp=sharing). For R users, the [spellbind](https://rladies.org/spellbind/) package provides brand colours, the [glamour](https://github.com/rladies/glamour) Quarto extension provides presentation and document templates, and the [cloak](https://github.com/rladies/cloak) package provides a pkgdown theme.
+      Everything is available in the [branding materials Google Drive](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB). For R users, the [spellbind](https://rladies.org/spellbind/) package provides brand colours, the [glamour](https://github.com/rladies/glamour) Quarto extension provides presentation and document templates, and the [cloak](https://github.com/rladies/cloak) package provides a pkgdown theme.
 ---
