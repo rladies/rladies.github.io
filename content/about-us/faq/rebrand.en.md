@@ -47,7 +47,7 @@ items:
 
   - q: "What if adopting the new branding is not safe for my chapter?"
     a: |
-      Safety comes first, always. Chapters in countries where LGBTQ+ rights are criminalized or under threat are **not expected** to adopt the new branding if doing so would put community members at risk. Local organizers know their context best, and the Global Leadership Team fully supports that judgment. You can continue using the previous branding.
+      Safety comes first, always. Chapters in countries where LGBTQ+ rights are criminalized or under threat are **not expected** to adopt the new branding if doing so would put community members at risk. Local organizers know their context best, and the Global Leadership Team fully supports that judgment. You can continue using the previous branding. We only ask that chapters organizers [communicate this situation to the Leadership Team](mailto:leadersip@rladies.org)
 
   - q: "Are old materials (stickers, slides, recordings) still valid?"
     a: |
