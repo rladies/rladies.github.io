@@ -90,9 +90,8 @@ TODO: Add link to the video of the Science Graphic Design presentation once avai
 
 ## Resources
 
-The new branding is available across several platforms and tools:
+The new branding, with all the files and documents, is available in our - [Branding Google Drive](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB?usp=sharing) 
 
-- [Templates on Google Drive](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB?usp=sharing)
 
 ### R-packages and templates
 
