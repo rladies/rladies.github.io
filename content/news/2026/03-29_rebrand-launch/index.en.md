@@ -58,7 +58,7 @@ We also directly contacted community members with diverse gender expressions to 
 
 That feedback shaped the final result: a new visual identity designed with the community for the community.
 
-## What does this mean on a day-to-day basis?
+## What does this mean on a day-to-day basis for chapter organizers?
 
 For most community members, things will feel familiar — with a few visible changes.
 
