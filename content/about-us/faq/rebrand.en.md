@@ -40,7 +40,6 @@ items:
     a: |
       We're aiming for **end of 2026** as the target for all chapters to have transitioned. This is not a hard cutoff — we know every chapter runs on volunteer time. Start when you're ready; the branding package is available now. If you need help, reach out on the Organizer Slack.
 
-  - q: "My chapter is inactive. Do I still need to update?"
     a: |
       If your chapter isn't currently running events, there's no urgency. When and if you reactivate, use the new branding at that point.
 
