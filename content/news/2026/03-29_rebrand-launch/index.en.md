@@ -92,7 +92,6 @@ TODO: Add link to the video of the Science Graphic Design presentation once avai
 
 The new branding is available across several platforms and tools:
 
-- [Branding materials repository](https://github.com/rladies/branding-materials)
 - [Templates on Google Drive](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB?usp=sharing)
 
 ### R-packages and templates
