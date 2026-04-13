@@ -69,7 +69,7 @@ Some quotes:
 
 > "I ran some R code again after not looking at it for \<2 years and encountered multiple tidyverse deprecation warnings...Not even 2 years!\...If I were to keep working on that project in earnest, I would want to be using the latest/greatest tidyverse, so updating my code would be required regardless."
 
-# ![A tweet from Hadley Wickham saying "Happy reinstalling-all-your-R-packages day to all those who celebrate! #rstats"](blog_fig_hadley_kelly_tweet.png)
+![A tweet from Hadley Wickham saying "Happy reinstalling-all-your-R-packages day to all those who celebrate! #rstats"](blog_fig_hadley_kelly_tweet.png)
 
 Even R-celebs struggle with these challenges!
 
@@ -88,9 +88,7 @@ Our contributors include academic staff, researchers, educators, industry practi
 Collectively, our self-identified R experience ranges from novice to proficient.
 
 Our recommendations emerge from this collective mix of experience and perspectives.
-While we don't claim to represent all R users or all use cases, we aimed 
-
-to surface common challenges and practical considerations shared across our communities.
+While we don't claim to represent all R users or all use cases, we aimed to surface common challenges and practical considerations shared across our communities.
 By convening under R-Ladies Santa Barbara, we grounded this work in the values of inclusivity and community-driven knowledge building.
 
 ## Our process
@@ -299,4 +297,4 @@ Generative AI tools (e.g. ChatGPT) were used to assist with organizing and synth
 
 -   Ryan Munnikhuis
 
--   * denotes the R-Ladies Santa Barbara co-organizing team, + indicates contributors to the writing and editing of this blog post. All others participated in the R-Ladies Santa Barbara Meetup discussion that inspired the content of this post.
+\* denotes the R-Ladies Santa Barbara co-organizing team, + indicates contributors to the writing and editing of this blog post. All others participated in the R-Ladies Santa Barbara Meetup discussion that inspired the content of this post.
