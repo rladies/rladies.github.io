@@ -5,27 +5,47 @@ description: |
 author:
   - name: Danielle Ferraro
     url: https://bsky.app/profile/dferraro.bsky.social
+    contributions: [a, b]
   - name: Colleen McCamy
+    contributions: [a, b]
   - name: Sam Shanny-Csik
     url: https://samanthacsik.github.io/
+    contributions: [a, b]
   - name: Camila Vargas Poulsen
+    contributions: [a, b]
   - name: Annie Adams
+    contributions: [b, c]
   - name: Elise Gonzales
+    contributions: [b, c]
   - name: Olivia Ross
     url: https://bsky.app/profile/olross.bsky.social
+    contributions: [b, c]
   - name: An Bui
+    contributions: [c]
   - name: Carly Caswell
+    contributions: [c]
   - name: Kristina Fauss
+    contributions: [c]
   - name: Flora Hamilton
+    contributions: [c]
   - name: Rachel King
     url: https://www.linkedin.com/in/kingra00/
+    contributions: [c]
   - name: Kat Le
+    contributions: [c]
   - name: Tracy Lyon
+    contributions: [c]
   - name: Mary Megrant
+    contributions: [c]
   - name: Ryan Munnikhuis
+    contributions: [c]
 editorial:
   - name: Cecilia Baldoni
     url: https://cecibaldoni.github.io/
+contributions:
+  a: "R-Ladies Santa Barbara co-organizing team"
+  b: "Writing and editing"
+  c: "Participated in the Meetup discussion that inspired this post"
 date: "2026-04-08"
 image:
   path: blog_fig_who_are_we.png
@@ -147,9 +167,10 @@ Different work contexts may also call for different choices.
 For example, educators may update teaching code examples ahead of a course to reflect current package and function versions so that students are equipped with the most up-to-date information Alternatively, in client or organizational settings, decisions may be shaped by constraints such as IT-managed systems, security policies, or approved software lists, which may limit what you can update and when.
 In practice, how you choose to keep your R projects updated will be shaped by both the people you work with and the systems you work within.
 
-> **TRY THIS:** Use [{renv}](https://rstudio.github.io/renv/) to manage project-specific package versions and improve reproducibility across collaborators.
-> New to {renv}?
-> Check out these [three great talks](https://github.com/shannonpileggi/practical-renv?tab=readme-ov-file#related-talks) from posit::conf(2025), which offer a practical introduction and tips for successfully maintaining {renv}-backed projects (thanks, [Shannon Pileggi](https://github.com/shannonpileggi), for sharing these with us!)
+{{< callout type="tip" title="Try this" >}}
+Use [{renv}](https://rstudio.github.io/renv/) to manage project-specific package versions and improve reproducibility across collaborators.
+New to {renv}? Check out these [three great talks](https://github.com/shannonpileggi/practical-renv?tab=readme-ov-file#related-talks) from posit::conf(2025), which offer a practical introduction and tips for successfully maintaining {renv}-backed projects (thanks, [Shannon Pileggi](https://github.com/shannonpileggi), for sharing these with us!)
+{{< /callout >}}
 
 ### 2.  Update frequently and during natural project pauses
 
@@ -161,7 +182,9 @@ The idea of "frequent" and "natural pauses" can vary based on the project or per
 For one person, a natural project pause might be after wrapping up work for the week, while for another it could be passing a completed analysis to a colleague for code review.
 Identifying these natural pauses within your current workflows can give you a clear idea of when to stop, drop (the mouse), and check for updates.
 
-> **TRY THIS:** Put a routine reminder in your calendar to update your R version or R packages at whichever cadence works best for you - weekly, monthly, quarterly, etc.
+{{< callout type="tip" title="Try this" >}}
+Put a routine reminder in your calendar to update your R version or R packages at whichever cadence works best for you — weekly, monthly, quarterly, etc.
+{{< /callout >}}
 
 ### 3.  Embrace the alerts, errors, and warnings
 
@@ -182,7 +205,9 @@ Not all messages or warnings are so clear, however (shoutout, [object of type 'c
 Interpreting error messages can be an art in of itself - but also a learning experience.
 Check out our very own Sam Shanny-Csik's talk, [Teach Me How to Google](https://samanthacsik.github.io/talks_workshops/2021-10-11-teach-me-how-to-google/), for tips on how to demystify error messages and use Google effectively to find solutions.
 
-> **TRY THIS**: If your project absolutely requires an older version of R, you can install multiple versions and swap around as needed using a tool like [rig](https://github.com/r-lib/rig) or taking advantage of this built-in capability of Positron. 
+{{< callout type="tip" title="Try this" >}}
+If your project absolutely requires an older version of R, you can install multiple versions and swap around as needed using a tool like [rig](https://github.com/r-lib/rig) or taking advantage of this built-in capability of Positron.
+{{< /callout >}}
 
 ### 4.  Consider the status/stage of tools before adopting
 
@@ -205,7 +230,9 @@ Are peers or trusted colleagues using it?
 Has it been mentioned in conference talks, blog posts, or internal team discussions? 
 In the end, staying relevant can look like choosing tools that balance innovation with stability and long-term support. 
 
-> **TRY THIS**: Scan community forums (e.g. [Stack Overflow](https://stackoverflow.com/questions/tagged/r)), GitHub Issues, and release notes (e.g. check out {ggplot2} [issues](https://github.com/tidyverse/ggplot2/issues) and [release notes](https://github.com/tidyverse/ggplot2/releases)!) to see whether others are using the tool and whether its maintainers are actively responding.
+{{< callout type="tip" title="Try this" >}}
+Scan community forums (e.g. [Stack Overflow](https://stackoverflow.com/questions/tagged/r)), GitHub Issues, and release notes (e.g. check out {ggplot2} [issues](https://github.com/tidyverse/ggplot2/issues) and [release notes](https://github.com/tidyverse/ggplot2/releases)!) to see whether others are using the tool and whether its maintainers are actively responding.
+{{< /callout >}}
 
 ### 5.  Curate a small set of reliable learning sources (that you'll actually look at)
 
@@ -231,8 +258,9 @@ Here are some of R-Ladies SB's favorite learning resources that you might want t
 
 -   Don't underestimate the power of reading your colleague's code or joining co-learning groups!
 
-> **TRY THIS**: Leverage existing information streams that you already enjoy!
-> For example, you don't need to join Bluesky if an email newsletter better aligns with your current practices.
+{{< callout type="tip" title="Try this" >}}
+Leverage existing information streams that you already enjoy! For example, you don't need to join Bluesky if an email newsletter better aligns with your current practices.
+{{< /callout >}}
 
 ### 6.  Enter the group chat!
 
@@ -244,7 +272,9 @@ Your R community can take many forms, from a #code Slack channel, external group
 For example, the [Openscapes' seaside chats](https://openscapes.org/blog/2019-03-10-seaside-chats/) framework aims to foster discussion within research teams and lab groups about shared best practices.
 You can start by chatting code with your colleagues and friends and expand to other R communities!
 
-> **TRY THIS:** Join your local [R-Ladies chapter](https://rladies.org/chapters/), or [start your own](https://guide.rladies.org/organization/intro/get-started/)! 
+{{< callout type="tip" title="Try this" >}}
+Join your local [R-Ladies chapter](https://rladies.org/chapters/), or [start your own](https://guide.rladies.org/organization/intro/get-started/)!
+{{< /callout >}} 
 
 ## To wrap it all up --
 
@@ -256,41 +286,3 @@ But by keeping an eye on changes and sharing what you learn with others, you can
 
 This blog post was written and edited by members of R-Ladies Santa Barbara.
 Generative AI tools (e.g. ChatGPT) were used to assist with organizing and synthesizing discussion notes and occasionally to help refine the clarity of our writing.
-
-## Contributions
-
-**Authors:** R-Ladies Santa Barbara Chapter! 
-
--   [Danielle Ferraro](https://bsky.app/profile/dferraro.bsky.social)\*+
-
--   Colleen McCamy\*+
-
--   [Sam Shanny-Csik](https://samanthacsik.github.io/)\*+
-
--   Camila Vargas Poulsen\*+
-
--   Annie Adams+
-
--   Elise Gonzales+
-
--   [Olivia Ross+](https://bsky.app/profile/olross.bsky.social)
-
--   An Bui
-
--   Carly Caswell
-
--   Kristina Fauss
-
--   Flora Hamilton
-
--   [Rachel King](https://www.linkedin.com/in/kingra00/)
-
--   Kat Le
-
--   Tracy Lyon
-
--   Mary Megrant
-
--   Ryan Munnikhuis
-
-\* denotes the R-Ladies Santa Barbara co-organizing team, + indicates contributors to the writing and editing of this blog post. All others participated in the R-Ladies Santa Barbara Meetup discussion that inspired the content of this post.
