@@ -6,3 +6,4 @@ goldmark:
   parser:
     attribute:
       block: true
+    wrapStandAloneImageWithinParagraph: false
