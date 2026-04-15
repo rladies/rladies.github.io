@@ -55,9 +55,7 @@ And, perhaps unsurprisingly for a group of millennials, we gave this idea a hash
 We went searching for clear, practical guidance on how folks actually stay up to date with changes in the R ecosystem...and came up mostly empty.
 We even asked our communities on social media, and got \*crickets\*. 
 
-![Screenshot of a post on Bluesky from R-Ladies Santa Barbara that writes: "Data scientist, analysts, folks who write code: we want to hear from you! We're brainstorming resources on how to keep up with the ever-evolving R ecosystem. What strategies do you use to keep code/software up to date? How do you find out what's new in R/your fave lang? Let us know!"](blog_fig_bluesky.png)
-
-Our attempt to crowdsource on Bluesky.
+![Screenshot of a post on Bluesky from R-Ladies Santa Barbara that writes: "Data scientist, analysts, folks who write code: we want to hear from you! We're brainstorming resources on how to keep up with the ever-evolving R ecosystem. What strategies do you use to keep code/software up to date? How do you find out what's new in R/your fave lang? Let us know!"](blog_fig_bluesky.png "Our attempt to crowdsource on Bluesky.")
 
 At one point, we almost left this event idea on the back burner permanently.
 But we were encouraged and inspired by what we did find: lots of folks in our data science communities could relate to these challenges and were genuinely interested in hearing how others keep their code and workflows current.
@@ -69,9 +67,7 @@ Some quotes:
 
 > "I ran some R code again after not looking at it for \<2 years and encountered multiple tidyverse deprecation warnings...Not even 2 years!\...If I were to keep working on that project in earnest, I would want to be using the latest/greatest tidyverse, so updating my code would be required regardless."
 
-![A tweet from Hadley Wickham saying "Happy reinstalling-all-your-R-packages day to all those who celebrate! #rstats"](blog_fig_hadley_kelly_tweet.png)
-
-Even R-celebs struggle with these challenges!
+![A tweet from Hadley Wickham saying "Happy reinstalling-all-your-R-packages day to all those who celebrate! #rstats"](blog_fig_hadley_kelly_tweet.png "Even R-celebs struggle with these challenges!")
 
 Instead of trying to define a single "right" way to stay current in R, we decided to learn from our community through facilitated discussion.
 The goal of this blog post is to share what we learned from one another and distill this information into a set of considerations.
@@ -81,7 +77,7 @@ We hope these ideas help you find an approach that works for you! 
 
 ## Who are we?
 
-![Picture with R-Ladies Santa Barbara members](blog_fig_who_are_we.png) R-Ladies Santa Barbara members at our November 2025 meetup!
+![Picture with R-Ladies Santa Barbara members](blog_fig_who_are_we.png "R-Ladies Santa Barbara members at our November 2025 meetup!")
 
 We are a community of R enthusiasts connected through [R-Ladies Santa Barbara](https://www.meetup.com/rladies-santa-barbara/), representing a range of career stages, sectors, and experience levels.
 Our contributors include academic staff, researchers, educators, industry practitioners, and data science learners.

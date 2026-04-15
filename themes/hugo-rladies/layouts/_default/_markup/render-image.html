@@ -1,8 +1,15 @@
+{{- $alt := .PlainText -}}
+{{- $src := .Destination | safeURL -}}
+{{- $caption := .Title | default .PlainText -}}
+{{- if .IsBlock -}}
 <figure class="figure">
-    <img class="figure-img img-fluid rounded" 
-         src="{{ .Destination | safeURL }}" 
-         alt="{{ .Text }}">
+    <img class="figure-img img-fluid rounded"
+         src="{{ $src }}"
+         alt="{{ $alt }}">
     <figcaption class="figure-caption">
-        {{ .Title | default .Text }}
+        {{ $caption }}
     </figcaption>
 </figure>
+{{- else -}}
+<img class="img-fluid rounded" src="{{ $src }}" alt="{{ $alt }}"{{ with .Title }} title="{{ . }}"{{ end }}>
+{{- end -}}
