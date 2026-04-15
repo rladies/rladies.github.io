@@ -98,16 +98,6 @@ The new branding, with all the files and documents, is available in our - [Brand
 
 Additionally, we have setup a series of witch-themed repositories and R packages to help implement RLadies+ branding with R. 
 
-**Why witch-themed**?
-Throughout history, "witches" were often women of knowledge and wisdom who lived outside the norms of their societies — healers, herbalists, midwives, scholars.
-They were intellectual, strong-willed, and frequently persecuted not for any wrongdoing, but for refusing to conform.
-
-A coven was a support network.
-A space where those who didn't fit gathered strength from one another.
-
-That resonates with what RLadies+ is: a global community and support network of people in tech where those who didn’t always fit are learning, growing, and drawing strength from one another.
- 
-
 - [Glamour — Quarto extension](https://github.com/rladies/glamour)
 - [Spellbind — R package with brand colours](https://rladies.org/spellbind/) ([source](https://github.com/rladies/spellbind))
 - [Cloak — pkgdown theme](https://github.com/rladies/cloak)
