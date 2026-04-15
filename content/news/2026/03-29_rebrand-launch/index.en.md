@@ -116,6 +116,7 @@ That resonates with what RLadies+ is: a global community and support network of 
 
 This process has been a long one, but every step we took was necessary to ensure that our new identity wasn’t decided by just a few people who happened to hold the power to make decisions at that moment. 
 
-Now the process continues; we’ve reached the stage where our new name and visual identity will reach every corner where RLadies+ is present.  We know it’s a lot of work, and that along the way, questions will arise and opportunities will emerge to improve what we’ve built so far.  
+Now the process continues; we’ve reached the stage where our new name and visual identity will reach every corner where RLadies+ is present.  
+We know it’s a lot of work, and that along the way, questions will arise and opportunities will emerge to improve what we’ve built so far.  
 
 We are deeply grateful to everyone who participated in this process: to those who brought the issue to our attention, to those who engaged in the discussion with honesty and genuine interest, to those who moderated it, to those who provided feedback at every stage of the process, and to those who will be using this new brand. 
