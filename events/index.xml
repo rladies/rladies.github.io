@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sat, 18 Apr 2026 13:10:25 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Sun, 19 Apr 2026 01:15:50 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 16 going</p>
@@ -114,11 +114,11 @@ L’obiettivo della sessione è fornire una comprensione concettuale chiara insi
 Non è richiesta esperienza precedente in NLP. Una conoscenza di base di R può essere utile, ma la sessione si concentrerà tanto sui concetti e sull’intuizione quanto sul codice.
 
 Unisciti a noi per un’introduzione pratica e accessibile alle radici statistiche dell’AI e a come queste continuano a influenzare gli strumenti che utilizziamo oggi.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Visualization of multivariate data - a talk at the FJS - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314334375/</link><pubDate>Fri, 17 Apr 2026 11:18:27 -0400</pubDate><guid>314334375</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Visualization of multivariate data — a talk at the FJS - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314350024/</link><pubDate>Sat, 18 Apr 2026 11:08:30 -0400</pubDate><guid>314350024</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
         <p><strong>When:</strong> Thursday, April 23, 2026 at 4:30 PM UTC</p>
         <p><strong>Where:</strong> Oskar-Morgensternplatz 1</p>
-        <p><strong>Attendees:</strong> 4 going</p>
-        <p>Our coorganiser Ursula Laa will be giving a talk orgranised by the Young Statistician Forum (FJS), and you are welcome to join! Expect a technical tour of visualisation tools for multivariate and high-dimensional data in R with practical examples!
+        <p><strong>Attendees:</strong> 6 going</p>
+        <p>Our co-organizer Ursula Laa will be giving a talk orgranized by the Young Statistician Forum (FJS), and you are welcome to join! Expect a technical tour of visualisation tools for multivariate and high-dimensional data in R with practical examples!
 
 **ℹ️ Abstract**
 Statistical graphics are central to exploring and modeling complex data. As dimensionality increases, uncovering structure and dependencies becomes more challenging. This presentation gives an overview of practical tools for visualizing multivariate data, from strategic use of scatterplots and scatterplot matrices to linear and nonlinear projection methods. Special emphasis will be placed on tour methods—animated sequences of linear projections—that reveal clustering, outliers, and nonlinear relationships. All graphics will be demonstrated in R, with code to reproduce the results.
@@ -129,10 +129,10 @@ Seminarraum 16
 Oskar-Morgenstern-Platz 1, 1090 Vienna
 
 Use this [floor plan](https://event.univie.ac.at/fileadmin/user_upload/d_event/Dokumente/Raummanagement/PLAENE_NEU/Plaene_OMP/UEbersichtsplaene/01__3OG_Uebersicht.pdf) to help locate the room.</p>
-        <p><a href="https://www.meetup.com/rladies-vienna/events/314334375/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vienna)</author><category>R-Ladies Vienna</category></item><item><title>Working Smarter in R: Tips, Tricks &amp; Real-World Lessons - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313908392/</link><pubDate>Mon, 23 Mar 2026 07:31:10 -0400</pubDate><guid>313908392</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
+        <p><a href="https://www.meetup.com/rladies-vienna/events/314350024/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vienna)</author><category>R-Ladies Vienna</category></item><item><title>Working Smarter in R: Tips, Tricks &amp; Real-World Lessons - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313908392/</link><pubDate>Mon, 23 Mar 2026 07:31:10 -0400</pubDate><guid>313908392</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
         <p><strong>When:</strong> Wednesday, April 22, 2026 at 6:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 156 going</p>
+        <p><strong>Attendees:</strong> 159 going</p>
         <p>Join us at R-Ladies Remote for an engaging panel discussion on how to *work smarter in R*.
 
 Whether you&#39;re an early-career user or an experienced practitioner, this session brings together a diverse group of R users to share practical insights from their real-world experience. We’ll explore workflows, tools, lessons learned, and small changes that can make a big difference in your day-to-day work.
