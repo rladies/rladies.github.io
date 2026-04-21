@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 21 Apr 2026 01:14:57 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Tue, 21 Apr 2026 13:12:05 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
-        <p><strong>Attendees:</strong> 17 going</p>
+        <p><strong>Attendees:</strong> 19 going</p>
         <p>BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R. The event is open to all members of the public (not limited to R-Ladies Philly members).</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><pubDate>Thu, 15 Jan 2026 14:32:01 -0500</pubDate><guid>312901048</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 29, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
-        <p><strong>Attendees:</strong> 16 going</p>
+        <p><strong>Attendees:</strong> 17 going</p>
         <p>BYOLaptop to learn data wrangling skills! Join us for a hybrid meeting either in-person or on zoom where participants will login to a virtual R session and learn to use Tidyverse packages and functions. The event is open to all members of the public (not limited to R-Ladies Philly members).</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Data Challenge Solution Showcase - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489859/</link><pubDate>Mon, 23 Feb 2026 08:10:12 -0500</pubDate><guid>313489859</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 10:00 PM UTC</p>
@@ -117,7 +117,7 @@ Unisciti a noi per un’introduzione pratica e accessibile alle radici statistic
         <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Visualization of multivariate data — a talk at the FJS - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314350024/</link><pubDate>Sat, 18 Apr 2026 11:08:30 -0400</pubDate><guid>314350024</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
         <p><strong>When:</strong> Thursday, April 23, 2026 at 4:30 PM UTC</p>
         <p><strong>Where:</strong> Oskar-Morgensternplatz 1</p>
-        <p><strong>Attendees:</strong> 6 going</p>
+        <p><strong>Attendees:</strong> 7 going</p>
         <p>Our co-organizer Ursula Laa will be giving a talk orgranized by the Young Statistician Forum (FJS), and you are welcome to join! Expect a technical tour of visualisation tools for multivariate and high-dimensional data in R with practical examples!
 
 **ℹ️ Abstract**
@@ -132,7 +132,7 @@ Use this [floor plan](https://event.univie.ac.at/fileadmin/user_upload/d_event/D
         <p><a href="https://www.meetup.com/rladies-vienna/events/314350024/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vienna)</author><category>R-Ladies Vienna</category></item><item><title>Working Smarter in R: Tips, Tricks &amp; Real-World Lessons - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313908392/</link><pubDate>Mon, 23 Mar 2026 07:31:10 -0400</pubDate><guid>313908392</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
         <p><strong>When:</strong> Wednesday, April 22, 2026 at 6:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 173 going</p>
+        <p><strong>Attendees:</strong> 174 going</p>
         <p>Join us at R-Ladies Remote for an engaging panel discussion on how to *work smarter in R*.
 
 Whether you&#39;re an early-career user or an experienced practitioner, this session brings together a diverse group of R users to share practical insights from their real-world experience. We’ll explore workflows, tools, lessons learned, and small changes that can make a big difference in your day-to-day work.
