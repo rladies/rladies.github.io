@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 22 Apr 2026 13:12:26 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 23 Apr 2026 01:17:34 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
-        <p><strong>Attendees:</strong> 20 going</p>
+        <p><strong>Attendees:</strong> 22 going</p>
         <p>BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R. The event is open to all members of the public (not limited to R-Ladies Philly members).</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><pubDate>Thu, 15 Jan 2026 14:32:01 -0500</pubDate><guid>312901048</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 29, 2026 at 10:00 PM UTC</p>
@@ -35,11 +35,13 @@ We are grateful to be part of the Bayview Yards Meetup Program and extend our th
         <p><strong>Attendees:</strong> 8 going</p>
         <p>Quarto provides a convenient way to automatically create reports with results and figures generated from R-code. It can play an important role in a reproducible research workflow, and saves time since whenever the results change, the report is automatically up to date. It is a crucial tool in any R-lady&#39;s toolbox! Join us for an introductory tutorial in how to get the most use out of Quarto.
 
+We are meeting in the first floor of Øya helsehus øst, the conference room ØHM11.
+
 You can find a map for the room here: https://link.mazemap.com/UKTLR7Tu</p>
         <p><a href="https://www.meetup.com/rladies-trondheim/events/313409386/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Entre Dados e Decisões: A Engenharia por Trás de Tudo - R-Ladies Goiânia</title><link>https://www.meetup.com/rladies-goiania/events/314294935/</link><pubDate>Wed, 15 Apr 2026 08:30:52 -0400</pubDate><guid>314294935</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Goiânia</p>
         <p><strong>When:</strong> Saturday, April 25, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 5 going</p>
+        <p><strong>Attendees:</strong> 6 going</p>
         <p>🚀 **Entre Dados e Decisões: A Engenharia por Trás de Tudo**
 
 Você já parou pra pensar no que acontece antes de um dado virar decisão?
@@ -62,7 +64,7 @@ Nos siga nas redes sociais: @rladiesgyn
         <p><a href="https://www.meetup.com/rladies-goiania/events/314294935/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Goiânia)</author><category>R-Ladies Goiânia</category></item><item><title>The roots of AI: Natural Language Processing &amp; N-gram models - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313880594/</link><pubDate>Sat, 21 Mar 2026 07:10:11 -0400</pubDate><guid>313880594</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Thursday, April 23, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 53 going</p>
+        <p><strong>Attendees:</strong> 56 going</p>
         <p>Artificial Intelligence often feels like a black box, but many of its core ideas come from simple and elegant statistical concepts. In this session, we will step back from the hype and explore the foundations of AI through Natural Language Processing (NLP) and n-gram language models, using R as our working environment.
 
 This talk will focus on understanding how machines learn from text, starting from basic tokenization and moving toward probabilistic models that were among the earliest building blocks of modern AI. Rather than focusing on large models, we will look at the statistical roots that still underpin many current approaches.
@@ -129,22 +131,4 @@ Seminarraum 16
 Oskar-Morgenstern-Platz 1, 1090 Vienna
 
 Use this [floor plan](https://event.univie.ac.at/fileadmin/user_upload/d_event/Dokumente/Raummanagement/PLAENE_NEU/Plaene_OMP/UEbersichtsplaene/01__3OG_Uebersicht.pdf) to help locate the room.</p>
-        <p><a href="https://www.meetup.com/rladies-vienna/events/314350024/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vienna)</author><category>R-Ladies Vienna</category></item><item><title>Working Smarter in R: Tips, Tricks &amp; Real-World Lessons - R-Ladies Remote</title><link>https://www.meetup.com/rladies-remote/events/313908392/</link><pubDate>Mon, 23 Mar 2026 07:31:10 -0400</pubDate><guid>313908392</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Remote</p>
-        <p><strong>When:</strong> Wednesday, April 22, 2026 at 6:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 188 going</p>
-        <p>Join us at R-Ladies Remote for an engaging panel discussion on how to *work smarter in R*.
-
-Whether you&#39;re an early-career user or an experienced practitioner, this session brings together a diverse group of R users to share practical insights from their real-world experience. We’ll explore workflows, tools, lessons learned, and small changes that can make a big difference in your day-to-day work.
-
-This will be a relaxed, conversational panel - not formal talks - with guiding questions and space for discussion. Expect to come away with actionable tips, new ideas, and inspiration from how others approach working with R.
-
-**What we’ll cover**
-
-* **Productivity tips and workflows in R**: how to work more efficiently and structure your day-to-day analysis
-* **Data cleaning and working with real-world data**: approaches to handling messy, imperfect datasets
-* **Data visualisation and communication**: creating clear, effective visuals and communicating insights
-* **Debugging strategies and common pitfalls**: how to troubleshoot issues and avoid common mistakes
-* **Advanced R programming practices**: writing more scalable, reusable, and robust R code
-* **Lessons learned and practical advice**: insights, experiences, and tips for working smarter in R</p>
-        <p><a href="https://www.meetup.com/rladies-remote/events/313908392/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Remote)</author><category>R-Ladies Remote</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-vienna/events/314350024/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vienna)</author><category>R-Ladies Vienna</category></item></channel></rss>
