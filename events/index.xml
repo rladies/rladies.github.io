@@ -1,12 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 23 Apr 2026 13:12:17 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 24 Apr 2026 01:17:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
-        <p><strong>Attendees:</strong> 22 going</p>
+        <p><strong>Attendees:</strong> 23 going</p>
         <p>BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R. The event is open to all members of the public (not limited to R-Ladies Philly members).</p>
-        <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><pubDate>Thu, 15 Jan 2026 14:32:01 -0500</pubDate><guid>312901048</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>RLadies+ Corvallis: Coffee, Code, &amp; Chat - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/314439391/</link><pubDate>Thu, 23 Apr 2026 11:29:00 -0400</pubDate><guid>314439391</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
+        <p><strong>When:</strong> Saturday, May 2, 2026 at 4:00 PM UTC</p>
+        <p><strong>Where:</strong> The Plaza</p>
+        <p><strong>Attendees:</strong> 4 going</p>
+        <p>Come hang for a social hour (or two) with the RLadies&#43; Corvallis chapter.
+
+This is an informal event, held at [the Plaza](https://corvallisplaza.com/), for underrepresented minority genders in the R programming space (including but not limited to cis/trans women, trans men, non-binary, genderqueer, agender). We welcome seasoned, new, and aspiring R users.
+
+We don&#39;t have a set agenda for this meetup. Grab a coffee at Coffee Culture or a bite at one of the Plaza cafes and come hang! (Please no outside food or drink.)
+
+This is meet up can serve simply as a social hour, or if you&#39;re working on something in R and want to share, get ideas or help from other RLadies, bring your laptop!
+
+We hope to see you there!</p>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/314439391/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><pubDate>Thu, 15 Jan 2026 14:32:01 -0500</pubDate><guid>312901048</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 29, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
-        <p><strong>Attendees:</strong> 18 going</p>
+        <p><strong>Attendees:</strong> 19 going</p>
         <p>BYOLaptop to learn data wrangling skills! Join us for a hybrid meeting either in-person or on zoom where participants will login to a virtual R session and learn to use Tidyverse packages and functions. The event is open to all members of the public (not limited to R-Ladies Philly members).</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>Data Challenge Solution Showcase - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/313489859/</link><pubDate>Mon, 23 Feb 2026 08:10:12 -0500</pubDate><guid>313489859</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Tuesday, April 28, 2026 at 10:00 PM UTC</p>
@@ -61,74 +74,4 @@ Vem com a gente! 💬
 Nos siga nas redes sociais: @rladiesgyn
 
 #VemAí #Positron</p>
-        <p><a href="https://www.meetup.com/rladies-goiania/events/314294935/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Goiânia)</author><category>R-Ladies Goiânia</category></item><item><title>The roots of AI: Natural Language Processing &amp; N-gram models - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/313880594/</link><pubDate>Sat, 21 Mar 2026 07:10:11 -0400</pubDate><guid>313880594</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
-        <p><strong>When:</strong> Thursday, April 23, 2026 at 5:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 56 going</p>
-        <p>Artificial Intelligence often feels like a black box, but many of its core ideas come from simple and elegant statistical concepts. In this session, we will step back from the hype and explore the foundations of AI through Natural Language Processing (NLP) and n-gram language models, using R as our working environment.
-
-This talk will focus on understanding how machines learn from text, starting from basic tokenization and moving toward probabilistic models that were among the earliest building blocks of modern AI. Rather than focusing on large models, we will look at the statistical roots that still underpin many current approaches.
-
-During the session we will explore:
-• what Natural Language Processing is and why it matters
-• how text can be transformed into structured data
-• how n-grams help model language patterns
-• how probability drives language prediction
-• how these ideas connect to modern AI systems
-• practical examples using R
-
-The goal of this session is to provide a clear conceptual understanding together with practical demonstrations, helping participants see how classical statistical thinking connects to current AI developments.
-
-Who should attend
-• R users interested in text analysis
-• Data scientists and statisticians curious about NLP
-• Students and researchers working with text data
-• Anyone wanting to understand the statistical foundations of AI
-
-No prior experience in NLP is required. A basic familiarity with R will be helpful, but the session will focus on concepts and intuition as much as on code.
-
-Join us for a practical and accessible introduction to the statistical roots of AI and how they still shape the tools we use today.
-
-\-\-\-
-
-L’Intelligenza Artificiale spesso appare come una *black box*, ma molte delle sue idee fondamentali derivano da concetti statistici semplici ed eleganti. In questa sessione faremo un passo indietro rispetto all’hype per esplorare le basi dell’AI attraverso il **Natural Language Processing (NLP)** e i modelli linguistici **n-gram**, utilizzando **R** come ambiente di lavoro.
-
-Il talk si concentrerà su come le macchine imparano dai testi, partendo dalla tokenizzazione di base fino ad arrivare ai modelli probabilistici che hanno rappresentato alcuni dei primi mattoni dell’AI moderna. Piuttosto che concentrarci sui grandi modelli, guarderemo alle radici statistiche che ancora oggi sostengono molti approcci attuali.
-
-Durante la sessione esploreremo:
-
-• cos’è il Natural Language Processing e perché è importante
-• come il testo può essere trasformato in dati strutturati
-• come gli n-gram aiutano a modellare i pattern linguistici
-• come la probabilità guida la previsione del linguaggio
-• come queste idee si collegano ai sistemi di AI moderni
-• esempi pratici in R
-
-L’obiettivo della sessione è fornire una comprensione concettuale chiara insieme a dimostrazioni pratiche, aiutando i partecipanti a vedere come il pensiero statistico classico si collega agli sviluppi attuali dell’intelligenza artificiale.
-
-**A chi è rivolta la sessione**
-
-• utenti R interessati all’analisi del testo
-• data scientist e statistici curiosi di NLP
-• studenti e ricercatori che lavorano con dati testuali
-• chiunque voglia comprendere le basi statistiche dell’AI
-
-Non è richiesta esperienza precedente in NLP. Una conoscenza di base di R può essere utile, ma la sessione si concentrerà tanto sui concetti e sull’intuizione quanto sul codice.
-
-Unisciti a noi per un’introduzione pratica e accessibile alle radici statistiche dell’AI e a come queste continuano a influenzare gli strumenti che utilizziamo oggi.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/313880594/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Visualization of multivariate data — a talk at the FJS - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314350024/</link><pubDate>Sat, 18 Apr 2026 11:08:30 -0400</pubDate><guid>314350024</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
-        <p><strong>When:</strong> Thursday, April 23, 2026 at 4:30 PM UTC</p>
-        <p><strong>Where:</strong> Oskar-Morgensternplatz 1</p>
-        <p><strong>Attendees:</strong> 8 going</p>
-        <p>Our co-organizer Ursula Laa will be giving a talk orgranized by the Young Statistician Forum (FJS), and you are welcome to join! Expect a technical tour of visualisation tools for multivariate and high-dimensional data in R with practical examples!
-
-**ℹ️ Abstract**
-Statistical graphics are central to exploring and modeling complex data. As dimensionality increases, uncovering structure and dependencies becomes more challenging. This presentation gives an overview of practical tools for visualizing multivariate data, from strategic use of scatterplots and scatterplot matrices to linear and nonlinear projection methods. Special emphasis will be placed on tour methods—animated sequences of linear projections—that reveal clustering, outliers, and nonlinear relationships. All graphics will be demonstrated in R, with code to reproduce the results.
-
-**🗺️ Location**
-Seminarraum 16
-3rd floor
-Oskar-Morgenstern-Platz 1, 1090 Vienna
-
-Use this [floor plan](https://event.univie.ac.at/fileadmin/user_upload/d_event/Dokumente/Raummanagement/PLAENE_NEU/Plaene_OMP/UEbersichtsplaene/01__3OG_Uebersicht.pdf) to help locate the room.</p>
-        <p><a href="https://www.meetup.com/rladies-vienna/events/314350024/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vienna)</author><category>R-Ladies Vienna</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-goiania/events/314294935/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Goiânia)</author><category>R-Ladies Goiânia</category></item></channel></rss>
