@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 24 Apr 2026 01:17:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 24 Apr 2026 13:12:47 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 23 going</p>
@@ -16,7 +16,36 @@ We don&#39;t have a set agenda for this meetup. Grab a coffee at Coffee Culture 
 This is meet up can serve simply as a social hour, or if you&#39;re working on something in R and want to share, get ideas or help from other RLadies, bring your laptop!
 
 We hope to see you there!</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/314439391/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><pubDate>Thu, 15 Jan 2026 14:32:01 -0500</pubDate><guid>312901048</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/314439391/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Finding the Best Cherry Blossom Streets in Vancouver - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/314446726/</link><pubDate>Thu, 23 Apr 2026 18:39:08 -0400</pubDate><guid>314446726</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><strong>When:</strong> Friday, May 1, 2026 at 1:00 AM UTC</p>
+        <p><strong>Where:</strong> Vancouver Public Library - Mt. Pleasant Branch</p>
+        <p><strong>Attendees:</strong> 3 going</p>
+        <p>Finding the Best Cherry Blossom Streets in Vancouver: Geospatial Analysis, Route Optimization, and Science Communication with R
+
+Every spring, Vancouver&#39;s streets burst into pink, but which ones are \*actually\* worth visiting? And could you see the best of them all in a single route?
+
+This talk walks through an end-to-end open data science project that answers
+exactly those questions. Using freely available datasets from the
+[City of Vancouver Open Data Portal](https://opendata.vancouver.ca/) (public tree
+inventories, street networks, and neighbourhood boundaries) we filter thousands of
+trees down to Japanese flowering cherry varieties, snap each tree to its nearest
+street segment using \`{sf}\`, and compute blossom density per block to rank the top
+streets city-wide. We then solve a Traveling Salesman Problem with \`{sfnetworks}\`,
+\`{igraph}\`, and Kyle Walker&#39;s \`{spopt}\` package to produce the \*\*Vancouver Cherry
+Blossom Marathon\*\*: an optimized route through the 10 or 30 densest cherry blossom streets,
+exported as GPX files for Garmin/Strava and as a one-click Google Maps link.
+
+The second half of the talk covers how \`{Quarto}\` ties the analysis into a public-
+facing website with interactive maps using \`{mapgl}\` (MapLibre GL), sortable tables
+via \`{DT}\`, neighbourhood choropleths, and a blog post that made it into local news.
+We&#39;ll also discuss the reproducibility scaffolding (a \`Makefile\` pipeline) and what
+it means to do science communication with genuinely open tools: MIT-licensed code,
+CC-licensed public data, and an R ecosystem that anyone can run from scratch.
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+Note: this will be a hybrid event, taking place at the Mt Pleasant branch of the Vancouver Public Library as well as online via Zoom. If you are coming to the event in person, you are welcome to join us for some food and drinks at Main Street Brewing after we have finished.
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</p>
+        <p><a href="https://www.meetup.com/rladies-vancouver/events/314446726/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Intro to tidyverse - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901048/</link><pubDate>Thu, 15 Jan 2026 14:32:01 -0500</pubDate><guid>312901048</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, April 29, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Parkway Branch of the Free Library of Philadelphia</p>
         <p><strong>Attendees:</strong> 19 going</p>
