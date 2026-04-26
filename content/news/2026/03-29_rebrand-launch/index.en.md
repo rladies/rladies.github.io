@@ -104,7 +104,7 @@ Additionally, we have setup a series of witch-themed repositories and R packages
  
 ## What’s next
 
-This process has been a long one, but every step we took was necessary to ensure that our new identity wasn’t decided by just a few people who happened to hold the power to make decisions at that moment. 
+This process has been a long one, but every step we took was necessary to ensure that our new identity broadly captured an unmet need in our global community. 
 
 Now the process continues; we’ve reached the stage where our new name and visual identity will reach every corner where RLadies+ is present.  
 We know it’s a lot of work, and that along the way, questions will arise and opportunities will emerge to improve what we’ve built so far.  
