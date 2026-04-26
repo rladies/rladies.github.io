@@ -70,7 +70,7 @@ The new visual identity is designed to signal inclusivity more clearly than befo
 **Chapters move at their own pace.**
 We're a volunteer and decentralized organization, and we respect and understand that.
 Chapter organizers are encouraged to adopt the new name and visual identity when they're ready, with end of 2026 as the target.
-We've provided a [full branding package](https://drive.google.com/drive/folders/1UV940p-KN9FWoHt4yrZnrc2oAczGw9QB) — logos, templates, social media assets, manuals — so the transition doesn't mean extra design work.
+We've provided a [full branding package](https://guide.rladies.org/organization/tech/brand/index.html) — including logos, templates, social media assets, manuals to streamline the transition for chapter organizers.
 
 **Safety comes first.**
 We recognize that chapters in countries where LGBTQ+ rights are criminalized may not be able to fully adopt the new branding for safety reasons.
