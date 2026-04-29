@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 29 Apr 2026 01:22:32 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>From Dictionaries to LLMs: Text Analysis in R   - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/314511787/</link><pubDate>Mon, 27 Apr 2026 13:33:17 -0400</pubDate><guid>314511787</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Wed, 29 Apr 2026 13:15:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>From Dictionaries to LLMs: Text Analysis in R   - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/314511787/</link><pubDate>Mon, 27 Apr 2026 13:33:17 -0400</pubDate><guid>314511787</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, May 20, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 33 going</p>
+        <p><strong>Attendees:</strong> 34 going</p>
         <p>This workshop walks through a complete text analysis pipeline in R, combining traditional methods with newer AI-powered tools.
 
 In the first part, we will cover tokenization with tidytext, stopword removal (including custom stopwords), word frequency visualization with wordclouds and bar plots, dictionary-based sentiment analysis using three lexicons (AFINN, Bing, and NRC), topic modeling with LDA, and bigram analysis with word networks.
@@ -31,7 +31,7 @@ Este taller es **introductorio** y está dirigido a personas con un **conocimien
         <p><a href="https://www.meetup.com/rladies-buenos-aires/events/314530835/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>Automatic NLP with LLMS Using {mall} - R-Ladies Paris</title><link>https://www.meetup.com/rladies-paris/events/314532064/</link><pubDate>Tue, 28 Apr 2026 17:19:36 -0400</pubDate><guid>314532064</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Paris</p>
         <p><strong>When:</strong> Wednesday, May 13, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 8 going</p>
+        <p><strong>Attendees:</strong> 10 going</p>
         <p>🔜 We are excited to announce our next virtual meetup in collaboration with R-Ladies Abuja (https://www.meetup.com/rladies-abuja/).
 
 Join us on May 13 from 7:00 pm to 8:00 pm CEST (GMT&#43;2) for a talk on performing automatic NLP with LLMs using mall with Edgar Ruiz — Software Engineer at Posit.
@@ -42,7 +42,7 @@ We look forward to seeing many of you there!</p>
         <p><a href="https://www.meetup.com/rladies-paris/events/314532064/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Paris)</author><category>R-Ladies Paris</category></item><item><title>Creating your personal website with Quarto - R-Ladies Santa Barbara</title><link>https://www.meetup.com/rladies-santa-barbara/events/314390595/</link><pubDate>Mon, 20 Apr 2026 18:51:36 -0400</pubDate><guid>314390595</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Barbara</p>
         <p><strong>When:</strong> Thursday, May 14, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> National Center for Ecological Analysis and Synthesis</p>
-        <p><strong>Attendees:</strong> 7 going</p>
+        <p><strong>Attendees:</strong> 8 going</p>
         <p>A personal website is a great way to showcase your data science skills, highlight projects, and share what you’re passionate about. In this workshop, we’ll learn to build a personal website using Quarto, an accessible and flexible publishing framework, to help you get started. Together, we’ll:
 
 * Build the core components of a Quarto website
