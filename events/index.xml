@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 30 Apr 2026 01:23:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning Positron Workshop - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/314550121/</link><pubDate>Wed, 29 Apr 2026 18:25:12 -0400</pubDate><guid>314550121</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 30 Apr 2026 13:14:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning Positron Workshop - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/314550121/</link><pubDate>Wed, 29 Apr 2026 18:25:12 -0400</pubDate><guid>314550121</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
         <p><strong>When:</strong> Thursday, June 4, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> Corvallis-Benton County Public Library</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -37,7 +37,7 @@ Este taller es **introductorio** y está dirigido a personas con un **conocimien
         <p><a href="https://www.meetup.com/rladies-buenos-aires/events/314530835/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>Automatic NLP with LLMS Using {mall} - R-Ladies Paris</title><link>https://www.meetup.com/rladies-paris/events/314532064/</link><pubDate>Tue, 28 Apr 2026 17:19:36 -0400</pubDate><guid>314532064</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Paris</p>
         <p><strong>When:</strong> Wednesday, May 13, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 13 going</p>
+        <p><strong>Attendees:</strong> 14 going</p>
         <p>🔜 We are excited to announce our next virtual meetup in collaboration with R-Ladies Abuja (https://www.meetup.com/rladies-abuja/).
 
 Join us on May 13 from 7:00 pm to 8:00 pm CEST (GMT&#43;2) for a talk on performing automatic NLP with LLMs using mall with Edgar Ruiz — Software Engineer at Posit.
@@ -62,7 +62,7 @@ If you’d like to follow along during the workshop, please install and configur
         <p><a href="https://www.meetup.com/rladies-santa-barbara/events/314390595/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Barbara)</author><category>R-Ladies Santa Barbara</category></item><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 30 going</p>
+        <p><strong>Attendees:</strong> 32 going</p>
         <p>Event is on the 4th floor skyline room.
 BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R. The event is open to all members of the public (not limited to R-Ladies Philly members).</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>RLadies+ Corvallis: Coffee, Code, &amp; Chat - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/314439391/</link><pubDate>Thu, 23 Apr 2026 11:29:00 -0400</pubDate><guid>314439391</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
@@ -81,7 +81,7 @@ We hope to see you there!</p>
         <p><a href="https://www.meetup.com/rladies-corvallis/events/314439391/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Finding the Best Cherry Blossom Streets in Vancouver - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/314446726/</link><pubDate>Thu, 23 Apr 2026 18:39:08 -0400</pubDate><guid>314446726</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Friday, May 1, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Vancouver Public Library - Mt. Pleasant Branch</p>
-        <p><strong>Attendees:</strong> 7 going</p>
+        <p><strong>Attendees:</strong> 8 going</p>
         <p>Finding the Best Cherry Blossom Streets in Vancouver: Geospatial Analysis, Route Optimization, and Science Communication with R
 
 Every spring, Vancouver&#39;s streets burst into pink, but which ones are \*actually\* worth visiting? And could you see the best of them all in a single route?
