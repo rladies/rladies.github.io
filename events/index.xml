@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Thu, 30 Apr 2026 13:14:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning Positron Workshop - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/314550121/</link><pubDate>Wed, 29 Apr 2026 18:25:12 -0400</pubDate><guid>314550121</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on R-Ladies Global</title><link>https://rladies.org/events/</link><description>Upcoming R-Ladies events worldwide</description><generator>Hugo 0.145.0</generator><language>en</language><lastBuildDate>Fri, 01 May 2026 01:24:54 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R-Ladies+ Corvallis: Learning Positron Workshop - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/314550121/</link><pubDate>Wed, 29 Apr 2026 18:25:12 -0400</pubDate><guid>314550121</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
         <p><strong>When:</strong> Thursday, June 4, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> Corvallis-Benton County Public Library</p>
-        <p><strong>Attendees:</strong> 5 going</p>
+        <p><strong>Attendees:</strong> 7 going</p>
         <p>Are you an R and/or Python user interested in learning about the [Positron IDE](https://positron.posit.co/)? Join the R-Ladies Corvallis community for a workshop led by Posit&#39;s very own Charlotte Wickham! You do not need to have any experience with Positron to attend.
 We&#39;ll have snacks and time set aside for mingling and asking questions. We hope you join us!</p>
         <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>From Dictionaries to LLMs: Text Analysis in R   - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/314511787/</link><pubDate>Mon, 27 Apr 2026 13:33:17 -0400</pubDate><guid>314511787</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, May 20, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 36 going</p>
+        <p><strong>Attendees:</strong> 37 going</p>
         <p>This workshop walks through a complete text analysis pipeline in R, combining traditional methods with newer AI-powered tools.
 
 In the first part, we will cover tokenization with tidytext, stopword removal (including custom stopwords), word frequency visualization with wordclouds and bar plots, dictionary-based sentiment analysis using three lexicons (AFINN, Bing, and NRC), topic modeling with LDA, and bigram analysis with word networks.
@@ -37,7 +37,7 @@ Este taller es **introductorio** y está dirigido a personas con un **conocimien
         <p><a href="https://www.meetup.com/rladies-buenos-aires/events/314530835/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>Automatic NLP with LLMS Using {mall} - R-Ladies Paris</title><link>https://www.meetup.com/rladies-paris/events/314532064/</link><pubDate>Tue, 28 Apr 2026 17:19:36 -0400</pubDate><guid>314532064</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Paris</p>
         <p><strong>When:</strong> Wednesday, May 13, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 14 going</p>
+        <p><strong>Attendees:</strong> 15 going</p>
         <p>🔜 We are excited to announce our next virtual meetup in collaboration with R-Ladies Abuja (https://www.meetup.com/rladies-abuja/).
 
 Join us on May 13 from 7:00 pm to 8:00 pm CEST (GMT&#43;2) for a talk on performing automatic NLP with LLMs using mall with Edgar Ruiz — Software Engineer at Posit.
@@ -48,7 +48,7 @@ We look forward to seeing many of you there!</p>
         <p><a href="https://www.meetup.com/rladies-paris/events/314532064/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Paris)</author><category>R-Ladies Paris</category></item><item><title>Creating your personal website with Quarto - R-Ladies Santa Barbara</title><link>https://www.meetup.com/rladies-santa-barbara/events/314390595/</link><pubDate>Mon, 20 Apr 2026 18:51:36 -0400</pubDate><guid>314390595</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Barbara</p>
         <p><strong>When:</strong> Thursday, May 14, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> National Center for Ecological Analysis and Synthesis</p>
-        <p><strong>Attendees:</strong> 12 going</p>
+        <p><strong>Attendees:</strong> 13 going</p>
         <p>A personal website is a great way to showcase your data science skills, highlight projects, and share what you’re passionate about. In this workshop, we’ll learn to build a personal website using Quarto, an accessible and flexible publishing framework, to help you get started. Together, we’ll:
 
 * Build the core components of a Quarto website
@@ -62,13 +62,13 @@ If you’d like to follow along during the workshop, please install and configur
         <p><a href="https://www.meetup.com/rladies-santa-barbara/events/314390595/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Santa Barbara)</author><category>R-Ladies Santa Barbara</category></item><item><title>Intro to data visualization - R-Ladies Philly</title><link>https://www.meetup.com/rladies-philly/events/312901066/</link><pubDate>Thu, 15 Jan 2026 14:33:49 -0500</pubDate><guid>312901066</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Philly</p>
         <p><strong>When:</strong> Wednesday, May 6, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 32 going</p>
+        <p><strong>Attendees:</strong> 33 going</p>
         <p>Event is on the 4th floor skyline room.
 BYOLaptop and learn the grammar of graphics in R using ggplot2. Join us in person or on Zoom for a hybrid workshop, where you’ll explore the power of data visualization in R. The event is open to all members of the public (not limited to R-Ladies Philly members).</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/312901066/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>RLadies+ Corvallis: Coffee, Code, &amp; Chat - R-Ladies Corvallis</title><link>https://www.meetup.com/rladies-corvallis/events/314439391/</link><pubDate>Thu, 23 Apr 2026 11:29:00 -0400</pubDate><guid>314439391</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Corvallis</p>
         <p><strong>When:</strong> Saturday, May 2, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> The Plaza</p>
-        <p><strong>Attendees:</strong> 5 going</p>
+        <p><strong>Attendees:</strong> 6 going</p>
         <p>Come hang for a social hour (or two) with the RLadies&#43; Corvallis chapter.
 
 This is an informal event, held at [the Plaza](https://corvallisplaza.com/), for underrepresented minority genders in the R programming space (including but not limited to cis/trans women, trans men, non-binary, genderqueer, agender). We welcome seasoned, new, and aspiring R users.
@@ -78,33 +78,4 @@ We don&#39;t have a set agenda for this meetup. Grab a coffee at Coffee Culture 
 This is meet up can serve simply as a social hour, or if you&#39;re working on something in R and want to share, get ideas or help from other RLadies, bring your laptop!
 
 We hope to see you there!</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/314439391/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Finding the Best Cherry Blossom Streets in Vancouver - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/314446726/</link><pubDate>Thu, 23 Apr 2026 18:39:08 -0400</pubDate><guid>314446726</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
-        <p><strong>When:</strong> Friday, May 1, 2026 at 1:00 AM UTC</p>
-        <p><strong>Where:</strong> Vancouver Public Library - Mt. Pleasant Branch</p>
-        <p><strong>Attendees:</strong> 8 going</p>
-        <p>Finding the Best Cherry Blossom Streets in Vancouver: Geospatial Analysis, Route Optimization, and Science Communication with R
-
-Every spring, Vancouver&#39;s streets burst into pink, but which ones are \*actually\* worth visiting? And could you see the best of them all in a single route?
-
-This talk walks through an end-to-end open data science project that answers
-exactly those questions. Using freely available datasets from the
-[City of Vancouver Open Data Portal](https://opendata.vancouver.ca/) (public tree
-inventories, street networks, and neighbourhood boundaries) we filter thousands of
-trees down to Japanese flowering cherry varieties, snap each tree to its nearest
-street segment using \`{sf}\`, and compute blossom density per block to rank the top
-streets city-wide. We then solve a Traveling Salesman Problem with \`{sfnetworks}\`,
-\`{igraph}\`, and Kyle Walker&#39;s \`{spopt}\` package to produce the \*\*Vancouver Cherry
-Blossom Marathon\*\*: an optimized route through the 10 or 30 densest cherry blossom streets,
-exported as GPX files for Garmin/Strava and as a one-click Google Maps link.
-
-The second half of the talk covers how \`{Quarto}\` ties the analysis into a public-
-facing website with interactive maps using \`{mapgl}\` (MapLibre GL), sortable tables
-via \`{DT}\`, neighbourhood choropleths, and a blog post that made it into local news.
-We&#39;ll also discuss the reproducibility scaffolding (a \`Makefile\` pipeline) and what
-it means to do science communication with genuinely open tools: MIT-licensed code,
-CC-licensed public data, and an R ecosystem that anyone can run from scratch.
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-Note: this will be a hybrid event, taking place at the Mt Pleasant branch of the Vancouver Public Library as well as online via Zoom. If you are coming to the event in person, you are welcome to join us for some food and drinks at Main Street Brewing after we have finished.
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/314446726/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/314439391/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item></channel></rss>
