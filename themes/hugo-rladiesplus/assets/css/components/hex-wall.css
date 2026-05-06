@@ -1,0 +1,88 @@
+@layer components {
+  .hex-wall {
+    --hex-min: 130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--hex-min), 1fr));
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hex-tile {
+    aspect-ratio: 1 / 1.1547;
+    position: relative;
+    transition: transform 0.25s ease;
+  }
+
+  .hex-tile:hover,
+  .hex-tile:focus-within {
+    transform: translateY(-4px) scale(1.04);
+    z-index: 2;
+  }
+
+  .hex-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hex-link:hover,
+  .hex-link:focus-visible {
+    color: inherit;
+  }
+
+  .hex-shape {
+    display: block;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: var(--color-raised);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hex-shape img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 6%;
+  }
+
+  .hex-fallback {
+    @apply absolute inset-0 flex items-center justify-center text-center font-semibold text-sm px-3;
+    color: #fff;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-rose));
+    word-break: break-word;
+    line-height: 1.2;
+  }
+
+  .hex-meta {
+    @apply absolute inset-0 flex flex-col items-center justify-center text-center px-3 opacity-0 pointer-events-none;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: rgba(80, 9, 168, 0.94);
+    color: #fff;
+    transition: opacity 0.2s ease;
+    line-height: 1.25;
+  }
+
+  .hex-tile:hover .hex-meta,
+  .hex-tile:focus-within .hex-meta {
+    opacity: 1;
+  }
+
+  .hex-meta-name {
+    @apply font-semibold text-sm break-words;
+  }
+
+  .hex-meta-authors {
+    @apply text-xs mt-1 opacity-90 break-words;
+  }
+}
+
+@layer components {
+  .dark .hex-shape {
+    background-color: #fff;
+  }
+}
