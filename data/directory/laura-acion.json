@@ -1,0 +1,9 @@
+{
+  "name": "Laura Ación",
+  "categories": ["Speaker"],
+  "location": {
+    "country": "Argentina"
+  },
+  "languages": ["Spanish", "English"],
+  "interests": ["Statistics", "Health Research"]
+}

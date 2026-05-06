@@ -17,11 +17,11 @@ image:
   alt: "Mastodon elephant mascot in R-Ladies purple"
 ---
 
-# TL; DR
+## TL; DR
 
 Follow us at [hachyderm.io/@RLadiesGlobal](https://hachyderm.io/@RLadiesGlobal)!
 
-# Why we are migrating to Mastodon
+## Why we are migrating to Mastodon
 
 Today, we want to share an important update concerning our communication strategy. Over the years, Twitter (now X) has served as a vital platform where we have fostered connections, celebrated R-Ladies' achievements, and shared our passion for R as a programming language. It has played an integral role in our journey. Nevertheless, given the shifting values of that platform, we no longer consider it a healthy environment to engage with our community. Consequently, our presence on Twitter has gradually diminished, leading us to cease tweeting in May.
 
@@ -29,7 +29,7 @@ As R-Ladies' commitment to building an inclusive and friendly community remains 
 
 ![Mastodon elephant mascot recolored in R-Ladies purple](elephant_ui_working.png "R-Ladies Global is now on Mastodon's Hachyderm server")
 
-# Some considerations
+## Some considerations
 
 In order to maintain control of our handle and archive, the X `@RLadiesGlobal` account will remain open; however, we will no longer engage in that platform.
 

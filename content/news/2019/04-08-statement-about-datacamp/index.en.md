@@ -17,7 +17,7 @@ aliases:
 
 _This blog post is a slightly extended version of the [official statement the R-Ladies Global organization made via Twitter](https://twitter.com/RLadiesGlobal/status/1114507499728769024), in a form that is easier to share. The views expressed here are the views of the R-Ladies Global Team signing at the end of this post and do not represent the R-Ladies community at large._
 
-# Why we condemn DataCamp's handling of sexual assault
+## Why we condemn DataCamp's handling of sexual assault
 
 We are very disappointed by the way DataCamp handled the sexual assault of an employee by a C-level executive. We strongly support the target who is a member of our community and condemn DataCamp for their lack of accountability and transparency around this issue. As remarked by [`no_reply`](https://twitter.com/no_reply/status/1113923302915837958), DataCamp "quietly published [a "community" post](https://www.datacamp.com/community/blog/note-to-our-community), in which they admit an executive sexually assaulted ("uninvited physical contact") an employee."
 
@@ -25,7 +25,7 @@ We applaud the collective action from the DataCamp instructor community for push
 
 We are not satisfied with the response from DataCamp. As underlined by [Julia Silge](https://twitter.com/juliasilge/status/1113996214561923072) and [Mara Averick](https://twitter.com/dataandme/status/1113939480300355584), the post used "details in victim-blaming ways".
 
-# How could you stand up for more accountability?
+## How could you stand up for more accountability?
 
 If you are unsatisfied with DataCamp's actions and response, you could use your voice and your wallet to vote for more accountability. Below we have summarized ideas about how you can show your disapproval of DataCamp’s response, as collected from a [thread started by Jesse Mostipak](https://twitter.com/kierisi/status/1113945904698892289), with contributions from [Chris Engelhardt](https://twitter.com/EngelhardtCR), [Laura Ación](https://twitter.com/_lacion_/status/1113960425174052864), [Bruna Wunderwald](https://twitter.com/bwundervald/status/1114907322441244672), and [Erin LeDell](https://twitter.com/ledell/status/1115138789293211649).
 
@@ -61,7 +61,7 @@ Let's keep working on a safe community for everyone!
 
 -- _The R-Ladies Global Leadership Team (Gabriela de Queiroz, Hannah Frick, Erin LeDell, and Claudia Vitolo) with Laura Ación and Maëlle Salmon (members of the [R-Ladies Global Team](/about-us/global-team/))_
 
-# [Update] Other posts and tweets from the community about DataCamp
+## [Update] Other posts and tweets from the community about DataCamp
 
 - 2019-04-05, Greg Wilson - [The Worst Behavior](http://third-bit.com/2019/04/05/the-worst-behavior.html)
 

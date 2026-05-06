@@ -1,0 +1,12 @@
+{
+  "name": "Yanina Bellini Saibene",
+  "categories": ["Leadership", "Speaker"],
+  "location": {
+    "country": "Argentina"
+  },
+  "languages": ["Spanish", "English"],
+  "interests": ["Open Science", "Community Building", "Education"],
+  "photo": {
+    "url": "directory/yanina-bellini-saibene.png"
+  }
+}

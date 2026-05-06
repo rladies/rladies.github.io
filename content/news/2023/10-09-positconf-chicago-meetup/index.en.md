@@ -21,13 +21,13 @@ aliases:
 
 Photo captured at the conclusion of the Question and Answer session of the reception. Alt text: R-Ladies community members gathered in a room of the Hyatt in Chicago, with rows of individuals standing, kneeling, and sitting.
 
-# TL;DR
+## TL;DR
 
 On Wednesday, September 20, 2023 R-Ladies Global and R-Ladies Chicago
 jointly hosted a reception at Posit Conf in Chicago, Illinois. Here, we
 summarize the question and answer portion of the meet-up.
 
-# Overview
+## Overview
 
 Per tradition, at the conclusion of Posit Conf R-Ladies Global and
 R-Ladies Chicago (the local R-Ladies chapter) jointly hosted a reception
@@ -50,9 +50,9 @@ The question and answers below are not presented as they were discussed
 chronologically, but more thematically in terms of discussion versus
 operational/procedural questions.
 
-# Discussion questions
+## Discussion questions
 
-## What are the main benefits of R-Ladies?
+### What are the main benefits of R-Ladies?
 
 _Angela:_ Improving my data science skills in a community that was
 really supportive, which then quickly cascaded into talking to people in
@@ -88,7 +88,7 @@ R-Ladies in Latin American is making a huge
 impact on a larger scale and all the personal stories are fantastic to
 listen to.
 
-## Will R-Ladies ever re-brand to a name that is more inclusive to R users of marginalized genders?
+### Will R-Ladies ever re-brand to a name that is more inclusive to R users of marginalized genders?
 
 _Yani:_ Yes, it is under consideration. As of now our plan is to open a discussion within the
 R-Ladies community where members can comment anonymously or not, and individuals
@@ -101,7 +101,7 @@ announced to the broader community. The idea is to have the current and
 future potential members of R-Ladies have a voice heard in this
 decision.
 
-## Any thoughts about age diversity and creating more inclusive accessible meetups?
+### Any thoughts about age diversity and creating more inclusive accessible meetups?
 
 _Mo:_ We provide our organizers a lot of freedom to set up meet-ups in a
 way that make them accessible. When Oslo started, we had good age
@@ -119,14 +119,14 @@ suggestions. We have the R-Ladies guide and there are general
 recommendations; please reach out to us with new ideas so we can share
 with the global community.
 
-## What do we think about the idea of having a R-Ladies conference day? 👀😊
+### What do we think about the idea of having a R-Ladies conference day? 👀😊
 
 _Mo:_ That is the dream! We are not there yet, and the leadership needs
 to be more established, but it is definitely something to consider.
 
-# Operational/procedural questions
+## Operational/procedural questions
 
-## What are chapter organizers finding helpful as we go back in person?
+### What are chapter organizers finding helpful as we go back in person?
 
 _María:_ Online meetings have been helpful to reach other people that we
 haven't previously been able to and in other parts of Latin America; we
@@ -146,7 +146,7 @@ a lot of details in terms of having to find space, get pizza, and open
 doors, now with Zoom this is less so the case now and it makes things
 easier on the organizers and those people that are coming to speak.
 
-## What is the process of starting a chapter?
+### What is the process of starting a chapter?
 
 _Riva:_ Send an email to [chapters\@rladies.org](mailto:chapters@rladies.org). A member of the Onboarding Team will welcome you
 and explain process. Chapters are permitted for cities, but not for a
@@ -154,27 +154,27 @@ university or company. If you wish to have a thematic meet-up, you could
 approach a chapter like R-Ladies Remote and they can help create
 thematic meet-ups.
 
-## How would I step up and take over an inactive local chapter?
+### How would I step up and take over an inactive local chapter?
 
 _Riva:_ Same process; email
 [chapters\@rladies.org](mailto:chapters@rladies.org), and they would be
 happy to begin the process to reactivate your chapter.
 
-## If I don't have a local chapter, is there a way to join a "virtual" chapter? Or are there chapters that regularly meet online?
+### If I don't have a local chapter, is there a way to join a "virtual" chapter? Or are there chapters that regularly meet online?
 
 _Riva_: The R-Ladies Remote chapter serves this purpose. Additionally, many
 chapters continue to have virtual events and many welcome participants
 outside of their geographic location; they are often announced in the
 events channel of the Community Slack channel or on Meet-up.
 
-## Have you considered expanding to include Python?
+### Have you considered expanding to include Python?
 
 _Riva:_ Stephanie and I are also PyLadies organizers, and we are now planning to host joint R-Ladies and
 PyLadies events together in Valparaíso. Cosima Meyer (Cologne organiser, Germany) also organizes joint events
 in Germany, and it is a great way to expand the way you are reaching
 people.
 
-## Does R-Ladies raise funding for events?
+### Does R-Ladies raise funding for events?
 
 _Yani:_ R-Ladies receives funding from institutional and individual
 donors. As a Top Level project for R Consortium, R Consortium is our main sponsor for global administration; these funds mostly goes to Meetup fees. For R-Ladies chapters there is a different process - chapters can apply for R Consortium grants. If you do not want to manage
@@ -182,31 +182,31 @@ money you can ask for non-monetary donations, like a venue, pizza,
 drinks, speaker travel expenses, child care services, etc. More recently some chapters have use Open Collective to
 organize their funding.
 
-## Is there a LinkedIn group for R-Ladies Global?
+### Is there a LinkedIn group for R-Ladies Global?
 
 _Mo:_ Yes but it is not active. We are establishing a social media team
 and creating a social media strategy to better reach community members.
 
-## Should local chapters create a Mastodon account?
+### Should local chapters create a Mastodon account?
 
 _Mo:_ Social media strategy at the chapter level is up to chapter
 organizers; different chapters have different reasons for using
 particular platforms.
 
-## Is the Global team looking for any more volunteers?
+### Is the Global team looking for any more volunteers?
 
 _Mo:_ We are currently onboarding new members of the team after a recent
 call for volunteers. We plan to put out another call for volunteers in
 the coming year, so keep an eye on our social media and website.
 
-# Questions that we ran out of time to answer
+## Questions that we ran out of time to answer
 
-## How have you been successful in getting people to attend meetups?
+### How have you been successful in getting people to attend meetups?
 
 Here are some ideas on organizing events from our guide:
 <https://guide.rladies.org/organization/events/general/>.
 
-## For the funding from RConsortium for local events, what is a typical grant amount?
+### For the funding from RConsortium for local events, what is a typical grant amount?
 
 It starts with 150 US\$, but it can be increase depending on your
 proposal. More info in our guide:
@@ -214,7 +214,7 @@ proposal. More info in our guide:
 and in the R Consortium page:
 <https://www.r-consortium.org/all-projects/r-user-group-support-program>.
 
-## What do we say to men who want to join an R-Ladies chapter?
+### What do we say to men who want to join an R-Ladies chapter?
 
 Please see the guide for the full policy, which provides recommendations
 but also offers flexibility for individual chapters to maintain their

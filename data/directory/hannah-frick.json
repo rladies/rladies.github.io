@@ -1,0 +1,9 @@
+{
+  "name": "Hannah Frick",
+  "categories": ["Speaker"],
+  "location": {
+    "country": "United Kingdom"
+  },
+  "languages": ["English", "German"],
+  "interests": ["Statistics", "Open Source"]
+}

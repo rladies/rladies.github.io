@@ -16,11 +16,11 @@ aliases:
   - "/news/2023-12-06-posit-cloud"
 ---
 
-# TL; DR
+## TL; DR
 
 R-Ladies now has a Posit Cloud account available for R-Ladies meet-ups.
 
-# Overview of Posit Cloud
+## Overview of Posit Cloud
 
 [Posit Cloud](https://posit.cloud/) is an online platform from Posit that allows
 users to work on data science projects without requiring software installation on
@@ -28,17 +28,17 @@ personal computers. This is a particularly attractive option for R-Ladies worksh
 as creators of a Posit Cloud space can ensure all workshop attendees are using the
 same version of both R and R packages, as well as create a directory with files to work from.
 
-# Partnership
+## Partnership
 
 We are thrilled to share that Posit has partnered with R-Ladies to offer a
 Posit Cloud account free of charge for R-Ladies meet-ups.
 
-# How to request access
+## How to request access
 
 Please follow the [Posit Cloud section of the
 R-Ladies guide](https://guide.rladies.org/organization/tech/accounts/#posit-cloud) to request access.
 
-# Considerations
+## Considerations
 
 Posit Cloud could be a wonderful addition to your R-Ladies meet-ups! Posit Cloud
 would be best suited for workshop style meet-ups where participants are encouraged

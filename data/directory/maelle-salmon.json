@@ -1,0 +1,12 @@
+{
+  "name": "Maëlle Salmon",
+  "categories": ["Website"],
+  "location": {
+    "country": "Spain"
+  },
+  "languages": ["French", "English", "Spanish"],
+  "interests": ["Open Source", "Package Development"],
+  "photo": {
+    "url": "directory/maelle-salmon.png"
+  }
+}
