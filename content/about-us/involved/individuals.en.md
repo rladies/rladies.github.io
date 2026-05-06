@@ -3,7 +3,7 @@ build:
   render: never
 title: "For Individuals"
 weight: 1
-image: "women-in-tech-02"
+image: "slidedeck-group-portrait"
 subsections:
   - title: "Getting started"
     items:

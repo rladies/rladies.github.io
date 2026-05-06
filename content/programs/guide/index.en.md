@@ -1,6 +1,6 @@
 ---
 title: "RLadies+ Guide"
-image: "women-in-tech-01"
+image: "slidedeck-woman-reading-code"
 weight: 60
 description: |
   The [RLadies+ Guide](https://guide.rladies.org/) covers everything volunteers need to know —
