@@ -1,7 +1,7 @@
 ---
 title: "Packages by RLadies+"
 type: "packages"
-image: "gender-spectrum-laptop-collab"
+image: "rladies-hex-submark"
 weight: 90
 description: |
   An open directory of R packages authored or maintained by RLadies+ community members.

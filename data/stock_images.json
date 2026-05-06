@@ -1,5 +1,17 @@
 [
   {
+    "id": "rladies-hex-submark",
+    "file": "images/stock/rladies-hex-submark.svg",
+    "alt": "RLadies+ submark inside a hexagonal frame",
+    "title": "RLadies+ hex submark",
+    "source": "RLadies+",
+    "source_url": "https://rladies.org",
+    "license": "CC BY-NC-ND 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "attribution_required": false,
+    "tags": ["rladies", "logo", "hexagon", "brand"]
+  },
+  {
     "id": "women-in-tech-01",
     "file": "images/stock/women-in-tech-01.jpg",
     "alt": "Woman of color working at a computer in a tech office",
