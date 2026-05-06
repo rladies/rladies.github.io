@@ -1,0 +1,7 @@
+project:
+  type: default
+
+format:
+  hugo-md:
+    filters:
+      - figure-to-markdown.lua
