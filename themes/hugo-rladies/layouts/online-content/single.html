@@ -1,0 +1,80 @@
+{{ define "main" }}
+
+{{ $url := "https://raw.githubusercontent.com/rladies/awesome-rladies-creations/main/data/website/awesome_content.json" }}
+{{ $entries := slice }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "Unable to fetch awesome content: %s" . }}
+  {{ else with .Value }}
+    {{ $entries = . | transform.Unmarshal }}
+  {{ end }}
+{{ end }}
+
+{{ $typeIcon := dict
+  "blog" "fa-solid fa-rss"
+  "website" "fa-solid fa-globe"
+  "youtube" "fa-brands fa-youtube"
+  "podcast" "fa-solid fa-microphone"
+  "newsletter" "fa-solid fa-envelope-open-text"
+}}
+{{ $typeLabel := dict
+  "blog" "Blog"
+  "website" "Website"
+  "youtube" "YouTube"
+  "podcast" "Podcast"
+  "newsletter" "Newsletter"
+}}
+
+<div class="entry-content">
+	{{ .Content }}
+</div>
+
+  <div class="container-fluid p-0 px-3">
+    <ul class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 shuffle-wrapper w-100 list-unstyled" id="online-content-grid">
+      {{ range $entry := $entries | shuffle }}
+        {{ $key := $entry.url | default $entry.title }}
+        {{ $data := newScratch }}
+        {{ $data.Set "descr" "" }}
+
+        {{ range $entry.authors }}
+          {{ $data.Add "descr" "<p>" }}
+          {{ $data.Add "descr" .name }}
+            {{ with .social_media }}
+              {{ range . }}
+                {{ $data.Add "descr" (partial "social_media.html" (dict "data" . "range" 3)) }}
+              {{ end }}
+            {{ end }}
+          {{ $data.Add "descr" "</p>" }}
+        {{ end }}
+        {{ $descr :=  $data.Get "descr" }}
+
+        {{ $data.Set "photo" (printf "https://www.gravatar.com/avatar/%s?s=100&d=identicon" ( md5 $key ) ) }}
+        {{ with $entry.photo_url }}
+          {{ with try (resources.GetRemote .) }}
+            {{ with .Err }}
+              {{ warnf "%s" . }}
+            {{ else with .Value }}
+              {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
+                {{ $img := . }}
+                {{ $img := $img.Fill "300x300" }}
+                {{ $data.Set "photo" $img.RelPermalink }}
+              {{ else }}
+                {{ warnf "Entry %s has a photo url without a supported image type" $key }}
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            {{ warnf "Unable to get remote resource %q" . }}
+          {{ end }}
+        {{ end }}
+
+        {{ $type := $entry.type | default "link" }}
+        {{ $icon := index $typeIcon $type | default "fa-solid fa-link" }}
+        {{ $label := index $typeLabel $type | default ($type | humanize) }}
+        {{ $category := printf "<i class=\"%s\" aria-hidden=\"true\"></i> <span>%s</span>" $icon $label }}
+
+        {{ $subtitle := $entry.subtitle | default "" }}
+        {{ partial "funcs/card-expand.html" (dict "title" $entry.title "img" ($data.Get "photo") "subtitle" $subtitle "descr" $descr "category" $category "url" $entry.url) }}
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

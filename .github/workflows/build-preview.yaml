@@ -7,10 +7,6 @@ on:
         description: "Directory reference"
         required: true
         default: "main"
-      blogs:
-        description: "Blogs reference"
-        required: true
-        default: "main"
       triggering_issue:
         description: "Triggering PR"
         required: false
@@ -26,7 +22,6 @@ env:
   issue: ${{ github.event.inputs.triggering_issue || github.event.pull_request.number }}
   repo_name: ${{ github.event.inputs.triggering_repo || github.repository }}
   directory: ${{ github.event.inputs.directory || 'main' }}
-  blogs: ${{ github.event.inputs.blogs || 'main' }}
   rid: ${{ github.event.number || github.run_id }}
   hugobd: public
   on_fork: ${{ github.event.pull_request.head.repo.fork == true }}
@@ -47,14 +42,10 @@ jobs:
           echo "hugovr=$ver" >> $GITHUB_ENV
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
-          echo "netalias=d${{ env.directory }}-b${{ env.blogs }}-r${{ env.rid}}" >> $GITHUB_ENV
-          echo "blogsref=main" >> $GITHUB_ENV
+          echo "netalias=d${{ env.directory }}-r${{ env.rid}}" >> $GITHUB_ENV
           echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
-          fi
-          if [ ${{ env.blogs }} != "main" ]; then
-            echo "blogsref=refs/pull/${{ env.issue }}/head" >> $GITHUB_ENV
           fi
 
       - name: Install cURL Headers
@@ -64,7 +55,7 @@ jobs:
 
       - name: Site data - Clean folders
         if: ${{ env.on_fork != 'true' }}
-        run: rm -r data/directory data/rblogs
+        run: rm -r data/directory
 
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v4
@@ -98,20 +89,9 @@ jobs:
             fi
           fi
 
-      - name: Site data - Get blogs list
-        if: ${{ env.on_fork != 'true' }}
-        uses: actions/checkout@v4
-        with:
-          repository: rladies/awesome-rladies-blogs
-          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          ref: ${{ env.blogsref }}
-          path: tmpd/rblogs
-
       - name: Site data - clean cloned repos
         if: ${{ env.on_fork != 'true' }}
-        run: |
-          cp -r tmpd/rblogs/blogs data/rblogs
-          rm -rf tmpd
+        run: rm -rf tmpd
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
