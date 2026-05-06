@@ -1,16 +1,53 @@
 @layer components {
   .hex-wall {
-    --hex-min: 130px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--hex-min), 1fr));
-    gap: 1rem;
+    --hex-cols: 3;
+    --hex-h-ratio: 1.1547;
+    --hex-w: calc(100% / var(--hex-cols));
+    --hex-overlap: 0.288;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 480px;
+    font-size: 0;
+  }
+
+  @media (min-width: 480px) {
+    .hex-wall {
+      --hex-cols: 4;
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hex-wall {
+      --hex-cols: 5;
+      max-width: 900px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hex-wall {
+      --hex-cols: 6;
+      max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hex-wall {
+      --hex-cols: 7;
+      max-width: 1330px;
+    }
   }
 
   .hex-tile {
-    aspect-ratio: 1 / 1.1547;
+    width: var(--hex-w);
+    aspect-ratio: 1 / var(--hex-h-ratio);
     position: relative;
+    margin-bottom: calc(var(--hex-w) * var(--hex-h-ratio) * -0.25);
     transition: transform 0.25s ease;
   }
 
@@ -18,6 +55,40 @@
   .hex-tile:focus-within {
     transform: translateY(-4px) scale(1.04);
     z-index: 2;
+  }
+
+  /* Offset every second visual row by half a hex width.
+     Pattern repeats every (2*cols - 1) tiles; offset target is the
+     (cols+1)th tile within each cycle. This produces a cols / cols-1 / cols
+     honeycomb where the shorter rows are horizontally indented. */
+  @media (max-width: 479px) {
+    .hex-tile:nth-child(5n + 4) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    .hex-tile:nth-child(7n + 5) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .hex-tile:nth-child(9n + 6) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    .hex-tile:nth-child(11n + 7) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hex-tile:nth-child(13n + 8) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
   }
 
   .hex-link {
