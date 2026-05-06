@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     align-content: flex-start;
     list-style: none;
-    padding: 0;
+    padding: 0 0 calc(var(--hex-w) * var(--hex-h-ratio) * 0.25);
     margin: 0 auto;
     max-width: 480px;
     font-size: 0;
