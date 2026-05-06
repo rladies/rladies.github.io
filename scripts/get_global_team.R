@@ -205,6 +205,7 @@ list.files(
   file.remove()
 
 # Write new ones
+message("Getting current team members from Airtable and writing to JSON...")
 airt$Members$select_all() |>
   dplyr::transmute(
     name = Name,
@@ -231,7 +232,7 @@ if (ncol(alum) > 0) {
   if (!"Directory Id" %in% names(alum)) {
     alum$`Directory Id` <- NA_character_
   }
-
+  message("Getting alumni from Airtable and writing to JSON...")
   alum <- alum |>
     dplyr::transmute(
       id = id,
@@ -251,5 +252,42 @@ if (ncol(alum) > 0) {
   # Delete from Airtable, to keep tidy.
   # Singular place for history of Global Team members
   # is website repo.
+  message("Deleting alumni records from Airtable...")
   airt$Alumni$delete(record_id = alum$id)
 }
+
+# Vacancies ----
+message("Getting vacancies from Airtable and writing to JSON...")
+
+vacancies <- airt$Teams$select_all(view = "viw7rlaxQ7T49Ux4b")
+
+team_lookup <- function(ids) {
+  if (is.null(ids) || all(is.na(ids))) {
+    return(NA_character_)
+  }
+  paste(teams$role[match(ids, teams$id)], collapse = ", ")
+}
+
+if (is.list(vacancies$Team)) {
+  vacancies$team <- vapply(vacancies$Team, team_lookup, character(1))
+} else {
+  vacancies$team <- vacancies$Team
+}
+
+vacancies_out <- vacancies |>
+  dplyr::transmute(
+    team = Team,
+    description = `Brief resposibilities`,
+    effort = `Weekly time estimate (optional)`,
+    skills = `Technical skills`,
+    vacancies = `Seeking members`,
+    documentation = Documentation
+  )
+
+jsonlite::write_json(
+  vacancies_out,
+  here::here("data", "global_team", "vacancies.json"),
+  pretty = TRUE,
+  auto_unbox = TRUE,
+  na = "null"
+)
