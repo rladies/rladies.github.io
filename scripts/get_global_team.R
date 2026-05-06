@@ -81,6 +81,10 @@ tojson <- function(x) {
       url = jsonlite::unbox(x$img)
     )
   }
+
+  if (!is.null(x$directory_id) && !is.na(x$directory_id)) {
+    json$directory_id <- jsonlite::unbox(x$directory_id)
+  }
   idx <- sapply(
     json,
     function(y) {
@@ -207,11 +211,12 @@ airt$Members$select_all() |>
     id = `Team membership`,
     img = photo,
     start = `Start date`,
-    end = NA
+    end = NA,
+    directory_id = `Directory Id`
   ) |>
   tidyr::unnest(id) |>
   dplyr::left_join(teams) |>
-  dplyr::group_by(name, img) |>
+  dplyr::group_by(name, img, directory_id) |>
   dplyr::summarise(
     role = list(role)
   ) |>
@@ -223,6 +228,10 @@ airt$Members$select_all() |>
 alum <- airt$Alumni$select_all()
 
 if (ncol(alum) > 0) {
+  if (!"Directory Id" %in% names(alum)) {
+    alum$`Directory Id` <- NA_character_
+  }
+
   alum <- alum |>
     dplyr::transmute(
       id = id,
@@ -230,7 +239,8 @@ if (ncol(alum) > 0) {
       role = strsplit(History, ", "),
       img = photo,
       start = `Start Date`,
-      end = `End Date`
+      end = `End Date`,
+      directory_id = `Directory Id`
     )
 
   write_data(

@@ -39,7 +39,12 @@
                   {{ $foot = printf "<p class=\"card-text text-muted\"><small>%s: %s</small></p>" (i18n "photo_credit") . }}
                 {{ end }}
 
-                {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" $foot) }}
+                {{ $url := "" }}
+                {{ with $d.directory_id }}
+                  {{ $url = printf "%s%s/" ("/directory/" | relLangURL) . }}
+                {{ end }}
+
+                {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "size" "small" "descr" $foot "url" $url) }}
               {{ end }}
             {{ end }}
           </ul>
@@ -105,7 +110,12 @@
                 {{ $credit = printf "<p class=\"card-text text-muted\"><small>%s: %s</small></p>" (i18n "photo_credit") . }}
               {{ end }}
 
-              {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" (delimit $d.role ", ") "size" "small" "descr" $credit) }}
+              {{ $url := "" }}
+              {{ with $d.directory_id }}
+                {{ $url = printf "%s%s/" ("/directory/" | relLangURL) . }}
+              {{ end }}
+
+              {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "foot" (delimit $d.role ", ") "size" "small" "descr" $credit "url" $url) }}
             {{ end }}
           </ul>
         </div>
@@ -126,8 +136,13 @@
                 {{ $image = (.Fill "400x400 webp").RelPermalink }}
               {{ end }}
 
+              {{ $url := "" }}
+              {{ with $d.directory_id }}
+                {{ $url = printf "%s%s/" ("/directory/" | relLangURL) . }}
+              {{ end }}
+
               {{ $dates := printf "%s &#8212 %s" $d.start $d.end }}
-              {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $dates "size" "service" "foot" (delimit $d.role ", ")) }}
+              {{ partial "funcs/card-expand.html" (dict "title" $d.name "img" $image "descr" $dates "size" "service" "foot" (delimit $d.role ", ") "url" $url) }}
             {{ end }}
           </ul>
         </div>
