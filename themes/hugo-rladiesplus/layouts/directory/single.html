@@ -137,6 +137,35 @@
   </div>
 
   {{ $dirID := .Params.directory_id }}
+
+  {{ $authoredPackages := slice }}
+  {{ if $dirID }}
+    {{ $packagesUrl := "https://raw.githubusercontent.com/rladies/awesome-rladies-creations/main/data/website/awesome_packages.json" }}
+    {{ with try (resources.GetRemote $packagesUrl) }}
+      {{ with .Value }}
+        {{ range $pkg := . | transform.Unmarshal }}
+          {{ range $pkg.authors }}
+            {{ with .directory_id }}
+              {{ if eq . $dirID }}
+                {{ $authoredPackages = $authoredPackages | append $pkg }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $authoredPackages }}
+    <div class="mt-8 mb-12">
+      <h2 class="text-xl font-bold mb-6">
+        <i class="fa-solid fa-cube mr-2 text-primary"></i>
+        {{ i18n "r_packages" | default "R Packages" }}
+      </h2>
+      {{ partial "funcs/hex-wall.html" (dict "packages" $authoredPackages) }}
+    </div>
+  {{ end }}
+
   {{ $authored := slice }}
   {{ $edited := slice }}
   {{ $translated := slice }}

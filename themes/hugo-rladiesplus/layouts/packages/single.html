@@ -10,13 +10,6 @@
   {{ end }}
 {{ end }}
 
-{{ $defaultRopenSciHash := "" }}
-{{ with try (resources.GetRemote "https://docs.ropensci.org/riem/logo.png") }}
-  {{ with .Value }}
-    {{ $defaultRopenSciHash = md5 .Content }}
-  {{ end }}
-{{ end }}
-
 <section class="site-section-lg">
   <div class="site-container">
     <div class="max-w-3xl mx-auto mb-12 entry-content">
@@ -27,70 +20,7 @@
 
 <div class="breakout">
   <div class="container-wide">
-    <ul class="hex-wall list-unstyled">
-      {{ range $pkg := $packages }}
-        {{ $logo := "" }}
-        {{ if (and $pkg.logo_url (eq (printf "%T" $pkg.logo_url) "string")) }}
-          {{ $logo = $pkg.logo_url }}
-        {{ end }}
-        {{ $href := "" }}
-        {{ if (and $pkg.pkdown_url (eq (printf "%T" $pkg.pkdown_url) "string")) }}
-          {{ $href = $pkg.pkdown_url }}
-        {{ else if $pkg.repo_url }}
-          {{ $href = $pkg.repo_url }}
-        {{ end }}
-
-        {{ $authors := slice }}
-        {{ range $pkg.authors }}
-          {{ if in (.roles | default (slice "aut")) "aut" }}
-            {{ $authors = $authors | append .name }}
-          {{ else if in (.roles | default (slice)) "cre" }}
-            {{ $authors = $authors | append .name }}
-          {{ end }}
-        {{ end }}
-        {{ $authorList := delimit (first 3 $authors) ", " }}
-        {{ if gt (len $authors) 3 }}
-          {{ $authorList = printf "%s + %d more" $authorList (sub (len $authors) 3) }}
-        {{ end }}
-
-        {{ $logoRes := false }}
-        {{ $isDefaultLogo := false }}
-        {{ if $logo }}
-          {{ with try (resources.GetRemote $logo) }}
-            {{ with .Err }}
-              {{ warnf "package logo fetch failed for %s: %s" $pkg.name . }}
-            {{ else with .Value }}
-              {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
-                {{ $logoRes = . }}
-                {{ if and $defaultRopenSciHash (eq (md5 .Content) $defaultRopenSciHash) }}
-                  {{ $isDefaultLogo = true }}
-                {{ end }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
-        {{ end }}
-
-        <li class="hex-tile{{ if not $logoRes }} hex-tile-text{{ end }}">
-          {{ if $href }}<a href="{{ $href }}" target="_blank" rel="noopener noreferrer" class="hex-link">{{ end }}
-            <span class="hex-shape">
-              {{ if $logoRes }}
-                <img src="{{ $logoRes.RelPermalink }}" alt="{{ $pkg.name }} hex sticker" loading="lazy" />
-                {{ if $isDefaultLogo }}
-                  <span class="hex-name-overlay" aria-hidden="true">{{ $pkg.name }}</span>
-                {{ end }}
-              {{ else }}
-                <span class="hex-fallback">{{ $pkg.name }}</span>
-              {{ end }}
-            </span>
-            <span class="hex-meta" aria-hidden="true">
-              <span class="hex-meta-name">{{ $pkg.name }}</span>
-              {{ with $authorList }}<span class="hex-meta-authors">{{ . }}</span>{{ end }}
-            </span>
-            <span class="sr-only">{{ $pkg.name }}{{ with $authorList }} by {{ . }}{{ end }}{{ with $pkg.description }}. {{ . }}{{ end }}</span>
-          {{ if $href }}</a>{{ end }}
-        </li>
-      {{ end }}
-    </ul>
+    {{ partial "funcs/hex-wall.html" (dict "packages" $packages) }}
   </div>
 </div>
 {{ end }}
