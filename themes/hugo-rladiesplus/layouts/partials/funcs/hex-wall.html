@@ -51,6 +51,8 @@
             {{ if and $defaultRopenSciHash (eq (md5 .Content) $defaultRopenSciHash) }}
               {{ $isDefaultLogo = true }}
             {{ end }}
+          {{ else }}
+            {{ warnf "package logo for %s has unexpected content-type %q (url: %s) — clear resources/_cache and rebuild if this persists" $pkg.name .Data.ContentType $logo }}
           {{ end }}
         {{ end }}
       {{ end }}

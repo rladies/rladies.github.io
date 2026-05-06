@@ -4,4 +4,4 @@ buildDrafts: true
 caches:
   getResource:
     dir: ":resourceDir/_cache"
-    maxAge: "1h"
+    maxAge: "5m"
