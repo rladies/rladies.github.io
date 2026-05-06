@@ -1,6 +1,6 @@
 ---
 title: "Community Slack"
-image: "gender-spectrum-meeting-01"
+icon: "fa-brands fa-slack"
 weight: 10
 description: |
   The community Slack is open to anyone who identifies as a woman or gender minority and is interested in R.

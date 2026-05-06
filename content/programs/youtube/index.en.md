@@ -1,6 +1,6 @@
 ---
 title: "YouTube Channel"
-image: "pexels-diverse-conference-03"
+icon: "fa-brands fa-youtube"
 weight: 50
 description: |
   The [RLadies+ YouTube channel](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng) features

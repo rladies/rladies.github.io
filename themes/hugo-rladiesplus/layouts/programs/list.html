@@ -8,23 +8,31 @@
 </div>
 
 {{ range $i, $page := .Pages.ByWeight }}
-  {{ $imgData := index (where $stockImages "id" $page.Params.image) 0 }}
+  {{ $icon := $page.Params.icon }}
+  {{ $imgData := "" }}
+  {{ if not $icon }}
+    {{ $imgData = index (where $stockImages "id" $page.Params.image) 0 }}
+  {{ end }}
   <section class="program-row{{ if eq (mod $i 2) 0 }} bg-surface-alt{{ else }} program-row-reverse{{ end }}">
-    <div class="program-row-image{{ with resources.Get $imgData.file }}{{ if eq .MediaType.SubType "svg" }} program-row-image-contain{{ end }}{{ end }}">
-      {{ with resources.Get $imgData.file }}
-        {{ if eq .MediaType.SubType "svg" }}
-          <img src="{{ .RelPermalink }}"
-               alt="{{ $imgData.alt }}"
-               loading="lazy">
-        {{ else }}
-          {{ $img := .Fill "800x600 webp" }}
-          <img src="{{ $img.RelPermalink }}"
-               alt="{{ $imgData.alt }}"
-               width="{{ $img.Width }}" height="{{ $img.Height }}"
-               loading="lazy">
+    <div class="program-row-image{{ if $icon }} program-row-image-icon{{ else }}{{ with resources.Get $imgData.file }}{{ if eq .MediaType.SubType "svg" }} program-row-image-contain{{ end }}{{ end }}{{ end }}">
+      {{ if $icon }}
+        <i class="{{ $icon }}" aria-hidden="true"></i>
+      {{ else }}
+        {{ with resources.Get $imgData.file }}
+          {{ if eq .MediaType.SubType "svg" }}
+            <img src="{{ .RelPermalink }}"
+                 alt="{{ $imgData.alt }}"
+                 loading="lazy">
+          {{ else }}
+            {{ $img := .Fill "800x600 webp" }}
+            <img src="{{ $img.RelPermalink }}"
+                 alt="{{ $imgData.alt }}"
+                 width="{{ $img.Width }}" height="{{ $img.Height }}"
+                 loading="lazy">
+          {{ end }}
         {{ end }}
+        {{ partial "stock-attribution.html" $imgData }}
       {{ end }}
-      {{ partial "stock-attribution.html" $imgData }}
     </div>
     <div class="program-row-content">
       <h2 class="program-row-title">{{ $page.Title }}</h2>

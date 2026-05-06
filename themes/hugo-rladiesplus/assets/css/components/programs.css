@@ -37,6 +37,20 @@
   @apply absolute inset-0 object-contain;
 }
 
+.program-row-image-icon {
+  @apply flex items-center justify-center;
+}
+
+.program-row-image-icon i {
+  font-size: clamp(6rem, 12vw, 10rem);
+  color: var(--color-primary);
+  transition: transform 0.5s;
+}
+
+.program-row:hover .program-row-image-icon i {
+  transform: scale(1.05);
+}
+
 .program-row:hover .program-row-image img {
   @apply scale-105;
 }
