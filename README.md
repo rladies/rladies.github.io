@@ -31,13 +31,11 @@ E --> F["Populate untranslated pages\n(scripts/missing_translations.R)"]
 subgraph Site Data
   F --> G["Get directory data\n(rladies/directory)"]
   F --> H["Meetup\n(rladies/meetup_archive)"]
-  F --> I["Get blogs list\n(rladies/awesome-rladies-blogs)"]
   G --> J["Clean cloned repos"]
   J --> K["Merge chapter and meetup\n(scripts/get_chapters.R)"]
 end
 
 H --> J
-I --> J
 K --> L[Setup Hugo]
 L --> M[Build]
 
