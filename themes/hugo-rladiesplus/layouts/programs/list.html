@@ -10,7 +10,7 @@
 {{ range $i, $page := .Pages.ByWeight }}
   {{ $imgData := index (where $stockImages "id" $page.Params.image) 0 }}
   <section class="program-row{{ if eq (mod $i 2) 0 }} bg-surface-alt{{ else }} program-row-reverse{{ end }}">
-    <div class="program-row-image">
+    <div class="program-row-image{{ with resources.Get $imgData.file }}{{ if eq .MediaType.SubType "svg" }} program-row-image-contain{{ end }}{{ end }}">
       {{ with resources.Get $imgData.file }}
         {{ if eq .MediaType.SubType "svg" }}
           <img src="{{ .RelPermalink }}"
