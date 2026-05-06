@@ -155,6 +155,6 @@
 
 @layer components {
   .dark .hex-shape {
-    background-color: var(--color-dark-25);
+    background-color: #fff;
   }
 }
