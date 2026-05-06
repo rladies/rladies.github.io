@@ -12,6 +12,7 @@ output: html_document
 slug: "statement-about-datacamp"
 aliases:
   - "/news/2019-04-08-statement-about-datacamp"
+  - "/news/statement-about-datacamp/"
 ---
 
 _This blog post is a slightly extended version of the [official statement the R-Ladies Global organization made via Twitter](https://twitter.com/RLadiesGlobal/status/1114507499728769024), in a form that is easier to share. The views expressed here are the views of the R-Ladies Global Team signing at the end of this post and do not represent the R-Ladies community at large._

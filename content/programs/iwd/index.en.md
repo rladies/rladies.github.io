@@ -8,6 +8,6 @@ description: |
   The organisers of these campaigns have written blog posts about each one.
 ctas:
   - label: "Read about the campaigns"
-    url: "/categories/iwd/"
+    url: "/tags/iwd/"
     style: "primary"
 ---
