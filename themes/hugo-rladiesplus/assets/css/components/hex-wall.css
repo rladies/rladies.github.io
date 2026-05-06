@@ -130,6 +130,14 @@
     line-height: 1.2;
   }
 
+  .hex-name-overlay {
+    @apply absolute inset-0 flex items-center justify-center text-center font-bold text-sm px-3 pointer-events-none;
+    color: var(--color-dark);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.85), 0 1px 2px rgba(255, 255, 255, 0.6);
+    word-break: break-word;
+    line-height: 1.15;
+  }
+
   .hex-meta {
     @apply absolute inset-0 flex flex-col items-center justify-center text-center px-3 opacity-0 pointer-events-none;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);

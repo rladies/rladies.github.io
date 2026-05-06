@@ -10,6 +10,13 @@
   {{ end }}
 {{ end }}
 
+{{ $defaultRopenSciHash := "" }}
+{{ with try (resources.GetRemote "https://docs.ropensci.org/riem/logo.png") }}
+  {{ with .Value }}
+    {{ $defaultRopenSciHash = md5 .Content }}
+  {{ end }}
+{{ end }}
+
 <section class="site-section-lg">
   <div class="site-container">
     <div class="max-w-3xl mx-auto mb-12 entry-content">
@@ -46,23 +53,30 @@
           {{ $authorList = printf "%s + %d more" $authorList (sub (len $authors) 3) }}
         {{ end }}
 
-        <li class="hex-tile{{ if not $logo }} hex-tile-text{{ end }}">
+        {{ $logoRes := false }}
+        {{ $isDefaultLogo := false }}
+        {{ if $logo }}
+          {{ with try (resources.GetRemote $logo) }}
+            {{ with .Err }}
+              {{ warnf "package logo fetch failed for %s: %s" $pkg.name . }}
+            {{ else with .Value }}
+              {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
+                {{ $logoRes = . }}
+                {{ if and $defaultRopenSciHash (eq (md5 .Content) $defaultRopenSciHash) }}
+                  {{ $isDefaultLogo = true }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        <li class="hex-tile{{ if not $logoRes }} hex-tile-text{{ end }}">
           {{ if $href }}<a href="{{ $href }}" target="_blank" rel="noopener noreferrer" class="hex-link">{{ end }}
             <span class="hex-shape">
-              {{ if $logo }}
-                {{ with try (resources.GetRemote $logo) }}
-                  {{ with .Err }}
-                    {{ warnf "package logo fetch failed for %s: %s" $pkg.name . }}
-                    <span class="hex-fallback">{{ $pkg.name }}</span>
-                  {{ else with .Value }}
-                    {{ if in (slice "image/jpeg" "image/png" "image/gif" "image/webp" "image/svg+xml") .Data.ContentType }}
-                      <img src="{{ .RelPermalink }}" alt="{{ $pkg.name }} hex sticker" loading="lazy" />
-                    {{ else }}
-                      <span class="hex-fallback">{{ $pkg.name }}</span>
-                    {{ end }}
-                  {{ end }}
-                {{ else }}
-                  <span class="hex-fallback">{{ $pkg.name }}</span>
+              {{ if $logoRes }}
+                <img src="{{ $logoRes.RelPermalink }}" alt="{{ $pkg.name }} hex sticker" loading="lazy" />
+                {{ if $isDefaultLogo }}
+                  <span class="hex-name-overlay" aria-hidden="true">{{ $pkg.name }}</span>
                 {{ end }}
               {{ else }}
                 <span class="hex-fallback">{{ $pkg.name }}</span>
