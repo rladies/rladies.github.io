@@ -1,6 +1,6 @@
 {{ $page := . }}
 {{ $index := -1 }}
-{{ if isset . "entry" }}
+{{ if reflect.IsMap . }}
   {{ $page = .entry }}
   {{ $index = .position }}
 {{ end }}
