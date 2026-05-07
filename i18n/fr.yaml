@@ -157,6 +157,18 @@ related_posts: 'Articles similaires'
 last_edit: 'Cet article a été modifié pour la dernière fois le'
 last_message: 'avec le message'
 
+# Vacancies ----
+apply_role: 'Postuler pour rejoindre cette équipe'
+no_vacancies: "Il n'y a pas de postes vacants pour le moment — mais nous accueillons toujours volontiers une prise de contact."
+vacancies_open_interest: "Vous ne voyez pas d'équipe qui vous correspond, ou vous souhaitez proposer votre candidature pour l'avenir ? Nous accueillons toujours volontiers un bonjour."
+vacancies_register_interest: 'Manifester votre intérêt'
+vacancies_effort: 'Engagement hebdomadaire'
+vacancies_skills: 'Compétences utiles'
+vacancies_read_more: 'En savoir plus sur cette équipe'
+seeking_members:
+  one: '{{ . }} place à pourvoir'
+  other: '{{ . }} places à pourvoir'
+
 # Accessibility ----
 back_to_top: 'Retour en haut'
 toggle_dark_mode: 'Basculer le mode sombre'
