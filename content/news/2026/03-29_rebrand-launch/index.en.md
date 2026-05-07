@@ -86,7 +86,9 @@ The + doesn't change our direction.
 It makes our direction visible.
 
 <!--
-TODO: Add link to the video of the Science Graphic Design presentation once available.
+You can watch the RLadies+ Leadership Team and designers from Science Graphic Designs walk through the logo development and decision making, and the new branding materials they have provided us in the following video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iLaEtaDJ0FU?si=pUiAX1VesfhSd-lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 -->
 
 ## Resources
