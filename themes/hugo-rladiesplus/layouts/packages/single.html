@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+{{ $url := "https://raw.githubusercontent.com/rladies/awesome-rladies-creations/main/data/website/awesome_packages.json" }}
+{{ $packages := slice }}
+{{ with try (resources.GetRemote $url) }}
+  {{ with .Err }}
+    {{ errorf "Unable to fetch awesome packages: %s" . }}
+  {{ else with .Value }}
+    {{ $packages = . | transform.Unmarshal }}
+  {{ end }}
+{{ end }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto mb-12 entry-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<div class="breakout">
+  <div class="container-wide">
+    {{ partial "funcs/hex-wall.html" (dict "packages" $packages) }}
+  </div>
+</div>
+{{ end }}

@@ -1,6 +1,6 @@
 ---
 title: "Abstract Review"
-image: "pexels-women-laptops-agreement"
+image: "slidedeck-team-coding-tablet"
 weight: 20
 description: |
   RLadies+ Global runs a review and feedback programme for conference abstracts and funding applications,

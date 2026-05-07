@@ -12,6 +12,8 @@ categories:
 slug: "announcement"
 aliases:
   - "/news/2025-03-14_rebranding-announcement"
+  - "/news/announcement/"
+  - "/news/rebranding-rladies/"
 ---
 
 ## Background

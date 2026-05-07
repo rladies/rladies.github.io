@@ -1,0 +1,9 @@
+{
+  "name": "Janani Ravi",
+  "categories": ["Speaker"],
+  "location": {
+    "country": "USA"
+  },
+  "languages": ["English"],
+  "interests": ["Bioinformatics", "Computational Biology"]
+}

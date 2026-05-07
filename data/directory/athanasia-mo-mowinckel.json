@@ -1,0 +1,16 @@
+{
+  "name": "Athanasia Mo Mowinckel",
+  "categories": ["Leadership", "Speaker"],
+  "location": {
+    "country": "Norway"
+  },
+  "languages": ["English", "Norwegian"],
+  "interests": ["Statistics", "Neuroimaging", "Data Visualisation"],
+  "social_media": {
+    "github": "drmowinckels",
+    "bluesky": "drmowinckels.io"
+  },
+  "photo": {
+    "url": "directory/athanasia-mo-mowinckel.png"
+  }
+}

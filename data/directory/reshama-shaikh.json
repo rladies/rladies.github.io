@@ -1,0 +1,12 @@
+{
+  "name": "Reshama Shaikh",
+  "categories": ["Website"],
+  "location": {
+    "country": "USA"
+  },
+  "languages": ["English"],
+  "interests": ["Data Science", "Machine Learning"],
+  "photo": {
+    "url": "directory/reshama-shaikh.jpeg"
+  }
+}

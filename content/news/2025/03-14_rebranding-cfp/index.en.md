@@ -12,6 +12,7 @@ categories:
 slug: "cfp"
 aliases:
   - "/news/2025-03-14_rebranding-cfp"
+  - "/news/rebranding-cfp/"
 ---
 
 ## TL;DR

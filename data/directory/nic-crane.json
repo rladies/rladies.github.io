@@ -1,0 +1,12 @@
+{
+  "name": "Nic Crane",
+  "categories": ["Speaker"],
+  "location": {
+    "country": "United Kingdom"
+  },
+  "languages": ["English"],
+  "interests": ["Open Source", "Data Engineering"],
+  "photo": {
+    "url": "directory/nic-crane.png"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Sayantika Banik",
+  "categories": ["Speaker"],
+  "languages": ["English", "Bengali", "Hindi"],
+  "interests": ["Data Science", "Visualization"],
+  "photo": {
+    "url": "directory/sayantika-banik.png"
+  }
+}

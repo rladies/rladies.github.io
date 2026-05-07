@@ -1,0 +1,98 @@
+[
+  {
+    "team": "Abstract Review System",
+    "description": "- Promote the abstract review system on social media and Slack ahead of major conference deadlines\n- Triage incoming review requests via the team Slack channel, checking deadline, language and gender preferences\n- Match each request to suitable volunteer reviewers (aim for three) using the Airtable volunteers list\n- Email reviewers using the standard template and follow up if they don't respond\n- Keep the Airtable abstracts and volunteers tables up to date (status, reviews requested, reviews completed)\n",
+    "effort": "Variable; spikes around major conference deadlines. Typically a handful of requests per month, each needing 15-30 minutes to triage and assign.",
+    "skills": "- Comfortable with Airtable (filtering, updating linked records)\n- Email and Slack communication\n- No prior R or coding experience needed\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/comm/abstract-review/"
+  },
+  {
+    "team": "Blog administration",
+    "description": "- Serve as editor for incoming guest blog posts, reviewing drafts and shepherding them to publication\n- Recruit and support guest authors (cross-posting from their own blogs is welcome)\n- Triage proposals in the Airtable Request inbox, accepting or rejecting submissions\n- Track posts through the Airtable workflow (Post Status, Tasks, Kanban) and follow up on stalled posts\n- Coordinate with the website and translation teams when PRs are blocked\n- Label finished posts as `pending` on GitHub so they auto-merge on the scheduled date\n",
+    "effort": "~30 minutes per week in steady state, more when actively recruiting authors or editing several drafts in parallel.",
+    "skills": "Not necessary to begin with, but should be willing to learn:\n\n- git/GitHub (PR reviews, labels, merging)\n- Airtable (interfaces, linked records)\n- Reviewing PRs without breaking the site\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/website/admin_guide/blog/"
+  },
+  {
+    "team": "Campaign",
+    "description": "- Recruit a team of volunteers (a great first open-source project)\n- Decide the campaign theme and goal — see the IWD repo for past ideas (directory features, chapter features, lesson materials, blog/package round-ups)\n- Build the R scripts and assets needed to run the campaign\n- Schedule posts on the `rladies_iwd` social account\n- Monitor during the campaign window to retweet, reply and engage\n- Prepare pre- and post-campaign communications, and obtain permission for any third-party content used\n",
+    "effort": "The 3 days (7,8,9) are really bussy days.  You have to be on watch.  The weeks before the 8 with the tweetdeck schedulle are also bussy, 4 hours a day during 4-8 days, depending on the number of tweets. The previws week, starting on January, 2 hours a week.",
+    "skills": "- R scripting for content generation and scheduling\n- Familiarity with social media scheduling tools\n- Project planning (clear task list, automated where useful)\n- Access to the `rladies_iwd` social account (granted on approval)\n",
+    "vacancies": 2,
+    "documentation": "https://guide.rladies.org/comm/iwd/"
+  },
+  {
+    "team": "Chapter Activity",
+    "description": "- Identify inactive chapters (no events in past 6 months, none scheduled) and update the Inactive Chapters spreadsheet\n- Contact inactive chapters using the standard email templates to offer help\n- Refer organisers wanting support to the mentoring programme\n- Escalate to the Global Team Slack channel when a case is tricky\n- Send a monthly update to `chapters@rladies.org` summarising contacts, responses and chapters due for retirement\n- Coordinate chapter retirement with the Meetup, email/social media, and GitHub teams (retire 9 months to 1 year after last event)\n",
+    "effort": "A few hours per month, with monthly email update plus follow-ups. Heavier when handling retirement coordination.",
+    "skills": "- Comfortable with Google Sheets and email templates\n- GitHub (submitting a PR to update chapter status in `data/chapters`)\n- Diplomatic written communication\n",
+    "vacancies": 2,
+    "documentation": "https://guide.rladies.org/coordination/monitoring/"
+  },
+  {
+    "team": "Chapter Mentoring",
+    "description": "- Promote the mentoring programme to recruit mentors and mentees via the sign-up form\n- Match mentees with mentors based on language, region and topic preferences\n- Serve as the global team point of contact throughout each pairing, making introductions and helping agree mode/frequency of contact\n- Mediate when a pairing isn't working and offer to reassign\n- Conclude programmes when the mentee's checklist is complete, their first meetup runs, or the chapter retires\n- Collect feedback at the end of each pairing and uphold confidentiality, especially in unsuccessful cases\n",
+    "effort": "30 min - 1h depending on the tasks. Some tasks are done monthly.",
+    "skills": "No technical skills required. We use Google Calendar, Google Sheets, Google Forms and HackMD. Strong listening and people skills are valuable; everything else can be learned on the job.\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/coordination/mentoring/"
+  },
+  {
+    "team": "CoC enforcement",
+    "description": "- Receive, review and resolve Code of Conduct reports sent to `reporting@rladies.org`\n- Periodically revise the Code of Conduct (with global leadership agreement) and the reporting process\n- Keep the published CoC in sync with the source at `rladies/.github` (including translations and any embedded copies on R-Ladies+ sites)\n- Support organisers and moderators in maintaining a safe, friendly space across chapters and online channels\n",
+    "effort": "~1 hour per CoC review cycle. Handling an individual report can take significantly longer depending on its complexity.",
+    "skills": "- Discretion and confidentiality\n- Familiarity with GitHub (the CoC source lives there, including translation workflow)\n- Helpful to understand Hugo build hooks if maintaining embedded CoC copies on chapter sites\n",
+    "vacancies": 2,
+    "documentation": "https://guide.rladies.org/coordination/code-of-conduct/"
+  },
+  {
+    "team": "Community slack management",
+    "description": "- Monitor Slack daily for inappropriate content and remove it\n- Block bots and spammers from the workspace\n- Process invite requests via the Community Slack invites Airtable base, screening responses to the form\n- Respond to confirmation/notification automations triggered when a new request is submitted\n",
+    "effort": "~ 30 min, I try and check every day or so what has been posted to try and stay on top of what is going on in the channel. ",
+    "skills": "- Slack workspace admin\n- Airtable (form submissions, status fields)\n- Comfortable enforcing community guidelines tactfully\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/coordination/airtable/community-slack/"
+  },
+  {
+    "team": "Conferences liaison and Metameetups",
+    "description": "- Review and approve R-Ladies+ branded conference events submitted via `info@rladies.org`\n- Help conference organisers identify R-Ladies+ speakers, panellists and committee members from the directory\n- Liaise with the abstract review network on calls for papers\n- Support social gatherings and the R-Ladies+ presence at affiliate conferences\n- Ensure speakers' fees are waived/reimbursed and travel costs covered where applicable\n- Run metameetups: identify topics relevant to multiple chapters, recruit them, and help coordinate joint events\n- Maintain records of past events (see `rladies_global_presentations`)\n",
+    "effort": "Highly variable depending on conference involvement. For a major conference like useR!, expect ~8 hours per week across the year, ramping to ~16 hours in the two months before, full-time during the event, and ~4 hours per week for two months after. Quieter periods can be minimal.",
+    "skills": "- Familiarity with the R-Ladies+ directory and review network\n- Email and committee coordination\n- Optional: experience organising or speaking at R/data conferences\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/comm/conferences/"
+  },
+  {
+    "team": "Social Media",
+    "description": "- Post regularly across our platforms (Bluesky, Mastodon, LinkedIn, etc.) — content stays R-focused\n- Produce a regular newsletter\n- Like and reshare chapter posts about past events (favouring those with photos or shared resources)\n- Reshare the weekly `WeAreRLadies` curator hand-off and relevant curator posts\n- Monitor mentions; redirect R questions to the community Slack rather than answering\n- Ignore or mute trolls and irrelevant tags; escalate to leadership before posting on anything contentious\n- Forward job mentions to the community Slack jobs channel rather than reposting\n",
+    "effort": "Light daily check-ins (15-30 minutes) plus newsletter cycle.",
+    "skills": "- Familiatiry with at leat one of our major platforms (bluesky/mastodon/linkedin)\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/comm/twitter/"
+  },
+  {
+    "team": "Translation",
+    "description": "- Translate the Hugo website using the `i18n` (UI strings), `content` (pages and posts) and `data` (months, language strings) folders\n- Identify template sections with hard-coded English and flag/fix them\n- Translate other key documentation such as the R-Ladies+ Guide\n- Coordinate with the website team when translation PRs intersect with site changes\n- Help refine the translation review process (still a work in progress)\n",
+    "effort": "Self-paced; depends on how much content the volunteer takes on per cycle.",
+    "skills": "- Git/GitHub novice experience preferrable, but not necessary\n- Should be comfortable running Hugo locally\n",
+    "vacancies": 2,
+    "documentation": "https://guide.rladies.org/website/mulit-lingual/"
+  },
+  {
+    "team": "Website",
+    "description": "- Maintain and develop the R-Ladies+ website (everything from minor fixes to whole-section rewrites)\n- Review incoming pull requests, including translations and JSON data updates, and ensure CI checks pass\n- Use the auto-assignment workflow — review your assigned PRs or hand them off in `#team-website` if you can't\n- Enforce branch protection: no direct pushes to main, all changes via reviewed PRs, rebase merges by default\n- Triage GitHub issues and coordinate with codeowner teams (translation, blog, CoC, directory, mentoring) for their content areas\n- Support team members who want to learn Hugo, GitHub Actions, and blogdown workflows\n",
+    "effort": "~30 minutes per week in normal service mode. More when translation work or feature development is in flight. Members shape their own contribution level.",
+    "skills": "Not necessary to begin with, but should be willing to learn:\n\n- git/GitHub (branches, PRs, code review)\n- Reviewing PRs without breaking the site\n- Validating data JSON files when added or updated\n- Hugo basics (and advanced Hugo if developing new features)\n- GitHub Actions (the site has CI checks for builds)\n- Optional: blogdown for local R-based authoring\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/website/admin_guide/"
+  },
+  {
+    "team": "YouTube",
+    "description": "- Respond to incoming form requests in the YouTube Airtable base to add videos or managers to the global channel\n- Manage the `submission_table` records (chapter, event, video URL, language, playlist info)\n- Triage Slack notifications when new submissions arrive\n- Add new languages to the form when \"Other language\" is submitted\n",
+    "effort": "~ 10 minutes, if just responding to forms.",
+    "skills": "- YouTube channel management (adding videos, managers, playlists)\n- Airtable (form responses, automations)\n- No prior video editing skills needed\n",
+    "vacancies": 1,
+    "documentation": "https://guide.rladies.org/coordination/airtable/youtube/"
+  }
+]

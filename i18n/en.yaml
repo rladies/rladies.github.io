@@ -157,6 +157,18 @@ related_posts: 'Related Posts'
 last_edit: 'This post was last edited on'
 last_message: 'with the message'
 
+# Vacancies ----
+apply_role: 'Apply to join this team'
+no_vacancies: 'There are no open vacancies right now — but we always welcome an introduction.'
+vacancies_open_interest: "Don't see a team that fits, or want to put your name forward for the future? We always welcome a hello."
+vacancies_register_interest: 'Register your interest'
+vacancies_effort: 'Weekly time commitment'
+vacancies_skills: 'Useful skills'
+vacancies_read_more: 'Read more about this team'
+seeking_members:
+  one: 'Seeking {{ . }} member'
+  other: 'Seeking {{ . }} members'
+
 # Accessibility ----
 back_to_top: 'Back to top'
 toggle_dark_mode: 'Toggle dark mode'

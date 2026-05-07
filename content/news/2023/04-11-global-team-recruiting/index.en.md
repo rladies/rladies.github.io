@@ -19,18 +19,18 @@ aliases:
 Photo by [Hannah Busing](https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/Zyx1bK9mqmA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
 Alt text: Image of arms and hands of women wearing colorful sweaters in a circle with hands piled together.
 
-# TL; DR
+## TL; DR
 
 The R-Ladies Global Team is recruiting new members!
 Please fill [this form](/about-us/global-team/vacancies/) to submit yourself for consideration.
 
-# Background
+## Background
 
 The R-Ladies Global Team is made of volunteers that dedicate a few hours per week to the management of the global organization.
 We think of ourselves as one larger Global Team comprised of many smaller teams that address specific organizational needs.
 We want to build a diverse Global Team with good representation of all community members.
 
-# Timeline (approximate)
+## Timeline (approximate)
 
 - 2023-04-12 - 2023-04-26: Google form is open to submissions (2 weeks).
 
@@ -40,7 +40,7 @@ We want to build a diverse Global Team with good representation of all community
 
 - 2023-05-22 - 2023-05-26: Invitation to meet with 1-3 global team members to clarify any questions or expectations to ensure a good match for all parties (2 weeks).
 
-# Selection considerations
+## Selection considerations
 
 We will consider various aspects with the aim of increasing the diversity of the team.
 A new team member may contribute to the diversity of the Global Team via:
@@ -53,7 +53,7 @@ A new team member may contribute to the diversity of the Global Team via:
 
 - R-Ladies/R community involvement.
 
-# Benefits
+## Benefits
 
 By participating in R-Ladies you are helping other women or gender minorities by creating a safe space to learn, teach, and develop, as well as build out a support network and contacts.
 
@@ -63,21 +63,21 @@ Depending on the role, there also may be opportunities for technical upskilling.
 For example, some members of the Global team use R, reproducible reports, git/GitHub, GitHub Actions, Hugo website development, and database integrations.
 Knowledge of these tools is not a requirement for selection; the Global team will provide training on processes specific to your role.
 
-# Expectations
+## Expectations
 
-## Commitment
+### Commitment
 
 As R-Ladies is a purely volunteer run organisation, we respect and encourage your need to have vacations, free-time and focus on other aspects of your life.
 The hours spent on R-Ladies work should happen when you are truly available to do them.
 We do ask those that are seeking consideration to commit to one year of service to the Global Team (of course, we would understand if life interrupts this commitment), and an estimate of the weekly time commitment is 1 to 4 hours a week.
 In addition, the needs of the specific roles may vary: some volunteers work on a weekly, monthly, or quarterly basis due to natural workload fluctuations.
 
-## Communication
+### Communication
 
 Our primary communication channel is Slack, and the common language we communicate in is English.
 We hope for Global Team members to regularly check Slack; if the team member is not present on Slack, then we require them to be responsive via email.
 
-## Operations
+### Operations
 
 Individual teams within the Global Team may operate relatively independently from the Global Team or may work more closely with the Global Team.
 Individual teams may establish their own work preferences or set their own small team meetings.
@@ -85,7 +85,7 @@ In addition, many, but not all, members of the Global Team serve on multiple ind
 Lastly, applying to a specific team does not mean your contributions or communications are limited to that team.
 Individual teams often solicit and receive feedback or assistance from other members of the Global Team.
 
-# Positions
+## Positions
 
 Below is a list of all current global team operations.
 All teams are listed, however not all teams are currently recruiting.
@@ -116,7 +116,7 @@ Please refer to this table when submitting your interest.
 | Community Slack Management | Monitor Slack for any content that is inappropriate and needs to be removed, ensure that no bots or individuals spamming the channel have access.                       | 0                  |
 | Leadership                 | Finances, operational & infrastructure management, strategic planning, reporting & documentation. Representing R-Ladies on the RConsortium ISC board.                   | 0                  |
 
-# Submitting interest
+## Submitting interest
 
 Please [submit this Google form](https://forms.gle/dGzkbSWcD7qAaTfk6) to indicate your interest in joining the Global Team.
 The survey should take approximately 10-15 minutes to complete.

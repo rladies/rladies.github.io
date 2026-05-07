@@ -5,8 +5,8 @@
 ## Architecture Overview
 
 Hugo static site with Tailwind CSS 4.1+ theme, data-driven from multiple sources:
-- **Local data**: `data/chapters/`, `data/directory/`, `data/global_team/`, `data/rblogs/`
-- **Remote data**: Fetched at build from `rladies/meetup_archive` (events, chapter metadata)
+- **Local data**: `data/chapters/`, `data/directory/`, `data/global_team/`
+- **Remote data**: Fetched at build from `rladies/meetup_archive` (events, chapter metadata) and `rladies/awesome-rladies-creations` (online content listing)
 - **Content**: Multilingual (en/es/pt/fr) in `content/` with `_index.{lang}.md` pattern
 
 ## Key Commands
@@ -152,8 +152,8 @@ The `translated` field has three states:
 
 GitHub Actions workflow:
 1. R scripts process Airtable data
-2. Clone external repos (`directory`, `awesome-rladies-blogs`) for additional data
-   - `meetup_archive` data is fetched at Hugo build time via remote resources (see `funcs/merge_chapters.html` using `resources.GetRemote`) and is not cloned
+2. Clone external repos (`directory`) for additional data
+   - `meetup_archive` and `awesome-rladies-creations` data are fetched at Hugo build time via remote resources (`resources.GetRemote`) and are not cloned
 3. Hugo build with environment config
 4. Deploy to GitHub Pages (production) or Netlify (preview)
 

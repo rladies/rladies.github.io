@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{ $vacancies := $.Site.Data.global_team.vacancies }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto mb-12 entry-content fade-in-up">
+      {{ .Content }}
+    </div>
+
+    {{ if $vacancies }}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 fade-in-up">
+        {{ range $vacancies }}
+          <div class="card rounded-xl shadow-sm h-full flex flex-col">
+            <div class="card-body p-6 flex flex-col flex-grow">
+              <div class="flex items-start justify-between mb-3 gap-3">
+                <h2 class="card-title text-xl m-0">{{ .team }}</h2>
+                {{ with .vacancies }}
+                  <span class="badge badge-primary text-white whitespace-nowrap">
+                    {{ i18n "seeking_members" (int .) }}
+                  </span>
+                {{ end }}
+              </div>
+
+              {{ with .description }}
+                <div class="mb-4 text-sm">{{ . | markdownify }}</div>
+              {{ end }}
+
+              {{ with .effort }}
+                <div class="text-muted text-sm mb-3">
+                  <p class="font-semibold mb-1">
+                    <i class="bi bi-clock mr-1"></i>{{ i18n "vacancies_effort" }}
+                  </p>
+                  <div>{{ . | markdownify }}</div>
+                </div>
+              {{ end }}
+
+              {{ with .skills }}
+                <div class="text-muted text-sm mb-4">
+                  <p class="font-semibold mb-1">
+                    <i class="bi bi-tools mr-1"></i>{{ i18n "vacancies_skills" }}
+                  </p>
+                  <div>{{ . | markdownify }}</div>
+                </div>
+              {{ end }}
+
+              <div class="mt-auto flex flex-wrap items-center gap-4">
+                <a href="{{ "/form/global-team-application/" | relLangURL }}"
+                   class="btn btn-primary">
+                  {{ i18n "apply_role" }}
+                </a>
+                {{ with .documentation }}
+                  <a href="{{ . }}" target="_blank" rel="noopener" class="text-sm text-primary hover:underline">
+                    {{ i18n "vacancies_read_more" }} <i class="bi bi-box-arrow-up-right ml-1"></i>
+                  </a>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ else }}
+      <div class="max-w-3xl mx-auto mb-12 text-center fade-in-up">
+        <p class="text-muted mb-6">{{ i18n "no_vacancies" }}</p>
+      </div>
+    {{ end }}
+
+    <div class="max-w-3xl mx-auto text-center fade-in-up">
+      <p class="mb-6">{{ i18n "vacancies_open_interest" }}</p>
+      <a href="{{ "/form/global-team-application/" | relLangURL }}" class="btn btn-primary btn-lg">
+        {{ i18n "vacancies_register_interest" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

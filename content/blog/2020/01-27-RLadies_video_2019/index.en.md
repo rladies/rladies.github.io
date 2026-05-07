@@ -164,7 +164,7 @@ p <- p +
 
 ### Scene two: 100% volunteer work
 
-The objective is also to present _the number of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication media, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of volunteer work to achieve all these results. The [R-Ladies Global Team](/about-us/global-team/) provided us with the numbers referred to the [R-Ladies directory](/directory/) and from the [review network](tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use the `rtweet` package with the following code:
+The objective is also to present _the number of other R-Ladies initiatives_ in addition to the chapters and events, so we focus on our _communication media, our directory of experts, our review network and the generation of educational material_ for our meetups, conferences, events with other organizations, etc. Highlighting the effort of volunteer work to achieve all these results. The [R-Ladies Global Team](/about-us/global-team/) provided us with the numbers referred to the [R-Ladies directory](/directory/) and from the [review network](https://tinyurl.com/rladiesrevs). To calculate the number of followers of our twitter accounts, we use the `rtweet` package with the following code:
 
 ```
 # We load the necessary packages
@@ -233,5 +233,3 @@ The result was two videos, one in Spanish and one in English, where we tell in o
 The final video was sent to the Global team for dissemination through social networks on December 31, 2019.
 
 Authors: Yanina Bellini Saibene, Alejandra Bellini y Laura Acion
-
-[Versión en español](/es/blog/rladies_video_2019/)
