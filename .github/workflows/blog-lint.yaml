@@ -1,12 +1,11 @@
-name: "Blog post lint"
+name: "Content lint"
 
 on:
   pull_request:
     branches:
       - main
     paths:
-      - "content/blog/**/index*.md"
-      - "content/news/**/index*.md"
+      - "content/**/*.md"
 
 jobs:
   lint:
@@ -164,3 +163,63 @@ jobs:
             echo "::error::Blog post frontmatter has errors — see PR comment."
             exit 1
           fi
+
+  self-links:
+    name: Self-link check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Forbid absolute rladies.org self-links in changed content
+        run: |
+          cat > selflinks.js << 'SCRIPT'
+          const fs = require('fs');
+          const { execSync } = require('child_process');
+
+          const diff = execSync(
+            'git diff --unified=0 origin/main...HEAD -- "content/**/*.md"'
+          ).toString();
+
+          // Match https?://[www.]rladies.org/<path-with-something-after-slash>
+          // Allow bare https://rladies.org and https://rladies.org/ (homepage).
+          // Skip subdomains (guide., bsky., weare., etc.) — those are separate sites.
+          const selfLink = /https?:\/\/(?:www\.)?rladies\.org\/[A-Za-z0-9]/;
+
+          const findings = [];
+          let currentFile = null;
+          let currentLine = 0;
+          for (const line of diff.split('\n')) {
+            if (line.startsWith('+++ b/')) {
+              currentFile = line.slice(6);
+              continue;
+            }
+            const hunk = line.match(/^@@ -\d+(?:,\d+)? \+(\d+)(?:,\d+)? @@/);
+            if (hunk) { currentLine = parseInt(hunk[1], 10); continue; }
+            if (line.startsWith('+') && !line.startsWith('+++')) {
+              const text = line.slice(1);
+              if (selfLink.test(text)) {
+                findings.push({ file: currentFile, line: currentLine, text: text.trim() });
+              }
+              currentLine++;
+            } else if (!line.startsWith('-') && !line.startsWith('\\')) {
+              currentLine++;
+            }
+          }
+
+          if (findings.length === 0) {
+            console.log('No absolute rladies.org self-links found in changed content.');
+            process.exit(0);
+          }
+
+          console.log('::error::Use root-relative paths (e.g. /news/2025/announcement/) instead of https://rladies.org/... for internal links.');
+          for (const f of findings) {
+            const snippet = f.text.length > 120 ? f.text.slice(0, 117) + '...' : f.text;
+            console.log(`::error file=${f.file},line=${f.line}::${snippet}`);
+          }
+          process.exit(1);
+          SCRIPT
+
+          node selflinks.js

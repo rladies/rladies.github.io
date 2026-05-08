@@ -398,6 +398,28 @@ jobs:
               });
             }
 
+      - name: Fail on internal broken links
+        run: |
+          if [ ! -f lychee-report.md ]; then
+            echo "No lychee report — skipping internal-link gate."
+            exit 0
+          fi
+
+          # Internal failure = error on a root-relative path, a file:// URL,
+          # or any URL on the rladies.org host (production self-references).
+          internal=$(grep -E '\[(ERR|TIMEOUT)\]' lychee-report.md | \
+            grep -E '(\[(ERR|TIMEOUT)\] (file://|/[^/])|rladies\.org)' || true)
+
+          if [ -n "$internal" ]; then
+            echo "::error::Internal links are broken on the PR build:"
+            echo "$internal" | while IFS= read -r line; do
+              echo "::error::${line}"
+            done
+            exit 1
+          fi
+
+          echo "No internal broken links."
+
   bundle-size:
     name: Bundle size
     needs: build
