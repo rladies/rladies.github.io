@@ -54,10 +54,13 @@ jobs:
       - name: Post validation comment
         if: always() && github.event_name == 'pull_request'
         uses: actions/github-script@v9
+        env:
+          VALIDATION_RESULT: ${{ steps.validate.outputs.result }}
+          VALIDATION_ERRORS: ${{ steps.validate.outputs.errors }}
         with:
           script: |
-            const result = '${{ steps.validate.outputs.result }}';
-            const errors = `${{ steps.validate.outputs.errors }}`;
+            const result = process.env.VALIDATION_RESULT;
+            const errors = process.env.VALIDATION_ERRORS || '';
             let md = '## JSON Validation\n\n';
             if (result === 'pass') {
               md += ':white_check_mark: All JSON files are valid.\n';

@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "team":          { "type": "string" },
+      "description":   { "type": "string" },
+      "effort":        { "type": "string" },
+      "skills":        { "type": "string" },
+      "vacancies":     { "type": "integer", "minimum": 0 },
+      "documentation": { "type": "string" }
+    },
+    "required": ["team", "description", "vacancies"]
+  }
+}
