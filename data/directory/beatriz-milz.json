@@ -1,0 +1,9 @@
+{
+  "name": "Beatriz Milz",
+  "categories": ["Speaker"],
+  "location": {
+    "country": "Brazil"
+  },
+  "languages": ["Portuguese", "English"],
+  "interests": ["Open Data", "Education"]
+}

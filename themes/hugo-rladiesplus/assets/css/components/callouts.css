@@ -1,0 +1,41 @@
+@layer components {
+  .callout {
+    @apply relative my-8 py-5 pl-14 pr-6 rounded-xl text-sm;
+    border-left: 4px solid var(--callout-color, var(--color-primary));
+    background: color-mix(in srgb, var(--callout-color, var(--color-primary)) 8%, transparent);
+  }
+
+  .callout-icon {
+    @apply absolute left-4 top-5 text-base;
+    color: var(--callout-color, var(--color-primary));
+  }
+
+  .callout-title {
+    @apply font-semibold mb-1;
+    color: var(--callout-color, var(--color-primary));
+  }
+
+  .callout-content p:last-child {
+    @apply mb-0;
+  }
+
+  .callout-tip {
+    --callout-color: var(--color-primary);
+  }
+
+  .callout-info {
+    --callout-color: var(--color-accent-blue);
+  }
+
+  .callout-warning {
+    --callout-color: var(--color-accent-rose);
+  }
+
+  .callout-danger {
+    --callout-color: var(--callout-danger-color, #dc2626);
+  }
+
+  .callout-note {
+    --callout-color: var(--color-muted);
+  }
+}

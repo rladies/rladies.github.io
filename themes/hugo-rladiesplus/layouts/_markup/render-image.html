@@ -1,0 +1,13 @@
+{{- $alt := .PlainText -}}
+{{- $src := .Destination -}}
+{{- $caption := .Title -}}
+{{- if .IsBlock -}}
+<figure>
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy">
+  {{- with $caption }}
+  <figcaption>{{ . }}</figcaption>
+  {{- end }}
+</figure>
+{{- else -}}
+<img src="{{ $src }}" alt="{{ $alt }}"{{ with $caption }} title="{{ . }}"{{ end }} loading="lazy">
+{{- end -}}

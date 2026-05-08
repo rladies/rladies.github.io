@@ -1,0 +1,12 @@
+{
+  "name": "Shannon Pileggi",
+  "categories": ["Leadership"],
+  "location": {
+    "country": "USA"
+  },
+  "languages": ["English"],
+  "interests": ["Statistics", "Open Source"],
+  "photo": {
+    "url": "directory/shannon-pileggi.jpeg"
+  }
+}

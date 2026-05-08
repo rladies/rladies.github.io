@@ -1,0 +1,30 @@
+<section class="site-section-lg bg-surface" id="featured">
+  <div class="site-container">
+    <h2 class="section-title fade-in-up">
+      {{ i18n "home_featured_title" | default "Featured Members" }}
+    </h2>
+    <p class="section-subtitle fade-in-up stagger-1">
+      {{ i18n "home_featured_subtitle" | default "Meet some of the people in our community" }}
+    </p>
+
+    {{ $directory := where .Site.RegularPages "Section" "directory" }}
+    {{ if eq (len $directory) 0 }}
+      {{ $directory = where (index .Site.Sites 0).RegularPages "Section" "directory" }}
+    {{ end }}
+    {{ $featured := first 3 ($directory | shuffle) }}
+
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 list-unstyled p-0 max-w-5xl mx-auto fade-in-up stagger-2">
+      {{ range $featured }}
+        {{ partial "funcs/directory/card.html" (dict "data" . "name" . "size" "medium") }}
+      {{ end }}
+    </ul>
+
+    {{ with .Site.GetPage "section" "directory" }}
+      <div class="text-center mt-12 fade-in-up">
+        <a href="{{ .RelPermalink }}" class="btn btn-outline">
+          {{ i18n "home_featured_cta" | default "Browse Directory" }} &rarr;
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</section>

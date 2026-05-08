@@ -1,0 +1,46 @@
+{
+  "name": "Grace Hopper (Sample Entry)",
+  "honorific": "PhD, Rear Admiral",
+  "categories": ["Sample", "Speaker", "Mentor"],
+  "location": {
+    "city": "Arlington",
+    "state": "Virginia",
+    "country": "USA"
+  },
+  "languages": ["English"],
+  "social_media": {
+    "twitter": "samplehopper",
+    "github": "samplehopper",
+    "bluesky": "samplehopper.bsky.social",
+    "mastodon": "@samplehopper@fosstodon.org",
+    "linkedin": "samplehopper"
+  },
+  "interests": [
+    "Compilers",
+    "Programming Languages",
+    "Open Source",
+    "Education",
+    "Mentorship"
+  ],
+  "contact_method": ["Email", "LinkedIn"],
+  "activities": {
+    "r_groups": {
+      "R-Ladies Sample City": "https://www.meetup.com/rladies-sample/",
+      "R-Ladies Other Sample": "https://www.meetup.com/rladies-other-sample/"
+    },
+    "r_packages": {
+      "samplepkg": "https://example.com/samplepkg",
+      "anothersample": "https://example.com/anothersample"
+    }
+  },
+  "work": {
+    "title": "Sample Senior Engineer",
+    "organisation": "Sample Organisation",
+    "department": "Sample Research Division",
+    "url": "https://example.com"
+  },
+  "photo": {
+    "url": "directory/sample-grace-hopper.png",
+    "credit": "Sample Photographer"
+  }
+}

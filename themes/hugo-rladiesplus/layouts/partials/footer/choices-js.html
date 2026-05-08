@@ -1,0 +1,2 @@
+{{ $choices := resources.Get "js/vendor/choices.min.js" | minify | fingerprint }}
+<script src="{{ $choices.RelPermalink }}" integrity="{{ $choices.Data.Integrity }}" crossorigin="anonymous" defer></script>

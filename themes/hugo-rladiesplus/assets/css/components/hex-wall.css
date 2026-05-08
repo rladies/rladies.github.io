@@ -1,0 +1,172 @@
+@layer components {
+  .hex-wall {
+    --hex-cols: 3;
+    --hex-h-ratio: 1.1547;
+    --hex-w: calc(100% / var(--hex-cols));
+    --hex-overlap: 0.288;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    list-style: none;
+    padding: 0 0 calc(var(--hex-w) * var(--hex-h-ratio) * 0.25);
+    margin: 0 auto;
+    max-width: 480px;
+    font-size: 0;
+  }
+
+  @media (min-width: 480px) {
+    .hex-wall {
+      --hex-cols: 4;
+      max-width: 720px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hex-wall {
+      --hex-cols: 5;
+      max-width: 900px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hex-wall {
+      --hex-cols: 6;
+      max-width: 1140px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hex-wall {
+      --hex-cols: 7;
+      max-width: 1330px;
+    }
+  }
+
+  .hex-tile {
+    width: var(--hex-w);
+    aspect-ratio: 1 / var(--hex-h-ratio);
+    position: relative;
+    padding: 4px;
+    margin-bottom: calc(var(--hex-w) * var(--hex-h-ratio) * -0.25);
+    transition: transform 0.25s ease;
+  }
+
+  .hex-tile:hover,
+  .hex-tile:focus-within {
+    transform: translateY(-4px) scale(1.04);
+    z-index: 2;
+  }
+
+  /* Offset every second visual row by half a hex width.
+     Pattern repeats every (2*cols - 1) tiles; offset target is the
+     (cols+1)th tile within each cycle. This produces a cols / cols-1 / cols
+     honeycomb where the shorter rows are horizontally indented. */
+  @media (max-width: 479px) {
+    .hex-tile:nth-child(5n + 4) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 480px) and (max-width: 767px) {
+    .hex-tile:nth-child(7n + 5) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .hex-tile:nth-child(9n + 6) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    .hex-tile:nth-child(11n + 7) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .hex-tile:nth-child(13n + 8) {
+      margin-left: calc(var(--hex-w) / 2);
+    }
+  }
+
+  .hex-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .hex-link:hover,
+  .hex-link:focus-visible {
+    color: inherit;
+  }
+
+  .hex-shape {
+    display: block;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: var(--color-raised);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hex-shape img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1%;
+  }
+
+  .hex-fallback {
+    @apply absolute inset-0 flex items-center justify-center text-center font-semibold text-sm px-3;
+    color: #fff;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent-rose));
+    word-break: break-word;
+    line-height: 1.2;
+  }
+
+  .hex-name-overlay {
+    @apply absolute inset-0 flex items-center justify-center text-center font-bold text-sm px-3 pointer-events-none;
+    color: #2f2f30;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.85), 0 1px 2px rgba(255, 255, 255, 0.6);
+    word-break: break-word;
+    line-height: 1.15;
+  }
+
+  .hex-meta {
+    @apply absolute inset-0 flex flex-col items-center justify-center text-center px-3 opacity-0 pointer-events-none;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: rgba(80, 9, 168, 0.94);
+    color: #fff;
+    transition: opacity 0.2s ease;
+    line-height: 1.25;
+  }
+
+  .hex-tile:hover .hex-meta,
+  .hex-tile:focus-within .hex-meta {
+    opacity: 1;
+  }
+
+  .hex-meta-name {
+    @apply font-semibold text-sm break-words;
+  }
+
+  .hex-meta-authors {
+    @apply text-xs mt-1 opacity-90 break-words;
+  }
+}
+
+@layer components {
+  .dark .hex-shape {
+    background-color: #fff;
+  }
+
+  .dark .hex-name-overlay {
+    color: #2f2f30;
+  }
+}

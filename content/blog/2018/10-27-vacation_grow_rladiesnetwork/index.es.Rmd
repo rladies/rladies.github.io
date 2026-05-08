@@ -60,4 +60,4 @@ Es difícil creer que todo esto comenzó con unas vacaciones de Mine en Sudamér
 
 Autoras: "Paloma, Mine, Laura"
 
-[English version](https://blog.rladies.org/post/vacation_grow_rladiesnetwork/)
+[English version](/blog/vacation_grow_rladiesnetwork/)

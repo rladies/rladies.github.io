@@ -2,10 +2,14 @@
 title: "Acción de Twitter para el IWD 2019"
 author: 
   - name: Yanina Bellini
+    directory_id: "yanina-bellini-saibene"
   - name: Patricia Loto
+    directory_id: "patricia-andrea-loto"
   - name: Divya Seernani
-editor: 
+    directory_id: "divya-seernani"
+editor:
   - name: Roxana Noelia Villafane
+    directory_id: "roxana-noelia-villafane"
   - name: Gabriela De Queiroz
 date: "2019-03-25"
 description: "Explicando el proyecto de twitter para el IWD 2019"
@@ -58,13 +62,13 @@ En primer lugar, que un equipo animado con un objetivo compartido puede trabajar
 ## ¡La acción R!
 Somos R-Ladies, por esta razón el uso de R fue obviamente una parte integral de todo el proyecto. Los scripts usados son provistos a continuación, junto con algunos enlaces útiles que ayudaron a guiarnos en el detrás de escena de Twitter.
 
-El enlace más importante fue el [Blog de R-Ladies que explica la Acción de Twitter de IWD 2018](http://blog.rladies.org/post/ideation_and_creation/). Aprende a usar Magick [aquí](https://ropensci.org/blog/2016/08/23/z-magick-release/) y [aquí](https://ropensci.org/tutorials/magick_tutorial/). Un [blog](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) que explica cómo hacer mapas. El procesamiento de texto (incluidos caracteres de otros idiomas diferentes al Inglés) se explica [aquí](https://www.gastonsanchez.com/r4strings/stringr-basics.html) y [aquí](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).
+El enlace más importante fue el [Blog de R-Ladies que explica la Acción de Twitter de IWD 2018](/blog/2018-03-26-ideation_and_creation/). Aprende a usar Magick [aquí](https://ropensci.org/blog/2016/08/23/z-magick-release/) y [aquí](https://ropensci.org/tutorials/magick_tutorial/). Un [blog](https://d4tagirl.com/2017/05/how-to-fetch-twitter-users-with-r) que explica cómo hacer mapas. El procesamiento de texto (incluidos caracteres de otros idiomas diferentes al Inglés) se explica [aquí](https://www.gastonsanchez.com/r4strings/stringr-basics.html) y [aquí](https://appsilon.com/writing-excel-formatted-csv-using-readrwrite_excel_csv2/).
 
 ##¿Cómo fueron creadas las imágenes?
 La lista de los capítulos actuales contenía la información del país, ciudad, nombre, organizadores, estado (activo o no) y las formas de contacto (correo, sitio web, meetup y redes sociales) de todos los capítulos de R-ladies. 
 Esta lista se convirtió en nuestra fuente de datos primarios. También usamos una conjunto de datos de ciudades geolocalizadas para hacer los mapas. Nuestro objetivo era lograr una imágen con los siguientes componentes:
 
-![](Chapter_SantaRosa.png) 
+![Ejemplo de tweet para un capítulo existente de R-Ladies](Chapter_SantaRosa.png)
 
 
 ```{r}
@@ -471,7 +475,7 @@ for (i in 1:nrow(CCRL)) {
 
 For the chapters in the process of creation, we do not have contact information, so we replace that information with some nice images about R-Ladies and its network. The objective was to produce this image:
 
-![](Chapter_Concepción.png) 
+![Ejemplo de tweet para un nuevo capítulo en formación](Chapter_Concepción.png)
 
 
 ```{r}

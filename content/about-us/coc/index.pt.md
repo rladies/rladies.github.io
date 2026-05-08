@@ -4,11 +4,11 @@ aliases:
   - /pt/coc/
 ---
 
-R-Ladies tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes.
+RLadies+ tem como objetivo proporcionar uma experiência livre de assédio para todos. Não toleramos nenhuma forma de assédio aos participantes.
 
-Este código de conduta aplica-se a todos os espaços R-Ladies, incluindo: meetups, Twitter, Slack, listas de discussão, tanto online como offline. Qualquer pessoa que viole este código de conduta pode ser advertida, punida ou expulsa destes espaços, conforme critérios dos Membros Fundadores.
+Este código de conduta aplica-se a todos os espaços RLadies+, incluindo: meetups, Twitter, Slack, listas de discussão, tanto online como offline. Qualquer pessoa que viole este código de conduta pode ser advertida, punida ou expulsa destes espaços, conforme critérios dos Membros Fundadores.
 
-Alguns espaços R-Ladies podem ter regras adicionais em vigor, que serão claramente disponibilizadas aos participantes. Os participantes são responsáveis por conhecer e respeitar estas regras.
+Alguns espaços RLadies+ podem ter regras adicionais em vigor, que serão claramente disponibilizadas aos participantes. Os participantes são responsáveis por conhecer e respeitar estas regras.
 
 Entende-se como assédio:
 
@@ -29,7 +29,7 @@ Entende-se como assédio:
 * Deliberar exposição de qualquer aspecto da identidade de uma pessoa sem o seu consentimento, exceto quando necessário para proteger as pessoas vulneráveis de abuso intencional.
 * Publicação de comunicação privada não-assediante.
 
-R-Ladies prioriza a segurança das pessoas "marginalizadas" em detrimento do conforto das pessoas privilegiadas. Os Membros Fundadores não agirão sobre reclamações relativas a:
+RLadies+ prioriza a segurança das pessoas "marginalizadas" em detrimento do conforto das pessoas privilegiadas. Os Membros Fundadores não agirão sobre reclamações relativas a:
 
 * "Reversões", incluindo "racismo reverso", "sexismo inverso" e "cisfobia".
 * A comunicação razoável de limites, como "deixe-me sozinho", "vá embora" ou "não estou discutindo isso com você".
@@ -38,18 +38,18 @@ R-Ladies prioriza a segurança das pessoas "marginalizadas" em detrimento do con
 
 ### Denúncias
 
-Se você for assediado por um membro / convidado / participante de / em algum evento R-Ladies, ou ainda observe que alguém esteja sob assédio ou tem outras dúvidas, entre em contato com os Membros Fundadores através de reporting [at] rladies [dot] org. As incidências locais serão tratadas juntamente com os organizadores locais. Se a pessoa que está assediando você estiver na equipe, ela não participará da resolução do seu incidente. Responderemos o mais rápido possível.
+Se você for assediado por um membro / convidado / participante de / em algum evento RLadies+, ou ainda observe que alguém esteja sob assédio ou tem outras dúvidas, entre em contato com os Membros Fundadores através de reporting [at] rladies [dot] org. As incidências locais serão tratadas juntamente com os organizadores locais. Se a pessoa que está assediando você estiver na equipe, ela não participará da resolução do seu incidente. Responderemos o mais rápido possível.
 
-Este código de conduta aplica-se aos espaços de eventos do R-Ladies. Mas, se você for assediado por um membro / convidado / participante em eventos do R-Ladies fora de nossos espaços, queremos saber sobre esse fato também. Levamos a sério todas as denúncias de assédio por parte de membros do R-Ladies, especialmente os membros fundadores. Isso inclui assédio fora de nossos espaços e assédios ocorridos a qualquer instante. Os membros fundadores se reservam o direito de excluir as pessoas do R-Ladies com base em seu comportamento passado, incluindo comportamento externo aos espaços R-Ladies e comportamento às pessoas externas ao R-Ladies.
+Este código de conduta aplica-se aos espaços de eventos do RLadies+. Mas, se você for assediado por um membro / convidado / participante em eventos do RLadies+ fora de nossos espaços, queremos saber sobre esse fato também. Levamos a sério todas as denúncias de assédio por parte de membros do RLadies+, especialmente os membros fundadores. Isso inclui assédio fora de nossos espaços e assédios ocorridos a qualquer instante. Os membros fundadores se reservam o direito de excluir as pessoas do RLadies+ com base em seu comportamento passado, incluindo comportamento externo aos espaços RLadies+ e comportamento às pessoas externas ao RLadies+.
 
 A fim de proteger os voluntários de abuso e esgotamento ("burnout"), reservamo-nos o direito de rejeitar qualquer denúncia que acreditamos ter sido feita de má-fé. Denúncias destinadas a silenciar críticas legítimas podem ser excluídas sem resposta.
 
-Respeitamos os pedidos de confidencialidade com o propósito de proteger as vítimas de abuso. A nosso critério, podemos publicamente nomear uma pessoa sobre quem recebemos queixas de assédio ou advertir privadamente a terceiros sobre os assediadores, se acreditarmos que isso aumentará a segurança dos membros da R-Ladies ou do público em geral. Não nomearemos vítimas de assédio sem seu consentimento afirmativo.
+Respeitamos os pedidos de confidencialidade com o propósito de proteger as vítimas de abuso. A nosso critério, podemos publicamente nomear uma pessoa sobre quem recebemos queixas de assédio ou advertir privadamente a terceiros sobre os assediadores, se acreditarmos que isso aumentará a segurança dos membros da RLadies+ ou do público em geral. Não nomearemos vítimas de assédio sem seu consentimento afirmativo.
 
 ### Consequências
 
 Espera-se que o comportamento assediador seja interrompido imediatamente quando pedido.
 
-Se um participante se comporta como assediador, os membros fundadores podem tomar qualquer ação que julgarem apropriada, inclusive banimento do referido participante de todos os espaços do R-Ladies e identificação do participante para outros membros da comunidade R-Ladies ou o público em geral.
+Se um participante se comporta como assediador, os membros fundadores podem tomar qualquer ação que julgarem apropriada, inclusive banimento do referido participante de todos os espaços do RLadies+ e identificação do participante para outros membros da comunidade RLadies+ ou o público em geral.
 
 Esta política está licenciada sob a licença Creative Commons Zero.

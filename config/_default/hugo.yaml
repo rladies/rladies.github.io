@@ -1,5 +1,5 @@
-title: "R-Ladies Global"
-theme: "hugo-rladies"
+title: "RLadies+ Global"
+theme: "hugo-rladiesplus"
 publishDir: "public"
 
 languageCode: "en"
@@ -13,7 +13,28 @@ minify:
   minifyOutput: true
 
 buildFuture: true
-buildDrafts: true
+buildDrafts: false
+timeout: "300s"
+
+markup:
+  goldmark:
+    renderer:
+      lazyLoadImages: true
+
+taxonomies:
+  category: categories
+  tag: tags
+
+related:
+  includeNewer: true
+  threshold: 50
+  indices:
+    - name: categories
+      weight: 100
+    - name: tags
+      weight: 80
+    - name: date
+      weight: 10
 
 ignoreLogs:
   - "warning-goldmark-raw-html"
@@ -25,11 +46,8 @@ ignoreFiles:
   - "\\.DS_Store"
   - "_files$"
   - "content/*/\\*/index\\*\\.html"
-  - "_cache$"
   - "README"
   - "README_img/"
-
-# Add this to config/_default/config.yaml
 
 outputFormats:
   Calendar:
@@ -41,8 +59,9 @@ outputFormats:
 outputs:
   home:
     - HTML
+    - RSS
   section:
     - HTML
+    - RSS
   page:
     - HTML
-    - RSS

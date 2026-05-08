@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    {{ with .Content }}
+      <div class="max-w-3xl mx-auto text-center mb-10 entry-content fade-in-up">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ $categories := .Pages.ByWeight }}
+
+    <div class="flex flex-wrap justify-center gap-2 mb-10 fade-in-up"
+         x-data="{ active: 'all' }">
+      <button class="btn btn-sm"
+              :class="active === 'all' ? 'btn-primary' : 'btn-outline'"
+              @click="active = 'all'; $dispatch('faq-filter', { category: 'all' })">
+        All
+      </button>
+      {{ range $categories }}
+        <button class="btn btn-sm"
+                :class="active === '{{ .Title | urlize }}' ? 'btn-primary' : 'btn-outline'"
+                @click="active = '{{ .Title | urlize }}'; $dispatch('faq-filter', { category: '{{ .Title | urlize }}' })">
+          <i class="fa-solid {{ .Params.icon }} mr-1"></i> {{ .Title }}
+        </button>
+      {{ end }}
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-8"
+         x-data="{ filter: 'all' }"
+         @faq-filter.window="filter = $event.detail.category">
+      {{ range $categories }}
+        <div x-show="filter === 'all' || filter === '{{ .Title | urlize }}'"
+             x-transition
+             class="fade-in-up">
+          <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+            <i class="fa-solid {{ .Params.icon }} text-primary"></i>
+            {{ .Title }}
+          </h2>
+          <div class="space-y-3">
+            {{ range .Params.items }}
+              <div class="card rounded-xl" x-data="{ open: false }">
+                <button class="w-full text-left p-5 flex items-center justify-between gap-4 font-medium text-dark hover:text-primary transition-colors"
+                        @click="open = !open" :aria-expanded="open">
+                  <span>{{ .q }}</span>
+                  <i class="fa-solid fa-chevron-down text-xs shrink-0 transition-transform"
+                     aria-hidden="true" :class="open && 'rotate-180'"></i>
+                </button>
+                <div x-show="open" x-transition x-cloak>
+                  <div class="px-5 pb-5 text-muted entry-content">
+                    {{ .a | $.Page.RenderString }}
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

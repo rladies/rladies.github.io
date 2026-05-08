@@ -1,0 +1,9 @@
+{
+  "name": "Florencia D'Andrea",
+  "categories": ["Speaker"],
+  "location": {
+    "country": "Argentina"
+  },
+  "languages": ["Spanish", "English"],
+  "interests": ["Open Source", "Education"]
+}

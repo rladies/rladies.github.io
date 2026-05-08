@@ -1,0 +1,299 @@
+{{ define "main" }}
+
+<section class="site-section-lg">
+  <div class="site-container">
+    <div class="max-w-3xl mx-auto text-center mb-10 entry-content fade-in-up">
+      {{ .Content }}
+    </div>
+
+    {{ $updatedURL := "https://raw.githubusercontent.com/rladies/meetup_archive/refs/heads/main/data/updated.json" }}
+    {{ $updated := dict }}
+    {{ with try (resources.GetRemote $updatedURL) }}
+      {{ with .Err }}
+        {{ warnf "%s" . }}
+      {{ else }}
+        {{ $updated = .Value | transform.Unmarshal }}
+      {{ end }}
+    {{ else }}
+      {{ warnf "Unable to get remote resource %q" $updatedURL }}
+    {{ end }}
+
+    <div class="max-w-sm mx-auto mb-10 fade-in-up">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+        <p class="stat-number">{{ $updated.n_events_past }}</p>
+        <p class="stat-label">Events completed</p>
+      </div>
+    </div>
+
+    <div class="card rounded-xl mb-8 fade-in-up">
+      <div class="p-5">
+        <div class="flex flex-col md:flex-row md:items-center gap-3">
+          <label for="time-zone-selector" class="form-label mb-0 font-semibold shrink-0">
+            <i class="fa-solid fa-globe mr-2"></i>View events in:
+          </label>
+          <select id="time-zone-selector" class="form-select flex-1" aria-label="Timezone">
+            <option value="utc">Universal Time Coordinated (UTC)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mb-4">
+      <span id="loading" class="text-sm text-muted">Loading events...</span>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center gap-4 mb-6 fade-in-up">
+      <div class="inline-flex rounded-lg overflow-hidden border border-gray-200" role="group" aria-label="Period">
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium" data-period="week">Week</button>
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium active" data-period="month">Month</button>
+      </div>
+      <div class="inline-flex rounded-lg overflow-hidden border border-gray-200" role="group" aria-label="Format">
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium active" data-format="list">
+          <i class="fas fa-list mr-1"></i>List
+        </button>
+        <button type="button" class="cal-toggle px-4 py-2 text-sm font-medium" data-format="calendar">
+          <i class="fas fa-calendar mr-1"></i>Calendar
+        </button>
+      </div>
+    </div>
+
+    <div class="card rounded-xl overflow-hidden mb-10 fade-in-up">
+      <div id="calendar" class="w-full p-4"></div>
+    </div>
+
+    <div class="text-center fade-in-up">
+      <div class="inline-flex rounded-xl overflow-hidden" role="group" aria-label="Subscribe to events">
+        <a href="{{ .RelPermalink }}/index.xml" class="btn btn-outline">
+          <i class="fas fa-rss mr-2"></i>RSS Feed
+        </a>
+        <a href="{{ .RelPermalink }}/calendar.ics" class="btn btn-outline">
+          <i class="fas fa-calendar-alt mr-2"></i>iCal Feed
+        </a>
+      </div>
+      <p class="text-sm text-muted mt-3">Subscribe to stay updated on upcoming RLadies+ events</p>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "footer" }}
+  {{ $js := resources.Get "js/vendor/fullcalendar.bundle.min.js"
+      | minify
+      | fingerprint
+  }}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var timeZoneSelectorEl = document.getElementById("time-zone-selector");
+    var loadingEl = document.getElementById("loading");
+    var calendarEl = document.getElementById("calendar");
+    var events = {{ $.Store.Get "events" }};
+    var timezone_list = Intl.supportedValuesOf('timeZone');
+
+    var localTz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    var localOption = document.createElement("option");
+    localOption.id = "local";
+    localOption.value = localTz;
+    localOption.innerText = 'Local Time Zone (' + localTz + ')';
+    timeZoneSelectorEl.appendChild(localOption);
+
+    timezone_list.forEach(function (timeZone) {
+      var optionEl;
+
+      if (timeZone !== 'UTC') {
+        optionEl = document.createElement('option');
+        optionEl.value = timeZone;
+        optionEl.innerText = timeZone;
+        timeZoneSelectorEl.appendChild(optionEl);
+      }
+    });
+    document.getElementById("local").selected = true;
+
+    function getRladiesEvents(data) {
+      var updatedTime = [];
+      data.forEach(function(ev, index) {
+        var startDate = new Date(ev.datetime_utc);
+        ev.start = startDate.toISOString();
+        ev.end = new Date(startDate.getTime() + ev.duration * 1000).toISOString();
+        updatedTime[index] = ev;
+      });
+      return updatedTime;
+    }
+
+    function formatEventDate(date) {
+      return new Intl.DateTimeFormat('en', {
+        month: 'long', day: 'numeric', year: 'numeric',
+        hour: '2-digit', minute: '2-digit', hour12: false
+      }).format(date);
+    }
+
+    var activeTooltip = null;
+
+    function closeActiveTooltip() {
+      if (activeTooltip) {
+        activeTooltip.remove();
+        activeTooltip = null;
+      }
+    }
+
+    var today = new Date();
+    var initialDate = today.getFullYear() + '-' +
+      String(today.getMonth() + 1).padStart(2, '0') + '-' +
+      String(today.getDate()).padStart(2, '0');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [
+        FullCalendar.plugins.dayGrid,
+        FullCalendar.plugins.timeGrid,
+        FullCalendar.plugins.list,
+        FullCalendar.plugins.interaction,
+        FullCalendar.plugins.intlTimezone
+      ],
+      headerToolbar: {
+        left: "prev,next",
+        center: "title",
+        right: "",
+      },
+      initialDate: initialDate,
+      titleFormat: {
+        month: "long",
+        year: "numeric",
+        day: "numeric",
+      },
+      initialView: "listMonth",
+      height: "auto",
+      dayMaxEvents: true,
+
+      eventDidMount: function (info) {
+        var ev = info.event.extendedProps;
+
+        info.el.style.cursor = 'pointer';
+        info.el.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          closeActiveTooltip();
+
+          var tooltip = document.createElement('div');
+          tooltip.className = 'cal-tooltip';
+          tooltip.style.cssText = 'position:fixed;z-index:9999;';
+
+          var strong = document.createElement('strong');
+          strong.textContent = info.event.title;
+          tooltip.appendChild(strong);
+          tooltip.appendChild(document.createElement('br'));
+
+          var dateEl = document.createElement('small');
+          dateEl.className = 'text-muted';
+          dateEl.textContent = formatEventDate(info.event.start);
+          tooltip.appendChild(dateEl);
+
+          if (ev.venue_name) {
+            tooltip.appendChild(document.createElement('br'));
+            tooltip.appendChild(document.createTextNode(ev.venue_name));
+          }
+          if (ev.going) {
+            tooltip.appendChild(document.createElement('br'));
+            var icon = document.createElement('i');
+            icon.className = 'fa fa-users';
+            tooltip.appendChild(icon);
+            tooltip.appendChild(document.createTextNode(' ' + ev.going + ' attending'));
+          }
+
+          var btnDiv = document.createElement('div');
+          btnDiv.style.cssText = 'display:flex;gap:0.5rem;margin-top:0.75rem;justify-content:center;';
+          if (ev.link) {
+            var linkEl = document.createElement('a');
+            linkEl.href = ev.link;
+            linkEl.target = '_blank';
+            linkEl.rel = 'noopener';
+            linkEl.className = 'btn btn-sm btn-primary';
+            linkEl.textContent = 'Event Page';
+            btnDiv.appendChild(linkEl);
+          }
+          var closeBtn = document.createElement('button');
+          closeBtn.type = 'button';
+          closeBtn.className = 'btn btn-sm btn-outline tooltip-close-btn';
+          closeBtn.textContent = 'Close';
+          btnDiv.appendChild(closeBtn);
+          tooltip.appendChild(btnDiv);
+
+          document.body.appendChild(tooltip);
+          activeTooltip = tooltip;
+
+          var rect = info.el.getBoundingClientRect();
+          tooltip.style.top = (rect.bottom + 8) + 'px';
+          tooltip.style.left = Math.max(8, Math.min(rect.left, window.innerWidth - tooltip.offsetWidth - 8)) + 'px';
+
+          tooltip.querySelector('.tooltip-close-btn').addEventListener('click', function(e) {
+            e.stopPropagation();
+            closeActiveTooltip();
+          });
+        });
+      },
+
+      events: getRladiesEvents(events),
+      timeZone: localTz,
+
+      loading: function (bool) {
+        if (bool) {
+          loadingEl.style.display = "inline";
+          loadingEl.textContent = "Loading events...";
+        } else {
+          loadingEl.style.display = "none";
+        }
+      },
+
+      eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false }
+    });
+
+    calendar.render();
+
+    document.addEventListener('click', function(e) {
+      if (activeTooltip && !activeTooltip.contains(e.target)) {
+        closeActiveTooltip();
+      }
+    });
+
+    timeZoneSelectorEl.addEventListener("change", function () {
+      var newTimeZone = this.value;
+      calendar.setOption('timeZone', newTimeZone);
+    });
+
+    var viewMap = {
+      'month-list': 'listMonth',
+      'month-calendar': 'dayGridMonth',
+      'week-list': 'listWeek',
+      'week-calendar': 'timeGridWeek'
+    };
+    var currentPeriod = 'month';
+    var currentFormat = 'list';
+
+    function updateCalendarView() {
+      var key = currentPeriod + '-' + currentFormat;
+      calendar.changeView(viewMap[key]);
+    }
+
+    document.querySelectorAll('[data-period]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-period]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentPeriod = btn.dataset.period;
+        updateCalendarView();
+      });
+    });
+
+    document.querySelectorAll('[data-format]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('[data-format]').forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        currentFormat = btn.dataset.format;
+        updateCalendarView();
+      });
+    });
+
+  });
+</script>
+{{ end }}

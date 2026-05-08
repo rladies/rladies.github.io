@@ -1,0 +1,74 @@
+name: Blog post submission
+description: Propose a blog post for the RLadies+ website
+labels: ["blog", "post"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for wanting to write for RLadies+!
+        Please fill out this form so we can coordinate with you.
+        See the [website wiki](https://github.com/rladies/rladies.github.io/wiki) for details on the submission process.
+
+  - type: input
+    id: title
+    attributes:
+      label: Proposed title
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Brief summary
+      description: 2-3 sentences about what the post will cover.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - tutorials
+        - community
+        - partnerships
+        - events
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: author
+    attributes:
+      label: Author name(s)
+    validations:
+      required: true
+
+  - type: input
+    id: target_date
+    attributes:
+      label: Target publication date
+      description: Approximate date, if any.
+      placeholder: YYYY-MM-DD
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Source format
+      description: What format will you write in?
+      options:
+        - Markdown (.md)
+        - Quarto (.qmd)
+        - R Markdown (.rmd)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have read the [Code of Conduct](https://rladies.org/coc/)
+          required: true
+        - label: I understand this post will be reviewed before publication
+          required: true

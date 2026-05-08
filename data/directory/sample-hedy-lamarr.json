@@ -1,0 +1,22 @@
+{
+  "name": "Hedy Lamarr (Sample Entry)",
+  "categories": ["Sample", "Speaker"],
+  "location": {
+    "country": "Austria"
+  },
+  "languages": ["German", "English", "French", "Italian"],
+  "social_media": {
+    "github": "samplelamarr"
+  },
+  "interests": [
+    "Signal Processing",
+    "Wireless Communication",
+    "Inventions"
+  ],
+  "activities": {
+    "r_packages": {
+      "frequencyhopping": "",
+      "samplesignal": "https://example.com/samplesignal"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{{- $related := first 6 (.Site.RegularPages.Related .) -}}
+{{- with $related }}
+<section class="mt-12 not-prose" x-data="{ scrollEl: null }" x-init="scrollEl = $refs.carousel">
+  <div class="flex items-center justify-between mb-4">
+    <h3 class="text-lg font-semibold text-dark">
+      <i class="fas fa-newspaper mr-1.5 text-primary" aria-hidden="true"></i>
+      {{ i18n "related_posts" | default "Related Posts" }}
+    </h3>
+    <div class="flex gap-1.5">
+      <button
+        @click="scrollEl.scrollBy({ left: -272, behavior: 'smooth' })"
+        class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+        aria-label="{{ i18n "prev" | default "Previous" }}">
+        <i class="fas fa-chevron-left text-xs" aria-hidden="true"></i>
+      </button>
+      <button
+        @click="scrollEl.scrollBy({ left: 272, behavior: 'smooth' })"
+        class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+        aria-label="{{ i18n "next" | default "Next" }}">
+        <i class="fas fa-chevron-right text-xs" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+
+  <div x-ref="carousel" class="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory -mx-2 px-2 scrollbar-thin" tabindex="0" role="region" aria-label="{{ i18n "related_posts" | default "Related Posts" }}">
+    {{- range . }}
+    <a href="{{ .RelPermalink }}" class="snap-start shrink-0 w-64 card card-hover no-underline group">
+      {{- $img := "" -}}
+      {{- with .Resources.Get .Params.image.path -}}
+        {{- $processed := .Fill "320x180 webp" -}}
+        {{- $img = $processed.RelPermalink -}}
+      {{- end -}}
+      {{ if $img }}
+      <img src="{{ $img }}" alt="{{ .Params.image.alt | default .Title }}"
+           width="320" height="180" loading="lazy"
+           class="w-full h-36 object-cover rounded-t-lg">
+      {{ end }}
+      <div class="p-3">
+        <time datetime="{{ .Date.Format $.Site.Params.DateForm }}" class="text-xs text-muted">
+          {{ .Date.Day }} {{ index $.Site.Data.months $.Lang (printf "%d" .Date.Month) }} {{ .Date.Year }}
+        </time>
+        <p class="text-sm font-medium text-dark group-hover:text-primary mt-1 line-clamp-2">
+          {{ .Title }}
+        </p>
+      </div>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}

@@ -3,12 +3,10 @@ title: R-Ladies+ Feat. useR! 2021
 author: ""
 date: "2021-09-24"
 categories:
-  - R-Ladies
+  - events
 tags:
-  - useR
+  - conferences
   - meta-meetup
-  - community
-  - online-meetup
 lastmod: "2021-10-04T20:34:42+02:00"
 keywords: []
 description: ""
@@ -18,12 +16,13 @@ autoCollapseToc: no
 contentCopyright: no
 reward: no
 mathjax: no
+image:
+  path: banner.png
+  alt: "Promotional image for an RLadies+ feat. useR! meetup on April 28th at 8 pm UTC, hosted by RLadies+ chapters in Vitória, Bangalore, East Lansing, Tunis, Guayaquil, Cuenavarca, Santa Rosa & Den Bosch."
 slug: "r-ladies-feat-user-2021"
 aliases:
   - '/blog/2021-09-24-r-ladies-feat-user-2021'
 ---
-
-![Promotional image for an RLadies+ feat. user! meetup on April 28th at 8 pm UTC. The meetup is associated with the user! 2021 The R Conference, which will take place from July 5-9, 2021. The event is hosted by RLadies+ chapters in Vitória, Bangalore, East Lansing, Tunis, Guayaquil, Cuenavarca, Santa Rosa & Den Bosch and aims to bring diverse voices to the user! conference, inviting attendees to learn from other RLadies+ about their user! experiences. The image features the RLadies logo (a stylized pink hexagon containing a white "R" and the word "Ladies" in pink) on the left and an illustration of a smiling marmot wearing a colorful scarf with the "R" logo on its chest on the right. The background is a solid blue.](banner.png)
 
 In this post, you will see that we have used the R-Ladies logo with the colors of the rainbow and the trans flags. We have also added a + to the R-Ladies name.
 As symbols and words matter a lot, we wanted to explicitly communicate, with the use of these symbols, the importance of diversity and inclusion to our community. We used them in this useR! to reinforce that we welcome diversity and put an effort into creating collectively a safe and friendly space.
@@ -35,7 +34,7 @@ R-Ladies+ from Vitória, East Lansing, Den Bosch, Cuernavaca, Guayaquil, Bangalo
 
 ## Where?
 
-![World map indicating the countries (in purple) where each co-host chapter are located: East Lansing (USA), Cuernavaca (MEX), Guayaquil (ECU), Vitória (BRA), Santa Rosa (ARG), Den Bosch (NLD), Tunis (TUN), Bangalore (IND).](chapters_map.png)
+![World map with eight countries highlighted in purple: USA, Mexico, Ecuador, Brazil, Argentina, Netherlands, Tunisia, and India](chapters_map.png "The eight co-hosting chapters spanned five continents")
 
 ## What?
 
@@ -53,7 +52,7 @@ In the end, our message is simple and radical, and in the words of Jonelle Villa
 
 > My message for the people attending the useR! 2021 virtual conference: Diversity is our super-power! I have no doubt that the next cake to be prepared for the next R-Consortium anniversary will have plates and forks for all.
 
-![Hex-image of all panelists and co-organizers. First row from left to right: Yanina Bellini (Santa Rosa/useR!), Ornella Scardua (Vitória), Jonelle Villar (Bergen), Joselyn Chávez (Cuernavaca/useR!), Zulemma Bazurto (Guayaquil), Martine Jansen (Den Bosch). Second row from left to right: Janani Ravi (East Lansing/useR!), Beatriz Milz (São Paulo/useR), Adithi Upadhya (Bangalore/useR!), Haifa Ben Messaoud (Tunis/useR!), Sara Mortara (Rio de Janeiro/useR!), Andrea Sánchez-Tapia (Rio de Janeiro/useR!)](people.png)
+![Hexagonal portrait collage of twelve panelists and co-organizers arranged in two rows](people.png "Panelists and co-organizers of the R-Ladies+ feat. useR! 2021 meetup")
 
 See you soon at useR!
 ¡Hasta luego!

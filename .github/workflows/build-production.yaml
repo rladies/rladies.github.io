@@ -40,7 +40,7 @@ jobs:
         with:
           r-version: "renv"
 
-      - name: Serup renv
+      - name: Setup renv
         uses: r-lib/actions/setup-renv@v2
 
       - name: Populate untranslated pages
@@ -48,7 +48,7 @@ jobs:
           Rscript scripts/missing_translations.R
 
       - name: Site data - Clean folders
-        run: rm -r data/directory data/rblogs
+        run: rm -r data/directory
 
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v4
@@ -62,17 +62,8 @@ jobs:
           cp -r tmpd/dir/data/json data/directory
           cp -r tmpd/dir/data/img/* assets/directory
 
-      - name: Site data - Get blogs list
-        uses: actions/checkout@v4
-        with:
-          repository: rladies/awesome-rladies-blogs
-          ssh-key: ${{ secrets.RLADIES_BLOGS_KEY}}
-          path: tmpd/rblogs
-
       - name: Site data - clean cloned repos
-        run: |
-          cp -r tmpd/rblogs/blogs data/rblogs
-          rm -rf tmpd
+        run: rm -rf tmpd
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2

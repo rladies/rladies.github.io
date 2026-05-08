@@ -1,0 +1,12 @@
+{
+  "name": "Riva Quiroga",
+  "categories": ["Leadership", "Speaker"],
+  "location": {
+    "country": "Chile"
+  },
+  "languages": ["Spanish", "English"],
+  "interests": ["Open Science", "Linguistics", "Education"],
+  "photo": {
+    "url": "directory/riva-quiroga.png"
+  }
+}
