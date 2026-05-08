@@ -54,6 +54,7 @@
     </button>
 
     {{ partial "footer/footer.html" . }}
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
     {{ partial "footer/scripts.html" . }}
     {{ if .Store.Get "hasMermaid" }}
       {{ $mermaid := resources.Get "js/vendor/mermaid.min.js" | fingerprint }}

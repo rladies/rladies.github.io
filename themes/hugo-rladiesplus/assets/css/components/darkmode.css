@@ -63,6 +63,12 @@
     background: color-mix(in srgb, var(--color-primary) 8%, var(--color-raised));
   }
 
+  /* ── Alerts ── */
+  .dark .alert-primary {
+    background: color-mix(in srgb, var(--color-primary) 18%, var(--color-raised));
+    color: var(--color-primary-lighter);
+  }
+
   /* ── Callouts ── */
   .dark .callout {
     background: color-mix(in srgb, var(--callout-color, var(--color-primary)) 10%, var(--color-raised));

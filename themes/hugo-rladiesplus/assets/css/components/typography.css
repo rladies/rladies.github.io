@@ -179,4 +179,34 @@
     font-size: 0.95em;
     letter-spacing: 0.04em;
   }
+
+  .heading-anchored {
+    scroll-margin-top: 5rem;
+  }
+
+  .heading-anchor {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.4em;
+    color: var(--color-primary);
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.15s ease, color 0.15s ease;
+    vertical-align: middle;
+  }
+
+  .heading-anchor svg {
+    width: 0.7em;
+    height: 0.7em;
+  }
+
+  .heading-anchored:hover .heading-anchor,
+  .heading-anchored:focus-within .heading-anchor,
+  .heading-anchor:focus-visible {
+    opacity: 1;
+  }
+
+  .heading-anchor:hover {
+    color: var(--color-primary-dark);
+  }
 }

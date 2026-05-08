@@ -158,7 +158,7 @@
   .dark .chroma .gu { color: #9ca3af; }
   .dark .chroma .gt { color: #7dd3fc; }
 
-  .highlight.has-copy-btn { position: relative; }
+  .code-block { position: relative; }
 
   .copy-code-btn {
     @apply absolute inline-flex items-center gap-1 px-2 py-1 text-xs cursor-pointer;
@@ -173,10 +173,9 @@
     transition: opacity 0.15s ease, color 0.15s ease, border-color 0.15s ease;
   }
 
-  .highlight:hover .copy-code-btn,
-  .highlight:focus-within .copy-code-btn,
-  .copy-code-btn:focus-visible,
-  .copy-code-btn[data-state] {
+  .code-block:hover .copy-code-btn,
+  .code-block:focus-within .copy-code-btn,
+  .copy-code-btn:focus-visible {
     opacity: 1;
   }
 
@@ -185,18 +184,42 @@
     border-color: var(--color-primary);
   }
 
-  .copy-code-btn[data-state="success"] {
-    color: var(--color-success);
-    border-color: var(--color-success);
-  }
-
-  .copy-code-btn[data-state="error"] {
-    color: var(--color-error);
-    border-color: var(--color-error);
-  }
-
   .copy-code-icon svg {
     width: 0.875rem;
     height: 0.875rem;
   }
+}
+
+@layer components {
+  .toast-container {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    pointer-events: none;
+  }
+
+  .toast {
+    pointer-events: auto;
+    padding: 0.625rem 1rem;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    color: #fff;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-elevated);
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .toast-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .toast-success { background-color: var(--color-accent-blue); }
+  .toast-error { background-color: #b91c1c; }
 }

@@ -1,0 +1,17 @@
+{{- $lang := .Type | default "" -}}
+{{- $code := .Inner -}}
+{{- $copyLabel := i18n "copy_code" | default "Copy" -}}
+{{- $copyAria := i18n "copy_code_aria" | default "Copy code to clipboard" -}}
+{{- $successMsg := i18n "copy_code_success" | default "Code copied" -}}
+{{- $errorMsg := i18n "copy_code_error" | default "Copy failed" -}}
+<div class="code-block">
+{{- if $lang -}}
+{{ transform.Highlight $code $lang "" }}
+{{- else -}}
+<div class="highlight"><pre tabindex="0" class="chroma"><code>{{- $code -}}</code></pre></div>
+{{- end -}}
+<button type="button" class="copy-code-btn" aria-label="{{ $copyAria }}" data-success-msg="{{ $successMsg }}" data-error-msg="{{ $errorMsg }}">
+<span class="copy-code-icon" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M3 11V3.5A1.5 1.5 0 0 1 4.5 2H10"/></svg></span>
+<span class="copy-code-label">{{ $copyLabel }}</span>
+</button>
+</div>
