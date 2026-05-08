@@ -1,6 +1,7 @@
 {{ $js := slice
     (resources.Get "js/counter.js")
     (resources.Get "js/scroll-reveal.js")
+    (resources.Get "js/copy-code.js")
     | resources.Concat "rladiesplus-bundle.js"
     | minify
     | fingerprint
