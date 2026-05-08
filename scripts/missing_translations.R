@@ -1,5 +1,8 @@
 library(here)
 
+args <- commandArgs(trailingOnly = TRUE)
+env <- if (length(args) > 0) args[1] else NULL
+
 content <- list.files(here("content"), "index",
                       recursive = TRUE,
                       full.names = TRUE)
@@ -9,11 +12,35 @@ dirs <- unique(dirname(content))
 
 site_lang <- readLines(here("config/_default/languages.yaml"))
 site_lang <- gsub(":", "", site_lang[grep("^[a-z]", site_lang)])
+
+if (!is.null(env)) {
+  env_cfg_path <- here(sprintf("config/%s/hugo.yaml", env))
+  if (file.exists(env_cfg_path)) {
+    cfg <- readLines(env_cfg_path)
+    in_disable <- FALSE
+    disabled <- character()
+    for (line in cfg) {
+      if (grepl("^disableLanguages:", line)) {
+        in_disable <- TRUE
+        next
+      }
+      if (in_disable) {
+        if (grepl("^\\s+-\\s", line)) {
+          disabled <- c(disabled, gsub('^\\s+-\\s+"?|"?\\s*$', "", line))
+        } else if (nchar(trimws(line)) > 0 && !grepl("^\\s", line)) {
+          in_disable <- FALSE
+        }
+      }
+    }
+    site_lang <- setdiff(site_lang, disabled)
+  }
+}
+
 default_lang <- site_lang[1]
 lang_pattern <- sprintf("\\.(%s)\\.md$", paste(site_lang, collapse = "|"))
 
 if (length(site_lang) < 2) {
-  cat("Only one site language; nothing to do.\n")
+  cat("Fewer than two active languages; nothing to do.\n")
   quit(save = "no")
 }
 
