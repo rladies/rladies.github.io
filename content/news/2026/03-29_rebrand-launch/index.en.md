@@ -6,6 +6,9 @@ description: "RLadies+ has officially launched its new visual identity. In this 
 date: "2026-03-29"
 categories:
   - community
+image:
+  path: "RLadies+ logo white bg_Horizontal-Full colour.png"
+  alt: "New RLadies+ logo, a purple R with a cross/pluss sign in the middle. The text "RLadies+" is to the right of it"
 slug: "rebrand-launch"
 ---
 
@@ -85,11 +88,10 @@ We still do what we've always done: encourage, inspire, and empower people of un
 The + doesn't change our direction.
 It makes our direction visible.
 
-<!--
 You can watch the RLadies+ Leadership Team and designers from Science Graphic Designs walk through the logo development and decision making, and the new branding materials they have provided us in the following video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iLaEtaDJ0FU?si=pUiAX1VesfhSd-lI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
--->
+{{< youtube id="iLaEtaDJ0FU?si=pUiAX1VesfhSd-lI" title="RLadies+ rebrand launch event" >}}
+
 
 ## Resources
 
