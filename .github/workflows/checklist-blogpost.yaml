@@ -12,7 +12,7 @@ jobs:
     steps:
       # Generate a checklist and post it as a comment
       - name: Post checklist to PR
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const checklist = `Thank you for submitting a blogpost to R-Ladies!
