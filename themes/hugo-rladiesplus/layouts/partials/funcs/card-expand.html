@@ -14,11 +14,11 @@
   <div class="card card-hover card-{{ $size }}">
     <div class="card-img">
       <img src="{{ $image }}" alt="{{ .img_alt | default (printf "Portrait of %s" .title) }}" width="400" height="400" loading="lazy"/>
-    </div>
-    <div class="card-content">
       {{ with .category }}
         <div class="card-category">{{ . | safeHTML }}</div>
       {{ end }}
+    </div>
+    <div class="card-content">
       <h3 class="card-title">
         {{ with .url }}<a href="{{.}}" target="_blank" rel="noopener">{{end}}
         {{ .title | safeHTML }}

@@ -157,6 +157,18 @@ related_posts: 'Publicaciones relacionadas'
 last_edit: 'Esta publicación fue editada por última vez el'
 last_message: 'con el mensaje'
 
+# Vacancies ----
+apply_role: 'Postularte para unirte a este equipo'
+no_vacancies: 'No hay vacantes abiertas en este momento, pero siempre damos la bienvenida a una presentación.'
+vacancies_open_interest: '¿No ves un equipo que te encaje, o quieres dejar tu nombre para el futuro? Siempre damos la bienvenida a un saludo.'
+vacancies_register_interest: 'Registrar tu interés'
+vacancies_effort: 'Tiempo semanal de dedicación'
+vacancies_skills: 'Habilidades útiles'
+vacancies_read_more: 'Más sobre este equipo'
+seeking_members:
+  one: 'Buscando {{ . }} miembro'
+  other: 'Buscando {{ . }} miembros'
+
 # Accessibility ----
 back_to_top: 'Volver arriba'
 toggle_dark_mode: 'Cambiar modo oscuro'
