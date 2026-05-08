@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260508T104225Z
+DTSTAMP:20260508T132029Z
 DTSTART:20260609T150000Z
 DTEND:20260609T163000Z
 SUMMARY:R bugs and bites - R-Ladies Trondheim
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260508T104225Z
+DTSTAMP:20260508T132029Z
 DTSTART:20260604T003000Z
 DTEND:20260604T020000Z
 SUMMARY:R-Ladies+ Corvallis: Learning Positron Workshop - R-Ladies Corvallis
@@ -33,7 +33,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260508T104225Z
+DTSTAMP:20260508T132029Z
+DTSTART:20260520T080000Z
+DTEND:20260520T090000Z
+SUMMARY:Deep Probabilistic and Generative Modeling - R-Ladies Melbourne
+DESCRIPTION:**Deep Probabilistic and Generative Modelling**\n\n**Date:** 20th May, 2026\n**Time:** 6 PM\n**Where:** [Online](https://deakin.zoom.us/j/81881008885?pwd=CIWboin2izkWxBGwMSWbHeZkze92dP.1&from=addon)\n\nDeep probabilistic and generative models are becoming an important part of the modern machine learning toolkit, with growing applications in biomedical research and AI.\n\nIn this meetup, we’ll start with a primer on deep probabilistic modelling before exploring state-of-the-art generative approaches, including probabilistic graphical models, variational inference, diffusion models, and flow matching. The talk will also cover applications of these methods in biomedical research, followed by a short hands-on coding session introducing the basics of building a deep probabilistic model in PyTorch.\nSo come along if you’re interested in modern machine learning, generative AI, or computational biology, or if you’d like a practical introduction to probabilistic modelling techniques and their research applications.
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-melbourne/events/314684648/
+ORGANIZER;CN=R-Ladies Melbourne:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Melbourne
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260508T132029Z
 DTSTART:20260520T160000Z
 DTEND:20260520T180000Z
 SUMMARY:From Dictionaries to LLMs: Text Analysis in R   - R-Ladies Rome
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260508T104225Z
+DTSTAMP:20260508T132029Z
 DTSTART:20260515T210000Z
 DTEND:20260515T230000Z
 SUMMARY:Psicometría con R:  Introducción a la teoría de respuesta al ítem (TRI) - R-Ladies Buenos Aires
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260508T104225Z
+DTSTAMP:20260508T132029Z
 DTSTART:20260513T170000Z
 DTEND:20260513T180000Z
 SUMMARY:Automatic NLP with LLMS Using {mall} - R-Ladies Paris
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260508T104225Z
+DTSTAMP:20260508T132029Z
 DTSTART:20260514T003000Z
 DTEND:20260514T020000Z
 SUMMARY:Creating your personal website with Quarto - R-Ladies Santa Barbara
