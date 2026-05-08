@@ -8,7 +8,7 @@ categories:
   - community
 image:
   path: RLadiesplus_logo.png
-  alt: "New RLadies+ logo, a purple R with a cross/pluss sign in the middle. The text 'RLadies+' is to the right of it"
+  alt: "New RLadies+ submark logo, a purple R with a cross/pluss sign in the middle."
 slug: "rebrand-launch"
 ---
 
