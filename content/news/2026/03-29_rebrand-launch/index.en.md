@@ -7,8 +7,8 @@ date: "2026-03-29"
 categories:
   - community
 image:
-  path: "RLadies+ logo white bg_Horizontal-Full colour.png"
-  alt: "New RLadies+ logo, a purple R with a cross/pluss sign in the middle. The text "RLadies+" is to the right of it"
+  path: RLadiesplus_logo.png
+  alt: "New RLadies+ logo, a purple R with a cross/pluss sign in the middle. The text 'RLadies+' is to the right of it"
 slug: "rebrand-launch"
 ---
 
