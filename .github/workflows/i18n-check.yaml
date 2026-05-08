@@ -175,8 +175,8 @@ jobs:
                 for (const line of contentMissing.split('\n').filter(Boolean)) {
                   md += `- \`${line.trim()}\`\n`;
                 }
-                md += '\n> The `missing_translations.R` script creates placeholder files at build time,\n';
-                md += '> but proper translations are recommended.\n';
+                md += '\n> Translations are recommended for all languages, but missing\n';
+                md += '> language files will fall back to the default content language.\n';
               }
             }
 
