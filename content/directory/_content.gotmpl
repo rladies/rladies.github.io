@@ -22,7 +22,22 @@
     {{ $imageURLScratch.Set "img" (printf "https://www.gravatar.com/avatar/%s?s=300&d=identicon" $gravatarHash) }}
   {{ end }}
 
-  {{ $speakerParams := $dirArray | merge (dict "image" ($imageURLScratch.Get "img") "directory_id" $key) }}
+  {{/* Map JSON `categories` to `roles` so Hugo's category taxonomy
+       only collects post categories — directory roles like Speaker,
+       Mentor, Leadership are presentational badges, not taxonomy terms.
+       Rebuilt from scratch (rather than merge-overridden) because Hugo's
+       taxonomy collector reads the raw key regardless of empty values. */}}
+  {{ $speakerParams := dict
+    "image" ($imageURLScratch.Get "img")
+    "directory_id" $key
+  }}
+  {{ range $k, $v := $dirArray }}
+    {{ if eq $k "categories" }}
+      {{ $speakerParams = merge $speakerParams (dict "roles" $v) }}
+    {{ else }}
+      {{ $speakerParams = merge $speakerParams (dict $k $v) }}
+    {{ end }}
+  {{ end }}
 
   {{ $page := dict
     "content" (dict "mediaType" "text/markdown" "value" $pageContent)
