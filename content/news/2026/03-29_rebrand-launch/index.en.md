@@ -26,7 +26,7 @@ We listened and started working to fix that problem. We can't accomplish our mis
 
 This wasn't a top-down decision.
 We took our time, and we brought the community into the conversation at every stage.
-In March of 2025, we [announced the rebranding from R-Ladies to RLadies+](https://rladies.org/news/2025/announcement/). 
+In March of 2025, we [announced the rebranding from R-Ladies to RLadies+](/news/2025/announcement/).
 
 The + in RLadies+ is a small change to the name that allows us to maintain the well-known brand we built over 10 years of RLadies Global's existence, while making the implicit explicit. 
 
