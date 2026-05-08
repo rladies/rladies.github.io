@@ -16,7 +16,7 @@
   }
 
   .badge-warning {
-    @apply bg-amber-700 text-white;
+    @apply bg-accent-rose text-white;
   }
 
   .badge-light {
