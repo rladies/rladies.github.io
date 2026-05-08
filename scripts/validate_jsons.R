@@ -42,13 +42,20 @@ validate_jsons(
 )
 
 #  Validate global team json
+global_team_files <- list.files(
+  here::here("data/global_team"),
+  full.names = TRUE,
+  recursive = TRUE
+)
 validate_jsons(
-  list.files(
-    here::here("data/global_team"),
-    full.names = TRUE,
-    recursive = TRUE
-  ),
+  setdiff(global_team_files, here::here("data/global_team/vacancies.json")),
   here::here("scripts/json_shema/global-team.json")
+)
+
+#  Validate vacancies json
+validate_jsons(
+  here::here("data/global_team/vacancies.json"),
+  here::here("scripts/json_shema/vacancies.json")
 )
 
 #  Validate chapters json
