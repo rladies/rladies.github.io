@@ -26,7 +26,7 @@ We listened and started working to fix that problem. We can't accomplish our mis
 
 This wasn't a top-down decision.
 We took our time, and we brought the community into the conversation at every stage.
-In March of 2025, we [announced the rebranding from R-Ladies to RLadies+](https://rladies.org/about-us/news/2025/announcement/). 
+In March of 2025, we [announced the rebranding from R-Ladies to RLadies+](/news/2025/announcement/).
 
 The + in RLadies+ is a small change to the name that allows us to maintain the well-known brand we built over 10 years of RLadies Global's existence, while making the implicit explicit. 
 
@@ -54,7 +54,7 @@ The decision was unanimous on the Board of Directors meeting, and was [announced
 ### The design process (2025–2026)
 
 Once we made the decision, the next step was to start the process of creating the visual identity of RLadies+
-We put out a [Call for Proposals](/news/cfp/) and commissioned [Science Graphic Design](https://www.sciencegraphicdesign.com/) to develop a full visual identity — logo, brand manual, templates, and imagery.
+We put out a [Call for Proposals](/news/2025/cfp/) and commissioned [Science Graphic Design](https://www.sciencegraphicdesign.com/) to develop a full visual identity — logo, brand manual, templates, and imagery.
 
 The design process began, and we actively sought feedback throughout. 
 We set up a feedback form and reached out to all our chapters, chapter organizers, and community members who had engaged in the GitHub discussion.
