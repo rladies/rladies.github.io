@@ -14,5 +14,5 @@ ctas:
 ---
 
 Um diretório em crescimento de pacotes R com pelo menos uma membro do RLadies+ entre as autoras ou mantenedoras.
-A lista vive no seu próprio [repositório do GitHub](https://github.com/rladies/awesome-rladies-creations) — contribuições são bem-vindas.
-Clica em qualquer pacote abaixo para abrir o seu site de documentação ou repositório de código.
+A lista fica no seu próprio [repositório do GitHub](https://github.com/rladies/awesome-rladies-creations) — contribuições são bem-vindas.
+Clique em qualquer pacote abaixo para abrir o site de documentação ou o repositório do código-fonte.

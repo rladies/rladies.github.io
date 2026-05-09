@@ -1,19 +1,19 @@
 ---
-title: "Participa no RLadies+"
+title: "Participe do RLadies+"
 type: "involved"
-description: "Há muitas formas de contribuir para a comunidade RLadies+, quer estejas aqui como pessoa individual ou em representação de uma organização."
+description: "Há muitas formas de contribuir para a comunidade RLadies+, seja você uma pessoa individual ou representante de uma organização."
 image:
   path: og-image.png
   alt: "Três cartões intitulados Support, Advocate e Inspire (em inglês) sob o título 'Get Involved with RLadies+'."
 
 pillars:
-  - title: "Apoia"
+  - title: "Apoie"
     icon: "fa-handshake"
-    description: "Oferece um espaço gratuito ou patrocínio financeiro para capítulos locais e eventos."
-  - title: "Divulga"
+    description: "Ofereça espaço gratuito ou patrocínio financeiro para capítulos locais e eventos."
+  - title: "Divulgue"
     icon: "fa-bullhorn"
-    description: "Promove oportunidades, partilha conhecimento e amplifica vozes na tua rede."
-  - title: "Inspira"
+    description: "Promova oportunidades, compartilhe conhecimento e amplifique vozes na sua rede."
+  - title: "Inspire"
     icon: "fa-lightbulb"
-    description: "Junta-te, programa, partilha conhecimento, ensina, escreve e fala para inspirar outras pessoas."
+    description: "Participe, programe, compartilhe conhecimento, ensine, escreva e fale para inspirar outras pessoas."
 ---

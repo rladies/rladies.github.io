@@ -3,11 +3,11 @@ title: "Programa de Mentoria"
 type: "mentoring"
 image:
   path: presenting-colleague-02.jpg
-  alt: "Duas mulheres de cor a conversar sobre trabalho"
+  alt: "Duas mulheres negras conversando sobre trabalho"
 weight: 70
 description: |
-  O programa de mentoria liga novas organizadoras de capítulos a organizadoras experientes
-  que já passaram pelos desafios de gerir um capítulo.
+  O programa de mentoria conecta novas organizadoras de capítulos com organizadoras experientes
+  que já passaram pelos desafios de tocar um capítulo.
 aliases:
   - /pt/activities/mentoring/
 ctas:
@@ -16,11 +16,11 @@ ctas:
     style: "primary"
 ---
 
-Iniciar ou manter um capítulo do RLadies+ envolve muitas peças em movimento — encontrar oradoras, escolher formatos, manter as pessoas envolvidas.
-O programa de mentoria liga novas organizadoras a organizadoras experientes que já passaram por tudo isto.
+Começar ou manter um capítulo do RLadies+ envolve muitas peças em movimento — encontrar palestrantes, escolher formatos, manter as pessoas engajadas.
+O programa de mentoria conecta novas organizadoras com organizadoras experientes que já passaram por tudo isso antes.
 
-As mentoras também ganham algo com isto: uma janela para o modo como os capítulos no mundo inteiro realmente funcionam, e a experiência de ajudar outra pessoa a encontrar o seu caminho.
+As mentoras também ganham com isso: uma janela para o jeito como capítulos do mundo todo realmente funcionam, e a experiência de ajudar outra pessoa a se encontrar.
 
-{{% button "/form/mentoring-signup/" "Aderir ao programa" %}}
+{{% button "/form/mentoring-signup/" "Entrar no programa" %}}
 
 ## Experiências do programa
