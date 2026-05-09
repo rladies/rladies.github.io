@@ -4,17 +4,17 @@
     <div class="hero-home-content">
       <div class="hero-text">
         <h1 class="hero-headline fade-in-up">
-          {{ i18n "hero_headline" | default "Promoting Gender Diversity in the R Community" }}
+          {{ .Params.hero.headline | default (i18n "hero_headline") }}
         </h1>
         <p class="hero-subheadline fade-in-up stagger-1">
-          {{ i18n "hero_subheadline" | default "A worldwide organization empowering underrepresented genders through a collaborative global network of R leaders, mentors, and developers." }}
+          {{ .Params.hero.subheadline | default (i18n "hero_subheadline") }}
         </p>
         <div class="hero-cta fade-in-up stagger-2">
           <a href="{{ "chapters/" | relLangURL }}" class="btn btn-primary btn-xl">
-            {{ i18n "hero_cta_chapters" | default "Find a Chapter" }}
+            {{ .Params.hero.cta_chapters | default (i18n "hero_cta_chapters") }}
           </a>
           <a href="{{ "about-us/involved/" | relLangURL }}" class="btn btn-outline btn-xl">
-            {{ i18n "hero_cta_involved" | default "Get Involved" }}
+            {{ .Params.hero.cta_involved | default (i18n "hero_cta_involved") }}
           </a>
         </div>
       </div>

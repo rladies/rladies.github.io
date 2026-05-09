@@ -14,19 +14,26 @@
 {{ $ogImage := "" }}
 {{ $ogWidth := "" }}
 {{ $ogHeight := "" }}
+{{ $ogImageAlt := "" }}
+{{ $usingSiteDefault := false }}
 {{ with .Params.image }}
   {{ $imgPath := "" }}
   {{ if reflect.IsMap . }}
     {{ $imgPath = .path }}
+    {{ $ogImageAlt = .alt }}
   {{ else }}
     {{ $imgPath = . }}
   {{ end }}
   {{ with $imgPath }}
     {{ with $.Resources.Get . }}
-      {{ $img := .Fill "1200x630" }}
-      {{ $ogImage = $img.Permalink }}
-      {{ $ogWidth = "1200" }}
-      {{ $ogHeight = "630" }}
+      {{ if eq .MediaType.SubType "svg" }}
+        {{ $ogImage = .Permalink }}
+      {{ else }}
+        {{ $img := .Fill "1200x630" }}
+        {{ $ogImage = $img.Permalink }}
+        {{ $ogWidth = "1200" }}
+        {{ $ogHeight = "630" }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -41,7 +48,11 @@
     {{ $ogImage = .Permalink }}
     {{ $ogWidth = "1200" }}
     {{ $ogHeight = "630" }}
+    {{ $usingSiteDefault = true }}
   {{ end }}
+{{ end }}
+{{ if and $usingSiteDefault (not $ogImageAlt) }}
+  {{ $ogImageAlt = .Site.Params.ogImageAlt }}
 {{ end }}
 
 {{/* Open Graph */}}
@@ -52,6 +63,7 @@
 <meta property="og:site_name" content="{{ $siteTitle }}">
 <meta property="og:locale" content="{{ .Lang | default "en" }}">
 {{ with $ogImage }}<meta property="og:image" content="{{ . }}">{{ end }}
+{{ with $ogImageAlt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
 {{ with $ogWidth }}<meta property="og:image:width" content="{{ . }}">{{ end }}
 {{ with $ogHeight }}<meta property="og:image:height" content="{{ . }}">{{ end }}
 
@@ -67,6 +79,7 @@
 <meta name="twitter:title" content="{{ $fullTitle }}">
 <meta name="twitter:description" content="{{ $desc }}">
 {{ with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end }}
+{{ with $ogImageAlt }}<meta name="twitter:image:alt" content="{{ . }}">{{ end }}
 
 {{/* Hreflang alternate links for multilingual SEO */}}
 {{ if hugo.IsMultilingual }}

@@ -1,6 +1,8 @@
 ---
 title: "Abstract Review"
-image: "slidedeck-team-coding-tablet"
+image:
+  path: team-coding-with-tablet.jpg
+  alt: "Team of developers reviewing code on a monitor and tablet together"
 weight: 20
 description: |
   RLadies+ Global runs a review and feedback programme for conference abstracts and funding applications,

@@ -1,23 +1,26 @@
 ---
 title: "Our Story"
 type: "our-story"
+image:
+  path: og-image.png
+  alt: "Photo from an early RLadies+ meetup with attendees gathered around tables, beside the heading 'How It Started'."
 photos:
-  - src: "user2017.png"
+  - src: "img/user2017.png"
     alt: "RLadies+ members gathered for a group photo at the useR! 2017 conference in Brussels"
     caption: "useR! 2017 — Brussels, Belgium"
-  - src: "user2018.jpg"
+  - src: "img/user2018.jpg"
     alt: "RLadies+ members gathered for a group photo at the useR! 2018 conference"
     caption: "useR! 2018 — Brisbane, Australia"
-  - src: "user2019.jpeg"
+  - src: "img/user2019.jpeg"
     alt: "RLadies+ members gathered for a group photo at the useR! 2019 conference"
     caption: "useR! 2019 — Toulouse, France"
-  - src: "user2019conf.jpg"
+  - src: "img/user2019conf.jpg"
     alt: "RLadies+ members gathered for a group photo at rstudio::conf 2019 in Austin"
     caption: "rstudio::conf 2019 — Austin, USA (Photo: JD Long)"
-  - src: "user2021.png"
+  - src: "img/user2021.png"
     alt: "Hex portrait collage of RLadies+ panelists and co-organizers from the useR! 2021 meta-meetup"
     caption: "useR! 2021 — Virtual"
-  - src: "user2023.jpg"
+  - src: "img/user2023.jpg"
     alt: "RLadies+ community members gathered at the Posit Conf 2023 reception in Chicago"
     caption: "Posit Conf 2023 — Chicago, USA"
 aliases:

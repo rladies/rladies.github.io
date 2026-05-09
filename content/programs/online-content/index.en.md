@@ -1,7 +1,10 @@
 ---
 title: "Online Content by RLadies+"
 type: "online-content"
-image: "gender-spectrum-work-laptop"
+image:
+  path: gender-spectrum-work-laptop.jpeg
+  alt: "Trans person working on a laptop in an office"
+  credit: "[The Gender Spectrum Collection](https://genderspectrum.vice.com/)"
 weight: 80
 description: |
   A curated collection of blogs, websites, and other online content by RLadies+ members, maintained in a community GitHub repository.

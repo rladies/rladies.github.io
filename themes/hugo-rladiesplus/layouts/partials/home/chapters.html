@@ -1,11 +1,12 @@
 {{ $countries := $.Store.Get "chpt_countries" }}
 {{ $chapters  := $.Store.Get "chpt_active" }}
+{{ $home := . }}
 
 {{ with .Site.GetPage "section" "chapters" }}
 <section class="site-section-lg" id="chapters">
   <div class="site-container">
     <h2 class="section-title fade-in-up">
-      {{ i18n "home_chapters_title" | default (.Title | title) }}
+      {{ $home.Params.chapters.title | default (i18n "home_chapters_title") | default (.Title | title) }}
     </h2>
 
     <div class="card rounded-xl overflow-hidden fade-in-up stagger-2">
@@ -30,7 +31,7 @@
 
     <div class="text-center mt-10 fade-in-up">
       <a href="{{ .RelPermalink }}" class="btn btn-outline">
-        {{ i18n "home_chapters_cta" | default "Browse All Chapters" }} &rarr;
+        {{ $home.Params.chapters.cta | default (i18n "home_chapters_cta") }} &rarr;
       </a>
     </div>
   </div>

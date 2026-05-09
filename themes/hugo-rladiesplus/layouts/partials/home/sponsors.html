@@ -1,11 +1,12 @@
+{{ $home := . }}
 {{ with site.Data.sponsors }}
 <section class="site-section-lg bg-surface" id="sponsors">
   <div class="site-container">
     <h2 class="section-title fade-in-up">
-      {{ i18n "home_sponsors_title" | default "Sponsors" }}
+      {{ $home.Params.sponsors.title | default (i18n "home_sponsors_title") }}
     </h2>
     <p class="section-subtitle fade-in-up stagger-1">
-      {{ i18n "home_sponsors_subtitle" | default "Organizations that support our mission" }}
+      {{ $home.Params.sponsors.subtitle | default (i18n "home_sponsors_subtitle") }}
     </p>
 
     <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12 max-w-4xl mx-auto fade-in-up stagger-2">
@@ -22,7 +23,7 @@
 
     <div class="text-center mt-12 fade-in-up">
       <a href="{{ "about-us/involved/" | relLangURL }}" class="btn btn-outline">
-        {{ i18n "home_sponsors_cta" | default "Become a Sponsor" }} &rarr;
+        {{ $home.Params.sponsors.cta | default (i18n "home_sponsors_cta") }} &rarr;
       </a>
     </div>
   </div>

@@ -1,6 +1,8 @@
 ---
 title: "Rotating Curator (RoCur)"
-image: "slidedeck-woman-office-laptop"
+image:
+  path: woman-working-in-office.jpg
+  alt: "Woman in a blazer smiling while working on a laptop in an office"
 weight: 30
 description: |
   [RLadies+ RoCur](https://bsky.app/profile/weare.rladies.org) is a rotating Bluesky account that features

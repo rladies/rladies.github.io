@@ -1,7 +1,9 @@
 ---
 title: "Blog"
 type: "blog-program"
-image: "woman-typing-laptop-01"
+image:
+  path: woman-typing-laptop-01.jpg
+  alt: "Black woman typing on a laptop in an office setting"
 weight: 15
 description: |
   Thoughts, tutorials, and stories from the global RLadies+ community — written by organisers, members, and the global team.

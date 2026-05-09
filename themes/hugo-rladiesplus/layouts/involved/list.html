@@ -1,6 +1,5 @@
 {{ define "main" }}
 {{ $params := .Params }}
-{{ $stockImages := site.Data.stock_images }}
 
 <section class="site-section bg-surface-alt">
   <div class="site-container">
@@ -23,17 +22,18 @@
 </section>
 
 {{ range $i, $s := .Pages.ByWeight }}
-  {{ $imgData := index (where $stockImages "id" $s.Params.image) 0 }}
   <section class="program-row{{ if eq (mod $i 2) 1 }} program-row-reverse bg-surface-alt{{ end }}">
     <div class="program-row-image">
-      {{ with resources.Get $imgData.file }}
+      {{ with $s.Resources.Get $s.Params.image.path }}
         {{ $img := .Fill "800x600 webp" }}
         <img src="{{ $img.RelPermalink }}"
-             alt="{{ $imgData.alt }}"
+             alt="{{ $s.Params.image.alt }}"
              width="{{ $img.Width }}" height="{{ $img.Height }}"
              loading="lazy">
       {{ end }}
-      {{ partial "stock-attribution.html" $imgData }}
+      {{ with $s.Params.image.credit }}
+        <small class="text-xs text-muted">{{ i18n "photo_credit" | default "Photo" }}: {{ . | markdownify }}</small>
+      {{ end }}
     </div>
     <div class="involved-row-content">
       <h2 class="program-row-title">{{ $s.Title }}</h2>

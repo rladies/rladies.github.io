@@ -1,7 +1,9 @@
 ---
 title: "Packages by RLadies+"
 type: "packages"
-image: "rladies-hex-submark"
+image:
+  path: rladies-hex-submark.svg
+  alt: "RLadies+ submark inside a hexagonal frame"
 weight: 90
 description: |
   An open directory of R packages authored or maintained by RLadies+ community members.

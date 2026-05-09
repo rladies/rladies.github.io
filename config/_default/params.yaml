@@ -11,6 +11,7 @@ bannerOverlay: '#881ef9'
 
 favicon: images/favicon.svg
 ogImage: images/og-default.png
+ogImageAlt: "RLadies+ logo on a purple background with the tagline 'Nurturing diverse R Programming Communities' beside a hexagonal photo of community members."
 DateForm: 2 January 2006
 showSubheader: false
 
