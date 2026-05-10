@@ -1,12 +1,13 @@
 name: Hello on PR or Issue
 on:
   pull_request_target:
-    types: [opened]
+    types: [opened, closed]
   issues:
     types: [opened]
 
 jobs:
-  comment:
+  hello:
+    if: github.event.action == 'opened'
     runs-on: ubuntu-latest
     steps:
       - name: Get author
@@ -51,4 +52,39 @@ jobs:
               repo: context.repo.repo,
               issue_number: number,
               body: 'Hello! :wave:\n\nThanks for opening this. We are a volunteer organisation, but we will get back to you as soon as we can.'
+            });
+
+  thanks_first_merge:
+    if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check first merged PR
+        id: check
+        env:
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          if [[ "$AUTHOR" == *"[bot]" ]]; then
+            echo "thank=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          count=$(gh pr list --repo "$REPO" --author "$AUTHOR" --state merged --json number --jq 'length')
+          if [[ "$count" == "1" ]]; then
+            echo "thank=true" >> $GITHUB_OUTPUT
+          else
+            echo "thank=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Comment thanks
+        if: steps.check.outputs.thank == 'true'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: ':tada: Congratulations on your first merged pull request to the R-Ladies+ website! Thank you so much for contributing — we hope to see you back. :purple_heart:\n\nIf you have not already been added, a maintainer can recognise your contribution by commenting: `@all-contributors please add @' + context.payload.pull_request.user.login + ' for code` (or other [contribution type](https://allcontributors.org/docs/en/emoji-key)).'
             });
