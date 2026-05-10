@@ -1,7 +1,7 @@
 {{ $.EnableAllLanguages }}
 {{ range $key, $dirArray := site.Data.directory }}
 
-  {{ $pageContent := "" }}
+  {{ $pageContent := $dirArray.bio | default "" }}
 
   {{ $imageURLScratch := newScratch }}
 
