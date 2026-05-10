@@ -3,6 +3,9 @@
 <!-- badges: start -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3bf48c17-2bd3-4452-83cb-0ac808ad745b/deploy-status)](https://app.netlify.com/sites/rladies-dev/deploys)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/github/all-contributors/rladies/rladies.github.io?color=ee8449&style=flat-square)](#contributors)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- badges: end -->
 
@@ -46,3 +49,25 @@ O --> P[Deploy Netlify]
 P --> Q["Notify PR about build"]
 
 ```
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://allcontributors.org) specification. Contributions of any kind welcome!
+
+To add yourself or someone else as a contributor, comment on an issue or PR with:
+
+```
+@all-contributors please add @username for code, doc, design
+```
+
+See the [emoji key](https://allcontributors.org/docs/en/emoji-key) for the full list of contribution types.
