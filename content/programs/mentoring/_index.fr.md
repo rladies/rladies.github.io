@@ -8,6 +8,7 @@ weight: 70
 description: |
   Le programme de mentorat met en relation les nouvelles organisatrices de chapitres avec des organisatrices expérimentées
   qui ont déjà fait face aux défis de la gestion d'un chapitre.
+summary: "Un programme de mentorat par les pairs qui associe les nouvelles organisatrices de chapitres RLadies+ à des organisatrices expérimentées."
 aliases:
   - /fr/activities/mentoring/
 ctas:

@@ -1,6 +1,8 @@
 ---
 title: "Conheça a equipe global"
 type: "global-team"
+description: "Conheça a equipe de liderança do RLadies+ Global — as pessoas voluntárias que conduzem a organização, apoiam capítulos e definem para onde crescemos."
+summary: "A equipe voluntária por trás do RLadies+ Global — mantendo a organização estruturada, apoiando capítulos e patrocinadores, e orientando o crescimento da comunidade."
 image:
   path: og-image.png
   alt: "Mosaico de retratos dos membros da equipe de liderança global do RLadies+."

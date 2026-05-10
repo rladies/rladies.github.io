@@ -1,6 +1,8 @@
 ---
 title: "Notre Histoire"
 type: "our-story"
+description: "Comment RLadies+ est passé d'un meetup à San Francisco à une organisation mondiale qui promeut la diversité de genre dans la communauté R."
+summary: "Du premier meetup à San Francisco à un réseau mondial — l'histoire de comment RLadies+ est devenue une communauté internationale et ce qui guide notre mission."
 image:
   path: og-image.png
   alt: "Photo d'un des premiers meetups RLadies+ avec les participantes rassemblées autour de tables, à côté du titre « How It Started »."

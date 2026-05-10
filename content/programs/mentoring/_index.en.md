@@ -8,6 +8,7 @@ weight: 70
 description: |
   The mentoring program connects new chapter organisers with experienced ones who have navigated
   the challenges of running a chapter before.
+summary: "A peer-mentoring program that pairs new RLadies+ chapter organisers with experienced ones who have run chapters before."
 aliases:
   - /activities/mentoring/
 ctas:

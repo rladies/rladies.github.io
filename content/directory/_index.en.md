@@ -1,6 +1,8 @@
 ---
 title: "Directory"
 type: "directory"
+description: "Search the RLadies+ directory of speakers, mentors, and community members — find someone for your next event, panel, or collaboration."
+summary: "A searchable directory of RLadies+ community members. Add yourself, or find a speaker, mentor, or collaborator from across the global network."
 image:
   path: og-image.png
   alt: "Hexagonal photo grid of RLadies+ community members beside the message 'Find a speaker for your next event in our directory!'"

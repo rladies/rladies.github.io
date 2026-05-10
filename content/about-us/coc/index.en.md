@@ -1,5 +1,7 @@
 ---
 title: Code of Conduct
+description: "RLadies+ is committed to a harassment-free experience for everyone. Read our community Code of Conduct."
+summary: "The RLadies+ Code of Conduct outlines what we expect from participants in all RLadies+ spaces, online and in person."
 aliases:
   - /coc/
 ---

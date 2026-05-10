@@ -1,6 +1,8 @@
 ---
 title: "Programs & Initiatives"
 type: programs
+description: "Global RLadies+ programs that span chapters — mentoring, RWeekly, the @WeAreRLadies rotating curators, IWD events, and more."
+summary: "Discover the global programs that connect RLadies+ chapters: mentoring, RWeekly, rotating curators, and other community initiatives."
 aliases:
   - /activities/gt-coordinated/
   - /activities/programs/

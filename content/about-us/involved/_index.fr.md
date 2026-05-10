@@ -2,6 +2,7 @@
 title: "Implique-toi dans RLadies+"
 type: "involved"
 description: "Il existe de nombreuses façons de contribuer à la communauté RLadies+, que tu sois ici à titre individuel ou en représentant une organisation."
+summary: "Que tu sois une personne ou une organisation, découvre comment soutenir, promouvoir ou rejoindre la communauté RLadies+."
 image:
   path: og-image.png
   alt: "Trois cartes intitulées Support, Advocate et Inspire (en anglais) sous le titre « Get Involved with RLadies+ »."
