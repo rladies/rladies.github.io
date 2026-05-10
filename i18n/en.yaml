@@ -185,3 +185,12 @@ auto_translation: |
     This page was auto-translated using
     [DeepL](https://www.deepl.com)
     and has not been reviewed by a human yet.
+
+# Code blocks ----
+copy_code: 'Copy'
+copy_code_aria: 'Copy code to clipboard'
+copy_code_success: 'Code copied'
+copy_code_error: 'Copy failed'
+
+# Headings ----
+heading_anchor_aria: 'Link to this heading'

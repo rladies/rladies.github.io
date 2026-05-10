@@ -14,6 +14,8 @@
     --color-accent-rose: #f6a4c3;
     --color-accent-rose-75: #f2c9dc;
     --color-bg: #121220;
+    --color-success: #86efac;
+    --color-error: #fca5a5;
     --color-surface: #1a1a2e;
     --color-surface-alt: #16213e;
     --color-surface-footer: #0f0f1a;
@@ -59,6 +61,12 @@
   /* ── Typography ── */
   .dark blockquote {
     background: color-mix(in srgb, var(--color-primary) 8%, var(--color-raised));
+  }
+
+  /* ── Alerts ── */
+  .dark .alert-primary {
+    background: color-mix(in srgb, var(--color-primary) 18%, var(--color-raised));
+    color: var(--color-primary-lighter);
   }
 
   /* ── Callouts ── */
