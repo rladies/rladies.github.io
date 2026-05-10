@@ -2,6 +2,9 @@
 title: "Membres"
 type: "directory"
 url: /fr/membres/
+outputs:
+  - HTML
+  - JSON
 ---
 
 Ajoutez-vous au répertoire RLadies+ — cela ne prend que quelques minutes et votre profil sera visible par la communauté.

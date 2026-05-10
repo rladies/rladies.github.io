@@ -1,6 +1,9 @@
 ---
 title: "Directory"
 type: "directory"
+outputs:
+  - HTML
+  - JSON
 image:
   path: og-image.png
   alt: "Hexagonal photo grid of RLadies+ community members beside the message 'Find a speaker for your next event in our directory!'"

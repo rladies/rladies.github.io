@@ -81,6 +81,13 @@
           </p>
         {{ end }}
 
+          {{ with .Content }}
+            <h2 class="text-lg card-title mb-3">{{ i18n "about" }}</h2>
+            <div class="speaker-description prose max-w-none mb-4">
+              {{ . }}
+            </div>
+          {{ end }}
+
           {{ with .Params.interests }}
             <h2 class="text-lg card-title mb-3">{{ i18n "interests" }}</h2>
             <div class="mb-3">
@@ -90,53 +97,28 @@
               </div>
           {{ end }}
 
-          {{ with .Params.activities }}
-              <h2 class="text-lg card-title mb-3">{{ i18n "activities" }}</h2>
-              {{ with .r_groups }}
-                <h5 class="text-sm font-semibold">{{ i18n "r_user_groups" }}:</h5>
-                <ul class="list-unstyled mb-3">
-                  {{ range $groupName, $groupUrl := . }}
-                    <li class="py-2 border-b border-gray-200">
-                      {{ if $groupUrl }}
-                        <a href="{{ $groupUrl }}" target="_blank" rel="noopener">{{ $groupName }} <i class="bi bi-box-arrow-up-right"></i></a>
-                      {{ else }}
-                        {{ $groupName }}
-                      {{ end }}
-                    </li>
+          {{ with .Params.activities.r_groups }}
+            <h2 class="text-lg card-title mb-3">{{ i18n "activities" }}</h2>
+            <h5 class="text-sm font-semibold">{{ i18n "r_user_groups" }}:</h5>
+            <ul class="list-unstyled mb-3">
+              {{ range $groupName, $groupUrl := . }}
+                <li class="py-2 border-b border-gray-200">
+                  {{ if $groupUrl }}
+                    <a href="{{ $groupUrl }}" target="_blank" rel="noopener">{{ $groupName }} <i class="bi bi-box-arrow-up-right"></i></a>
+                  {{ else }}
+                    {{ $groupName }}
                   {{ end }}
-                </ul>
+                </li>
               {{ end }}
-
-              {{ with .r_packages }}
-                <h5 class="text-sm font-semibold">{{ i18n "r_packages" }}:</h5>
-                <ul class="list-unstyled">
-                  {{ range $packageName, $packageUrl := . }}
-                    <li class="py-2 border-b border-gray-200">
-                      {{ if $packageUrl }}
-                        <a href="{{ $packageUrl }}" target="_blank" rel="noopener">{{ $packageName }} <i class="bi bi-box-arrow-up-right"></i></a>
-                      {{ else }}
-                        {{ $packageName }}
-                      {{ end }}
-                    </li>
-                  {{ end }}
-                </ul>
-            {{ end }}
+            </ul>
           {{ end }}
 
         </div>
       </div>
     </div>
 
-    {{ if .Content }}
-        <h2 class="text-lg card-title mb-3">{{ i18n "about" }} {{ .Title }}</h2>
-        <div class="speaker-description">
-        {{ .Content }}
-        </div>
-        <hr class="my-4">
-    {{ end }}
-
-
   </div>
+
 
   {{ $dirID := .Params.directory_id }}
 

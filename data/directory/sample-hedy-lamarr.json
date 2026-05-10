@@ -1,6 +1,7 @@
 {
   "name": "Hedy Lamarr (Sample Entry)",
   "categories": ["Sample", "Speaker"],
+  "bio": "Hedy was an Austrian-American actress and inventor. With composer George Antheil she co-invented an early version of [frequency-hopping spread spectrum](https://en.wikipedia.org/wiki/Frequency-hopping_spread_spectrum) communication, a technique that underpins many modern wireless systems.\n\nShe held a US patent for the design and was inducted into the **National Inventors Hall of Fame** in 2014.",
   "location": {
     "country": "Austria"
   },

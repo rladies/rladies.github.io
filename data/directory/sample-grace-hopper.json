@@ -1,6 +1,7 @@
 {
   "name": "Grace Hopper (Sample Entry)",
   "honorific": "PhD, Rear Admiral",
+  "bio": "Grace was a pioneering computer scientist and a **Rear Admiral** in the United States Navy. She is credited with popularising the term *debugging* and contributed to the development of [COBOL](https://en.wikipedia.org/wiki/COBOL).\n\n- Authored the first compiler-related tools in the 1950s.\n- Champion of accessible programming languages.\n- Advocate for mentoring the next generation of engineers.\n\n> One of her famous sayings: \"The most dangerous phrase in the language is, 'we've always done it this way.'\"",
   "categories": ["Sample", "Speaker", "Mentor"],
   "location": {
     "city": "Arlington",
