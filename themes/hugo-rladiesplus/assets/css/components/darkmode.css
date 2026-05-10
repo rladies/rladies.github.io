@@ -123,6 +123,12 @@
     border: 1px solid rgba(129, 172, 247, 0.3);
   }
 
+  .dark .badge-warning {
+    background-color: rgba(255, 91, 146, 0.25);
+    color: var(--color-accent-rose);
+    border: 1px solid rgba(246, 164, 195, 0.3);
+  }
+
   .dark .bg-chapter-active {
     background: color-mix(in srgb, var(--color-primary) 15%, var(--color-raised));
   }
