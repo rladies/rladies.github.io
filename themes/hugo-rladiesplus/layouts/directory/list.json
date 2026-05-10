@@ -1,0 +1,35 @@
+{{- $entries := slice -}}
+{{- range .Pages -}}
+  {{- $page := . -}}
+  {{- $cardHTML := partial "funcs/directory/card.html" (dict "data" $page "name" $page "size" "large") -}}
+
+  {{- $location := slice -}}
+  {{- with $page.Params.location -}}
+    {{- $tmp := newScratch -}}
+    {{- with .country -}}{{- $tmp.Set "loc" . -}}{{- end -}}
+    {{- with .state -}}{{- $tmp.Add "loc" (printf ", %s" .) -}}{{- end -}}
+    {{- with .city -}}{{- $tmp.Add "loc" (printf ", %s" .) -}}{{- end -}}
+    {{- with $tmp.Get "loc" -}}
+      {{- $location = slice (urlize .) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $interests := slice -}}
+  {{- range ($page.Params.interests | default slice) -}}
+    {{- $interests = $interests | append (urlize .) -}}
+  {{- end -}}
+
+  {{- $languages := slice -}}
+  {{- range ($page.Params.languages | default slice) -}}
+    {{- $languages = $languages | append (urlize .) -}}
+  {{- end -}}
+
+  {{- $entries = $entries | append (dict
+    "n" $page.Title
+    "ints" $interests
+    "langs" $languages
+    "loc" $location
+    "html" $cardHTML
+  ) -}}
+{{- end -}}
+{{- $entries | jsonify -}}

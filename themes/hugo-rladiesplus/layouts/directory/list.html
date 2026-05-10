@@ -1,6 +1,8 @@
 {{ define "head" }}{{ partial "head/choices-css.html" . }}{{ end }}
 {{ define "main" }}
 {{ $directory := .Pages }}
+{{ $paginator := .Paginate $directory 60 }}
+
 {{ $ints := slice }}
 {{ $langs := slice }}
 {{ $loc := slice }}
@@ -56,8 +58,16 @@
     <div class="max-w-sm mx-auto mb-10 fade-in-up">
       <div class="stat-card">
         <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
-        <p class="stat-number">{{ $directory | len }}</p>
+        <p class="stat-number" id="directory-count">{{ $directory | len }}</p>
         <p class="stat-label">{{ i18n "counter_entries" | default "Members" }}</p>
+      </div>
+    </div>
+
+    <div class="max-w-2xl mx-auto mb-6 fade-in-up">
+      <label for="filter-name" class="sr-only">{{ i18n "search_directory" | default "Search by name" }}</label>
+      <div class="relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-muted pointer-events-none"></i>
+        <input type="search" id="filter-name" class="form-control pl-12" placeholder="{{ i18n "search_directory" | default "Search by name…" }}" autocomplete="off">
       </div>
     </div>
 
@@ -130,11 +140,48 @@
 <div class="breakout">
   <div class="container-wide p-0 px-3">
     <h2 class="sr-only">{{ i18n "directory_members" | default "Members" }}</h2>
+
+    {{/* Server-rendered, paginated grid (default view) */}}
     <ul class="shuffle-wrapper w-full list-unstyled" id="directory-grid">
-      {{ range $name := $directory | shuffle }}
-        {{ partial "funcs/directory/card.html" (dict "data" . "name" $name "size" "large") }}
+      {{ range $paginator.Pages | shuffle }}
+        {{ partial "funcs/directory/card.html" (dict "data" . "name" . "size" "large") }}
       {{ end }}
     </ul>
+
+    {{/* JSON-driven filtered grid (hidden until a filter or search is active) */}}
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 list-unstyled hidden" id="directory-filtered-grid"></ul>
+
+    <p id="directory-no-results" class="text-center text-muted my-12 hidden">
+      {{ i18n "no_results" | default "No members match your filters." }}
+    </p>
+
+    {{ if gt $paginator.TotalPages 1 }}
+      <nav id="directory-pagination" aria-label="Page navigation" class="mt-16">
+        <ul class="pagination justify-center">
+          {{ if $paginator.HasPrev }}
+            <li class="page-item">
+              <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+            </li>
+          {{ end }}
+
+          {{ range $paginator.Pagers }}
+            <li class="page-item {{ if eq . $paginator }}active{{ end }}">
+              <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+            </li>
+          {{ end }}
+
+          {{ if $paginator.HasNext }}
+            <li class="page-item">
+              <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </nav>
+    {{ end }}
   </div>
 </div>
 
@@ -143,57 +190,194 @@
 {{ define "footer" }}
 {{ partial "footer/choices-js.html" . }}
 {{ partial "footer/shuffle-js.html" . }}
+{{ $jsonURL := "" }}
+{{ with .OutputFormats.Get "json" }}{{ $jsonURL = .RelPermalink }}{{ end }}
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    const interestsChoice = new Choices('#filter-interests', {
+(function () {
+  const jsonURL = {{ $jsonURL | jsonify | safeJS }};
+  const totalCount = {{ .Pages | len }};
+
+  const nameInput   = document.getElementById('filter-name');
+  const intsSelect  = document.getElementById('filter-interests');
+  const langsSelect = document.getElementById('filter-languages');
+  const locSelect   = document.getElementById('filter-location');
+  const grid        = document.getElementById('directory-grid');
+  const filtered    = document.getElementById('directory-filtered-grid');
+  const pagination  = document.getElementById('directory-pagination');
+  const noResults   = document.getElementById('directory-no-results');
+  const countEl     = document.getElementById('directory-count');
+
+  let allEntries = null;
+  let entriesPromise = null;
+  let shuffleInstance = null;
+  let renderToken = 0;
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const interestsChoice = new Choices(intsSelect, {
       removeItemButton: true,
       searchEnabled: true,
       placeholderValue: '{{ i18n "filter_interests" }}',
       searchPlaceholderValue: '{{ i18n "search_interests" }}'
     });
-
-    const languagesChoice = new Choices('#filter-languages', {
+    const languagesChoice = new Choices(langsSelect, {
       removeItemButton: true,
       searchEnabled: true,
       placeholderValue: '{{ i18n "filter_languages" }}',
       searchPlaceholderValue: '{{ i18n "search_languages" }}'
     });
-
-    const locationChoice = new Choices('#filter-location', {
+    const locationChoice = new Choices(locSelect, {
       removeItemButton: true,
       searchEnabled: true,
       placeholderValue: '{{ i18n "filter_location" }}',
       searchPlaceholderValue: '{{ i18n "search_location" }}'
     });
 
-    const shuffleContainer = document.getElementById('directory-grid');
-    const shuffleInstance = new Shuffle(shuffleContainer, {
-      itemSelector: '.shuffle-item',
-      buffer: 1,
-      isCentered: true
-    });
+    if (typeof Shuffle !== 'undefined') {
+      try {
+        shuffleInstance = new Shuffle(grid, {
+          itemSelector: '.shuffle-item',
+          buffer: 1
+        });
+      } catch (err) {
+        console.warn('Shuffle init failed:', err);
+      }
+    }
+
+    function getState() {
+      return {
+        q: nameInput.value.trim(),
+        ints: interestsChoice.getValue(true),
+        langs: languagesChoice.getValue(true),
+        loc: locationChoice.getValue(true)
+      };
+    }
+
+    function isFiltering(s) {
+      return !!(s.q || s.ints.length || s.langs.length || s.loc.length);
+    }
+
+    function readURL() {
+      const p = new URLSearchParams(window.location.search);
+      return {
+        q: (p.get('q') || '').trim(),
+        ints: (p.get('interests') || '').split(',').filter(Boolean),
+        langs: (p.get('languages') || '').split(',').filter(Boolean),
+        loc: (p.get('location') || '').split(',').filter(Boolean)
+      };
+    }
+
+    function writeURL(s) {
+      const p = new URLSearchParams();
+      if (s.q) p.set('q', s.q);
+      if (s.ints.length) p.set('interests', s.ints.join(','));
+      if (s.langs.length) p.set('languages', s.langs.join(','));
+      if (s.loc.length) p.set('location', s.loc.join(','));
+      const qs = p.toString();
+      const url = window.location.pathname + (qs ? '?' + qs : '') + window.location.hash;
+      window.history.replaceState(null, '', url);
+    }
+
+    function loadEntries() {
+      if (allEntries) return Promise.resolve(allEntries);
+      if (entriesPromise) return entriesPromise;
+      entriesPromise = fetch(jsonURL, { credentials: 'same-origin' })
+        .then(function (r) { return r.json(); })
+        .then(function (data) { allEntries = data; return data; })
+        .catch(function (err) {
+          entriesPromise = null;
+          console.error('Failed to load directory index:', err);
+          throw err;
+        });
+      return entriesPromise;
+    }
+
+    function showPaginatedView() {
+      filtered.classList.add('hidden');
+      filtered.innerHTML = '';
+      noResults.classList.add('hidden');
+      grid.classList.remove('hidden');
+      if (pagination) pagination.classList.remove('hidden');
+      countEl.textContent = totalCount;
+      if (shuffleInstance) shuffleInstance.update();
+    }
+
+    function renderFiltered(matches) {
+      const token = ++renderToken;
+      filtered.innerHTML = '';
+      filtered.classList.remove('hidden');
+      grid.classList.add('hidden');
+      if (pagination) pagination.classList.add('hidden');
+
+      countEl.textContent = matches.length;
+
+      if (matches.length === 0) {
+        noResults.classList.remove('hidden');
+        return;
+      }
+      noResults.classList.add('hidden');
+
+      let i = 0;
+      const batchSize = 20;
+      const tmp = document.createElement('div');
+
+      function renderBatch() {
+        if (token !== renderToken) return;
+        const frag = document.createDocumentFragment();
+        const end = Math.min(i + batchSize, matches.length);
+        for (; i < end; i++) {
+          tmp.innerHTML = matches[i].html;
+          while (tmp.firstChild) frag.appendChild(tmp.firstChild);
+        }
+        filtered.appendChild(frag);
+        if (i < matches.length) requestAnimationFrame(renderBatch);
+      }
+      requestAnimationFrame(renderBatch);
+    }
 
     function applyFilters() {
-      const interests = interestsChoice.getValue(true);
-      const languages = languagesChoice.getValue(true);
-      const locations = locationChoice.getValue(true);
+      const s = getState();
+      writeURL(s);
 
-      shuffleInstance.filter(item => {
-        const itemInterests = JSON.parse(item.getAttribute('data-interests')) || [];
-        const itemLanguages = JSON.parse(item.getAttribute('data-languages')) || [];
-        const itemLocations = JSON.parse(item.getAttribute('data-location')) || [];
+      if (!isFiltering(s)) {
+        ++renderToken;
+        showPaginatedView();
+        return;
+      }
 
-        return (
-          (interests.length === 0 || interests.some(i => itemInterests.includes(i))) &&
-          (languages.length === 0 || languages.some(l => itemLanguages.includes(l))) &&
-          (locations.length === 0 || locations.some(loc => itemLocations.includes(loc)))
-        );
+      loadEntries().then(function (entries) {
+        const norm = function (str) {
+          return str.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+        };
+        const q = norm(s.q);
+        const matches = entries.filter(function (e) {
+          if (q && !norm(e.n).includes(q)) return false;
+          if (s.ints.length  && !s.ints.some(function (x)  { return (e.ints  || []).indexOf(x) !== -1; })) return false;
+          if (s.langs.length && !s.langs.some(function (x) { return (e.langs || []).indexOf(x) !== -1; })) return false;
+          if (s.loc.length   && !s.loc.some(function (x)   { return (e.loc   || []).indexOf(x) !== -1; })) return false;
+          return true;
+        });
+        renderFiltered(matches);
       });
     }
 
-    document.querySelectorAll('[id^="filter-"]').forEach(select => {
-      select.addEventListener('change', applyFilters);
+    let nameDebounce;
+    nameInput.addEventListener('input', function () {
+      clearTimeout(nameDebounce);
+      nameDebounce = setTimeout(applyFilters, 200);
     });
+    [intsSelect, langsSelect, locSelect].forEach(function (sel) {
+      sel.addEventListener('change', applyFilters);
+    });
+
+    const urlState = readURL();
+    if (isFiltering(urlState)) {
+      if (urlState.q) nameInput.value = urlState.q;
+      if (urlState.ints.length)  interestsChoice.setChoiceByValue(urlState.ints);
+      if (urlState.langs.length) languagesChoice.setChoiceByValue(urlState.langs);
+      if (urlState.loc.length)   locationChoice.setChoiceByValue(urlState.loc);
+      applyFilters();
+    }
   });
+})();
 </script>
 {{ end }}

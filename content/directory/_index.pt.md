@@ -1,6 +1,9 @@
 ---
 title: "Diretório"
 type: "directory"
+outputs:
+  - HTML
+  - JSON
 ---
 
 Adicione-se ao diretório RLadies+ — leva apenas alguns minutos e seu perfil ficará visível para a comunidade.
