@@ -1,5 +1,7 @@
 ---
 title: Código de Conducta
+description: "RLadies+ se compromete a proporcionar una experiencia libre de acoso para todas las personas. Lee nuestro Código de Conducta de la comunidad."
+summary: "El Código de Conducta de RLadies+ establece lo que esperamos de las participantes en todos los espacios RLadies+, en línea y presenciales."
 aliases:
   - /es/coc/
 ---

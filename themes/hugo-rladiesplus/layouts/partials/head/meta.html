@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{{ $desc := or .Description .Site.Params.description }}
+{{ $desc := or .Description .Params.summary .Site.Params.description }}
 {{ $title := .Title | markdownify | plainify }}
 {{ $siteTitle := .Site.Title | markdownify | plainify }}
 {{ $fullTitle := cond (eq $title $siteTitle) $title (printf "%s - %s" $title $siteTitle) }}

@@ -1,4 +1,6 @@
 ---
+description: "O RLadies+ é uma organização mundial que promove a diversidade de gênero na comunidade R através de uma rede global de capítulos, mentoras e desenvolvedoras."
+summary: "Conheça a comunidade mundial do RLadies+: encontre um capítulo, participe e conheça as pessoas por trás de um movimento global pela diversidade de gênero em R."
 image:
   path: _img/og-image.png
   alt: "Painel principal em lavanda com o título 'Promovendo a Diversidade de Gênero na Comunidade R' ao lado de um recorte em forma de R com fotos de membros da comunidade."

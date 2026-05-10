@@ -2,6 +2,8 @@
 title: "In the press"
 weight: 3
 home: true
+description: "Press coverage, interviews, and articles featuring RLadies+ chapters and members from publications around the world."
+summary: "A growing collection of press mentions, interviews, and articles featuring RLadies+ in publications around the world."
 aliases:
   - /press/
 ---

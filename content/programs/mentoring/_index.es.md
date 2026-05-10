@@ -8,6 +8,7 @@ weight: 70
 description: |
   El programa de mentoría conecta a nuevas organizadoras de capítulos con organizadoras experimentadas
   que ya han enfrentado los retos de gestionar un capítulo.
+summary: "Un programa de mentoría entre pares que empareja a nuevas organizadoras de capítulos RLadies+ con organizadoras experimentadas que ya han llevado un capítulo."
 aliases:
   - /es/activities/mentoring/
 ctas:
