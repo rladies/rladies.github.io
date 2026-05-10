@@ -1,6 +1,9 @@
 ---
 title: "International Women's Day"
-image: "gender-spectrum-park-group"
+image:
+  path: gender-spectrum-park-group.jpeg
+  alt: "Group of friends of varying genders hanging out in a park"
+  credit: "[The Gender Spectrum Collection](https://genderspectrum.vice.com/)"
 weight: 40
 description: |
   RLadies+ Global has coordinated International Women's Day campaigns to encourage more people from gender

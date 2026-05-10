@@ -2,6 +2,9 @@
 title: "Get Involved with RLadies+"
 type: "involved"
 description: "There are many ways to contribute to the RLadies+ community, whether you are here as an individual or representing an organisation."
+image:
+  path: og-image.png
+  alt: "Three cards labelled Support, Advocate, and Inspire under the heading 'Get Involved with RLadies+'."
 
 pillars:
   - title: "Support"

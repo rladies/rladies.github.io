@@ -1,6 +1,9 @@
 ---
 title: "Meet the global team"
 type: "global-team"
+image:
+  path: og-image.png
+  alt: "Headshot grid of the RLadies+ Global leadership team members."
 ---
 
 RLadies+ Global is run by a volunteer group with designated responsibilities within the organisation.

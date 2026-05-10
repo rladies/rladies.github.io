@@ -1,6 +1,8 @@
 ---
 title: "RLadies+ Guide"
-image: "slidedeck-woman-reading-code"
+image:
+  path: woman-reading-code-glasses.jpg
+  alt: "Woman wearing glasses and headphones studying code on dual monitors"
 weight: 60
 description: |
   The [RLadies+ Guide](https://guide.rladies.org/) covers everything volunteers need to know —

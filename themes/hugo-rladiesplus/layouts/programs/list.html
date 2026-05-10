@@ -1,5 +1,4 @@
 {{ define "main" }}
-{{ $stockImages := site.Data.stock_images }}
 
 <div class="site-container py-12">
   <div class="max-w-3xl mx-auto entry-content">
@@ -9,29 +8,31 @@
 
 {{ range $i, $page := .Pages.ByWeight }}
   {{ $icon := $page.Params.icon }}
-  {{ $imgData := "" }}
+  {{ $img := "" }}
   {{ if not $icon }}
-    {{ $imgData = index (where $stockImages "id" $page.Params.image) 0 }}
+    {{ $img = $page.Resources.Get $page.Params.image.path }}
   {{ end }}
   <section class="program-row{{ if eq (mod $i 2) 0 }} bg-surface-alt{{ else }} program-row-reverse{{ end }}">
-    <div class="program-row-image{{ if $icon }} program-row-image-icon{{ else }}{{ with resources.Get $imgData.file }}{{ if eq .MediaType.SubType "svg" }} program-row-image-contain{{ end }}{{ end }}{{ end }}">
+    <div class="program-row-image{{ if $icon }} program-row-image-icon{{ else }}{{ with $img }}{{ if eq .MediaType.SubType "svg" }} program-row-image-contain{{ end }}{{ end }}{{ end }}">
       {{ if $icon }}
         <i class="{{ $icon }}" aria-hidden="true"></i>
       {{ else }}
-        {{ with resources.Get $imgData.file }}
+        {{ with $img }}
           {{ if eq .MediaType.SubType "svg" }}
             <img src="{{ .RelPermalink }}"
-                 alt="{{ $imgData.alt }}"
+                 alt="{{ $page.Params.image.alt }}"
                  loading="lazy">
           {{ else }}
-            {{ $img := .Fill "800x600 webp" }}
-            <img src="{{ $img.RelPermalink }}"
-                 alt="{{ $imgData.alt }}"
-                 width="{{ $img.Width }}" height="{{ $img.Height }}"
+            {{ $sized := .Fill "800x600 webp" }}
+            <img src="{{ $sized.RelPermalink }}"
+                 alt="{{ $page.Params.image.alt }}"
+                 width="{{ $sized.Width }}" height="{{ $sized.Height }}"
                  loading="lazy">
           {{ end }}
         {{ end }}
-        {{ partial "stock-attribution.html" $imgData }}
+        {{ with $page.Params.image.credit }}
+          <small class="text-xs text-muted">{{ i18n "photo_credit" | default "Photo" }}: {{ . | markdownify }}</small>
+        {{ end }}
       {{ end }}
     </div>
     <div class="program-row-content">

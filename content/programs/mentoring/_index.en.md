@@ -1,7 +1,9 @@
 ---
 title: "Mentoring Program"
 type: "mentoring"
-image: "presenting-colleague-02"
+image:
+  path: presenting-colleague-02.jpg
+  alt: "Two women of color discussing work together"
 weight: 70
 description: |
   The mentoring program connects new chapter organisers with experienced ones who have navigated

@@ -1,10 +1,11 @@
+{{ $home := . }}
 <section class="site-section-lg" id="blog">
   <div class="site-container">
     <h2 class="section-title fade-in-up">
-      {{ i18n "home_blog_title" | default "Latest Posts" }}
+      {{ .Params.blog.title | default (i18n "home_blog_title") }}
     </h2>
     <p class="section-subtitle fade-in-up stagger-1">
-      {{ i18n "home_blog_subtitle" | default "News, tutorials, and stories from our community" }}
+      {{ .Params.blog.subtitle | default (i18n "home_blog_subtitle") }}
     </p>
 
     {{ $posts := slice }}
@@ -84,17 +85,17 @@
     <div class="flex justify-center gap-4 mt-12 fade-in-up">
       {{ with .Site.GetPage "section" "news" }}
         <a href="{{ .RelPermalink }}" class="btn btn-outline">
-          {{ i18n "home_news_cta" | default "All News" }} &rarr;
+          {{ $home.Params.blog.cta_news | default (i18n "home_news_cta") }} &rarr;
         </a>
       {{ end }}
       {{ with .Site.GetPage "section" "blog" }}
         <a href="{{ .RelPermalink }}" class="btn btn-outline">
-          {{ i18n "home_blog_cta" | default "All Posts" }} &rarr;
+          {{ $home.Params.blog.cta_posts | default (i18n "home_blog_cta") }} &rarr;
         </a>
       {{ end }}
       {{ with .Site.GetPage "section" "press" }}
         <a href="{{ .RelPermalink }}" class="btn btn-outline">
-          {{ i18n "home_press_cta" | default "All Press" }} &rarr;
+          {{ $home.Params.blog.cta_press | default (i18n "home_press_cta") }} &rarr;
         </a>
       {{ end }}
     </div>

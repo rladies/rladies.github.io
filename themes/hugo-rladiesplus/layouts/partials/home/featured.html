@@ -1,10 +1,11 @@
+{{ $home := . }}
 <section class="site-section-lg bg-surface" id="featured">
   <div class="site-container">
     <h2 class="section-title fade-in-up">
-      {{ i18n "home_featured_title" | default "Featured Members" }}
+      {{ .Params.featured.title | default (i18n "home_featured_title") }}
     </h2>
     <p class="section-subtitle fade-in-up stagger-1">
-      {{ i18n "home_featured_subtitle" | default "Meet some of the people in our community" }}
+      {{ .Params.featured.subtitle | default (i18n "home_featured_subtitle") }}
     </p>
 
     {{ $directory := where .Site.RegularPages "Section" "directory" }}
@@ -22,7 +23,7 @@
     {{ with .Site.GetPage "section" "directory" }}
       <div class="text-center mt-12 fade-in-up">
         <a href="{{ .RelPermalink }}" class="btn btn-outline">
-          {{ i18n "home_featured_cta" | default "Browse Directory" }} &rarr;
+          {{ $home.Params.featured.cta | default (i18n "home_featured_cta") }} &rarr;
         </a>
       </div>
     {{ end }}

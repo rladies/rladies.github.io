@@ -183,7 +183,8 @@ jobs:
             : [];
 
           if (prFiles.length === 0) {
-            fs.writeFileSync('report.md', '> No Lighthouse results collected.\n');
+            fs.writeFileSync('report.md', '## Lighthouse Audit\n\n> No Lighthouse results collected.\n');
+            fs.writeFileSync('has-alt-failures.txt', 'false');
             process.exit(0);
           }
 

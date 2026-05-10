@@ -1,6 +1,9 @@
 ---
 title: "Directory"
 type: "directory"
+image:
+  path: og-image.png
+  alt: "Hexagonal photo grid of RLadies+ community members beside the message 'Find a speaker for your next event in our directory!'"
 ---
 
 Add yourself to the RLadies+ directory — it only takes a few minutes, and your profile will be visible to the community.

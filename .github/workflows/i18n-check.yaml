@@ -64,16 +64,24 @@ jobs:
           LANGS="en es pt fr"
           BASE_LANG="en"
 
-          # Only check content dirs changed in this PR
+          # Only check content dirs changed in this PR.
+          # Skip directories that are not Hugo page bundles:
+          #   - any path segment beginning with `_` (e.g. _img/) is excluded by Hugo
+          #   - directories that hold no _index*.md or index*.md page have nothing to translate
           CHANGED_DIRS=$(git diff --name-only origin/main...HEAD -- content/ \
             | xargs -I{} dirname {} \
             | sort -u \
-            | sed 's|\.[a-z]*\.md$||' \
-            | sort -u)
+            | grep -Ev '(^|/)_[^/]+(/|$)' \
+            || true)
 
           MISSING=""
           for dir in $CHANGED_DIRS; do
             [ ! -d "$dir" ] && continue
+            # Only treat directories that contain at least one page markdown as page bundles
+            shopt -s nullglob
+            pages=("$dir"/_index*.md "$dir"/index*.md)
+            shopt -u nullglob
+            [ ${#pages[@]} -eq 0 ] && continue
             for lang in $LANGS; do
               if [ "$lang" = "$BASE_LANG" ]; then
                 # Check for _index.md or index.md
