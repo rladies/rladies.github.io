@@ -4,6 +4,9 @@ type: "directory"
 url: /fr/membres/
 description: "Parcourez le répertoire RLadies+ d'intervenantes, de mentores et de membres — trouvez quelqu'un pour votre prochain événement, panel ou collaboration."
 summary: "Un répertoire des membres de la communauté RLadies+. Ajoute-toi ou trouve une intervenante, mentore ou collaboratrice dans le réseau mondial."
+outputs:
+  - HTML
+  - JSON
 ---
 
 Ajoutez-vous au répertoire RLadies+ — cela ne prend que quelques minutes et votre profil sera visible par la communauté.
