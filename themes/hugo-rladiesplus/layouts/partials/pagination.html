@@ -1,0 +1,50 @@
+{{/*
+  Pagination — condenses long page lists to: first 2, last 2, current ±1,
+  with ellipsis fillers. Renders nothing when there's only one page.
+
+  Params (passed as a dict):
+    paginator (required) — a Hugo Paginator (e.g. .Paginator or a custom .Paginate result)
+    id        (optional) — id attribute for the <nav> wrapper
+    class     (optional) — class for the <nav>, defaults to "mt-16"
+*/}}
+{{ $paginator := .paginator }}
+{{ $id := .id }}
+{{ $class := .class | default "mt-16" }}
+
+{{ if gt $paginator.TotalPages 1 }}
+  <nav{{ with $id }} id="{{ . }}"{{ end }} aria-label="Page navigation" class="{{ $class }}">
+    <ul class="pagination justify-center">
+      {{ if $paginator.HasPrev }}
+        <li class="page-item">
+          <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </li>
+      {{ end }}
+
+      {{ $currentPage := $paginator.PageNumber }}
+      {{ $totalPages := $paginator.TotalPages }}
+
+      {{ range $paginator.Pagers }}
+        {{ $pageNum := .PageNumber }}
+        {{ if or (le $pageNum 2) (ge $pageNum (sub $totalPages 1)) (and (ge $pageNum (sub $currentPage 1)) (le $pageNum (add $currentPage 1))) }}
+          <li class="page-item {{ if eq . $paginator }}active{{ end }}">
+            <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>
+          </li>
+        {{ else if or (eq $pageNum 3) (eq $pageNum (sub $totalPages 2)) }}
+          <li class="page-item disabled">
+            <span class="page-link">&hellip;</span>
+          </li>
+        {{ end }}
+      {{ end }}
+
+      {{ if $paginator.HasNext }}
+        <li class="page-item">
+          <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+{{ end }}
