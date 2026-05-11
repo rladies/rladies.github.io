@@ -20,6 +20,14 @@ jobs:
     name: Check modified jsons
     runs-on: ubuntu-latest
     steps:
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
+
       - name: Checkout repository
         uses: actions/checkout@v6
 
@@ -58,6 +66,7 @@ jobs:
           VALIDATION_RESULT: ${{ steps.validate.outputs.result }}
           VALIDATION_ERRORS: ${{ steps.validate.outputs.errors }}
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const result = process.env.VALIDATION_RESULT;
             const errors = process.env.VALIDATION_ERRORS || '';
