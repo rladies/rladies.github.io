@@ -36,6 +36,14 @@ jobs:
         with:
           fetch-depth: 2
 
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
+
       - name: Set env parameters
         run: |
           ver=$(cat .hugoversion)
@@ -43,10 +51,7 @@ jobs:
           echo "repo_owner=$(dirname ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "repo_name=$(basename ${{ env.repo_name }})" >> $GITHUB_ENV
           echo "netalias=d${{ env.directory }}-r${{ env.rid}}" >> $GITHUB_ENV
-          echo "token=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "token=${{ secrets.GLOBAL_GHA_PAT }}" >> $GITHUB_ENV
-          fi
+          echo "token=${{ steps.app-token.outputs.token }}" >> $GITHUB_ENV
 
       - name: Install cURL Headers
         run: |
@@ -70,7 +75,7 @@ jobs:
         if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
         with:
           name: entries
-          github_token: ${{ secrets.GLOBAL_GHA_PAT }}
+          github_token: ${{ steps.app-token.outputs.token }}
           run_id: ${{ env.directory }}
           repo: rladies/directory
           path: entries/

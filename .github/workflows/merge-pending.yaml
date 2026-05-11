@@ -19,16 +19,21 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v6
 
-      - name: Setup GitHub CLI
-        run: |
-          echo "${{ secrets.ADMIN_TOKEN }}" | gh auth login --with-token
-          gh config set prompt-enabled false
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
 
       - name: Get current date for comparison
         id: get_date
         run: echo "CURRENT_DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
 
       - name: Find and Process PRs with "pending" label
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           PR_NUMBERS=$(gh pr list --label "pending" --state "open" --json number,title,isDraft -q '.[] | select(.isDraft == false) | .number')
 
