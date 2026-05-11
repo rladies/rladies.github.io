@@ -134,8 +134,14 @@
   }
 
   /* ── Pagination ── */
-  .dark .page-item.disabled .page-link {
+  .dark .page-link:hover {
+    background-color: var(--color-raised);
+  }
+
+  .dark .page-item.disabled .page-link,
+  .dark .page-item.disabled .page-link:hover {
     @apply text-gray-500;
+    background-color: transparent;
   }
 
   /* ── Calendar (FullCalendar) ── */
