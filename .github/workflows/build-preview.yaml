@@ -13,9 +13,12 @@ on:
       triggering_repo:
         description: "Triggering repo"
         required: false
+  pull_request:
+    branches:
+      - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.inputs.directory }}
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.inputs.directory || 'pr' }}
   cancel-in-progress: true
 
 env:
@@ -29,6 +32,7 @@ env:
 jobs:
   build:
     name: Build site
+    if: ${{ github.event.pull_request.head.repo.fork != true }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -59,7 +63,7 @@ jobs:
 
       - name: Site data - DIRECTORY - Get
         uses: actions/checkout@v6
-        if: ${{ (env.on_fork != 'true') && env.directory == 'main' }}
+        if: ${{ env.on_fork != 'true' }}
         with:
           repository: rladies/directory
           ssh-key: ${{ secrets.ssh_directoryy_repo }}
@@ -74,19 +78,19 @@ jobs:
           run_id: ${{ env.directory }}
           repo: rladies/directory
           path: entries/
+          if_no_artifact_found: warn
 
       - name: Site data - DIRECTORY - Move
         if: ${{ env.on_fork != 'true' }}
         run: |
-          rm -rf data/directory/* assets/directory/*
-          if [ "${{ env.directory }}" = "main" ]; then
-            cp -r tmpd/dir/data/json data/directory
-            cp -r tmpd/dir/data/img/* assets/directory
-          else
-            cp -r entries/json data/directory
-            if [ -d "entries/img" ]; then
-              cp -r entries/img/* assets/directory/
-            fi
+          rm -rf data/directory assets/directory/*
+          cp -r tmpd/dir/data/json data/directory
+          cp -r tmpd/dir/data/img/* assets/directory/
+          if [ -d entries/json ] && [ -n "$(ls -A entries/json 2>/dev/null)" ]; then
+            cp -r entries/json/* data/directory/
+          fi
+          if [ -d entries/img ] && [ -n "$(ls -A entries/img 2>/dev/null)" ]; then
+            cp -r entries/img/* assets/directory/
           fi
 
       - name: Site data - clean cloned repos
