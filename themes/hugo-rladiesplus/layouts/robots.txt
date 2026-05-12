@@ -1,3 +1,49 @@
 User-agent: *
-
+Allow: /directory/$
 Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: GPTBot
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: ClaudeBot
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: anthropic-ai
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: Google-Extended
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: CCBot
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: PerplexityBot
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: Bytespider
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: Amazonbot
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
+
+User-agent: cohere-ai
+Allow: /directory/$
+Disallow: /directory/
+Disallow: /images/directory
