@@ -1,11 +1,11 @@
-Title: The source code for the R-ladies website
+Title: The source code for the RLadies+ website
 Version: 1.0
 Authors@R:  c(
-     person("Hernández", "Bea", 
-         email = "bea@rladies.org", 
+     person("Hernández", "Bea",
+         email = "bea@rladies.org",
          role = c("aut")),
-     person("Athanasia Mo", "Mowinckel", 
-         email = "a.m.mowinckel@psykologi.uio.no", 
+     person("Athanasia Mo", "Mowinckel",
+         email = "a.m.mowinckel@psykologi.uio.no",
          role = c("aut", "cre"),
          comment = c(ORCID = "0000-0002-5756-0223"))
       )
@@ -17,7 +17,7 @@ Config/renv/profiles/json/dependencies:
     jsonvalidate,
     here,
     cli
-Config/renv/profiles/dev/dependencies: 
+Config/renv/profiles/dev/dependencies:
     airtabler,
     blogdown,
     jsonlite,
@@ -29,7 +29,7 @@ Config/renv/profiles/dev/dependencies:
 Config/renv/profiles/production/dependencies:
     here,
     yaml
-Config/renv/profiles/airtable/dependencies: 
+Config/renv/profiles/airtable/dependencies:
     blogdown,
     jsonlite,
     dplyr,
