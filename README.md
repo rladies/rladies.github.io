@@ -1,18 +1,21 @@
-# Repository for the R-Ladies website
+# Repository for the RLadies+ website
 
 <!-- badges: start -->
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3bf48c17-2bd3-4452-83cb-0ac808ad745b/deploy-status)](https://app.netlify.com/sites/rladies-dev/deploys)
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/github/all-contributors/rladies/rladies.github.io?color=ee8449&style=flat-square)](#contributors)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- badges: end -->
 
-This repository contains the source files for the R-Ladies website.
+This repository contains the source files for the RLadies+ website.
 The site is built with [hugo](https://gohugo.io/) and [netlify](www.netlify.com)
 
-Information about the site internals and setup can be found in the [R-Ladies Organisational Guide](https://guide.rladies.org/website/)
+Information about the site internals and setup can be found in the [RLadies+ Organisational Guide](https://guide.rladies.org/website/)
 
 ### Reports of bugs
 
