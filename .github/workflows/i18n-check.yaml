@@ -13,6 +13,14 @@ jobs:
     name: Translation coverage
     runs-on: ubuntu-latest
     steps:
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
+
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -162,6 +170,7 @@ jobs:
         uses: actions/github-script@v9
         if: always()
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const fs = require('fs');
             let md = '## i18n Coverage\n\n';

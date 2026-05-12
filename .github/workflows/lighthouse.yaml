@@ -81,6 +81,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
+
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
@@ -276,6 +284,7 @@ jobs:
       - name: Post Lighthouse comment
         uses: actions/github-script@v9
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const fs = require('fs');
             const report = fs.readFileSync('report.md', 'utf8');
@@ -317,6 +326,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
+
       - name: Download build
         uses: actions/download-artifact@v8
         with:
@@ -350,6 +367,7 @@ jobs:
         uses: actions/github-script@v9
         if: always()
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const fs = require('fs');
             let report = '## Broken Link Check\n\n';
@@ -426,6 +444,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
+
       - name: Download build
         uses: actions/download-artifact@v8
         with:
@@ -493,6 +519,7 @@ jobs:
       - name: Post bundle size comment
         uses: actions/github-script@v9
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const fs = require('fs');
             const report = fs.readFileSync('bundle-report.md', 'utf8');

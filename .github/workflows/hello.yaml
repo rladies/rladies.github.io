@@ -54,6 +54,7 @@ jobs:
         if: steps.check.outputs.say_hello == 'true'
         uses: actions/github-script@v9
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const number = context.issue.number;
             await github.rest.issues.createComment({
@@ -67,11 +68,19 @@ jobs:
     if: github.event_name == 'pull_request_target' && github.event.action == 'closed' && github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
+      - name: Generate app token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.JINX_APP_ID }}
+          private-key: ${{ secrets.JINX_PRIVATE_KEY }}
+          owner: rladies
+
       - name: Check first merged PR
         id: check
         env:
           AUTHOR: ${{ github.event.pull_request.user.login }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
           REPO: ${{ github.repository }}
         run: |
           if [[ "$AUTHOR" == *"[bot]" ]]; then
@@ -90,6 +99,7 @@ jobs:
         if: steps.check.outputs.thank == 'true'
         uses: actions/github-script@v9
         with:
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             await github.rest.issues.createComment({
               owner: context.repo.owner,
