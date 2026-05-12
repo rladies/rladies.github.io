@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 12 May 2026 01:25:30 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R bugs and bites - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/314655645/</link><pubDate>Tue, 09 Jun 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/314655645/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 12 May 2026 13:26:53 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R bugs and bites - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/314655645/</link><pubDate>Tue, 09 Jun 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/314655645/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, June 9, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> ØHM11, Øya helsehus østfløy</p>
         <p><strong>Attendees:</strong> 1 going</p>
@@ -33,7 +33,7 @@ So come along if you’re interested in modern machine learning, generative AI, 
         <p><a href="https://www.meetup.com/rladies-melbourne/events/314684648/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Melbourne)</author><category>R-Ladies Melbourne</category></item><item><title>From Dictionaries to LLMs: Text Analysis in R   - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/314511787/</link><pubDate>Wed, 20 May 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/314511787/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, May 20, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 44 going</p>
+        <p><strong>Attendees:</strong> 45 going</p>
         <p>This workshop walks through a complete text analysis pipeline in R, combining traditional methods with newer AI-powered tools.
 
 In the first part, we will cover tokenization with tidytext, stopword removal (including custom stopwords), word frequency visualization with wordclouds and bar plots, dictionary-based sentiment analysis using three lexicons (AFINN, Bing, and NRC), topic modeling with LDA, and bigram analysis with word networks.
@@ -44,7 +44,7 @@ Familiarity with R and the tidyverse is assumed.</p>
         <p><a href="https://www.meetup.com/rladies-rome/events/314511787/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Psicometría con R: Introducción a la teoría de respuesta al ítem (TRI) - R-Ladies Buenos Aires</title><link>https://www.meetup.com/rladies-buenos-aires/events/314530835/</link><pubDate>Fri, 15 May 2026 21:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-buenos-aires/events/314530835/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Buenos Aires</p>
         <p><strong>When:</strong> Friday, May 15, 2026 at 9:00 PM UTC</p>
         <p><strong>Where:</strong> Perón y Uriburu</p>
-        <p><strong>Attendees:</strong> 10 going</p>
+        <p><strong>Attendees:</strong> 12 going</p>
         <p>En este taller introductorio vamos a acercarnos a la **Teoría de Respuesta al Ítem (TRI)** de una manera práctica y accesible. La TRI sirve para entender mejor **cómo funcionan los ítems (preguntas) de un test y cómo miden una habilidad o rasgo**. Nos permite ver, por ejemplo, si un ítem es más fácil o más difícil, si discrimina bien entre personas con distinto nivel, y si funciona de manera consistente.
 También es una herramienta muy útil para seleccionar los mejores ítems, acortar tests sin perder calidad y diseñar escalas más precisas.
 
@@ -63,7 +63,7 @@ Este taller es **introductorio** y está dirigido a personas con un **conocimien
         <p><a href="https://www.meetup.com/rladies-buenos-aires/events/314530835/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>Automatic NLP with LLMS Using {mall} - R-Ladies Paris</title><link>https://www.meetup.com/rladies-paris/events/314532064/</link><pubDate>Wed, 13 May 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-paris/events/314532064/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Paris</p>
         <p><strong>When:</strong> Wednesday, May 13, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 27 going</p>
+        <p><strong>Attendees:</strong> 28 going</p>
         <p>🔜 We are excited to announce our next virtual meetup in collaboration with R-Ladies Abuja (https://www.meetup.com/rladies-abuja/).
 
 Join us on May 13 from 7:00 pm to 8:00 pm CEST (GMT&#43;2) for a talk on performing automatic NLP with LLMs using mall with Edgar Ruiz — Software Engineer at Posit.
@@ -74,7 +74,7 @@ We look forward to seeing many of you there!</p>
         <p><a href="https://www.meetup.com/rladies-paris/events/314532064/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Paris)</author><category>R-Ladies Paris</category></item><item><title>Creating your personal website with Quarto - R-Ladies Santa Barbara</title><link>https://www.meetup.com/rladies-santa-barbara/events/314390595/</link><pubDate>Thu, 14 May 2026 00:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-santa-barbara/events/314390595/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Santa Barbara</p>
         <p><strong>When:</strong> Thursday, May 14, 2026 at 12:30 AM UTC</p>
         <p><strong>Where:</strong> National Center for Ecological Analysis and Synthesis</p>
-        <p><strong>Attendees:</strong> 13 going</p>
+        <p><strong>Attendees:</strong> 14 going</p>
         <p>A personal website is a great way to showcase your data science skills, highlight projects, and share what you’re passionate about. In this workshop, we’ll learn to build a personal website using Quarto, an accessible and flexible publishing framework, to help you get started. Together, we’ll:
 
 * Build the core components of a Quarto website
