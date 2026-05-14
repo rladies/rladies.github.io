@@ -6,6 +6,10 @@ on:
     paths:
       - "content/{blog,news}/**/index*.{md,qmd,rmd}"
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   checklist:
     uses: rladies/jinx/.github/workflows/reusable-website-blog-checklist.yml@main
