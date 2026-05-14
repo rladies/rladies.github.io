@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260513T133543Z
+DTSTAMP:20260514T012951Z
 DTSTART:20260609T150000Z
 DTEND:20260609T163000Z
 SUMMARY:R bugs and bites - R-Ladies Trondheim
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260513T133543Z
+DTSTAMP:20260514T012951Z
 DTSTART:20260604T003000Z
 DTEND:20260604T020000Z
 SUMMARY:R-Ladies+ Corvallis: Learning Positron Workshop - R-Ladies Corvallis
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260513T133543Z
+DTSTAMP:20260514T012951Z
 DTSTART:20260520T080000Z
 DTEND:20260520T090000Z
 SUMMARY:Deep Probabilistic and Generative Modeling - R-Ladies Melbourne
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260513T133543Z
+DTSTAMP:20260514T012951Z
 DTSTART:20260520T160000Z
 DTEND:20260520T180000Z
 SUMMARY:From Dictionaries to LLMs: Text Analysis in R   - R-Ladies Rome
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260513T133543Z
+DTSTAMP:20260514T012951Z
 DTSTART:20260515T210000Z
 DTEND:20260515T230000Z
 SUMMARY:Psicometría con R:  Introducción a la teoría de respuesta al ítem (TRI) - R-Ladies Buenos Aires
@@ -68,32 +68,6 @@ LOCATION:Perón y Uriburu, Perón y Uriburu, Ciudad Autónoma de Buenos Aires, A
 URL:https://www.meetup.com/rladies-buenos-aires/events/314530835/
 ORGANIZER;CN=R-Ladies Buenos Aires:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Buenos Aires
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260513T133543Z
-DTSTART:20260513T170000Z
-DTEND:20260513T180000Z
-SUMMARY:Automatic NLP with LLMS Using {mall} - R-Ladies Paris
-DESCRIPTION:🔜 We are excited to announce our next virtual meetup in collaboration with R-Ladies Abuja (https://www.meetup.com/rladies-abuja/).\n\nJoin us on May 13 from 7:00 pm to 8:00 pm CEST (GMT+2) for a talk on performing automatic NLP with LLMs using mall with Edgar Ruiz — Software Engineer at Posit.\n\nTalk abstract: We’re all too familiar with the grind of building functional NLP: labeling data, fitting models, and endless tuning. In this talk, we’ll see how mall lets us bypass model training entirely by using LLMs to handle complex multilingual translation, sentiment analysis, and entity extraction row-wise across our data. We’ll explore how to run these solutions using a familiar R syntax, whether you're working with local models for privacy or remote APIs for scale.\n\nWe look forward to seeing many of you there!
-LOCATION:Online event
-URL:https://www.meetup.com/rladies-paris/events/314532064/
-ORGANIZER;CN=R-Ladies Paris:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Paris
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260513T133543Z
-DTSTART:20260514T003000Z
-DTEND:20260514T020000Z
-SUMMARY:Creating your personal website with Quarto - R-Ladies Santa Barbara
-DESCRIPTION:A personal website is a great way to showcase your data science skills, highlight projects, and share what you’re passionate about. In this workshop, we’ll learn to build a personal website using Quarto, an accessible and flexible publishing framework, to help you get started. Together, we’ll:\n\n* Build the core components of a Quarto website\n* Add a blog to share your work and projects\n* Use Sass to customize colors and fonts\n* Walk through deploying your website \~for free\~ using GitHub Pages\n\nWhether you’re just getting started or looking for a Quarto refresher, this workshop will provide you with the tools you need to share your work with an online audience.\n\nIf you’d like to follow along during the workshop, please install and configure a few tools ahead of time by working through these [initial setup instructions](https://samanthacsik.github.io/RLadiesSB-quarto-websites/#setup).
-LOCATION:National Center for Ecological Analysis and Synthesis, 1021 Anacapa St, Santa Barbara, UNITED STATES OF AMERICA
-URL:https://www.meetup.com/rladies-santa-barbara/events/314390595/
-ORGANIZER;CN=R-Ladies Santa Barbara:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Santa Barbara
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
