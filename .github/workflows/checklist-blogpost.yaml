@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   checklist:
-    uses: rladies/jinx/.github/workflows/reusable-website-blog-checklist.yml@main
+    uses: rladies/jinx/.github/workflows/reusable-post-checklist.yml@main
     secrets:
       JINX_APP_ID: ${{ secrets.JINX_APP_ID }}
       JINX_PRIVATE_KEY: ${{ secrets.JINX_PRIVATE_KEY }}
