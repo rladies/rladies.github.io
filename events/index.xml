@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 18 May 2026 14:06:39 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R bugs and bites - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/314655645/</link><pubDate>Tue, 09 Jun 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/314655645/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 19 May 2026 01:32:21 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R bugs and bites - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/314655645/</link><pubDate>Tue, 09 Jun 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/314655645/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, June 9, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> ØHM11, Øya helsehus østfløy</p>
         <p><strong>Attendees:</strong> 1 going</p>
@@ -16,7 +16,22 @@ The room may be a bit confusing to find, because it is NOT in the main building 
         <p><strong>Attendees:</strong> 12 going</p>
         <p>Are you an R and/or Python user interested in learning about the [Positron IDE](https://positron.posit.co/)? Join the R-Ladies Corvallis community for a workshop led by Posit&#39;s very own Charlotte Wickham! You do not need to have any experience with Positron to attend.
 We&#39;ll have snacks and time set aside for mingling and asking questions. We hope you join us!</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Deep Probabilistic and Generative Modeling - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/314684648/</link><pubDate>Wed, 20 May 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/314684648/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Primeros pasos en Quarto - R-Ladies Cuernavaca</title><link>https://www.meetup.com/rladies-cuernavaca/events/314847504/</link><pubDate>Wed, 27 May 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-cuernavaca/events/314847504/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Cuernavaca</p>
+        <p><strong>When:</strong> Wednesday, May 27, 2026 at 11:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 14 going</p>
+        <p>**¿Te interesa aprender a crear reportes, presentaciones y documentos reproducibles en R de una manera moderna y sencilla?**
+
+En este taller de introducción conocerás las bases de **Quarto**, una poderosa herramienta para generar documentos dinámicos integrando texto, código y visualizaciones en un solo flujo de trabajo.
+
+# Requerimientos de software
+
+* Instalación de R y Rstudio
+* Instalación de Quarto ([https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/))
+
+**CÓDIGO DE CONDUCTA**
+Recuerda leer y atender nuestro código de conducta disponible en [https://rladies.org/code-of-conduct/](https://rladies.org/code-of-conduct/) o [https://rladiesmx.netlify.app/codigo_de_conducta/](https://rladiesmx.netlify.app/codigo_de_conducta/)</p>
+        <p><a href="https://www.meetup.com/rladies-cuernavaca/events/314847504/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Cuernavaca)</author><category>R-Ladies Cuernavaca</category></item><item><title>Deep Probabilistic and Generative Modeling - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/314684648/</link><pubDate>Wed, 20 May 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/314684648/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
         <p><strong>When:</strong> Wednesday, May 20, 2026 at 8:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 31 going</p>
