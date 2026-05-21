@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 20 May 2026 20:12:01 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R bugs and bites - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/314655645/</link><pubDate>Tue, 09 Jun 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/314655645/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 01:34:02 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>HePriceR: An R Package for Health Insurance - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314673305/</link><pubDate>Wed, 10 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/314673305/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
+        <p><strong>When:</strong> Wednesday, June 10, 2026 at 4:00 PM UTC</p>
+        <p><strong>Where:</strong> TU Wien Freihaus</p>
+        <p><strong>Attendees:</strong> 3 going</p>
+        <p>We are pleased to welcome **Eva Flonner** from UNIQA Insurance Group to present an R package for health insurance. Join us to explore how R can be put to work in actuarial practice, from data to modeling to simulation. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
+
+**ℹ️ Abstract**
+**HePriceR** is an R package for health insurance pricing that provides a framework for modeling expected claims and their uncertainty. The package consolidates classical actuarial approaches with modern statistical modeling, enabling transparent, reproducible, and extensible actuarial workflows.
+
+The core focus of HePriceR lies in the estimation of expected claims and their uncertainty. It implements multiple methodological approaches, including the Rusam method for expected claims, as well as comprehensive frequency–severity modeling. The package further provides technical implementations for common product design features, such as deductibles, sublimits, and benefit caps, ensuring that modeled claim distributions align with contractual reality. From a software design perspective, HePriceR relies on a structured system of S3 classes and methods, including dedicated hpr_pricing_data objects and corresponding fit objects. This design enables consistent handling of data, fitted models, diagnostics, and downstream simulation. On top of the fitted models, the package offers Monte Carlo simulation capabilities. Overall, HePriceR provides a cohesive actuarial toolkit that bridges actuarial methodology and statistical modeling, supporting both daily operations and advanced analytical use cases. This package is based on joint work with Herr Kompott.
+
+**🗺️ Location**
+TU Wien Freihaus
+Wiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))
+Exact room to be announced soon.</p>
+        <p><a href="https://www.meetup.com/rladies-vienna/events/314673305/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vienna)</author><category>R-Ladies Vienna</category></item><item><title>R bugs and bites - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/314655645/</link><pubDate>Tue, 09 Jun 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/314655645/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, June 9, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> ØHM11, Øya helsehus østfløy</p>
         <p><strong>Attendees:</strong> 1 going</p>
@@ -19,7 +34,7 @@ We&#39;ll have snacks and time set aside for mingling and asking questions. We h
         <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Primeros pasos en Quarto - R-Ladies Cuernavaca</title><link>https://www.meetup.com/rladies-cuernavaca/events/314847504/</link><pubDate>Wed, 27 May 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-cuernavaca/events/314847504/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Cuernavaca</p>
         <p><strong>When:</strong> Wednesday, May 27, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 15 going</p>
+        <p><strong>Attendees:</strong> 16 going</p>
         <p>**¿Te interesa aprender a crear reportes, presentaciones y documentos reproducibles en R de una manera moderna y sencilla?**
 
 En este taller de introducción conocerás las bases de **Quarto**, una poderosa herramienta para generar documentos dinámicos integrando texto, código y visualizaciones en un solo flujo de trabajo.
