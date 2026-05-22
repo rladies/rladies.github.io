@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 21 May 2026 13:53:37 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>HePriceR: An R Package for Health Insurance - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314673305/</link><pubDate>Wed, 10 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/314673305/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 22 May 2026 01:32:18 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>HePriceR: An R Package for Health Insurance - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314673305/</link><pubDate>Wed, 10 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/314673305/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
         <p><strong>When:</strong> Wednesday, June 10, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> TU Wien Freihaus</p>
         <p><strong>Attendees:</strong> 3 going</p>
@@ -31,11 +31,14 @@ The room may be a bit confusing to find, because it is NOT in the main building 
         <p><strong>Attendees:</strong> 12 going</p>
         <p>Are you an R and/or Python user interested in learning about the [Positron IDE](https://positron.posit.co/)? Join the R-Ladies Corvallis community for a workshop led by Posit&#39;s very own Charlotte Wickham! You do not need to have any experience with Positron to attend.
 We&#39;ll have snacks and time set aside for mingling and asking questions. We hope you join us!</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title> From open match data to the warehouse: World Cup Football Analytics - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/314887433/</link><pubDate>Fri, 29 May 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/314887433/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>World Cup Football Analytics + Sampling and Monte Carlo in R - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/314887433/</link><pubDate>Fri, 29 May 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/314887433/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Friday, May 29, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Vancouver Public Library - Mt. Pleasant Branch</p>
-        <p><strong>Attendees:</strong> 4 going</p>
-        <p>Every few years attention swings to national teams, but the most granular analytics still start from structured match and event data. How
+        <p><strong>Attendees:</strong> 13 going</p>
+        <p>**From open match data to the warehouse: World Cup Football Analytics**
+With Rabin Duran
+
+Every few years attention swings to national teams, but the most granular analytics still start from structured match and event data. How
 do you move from flat extracts to queryable tables analysts can use and
 when you care about both domestic leagues and international windows, how do you keep the questions aligned with the data (lineups and events vs.
 results and goals alone)?
@@ -54,6 +57,11 @@ There we show a small dashboard tuned to that international dataset. We
 finish with hands-on exploration: a Looker Studio view on BigQuery so
 the audience can see how analysts browse the same tables the pipeline
 publishes and we peek at a simple model or prediction sketch.
+
+**Sampling and Monte Carlo in R**
+With Conor Morrison
+
+This presentation will briefly review some concepts in statistics, and show how mathematically tricky problems can be solved, approximately, by sampling random variables in R and computing functions of these samples.
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 You are welcome to join us for some food and drinks at a nearby restaurant after we have finished.
