@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 27 May 2026 14:00:27 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/314962750/</link><pubDate>Mon, 15 Jun 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/314962750/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 28 May 2026 01:28:07 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/314962750/</link><pubDate>Mon, 15 Jun 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/314962750/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Monday, June 15, 2026 at 8:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 29 going</p>
+        <p><strong>Attendees:</strong> 33 going</p>
         <p>Já tentou construir um gráfico no R usando o pacote ggplot2 e teve a sensação de que estava aprendendo outra língua? Pois é: o ggplot2 tem uma lógica própria. A boa notícia é que, depois de entendê-la, dificilmente você vai querer voltar a montar gráficos manualmente no Excel. Neste minicurso, vamos explorar os princípios fundamentais do ggplot2, partindo do zero até recursos mais avançados de personalização, para que você consiga construir gráficos elegantes, informativos e reproduzíveis no R.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/314962750/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>HePriceR: An R Package for Health Insurance - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314673305/</link><pubDate>Wed, 10 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/314673305/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
         <p><strong>When:</strong> Wednesday, June 10, 2026 at 4:00 PM UTC</p>
@@ -33,7 +33,7 @@ The room may be a bit confusing to find, because it is NOT in the main building 
         <p><a href="https://www.meetup.com/rladies-trondheim/events/314655645/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Data Wrangling with Tidyverse - R Ladies Tirane</title><link>https://www.meetup.com/rladies-tirane/events/314959284/</link><pubDate>Wed, 03 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-tirane/events/314959284/</guid><description><![CDATA[<p><strong>Chapter:</strong> R Ladies Tirane</p>
         <p><strong>When:</strong> Wednesday, June 3, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 8 going</p>
+        <p><strong>Attendees:</strong> 9 going</p>
         <p>🚀 Ready to level up your data skills? Join us for “Data Wrangling with Tidyverse” and discover how to clean, transform, and organize data efficiently using the power of R and the Tidyverse ecosystem.
 
 🎤 Speaker: Lule Basha, Associate Professor, Faculty of Natural Sciences, University of Tirana
@@ -47,11 +47,28 @@ Whether you are a beginner or looking to strengthen your data analysis workflow,
         <p><strong>Where:</strong> Corvallis-Benton County Public Library</p>
         <p><strong>Attendees:</strong> 13 going</p>
         <p>Are you an R and/or Python user interested in learning about the [Positron IDE](https://positron.posit.co/)? Join the R-Ladies Corvallis community for a workshop led by Posit&#39;s very own Charlotte Wickham! You do not need to have any experience with Positron to attend.
-We&#39;ll have snacks and time set aside for mingling and asking questions. We hope you join us!</p>
+We&#39;ll have snacks and time set aside for mingling and asking questions. We hope you join us!
+
+**Workshop details**
+
+Positron is the new IDE from Posit — the team behind RStudio. If you&#39;ve been curious but haven&#39;t had the time to try it yet, this workshop is for you. In one hour, we&#39;ll get you up and running, with plenty of time to explore and get your questions answered.
+
+I (Charlotte) will have a few slides prepared with:
+
+* the most important things to know when you are a new Positron user,
+* tips for transitioning from RStudio, and
+* Positron features I think make the transition worth it.
+
+I&#39;ll try to limit how much time I&#39;m talking to give you as much time as possible to actually use Positron and ask questions about it.
+
+**Before the workshop**
+
+1. **Check your R version**: Positron requires R 4.2 or greater. To check: open R, and examine the welcome message or run \`R.version$version.string\`. To update: visit [https://cloud.r-project.org](https://cloud.r-project.org)
+2. **Install Positron**: [https://positron.posit.co/install.html](https://positron.posit.co/install.html)</p>
         <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>World Cup Football Analytics + Sampling and Monte Carlo in R - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/314887433/</link><pubDate>Fri, 29 May 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/314887433/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Friday, May 29, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Vancouver Public Library - Mt. Pleasant Branch</p>
-        <p><strong>Attendees:</strong> 18 going</p>
+        <p><strong>Attendees:</strong> 17 going</p>
         <p>**From open match data to the warehouse: World Cup Football Analytics**
 With Rabin Duran
 
@@ -94,19 +111,4 @@ Everyone is welcome to join us at our events and to be a part of our mission to 
 
 See you there!
 Jasmine, and Melissa</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/314887433/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Primeros pasos en Quarto - R-Ladies Cuernavaca</title><link>https://www.meetup.com/rladies-cuernavaca/events/314847504/</link><pubDate>Wed, 27 May 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-cuernavaca/events/314847504/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Cuernavaca</p>
-        <p><strong>When:</strong> Wednesday, May 27, 2026 at 11:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 23 going</p>
-        <p>**¿Te interesa aprender a crear reportes, presentaciones y documentos reproducibles en R de una manera moderna y sencilla?**
-
-En este taller de introducción conocerás las bases de **Quarto**, una poderosa herramienta para generar documentos dinámicos integrando texto, código y visualizaciones en un solo flujo de trabajo.
-
-# Requerimientos de software
-
-* Instalación de R y Rstudio
-* Instalación de Quarto ([https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/))
-
-**CÓDIGO DE CONDUCTA**
-Recuerda leer y atender nuestro código de conducta disponible en [https://rladies.org/code-of-conduct/](https://rladies.org/code-of-conduct/) o [https://rladiesmx.netlify.app/codigo_de_conducta/](https://rladiesmx.netlify.app/codigo_de_conducta/)</p>
-        <p><a href="https://www.meetup.com/rladies-cuernavaca/events/314847504/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Cuernavaca)</author><category>R-Ladies Cuernavaca</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-vancouver/events/314887433/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>
