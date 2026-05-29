@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 28 May 2026 14:09:22 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/314962750/</link><pubDate>Mon, 15 Jun 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/314962750/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 29 May 2026 01:34:58 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/314962750/</link><pubDate>Mon, 15 Jun 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/314962750/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Monday, June 15, 2026 at 8:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 34 going</p>
+        <p><strong>Attendees:</strong> 38 going</p>
         <p>Já tentou construir um gráfico no R usando o pacote ggplot2 e teve a sensação de que estava aprendendo outra língua? Pois é: o ggplot2 tem uma lógica própria. A boa notícia é que, depois de entendê-la, dificilmente você vai querer voltar a montar gráficos manualmente no Excel. Neste minicurso, vamos explorar os princípios fundamentais do ggplot2, partindo do zero até recursos mais avançados de personalização, para que você consiga construir gráficos elegantes, informativos e reproduzíveis no R.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/314962750/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>HePriceR: An R Package for Health Insurance - R-Ladies Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314673305/</link><pubDate>Wed, 10 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/314673305/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vienna</p>
         <p><strong>When:</strong> Wednesday, June 10, 2026 at 4:00 PM UTC</p>
@@ -65,50 +65,4 @@ I&#39;ll try to limit how much time I&#39;m talking to give you as much time as 
 
 1. **Check your R version**: Positron requires R 4.2 or greater. To check: open R, and examine the welcome message or run \`R.version$version.string\`. To update: visit [https://cloud.r-project.org](https://cloud.r-project.org)
 2. **Install Positron**: [https://positron.posit.co/install.html](https://positron.posit.co/install.html)</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>World Cup Football Analytics + Sampling and Monte Carlo in R - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/314887433/</link><pubDate>Fri, 29 May 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/314887433/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
-        <p><strong>When:</strong> Friday, May 29, 2026 at 1:00 AM UTC</p>
-        <p><strong>Where:</strong> Vancouver Public Library - Mt. Pleasant Branch</p>
-        <p><strong>Attendees:</strong> 17 going</p>
-        <p>**From open match data to the warehouse: World Cup Football Analytics**
-With Rabin Duran
-
-Every few years attention swings to national teams, but the most granular analytics still start from structured match and event data. How
-do you move from flat extracts to queryable tables analysts can use and
-when you care about both domestic leagues and international windows, how do you keep the questions aligned with the data (lineups and events vs.
-results and goals alone)?
-
-This talk walks through a football analytics pipeline built on open
-StatsBomb-style data reduced to Parquet, uploaded to Google Cloud
-Storage, and loaded into BigQuery with the ingestion and cloud steps
-shown in R (arrow or readr, googleCloudStorageR, bigrquery). On top of
-those tables, we outline a club vs international comparison using
-match-level metadata where the data actually supports per-player,
-per-context contrasts.
-
-A shorter second thread uses historical international results and goal
-records from public CSVs for country and tournament-level patterns.
-There we show a small dashboard tuned to that international dataset. We
-finish with hands-on exploration: a Looker Studio view on BigQuery so
-the audience can see how analysts browse the same tables the pipeline
-publishes and we peek at a simple model or prediction sketch.
-
-**Sampling and Monte Carlo in R**
-With Conor Morrison
-
-This presentation will briefly review some concepts in statistics, and show how mathematically tricky problems can be solved, approximately, by sampling random variables in R and computing functions of these samples.
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-You are welcome to join us for some food and drinks at a nearby restaurant after we have finished.
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-\*\*\*
-
-1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)
-2. Who is this allowed to attend the event?
-
-Everyone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.
-3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
-
-See you there!
-Jasmine, and Melissa</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/314887433/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/314550121/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item></channel></rss>
