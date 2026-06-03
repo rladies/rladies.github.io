@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260603T014616Z
+DTSTAMP:20260603T142033Z
+DTSTART:20260620T180000Z
+DTEND:20260620T200000Z
+SUMMARY:Coffee and Code - R-Ladies Vancouver
+DESCRIPTION:Come join us for a casual coffee and code. There will be a short demo in beginning on getting your computer setup to use OpenAI models from GitHub models by Daniel. We can proceed to trying those out or focus on what you are interested in. Bring any projects, talks you are prepping or questions you may have.\n\nRladies Stickers and other R swag may make an appearance!\n\n\*\*\*\n\n1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)\n2. Who is this allowed to attend the event?\n\nEveryone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.\n3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
+LOCATION:TBA, TBA, TBA, Vancouver, CANADA
+URL:https://www.meetup.com/rladies-vancouver/events/315065879/
+ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Vancouver
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260603T142033Z
 DTSTART:20260615T200000Z
 DTEND:20260615T230000Z
 SUMMARY:17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260603T014616Z
+DTSTAMP:20260603T142033Z
 DTSTART:20260610T160000Z
 DTEND:20260610T173000Z
 SUMMARY:HePriceR: An R Package for Health Insurance - R-Ladies Vienna
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260603T014616Z
+DTSTAMP:20260603T142033Z
 DTSTART:20260609T150000Z
 DTEND:20260609T163000Z
 SUMMARY:R bugs and bites - R-Ladies Trondheim
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260603T014616Z
+DTSTAMP:20260603T142033Z
 DTSTART:20260603T160000Z
 DTEND:20260603T170000Z
 SUMMARY:Data Wrangling with Tidyverse - R Ladies Tirane
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260603T014616Z
+DTSTAMP:20260603T142033Z
 DTSTART:20260604T003000Z
 DTEND:20260604T020000Z
 SUMMARY:R-Ladies+ Corvallis: Learning Positron Workshop - R-Ladies Corvallis
