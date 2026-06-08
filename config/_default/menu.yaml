@@ -19,6 +19,22 @@ main:
     url: /news/
     weight: 2
 
+  - identifier: posts
+    url: "#"
+    weight: 99
+  - identifier: news
+    url: /posts/news/
+    weight: 1
+    parent: posts
+  - identifier: blog
+    url: /posts/blog/
+    weight: 2
+    parent: posts
+  - identifier: press
+    url: /posts/press/
+    weight: 3
+    parent: posts
+
   - identifier: programs
     url: /programs/
     weight: 3
