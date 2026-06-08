@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 08 Jun 2026 01:39:46 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/315092217/</link><pubDate>Wed, 24 Jun 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/315092217/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 08 Jun 2026 14:13:20 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/315092217/</link><pubDate>Wed, 24 Jun 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/315092217/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, June 24, 2026 at 5:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 19 going</p>
+        <p><strong>Attendees:</strong> 21 going</p>
         <p>Discover how the latest features in **{dplyr} 1.2.0** can help you write cleaner, faster, and more maintainable data transformation workflows. This session explores practical techniques for filtering, joining, summarizing, and reshaping data more efficiently, with real-world examples that demonstrate how to streamline your R code and improve productivity.</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/315092217/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Coffee and Code - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/315065879/</link><pubDate>Sat, 20 Jun 2026 18:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/315065879/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Saturday, June 20, 2026 at 6:00 PM UTC</p>
@@ -20,7 +20,7 @@ Everyone is welcome to join us at our events and to be a part of our mission to 
         <p><a href="https://www.meetup.com/rladies-vancouver/events/315065879/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/314962750/</link><pubDate>Mon, 15 Jun 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/314962750/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Monday, June 15, 2026 at 8:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 44 going</p>
+        <p><strong>Attendees:</strong> 45 going</p>
         <p>Já tentou construir um gráfico no R usando o pacote ggplot2 e teve a sensação de que estava aprendendo outra língua? Pois é: o ggplot2 tem uma lógica própria. A boa notícia é que, depois de entendê-la, dificilmente você vai querer voltar a montar gráficos manualmente no Excel. Neste minicurso, vamos explorar os princípios fundamentais do ggplot2, partindo do zero até recursos mais avançados de personalização, para que você consiga construir gráficos elegantes, informativos e reproduzíveis no R.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/314962750/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>HePriceR: An R Package for Health Insurance - R-Ladies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314673305/</link><pubDate>Wed, 10 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/314673305/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Vienna</p>
         <p><strong>When:</strong> Wednesday, June 10, 2026 at 4:00 PM UTC</p>
@@ -34,13 +34,19 @@ Everyone is welcome to join us at our events and to be a part of our mission to 
 The core focus of HePriceR lies in the estimation of expected claims and their uncertainty. It implements multiple methodological approaches, including the Rusam method for expected claims, as well as comprehensive frequency–severity modeling. The package further provides technical implementations for common product design features, such as deductibles, sublimits, and benefit caps, ensuring that modeled claim distributions align with contractual reality. From a software design perspective, HePriceR relies on a structured system of S3 classes and methods, including dedicated hpr_pricing_data objects and corresponding fit objects. This design enables consistent handling of data, fitted models, diagnostics, and downstream simulation. On top of the fitted models, the package offers Monte Carlo simulation capabilities. Overall, HePriceR provides a cohesive actuarial toolkit that bridges actuarial methodology and statistical modeling, supporting both daily operations and advanced analytical use cases. This package is based on joint work with Herr Kompott.
 
 **🗺️ Location**
+Seminar Room DC red 07 / Sem.R. DC rot 07
+(DC07A15)
+7th floor, red area
 TU Wien Freihaus
 Wiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))
-Exact room to be announced soon.</p>
+
+**📍 How to find us**
+In the red area of TU Wien Freihaus, take the lift to the 7th floor. After exiting the lift, turn right and walk through the door. The seminar room will be on your left.
+Use this [floor plan](https://maps.tuwien.ac.at/?q=DC07A15#map) to help locate the room.</p>
         <p><a href="https://www.meetup.com/rladies-vienna/events/314673305/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Vienna)</author><category>R-Ladies+ Vienna</category></item><item><title>R bugs and bites - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/314655645/</link><pubDate>Tue, 09 Jun 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/314655645/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
         <p><strong>When:</strong> Tuesday, June 9, 2026 at 3:00 PM UTC</p>
         <p><strong>Where:</strong> ØHM11, Øya helsehus østfløy</p>
-        <p><strong>Attendees:</strong> 1 going</p>
+        <p><strong>Attendees:</strong> 2 going</p>
         <p>Join us for a relaxed evening with tea, snacks, and good company. Bring an R challenge you&#39;ve been stuck on, a project you want to make progress on, or just yourself. There&#39;s no agenda, no slides -- just a room full of people who like R (and snacks).
 Whether you&#39;re a beginner looking for a nudge in the right direction or a seasoned R-user happy to share what you know, you&#39;re welcome here.
 

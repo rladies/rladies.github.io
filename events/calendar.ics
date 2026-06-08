@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260608T013945Z
+DTSTAMP:20260608T141319Z
 DTSTART:20260624T170000Z
 DTEND:20260624T190000Z
 SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260608T013945Z
+DTSTAMP:20260608T141319Z
 DTSTART:20260620T180000Z
 DTEND:20260620T200000Z
 SUMMARY:Coffee and Code - R-Ladies Vancouver
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260608T013945Z
+DTSTAMP:20260608T141319Z
 DTSTART:20260615T200000Z
 DTEND:20260615T230000Z
 SUMMARY:17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói
@@ -46,11 +46,11 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260608T013945Z
+DTSTAMP:20260608T141319Z
 DTSTART:20260610T160000Z
 DTEND:20260610T173000Z
 SUMMARY:HePriceR: An R Package for Health Insurance - R-Ladies+ Vienna
-DESCRIPTION:We are pleased to welcome **Eva Flonner** from UNIQA Insurance Group to present an R package for health insurance. Join us to explore how R can be put to work in actuarial practice, from data to modeling to simulation. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!\n\n**ℹ️ Abstract**\n**HePriceR** is an R package for health insurance pricing that provides a framework for modeling expected claims and their uncertainty. The package consolidates classical actuarial approaches with modern statistical modeling, enabling transparent, reproducible, and extensible actuarial workflows.\n\nThe core focus of HePriceR lies in the estimation of expected claims and their uncertainty. It implements multiple methodological approaches, including the Rusam method for expected claims, as well as comprehensive frequency–severity modeling. The package further provides technical implementations for common product design features, such as deductibles, sublimits, and benefit caps, ensuring that modeled claim distributions align with contractual reality. From a software design perspective, HePriceR relies on a structured system of S3 classes and methods, including dedicated hpr_pricing_data objects and corresponding fit objects. This design enables consistent handling of data, fitted models, diagnostics, and downstream simulation. On top of the fitted models, the package offers Monte Carlo simulation capabilities. Overall, HePriceR provides a cohesive actuarial toolkit that bridges actuarial methodology and statistical modeling, supporting both daily operations and advanced analytical use cases. This package is based on joint work with Herr Kompott.\n\n**🗺️ Location**\nTU Wien Freihaus\nWiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))\nExact room to be announced soon.
+DESCRIPTION:We are pleased to welcome **Eva Flonner** from UNIQA Insurance Group to present an R package for health insurance. Join us to explore how R can be put to work in actuarial practice, from data to modeling to simulation. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!\n\n**ℹ️ Abstract**\n**HePriceR** is an R package for health insurance pricing that provides a framework for modeling expected claims and their uncertainty. The package consolidates classical actuarial approaches with modern statistical modeling, enabling transparent, reproducible, and extensible actuarial workflows.\n\nThe core focus of HePriceR lies in the estimation of expected claims and their uncertainty. It implements multiple methodological approaches, including the Rusam method for expected claims, as well as comprehensive frequency–severity modeling. The package further provides technical implementations for common product design features, such as deductibles, sublimits, and benefit caps, ensuring that modeled claim distributions align with contractual reality. From a software design perspective, HePriceR relies on a structured system of S3 classes and methods, including dedicated hpr_pricing_data objects and corresponding fit objects. This design enables consistent handling of data, fitted models, diagnostics, and downstream simulation. On top of the fitted models, the package offers Monte Carlo simulation capabilities. Overall, HePriceR provides a cohesive actuarial toolkit that bridges actuarial methodology and statistical modeling, supporting both daily operations and advanced analytical use cases. This package is based on joint work with Herr Kompott.\n\n**🗺️ Location**\nSeminar Room DC red 07 / Sem.R. DC rot 07\n(DC07A15)\n7th floor, red area\nTU Wien Freihaus\nWiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))\n\n**📍 How to find us**\nIn the red area of TU Wien Freihaus, take the lift to the 7th floor. After exiting the lift, turn right and walk through the door. The seminar room will be on your left.\nUse this [floor plan](https://maps.tuwien.ac.at/?q=DC07A15#map) to help locate the room.
 LOCATION:TU Wien Freihaus, Wiedner Hauptstraße 8-10, Vienna, AUSTRIA
 URL:https://www.meetup.com/rladies-vienna/events/314673305/
 ORGANIZER;CN=R-Ladies+ Vienna:mailto:info@rladies.org
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260608T013945Z
+DTSTAMP:20260608T141319Z
 DTSTART:20260609T150000Z
 DTEND:20260609T163000Z
 SUMMARY:R bugs and bites - R-Ladies Trondheim
