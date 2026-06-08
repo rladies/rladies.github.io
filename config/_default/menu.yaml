@@ -21,7 +21,7 @@ main:
 
   - identifier: posts
     url: "#"
-    weight: 99
+    weight: 3
   - identifier: news
     url: /posts/news/
     weight: 1
@@ -37,7 +37,7 @@ main:
 
   - identifier: programs
     url: /programs/
-    weight: 3
+    weight: 4
 
   - identifier: about-us
     url: "#"
