@@ -54,7 +54,4 @@ main:
     url: /about-us/faq/
     weight: 4
     parent: about-us
-  - identifier: press
-    url: /press
-    weight: 5
-    parent: about-us
+
