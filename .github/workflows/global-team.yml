@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Generate app token
         id: app-token
-        uses: actions/create-github-app-token@v1
+        uses: actions/create-github-app-token@v3
         with:
           app-id: ${{ secrets.JINX_APP_ID }}
           private-key: ${{ secrets.JINX_PRIVATE_KEY }}
@@ -50,7 +50,7 @@ jobs:
         run: Rscript scripts/get_global_team.R
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ steps.app-token.outputs.token }}
           add-paths: |
