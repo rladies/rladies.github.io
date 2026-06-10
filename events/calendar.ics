@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260609T144035Z
+DTSTAMP:20260610T013637Z
 DTSTART:20260624T170000Z
 DTEND:20260624T190000Z
 SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260609T144035Z
+DTSTAMP:20260610T013637Z
 DTSTART:20260620T180000Z
 DTEND:20260620T200000Z
 SUMMARY:Coffee and Code - R-Ladies Vancouver
@@ -33,7 +33,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260609T144035Z
+DTSTAMP:20260610T013637Z
+DTSTART:20260619T160000Z
+DTEND:20260619T180000Z
+SUMMARY:TechLegion Summer School: Claude AI Cerified Architect! - R-Ladies Kyiv
+DESCRIPTION:Want to become a certified Claude AI Architect?\n\nSpend this summer learning skills that employers are actively looking for.\nAI Architects, AI Agents, MCP, prompt engineering, and agentic systems are becoming some of the fastest-growing areas in tech. Want to be part of it?\n\nTechLegion Summer School 2026 was created to help you learn these skills, prepare for an official certification, and connect with a community of professionals doing the same.\nAs a partner in the Claude Partner Network, TechLegion offers members the opportunity to prepare for and earn official Anthropic certifications through our dedicated study cohort.\n\n🤖 Registration for cohort: https://linkly.link/2kCF8\n\nThe study cohort is free for TechLegion members. Please note that TechLegion membership is required to join the programme, as participants receive a TechLegion email account and access to member resources under our domain.\n\nLearn together. Get certified. Build your AI skills this summer!.
+LOCATION:Zurich online and offline, Zwinglipl. 7, 8001 Zürich, Zürich, SWITZERLAND
+URL:https://www.meetup.com/rladies-kyiv/events/315187789/
+ORGANIZER;CN=R-Ladies Kyiv:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Kyiv
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260610T013637Z
 DTSTART:20260615T200000Z
 DTEND:20260615T230000Z
 SUMMARY:17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260609T144035Z
+DTSTAMP:20260610T013637Z
 DTSTART:20260610T160000Z
 DTEND:20260610T173000Z
 SUMMARY:HePriceR: An R Package for Health Insurance - R-Ladies+ Vienna
@@ -55,19 +68,6 @@ LOCATION:TU Wien Freihaus, Wiedner Hauptstraße 8-10, Vienna, AUSTRIA
 URL:https://www.meetup.com/rladies-vienna/events/314673305/
 ORGANIZER;CN=R-Ladies+ Vienna:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies+ Vienna
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260609T144035Z
-DTSTART:20260609T150000Z
-DTEND:20260609T163000Z
-SUMMARY:R bugs and bites - R-Ladies Trondheim
-DESCRIPTION:Join us for a relaxed evening with tea, snacks, and good company. Bring an R challenge you've been stuck on, a project you want to make progress on, or just yourself. There's no agenda, no slides -- just a room full of people who like R (and snacks).\nWhether you're a beginner looking for a nudge in the right direction or a seasoned R-user happy to share what you know, you're welcome here.\n\nThe event will take place in the room ØHM11. The outer door is locked, but we will wait outside to let you in, or call me on 47641800.\nMazemap: https://link.mazemap.com/E1NxhvoO\nGoogle maps: https://maps.app.goo.gl/MbuZZPL8m2simBwd9\n\nThe room may be a bit confusing to find, because it is NOT in the main building of Øya helsehus, it is in a smaller building right east of it.
-LOCATION:ØHM11, Øya helsehus østfløy, Håkon Jarls gate 11, Trondheim, NORWAY
-URL:https://www.meetup.com/rladies-trondheim/events/314655645/
-ORGANIZER;CN=R-Ladies Trondheim:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Trondheim
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
