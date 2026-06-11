@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260610T135813Z
+DTSTAMP:20260611T013946Z
 DTSTART:20260624T170000Z
 DTEND:20260624T190000Z
 SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
@@ -20,7 +20,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260610T135813Z
+DTSTAMP:20260611T013946Z
+DTSTART:20260623T160000Z
+DTEND:20260623T180000Z
+SUMMARY:From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome
+DESCRIPTION:Research is most valuable when others can understand it, reproduce it, and build upon it.\n\nYet many research workflows still rely on disconnected files, manual copy-and-paste steps, and documents that are difficult to update or share.\n\nIn this workshop, we will explore how **R** and **Quarto** can help create reproducible research workflows that take you from data analysis to publication using open-source tools.\n\nParticipants will learn how to integrate code, results, figures, tables, and narrative into a single document, making it possible to generate academic manuscripts, technical reports, presentations, and even theses from the same source.\n\nBy combining analysis and writing in a reproducible workflow, researchers can improve transparency, reduce errors, and make their work easier to maintain and share.\n\nDuring the session, we will cover:\n\n* Creating reproducible research documents with Quarto\n* Combining R code, results, figures, and narrative\n* Generating reports, manuscripts, presentations, and other outputs\n* Organizing research projects for transparency and reproducibility\n* Sharing and publishing research using open-source tools\n\nThis workshop is designed for undergraduate and graduate students, early-career researchers, and anyone interested in adopting reproducible research practices.\n\nWhether you are preparing a thesis, writing a manuscript, or creating analytical reports, this session will provide practical tools to streamline your workflow and improve the reproducibility of your work.
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-rome/events/315198238/
+ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Rome
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260611T013946Z
 DTSTART:20260620T180000Z
 DTEND:20260620T200000Z
 SUMMARY:Coffee and Code - R-Ladies Vancouver
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260610T135813Z
+DTSTAMP:20260611T013946Z
 DTSTART:20260619T160000Z
 DTEND:20260619T180000Z
 SUMMARY:TechLegion Summer School: Claude AI Cerified Architect! - R-Ladies Kyiv
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260610T135813Z
+DTSTAMP:20260611T013946Z
 DTSTART:20260617T103000Z
 DTEND:20260617T113000Z
 SUMMARY:Tests statistiques en SHS. Présentation de l'ACP. - R-Ladies Limoges
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260610T135813Z
+DTSTAMP:20260611T013946Z
 DTSTART:20260615T200000Z
 DTEND:20260615T230000Z
 SUMMARY:17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói
@@ -68,19 +81,6 @@ LOCATION:Online event
 URL:https://www.meetup.com/rladies-niteroi/events/314962750/
 ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Niterói
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260610T135813Z
-DTSTART:20260610T160000Z
-DTEND:20260610T173000Z
-SUMMARY:HePriceR: An R Package for Health Insurance - R-Ladies+ Vienna
-DESCRIPTION:We are pleased to welcome **Eva Flonner** from UNIQA Insurance Group to present an R package for health insurance. Join us to explore how R can be put to work in actuarial practice, from data to modeling to simulation. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!\n\n**ℹ️ Abstract**\n**HePriceR** is an R package for health insurance pricing that provides a framework for modeling expected claims and their uncertainty. The package consolidates classical actuarial approaches with modern statistical modeling, enabling transparent, reproducible, and extensible actuarial workflows.\n\nThe core focus of HePriceR lies in the estimation of expected claims and their uncertainty. It implements multiple methodological approaches, including the Rusam method for expected claims, as well as comprehensive frequency–severity modeling. The package further provides technical implementations for common product design features, such as deductibles, sublimits, and benefit caps, ensuring that modeled claim distributions align with contractual reality. From a software design perspective, HePriceR relies on a structured system of S3 classes and methods, including dedicated hpr_pricing_data objects and corresponding fit objects. This design enables consistent handling of data, fitted models, diagnostics, and downstream simulation. On top of the fitted models, the package offers Monte Carlo simulation capabilities. Overall, HePriceR provides a cohesive actuarial toolkit that bridges actuarial methodology and statistical modeling, supporting both daily operations and advanced analytical use cases. This package is based on joint work with Herr Kompott.\n\n**🗺️ Location**\nSeminar Room DC red 07 / Sem.R. DC rot 07\n(DC07A15)\n7th floor, red area\nTU Wien Freihaus\nWiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))\n\n**📍 How to find us**\nIn the red area of TU Wien Freihaus, take the lift to the 7th floor. After exiting the lift, turn right and walk through the door. The seminar room will be on your left.\nUse this [floor plan](https://maps.tuwien.ac.at/?q=DC07A15#map) to help locate the room.
-LOCATION:TU Wien Freihaus, Wiedner Hauptstraße 8-10, Vienna, AUSTRIA
-URL:https://www.meetup.com/rladies-vienna/events/314673305/
-ORGANIZER;CN=R-Ladies+ Vienna:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies+ Vienna
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT

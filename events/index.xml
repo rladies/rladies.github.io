@@ -1,8 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 10 Jun 2026 13:58:13 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/315092217/</link><pubDate>Wed, 24 Jun 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/315092217/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 11 Jun 2026 01:39:46 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/315092217/</link><pubDate>Wed, 24 Jun 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/315092217/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, June 24, 2026 at 5:00 PM UTC</p>
         <p><strong>Attendees:</strong> 24 going</p>
         <p>Discover how the latest features in **{dplyr} 1.2.0** can help you write cleaner, faster, and more maintainable data transformation workflows. This session explores practical techniques for filtering, joining, summarizing, and reshaping data more efficiently, with real-world examples that demonstrate how to streamline your R code and improve productivity.</p>
-        <p><a href="https://www.meetup.com/rladies-abuja/events/315092217/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>Coffee and Code - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/315065879/</link><pubDate>Sat, 20 Jun 2026 18:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/315065879/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><a href="https://www.meetup.com/rladies-abuja/events/315092217/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315198238/</link><pubDate>Tue, 23 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315198238/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><strong>When:</strong> Tuesday, June 23, 2026 at 4:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 26 going</p>
+        <p>Research is most valuable when others can understand it, reproduce it, and build upon it.
+
+Yet many research workflows still rely on disconnected files, manual copy-and-paste steps, and documents that are difficult to update or share.
+
+In this workshop, we will explore how **R** and **Quarto** can help create reproducible research workflows that take you from data analysis to publication using open-source tools.
+
+Participants will learn how to integrate code, results, figures, tables, and narrative into a single document, making it possible to generate academic manuscripts, technical reports, presentations, and even theses from the same source.
+
+By combining analysis and writing in a reproducible workflow, researchers can improve transparency, reduce errors, and make their work easier to maintain and share.
+
+During the session, we will cover:
+
+* Creating reproducible research documents with Quarto
+* Combining R code, results, figures, and narrative
+* Generating reports, manuscripts, presentations, and other outputs
+* Organizing research projects for transparency and reproducibility
+* Sharing and publishing research using open-source tools
+
+This workshop is designed for undergraduate and graduate students, early-career researchers, and anyone interested in adopting reproducible research practices.
+
+Whether you are preparing a thesis, writing a manuscript, or creating analytical reports, this session will provide practical tools to streamline your workflow and improve the reproducibility of your work.</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/315198238/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Coffee and Code - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/315065879/</link><pubDate>Sat, 20 Jun 2026 18:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/315065879/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Saturday, June 20, 2026 at 6:00 PM UTC</p>
         <p><strong>Where:</strong> TBA</p>
         <p><strong>Attendees:</strong> 4 going</p>
@@ -20,7 +45,7 @@ Everyone is welcome to join us at our events and to be a part of our mission to 
         <p><a href="https://www.meetup.com/rladies-vancouver/events/315065879/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>TechLegion Summer School: Claude AI Cerified Architect! - R-Ladies Kyiv</title><link>https://www.meetup.com/rladies-kyiv/events/315187789/</link><pubDate>Fri, 19 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-kyiv/events/315187789/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Kyiv</p>
         <p><strong>When:</strong> Friday, June 19, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Zurich online and offline</p>
-        <p><strong>Attendees:</strong> 1 going</p>
+        <p><strong>Attendees:</strong> 3 going</p>
         <p>Want to become a certified Claude AI Architect?
 
 Spend this summer learning skills that employers are actively looking for.
@@ -43,27 +68,6 @@ Dina Santos Araujo présentera les bases de l&#39;ACM.</p>
         <p><a href="https://www.meetup.com/rladies-limoges/events/315194720/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Limoges)</author><category>R-Ladies Limoges</category></item><item><title>17º Meet Up: Dominando o ggplot2 - do zero a gráficos profissionais - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/314962750/</link><pubDate>Mon, 15 Jun 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/314962750/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Monday, June 15, 2026 at 8:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 69 going</p>
+        <p><strong>Attendees:</strong> 70 going</p>
         <p>Já tentou construir um gráfico no R usando o pacote ggplot2 e teve a sensação de que estava aprendendo outra língua? Pois é: o ggplot2 tem uma lógica própria. A boa notícia é que, depois de entendê-la, dificilmente você vai querer voltar a montar gráficos manualmente no Excel. Neste minicurso, vamos explorar os princípios fundamentais do ggplot2, partindo do zero até recursos mais avançados de personalização, para que você consiga construir gráficos elegantes, informativos e reproduzíveis no R.</p>
-        <p><a href="https://www.meetup.com/rladies-niteroi/events/314962750/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>HePriceR: An R Package for Health Insurance - R-Ladies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/314673305/</link><pubDate>Wed, 10 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/314673305/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Vienna</p>
-        <p><strong>When:</strong> Wednesday, June 10, 2026 at 4:00 PM UTC</p>
-        <p><strong>Where:</strong> TU Wien Freihaus</p>
-        <p><strong>Attendees:</strong> 5 going</p>
-        <p>We are pleased to welcome **Eva Flonner** from UNIQA Insurance Group to present an R package for health insurance. Join us to explore how R can be put to work in actuarial practice, from data to modeling to simulation. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
-
-**ℹ️ Abstract**
-**HePriceR** is an R package for health insurance pricing that provides a framework for modeling expected claims and their uncertainty. The package consolidates classical actuarial approaches with modern statistical modeling, enabling transparent, reproducible, and extensible actuarial workflows.
-
-The core focus of HePriceR lies in the estimation of expected claims and their uncertainty. It implements multiple methodological approaches, including the Rusam method for expected claims, as well as comprehensive frequency–severity modeling. The package further provides technical implementations for common product design features, such as deductibles, sublimits, and benefit caps, ensuring that modeled claim distributions align with contractual reality. From a software design perspective, HePriceR relies on a structured system of S3 classes and methods, including dedicated hpr_pricing_data objects and corresponding fit objects. This design enables consistent handling of data, fitted models, diagnostics, and downstream simulation. On top of the fitted models, the package offers Monte Carlo simulation capabilities. Overall, HePriceR provides a cohesive actuarial toolkit that bridges actuarial methodology and statistical modeling, supporting both daily operations and advanced analytical use cases. This package is based on joint work with Herr Kompott.
-
-**🗺️ Location**
-Seminar Room DC red 07 / Sem.R. DC rot 07
-(DC07A15)
-7th floor, red area
-TU Wien Freihaus
-Wiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))
-
-**📍 How to find us**
-In the red area of TU Wien Freihaus, take the lift to the 7th floor. After exiting the lift, turn right and walk through the door. The seminar room will be on your left.
-Use this [floor plan](https://maps.tuwien.ac.at/?q=DC07A15#map) to help locate the room.</p>
-        <p><a href="https://www.meetup.com/rladies-vienna/events/314673305/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Vienna)</author><category>R-Ladies+ Vienna</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-niteroi/events/314962750/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item></channel></rss>
