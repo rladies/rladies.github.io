@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260616T014543Z
+DTSTAMP:20260616T143350Z
+DTSTART:20260630T080000Z
+DTEND:20260630T100000Z
+SUMMARY:R-Ladies+ Melbourne Social Event - R-Ladies Melbourne
+DESCRIPTION:Come unwind and connect after work with the R-Ladies+ Melbourne committee and members to celebrate the middle of the year!\n\n🕕 Time: 6pm\n📅 When: Tuesday 30th June 2026\n📍 Where: Quarterhouse, 693 Collins St, Docklands VIC 3008\n(right near Southern Cross Station).\n\nGreat opportunity to meet others that are using R. The idea is build our community and network with like minded coders. Whether you have been to our past events, or want to join for the first time, please come and join us.\n\n🎉 Everyone is welcome! 🎉\n\n\*Please note that food and drinks are not provided at this event and are at the attendee’s expense. It's more of an opportunity to come and socialise with the group and learn more about upcoming events and opportunities.\n\n**‼️ Please RSVP** (and update your RSVP if your circumstances change). **‼️**
+LOCATION:Quarterhouse, 693 Collins St,, Melbourne, AUSTRALIA
+URL:https://www.meetup.com/rladies-melbourne/events/315263218/
+ORGANIZER;CN=R-Ladies Melbourne:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Melbourne
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260616T143350Z
 DTSTART:20260624T170000Z
 DTEND:20260624T190000Z
 SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260616T014543Z
+DTSTAMP:20260616T143350Z
 DTSTART:20260623T160000Z
 DTEND:20260623T180000Z
 SUMMARY:From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260616T014543Z
+DTSTAMP:20260616T143350Z
 DTSTART:20260620T180000Z
 DTEND:20260620T200000Z
 SUMMARY:Coffee and Code - R-Ladies Vancouver
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260616T014543Z
+DTSTAMP:20260616T143350Z
 DTSTART:20260619T160000Z
 DTEND:20260619T180000Z
 SUMMARY:TechLegion Summer School: Claude AI Cerified Architect! - R-Ladies Kyiv
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260616T014543Z
+DTSTAMP:20260616T143350Z
 DTSTART:20260617T103000Z
 DTEND:20260617T113000Z
 SUMMARY:Tests statistiques en SHS. Présentation de l'ACP. - R-Ladies Limoges
