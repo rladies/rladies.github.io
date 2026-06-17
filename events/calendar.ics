@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260617T014434Z
+DTSTAMP:20260617T140503Z
 DTSTART:20260630T080000Z
 DTEND:20260630T100000Z
 SUMMARY:R-Ladies+ Melbourne Social Event - R-Ladies Melbourne
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260617T014434Z
+DTSTAMP:20260617T140503Z
 DTSTART:20260624T170000Z
 DTEND:20260624T190000Z
 SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260617T014434Z
+DTSTAMP:20260617T140503Z
 DTSTART:20260623T160000Z
 DTEND:20260623T180000Z
 SUMMARY:From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260617T014434Z
+DTSTAMP:20260617T140503Z
 DTSTART:20260620T180000Z
 DTEND:20260620T200000Z
 SUMMARY:Coffee and Code - R-Ladies Vancouver
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260617T014434Z
+DTSTAMP:20260617T140503Z
 DTSTART:20260619T160000Z
 DTEND:20260619T180000Z
 SUMMARY:TechLegion Summer School: Claude AI Cerified Architect! - R-Ladies Kyiv
@@ -68,19 +68,6 @@ LOCATION:Zurich online and offline, Zwinglipl. 7, 8001 Zürich, Zürich, SWITZER
 URL:https://www.meetup.com/rladies-kyiv/events/315187789/
 ORGANIZER;CN=R-Ladies Kyiv:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Kyiv
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260617T014434Z
-DTSTART:20260617T103000Z
-DTEND:20260617T113000Z
-SUMMARY:Tests statistiques en SHS. Présentation de l'ACP. - R-Ladies Limoges
-DESCRIPTION:Maelle Amand présentera les tests statistiques à partir du livre *A Manga Guide to Statistics* de Shin Takashi.\nDina Santos Araujo présentera les bases de l'ACM.
-LOCATION:Faculté des Lettres & des Sciences Humaines, 39e rue Camille Guérin 87036 Limoges - France, Limoges, FRANCE
-URL:https://www.meetup.com/rladies-limoges/events/315194720/
-ORGANIZER;CN=R-Ladies Limoges:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Limoges
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
