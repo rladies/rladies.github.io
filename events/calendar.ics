@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260619T140309Z
+DTSTAMP:20260620T013511Z
 DTSTART:20260630T080000Z
 DTEND:20260630T100000Z
 SUMMARY:R-Ladies+ Melbourne Social Event - R-Ladies Melbourne
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260619T140309Z
+DTSTAMP:20260620T013511Z
 DTSTART:20260624T170000Z
 DTEND:20260624T190000Z
 SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260619T140309Z
+DTSTAMP:20260620T013511Z
 DTSTART:20260623T160000Z
 DTEND:20260623T180000Z
 SUMMARY:From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260619T140309Z
+DTSTAMP:20260620T013511Z
 DTSTART:20260620T180000Z
 DTEND:20260620T200000Z
 SUMMARY:Coffee and Code - R-Ladies Vancouver
@@ -55,19 +55,6 @@ LOCATION:Waves coffee, 211 Robson street, Vancouver, CANADA
 URL:https://www.meetup.com/rladies-vancouver/events/315065879/
 ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Vancouver
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260619T140309Z
-DTSTART:20260619T160000Z
-DTEND:20260619T180000Z
-SUMMARY:TechLegion Summer School: Claude AI Cerified Architect! - R-Ladies Kyiv
-DESCRIPTION:Want to become a certified Claude AI Architect?\n\nSpend this summer learning skills that employers are actively looking for.\nAI Architects, AI Agents, MCP, prompt engineering, and agentic systems are becoming some of the fastest-growing areas in tech. Want to be part of it?\n\nTechLegion Summer School 2026 was created to help you learn these skills, prepare for an official certification, and connect with a community of professionals doing the same.\nAs a partner in the Claude Partner Network, TechLegion offers members the opportunity to prepare for and earn official Anthropic certifications through our dedicated study cohort.\n\n🤖 Registration for cohort: https://linkly.link/2kCF8\n\nThe study cohort is free for TechLegion members. Please note that TechLegion membership is required to join the programme, as participants receive a TechLegion email account and access to member resources under our domain.\n\nLearn together. Get certified. Build your AI skills this summer!.
-LOCATION:Zurich online and offline, Zwinglipl. 7, 8001 Zürich, Zürich, SWITZERLAND
-URL:https://www.meetup.com/rladies-kyiv/events/315187789/
-ORGANIZER;CN=R-Ladies Kyiv:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Kyiv
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
