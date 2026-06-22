@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260622T014526Z
+DTSTAMP:20260622T144333Z
 DTSTART:20260630T080000Z
 DTEND:20260630T100000Z
 SUMMARY:R-Ladies+ Melbourne Social Event - R-Ladies Melbourne
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260622T014526Z
+DTSTAMP:20260622T144333Z
 DTSTART:20260624T170000Z
 DTEND:20260624T190000Z
 SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260622T014526Z
+DTSTAMP:20260622T144333Z
 DTSTART:20260623T160000Z
 DTEND:20260623T180000Z
 SUMMARY:From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome
@@ -42,6 +42,19 @@ LOCATION:Online event
 URL:https://www.meetup.com/rladies-rome/events/315198238/
 ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Rome
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260622T144333Z
+DTSTART:20260623T160000Z
+DTEND:20260623T180000Z
+SUMMARY:From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Buenos Aires
+DESCRIPTION:La investigación es más valiosa cuando otras personas pueden comprenderla, reproducirla y construir sobre ella.\nSin embargo, muchos flujos de trabajo de investigación todavía dependen de archivos desconectados, procesos manuales de copiar y pegar y documentos que son difíciles de actualizar o compartir.\n\nEn este taller exploraremos cómo R y Quarto pueden ayudar a crear flujos de trabajo de investigación reproducibles que permitan pasar del análisis de datos a la publicación utilizando herramientas de código abierto.\n\nLas personas participantes aprenderán a integrar código, resultados, figuras, tablas y texto narrativo en un único documento, haciendo posible generar artículos académicos, informes técnicos, presentaciones e incluso tesis a partir de una misma fuente.\n\nEste taller está dirigido a estudiantes de grado y posgrado, investigadores en etapas iniciales de su carrera y cualquier persona interesada en adoptar prácticas de investigación reproducible.\n\nEste taller se realiza en conjunto con RLadies+ Roma, por lo que se realizará en **Inglés.**\n\nPara poder seguir el taller, recomendamos instalar previamente:\n\- R\n\- RStudio\n\- Quarto CLI
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-buenos-aires/events/315366351/
+ORGANIZER;CN=R-Ladies Buenos Aires:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Buenos Aires
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT

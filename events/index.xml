@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 22 Jun 2026 01:45:27 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R-Ladies+ Melbourne Social Event - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315263218/</link><pubDate>Tue, 30 Jun 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315263218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 22 Jun 2026 14:43:34 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R-Ladies+ Melbourne Social Event - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315263218/</link><pubDate>Tue, 30 Jun 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315263218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
         <p><strong>When:</strong> Tuesday, June 30, 2026 at 8:00 AM UTC</p>
         <p><strong>Where:</strong> Quarterhouse</p>
         <p><strong>Attendees:</strong> 8 going</p>
@@ -18,12 +18,12 @@ Great opportunity to meet others that are using R. The idea is build our communi
 **‼️ Please RSVP** (and update your RSVP if your circumstances change). **‼️**</p>
         <p><a href="https://www.meetup.com/rladies-melbourne/events/315263218/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Melbourne)</author><category>R-Ladies Melbourne</category></item><item><title>Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/315092217/</link><pubDate>Wed, 24 Jun 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/315092217/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, June 24, 2026 at 5:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 40 going</p>
+        <p><strong>Attendees:</strong> 41 going</p>
         <p>Discover how the latest features in **{dplyr} 1.2.0** can help you write cleaner, faster, and more maintainable data transformation workflows. This session explores practical techniques for filtering, joining, summarizing, and reshaping data more efficiently, with real-world examples that demonstrate how to streamline your R code and improve productivity.</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/315092217/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315198238/</link><pubDate>Tue, 23 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315198238/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Tuesday, June 23, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 41 going</p>
+        <p><strong>Attendees:</strong> 44 going</p>
         <p>Research is most valuable when others can understand it, reproduce it, and build upon it.
 
 Yet many research workflows still rely on disconnected files, manual copy-and-paste steps, and documents that are difficult to update or share.
@@ -45,4 +45,23 @@ During the session, we will cover:
 This workshop is designed for undergraduate and graduate students, early-career researchers, and anyone interested in adopting reproducible research practices.
 
 Whether you are preparing a thesis, writing a manuscript, or creating analytical reports, this session will provide practical tools to streamline your workflow and improve the reproducibility of your work.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/315198238/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-rome/events/315198238/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Buenos Aires</title><link>https://www.meetup.com/rladies-buenos-aires/events/315366351/</link><pubDate>Tue, 23 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-buenos-aires/events/315366351/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Buenos Aires</p>
+        <p><strong>When:</strong> Tuesday, June 23, 2026 at 4:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 4 going</p>
+        <p>La investigación es más valiosa cuando otras personas pueden comprenderla, reproducirla y construir sobre ella.
+Sin embargo, muchos flujos de trabajo de investigación todavía dependen de archivos desconectados, procesos manuales de copiar y pegar y documentos que son difíciles de actualizar o compartir.
+
+En este taller exploraremos cómo R y Quarto pueden ayudar a crear flujos de trabajo de investigación reproducibles que permitan pasar del análisis de datos a la publicación utilizando herramientas de código abierto.
+
+Las personas participantes aprenderán a integrar código, resultados, figuras, tablas y texto narrativo en un único documento, haciendo posible generar artículos académicos, informes técnicos, presentaciones e incluso tesis a partir de una misma fuente.
+
+Este taller está dirigido a estudiantes de grado y posgrado, investigadores en etapas iniciales de su carrera y cualquier persona interesada en adoptar prácticas de investigación reproducible.
+
+Este taller se realiza en conjunto con RLadies&#43; Roma, por lo que se realizará en **Inglés.**
+
+Para poder seguir el taller, recomendamos instalar previamente:
+\- R
+\- RStudio
+\- Quarto CLI</p>
+        <p><a href="https://www.meetup.com/rladies-buenos-aires/events/315366351/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item></channel></rss>
