@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Sun, 21 Jun 2026 13:27:55 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R-Ladies+ Melbourne Social Event - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315263218/</link><pubDate>Tue, 30 Jun 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315263218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 22 Jun 2026 01:45:27 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R-Ladies+ Melbourne Social Event - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315263218/</link><pubDate>Tue, 30 Jun 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315263218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
         <p><strong>When:</strong> Tuesday, June 30, 2026 at 8:00 AM UTC</p>
         <p><strong>Where:</strong> Quarterhouse</p>
         <p><strong>Attendees:</strong> 8 going</p>
@@ -23,7 +23,7 @@ Great opportunity to meet others that are using R. The idea is build our communi
         <p><a href="https://www.meetup.com/rladies-abuja/events/315092217/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315198238/</link><pubDate>Tue, 23 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315198238/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Tuesday, June 23, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 40 going</p>
+        <p><strong>Attendees:</strong> 41 going</p>
         <p>Research is most valuable when others can understand it, reproduce it, and build upon it.
 
 Yet many research workflows still rely on disconnected files, manual copy-and-paste steps, and documents that are difficult to update or share.
