@@ -1,7 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 23 Jun 2026 01:32:04 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R-Ladies+ Melbourne Social Event - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315263218/</link><pubDate>Tue, 30 Jun 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315263218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 23 Jun 2026 13:44:34 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>crosspost - PyLadies Vancouver July Meetup - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/315377579/</link><pubDate>Tue, 07 Jul 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/315377579/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><strong>When:</strong> Tuesday, July 7, 2026 at 1:00 AM UTC</p>
+        <p><strong>Where:</strong> improving</p>
+        <p><strong>Attendees:</strong> 1 going</p>
+        <p>Join PyLadies Vancouver for our July meetup, hosted at Improving Vancouver! This month we have two talks on AI agents and large language models.
+⚠️ **Please RSVP through Luma, not Meetup:** [https://luma.com/3oxfwqry](https://luma.com/3oxfwqry)
+Your spot is only confirmed once you register on Luma, so we can plan for the right headcount and space.
+**Talk 1: What Happens When Your Agent Has to Wait for a Human by Melanie Warrick**
+You built an agent in Python. It reasons, calls tools, handles its own steps. Then it hits a step that needs a human to approve something, and that approval might take five minutes or five days. The process sits there holding all its state in memory, waiting, until it crashes and everything the agent figured out is gone. This talk is about that moment: the agentic loop, why its state is only as durable as the process running it, and how durable execution with Temporal makes the loop survive crashes and long waits. Includes a short live demo.
+Melanie has been developing AI solutions for over a decade and leads developer relations at Temporal, focused on AI and durable execution.
+**Talk 2: A Practical Introduction to Generative AI and Large Language Models by Daniel Chen**
+A grounded, practical look at how generative AI and LLMs actually work: how they generate responses, why the same prompt can give different outputs, and what that means for applications that need reliability. We&#39;ll also look at how LLMs fit into real data science workflows in Python, with a focus on building intuition for what these models can and can&#39;t do.
+Daniel is a Data Science Lecturer in the Statistics Department at UBC and teaches for the UBC Master of Data Science program.
+**Support PyLadies Vancouver**
+The event is free to attend. If you&#39;d like to support us, donations help keep our meetups running, and a $25 donation gets you a PyLadies Vancouver tote bag: [https://psfmember.org/civicrm/contribute/transact/?reset=1&amp;id=60](https://psfmember.org/civicrm/contribute/transact/?reset=1&amp;id=60)
+​A huge thank you to [Improving Vancouver](https://improving.com/locations/vancouver/?utm_source=luma) for hosting us in their space **and providing pizza** for the evening! 🍕
+\#\# ​Thank you to our venue host: Improving Vancouver
+​Improving Vancouver is an IT consulting and software development firm (formerly Bit Quill Technologies) based in Vancouver, BC. They specialize in application development, data engineering, and AI solutions — helping teams build modern, scalable, data-driven applications. We&#39;re grateful for their support of the local Python community.
+👉 **Remember: RSVP on Luma to secure your spot —** [https://luma.com/3oxfwqry](https://luma.com/3oxfwqry)</p>
+        <p><a href="https://www.meetup.com/rladies-vancouver/events/315377579/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>R-Ladies+ Melbourne Social Event - R-Ladies Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315263218/</link><pubDate>Tue, 30 Jun 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315263218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Melbourne</p>
         <p><strong>When:</strong> Tuesday, June 30, 2026 at 8:00 AM UTC</p>
         <p><strong>Where:</strong> Quarterhouse</p>
-        <p><strong>Attendees:</strong> 8 going</p>
+        <p><strong>Attendees:</strong> 9 going</p>
         <p>Come unwind and connect after work with the R-Ladies&#43; Melbourne committee and members to celebrate the middle of the year!
 
 🕕 Time: 6pm
@@ -18,12 +37,12 @@ Great opportunity to meet others that are using R. The idea is build our communi
 **‼️ Please RSVP** (and update your RSVP if your circumstances change). **‼️**</p>
         <p><a href="https://www.meetup.com/rladies-melbourne/events/315263218/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Melbourne)</author><category>R-Ladies Melbourne</category></item><item><title>Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/315092217/</link><pubDate>Wed, 24 Jun 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/315092217/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, June 24, 2026 at 5:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 40 going</p>
+        <p><strong>Attendees:</strong> 42 going</p>
         <p>Discover how the latest features in **{dplyr} 1.2.0** can help you write cleaner, faster, and more maintainable data transformation workflows. This session explores practical techniques for filtering, joining, summarizing, and reshaping data more efficiently, with real-world examples that demonstrate how to streamline your R code and improve productivity.</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/315092217/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item><item><title>From data analysis to publication: Reproducible research with R and Quarto - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315198238/</link><pubDate>Tue, 23 Jun 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315198238/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Tuesday, June 23, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 46 going</p>
+        <p><strong>Attendees:</strong> 50 going</p>
         <p>Research is most valuable when others can understand it, reproduce it, and build upon it.
 
 Yet many research workflows still rely on disconnected files, manual copy-and-paste steps, and documents that are difficult to update or share.
