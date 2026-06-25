@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260624T133452Z
+DTSTAMP:20260625T013321Z
 DTSTART:20260707T010000Z
 DTEND:20260707T030000Z
 SUMMARY:crosspost - PyLadies Vancouver July Meetup - R-Ladies Vancouver
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260624T133452Z
+DTSTAMP:20260625T013321Z
 DTSTART:20260630T080000Z
 DTEND:20260630T100000Z
 SUMMARY:R-Ladies+ Melbourne Social Event - R-Ladies Melbourne
@@ -29,19 +29,6 @@ LOCATION:Quarterhouse, 693 Collins St,, Melbourne, AUSTRALIA
 URL:https://www.meetup.com/rladies-melbourne/events/315263218/
 ORGANIZER;CN=R-Ladies Melbourne:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Melbourne
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260624T133452Z
-DTSTART:20260624T170000Z
-DTEND:20260624T190000Z
-SUMMARY:Working Smarter with {dplyr} 1.2.0 - R-Ladies Abuja
-DESCRIPTION:Discover how the latest features in **{dplyr} 1.2.0** can help you write cleaner, faster, and more maintainable data transformation workflows. This session explores practical techniques for filtering, joining, summarizing, and reshaping data more efficiently, with real-world examples that demonstrate how to streamline your R code and improve productivity.
-LOCATION:Not announced
-URL:https://www.meetup.com/rladies-abuja/events/315092217/
-ORGANIZER;CN=R-Ladies Abuja:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Abuja
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
