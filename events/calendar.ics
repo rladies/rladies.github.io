@@ -7,7 +7,33 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260625T133421Z
+DTSTAMP:20260626T013613Z
+DTSTART:20260806T170000Z
+DTEND:20260806T183000Z
+SUMMARY:ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis
+DESCRIPTION:**Supercharging Your R Workflow with a Native AI Assistant**\n\nIt’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.\n\ngptstudio is an R package that integrates ChatGPT into RStudio, allowing you to generate code, explain functions, and write documentation using natural language, all without leaving your IDE. It supports various OpenAI models and offers an add-in panel that works like a built-in assistant. This tool is especially useful when you're experimenting, writing boilerplate code, or just need quick answers while staying in your flow.\nAdvantages of using the gptstudio package:\n\n✔️ Seamless integration into RStudio via an add-in panel\n✔️ Helps generate and explain R code using plain language prompts\n✔️ Supports multiple OpenAI models, including GPT-3.5 and GPT-4\n\n✔️ Useful for both beginners and experienced users looking to speed up their workflow
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-st-louis/events/315411350/
+ORGANIZER;CN=R-Ladies St. Louis:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies St. Louis
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260626T013613Z
+DTSTART:20260728T210000Z
+DTEND:20260728T230000Z
+SUMMARY:Summertime 5 à 7 - R-Ladies Ottawa
+DESCRIPTION:Connect with fellow data enthusiasts in a relaxed, casual setting. Drop by anytime! A variety of alcoholic and non-alcoholic beverages, along with food, will be available for purchase. Please note that participants are responsible for their own tabs.\n\nSeating is limited so please only RSVP if you're planning to join us in person. If your plans change, kindly cancel your RSVP so others can take your spot. We appreciate it!\n\n⚠️ **Please note that the mission of R-Ladies+ is to increase gender diversity in the R community. This event is intended to provide a safe space for women and gender minorities. We ask for male allies to be invited by and accompanied by a woman or gender minority.**
+LOCATION:Braumeister Bierhalle, 175 Carruthers Ave, Ottawa, CANADA
+URL:https://www.meetup.com/rladies-ottawa/events/315412315/
+ORGANIZER;CN=R-Ladies Ottawa:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Ottawa
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260626T013613Z
 DTSTART:20260707T010000Z
 DTEND:20260707T030000Z
 SUMMARY:crosspost - PyLadies Vancouver July Meetup - R-Ladies Vancouver
@@ -20,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260625T133421Z
+DTSTAMP:20260626T013613Z
 DTSTART:20260630T080000Z
 DTEND:20260630T100000Z
 SUMMARY:R-Ladies+ Melbourne Social Event - R-Ladies Melbourne
