@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260630T013349Z
+DTSTAMP:20260630T132812Z
 DTSTART:20260806T170000Z
 DTEND:20260806T183000Z
 SUMMARY:ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260630T013349Z
+DTSTAMP:20260630T132812Z
 DTSTART:20260728T210000Z
 DTEND:20260728T230000Z
 SUMMARY:Summertime 5 à 7 - R-Ladies Ottawa
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260630T013349Z
+DTSTAMP:20260630T132812Z
 DTSTART:20260707T010000Z
 DTEND:20260707T030000Z
 SUMMARY:crosspost - PyLadies Vancouver July Meetup - R-Ladies Vancouver
@@ -42,19 +42,6 @@ LOCATION:improving, 116 W 6th Avenue Suite 300, Vancouver, CANADA
 URL:https://www.meetup.com/rladies-vancouver/events/315377579/
 ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Vancouver
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260630T013349Z
-DTSTART:20260630T080000Z
-DTEND:20260630T100000Z
-SUMMARY:R-Ladies+ Melbourne Social Event - R-Ladies Melbourne
-DESCRIPTION:Come unwind and connect after work with the R-Ladies+ Melbourne committee and members to celebrate the middle of the year!\n\n🕕 Time: 6pm\n📅 When: Tuesday 30th June 2026\n📍 Where: Quarterhouse, 693 Collins St, Docklands VIC 3008\n(right near Southern Cross Station).\n\nGreat opportunity to meet others that are using R. The idea is build our community and network with like minded coders. Whether you have been to our past events, or want to join for the first time, please come and join us.\n\n🎉 Everyone is welcome! 🎉\n\n\*Please note that food and drinks are not provided at this event and are at the attendee’s expense. It's more of an opportunity to come and socialise with the group and learn more about upcoming events and opportunities.\n\n**‼️ Please RSVP** (and update your RSVP if your circumstances change). **‼️**
-LOCATION:Quarterhouse, 693 Collins St,, Melbourne, AUSTRALIA
-URL:https://www.meetup.com/rladies-melbourne/events/315263218/
-ORGANIZER;CN=R-Ladies Melbourne:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Melbourne
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
