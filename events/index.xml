@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 06 Jul 2026 01:23:57 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 06 Jul 2026 14:05:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, September 5, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Capital Verde Hub</p>
         <p><strong>Attendees:</strong> 3 going</p>
@@ -18,7 +18,7 @@ Te esperamos el sábado 5 de septiembre de 2026 a las 17:00 horas (GMT-6). Reser
 
 **Código de conducta**
 Recuerda leer y atender nuestro código de conducta disponible [aquí](https://rladies.org/about-us/coc/).</p>
-        <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/315411350/</link><pubDate>Thu, 06 Aug 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-st-louis/events/315411350/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
+        <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/315411350/</link><pubDate>Thu, 06 Aug 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-st-louis/events/315411350/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, August 6, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 31 going</p>
@@ -33,7 +33,9 @@ Advantages of using the gptstudio package:
 ✔️ Helps generate and explain R code using plain language prompts
 ✔️ Supports multiple OpenAI models, including GPT-3.5 and GPT-4
 
-✔️ Useful for both beginners and experienced users looking to speed up their workflow</p>
+✔️ Useful for both beginners and experienced users looking to speed up their workflow
+
+This event is co-hosted with R-Ladies Urmia. To find out more about their events, see their Meetup page [here](https://www.meetup.com/rladies-urmia/).</p>
         <p><a href="https://www.meetup.com/rladies-st-louis/events/315411350/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Summertime 5 à 7 - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/315412315/</link><pubDate>Tue, 28 Jul 2026 21:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-ottawa/events/315412315/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Tuesday, July 28, 2026 at 9:00 PM UTC</p>
         <p><strong>Where:</strong> Braumeister Bierhalle</p>
