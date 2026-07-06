@@ -12,8 +12,16 @@
 
 <section class="site-section-lg">
   <div class="site-container">
-    <div class="max-w-3xl mx-auto mb-12 entry-content">
+    <div class="max-w-3xl mx-auto mb-10 entry-content">
       {{ .Content }}
+    </div>
+
+    <div class="max-w-sm mx-auto mb-12 fade-in-up">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-cube"></i></div>
+        <p class="stat-number count" data-count="{{ len $packages }}">0</p>
+        <p class="stat-label">{{ i18n "r_packages" | default "R Packages" }}</p>
+      </div>
     </div>
   </div>
 </section>

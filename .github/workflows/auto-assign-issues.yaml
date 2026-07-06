@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign a website team member
-        uses: pozil/auto-assign-issue@v2
+        uses: pozil/auto-assign-issue@v4
         with:
           repo-token: ${{ secrets.ADMIN_TOKEN }}
           teams: website

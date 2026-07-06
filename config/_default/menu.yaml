@@ -15,9 +15,21 @@ main:
     weight: 3
     parent: find
 
+  - identifier: posts
+    url: "#"
+    weight: 2
   - identifier: news
     url: /news/
+    weight: 1
+    parent: posts
+  - identifier: blog
+    url: /blog/
     weight: 2
+    parent: posts
+  - identifier: press
+    url: /press/
+    weight: 3
+    parent: posts
 
   - identifier: programs
     url: /programs/
@@ -42,7 +54,4 @@ main:
     url: /about-us/faq/
     weight: 4
     parent: about-us
-  - identifier: press
-    url: /press
-    weight: 5
-    parent: about-us
+
