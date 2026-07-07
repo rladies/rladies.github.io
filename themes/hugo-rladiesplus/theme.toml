@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/rladies/rladies.github.io/blob/main/themes/hugo-rladiesplus/LICENSE.md"
 description = "Custom Hugo theme for the RLadies+ global website, built with Tailwind CSS v4 and Alpine.js"
 homepage = "https://rladies.org/"
-tags = ["blog", "responsive", "multilingual", "tailwindcss", "alpinejs", "font-awesome", "community", "nonprofit", "dark-mode", "plausible-analytics"]
+tags = ["blog", "responsive", "multilingual", "tailwindcss", "alpinejs", "font-awesome", "community", "nonprofit", "dark-mode", "cloudflare-web-analytics"]
 features = ["blog", "responsive", "multilingual", "dark-mode", "interactive-maps", "event-calendar", "member-directory", "i18n"]
 min_version = "0.144.0"
 

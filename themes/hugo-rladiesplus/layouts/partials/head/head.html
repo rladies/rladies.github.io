@@ -29,6 +29,8 @@
 <!-- structured data -->
 {{ partial "head/jsonld.html" . }}
 
-<!-- plausible -->
-<link rel="preconnect" href="https://plausible.io" crossorigin>
-<script defer data-domain="rladies.org" src="https://plausible.io/js/script.js"></script>
+{{ if strings.HasPrefix site.BaseURL "https://rladies.org" }}
+<!-- Cloudflare Web Analytics (production domain only; previews use a netlify.app baseURL) -->
+<link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6a898281b04e4a7495d58c714e42902a"}'></script>
+{{ end }}
