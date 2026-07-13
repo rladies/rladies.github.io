@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260713T012035Z
+DTSTAMP:20260713T133844Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260713T012035Z
+DTSTAMP:20260713T133844Z
 DTSTART:20260806T170000Z
 DTEND:20260806T183000Z
 SUMMARY:ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis
@@ -33,7 +33,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260713T012035Z
+DTSTAMP:20260713T133844Z
+DTSTART:20260730T010000Z
+DTEND:20260730T030000Z
+SUMMARY:Meet Positron: A Guided Tour for RStudio Users - R-Ladies+ Melbourne
+DESCRIPTION:**Meet Positron: A Guided Tour for RStudio Users**\n\n**Date:** 30th July, 2026\n**Time:** 11 AM\n**Where: [Online](https://deakin.zoom.us/j/87455019351?pwd=mvadykmUlN0OsEFj8IrBMrGZHbkIuV.1&from=addon)**\n\nCurious about Positron but not sure where to start? This session is the perfect opportunity to explore the next generation of data science development in a relaxed, beginner-friendly environment.\n\nIf you're already comfortable using RStudio, we'll help you get your bearings in Positron by highlighting what's familiar, what's different, and some of the features that make it an exciting new option for R users.\n\nNo prior experience with Positron is needed - just bring your curiosity!\n\nWhether you're an experienced R user or have only recently started your R journey, this is a great chance to discover what Positron has to offer alongside fellow members of the R-Ladies+ Melbourne community.\n\n**We look forward to exploring Positron with you!**
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-melbourne/events/315661884/
+ORGANIZER;CN=R-Ladies+ Melbourne:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies+ Melbourne
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260713T133844Z
 DTSTART:20260728T210000Z
 DTEND:20260728T223000Z
 SUMMARY:Summertime 5 à 7 - R-Ladies Ottawa
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260713T012035Z
+DTSTAMP:20260713T133844Z
 DTSTART:20260718T170000Z
 DTEND:20260718T190000Z
 SUMMARY:تفاوت دو زبان برنامه نویسی آر و پایتون - R-Ladies Urmia
