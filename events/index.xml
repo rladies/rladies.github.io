@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 22 Jul 2026 01:17:05 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 22 Jul 2026 13:17:44 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, September 5, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Capital Verde Hub</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -18,7 +18,28 @@ Te esperamos el sábado 5 de septiembre de 2026 a las 17:00 horas (GMT-6). Reser
 
 **Código de conducta**
 Recuerda leer y atender nuestro código de conducta disponible [aquí](https://rladies.org/about-us/coc/).</p>
-        <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/315411350/</link><pubDate>Thu, 06 Aug 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-st-louis/events/315411350/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
+        <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>R-Ladies+ Melbourne &amp; Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315756564/</link><pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315756564/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
+        <p><strong>When:</strong> Wednesday, August 12, 2026 at 8:00 AM UTC</p>
+        <p><strong>Where:</strong> Hotel Nacional</p>
+        <p><strong>Attendees:</strong> 4 going</p>
+        <p>R-Ladies&#43; Melbourne and the Statistical Society of Australia (SSA) Victoria are excited to bring our communities together for an evening of networking and connection.
+
+**Event details**
+📅 Wednesday 12th of August 2026
+🕕 6:00pm
+📍 Hotel Nacional, Level 3 Rooftop (it is undercover with heaters)
+23-25 Hardware Lane, Melbourne, 3000
+
+If you use R for programming, data analysis, visualisation, statistics, or you&#39;re a statistician looking to connect, this event is for you.
+
+We&#39;re looking forward to bringing our two communities together for a relaxed evening of networking and sharing knowledge and experiences.
+
+Whether you&#39;re a regular attendee of either organisation or joining us for the first time, you&#39;ll be warmly welcomed.
+
+And yes… food will be provided! 🎉
+
+**Please RSVP by 4th of August** (for catering purposes - we kindly ask you update your registration so we can accurately notify the venue and order appropriate amount of food)</p>
+        <p><a href="https://www.meetup.com/rladies-melbourne/events/315756564/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/315411350/</link><pubDate>Thu, 06 Aug 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-st-louis/events/315411350/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, August 6, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 39 going</p>
@@ -39,7 +60,7 @@ This event is co-hosted with R-Ladies Urmia. To find out more about their events
         <p><a href="https://www.meetup.com/rladies-st-louis/events/315411350/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Meet Positron: A Guided Tour for RStudio Users - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315661884/</link><pubDate>Thu, 30 Jul 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315661884/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Thursday, July 30, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 34 going</p>
+        <p><strong>Attendees:</strong> 35 going</p>
         <p>**Meet Positron: A Guided Tour for RStudio Users**
 
 **Date:** 30th July, 2026
