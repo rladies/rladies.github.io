@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260728T132302Z
+DTSTAMP:20260729T011640Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260728T132302Z
+DTSTAMP:20260729T011640Z
 DTSTART:20260820T010000Z
 DTEND:20260820T030000Z
 SUMMARY:PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260728T132302Z
+DTSTAMP:20260729T011640Z
 DTSTART:20260812T080000Z
 DTEND:20260812T100000Z
 SUMMARY:R-Ladies+ Melbourne & Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260728T132302Z
+DTSTAMP:20260729T011640Z
 DTSTART:20260806T220000Z
 DTEND:20260806T230000Z
 SUMMARY:RLadies+ Albany Kick-Off Meeting - RLadies+ Albany
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260728T132302Z
+DTSTAMP:20260729T011640Z
 DTSTART:20260806T170000Z
 DTEND:20260806T183000Z
 SUMMARY:ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260728T132302Z
+DTSTAMP:20260729T011640Z
 DTSTART:20260730T010000Z
 DTEND:20260730T030000Z
 SUMMARY:Meet Positron: A Guided Tour for RStudio Users - R-Ladies+ Melbourne
@@ -81,19 +81,6 @@ LOCATION:Online event
 URL:https://www.meetup.com/rladies-melbourne/events/315661884/
 ORGANIZER;CN=R-Ladies+ Melbourne:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies+ Melbourne
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260728T132302Z
-DTSTART:20260728T210000Z
-DTEND:20260728T223000Z
-SUMMARY:Summertime 5 à 7 - R-Ladies Ottawa
-DESCRIPTION:Connect with fellow data enthusiasts in a relaxed, casual setting. Drop by anytime! A variety of alcoholic and non-alcoholic beverages, along with food, will be available for purchase. Please note that participants are responsible for their own tabs.\n\nSeating is limited so please only RSVP if you're planning to join us in person. If your plans change, kindly cancel your RSVP so others can take your spot. We appreciate it!\n\n⚠️ **Please note that the mission of R-Ladies+ is to increase gender diversity in the R community. This event is intended to provide a safe space for women and gender minorities. We ask for male allies to be invited by and accompanied by a woman or gender minority.**
-LOCATION:Braumeister Bierhalle, 175 Carruthers Ave, Ottawa, CANADA
-URL:https://www.meetup.com/rladies-ottawa/events/315412315/
-ORGANIZER;CN=R-Ladies Ottawa:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Ottawa
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
