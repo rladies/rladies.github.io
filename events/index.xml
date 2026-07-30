@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 29 Jul 2026 13:24:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 30 Jul 2026 01:18:03 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, September 5, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Capital Verde Hub</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -46,7 +46,7 @@ Please sign up on Luma so we know to expect you: https://luma.com/3gsm7kqq
         <p><a href="https://www.meetup.com/rladies-vancouver/events/315798255/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>R-Ladies+ Melbourne &amp; Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315756564/</link><pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315756564/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Wednesday, August 12, 2026 at 8:00 AM UTC</p>
         <p><strong>Where:</strong> Hotel Nacional</p>
-        <p><strong>Attendees:</strong> 12 going</p>
+        <p><strong>Attendees:</strong> 13 going</p>
         <p>R-Ladies&#43; Melbourne and the Statistical Society of Australia (SSA) Victoria are excited to bring our communities together for an evening of networking and connection.
 
 **Event details**
@@ -89,23 +89,4 @@ Advantages of using the gptstudio package:
 ✔️ Useful for both beginners and experienced users looking to speed up their workflow
 
 This event is co-hosted with R-Ladies Urmia. To find out more about their events, see their Meetup page [here](https://www.meetup.com/rladies-urmia/).</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/315411350/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item><item><title>Meet Positron: A Guided Tour for RStudio Users - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315661884/</link><pubDate>Thu, 30 Jul 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315661884/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
-        <p><strong>When:</strong> Thursday, July 30, 2026 at 1:00 AM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 66 going</p>
-        <p>**Meet Positron: A Guided Tour for RStudio Users**
-
-**Date:** 30th July, 2026
-**Time:** 11 AM
-**Where: [Online](https://deakin.zoom.us/j/87455019351?pwd=mvadykmUlN0OsEFj8IrBMrGZHbkIuV.1&amp;from=addon)**
-
-Curious about Positron but not sure where to start? This session is the perfect opportunity to explore the next generation of data science development in a relaxed, beginner-friendly environment.
-
-If you&#39;re already comfortable using RStudio, we&#39;ll help you get your bearings in Positron by highlighting what&#39;s familiar, what&#39;s different, and some of the features that make it an exciting new option for R users.
-
-No prior experience with Positron is needed - just bring your curiosity!
-
-Whether you&#39;re an experienced R user or have only recently started your R journey, this is a great chance to discover what Positron has to offer alongside fellow members of the R-Ladies&#43; Melbourne community.
-
-**We look forward to exploring Positron with you!**</p>
-        <p><a href="https://www.meetup.com/rladies-melbourne/events/315661884/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-st-louis/events/315411350/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item></channel></rss>
