@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 06 Aug 2026 01:15:54 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 06 Aug 2026 13:22:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, September 5, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Capital Verde Hub</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -21,18 +21,18 @@ Recuerda leer y atender nuestro código de conducta disponible [aquí](https://r
         <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>Typst for Efficient Typesetting - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315989153/</link><pubDate>Wed, 19 Aug 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315989153/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, August 19, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 24 going</p>
+        <p><strong>Attendees:</strong> 27 going</p>
         <p>Creating professional-looking PDFs for articles, reports, lecture notes, and books has traditionally meant learning LaTeX.
 
 Today, **Typst** offers a modern alternative that combines beautiful typography with a simpler syntax and remarkably fast compilation, while integrating seamlessly with **Quarto**.
 
-In this workshop, we will explore how Quarto and Typst work together to produce publication-quality documents using reproducible workflows. Participants will learn how to customize document layouts, control typography, work with figures, tables, citations, and cross-references, and generate polished PDFs directly from Quarto projects.
+In this seminar, we will talk about how Typst can be a successor for LaTeX-based workflows for your typesetting needs. We will explore tools for layouts, diagrams, and other design elements through the Typst Universe. This presentation will include live demonstrations to introduce you to the wonderful world of Typst!
 
 Whether you&#39;re preparing research papers, teaching material, technical reports, or books, this session will introduce a modern typesetting workflow that combines the flexibility of Quarto with the design capabilities of Typst. No previous experience with Typst or LaTeX is required—just curiosity about creating beautiful documents with open-source tools.
 
 **Speaker:**
 
-**Derek Sollberger** is a Lecturer in the Department of Statistics and Data Science at **Princeton University**, where he teaches data science, statistics, and reproducible research. An active member of the R community, Derek is passionate about open-source tools and modern publishing workflows. Through his teaching, workshops, and technical writing, he helps researchers, educators, and students create clear, reproducible, and beautifully formatted documents using R, Quarto, and emerging technologies such as Typst.</p>
+**Derek Sollberger** is a lecturer at **Princeton University**, where he teaches Data Science and Machine Learning. His work focuses on data communication, statistical computing in R, and conversations around artificial intelligence in education. He has developed engaging learning experiences that help students connect technical methods with clear, effective communication. Through his teaching and broader contributions to educator and R communities, Derek has built a reputation for making complex analytical ideas accessible and relevant.</p>
         <p><a href="https://www.meetup.com/rladies-rome/events/315989153/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/315798255/</link><pubDate>Thu, 20 Aug 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/315798255/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Thursday, August 20, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> See Luma page</p>
@@ -61,7 +61,7 @@ Please sign up on Luma so we know to expect you: https://luma.com/3gsm7kqq
         <p><a href="https://www.meetup.com/rladies-vancouver/events/315798255/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>R-Ladies+ Melbourne &amp; Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315756564/</link><pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315756564/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Wednesday, August 12, 2026 at 8:00 AM UTC</p>
         <p><strong>Where:</strong> Hotel Nacional</p>
-        <p><strong>Attendees:</strong> 32 going</p>
+        <p><strong>Attendees:</strong> 37 going</p>
         <p>R-Ladies&#43; Melbourne and the Statistical Society of Australia (SSA) Victoria are excited to bring our communities together for an evening of networking and connection.
 
 **Event details**
@@ -89,7 +89,7 @@ Please join us for the Albany Chapter&#39;s Kick-Off Meeting on August 6, 2026 a
         <p><a href="https://www.meetup.com/rladies-albany-ny/events/315797911/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Albany)</author><category>RLadies+ Albany</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/315411350/</link><pubDate>Thu, 06 Aug 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-st-louis/events/315411350/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
         <p><strong>When:</strong> Thursday, August 6, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 48 going</p>
+        <p><strong>Attendees:</strong> 50 going</p>
         <p>**Supercharging Your R Workflow with a Native AI Assistant**
 
 It’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.

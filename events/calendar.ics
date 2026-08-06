@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T011553Z
+DTSTAMP:20260806T132227Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -20,11 +20,11 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T011553Z
+DTSTAMP:20260806T132227Z
 DTSTART:20260819T160000Z
 DTEND:20260819T180000Z
 SUMMARY:Typst for Efficient Typesetting - R-Ladies Rome
-DESCRIPTION:Creating professional-looking PDFs for articles, reports, lecture notes, and books has traditionally meant learning LaTeX.\n\nToday, **Typst** offers a modern alternative that combines beautiful typography with a simpler syntax and remarkably fast compilation, while integrating seamlessly with **Quarto**.\n\nIn this workshop, we will explore how Quarto and Typst work together to produce publication-quality documents using reproducible workflows. Participants will learn how to customize document layouts, control typography, work with figures, tables, citations, and cross-references, and generate polished PDFs directly from Quarto projects.\n\nWhether you're preparing research papers, teaching material, technical reports, or books, this session will introduce a modern typesetting workflow that combines the flexibility of Quarto with the design capabilities of Typst. No previous experience with Typst or LaTeX is required—just curiosity about creating beautiful documents with open-source tools.\n\n**Speaker:**\n\n**Derek Sollberger** is a Lecturer in the Department of Statistics and Data Science at **Princeton University**, where he teaches data science, statistics, and reproducible research. An active member of the R community, Derek is passionate about open-source tools and modern publishing workflows. Through his teaching, workshops, and technical writing, he helps researchers, educators, and students create clear, reproducible, and beautifully formatted documents using R, Quarto, and emerging technologies such as Typst.
+DESCRIPTION:Creating professional-looking PDFs for articles, reports, lecture notes, and books has traditionally meant learning LaTeX.\n\nToday, **Typst** offers a modern alternative that combines beautiful typography with a simpler syntax and remarkably fast compilation, while integrating seamlessly with **Quarto**.\n\nIn this seminar, we will talk about how Typst can be a successor for LaTeX-based workflows for your typesetting needs. We will explore tools for layouts, diagrams, and other design elements through the Typst Universe. This presentation will include live demonstrations to introduce you to the wonderful world of Typst!\n\nWhether you're preparing research papers, teaching material, technical reports, or books, this session will introduce a modern typesetting workflow that combines the flexibility of Quarto with the design capabilities of Typst. No previous experience with Typst or LaTeX is required—just curiosity about creating beautiful documents with open-source tools.\n\n**Speaker:**\n\n**Derek Sollberger** is a lecturer at **Princeton University**, where he teaches Data Science and Machine Learning. His work focuses on data communication, statistical computing in R, and conversations around artificial intelligence in education. He has developed engaging learning experiences that help students connect technical methods with clear, effective communication. Through his teaching and broader contributions to educator and R communities, Derek has built a reputation for making complex analytical ideas accessible and relevant.
 LOCATION:Online event
 URL:https://www.meetup.com/rladies-rome/events/315989153/
 ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T011553Z
+DTSTAMP:20260806T132227Z
 DTSTART:20260820T010000Z
 DTEND:20260820T030000Z
 SUMMARY:PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T011553Z
+DTSTAMP:20260806T132227Z
 DTSTART:20260812T080000Z
 DTEND:20260812T100000Z
 SUMMARY:R-Ladies+ Melbourne & Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T011553Z
+DTSTAMP:20260806T132227Z
 DTSTART:20260806T220000Z
 DTEND:20260806T230000Z
 SUMMARY:RLadies+ Albany Kick-Off Meeting - RLadies+ Albany
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T011553Z
+DTSTAMP:20260806T132227Z
 DTSTART:20260806T170000Z
 DTEND:20260806T183000Z
 SUMMARY:ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis
