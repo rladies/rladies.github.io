@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T132227Z
+DTSTAMP:20260807T014729Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T132227Z
+DTSTAMP:20260807T014729Z
 DTSTART:20260819T160000Z
 DTEND:20260819T180000Z
 SUMMARY:Typst for Efficient Typesetting - R-Ladies Rome
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T132227Z
+DTSTAMP:20260807T014729Z
 DTSTART:20260820T010000Z
 DTEND:20260820T030000Z
 SUMMARY:PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260806T132227Z
+DTSTAMP:20260807T014729Z
 DTSTART:20260812T080000Z
 DTEND:20260812T100000Z
 SUMMARY:R-Ladies+ Melbourne & Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne
@@ -55,32 +55,6 @@ LOCATION:Hotel Nacional, 23-25 Hardware Lane, Melbourne CBD, AUSTRALIA
 URL:https://www.meetup.com/rladies-melbourne/events/315756564/
 ORGANIZER;CN=R-Ladies+ Melbourne:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies+ Melbourne
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260806T132227Z
-DTSTART:20260806T220000Z
-DTEND:20260806T230000Z
-SUMMARY:RLadies+ Albany Kick-Off Meeting - RLadies+ Albany
-DESCRIPTION:Albany, NY now has its own RLadies+ chapter!\n\nPlease join us for the Albany Chapter's Kick-Off Meeting on August 6, 2026 at 6 pm in the Community Room at the Albany Public Library Bach Branch on New Scotland Ave. Meet fellow R users of all levels and help determine the direction of this new RLadies+ chapter. You can learn more about RLadies+ at https://rladies.org/.
-LOCATION:Albany Public Library - Bach Branch, 455 New Scotland Avenue, Albany, UNITED STATES OF AMERICA
-URL:https://www.meetup.com/rladies-albany-ny/events/315797911/
-ORGANIZER;CN=RLadies+ Albany:mailto:info@rladies.org
-CATEGORIES:RLadies+,RLadies+ Albany
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260806T132227Z
-DTSTART:20260806T170000Z
-DTEND:20260806T183000Z
-SUMMARY:ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis
-DESCRIPTION:**Supercharging Your R Workflow with a Native AI Assistant**\n\nIt’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.\n\ngptstudio is an R package that integrates ChatGPT into RStudio, allowing you to generate code, explain functions, and write documentation using natural language, all without leaving your IDE. It supports various OpenAI models and offers an add-in panel that works like a built-in assistant. This tool is especially useful when you're experimenting, writing boilerplate code, or just need quick answers while staying in your flow.\nAdvantages of using the gptstudio package:\n\n✔️ Seamless integration into RStudio via an add-in panel\n✔️ Helps generate and explain R code using plain language prompts\n✔️ Supports multiple OpenAI models, including GPT-3.5 and GPT-4\n\n✔️ Useful for both beginners and experienced users looking to speed up their workflow\n\nThis event is co-hosted with R-Ladies Urmia. To find out more about their events, see their Meetup page [here](https://www.meetup.com/rladies-urmia/).
-LOCATION:Online event
-URL:https://www.meetup.com/rladies-st-louis/events/315411350/
-ORGANIZER;CN=R-Ladies St. Louis:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies St. Louis
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT

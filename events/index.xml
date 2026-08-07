@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 06 Aug 2026 13:22:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 07 Aug 2026 01:47:30 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, September 5, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Capital Verde Hub</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -21,7 +21,7 @@ Recuerda leer y atender nuestro código de conducta disponible [aquí](https://r
         <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>Typst for Efficient Typesetting - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315989153/</link><pubDate>Wed, 19 Aug 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315989153/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, August 19, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 27 going</p>
+        <p><strong>Attendees:</strong> 31 going</p>
         <p>Creating professional-looking PDFs for articles, reports, lecture notes, and books has traditionally meant learning LaTeX.
 
 Today, **Typst** offers a modern alternative that combines beautiful typography with a simpler syntax and remarkably fast compilation, while integrating seamlessly with **Quarto**.
@@ -79,29 +79,4 @@ Whether you&#39;re a regular attendee of either organisation or joining us for t
 And yes… food will be provided! 🎉
 
 **Please RSVP by 6th of August** (for catering purposes - we kindly ask you update your registration so we can accurately notify the venue and order appropriate amount of food)</p>
-        <p><a href="https://www.meetup.com/rladies-melbourne/events/315756564/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>RLadies+ Albany Kick-Off Meeting - RLadies+ Albany</title><link>https://www.meetup.com/rladies-albany-ny/events/315797911/</link><pubDate>Thu, 06 Aug 2026 22:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-albany-ny/events/315797911/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Albany</p>
-        <p><strong>When:</strong> Thursday, August 6, 2026 at 10:00 PM UTC</p>
-        <p><strong>Where:</strong> Albany Public Library - Bach Branch</p>
-        <p><strong>Attendees:</strong> 3 going</p>
-        <p>Albany, NY now has its own RLadies&#43; chapter!
-
-Please join us for the Albany Chapter&#39;s Kick-Off Meeting on August 6, 2026 at 6 pm in the Community Room at the Albany Public Library Bach Branch on New Scotland Ave. Meet fellow R users of all levels and help determine the direction of this new RLadies&#43; chapter. You can learn more about RLadies&#43; at https://rladies.org/.</p>
-        <p><a href="https://www.meetup.com/rladies-albany-ny/events/315797911/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Albany)</author><category>RLadies+ Albany</category></item><item><title>ChatGPT in RStudio with gptstudio: Better than GitHub Copilot? (w R-LadiesUrmia) - R-Ladies St. Louis</title><link>https://www.meetup.com/rladies-st-louis/events/315411350/</link><pubDate>Thu, 06 Aug 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-st-louis/events/315411350/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies St. Louis</p>
-        <p><strong>When:</strong> Thursday, August 6, 2026 at 5:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 50 going</p>
-        <p>**Supercharging Your R Workflow with a Native AI Assistant**
-
-It’s no surprise that large language models like ChatGPT are helpful for coding. What makes gptstudio stand out is how it brings that help directly into RStudio through a clean, user-friendly add-in.
-
-gptstudio is an R package that integrates ChatGPT into RStudio, allowing you to generate code, explain functions, and write documentation using natural language, all without leaving your IDE. It supports various OpenAI models and offers an add-in panel that works like a built-in assistant. This tool is especially useful when you&#39;re experimenting, writing boilerplate code, or just need quick answers while staying in your flow.
-Advantages of using the gptstudio package:
-
-✔️ Seamless integration into RStudio via an add-in panel
-✔️ Helps generate and explain R code using plain language prompts
-✔️ Supports multiple OpenAI models, including GPT-3.5 and GPT-4
-
-✔️ Useful for both beginners and experienced users looking to speed up their workflow
-
-This event is co-hosted with R-Ladies Urmia. To find out more about their events, see their Meetup page [here](https://www.meetup.com/rladies-urmia/).</p>
-        <p><a href="https://www.meetup.com/rladies-st-louis/events/315411350/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies St. Louis)</author><category>R-Ladies St. Louis</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-melbourne/events/315756564/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item></channel></rss>
