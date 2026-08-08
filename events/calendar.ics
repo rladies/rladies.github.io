@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260808T011558Z
+DTSTAMP:20260808T131111Z
+DTSTART:20260915T000000Z
+DTEND:20260915T020000Z
+SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
+DESCRIPTION:Let's get together, make some friends, and brainstorm ideas for what we want to see at future meetups! I'll bring nametags, index cards, post-its and sharpies. Bring a pen and some ideas!\n\nThis is also the first day of posit::conf - if you're doing the workshops, bring that energy and share what you've learned! Discuss with others about what talks you're most excited to see.\n\nTentatively, I'd like to meet at least every 2 months, and maybe find a regular day that works for a lot of people to plan around.
+LOCATION:Honey latte cafe, 1033 SE Main St, Portland, OR 97214, United States,, Portland, UNITED STATES OF AMERICA
+URL:https://www.meetup.com/rladies-pdx/events/316026203/
+ORGANIZER;CN=R-Ladies PDX:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies PDX
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260808T131111Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260808T011558Z
+DTSTAMP:20260808T131111Z
 DTSTART:20260819T160000Z
 DTEND:20260819T180000Z
 SUMMARY:Typst for Efficient Typesetting - R-Ladies Rome
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260808T011558Z
+DTSTAMP:20260808T131111Z
 DTSTART:20260820T010000Z
 DTEND:20260820T030000Z
 SUMMARY:PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260808T011558Z
+DTSTAMP:20260808T131111Z
 DTSTART:20260812T080000Z
 DTEND:20260812T100000Z
 SUMMARY:R-Ladies+ Melbourne & Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne
