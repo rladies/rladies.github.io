@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 12 Aug 2026 01:14:47 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Social plus Brainstorming Future Meetups - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316026203/</link><pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316026203/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 12 Aug 2026 13:13:18 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Social plus Brainstorming Future Meetups - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316026203/</link><pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316026203/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Tuesday, September 15, 2026 at 12:00 AM UTC</p>
         <p><strong>Where:</strong> Honey latte cafe</p>
         <p><strong>Attendees:</strong> 4 going</p>
@@ -30,7 +30,7 @@ Recuerda leer y atender nuestro código de conducta disponible [aquí](https://r
         <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>Typst for Efficient Typesetting - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315989153/</link><pubDate>Wed, 19 Aug 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315989153/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Wednesday, August 19, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 38 going</p>
+        <p><strong>Attendees:</strong> 39 going</p>
         <p>Creating professional-looking PDFs for articles, reports, lecture notes, and books has traditionally meant learning LaTeX.
 
 Today, **Typst** offers a modern alternative that combines beautiful typography with a simpler syntax and remarkably fast compilation, while integrating seamlessly with **Quarto**.
@@ -67,25 +67,4 @@ Please sign up on Luma so we know to expect you: https://luma.com/3gsm7kqq
 ​PyLadies events follow the [PyLadies Code of Conduct](https://www.pyladies.com/CodeOfConduct/?utm_source=luma).
 ​If it&#39;s your first R-Ladies event, please review the[ R-Ladies Global Code of Conduct](https://www.pyladies.com/CodeOfConduct/?utm_source=luma).
 ​Both communities share a focus on supporting women and gender-diverse people in ourfield.</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/315798255/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>R-Ladies+ Melbourne &amp; Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/315756564/</link><pubDate>Wed, 12 Aug 2026 08:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/315756564/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
-        <p><strong>When:</strong> Wednesday, August 12, 2026 at 8:00 AM UTC</p>
-        <p><strong>Where:</strong> Hotel Nacional</p>
-        <p><strong>Attendees:</strong> 42 going</p>
-        <p>R-Ladies&#43; Melbourne and the Statistical Society of Australia (SSA) Victoria are excited to bring our communities together for an evening of networking and connection.
-
-**Event details**
-📅 Wednesday 12th of August 2026
-🕕 6:00pm
-📍 Hotel Nacional, Level 3 Rooftop (it is undercover with heaters)
-23-25 Hardware Lane, Melbourne, 3000
-
-If you use R for programming, data analysis, visualisation, statistics, or you&#39;re a statistician looking to connect, this event is for you.
-
-We&#39;re looking forward to bringing our two communities together for a relaxed evening of networking and sharing knowledge and experiences.
-
-Whether you&#39;re a regular attendee of either organisation or joining us for the first time, you&#39;ll be warmly welcomed.
-
-And yes… food will be provided! 🎉
-
-**Please RSVP by 6th of August** (for catering purposes - we kindly ask you update your registration so we can accurately notify the venue and order appropriate amount of food)</p>
-        <p><a href="https://www.meetup.com/rladies-melbourne/events/315756564/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-vancouver/events/315798255/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>

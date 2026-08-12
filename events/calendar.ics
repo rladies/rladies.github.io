@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260812T011447Z
+DTSTAMP:20260812T131317Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260812T011447Z
+DTSTAMP:20260812T131317Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260812T011447Z
+DTSTAMP:20260812T131317Z
 DTSTART:20260819T160000Z
 DTEND:20260819T180000Z
 SUMMARY:Typst for Efficient Typesetting - R-Ladies Rome
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260812T011447Z
+DTSTAMP:20260812T131317Z
 DTSTART:20260820T010000Z
 DTEND:20260820T030000Z
 SUMMARY:PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver
@@ -55,19 +55,6 @@ LOCATION:See Luma page, 11111, Vancouver, CANADA
 URL:https://www.meetup.com/rladies-vancouver/events/315798255/
 ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Vancouver
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260812T011447Z
-DTSTART:20260812T080000Z
-DTEND:20260812T100000Z
-SUMMARY:R-Ladies+ Melbourne & Statistical Society of Australia (SSA) Networking Event - R-Ladies+ Melbourne
-DESCRIPTION:R-Ladies+ Melbourne and the Statistical Society of Australia (SSA) Victoria are excited to bring our communities together for an evening of networking and connection.\n\n**Event details**\n📅 Wednesday 12th of August 2026\n🕕 6:00pm\n📍 Hotel Nacional, Level 3 Rooftop (it is undercover with heaters)\n23-25 Hardware Lane, Melbourne, 3000\n\nIf you use R for programming, data analysis, visualisation, statistics, or you're a statistician looking to connect, this event is for you.\n\nWe're looking forward to bringing our two communities together for a relaxed evening of networking and sharing knowledge and experiences.\n\nWhether you're a regular attendee of either organisation or joining us for the first time, you'll be warmly welcomed.\n\nAnd yes… food will be provided! 🎉\n\n**Please RSVP by 6th of August** (for catering purposes - we kindly ask you update your registration so we can accurately notify the venue and order appropriate amount of food)
-LOCATION:Hotel Nacional, 23-25 Hardware Lane, Melbourne CBD, AUSTRALIA
-URL:https://www.meetup.com/rladies-melbourne/events/315756564/
-ORGANIZER;CN=R-Ladies+ Melbourne:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies+ Melbourne
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
