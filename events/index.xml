@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 19 Aug 2026 13:09:57 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Social plus Brainstorming Future Meetups - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316026203/</link><pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316026203/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 20 Aug 2026 01:13:27 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Social plus Brainstorming Future Meetups - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316026203/</link><pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316026203/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Tuesday, September 15, 2026 at 12:00 AM UTC</p>
         <p><strong>Where:</strong> Honey latte cafe</p>
         <p><strong>Attendees:</strong> 4 going</p>
@@ -27,44 +27,4 @@ Te esperamos el sábado 5 de septiembre de 2026 a las 17:00 horas (GMT-6). Reser
 
 **Código de conducta**
 Recuerda leer y atender nuestro código de conducta disponible [aquí](https://rladies.org/about-us/coc/).</p>
-        <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>Typst for Efficient Typesetting - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/315989153/</link><pubDate>Wed, 19 Aug 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/315989153/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
-        <p><strong>When:</strong> Wednesday, August 19, 2026 at 4:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 44 going</p>
-        <p>Creating professional-looking PDFs for articles, reports, lecture notes, and books has traditionally meant learning LaTeX.
-
-Today, **Typst** offers a modern alternative that combines beautiful typography with a simpler syntax and remarkably fast compilation, while integrating seamlessly with **Quarto**.
-
-In this seminar, we will talk about how Typst can be a successor for LaTeX-based workflows for your typesetting needs. We will explore tools for layouts, diagrams, and other design elements through the Typst Universe. This presentation will include live demonstrations to introduce you to the wonderful world of Typst!
-
-Whether you&#39;re preparing research papers, teaching material, technical reports, or books, this session will introduce a modern typesetting workflow that combines the flexibility of Quarto with the design capabilities of Typst. No previous experience with Typst or LaTeX is required—just curiosity about creating beautiful documents with open-source tools.
-
-**Speaker:**
-
-**Derek Sollberger** is a lecturer at **Princeton University**, where he teaches Data Science and Machine Learning. His work focuses on data communication, statistical computing in R, and conversations around artificial intelligence in education. He has developed engaging learning experiences that help students connect technical methods with clear, effective communication. Through his teaching and broader contributions to educator and R communities, Derek has built a reputation for making complex analytical ideas accessible and relevant.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/315989153/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/315798255/</link><pubDate>Thu, 20 Aug 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/315798255/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
-        <p><strong>When:</strong> Thursday, August 20, 2026 at 1:00 AM UTC</p>
-        <p><strong>Where:</strong> See Luma page</p>
-        <p><strong>Attendees:</strong> 3 going</p>
-        <p>​**PyLadies Vancouver** and **R-Ladies Vancouver** are teaming up for a night of lightning talks: short talks from speakers in both communities. Come for a fast, friendly mix of Python and R, ideas, tools, and stories, all in bite-sized form.
-
-Please sign up on Luma so we know to expect you: https://luma.com/3gsm7kqq
-
-## ​📢 We&#39;re looking for speakers!
-
-​We&#39;re looking for short presentations, **5 to 15 minutes long**, from speakers in either community, PyLadies or R-Ladies.
-​• **Beginners especially encouraged.** A lightning talk is a great first talk, and great practice before a conference.
-​• **Never done public speaking?** We&#39;d love to debut you and help launch your speaking journey.
-​• **Yes, you can reuse a talk you&#39;ve given elsewhere.** New members may not have heard it.
-​• **Python or R**, plus adjacent technology topics. When we polled our last meetup, people asked for: AI/ML and LLMs, web development, data science,Python internals, testing and tooling, and live coding.
-​• **Not sure your topic is interesting enough?** Let us be the judge, sign up with your idea.
-​New to the format? [Our lightning guide](https://vancouver.pyladies.com/lightning-talks/?utm_source=luma) covers what a lightning talk is, how to prepare, topic ideas, example talks to watch, and common questions.
-​[Sign up](https://sessionize.com/pyladies-vancouver-meetup/?utm_source=luma) to give a lightning talk.
-
-​**Free to attend.** We&#39;re run entirely by volunteers, so donations are always appreciated and help keep our meetups free and welcoming: [https://psfmember.org/civicrm/contribute/transact/?reset=1&amp;id=60](https://psfmember.org/civicrm/contribute/transact/?reset=1&amp;id=60&amp;utm_source=luma)
-​
-**Everyone is welcome.** This is a joint event with R-Ladies Vancouver.
-​PyLadies events follow the [PyLadies Code of Conduct](https://www.pyladies.com/CodeOfConduct/?utm_source=luma).
-​If it&#39;s your first R-Ladies event, please review the[ R-Ladies Global Code of Conduct](https://www.pyladies.com/CodeOfConduct/?utm_source=luma).
-​Both communities share a focus on supporting women and gender-diverse people in ourfield.</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/315798255/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-xalapa/events/315491724/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item></channel></rss>

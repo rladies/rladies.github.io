@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260819T130957Z
+DTSTAMP:20260820T011327Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260819T130957Z
+DTSTAMP:20260820T011327Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -29,32 +29,6 @@ LOCATION:Capital Verde Hub, C. Gustavo Díaz Ordaz 82, Predio de la Virgen, 9115
 URL:https://www.meetup.com/rladies-xalapa/events/315491724/
 ORGANIZER;CN=R-Ladies Xalapa:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Xalapa
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260819T130957Z
-DTSTART:20260819T160000Z
-DTEND:20260819T180000Z
-SUMMARY:Typst for Efficient Typesetting - R-Ladies Rome
-DESCRIPTION:Creating professional-looking PDFs for articles, reports, lecture notes, and books has traditionally meant learning LaTeX.\n\nToday, **Typst** offers a modern alternative that combines beautiful typography with a simpler syntax and remarkably fast compilation, while integrating seamlessly with **Quarto**.\n\nIn this seminar, we will talk about how Typst can be a successor for LaTeX-based workflows for your typesetting needs. We will explore tools for layouts, diagrams, and other design elements through the Typst Universe. This presentation will include live demonstrations to introduce you to the wonderful world of Typst!\n\nWhether you're preparing research papers, teaching material, technical reports, or books, this session will introduce a modern typesetting workflow that combines the flexibility of Quarto with the design capabilities of Typst. No previous experience with Typst or LaTeX is required—just curiosity about creating beautiful documents with open-source tools.\n\n**Speaker:**\n\n**Derek Sollberger** is a lecturer at **Princeton University**, where he teaches Data Science and Machine Learning. His work focuses on data communication, statistical computing in R, and conversations around artificial intelligence in education. He has developed engaging learning experiences that help students connect technical methods with clear, effective communication. Through his teaching and broader contributions to educator and R communities, Derek has built a reputation for making complex analytical ideas accessible and relevant.
-LOCATION:Online event
-URL:https://www.meetup.com/rladies-rome/events/315989153/
-ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Rome
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260819T130957Z
-DTSTART:20260820T010000Z
-DTEND:20260820T030000Z
-SUMMARY:PyLadies × R-Ladies Vancouver Lightning Talks - R-Ladies Vancouver
-DESCRIPTION:​**PyLadies Vancouver** and **R-Ladies Vancouver** are teaming up for a night of lightning talks: short talks from speakers in both communities. Come for a fast, friendly mix of Python and R, ideas, tools, and stories, all in bite-sized form.\n\nPlease sign up on Luma so we know to expect you: https://luma.com/3gsm7kqq\n\n## ​📢 We're looking for speakers!\n\n​We're looking for short presentations, **5 to 15 minutes long**, from speakers in either community, PyLadies or R-Ladies.\n​• **Beginners especially encouraged.** A lightning talk is a great first talk, and great practice before a conference.\n​• **Never done public speaking?** We'd love to debut you and help launch your speaking journey.\n​• **Yes, you can reuse a talk you've given elsewhere.** New members may not have heard it.\n​• **Python or R**, plus adjacent technology topics. When we polled our last meetup, people asked for: AI/ML and LLMs, web development, data science,Python internals, testing and tooling, and live coding.\n​• **Not sure your topic is interesting enough?** Let us be the judge, sign up with your idea.\n​New to the format? [Our lightning guide](https://vancouver.pyladies.com/lightning-talks/?utm_source=luma) covers what a lightning talk is, how to prepare, topic ideas, example talks to watch, and common questions.\n​[Sign up](https://sessionize.com/pyladies-vancouver-meetup/?utm_source=luma) to give a lightning talk.\n\n​**Free to attend.** We're run entirely by volunteers, so donations are always appreciated and help keep our meetups free and welcoming: [https://psfmember.org/civicrm/contribute/transact/?reset=1&id=60](https://psfmember.org/civicrm/contribute/transact/?reset=1&id=60&utm_source=luma)\n​\n**Everyone is welcome.** This is a joint event with R-Ladies Vancouver.\n​PyLadies events follow the [PyLadies Code of Conduct](https://www.pyladies.com/CodeOfConduct/?utm_source=luma).\n​If it's your first R-Ladies event, please review the[ R-Ladies Global Code of Conduct](https://www.pyladies.com/CodeOfConduct/?utm_source=luma).\n​Both communities share a focus on supporting women and gender-diverse people in ourfield.
-LOCATION:See Luma page, 11111, Vancouver, CANADA
-URL:https://www.meetup.com/rladies-vancouver/events/315798255/
-ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Vancouver
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
