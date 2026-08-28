@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260827T163349Z
+DTSTAMP:20260828T033914Z
+DTSTART:20260921T220000Z
+DTEND:20260922T000000Z
+SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
+DESCRIPTION:Olá, gurias!\nSei que demoramos, mas estamos de volta!\nBora pra mais um evento?\n\n**Local: PUCRS (Sala 403, prédio 12)**\n**Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900**\n\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\n**Programação:**\n**19:30 Shiny para análise de Anomalias Congênitas com Júlia Cauduro**\nAs anomalias congênitas constituem um importante problema de saúde pública, tornando a vigilância dessas condições fundamental. No Brasil, o Sistema de Informação sobre Nascidos Vivos (SINASC) reúne informações sobre os nascimentos e as anomalias congênitas em todo o território nacional. Entretanto, o grande volume e a complexidade dos dados podem dificultar sua análise por profissionais da saúde sem formação específica em programação. Dessa forma, foram desenvolvidos aplicativos utilizando o pacote Shiny, permitindo a análise interativa dos dados do SINASC, com ênfase nas anomalias congênitas. As ferramentas buscam facilitar a exploração e a interpretação dos dados, contribuindo para a vigilância epidemiológica.\n\n*Quem é Júlia Cauduro: tecnóloga em Banco de Dados pela PUCRS e terminando a graduação em Estatística na UFRGS. Participa de um projeto de iniciação científica com foco em análise de Anomalias Congênitas.*\n\n**20:15 MCA e clusterização no R: explorando perfis de frequentadores de praias no RS**\nA análise de clusterização é uma ferramenta exploratória que permite identificar grupos de indivíduos com características semelhantes. Nesta apresentação, vamos explorar o perfil de frequentadores de duas praias do Rio Grande do Sul — Cassino e Guarita — a partir de dados coletados em temporadas recentes. Para isso, será apresentada a aplicação conjunta da Análise de Correspondência Múltipla (MCA) e da clusterização hierárquica (HCPC), metodologia que permitiu identificar três perfis distintos de usuários das praias. Vamos percorrer as principais etapas da análise, desde a seleção das variáveis até a interpretação dos grupos formados, utilizando os pacotes FactoMineR e factoextra no R.\n\n*Quem é Raíssa Magnan Scorsatto: graduanda em Estatística pela UFRGS e estagiária de Estatística no Núcleo de Apoio ao Pesquisador (NUPESQ) da UFCSPA.*\n\nO que esperamos:\n\n* Rostos amigáveis\n* Networking\n* Troca de conhecimento e experiências durante um cafézinho
+LOCATION:PUCRS, Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900, Porto Alegre, BRAZIL
+URL:https://www.meetup.com/rladies-porto-alegre/events/316300270/
+ORGANIZER;CN=R-Ladies Porto Alegre:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Porto Alegre
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260828T033914Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260827T163349Z
+DTSTAMP:20260828T033914Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa

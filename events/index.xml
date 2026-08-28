@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 27 Aug 2026 16:33:50 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Social plus Brainstorming Future Meetups - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316026203/</link><pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316026203/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 28 Aug 2026 03:39:15 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>11° R-Ladies POA - R-Ladies Porto Alegre</title><link>https://www.meetup.com/rladies-porto-alegre/events/316300270/</link><pubDate>Mon, 21 Sep 2026 22:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-porto-alegre/events/316300270/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Porto Alegre</p>
+        <p><strong>When:</strong> Monday, September 21, 2026 at 10:00 PM UTC</p>
+        <p><strong>Where:</strong> PUCRS</p>
+        <p><strong>Attendees:</strong> 2 going</p>
+        <p>Olá, gurias!
+Sei que demoramos, mas estamos de volta!
+Bora pra mais um evento?
+
+**Local: PUCRS (Sala 403, prédio 12)**
+**Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900**
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+**Programação:**
+**19:30 Shiny para análise de Anomalias Congênitas com Júlia Cauduro**
+As anomalias congênitas constituem um importante problema de saúde pública, tornando a vigilância dessas condições fundamental. No Brasil, o Sistema de Informação sobre Nascidos Vivos (SINASC) reúne informações sobre os nascimentos e as anomalias congênitas em todo o território nacional. Entretanto, o grande volume e a complexidade dos dados podem dificultar sua análise por profissionais da saúde sem formação específica em programação. Dessa forma, foram desenvolvidos aplicativos utilizando o pacote Shiny, permitindo a análise interativa dos dados do SINASC, com ênfase nas anomalias congênitas. As ferramentas buscam facilitar a exploração e a interpretação dos dados, contribuindo para a vigilância epidemiológica.
+
+*Quem é Júlia Cauduro: tecnóloga em Banco de Dados pela PUCRS e terminando a graduação em Estatística na UFRGS. Participa de um projeto de iniciação científica com foco em análise de Anomalias Congênitas.*
+
+**20:15 MCA e clusterização no R: explorando perfis de frequentadores de praias no RS**
+A análise de clusterização é uma ferramenta exploratória que permite identificar grupos de indivíduos com características semelhantes. Nesta apresentação, vamos explorar o perfil de frequentadores de duas praias do Rio Grande do Sul — Cassino e Guarita — a partir de dados coletados em temporadas recentes. Para isso, será apresentada a aplicação conjunta da Análise de Correspondência Múltipla (MCA) e da clusterização hierárquica (HCPC), metodologia que permitiu identificar três perfis distintos de usuários das praias. Vamos percorrer as principais etapas da análise, desde a seleção das variáveis até a interpretação dos grupos formados, utilizando os pacotes FactoMineR e factoextra no R.
+
+*Quem é Raíssa Magnan Scorsatto: graduanda em Estatística pela UFRGS e estagiária de Estatística no Núcleo de Apoio ao Pesquisador (NUPESQ) da UFCSPA.*
+
+O que esperamos:
+
+* Rostos amigáveis
+* Networking
+* Troca de conhecimento e experiências durante um cafézinho</p>
+        <p><a href="https://www.meetup.com/rladies-porto-alegre/events/316300270/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Porto Alegre)</author><category>R-Ladies Porto Alegre</category></item><item><title>Social plus Brainstorming Future Meetups - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316026203/</link><pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316026203/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Tuesday, September 15, 2026 at 12:00 AM UTC</p>
         <p><strong>Where:</strong> Honey latte cafe</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -10,7 +37,7 @@ Tentatively, I&#39;d like to meet at least every 2 months, and maybe find a regu
         <p><a href="https://www.meetup.com/rladies-pdx/events/316026203/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies PDX)</author><category>R-Ladies PDX</category></item><item><title>RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/315491724/</link><pubDate>Sat, 05 Sep 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/315491724/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, September 5, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Capital Verde Hub</p>
-        <p><strong>Attendees:</strong> 10 going</p>
+        <p><strong>Attendees:</strong> 13 going</p>
         <p>Después de seis años de encuentros virtuales, RLadies&#43; Xalapa regresa a lo presencial y queremos celebrarlo contigo.
 
 Te invitamos al *Reencuentro*, una sesión introductoria pensada para conocernos, compartir quiénes somos y hacia dónde vamos como capítulo. Será también el momento perfecto para presentarte la nueva identidad de nuestra comunidad, ya que en marzo de 2026 se consolidó a nivel global el rebranding de R-Ladies a RLadies&#43;, un cambio que hace explícito lo que siempre ha sido nuestra esencia: un espacio inclusivo para personas de géneros subrepresentados en la comunidad de R.
