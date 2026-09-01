@@ -7,11 +7,11 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260901T012802Z
+DTSTAMP:20260901T125737Z
 DTSTART:20260922T073000Z
 DTEND:20260922T090000Z
 SUMMARY:Elevating Your Research Through Software Development - R-Ladies+ Melbourne
-DESCRIPTION:**Elevating Your Research Through Software Development**\n\n**Date:** 22nd September, 2026\n**Time:** 5:30 PM\n**Where:** DiUS, Level 3/31 Queen St, Melbourne\n\nResearch projects often begin with a collection of scripts and files that become increasingly difficult to manage, reproduce, and share. Adopting software development practices and structuring research projects like software packages can help address these challenges while improving the quality, reproducibility, and impact of research.\n\nIn this meetup, we’ll explore how package-based project structures can transform analytical workflows, using real-world examples from COVID-19 vaccination policy analysis and scabies transmission modelling in the Netherlands. The talk will demonstrate how treating research code as software enables more efficient collaboration, easier reuse, and faster translation of analyses into real-world decision-making. We’ll also discuss how emerging AI tools, such as Claude Code, can help researchers build resources that extend the reach of their work beyond its original scope.\n\nCome along if you’re interested in reproducible research, scientific programming, data analysis, or research software engineering, or if you’d like practical guidance on creating more structured, reusable, and collaborative research projects!
+DESCRIPTION:**Elevating Your Research Through Software Development**\n\n**Date:** 22nd September, 2026\n**Time:** 5:30 PM (networking and refreshments from 5:30 PM; talk begins at 6:00 PM)\n**Where:** DiUS, Level 3/31 Queen St, Melbourne\n\nResearch projects often begin with a collection of scripts and files that become increasingly difficult to manage, reproduce, and share. Adopting software development practices and structuring research projects like software packages can help address these challenges while improving the quality, reproducibility, and impact of research.\n\nIn this meetup, we’ll explore how package-based project structures can transform analytical workflows, using real-world examples from COVID-19 vaccination policy analysis and scabies transmission modelling in the Netherlands. The talk will demonstrate how treating research code as software enables more efficient collaboration, easier reuse, and faster translation of analyses into real-world decision-making. We’ll also discuss how emerging AI tools, such as Claude Code, can help researchers build resources that extend the reach of their work beyond its original scope.\n\nCome along if you’re interested in reproducible research, scientific programming, data analysis, or research software engineering, or if you’d like practical guidance on creating more structured, reusable, and collaborative research projects!
 LOCATION:DiUS, Level 3, 31 Queen St, Melbourne, AUSTRALIA
 URL:https://www.meetup.com/rladies-melbourne/events/316322495/
 ORGANIZER;CN=R-Ladies+ Melbourne:mailto:info@rladies.org
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260901T012802Z
+DTSTAMP:20260901T125737Z
 DTSTART:20260921T220000Z
 DTEND:20260922T000000Z
 SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260901T012802Z
+DTSTAMP:20260901T125737Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260901T012802Z
+DTSTAMP:20260901T125737Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
@@ -55,6 +55,19 @@ LOCATION:Capital Verde Hub, C. Gustavo Díaz Ordaz 82, Predio de la Virgen, 9115
 URL:https://www.meetup.com/rladies-xalapa/events/315491724/
 ORGANIZER;CN=R-Ladies Xalapa:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Xalapa
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260901T125737Z
+DTSTART:20260902T220000Z
+DTEND:20260903T000000Z
+SUMMARY:O mercado de trabalho na era da IA: dados, vagas e a realidade. - R-Ladies Goiânia
+DESCRIPTION:🚨 A Inteligência Artificial vai acabar com empregos? Criar novas profissões? Ou será que estamos olhando mais para o hype do que para os dados?\n\nNesta live, vamos conversar sobre **O mercado de trabalho na era da IA: dados, vagas e realidade**.\n\nVamos sair um pouco das previsões futuristas e olhar para o que está acontecendo agora: o que os dados mostram, quais habilidades estão sendo demandadas, como as vagas estão mudando e o que realmente sabemos — e ainda não sabemos — sobre os impactos da IA no mercado de trabalho.\n📊🤖💼\n\nUma conversa para quem tem curiosidade, medo, expectativas ou simplesmente quer entender melhor o que está acontecendo.\n\n**Te espero na live!**
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-goiania/events/316363104/
+ORGANIZER;CN=R-Ladies Goiânia:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Goiânia
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
