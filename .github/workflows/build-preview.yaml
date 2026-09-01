@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 2
 
@@ -67,7 +67,7 @@ jobs:
         run: rm -r data/directory
 
       - name: Site data - DIRECTORY - Get
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         if: ${{ env.on_fork != 'true' }}
         with:
           repository: rladies/directory
@@ -75,7 +75,7 @@ jobs:
           path: tmpd/dir
 
       - name: Site data - DIRECTORY - Download artifact
-        uses: dawidd6/action-download-artifact@v21
+        uses: dawidd6/action-download-artifact@v24
         if: ${{ (env.on_fork != 'true') && env.directory != 'main' }}
         with:
           name: entries
