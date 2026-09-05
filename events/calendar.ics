@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260904T125853Z
+DTSTAMP:20260905T011329Z
 DTSTART:20260922T073000Z
 DTEND:20260922T090000Z
 SUMMARY:Elevating Your Research Through Software Development - R-Ladies+ Melbourne
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260904T125853Z
+DTSTAMP:20260905T011329Z
 DTSTART:20260921T220000Z
 DTEND:20260922T000000Z
 SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
@@ -33,7 +33,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260904T125853Z
+DTSTAMP:20260905T011329Z
+DTSTART:20260917T003000Z
+DTEND:20260917T023000Z
+SUMMARY:R-Ladies Corvallis September Happy Hour - R-Ladies Corvallis
+DESCRIPTION:**Join us for September's R-Ladies Corvallis Meet Up!** [R-Ladies](https://rladies.org/) is a worldwide organization whose mission is to promote gender diversity in the R community.\n\nThis is an informal event, held at Common Fields, for underrepresented minority genders in the R programming space (including but not limited to cis/trans women, trans men, non-binary, genderqueer, agender). We welcome seasoned, new, and aspiring R users.\nOur goals with R-Ladies Corvallis are to hold workshops, happy hours, networking opportunities, and more for our local R community. This meetup is simply an informal hang and chat with no official agenda.\n\nFood and drink are available for purchase. Please note this event will be held outside.\nThis is an open and informal event! Come as you are - any and all R skill level and experience welcome.
+LOCATION:Common Fields, 545 SW 3rd Street, Corvallis, UNITED STATES OF AMERICA
+URL:https://www.meetup.com/rladies-corvallis/events/316420496/
+ORGANIZER;CN=R-Ladies Corvallis:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Corvallis
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260905T011329Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260904T125853Z
+DTSTAMP:20260905T011329Z
 DTSTART:20260905T230000Z
 DTEND:20260906T010000Z
 SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
