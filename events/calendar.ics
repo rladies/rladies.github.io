@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260905T125159Z
+DTSTAMP:20260906T011915Z
 DTSTART:20260922T073000Z
 DTEND:20260922T090000Z
 SUMMARY:Elevating Your Research Through Software Development - R-Ladies+ Melbourne
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260905T125159Z
+DTSTAMP:20260906T011915Z
 DTSTART:20260921T220000Z
 DTEND:20260922T000000Z
 SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260905T125159Z
+DTSTAMP:20260906T011915Z
 DTSTART:20260917T003000Z
 DTEND:20260917T023000Z
 SUMMARY:R-Ladies Corvallis September Happy Hour - R-Ladies Corvallis
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260905T125159Z
+DTSTAMP:20260906T011915Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
@@ -55,19 +55,6 @@ LOCATION:Honey latte cafe, 1033 SE Main St, Portland, OR 97214, United States,, 
 URL:https://www.meetup.com/rladies-pdx/events/316026203/
 ORGANIZER;CN=R-Ladies PDX:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies PDX
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260905T125159Z
-DTSTART:20260905T230000Z
-DTEND:20260906T010000Z
-SUMMARY:RLadies+ Xalapa: Reencuentro - R-Ladies Xalapa
-DESCRIPTION:Después de seis años de encuentros virtuales, RLadies+ Xalapa regresa a lo presencial y queremos celebrarlo contigo.\n\nTe invitamos al *Reencuentro*, una sesión introductoria pensada para conocernos, compartir quiénes somos y hacia dónde vamos como capítulo. Será también el momento perfecto para presentarte la nueva identidad de nuestra comunidad, ya que en marzo de 2026 se consolidó a nivel global el rebranding de R-Ladies a RLadies+, un cambio que hace explícito lo que siempre ha sido nuestra esencia: un espacio inclusivo para personas de géneros subrepresentados en la comunidad de R.\n\nSi ya nos conoces o si es tu primera vez con nosotras, esta es una gran oportunidad para sumarte a esta nueva etapa.\n\nLa sesión tendrá una duración aproximada de dos horas e incluirá una bienvenida, la presentación de nuestro capítulo y sus objetivos, un espacio para conocer a fondo el rebranding a RLadies+ y un breve recorrido por lo que hacemos con R, con ejemplos y proyectos que muestran el poder de esta comunidad.\n\nCerraremos con un momento de convivencia y networking para reconectar en persona, acompañado de coffee break y algunos bocadillos.\n\nY esto es solo el inicio: en nuestra próxima sesión tendremos una introducción a R pensada para quienes quieren dar sus primeros pasos, así que este es el mejor momento para sumarte.\n\nTe esperamos el sábado 5 de septiembre de 2026 a las 17:00 horas (GMT-6). Reserva tu lugar y forma parte de este reencuentro. 💜\n\n**Código de conducta**\nRecuerda leer y atender nuestro código de conducta disponible [aquí](https://rladies.org/about-us/coc/).
-LOCATION:Capital Verde Hub, C. Gustavo Díaz Ordaz 82, Predio de la Virgen, 91150 Xalapa-Enríquez, Ver., Xalapa, MEXICO
-URL:https://www.meetup.com/rladies-xalapa/events/315491724/
-ORGANIZER;CN=R-Ladies Xalapa:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Xalapa
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
