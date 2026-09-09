@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T011622Z
+DTSTAMP:20260909T125907Z
 DTSTART:20260922T073000Z
 DTEND:20260922T090000Z
 SUMMARY:Elevating Your Research Through Software Development - R-Ladies+ Melbourne
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T011622Z
+DTSTAMP:20260909T125907Z
 DTSTART:20260921T220000Z
 DTEND:20260922T000000Z
 SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T011622Z
+DTSTAMP:20260909T125907Z
 DTSTART:20260917T003000Z
 DTEND:20260917T023000Z
 SUMMARY:R-Ladies Corvallis September Happy Hour - R-Ladies Corvallis
@@ -46,7 +46,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T011622Z
+DTSTAMP:20260909T125907Z
+DTSTART:20260915T160000Z
+DTEND:20260916T221500Z
+SUMMARY:Posit Conf 2026 Watch Party - R-Ladies Vancouver
+DESCRIPTION:Can't make it to the Posit Conference in Houston Texas? Come join us for a Posit Conf 2026 watch party! This is the premier event for the open-source data science community, focusing on the human ingenuity behind today's most powerful technical tools. This will feature talks in R, Python, and AI.\n\nMore information of the sessions are available here:\nhttps://conf.posit.co/2026/sessions/\nSchedule (Times are in CT which is 2 hours ahead)\nhttps://irp.cdn-website.com/d4d6e48c/files/uploaded/PST-Conf26-AgendaAtAGlance-preConf-v5.pdf\n\nWe will have Rladies Stickers and other Rstickers for participants!\n\nThe stream will be running from 7am - 3:15pm Pacific but we will be watching together from 9-3 on Tuesday and Wednesday so feel free to drop in at any time. Add when you will be there or see when other people are around here: https://www.when2meet.com/?38365288-3SZic.\n\n\*\*\*\n\n1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)\n2. Who is this allowed to attend the event?\n\nEveryone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.\n3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
+LOCATION:UBC, 6359 Agronomy Road, UBC, Vancouver, CANADA
+URL:https://www.meetup.com/rladies-vancouver/events/316349468/
+ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Vancouver
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260909T125907Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX
