@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T125907Z
+DTSTAMP:20260910T011543Z
+DTSTART:20260928T160000Z
+DTEND:20260928T180000Z
+SUMMARY:Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome
+DESCRIPTION:How can machine learning help us work with epidemiological data? And how do we know whether a predictive model is actually useful?\n\nJoin R-Ladies Rome for a practical, two-hour introduction to **machine learning in epidemiology using R**.\n\nIn this workshop, **[Federica Gazzelloni](https://www.linkedin.com/in/federicagazzelloni/)** will introduce the main ideas behind supervised machine learning through an applied epidemiological example. Rather than focusing on a long list of algorithms, we will follow the complete machine-learning workflow: from defining an epidemiological question to training, evaluating and interpreting predictive models.\n\nWe will explore how different models approach the same prediction problem, starting with **logistic regression as a baseline** and moving to **decision trees and random forests**.\n\nUsing R, we will look at how to define a classification task, train models, generate predictions and evaluate their performance on unseen data.\nParticular attention will be given to **model evaluation and interpretation**.\n\nThroughout the workshop, we will also consider an important distinction for epidemiological research:\n**Prediction is not the same as inference, and predictive importance does not imply causation.**\n\nThe workshop is inspired by the recent *Machine Learning in Epidemiology* study by Wright et al. (2026) and connects with Federica's book, *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R* (CRC Press, 2025), where she introduces machine-learning applications in health and infectious-disease research using the `mlr` framework.\nDuring the workshop, we will use the modern `mlr3` ecosystem and discuss how machine-learning workflows in R have evolved from `mlr` to `mlr3`.\n\n**What we will cover**\n\n* What machine learning means in an epidemiological context\n* From an epidemiological question to a prediction task\n* Preparing data for machine learning\n* Logistic regression as a baseline model\n* Decision trees and random forests\n* Training and evaluating models with `mlr3`\n* Cross-validation and performance on unseen data\n* Sensitivity, specificity, confusion matrices and ROC/AUC\n* Variable importance and model interpretation\n* Prediction versus explanation and causation\n* Limitations, bias and data quality in epidemiological machine learning\n\n**Who is this workshop for?**\n\nThe workshop is designed for **R users interested in epidemiology, public health, health data or machine learning**. Basic familiarity with R and data analysis is useful, but **no previous machine-learning experience is required**.\nThe session will combine explanation, live R coding and discussion, with an emphasis on practical and reproducible analysis.\n\n**About the instructor**\n**Federica Gazzelloni** is an actuary, statistician, data scientist, author and instructor, and the founder and organiser of R-Ladies Rome. Her work spans health metrics, statistical modelling, machine learning, reproducible research and R.\nShe is the author of *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R*, published by CRC Press in 2025.\n\n**R-Ladies**\nR-Ladies is a worldwide organisation promoting gender diversity in the R community. R-Ladies Rome provides a welcoming space to learn, share knowledge and connect with people interested in R, data science, statistics and reproducible research.\nEveryone is welcome to attend, regardless of gender identity or level of experience.
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-rome/events/316486711/
+ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Rome
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260910T011543Z
 DTSTART:20260922T073000Z
 DTEND:20260922T090000Z
 SUMMARY:Elevating Your Research Through Software Development - R-Ladies+ Melbourne
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T125907Z
+DTSTAMP:20260910T011543Z
 DTSTART:20260921T220000Z
 DTEND:20260922T000000Z
 SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T125907Z
+DTSTAMP:20260910T011543Z
 DTSTART:20260917T003000Z
 DTEND:20260917T023000Z
 SUMMARY:R-Ladies Corvallis September Happy Hour - R-Ladies Corvallis
@@ -46,11 +59,11 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T125907Z
-DTSTART:20260915T160000Z
+DTSTAMP:20260910T011543Z
+DTSTART:20260915T140000Z
 DTEND:20260916T221500Z
 SUMMARY:Posit Conf 2026 Watch Party - R-Ladies Vancouver
-DESCRIPTION:Can't make it to the Posit Conference in Houston Texas? Come join us for a Posit Conf 2026 watch party! This is the premier event for the open-source data science community, focusing on the human ingenuity behind today's most powerful technical tools. This will feature talks in R, Python, and AI.\n\nMore information of the sessions are available here:\nhttps://conf.posit.co/2026/sessions/\nSchedule (Times are in CT which is 2 hours ahead)\nhttps://irp.cdn-website.com/d4d6e48c/files/uploaded/PST-Conf26-AgendaAtAGlance-preConf-v5.pdf\n\nWe will have Rladies Stickers and other Rstickers for participants!\n\nThe stream will be running from 7am - 3:15pm Pacific but we will be watching together from 9-3 on Tuesday and Wednesday so feel free to drop in at any time. Add when you will be there or see when other people are around here: https://www.when2meet.com/?38365288-3SZic.\n\n\*\*\*\n\n1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)\n2. Who is this allowed to attend the event?\n\nEveryone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.\n3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
+DESCRIPTION:Can't make it to the Posit Conference in Houston Texas? Come join us for a Posit Conf 2026 watch party! This is the premier event for the open-source data science community, focusing on the human ingenuity behind today's most powerful technical tools. This will feature talks in R, Python, and AI.\n\nMore information of the sessions are available here:\nhttps://conf.posit.co/2026/sessions/\nSchedule (Times are in CT which is 2 hours ahead)\nhttps://irp.cdn-website.com/d4d6e48c/files/uploaded/PST-Conf26-AgendaAtAGlance-preConf-v5.pdf\n\nWe will have Rladies Stickers and other Rstickers for participants!\n\nThe stream will be running from 7am - 3:15pm Pacific but we will be watching together from 9-3 on Tuesday and Wednesday so feel free to drop in at any time. Add when you will be there or see when other people are around here: [https://www.when2meet.com/?38365288-3SZic](https://www.when2meet.com/?38365288-3SZic)\n\n\*\*\*\n\n1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)\n2. Who is this allowed to attend the event?\n\nEveryone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.\n3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
 LOCATION:UBC, 6359 Agronomy Road, UBC, Vancouver, CANADA
 URL:https://www.meetup.com/rladies-vancouver/events/316349468/
 ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260909T125907Z
+DTSTAMP:20260910T011543Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX

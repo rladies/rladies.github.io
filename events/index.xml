@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 09 Sep 2026 12:59:08 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Elevating Your Research Through Software Development - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/316322495/</link><pubDate>Tue, 22 Sep 2026 07:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/316322495/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 10 Sep 2026 01:15:44 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316486711/</link><pubDate>Mon, 28 Sep 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316486711/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><strong>When:</strong> Monday, September 28, 2026 at 4:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 20 going</p>
+        <p>How can machine learning help us work with epidemiological data? And how do we know whether a predictive model is actually useful?
+
+Join R-Ladies Rome for a practical, two-hour introduction to **machine learning in epidemiology using R**.
+
+In this workshop, **[Federica Gazzelloni](https://www.linkedin.com/in/federicagazzelloni/)** will introduce the main ideas behind supervised machine learning through an applied epidemiological example. Rather than focusing on a long list of algorithms, we will follow the complete machine-learning workflow: from defining an epidemiological question to training, evaluating and interpreting predictive models.
+
+We will explore how different models approach the same prediction problem, starting with **logistic regression as a baseline** and moving to **decision trees and random forests**.
+
+Using R, we will look at how to define a classification task, train models, generate predictions and evaluate their performance on unseen data.
+Particular attention will be given to **model evaluation and interpretation**.
+
+Throughout the workshop, we will also consider an important distinction for epidemiological research:
+**Prediction is not the same as inference, and predictive importance does not imply causation.**
+
+The workshop is inspired by the recent *Machine Learning in Epidemiology* study by Wright et al. (2026) and connects with Federica&#39;s book, *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R* (CRC Press, 2025), where she introduces machine-learning applications in health and infectious-disease research using the `mlr` framework.
+During the workshop, we will use the modern `mlr3` ecosystem and discuss how machine-learning workflows in R have evolved from `mlr` to `mlr3`.
+
+**What we will cover**
+
+* What machine learning means in an epidemiological context
+* From an epidemiological question to a prediction task
+* Preparing data for machine learning
+* Logistic regression as a baseline model
+* Decision trees and random forests
+* Training and evaluating models with `mlr3`
+* Cross-validation and performance on unseen data
+* Sensitivity, specificity, confusion matrices and ROC/AUC
+* Variable importance and model interpretation
+* Prediction versus explanation and causation
+* Limitations, bias and data quality in epidemiological machine learning
+
+**Who is this workshop for?**
+
+The workshop is designed for **R users interested in epidemiology, public health, health data or machine learning**. Basic familiarity with R and data analysis is useful, but **no previous machine-learning experience is required**.
+The session will combine explanation, live R coding and discussion, with an emphasis on practical and reproducible analysis.
+
+**About the instructor**
+**Federica Gazzelloni** is an actuary, statistician, data scientist, author and instructor, and the founder and organiser of R-Ladies Rome. Her work spans health metrics, statistical modelling, machine learning, reproducible research and R.
+She is the author of *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R*, published by CRC Press in 2025.
+
+**R-Ladies**
+R-Ladies is a worldwide organisation promoting gender diversity in the R community. R-Ladies Rome provides a welcoming space to learn, share knowledge and connect with people interested in R, data science, statistics and reproducible research.
+Everyone is welcome to attend, regardless of gender identity or level of experience.</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/316486711/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Elevating Your Research Through Software Development - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/316322495/</link><pubDate>Tue, 22 Sep 2026 07:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/316322495/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Tuesday, September 22, 2026 at 7:30 AM UTC</p>
         <p><strong>Where:</strong> DiUS</p>
         <p><strong>Attendees:</strong> 13 going</p>
@@ -51,8 +98,8 @@ Our goals with R-Ladies Corvallis are to hold workshops, happy hours, networking
 
 Food and drink are available for purchase. Please note this event will be held outside.
 This is an open and informal event! Come as you are - any and all R skill level and experience welcome.</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/316420496/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Posit Conf 2026 Watch Party - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/316349468/</link><pubDate>Tue, 15 Sep 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/316349468/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
-        <p><strong>When:</strong> Tuesday, September 15, 2026 at 4:00 PM UTC</p>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/316420496/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Posit Conf 2026 Watch Party - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/316349468/</link><pubDate>Tue, 15 Sep 2026 14:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/316349468/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
+        <p><strong>When:</strong> Tuesday, September 15, 2026 at 2:00 PM UTC</p>
         <p><strong>Where:</strong> UBC</p>
         <p><strong>Attendees:</strong> 3 going</p>
         <p>Can&#39;t make it to the Posit Conference in Houston Texas? Come join us for a Posit Conf 2026 watch party! This is the premier event for the open-source data science community, focusing on the human ingenuity behind today&#39;s most powerful technical tools. This will feature talks in R, Python, and AI.
@@ -64,7 +111,7 @@ https://irp.cdn-website.com/d4d6e48c/files/uploaded/PST-Conf26-AgendaAtAGlance-p
 
 We will have Rladies Stickers and other Rstickers for participants!
 
-The stream will be running from 7am - 3:15pm Pacific but we will be watching together from 9-3 on Tuesday and Wednesday so feel free to drop in at any time. Add when you will be there or see when other people are around here: https://www.when2meet.com/?38365288-3SZic.
+The stream will be running from 7am - 3:15pm Pacific but we will be watching together from 9-3 on Tuesday and Wednesday so feel free to drop in at any time. Add when you will be there or see when other people are around here: [https://www.when2meet.com/?38365288-3SZic](https://www.when2meet.com/?38365288-3SZic)
 
 \*\*\*
 
