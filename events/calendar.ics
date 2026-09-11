@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260911T011254Z
+DTSTAMP:20260911T125832Z
+DTSTART:20261013T150000Z
+DTEND:20261013T163000Z
+SUMMARY:R Peer Teaching - R-Ladies Trondheim
+DESCRIPTION:Join us for a relaxed evening of learning and good company—we're hosting a peer teaching evening.\n\nIn the first half you have time to explore a package of your choosing (e.g., looking at the vignette, what are the beginning functions to know). Then in the last half\nwe'll take a round to share what we learned. You can find some inspiration for R packages here: https://medium.com/@ZhouAnnaWrites/20-useful-r-packages-you-may-not-know-about-54d57fe604f3\n\nWhether you're a beginner looking for a nudge in the right direction or a seasoned R-user happy to share what you know, you're welcome here!\n\nThe event will take place in the room ØHM11. The outer door is locked, but we will wait outside to let you in, or call me on 92076982\nMazemap: https://link.mazemap.com/E1NxhvoO\nGoogle maps: https://maps.app.goo.gl/MbuZZPL8m2simBwd9\n\nThe room may be a bit confusing to find, because it is NOT in the main building of Øya helsehus, it is in a smaller building right east of it.
+LOCATION:ØHM11, Øya helsehus østfløy, Håkon Jarls gate 11, Trondheim, NORWAY
+URL:https://www.meetup.com/rladies-trondheim/events/316511218/
+ORGANIZER;CN=R-Ladies Trondheim:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Trondheim
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260911T125832Z
 DTSTART:20260928T160000Z
 DTEND:20260928T180000Z
 SUMMARY:Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260911T011254Z
+DTSTAMP:20260911T125832Z
 DTSTART:20260922T073000Z
 DTEND:20260922T090000Z
 SUMMARY:Elevating Your Research Through Software Development - R-Ladies+ Melbourne
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260911T011254Z
+DTSTAMP:20260911T125832Z
 DTSTART:20260921T220000Z
 DTEND:20260922T000000Z
 SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260911T011254Z
+DTSTAMP:20260911T125832Z
 DTSTART:20260917T003000Z
 DTEND:20260917T023000Z
 SUMMARY:R-Ladies Corvallis September Happy Hour - R-Ladies Corvallis
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260911T011254Z
+DTSTAMP:20260911T125832Z
 DTSTART:20260915T140000Z
 DTEND:20260916T221500Z
 SUMMARY:Posit Conf 2026 Watch Party - R-Ladies Vancouver
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260911T011254Z
+DTSTAMP:20260911T125832Z
 DTSTART:20260915T000000Z
 DTEND:20260915T020000Z
 SUMMARY:Social plus Brainstorming Future Meetups - R-Ladies PDX

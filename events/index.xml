@@ -1,7 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 11 Sep 2026 01:12:54 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316486711/</link><pubDate>Mon, 28 Sep 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316486711/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 11 Sep 2026 12:58:33 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>R Peer Teaching - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/316511218/</link><pubDate>Tue, 13 Oct 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/316511218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
+        <p><strong>When:</strong> Tuesday, October 13, 2026 at 3:00 PM UTC</p>
+        <p><strong>Where:</strong> ØHM11, Øya helsehus østfløy</p>
+        <p><strong>Attendees:</strong> 2 going</p>
+        <p>Join us for a relaxed evening of learning and good company—we&#39;re hosting a peer teaching evening.
+
+In the first half you have time to explore a package of your choosing (e.g., looking at the vignette, what are the beginning functions to know). Then in the last half
+we&#39;ll take a round to share what we learned. You can find some inspiration for R packages here: https://medium.com/@ZhouAnnaWrites/20-useful-r-packages-you-may-not-know-about-54d57fe604f3
+
+Whether you&#39;re a beginner looking for a nudge in the right direction or a seasoned R-user happy to share what you know, you&#39;re welcome here!
+
+The event will take place in the room ØHM11. The outer door is locked, but we will wait outside to let you in, or call me on 92076982
+Mazemap: https://link.mazemap.com/E1NxhvoO
+Google maps: https://maps.app.goo.gl/MbuZZPL8m2simBwd9
+
+The room may be a bit confusing to find, because it is NOT in the main building of Øya helsehus, it is in a smaller building right east of it.</p>
+        <p><a href="https://www.meetup.com/rladies-trondheim/events/316511218/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316486711/</link><pubDate>Mon, 28 Sep 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316486711/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Monday, September 28, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 28 going</p>
+        <p><strong>Attendees:</strong> 29 going</p>
         <p>How can machine learning help us work with epidemiological data? And how do we know whether a predictive model is actually useful?
 
 Join R-Ladies Rome for a practical, two-hour introduction to **machine learning in epidemiology using R**.
