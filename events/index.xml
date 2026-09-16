@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 15 Sep 2026 12:59:27 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Everyone Makes a Map - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316562685/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316562685/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 16 Sep 2026 01:17:55 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Everyone Makes a Map - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316562685/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316562685/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Thursday, October 15, 2026 at 12:00 AM UTC</p>
         <p><strong>Where:</strong> Lucky Labrador Public House</p>
-        <p><strong>Attendees:</strong> 3 going</p>
+        <p><strong>Attendees:</strong> 5 going</p>
         <p>Brittany is going to lead a group session on how to create a map! Bring your laptops, and be ready to join in. No prior mapping experience is necessary.
 Watch the comments on this event, we&#39;ll provide some data ahead of time to get you started!</p>
         <p><a href="https://www.meetup.com/rladies-pdx/events/316562685/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies PDX)</author><category>R-Ladies PDX</category></item><item><title>R Peer Teaching - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/316511218/</link><pubDate>Tue, 13 Oct 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/316511218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
@@ -23,7 +23,7 @@ The room may be a bit confusing to find, because it is NOT in the main building 
         <p><a href="https://www.meetup.com/rladies-trondheim/events/316511218/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Trondheim)</author><category>R-Ladies Trondheim</category></item><item><title>Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316486711/</link><pubDate>Mon, 28 Sep 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316486711/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Monday, September 28, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 34 going</p>
+        <p><strong>Attendees:</strong> 35 going</p>
         <p>How can machine learning help us work with epidemiological data? And how do we know whether a predictive model is actually useful?
 
 Join R-Ladies Rome for a practical, two-hour introduction to **machine learning in epidemiology using R**.
@@ -70,7 +70,7 @@ Everyone is welcome to attend, regardless of gender identity or level of experie
         <p><a href="https://www.meetup.com/rladies-rome/events/316486711/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>18º Meet Up: Trabalhando com dados geoespaciais no R - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/316562284/</link><pubDate>Thu, 24 Sep 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/316562284/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Thursday, September 24, 2026 at 8:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 14 going</p>
+        <p><strong>Attendees:</strong> 25 going</p>
         <p>Neste minicurso prático, vamos conhecer os principais tipos de dados geoespaciais e aprender a trabalhar com dados vetoriais e raster no R. Serão abordados sistemas de referência de coordenadas, importação e visualização de dados espaciais e elaboração de mapas temáticos, a partir de um fluxo de trabalho organizado e reprodutível.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/316562284/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Elevating Your Research Through Software Development - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/316322495/</link><pubDate>Tue, 22 Sep 2026 07:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/316322495/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Tuesday, September 22, 2026 at 7:30 AM UTC</p>
@@ -125,26 +125,4 @@ Our goals with R-Ladies Corvallis are to hold workshops, happy hours, networking
 
 Food and drink are available for purchase. Please note this event will be held outside.
 This is an open and informal event! Come as you are - any and all R skill level and experience welcome.</p>
-        <p><a href="https://www.meetup.com/rladies-corvallis/events/316420496/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item><item><title>Posit Conf 2026 Watch Party - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/316349468/</link><pubDate>Tue, 15 Sep 2026 14:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/316349468/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
-        <p><strong>When:</strong> Tuesday, September 15, 2026 at 2:00 PM UTC</p>
-        <p><strong>Where:</strong> UBC</p>
-        <p><strong>Attendees:</strong> 3 going</p>
-        <p>Can&#39;t make it to the Posit Conference in Houston Texas? Come join us for a Posit Conf 2026 watch party! This is the premier event for the open-source data science community, focusing on the human ingenuity behind today&#39;s most powerful technical tools. This will feature talks in R, Python, and AI.
-
-More information of the sessions are available here:
-https://conf.posit.co/2026/sessions/
-Schedule (Times are in CT which is 2 hours ahead)
-https://irp.cdn-website.com/d4d6e48c/files/uploaded/PST-Conf26-AgendaAtAGlance-preConf-v5.pdf
-
-We will have Rladies Stickers and other Rstickers for participants!
-
-The stream will be running from 7am - 3:15pm Pacific but we will be watching together from 9-3 on Tuesday and Wednesday so feel free to drop in at any time. Add when you will be there or see when other people are around here: [https://www.when2meet.com/?38365288-3SZic](https://www.when2meet.com/?38365288-3SZic)
-
-\*\*\*
-
-1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)
-2. Who is this allowed to attend the event?
-
-Everyone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.
-3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/316349468/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-corvallis/events/316420496/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Corvallis)</author><category>R-Ladies Corvallis</category></item></channel></rss>
