@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260918T125855Z
+DTSTAMP:20260919T011512Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260918T125855Z
+DTSTAMP:20260919T011512Z
 DTSTART:20261013T150000Z
 DTEND:20261013T163000Z
 SUMMARY:R Peer Teaching - R-Ladies Trondheim
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260918T125855Z
+DTSTAMP:20260919T011512Z
 DTSTART:20260928T160000Z
 DTEND:20260928T180000Z
 SUMMARY:Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome
@@ -46,7 +46,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260918T125855Z
+DTSTAMP:20260919T011512Z
+DTSTART:20260925T210000Z
+DTEND:20260925T230000Z
+SUMMARY:Do Chat ao Agente: Aprenda Fazendo com linguagem R - R-Ladies Goiânia
+DESCRIPTION:Do Chat ao Agente: Aprenda Fazendo\n\nVocê já usa Claude ou ChatGPT no dia a dia. Nesse workshop, você vai além da conversa e aprende a criar um agente de IA que executa ações, consultando dados do seu negócio em vez de só responder.\nVamos usar R e RStudio, com um projeto guiado ensinando cada passo. Mesmo sem nunca ter programado, você edita o comportamento do seu agente, testa em tempo real, e ainda compara rodar esse agente na nuvem e direto no seu computador com um modelo local.\n\nPor que construir o seu próprio agente, e não só usar um chat pronto?\nUm agente seu conhece a sua tabela de preços, o seu jeito de atender, a sua regra de negócio. Ele não esquece o contexto a cada conversa nova, e pode virar parte do seu processo, não só uma aba que você abre.\n\nPor que rodar um modelo local?\nNenhum dado sai da sua máquina, sem depender de internet, sem limite de uso e sem custo por chamada. Pra quem trabalha com informações sensíveis e está começando com IA, é uma ótima opção.\nSai com um agente próprio, ajustado por você, e entende como usar isso pra ganhar produtividade e escalar o que hoje você faz manualmente.\nFormato: prático, guiado, com R, RStudio e Ollama. Usamos modelos gratuitos na nuvem (Groq, Gemini) e local para a demonstração, mas o mesmo projeto funciona com outras APIs (Claude, OpenAI, entre outras).
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-goiania/events/316614349/
+ORGANIZER;CN=R-Ladies Goiânia:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Goiânia
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260919T011512Z
 DTSTART:20260924T200000Z
 DTEND:20260924T230000Z
 SUMMARY:18º Meet Up: Trabalhando com dados geoespaciais no R - R-Ladies Niterói
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260918T125855Z
+DTSTAMP:20260919T011512Z
 DTSTART:20260922T073000Z
 DTEND:20260922T090000Z
 SUMMARY:Elevating Your Research Through Software Development - R-Ladies+ Melbourne
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260918T125855Z
+DTSTAMP:20260919T011512Z
 DTSTART:20260921T220000Z
 DTEND:20260922T000000Z
 SUMMARY:11° R-Ladies POA - R-Ladies Porto Alegre
