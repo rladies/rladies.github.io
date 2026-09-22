@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 21 Sep 2026 12:58:17 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Everyone Makes a Map - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316562685/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316562685/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 22 Sep 2026 01:17:20 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Everyone Makes a Map - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316562685/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316562685/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Thursday, October 15, 2026 at 12:00 AM UTC</p>
         <p><strong>Where:</strong> Lucky Labrador Public House</p>
-        <p><strong>Attendees:</strong> 8 going</p>
+        <p><strong>Attendees:</strong> 9 going</p>
         <p>Brittany is going to lead a group session on how to create a map! Bring your laptops, and be ready to join in. No prior mapping experience is necessary.
 Watch the comments on this event, we&#39;ll provide some data ahead of time to get you started!</p>
         <p><a href="https://www.meetup.com/rladies-pdx/events/316562685/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies PDX)</author><category>R-Ladies PDX</category></item><item><title>R Peer Teaching - R-Ladies Trondheim</title><link>https://www.meetup.com/rladies-trondheim/events/316511218/</link><pubDate>Tue, 13 Oct 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-trondheim/events/316511218/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Trondheim</p>
@@ -86,12 +86,12 @@ Formato: prático, guiado, com R, RStudio e Ollama. Usamos modelos gratuitos na 
         <p><a href="https://www.meetup.com/rladies-goiania/events/316614349/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Goiânia)</author><category>R-Ladies Goiânia</category></item><item><title>18º Meet Up: Trabalhando com dados geoespaciais no R - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/316562284/</link><pubDate>Thu, 24 Sep 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/316562284/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Thursday, September 24, 2026 at 8:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 63 going</p>
+        <p><strong>Attendees:</strong> 75 going</p>
         <p>Neste minicurso prático, vamos conhecer os principais tipos de dados geoespaciais e aprender a trabalhar com dados vetoriais e raster no R. Serão abordados sistemas de referência de coordenadas, importação e visualização de dados espaciais e elaboração de mapas temáticos, a partir de um fluxo de trabalho organizado e reprodutível.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/316562284/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Elevating Your Research Through Software Development - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/316322495/</link><pubDate>Tue, 22 Sep 2026 07:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/316322495/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Tuesday, September 22, 2026 at 7:30 AM UTC</p>
         <p><strong>Where:</strong> DiUS</p>
-        <p><strong>Attendees:</strong> 16 going</p>
+        <p><strong>Attendees:</strong> 15 going</p>
         <p>**Elevating Your Research Through Software Development**
 
 **Date:** 22nd September, 2026
@@ -103,31 +103,4 @@ Research projects often begin with a collection of scripts and files that become
 In this meetup, we’ll explore how package-based project structures can transform analytical workflows, using real-world examples from COVID-19 vaccination policy analysis and scabies transmission modelling in the Netherlands. The talk will demonstrate how treating research code as software enables more efficient collaboration, easier reuse, and faster translation of analyses into real-world decision-making. We’ll also discuss how emerging AI tools, such as Claude Code, can help researchers build resources that extend the reach of their work beyond its original scope.
 
 Come along if you’re interested in reproducible research, scientific programming, data analysis, or research software engineering, or if you’d like practical guidance on creating more structured, reusable, and collaborative research projects!</p>
-        <p><a href="https://www.meetup.com/rladies-melbourne/events/316322495/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>11° R-Ladies POA - R-Ladies Porto Alegre</title><link>https://www.meetup.com/rladies-porto-alegre/events/316300270/</link><pubDate>Mon, 21 Sep 2026 22:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-porto-alegre/events/316300270/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Porto Alegre</p>
-        <p><strong>When:</strong> Monday, September 21, 2026 at 10:00 PM UTC</p>
-        <p><strong>Where:</strong> PUCRS</p>
-        <p><strong>Attendees:</strong> 5 going</p>
-        <p>Olá, gurias!
-Sei que demoramos, mas estamos de volta!
-Bora pra mais um evento?
-
-**Local: PUCRS (Sala 403, prédio 12)**
-**Av. Ipiranga, 6681 - Partenon, Porto Alegre - RS, 90619-900**
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
-**Programação:**
-**19:30 Shiny para análise de Anomalias Congênitas com Júlia Cauduro**
-As anomalias congênitas constituem um importante problema de saúde pública, tornando a vigilância dessas condições fundamental. No Brasil, o Sistema de Informação sobre Nascidos Vivos (SINASC) reúne informações sobre os nascimentos e as anomalias congênitas em todo o território nacional. Entretanto, o grande volume e a complexidade dos dados podem dificultar sua análise por profissionais da saúde sem formação específica em programação. Dessa forma, foram desenvolvidos aplicativos utilizando o pacote Shiny, permitindo a análise interativa dos dados do SINASC, com ênfase nas anomalias congênitas. As ferramentas buscam facilitar a exploração e a interpretação dos dados, contribuindo para a vigilância epidemiológica.
-
-*Quem é Júlia Cauduro: tecnóloga em Banco de Dados pela PUCRS e terminando a graduação em Estatística na UFRGS. Participa de um projeto de iniciação científica com foco em análise de Anomalias Congênitas.*
-
-**20:15 MCA e clusterização no R: explorando perfis de frequentadores de praias no RS**
-A análise de clusterização é uma ferramenta exploratória que permite identificar grupos de indivíduos com características semelhantes. Nesta apresentação, vamos explorar o perfil de frequentadores de duas praias do Rio Grande do Sul — Cassino e Guarita — a partir de dados coletados em temporadas recentes. Para isso, será apresentada a aplicação conjunta da Análise de Correspondência Múltipla (MCA) e da clusterização hierárquica (HCPC), metodologia que permitiu identificar três perfis distintos de usuários das praias. Vamos percorrer as principais etapas da análise, desde a seleção das variáveis até a interpretação dos grupos formados, utilizando os pacotes FactoMineR e factoextra no R.
-
-*Quem é Raíssa Magnan Scorsatto: graduanda em Estatística pela UFRGS e estagiária de Estatística no Núcleo de Apoio ao Pesquisador (NUPESQ) da UFCSPA.*
-
-O que esperamos:
-
-* Rostos amigáveis
-* Networking
-* Troca de conhecimento e experiências durante um cafézinho</p>
-        <p><a href="https://www.meetup.com/rladies-porto-alegre/events/316300270/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Porto Alegre)</author><category>R-Ladies Porto Alegre</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-melbourne/events/316322495/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item></channel></rss>
