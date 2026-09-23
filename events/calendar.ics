@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260922T125807Z
+DTSTAMP:20260923T011645Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260922T125807Z
+DTSTAMP:20260923T011645Z
 DTSTART:20261013T150000Z
 DTEND:20261013T163000Z
 SUMMARY:R Peer Teaching - R-Ladies Trondheim
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260922T125807Z
+DTSTAMP:20260923T011645Z
 DTSTART:20260928T160000Z
 DTEND:20260928T180000Z
 SUMMARY:Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260922T125807Z
+DTSTAMP:20260923T011645Z
 DTSTART:20260925T210000Z
 DTEND:20260925T230000Z
 SUMMARY:Do Chat ao Agente: Aprenda Fazendo com linguagem R - R-Ladies Goiânia
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260922T125807Z
+DTSTAMP:20260923T011645Z
 DTSTART:20260924T200000Z
 DTEND:20260924T230000Z
 SUMMARY:18º Meet Up: Trabalhando com dados geoespaciais no R - R-Ladies Niterói
@@ -68,6 +68,19 @@ LOCATION:Online event
 URL:https://www.meetup.com/rladies-niteroi/events/316562284/
 ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Niterói
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260923T011645Z
+DTSTART:20260924T000000Z
+DTEND:20260924T020000Z
+SUMMARY:R-Madrinas Morelia - R-Ladies Morelia
+DESCRIPTION:✨ ¡Revivimos R-Madrinas Morelia! ✨\n\nUn espacio de reencuentro para las madrinas para identificar donde estamos en la vida proporcional y que podemos ofrecer de ayuda con análisis de datos en R. 📊💜\n🚀 Si eres estudiante de posgrado, tesista o posdoc y buscas mentoría, ¡también estamos aquí para ti! Tus necesidades pueden orientar nuestro trabajo.\n\nEvento híbrido sesión presencial bibioteca del CCM.
+LOCATION:Centro de Ciencias Matemáticas UNAM (CCM), Antigua Carretera a Pátzcuaro # 8701, Sin Nombre, Residencial San José de la Huerta, 58089 Morelia, Mich., Mexico, Morelia, MEXICO
+URL:https://www.meetup.com/rladies-morelia/events/316667941/
+ORGANIZER;CN=R-Ladies Morelia:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Morelia
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
