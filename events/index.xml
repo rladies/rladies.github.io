@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 23 Sep 2026 13:01:05 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>De mi script a mi propio paquete - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/316671506/</link><pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/316671506/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 24 Sep 2026 01:17:42 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>De mi script a mi propio paquete - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/316671506/</link><pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/316671506/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, October 31, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Leonardo Pasquel 22</p>
-        <p><strong>Attendees:</strong> 4 going</p>
+        <p><strong>Attendees:</strong> 6 going</p>
         <p>**De mi script a mi propio paquete: diseñando herramientas reproducibles en R** 📦✨
 
 ¿Alguna vez escribiste un script para resolver un problema muy específico y después pensaste que podría servirle a alguien más? En esta sesión de RLadies&#43; Xalapa exploraremos cómo ese código que nació para salir del paso puede convertirse en una herramienta reutilizable, documentada y reproducible.
@@ -114,16 +114,6 @@ Formato: prático, guiado, com R, RStudio e Ollama. Usamos modelos gratuitos na 
         <p><a href="https://www.meetup.com/rladies-goiania/events/316614349/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Goiânia)</author><category>R-Ladies Goiânia</category></item><item><title>18º Meet Up: Trabalhando com dados geoespaciais no R - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/316562284/</link><pubDate>Thu, 24 Sep 2026 20:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/316562284/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Thursday, September 24, 2026 at 8:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 80 going</p>
+        <p><strong>Attendees:</strong> 88 going</p>
         <p>Neste minicurso prático, vamos conhecer os principais tipos de dados geoespaciais e aprender a trabalhar com dados vetoriais e raster no R. Serão abordados sistemas de referência de coordenadas, importação e visualização de dados espaciais e elaboração de mapas temáticos, a partir de um fluxo de trabalho organizado e reprodutível.</p>
-        <p><a href="https://www.meetup.com/rladies-niteroi/events/316562284/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>R-Madrinas Morelia - R-Ladies Morelia</title><link>https://www.meetup.com/rladies-morelia/events/316667941/</link><pubDate>Thu, 24 Sep 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-morelia/events/316667941/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Morelia</p>
-        <p><strong>When:</strong> Thursday, September 24, 2026 at 12:00 AM UTC</p>
-        <p><strong>Where:</strong> Centro de Ciencias Matemáticas UNAM (CCM)</p>
-        <p><strong>Attendees:</strong> 9 going</p>
-        <p>✨ ¡Revivimos R-Madrinas Morelia! ✨
-
-Un espacio de reencuentro para las madrinas para identificar donde estamos en la vida proporcional y que podemos ofrecer de ayuda con análisis de datos en R. 📊💜
-🚀 Si eres estudiante de posgrado, tesista o posdoc y buscas mentoría, ¡también estamos aquí para ti! Tus necesidades pueden orientar nuestro trabajo.
-
-Evento híbrido sesión presencial bibioteca del CCM.</p>
-        <p><a href="https://www.meetup.com/rladies-morelia/events/316667941/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Morelia)</author><category>R-Ladies Morelia</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-niteroi/events/316562284/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item></channel></rss>
