@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260924T130152Z
+DTSTAMP:20260925T011838Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260924T130152Z
+DTSTAMP:20260925T011838Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260924T130152Z
+DTSTAMP:20260925T011838Z
 DTSTART:20261013T150000Z
 DTEND:20261013T163000Z
 SUMMARY:R Peer Teaching - R-Ladies Trondheim
@@ -46,7 +46,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260924T130152Z
+DTSTAMP:20260925T011838Z
+DTSTART:20261007T233000Z
+DTEND:20261008T013000Z
+SUMMARY:Fall Social - RLadies+ Santa Barbara
+DESCRIPTION:Hi everyone!\n\nJoin us for an informal social gathering at UC Santa Barbara to reconnect, catch up, and meet others in the R community. We’ll gather at Decker’s Deck at UC Santa Barbara with some light refreshments and some R-inspired mingling activities while we soak up the ocean views.\n\nEveryone is welcome - whether you’ve joined us for a meetup in the past, or are curious to meet like-minded individuals and learn more about our group, this event is for you!\n\n📍 Where: Bren Hall, Decker’s Deck, UC Santa Barbara\n📅 When: Wednesday, October 7, 4:30–6:30 pm\n\nLooking forward to seeing you all!\nDanielle, Camila, and Colleen
+LOCATION:Bren Hall, Bren Hall, 2400 University of California, Santa Barbara, CA 93117, USA, Santa Barbara, UNITED STATES OF AMERICA
+URL:https://www.meetup.com/rladies-santa-barbara/events/316699192/
+ORGANIZER;CN=RLadies+ Santa Barbara:mailto:info@rladies.org
+CATEGORIES:RLadies+,RLadies+ Santa Barbara
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20260925T011838Z
 DTSTART:20260928T160000Z
 DTEND:20260928T180000Z
 SUMMARY:Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260924T130152Z
+DTSTAMP:20260925T011838Z
 DTSTART:20260925T210000Z
 DTEND:20260925T230000Z
 SUMMARY:Do Chat ao Agente: Aprenda Fazendo com linguagem R - R-Ladies Goiânia
@@ -68,19 +81,6 @@ LOCATION:Online event
 URL:https://www.meetup.com/rladies-goiania/events/316614349/
 ORGANIZER;CN=R-Ladies Goiânia:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Goiânia
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260924T130152Z
-DTSTART:20260924T200000Z
-DTEND:20260924T230000Z
-SUMMARY:18º Meet Up: Trabalhando com dados geoespaciais no R - R-Ladies Niterói
-DESCRIPTION:Neste minicurso prático, vamos conhecer os principais tipos de dados geoespaciais e aprender a trabalhar com dados vetoriais e raster no R. Serão abordados sistemas de referência de coordenadas, importação e visualização de dados espaciais e elaboração de mapas temáticos, a partir de um fluxo de trabalho organizado e reprodutível.
-LOCATION:Online event
-URL:https://www.meetup.com/rladies-niteroi/events/316562284/
-ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Niterói
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
