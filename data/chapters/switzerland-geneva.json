@@ -1,8 +1,11 @@
 {
-  "status": "prospective",
+  "urlname": "rladies-geneva",
+  "status": "active",
   "country": "Switzerland",
   "city": "Geneva",
-  "social_media": {},
+  "social_media": {    
+    "meetup": "rladies-Genève",
+    "email": "geneva@rladies.org"},
   "organizers": {
     "current": [
       "Monika Avila",
