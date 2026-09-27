@@ -31,6 +31,8 @@ social_media: 'Réseaux sociaux'
 
 # Chapter page ----
 join_chapter: 'Rejoindre le chapitre'
+restart_chapter: 'Relancer ce chapitre'
+restart_chapter_note: 'Ce chapitre est retiré. Si vous souhaitez le relancer, écrivez-nous et nous vous expliquerons la démarche.'
 organizers: 'Organisateurs'
 tab_current: 'Actuels'
 tab_former: 'Anciens'
