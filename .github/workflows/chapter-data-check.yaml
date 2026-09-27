@@ -1,0 +1,21 @@
+name: "Chapter data"
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'data/chapters/**'
+
+permissions:
+  contents: read
+  packages: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  check:
+    uses: rladies/jinx/.github/workflows/reusable-chapter-validate.yml@main
+    secrets:
+      JINX_APP_ID: ${{ secrets.JINX_APP_ID }}
+      JINX_PRIVATE_KEY: ${{ secrets.JINX_PRIVATE_KEY }}
