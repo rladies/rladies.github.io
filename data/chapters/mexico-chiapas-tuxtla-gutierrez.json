@@ -1,15 +1,15 @@
 {
   "urlname": "rladies-tuxtla-gutierrez",
   "status": "prospective",
-  "country": "mexico",
-  "city": "tuxtla-gutierrez",
+  "country": "Mexico",
+  "state.region": "Chiapas",
+  "city": "Tuxtla Gutiérrez",
   "social_media": {
     "meetup": "rladies-tuxtla-gutierre",
     "email": "tuxtla@rladies.org"
   },
   "organizers": {
     "current": [
-      "comma separated",
       "Amin Siman Israel"
     ]
   }
