@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Greece",
   "city": "Athens",
-  "social_media": {
-    "meetup": "rladies-athens-gr"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Evangelia Balatsou"

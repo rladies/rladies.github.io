@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Vietnam",
   "city": "Ha Noi",
-  "social_media": {
-    "meetup": "rladies-ha-noi"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Linh Dieu"
