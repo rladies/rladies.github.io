@@ -1,8 +1,9 @@
 {
   "urlname": "rladies-aurora",
   "status": "prospective",
-  "country": "usa",
-  "city": "colorado",
+  "country": "USA",
+  "state.region": "Colorado",
+  "city": "Aurora",
   "social_media": {
     "meetup": "rladies-aurora",
     "email": "aurora@rladies.org"
