@@ -4,9 +4,7 @@
   "country": "USA",
   "state.region": "Colorado",
   "city": "Denver",
-  "social_media": {
-    "meetup": "rladies-denver"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Erin Hodgess",

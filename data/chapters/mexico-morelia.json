@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Mexico",
   "city": "Morelia",
-  "social_media": {
-    "meetup": "rladies-morelia"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Nelly Selem",
