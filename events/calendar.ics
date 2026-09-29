@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260928T144317Z
+DTSTAMP:20260929T012345Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260928T144317Z
+DTSTAMP:20260929T012345Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260928T144317Z
+DTSTAMP:20260929T012345Z
 DTSTART:20261013T150000Z
 DTEND:20261013T163000Z
 SUMMARY:R Peer Teaching - R-Ladies Trondheim
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20260928T144317Z
+DTSTAMP:20260929T012345Z
 DTSTART:20261007T233000Z
 DTEND:20261008T013000Z
 SUMMARY:Fall Social - RLadies+ Santa Barbara
@@ -55,19 +55,6 @@ LOCATION:Bren Hall, Bren Hall, 2400 University of California, Santa Barbara, CA 
 URL:https://www.meetup.com/rladies-santa-barbara/events/316699192/
 ORGANIZER;CN=RLadies+ Santa Barbara:mailto:info@rladies.org
 CATEGORIES:RLadies+,RLadies+ Santa Barbara
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20260928T144317Z
-DTSTART:20260928T160000Z
-DTEND:20260928T180000Z
-SUMMARY:Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome
-DESCRIPTION:How can machine learning help us work with epidemiological data? And how do we know whether a predictive model is actually useful?\n\nJoin R-Ladies Rome for a practical, two-hour introduction to **machine learning in epidemiology using R**.\n\nIn this workshop, **[Federica Gazzelloni](https://www.linkedin.com/in/federicagazzelloni/)** will introduce the main ideas behind supervised machine learning through an applied epidemiological example. Rather than focusing on a long list of algorithms, we will follow the complete machine-learning workflow: from defining an epidemiological question to training, evaluating and interpreting predictive models.\n\nWe will explore how different models approach the same prediction problem, starting with **logistic regression as a baseline** and moving to **decision trees and random forests**.\n\nUsing R, we will look at how to define a classification task, train models, generate predictions and evaluate their performance on unseen data.\nParticular attention will be given to **model evaluation and interpretation**.\n\nThroughout the workshop, we will also consider an important distinction for epidemiological research:\n**Prediction is not the same as inference, and predictive importance does not imply causation.**\n\nThe workshop is inspired by the recent *Machine Learning in Epidemiology* study by Wright et al. (2026) and connects with Federica's book, *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R* (CRC Press, 2025), where she introduces machine-learning applications in health and infectious-disease research using the `mlr` framework.\nDuring the workshop, we will use the modern `mlr3` ecosystem and discuss how machine-learning workflows in R have evolved from `mlr` to `mlr3`.\n\n**What we will cover**\n\n* What machine learning means in an epidemiological context\n* From an epidemiological question to a prediction task\n* Preparing data for machine learning\n* Logistic regression as a baseline model\n* Decision trees and random forests\n* Training and evaluating models with `mlr3`\n* Cross-validation and performance on unseen data\n* Sensitivity, specificity, confusion matrices and ROC/AUC\n* Variable importance and model interpretation\n* Prediction versus explanation and causation\n* Limitations, bias and data quality in epidemiological machine learning\n\n**Who is this workshop for?**\n\nThe workshop is designed for **R users interested in epidemiology, public health, health data or machine learning**. Basic familiarity with R and data analysis is useful, but **no previous machine-learning experience is required**.\nThe session will combine explanation, live R coding and discussion, with an emphasis on practical and reproducible analysis.\n\n**About the instructor**\n**Federica Gazzelloni** is an actuary, statistician, data scientist, author and instructor, and the founder and organiser of R-Ladies Rome. Her work spans health metrics, statistical modelling, machine learning, reproducible research and R.\nShe is the author of *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R*, published by CRC Press in 2025.\n\n**R-Ladies**\nR-Ladies is a worldwide organisation promoting gender diversity in the R community. R-Ladies Rome provides a welcoming space to learn, share knowledge and connect with people interested in R, data science, statistics and reproducible research.\nEveryone is welcome to attend, regardless of gender identity or level of experience.
-LOCATION:Online event
-URL:https://www.meetup.com/rladies-rome/events/316486711/
-ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Rome
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT

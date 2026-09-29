@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 28 Sep 2026 14:43:18 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>De mi script a mi propio paquete - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/316671506/</link><pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/316671506/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Tue, 29 Sep 2026 01:23:46 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>De mi script a mi propio paquete - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/316671506/</link><pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/316671506/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, October 31, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Leonardo Pasquel 22</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -63,51 +63,4 @@ Everyone is welcome - whether you’ve joined us for a meetup in the past, or ar
 
 Looking forward to seeing you all!
 Danielle, Camila, and Colleen</p>
-        <p><a href="https://www.meetup.com/rladies-santa-barbara/events/316699192/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Santa Barbara)</author><category>RLadies+ Santa Barbara</category></item><item><title>Introduction to Machine Learning in Epidemiology with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316486711/</link><pubDate>Mon, 28 Sep 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316486711/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
-        <p><strong>When:</strong> Monday, September 28, 2026 at 4:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 42 going</p>
-        <p>How can machine learning help us work with epidemiological data? And how do we know whether a predictive model is actually useful?
-
-Join R-Ladies Rome for a practical, two-hour introduction to **machine learning in epidemiology using R**.
-
-In this workshop, **[Federica Gazzelloni](https://www.linkedin.com/in/federicagazzelloni/)** will introduce the main ideas behind supervised machine learning through an applied epidemiological example. Rather than focusing on a long list of algorithms, we will follow the complete machine-learning workflow: from defining an epidemiological question to training, evaluating and interpreting predictive models.
-
-We will explore how different models approach the same prediction problem, starting with **logistic regression as a baseline** and moving to **decision trees and random forests**.
-
-Using R, we will look at how to define a classification task, train models, generate predictions and evaluate their performance on unseen data.
-Particular attention will be given to **model evaluation and interpretation**.
-
-Throughout the workshop, we will also consider an important distinction for epidemiological research:
-**Prediction is not the same as inference, and predictive importance does not imply causation.**
-
-The workshop is inspired by the recent *Machine Learning in Epidemiology* study by Wright et al. (2026) and connects with Federica&#39;s book, *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R* (CRC Press, 2025), where she introduces machine-learning applications in health and infectious-disease research using the `mlr` framework.
-During the workshop, we will use the modern `mlr3` ecosystem and discuss how machine-learning workflows in R have evolved from `mlr` to `mlr3`.
-
-**What we will cover**
-
-* What machine learning means in an epidemiological context
-* From an epidemiological question to a prediction task
-* Preparing data for machine learning
-* Logistic regression as a baseline model
-* Decision trees and random forests
-* Training and evaluating models with `mlr3`
-* Cross-validation and performance on unseen data
-* Sensitivity, specificity, confusion matrices and ROC/AUC
-* Variable importance and model interpretation
-* Prediction versus explanation and causation
-* Limitations, bias and data quality in epidemiological machine learning
-
-**Who is this workshop for?**
-
-The workshop is designed for **R users interested in epidemiology, public health, health data or machine learning**. Basic familiarity with R and data analysis is useful, but **no previous machine-learning experience is required**.
-The session will combine explanation, live R coding and discussion, with an emphasis on practical and reproducible analysis.
-
-**About the instructor**
-**Federica Gazzelloni** is an actuary, statistician, data scientist, author and instructor, and the founder and organiser of R-Ladies Rome. Her work spans health metrics, statistical modelling, machine learning, reproducible research and R.
-She is the author of *Health Metrics and the Spread of Infectious Diseases: Machine Learning Applications and Spatial Modelling Analysis with R*, published by CRC Press in 2025.
-
-**R-Ladies**
-R-Ladies is a worldwide organisation promoting gender diversity in the R community. R-Ladies Rome provides a welcoming space to learn, share knowledge and connect with people interested in R, data science, statistics and reproducible research.
-Everyone is welcome to attend, regardless of gender identity or level of experience.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/316486711/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-santa-barbara/events/316699192/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Santa Barbara)</author><category>RLadies+ Santa Barbara</category></item></channel></rss>
