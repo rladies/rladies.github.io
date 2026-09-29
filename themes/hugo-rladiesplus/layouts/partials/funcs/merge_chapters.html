@@ -37,8 +37,13 @@
   {{- $matches := where $chapters_meetup "urlname" (index $chapterMap "urlname") -}}
   {{- if gt (len $matches) 0 -}}
     {{- $mtp := index $matches 0 -}}
+    {{- /* A local "name" wins over the Meetup group name. Meetup names are
+           written by the chapters and some do not follow our conventions:
+           Dammam's group is "R-Ladies Saudi Arabia (Dammam)", naming a
+           country we have four chapters in. Without this the site has no
+           way to say otherwise. */ -}}
     {{- $chapterMap = merge $chapterMap (dict
-      "name" (index $mtp "name")
+      "name" (or (index $chapterMap "name") (index $mtp "name"))
       "meetup_id" (index $mtp "id")
       "lat" (index $mtp "lat")
       "lon" (index $mtp "lon")
