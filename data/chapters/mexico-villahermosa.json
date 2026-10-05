@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Mexico",
   "city": "Villahermosa",
-  "social_media": {
-    "meetup": "rladies-villahermosa"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Jessica Daniela Ocaña Falcón"

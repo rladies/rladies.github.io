@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Mexico",
   "city": "San Cristobal de las Casas",
-  "social_media": {
-    "meetup": "rladies-san-cristobal-de-las-casas"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Anahi Canedo"

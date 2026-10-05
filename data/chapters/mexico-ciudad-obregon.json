@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Mexico",
   "city": "Ciudad Obregón",
-  "social_media": {
-    "meetup": "rladies-ciudad-obregon"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Rubí Navarro"

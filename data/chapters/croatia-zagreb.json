@@ -1,10 +1,9 @@
 {
+  "urlname": "rladies-zagreb",
   "status": "active",
   "country": "Croatia",
   "city": "Zagreb",
-  "social_media": {
-    "meetup": "rladies-zagreb"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Dora Popovic",
