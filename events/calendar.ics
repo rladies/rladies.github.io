@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261007T130832Z
+DTSTAMP:20261008T012419Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -20,7 +20,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261007T130832Z
+DTSTAMP:20261008T012419Z
+DTSTART:20261029T063000Z
+DTEND:20261029T080000Z
+SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
+DESCRIPTION:**posit::conf(2026) %>% glimpse()** **Date:** 29th October, 2026 **Time:** 5:30 PM (networking and refreshments from 5:30 PM; talk begins at 6:00 PM) **Where:** DiUS, Level 3/31 Queen St, Melbourne Curious about how involvement in open source, community building, mentoring, advocacy, or volunteering can open unexpected doors in your career? Wondering how people find their way into international conferences, scholarship opportunities, and global professional networks, and what role community participation plays along the way? Join us for a conversation with Dionne and Mansi, who attended **posit::conf(2026)** in Houston, Texas as **Opportunity Scholars**. This session is not just about the conference itself. It is about the communities, relationships, and contributions that helped make the opportunity possible. They will share their journeys through open source and community involvement, and the value of networking, building meaningful professional connections, and contributing to communities in ways that create impact for both oneself and others. Along the way, they will share some of their favourite moments from the conference, lessons from meeting people across the global data science ecosystem, and insights that stayed with them long after the conference ended. Whether you're new to the R community, considering your first conference application, interested in open source, or simply curious about building a more connected and community-focused career, we'd love to see you there!
+LOCATION:DiUS, level 3/31 Queen St, Melbourne VIC 3000, Australia, Melbourne, AUSTRALIA
+URL:https://www.meetup.com/rladies-melbourne/events/316880437/
+ORGANIZER;CN=R-Ladies+ Melbourne:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies+ Melbourne
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261008T012419Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261007T130832Z
+DTSTAMP:20261008T012419Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261007T130832Z
+DTSTAMP:20261008T012419Z
 DTSTART:20261013T150000Z
 DTEND:20261013T163000Z
 SUMMARY:R Peer Teaching - R-Ladies Trondheim
@@ -55,19 +68,6 @@ LOCATION:ØHM11, Øya helsehus østfløy, Håkon Jarls gate 11, Trondheim, NORWA
 URL:https://www.meetup.com/rladies-trondheim/events/316511218/
 ORGANIZER;CN=R-Ladies Trondheim:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Trondheim
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20261007T130832Z
-DTSTART:20261007T233000Z
-DTEND:20261008T013000Z
-SUMMARY:Fall Social - RLadies+ Santa Barbara
-DESCRIPTION:Hi everyone!\n\nJoin us for an informal social gathering at UC Santa Barbara to reconnect, catch up, and meet others in the R community. We’ll gather at Decker’s Deck at UC Santa Barbara with some light refreshments and some R-inspired mingling activities while we soak up the ocean views.\n\nEveryone is welcome - whether you’ve joined us for a meetup in the past, or are curious to meet like-minded individuals and learn more about our group, this event is for you!\n\n📍 Where: Bren Hall, Decker’s Deck, UC Santa Barbara\n📅 When: Wednesday, October 7, 4:30–6:30 pm\n\nLooking forward to seeing you all!\nDanielle, Camila, and Colleen
-LOCATION:Bren Hall, Bren Hall, 2400 University of California, Santa Barbara, CA 93117, USA, Santa Barbara, UNITED STATES OF AMERICA
-URL:https://www.meetup.com/rladies-santa-barbara/events/316699192/
-ORGANIZER;CN=RLadies+ Santa Barbara:mailto:info@rladies.org
-CATEGORIES:RLadies+,RLadies+ Santa Barbara
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
