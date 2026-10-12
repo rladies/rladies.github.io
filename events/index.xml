@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 12 Oct 2026 01:35:47 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>De mi script a mi propio paquete - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/316671506/</link><pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/316671506/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Mon, 12 Oct 2026 13:19:04 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>De mi script a mi propio paquete - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/316671506/</link><pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/316671506/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, October 31, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Leonardo Pasquel 22</p>
         <p><strong>Attendees:</strong> 7 going</p>
@@ -44,7 +44,37 @@ Recuerda leer y atender nuestro código de conducta disponible [aquí](https://r
 
 Everyone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.
 3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/316720371/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Everyone Makes a Map - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316562685/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316562685/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+        <p><a href="https://www.meetup.com/rladies-vancouver/events/316720371/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316945048/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316945048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><strong>When:</strong> Friday, October 23, 2026 at 4:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 6 going</p>
+        <p>**How do different machine-learning models learn from the same data, and how can we compare their predictions?**
+
+Join [R-Ladies Rome](https://rladiesrome.org/) for the second workshop in our **Machine Learning in Epidemiology with R** series, led by [Federica Gazzelloni](https://federicagazzelloni.com/).
+
+Part I introduced how models learn through loss and optimisation.
+
+Part II, we’ll put these ideas into practice by training and comparing decision trees, random forests and a simple neural network using a heart-disease classification example.
+
+We’ll follow a complete workflow in R: explore the data, define a prediction task, train models and evaluate their performance on observations they have not seen during training.
+
+**What we’ll cover**
+
+* Decision trees and random forests with `mlr3`.
+* A simple neural network with Keras.
+* Layers, activation functions, epochs and batch sizes.
+* Training and validation loss.
+* Model comparison using accuracy, sensitivity, specificity and ROC/AUC.
+* Overfitting, cross-validation and the distinction between prediction and causation.
+
+**Who is this for?**
+This workshop is for people interested in applying machine learning to epidemiology and health data. Basic familiarity with R and RStudio is recommended. The session builds on Part I and begins with a short recap.
+
+**What to bring**
+A computer with R and RStudio installed. Setup instructions and workshop materials will be shared before the session.
+
+Bring your questions and join us for a practical exploration of how different models learn—and how we assess their predictions.</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/316945048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Everyone Makes a Map - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/316562685/</link><pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/316562685/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Thursday, October 15, 2026 at 12:00 AM UTC</p>
         <p><strong>Where:</strong> Lucky Labrador Public House</p>
         <p><strong>Attendees:</strong> 9 going</p>

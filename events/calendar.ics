@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261012T013547Z
+DTSTAMP:20261012T131904Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261012T013547Z
+DTSTAMP:20261012T131904Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261012T013547Z
+DTSTAMP:20261012T131904Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -46,7 +46,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261012T013547Z
+DTSTAMP:20261012T131904Z
+DTSTART:20261023T160000Z
+DTEND:20261023T180000Z
+SUMMARY:Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome
+DESCRIPTION:**How do different machine-learning models learn from the same data, and how can we compare their predictions?**\n\nJoin [R-Ladies Rome](https://rladiesrome.org/) for the second workshop in our **Machine Learning in Epidemiology with R** series, led by [Federica Gazzelloni](https://federicagazzelloni.com/).\n\nPart I introduced how models learn through loss and optimisation.\n\nPart II, we’ll put these ideas into practice by training and comparing decision trees, random forests and a simple neural network using a heart-disease classification example.\n\nWe’ll follow a complete workflow in R: explore the data, define a prediction task, train models and evaluate their performance on observations they have not seen during training.\n\n**What we’ll cover**\n\n* Decision trees and random forests with `mlr3`.\n* A simple neural network with Keras.\n* Layers, activation functions, epochs and batch sizes.\n* Training and validation loss.\n* Model comparison using accuracy, sensitivity, specificity and ROC/AUC.\n* Overfitting, cross-validation and the distinction between prediction and causation.\n\n**Who is this for?**\nThis workshop is for people interested in applying machine learning to epidemiology and health data. Basic familiarity with R and RStudio is recommended. The session builds on Part I and begins with a short recap.\n\n**What to bring**\nA computer with R and RStudio installed. Setup instructions and workshop materials will be shared before the session.\n\nBring your questions and join us for a practical exploration of how different models learn—and how we assess their predictions.
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-rome/events/316945048/
+ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Rome
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261012T131904Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261012T013547Z
+DTSTAMP:20261012T131904Z
 DTSTART:20261013T150000Z
 DTEND:20261013T163000Z
 SUMMARY:R Peer Teaching - R-Ladies Trondheim
