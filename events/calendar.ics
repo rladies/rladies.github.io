@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -46,7 +46,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
+DTSTART:20261028T170000Z
+DTEND:20261028T183000Z
+SUMMARY:Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna
+DESCRIPTION:Just like last year, we are welcoming the new academic year with a hands-on introduction to R, this time with a focus on data visualization. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!\n\n**ℹ️ Abstract**\nA hands-on introduction to data visualization in R for beginners. You’ll learn how to prepare your data for plotting, create clear and attractive graphics with the R package ***ggplot2***, and add interactive features using the ***plotly*** package.\n\n**💡 What to prepare**\n\n* Before the workshop, install **R** and **RStudio** on your laptop by following the 2-step guide at **[https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)**\n* On the workshop day, bring your laptop to follow the workshop material closely and code along with us!\n* (Optional) Bring a dataset you would like to work with\n\n**🗺️ Location**\nSeminar Room DB yellow 09 / Sem.R. DB gelb 09\n(DB09E23)\n9th floor, yellow area\nTU Wien Freihaus\nWiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))\n\n**📍 How to find us**\nIn the yellow area of TU Wien Freihaus, take the lift to the 9th floor. After exiting the lift, turn left and walk through the door. The seminar room will be on your left.\nUse this [floor plan](https://maps.tuwien.ac.at/?q=DB09E23#map) to help locate the room.
+LOCATION:TU Wien Freihaus, Wiedner Hauptstraße 8-10, Vienna, AUSTRIA
+URL:https://www.meetup.com/rladies-vienna/events/316877962/
+ORGANIZER;CN=RLadies+ Vienna:mailto:info@rladies.org
+CATEGORIES:RLadies+,RLadies+ Vienna
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261014T130115Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261027T170000Z
 DTEND:20261029T200000Z
 SUMMARY:22º Meet Up: Do ggplot2 à Interatividade,  Gráficos Dinâmicos - ggiraph e Plotly - R-Ladies Niterói
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261027T130000Z
 DTEND:20261029T160000Z
 SUMMARY:21º Meet Up:  Introdução à linguagem Latex - R-Ladies Niterói
@@ -85,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261026T170000Z
 DTEND:20261030T200000Z
 SUMMARY:20º Meet Up: Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -98,7 +111,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261026T140000Z
 DTEND:20261030T160000Z
 SUMMARY:19º Meet Up: Curso Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -111,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261023T160000Z
 DTEND:20261023T180000Z
 SUMMARY:Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome
@@ -124,7 +137,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T011457Z
+DTSTAMP:20261014T130115Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
