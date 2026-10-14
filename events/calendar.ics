@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261013T131004Z
+DTSTAMP:20261014T011457Z
+DTSTART:20261111T120000Z
+DTEND:20261113T230000Z
+SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
+DESCRIPTION:🎉 **¡R-Ladies Medellín te invita a LatinR 2026!** 💜📊\n\n¿Te interesa la ciencia de datos, la estadística, la programación en R o la inteligencia artificial? ¡Este evento es para ti!\n\nDel **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comunidad latinoamericana que utiliza R para investigar, aprender e innovar.\n\n✨ Participa en conferencias, talleres prácticos y espacios para conectar con estudiantes, investigadores y profesionales de toda Latinoamérica.\n\n💻 Aprende nuevas herramientas, comparte experiencias y descubre cómo R está transformando la investigación y la industria.\n\n📍 **Lugar:** Universidad de Antioquia, Medellín\n📅 **Fecha:** 11–13 de noviembre de 2026\n\n🚀 **¡Inscríbete y sé parte de LatinR 2026!**\n\n👉 Consulta la información del evento y las inscripciones: [https://latinr.org/blog/es/2026-08-25-inscripcion.html]\n\n#LatinR2026 #RLadiesMedellin #RStats #DataScience #Estadística #InteligenciaArtificial
+LOCATION:Universidad de Antioquia, |, Cl. 67 #53 - 108, Aranjuez, Medellín, Aranjuez, Medellín, Antioquia, Colombia, Medellín, COLOMBIA
+URL:https://www.meetup.com/rladies-medellin/events/316964015/
+ORGANIZER;CN=R-Ladies Medellín:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Medellín
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261014T011457Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261013T131004Z
+DTSTAMP:20261014T011457Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261013T131004Z
+DTSTAMP:20261014T011457Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -46,7 +59,59 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261013T131004Z
+DTSTAMP:20261014T011457Z
+DTSTART:20261027T170000Z
+DTEND:20261029T200000Z
+SUMMARY:22º Meet Up: Do ggplot2 à Interatividade,  Gráficos Dinâmicos - ggiraph e Plotly - R-Ladies Niterói
+DESCRIPTION:O curso terá 2 encontrosa presenciais de 3 horas cada. Um no dia 27/10 e o outro no dia 29/10, ambos de 14h às 17h.\nO minicurso aborda a criação de gráficos interativos em R com ggiraph, plotly e outros pacotes, a partir de visualizações construídas com ggplot2. Serão apresentados recursos de interação e personalização aplicados à exploração e comunicação de dados.
+LOCATION:Niterói, Niterói, Rio de Janeiro, Brazil, Niterói, BRAZIL
+URL:https://www.meetup.com/rladies-niteroi/events/316960370/
+ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Niterói
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261014T011457Z
+DTSTART:20261027T130000Z
+DTEND:20261029T160000Z
+SUMMARY:21º Meet Up:  Introdução à linguagem Latex - R-Ladies Niterói
+DESCRIPTION:O curso terá 2 encontrosa presenciais de 3 horas cada. Um no dia 27/10 e o outro no dia 29/10, ambos de 10h às 13h.\nEste curso tem por objetivo apresentar os fundamentos da linguagem LaTeX e sua aplicação na elaboração de documentos científicos e técnicos. Com o auxílio do editor online Overleaf, serão introduzidos tópicos sobre a estrutura e formatação básica de documentos, organização de conteúdos, criação de tabelas e equações matemáticas e inserção de figuras, além da criação gerenciamento de citações e referências bibliográficas com o uso do BibTeX. Ao final, espera-se que os participantes estejam aptos a produzir documentos básicos em LaTeX de forma organizada, padronizada e profissional.
+LOCATION:Niterói, Niterói, Rio de Janeiro, Brazil, Niterói, BRAZIL
+URL:https://www.meetup.com/rladies-niteroi/events/316960345/
+ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Niterói
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261014T011457Z
+DTSTART:20261026T170000Z
+DTEND:20261030T200000Z
+SUMMARY:20º Meet Up: Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
+DESCRIPTION:O curso terá 2 encontrosa presenciais de 3 horas cada. Um no dia 26/10 e o outro no dia 30/10, ambos de 14h às 17h.\nEste curso apresenta, de forma prática, a análise e a previsão de séries temporais em R com os pacotes tsibble, feasts e fable, seguindo a abordagem do livro Forecasting: Principles and Practice (3a ed.), de Hyndman e Athanasopoulos. A primeira parte trata das ferramentas descritivas: organização dos dados, gráficos, identificação de tendência e sazonalidade, autocorrelação e decomposição. A segunda parte trata dos modelos de previsão: suavização exponencial (ETS) e ARIMA, com diagnóstico de resíduos, intervalos de previsão e comparação da acurácia entre modelos. Ao final, o aluno será capaz de usar as ferramentas adotadas no livro para explorar uma série temporal, ajustar modelos e avaliar as previsões obtidas.
+LOCATION:Niterói, Niterói, Rio de Janeiro, Brazil, Niterói, BRAZIL
+URL:https://www.meetup.com/rladies-niteroi/events/316960322/
+ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Niterói
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261014T011457Z
+DTSTART:20261026T140000Z
+DTEND:20261030T160000Z
+SUMMARY:19º Meet Up: Curso Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
+DESCRIPTION:O curso terá 2 encontrosa presenciais de 2 horas cada. Um no dia 26/10 e o outro no dia 30/10, ambos de 11h às 13h.\nEste minicurso apresenta conceitos e técnicas introdutórias para a análise de dados textuais, combinando explicações e atividades práticas em R. A partir de uma base previamente disponibilizada, serão abordadas as principais etapas de pré-processamento e a exploração de palavras e expressões frequentes. Em seguida, será introduzida a análise de sentimentos baseada em léxicos, com discussão sobre a interpretação dos resultados e as limitações dessa abordagem. Por fim, serão apresentadas técnicas de vetorização de textos, incluindo Bag of Words, TF-IDF e Doc2Vec, destacando suas diferenças e possibilidades de aplicação.
+LOCATION:Niterói, Niterói, Rio de Janeiro, Brazil, Niterói, BRAZIL
+URL:https://www.meetup.com/rladies-niteroi/events/316960157/
+ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Niterói
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261014T011457Z
 DTSTART:20261023T160000Z
 DTEND:20261023T180000Z
 SUMMARY:Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome
@@ -59,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261013T131004Z
+DTSTAMP:20261014T011457Z
 DTSTART:20261015T000000Z
 DTEND:20261015T020000Z
 SUMMARY:Everyone Makes a Map - R-Ladies PDX
@@ -68,19 +133,6 @@ LOCATION:Lucky Labrador Public House, 7675 SW Capitol Hwy, Portland, OR 97219, U
 URL:https://www.meetup.com/rladies-pdx/events/316562685/
 ORGANIZER;CN=R-Ladies PDX:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies PDX
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20261013T131004Z
-DTSTART:20261013T150000Z
-DTEND:20261013T163000Z
-SUMMARY:R Peer Teaching - R-Ladies Trondheim
-DESCRIPTION:Join us for a relaxed evening of learning and good company—we're hosting a peer teaching evening.\n\nIn the first half you have time to explore a package of your choosing (e.g., looking at the vignette, what are the beginning functions to know). Then in the last half\nwe'll take a round to share what we learned. You can find some inspiration for R packages here: https://medium.com/@ZhouAnnaWrites/20-useful-r-packages-you-may-not-know-about-54d57fe604f3\n\nWhether you're a beginner looking for a nudge in the right direction or a seasoned R-user happy to share what you know, you're welcome here!\n\nThe event will take place in the room ØHM11. The outer door is locked, but we will wait outside to let you in, or call me on 92076982\nMazemap: https://link.mazemap.com/E1NxhvoO\nGoogle maps: https://maps.app.goo.gl/MbuZZPL8m2simBwd9\n\nThe room may be a bit confusing to find, because it is NOT in the main building of Øya helsehus, it is in a smaller building right east of it.
-LOCATION:ØHM11, Øya helsehus østfløy, Håkon Jarls gate 11, Trondheim, NORWAY
-URL:https://www.meetup.com/rladies-trondheim/events/316511218/
-ORGANIZER;CN=R-Ladies Trondheim:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Trondheim
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
