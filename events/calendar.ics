@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
+DTSTART:20261204T160000Z
+DTEND:20261204T180000Z
+SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
+DESCRIPTION:Le thème de cette séance sera le suivant :\n\n**"Coder sous R en SHS : transmission d'un apprentissage de R en mutation"**\n\nTable ronde et échanges avec le public.\n\nAnimatrices : Dina Santos Araujo & Maelle Amand\n\nDate : vendredi 4 décembre 2026 de 17:00-18:30\n\nLieu : salle de formation BU droit, Limoges (rez de jardin).\n\nPour nous suivre en ligne : https://bbb.unilim.fr/b/rooms/4qc-idv-2v3-3rd/join\n\nSuivi d'un échange autour d'un verre au marché des jacobins : [16 Rue des Sœurs de la Rivière, 87000 Limoges](https://www.google.com/maps/place//data=!4m2!3m1!1s0x47f93512c98217f3:0x3fe6393af63e999d?sa=X&ved=1t:8290&ictx=111)
+LOCATION:BU Droit et Sciences Economiques, 5 Rue Félix Eboué, 87000 Limoges, France, Limoges, FRANCE
+URL:https://www.meetup.com/rladies-limoges/events/316973463/
+ORGANIZER;CN=R-Ladies Limoges:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Limoges
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261015T011418Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261028T170000Z
 DTEND:20261028T183000Z
 SUMMARY:Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna
@@ -59,12 +72,12 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
 DESCRIPTION:As the Vancouver rain sets in, getting out into the field to listen to birds gets a bit trickier—but we can still tune in from the comfort of R! In this hands-on workshop, Sunny will introduce essential R packages designed for bioacousticians. We will walk through extracting bird sounds from Xeno-Canto, running machine learning models like BirdNET to detect species, and visualizing acoustic results—all within R! Along the way, we'll explore beautiful bird vocalizations and spotlight common Pacific Northwest species you hear around Vancouver, from the cheerful songs of Song Sparrows and Black-capped Chickadees to the ever-present Crows.\n\n\*\*\*\n\n1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)\n2. Who is this allowed to attend the event?\n\nEveryone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.\n3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.
-LOCATION:Vancouver Public Library - Mount Pleasant Branch, 1 Kingsway, Vancouver, BC V5T 0A1, Canada, Vancouver, CANADA
+LOCATION:Vancouver Independent School for Science and Technology, 1490 W Broadway #200, Vancouver, BC V6H 1H5, Canada, Vancouver, CANADA
 URL:https://www.meetup.com/rladies-vancouver/events/316720371/
 ORGANIZER;CN=R-Ladies Vancouver:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Vancouver
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261027T170000Z
 DTEND:20261029T200000Z
 SUMMARY:22º Meet Up: Do ggplot2 à Interatividade,  Gráficos Dinâmicos - ggiraph e Plotly - R-Ladies Niterói
@@ -85,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261027T130000Z
 DTEND:20261029T160000Z
 SUMMARY:21º Meet Up:  Introdução à linguagem Latex - R-Ladies Niterói
@@ -98,7 +111,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261026T170000Z
 DTEND:20261030T200000Z
 SUMMARY:20º Meet Up: Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -111,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261026T140000Z
 DTEND:20261030T160000Z
 SUMMARY:19º Meet Up: Curso Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -124,7 +137,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
+DTSTAMP:20261015T011418Z
 DTSTART:20261023T160000Z
 DTEND:20261023T180000Z
 SUMMARY:Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome
@@ -133,19 +146,6 @@ LOCATION:Online event
 URL:https://www.meetup.com/rladies-rome/events/316945048/
 ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
 CATEGORIES:RLadies+,R-Ladies Rome
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20261014T130115Z
-DTSTART:20261015T000000Z
-DTEND:20261015T020000Z
-SUMMARY:Everyone Makes a Map - R-Ladies PDX
-DESCRIPTION:Brittany is going to lead a group session on how to create a map! Bring your laptops, and be ready to join in. No prior mapping experience is necessary.\nWatch the comments on this event, we'll provide some data ahead of time to get you started!
-LOCATION:Lucky Labrador Public House, 7675 SW Capitol Hwy, Portland, OR 97219, USA, Portland, UNITED STATES OF AMERICA
-URL:https://www.meetup.com/rladies-pdx/events/316562685/
-ORGANIZER;CN=R-Ladies PDX:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies PDX
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT
