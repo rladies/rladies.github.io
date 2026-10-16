@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 16 Oct 2026 01:13:02 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 16 Oct 2026 13:02:27 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -105,7 +105,7 @@ Use this [floor plan](https://maps.tuwien.ac.at/?q=DB09E23#map) to help locate t
         <p><a href="https://www.meetup.com/rladies-vienna/events/316877962/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Vienna)</author><category>RLadies+ Vienna</category></item><item><title>Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/316720371/</link><pubDate>Thu, 29 Oct 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/316720371/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Thursday, October 29, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Vancouver Independent School for Science and Technology</p>
-        <p><strong>Attendees:</strong> 9 going</p>
+        <p><strong>Attendees:</strong> 10 going</p>
         <p>As the Vancouver rain sets in, getting out into the field to listen to birds gets a bit trickier—but we can still tune in from the comfort of R! In this hands-on workshop, Sunny will introduce essential R packages designed for bioacousticians. We will walk through extracting bird sounds from Xeno-Canto, running machine learning models like BirdNET to detect species, and visualizing acoustic results—all within R! Along the way, we&#39;ll explore beautiful bird vocalizations and spotlight common Pacific Northwest species you hear around Vancouver, from the cheerful songs of Song Sparrows and Black-capped Chickadees to the ever-present Crows.
 
 \*\*\*
@@ -142,7 +142,7 @@ Este minicurso apresenta conceitos e técnicas introdutórias para a análise de
         <p><a href="https://www.meetup.com/rladies-niteroi/events/316960157/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316945048/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316945048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Friday, October 23, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 24 going</p>
+        <p><strong>Attendees:</strong> 25 going</p>
         <p>**How do different machine-learning models learn from the same data, and how can we compare their predictions?**
 
 Join [R-Ladies Rome](https://rladiesrome.org/) for the second workshop in our **Machine Learning in Epidemiology with R** series, led by [Federica Gazzelloni](https://federicagazzelloni.com/).
