@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -33,7 +33,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
+DTSTART:20261110T220000Z
+DTEND:20261111T000000Z
+SUMMARY:Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa
+DESCRIPTION:En el mundo real —y especialmente en ecología y biología— los datos casi nunca siguen una distribución normal perfecta. Conteos de especies, presencias/ausencias o proporciones suelen romper los supuestos de los modelos lineales tradicionales (LM). En este taller teórico-práctico, la **Dra. Marisol Martínez Ramos** nos llevará de la mano para entender e implementar los **Modelos Lineales Generalizados (GLM)** en R de una manera accesible, intuitiva y aplicada a problemas ecológicos. ### 🎙️ Sobre la ponente **Dra. Marisol Martínez Ramos** Especialista en ecología, análisis estadístico y modelación de datos aplicados a las ciencias biológicas. ### 📅 Detalles del evento * **Fecha:** Martes, 10 de noviembre de 2026 * **Modalidad:** Virtual (Google Meet) * **Costo:** 100% Gratuito > ⚠️ *El enlace a Google Meet se activará para las personas registradas unos minutos antes de iniciar el taller.* ### 💜 Sobre R-Ladies R-Ladies es una organización mundial que promueve la diversidad de género en la comunidad de R. Todos nuestros eventos son gratuitos y se rigen bajo el Código de Conducta de R-Ladies Global. ¡Comunidad abierta a todos los niveles de conocimiento!
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-villahermosa/events/316999871/
+ORGANIZER;CN=R-Ladies Villahermosa:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Villahermosa
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261016T011301Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261028T170000Z
 DTEND:20261028T183000Z
 SUMMARY:Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -85,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261027T170000Z
 DTEND:20261029T200000Z
 SUMMARY:22º Meet Up: Do ggplot2 à Interatividade,  Gráficos Dinâmicos - ggiraph e Plotly - R-Ladies Niterói
@@ -98,7 +111,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261027T130000Z
 DTEND:20261029T160000Z
 SUMMARY:21º Meet Up:  Introdução à linguagem Latex - R-Ladies Niterói
@@ -111,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261026T170000Z
 DTEND:20261030T200000Z
 SUMMARY:20º Meet Up: Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -124,7 +137,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261026T140000Z
 DTEND:20261030T160000Z
 SUMMARY:19º Meet Up: Curso Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -137,7 +150,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261015T130357Z
+DTSTAMP:20261016T011301Z
 DTSTART:20261023T160000Z
 DTEND:20261023T180000Z
 SUMMARY:Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome
