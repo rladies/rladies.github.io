@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 21 Oct 2026 01:16:46 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 21 Oct 2026 13:01:12 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -17,7 +17,14 @@ Lieu : salle de formation BU droit, Limoges (rez de jardin).
 Pour nous suivre en ligne : https://bbb.unilim.fr/b/rooms/4qc-idv-2v3-3rd/join
 
 Suivi d&#39;un échange autour d&#39;un verre au marché des jacobins : [16 Rue des Sœurs de la Rivière, 87000 Limoges](https://www.google.com/maps/place//data=!4m2!3m1!1s0x47f93512c98217f3:0x3fe6393af63e999d?sa=X&amp;ved=1t:8290&amp;ictx=111)</p>
-        <p><a href="https://www.meetup.com/rladies-limoges/events/316973463/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Limoges)</author><category>R-Ladies Limoges</category></item><item><title>Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín</title><link>https://www.meetup.com/rladies-medellin/events/316964015/</link><pubDate>Wed, 11 Nov 2026 12:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-medellin/events/316964015/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Medellín</p>
+        <p><a href="https://www.meetup.com/rladies-limoges/events/316973463/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Limoges)</author><category>R-Ladies Limoges</category></item><item><title>Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317067329/</link><pubDate>Tue, 17 Nov 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317067329/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+        <p><strong>When:</strong> Tuesday, November 17, 2026 at 1:00 AM UTC</p>
+        <p><strong>Where:</strong> Lucky Labrador Brew Pub</p>
+        <p><strong>Attendees:</strong> 5 going</p>
+        <p>Working with data that&#39;s too large, too slow, or too messy for regular CSVs? Join us for an introduction to the {arrow} package in R. We&#39;ll explore how Arrow and Parquet files can make large datasets faster to store, read, and analyze, all while using the familiar dplyr workflows you already know and love. Using Portland&#39;s Biketown data, we&#39;ll convert, query, and visualize millions of rides without breaking a sweat (or our laptops).
+
+Bring your laptop if you want to follow along.</p>
+        <p><a href="https://www.meetup.com/rladies-pdx/events/317067329/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies PDX)</author><category>R-Ladies PDX</category></item><item><title>Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín</title><link>https://www.meetup.com/rladies-medellin/events/316964015/</link><pubDate>Wed, 11 Nov 2026 12:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-medellin/events/316964015/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Medellín</p>
         <p><strong>When:</strong> Wednesday, November 11, 2026 at 12:00 PM UTC</p>
         <p><strong>Where:</strong> Universidad de Antioquia</p>
         <p><strong>Attendees:</strong> 5 going</p>
@@ -42,7 +49,7 @@ Del **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comun
         <p><a href="https://www.meetup.com/rladies-medellin/events/316964015/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Medellín)</author><category>R-Ladies Medellín</category></item><item><title>Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa</title><link>https://www.meetup.com/rladies-villahermosa/events/316999871/</link><pubDate>Tue, 10 Nov 2026 22:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-villahermosa/events/316999871/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Villahermosa</p>
         <p><strong>When:</strong> Tuesday, November 10, 2026 at 10:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 6 going</p>
+        <p><strong>Attendees:</strong> 7 going</p>
         <p>En el mundo real —y especialmente en ecología y biología— los datos casi nunca siguen una distribución normal perfecta. Conteos de especies, presencias/ausencias o proporciones suelen romper los supuestos de los modelos lineales tradicionales (LM). En este taller teórico-práctico, la **Dra. Marisol Martínez Ramos** nos llevará de la mano para entender e implementar los **Modelos Lineales Generalizados (GLM)** en R de una manera accesible, intuitiva y aplicada a problemas ecológicos. ### 🎙️ Sobre la ponente **Dra. Marisol Martínez Ramos** Especialista en ecología, análisis estadístico y modelación de datos aplicados a las ciencias biológicas. ### 📅 Detalles del evento * **Fecha:** Martes, 10 de noviembre de 2026 * **Modalidad:** Virtual (Google Meet) * **Costo:** 100% Gratuito &gt; ⚠️ *El enlace a Google Meet se activará para las personas registradas unos minutos antes de iniciar el taller.* ### 💜 Sobre R-Ladies R-Ladies es una organización mundial que promueve la diversidad de género en la comunidad de R. Todos nuestros eventos son gratuitos y se rigen bajo el Código de Conducta de R-Ladies Global. ¡Comunidad abierta a todos los niveles de conocimiento!</p>
         <p><a href="https://www.meetup.com/rladies-villahermosa/events/316999871/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Villahermosa)</author><category>R-Ladies Villahermosa</category></item><item><title>Analisis de Datos en las Relaciones Internacionales Nivel Principiante - R-Ladies Wake Forest</title><link>https://www.meetup.com/rladies-wake-forest/events/317056315/</link><pubDate>Fri, 06 Nov 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-wake-forest/events/317056315/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Wake Forest</p>
         <p><strong>When:</strong> Friday, November 6, 2026 at 3:00 PM UTC</p>
@@ -77,7 +84,7 @@ Use this [floor plan](https://maps.tuwien.ac.at/?q=DA02E08#map) to help locate t
         <p><a href="https://www.meetup.com/rladies-vienna/events/316877970/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Vienna)</author><category>RLadies+ Vienna</category></item><item><title>De mi script a mi propio paquete - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/316671506/</link><pubDate>Sat, 31 Oct 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/316671506/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, October 31, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> Leonardo Pasquel 22</p>
-        <p><strong>Attendees:</strong> 7 going</p>
+        <p><strong>Attendees:</strong> 8 going</p>
         <p>**De mi script a mi propio paquete: diseñando herramientas reproducibles en R** 📦✨
 
 ¿Alguna vez escribiste un script para resolver un problema muy específico y después pensaste que podría servirle a alguien más? En esta sesión de RLadies&#43; Xalapa exploraremos cómo ese código que nació para salir del paso puede convertirse en una herramienta reutilizable, documentada y reproducible.
@@ -110,7 +117,7 @@ Recuerda leer y atender nuestro código de conducta disponible [aquí](https://r
         <p><a href="https://www.meetup.com/rladies-melbourne/events/316880437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>Interpréter des variables latentes avec le package R {NaileR} - RLadies+ Paris</title><link>https://www.meetup.com/rladies-paris/events/317064838/</link><pubDate>Wed, 28 Oct 2026 18:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-paris/events/317064838/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Paris</p>
         <p><strong>When:</strong> Wednesday, October 28, 2026 at 6:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 3 going</p>
+        <p><strong>Attendees:</strong> 11 going</p>
         <p>Rejoignez-nous le mercredi 28 octobre à 19 h en ligne sur Zoom pour une session dédiée à la valorisation et à l’explication de vos analyses de données.
 
 Nous aurons le plaisir d’accueillir Sébastien Lê, enseignant-chercheur en statistique et science des données à l’Institut Agro Rennes-Angers, pour une présentation intitulée :
@@ -155,7 +162,7 @@ Use this [floor plan](https://maps.tuwien.ac.at/?q=DB09E23#map) to help locate t
         <p><a href="https://www.meetup.com/rladies-vienna/events/316877962/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Vienna)</author><category>RLadies+ Vienna</category></item><item><title>Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/316720371/</link><pubDate>Thu, 29 Oct 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/316720371/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
         <p><strong>When:</strong> Thursday, October 29, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Vancouver Independent School for Science and Technology</p>
-        <p><strong>Attendees:</strong> 10 going</p>
+        <p><strong>Attendees:</strong> 11 going</p>
         <p>As the Vancouver rain sets in, getting out into the field to listen to birds gets a bit trickier—but we can still tune in from the comfort of R! In this hands-on workshop, Sunny will introduce essential R packages designed for bioacousticians. We will walk through extracting bird sounds from Xeno-Canto, running machine learning models like BirdNET to detect species, and visualizing acoustic results—all within R! Along the way, we&#39;ll explore beautiful bird vocalizations and spotlight common Pacific Northwest species you hear around Vancouver, from the cheerful songs of Song Sparrows and Black-capped Chickadees to the ever-present Crows.
 
 \*\*\*
@@ -197,7 +204,7 @@ Este minicurso apresenta conceitos e técnicas introdutórias para a análise de
         <p><a href="https://www.meetup.com/rladies-niteroi/events/316960157/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316945048/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316945048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Friday, October 23, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 30 going</p>
+        <p><strong>Attendees:</strong> 31 going</p>
         <p>**How do different machine-learning models learn from the same data, and how can we compare their predictions?**
 
 Join [R-Ladies Rome](https://rladiesrome.org/) for the second workshop in our **Machine Learning in Epidemiology with R** series, led by [Federica Gazzelloni](https://federicagazzelloni.com/).
