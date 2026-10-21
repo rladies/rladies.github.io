@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261110T220000Z
 DTEND:20261111T000000Z
 SUMMARY:Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261106T150000Z
 DTEND:20261106T170000Z
 SUMMARY:Analisis de Datos en las Relaciones Internacionales Nivel Principiante - R-Ladies Wake Forest
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261105T170000Z
 DTEND:20261105T183000Z
 SUMMARY:Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -85,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -98,7 +98,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
+DTSTART:20261028T180000Z
+DTEND:20261028T190000Z
+SUMMARY:Interpréter des variables latentes avec le package R {NaileR} - RLadies+ Paris
+DESCRIPTION:Rejoignez-nous le mercredi 28 octobre à 19 h en ligne sur Zoom pour une session dédiée à la valorisation et à l’explication de vos analyses de données.\n\nNous aurons le plaisir d’accueillir Sébastien Lê, enseignant-chercheur en statistique et science des données à l’Institut Agro Rennes-Angers, pour une présentation intitulée :\n📊 « Interpréter des variables latentes avec le package R NaileR : focus méthodologique et application ».\n\nRésumé de l’intervention : Interpréter des variables latentes avec le package R NaileR : focus méthodologique et application\nLe package NaileR est conçu pour guider et automatiser l’interprétation de variables latentes, qu'elles soient continues (ex. dimensions factorielles issues d'une ACP ou d'une ACM) ou catégorielles (ex. groupes issus d'une classification non supervisée).\n\nLoin d'une simple génération textuelle « à l’aveugle », NaileR propose une démarche contrôlable d'aide à l'interprétation. Le package s'appuie sur un système de prompting modulaire qui structure les sorties statistiques fournies au modèle de langage. Au-delà de la synthèse narrative et des propositions de dénominations de concepts, l'outil garantit une traçabilité indispensable au travail du statisticien : il intègre la possibilité de revenir aisément aux preuves empiriques afin d'étayer, vérifier et valider objectivement chaque interprétation.\n\nCette méthodologie trouve une application concrète dans l'étude des systèmes alimentaires durables. Dans le cadre d'un questionnaire administré à plus de 500 répondants autour de 45 assertions, une typologie d'individus a été identifiée. NaileR permet alors de caractériser les profils d'attentes et de valeurs des répondants, en fournissant une interprétation ancrée dans les faits statistiques du jeu de données.\nSébastien illustrera cette approche par un cas concret issu des systèmes alimentaires durables (typologie d'attentes sur plus de 500 répondants).\n\n🔗 Inscription et lien Zoom sur notre page Meetup.\n\nNous avons hâte de vous y retrouver ! 👋
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-paris/events/317064838/
+ORGANIZER;CN=RLadies+ Paris:mailto:info@rladies.org
+CATEGORIES:RLadies+,RLadies+ Paris
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261021T011645Z
 DTSTART:20261028T170000Z
 DTEND:20261028T183000Z
 SUMMARY:Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna
@@ -111,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -124,7 +137,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261027T170000Z
 DTEND:20261029T200000Z
 SUMMARY:22º Meet Up: Do ggplot2 à Interatividade,  Gráficos Dinâmicos - ggiraph e Plotly - R-Ladies Niterói
@@ -137,7 +150,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261027T130000Z
 DTEND:20261029T160000Z
 SUMMARY:21º Meet Up:  Introdução à linguagem Latex - R-Ladies Niterói
@@ -150,7 +163,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
+DTSTART:20261027T150000Z
+DTEND:20261027T163000Z
+SUMMARY:Project support and welcoming - R-Ladies Morelia
+DESCRIPTION:We will welcome new members and listen how can we help Yessica's project
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-morelia/events/317064741/
+ORGANIZER;CN=R-Ladies Morelia:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Morelia
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261021T011645Z
 DTSTART:20261026T170000Z
 DTEND:20261030T200000Z
 SUMMARY:20º Meet Up: Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -163,7 +189,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261026T140000Z
 DTEND:20261030T160000Z
 SUMMARY:19º Meet Up: Pré-processamento e Análise de Dados Textuais - R-Ladies Niterói
@@ -176,7 +202,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261020T130311Z
+DTSTAMP:20261021T011645Z
 DTSTART:20261023T160000Z
 DTEND:20261023T180000Z
 SUMMARY:Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome
