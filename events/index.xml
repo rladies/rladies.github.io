@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 23 Oct 2026 01:19:01 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 23 Oct 2026 13:01:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -27,7 +27,7 @@ Bring your laptop if you want to follow along.</p>
         <p><a href="https://www.meetup.com/rladies-pdx/events/317067329/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies PDX)</author><category>R-Ladies PDX</category></item><item><title>23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/317089435/</link><pubDate>Fri, 13 Nov 2026 17:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/317089435/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Friday, November 13, 2026 at 5:30 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 3 going</p>
+        <p><strong>Attendees:</strong> 4 going</p>
         <p>Aprenda a coletar dados no CAFe, exportar e analisar no bibliometrix, ferramenta ambientada em linguagem R.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/317089435/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín</title><link>https://www.meetup.com/rladies-medellin/events/316964015/</link><pubDate>Wed, 11 Nov 2026 12:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-medellin/events/316964015/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Medellín</p>
         <p><strong>When:</strong> Wednesday, November 11, 2026 at 12:00 PM UTC</p>
@@ -65,13 +65,20 @@ Del **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comun
         <p><strong>When:</strong> Thursday, November 5, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> TU Wien Freihaus</p>
         <p><strong>Attendees:</strong> 4 going</p>
-        <p>We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA** (Integrated Nested Laplace Approximation). Using real data, we build a complete spatial model step by step.
-We then predict on a grid, generate diagnostic plots and check the predictions through cross-validation. If time permits, we also introduce spatio-temporal and areal models.
+        <p>We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA** (Integrated Nested Laplace Approximation).
+
+Using real data, we will:
+
+* Build a complete spatial model step by step
+* Predict on a grid
+* Generate diagnostic plots
+* Check the predictions through cross-validation
+* If time permits, introduce spatio-temporal and areal models
 
 As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
 
 **ℹ️ Abstract**
-Environmental data are often coming from measurement stations. The goal is a map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
+Environmental data are often coming from measurement stations. The goal is a map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
 
 **🗺️ Location**
 **In-person or Online via Zoom**
@@ -117,12 +124,12 @@ Recuerda leer y atender nuestro código de conducta disponible [aquí](https://r
         <p><a href="https://www.meetup.com/rladies-xalapa/events/316671506/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>posit::conf(2026) %&gt;% glimpse() - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/316880437/</link><pubDate>Thu, 29 Oct 2026 06:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/316880437/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Thursday, October 29, 2026 at 6:30 AM UTC</p>
         <p><strong>Where:</strong> DiUS</p>
-        <p><strong>Attendees:</strong> 12 going</p>
+        <p><strong>Attendees:</strong> 13 going</p>
         <p>**posit::conf(2026) %&gt;% glimpse()** **Date:** 29th October, 2026 **Time:** 5:30 PM (networking and refreshments from 5:30 PM; talk begins at 6:00 PM) **Where:** DiUS, Level 3/31 Queen St, Melbourne Curious about how involvement in open source, community building, mentoring, advocacy, or volunteering can open unexpected doors in your career? Wondering how people find their way into international conferences, scholarship opportunities, and global professional networks, and what role community participation plays along the way? Join us for a conversation with Dionne and Mansi, who attended **posit::conf(2026)** in Houston, Texas as **Opportunity Scholars**. This session is not just about the conference itself. It is about the communities, relationships, and contributions that helped make the opportunity possible. They will share their journeys through open source and community involvement, and the value of networking, building meaningful professional connections, and contributing to communities in ways that create impact for both oneself and others. Along the way, they will share some of their favourite moments from the conference, lessons from meeting people across the global data science ecosystem, and insights that stayed with them long after the conference ended. Whether you&#39;re new to the R community, considering your first conference application, interested in open source, or simply curious about building a more connected and community-focused career, we&#39;d love to see you there!</p>
         <p><a href="https://www.meetup.com/rladies-melbourne/events/316880437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>Interpréter des variables latentes avec le package R {NaileR} - RLadies+ Paris</title><link>https://www.meetup.com/rladies-paris/events/317064838/</link><pubDate>Wed, 28 Oct 2026 18:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-paris/events/317064838/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Paris</p>
         <p><strong>When:</strong> Wednesday, October 28, 2026 at 6:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 17 going</p>
+        <p><strong>Attendees:</strong> 18 going</p>
         <p>Rejoignez-nous le mercredi 28 octobre à 19 h en ligne sur Zoom pour une session dédiée à la valorisation et à l’explication de vos analyses de données.
 
 Nous aurons le plaisir d’accueillir Sébastien Lê, enseignant-chercheur en statistique et science des données à l’Institut Agro Rennes-Angers, pour une présentation intitulée :
