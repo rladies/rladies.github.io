@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Sat, 24 Oct 2026 01:15:00 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Sat, 24 Oct 2026 12:57:54 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -78,7 +78,7 @@ Using real data, we will:
 * If time permits, introduce spatio-temporal and areal models
 
 **ℹ️ Abstract**
-Environmental data are often coming from measurement stations. The goal is a map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA (Integrated Nested Laplace Approximation) offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
+Environmental data are often coming from measurement stations. The goal is to map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA (Integrated Nested Laplace Approximation) offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
 
 **🗺️ Location**
 **In-person or Online via Zoom**
@@ -89,6 +89,10 @@ TU Wien Freihaus
 Wiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))
 
 Zoom link will be made available to the participants before the event.
+
+**💡 What to prepare**
+
+* Install the R-INLA package by following the guide at [https://www.r-inla.org/download/](https://www.r-inla.org/download/), and bring your laptop to the session!
 
 **📍 How to find us**
 In the **YELLOW** area of TU Wien Freihaus, take the lift to the 2nd floor. After exiting the lift, walk straight pass the stairs within the yellow area and turn right to find the green area. Walk through the door and go straight to find the room.

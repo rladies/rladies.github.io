@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261113T173000Z
 DTEND:20261113T203000Z
 SUMMARY:23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261110T220000Z
 DTEND:20261111T000000Z
 SUMMARY:Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261106T150000Z
 DTEND:20261106T170000Z
 SUMMARY:Analisis de Datos en las Relaciones Internacionales Nivel Principiante - R-Ladies Wake Forest
@@ -85,11 +85,11 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261105T170000Z
 DTEND:20261105T183000Z
 SUMMARY:Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna
-DESCRIPTION:We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA**. We encourage you to participate in-person for the tutorial. You are also welcome join online via Zoom.\n\nAs we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!\n\nUsing real data, we will:\n\n* Build a complete spatial model step by step\n* Predict on a grid\n* Generate diagnostic plots\n* Check the predictions through cross-validation\n* If time permits, introduce spatio-temporal and areal models\n\n**ℹ️ Abstract**\nEnvironmental data are often coming from measurement stations. The goal is a map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA (Integrated Nested Laplace Approximation) offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.\n\n**🗺️ Location**\n**In-person or Online via Zoom**\nSeminar Room DA green 02A / Sem.R. DA grün 02 A\n(DA02E08)\n2th floor, green area\nTU Wien Freihaus\nWiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))\n\nZoom link will be made available to the participants before the event.\n\n**📍 How to find us**\nIn the **YELLOW** area of TU Wien Freihaus, take the lift to the 2nd floor. After exiting the lift, walk straight pass the stairs within the yellow area and turn right to find the green area. Walk through the door and go straight to find the room.\nUse this [floor plan](https://maps.tuwien.ac.at/?q=DA02E08#map) to help locate the room.
+DESCRIPTION:We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA**. We encourage you to participate in-person for the tutorial. You are also welcome join online via Zoom.\n\nAs we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!\n\nUsing real data, we will:\n\n* Build a complete spatial model step by step\n* Predict on a grid\n* Generate diagnostic plots\n* Check the predictions through cross-validation\n* If time permits, introduce spatio-temporal and areal models\n\n**ℹ️ Abstract**\nEnvironmental data are often coming from measurement stations. The goal is to map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA (Integrated Nested Laplace Approximation) offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.\n\n**🗺️ Location**\n**In-person or Online via Zoom**\nSeminar Room DA green 02A / Sem.R. DA grün 02 A\n(DA02E08)\n2th floor, green area\nTU Wien Freihaus\nWiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))\n\nZoom link will be made available to the participants before the event.\n\n**💡 What to prepare**\n\n* Install the R-INLA package by following the guide at [https://www.r-inla.org/download/](https://www.r-inla.org/download/), and bring your laptop to the session!\n\n**📍 How to find us**\nIn the **YELLOW** area of TU Wien Freihaus, take the lift to the 2nd floor. After exiting the lift, walk straight pass the stairs within the yellow area and turn right to find the green area. Walk through the door and go straight to find the room.\nUse this [floor plan](https://maps.tuwien.ac.at/?q=DA02E08#map) to help locate the room.
 LOCATION:TU Wien Freihaus, Wiedner Hauptstraße 8-10, Vienna, AUSTRIA
 URL:https://www.meetup.com/rladies-vienna/events/317070743/
 ORGANIZER;CN=RLadies+ Vienna:mailto:info@rladies.org
@@ -98,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -111,7 +111,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -124,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261028T180000Z
 DTEND:20261028T190000Z
 SUMMARY:Interpréter des variables latentes avec le package R {NaileR} - RLadies+ Paris
@@ -137,7 +137,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261028T170000Z
 DTEND:20261028T183000Z
 SUMMARY:Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna
@@ -150,7 +150,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -163,7 +163,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261027T170000Z
 DTEND:20261029T200000Z
 SUMMARY:22º Meet Up: Do ggplot2 à Interatividade,  Gráficos Dinâmicos - ggiraph e Plotly - R-Ladies Niterói
@@ -176,7 +176,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261027T130000Z
 DTEND:20261029T160000Z
 SUMMARY:21º Meet Up:  Introdução à linguagem Latex - R-Ladies Niterói
@@ -189,7 +189,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261027T150000Z
 DTEND:20261027T163000Z
 SUMMARY:Project support and welcoming - R-Ladies Morelia
@@ -202,7 +202,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261026T170000Z
 DTEND:20261030T200000Z
 SUMMARY:20º Meet Up: Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -215,7 +215,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261024T011459Z
+DTSTAMP:20261024T125753Z
 DTSTART:20261026T140000Z
 DTEND:20261030T160000Z
 SUMMARY:19º Meet Up: Pré-processamento e Análise de Dados Textuais - R-Ladies Niterói
