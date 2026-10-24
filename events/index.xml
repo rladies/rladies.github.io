@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 23 Oct 2026 13:01:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Sat, 24 Oct 2026 01:15:00 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -64,8 +64,10 @@ Del **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comun
         <p><a href="https://www.meetup.com/rladies-wake-forest/events/317056315/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Wake Forest)</author><category>R-Ladies Wake Forest</category></item><item><title>Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/317070743/</link><pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/317070743/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
         <p><strong>When:</strong> Thursday, November 5, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> TU Wien Freihaus</p>
-        <p><strong>Attendees:</strong> 4 going</p>
-        <p>We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA** (Integrated Nested Laplace Approximation).
+        <p><strong>Attendees:</strong> 6 going</p>
+        <p>We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA**. We encourage you to participate in-person for the tutorial. You are also welcome join online via Zoom.
+
+As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
 
 Using real data, we will:
 
@@ -75,10 +77,8 @@ Using real data, we will:
 * Check the predictions through cross-validation
 * If time permits, introduce spatio-temporal and areal models
 
-As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
-
 **ℹ️ Abstract**
-Environmental data are often coming from measurement stations. The goal is a map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
+Environmental data are often coming from measurement stations. The goal is a map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA (Integrated Nested Laplace Approximation) offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
 
 **🗺️ Location**
 **In-person or Online via Zoom**
@@ -149,7 +149,7 @@ Nous avons hâte de vous y retrouver ! 👋</p>
         <p><a href="https://www.meetup.com/rladies-paris/events/317064838/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Paris)</author><category>RLadies+ Paris</category></item><item><title>Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/316877962/</link><pubDate>Wed, 28 Oct 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/316877962/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
         <p><strong>When:</strong> Wednesday, October 28, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> TU Wien Freihaus</p>
-        <p><strong>Attendees:</strong> 9 going</p>
+        <p><strong>Attendees:</strong> 12 going</p>
         <p>Just like last year, we are welcoming the new academic year with a hands-on introduction to R, this time with a focus on data visualization. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
 
 **ℹ️ Abstract**
@@ -213,34 +213,4 @@ Este curso apresenta, de forma prática, a análise e a previsão de séries tem
         <p><strong>Attendees:</strong> 5 going</p>
         <p>O curso terá 2 encontrosa presenciais de 2 horas cada. Um no dia 26/10 e o outro no dia 30/10, ambos de 11h às 13h.
 Este minicurso apresenta conceitos e técnicas introdutórias para a análise de dados textuais, combinando explicações e atividades práticas em R. A partir de uma base previamente disponibilizada, serão abordadas as principais etapas de pré-processamento e a exploração de palavras e expressões frequentes. Em seguida, será introduzida a análise de sentimentos baseada em léxicos, com discussão sobre a interpretação dos resultados e as limitações dessa abordagem. Por fim, serão apresentadas técnicas de vetorização de textos, incluindo Bag of Words, TF-IDF e Doc2Vec, destacando suas diferenças e possibilidades de aplicação.</p>
-        <p><a href="https://www.meetup.com/rladies-niteroi/events/316960157/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Machine Learning in Epidemiology with R — Part II: From Trees to Neural Networks - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/316945048/</link><pubDate>Fri, 23 Oct 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/316945048/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
-        <p><strong>When:</strong> Friday, October 23, 2026 at 4:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 35 going</p>
-        <p>**How do different machine-learning models learn from the same data, and how can we compare their predictions?**
-
-Join [R-Ladies Rome](https://rladiesrome.org/) for the second workshop in our **Machine Learning in Epidemiology with R** series, led by [Federica Gazzelloni](https://federicagazzelloni.com/).
-
-Part I introduced how models learn through loss and optimisation.
-
-Part II, we’ll put these ideas into practice by training and comparing decision trees, random forests and a simple neural network using a heart-disease classification example.
-
-We’ll follow a complete workflow in R: explore the data, define a prediction task, train models and evaluate their performance on observations they have not seen during training.
-
-**What we’ll cover**
-
-* Decision trees and random forests with `mlr3`.
-* A simple neural network with Keras.
-* Layers, activation functions, epochs and batch sizes.
-* Training and validation loss.
-* Model comparison using accuracy, sensitivity, specificity and ROC/AUC.
-* Overfitting, cross-validation and the distinction between prediction and causation.
-
-**Who is this for?**
-This workshop is for people interested in applying machine learning to epidemiology and health data. Basic familiarity with R and RStudio is recommended. The session builds on Part I and begins with a short recap.
-
-**What to bring**
-A computer with R and RStudio installed. Setup instructions and workshop materials will be shared before the session.
-
-Bring your questions and join us for a practical exploration of how different models learn—and how we assess their predictions.</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/316945048/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item></channel></rss>
+        <p><a href="https://www.meetup.com/rladies-niteroi/events/316960157/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item></channel></rss>
