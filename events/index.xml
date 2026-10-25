@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Sun, 25 Oct 2026 01:20:53 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Sun, 25 Oct 2026 12:55:33 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -64,7 +64,7 @@ Del **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comun
         <p><a href="https://www.meetup.com/rladies-wake-forest/events/317056315/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Wake Forest)</author><category>R-Ladies Wake Forest</category></item><item><title>Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/317070743/</link><pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/317070743/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
         <p><strong>When:</strong> Thursday, November 5, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> TU Wien Freihaus</p>
-        <p><strong>Attendees:</strong> 6 going</p>
+        <p><strong>Attendees:</strong> 8 going</p>
         <p>We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA**. We encourage you to participate in-person for the tutorial. You are also welcome join online via Zoom.
 
 As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
@@ -80,6 +80,10 @@ Using real data, we will:
 **ℹ️ Abstract**
 Environmental data are often coming from measurement stations. The goal is to map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA (Integrated Nested Laplace Approximation) offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
 
+**💡 What to prepare**
+
+* Install the R-INLA package by following the guide at [https://www.r-inla.org/download/](https://www.r-inla.org/download/), and bring your laptop to the session.
+
 **🗺️ Location**
 **In-person or Online via Zoom**
 Seminar Room DA green 02A / Sem.R. DA grün 02 A
@@ -89,10 +93,6 @@ TU Wien Freihaus
 Wiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))
 
 Zoom link will be made available to the participants before the event.
-
-**💡 What to prepare**
-
-* Install the R-INLA package by following the guide at [https://www.r-inla.org/download/](https://www.r-inla.org/download/), and bring your laptop to the session!
 
 **📍 How to find us**
 In the **YELLOW** area of TU Wien Freihaus, take the lift to the 2nd floor. After exiting the lift, walk straight pass the stairs within the yellow area and turn right to find the green area. Walk through the door and go straight to find the room.
@@ -125,7 +125,24 @@ Te esperamos el sábado 31 de octubre de 2026 a las 17:00 horas (GMT-6). Puedes 
 
 **Código de conducta**
 Recuerda leer y atender nuestro código de conducta disponible [aquí](https://rladies.org/about-us/coc/).</p>
-        <p><a href="https://www.meetup.com/rladies-xalapa/events/316671506/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>posit::conf(2026) %&gt;% glimpse() - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/316880437/</link><pubDate>Thu, 29 Oct 2026 06:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/316880437/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
+        <p><a href="https://www.meetup.com/rladies-xalapa/events/316671506/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>Shiny : De « ça marche » à une vraie mise en production - RLadies+ Paris</title><link>https://www.meetup.com/rladies-paris/events/317128267/</link><pubDate>Fri, 30 Oct 2026 12:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-paris/events/317128267/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Paris</p>
+        <p><strong>When:</strong> Friday, October 30, 2026 at 12:00 PM UTC</p>
+        <p><strong>Where:</strong> Online event</p>
+        <p><strong>Attendees:</strong> 6 going</p>
+        <p>Rejoignez-nous le vendredi 30 octobre en ligne sur Zoom pour une session dédiée à la mise en production des applications Shiny.
+
+Nous aurons le plaisir d’accueillir Charles Bordet, fondateur de Data Champ’, une agence spécialisée dans le développement d’applications R Shiny, pour une présentation intitulée :
+📊 Shiny : De « ça marche » à une vraie mise en production
+
+**Résumé de l’intervention :**
+Votre application Shiny fonctionne. Vos collègues l&#39;utilisent, on vous demande de l&#39;ouvrir à plus de monde, et vous doutez : est-elle prête ? Entre une application qui marche et une application en production, sur laquelle des utilisateurs exigeants comptent tous les jours, il y a un vrai pas à franchir.
+Cette présentation présente les étapes-clés à mettre en place pour que la transition se passe en douceur : maintenabilité du code, performances, sécurité, stabilité, mise en production, et ergonomie. Pour chaque dimension, on y voit les pièges les plus fréquents, les bonnes pratiques, les outils concrets, et ce que l&#39;IA peut y apporter, avec ses propres pièges.
+En fil rouge : l&#39;application d&#39;un épidémiologiste, écrite pour une équipe de cinq personnes, puis ouverte à 300 médecins
+
+🔗 Inscription et lien Zoom sur notre page Meetup.
+
+Nous avons hâte de vous y retrouver ! 👋</p>
+        <p><a href="https://www.meetup.com/rladies-paris/events/317128267/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Paris)</author><category>RLadies+ Paris</category></item><item><title>posit::conf(2026) %&gt;% glimpse() - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/316880437/</link><pubDate>Thu, 29 Oct 2026 06:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/316880437/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Thursday, October 29, 2026 at 6:30 AM UTC</p>
         <p><strong>Where:</strong> DiUS</p>
         <p><strong>Attendees:</strong> 13 going</p>
@@ -219,6 +236,6 @@ Este curso apresenta, de forma prática, a análise e a previsão de séries tem
 Este minicurso apresenta conceitos e técnicas introdutórias para a análise de dados textuais, combinando explicações e atividades práticas em R. A partir de uma base previamente disponibilizada, serão abordadas as principais etapas de pré-processamento e a exploração de palavras e expressões frequentes. Em seguida, será introduzida a análise de sentimentos baseada em léxicos, com discussão sobre a interpretação dos resultados e as limitações dessa abordagem. Por fim, serão apresentadas técnicas de vetorização de textos, incluindo Bag of Words, TF-IDF e Doc2Vec, destacando suas diferenças e possibilidades de aplicação.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/316960157/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, January 20, 2027 at 4:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 6 going</p>
+        <p><strong>Attendees:</strong> 8 going</p>
         <p>In this session, we’ll be working through the process of developing a visualisation in ggplot2. We’ll start with a brand new dataset and create some exploratory plots; sketch out some ideas and decide what we want to communicate; build a basic plot in ggplot2; and then refine our chart to create something that’s artistic and aesthetic, yet effective. Some basic knowledge of the tidyverse will be helpful, but all of the code in this session will be explained and made available afterwards.</p>
         <p><a href="https://www.meetup.com/rladies-abuja/events/317123277/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Abuja)</author><category>R-Ladies Abuja</category></item></channel></rss>
