@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261113T173000Z
 DTEND:20261113T203000Z
 SUMMARY:23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261110T220000Z
 DTEND:20261111T000000Z
 SUMMARY:Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261106T150000Z
 DTEND:20261106T170000Z
 SUMMARY:Analisis de Datos en las Relaciones Internacionales Nivel Principiante - R-Ladies Wake Forest
@@ -85,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261105T170000Z
 DTEND:20261105T183000Z
 SUMMARY:Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna
@@ -98,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -111,7 +111,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261030T120000Z
 DTEND:20261030T130000Z
 SUMMARY:Shiny : De « ça marche » à une vraie mise en production - RLadies+ Paris
@@ -124,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261029T063000Z
 DTEND:20261029T080000Z
 SUMMARY:posit::conf(2026) %>% glimpse() - R-Ladies+ Melbourne
@@ -137,7 +137,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261028T180000Z
 DTEND:20261028T190000Z
 SUMMARY:Interpréter des variables latentes avec le package R {NaileR} - RLadies+ Paris
@@ -150,7 +150,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261028T170000Z
 DTEND:20261028T183000Z
 SUMMARY:Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna
@@ -163,7 +163,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261029T010000Z
 DTEND:20261029T030000Z
 SUMMARY:Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver
@@ -176,7 +176,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261027T170000Z
 DTEND:20261029T200000Z
 SUMMARY:22º Meet Up: Do ggplot2 à Interatividade,  Gráficos Dinâmicos - ggiraph e Plotly - R-Ladies Niterói
@@ -189,7 +189,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261027T130000Z
 DTEND:20261029T160000Z
 SUMMARY:21º Meet Up:  Introdução à linguagem Latex - R-Ladies Niterói
@@ -202,7 +202,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261027T150000Z
 DTEND:20261027T163000Z
 SUMMARY:Project support and welcoming - R-Ladies Morelia
@@ -215,7 +215,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20261026T170000Z
 DTEND:20261030T200000Z
 SUMMARY:20º Meet Up: Análise de Séries Temporais utilizando o pacote fable - R-Ladies Niterói
@@ -228,20 +228,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
-DTSTART:20261026T140000Z
-DTEND:20261030T160000Z
-SUMMARY:19º Meet Up: Pré-processamento e Análise de Dados Textuais - R-Ladies Niterói
-DESCRIPTION:O curso terá 2 encontrosa presenciais de 2 horas cada. Um no dia 26/10 e o outro no dia 30/10, ambos de 11h às 13h.\nEste minicurso apresenta conceitos e técnicas introdutórias para a análise de dados textuais, combinando explicações e atividades práticas em R. A partir de uma base previamente disponibilizada, serão abordadas as principais etapas de pré-processamento e a exploração de palavras e expressões frequentes. Em seguida, será introduzida a análise de sentimentos baseada em léxicos, com discussão sobre a interpretação dos resultados e as limitações dessa abordagem. Por fim, serão apresentadas técnicas de vetorização de textos, incluindo Bag of Words, TF-IDF e Doc2Vec, destacando suas diferenças e possibilidades de aplicação.
-LOCATION:Niterói, Niterói, Rio de Janeiro, Brazil, Niterói, BRAZIL
-URL:https://www.meetup.com/rladies-niteroi/events/316960157/
-ORGANIZER;CN=R-Ladies Niterói:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Niterói
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20261026T012114Z
+DTSTAMP:20261026T143733Z
 DTSTART:20270120T160000Z
 DTEND:20270120T180000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
