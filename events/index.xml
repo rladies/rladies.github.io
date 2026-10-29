@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 28 Oct 2026 12:53:28 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 29 Oct 2026 01:00:36 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
         <p><strong>Attendees:</strong> 2 going</p>
@@ -64,7 +64,7 @@ Del **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comun
         <p><a href="https://www.meetup.com/rladies-wake-forest/events/317056315/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Wake Forest)</author><category>R-Ladies Wake Forest</category></item><item><title>Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/317070743/</link><pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/317070743/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
         <p><strong>When:</strong> Thursday, November 5, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> TU Wien Freihaus</p>
-        <p><strong>Attendees:</strong> 9 going</p>
+        <p><strong>Attendees:</strong> 10 going</p>
         <p>We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA**. We encourage you to participate in-person for the tutorial. You are also welcome join online via Zoom.
 
 As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
@@ -128,7 +128,7 @@ Recuerda leer y atender nuestro código de conducta disponible [aquí](https://r
         <p><a href="https://www.meetup.com/rladies-xalapa/events/316671506/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Xalapa)</author><category>R-Ladies Xalapa</category></item><item><title>Shiny : De « ça marche » à une vraie mise en production - RLadies+ Paris</title><link>https://www.meetup.com/rladies-paris/events/317128267/</link><pubDate>Fri, 30 Oct 2026 12:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-paris/events/317128267/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Paris</p>
         <p><strong>When:</strong> Friday, October 30, 2026 at 12:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 22 going</p>
+        <p><strong>Attendees:</strong> 24 going</p>
         <p>Rejoignez-nous le vendredi 30 octobre en ligne sur Zoom pour une session dédiée à la mise en production des applications Shiny.
 
 Nous aurons le plaisir d’accueillir Charles Bordet, fondateur de Data Champ’, une agence spécialisée dans le développement d’applications R Shiny, pour une présentation intitulée :
@@ -147,65 +147,7 @@ Nous avons hâte de vous y retrouver ! 👋</p>
         <p><strong>Where:</strong> DiUS</p>
         <p><strong>Attendees:</strong> 16 going</p>
         <p>**posit::conf(2026) %&gt;% glimpse()** **Date:** 29th October, 2026 **Time:** 5:30 PM (networking and refreshments from 5:30 PM; talk begins at 6:00 PM) **Where:** DiUS, Level 3/31 Queen St, Melbourne Curious about how involvement in open source, community building, mentoring, advocacy, or volunteering can open unexpected doors in your career? Wondering how people find their way into international conferences, scholarship opportunities, and global professional networks, and what role community participation plays along the way? Join us for a conversation with Dionne and Mansi, who attended **posit::conf(2026)** in Houston, Texas as **Opportunity Scholars**. This session is not just about the conference itself. It is about the communities, relationships, and contributions that helped make the opportunity possible. They will share their journeys through open source and community involvement, and the value of networking, building meaningful professional connections, and contributing to communities in ways that create impact for both oneself and others. Along the way, they will share some of their favourite moments from the conference, lessons from meeting people across the global data science ecosystem, and insights that stayed with them long after the conference ended. Whether you&#39;re new to the R community, considering your first conference application, interested in open source, or simply curious about building a more connected and community-focused career, we&#39;d love to see you there!</p>
-        <p><a href="https://www.meetup.com/rladies-melbourne/events/316880437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>Interpréter des variables latentes avec le package R {NaileR} - RLadies+ Paris</title><link>https://www.meetup.com/rladies-paris/events/317064838/</link><pubDate>Wed, 28 Oct 2026 18:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-paris/events/317064838/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Paris</p>
-        <p><strong>When:</strong> Wednesday, October 28, 2026 at 6:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 21 going</p>
-        <p>Rejoignez-nous le mercredi 28 octobre à 19 h en ligne sur Zoom pour une session dédiée à la valorisation et à l’explication de vos analyses de données.
-
-Nous aurons le plaisir d’accueillir Sébastien Lê, enseignant-chercheur en statistique et science des données à l’Institut Agro Rennes-Angers, pour une présentation intitulée :
-📊 « Interpréter des variables latentes avec le package R NaileR : focus méthodologique et application ».
-
-Résumé de l’intervention : Interpréter des variables latentes avec le package R NaileR : focus méthodologique et application
-Le package NaileR est conçu pour guider et automatiser l’interprétation de variables latentes, qu&#39;elles soient continues (ex. dimensions factorielles issues d&#39;une ACP ou d&#39;une ACM) ou catégorielles (ex. groupes issus d&#39;une classification non supervisée).
-
-Loin d&#39;une simple génération textuelle « à l’aveugle », NaileR propose une démarche contrôlable d&#39;aide à l&#39;interprétation. Le package s&#39;appuie sur un système de prompting modulaire qui structure les sorties statistiques fournies au modèle de langage. Au-delà de la synthèse narrative et des propositions de dénominations de concepts, l&#39;outil garantit une traçabilité indispensable au travail du statisticien : il intègre la possibilité de revenir aisément aux preuves empiriques afin d&#39;étayer, vérifier et valider objectivement chaque interprétation.
-
-Cette méthodologie trouve une application concrète dans l&#39;étude des systèmes alimentaires durables. Dans le cadre d&#39;un questionnaire administré à plus de 500 répondants autour de 45 assertions, une typologie d&#39;individus a été identifiée. NaileR permet alors de caractériser les profils d&#39;attentes et de valeurs des répondants, en fournissant une interprétation ancrée dans les faits statistiques du jeu de données.
-Sébastien illustrera cette approche par un cas concret issu des systèmes alimentaires durables (typologie d&#39;attentes sur plus de 500 répondants).
-
-🔗 Inscription et lien Zoom sur notre page Meetup.
-
-Nous avons hâte de vous y retrouver ! 👋</p>
-        <p><a href="https://www.meetup.com/rladies-paris/events/317064838/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Paris)</author><category>RLadies+ Paris</category></item><item><title>Making Data Speak: Static and Interactive Plots in R - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/316877962/</link><pubDate>Wed, 28 Oct 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/316877962/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
-        <p><strong>When:</strong> Wednesday, October 28, 2026 at 5:00 PM UTC</p>
-        <p><strong>Where:</strong> TU Wien Freihaus</p>
-        <p><strong>Attendees:</strong> 13 going</p>
-        <p>Just like last year, we are welcoming the new academic year with a hands-on introduction to R, this time with a focus on data visualization. As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
-
-**ℹ️ Abstract**
-A hands-on introduction to data visualization in R for beginners. You’ll learn how to prepare your data for plotting, create clear and attractive graphics with the R package ***ggplot2***, and add interactive features using the ***plotly*** package.
-
-**💡 What to prepare**
-
-* Before the workshop, install **R** and **RStudio** on your laptop by following the 2-step guide at **[https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)**
-* On the workshop day, bring your laptop to follow the workshop material closely and code along with us!
-* (Optional) Bring a dataset you would like to work with
-
-**🗺️ Location**
-Seminar Room DB yellow 09 / Sem.R. DB gelb 09
-(DB09E23)
-9th floor, yellow area
-TU Wien Freihaus
-Wiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))
-
-**📍 How to find us**
-In the yellow area of TU Wien Freihaus, take the lift to the 9th floor. After exiting the lift, turn left and walk through the door. The seminar room will be on your left.
-Use this [floor plan](https://maps.tuwien.ac.at/?q=DB09E23#map) to help locate the room.</p>
-        <p><a href="https://www.meetup.com/rladies-vienna/events/316877962/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Vienna)</author><category>RLadies+ Vienna</category></item><item><title>Rainy Day Bioacoustics: Listening to Birds with R - R-Ladies Vancouver</title><link>https://www.meetup.com/rladies-vancouver/events/316720371/</link><pubDate>Thu, 29 Oct 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vancouver/events/316720371/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Vancouver</p>
-        <p><strong>When:</strong> Thursday, October 29, 2026 at 1:00 AM UTC</p>
-        <p><strong>Where:</strong> Vancouver Independent School for Science and Technology</p>
-        <p><strong>Attendees:</strong> 10 going</p>
-        <p>As the Vancouver rain sets in, getting out into the field to listen to birds gets a bit trickier—but we can still tune in from the comfort of R! In this hands-on workshop, Sunny will introduce essential R packages designed for bioacousticians. We will walk through extracting bird sounds from Xeno-Canto, running machine learning models like BirdNET to detect species, and visualizing acoustic results—all within R! Along the way, we&#39;ll explore beautiful bird vocalizations and spotlight common Pacific Northwest species you hear around Vancouver, from the cheerful songs of Song Sparrows and Black-capped Chickadees to the ever-present Crows.
-
-\*\*\*
-
-1. If this is your first R-Ladies event, please take a moment to review our R-Ladies Global code of conduct: [https://github.com/rladies/starter-kit/wiki/Code-of-Conduct](https://github.com/rladies/starter-kit/wiki/Code-of-Conduct)
-2. Who is this allowed to attend the event?
-
-Everyone is welcome to join us at our events and to be a part of our mission to empower gender minorities with the skills and knowledge to code in one of the top programming language in data science, which is R.
-3\. To fulfill this mission we do ask participants to respect a focus on the encouragement and support for women and non\-binary people during our events\.</p>
-        <p><a href="https://www.meetup.com/rladies-vancouver/events/316720371/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Vancouver)</author><category>R-Ladies Vancouver</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-melbourne/events/316880437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, January 20, 2027 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 9 going</p>
         <p>In this session, we’ll be working through the process of developing a visualisation in ggplot2. We’ll start with a brand new dataset and create some exploratory plots; sketch out some ideas and decide what we want to communicate; build a basic plot in ggplot2; and then refine our chart to create something that’s artistic and aesthetic, yet effective. Some basic knowledge of the tidyverse will be helpful, but all of the code in this session will be explained and made available afterwards.</p>
