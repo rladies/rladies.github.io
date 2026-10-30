@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261113T173000Z
 DTEND:20261113T203000Z
 SUMMARY:23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261110T220000Z
 DTEND:20261111T000000Z
 SUMMARY:Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261106T150000Z
 DTEND:20261106T170000Z
 SUMMARY:Analisis de Datos en las Relaciones Internacionales Nivel Principiante - R-Ladies Wake Forest
@@ -85,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261105T170000Z
 DTEND:20261105T183000Z
 SUMMARY:Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna
@@ -98,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20261031T230000Z
 DTEND:20261101T010000Z
 SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
@@ -111,20 +111,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
-DTSTART:20261030T120000Z
-DTEND:20261030T130000Z
-SUMMARY:Shiny : De « ça marche » à une vraie mise en production - RLadies+ Paris
-DESCRIPTION:Rejoignez-nous le vendredi 30 octobre en ligne sur Zoom pour une session dédiée à la mise en production des applications Shiny.\n\nNous aurons le plaisir d’accueillir Charles Bordet, fondateur de Data Champ’, une agence spécialisée dans le développement d’applications R Shiny, pour une présentation intitulée :\n📊 Shiny : De « ça marche » à une vraie mise en production\n\n**Résumé de l’intervention :**\nVotre application Shiny fonctionne. Vos collègues l'utilisent, on vous demande de l'ouvrir à plus de monde, et vous doutez : est-elle prête ? Entre une application qui marche et une application en production, sur laquelle des utilisateurs exigeants comptent tous les jours, il y a un vrai pas à franchir.\nCette présentation présente les étapes-clés à mettre en place pour que la transition se passe en douceur : maintenabilité du code, performances, sécurité, stabilité, mise en production, et ergonomie. Pour chaque dimension, on y voit les pièges les plus fréquents, les bonnes pratiques, les outils concrets, et ce que l'IA peut y apporter, avec ses propres pièges.\nEn fil rouge : l'application d'un épidémiologiste, écrite pour une équipe de cinq personnes, puis ouverte à 300 médecins\n\n🔗 Inscription et lien Zoom sur notre page Meetup.\n\nNous avons hâte de vous y retrouver ! 👋
-LOCATION:Online event
-URL:https://www.meetup.com/rladies-paris/events/317128267/
-ORGANIZER;CN=RLadies+ Paris:mailto:info@rladies.org
-CATEGORIES:RLadies+,RLadies+ Paris
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20261030T010127Z
+DTSTAMP:20261030T125446Z
 DTSTART:20270120T160000Z
 DTEND:20270120T180000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
