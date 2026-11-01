@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20261113T173000Z
 DTEND:20261113T203000Z
 SUMMARY:23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20261110T220000Z
 DTEND:20261111T000000Z
 SUMMARY:Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20261106T150000Z
 DTEND:20261106T170000Z
 SUMMARY:Analisis de Datos en las Relaciones Internacionales Nivel Principiante - R-Ladies Wake Forest
@@ -85,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20261105T170000Z
 DTEND:20261105T183000Z
 SUMMARY:Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna
@@ -98,20 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
-DTSTART:20261031T230000Z
-DTEND:20261101T010000Z
-SUMMARY:De mi script a mi propio paquete - R-Ladies Xalapa
-DESCRIPTION:**De mi script a mi propio paquete: diseñando herramientas reproducibles en R** 📦✨\n\n¿Alguna vez escribiste un script para resolver un problema muy específico y después pensaste que podría servirle a alguien más? En esta sesión de RLadies+ Xalapa exploraremos cómo ese código que nació para salir del paso puede convertirse en una herramienta reutilizable, documentada y reproducible.\n\nSerá una charla-demostración muy accesible en la que construiremos juntas un mini ejemplo. Partiremos de unas pocas líneas de código, las convertiremos en una función y recorreremos los elementos básicos para transformarla en un pequeño paquete de R, incluyendo su documentación y una prueba sencilla.\n\nDespués conoceremos **rbims**, un paquete desarrollado para el análisis de datos metagenómicos, como ejemplo real de cómo este mismo proceso puede crecer hasta convertirse en una herramienta científica. No necesitas saber nada de metagenómica, porque el énfasis estará en R, la reproducibilidad y el diseño de software.\n\n👩‍💻 **¿A quién va dirigida?**\nA personas con conocimientos básicos de R que nunca han desarrollado un paquete y tienen curiosidad por dar ese siguiente paso.\n\n🧭 **¿Qué haremos?**\n\n* Una charla introductoria sobre por qué empaquetar nuestro código\n* Una demostración paso a paso, del script a la función y de la función al paquete\n* Un recorrido por rbims como caso real\n* Un espacio de preguntas y conversación\n\n**Facilitadora:** Dra. Mirna Vázquez Rosas Landa\n\nTe esperamos el sábado 31 de octubre de 2026 a las 17:00 horas (GMT-6). Puedes ir disfrazada🎃.\n\n**Código de conducta**\nRecuerda leer y atender nuestro código de conducta disponible [aquí](https://rladies.org/about-us/coc/).
-LOCATION:Leonardo Pasquel 22, Leonardo Pasquel 22, Pumar, 91040 Xalapa-Enríquez, Ver., Mexico, Xalapa-Enríquez, MEXICO
-URL:https://www.meetup.com/rladies-xalapa/events/316671506/
-ORGANIZER;CN=R-Ladies Xalapa:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Xalapa
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20261031T125125Z
+DTSTAMP:20261101T010052Z
 DTSTART:20270120T160000Z
 DTEND:20270120T180000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
