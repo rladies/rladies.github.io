@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 05 Nov 2026 12:51:38 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 06 Nov 2026 00:56:18 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges</title><link>https://www.meetup.com/rladies-limoges/events/316973463/</link><pubDate>Fri, 04 Dec 2026 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-limoges/events/316973463/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Limoges</p>
         <p><strong>When:</strong> Friday, December 4, 2026 at 4:00 PM UTC</p>
         <p><strong>Where:</strong> BU Droit et Sciences Economiques</p>
-        <p><strong>Attendees:</strong> 2 going</p>
+        <p><strong>Attendees:</strong> 3 going</p>
         <p>Le thème de cette séance sera le suivant :
 
 **&#34;Coder sous R en SHS : transmission d&#39;un apprentissage de R en mutation&#34;**
@@ -46,7 +46,7 @@ Bring your laptop if you want to follow along.</p>
         <p><a href="https://www.meetup.com/rladies-pdx/events/317067329/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies PDX)</author><category>R-Ladies PDX</category></item><item><title>23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói</title><link>https://www.meetup.com/rladies-niteroi/events/317089435/</link><pubDate>Fri, 13 Nov 2026 17:30:00 +0000</pubDate><guid>https://www.meetup.com/rladies-niteroi/events/317089435/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Niterói</p>
         <p><strong>When:</strong> Friday, November 13, 2026 at 5:30 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 24 going</p>
+        <p><strong>Attendees:</strong> 28 going</p>
         <p>Aprenda a coletar dados no CAFe, exportar e analisar no bibliometrix, ferramenta ambientada em linguagem R.</p>
         <p><a href="https://www.meetup.com/rladies-niteroi/events/317089435/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín</title><link>https://www.meetup.com/rladies-medellin/events/316964015/</link><pubDate>Wed, 11 Nov 2026 12:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-medellin/events/316964015/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Medellín</p>
         <p><strong>When:</strong> Wednesday, November 11, 2026 at 12:00 PM UTC</p>
@@ -80,41 +80,7 @@ Del **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comun
         <p><strong>Where:</strong> Wake Forest</p>
         <p><strong>Attendees:</strong> 1 going</p>
         <p>Proximamente</p>
-        <p><a href="https://www.meetup.com/rladies-wake-forest/events/317056315/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Wake Forest)</author><category>R-Ladies Wake Forest</category></item><item><title>Bayesian Spatial Prediction with R-INLA - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/317070743/</link><pubDate>Thu, 05 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/317070743/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
-        <p><strong>When:</strong> Thursday, November 5, 2026 at 5:00 PM UTC</p>
-        <p><strong>Where:</strong> TU Wien Freihaus</p>
-        <p><strong>Attendees:</strong> 15 going</p>
-        <p>We are pleased to host **Corinna Perchtold** from French Geological Survey (BRGM) for this 90-minute hands-on tutorial with R-INLA. It is suitable for **R users with no previous experience on INLA**. We encourage you to participate in-person for the tutorial. You are also welcome join online via Zoom.
-
-As we promote gender diversity and inclusion in the R community, all genders and skill levels in R are welcome!
-
-Using real data, we will:
-
-* Build a complete spatial model step by step
-* Predict on a grid
-* Generate diagnostic plots
-* Check the predictions through cross-validation
-* If time permits, introduce spatio-temporal and areal models
-
-**ℹ️ Abstract**
-Environmental data are often coming from measurement stations. The goal is to map the data over the whole domain of interest, with an honest statement of uncertainty. Bayesian geostatistical models do this well, but fitting them with MCMC (Markov chain Monte Carlo) is slow, because each iteration works with a dense covariance matrix. INLA (Integrated Nested Laplace Approximation) offers a fast deterministic alternative for latent Gaussian models. Combined with the SPDE (stochastic partial differential equations) approach, it represents a Matérn field on a triangle mesh with a sparse precision matrix.
-
-**💡 What to prepare**
-
-* Install the R-INLA package by following the guide at [https://www.r-inla.org/download/](https://www.r-inla.org/download/), and bring your laptop to the session.
-
-**🗺️ Location**
-**In-person or Online via Zoom**
-Seminar Room DA green 02A / Sem.R. DA grün 02 A
-(DA02E08)
-2th floor, green area
-TU Wien Freihaus
-Wiedner Hauptstraße 8-10, 1040 Vienna ([map](https://maps.app.goo.gl/N8PSCZfdi97KirFY6))
-
-**📍 How to find us**
-In the **YELLOW** area of TU Wien Freihaus, take the lift to the 2nd floor. After exiting the lift, walk straight pass the stairs within the yellow area and turn right to find the green area. Walk through the door and go straight to find the room.
-Use this [floor plan](https://maps.tuwien.ac.at/?q=DA02E08#map) to help locate the room.</p>
-        <p><a href="https://www.meetup.com/rladies-vienna/events/317070743/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Vienna)</author><category>RLadies+ Vienna</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-wake-forest/events/317056315/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Wake Forest)</author><category>R-Ladies Wake Forest</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, January 20, 2027 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 9 going</p>
         <p>In this session, we’ll be working through the process of developing a visualisation in ggplot2. We’ll start with a brand new dataset and create some exploratory plots; sketch out some ideas and decide what we want to communicate; build a basic plot in ggplot2; and then refine our chart to create something that’s artistic and aesthetic, yet effective. Some basic knowledge of the tidyverse will be helpful, but all of the code in this session will be explained and made available afterwards.</p>
