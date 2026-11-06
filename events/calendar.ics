@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
+DTSTART:20261205T230000Z
+DTEND:20261206T010000Z
+SUMMARY:¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa
+DESCRIPTION:**¿La IA puede ser mi Amix?: Mitos y realidades sobre IA**\n\nEn México el uso de dispositivos inteligentes conectados a internet o a una red local creció 3.1 puntos porcentuales entre 2024 y 2025. Es decir que actualmente, se estima que de la población mexicana el 86.1% es usuaria de internet. Y muchos de estos usuarios aceptan términos y condiciones de diversas redes sociales para poder mirar un vídeo o leer algo… si te has preguntado qué se hace con la información que se genera día a día dadas esas interacciones ¡esta sesión de RLadies+ es para ti! ¿La IA va a reemplazar empleos? ¿De verdad se gasta tanta agua por pedirle a un agente de IA una foto estilo caricatura?\n\nEstas y muchas más preguntas las discutiremos de la mano de una experta en IA. 👀.\n\n👩‍💻 **¿A quién va dirigida?**\nA personas con interés en la IA.\n\n🧭 **¿Qué haremos?**\n\n* Una charla introductoria\n* Un espacio de preguntas y conversación\n* Convivio de fin de año 🪅\n\n**Facilitadora:** Mtra. Ameyalli Perea Carreto\n\nTe esperamos el sábado 5 de diciembre de 2026 a las 17:00 horas (GMT-6).\n\n**Código de conducta**\nRecuerda leer y atender nuestro código de conducta disponible [aquí](https://rladies.org/about-us/coc/).
+LOCATION:R-Ladies Xalapa, Betancourt 5, Col. Centro, Xalapa, MEXICO
+URL:https://www.meetup.com/rladies-xalapa/events/317309474/
+ORGANIZER;CN=R-Ladies Xalapa:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Xalapa
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261106T125251Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
 DTSTART:20261125T070000Z
 DTEND:20261125T100000Z
 SUMMARY:R-Ladies+ Melbourne End of Year trivia event & 10th Birthday! - R-Ladies+ Melbourne
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
 DTSTART:20261113T173000Z
 DTEND:20261113T203000Z
 SUMMARY:23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
 DTSTART:20261111T120000Z
 DTEND:20261113T230000Z
 SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
 DTSTART:20261110T220000Z
 DTEND:20261111T000000Z
 SUMMARY:Cuando los datos no son normales: Guía amigable de GLM para la ecología - R-Ladies Villahermosa
@@ -85,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
 DTSTART:20261106T150000Z
 DTEND:20261106T170000Z
 SUMMARY:Analisis de Datos en las Relaciones Internacionales Nivel Principiante - R-Ladies Wake Forest
@@ -98,7 +111,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261106T005617Z
+DTSTAMP:20261106T125251Z
 DTSTART:20270120T160000Z
 DTEND:20270120T180000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
