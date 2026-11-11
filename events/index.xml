@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 11 Nov 2026 01:08:17 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/317309474/</link><pubDate>Sat, 05 Dec 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/317309474/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 11 Nov 2026 12:51:42 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa</title><link>https://www.meetup.com/rladies-xalapa/events/317309474/</link><pubDate>Sat, 05 Dec 2026 23:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-xalapa/events/317309474/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Xalapa</p>
         <p><strong>When:</strong> Saturday, December 5, 2026 at 11:00 PM UTC</p>
         <p><strong>Where:</strong> R-Ladies Xalapa</p>
         <p><strong>Attendees:</strong> 3 going</p>
@@ -73,29 +73,7 @@ Bring your laptop if you want to follow along.</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 32 going</p>
         <p>Aprenda a coletar dados no CAFe, exportar e analisar no bibliometrix, ferramenta ambientada em linguagem R.</p>
-        <p><a href="https://www.meetup.com/rladies-niteroi/events/317089435/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín</title><link>https://www.meetup.com/rladies-medellin/events/316964015/</link><pubDate>Wed, 11 Nov 2026 12:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-medellin/events/316964015/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Medellín</p>
-        <p><strong>When:</strong> Wednesday, November 11, 2026 at 12:00 PM UTC</p>
-        <p><strong>Where:</strong> Universidad de Antioquia</p>
-        <p><strong>Attendees:</strong> 6 going</p>
-        <p>🎉 **¡R-Ladies Medellín te invita a LatinR 2026!** 💜📊
-
-¿Te interesa la ciencia de datos, la estadística, la programación en R o la inteligencia artificial? ¡Este evento es para ti!
-
-Del **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comunidad latinoamericana que utiliza R para investigar, aprender e innovar.
-
-✨ Participa en conferencias, talleres prácticos y espacios para conectar con estudiantes, investigadores y profesionales de toda Latinoamérica.
-
-💻 Aprende nuevas herramientas, comparte experiencias y descubre cómo R está transformando la investigación y la industria.
-
-📍 **Lugar:** Universidad de Antioquia, Medellín
-📅 **Fecha:** 11–13 de noviembre de 2026
-
-🚀 **¡Inscríbete y sé parte de LatinR 2026!**
-
-👉 Consulta la información del evento y las inscripciones: [https://latinr.org/blog/es/2026-08-25-inscripcion.html]
-
-#LatinR2026 #RLadiesMedellin #RStats #DataScience #Estadística #InteligenciaArtificial</p>
-        <p><a href="https://www.meetup.com/rladies-medellin/events/316964015/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Medellín)</author><category>R-Ladies Medellín</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-niteroi/events/317089435/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Niterói)</author><category>R-Ladies Niterói</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, January 20, 2027 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 9 going</p>
         <p>In this session, we’ll be working through the process of developing a visualisation in ggplot2. We’ll start with a brand new dataset and create some exploratory plots; sketch out some ideas and decide what we want to communicate; build a basic plot in ggplot2; and then refine our chart to create something that’s artistic and aesthetic, yet effective. Some basic knowledge of the tidyverse will be helpful, but all of the code in this session will be explained and made available afterwards.</p>

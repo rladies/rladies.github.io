@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261111T010816Z
+DTSTAMP:20261111T125141Z
 DTSTART:20261205T230000Z
 DTEND:20261206T010000Z
 SUMMARY:¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261111T010816Z
+DTSTAMP:20261111T125141Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261111T010816Z
+DTSTAMP:20261111T125141Z
 DTSTART:20261125T070000Z
 DTEND:20261125T100000Z
 SUMMARY:R-Ladies+ Melbourne End of Year trivia event & 10th Birthday! - R-Ladies+ Melbourne
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261111T010816Z
+DTSTAMP:20261111T125141Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261111T010816Z
+DTSTAMP:20261111T125141Z
 DTSTART:20261113T173000Z
 DTEND:20261113T203000Z
 SUMMARY:23º Meet Up: Coleta de dados e Análise bibliométrica com bibliometrix - R-Ladies Niterói
@@ -72,20 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261111T010816Z
-DTSTART:20261111T120000Z
-DTEND:20261113T230000Z
-SUMMARY:Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo - R-Ladies Medellín
-DESCRIPTION:🎉 **¡R-Ladies Medellín te invita a LatinR 2026!** 💜📊\n\n¿Te interesa la ciencia de datos, la estadística, la programación en R o la inteligencia artificial? ¡Este evento es para ti!\n\nDel **11 al 13 de noviembre**, Medellín será el punto de encuentro de la comunidad latinoamericana que utiliza R para investigar, aprender e innovar.\n\n✨ Participa en conferencias, talleres prácticos y espacios para conectar con estudiantes, investigadores y profesionales de toda Latinoamérica.\n\n💻 Aprende nuevas herramientas, comparte experiencias y descubre cómo R está transformando la investigación y la industria.\n\n📍 **Lugar:** Universidad de Antioquia, Medellín\n📅 **Fecha:** 11–13 de noviembre de 2026\n\n🚀 **¡Inscríbete y sé parte de LatinR 2026!**\n\n👉 Consulta la información del evento y las inscripciones: [https://latinr.org/blog/es/2026-08-25-inscripcion.html]\n\n#LatinR2026 #RLadiesMedellin #RStats #DataScience #Estadística #InteligenciaArtificial
-LOCATION:Universidad de Antioquia, |, Cl. 67 #53 - 108, Aranjuez, Medellín, Aranjuez, Medellín, Antioquia, Colombia, Medellín, COLOMBIA
-URL:https://www.meetup.com/rladies-medellin/events/316964015/
-ORGANIZER;CN=R-Ladies Medellín:mailto:info@rladies.org
-CATEGORIES:RLadies+,R-Ladies Medellín
-STATUS:CONFIRMED
-SEQUENCE:0
-END:VEVENTBEGIN:VEVENT
-UID:noreply@rladies.org
-DTSTAMP:20261111T010816Z
+DTSTAMP:20261111T125141Z
 DTSTART:20270120T160000Z
 DTEND:20270120T173000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
