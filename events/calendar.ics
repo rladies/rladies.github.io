@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261115T005815Z
+DTSTAMP:20261115T125226Z
 DTSTART:20261205T230000Z
 DTEND:20261206T010000Z
 SUMMARY:¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261115T005815Z
+DTSTAMP:20261115T125226Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -33,7 +33,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261115T005815Z
+DTSTAMP:20261115T125226Z
+DTSTART:20261202T170000Z
+DTEND:20261202T180000Z
+SUMMARY:RLadies+ Philly with Padmashri Saravanan - R-Ladies Philly
+DESCRIPTION:TBD
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-philly/events/317373503/
+ORGANIZER;CN=R-Ladies Philly:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Philly
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261115T125226Z
 DTSTART:20261125T070000Z
 DTEND:20261125T100000Z
 SUMMARY:R-Ladies+ Melbourne End of Year trivia event & 10th Birthday! - R-Ladies+ Melbourne
@@ -46,7 +59,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261115T005815Z
+DTSTAMP:20261115T125226Z
+DTSTART:20261124T000000Z
+DTEND:20261124T013000Z
+SUMMARY:Examining the 2026 municipal election results using R and Open Ottawa data - R-Ladies Ottawa
+DESCRIPTION:Open Ottawa has a great collection of data that is open to the public! We'll be exploring the 2026 municipal elections official results using R and RStudio.\n\nWe'll walk through:\n\n* importing the data\n* clean the data\n* do a preliminary exploration of the data\n* come out with some nice graphs!\n\nIf you want to code along, make sure you have the following:\n\n* R\n* RStudio\n\nAnd we'll go over installing the relevant packages during the demo. You can find the repository for the code-along [here](https://github.com/RLadies-Ottawa/2026-11-23_open-data-ottawa_2026-municipal-elections).\n\nZoom link will be provided to attendees prior to the event.
+LOCATION:Online event
+URL:https://www.meetup.com/rladies-ottawa/events/317363042/
+ORGANIZER;CN=R-Ladies Ottawa:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Ottawa
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261115T125226Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -59,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261115T005815Z
+DTSTAMP:20261115T125226Z
 DTSTART:20270120T160000Z
 DTEND:20270120T173000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
