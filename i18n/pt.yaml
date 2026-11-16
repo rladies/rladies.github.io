@@ -31,6 +31,8 @@ social_media: 'Redes sociais'
 
 # Chapter page ----
 join_chapter: 'Junte-se ao capítulo'
+restart_chapter: 'Reativar este capítulo'
+restart_chapter_note: 'Este capítulo está aposentado. Se quiser organizá-lo novamente, entre em contato e explicaremos como.'
 organizers: 'Organizadores'
 tab_current: 'Atuais'
 tab_former: 'Anteriores'

@@ -58,8 +58,5 @@ validate_jsons(
   here::here("scripts/json_shema/vacancies.json")
 )
 
-#  Validate chapters json
-validate_jsons(
-  list.files(here::here("data/chapters"), full.names = TRUE, recursive = TRUE),
-  here::here("scripts/json_shema/chapter.json")
-)
+# Chapter jsons are validated by jinx, which owns the schema, in
+# .github/workflows/chapter-data-check.yaml.

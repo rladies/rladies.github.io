@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Dominican Republic",
   "city": "Santo Domingo",
-  "social_media": {
-    "meetup": "rladies-santo-domingo"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Lissette Rodriguez",

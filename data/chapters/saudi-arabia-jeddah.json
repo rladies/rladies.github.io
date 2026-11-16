@@ -1,11 +1,9 @@
 {
-  "urlname": "rladies-jeddah",
+  "urlname": "RLadiesJeddah",
   "status": "active",
   "country": "Saudi Arabia",
   "city": "Jeddah",
-  "social_media": {
-    "meetup": "rladies-jeddah"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Khadeejah Alaslani"

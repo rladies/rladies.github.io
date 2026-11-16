@@ -3,9 +3,7 @@
   "status": "active",
   "country": "France",
   "city": "Bordeaux",
-  "social_media": {
-    "meetup": "rladies-bordeaux"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Natalija Plasonja",

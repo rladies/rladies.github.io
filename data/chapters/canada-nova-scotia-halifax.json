@@ -4,9 +4,7 @@
   "country": "Canada",
   "state.region": "Nova Scotia",
   "city": "Halifax",
-  "social_media": {
-    "meetup": "rladies-halifax"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Emily O'Grady"

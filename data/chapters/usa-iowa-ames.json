@@ -5,10 +5,9 @@
   "state.region": "Iowa",
   "city": "Ames",
   "social_media": {
-    "meetup": "rladies-ames",
     "twitter": "RLadiesAmes",
     "email": "ames@rladies.org",
-    "github": "rladies/meetup-presentations_ames"
+    "github": "rladies-ames"
   },
   "organizers": {
     "current": [

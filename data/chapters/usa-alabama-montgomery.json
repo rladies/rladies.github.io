@@ -4,9 +4,7 @@
   "country": "USA",
   "state.region": "Alabama",
   "city": "Montgomery",
-  "social_media": {
-    "meetup": "rladies-montgomery"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Rachel Ramirez"

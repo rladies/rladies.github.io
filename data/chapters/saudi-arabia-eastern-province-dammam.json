@@ -1,14 +1,14 @@
 {
   "urlname": "rladies-dammam",
+  "name": "R-Ladies Dammam",
   "status": "active",
   "country": "Saudi Arabia",
   "state.region": "Eastern Province",
   "city": "Dammam",
   "social_media": {
-    "meetup": "rladies-dammam",
     "twitter": "RLadiesDammam",
     "email": "dammam@rladies.org",
-    "github": "rladies/meetup-presentations_dammam"
+    "github": "RLadies-Saudi"
   },
   "organizers": {
     "current": [

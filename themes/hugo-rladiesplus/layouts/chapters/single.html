@@ -70,9 +70,17 @@
           </div>
         {{ end }}
 
-        {{ with .Params.urlname }}
+        {{ if hasPrefix .Params.status "retired" }}
           <div>
-            <a href="https://www.meetup.com/{{ . }}" target="_blank" rel="noopener noreferrer"
+            <p class="mb-3">{{ i18n "restart_chapter_note" }}</p>
+            <a href="mailto:chapters@rladies.org?subject={{ printf "Restarting %s" .Title | urlquery }}"
+               class="btn btn-primary">
+              <i class="fa-solid fa-envelope mr-2"></i>{{ i18n "restart_chapter" }}
+            </a>
+          </div>
+        {{ else if and .Params.urlname (or .Params.meetup_id (eq .Params.status "active")) }}
+          <div>
+            <a href="https://www.meetup.com/{{ .Params.urlname }}" target="_blank" rel="noopener noreferrer"
                class="btn btn-primary">
               <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i>{{ i18n "join_chapter" }}
             </a>

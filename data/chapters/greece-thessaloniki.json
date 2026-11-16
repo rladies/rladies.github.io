@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Greece",
   "city": "Thessaloniki",
-  "social_media": {
-    "meetup": "rladies-thessaloniki"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Danjela Lura"

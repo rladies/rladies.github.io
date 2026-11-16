@@ -31,6 +31,8 @@ social_media: 'Social media'
 
 # Chapter page ----
 join_chapter: 'Join chapter'
+restart_chapter: 'Restart this chapter'
+restart_chapter_note: 'This chapter is retired. If you would like to run it again, get in touch and we will talk you through it.'
 organizers: 'Organizers'
 tab_current: 'Current'
 tab_former: 'Former'

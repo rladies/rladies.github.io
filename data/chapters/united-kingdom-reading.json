@@ -3,9 +3,7 @@
   "status": "active",
   "country": "United Kingdom",
   "city": "Reading",
-  "social_media": {
-    "meetup": "rladies-reading"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Emmanuelle Nunes"

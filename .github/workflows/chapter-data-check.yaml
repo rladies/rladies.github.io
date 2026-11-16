@@ -1,0 +1,24 @@
+# Runs on every pull request, not only those touching data/chapters, so
+# it can be a required status check. A check gated by a paths filter
+# never reports on a PR outside the filter, and a required check that
+# never reports blocks the merge forever. The reusable workflow exits
+# successfully when the PR changes no chapter file.
+name: "Chapter data"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  packages: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  check:
+    uses: rladies/jinx/.github/workflows/reusable-chapter-validate.yml@main
+    secrets:
+      JINX_APP_ID: ${{ secrets.JINX_APP_ID }}
+      JINX_PRIVATE_KEY: ${{ secrets.JINX_PRIVATE_KEY }}

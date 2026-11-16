@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Brazil",
   "city": "Brasilia",
-  "social_media": {
-    "meetup": "rladies-brasilia"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Juliana Silva de Deus"

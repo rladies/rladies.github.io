@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Egypt",
   "city": "Cairo",
-  "social_media": {
-    "meetup": "rladies-cairo"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Amany Salem"

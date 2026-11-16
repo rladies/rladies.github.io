@@ -4,9 +4,7 @@
   "country": "USA",
   "state.region": "Hawaii",
   "city": "Honolulu",
-  "social_media": {
-    "meetup": "rladies-honolulu"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Madeline Berger",

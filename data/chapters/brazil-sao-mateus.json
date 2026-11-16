@@ -3,9 +3,7 @@
   "status": "active",
   "country": "Brazil",
   "city": "São Mateus",
-  "social_media": {
-    "meetup": "rladies-sao-mateus"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Daniela Cassol",

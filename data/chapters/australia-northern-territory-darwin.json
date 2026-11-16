@@ -4,9 +4,7 @@
   "country": "Australia",
   "state.region": "Northern Territory",
   "city": "Darwin",
-  "social_media": {
-    "meetup": "rladies-darwin"
-  },
+  "social_media": {},
   "organizers": {
     "current": [
       "Petra Kuhnert"
