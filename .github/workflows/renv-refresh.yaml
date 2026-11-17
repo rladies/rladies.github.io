@@ -6,10 +6,6 @@ on:
   # breaks.
   schedule:
     - cron: "23 4 1 * *"
-  # TEMPORARY: lets this branch run the workflow before it reaches main.
-  push:
-    branches:
-      - fix/renv-ci-binaries
   workflow_dispatch:
     inputs:
       snapshot_date:
