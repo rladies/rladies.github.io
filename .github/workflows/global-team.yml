@@ -32,7 +32,13 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Install system requirements
-        run: python3 scripts/install_sysreqs.py
+        run: |
+          # Posit Package Manager binaries link against these; resolved from
+          # the airtable profile's packages. Re-check with pak::pkg_sysreqs()
+          # after changing the profile's dependencies.
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcurl4-openssl-dev libicu-dev libssl-dev libuv1-dev zlib1g-dev
 
       - name: Setup R
         uses: r-lib/actions/setup-r@v2

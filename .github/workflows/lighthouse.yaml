@@ -40,10 +40,6 @@ jobs:
             echo "needed=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Install system requirements
-        if: steps.i18n.outputs.needed == 'true'
-        run: python3 scripts/install_sysreqs.py
-
       - name: Setup R
         if: steps.i18n.outputs.needed == 'true'
         uses: r-lib/actions/setup-r@v2

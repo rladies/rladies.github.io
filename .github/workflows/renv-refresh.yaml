@@ -46,7 +46,12 @@ jobs:
           r-version: 'renv'
 
       - name: Install system requirements
-        run: python3 scripts/install_sysreqs.py renv/profiles/*/renv.lock
+        run: |
+          # The union of what every profile's packages link against.
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcurl4-openssl-dev libicu-dev libnode-dev libssl-dev \
+            libuv1-dev zlib1g-dev
 
       - name: Re-snapshot each profile
         run: |
@@ -58,16 +63,7 @@ jobs:
           done
 
       - name: Pin the root lockfile
-        run: |
-          r_version=$(Rscript -e 'cat(paste(R.version$major, R.version$minor, sep = "."))')
-          python3 scripts/pin_renv_snapshot.py \
-            --r-version "$r_version" \
-            --snapshot-date "$SNAPSHOT_DATE"
-
-      - name: Check consistency
-        run: |
-          python3 -m pip install --quiet -r scripts/requirements.txt
-          python3 scripts/check_renv_consistency.py
+        run: Rscript scripts/pin_renv_snapshot.R
 
       - name: Upload refreshed lockfiles
         uses: actions/upload-artifact@v4
