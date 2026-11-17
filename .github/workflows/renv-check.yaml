@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -19,6 +22,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
+
+      - name: Install check dependencies
+        run: python3 -m pip install --quiet pyyaml
+
+      - name: Test the check scripts
+        run: python3 -m unittest discover -s scripts/tests -v
 
       - name: Check lockfile consistency
         run: python3 scripts/check_renv_consistency.py

@@ -4,7 +4,7 @@
     "Repositories": [
       {
         "Name": "CRAN",
-        "URL": "https://packagemanager.posit.co/cran/2026-11-17"
+        "URL": "https://packagemanager.posit.co/cran/2026-11-16"
       }
     ]
   },
@@ -282,7 +282,7 @@
       "Config/testthat/edition": "3",
       "NeedsCompilation": "no",
       "Author": "Rich FitzJohn [aut, cre], Rob Ashton [aut], Alex Hill [ctb], Alicia Schep [ctb], Ian Lyttle [ctb], Kara Woo [ctb], Mathias Buus [aut, cph] (Author of bundled imjv library), Evgeny Poberezkin [aut, cph] (Author of bundled Ajv library)",
-      "Repository": "CRAN"
+      "Repository": "https://packagemanager.posit.co/cran/2026-11-17"
     },
     "renv": {
       "Package": "renv",

@@ -42,7 +42,7 @@ jobs:
 
       - name: Install system requirements
         if: steps.i18n.outputs.needed == 'true'
-        run: scripts/install_sysreqs.sh
+        run: python3 scripts/install_sysreqs.py
 
       - name: Setup R
         if: steps.i18n.outputs.needed == 'true'
