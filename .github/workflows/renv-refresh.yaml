@@ -6,11 +6,6 @@ on:
       snapshot_date:
         description: "PPM snapshot date (YYYY-MM-DD); defaults to yesterday"
         required: false
-  # TEMPORARY: lets this branch generate its first Linux-built lockfiles.
-  # Removed before merge; workflow_dispatch only works from the default branch.
-  push:
-    branches:
-      - fix/renv-ci-binaries
 
 permissions:
   contents: read
