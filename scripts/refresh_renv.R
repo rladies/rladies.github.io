@@ -22,10 +22,24 @@ dependencies <- dependencies[nzchar(dependencies)]
 remotes <- character()
 if ("Remotes" %in% colnames(description)) {
   remotes <- trimws(strsplit(description[1, "Remotes"], ",")[[1]])
-  names(remotes) <- basename(remotes)
+  # Remotes may be written as `user/repo`, `user/repo@ref`, `github::user/repo`
+  # or `pkg=user/repo`; the package name is what we match dependencies against.
+  named <- sub("=.*$", "", remotes)
+  sources <- sub("^.*=", "", remotes)
+  names(remotes) <- ifelse(
+    named == remotes,
+    basename(sub("@.*$", "", sub("^.*::", "", sources))),
+    named
+  )
 }
 
 specs <- ifelse(dependencies %in% names(remotes), remotes[dependencies], dependencies)
+
+# The runner's R is configured with PPM's `latest` repository. renv records
+# the repository each package came from, so without overriding it the lockfile
+# pins versions against a moving repository and they stop being served as
+# binaries as soon as CRAN moves on.
+Sys.setenv(RENV_CONFIG_REPOS_OVERRIDE = repos[["CRAN"]])
 
 # renv resets repos as it works, so set them before every call.
 options(repos = repos, renv.config.auto.snapshot = FALSE)

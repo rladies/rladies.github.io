@@ -24,7 +24,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Install check dependencies
-        run: python3 -m pip install --quiet pyyaml
+        run: python3 -m pip install --quiet -r scripts/requirements.txt
 
       - name: Test the check scripts
         run: python3 -m unittest discover -s scripts/tests -v

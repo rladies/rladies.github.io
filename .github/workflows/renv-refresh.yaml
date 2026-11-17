@@ -1,6 +1,15 @@
 name: Refresh renv lockfiles
 
 on:
+  # Pins rot: a snapshot only serves binaries for the versions current on its
+  # date, so the lockfiles are refreshed on a schedule rather than when CI
+  # breaks.
+  schedule:
+    - cron: "23 4 1 * *"
+  # TEMPORARY: lets this branch run the workflow before it reaches main.
+  push:
+    branches:
+      - fix/renv-ci-binaries
   workflow_dispatch:
     inputs:
       snapshot_date:
@@ -8,7 +17,8 @@ on:
         required: false
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -40,10 +50,7 @@ jobs:
           r-version: 'renv'
 
       - name: Install system requirements
-        run: |
-          for lockfile in renv/profiles/*/renv.lock; do
-            python3 scripts/install_sysreqs.py "$lockfile"
-          done
+        run: python3 scripts/install_sysreqs.py renv/profiles/*/renv.lock
 
       - name: Re-snapshot each profile
         run: |
@@ -63,7 +70,7 @@ jobs:
 
       - name: Check consistency
         run: |
-          python3 -m pip install --quiet pyyaml
+          python3 -m pip install --quiet -r scripts/requirements.txt
           python3 scripts/check_renv_consistency.py
 
       - name: Upload refreshed lockfiles
@@ -74,3 +81,20 @@ jobs:
             renv.lock
             renv/settings.json
             renv/profiles/*/renv.lock
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          add-paths: |
+            renv.lock
+            renv/settings.json
+            renv/profiles/*/renv.lock
+          commit-message: "chore(renv): refresh lockfiles against ${{ env.SNAPSHOT_DATE }}"
+          branch: automated/renv-refresh
+          title: "Automated update: refresh renv lockfiles"
+          body: |
+            Re-snapshotted on `${{ runner.os }}` / `ubuntu-24.04` against the
+            Posit Package Manager snapshot `${{ env.SNAPSHOT_DATE }}`, so every
+            pinned version is one that snapshot serves as a binary for the image
+            CI restores on.
+          labels: automated

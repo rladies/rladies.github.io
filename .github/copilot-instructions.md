@@ -161,16 +161,17 @@ GitHub Actions workflow:
 
 Each R workflow restores one renv profile (`json`, `production`, `airtable`, `dev`); profile dependencies are declared in `DESCRIPTION` under `Config/renv/profiles/<profile>/dependencies`.
 
-Four invariants keep CI from compiling packages from source on the runner:
+Five invariants keep CI from compiling packages from source on the runner:
 
 - Every lockfile — `renv.lock` and `renv/profiles/*/renv.lock` — records the same R version, because `r-lib/actions/setup-r` with `r-version: renv` reads the root `renv.lock` while the workflows restore a profile lockfile.
 - Every repository is a dated Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/YYYY-MM-DD`) or an r-universe. A plain CRAN mirror serves source only.
 - Every job that restores renv runs on `ubuntu-24.04`, because PPM builds binaries per distro release.
-- Every pinned package version is the version that snapshot serves as a *binary* for that image. PPM keeps older versions only as source, so a lockfile that drifts behind its own snapshot is compiled on the runner.
+- Every pinned package version is the version that snapshot serves as a *binary* for that image, and no package records a moving repository (PPM's `latest`). PPM keeps older versions only as source, so a lockfile that drifts behind its own snapshot is compiled on the runner.
+- PPM actually serves binaries for the pinned R version. The package index is identical for every R version — PPM chooses binary or source from the request's User-Agent — so the check asks for one compiled package the way R would.
 
-`scripts/check_renv_consistency.py` enforces all four in the `Validate renv` workflow (`--offline` skips the binary check), and `scripts/install_sysreqs.py` asks PPM which system libraries the profile's packages link against instead of hardcoding them per workflow. Both are covered by `scripts/tests/`, run in the same workflow.
+`scripts/check_renv_consistency.py` enforces all five in the `Validate renv` workflow, and `scripts/install_sysreqs.py` asks PPM which system libraries the profile's packages link against instead of hardcoding them per workflow. Both are covered by `scripts/tests/`, run in the same workflow.
 
-**Refreshing dependencies:** run the `Refresh renv lockfiles` workflow (`workflow_dispatch`, optional snapshot date, defaults to yesterday). It re-snapshots every profile on `ubuntu-24.04` and uploads the lockfiles as an artifact to commit. Do not snapshot on macOS: PPM's macOS binaries lag its Linux ones, so the versions renv picks there have no Linux binary and CI compiles them from source. The workflow runs `scripts/refresh_renv.R` per profile and then `scripts/pin_renv_snapshot.py`, which sets the R version and snapshot date in the root `renv.lock` and `renv/settings.json`.
+**Refreshing dependencies:** the `Refresh renv lockfiles` workflow runs monthly and on `workflow_dispatch` (optional snapshot date, defaults to yesterday). It re-snapshots every profile on `ubuntu-24.04` and opens a PR with the result, so pins are refreshed on a schedule rather than when CI breaks. Do not snapshot on macOS: PPM's macOS binaries lag its Linux ones, so the versions renv picks there have no Linux binary and CI compiles them from source. The workflow runs `scripts/refresh_renv.R` per profile and then `scripts/pin_renv_snapshot.py`, which sets the R version and snapshot date in the root `renv.lock` and `renv/settings.json`.
 
 `renv` itself is exempt from the binary check: the project bootstraps from the committed `renv/activate.R`, so its version is pinned by that file. Upgrading it means `renv::upgrade()`, not `renv::update()`.
 

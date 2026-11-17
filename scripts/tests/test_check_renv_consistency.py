@@ -1,209 +1,197 @@
-"""Tests for scripts/check_renv_consistency.py.
+"""Tests for scripts/check_renv_consistency.py."""
 
-The script resolves the project root from its own location, so each test builds
-a throwaway project tree, copies the script into it, and runs it as CI does.
-"""
-
+import gzip
+import io
 import json
-import pathlib
-import shutil
-import subprocess
-import sys
-import tempfile
 import unittest
+from unittest import mock
 
-SCRIPTS = pathlib.Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(SCRIPTS))
+import support
 
-import check_renv_consistency as checker  # noqa: E402
+import check_renv_consistency as checker
 
-PINNED = "https://packagemanager.posit.co/cran/2026-11-16"
-WORKFLOW = """
-jobs:
-  build:
-    runs-on: {runner}
-    steps:
-      - uses: actions/checkout@v6
-      - uses: r-lib/actions/setup-renv@v2
-"""
-
-
-def lockfile(r_version="4.6.1", urls=(PINNED,), packages=None):
-    return {
-        "R": {
-            "Version": r_version,
-            "Repositories": [{"Name": "CRAN", "URL": url} for url in urls],
-        },
-        "Packages": packages or {},
-    }
-
-
-class ProjectTree:
-    """A minimal renv project with the checker installed in it."""
-
-    def __init__(self, profiles=None, settings_version="4.6.1", runner="ubuntu-24.04"):
-        self.root = pathlib.Path(tempfile.mkdtemp())
-        (self.root / "scripts").mkdir()
-        shutil.copy(SCRIPTS / "check_renv_consistency.py", self.root / "scripts")
-        workflows = self.root / ".github/workflows"
-        workflows.mkdir(parents=True)
-        (workflows / "build.yaml").write_text(WORKFLOW.format(runner=runner))
-        (self.root / "renv").mkdir()
-        (self.root / "renv/settings.json").write_text(
-            json.dumps({"r.version": settings_version})
-        )
-        self.write("renv.lock", lockfile())
-        for name, content in (profiles or {"json": lockfile()}).items():
-            (self.root / "renv/profiles" / name).mkdir(parents=True)
-            self.write(f"renv/profiles/{name}/renv.lock", content)
-
-    def write(self, relative, content):
-        path = self.root / relative
-        path.write_text(content if isinstance(content, str) else json.dumps(content))
-
-    def run(self, *args):
-        return subprocess.run(
-            [sys.executable, "scripts/check_renv_consistency.py", "--offline", *args],
-            cwd=self.root,
-            capture_output=True,
-            text=True,
-        )
-
-    def cleanup(self):
-        shutil.rmtree(self.root, ignore_errors=True)
+PINNED = support.PINNED
+INDEX = {"here": "1.0.2", "curl": "8.1.0", "V8": "8.2.1"}
 
 
 class CheckerTest(unittest.TestCase):
-    def tree(self, **kwargs):
-        tree = ProjectTree(**kwargs)
-        self.addCleanup(tree.cleanup)
-        return tree
+    """The script as CI runs it, with the two network checks stubbed."""
+
+    def setUp(self):
+        self.root = support.temporary_directory(self)
+        patches = [
+            mock.patch.object(checker, "binary_index", lambda date, codename: INDEX),
+            mock.patch.object(checker, "serves_binary", lambda *args: True),
+        ]
+        for patch in patches:
+            patch.start()
+            self.addCleanup(patch.stop)
+
+    def run_checker(self, **kwargs):
+        support.project(self.root, **kwargs)
+        with mock.patch("sys.stdout", new=io.StringIO()) as out:
+            code = checker.main(["--root", str(self.root)])
+        return code, out.getvalue()
 
     def test_consistent_project_passes(self):
-        result = self.tree().run()
-        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
-        self.assertIn("consistent", result.stdout)
+        code, output = self.run_checker()
+        self.assertEqual(code, 0, output)
+        self.assertIn("renv is consistent", output)
 
     def test_r_version_drift_between_lockfiles_fails(self):
-        tree = self.tree(profiles={"json": lockfile(r_version="4.5.1")})
-        result = tree.run()
-        self.assertEqual(result.returncode, 1)
-        self.assertIn("R versions disagree", result.stdout)
+        code, output = self.run_checker(
+            profiles={"json": support.lockfile(r_version="4.5.1")}
+        )
+        self.assertEqual(code, 1)
+        self.assertIn("R versions disagree", output)
 
     def test_settings_r_version_drift_fails(self):
-        result = self.tree(settings_version="4.3.0").run()
-        self.assertEqual(result.returncode, 1)
-        self.assertIn("R versions disagree", result.stdout)
+        code, output = self.run_checker(settings_version="4.3.0")
+        self.assertEqual(code, 1)
+        self.assertIn("R versions disagree", output)
 
     def test_source_only_mirror_fails(self):
-        tree = self.tree(profiles={"json": lockfile(urls=["https://cloud.r-project.org"])})
-        result = tree.run()
-        self.assertEqual(result.returncode, 1)
-        self.assertIn("not a pinned binary repository", result.stdout)
+        code, output = self.run_checker(
+            profiles={"json": support.lockfile(urls=["https://cloud.r-project.org"])}
+        )
+        self.assertEqual(code, 1)
+        self.assertIn("not a pinned binary repository", output)
 
     def test_source_mirror_alongside_pinned_snapshot_fails(self):
-        tree = self.tree(
-            profiles={"json": lockfile(urls=[PINNED, "https://cloud.r-project.org"])}
+        code, output = self.run_checker(
+            profiles={
+                "json": support.lockfile(urls=[PINNED, "https://cloud.r-project.org"])
+            }
         )
-        result = tree.run()
-        self.assertEqual(result.returncode, 1, "an extra source mirror must not pass")
-        self.assertIn("cloud.r-project.org", result.stdout)
+        self.assertEqual(code, 1, "an extra source mirror must not pass")
+        self.assertIn("cloud.r-project.org", output)
 
     def test_r_universe_repository_is_allowed(self):
-        tree = self.tree(
-            profiles={"json": lockfile(urls=[PINNED, "https://ggseg.r-universe.dev"])}
+        code, output = self.run_checker(
+            profiles={"json": support.lockfile(urls=[PINNED, "https://x.r-universe.dev"])}
         )
-        self.assertEqual(tree.run().returncode, 0)
+        self.assertEqual(code, 0, output)
+
+    def test_package_pinned_to_a_moving_repository_fails(self):
+        packages = {"here": support.record("1.0.2", repository=support.FLOATING)}
+        code, output = self.run_checker(
+            profiles={"json": support.lockfile(packages=packages)}
+        )
+        self.assertEqual(code, 1, "a `latest` repository stops serving the pin")
+        self.assertIn("1 packages were installed from", output)
 
     def test_snapshot_dates_must_agree(self):
         other = "https://packagemanager.posit.co/cran/2026-10-01"
-        tree = self.tree(profiles={"json": lockfile(urls=[other])})
-        result = tree.run()
-        self.assertEqual(result.returncode, 1)
-        self.assertIn("snapshot dates disagree", result.stdout)
+        code, output = self.run_checker(profiles={"json": support.lockfile(urls=[other])})
+        self.assertEqual(code, 1)
+        self.assertIn("snapshot dates disagree", output)
 
     def test_unpinned_runner_fails(self):
-        result = self.tree(runner="ubuntu-latest").run()
-        self.assertEqual(result.returncode, 1)
-        self.assertIn("restores renv on", result.stdout)
+        code, output = self.run_checker(runner="ubuntu-latest")
+        self.assertEqual(code, 1)
+        self.assertIn("restores renv", output)
 
     def test_malformed_lockfile_is_named(self):
-        tree = self.tree()
-        tree.write("renv/profiles/json/renv.lock", json.dumps({"R": {"Version": "4.6.1"}}))
-        result = tree.run()
-        self.assertEqual(result.returncode, 1)
-        self.assertIn("malformed lockfile", result.stdout)
+        support.project(self.root)
+        (self.root / "renv/profiles/json/renv.lock").write_text(json.dumps({"R": {}}))
+        with mock.patch("sys.stdout", new=io.StringIO()) as out:
+            code = checker.main(["--root", str(self.root)])
+        self.assertEqual(code, 1)
+        self.assertIn("malformed lockfile", out.getvalue())
+
+    def test_version_behind_the_snapshot_fails(self):
+        packages = {"curl": support.record("8.0.0")}
+        code, output = self.run_checker(
+            profiles={"json": support.lockfile(packages=packages)}
+        )
+        self.assertEqual(code, 1)
+        self.assertIn("would be compiled from source", output)
+
+    def test_r_version_without_binaries_fails(self):
+        with mock.patch.object(checker, "serves_binary", lambda *args: False):
+            code, output = self.run_checker(
+                profiles={"json": support.lockfile(packages={"curl": support.record("8.1.0")})}
+            )
+        self.assertEqual(code, 1, "an R version PPM has no binaries for must fail")
+        self.assertIn("as source for R 4.6.1", output)
 
 
 class SnapshotDateTest(unittest.TestCase):
     def test_accepts_plain_and_linux_and_trailing_slash(self):
-        for url in (
-            PINNED,
-            PINNED + "/",
-            "https://packagemanager.posit.co/cran/__linux__/noble/2026-11-16",
-        ):
+        for url in (PINNED, PINNED + "/", support.PINNED_BINARY):
             with self.subTest(url=url):
                 self.assertEqual(str(checker.snapshot_date(url)), "2026-11-16")
 
     def test_rejects_impossible_date(self):
-        url = "https://packagemanager.posit.co/cran/2026-13-99"
-        self.assertIsNone(checker.snapshot_date(url))
+        self.assertIsNone(
+            checker.snapshot_date("https://packagemanager.posit.co/cran/2026-13-99")
+        )
 
-    def test_rejects_other_hosts(self):
+    def test_rejects_undated_and_other_hosts(self):
+        self.assertIsNone(checker.snapshot_date(support.FLOATING))
         self.assertIsNone(checker.snapshot_date("https://cloud.r-project.org"))
 
 
-class BinaryParityTest(unittest.TestCase):
-    """check_binaries flags versions the snapshot serves only as source."""
+class BinaryIndexTest(unittest.TestCase):
+    """The PACKAGES parser, over a fixture shaped like PPM's real index."""
 
-    def setUp(self):
-        self.root = pathlib.Path(tempfile.mkdtemp())
-        self.addCleanup(shutil.rmtree, self.root, True)
-        (self.root / "renv/profiles/json").mkdir(parents=True)
-        self.addCleanup(setattr, checker, "ROOT", checker.ROOT)
-        checker.ROOT = self.root
-        self.addCleanup(setattr, checker, "binary_index", checker.binary_index)
-        checker.binary_index = lambda date: {"curl": "8.1.0", "here": "1.0.2"}
+    PACKAGES = (
+        "Package: curl\n"
+        "Version: 8.1.0\n"
+        "Depends: R (>= 3.5)\n"
+        "Imports: Rcpp\n"
+        "\n"
+        "Package: brokenentry\n"
+        "Depends: R (>= 3.5)\n"
+        "\n"
+        "Package: V8\n"
+        "Version: 8.2.1\n"
+    )
 
-    def write_packages(self, packages):
-        content = lockfile(packages=packages)
-        (self.root / "renv.lock").write_text(json.dumps(lockfile()))
-        (self.root / "renv/profiles/json/renv.lock").write_text(json.dumps(content))
+    def test_parses_versions_and_skips_records_without_one(self):
+        body = gzip.compress(self.PACKAGES.encode())
+        response = mock.MagicMock()
+        response.__enter__.return_value.read.return_value = body
+        with mock.patch.object(checker.urllib.request, "urlopen", return_value=response):
+            index = checker.binary_index("2026-11-16", "noble")
+        self.assertEqual(index, {"curl": "8.1.0", "V8": "8.2.1"})
+        self.assertNotIn("brokenentry", index)
 
-    def run_check(self):
-        errors = []
-        checker.check_binaries(errors, "2026-11-16")
-        return errors
 
-    def test_versions_matching_the_index_pass(self):
-        self.write_packages(
-            {
-                "curl": {"Source": "Repository", "Version": "8.1.0"},
-                "here": {"Source": "Repository", "Version": "1.0.2"},
-            }
-        )
-        self.assertEqual(self.run_check(), [])
+class ServesBinaryTest(unittest.TestCase):
+    """PPM picks binary or source from the User-Agent, so send R's."""
 
-    def test_version_older_than_the_binary_is_flagged(self):
-        self.write_packages({"curl": {"Source": "Repository", "Version": "8.0.0"}})
-        errors = self.run_check()
-        self.assertEqual(len(errors), 1, errors)
-        self.assertIn("curl 8.0.0 would be compiled from source", errors[0])
+    def fake_head(self, content_type):
+        response = mock.MagicMock()
+        response.__enter__.return_value.headers = {"Content-Type": content_type}
+        return response
 
-    def test_package_missing_from_the_snapshot_is_flagged(self):
-        self.write_packages({"jsonlite": {"Source": "Repository", "Version": "2.0.0"}})
-        errors = self.run_check()
-        self.assertEqual(len(errors), 1, errors)
-        self.assertIn("is not in the 2026-11-16 snapshot", errors[0])
+    def test_binary_content_type_is_a_pass(self):
+        with mock.patch.object(
+            checker.urllib.request, "urlopen", return_value=self.fake_head("binary/octet-stream")
+        ):
+            self.assertTrue(
+                checker.serves_binary("2026-11-16", "noble", "curl", "8.1.0", "4.6.1")
+            )
 
-    def test_github_and_exempt_packages_are_skipped(self):
-        self.write_packages(
-            {
-                "airtabler": {"Source": "GitHub", "Version": "0.1.6"},
-                "renv": {"Source": "Repository", "Version": "1.1.5"},
-            }
-        )
-        self.assertEqual(self.run_check(), [])
+    def test_source_tarball_is_a_failure(self):
+        with mock.patch.object(
+            checker.urllib.request, "urlopen", return_value=self.fake_head("application/x-gzip")
+        ):
+            self.assertFalse(
+                checker.serves_binary("2026-11-16", "noble", "curl", "8.1.0", "4.6.1")
+            )
+
+    def test_request_carries_the_r_user_agent(self):
+        seen = {}
+
+        def capture(request):
+            seen["ua"] = request.get_header("User-agent")
+            return self.fake_head("binary/octet-stream")
+
+        with mock.patch.object(checker.urllib.request, "urlopen", capture):
+            checker.serves_binary("2026-11-16", "noble", "curl", "8.1.0", "4.6.1")
+        self.assertIn("R (4.6.1", seen["ua"])
 
 
 if __name__ == "__main__":

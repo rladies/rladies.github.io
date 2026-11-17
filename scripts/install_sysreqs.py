@@ -19,10 +19,11 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
+import renv_ci  # noqa: E402
+
 SYSREQS_API = "https://packagemanager.posit.co/__api__/repos/cran/sysreqs"
-# PPM answers 500 for the whole query if it is sent a package it does not know,
-# so only CRAN-sourced records may be asked about.
-CRAN_SOURCES = {"Repository", "CRAN"}
 R_PACKAGE = re.compile(r"^[A-Za-z][A-Za-z0-9.]*$")
 APT_PACKAGE = re.compile(r"^[a-z0-9][a-z0-9+.:-]*$")
 
@@ -36,13 +37,12 @@ def resolve_lockfile(given, profile):
 
 
 def cran_packages(lockfile):
-    """Package names in the lockfile that PPM can be asked about."""
-    packages = json.loads(lockfile.read_text())["Packages"]
-    names = sorted(
-        name
-        for name, record in packages.items()
-        if record.get("Source") in CRAN_SOURCES
-    )
+    """Package names in the lockfile that PPM can be asked about.
+
+    PPM answers 500 for the whole query if it is sent a name it does not know,
+    so GitHub and r-universe records must be left out.
+    """
+    names = sorted(renv_ci.cran_records(renv_ci.load_lockfile(lockfile)))
     unexpected = [name for name in names if not R_PACKAGE.match(name)]
     if unexpected:
         raise ValueError(f"implausible package names in {lockfile}: {unexpected}")
@@ -59,13 +59,17 @@ def host_platform():
     return release.get("ID", "ubuntu"), release.get("VERSION_ID", "24.04")
 
 
+def fetch_json(url):
+    with urllib.request.urlopen(url) as response:
+        return json.load(response)
+
+
 def sysreqs(names, distribution, release):
     query = urllib.parse.urlencode(
         [("all", "false"), ("distribution", distribution), ("release", release)]
         + [("pkgname", name) for name in names]
     )
-    with urllib.request.urlopen(f"{SYSREQS_API}?{query}") as response:
-        payload = json.load(response)
+    payload = fetch_json(f"{SYSREQS_API}?{query}")
 
     packages = sorted(
         {p for r in payload["requirements"] for p in r["requirements"]["packages"]}
@@ -86,21 +90,32 @@ def apt_install(packages):
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("lockfile", nargs="?", help="defaults to the RENV_PROFILE one")
+    parser.add_argument(
+        "lockfiles",
+        nargs="*",
+        help="lockfiles to resolve together; defaults to the RENV_PROFILE one",
+    )
     parser.add_argument(
         "--dry-run", action="store_true", help="print the packages without installing"
     )
     args = parser.parse_args(argv)
 
-    lockfile = resolve_lockfile(args.lockfile, os.environ.get("RENV_PROFILE"))
-    if not lockfile.is_file():
-        print(f"no lockfile at {lockfile}", file=sys.stderr)
+    paths = [pathlib.Path(p) for p in args.lockfiles] or [
+        resolve_lockfile(None, os.environ.get("RENV_PROFILE"))
+    ]
+    missing = [str(p) for p in paths if not p.is_file()]
+    if missing:
+        print(f"no lockfile at {', '.join(missing)}", file=sys.stderr)
         return 1
 
-    names = cran_packages(lockfile)
+    # One query and one apt transaction for every lockfile asked about: the
+    # profiles overlap heavily, and apt-get update is the slow part.
+    names = sorted({name for path in paths for name in cran_packages(path)})
     if not names:
-        print(f"no CRAN packages recorded in {lockfile}", file=sys.stderr)
+        print(f"no CRAN packages recorded in {', '.join(map(str, paths))}", file=sys.stderr)
         return 1
+
+    described = ", ".join(str(p) for p in paths)
 
     distribution, release = host_platform()
     try:
@@ -110,10 +125,10 @@ def main(argv=None):
         return 1
 
     if not packages:
-        print(f"{lockfile} needs no system packages on {distribution} {release}")
+        print(f"{described} needs no system packages on {distribution} {release}")
         return 0
 
-    print(f"{lockfile} on {distribution} {release} needs: {' '.join(packages)}")
+    print(f"{described} on {distribution} {release} needs: {' '.join(packages)}")
     if args.dry_run:
         return 0
     if shutil.which("apt-get") is None:
