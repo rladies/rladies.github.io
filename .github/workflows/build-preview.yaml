@@ -57,11 +57,6 @@ jobs:
           echo "netalias=d${{ env.directory }}-r${{ env.rid}}" >> $GITHUB_ENV
           echo "token=${{ steps.app-token.outputs.token }}" >> $GITHUB_ENV
 
-      - name: Install cURL Headers
-        run: |
-          sudo apt-get update
-          sudo apt-get install libcurl4-openssl-dev
-
       - name: Site data - Clean folders
         if: ${{ env.on_fork != 'true' }}
         run: rm -r data/directory

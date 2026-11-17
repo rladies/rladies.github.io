@@ -14,7 +14,7 @@ concurrency:
 jobs:
   build:
     name: Build site
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: renv restores Posit Package Manager binaries built for this image
     env:
       RENV_PROFILE: "production"
       RENV_CONFIG_SANDBOX_ENABLED: FALSE
@@ -42,12 +42,6 @@ jobs:
           else
             echo "needed=false" >> $GITHUB_OUTPUT
           fi
-
-      - name: Install cURL Headers
-        if: steps.i18n.outputs.needed == 'true'
-        run: |
-          sudo apt-get update
-          sudo apt-get install libcurl4-openssl-dev
 
       - name: Setup R
         if: steps.i18n.outputs.needed == 'true'
