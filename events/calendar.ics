@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261116T154254Z
+DTSTAMP:20261117T005755Z
 DTSTART:20261205T230000Z
 DTEND:20261206T010000Z
 SUMMARY:¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261116T154254Z
+DTSTAMP:20261117T005755Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261116T154254Z
+DTSTAMP:20261117T005755Z
 DTSTART:20261202T170000Z
 DTEND:20261202T180000Z
 SUMMARY:RLadies+ Philly with Padmashri Saravanan - R-Ladies Philly
@@ -46,7 +46,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261116T154254Z
+DTSTAMP:20261117T005755Z
+DTSTART:20261201T210000Z
+DTEND:20261201T230000Z
+SUMMARY:set.seed(2027):  R, IA y comunidad para construir lo que viene - R-Ladies Buenos Aires
+DESCRIPTION:¿Y si terminamos el año compartiendo ideas, conectando comunidades y explorando nuevas formas de programar?\n\nTe invitamos a un encuentro presencial de RLadies Buenos Aires, R en Buenos Aires y el Núcleo de Innovación Social (NIS) para conocer nuestras iniciativas, descubrir oportunidades de participación y conversar sobre el impacto de la inteligencia artificial generativa en la ciencia de datos y la investigación.\n\nLa actividad contará con una charla central de María Nanton, especialista en Data Mining y científica de datos, sobre inteligencia artificial generativa y vibe coding en investigación y desarrollo, con aplicaciones en el ecosistema R.\n\nLa IA generativa está transformando la manera en que desarrollamos software, analizamos datos y construimos herramientas. Pero, además de las posibilidades que abre, también plantea preguntas sobre la calidad del código, el manejo de información sensible y la sostenibilidad de las soluciones que generamos.\n\nA lo largo del encuentro vas a:\n\n* Conocer las comunidades de R y el NIS: qué hacemos, cómo participar y qué oportunidades existen para aprender, colaborar y contribuir a proyectos.\n* Explorar nuevas formas de desarrollar soluciones: descubrir qué es el vibe coding y cómo la IA generativa puede integrarse en procesos de investigación, análisis de datos y desarrollo de aplicaciones.\n* Reflexionar sobre los desafíos de estas tecnologías: conversar sobre datos sensibles, calidad del software, autonomía tecnológica, reproducibilidad y sostenibilidad.\n\nLa idea es que te lleves nuevas preguntas, ideas para explorar y contactos para seguir aprendiendo y construyendo en comunidad.\n\n💜 No necesitás ser especialista ni traer una computadora. La charla es introductoria y está abierta a personas de distintos ámbitos y niveles de experiencia, incluso si todavía no trabajás con R.\n\nAdemás, habrá un espacio de intercambio para conocernos, compartir experiencias y pensar posibles colaboraciones.\n\nArma tu 2027 con la comunidad. Cerramos el año conectando iniciativas y empezamos a imaginar qué queremos construir juntos.\n\n📅 Fecha: martes 1 de diciembre de 2026\n🕕 Horario: 18:00 a 20:00 h\n📍 Modalidad: presencial\n📌 Lugar: UMET (Aula Magna)\n🎚️ Nivel: Introductorio (con algo de curiosidad alcanza)\n✅Requisitos: Ganas de encontrarte con la comunidad 😉\n\n**Organizan**\n\n* RLadies Buenos Aires\n* R en Buenos Aires\n* Núcleo de Innovación Social (NIS)
+LOCATION:Not announced
+URL:https://www.meetup.com/rladies-buenos-aires/events/317459437/
+ORGANIZER;CN=R-Ladies Buenos Aires:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies Buenos Aires
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261117T005755Z
 DTSTART:20261125T070000Z
 DTEND:20261125T100000Z
 SUMMARY:R-Ladies+ Melbourne End of Year trivia event & 10th Birthday! - R-Ladies+ Melbourne
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261116T154254Z
+DTSTAMP:20261117T005755Z
 DTSTART:20261124T000000Z
 DTEND:20261124T013000Z
 SUMMARY:Examining the 2026 municipal election results using R and Open Ottawa data - R-Ladies Ottawa
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261116T154254Z
+DTSTAMP:20261117T005755Z
 DTSTART:20261117T010000Z
 DTEND:20261117T030000Z
 SUMMARY:Big Data? No Problem! An introduction to arrow for R - R-Ladies PDX
@@ -85,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261116T154254Z
+DTSTAMP:20261117T005755Z
 DTSTART:20270120T160000Z
 DTEND:20270120T173000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
