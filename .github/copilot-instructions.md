@@ -157,6 +157,27 @@ GitHub Actions workflow:
 3. Hugo build with environment config
 4. Deploy to GitHub Pages (production) or Netlify (preview)
 
+### R dependencies (renv)
+
+Each R workflow restores one renv profile (`json`, `production`, `airtable`, `dev`); profile dependencies are declared in `DESCRIPTION` under `Config/renv/profiles/<profile>/dependencies`.
+
+Two invariants keep CI from compiling packages from source on the runner:
+
+- Every lockfile — `renv.lock` and `renv/profiles/*/renv.lock` — records the same R version, because `r-lib/actions/setup-r` with `r-version: renv` reads the root `renv.lock` while the workflows restore a profile lockfile.
+- Every lockfile points at a dated Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/YYYY-MM-DD`), so Linux binaries exist for exactly the pinned package versions. A plain CRAN mirror serves source only.
+
+`scripts/check_renv_consistency.py` enforces both in the `Validate renv` workflow. R jobs pin `runs-on: ubuntu-24.04` because PPM builds binaries per distro release.
+
+To refresh dependencies, pick a new snapshot date and, for each profile:
+
+```r
+options(repos = c(CRAN = "https://packagemanager.posit.co/cran/<new-date>"))
+renv::install(<profile dependencies>)   # bergant/airtabler for airtabler
+renv::snapshot(type = "explicit")
+```
+
+Then update `R.Version`/`Repositories` in the root `renv.lock`, `r.version` in `renv/settings.json`, and run the consistency check.
+
 ## Common Tasks
 
 ### Adding a chapter

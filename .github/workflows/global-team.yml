@@ -16,7 +16,7 @@ env:
 jobs:
   airtable:
     name: Retrieve Airtable data
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # pinned: renv restores Posit Package Manager binaries built for this image
     steps:
       - name: Generate app token
         id: app-token
