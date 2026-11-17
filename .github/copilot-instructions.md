@@ -166,7 +166,7 @@ Two invariants keep CI from compiling packages from source on the runner:
 - Every lockfile — `renv.lock` and `renv/profiles/*/renv.lock` — records the same R version, because `r-lib/actions/setup-r` with `r-version: renv` reads the root `renv.lock` while the workflows restore a profile lockfile.
 - Every lockfile points at a dated Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/YYYY-MM-DD`), so Linux binaries exist for exactly the pinned package versions. A plain CRAN mirror serves source only.
 
-`scripts/check_renv_consistency.py` enforces both in the `Validate renv` workflow. R jobs pin `runs-on: ubuntu-24.04` because PPM builds binaries per distro release.
+`scripts/check_renv_consistency.py` enforces both in the `Validate renv` workflow, and `scripts/install_sysreqs.sh` asks Posit Package Manager which system libraries the profile's packages link against instead of hardcoding them in each workflow. R jobs pin `runs-on: ubuntu-24.04` because PPM builds binaries per distro release.
 
 To refresh dependencies, pick a new snapshot date and, for each profile:
 

@@ -43,11 +43,9 @@ jobs:
             echo "needed=false" >> $GITHUB_OUTPUT
           fi
 
-      - name: Install cURL Headers
+      - name: Install system requirements
         if: steps.i18n.outputs.needed == 'true'
-        run: |
-          sudo apt-get update
-          sudo apt-get install libcurl4-openssl-dev
+        run: scripts/install_sysreqs.sh
 
       - name: Setup R
         if: steps.i18n.outputs.needed == 'true'

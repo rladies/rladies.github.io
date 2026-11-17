@@ -31,10 +31,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
-      - name: Install cURL Headers
-        run: |
-          sudo apt-get update
-          sudo apt-get install libcurl4-openssl-dev
+      - name: Install system requirements
+        run: scripts/install_sysreqs.sh
         
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
