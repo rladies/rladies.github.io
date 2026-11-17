@@ -167,7 +167,7 @@ Five invariants keep CI from compiling packages from source on the runner:
 - Every repository is a dated Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/YYYY-MM-DD`) or an r-universe. A plain CRAN mirror serves source only.
 - Every job that restores renv runs on `ubuntu-24.04`, because PPM builds binaries per distro release.
 - Every pinned package version is the version that snapshot serves as a *binary* for that image, and no package records a moving repository (PPM's `latest`). PPM keeps older versions only as source, so a lockfile that drifts behind its own snapshot is compiled on the runner.
-- PPM actually serves binaries for the pinned R version. The package index is identical for every R version — PPM chooses binary or source from the request's User-Agent — so the check asks for one compiled package the way R would.
+- PPM builds binaries for the pinned R version at all. The package index is identical for every R version, so the R version is checked against PPM's binaries endpoint. (Asking for a tarball with R's User-Agent is the direct test, but PPM sends no `Vary: User-Agent`, so a CDN edge can answer with whichever variant it cached first — that check passes locally and fails on a runner.)
 
 `scripts/check_renv_consistency.py` enforces all five in the `Validate renv` workflow, and `scripts/install_sysreqs.py` asks PPM which system libraries the profile's packages link against instead of hardcoding them per workflow. Both are covered by `scripts/tests/`, run in the same workflow.
 

@@ -13,9 +13,9 @@ keep that working:
 3. every job that restores renv runs on the pinned runner image;
 4. every pinned package version is the one that snapshot serves for that
    image -- an older version is kept only as source, and is compiled;
-5. PPM really serves binaries for the pinned R version. The package index is
-   the same for every R version; PPM chooses binary or source from the
-   User-Agent, so this is checked by asking for a package the way R does.
+5. PPM builds binaries for the pinned R version at all. The package index is
+   the same for every R version -- PPM chooses binary or source per request --
+   so the R version is checked against PPM's own binaries endpoint.
 """
 
 import argparse
@@ -170,36 +170,34 @@ def check_versions(locks, date, codename):
     return errors
 
 
-def serves_binary(date, codename, package, version, r_version):
-    """Whether PPM hands R a binary, which it decides from the User-Agent."""
-    request = urllib.request.Request(
-        renv_ci.binary_package_url(date, codename, package, version),
-        method="HEAD",
-        headers={"User-Agent": renv_ci.r_user_agent(r_version)},
-    )
-    with urllib.request.urlopen(request) as response:
-        return response.headers.get("Content-Type") == "binary/octet-stream"
+def builds_binaries_for(r_version, codename):
+    """Whether PPM builds binaries for this R version on this image.
+
+    Asking for a package tarball with R's User-Agent would be the direct test,
+    but PPM sends no `Vary: User-Agent`, so a CDN edge may answer with whichever
+    variant it cached first -- that check passes or fails by location. The
+    binaries endpoint validates the R version itself, which every edge agrees on.
+    """
+    try:
+        with urllib.request.urlopen(renv_ci.binaries_api_url(r_version, codename)) as r:
+            payload = json.load(r)
+    except urllib.error.HTTPError as exc:
+        payload = json.load(exc)
+    return payload.get("code") != renv_ci.UNSUPPORTED_R_VERSION
 
 
-def check_r_version_has_binaries(locks, date, codename, r_version):
-    """Invariant 5: the index is R-version agnostic, so ask for a package."""
-    for _, lock in locks:
-        records = renv_ci.cran_records(lock)
-        for package in renv_ci.COMPILED_PROBES:
-            if package not in records:
-                continue
-            try:
-                if serves_binary(date, codename, package, records[package], r_version):
-                    return []
-            except (urllib.error.URLError, OSError) as exc:
-                return [f"could not ask PPM for {package}: {exc}"]
-            return [
-                f"PPM serves {package} {records[package]} as source for R "
-                f"{r_version} on {codename}: the {date} snapshot has no binaries "
-                "for that R version, so every compiled package would be built "
-                "on the runner"
-            ]
-    return []
+def check_r_version_has_binaries(r_version, codename):
+    """Invariant 5: an R version PPM has not built for compiles everything."""
+    try:
+        if builds_binaries_for(r_version, codename):
+            return []
+    except (urllib.error.URLError, OSError, ValueError) as exc:
+        return [f"could not ask PPM which R versions it builds for: {exc}"]
+    return [
+        f"PPM builds no binaries for R {r_version} on {codename}, so every "
+        "compiled package would be built on the runner. Pin an R version PPM "
+        "supports, or move the runner to an image it builds for"
+    ]
 
 
 def main(argv=None):
@@ -229,7 +227,7 @@ def main(argv=None):
         date = next(iter(dates))
         errors += check_versions(locks, date, codename)
         if r_version:
-            errors += check_r_version_has_binaries(locks, date, codename, r_version)
+            errors += check_r_version_has_binaries(r_version, codename)
 
     for error in errors:
         print(f"ERROR {error}")

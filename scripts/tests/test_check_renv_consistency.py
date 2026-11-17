@@ -21,7 +21,7 @@ class CheckerTest(unittest.TestCase):
         self.root = support.temporary_directory(self)
         patches = [
             mock.patch.object(checker, "binary_index", lambda date, codename: INDEX),
-            mock.patch.object(checker, "serves_binary", lambda *args: True),
+            mock.patch.object(checker, "builds_binaries_for", lambda *args: True),
         ]
         for patch in patches:
             patch.start()
@@ -108,12 +108,10 @@ class CheckerTest(unittest.TestCase):
         self.assertIn("would be compiled from source", output)
 
     def test_r_version_without_binaries_fails(self):
-        with mock.patch.object(checker, "serves_binary", lambda *args: False):
-            code, output = self.run_checker(
-                profiles={"json": support.lockfile(packages={"curl": support.record("8.1.0")})}
-            )
+        with mock.patch.object(checker, "builds_binaries_for", lambda *args: False):
+            code, output = self.run_checker()
         self.assertEqual(code, 1, "an R version PPM has no binaries for must fail")
-        self.assertIn("as source for R 4.6.1", output)
+        self.assertIn("builds no binaries for R 4.6.1", output)
 
 
 class SnapshotDateTest(unittest.TestCase):
@@ -158,40 +156,38 @@ class BinaryIndexTest(unittest.TestCase):
         self.assertNotIn("brokenentry", index)
 
 
-class ServesBinaryTest(unittest.TestCase):
-    """PPM picks binary or source from the User-Agent, so send R's."""
+class BuildsBinariesForTest(unittest.TestCase):
+    """PPM reports an unsupported R version with a specific error code."""
 
-    def fake_head(self, content_type):
+    def respond(self, payload):
         response = mock.MagicMock()
-        response.__enter__.return_value.headers = {"Content-Type": content_type}
-        return response
+        response.__enter__.return_value = io.StringIO(json.dumps(payload))
+        return mock.patch.object(
+            checker.urllib.request, "urlopen", return_value=response
+        )
 
-    def test_binary_content_type_is_a_pass(self):
-        with mock.patch.object(
-            checker.urllib.request, "urlopen", return_value=self.fake_head("binary/octet-stream")
-        ):
-            self.assertTrue(
-                checker.serves_binary("2026-11-16", "noble", "curl", "8.1.0", "4.6.1")
-            )
+    def test_supported_r_version_passes(self):
+        # PPM answers "Unknown package name" once the R version is accepted.
+        with self.respond({"code": 36, "error": "Unknown package name."}):
+            self.assertTrue(checker.builds_binaries_for("4.6.1", "noble"))
 
-    def test_source_tarball_is_a_failure(self):
-        with mock.patch.object(
-            checker.urllib.request, "urlopen", return_value=self.fake_head("application/x-gzip")
-        ):
-            self.assertFalse(
-                checker.serves_binary("2026-11-16", "noble", "curl", "8.1.0", "4.6.1")
-            )
+    def test_unsupported_r_version_fails(self):
+        with self.respond({"code": 34, "error": "The requested R version is not supported."}):
+            self.assertFalse(checker.builds_binaries_for("4.9.0", "noble"))
 
-    def test_request_carries_the_r_user_agent(self):
+    def test_only_the_major_minor_version_is_sent(self):
         seen = {}
 
-        def capture(request):
-            seen["ua"] = request.get_header("User-agent")
-            return self.fake_head("binary/octet-stream")
+        def capture(url):
+            seen["url"] = url
+            response = mock.MagicMock()
+            response.__enter__.return_value = io.StringIO(json.dumps({"code": 36}))
+            return response
 
         with mock.patch.object(checker.urllib.request, "urlopen", capture):
-            checker.serves_binary("2026-11-16", "noble", "curl", "8.1.0", "4.6.1")
-        self.assertIn("R (4.6.1", seen["ua"])
+            checker.builds_binaries_for("4.6.1", "noble")
+        self.assertIn("r_version=4.6&", seen["url"])
+        self.assertIn("distribution=noble", seen["url"])
 
 
 if __name__ == "__main__":

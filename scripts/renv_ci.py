@@ -12,6 +12,7 @@ import pathlib
 import re
 
 PPM_CRAN = "https://packagemanager.posit.co/cran"
+PPM_API = "https://packagemanager.posit.co/__api__/repos/cran"
 SNAPSHOT_DATED = re.compile(r"/\d{4}-\d{2}-\d{2}/?$")
 
 # PPM builds binaries per distro release, so the runner image is part of the
@@ -28,9 +29,8 @@ CRAN_REPOSITORIES = {"CRAN", "RSPM", "PPM"}
 # and is pure R, so it costs nothing to install from source.
 BINARY_EXEMPT = frozenset({"renv"})
 
-# Packages with compiled code, used to prove PPM really serves binaries for the
-# pinned R version -- the package index alone is identical for every R version.
-COMPILED_PROBES = ("curl", "openssl", "V8", "stringi", "Rcpp")
+# PPM's error code for an R version it builds no binaries for.
+UNSUPPORTED_R_VERSION = 34
 
 
 def project_root():
@@ -87,10 +87,7 @@ def binary_index_url(date, codename):
     return f"{PPM_CRAN}/__linux__/{codename}/{date}/src/contrib/PACKAGES.gz"
 
 
-def binary_package_url(date, codename, package, version):
-    return f"{PPM_CRAN}/__linux__/{codename}/{date}/src/contrib/{package}_{version}.tar.gz"
-
-
-def r_user_agent(r_version):
-    """The User-Agent R sends -- PPM picks binary vs source from it."""
-    return f"R ({r_version} x86_64-pc-linux-gnu x86_64 linux-gnu)"
+def binaries_api_url(r_version, codename):
+    """PPM's binary endpoint, which validates the R version and distribution."""
+    minor = ".".join(r_version.split(".")[:2])
+    return f"{PPM_API}/binaries?r_version={minor}&distribution={codename}"
