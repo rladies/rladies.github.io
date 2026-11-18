@@ -7,7 +7,20 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261118T005845Z
+DTSTAMP:20261118T125126Z
+DTSTART:20261215T010000Z
+DTEND:20261215T030000Z
+SUMMARY:Advent of Code Sharing Session - R-Ladies PDX
+DESCRIPTION:We'll be sharing our solutions to Advent of Code https://adventofcode.com this year - you are welcome to do one or more of the puzzles and share your solution or attempt at the event or hang out and see how others have solved things!\n\nMany of us have never participated in Advent of Code before, so some things to know:\n\- they start Dec 1\n\- the puzzles increase in difficulty each day\n\- they are designed to be solved in the programming language of your choice \- we suggest R of course\, but would love to see other solutions if that's what you want to do\!
+LOCATION:Lucky Labrador Public House, 7675 SW Capitol Hwy, Portland, OR 97219, USA, Portland, UNITED STATES OF AMERICA
+URL:https://www.meetup.com/rladies-pdx/events/317475568/
+ORGANIZER;CN=R-Ladies PDX:mailto:info@rladies.org
+CATEGORIES:RLadies+,R-Ladies PDX
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261118T125126Z
 DTSTART:20261205T230000Z
 DTEND:20261206T010000Z
 SUMMARY:¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa
@@ -20,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261118T005845Z
+DTSTAMP:20261118T125126Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -33,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261118T005845Z
+DTSTAMP:20261118T125126Z
 DTSTART:20261202T170000Z
 DTEND:20261202T180000Z
 SUMMARY:RLadies+ Philly with Padmashri Saravanan - R-Ladies Philly
@@ -46,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261118T005845Z
+DTSTAMP:20261118T125126Z
 DTSTART:20261201T210000Z
 DTEND:20261201T230000Z
 SUMMARY:set.seed(2027):  R, IA y comunidad para construir lo que viene - R-Ladies Buenos Aires
@@ -59,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261118T005845Z
+DTSTAMP:20261118T125126Z
 DTSTART:20261125T070000Z
 DTEND:20261125T100000Z
 SUMMARY:R-Ladies+ Melbourne End of Year trivia event & 10th Birthday! - R-Ladies+ Melbourne
@@ -72,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261118T005845Z
+DTSTAMP:20261118T125126Z
 DTSTART:20261124T000000Z
 DTEND:20261124T013000Z
 SUMMARY:Examining the 2026 municipal election results using R and Open Ottawa data - R-Ladies Ottawa
@@ -85,7 +98,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261118T005845Z
+DTSTAMP:20261118T125126Z
 DTSTART:20270120T160000Z
 DTEND:20270120T173000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
