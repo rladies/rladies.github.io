@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 19 Nov 2026 12:50:01 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 20 Nov 2026 00:57:01 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Tuesday, December 15, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Lucky Labrador Public House</p>
-        <p><strong>Attendees:</strong> 4 going</p>
+        <p><strong>Attendees:</strong> 5 going</p>
         <p>We&#39;ll be sharing our solutions to Advent of Code https://adventofcode.com this year - you are welcome to do one or more of the puzzles and share your solution or attempt at the event or hang out and see how others have solved things!
 
 Many of us have never participated in Advent of Code before, so some things to know:
@@ -56,10 +56,10 @@ Suivi d&#39;un échange autour d&#39;un verre au marché des jacobins : [16 Rue 
         <p><strong>When:</strong> Wednesday, December 2, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 9 going</p>
-        <p>TBD</p>
+        <p>Hackathons have always been a place of chaos, trials, and big dreams. Even more so, it has been proven time and again to be a fantastic tool for learning through implementation. How has this changed with the rapid increase in using AI? What does cross-checking and validation of a generated output look like? Using R for data analysis, we studied how, when, and why participants used generative AI tools in their projects at the BioIT hackathon earlier this year. This talk shares what we observed and learned.</p>
         <p><a href="https://www.meetup.com/rladies-philly/events/317373503/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Philly)</author><category>R-Ladies Philly</category></item><item><title>set.seed(2027): R, IA y comunidad para construir lo que viene - R-Ladies Buenos Aires</title><link>https://www.meetup.com/rladies-buenos-aires/events/317459437/</link><pubDate>Tue, 01 Dec 2026 21:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-buenos-aires/events/317459437/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Buenos Aires</p>
         <p><strong>When:</strong> Tuesday, December 1, 2026 at 9:00 PM UTC</p>
-        <p><strong>Attendees:</strong> 9 going</p>
+        <p><strong>Attendees:</strong> 10 going</p>
         <p>¿Y si terminamos el año compartiendo ideas, conectando comunidades y explorando nuevas formas de programar?
 
 Te invitamos a un encuentro presencial de RLadies Buenos Aires, R en Buenos Aires y el Núcleo de Innovación Social (NIS) para conocer nuestras iniciativas, descubrir oportunidades de participación y conversar sobre el impacto de la inteligencia artificial generativa en la ciencia de datos y la investigación.
@@ -97,7 +97,7 @@ Arma tu 2027 con la comunidad. Cerramos el año conectando iniciativas y empezam
         <p><a href="https://www.meetup.com/rladies-buenos-aires/events/317459437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>Health Metrics in Urban Centres Worldwide: Exploring TidyTuesday Data with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/317484705/</link><pubDate>Fri, 27 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/317484705/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Friday, November 27, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 7 going</p>
+        <p><strong>Attendees:</strong> 8 going</p>
         <p>What can data tell us about the availability of hospitals and pharmacies in cities around the world?
 
 Join Daniel Navarro for a practical R session using the **TidyTuesday “Health metrics in urban centres worldwide” dataset**, drawn from the European Commission’s Global Human Settlement Urban Centre Database.
@@ -131,7 +131,7 @@ LinkedIn: [https://www.linkedin.com/in/daniel-navarrodan007/](https://www.linked
         <p><a href="https://www.meetup.com/rladies-rome/events/317484705/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>R-Ladies+ Melbourne End of Year trivia event &amp; 10th Birthday! - R-Ladies+ Melbourne</title><link>https://www.meetup.com/rladies-melbourne/events/317281096/</link><pubDate>Wed, 25 Nov 2026 07:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-melbourne/events/317281096/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies&#43; Melbourne</p>
         <p><strong>When:</strong> Wednesday, November 25, 2026 at 7:00 AM UTC</p>
         <p><strong>Where:</strong> DiUS</p>
-        <p><strong>Attendees:</strong> 19 going</p>
+        <p><strong>Attendees:</strong> 20 going</p>
         <p>🎉 **R-Ladies&#43; Melbourne is turning 10!** 💜🎂
 And what better way to celebrate a decade of R, data science, and community than with an R-themed Trivia Night!
 
@@ -147,10 +147,39 @@ Most importantly, it&#39;s a chance to celebrate 10 years of R-Ladies&#43; Melbo
 Food and drinks will be provided!
 
 💜 Everyone is welcome to our celebration!</p>
-        <p><a href="https://www.meetup.com/rladies-melbourne/events/317281096/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>Examining the 2026 municipal election results using R and Open Ottawa data - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/317363042/</link><pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-ottawa/events/317363042/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
+        <p><a href="https://www.meetup.com/rladies-melbourne/events/317281096/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies+ Melbourne)</author><category>R-Ladies+ Melbourne</category></item><item><title>Project Clinic and Coworking - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/317289714/</link><pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/317289714/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
+        <p><strong>When:</strong> Wednesday, November 25, 2026 at 3:00 PM UTC</p>
+        <p><strong>Where:</strong> TU Wien</p>
+        <p><strong>Attendees:</strong> 4 going</p>
+        <p>Inspired by some interesting experience sharing during our previous events, we are organizing a **coworking** session on R programming. You&#39;re welcome to stay for the entire 2-hour session, or as long as you need within the duration. We will:
+
+* Cowork independently on R-related projects or tasks
+* Ask questions, if any, and exchange ideas and experience
+* Meet other R users in Vienna and our host, Laura
+
+Instead of working alone at a screen, we would like to trial this event format to bring our community together, and learn from each other through actual human experiences.
+
+As we promote gender diversity and inclusion in the R community, all gender identities and skill levels in R are welcome!
+
+**💡 What to bring**
+
+* Your laptop
+* An R project or task you would like to work on
+* (Optional) Questions regarding R programming
+
+**🗺️ Location**
+Seminarraum AE EG - 1 (AEEG25)
+Ground Floor
+Karlsplatz 13
+1040 Vienna
+
+**📍 How to find us**
+After entering the main entrance of the TU Wien main building at Karlsplatz, turn left and walk along the corridor. The seminar room will be on your left.
+Use this [floor plan](https://maps.tuwien.ac.at/?q=AEEG25#map) to help locate the room.</p>
+        <p><a href="https://www.meetup.com/rladies-vienna/events/317289714/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Vienna)</author><category>RLadies+ Vienna</category></item><item><title>Examining the 2026 municipal election results using R and Open Ottawa data - R-Ladies Ottawa</title><link>https://www.meetup.com/rladies-ottawa/events/317363042/</link><pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-ottawa/events/317363042/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Ottawa</p>
         <p><strong>When:</strong> Tuesday, November 24, 2026 at 12:00 AM UTC</p>
         <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 19 going</p>
+        <p><strong>Attendees:</strong> 20 going</p>
         <p>Open Ottawa has a great collection of data that is open to the public! We&#39;ll be exploring the 2026 municipal elections official results using R and RStudio.
 
 We&#39;ll walk through:

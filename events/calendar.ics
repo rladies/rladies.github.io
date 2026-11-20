@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20261215T010000Z
 DTEND:20261215T030000Z
 SUMMARY:Advent of Code Sharing Session - R-Ladies PDX
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20261205T230000Z
 DTEND:20261206T010000Z
 SUMMARY:¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -46,11 +46,11 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20261202T170000Z
 DTEND:20261202T180000Z
 SUMMARY:RLadies+ Philly with Padmashri Saravanan - R-Ladies Philly
-DESCRIPTION:TBD
+DESCRIPTION:Hackathons have always been a place of chaos, trials, and big dreams. Even more so, it has been proven time and again to be a fantastic tool for learning through implementation. How has this changed with the rapid increase in using AI? What does cross-checking and validation of a generated output look like? Using R for data analysis, we studied how, when, and why participants used generative AI tools in their projects at the BioIT hackathon earlier this year. This talk shares what we observed and learned.
 LOCATION:Online event
 URL:https://www.meetup.com/rladies-philly/events/317373503/
 ORGANIZER;CN=R-Ladies Philly:mailto:info@rladies.org
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20261201T210000Z
 DTEND:20261201T230000Z
 SUMMARY:set.seed(2027):  R, IA y comunidad para construir lo que viene - R-Ladies Buenos Aires
@@ -72,7 +72,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20261127T170000Z
 DTEND:20261127T190000Z
 SUMMARY:Health Metrics in Urban Centres Worldwide: Exploring TidyTuesday Data with R - R-Ladies Rome
@@ -85,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20261125T070000Z
 DTEND:20261125T100000Z
 SUMMARY:R-Ladies+ Melbourne End of Year trivia event & 10th Birthday! - R-Ladies+ Melbourne
@@ -98,7 +98,20 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
+DTSTART:20261125T150000Z
+DTEND:20261125T170000Z
+SUMMARY:Project Clinic and Coworking - RLadies+ Vienna
+DESCRIPTION:Inspired by some interesting experience sharing during our previous events, we are organizing a **coworking** session on R programming. You're welcome to stay for the entire 2-hour session, or as long as you need within the duration. We will:\n\n* Cowork independently on R-related projects or tasks\n* Ask questions, if any, and exchange ideas and experience\n* Meet other R users in Vienna and our host, Laura\n\nInstead of working alone at a screen, we would like to trial this event format to bring our community together, and learn from each other through actual human experiences.\n\nAs we promote gender diversity and inclusion in the R community, all gender identities and skill levels in R are welcome!\n\n**💡 What to bring**\n\n* Your laptop\n* An R project or task you would like to work on\n* (Optional) Questions regarding R programming\n\n**🗺️ Location**\nSeminarraum AE EG - 1 (AEEG25)\nGround Floor\nKarlsplatz 13\n1040 Vienna\n\n**📍 How to find us**\nAfter entering the main entrance of the TU Wien main building at Karlsplatz, turn left and walk along the corridor. The seminar room will be on your left.\nUse this [floor plan](https://maps.tuwien.ac.at/?q=AEEG25#map) to help locate the room.
+LOCATION:TU Wien, Karlsplatz 13, 1040 Wien, Austria, Wien, AUSTRIA
+URL:https://www.meetup.com/rladies-vienna/events/317289714/
+ORGANIZER;CN=RLadies+ Vienna:mailto:info@rladies.org
+CATEGORIES:RLadies+,RLadies+ Vienna
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENTBEGIN:VEVENT
+UID:noreply@rladies.org
+DTSTAMP:20261120T005700Z
 DTSTART:20261124T000000Z
 DTEND:20261124T013000Z
 SUMMARY:Examining the 2026 municipal election results using R and Open Ottawa data - R-Ladies Ottawa
@@ -111,7 +124,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261119T125001Z
+DTSTAMP:20261120T005700Z
 DTSTART:20270120T160000Z
 DTEND:20270120T173000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja
