@@ -29,7 +29,7 @@ If you would like to give us a hand at fixing some of the issues listed, we woul
 graph TB
 
 A[Checkout repository] --> B[Get Hugo version]
-B --> C[Install cURL Headers]
+B --> C[Install system requirements]
 C --> D[Setup R]
 D --> E[Setup renv]
 E --> F["Populate untranslated pages\n(scripts/missing_translations.R)"]

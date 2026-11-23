@@ -157,6 +157,23 @@ GitHub Actions workflow:
 3. Hugo build with environment config
 4. Deploy to GitHub Pages (production) or Netlify (preview)
 
+### R dependencies (renv)
+
+Each R workflow restores one renv profile (`json`, `production`, `airtable`, `dev`); profile dependencies are declared in `DESCRIPTION` under `Config/renv/profiles/<profile>/dependencies`.
+
+CI must never compile R packages from source — that is slow and breaks whenever the runner toolchain moves. Four things keep that true, and they are conventions to uphold when touching renv, not automated checks:
+
+- **One R version everywhere.** `r-lib/actions/setup-r` with `r-version: renv` reads the **root** `renv.lock`, while the workflows restore a *profile* lockfile. If those disagree, CI installs an R that has no binaries for the pinned packages. Keep `renv.lock`, every `renv/profiles/*/renv.lock` and `renv/settings.json` on the same version.
+- **A dated Posit Package Manager snapshot, never a plain CRAN mirror or `latest`.** `https://packagemanager.posit.co/cran/YYYY-MM-DD` serves Linux binaries for exactly the versions current on that date. `cloud.r-project.org` serves source only, and PPM's `latest` stops serving a pinned version as soon as CRAN moves on. This applies to the lockfile's `Repositories` *and* to each package's `Repository` field, which records where renv actually installed it from.
+- **`runs-on: ubuntu-24.04` on every job that restores renv.** PPM builds binaries per distro release, and `ubuntu-latest` moves to Ubuntu 26 from 2026-10-19.
+- **Pinned versions must be the ones the snapshot serves.** PPM keeps older versions only as source, so a lockfile that drifts behind its own snapshot date is compiled on the runner. Check against `https://packagemanager.posit.co/cran/__linux__/noble/<date>/src/contrib/PACKAGES`.
+
+**Refreshing dependencies:** the `Refresh renv lockfiles` workflow runs monthly and on `workflow_dispatch` (optional snapshot date, defaults to yesterday). It re-snapshots every profile on `ubuntu-24.04` and opens a PR, so pins are refreshed on a schedule rather than when CI breaks. Do not snapshot on macOS: PPM's macOS binaries lag its Linux ones, so the versions renv picks there have no Linux binary and CI compiles them from source. The workflow runs `scripts/refresh_renv.R` per profile — it sets `RENV_CONFIG_REPOS_OVERRIDE` so packages record the dated snapshot rather than the runner's `latest` repository — then `scripts/pin_renv_snapshot.R` for the root lockfile and settings.
+
+`renv` itself is pinned by the committed `renv/activate.R`, not by the snapshot, which is why `refresh_renv.R` excludes it from updates. Upgrading it means `renv::upgrade()`; letting `renv::update()` do it writes an `activate.R` with an unsubstituted `..md5..` placeholder that breaks every `Rscript` call.
+
+**System libraries:** PPM binaries link against system packages that the runner image does not all ship (V8 needs `libnode-dev`, curl needs `libcurl4-openssl-dev`). The workflows install them explicitly; after changing a profile's dependencies, re-resolve the list with `pak::pkg_sysreqs(<packages>, sysreqs_platform = "ubuntu-24.04")` and update the matching workflow step. The `production` profile needs none.
+
 ## Common Tasks
 
 ### Adding a chapter

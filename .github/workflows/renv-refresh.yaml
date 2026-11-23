@@ -1,0 +1,92 @@
+name: Refresh renv lockfiles
+
+on:
+  # Pins rot: a snapshot only serves binaries for the versions current on its
+  # date, so the lockfiles are refreshed on a schedule rather than when CI
+  # breaks.
+  schedule:
+    - cron: "23 4 1 * *"
+  workflow_dispatch:
+    inputs:
+      snapshot_date:
+        description: "PPM snapshot date (YYYY-MM-DD); defaults to yesterday"
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    name: Re-snapshot profiles
+    # Must match the image the R workflows run on: PPM serves binaries per
+    # distro release, so a snapshot taken elsewhere pins versions that have no
+    # binary here and CI goes back to compiling from source.
+    runs-on: ubuntu-24.04
+    env:
+      RENV_CONFIG_SANDBOX_ENABLED: FALSE
+      SNAPSHOT_DATE: ${{ inputs.snapshot_date }}
+      GITHUB_PAT: ${{ github.token }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Resolve the snapshot date
+        run: |
+          # Today's snapshot is still being written, so default to yesterday.
+          echo "SNAPSHOT_DATE=${SNAPSHOT_DATE:-$(date -u -d yesterday +%F)}" >> "$GITHUB_ENV"
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'renv'
+
+      - name: Install system requirements
+        run: |
+          # The union of what every profile's packages link against.
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcurl4-openssl-dev libicu-dev libnode-dev libssl-dev \
+            libuv1-dev zlib1g-dev
+
+      - name: Re-snapshot each profile
+        run: |
+          for lockfile in renv/profiles/*/renv.lock; do
+            profile=$(basename "$(dirname "$lockfile")")
+            echo "::group::$profile"
+            RENV_PROFILE="$profile" Rscript scripts/refresh_renv.R
+            echo "::endgroup::"
+          done
+
+      - name: Pin the root lockfile
+        run: Rscript scripts/pin_renv_snapshot.R
+
+      - name: Upload refreshed lockfiles
+        uses: actions/upload-artifact@v4
+        with:
+          name: renv-lockfiles
+          path: |
+            renv.lock
+            renv/settings.json
+            renv/profiles/*/renv.lock
+
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          add-paths: |
+            renv.lock
+            renv/settings.json
+            renv/profiles/*/renv.lock
+          commit-message: "chore(renv): refresh lockfiles against ${{ env.SNAPSHOT_DATE }}"
+          branch: automated/renv-refresh
+          title: "Automated update: refresh renv lockfiles"
+          body: |
+            Re-snapshotted on `${{ runner.os }}` / `ubuntu-24.04` against the
+            Posit Package Manager snapshot `${{ env.SNAPSHOT_DATE }}`, so every
+            pinned version is one that snapshot serves as a binary for the image
+            CI restores on.
+          labels: automated
