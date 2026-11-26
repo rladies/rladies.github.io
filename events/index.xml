@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Wed, 25 Nov 2026 12:52:57 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Thu, 26 Nov 2026 01:00:25 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Tuesday, December 15, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Lucky Labrador Public House</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -128,36 +128,7 @@ Will go through the Joint Research Centre of the European Commission data that c
 
 Using TidyTuesday data and R, he will guide participants through asking questions, exploring patterns, and creating visualisations, encouraging discussion and shared learning throughout the session.
 LinkedIn: [https://www.linkedin.com/in/daniel-navarrodan007/](https://www.linkedin.com/in/daniel-navarrodan007/)</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/317484705/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Project Clinic and Coworking - RLadies+ Vienna</title><link>https://www.meetup.com/rladies-vienna/events/317289714/</link><pubDate>Wed, 25 Nov 2026 15:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-vienna/events/317289714/</guid><description><![CDATA[<p><strong>Chapter:</strong> RLadies&#43; Vienna</p>
-        <p><strong>When:</strong> Wednesday, November 25, 2026 at 3:00 PM UTC</p>
-        <p><strong>Where:</strong> TU Wien</p>
-        <p><strong>Attendees:</strong> 4 going</p>
-        <p>Inspired by some interesting experience sharing during our previous events, we are organizing a **coworking** session on R programming. You&#39;re welcome to stay for the entire 2-hour session, or as long as you need within the duration. We will:
-
-* Cowork independently on R-related projects or tasks
-* Ask questions, if any, and exchange ideas and experience
-* Meet other R users in Vienna and our host, Laura
-
-Instead of working alone at a screen, we would like to trial this event format to bring our community together, and learn from each other through actual human experiences.
-
-As we promote gender diversity and inclusion in the R community, all gender identities and skill levels in R are welcome!
-
-**💡 What to bring**
-
-* Your laptop
-* An R project or task you would like to work on
-* (Optional) Questions regarding R programming
-
-**🗺️ Location**
-Seminarraum AE EG - 1 (AEEG25)
-Ground Floor
-Karlsplatz 13
-1040 Vienna
-
-**📍 How to find us**
-After entering the main entrance of the TU Wien main building at Karlsplatz, turn left and walk along the corridor. The seminar room will be on your left.
-Use this [floor plan](https://maps.tuwien.ac.at/?q=AEEG25#map) to help locate the room.</p>
-        <p><a href="https://www.meetup.com/rladies-vienna/events/317289714/">View event details</a></p>]]></description><author>noreply@rladies.org (RLadies+ Vienna)</author><category>RLadies+ Vienna</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-rome/events/317484705/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, January 20, 2027 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 9 going</p>
         <p>In this session, we’ll be working through the process of developing a visualisation in ggplot2. We’ll start with a brand new dataset and create some exploratory plots; sketch out some ideas and decide what we want to communicate; build a basic plot in ggplot2; and then refine our chart to create something that’s artistic and aesthetic, yet effective. Some basic knowledge of the tidyverse will be helpful, but all of the code in this session will be explained and made available afterwards.</p>
