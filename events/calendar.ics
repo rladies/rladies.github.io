@@ -7,7 +7,7 @@ X-WR-CALNAME:RLadies+ Global Events
 X-WR-TIMEZONE:UTC
 X-WR-CALDESC:Upcoming RLadies+ events worldwideBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261127T005842Z
+DTSTAMP:20261127T125109Z
 DTSTART:20261215T010000Z
 DTEND:20261215T030000Z
 SUMMARY:Advent of Code Sharing Session - R-Ladies PDX
@@ -20,7 +20,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261127T005842Z
+DTSTAMP:20261127T125109Z
 DTSTART:20261205T230000Z
 DTEND:20261206T010000Z
 SUMMARY:¿La IA puede ser mi Amix?: Mitos y realidades sobre IA - R-Ladies Xalapa
@@ -33,7 +33,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261127T005842Z
+DTSTAMP:20261127T125109Z
 DTSTART:20261204T160000Z
 DTEND:20261204T180000Z
 SUMMARY:Coder en SHS à l'heure de l'IA : quels parcours et quels tournants ? - R-Ladies Limoges
@@ -46,7 +46,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261127T005842Z
+DTSTAMP:20261127T125109Z
 DTSTART:20261202T170000Z
 DTEND:20261202T180000Z
 SUMMARY:Hacking GenAI usage amongst Hackathon goers in a Hackathon (aka Hack-ception) - R-Ladies Philly
@@ -59,7 +59,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261127T005842Z
+DTSTAMP:20261127T125109Z
 DTSTART:20261201T210000Z
 DTEND:20261201T230000Z
 SUMMARY:set.seed(2027):  R, IA y comunidad para construir lo que viene - R-Ladies Buenos Aires
@@ -72,11 +72,11 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261127T005842Z
+DTSTAMP:20261127T125109Z
 DTSTART:20261127T170000Z
 DTEND:20261127T190000Z
-SUMMARY:Health Metrics in Urban Centres Worldwide: Exploring TidyTuesday Data with R - R-Ladies Rome
-DESCRIPTION:What can data tell us about the availability of hospitals and pharmacies in cities around the world?\n\nJoin Daniel Navarro for a practical R session using the **TidyTuesday “Health metrics in urban centres worldwide” dataset**, drawn from the European Commission’s Global Human Settlement Urban Centre Database.\n\nThrough a guided exercise, we will explore questions, compare urban centres, and create visualisations that help us interpret the data.\n\nTogether, we will consider questions such as:\n\n* How does the availability of hospitals and pharmacies vary between cities?\n* What changes when we compare facility counts, population-based measures, and density?\n* How do patterns differ across regions and income groups?\n* What should we consider before drawing conclusions from these comparisons?\n\nThe session will focus on moving from a question to an analysis and a clear visualisation, with room for discussion and questions.\n\n**Who is this for?**\nR users interested in data exploration, visualisation, and health data. Some familiarity with R will help you follow the exercise.\n\n**Dataset:**\n[https://github.com/rfordatascience/tidytuesday/blob/main/data/2026/2026-09-29/readme.md](https://github.com/rfordatascience/tidytuesday/blob/main/data/2026/2026-09-29/readme.md)\nCome along to practise, share ideas, and learn together!\n\n**[Daniel Navarro](https://www.linkedin.com/in/daniel-navarrodan007/)** joins us to lead a practical exercise exploring health metrics in urban centres worldwide.\nBachelor in Administration with experience in public and private sector's finance from budgeting to Financial Accounting and Controlling.\n\nProgramming since university and working with worksheets since their launch, learnt R when started to improve my data analysis skills and by coincidence chose R as the working language.\nWill go through the Joint Research Centre of the European Commission data that contains the health metrics in urban centres worldwide, with the main goal of checking how my city compares globally in terms of Hospitals per Capita in 2025.\n\nUsing TidyTuesday data and R, he will guide participants through asking questions, exploring patterns, and creating visualisations, encouraging discussion and shared learning throughout the session.\nLinkedIn: [https://www.linkedin.com/in/daniel-navarrodan007/](https://www.linkedin.com/in/daniel-navarrodan007/)
+SUMMARY:From Cities to Cappuccino: Exploring TidyTuesday Data with R - R-Ladies Rome
+DESCRIPTION:How does my city compare?\n\n​What can data tell us about healthcare facilities in cities worldwide—and what might we discover in a dataset about cappuccino? 🏙️☕\n\n​Join **Daniel Navarro** and special guest **Veneta Karamfilova** for a practical R session using the **TidyTuesday** exploring data and creating visualisations.\n\n​**Urban health metrics with Daniel Navarro**\n​Daniel will guide us through an exercise using TidyTuesday’s “Health metrics in urban centres worldwide” dataset, drawn from the European Commission’s Global Human Settlement Urban Centre Database.\n​We will explore hospitals and pharmacies across urban centres, compare population-based measures and facility density, and discuss how to turn questions into clear visualisations.\n\n​**Cappuccino data with special guest Veneta Karamfilova**\n​Veneta will bring a coffee-themed contribution, showing data about cappuccino from the TidyTuesday repository. Another opportunity to explore patterns, share ideas, and discover different ways to visualise data in R!\n\n​**Who is this for?**\n​Anyone interested in R, data exploration, and visualisation. Some familiarity with R will be helpful, and everyone is welcome to join the discussion.\n​Come along to learn together, ask questions, and enjoy two different perspectives on TidyTuesday data.\n\n​**Connect with our speakers:**\n\n* ​Daniel Navarro:\n* ​Bachelor in Administration with experience in public and private sector's finance from budgeting to Financial Accounting and Controlling.\n* ​[/daniel-navarrodan007](https://www.linkedin.com/in/daniel-navarrodan007/?utm_source=luma)\n* ​Veneta Karamfilova:\n* ​She works as a data analyst in the commercial private sector. R enthusiast, who enjoys learning and using R in their free time.\n* ​[/venetakaramfilova](https://www.linkedin.com/in/venetakaramfilova/?utm_source=luma)
 LOCATION:Online event
 URL:https://www.meetup.com/rladies-rome/events/317484705/
 ORGANIZER;CN=R-Ladies Rome:mailto:info@rladies.org
@@ -85,7 +85,7 @@ STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENTBEGIN:VEVENT
 UID:noreply@rladies.org
-DTSTAMP:20261127T005842Z
+DTSTAMP:20261127T125109Z
 DTSTART:20270120T160000Z
 DTEND:20270120T173000Z
 SUMMARY:Developing your data visualisation skills in ggplot2 - R-Ladies Abuja

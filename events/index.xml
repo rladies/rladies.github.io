@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 27 Nov 2026 00:58:43 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 27 Nov 2026 12:51:09 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Tuesday, December 15, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Lucky Labrador Public House</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -94,40 +94,35 @@ Arma tu 2027 con la comunidad. Cerramos el año conectando iniciativas y empezam
 * RLadies Buenos Aires
 * R en Buenos Aires
 * Núcleo de Innovación Social (NIS)</p>
-        <p><a href="https://www.meetup.com/rladies-buenos-aires/events/317459437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>Health Metrics in Urban Centres Worldwide: Exploring TidyTuesday Data with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/317484705/</link><pubDate>Fri, 27 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/317484705/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
+        <p><a href="https://www.meetup.com/rladies-buenos-aires/events/317459437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>From Cities to Cappuccino: Exploring TidyTuesday Data with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/317484705/</link><pubDate>Fri, 27 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/317484705/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
         <p><strong>When:</strong> Friday, November 27, 2026 at 5:00 PM UTC</p>
         <p><strong>Where:</strong> Online event</p>
         <p><strong>Attendees:</strong> 13 going</p>
-        <p>What can data tell us about the availability of hospitals and pharmacies in cities around the world?
+        <p>How does my city compare?
 
-Join Daniel Navarro for a practical R session using the **TidyTuesday “Health metrics in urban centres worldwide” dataset**, drawn from the European Commission’s Global Human Settlement Urban Centre Database.
+​What can data tell us about healthcare facilities in cities worldwide—and what might we discover in a dataset about cappuccino? 🏙️☕
 
-Through a guided exercise, we will explore questions, compare urban centres, and create visualisations that help us interpret the data.
+​Join **Daniel Navarro** and special guest **Veneta Karamfilova** for a practical R session using the **TidyTuesday** exploring data and creating visualisations.
 
-Together, we will consider questions such as:
+​**Urban health metrics with Daniel Navarro**
+​Daniel will guide us through an exercise using TidyTuesday’s “Health metrics in urban centres worldwide” dataset, drawn from the European Commission’s Global Human Settlement Urban Centre Database.
+​We will explore hospitals and pharmacies across urban centres, compare population-based measures and facility density, and discuss how to turn questions into clear visualisations.
 
-* How does the availability of hospitals and pharmacies vary between cities?
-* What changes when we compare facility counts, population-based measures, and density?
-* How do patterns differ across regions and income groups?
-* What should we consider before drawing conclusions from these comparisons?
+​**Cappuccino data with special guest Veneta Karamfilova**
+​Veneta will bring a coffee-themed contribution, showing data about cappuccino from the TidyTuesday repository. Another opportunity to explore patterns, share ideas, and discover different ways to visualise data in R!
 
-The session will focus on moving from a question to an analysis and a clear visualisation, with room for discussion and questions.
+​**Who is this for?**
+​Anyone interested in R, data exploration, and visualisation. Some familiarity with R will be helpful, and everyone is welcome to join the discussion.
+​Come along to learn together, ask questions, and enjoy two different perspectives on TidyTuesday data.
 
-**Who is this for?**
-R users interested in data exploration, visualisation, and health data. Some familiarity with R will help you follow the exercise.
+​**Connect with our speakers:**
 
-**Dataset:**
-[https://github.com/rfordatascience/tidytuesday/blob/main/data/2026/2026-09-29/readme.md](https://github.com/rfordatascience/tidytuesday/blob/main/data/2026/2026-09-29/readme.md)
-Come along to practise, share ideas, and learn together!
-
-**[Daniel Navarro](https://www.linkedin.com/in/daniel-navarrodan007/)** joins us to lead a practical exercise exploring health metrics in urban centres worldwide.
-Bachelor in Administration with experience in public and private sector&#39;s finance from budgeting to Financial Accounting and Controlling.
-
-Programming since university and working with worksheets since their launch, learnt R when started to improve my data analysis skills and by coincidence chose R as the working language.
-Will go through the Joint Research Centre of the European Commission data that contains the health metrics in urban centres worldwide, with the main goal of checking how my city compares globally in terms of Hospitals per Capita in 2025.
-
-Using TidyTuesday data and R, he will guide participants through asking questions, exploring patterns, and creating visualisations, encouraging discussion and shared learning throughout the session.
-LinkedIn: [https://www.linkedin.com/in/daniel-navarrodan007/](https://www.linkedin.com/in/daniel-navarrodan007/)</p>
+* ​Daniel Navarro:
+* ​Bachelor in Administration with experience in public and private sector&#39;s finance from budgeting to Financial Accounting and Controlling.
+* ​[/daniel-navarrodan007](https://www.linkedin.com/in/daniel-navarrodan007/?utm_source=luma)
+* ​Veneta Karamfilova:
+* ​She works as a data analyst in the commercial private sector. R enthusiast, who enjoys learning and using R in their free time.
+* ​[/venetakaramfilova](https://www.linkedin.com/in/venetakaramfilova/?utm_source=luma)</p>
         <p><a href="https://www.meetup.com/rladies-rome/events/317484705/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, January 20, 2027 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 9 going</p>
