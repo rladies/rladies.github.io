@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Fri, 27 Nov 2026 12:51:09 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Events on RLadies+ Global</title><link>https://rladies.org/events/</link><description>Upcoming RLadies+ events worldwide</description><generator>Hugo 0.157.0</generator><language>en</language><lastBuildDate>Sat, 28 Nov 2026 00:57:53 +0000</lastBuildDate><atom:link href="https://rladies.org/events/index.xml" rel="self" type="application/rss+xml"/><item><title>Advent of Code Sharing Session - R-Ladies PDX</title><link>https://www.meetup.com/rladies-pdx/events/317475568/</link><pubDate>Tue, 15 Dec 2026 01:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-pdx/events/317475568/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies PDX</p>
         <p><strong>When:</strong> Tuesday, December 15, 2026 at 1:00 AM UTC</p>
         <p><strong>Where:</strong> Lucky Labrador Public House</p>
         <p><strong>Attendees:</strong> 6 going</p>
@@ -94,36 +94,7 @@ Arma tu 2027 con la comunidad. Cerramos el año conectando iniciativas y empezam
 * RLadies Buenos Aires
 * R en Buenos Aires
 * Núcleo de Innovación Social (NIS)</p>
-        <p><a href="https://www.meetup.com/rladies-buenos-aires/events/317459437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>From Cities to Cappuccino: Exploring TidyTuesday Data with R - R-Ladies Rome</title><link>https://www.meetup.com/rladies-rome/events/317484705/</link><pubDate>Fri, 27 Nov 2026 17:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-rome/events/317484705/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Rome</p>
-        <p><strong>When:</strong> Friday, November 27, 2026 at 5:00 PM UTC</p>
-        <p><strong>Where:</strong> Online event</p>
-        <p><strong>Attendees:</strong> 13 going</p>
-        <p>How does my city compare?
-
-​What can data tell us about healthcare facilities in cities worldwide—and what might we discover in a dataset about cappuccino? 🏙️☕
-
-​Join **Daniel Navarro** and special guest **Veneta Karamfilova** for a practical R session using the **TidyTuesday** exploring data and creating visualisations.
-
-​**Urban health metrics with Daniel Navarro**
-​Daniel will guide us through an exercise using TidyTuesday’s “Health metrics in urban centres worldwide” dataset, drawn from the European Commission’s Global Human Settlement Urban Centre Database.
-​We will explore hospitals and pharmacies across urban centres, compare population-based measures and facility density, and discuss how to turn questions into clear visualisations.
-
-​**Cappuccino data with special guest Veneta Karamfilova**
-​Veneta will bring a coffee-themed contribution, showing data about cappuccino from the TidyTuesday repository. Another opportunity to explore patterns, share ideas, and discover different ways to visualise data in R!
-
-​**Who is this for?**
-​Anyone interested in R, data exploration, and visualisation. Some familiarity with R will be helpful, and everyone is welcome to join the discussion.
-​Come along to learn together, ask questions, and enjoy two different perspectives on TidyTuesday data.
-
-​**Connect with our speakers:**
-
-* ​Daniel Navarro:
-* ​Bachelor in Administration with experience in public and private sector&#39;s finance from budgeting to Financial Accounting and Controlling.
-* ​[/daniel-navarrodan007](https://www.linkedin.com/in/daniel-navarrodan007/?utm_source=luma)
-* ​Veneta Karamfilova:
-* ​She works as a data analyst in the commercial private sector. R enthusiast, who enjoys learning and using R in their free time.
-* ​[/venetakaramfilova](https://www.linkedin.com/in/venetakaramfilova/?utm_source=luma)</p>
-        <p><a href="https://www.meetup.com/rladies-rome/events/317484705/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Rome)</author><category>R-Ladies Rome</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
+        <p><a href="https://www.meetup.com/rladies-buenos-aires/events/317459437/">View event details</a></p>]]></description><author>noreply@rladies.org (R-Ladies Buenos Aires)</author><category>R-Ladies Buenos Aires</category></item><item><title>Developing your data visualisation skills in ggplot2 - R-Ladies Abuja</title><link>https://www.meetup.com/rladies-abuja/events/317123277/</link><pubDate>Wed, 20 Jan 2027 16:00:00 +0000</pubDate><guid>https://www.meetup.com/rladies-abuja/events/317123277/</guid><description><![CDATA[<p><strong>Chapter:</strong> R-Ladies Abuja</p>
         <p><strong>When:</strong> Wednesday, January 20, 2027 at 4:00 PM UTC</p>
         <p><strong>Attendees:</strong> 9 going</p>
         <p>In this session, we’ll be working through the process of developing a visualisation in ggplot2. We’ll start with a brand new dataset and create some exploratory plots; sketch out some ideas and decide what we want to communicate; build a basic plot in ggplot2; and then refine our chart to create something that’s artistic and aesthetic, yet effective. Some basic knowledge of the tidyverse will be helpful, but all of the code in this session will be explained and made available afterwards.</p>
